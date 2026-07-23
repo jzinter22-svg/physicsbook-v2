@@ -56,5 +56,13 @@
     "ar": "🇮🇶 العربية",
     "ku": "🏳️ کوردی",
     "en": "🇬🇧 English"
+  },
+  "ch1": {
+    "sidebarSubtitle": "Physical Quantities and Measurement",
+    "lesson1NavTitle": "1) Fundamental & Derived Quantities",
+    "lesson2NavTitle": "2) SI Units & Conversion",
+    "lesson3NavTitle": "3) Scalars & Vectors",
+    "lesson4NavTitle": "4) Significant Figures & Precision",
+    "lesson5NavTitle": "5) Chapter Review"
   }
 }

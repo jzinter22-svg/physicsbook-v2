@@ -1,6 +1,5 @@
-/* Chapter 1 — behavior script instantiated from
-   templates/chapter-behavior-template.js. No lessons published yet:
-   LESSONS holds only the chapter-home entry until lesson pages are added. */
+/* Chapter 1 — الكميات الفيزيائية والقياس — behavior script instantiated
+   from templates/chapter-behavior-template.js. */
 (function(){
   "use strict";
 
@@ -8,13 +7,16 @@
     storageKeyPrefix: "ch1",
     chapterNumber: 1,
     brandBadge: "1",
-    sidebarSubtitleKey: "common.readyToBuild",
+    sidebarSubtitleKey: "ch1.sidebarSubtitle",
     lessons: [
-      { href: "index.html", titleKey: "common.chapterHome", root: true }
-      // { href: "lessons/lesson-1.html", titleKey: "lessons.ch1.lesson1.navTitle" },
-      // ... add one entry per lesson, in order, once lessons exist
+      { href: "index.html", titleKey: "common.chapterHome", root: true },
+      { href: "lessons/lesson-1.html", titleKey: "ch1.lesson1NavTitle" },
+      { href: "lessons/lesson-2.html", titleKey: "ch1.lesson2NavTitle" },
+      { href: "lessons/lesson-3.html", titleKey: "ch1.lesson3NavTitle" },
+      { href: "lessons/lesson-4.html", titleKey: "ch1.lesson4NavTitle" },
+      { href: "lessons/lesson-5.html", titleKey: "ch1.lesson5NavTitle" }
     ],
-    bgSymbols: ["•", "∘", "×", "+", "–", "="]
+    bgSymbols: ["m", "kg", "s", "±", "×10", "Δ"]
   };
   // ---------------------------------------------------------------------------
 

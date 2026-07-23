@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title data-i18n-title-tag="chapter.pageTitle" data-i18n-params='{"n":1}'>الفصل 1 — كتاب الطبيعيات التفاعلي</title>
-<meta name="description" data-i18n-content="chapter.description" data-i18n-params='{"n":1}' content="الفصل 1 من كتاب الطبيعيات التفاعلي. لم تُنشر الدروس بعد.">
+<title>الفصل 1: الكميات الفيزيائية والقياس — كتاب الطبيعيات التفاعلي</title>
+<meta name="description" content="الفصل الأول من كتاب الطبيعيات التفاعلي: الكميات الفيزيائية الأساسية والمشتقة، النظام الدولي للوحدات، الكميات القياسية والمتجهة، والأرقام المعنوية — بأمثلة محلولة وأدوات تفاعلية واختبارات ذاتية.">
 <link rel="stylesheet" href="../assets/css/theme.css">
 <script>
   MathJax = {
@@ -24,16 +24,66 @@
   <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
     <ol>
       <li><a href="../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
-      <li aria-current="page" data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":1}'>الفصل 1</li>
+      <li aria-current="page">الفصل 1</li>
     </ol>
   </nav>
 
+  <div dir="rtl" lang="ar">
+
   <section class="hero fade-up">
-    <span class="eyebrow" data-i18n="chapter.eyebrow">📘 كتاب الطبيعيات التفاعلي</span>
-    <h1 data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":1}'>الفصل 1</h1>
-    <p class="lead" data-i18n="chapter.lead">هذا الفصل جاهز للبناء. ستظهر هنا الدروس والأمثلة المحلولة والأدوات التفاعلية والاختبارات والخريطة الذهنية عند إضافتها.</p>
-    <div class="io-row" style="margin-top:1.25rem">
-      <span class="tag" data-i18n="chapter.lessonsTag" data-i18n-params='{"n":0}'>⏱ 0 دروس</span>
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">📘 كتاب الطبيعيات التفاعلي · الصف الأول</span>
+        <h1>الفصل الأول: الكميات الفيزيائية والقياس <span style="color:var(--accent-blue)">Physical Quantities</span></h1>
+        <p class="lead">حجر الأساس في علم الفيزياء: كيف نُعرّف الكميات التي نقيسها، وكيف نستخدم النظام الدولي للوحدات، وما الفرق بين الكمية القياسية والمتجهة، وكيف نُعبّر عن دقة القياس بأرقام معنوية صحيحة.</p>
+        <div class="io-row" style="margin-top:1.25rem">
+          <a href="lessons/lesson-1.html" class="neu-btn primary">ابدأ الدرس الأول ←</a>
+          <span class="tag">⏱ 5 دروس</span>
+          <span class="tag">🧠 اختبارات ذاتية</span>
+          <span class="tag">🗺 خرائط ذهنية</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heroCurveGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#7c6fee"/>
+              <stop offset="1" stop-color="#3fa9f5"/>
+            </linearGradient>
+            <marker id="arrowX" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+              <path d="M0,0 L7,3 L0,6 Z" fill="var(--text-faint)"/>
+            </marker>
+            <marker id="arrowY" markerWidth="10" markerHeight="10" refX="3" refY="0" orient="auto">
+              <path d="M0,7 L3,0 L6,7 Z" fill="var(--text-faint)"/>
+            </marker>
+          </defs>
+
+          <g class="hero-grid-line">
+            <line x1="90" y1="60" x2="90" y2="300"/><line x1="150" y1="60" x2="150" y2="300"/>
+            <line x1="210" y1="60" x2="210" y2="300"/><line x1="270" y1="60" x2="270" y2="300"/>
+            <line x1="330" y1="60" x2="330" y2="300"/><line x1="390" y1="60" x2="390" y2="300"/>
+            <line x1="60" y1="260" x2="450" y2="260"/><line x1="60" y1="210" x2="450" y2="210"/>
+            <line x1="60" y1="160" x2="450" y2="160"/><line x1="60" y1="110" x2="450" y2="110"/>
+          </g>
+
+          <line class="hero-axis" x1="60" y1="300" x2="452" y2="300" marker-end="url(#arrowX)"/>
+          <line class="hero-axis" x1="60" y1="300" x2="60" y2="28" marker-end="url(#arrowY)"/>
+
+          <!-- vector arrow: magnitude + direction, the visual signature of this chapter -->
+          <g class="hero-float f1">
+            <line x1="130" y1="260" x2="330" y2="120" stroke="url(#heroCurveGrad)" stroke-width="5" stroke-linecap="round" marker-end="url(#arrowX)"/>
+          </g>
+          <g class="hero-float f2">
+            <rect x="300" y="180" width="86" height="52" rx="10" fill="var(--surface)" opacity=".95"/>
+            <text x="343" y="212" text-anchor="middle" font-family="Cairo,sans-serif" font-weight="800" font-size="20" fill="var(--accent-purple)">m</text>
+          </g>
+          <g class="hero-float f3">
+            <rect x="120" y="150" width="70" height="46" rx="10" fill="var(--surface)" opacity=".95"/>
+            <text x="155" y="180" text-anchor="middle" font-family="Cairo,sans-serif" font-weight="800" font-size="18" fill="var(--accent-blue)">kg</text>
+          </g>
+        </svg>
+      </div>
     </div>
   </section>
 
@@ -41,24 +91,111 @@
     <div class="neu" style="padding:1.5rem 1.75rem">
       <div class="io-row" style="justify-content:space-between;margin-bottom:.6rem">
         <strong data-i18n="common.yourProgress">تقدّمك في هذا الفصل</strong>
-        <span class="progress-label" data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% مكتمل</span>
+        <span class="progress-label">0% مكتمل</span>
       </div>
       <div class="progress-track"><div class="progress-fill"></div></div>
     </div>
   </section>
 
   <section class="section fade-up">
-    <h2 style="margin-bottom:1rem" data-i18n="chapter.contentsHeading">📚 محتويات الفصل</h2>
-    <div class="grid grid-3" id="lessonGrid">
-      <div class="empty-state neu" style="grid-column:1/-1">
-        <span class="icon" aria-hidden="true">📖</span>
-        <span data-i18n="chapter.emptyState">ستظهر الدروس هنا عند إضافتها.</span>
+    <div class="card neu">
+      <h2>🎯 أهداف الفصل</h2>
+      <p class="lead">بنهاية هذا الفصل، يكون الطالب قادرًا على أن:</p>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يميّز بين الكميات الفيزيائية الأساسية والمشتقة، ويحدد وحداتها في النظام الدولي.</span></li>
+        <li><span class="obj-num">2</span><span>يحوّل بين مضاعفات وأجزاء الوحدات باستخدام بادئات النظام الدولي.</span></li>
+        <li><span class="obj-num">3</span><span>يفرّق بين الكمية القياسية والكمية المتجهة، ويمثّل المتجهات هندسيًا.</span></li>
+        <li><span class="obj-num">4</span><span>يحدد عدد الأرقام المعنوية في قياس معطى، ويطبّق قواعدها في العمليات الحسابية.</span></li>
+        <li><span class="obj-num">5</span><span>يحل مسائل تطبيقية على القياس والتحويل والتحليل البعدي.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <h2 style="margin-bottom:1rem">📚 محتويات الفصل</h2>
+    <div class="grid grid-3">
+
+      <a class="neu lesson-card" href="lessons/lesson-1.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#7c6fee,#3fa9f5)">1</span>
+        <h3 style="margin:.2rem 0">الكميات الفيزيائية الأساسية والمشتقة</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">الكمية الفيزيائية، الكميات الأساسية السبع، وكيف تُشتق باقي الكميات منها.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-2.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#3fa9f5,#ff6b9d)">2</span>
+        <h3 style="margin:.2rem 0">النظام الدولي للوحدات وتحويل الوحدات</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">وحدات القياس القياسية، بادئات النظام الدولي، وطريقة التحويل بينها.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-3.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#ffab5e,#ff6b9d)">3</span>
+        <h3 style="margin:.2rem 0">الكميات القياسية والمتجهة</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">الفرق بين المسافة والإزاحة، والتمثيل الهندسي للمتجهات.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-4.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#2fd18f,#3fa9f5)">4</span>
+        <h3 style="margin:.2rem 0">الأرقام المعنوية والدقة في القياس</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">قواعد تحديد الأرقام المعنوية، والفرق بين الدقة والضبط.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-5.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#7c6fee,#ff6b9d)">5</span>
+        <h3 style="margin:.2rem 0">مراجعة الفصل</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">أسئلة نهاية الفصل كاملة مع الحل التفصيلي لكل سؤال.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <h2>🗺 خريطة الفصل الذهنية</h2>
+      <div class="mindmap-wrap">
+        <svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للفصل الأول">
+          <defs>
+            <linearGradient id="gC1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7c6fee"/><stop offset="1" stop-color="#3fa9f5"/>
+            </linearGradient>
+          </defs>
+          <line x1="450" y1="230" x2="180" y2="90" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="450" y1="230" x2="720" y2="90" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="450" y1="230" x2="150" y2="250" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="450" y1="230" x2="750" y2="250" stroke="#b3bdcc" stroke-width="2"/>
+
+          <g class="mm-node"><circle cx="450" cy="230" r="66" fill="url(#gC1)"/>
+            <text x="450" y="224" text-anchor="middle" fill="#fff" font-weight="800" font-size="15" font-family="Cairo,sans-serif">الكميات</text>
+            <text x="450" y="244" text-anchor="middle" fill="#fff" font-weight="800" font-size="15" font-family="Cairo,sans-serif">والقياس</text></g>
+
+          <g class="mm-node"><circle cx="180" cy="90" r="54" fill="#ffab5e"/>
+            <text x="180" y="86" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">أساسية</text>
+            <text x="180" y="102" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">ومشتقة</text></g>
+
+          <g class="mm-node"><circle cx="720" cy="90" r="54" fill="#ff6b9d"/>
+            <text x="720" y="86" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">النظام</text>
+            <text x="720" y="102" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">الدولي</text></g>
+
+          <g class="mm-node"><circle cx="150" cy="250" r="54" fill="#2fd18f"/>
+            <text x="150" y="246" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">قياسية</text>
+            <text x="150" y="262" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">ومتجهة</text></g>
+
+          <g class="mm-node"><circle cx="750" cy="250" r="54" fill="#3fa9f5"/>
+            <text x="750" y="246" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">أرقام</text>
+            <text x="750" y="262" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">معنوية</text></g>
+        </svg>
       </div>
     </div>
   </section>
+</div>
+
 </main>
 
-<footer class="site-footer" data-i18n="chapter.footer" data-i18n-params='{"n":1}'>الفصل 1 — كتاب الطبيعيات التفاعلي</footer>
+<footer class="site-footer">الفصل الأول: الكميات الفيزيائية والقياس — كتاب الطبيعيات التفاعلي</footer>
 
 <script src="../assets/js/site-ch1.js"></script>
 </body>

@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدرس 2: النظام الدولي للوحدات وتحويل الوحدات — الفصل الأول</title>
+<meta name="description" content="النظام الدولي للوحدات، بادئات الوحدات (كيلو، سنتي، ملّي)، وطريقة التحويل بين الوحدات باستخدام عامل التحويل، مع أمثلة محلولة ومحوّل وحدات تفاعلي.">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
+</head>
+<body data-page="lessons/lesson-2.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li><a href="../index.html">الفصل 1</a></li>
+      <li aria-current="page">النظام الدولي وتحويل الوحدات</li>
+    </ol>
+  </nav>
+
+  <div dir="rtl" lang="ar">
+
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 الدرس 2 من 5 · الفصل الأول</span>
+    <h1>النظام الدولي للوحدات وتحويل الوحدات</h1>
+    <p class="lead">لكي يفهم عالِم في اليابان قياسًا سجّله عالِم في مصر، لا بد من لغة وحدات مشتركة. في هذا الدرس نتعرّف على النظام الدولي للوحدات (SI) وبادئاته، ونتعلّم كيف نحوّل بين مضاعفات الوحدة الواحدة وأجزائها بثقة.</p>
+  </section>
+
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
+    <div class="card neu">
+      <h2>🎯 أهداف الدرس</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يوضّح المقصود بالنظام الدولي للوحدات وأهمية توحيده عالميًا.</span></li>
+        <li><span class="obj-num">2</span><span>يعدد بادئات النظام الدولي الشائعة وقيمة كل منها.</span></li>
+        <li><span class="obj-num">3</span><span>يحوّل بين مضاعفات وحدة ما وأجزائها باستخدام عامل التحويل.</span></li>
+        <li><span class="obj-num">4</span><span>يحل مسائل تطبيقية على تحويل الوحدات، بما فيها تحويل وحدات السرعة المركّبة.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
+    <div class="card neu">
+      <h2>💡 لماذا نحتاج نظامًا موحدًا للوحدات؟</h2>
+      <p>قبل توحيد النظام الدولي، كانت كل دولة أو مجموعة علماء تستخدم وحداتها الخاصة (الميل، القدم، الأوقية...)، ما كان يسبب أخطاء جسيمة عند تبادل النتائج العلمية والهندسية. لذلك اتُّفق عالميًا على <b>النظام الدولي للوحدات (SI)</b>، الذي يعتمد الكميات الأساسية السبع التي درسناها في الدرس السابق ووحدة قياسية واحدة لكل منها.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 تعريف 1-4 — النظام الدولي للوحدات (SI)</span>
+      <p style="margin:.3rem 0">منظومة وحدات قياس متفق عليها عالميًا، تحدد وحدة أساسية واحدة لكل كمية أساسية (كالمتر للطول والكيلوغرام للكتلة)، وتُشتق منها وحدات جميع الكميات الأخرى.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 تعريف 1-5 — البادئة (Prefix)</span>
+      <p style="margin:.3rem 0">مقطع يُضاف قبل اسم الوحدة للتعبير عن مضاعف عشري لها أو جزء عشري منها، مثل «كيلو» بمعنى ألف، و«ملّي» بمعنى جزء من ألف.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h2>📋 بادئات النظام الدولي الشائعة</h2>
+      <p style="color:var(--text-secondary);margin-top:0">كل بادئة تمثّل قوة للعدد 10 تُضرب أو تُقسم بها الوحدة الأساسية:</p>
+      <div class="grid grid-3" style="margin-top:1rem">
+        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
+          <strong>كيلو (k)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{3}\) = 1000</span>
+        </div>
+        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
+          <strong>هكتو (h)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{2}\) = 100</span>
+        </div>
+        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
+          <strong>ديكا (da)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{1}\) = 10</span>
+        </div>
+        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
+          <strong>ديسي (d)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{-1}\) = 0.1</span>
+        </div>
+        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
+          <strong>سنتي (c)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{-2}\) = 0.01</span>
+        </div>
+        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
+          <strong>ملّي (m)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{-3}\) = 0.001</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
+      <span class="def-label" style="color:var(--accent-orange)">🔍 تعليل — لماذا نضرب في عامل التحويل بدل الجمع أو الطرح؟</span>
+      <p style="margin:.3rem 0">لأن العلاقة بين وحدتين تقيسان الكمية نفسها هي علاقة <b>نسبية (ضربية)</b> وليست جمعية. فمثلًا 1 كم = 1000 م، أي إن كل وحدة كيلومتر واحدة تقابل 1000 وحدة متر. لذلك فإن تحويل عدد معيّن من الكيلومترات إلى أمتار يتطلب ضربه في 1000 — تمامًا كما نضرب عدد الدزينات في 12 لنحصل على عدد الحبّات، لا أن نجمع 12 على العدد.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">$$ \text{القيمة بالوحدة الجديدة} = \text{القيمة بالوحدة القديمة} \times \text{عامل التحويل} $$</div>
+  </section>
+
+  <section class="section fade-up" id="examples" data-navlabel="✍️ أمثلة محلولة">
+    <h2 style="margin-bottom:.25rem">✍️ أمثلة محلولة</h2>
+    <p class="lead" style="margin-top:0">كل مثال يليه مباشرة بطاقة الحل التفصيلي.</p>
+
+    <div class="example fade-up">
+      <div class="example-head">
+        <div class="example-title"><span class="example-badge">1</span> مثال 1</div>
+      </div>
+      <div class="example-problem">حوّل 5.2 كم إلى أمتار، ثم إلى سنتيمترات.</div>
+    </div>
+
+    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
+      <div class="example-head">
+        <div class="example-title" style="color:var(--accent-blue)">
+          <span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي
+        </div>
+        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
+      </div>
+      <ol class="steps hidden-steps" id="steps-ex1">
+        <li class="step"><span class="step-dot">1</span><div class="step-body">
+          <p class="calc-note">نستخدم عامل التحويل: 1 كم = 1000 م</p>
+          <div class="calc-flow"><div class="calc-line">\( 5.2 \text{ km} \times 1000 = 5200 \text{ m} \)</div></div>
+        </div></li>
+        <li class="step"><span class="step-dot">2</span><div class="step-body">
+          <p class="calc-note">لتحويل الأمتار إلى سنتيمترات: 1 م = 100 سم</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( 5200 \text{ m} \times 100 \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( = 520000 \text{ cm} \)</div>
+          </div>
+        </div></li>
+      </ol>
+      <div class="exercise-final">✓ 5.2 كم = 5200 م = 520000 سم</div>
+    </div>
+
+    <div class="example fade-up" style="margin-top:2rem">
+      <div class="example-head">
+        <div class="example-title"><span class="example-badge">2</span> مثال 2</div>
+      </div>
+      <div class="example-problem">تسير سيارة بسرعة 72 كم/سا. عبّر عن سرعتها بوحدة m/s (متر لكل ثانية).</div>
+      <div class="neu-inset" style="padding:1rem 1.2rem;margin-top:1rem">
+        <p style="margin:.2rem 0"><b>🔧 فكرة الحل:</b> نحوّل الكيلومترات إلى أمتار، والساعات إلى ثوانٍ، بشكل منفصل.</p>
+      </div>
+    </div>
+
+    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
+      <div class="example-head">
+        <div class="example-title" style="color:var(--accent-blue)">
+          <span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي
+        </div>
+        <button class="neu-btn" data-reveal-steps="steps-ex2" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
+      </div>
+      <ol class="steps hidden-steps" id="steps-ex2">
+        <li class="step"><span class="step-dot">1</span><div class="step-body">
+          <p class="calc-note">نحوّل الكيلومتر إلى متر: 1 كم = 1000 م</p>
+          <div class="calc-flow"><div class="calc-line calc-box">\( 72 \text{ km} = 72000 \text{ m} \)</div></div>
+        </div></li>
+        <li class="step"><span class="step-dot">2</span><div class="step-body">
+          <p class="calc-note">نحوّل الساعة إلى ثانية: 1 سا = 3600 ثانية</p>
+          <div class="calc-flow"><div class="calc-line calc-box">\( 1 \text{ h} = 3600 \text{ s} \)</div></div>
+        </div></li>
+        <li class="step"><span class="step-dot">3</span><div class="step-body">
+          <p class="calc-note">نكتب السرعة بالوحدتين الجديدتين ونقسم</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( v = \dfrac{72000 \text{ m}}{3600 \text{ s}} \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( v = 20 \text{ m/s} \)</div>
+          </div>
+        </div></li>
+      </ol>
+      <div class="callout tip" style="margin-top:.8rem">
+        <span class="icon">💬</span>
+        <span>طريقة مختصرة يستخدمها كثيرون: للتحويل من km/h إلى m/s، اقسم على 3.6 مباشرة (لأن 1000÷3600 = 1/3.6). جرّب: 72 ÷ 3.6 = 20 ✓</span>
+      </div>
+      <div class="exercise-final">✓ سرعة السيارة = 20 m/s</div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محوّل وحدات">
+    <div class="card neu">
+      <h2>🕹️ أداة تفاعلية: محوّل وحدات الطول</h2>
+      <p>أدخل قيمة، واختر وحدة البدء ووحدة الوصول، وشاهد الناتج يتحدّث فور تغييرك لأي حقل.</p>
+      <div class="io-panel">
+        <div class="io-row">
+          <input type="number" id="convValue" class="neu-input" value="1" style="max-width:9rem" aria-label="القيمة">
+          <select id="convFrom" class="neu-input" style="max-width:9rem">
+            <option value="1000">كيلومتر (km)</option>
+            <option value="1" selected>متر (m)</option>
+            <option value="0.01">سنتيمتر (cm)</option>
+            <option value="0.001">مليمتر (mm)</option>
+          </select>
+          <span style="font-weight:800;color:var(--accent-purple)">=</span>
+          <select id="convTo" class="neu-input" style="max-width:9rem">
+            <option value="1000">كيلومتر (km)</option>
+            <option value="1">متر (m)</option>
+            <option value="0.01" selected>سنتيمتر (cm)</option>
+            <option value="0.001">مليمتر (mm)</option>
+          </select>
+        </div>
+        <div class="rule-box" id="convResult">1 m = 100 cm</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>1.</span><span>بادئة «كيلو» تعني ضرب الوحدة بِـ:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>100</span></label>
+          <label class="quiz-opt"><input type="radio"><span>1000</span></label>
+          <label class="quiz-opt"><input type="radio"><span>0.001</span></label>
+          <label class="quiz-opt"><input type="radio"><span>10</span></label>
+        </div>
+        <div class="quiz-explain">كيلو = \(10^3\) = 1000، مثل الكيلوغرام = 1000 غرام.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>2.</span><span>1 ملّيمتر يساوي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>10 سم</span></label>
+          <label class="quiz-opt"><input type="radio"><span>0.1 سم</span></label>
+          <label class="quiz-opt"><input type="radio"><span>0.01 م</span></label>
+          <label class="quiz-opt"><input type="radio"><span>100 م</span></label>
+        </div>
+        <div class="quiz-explain">بما أن 1 م = 100 سم = 1000 مم، فإن كل مليمتر يساوي 1/10 سم، أي 0.1 سم.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>3.</span><span>لتحويل قيمة من km/h إلى m/s نقسمها على:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>3.6</span></label>
+          <label class="quiz-opt"><input type="radio"><span>1000</span></label>
+          <label class="quiz-opt"><input type="radio"><span>3600</span></label>
+          <label class="quiz-opt"><input type="radio"><span>60</span></label>
+        </div>
+        <div class="quiz-explain">لأن 1000 م ÷ 3600 ثانية = 1/3.6، فالقسمة على 3.6 تكافئ ضرب الكيلومتر/ساعة بمعامل التحويل كاملًا.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="3">
+        <div class="quiz-q-title"><span>4.</span><span>سيارة سرعتها 10 m/s، ما سرعتها بوحدة km/h؟</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>10</span></label>
+          <label class="quiz-opt"><input type="radio"><span>3.6</span></label>
+          <label class="quiz-opt"><input type="radio"><span>27.7</span></label>
+          <label class="quiz-opt"><input type="radio"><span>36</span></label>
+        </div>
+        <div class="quiz-explain">للتحويل من m/s إلى km/h نضرب في 3.6: \(10 \times 3.6 = 36\) km/h.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>5.</span><span>لماذا نضرب في عامل التحويل بدل الجمع عند تحويل الوحدات؟</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>لأن الجمع أصعب حسابيًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لأن العلاقة بين الوحدتين نسبية (ضربية) لا جمعية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لأن الوحدات أرقام عشوائية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لأن الضرب يُلغي الوحدة القديمة</span></label>
+        </div>
+        <div class="quiz-explain">كل وحدة من الوحدة الكبيرة تقابل عددًا ثابتًا من الوحدة الصغيرة، وهذا تناسب ضربي وليس علاقة جمعية.</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
+      <ul class="summary-list">
+        <li><span>النظام الدولي للوحدات (SI) يوحّد وحدة القياس عالميًا لكل كمية أساسية.</span></li>
+        <li><span>البادئات (كيلو، سنتي، ملّي...) تمثّل قوى للعدد 10 تُضرب أو تُقسم بها الوحدة الأساسية.</span></li>
+        <li><span>التحويل بين الوحدات يعتمد الضرب في عامل التحويل، لأن العلاقة بين الوحدتين نسبية.</span></li>
+        <li><span>لتحويل km/h إلى m/s، نقسم على 3.6؛ وللعكس نضرب في 3.6.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l2" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <p style="color:var(--text-secondary);margin-top:.3rem">ملخص بصري سريع لمفاهيم الدرس.</p>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l2">
+        <svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للدرس الثاني">
+          <line x1="410" y1="180" x2="150" y2="80" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="410" y1="180" x2="670" y2="80" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="410" y1="180" x2="150" y2="280" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="410" y1="180" x2="670" y2="280" stroke="#b3bdcc" stroke-width="2"/>
+
+          <g><circle cx="410" cy="180" r="58" fill="#3fa9f5"/>
+            <text x="410" y="176" text-anchor="middle" fill="#fff" font-weight="800" font-size="14" font-family="Cairo,sans-serif">النظام</text>
+            <text x="410" y="195" text-anchor="middle" fill="#fff" font-weight="800" font-size="14" font-family="Cairo,sans-serif">الدولي</text></g>
+
+          <g><circle cx="150" cy="80" r="50" fill="#7c6fee"/>
+            <text x="150" y="84" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">بادئات</text></g>
+
+          <g><circle cx="670" cy="80" r="50" fill="#2fd18f"/>
+            <text x="670" y="76" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">عامل</text>
+            <text x="670" y="93" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">التحويل</text></g>
+
+          <g><circle cx="150" cy="280" r="50" fill="#ffab5e"/>
+            <text x="150" y="284" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">km ↔ m</text></g>
+
+          <g><circle cx="670" cy="280" r="50" fill="#ff6b9d"/>
+            <text x="670" y="284" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">km/h ÷3.6</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">الفصل الأول: الكميات الفيزيائية والقياس — الدرس 2: النظام الدولي وتحويل الوحدات</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch1.js"></script>
+<script>
+(function(){
+  var UNIT_NAMES = {"1000":"km", "1":"m", "0.01":"cm", "0.001":"mm"};
+  var valueInput = document.getElementById("convValue");
+  var fromSelect = document.getElementById("convFrom");
+  var toSelect = document.getElementById("convTo");
+  var result = document.getElementById("convResult");
+  function render(){
+    var value = parseFloat(valueInput.value) || 0;
+    var fromFactor = parseFloat(fromSelect.value);
+    var toFactor = parseFloat(toSelect.value);
+    var meters = value * fromFactor;
+    var converted = meters / toFactor;
+    var rounded = Math.round(converted * 1e6) / 1e6;
+    result.textContent = value + " " + UNIT_NAMES[fromSelect.value] + " = " + rounded + " " + UNIT_NAMES[toSelect.value];
+  }
+  [valueInput, fromSelect, toSelect].forEach(function(el){
+    el.addEventListener("input", render);
+    el.addEventListener("change", render);
+  });
+  render();
+})();
+</script>
+</body>
+</html>

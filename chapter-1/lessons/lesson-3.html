@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدرس 3: الكميات القياسية والمتجهة — الفصل الأول</title>
+<meta name="description" content="الفرق بين الكمية القياسية والكمية المتجهة، التمثيل الهندسي للمتجهات، الفرق بين المسافة والإزاحة، مع أمثلة محلولة وأداة تفاعلية لرسم المتجهات.">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
+</head>
+<body data-page="lessons/lesson-3.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li><a href="../index.html">الفصل 1</a></li>
+      <li aria-current="page">الكميات القياسية والمتجهة</li>
+    </ol>
+  </nav>
+
+  <div dir="rtl" lang="ar">
+
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 الدرس 3 من 5 · الفصل الأول</span>
+    <h1>الكميات القياسية والمتجهة</h1>
+    <p class="lead">هل يكفي أن تقول لصديقك «امشِ 500 متر» لتدله على الطريق؟ بالتأكيد لا — فهو يحتاج أن يعرف الاتجاه أيضًا. هنا يظهر الفرق الجوهري بين نوعين من الكميات الفيزيائية: القياسية والمتجهة.</p>
+  </section>
+
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
+    <div class="card neu">
+      <h2>🎯 أهداف الدرس</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يفرّق بين الكمية القياسية والكمية المتجهة.</span></li>
+        <li><span class="obj-num">2</span><span>يمثّل الكمية المتجهة هندسيًا بسهم له مقدار واتجاه.</span></li>
+        <li><span class="obj-num">3</span><span>يميّز بين المسافة (قياسية) والإزاحة (متجهة).</span></li>
+        <li><span class="obj-num">4</span><span>يجمع متجهين يقعان على خط مستقيم واحد.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
+    <div class="card neu">
+      <h2>💡 كيف نمثّل الكمية المتجهة؟</h2>
+      <p>تُمثَّل الكمية المتجهة هندسيًا بسهم (خط مستقيم موجّه): <b>طول السهم</b> يمثّل مقدار الكمية وفق مقياس رسم معيّن، و<b>رأس السهم</b> يشير إلى اتجاهها. أما الكمية القياسية فتحتاج فقط إلى رقم ووحدة لتُحدَّد تمامًا، دون أي حاجة لتحديد اتجاه.</p>
+      <div class="callout tip">
+        <span class="icon">💬</span>
+        <span>قاعدة سريعة: اسأل نفسك «هل يتغيّر معنى الكمية إن غيّرنا اتجاهها؟» إن كانت الإجابة نعم، فهي متجهة (كالقوة والسرعة)؛ وإن كانت لا، فهي قياسية (كالكتلة والزمن).</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 تعريف 1-6 — الكمية القياسية</span>
+      <p style="margin:.3rem 0">كمية فيزيائية تُحدَّد تمامًا بمقدارها (عدد + وحدة) فقط، دون حاجة لتحديد اتجاه، مثل الكتلة والزمن ودرجة الحرارة والمسافة والطاقة.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 تعريف 1-7 — الكمية المتجهة</span>
+      <p style="margin:.3rem 0">كمية فيزيائية لا تُحدَّد تمامًا إلا بمعرفة مقدارها واتجاهها معًا، مثل الإزاحة والسرعة والتسارع والقوة والوزن.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h2>📋 أمثلة على الكميات القياسية والمتجهة</h2>
+      <div class="grid grid-2" style="margin-top:1rem">
+        <div class="neu-inset" style="padding:1rem 1.2rem">
+          <strong style="color:var(--accent-green)">✅ كميات قياسية</strong>
+          <ul style="margin:.6rem 0 0;padding-inline-start:1.2rem;color:var(--text-secondary)">
+            <li>الكتلة</li><li>الزمن</li><li>درجة الحرارة</li><li>المسافة</li><li>الطاقة والشغل</li>
+          </ul>
+        </div>
+        <div class="neu-inset" style="padding:1rem 1.2rem">
+          <strong style="color:var(--accent-blue)">🔷 كميات متجهة</strong>
+          <ul style="margin:.6rem 0 0;padding-inline-start:1.2rem;color:var(--text-secondary)">
+            <li>الإزاحة</li><li>السرعة</li><li>التسارع</li><li>القوة</li><li>الوزن</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
+      <span class="def-label" style="color:var(--accent-orange)">🔍 تعليل — لماذا الإزاحة متجهة بينما المسافة قياسية؟</span>
+      <p style="margin:.3rem 0"><b>المسافة</b> تصف الطول الكلي للمسار الذي قطعه الجسم فعليًا، بصرف النظر عن اتجاه حركته، فيكفي رقم واحد لوصفها — لذا فهي كمية قياسية.</p>
+      <p style="margin:.3rem 0">أما <b>الإزاحة</b> فتصف التغيّر في موضع الجسم: من أين بدأ وأين انتهى، وهذا يتطلب تحديد اتجاه الانتقال إضافة إلى مقداره. لهذا قد يتحرك جسم مسافة كبيرة جدًا وتكون إزاحته صفرًا إن عاد إلى نقطة انطلاقه — وهذا مستحيل الحدوث مع المسافة، التي تتراكم دائمًا ولا تنقص أبدًا.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="examples" data-navlabel="✍️ أمثلة محلولة">
+    <h2 style="margin-bottom:.25rem">✍️ أمثلة محلولة</h2>
+    <p class="lead" style="margin-top:0">كل مثال يليه مباشرة بطاقة الحل التفصيلي.</p>
+
+    <div class="example fade-up">
+      <div class="example-head">
+        <div class="example-title"><span class="example-badge">1</span> مثال 1</div>
+      </div>
+      <div class="example-problem">مشى طالب 300 م باتجاه الشرق، ثم عاد فمشى 100 م باتجاه الغرب. أوجد: (أ) المسافة الكلية التي قطعها. (ب) إزاحته النهائية.</div>
+    </div>
+
+    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
+      <div class="example-head">
+        <div class="example-title" style="color:var(--accent-blue)">
+          <span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي
+        </div>
+        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
+      </div>
+      <ol class="steps hidden-steps" id="steps-ex1">
+        <li class="step"><span class="step-dot">1</span><div class="step-body">
+          <p class="calc-note">(أ) المسافة = مجموع الأطوال المقطوعة فعليًا (بصرف النظر عن الاتجاه)</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( d = 300 + 100 \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( d = 400 \text{ m} \)</div>
+          </div>
+        </div></li>
+        <li class="step"><span class="step-dot">2</span><div class="step-body">
+          <p class="calc-note">(ب) الإزاحة: نعتبر الشرق موجبًا والغرب سالبًا، ونجمع جبريًا</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( \Delta x = (+300) + (-100) \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( \Delta x = +200 \text{ m (شرقًا)} \)</div>
+          </div>
+        </div></li>
+      </ol>
+      <div class="exercise-final">✓ المسافة = 400 م — الإزاحة = 200 م باتجاه الشرق</div>
+    </div>
+
+    <div class="example fade-up" style="margin-top:2rem">
+      <div class="example-head">
+        <div class="example-title"><span class="example-badge">2</span> مثال 2</div>
+      </div>
+      <div class="example-problem">تتحرك سيارتان على خط مستقيم واحد: الأولى بسرعة 20 m/s باتجاه الشرق، والثانية بسرعة 15 m/s باتجاه الغرب. إذا اعتُبر اتجاه الشرق موجبًا، فما السرعة المحصّلة الكلية لو جُمعت متّجهيًا (كما في حالة نهرين يصبّان بعكس اتجاه بعضهما)؟</div>
+    </div>
+
+    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
+      <div class="example-head">
+        <div class="example-title" style="color:var(--accent-blue)">
+          <span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي
+        </div>
+        <button class="neu-btn" data-reveal-steps="steps-ex2" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
+      </div>
+      <ol class="steps hidden-steps" id="steps-ex2">
+        <li class="step"><span class="step-dot">1</span><div class="step-body">
+          <p class="calc-note">نكتب كل سرعة بإشارتها الجبرية حسب الاتجاه المُتفَّق عليه (الشرق = +)</p>
+          <div class="calc-flow"><div class="calc-line calc-box">\( v_1 = +20 \text{ m/s} \,,\quad v_2 = -15 \text{ m/s} \)</div></div>
+        </div></li>
+        <li class="step"><span class="step-dot">2</span><div class="step-body">
+          <p class="calc-note">نجمع المتجهين جبريًا لأنهما على خط مستقيم واحد</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( v_{\text{محصّلة}} = v_1 + v_2 = (+20) + (-15) \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( v_{\text{محصّلة}} = +5 \text{ m/s} \)</div>
+          </div>
+        </div></li>
+        <li class="step"><span class="step-dot">3</span><div class="step-body">
+          <p class="calc-note">الإشارة الموجبة تعني أن المحصّلة باتجاه الشرق</p>
+          <div class="calc-flow"><div class="calc-line calc-box">المحصّلة = 5 m/s باتجاه الشرق</div></div>
+        </div></li>
+      </ol>
+      <div class="callout warn" style="margin-top:.8rem">
+        <span class="icon">⚠️</span>
+        <span>خطأ شائع: جمع المقدارين مباشرة (20+15=35) متجاهلين الاتجاه. لأن السرعتين متجهتان ومتعاكستان في الاتجاه، يجب طرحهما جبريًا لا جمعهما حسابيًا.</span>
+      </div>
+      <div class="exercise-final">✓ السرعة المحصّلة = 5 m/s باتجاه الشرق</div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="interactive" data-navlabel="🕹️ رسم متجه">
+    <div class="card neu">
+      <h2>🕹️ أداة تفاعلية: ارسم متجهًا وشاهد مركّبتيه</h2>
+      <p>حرّك المزلاجين لتغيير مقدار المتجه |V| واتجاهه θ، وشاهد السهم يتحرك على الفور مع حساب مركّبتيه الأفقية والرأسية.</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="vectorSvg" viewBox="0 0 420 340" width="420" height="340" role="img" aria-label="رسم تفاعلي لمتجه ومركباته"></svg></div>
+        <div class="io-row">
+          <label for="vMag" style="min-width:9rem">المقدار |V| = <span id="vMagVal">6</span></label>
+          <input type="range" id="vMag" class="neu-range" min="1" max="9" step="0.5" value="6">
+        </div>
+        <div class="io-row">
+          <label for="vAng" style="min-width:9rem">الزاوية θ = <span id="vAngVal">40</span>°</label>
+          <input type="range" id="vAng" class="neu-range" min="0" max="360" step="5" value="40">
+        </div>
+        <div class="rule-box" id="vecFormula">\(V_x = 4.60\),  \(V_y = 3.86\)</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>1.</span><span>الكمية المتجهة تُحدَّد تمامًا بمعرفة:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>مقدارها فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>وحدتها فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>مقدارها واتجاهها معًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>اسمها العلمي فقط</span></label>
+        </div>
+        <div class="quiz-explain">المقدار وحده لا يكفي لتحديد الكمية المتجهة؛ لا بد من معرفة اتجاهها أيضًا.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>2.</span><span>أي مما يلي كمية قياسية؟</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>القوة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الكتلة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الإزاحة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>التسارع</span></label>
+        </div>
+        <div class="quiz-explain">الكتلة رقم ووحدة فقط دون حاجة لاتجاه، أما القوة والإزاحة والتسارع فجميعها كميات متجهة.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>3.</span><span>جسم تحرك ثم عاد إلى نقطة انطلاقه بالضبط. ماذا عن إزاحته؟</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>صفر</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تساوي المسافة المقطوعة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>سالبة دائمًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لا يمكن حسابها</span></label>
+        </div>
+        <div class="quiz-explain">الإزاحة تصف التغيّر بين موضع البداية والنهاية؛ فإن تطابق الموضعان، كانت الإزاحة صفرًا مهما طالت المسافة المقطوعة.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>4.</span><span>متجهان بمقدار 20 و15 على خط مستقيم واحد وباتجاهين متعاكسين. محصلتهما تساوي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>35</span></label>
+          <label class="quiz-opt"><input type="radio"><span>5، باتجاه الأكبر منهما</span></label>
+          <label class="quiz-opt"><input type="radio"><span>300</span></label>
+          <label class="quiz-opt"><input type="radio"><span>صفر دائمًا</span></label>
+        </div>
+        <div class="quiz-explain">عند تعاكس الاتجاه نطرح المقدارين جبريًا: 20-15=5، والمحصلة تكون باتجاه المتجه الأكبر مقدارًا.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="3">
+        <div class="quiz-q-title"><span>5.</span><span>في تمثيل المتجه بسهم، ماذا يمثّل طول السهم؟</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>اتجاه الكمية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>وحدة الكمية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>زمن حدوث الكمية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>مقدار الكمية وفق مقياس رسم</span></label>
+        </div>
+        <div class="quiz-explain">طول السهم يعبّر عن مقدار المتجه بمقياس رسم معيّن، بينما رأسه يشير إلى اتجاهه.</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
+      <ul class="summary-list">
+        <li><span>الكمية القياسية: عدد + وحدة فقط (الكتلة، الزمن، المسافة...).</span></li>
+        <li><span>الكمية المتجهة: مقدار + اتجاه معًا (الإزاحة، السرعة، القوة...).</span></li>
+        <li><span>تُمثَّل الكمية المتجهة بسهم: طوله = المقدار، ورأسه = الاتجاه.</span></li>
+        <li><span>المسافة تتراكم دائمًا، أما الإزاحة فقد تكون صفرًا إن عاد الجسم لموضع انطلاقه.</span></li>
+        <li><span>متجهان على خط واحد يُجمَعان جبريًا مع مراعاة الإشارة الدالة على الاتجاه.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l3" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <p style="color:var(--text-secondary);margin-top:.3rem">ملخص بصري سريع لمفاهيم الدرس.</p>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l3">
+        <svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للدرس الثالث">
+          <line x1="410" y1="180" x2="150" y2="80" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="410" y1="180" x2="670" y2="80" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="410" y1="180" x2="150" y2="280" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="410" y1="180" x2="670" y2="280" stroke="#b3bdcc" stroke-width="2"/>
+
+          <g><circle cx="410" cy="180" r="58" fill="#ffab5e"/>
+            <text x="410" y="176" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">قياسية</text>
+            <text x="410" y="195" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">ومتجهة</text></g>
+
+          <g><circle cx="150" cy="80" r="50" fill="#2fd18f"/>
+            <text x="150" y="84" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">قياسية</text></g>
+
+          <g><circle cx="670" cy="80" r="50" fill="#3fa9f5"/>
+            <text x="670" y="84" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">متجهة</text></g>
+
+          <g><circle cx="150" cy="280" r="50" fill="#7c6fee"/>
+            <text x="150" y="276" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">مسافة</text>
+            <text x="150" y="293" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">≠ إزاحة</text></g>
+
+          <g><circle cx="670" cy="280" r="50" fill="#ff6b9d"/>
+            <text x="670" y="284" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">الجمع الجبري</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">الفصل الأول: الكميات الفيزيائية والقياس — الدرس 3: الكميات القياسية والمتجهة</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch1.js"></script>
+<script>
+(function(){
+  var svg = document.getElementById("vectorSvg");
+  var ns = "http://www.w3.org/2000/svg";
+  var W = 420, H = 340, cx = 150, cy = 200, scale = 22;
+  var magInput = document.getElementById("vMag");
+  var angInput = document.getElementById("vAng");
+  var magVal = document.getElementById("vMagVal");
+  var angVal = document.getElementById("vAngVal");
+  var formula = document.getElementById("vecFormula");
+
+  function render(){
+    var mag = parseFloat(magInput.value);
+    var ang = parseFloat(angInput.value);
+    magVal.textContent = mag;
+    angVal.textContent = ang;
+    var rad = ang * Math.PI / 180;
+    var vx = mag * Math.cos(rad);
+    var vy = mag * Math.sin(rad);
+    var tipX = cx + vx * scale;
+    var tipY = cy - vy * scale;
+
+    while(svg.firstChild) svg.removeChild(svg.firstChild);
+
+    // axes
+    var axisX = document.createElementNS(ns, "line");
+    axisX.setAttribute("x1", 20); axisX.setAttribute("y1", cy); axisX.setAttribute("x2", W-20); axisX.setAttribute("y2", cy);
+    axisX.setAttribute("stroke", "var(--text-faint)"); axisX.setAttribute("stroke-width", "1.4"); axisX.setAttribute("opacity",".6");
+    svg.appendChild(axisX);
+    var axisY = document.createElementNS(ns, "line");
+    axisY.setAttribute("x1", cx); axisY.setAttribute("y1", 15); axisY.setAttribute("x2", cx); axisY.setAttribute("y2", H-15);
+    axisY.setAttribute("stroke", "var(--text-faint)"); axisY.setAttribute("stroke-width", "1.4"); axisY.setAttribute("opacity",".6");
+    svg.appendChild(axisY);
+
+    // component projections (dashed)
+    var compX = document.createElementNS(ns, "line");
+    compX.setAttribute("x1", cx); compX.setAttribute("y1", cy); compX.setAttribute("x2", tipX); compX.setAttribute("y2", cy);
+    compX.setAttribute("stroke", "var(--accent-orange)"); compX.setAttribute("stroke-width", "2.5"); compX.setAttribute("stroke-dasharray", "6 4");
+    svg.appendChild(compX);
+    var compY = document.createElementNS(ns, "line");
+    compY.setAttribute("x1", tipX); compY.setAttribute("y1", cy); compY.setAttribute("x2", tipX); compY.setAttribute("y2", tipY);
+    compY.setAttribute("stroke", "var(--accent-green)"); compY.setAttribute("stroke-width", "2.5"); compY.setAttribute("stroke-dasharray", "6 4");
+    svg.appendChild(compY);
+
+    // main vector arrow
+    var line = document.createElementNS(ns, "line");
+    line.setAttribute("x1", cx); line.setAttribute("y1", cy); line.setAttribute("x2", tipX); line.setAttribute("y2", tipY);
+    line.setAttribute("stroke", "var(--accent-purple)"); line.setAttribute("stroke-width", "4"); line.setAttribute("stroke-linecap", "round");
+    svg.appendChild(line);
+
+    // arrowhead
+    var headLen = 14;
+    var a1 = rad + Math.PI - 0.35, a2 = rad + Math.PI + 0.35;
+    var h1x = tipX + headLen * Math.cos(a1), h1y = tipY - headLen * Math.sin(a1);
+    var h2x = tipX + headLen * Math.cos(a2), h2y = tipY - headLen * Math.sin(a2);
+    var head = document.createElementNS(ns, "polygon");
+    head.setAttribute("points", tipX+","+tipY+" "+h1x+","+h1y+" "+h2x+","+h2y);
+    head.setAttribute("fill", "var(--accent-purple)");
+    svg.appendChild(head);
+
+    // origin dot
+    var origin = document.createElementNS(ns, "circle");
+    origin.setAttribute("cx", cx); origin.setAttribute("cy", cy); origin.setAttribute("r", 4);
+    origin.setAttribute("fill", "var(--text-primary)");
+    svg.appendChild(origin);
+
+    // labels
+    var labelV = document.createElementNS(ns, "text");
+    labelV.setAttribute("x", tipX + (vx>=0?10:-10)); labelV.setAttribute("y", tipY - 8);
+    labelV.setAttribute("text-anchor", vx>=0?"start":"end");
+    labelV.setAttribute("font-family","Cairo,sans-serif"); labelV.setAttribute("font-weight","800"); labelV.setAttribute("font-size","16");
+    labelV.setAttribute("fill", "var(--accent-purple)");
+    labelV.textContent = "V";
+    svg.appendChild(labelV);
+
+    formula.innerHTML = "\\(V_x = " + vx.toFixed(2) + "\\) ,\\ \\(V_y = " + vy.toFixed(2) + "\\)";
+    if(window.PBChapter) PBChapter.typeset([formula]);
+  }
+
+  magInput.addEventListener("input", render);
+  angInput.addEventListener("input", render);
+  document.addEventListener("DOMContentLoaded", render);
+  if(document.readyState !== "loading") render();
+})();
+</script>
+</body>
+</html>
