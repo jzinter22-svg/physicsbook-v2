@@ -1,0 +1,171 @@
+<!--
+  CHAPTER TEMPLATE
+  ---------------------------------------------------------------------------
+  To add a new chapter:
+    1. Create chapter-<N>/ and chapter-<N>/lessons/ at the repo root.
+    2. Copy this file to chapter-<N>/index.html.
+    3. Copy templates/chapter-behavior-template.js to assets/js/site-ch<N>.js
+       and fill in its CONFIG block (see that file's own header comment).
+    4. Replace every [bracketed placeholder] below with real content, and
+       duplicate the .lesson-card block once per lesson.
+    5. Copy templates/lessons/lesson-template.html to
+       chapter-<N>/lessons/lesson-<M>.html for each lesson.
+    6. Add a card for this chapter to the home page's chapter grid.
+
+  This file assumes it lives at chapter-<N>/index.html — asset paths below
+  are relative to that location ("../assets/...").
+-->
+<!doctype html>
+<html lang="en" dir="ltr" data-base="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>[Chapter N: Topic Name] — Interactive Physics Book</title>
+<meta name="description" content="[One-sentence description of this chapter's scope, for search results and link previews.]">
+<link rel="stylesheet" href="../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+</head>
+<body data-page="index.html">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <section class="hero fade-up">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">📘 Interactive Physics Book · [Course / Grade Level]</span>
+        <h1>[Chapter N: Topic Name] <span style="color:var(--accent-blue)">[English Subtitle]</span></h1>
+        <p class="lead">[One or two sentences describing what this chapter covers and how it's taught: worked examples, interactive widgets, self-check quizzes, and mind maps for every lesson.]</p>
+        <div class="io-row" style="margin-top:1.25rem">
+          <a href="lessons/lesson-1.html" class="neu-btn primary">Start Lesson 1 →</a>
+          <span class="tag">⏱ [N] lessons</span>
+          <span class="tag">🧠 Self-check quizzes</span>
+          <span class="tag">🗺 Mind maps</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heroCurveGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#7c6fee"/>
+              <stop offset="1" stop-color="#3fa9f5"/>
+            </linearGradient>
+            <linearGradient id="heroAreaGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#7c6fee" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#3fa9f5" stop-opacity=".08"/>
+            </linearGradient>
+            <marker id="arrowX" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+              <path d="M0,0 L7,3 L0,6 Z" fill="var(--text-faint)"/>
+            </marker>
+            <marker id="arrowY" markerWidth="10" markerHeight="10" refX="3" refY="0" orient="auto">
+              <path d="M0,7 L3,0 L6,7 Z" fill="var(--text-faint)"/>
+            </marker>
+          </defs>
+
+          <!-- grid -->
+          <g class="hero-grid-line">
+            <line x1="90" y1="60" x2="90" y2="300"/><line x1="150" y1="60" x2="150" y2="300"/>
+            <line x1="210" y1="60" x2="210" y2="300"/><line x1="270" y1="60" x2="270" y2="300"/>
+            <line x1="330" y1="60" x2="330" y2="300"/><line x1="390" y1="60" x2="390" y2="300"/>
+            <line x1="60" y1="260" x2="450" y2="260"/><line x1="60" y1="210" x2="450" y2="210"/>
+            <line x1="60" y1="160" x2="450" y2="160"/><line x1="60" y1="110" x2="450" y2="110"/>
+          </g>
+
+          <!-- axes -->
+          <line class="hero-axis" x1="60" y1="300" x2="452" y2="300" marker-end="url(#arrowX)"/>
+          <line class="hero-axis" x1="60" y1="300" x2="60" y2="28" marker-end="url(#arrowY)"/>
+
+          <!-- generic decorative curve — replace with a shape relevant to this chapter, or keep as-is -->
+          <path class="hero-curve" d="M80,290 C130,150 175,75 245,72 C300,70 340,140 420,255"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="fade-up">
+    <div class="neu" style="padding:1.5rem 1.75rem">
+      <div class="io-row" style="justify-content:space-between;margin-bottom:.6rem">
+        <strong>Your progress in this chapter</strong>
+        <span class="progress-label">0% complete</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h2>🎯 Chapter objectives</h2>
+      <p class="lead">By the end of this chapter, a student should be able to:</p>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>[Objective 1]</span></li>
+        <li><span class="obj-num">2</span><span>[Objective 2]</span></li>
+        <li><span class="obj-num">3</span><span>[Objective 3]</span></li>
+        <!-- add one <li> per objective -->
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <h2 style="margin-bottom:1rem">📚 Chapter contents</h2>
+    <div class="grid grid-3">
+
+      <!-- Repeat this .lesson-card block once per lesson, in order -->
+      <a class="neu lesson-card" href="lessons/lesson-1.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#7c6fee,#3fa9f5)">1</span>
+        <h3 style="margin:.2rem 0">[Lesson 1 title]</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">[One-line summary of what lesson 1 covers]</p>
+        <span class="lesson-go">Start lesson →</span>
+      </a>
+      <!-- /repeat -->
+
+    </div>
+  </section>
+
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 Mind Map">
+    <div class="card neu">
+      <h2>🗺 Chapter mind map</h2>
+      <div class="mindmap-wrap">
+        <svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chapter mind map">
+          <defs>
+            <linearGradient id="gC" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7c6fee"/><stop offset="1" stop-color="#3fa9f5"/>
+            </linearGradient>
+          </defs>
+          <line x1="450" y1="230" x2="180" y2="90" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="450" y1="230" x2="720" y2="90" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="450" y1="230" x2="150" y2="250" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="450" y1="230" x2="750" y2="250" stroke="#b3bdcc" stroke-width="2"/>
+
+          <g class="mm-node"><circle cx="450" cy="230" r="62" fill="url(#gC)"/>
+            <text x="450" y="235" text-anchor="middle" fill="#fff" font-weight="800" font-size="16">[Chapter]</text></g>
+
+          <g class="mm-node"><circle cx="180" cy="90" r="52" fill="#ffab5e"/>
+            <text x="180" y="95" text-anchor="middle" fill="#fff" font-weight="700" font-size="13">[Concept A]</text></g>
+
+          <g class="mm-node"><circle cx="720" cy="90" r="52" fill="#ff6b9d"/>
+            <text x="720" y="95" text-anchor="middle" fill="#fff" font-weight="700" font-size="13">[Concept B]</text></g>
+
+          <g class="mm-node"><circle cx="150" cy="250" r="52" fill="#2fd18f"/>
+            <text x="150" y="255" text-anchor="middle" fill="#fff" font-weight="700" font-size="13">[Concept C]</text></g>
+
+          <g class="mm-node"><circle cx="750" cy="250" r="52" fill="#3fa9f5"/>
+            <text x="750" y="255" text-anchor="middle" fill="#fff" font-weight="700" font-size="13">[Concept D]</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">[Chapter N: Topic Name] — Interactive Physics Book</footer>
+
+<script src="../assets/js/site-ch{N}.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-base="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Interactive Physics Book</title>
+<meta name="description" content="Interactive Physics Book — an interactive textbook with worked examples, interactive widgets, self-check quizzes, and mind maps for every chapter.">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body data-page="index.html">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-badge">P</span><span>Interactive Physics Book</span></a>
+    <div class="header-actions">
+      <button class="neu-icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌓</button>
+    </div>
+  </div>
+</header>
+
+<main class="container" id="main">
+  <section class="hero fade-up">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">📘 Interactive Physics Book</span>
+        <h1>Welcome to your interactive textbook</h1>
+        <p class="lead">Pick a chapter to begin: clear step-by-step explanations, worked examples you reveal one step at a time, interactive widgets, self-check quizzes, and mind maps for every lesson.</p>
+        <div class="io-row" style="margin-top:1.25rem">
+          <span class="tag">🧠 Self-check quizzes</span>
+          <span class="tag">🕹️ Interactive widgets</span>
+          <span class="tag">🗺 Mind maps</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heroCurveGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#7c6fee"/>
+              <stop offset="1" stop-color="#3fa9f5"/>
+            </linearGradient>
+            <linearGradient id="heroAreaGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#7c6fee" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#3fa9f5" stop-opacity=".08"/>
+            </linearGradient>
+          </defs>
+
+          <!-- purely abstract decoration: grid + soft floating shapes, no
+               subject-specific notation or content -->
+          <g class="hero-grid-line">
+            <line x1="90" y1="60" x2="90" y2="300"/><line x1="150" y1="60" x2="150" y2="300"/>
+            <line x1="210" y1="60" x2="210" y2="300"/><line x1="270" y1="60" x2="270" y2="300"/>
+            <line x1="330" y1="60" x2="330" y2="300"/><line x1="390" y1="60" x2="390" y2="300"/>
+            <line x1="60" y1="260" x2="450" y2="260"/><line x1="60" y1="210" x2="450" y2="210"/>
+            <line x1="60" y1="160" x2="450" y2="160"/><line x1="60" y1="110" x2="450" y2="110"/>
+          </g>
+
+          <path class="hero-area" fill="url(#heroAreaGrad)"
+            d="M170,300 C185,190 210,120 255,110 C300,100 315,170 335,300 Z"/>
+          <path class="hero-curve" d="M80,290 C130,150 175,75 245,72 C300,70 340,140 420,255"/>
+
+          <g class="hero-float f1"><circle cx="390" cy="70" r="26" fill="var(--surface)" opacity=".92"/></g>
+          <g class="hero-float f2"><circle cx="62" cy="168" r="20" fill="var(--surface)" opacity=".92"/></g>
+          <g class="hero-float f3"><rect x="235" y="330" width="40" height="40" rx="12" fill="var(--surface)" opacity=".92"/></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <h2 style="margin-bottom:1rem">📚 Chapters</h2>
+    <div class="grid grid-2" id="chapterGrid">
+      <!--
+        Add one chapter card here per chapter, once chapter-<N>/index.html
+        exists (see templates/chapter-template.html). Pattern:
+
+        <a class="neu lesson-card" href="chapter-1/index.html">
+          <span class="lesson-idx" style="background:linear-gradient(135deg,#7c6fee,#3fa9f5)">1</span>
+          <h3 style="margin:.2rem 0">Chapter 1: [Topic Name]</h3>
+          <p style="color:var(--text-secondary);font-size:.92rem;margin:0">[One-line summary]</p>
+          <span class="lesson-go">Enter chapter →</span>
+        </a>
+
+        Intentionally left empty — no placeholder chapters yet.
+      -->
+      <div class="empty-state neu" style="grid-column:1/-1">
+        <span class="icon" aria-hidden="true">📖</span>
+        Chapters will appear here as they're added.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">Interactive Physics Book</footer>
+
+<script src="assets/js/site-home.js"></script>
+</body>
+</html>

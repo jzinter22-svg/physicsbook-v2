@@ -1,0 +1,260 @@
+<!--
+  LESSON TEMPLATE
+  ---------------------------------------------------------------------------
+  Copy this file to chapter-<N>/lessons/lesson-<M>.html and replace every
+  [bracketed placeholder]. Sections are optional — delete any that don't
+  apply to a given lesson — but keep the ones you use in this order, and
+  keep their CSS classes / data attributes exactly as shown so the shared
+  behavior script (assets/js/site-ch<N>.js) and assets/js/quiz.js,
+  assets/js/plot.js keep working unmodified.
+
+  This file assumes it lives at chapter-<N>/lessons/lesson-<M>.html — asset
+  paths below are relative to that location ("../../assets/...").
+-->
+<!doctype html>
+<html lang="en" dir="ltr" data-base="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lesson [M]: [Lesson Title] — [Chapter N: Topic Name]</title>
+<meta name="description" content="[One-sentence description of this lesson, for search results and link previews.]">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false } /* the behavior script does exactly one typeset pass once MathJax is fully ready — see its typesetOnceReady() */
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+</head>
+<body data-page="lessons/lesson-{M}.html">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 Lesson [M] of [total] · [Section reference, e.g. "N.M"]</span>
+    <h1>[Lesson Title]</h1>
+    <p class="lead">[One or two sentences framing what this lesson covers and why it matters.]</p>
+  </section>
+
+  <!-- ===== Objectives ===== -->
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 Objectives">
+    <div class="card neu">
+      <h2>🎯 Lesson objectives</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>[Objective 1]</span></li>
+        <li><span class="obj-num">2</span><span>[Objective 2]</span></li>
+        <!-- add one <li> per objective -->
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Explanation / definitions ===== -->
+  <section class="section fade-up" id="content" data-navlabel="💡 Explanation">
+    <div class="card neu">
+      <h2>💡 [Section heading]</h2>
+      <p>[Explanatory prose. Inline math like \(F = ma\) renders via MathJax.]</p>
+
+      <div class="callout tip">
+        <span class="icon">💬</span>
+        <span>[Optional plain-language framing or intuition-building aside.]</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 Definition [N.M] — [Term]</span>
+      <p style="margin:.3rem 0">[Definition prose, with inline math as needed.]</p>
+      <div class="mj-scroll">$$ [\text{key relation, e.g. } F = ma] $$</div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">$$ [\text{boxed rule or formula}] $$</div>
+  </section>
+
+  <!-- Optional supporting figure — use for any diagram (free-body, circuit,
+       wave, geometry...). Delete if this lesson has no figure. -->
+  <section class="section fade-up">
+    <div class="diagram-card neu">
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="[Describe the figure for screen readers]">
+          <!-- [Replace with the actual diagram] -->
+          <rect x="10" y="10" width="280" height="180" rx="12" fill="none" stroke="var(--text-faint)" stroke-width="1.5" stroke-dasharray="6 5"/>
+          <text x="150" y="105" text-anchor="middle" fill="var(--text-faint)" font-size="14">[figure placeholder]</text>
+        </svg>
+        <span class="diagram-caption">[Figure caption]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Worked examples (step-by-step reveal) ===== -->
+  <section class="section fade-up" id="examples" data-navlabel="✍️ Worked Examples">
+    <h2 style="margin-bottom:.25rem">✍️ Worked examples</h2>
+    <p class="lead" style="margin-top:0">Click "Show solution steps" on each example to reveal the solution one step at a time.</p>
+
+    <div class="example fade-up">
+      <div class="example-head">
+        <div class="example-title"><span class="example-badge">1</span> Example 1</div>
+        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-show-label="Show solution steps" data-hide-label="Hide solution steps">Show solution steps</button>
+      </div>
+      <div class="example-problem">[Problem statement, with inline math as needed.]</div>
+      <div class="neu-inset" style="padding:1rem 1.2rem;margin-bottom:1rem">
+        <p style="margin:.2rem 0"><b>🎯 Find:</b> [what's being solved for]</p>
+        <p style="margin:.2rem 0"><b>📋 Given:</b> [known values / relations]</p>
+        <p style="margin:.2rem 0"><b>🔧 Using:</b> [the rule/definition this example applies]</p>
+      </div>
+      <ol class="steps hidden-steps" id="steps-ex1">
+        <li class="step"><span class="step-dot">1</span><div class="step-body">
+          <p class="calc-note">[what this step does]</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( [\text{equation}] \)</div>
+          </div>
+        </div></li>
+        <li class="step"><span class="step-dot">2</span><div class="step-body">
+          <p class="calc-note">[what this step does]</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( [\text{equation}] \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( [\text{result}] \)</div>
+          </div>
+        </div></li>
+        <!-- add one <li class="step"> per step; number step-dot sequentially -->
+      </ol>
+      <div class="callout warn" style="margin-top:.8rem">
+        <span class="icon">⚠️</span>
+        <span>[Optional: common mistake to flag for this example.]</span>
+      </div>
+      <div class="exercise-final">✓ [Final boxed answer]</div>
+    </div>
+    <!-- duplicate the .example block above for additional worked examples;
+         add class="exercise-card" for a student-facing practice problem
+         instead of a fully worked example -->
+  </section>
+
+  <!-- ===== Interactive widget ===== -->
+  <section class="section fade-up" id="interactive" data-navlabel="🕹️ Interactive Example">
+    <div class="card neu">
+      <h2>🕹️ Interactive: [widget name]</h2>
+      <p>[Instructions: what the slider controls and what to notice as it moves.]</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="widgetPlot" width="520" height="360" role="img" aria-label="[Describe the plot for screen readers]"></svg></div>
+        <div class="io-row">
+          <label for="paramSlider" style="min-width:8rem">[Parameter name] <b>k</b> = <span id="paramVal">0</span></label>
+          <input type="range" id="paramSlider" class="neu-range" min="-5" max="5" step="0.5" value="0">
+        </div>
+        <div class="rule-box" id="widgetFormula">$$ [\text{formula reflecting the current slider value}] $$</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Self-check quiz — markup consumed by assets/js/quiz.js ===== -->
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 Self-Check">
+    <div class="neu quiz" data-quiz>
+      <h2>🧠 Check your understanding</h2>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>1.</span><span>[Question text]</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>[Option A]</span></label>
+          <label class="quiz-opt"><input type="radio"><span>[Option B]</span></label>
+          <label class="quiz-opt"><input type="radio"><span>[Option C]</span></label>
+          <label class="quiz-opt"><input type="radio"><span>[Option D]</span></label>
+        </div>
+        <div class="quiz-explain">[Explanation of the correct answer.]</div>
+      </div>
+      <!-- add one .quiz-q block per question; data-correct is the 0-based
+           index of the correct .quiz-opt -->
+
+      <button class="neu-btn primary" data-quiz-check>Check answers</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <!-- ===== Summary ===== -->
+  <section class="section fade-up" id="summary" data-navlabel="📋 Summary">
+    <div class="card neu">
+      <h2>📋 Lesson summary</h2>
+      <ul class="summary-list">
+        <li><span>[Key takeaway 1]</span></li>
+        <li><span>[Key takeaway 2]</span></li>
+        <!-- add one <li> per takeaway -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Mind map ===== -->
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 Mind Map">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 Lesson mind map</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-lesson" aria-expanded="false" data-show-label="Show map" data-hide-label="Hide map">Show map</button>
+      </div>
+      <p style="color:var(--text-secondary);margin-top:.3rem">A quick visual recap linking this lesson's concepts — useful for review before a test.</p>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-lesson">
+        <svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lesson mind map">
+          <line x1="410" y1="180" x2="150" y2="80" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="410" y1="180" x2="670" y2="80" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="410" y1="180" x2="150" y2="280" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="410" y1="180" x2="670" y2="280" stroke="#b3bdcc" stroke-width="2"/>
+
+          <g><circle cx="410" cy="180" r="58" fill="#7c6fee"/>
+            <text x="410" y="185" text-anchor="middle" fill="#fff" font-weight="800" font-size="15">[Lesson]</text></g>
+
+          <g><circle cx="150" cy="80" r="48" fill="#3fa9f5"/>
+            <text x="150" y="85" text-anchor="middle" fill="#fff" font-weight="700" font-size="12">[Idea A]</text></g>
+
+          <g><circle cx="670" cy="80" r="48" fill="#2fd18f"/>
+            <text x="670" y="85" text-anchor="middle" fill="#fff" font-weight="700" font-size="12">[Idea B]</text></g>
+
+          <g><circle cx="150" cy="280" r="48" fill="#ffab5e"/>
+            <text x="150" y="285" text-anchor="middle" fill="#fff" font-weight="700" font-size="12">[Idea C]</text></g>
+
+          <g><circle cx="670" cy="280" r="48" fill="#ff6b9d"/>
+            <text x="670" y="285" text-anchor="middle" fill="#fff" font-weight="700" font-size="12">[Idea D]</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">[Chapter N: Topic Name] — Lesson [M]: [Lesson Title]</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch{N}.js"></script>
+<script>
+/* Wires the interactive widget above to assets/js/plot.js. Delete this
+   block (and the #interactive section) if this lesson has no widget. */
+(function(){
+  var svg = document.getElementById("widgetPlot");
+  var slider = document.getElementById("paramSlider");
+  var val = document.getElementById("paramVal");
+  var formula = document.getElementById("widgetFormula");
+  function render(){
+    var k = parseFloat(slider.value);
+    val.textContent = k;
+    var mapper = PBPlot.drawAxes(svg, {xmin:-5,xmax:5,ymin:-6,ymax:10,step:1,w:520,h:360});
+    var ns = "http://www.w3.org/2000/svg";
+    // TODO: replace this placeholder function with the real relationship
+    // this widget demonstrates.
+    var d = PBPlot.pathD(function(x){ return x*x + k; }, -5, 5, mapper);
+    var path = document.createElementNS(ns,"path");
+    path.setAttribute("d", d); path.setAttribute("fill","none"); path.setAttribute("stroke","#7c6fee");
+    path.setAttribute("stroke-width","3.5"); path.setAttribute("stroke-linecap","round");
+    svg.appendChild(path);
+    formula.innerHTML = "$$ [\\text{formula}] " + (k>=0? "+ "+k : "- "+Math.abs(k)) + " $$";
+    if(window.PBChapter) PBChapter.typeset([formula]);
+  }
+  slider.addEventListener("input", render);
+  document.addEventListener("DOMContentLoaded", render);
+  if(document.readyState !== "loading") render();
+})();
+</script>
+</body>
+</html>
