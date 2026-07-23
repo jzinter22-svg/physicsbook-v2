@@ -1,5 +1,6 @@
-/* Chapter 1 — الكميات الفيزيائية والقياس — behavior script instantiated
-   from templates/chapter-behavior-template.js. */
+/* Chapter 1 — الحركة الدائرية والدورانية — behavior script instantiated
+   from templates/chapter-behavior-template.js. Content sourced from the
+   official textbook PDF (pdf/كتاب الطبيعيات.pdf, pages 5-20). */
 (function(){
   "use strict";
 
@@ -14,9 +15,12 @@
       { href: "lessons/lesson-2.html", titleKey: "ch1.lesson2NavTitle" },
       { href: "lessons/lesson-3.html", titleKey: "ch1.lesson3NavTitle" },
       { href: "lessons/lesson-4.html", titleKey: "ch1.lesson4NavTitle" },
-      { href: "lessons/lesson-5.html", titleKey: "ch1.lesson5NavTitle" }
+      { href: "lessons/lesson-5.html", titleKey: "ch1.lesson5NavTitle" },
+      { href: "lessons/lesson-6.html", titleKey: "ch1.lesson6NavTitle" },
+      { href: "lessons/lesson-7.html", titleKey: "ch1.lesson7NavTitle" },
+      { href: "lessons/lesson-8.html", titleKey: "ch1.lesson8NavTitle" }
     ],
-    bgSymbols: ["m", "kg", "s", "±", "×10", "Δ"]
+    bgSymbols: ["ω", "α", "τ", "I", "θ", "L"]
   };
   // ---------------------------------------------------------------------------
 

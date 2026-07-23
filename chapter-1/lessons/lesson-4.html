@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>الدرس 4: الأرقام المعنوية والدقة في القياس — الفصل الأول</title>
-<meta name="description" content="تعريف الرقم المعنوي، الفرق بين الدقة والضبط، قواعد تحديد عدد الأرقام المعنوية، وقواعدها في عمليات الجمع والضرب، مع أمثلة محلولة ومحلّل أرقام معنوية تفاعلي.">
+<title>الدرس 4: الازاحة والسرعة الزاويتان — الفصل الأول</title>
+<meta name="description" content="5-1 الحركة الدورانية: المقادير الفيزيائية المتناظرة، 1-5-1 الازاحة الزاوية، 2-5-1 السرعة الزاوية وعلاقتها بالسرعة الخطية، مع مثال محلول عن مروحة دوارة.">
 <link rel="stylesheet" href="../../assets/css/theme.css">
 <script>
   MathJax = {
@@ -25,172 +25,244 @@
     <ol>
       <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
       <li><a href="../index.html">الفصل 1</a></li>
-      <li aria-current="page">الأرقام المعنوية والدقة</li>
+      <li aria-current="page">الازاحة والسرعة الزاويتان</li>
     </ol>
   </nav>
 
   <div dir="rtl" lang="ar">
 
   <section class="hero fade-up">
-    <span class="eyebrow">📖 الدرس 4 من 5 · الفصل الأول</span>
-    <h1>الأرقام المعنوية والدقة في القياس</h1>
-    <p class="lead">لا يوجد قياس دقيق دقة مطلقة. عندما نكتب طول قضيب = 12.5 سم، فنحن نُخبر القارئ ضمنيًا بمدى ثقتنا بهذا الرقم. في هذا الدرس نتعلّم كيف نقرأ هذه «الثقة» من عدد الأرقام المعنوية، وكيف نحافظ عليها في العمليات الحسابية.</p>
+    <span class="eyebrow">📖 الدرس 4 من 8 · الفصل الأول</span>
+    <h1>الازاحة والسرعة الزاويتان</h1>
+    <p class="lead">5-1 الحركة الدورانية · 1-5-1 الازاحة الزاوية (θ) · 2-5-1 السرعة الزاوية (ω)</p>
   </section>
 
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
       <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يعرّف الرقم المعنوي.</span></li>
-        <li><span class="obj-num">2</span><span>يميّز بين الدقة (Precision) والضبط (Accuracy).</span></li>
-        <li><span class="obj-num">3</span><span>يطبّق قواعد تحديد عدد الأرقام المعنوية في قياس معطى.</span></li>
-        <li><span class="obj-num">4</span><span>يطبّق قواعد الأرقام المعنوية في عمليات الضرب والقسمة.</span></li>
+        <li><span class="obj-num">1</span><span>يوضّح المفهوم العام للحركة الدورانية ويقارنها بالحركة الخطية بدلالة المقادير المتناظرة.</span></li>
+        <li><span class="obj-num">2</span><span>يعرّف الازاحة الزاوية (θ) ويشتق العلاقة بينها وبين الازاحة الخطية (S).</span></li>
+        <li><span class="obj-num">3</span><span>يعرّف السرعة الزاوية (ω) ويشتق العلاقة \(v_T=\omega r\) باستخدام قاعدة اليد اليمنى لتحديد اتجاهها.</span></li>
+        <li><span class="obj-num">4</span><span>يحسب السرعة الزاوية والسرعة المماسية من معطيات عملية.</span></li>
       </ol>
     </div>
   </section>
 
   <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
     <div class="card neu">
-      <h2>💡 الفرق بين الدقة (Precision) والضبط (Accuracy)</h2>
-      <p>تخيّل ثلاثة رُماة يصوّبون نحو لوحة هدف: الأول تتجمّع رمياته قريبة من بعضها لكن بعيدة عن المركز (دقيق لكنه غير مضبوط)، والثاني رمياته متناثرة حول المركز لكن متباعدة عن بعضها (مضبوط في المتوسط لكنه غير دقيق)، والثالث تتجمّع رمياته قرب المركز مباشرة (دقيق ومضبوط معًا). القياس العلمي الجيّد يسعى للجمع بين الاثنين.</p>
-      <div class="grid grid-2" style="margin-top:1rem">
-        <div class="neu-inset" style="padding:1rem 1.2rem">
-          <strong style="color:var(--accent-blue)">🎯 الدقة (Precision)</strong>
-          <p style="margin:.5rem 0 0;color:var(--text-secondary)">مدى تقارب القراءات المتكررة لنفس الكمية من بعضها البعض، بصرف النظر عن قربها من القيمة الحقيقية.</p>
+      <h2>💡 5-1 الحركة الدورانية</h2>
+      <p>إن معظم أنواع الحركة في حياتنا اليومية تتألف من انتقال الجسم ودورانه حول محور معين في نفس الوقت، مثل دوران الارض حول محورها دورةً واحدةً كل 24 ساعة، وتدور دورة واحدة حول الشمس لكل 365 يوماً. كذلك حركة عجلة السيارة التي تشتمل على الحركتين الدورانية والانتقالية.</p>
+      <p>توصف الحركة الدورانية بدلالة الازاحة الزاوية (θ) والسرعة الزاوية (ω) والتعجيل الزاوي (α). وفي جميع الحالات يمكن تعويض المقادير الفيزيائية في الحركة الدورانية بدلاً من المقادير الفيزيائية في الحركة الخطية ولجميع القوانين كما هو في الجدول (1-1).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu" style="overflow-x:auto">
+      <h2 style="margin-bottom:.8rem">📊 جدول 1-1: المقادير الفيزياوية للحركة الخطية والحركة الدورانية</h2>
+      <table style="width:100%;border-collapse:collapse;text-align:center;min-width:420px">
+        <thead>
+          <tr style="background:var(--surface)">
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">المقدار الفيزيائي</th>
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">الحركة الخطية</th>
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">الحركة الدورانية</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">الكتلة</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">m</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">نعوض بدل الكتلة بعزم القصور الذاتي I</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">الازاحة</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">S</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">θ</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">السرعة</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">v</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">ω</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">التعجيل</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">a</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">α</td></tr>
+          <tr><td style="padding:.6rem">القوة</td><td style="padding:.6rem">F</td><td style="padding:.6rem">نعوض بدل القوة بالعزم المدور τ</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 1-5-1 الازاحة الزاوية</span>
+      <p style="margin:.3rem 0">هي الزاوية المركزية التي يقطعها الجسم المتحرك دورانيًا حيث إذا تحرك جسيم على مسار دائري نصف قطره (r) وانتقل من النقطة (A) الى النقطة (B) قاطعًا قوسًا طوله (S) على محيط الدائرة، فالزاوية المقابلة للقوس تدعى بالإزاحة الزاوية ويرمز لها بالرمز (θ)، ويكون اتجاهها موجبًا اذا كانت عكس اتجاه عقارب الساعة وسالبًا اذا كان اتجاهها مع اتجاه عقارب الساعة، وتقاس بوحدات نصف القطرية (rad).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ \theta_{\text{rad}} = \dfrac{\text{طول القوس}}{\text{نصف القطر}} = \dfrac{S}{r} \qquad \text{...(1)} $$
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ \therefore\ S = r\theta \qquad \text{...(2)} $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">وهذه العلاقة تربط بين الازاحة الخطية (S) والازاحة الزاوية (θ) لها.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">📝</span>
+      <span>الزاوية النصف قطرية (Radian) لا تقاس بالمتر أو اجزائه أو اكبر منه لأن وحدات الازاحة الزاوية ليست فقط قطرية، وأنما يمكن تقدير الازاحة الزاوية بالدرجات الستينية أو بعدد الدورات؛ لذا فأن الدورة الكاملة تعادل (2π) بالمقياس الستيني وتقابل (360°) بالمقياس القطري، أي أن:</span>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ 1\ \text{revolution} = 2\pi\ (\text{rad}) = 360^{\circ} $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">أي أن عدد الدورات = \( \dfrac{\theta}{2\pi} \)</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="theta-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 7-1">
+    <div class="card neu">
+      <h2>🕹️ إعادة إنشاء الشكل 1-7: الازاحة الزاوية والقوس</h2>
+      <p>حرّك مزلاج الزاوية θ لمشاهدة الجسم ينتقل من A إلى B، ولاحظ كيف يتغيّر طول القوس الممسوح S بحسب العلاقة \(S=r\theta\).</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="thetaSvg" viewBox="0 0 320 240" width="320" height="240" role="img" aria-label="جسيم يتحرك على منحنى دائرة قاطعًا زاوية وقوسًا"></svg></div>
+        <div class="io-row">
+          <label for="thetaSlider" style="min-width:9rem">θ = <span id="thetaDegVal">60</span>° (<span id="thetaRadVal">1.05</span> rad)</label>
+          <input type="range" id="thetaSlider" class="neu-range" min="0" max="300" step="1" value="60">
         </div>
-        <div class="neu-inset" style="padding:1rem 1.2rem">
-          <strong style="color:var(--accent-green)">✅ الضبط (Accuracy)</strong>
-          <p style="margin:.5rem 0 0;color:var(--text-secondary)">مدى قرب القياس (أو متوسط القراءات) من القيمة الحقيقية الفعلية للكمية.</p>
-        </div>
+        <div class="rule-box">نصف القطر r = 2 m ← طول القوس \( S=r\theta= \) <b id="arcLenVal">2.09</b> m</div>
       </div>
     </div>
   </section>
 
   <section class="section fade-up">
     <div class="def-box">
-      <span class="def-label">📌 تعريف 1-8 — الرقم المعنوي</span>
-      <p style="margin:.3rem 0">كل رقم في نتيجة القياس يكون موثوقًا به يقينًا، بالإضافة إلى رقم واحد أخير غير مؤكد تمامًا (مُقدَّر بالعين أو بأصغر تدريج في أداة القياس).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h2>📋 قواعد تحديد عدد الأرقام المعنوية</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>جميع الأرقام غير الصفرية معنوية دائمًا. مثال: 47.3 → ثلاثة أرقام معنوية.</span></li>
-        <li><span class="obj-num">2</span><span>الأصفار الواقعة بين رقمين غير صفريين معنوية. مثال: 405 → ثلاثة أرقام معنوية.</span></li>
-        <li><span class="obj-num">3</span><span>الأصفار الواقعة إلى يسار أول رقم غير صفري غير معنوية أبدًا. مثال: 0.0025 → رقمان معنويان فقط.</span></li>
-        <li><span class="obj-num">4</span><span>الأصفار الواقعة بعد الفاصلة العشرية وبعد رقم معنوي تُعد معنوية. مثال: 3.20 → ثلاثة أرقام معنوية.</span></li>
-        <li><span class="obj-num">5</span><span>الأصفار في نهاية عدد صحيح بلا فاصلة عشرية تبقى غامضة، ويُزال هذا الغموض بالصيغة العلمية. مثال: 500 قد تعني رقمًا معنويًا واحدًا أو أكثر، بينما \(5.00\times10^2\) تحدد بوضوح ثلاثة أرقام معنوية.</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
-      <span class="def-label" style="color:var(--accent-orange)">🔍 تعليل — لماذا نلتزم بعدد محدد من الأرقام المعنوية في الحسابات؟</span>
-      <p style="margin:.3rem 0">لأن نتيجة أي عملية حسابية على قياسات لا يمكن أن تكون أدقّ من أقل القياسات المُدخلة دقة. فلو ضربنا قياسًا بثلاثة أرقام معنوية في آخر لا يحمل سوى رقمين معنويين، فإن الناتج الخام قد يظهر بعدد كبير من الخانات العشرية — لكن الإبقاء عليها كاملة سيُوهم القارئ بموثوقية غير حقيقية للقياس الأصلي الأقل دقة. لذلك نُقرّب الناتج دائمًا ليعكس أضعف حلقة في سلسلة القياسات.</p>
+      <span class="def-label">📌 2-5-1 السرعة الزاوية</span>
+      <p style="margin:.3rem 0">نلاحظ أيضًا أن (S) تتغير مع تغير (θ) وبثبوت نصف قطر الدائرة، وعليه:</p>
     </div>
   </section>
 
   <section class="section fade-up">
     <div class="rule-box">
-      <p style="margin:0 0 .5rem;font-weight:800">في الضرب والقسمة</p>
-      <p style="margin:0 0 1rem">يُقرَّب الناتج ليطابق عدد الأرقام المعنوية في العامل الأقل أرقامًا معنوية.</p>
-      <p style="margin:0 0 .5rem;font-weight:800">في الجمع والطرح</p>
-      <p style="margin:0">يُقرَّب الناتج ليطابق أقل عدد من المنازل العشرية بين الأعداد المُدخلة.</p>
+      $$ \Delta S = r\Delta\theta \qquad \text{...(3)} $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">وبقسمة طرفي المعادلة (3) على (Δt) نحصل على:</p>
+      $$ \dfrac{\Delta S}{\Delta t} = r\dfrac{\Delta\theta}{\Delta t} \qquad \text{...(4)} $$
     </div>
   </section>
 
-  <section class="section fade-up" id="examples" data-navlabel="✍️ أمثلة محلولة">
-    <h2 style="margin-bottom:.25rem">✍️ أمثلة محلولة</h2>
-    <p class="lead" style="margin-top:0">كل مثال يليه مباشرة بطاقة الحل التفصيلي.</p>
+  <section class="section fade-up">
+    <div class="rule-box">
+      <p style="margin:0 0 .4rem">تمثل \( \dfrac{\Delta S}{\Delta t} \) السرعة الخطية المماسية لمحيط الدائرة ويرمز لها بالرمز \(v_T\)، أي إن:</p>
+      $$ v_T = \dfrac{\Delta S}{\Delta t} \qquad \text{...(5)} $$
+    </div>
+  </section>
 
-    <div class="example fade-up">
-      <div class="example-head">
-        <div class="example-title"><span class="example-badge">1</span> مثال 1</div>
+  <section class="section fade-up">
+    <div class="rule-box">
+      <p style="margin:0 0 .4rem">أما \( \dfrac{\Delta\theta}{\Delta t} \) فإنها تمثل التغيّر في الزاوية القطرية مع الزمن، وتدعى بالسرعة الزاوية ويرمز لها بالرمز (ω)، وتقاس بوحدات (rad/s)، أي إن:</p>
+      $$ \omega = \dfrac{\Delta\theta}{\Delta t} \qquad \text{...(6)} $$
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">📝</span>
+      <span>تُعدّ السرعة الزاوية من المقادير الفيزيائية الاتجاهية، ويكون اتجاهها عموديًا على المستوي الذي يحتوي (r) و(vT)، ويتم تحديدها باستعمال قاعدة اليد اليمنى.</span>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="rhr-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 8-1">
+    <div class="card neu">
+      <h2>🕹️ إعادة إنشاء الشكل 1-8: قاعدة اليد اليمنى لاتجاه ω</h2>
+      <p>اضغط الزر لعكس اتجاه الدوران، ولاحظ كيف ينعكس اتجاه متجه السرعة الزاوية (ω) وفق قاعدة اليد اليمنى: لفّ أصابع اليد اليمنى باتجاه الدوران فيشير الإبهام إلى اتجاه ω.</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="rhrSvg" viewBox="0 0 320 300" width="320" height="300" role="img" aria-label="قاعدة اليد اليمنى لتحديد اتجاه السرعة الزاوية"></svg></div>
+        <button class="neu-btn" id="rhrToggle">↺ عكس اتجاه الدوران</button>
       </div>
-      <div class="example-problem">حدد عدد الأرقام المعنوية في كل من الأعداد التالية: 305 , 0.0042 , 3.20 , 1500</div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      <p style="margin:0 0 .4rem">وبتعويض العلاقة (5) و(6) في (4) نحصل على:</p>
+      $$ v_T = \omega r \qquad \text{...(7)} $$
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      <p style="margin:0 0 .4rem">وعند دوران الجسم دورة كاملة فإن مقدار الازاحة الزاوية تساوي (2π)، فتصبح السرعة الزاوية بعد التعويض بالمعادلة (7):</p>
+      $$ \omega = \dfrac{2\pi}{t} $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">إذ إن t: يمثل زمن الدورة الكاملة، ومقلوب هذا الزمن يدعى بالتردد ويرمز له بالرمز (f) ويقاس بوحدات (دورة/ثانية) أو الهيرتز (Hz)، فتصبح السرعة الزاوية بدلالة التردد:</p>
+      $$ \omega = 2\pi f $$
+      <p style="margin:.4rem 0 0;font-size:.95rem">ويسمى هنا بالتردد الزاوي.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">💡</span>
+      <span><b>هل تعلم؟</b> أن مشغل الاقراص المرنة (CD) يحتوي على محرك يقوم بتدوير القرص بتحكم المرن الذي يتراوح ما بين 200 الى 500 دورة في الدقيقة ليقوم شعاع الليزر بقراءة المعلومات المثبتة على القرص.</span>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="example3" data-navlabel="📝 مثال 3">
+    <div class="example">
+      <div class="example-head"><h2 style="margin:0">📝 مثال (3)</h2></div>
+      <p>مروحة تدور بمعدل (900 rpm) (أي 900 دورة/دقيقة).</p>
+      <p>(a) احسب السرعة الزاوية لأي نقطة على إحدى ريش المروحة.</p>
+      <p>(b) احسب السرعة المماسية لحافة الريشة إذا كانت المسافة من المركز الى الحافة (20 cm).</p>
     </div>
 
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
+    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
       <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)">
-          <span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي
-        </div>
-        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
+        <h2 style="margin:0">✓ الحل التفصيلي</h2>
+        <button class="neu-btn" data-reveal-steps="steps-ex3" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
       </div>
-      <ol class="steps hidden-steps" id="steps-ex1">
+      <ol class="steps hidden-steps" id="steps-ex3">
         <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">305 — القاعدة 1 و2: الرقمان 3 و5 معنويان، والصفر بينهما معنوي أيضًا</p>
-          <div class="calc-flow"><div class="calc-line calc-box">305 ⇐ 3 أرقام معنوية</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">0.0042 — القاعدة 3: الأصفار قبل أول رقم غير صفري (4) غير معنوية</p>
-          <div class="calc-flow"><div class="calc-line calc-box">0.0042 ⇐ رقمان معنويان (4 و2)</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">3</span><div class="step-body">
-          <p class="calc-note">3.20 — القاعدة 4: الصفر بعد الفاصلة وبعد رقم معنوٍ يُعد معنويًا</p>
-          <div class="calc-flow"><div class="calc-line calc-box">3.20 ⇐ 3 أرقام معنوية</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">4</span><div class="step-body">
-          <p class="calc-note">1500 — القاعدة 5: عدد صحيح بأصفار في النهاية بلا فاصلة عشرية، فالعدد غامض</p>
-          <div class="calc-flow"><div class="calc-line calc-box">1500 ⇐ رقمان معنويان في الغالب (ما لم يُكتب علميًا لرفع الغموض)</div></div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ 305 → 3 — 0.0042 → 2 — 3.20 → 3 — 1500 → 2 (عادة)</div>
-    </div>
-
-    <div class="example fade-up" style="margin-top:2rem">
-      <div class="example-head">
-        <div class="example-title"><span class="example-badge">2</span> مثال 2</div>
-      </div>
-      <div class="example-problem">احسب حاصل ضرب 4.5 × 2.10، وعبّر عن الناتج بعدد الأرقام المعنوية الصحيح.</div>
-    </div>
-
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)">
-          <span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي
-        </div>
-        <button class="neu-btn" data-reveal-steps="steps-ex2" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-      <ol class="steps hidden-steps" id="steps-ex2">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">نحدد عدد الأرقام المعنوية لكل عامل</p>
-          <div class="calc-flow"><div class="calc-line calc-box">4.5 ⇐ رقمان معنويان — 2.10 ⇐ ثلاثة أرقام معنوية</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">نضرب العددين كما هما (الناتج الخام)</p>
-          <div class="calc-flow"><div class="calc-line">\( 4.5 \times 2.10 = 9.45 \)</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">3</span><div class="step-body">
-          <p class="calc-note">نقرّب الناتج ليطابق أقل عدد أرقام معنوية بين العاملين (رقمان)</p>
+          <p class="calc-note">(a) السرعة الزاوية: عدد الدورات N=900 خلال t=60 s</p>
           <div class="calc-flow">
-            <div class="calc-line">\( 9.45 \rightarrow \) نُقرَّب إلى رقمين معنويين</div>
+            <div class="calc-line">\( \omega = \dfrac{N\times 2\pi}{t} = \dfrac{900\times 2\pi}{60} \)</div>
             <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( 9.5 \)</div>
+            <div class="calc-line calc-box">\( \omega = 30\pi\ \text{rad/s} \approx 94.2\ \text{rad/s} \)</div>
+          </div>
+        </div></li>
+        <li class="step"><span class="step-dot">2</span><div class="step-body">
+          <p class="calc-note">(b) السرعة المماسية عند r=20 cm=0.20 m</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( v = \omega r = 30\pi \times 0.20 \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( v = 30\times 3.14\times 0.20 = 18.84\ \text{m/s} \)</div>
           </div>
         </div></li>
       </ol>
-      <div class="callout warn" style="margin-top:.8rem">
-        <span class="icon">⚠️</span>
-        <span>خطأ شائع: الإبقاء على الناتج الخام 9.45 كما هو. لأن العامل 4.5 لا يحمل سوى رقمين معنويين، فإن أي دقة إضافية في الناتج تكون وهمية وغير مبرَّرة علميًا.</span>
-      </div>
-      <div class="exercise-final">✓ 4.5 × 2.10 ≈ 9.5 (برقمين معنويين)</div>
+      <div class="exercise-final">✓ ω = 30π rad/s ≈ 94.2 rad/s   ·   v = 18.84 m/s</div>
     </div>
   </section>
 
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محلّل الأرقام المعنوية">
+  <section class="section fade-up">
     <div class="card neu">
-      <h2>🕹️ أداة تفاعلية: محلّل الأرقام المعنوية</h2>
-      <p>اكتب أي عدد في الحقل أدناه، وستلوَّن الأداة كل رقم معنوي باللون الأخضر، وكل رقم غير معنوي باللون الرمادي، مع عرض العدد الإجمالي فورًا.</p>
+      <p>ولنفرض أن جسمًا يدور في مسار دائري نصف قطره (r)، فإن موضعه الزاوي في أي لحظة يتحدد بمقدار الازاحة الزاوية (θ)، فإذا كان موضع الجسم عند الزمن \((t_1)\) هو \((\theta_1)\) ثم صار عند موضع \((\theta_2)\) في الزمن \((t_2)\)، لذلك نجد أنه قد دار ازاحة زاوية مقدارها:</p>
+      <p style="text-align:center">\( \Delta\theta = \theta_2 - \theta_1 \) خلال فترة زمنية: \( \Delta t = t_2 - t_1 \)</p>
+      <p>وعليه يعرّف معدل السرعة الزاوية:</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ \omega_{av} = \dfrac{\Delta\theta}{\Delta t} = \dfrac{\theta_2-\theta_1}{t_2-t_1} \qquad \text{...(8)} $$
+    </div>
+  </section>
+
+  <section class="section fade-up" id="omega-av-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 9-1">
+    <div class="card neu">
+      <h2>🕹️ إعادة إنشاء الشكل 1-9: معدل السرعة الزاوية</h2>
+      <p>حرّك المزلاجين لتحديد موضعي الجسم A (عند θ₁) وB (عند θ₂)، ولاحظ كيف يُحسب معدل السرعة الزاوية بين الموضعين خلال فترة زمنية ثابتة قدرها 1 ثانية.</p>
       <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="omegaAvSvg" viewBox="0 0 320 240" width="320" height="240" role="img" aria-label="موضعان زاويان A و B على دائرة ومعدل السرعة الزاوية بينهما"></svg></div>
         <div class="io-row">
-          <input type="text" id="sigInput" class="neu-input" value="3.20" style="max-width:14rem;font-size:1.3rem;text-align:center" inputmode="decimal" aria-label="أدخل عددًا">
+          <label for="theta1Slider" style="min-width:9rem">θ₁ = <span id="theta1Val">20</span>°</label>
+          <input type="range" id="theta1Slider" class="neu-range" min="0" max="340" step="1" value="20">
         </div>
-        <div class="neu-inset" style="padding:1.2rem;text-align:center;font-size:1.8rem;font-weight:800;letter-spacing:.05em" id="sigDisplay" dir="ltr"></div>
-        <div class="rule-box" id="sigCount">عدد الأرقام المعنوية: 3</div>
+        <div class="io-row">
+          <label for="theta2Slider" style="min-width:9rem">θ₂ = <span id="theta2Val">110</span>°</label>
+          <input type="range" id="theta2Slider" class="neu-range" min="0" max="340" step="1" value="110">
+        </div>
+        <div class="rule-box">\( \omega_{av} = \dfrac{\theta_2-\theta_1}{\Delta t} = \) <b id="omegaAvVal">1.57</b> rad/s (بافتراض Δt = 1 s)</div>
       </div>
     </div>
   </section>
@@ -200,58 +272,58 @@
       <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
 
       <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>1.</span><span>عدد الأرقام المعنوية في العدد 0.0042 هو:</span></div>
+        <div class="quiz-q-title"><span>1.</span><span>في الحركة الدورانية، المقدار المناظر للكتلة (m) في الحركة الخطية هو:</span></div>
         <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>4</span></label>
-          <label class="quiz-opt"><input type="radio"><span>5</span></label>
-          <label class="quiz-opt"><input type="radio"><span>2</span></label>
-          <label class="quiz-opt"><input type="radio"><span>1</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الازاحة الزاوية θ</span></label>
+          <label class="quiz-opt"><input type="radio"><span>السرعة الزاوية ω</span></label>
+          <label class="quiz-opt"><input type="radio"><span>عزم القصور الذاتي I</span></label>
+          <label class="quiz-opt"><input type="radio"><span>العزم المدور τ</span></label>
         </div>
-        <div class="quiz-explain">الأصفار قبل الرقم 4 غير معنوية (إلى يسار أول رقم غير صفري)، فيبقى 4 و2 فقط، أي رقمان معنويان.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>2.</span><span>رامٍ تتجمّع إصاباته قريبة من بعضها لكن بعيدة عن مركز الهدف. هذا مثال على:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>ضبط بلا دقة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>دقة بلا ضبط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>دقة وضبط معًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا دقة ولا ضبط</span></label>
-        </div>
-        <div class="quiz-explain">تقارب القراءات من بعضها (بصرف النظر عن موقعها من الهدف) هو الدقة تحديدًا، وليس الضبط.</div>
+        <div class="quiz-explain">وفق الجدول (1-1)، يُستعاض عن الكتلة (m) في الحركة الدورانية بعزم القصور الذاتي (I).</div>
       </div>
 
       <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>عند ضرب عددين لهما 2 و4 أرقام معنوية، فإن الناتج يُقرَّب إلى:</span></div>
+        <div class="quiz-q-title"><span>2.</span><span>العلاقة بين الازاحة الخطية (S) والازاحة الزاوية (θ) لجسم يدور بنصف قطر (r) هي:</span></div>
         <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>رقمين معنويين</span></label>
-          <label class="quiz-opt"><input type="radio"><span>3 أرقام معنوية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>4 أرقام معنوية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>6 أرقام معنوية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( S = r\theta \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( S = \theta/r \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( S = r/\theta \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( S = r+\theta \)</span></label>
         </div>
-        <div class="quiz-explain">في الضرب والقسمة، يُقرَّب الناتج دائمًا إلى أقل عدد من الأرقام المعنوية بين العاملين.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>عدد الأرقام المعنوية في 3.20 هو:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>1</span></label>
-          <label class="quiz-opt"><input type="radio"><span>2</span></label>
-          <label class="quiz-opt"><input type="radio"><span>4</span></label>
-          <label class="quiz-opt"><input type="radio"><span>3</span></label>
-        </div>
-        <div class="quiz-explain">الصفر بعد الفاصلة العشرية وبعد رقمين معنويين (3 و2) يُعدّ معنويًا هو الآخر، فالمجموع 3.</div>
+        <div class="quiz-explain">من تعريف الزاوية النصف قطرية: \(\theta=S/r\)، وبالتالي \(S=r\theta\).</div>
       </div>
 
       <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>لماذا نُقرّب نتائج العمليات الحسابية على القياسات؟</span></div>
+        <div class="quiz-q-title"><span>3.</span><span>الدورة الكاملة الواحدة (360°) تعادل بالمقياس القطري (Radian):</span></div>
         <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>لتسهيل الكتابة فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لأن الناتج لا يمكن أن يكون أدق من أضعف قياس مُدخل</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لأن الآلة الحاسبة تفرض ذلك</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا داعي للتقريب أبدًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>π rad</span></label>
+          <label class="quiz-opt"><input type="radio"><span>2π rad</span></label>
+          <label class="quiz-opt"><input type="radio"><span>π/2 rad</span></label>
+          <label class="quiz-opt"><input type="radio"><span>4π rad</span></label>
         </div>
-        <div class="quiz-explain">الإبقاء على أرقام إضافية بعد الحساب يوهم بدقة غير موجودة فعليًا في القياسات الأصلية.</div>
+        <div class="quiz-explain">1 دورة = 2π (rad) = 360°.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="3">
+        <div class="quiz-q-title"><span>4.</span><span>العلاقة بين السرعة المماسية \(v_T\) والسرعة الزاوية ω لجسم يدور بنصف قطر r هي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>\( v_T = \omega/r \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( v_T = \omega + r \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( v_T = \omega^2 r \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( v_T = \omega r \)</span></label>
+        </div>
+        <div class="quiz-explain">المعادلة (7): \(v_T=\omega r\).</div>
+      </div>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>5.</span><span>يُحدَّد اتجاه متجه السرعة الزاوية (ω) باستعمال:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>قاعدة القوة المركزية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>قانون نيوتن الثالث</span></label>
+          <label class="quiz-opt"><input type="radio"><span>قاعدة اليد اليمنى</span></label>
+          <label class="quiz-opt"><input type="radio"><span>قانون كبلر الثاني</span></label>
+        </div>
+        <div class="quiz-explain">يُستعمل اتجاه إبهام اليد اليمنى عند لفّ الأصابع باتجاه الدوران لتحديد اتجاه ω، وهو عمودي على مستوي (r) و(vT).</div>
       </div>
 
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
@@ -263,10 +335,10 @@
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
       <ul class="summary-list">
-        <li><span>الرقم المعنوي: كل رقم موثوق يقينًا + رقم أخير مُقدَّر واحد.</span></li>
-        <li><span>الدقة تقارب القراءات من بعضها، والضبط قربها من القيمة الحقيقية.</span></li>
-        <li><span>خمس قواعد تحدد عدد الأرقام المعنوية في أي عدد مكتوب.</span></li>
-        <li><span>في الضرب والقسمة نقرّب لأقل عدد أرقام معنوية؛ وفي الجمع والطرح لأقل عدد منازل عشرية.</span></li>
+        <li><span>الازاحة الزاوية θ=S/r، وبالتالي S=rθ، وتقاس بالراديان أو الدرجات أو عدد الدورات (1 دورة=2π rad=360°).</span></li>
+        <li><span>السرعة الزاوية ω=Δθ/Δt، وترتبط بالسرعة المماسية بالعلاقة \(v_T=\omega r\).</span></li>
+        <li><span>اتجاه ω يُحدَّد بقاعدة اليد اليمنى، وهو عمودي على مستوي r و vT.</span></li>
+        <li><span>معدل السرعة الزاوية \(\omega_{av}=(\theta_2-\theta_1)/(t_2-t_1)\).</span></li>
       </ul>
     </div>
   </section>
@@ -277,30 +349,29 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l4" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <p style="color:var(--text-secondary);margin-top:.3rem">ملخص بصري سريع لمفاهيم الدرس.</p>
       <div class="mindmap-wrap hidden-steps" id="mindmap-l4">
-        <svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للدرس الرابع">
-          <line x1="410" y1="180" x2="150" y2="80" stroke="#b3bdcc" stroke-width="2"/>
-          <line x1="410" y1="180" x2="670" y2="80" stroke="#b3bdcc" stroke-width="2"/>
-          <line x1="410" y1="180" x2="150" y2="280" stroke="#b3bdcc" stroke-width="2"/>
-          <line x1="410" y1="180" x2="670" y2="280" stroke="#b3bdcc" stroke-width="2"/>
-
-          <g><circle cx="410" cy="180" r="58" fill="#2fd18f"/>
-            <text x="410" y="176" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">أرقام</text>
-            <text x="410" y="195" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">معنوية</text></g>
-
-          <g><circle cx="150" cy="80" r="50" fill="#3fa9f5"/>
-            <text x="150" y="84" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">دقة</text></g>
-
-          <g><circle cx="670" cy="80" r="50" fill="#7c6fee"/>
-            <text x="670" y="84" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">ضبط</text></g>
-
-          <g><circle cx="150" cy="280" r="50" fill="#ffab5e"/>
-            <text x="150" y="284" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">5 قواعد</text></g>
-
-          <g><circle cx="670" cy="280" r="50" fill="#ff6b9d"/>
-            <text x="670" y="276" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">التقريب</text>
-            <text x="670" y="293" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">بالحساب</text></g>
+        <svg viewBox="0 0 480 240" width="480" height="240" role="img" aria-label="خريطة الازاحة والسرعة الزاويتين الذهنية">
+          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
+            <line x1="240" y1="120" x2="100" y2="45"/>
+            <line x1="240" y1="120" x2="100" y2="195"/>
+            <line x1="240" y1="120" x2="380" y2="45"/>
+            <line x1="240" y1="120" x2="380" y2="195"/>
+          </g>
+          <g>
+            <circle cx="240" cy="120" r="50" fill="#7c6fee"/>
+            <text x="240" y="124" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">الحركة الدورانية</text>
+          </g>
+          <g><circle cx="100" cy="45" r="44" fill="#3fa9f5"/>
+            <text x="100" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">θ</text>
+            <text x="100" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">S=rθ</text></g>
+          <g><circle cx="100" cy="195" r="44" fill="#2fd18f"/>
+            <text x="100" y="192" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">ω</text>
+            <text x="100" y="206" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">vT=ωr</text></g>
+          <g><circle cx="380" cy="45" r="44" fill="#ffab5e"/>
+            <text x="380" y="48" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">اليد اليمنى</text></g>
+          <g><circle cx="380" cy="195" r="44" fill="#ff6b9d"/>
+            <text x="380" y="192" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">ω=2πf</text>
+            <text x="380" y="205" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">التردد</text></g>
         </svg>
       </div>
     </div>
@@ -311,65 +382,176 @@
   <nav class="lesson-nav" data-auto></nav>
 </main>
 
-<footer class="site-footer">الفصل الأول: الكميات الفيزيائية والقياس — الدرس 4: الأرقام المعنوية والدقة</footer>
+<footer class="site-footer">الفصل الأول: الحركة الدائرية والدورانية — الدرس 4: الازاحة والسرعة الزاويتان</footer>
 
 <script src="../../assets/js/plot.js"></script>
 <script src="../../assets/js/quiz.js"></script>
 <script src="../../assets/js/site-ch1.js"></script>
 <script>
 (function(){
-  var input = document.getElementById("sigInput");
-  var display = document.getElementById("sigDisplay");
-  var countBox = document.getElementById("sigCount");
+  var ns = "http://www.w3.org/2000/svg";
 
-  function analyze(str){
-    if(!/^\d*\.?\d*$/.test(str) || str === "" || str === "."){
-      return null;
-    }
-    var hasDecimal = str.indexOf(".") !== -1;
-    var dotIndex = str.indexOf(".");
-    var digits = str.replace(".", "").split("");
-    var firstNonZero = -1;
-    for(var i=0;i<digits.length;i++){ if(digits[i] !== "0"){ firstNonZero = i; break; } }
-    if(firstNonZero === -1){
-      return { digits: digits, mask: digits.map(function(){ return false; }), dotIndex: dotIndex, count: 0 };
-    }
-    var lastNonZero = digits.length - 1;
-    if(!hasDecimal){
-      for(var j=digits.length-1;j>=0;j--){ if(digits[j] !== "0"){ lastNonZero = j; break; } }
-    }
-    var mask = digits.map(function(d,i){
-      if(i < firstNonZero) return false;
-      if(!hasDecimal && i > lastNonZero) return false;
-      return true;
+  function arrow(svg,x1,y1,x2,y2,color,width){
+    var l = document.createElementNS(ns,"line");
+    l.setAttribute("x1",x1); l.setAttribute("y1",y1); l.setAttribute("x2",x2); l.setAttribute("y2",y2);
+    l.setAttribute("stroke",color); l.setAttribute("stroke-width",width||3); l.setAttribute("stroke-linecap","round");
+    svg.appendChild(l);
+    var ang = Math.atan2(y2-y1,x2-x1);
+    var hl=9, a1=ang+Math.PI-0.4, a2=ang+Math.PI+0.4;
+    var head = document.createElementNS(ns,"polygon");
+    head.setAttribute("points", x2+","+y2+" "+(x2+hl*Math.cos(a1))+","+(y2+hl*Math.sin(a1))+" "+(x2+hl*Math.cos(a2))+","+(y2+hl*Math.sin(a2)));
+    head.setAttribute("fill",color);
+    svg.appendChild(head);
+  }
+  function label(svg,x,y,txt,color,size){
+    var t = document.createElementNS(ns,"text");
+    t.setAttribute("x",x); t.setAttribute("y",y);
+    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||12); t.setAttribute("fill",color);
+    t.setAttribute("font-weight","700");
+    t.textContent = txt;
+    svg.appendChild(t);
+  }
+  function arcPath(cx,cy,r,a1,a2){
+    var x1=cx+r*Math.cos(a1), y1=cy+r*Math.sin(a1);
+    var x2=cx+r*Math.cos(a2), y2=cy+r*Math.sin(a2);
+    var large = (a2-a1) > Math.PI ? 1 : 0;
+    return "M"+x1+","+y1+" A"+r+","+r+" 0 "+large+" 1 "+x2+","+y2;
+  }
+
+  // ===== Figure 7-1: theta / arc widget =====
+  var svgT = document.getElementById("thetaSvg");
+  var thetaSlider = document.getElementById("thetaSlider");
+  var thetaDegVal = document.getElementById("thetaDegVal");
+  var thetaRadVal = document.getElementById("thetaRadVal");
+  var arcLenVal = document.getElementById("arcLenVal");
+  var Ocx=140, Ocy=140, Rpx=90, R_M=2;
+
+  function drawTheta(){
+    var deg = parseFloat(thetaSlider.value);
+    var rad = deg*Math.PI/180;
+    thetaDegVal.textContent = deg;
+    thetaRadVal.textContent = rad.toFixed(2);
+    arcLenVal.textContent = (R_M*rad).toFixed(2);
+
+    while(svgT.firstChild) svgT.removeChild(svgT.firstChild);
+    var circle = document.createElementNS(ns,"circle");
+    circle.setAttribute("cx",Ocx); circle.setAttribute("cy",Ocy); circle.setAttribute("r",Rpx);
+    circle.setAttribute("fill","none"); circle.setAttribute("stroke","var(--text-faint)"); circle.setAttribute("stroke-width","1.5");
+    svgT.appendChild(circle);
+
+    var a1 = 0, a2 = -rad;
+    var arc = document.createElementNS(ns,"path");
+    arc.setAttribute("d", arcPath(Ocx,Ocy,Rpx,Math.min(a1,a2),Math.max(a1,a2)));
+    arc.setAttribute("fill","none"); arc.setAttribute("stroke","var(--accent-orange, #ffab5e)"); arc.setAttribute("stroke-width","5");
+    svgT.appendChild(arc);
+
+    var Ax = Ocx+Rpx, Ay = Ocy;
+    var Bx = Ocx+Rpx*Math.cos(a2), By = Ocy+Rpx*Math.sin(a2);
+    [[Ocx,Ocy,"O"],[Ax,Ay,"A"],[Bx,By,"B"]].forEach(function(p){
+      var d = document.createElementNS(ns,"circle");
+      d.setAttribute("cx",p[0]); d.setAttribute("cy",p[1]); d.setAttribute("r",5); d.setAttribute("fill","var(--accent-purple, #7c6fee)");
+      svgT.appendChild(d);
+      label(svgT,p[0]+8,p[1]-8,p[2],"var(--text-primary)",13);
     });
-    return { digits: digits, mask: mask, dotIndex: dotIndex, count: mask.filter(Boolean).length };
+    var lr = document.createElementNS(ns,"line");
+    lr.setAttribute("x1",Ocx); lr.setAttribute("y1",Ocy); lr.setAttribute("x2",Ax); lr.setAttribute("y2",Ay);
+    lr.setAttribute("stroke","var(--text-secondary)"); lr.setAttribute("stroke-width","1.5");
+    svgT.appendChild(lr);
+    var lr2 = document.createElementNS(ns,"line");
+    lr2.setAttribute("x1",Ocx); lr2.setAttribute("y1",Ocy); lr2.setAttribute("x2",Bx); lr2.setAttribute("y2",By);
+    lr2.setAttribute("stroke","var(--text-secondary)"); lr2.setAttribute("stroke-width","1.5");
+    svgT.appendChild(lr2);
+    label(svgT, Ocx+18, Ocy-18, "θ", "var(--accent-blue)", 15);
   }
+  thetaSlider.addEventListener("input", drawTheta);
+  drawTheta();
 
-  function render(){
-    var raw = input.value.trim();
-    var result = analyze(raw);
-    if(!result){
-      display.innerHTML = '<span style="color:var(--text-faint)">أدخل عددًا صحيحًا (أرقام وفاصلة عشرية فقط)</span>';
-      countBox.textContent = "عدد الأرقام المعنوية: —";
-      return;
-    }
-    var html = "";
-    var digitPos = 0;
-    for(var i=0;i<raw.length;i++){
-      var ch = raw[i];
-      if(ch === "."){ html += "."; continue; }
-      var sig = result.mask[digitPos];
-      html += '<span style="color:' + (sig ? "var(--accent-green)" : "var(--text-faint)") + '">' + ch + "</span>";
-      digitPos++;
-    }
-    display.innerHTML = html;
-    countBox.textContent = "عدد الأرقام المعنوية: " + result.count;
+  // ===== Figure 8-1: right-hand rule widget =====
+  var svgR = document.getElementById("rhrSvg");
+  var rhrToggle = document.getElementById("rhrToggle");
+  var rhrCW = false;
+
+  function drawRHR(){
+    while(svgR.firstChild) svgR.removeChild(svgR.firstChild);
+    var cx=160, cy=140, r=50;
+    var circle = document.createElementNS(ns,"circle");
+    circle.setAttribute("cx",cx); circle.setAttribute("cy",cy); circle.setAttribute("r",r);
+    circle.setAttribute("fill","none"); circle.setAttribute("stroke","var(--text-faint)"); circle.setAttribute("stroke-width","2");
+    svgR.appendChild(circle);
+
+    var a1 = -0.3, a2 = rhrCW ? -0.3-2.2 : -0.3+2.2;
+    var arc = document.createElementNS(ns,"path");
+    arc.setAttribute("d", arcPath(cx,cy,r,Math.min(a1,a2),Math.max(a1,a2)));
+    arc.setAttribute("fill","none"); arc.setAttribute("stroke","var(--accent-blue)"); arc.setAttribute("stroke-width","4");
+    svgR.appendChild(arc);
+    var endAng = a2;
+    var ex = cx+r*Math.cos(endAng), ey=cy+r*Math.sin(endAng);
+    var tangAng = endAng + (rhrCW? -Math.PI/2 : Math.PI/2);
+    arrow(svgR, ex - 14*Math.cos(tangAng), ey - 14*Math.sin(tangAng), ex, ey, "var(--accent-blue)", 4);
+
+    var omegaY1 = rhrCW ? cy+r+12 : cy-r-12;
+    var omegaY2 = rhrCW ? cy+r+50 : cy-r-50;
+    arrow(svgR, cx, omegaY1, cx, omegaY2, "var(--accent-red)", 4.5);
+    label(svgR, cx+12, (omegaY1+omegaY2)/2+4, "ω", "var(--accent-red)", 15);
+
+    var caption = rhrCW ? "دوران مع عقارب الساعة → ω للداخل ⊗" : "دوران عكس عقارب الساعة → ω للخارج ⊙";
+    var capText = document.createElementNS(ns,"text");
+    capText.setAttribute("x",cx); capText.setAttribute("y",280);
+    capText.setAttribute("text-anchor","middle"); capText.setAttribute("font-family","Cairo,sans-serif");
+    capText.setAttribute("font-size","12"); capText.setAttribute("font-weight","700"); capText.setAttribute("fill","var(--text-secondary)");
+    capText.textContent = caption;
+    svgR.appendChild(capText);
   }
+  rhrToggle.addEventListener("click", function(){ rhrCW = !rhrCW; drawRHR(); });
+  drawRHR();
 
-  input.addEventListener("input", render);
-  document.addEventListener("DOMContentLoaded", render);
-  if(document.readyState !== "loading") render();
+  // ===== Figure 9-1: omega average widget =====
+  var svgW = document.getElementById("omegaAvSvg");
+  var t1Slider = document.getElementById("theta1Slider");
+  var t2Slider = document.getElementById("theta2Slider");
+  var t1Val = document.getElementById("theta1Val");
+  var t2Val = document.getElementById("theta2Val");
+  var omegaAvVal = document.getElementById("omegaAvVal");
+  var Ocx2=140, Ocy2=130, Rpx2=85;
+
+  function drawOmegaAv(){
+    var d1 = parseFloat(t1Slider.value), d2 = parseFloat(t2Slider.value);
+    if(d2 < d1){ d2 = d1; t2Slider.value = d1; }
+    t1Val.textContent = d1; t2Val.textContent = d2;
+    var r1 = d1*Math.PI/180, r2 = d2*Math.PI/180;
+    omegaAvVal.textContent = ((r2-r1)/1).toFixed(2);
+
+    while(svgW.firstChild) svgW.removeChild(svgW.firstChild);
+    var circle = document.createElementNS(ns,"circle");
+    circle.setAttribute("cx",Ocx2); circle.setAttribute("cy",Ocy2); circle.setAttribute("r",Rpx2);
+    circle.setAttribute("fill","none"); circle.setAttribute("stroke","var(--text-faint)"); circle.setAttribute("stroke-width","1.5");
+    svgW.appendChild(circle);
+
+    var Ax=Ocx2+Rpx2*Math.cos(-r1), Ay=Ocy2+Rpx2*Math.sin(-r1);
+    var Bx=Ocx2+Rpx2*Math.cos(-r2), By=Ocy2+Rpx2*Math.sin(-r2);
+    [[Ax,Ay],[Bx,By]].forEach(function(p){
+      var lo = document.createElementNS(ns,"line");
+      lo.setAttribute("x1",Ocx2); lo.setAttribute("y1",Ocy2); lo.setAttribute("x2",p[0]); lo.setAttribute("y2",p[1]);
+      lo.setAttribute("stroke","var(--text-secondary)"); lo.setAttribute("stroke-width","1.5");
+      svgW.appendChild(lo);
+    });
+    var dA = document.createElementNS(ns,"circle");
+    dA.setAttribute("cx",Ax); dA.setAttribute("cy",Ay); dA.setAttribute("r",6); dA.setAttribute("fill","var(--accent-green)");
+    svgW.appendChild(dA);
+    label(svgW, Ax+8, Ay, "A (θ₁)", "var(--accent-green)", 12);
+    var dB = document.createElementNS(ns,"circle");
+    dB.setAttribute("cx",Bx); dB.setAttribute("cy",By); dB.setAttribute("r",6); dB.setAttribute("fill","var(--accent-red)");
+    svgW.appendChild(dB);
+    label(svgW, Bx+8, By, "B (θ₂)", "var(--accent-red)", 12);
+
+    var arc = document.createElementNS(ns,"path");
+    arc.setAttribute("d", arcPath(Ocx2,Ocy2,28,Math.min(-r1,-r2),Math.max(-r1,-r2)));
+    arc.setAttribute("fill","none"); arc.setAttribute("stroke","var(--accent-blue)"); arc.setAttribute("stroke-width","2.5");
+    svgW.appendChild(arc);
+  }
+  t1Slider.addEventListener("input", drawOmegaAv);
+  t2Slider.addEventListener("input", drawOmegaAv);
+  drawOmegaAv();
 })();
 </script>
 </body>

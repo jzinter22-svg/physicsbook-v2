@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>الفصل 1: الكميات الفيزيائية والقياس — كتاب الطبيعيات التفاعلي</title>
-<meta name="description" content="الفصل الأول من كتاب الطبيعيات التفاعلي: الكميات الفيزيائية الأساسية والمشتقة، النظام الدولي للوحدات، الكميات القياسية والمتجهة، والأرقام المعنوية — بأمثلة محلولة وأدوات تفاعلية واختبارات ذاتية.">
+<title>الفصل 1: الحركة الدائرية والدورانية — كتاب الطبيعيات التفاعلي</title>
+<meta name="description" content="الفصل الأول من كتاب الطبيعيات التفاعلي: الحركة الدائرية والتعجيل المركزي، القوة المركزية، مدارات الأقمار الاصطناعية وقوانين كبلر، الحركة الدورانية، عزم القصور الذاتي، والزخم الزاوي — بأمثلة محلولة وأدوات تفاعلية.">
 <link rel="stylesheet" href="../assets/css/theme.css">
 <script>
   MathJax = {
@@ -33,12 +33,12 @@
   <section class="hero fade-up">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">📘 كتاب الطبيعيات التفاعلي · الصف الأول</span>
-        <h1>الفصل الأول: الكميات الفيزيائية والقياس <span style="color:var(--accent-blue)">Physical Quantities</span></h1>
-        <p class="lead">حجر الأساس في علم الفيزياء: كيف نُعرّف الكميات التي نقيسها، وكيف نستخدم النظام الدولي للوحدات، وما الفرق بين الكمية القياسية والمتجهة، وكيف نُعبّر عن دقة القياس بأرقام معنوية صحيحة.</p>
+        <span class="eyebrow">📘 كتاب الطبيعيات التفاعلي · الصف الثالث · الفرع الصناعي</span>
+        <h1>الفصل الأول: الحركة الدائرية والدورانية <span style="color:var(--accent-blue)">Circular &amp; Rotational Motion</span></h1>
+        <p class="lead">من دوران عجلات السيارة إلى مدارات الأقمار الاصطناعية حول الأرض: في هذا الفصل ندرس الحركة الدائرية والدورانية، القوة المركزية، قوانين كبلر، عزم القصور الذاتي، والزخم الزاوي.</p>
         <div class="io-row" style="margin-top:1.25rem">
           <a href="lessons/lesson-1.html" class="neu-btn primary">ابدأ الدرس الأول ←</a>
-          <span class="tag">⏱ 5 دروس</span>
+          <span class="tag">⏱ 8 دروس</span>
           <span class="tag">🧠 اختبارات ذاتية</span>
           <span class="tag">🗺 خرائط ذهنية</span>
         </div>
@@ -51,36 +51,25 @@
               <stop offset="0" stop-color="#7c6fee"/>
               <stop offset="1" stop-color="#3fa9f5"/>
             </linearGradient>
-            <marker id="arrowX" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
-              <path d="M0,0 L7,3 L0,6 Z" fill="var(--text-faint)"/>
-            </marker>
-            <marker id="arrowY" markerWidth="10" markerHeight="10" refX="3" refY="0" orient="auto">
-              <path d="M0,7 L3,0 L6,7 Z" fill="var(--text-faint)"/>
+          </defs>
+          <circle cx="240" cy="190" r="120" fill="none" stroke="var(--text-faint)" stroke-width="1.5" stroke-dasharray="4 6" opacity=".6"/>
+          <g class="hero-float f1">
+            <circle cx="240" cy="70" r="10" fill="url(#heroCurveGrad)"/>
+            <line x1="240" y1="190" x2="240" y2="70" stroke="var(--text-faint)" stroke-width="1.5" opacity=".5"/>
+            <line x1="240" y1="70" x2="300" y2="55" stroke="var(--accent-purple)" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowHero)"/>
+          </g>
+          <defs>
+            <marker id="arrowHero" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="var(--accent-purple)"/>
             </marker>
           </defs>
-
-          <g class="hero-grid-line">
-            <line x1="90" y1="60" x2="90" y2="300"/><line x1="150" y1="60" x2="150" y2="300"/>
-            <line x1="210" y1="60" x2="210" y2="300"/><line x1="270" y1="60" x2="270" y2="300"/>
-            <line x1="330" y1="60" x2="330" y2="300"/><line x1="390" y1="60" x2="390" y2="300"/>
-            <line x1="60" y1="260" x2="450" y2="260"/><line x1="60" y1="210" x2="450" y2="210"/>
-            <line x1="60" y1="160" x2="450" y2="160"/><line x1="60" y1="110" x2="450" y2="110"/>
-          </g>
-
-          <line class="hero-axis" x1="60" y1="300" x2="452" y2="300" marker-end="url(#arrowX)"/>
-          <line class="hero-axis" x1="60" y1="300" x2="60" y2="28" marker-end="url(#arrowY)"/>
-
-          <!-- vector arrow: magnitude + direction, the visual signature of this chapter -->
-          <g class="hero-float f1">
-            <line x1="130" y1="260" x2="330" y2="120" stroke="url(#heroCurveGrad)" stroke-width="5" stroke-linecap="round" marker-end="url(#arrowX)"/>
-          </g>
           <g class="hero-float f2">
-            <rect x="300" y="180" width="86" height="52" rx="10" fill="var(--surface)" opacity=".95"/>
-            <text x="343" y="212" text-anchor="middle" font-family="Cairo,sans-serif" font-weight="800" font-size="20" fill="var(--accent-purple)">m</text>
+            <rect x="330" y="230" width="70" height="46" rx="10" fill="var(--surface)" opacity=".95"/>
+            <text x="365" y="260" text-anchor="middle" font-family="Cairo,sans-serif" font-weight="800" font-size="20" fill="var(--accent-purple)">ω</text>
           </g>
           <g class="hero-float f3">
-            <rect x="120" y="150" width="70" height="46" rx="10" fill="var(--surface)" opacity=".95"/>
-            <text x="155" y="180" text-anchor="middle" font-family="Cairo,sans-serif" font-weight="800" font-size="18" fill="var(--accent-blue)">kg</text>
+            <rect x="90" y="250" width="70" height="46" rx="10" fill="var(--surface)" opacity=".95"/>
+            <text x="125" y="280" text-anchor="middle" font-family="Cairo,sans-serif" font-weight="800" font-size="20" fill="var(--accent-blue)">Fc</text>
           </g>
         </svg>
       </div>
@@ -99,54 +88,74 @@
 
   <section class="section fade-up">
     <div class="card neu">
-      <h2>🎯 أهداف الفصل</h2>
-      <p class="lead">بنهاية هذا الفصل، يكون الطالب قادرًا على أن:</p>
+      <h2>🎯 الأهداف السلوكية</h2>
+      <p class="lead">بعد إكمال هذا الفصل سيكون الطالب قادرًا على الاتي:</p>
       <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يميّز بين الكميات الفيزيائية الأساسية والمشتقة، ويحدد وحداتها في النظام الدولي.</span></li>
-        <li><span class="obj-num">2</span><span>يحوّل بين مضاعفات وأجزاء الوحدات باستخدام بادئات النظام الدولي.</span></li>
-        <li><span class="obj-num">3</span><span>يفرّق بين الكمية القياسية والكمية المتجهة، ويمثّل المتجهات هندسيًا.</span></li>
-        <li><span class="obj-num">4</span><span>يحدد عدد الأرقام المعنوية في قياس معطى، ويطبّق قواعدها في العمليات الحسابية.</span></li>
-        <li><span class="obj-num">5</span><span>يحل مسائل تطبيقية على القياس والتحويل والتحليل البعدي.</span></li>
+        <li><span class="obj-num">1</span><span>معرفة الحركة الدائرية والدورانية، والقوة المركزية.</span></li>
+        <li><span class="obj-num">2</span><span>معرفة القدرة والشغل والحركة الدورانية.</span></li>
+        <li><span class="obj-num">3</span><span>استيعاب المفاهيم الآتية واستخراج قيمتها باستعمال المعادلات الرياضية: الحركة الدورانية والسرعة الزاوية والتعجيل الزاوي، عزم القصور الذاتي، والقدرة والشغل في الحركة الدورانية.</span></li>
+        <li><span class="obj-num">4</span><span>معرفة قوانين كبلر في الحركة الدائرية ومن أمثلتها حركة الأقمار الصناعية.</span></li>
       </ol>
     </div>
   </section>
 
   <section class="section fade-up">
-    <h2 style="margin-bottom:1rem">📚 محتويات الفصل</h2>
+    <h2 style="margin-bottom:1rem">📚 مفردات الفصل</h2>
     <div class="grid grid-3">
 
       <a class="neu lesson-card" href="lessons/lesson-1.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#7c6fee,#3fa9f5)">1</span>
-        <h3 style="margin:.2rem 0">الكميات الفيزيائية الأساسية والمشتقة</h3>
-        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">الكمية الفيزيائية، الكميات الأساسية السبع، وكيف تُشتق باقي الكميات منها.</p>
+        <h3 style="margin:.2rem 0">تمهيد والحركة الدائرية والتعجيل المركزي</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">1-1 تمهيد، 2-1 الحركة الدائرية، 1-2-1 التعجيل المركزي.</p>
         <span class="lesson-go">ادخل الدرس ←</span>
       </a>
 
       <a class="neu lesson-card" href="lessons/lesson-2.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#3fa9f5,#ff6b9d)">2</span>
-        <h3 style="margin:.2rem 0">النظام الدولي للوحدات وتحويل الوحدات</h3>
-        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">وحدات القياس القياسية، بادئات النظام الدولي، وطريقة التحويل بينها.</p>
+        <h3 style="margin:.2rem 0">محصلة التعجيل والقوة المركزية</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">2-2-1 محصلة التعجيل في الحركة الدائرية، 3-1 القوة المركزية.</p>
         <span class="lesson-go">ادخل الدرس ←</span>
       </a>
 
       <a class="neu lesson-card" href="lessons/lesson-3.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#ffab5e,#ff6b9d)">3</span>
-        <h3 style="margin:.2rem 0">الكميات القياسية والمتجهة</h3>
-        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">الفرق بين المسافة والإزاحة، والتمثيل الهندسي للمتجهات.</p>
+        <h3 style="margin:.2rem 0">مدارات الأقمار الاصطناعية وقوانين كبلر</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">4-1: قانون المسارات، قانون المساحات، وقانون التناسب.</p>
         <span class="lesson-go">ادخل الدرس ←</span>
       </a>
 
       <a class="neu lesson-card" href="lessons/lesson-4.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#2fd18f,#3fa9f5)">4</span>
-        <h3 style="margin:.2rem 0">الأرقام المعنوية والدقة في القياس</h3>
-        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">قواعد تحديد الأرقام المعنوية، والفرق بين الدقة والضبط.</p>
+        <h3 style="margin:.2rem 0">الحركة الدورانية: الإزاحة والسرعة الزاويتان</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">5-1 الحركة الدورانية، 1-5-1 الإزاحة الزاوية، 2-5-1 السرعة الزاوية.</p>
         <span class="lesson-go">ادخل الدرس ←</span>
       </a>
 
       <a class="neu lesson-card" href="lessons/lesson-5.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#7c6fee,#ff6b9d)">5</span>
-        <h3 style="margin:.2rem 0">مراجعة الفصل</h3>
-        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">أسئلة نهاية الفصل كاملة مع الحل التفصيلي لكل سؤال.</p>
+        <h3 style="margin:.2rem 0">التعجيل الزاوي والحركة الدورانية المنتظمة</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">3-5-1 التعجيل الزاوي، 4-5-1 التعجيل الزاوي المنتظم.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-6.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#3fa9f5,#2fd18f)">6</span>
+        <h3 style="margin:.2rem 0">عزم القصور الذاتي</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">5-5-1: عزم القصور الذاتي، قانون العزم المدور، وجدول عزم القصور لأشكال شائعة.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-7.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#ffab5e,#7c6fee)">7</span>
+        <h3 style="margin:.2rem 0">الطاقة والشغل والقدرة والزخم الزاوي</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">6-1 الطاقة، 7-1 الشغل والقدرة، 8-1 الزخم الزاوي في الحركة الدورانية.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-8.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#ff6b9d,#ffab5e)">8</span>
+        <h3 style="margin:.2rem 0">أسئلة ومسائل الفصل</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">9-1: جميع أسئلة الاختيار من متعدد والتعليل والمسائل، محلولة بالتفصيل.</p>
         <span class="lesson-go">ادخل الدرس ←</span>
       </a>
 
@@ -169,24 +178,24 @@
           <line x1="450" y1="230" x2="750" y2="250" stroke="#b3bdcc" stroke-width="2"/>
 
           <g class="mm-node"><circle cx="450" cy="230" r="66" fill="url(#gC1)"/>
-            <text x="450" y="224" text-anchor="middle" fill="#fff" font-weight="800" font-size="15" font-family="Cairo,sans-serif">الكميات</text>
-            <text x="450" y="244" text-anchor="middle" fill="#fff" font-weight="800" font-size="15" font-family="Cairo,sans-serif">والقياس</text></g>
+            <text x="450" y="224" text-anchor="middle" fill="#fff" font-weight="800" font-size="14" font-family="Cairo,sans-serif">الحركة الدائرية</text>
+            <text x="450" y="244" text-anchor="middle" fill="#fff" font-weight="800" font-size="14" font-family="Cairo,sans-serif">والدورانية</text></g>
 
           <g class="mm-node"><circle cx="180" cy="90" r="54" fill="#ffab5e"/>
-            <text x="180" y="86" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">أساسية</text>
-            <text x="180" y="102" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">ومشتقة</text></g>
+            <text x="180" y="86" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">القوة</text>
+            <text x="180" y="102" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">المركزية</text></g>
 
           <g class="mm-node"><circle cx="720" cy="90" r="54" fill="#ff6b9d"/>
-            <text x="720" y="86" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">النظام</text>
-            <text x="720" y="102" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">الدولي</text></g>
+            <text x="720" y="86" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">قوانين</text>
+            <text x="720" y="102" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">كبلر</text></g>
 
           <g class="mm-node"><circle cx="150" cy="250" r="54" fill="#2fd18f"/>
-            <text x="150" y="246" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">قياسية</text>
-            <text x="150" y="262" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">ومتجهة</text></g>
+            <text x="150" y="246" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">عزم القصور</text>
+            <text x="150" y="262" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">الذاتي</text></g>
 
           <g class="mm-node"><circle cx="750" cy="250" r="54" fill="#3fa9f5"/>
-            <text x="750" y="246" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">أرقام</text>
-            <text x="750" y="262" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">معنوية</text></g>
+            <text x="750" y="246" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">الزخم</text>
+            <text x="750" y="262" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">الزاوي</text></g>
         </svg>
       </div>
     </div>
@@ -195,7 +204,7 @@
 
 </main>
 
-<footer class="site-footer">الفصل الأول: الكميات الفيزيائية والقياس — كتاب الطبيعيات التفاعلي</footer>
+<footer class="site-footer">الفصل الأول: الحركة الدائرية والدورانية — كتاب الطبيعيات التفاعلي</footer>
 
 <script src="../assets/js/site-ch1.js"></script>
 </body>

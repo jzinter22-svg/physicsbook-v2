@@ -58,11 +58,14 @@
     "en": "🇬🇧 English"
   },
   "ch1": {
-    "sidebarSubtitle": "Physical Quantities and Measurement",
-    "lesson1NavTitle": "1) Fundamental & Derived Quantities",
-    "lesson2NavTitle": "2) SI Units & Conversion",
-    "lesson3NavTitle": "3) Scalars & Vectors",
-    "lesson4NavTitle": "4) Significant Figures & Precision",
-    "lesson5NavTitle": "5) Chapter Review"
+    "sidebarSubtitle": "Circular and Rotational Motion",
+    "lesson1NavTitle": "1) Circular Motion & Centripetal Acceleration",
+    "lesson2NavTitle": "2) Resultant Acceleration & Centripetal Force",
+    "lesson3NavTitle": "3) Satellite Orbits & Kepler's Laws",
+    "lesson4NavTitle": "4) Angular Displacement & Velocity",
+    "lesson5NavTitle": "5) Angular Acceleration & Uniform Motion",
+    "lesson6NavTitle": "6) Moment of Inertia",
+    "lesson7NavTitle": "7) Energy, Work & Angular Momentum",
+    "lesson8NavTitle": "8) Chapter Questions & Problems"
   }
 }

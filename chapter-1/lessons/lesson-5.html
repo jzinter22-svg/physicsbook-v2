@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>الدرس 5: مراجعة الفصل — الفصل الأول</title>
-<meta name="description" content="أسئلة نهاية الفصل الأول كاملة مع الحل التفصيلي لكل سؤال: تصنيف الكميات، اشتقاق الوحدات، تحويل الوحدات، المسافة والإزاحة، محصلة المتجهات، والأرقام المعنوية.">
+<title>الدرس 5: التعجيل الزاوي والحركة الدورانية المنتظمة — الفصل الأول</title>
+<meta name="description" content="3-5-1 التعجيل الزاوي وعلاقته بالتعجيل المماسي، 4-5-1 التعجيل الزاوي المنتظم ومعادلات الحركة الدورانية المنتظمة التعجيل، مع مثالين محلولين.">
 <link rel="stylesheet" href="../../assets/css/theme.css">
 <script>
   MathJax = {
@@ -25,260 +25,340 @@
     <ol>
       <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
       <li><a href="../index.html">الفصل 1</a></li>
-      <li aria-current="page">مراجعة الفصل</li>
+      <li aria-current="page">التعجيل الزاوي والحركة المنتظمة</li>
     </ol>
   </nav>
 
   <div dir="rtl" lang="ar">
 
   <section class="hero fade-up">
-    <span class="eyebrow">📖 الدرس 5 من 5 · الفصل الأول</span>
-    <h1>مراجعة الفصل</h1>
-    <p class="lead">ثمانية أسئلة تغطي دروس الفصل الأربعة كاملة: الكميات الأساسية والمشتقة، تحويل الوحدات، الكميات القياسية والمتجهة، والأرقام المعنوية. حاول حل كل سؤال بنفسك أولًا، ثم اضغط لعرض الحل التفصيلي.</p>
+    <span class="eyebrow">📖 الدرس 5 من 8 · الفصل الأول</span>
+    <h1>التعجيل الزاوي والحركة الدورانية المنتظمة</h1>
+    <p class="lead">3-5-1 التعجيل الزاوي (α) · 4-5-1 التعجيل الزاوي المنتظم</p>
   </section>
 
-  <section class="section fade-up" id="objectives" data-navlabel="🎯 محاور المراجعة">
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
-      <h2>🎯 محاور المراجعة</h2>
+      <h2>🎯 أهداف الدرس</h2>
       <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>تصنيف الكميات الفيزيائية واشتقاق وحدات الكميات المشتقة (سؤالان).</span></li>
-        <li><span class="obj-num">2</span><span>تحويل الوحدات بأنواعها المختلفة (سؤالان).</span></li>
-        <li><span class="obj-num">3</span><span>المسافة والإزاحة، ومحصلة متجهات على خط مستقيم (سؤالان).</span></li>
-        <li><span class="obj-num">4</span><span>الأرقام المعنوية عدًّا وحسابًا (سؤالان).</span></li>
+        <li><span class="obj-num">1</span><span>يعرّف التعجيل الزاوي (α) ويشتق علاقته بالتعجيل المماسي \(a_T=r\alpha\).</span></li>
+        <li><span class="obj-num">2</span><span>يوضّح معنى الحركة الدورانية المنتظمة التعجيل ومعدل السرعة الزاوية.</span></li>
+        <li><span class="obj-num">3</span><span>يكتب معادلات الحركة الدورانية المنتظمة التعجيل الثلاث ويقارنها بنظيراتها الخطية.</span></li>
+        <li><span class="obj-num">4</span><span>يحل مسائل حسابية على الحركة الدورانية المنتظمة التعجيل باستعمال هذه المعادلات.</span></li>
       </ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="examples" data-navlabel="✍️ الأسئلة">
-    <h2 style="margin-bottom:.25rem">✍️ أسئلة نهاية الفصل</h2>
-    <p class="lead" style="margin-top:0">كل سؤال يليه مباشرة بطاقة الحل التفصيلي.</p>
-
-    <!-- Q1 -->
-    <div class="example fade-up">
-      <div class="example-head"><div class="example-title"><span class="example-badge">1</span> السؤال 1</div></div>
-      <div class="example-problem">صنّف كل كمية مما يلي إلى أساسية أو مشتقة، مع ذكر السبب: الحجم، درجة الحرارة، الكثافة، كمية المادة.</div>
+  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
+    <div class="def-box">
+      <span class="def-label">📌 3-5-1 التعجيل الزاوي</span>
+      <p style="margin:.3rem 0">إذا افترضنا أن جسمًا يحصل تغيّرًا في السرعة الخطية المماسة \((\Delta v_T)\) عند الحركة على المنحنى (S) وعليه ستتغير السرعة الزاوية بثبوت نصف قطر الدائرة (r)، وهذا يعني أن الحركة ستكون بتعجيل، فتصبح المعادلة (8):</p>
     </div>
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ \Delta v_T = r\Delta\omega \qquad \text{...(9)} $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">وبقسمة طرفي المعادلة (9) على (Δt) نحصل على الآتي:</p>
+      $$ \dfrac{\Delta v_T}{\Delta t} = r\dfrac{\Delta\omega}{\Delta t} \qquad \text{...(10)} $$
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      <p style="margin:0 0 .4rem">الكمية \(a_T=\dfrac{\Delta v_T}{\Delta t}\) تمثل التعجيل المماسي، أي إن: أما الكمية \(\alpha=\dfrac{\Delta\omega}{\Delta t}\) فتمثل التعجيل الزاوي ويرمز له بالرمز (α)، ويقاس التعجيل الزاوي بوحدات \(\text{rad/s}^2\)، وبتعويض \(a_T\) و α في المعادلة (10) نحصل على الآتي:</p>
+      $$ a_T = r\alpha \qquad \text{...(11)} $$
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>نلاحظ من المعادلة (11) أن التعجيل الزاوي مرتبط بالتعجيل الخطي، وهذا يعني أن التعجيل الزاوي يحصل نتيجة تغيّر السرعة الخطية أو السرعة الزاوية ويصبح صفرًا إذا كانت سرعة الجسم الخطية على محيط الدائرة ثابتة المقدار.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="example4" data-navlabel="📝 مثال 4">
+    <div class="example">
+      <div class="example-head"><h2 style="margin:0">📝 مثال (4)</h2></div>
+      <p>عجلة نصف قطرها (40 cm) تدور حول محور ثابت، وتتزايد سرعتها بانتظام من السكون حتى تصل الى (600 rpm) في زمن (20 s). أوجد: (a) التعجيل الزاوي، (b) التعجيل المماسي لنقطة على حافة العجلة.</p>
+    </div>
+
+    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
       <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي</div>
-        <button class="neu-btn" data-reveal-steps="steps-q1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
+        <h2 style="margin:0">✓ الحل التفصيلي</h2>
+        <button class="neu-btn" data-reveal-steps="steps-ex4" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
       </div>
-      <ol class="steps hidden-steps" id="steps-q1">
+      <ol class="steps hidden-steps" id="steps-ex4">
         <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">الحجم = طول × طول × طول</p>
-          <div class="calc-flow"><div class="calc-line calc-box">يعتمد على الطول ثلاث مرات ⇐ <b>كمية مشتقة</b></div></div>
+          <p class="calc-note">نحوّل السرعة الزاوية النهائية إلى وحدات (rad/s)</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( \omega = \left(600\ \dfrac{\text{rev}}{\text{min}}\right)\times\left(\dfrac{1\ \text{min}}{60\ \text{s}}\right)\times\left(\dfrac{2\pi\ \text{rad}}{1\ \text{rev}}\right) \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( \omega = 62.8\ \text{rad/s} \)</div>
+          </div>
         </div></li>
         <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">درجة الحرارة</p>
-          <div class="calc-flow"><div class="calc-line calc-box">لا تُعرَّف بدلالة أي كمية أخرى ⇐ <b>كمية أساسية</b></div></div>
+          <p class="calc-note">(a) التعجيل الزاوي — الجسم يبدأ بالحركة من السكون: \(t_1=0،\ \omega_1=0\)</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( \alpha = \dfrac{\Delta\omega}{\Delta t} = \dfrac{\omega_2-\omega_1}{t_2-t_1} = \dfrac{62.8-0}{20} \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( \alpha = 3.14\ \text{rad/s}^2 \)</div>
+          </div>
         </div></li>
         <li class="step"><span class="step-dot">3</span><div class="step-body">
-          <p class="calc-note">الكثافة = الكتلة ÷ الحجم</p>
-          <div class="calc-flow"><div class="calc-line calc-box">تعتمد على الكتلة والطول (عبر الحجم) ⇐ <b>كمية مشتقة</b></div></div>
+          <p class="calc-note">(b) التعجيل المماسي عند r=40 cm=0.40 m</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( a_T = r\alpha = (0.40\ \text{m})(3.14\ \text{rad/s}^2) \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( a_T = 1.25\ \text{m/s}^2 \approx 1.3\ \text{m/s}^2 \)</div>
+          </div>
+        </div></li>
+      </ol>
+      <div class="exercise-final">✓ α = 3.14 rad/s²   ·   a_T ≈ 1.3 m/s²</div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 4-5-1 التعجيل الزاوي المنتظم</span>
+      <p style="margin:.3rem 0">يتحرك الجسم بتعجيل زاوي (α) إذا كانت محصلة العزوم المؤثرة عليه لا تساوي صفرًا، فإذا كانت السرعة الزاوية لجسم يتحرك على مسار دائري في النقطة (A) هي \((\omega_1)\) وفي النقطة (B) هي \((\omega_2)\)، فيكون متوسط السرعة الزاوية اللحظية:</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ \omega_{av} = \dfrac{\omega_1+\omega_2}{2} $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">ولذلك يعرّف معدل التعجيل الزاوي بأنه معدل تغيّر السرعة الزاوية لوحدة الزمن، ويُعطى بالعلاقة:</p>
+      $$ \alpha_{av} = \dfrac{\Delta\omega}{\Delta t} = \dfrac{\omega_2-\omega_1}{t_2-t_1} \qquad \text{...(12)} $$
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>وبببساطة يمكن التوصّل الى قوانين الحركة الدورانية ذات التعجيل الزاوي المنتظم بشكل مشابه الى قوانين الحركة الخطية ذات التعجيل المنتظم، بعد الاستعاضة عن الازاحة الخطية (x) بالازاحة الزاوية (θ)، والسرعة الخطية (v) بالسرعة الزاوية (ω)، والتعجيل الخطي (a) بالتعجيل الزاوي (α)، لتكون معادلات الحركة الدورانية كما يأتي:</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ \omega = \omega_0 + \alpha t \qquad \text{...(13)} $$
+      $$ \theta-\theta_0 = \omega_0 t + \tfrac{1}{2}\alpha t^2 \qquad \text{...(14)} $$
+      $$ \omega^2 = \omega_0^2 + 2\alpha(\theta-\theta_0) \qquad \text{...(15)} $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">حيث \((\omega_0,\theta_0)\) تمثل السرعة الزاوية والازاحة الزاوية الابتدائيتين.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>أما العلاقة بين المقادير الفيزيائية في الحركة الدورانية والخطية، وفي حالة ثبوت نصف القطر الدائرية، فهي:</p>
+      <p style="text-align:center">\( s=\theta r \qquad v=\omega r \qquad a_T=\alpha r \)</p>
+      <p>لذا يمكن أن نبيّن أن قوانين الحركة الخطية ذات تعجيل خطي منتظم وقوانين الحركة الدورانية ذات التعجيل الزاوي المنتظم متناظرة كما في الجدول الآتي:</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu" style="overflow-x:auto">
+      <h2 style="margin-bottom:.8rem">📊 مقارنة معادلات الحركة الخطية والدورانية المنتظمتي التعجيل</h2>
+      <table style="width:100%;border-collapse:collapse;text-align:center;min-width:420px">
+        <thead>
+          <tr style="background:var(--surface)">
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">قوانين الحركة الدورانية</th>
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">قوانين الحركة الخطية</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">\( \omega_2 = \omega_1 + \alpha t \)</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">\( v_2 = v_1 + at \)</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">\( \theta = \omega_1 t + \tfrac{1}{2}\alpha t^2 \)</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">\( s = v_1 t + \tfrac{1}{2}at^2 \)</td></tr>
+          <tr><td style="padding:.6rem">\( \omega_2^2 = \omega_1^2 + 2\alpha\theta \)</td><td style="padding:.6rem">\( v_2^2 = v_1^2 + 2as \)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout warn">
+      <span class="icon">⚠️</span>
+      <span><b>ملاحظتان مهمتان:</b> إذا بدأت الحركة من السكون يجب التعويض عن \((\omega_1)\) بصفر. وعند التباطؤ يسبق التعجيل الزاوي إشارة سالبة.</span>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="example5" data-navlabel="📝 مثال 5">
+    <div class="example">
+      <div class="example-head"><h2 style="margin:0">📝 مثال (5)</h2></div>
+      <p>بدأ محرك كهربائي دورانه من السكون، وبلغت سرعته الزاوية (1200 rev/min) بعد مرور زمن مقداره (10 s)، ما مقدار تعجيله الزاوي والازاحة الزاوية التي قطعها وعدد الدورات الكلية؟</p>
+    </div>
+
+    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
+      <div class="example-head">
+        <h2 style="margin:0">✓ الحل التفصيلي</h2>
+        <button class="neu-btn" data-reveal-steps="steps-ex5" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
+      </div>
+      <ol class="steps hidden-steps" id="steps-ex5">
+        <li class="step"><span class="step-dot">1</span><div class="step-body">
+          <p class="calc-note">بما أن المحرك الكهربائي بدأ دورانه من السكون فإن \(\omega_0=0\)، ونحوّل السرعة الزاوية النهائية إلى (rad/s)</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( \omega = \dfrac{N\times 2\pi}{t} = \dfrac{1200\ (\text{rev/min})\times 2\pi\ (\text{rad/rev})}{60\ (\text{s/min})} \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( \omega = 40\pi\ \text{rad/s} \)</div>
+          </div>
+        </div></li>
+        <li class="step"><span class="step-dot">2</span><div class="step-body">
+          <p class="calc-note">التعجيل الزاوي من المعادلة (13): \(\omega=\omega_0+\alpha t\)</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( 40\pi = 0 + \alpha(10) \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( \alpha = 4\pi\ \text{rad/s}^2 \)</div>
+          </div>
+        </div></li>
+        <li class="step"><span class="step-dot">3</span><div class="step-body">
+          <p class="calc-note">الازاحة الزاوية من المعادلة (14): \(\theta-\theta_0=\omega_0 t+\tfrac{1}{2}\alpha t^2\)، حيث \(\theta_0=0،\ \omega_0=0\)</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( \theta = 0 + \tfrac{1}{2}(4\pi)(10)^2 \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( \theta = 200\pi\ \text{rad} \)</div>
+          </div>
         </div></li>
         <li class="step"><span class="step-dot">4</span><div class="step-body">
-          <p class="calc-note">كمية المادة</p>
-          <div class="calc-flow"><div class="calc-line calc-box">لا تُعرَّف بدلالة أي كمية أخرى ⇐ <b>كمية أساسية</b></div></div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ مشتقة: الحجم، الكثافة — أساسية: درجة الحرارة، كمية المادة</div>
-    </div>
-
-    <!-- Q2 -->
-    <div class="example fade-up" style="margin-top:2rem">
-      <div class="example-head"><div class="example-title"><span class="example-badge">2</span> السؤال 2</div></div>
-      <div class="example-problem">الضغط يُعرَّف بأنه القوة مقسومة على المساحة \( \left(P=\dfrac{F}{A}\right) \). عبّر عن وحدة الضغط (باسكال) بدلالة الوحدات الأساسية.</div>
-    </div>
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي</div>
-        <button class="neu-btn" data-reveal-steps="steps-q2" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-      <ol class="steps hidden-steps" id="steps-q2">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">وحدة القوة (من الدرس الأول): نيوتن = kg·m/s²</p>
-          <div class="calc-flow"><div class="calc-line calc-box">\( [F] = \text{kg·m/s}^2 \)</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">وحدة المساحة: متر مربع</p>
-          <div class="calc-flow"><div class="calc-line calc-box">\( [A] = \text{m}^2 \)</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">3</span><div class="step-body">
-          <p class="calc-note">نقسم الوحدتين حسب تعريف الضغط</p>
+          <p class="calc-note">عدد الدورات الكلية: 1 rev = 2π rad</p>
           <div class="calc-flow">
-            <div class="calc-line">\( [P] = \dfrac{\text{kg·m/s}^2}{\text{m}^2} \)</div>
+            <div class="calc-line">\( \text{عدد الدورات} = \dfrac{\theta}{2\pi} = \dfrac{200\pi}{2\pi} \)</div>
             <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( [P] = \text{kg·m}^{-1}\text{·s}^{-2} \)</div>
+            <div class="calc-line calc-box">\( = 100\ \text{rev} \)</div>
           </div>
         </div></li>
       </ol>
-      <div class="exercise-final">✓ وحدة الباسكال Pa = kg·m⁻¹·s⁻² — وهي إذًا وحدة مشتقة أيضًا.</div>
-    </div>
-
-    <!-- Q3 -->
-    <div class="example fade-up" style="margin-top:2rem">
-      <div class="example-head"><div class="example-title"><span class="example-badge">3</span> السؤال 3</div></div>
-      <div class="example-problem">حوّل 2500 غرام إلى كيلوغرام، ثم إلى ملّيغرام.</div>
-    </div>
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي</div>
-        <button class="neu-btn" data-reveal-steps="steps-q3" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-      <ol class="steps hidden-steps" id="steps-q3">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">1 كغم = 1000 غم، فنقسم على 1000</p>
-          <div class="calc-flow"><div class="calc-line calc-box">\( 2500 \div 1000 = 2.5 \text{ kg} \)</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">1 غم = 1000 ملّيغرام، فنضرب في 1000</p>
-          <div class="calc-flow"><div class="calc-line calc-box">\( 2500 \times 1000 = 2{,}500{,}000 \text{ mg} \)</div></div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ 2500 غم = 2.5 كغم = 2,500,000 ملّيغرام</div>
-    </div>
-
-    <!-- Q4 -->
-    <div class="example fade-up" style="margin-top:2rem">
-      <div class="example-head"><div class="example-title"><span class="example-badge">4</span> السؤال 4</div></div>
-      <div class="example-problem">تطير طائرة بسرعة 900 كم/سا. عبّر عن سرعتها بوحدة m/s.</div>
-    </div>
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي</div>
-        <button class="neu-btn" data-reveal-steps="steps-q4" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-      <ol class="steps hidden-steps" id="steps-q4">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">نستخدم الاختصار: km/h ÷ 3.6 = m/s</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( v = \dfrac{900}{3.6} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( v = 250 \text{ m/s} \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ سرعة الطائرة = 250 m/s</div>
-    </div>
-
-    <!-- Q5 -->
-    <div class="example fade-up" style="margin-top:2rem">
-      <div class="example-head"><div class="example-title"><span class="example-badge">5</span> السؤال 5</div></div>
-      <div class="example-problem">تحركت دراجة 50 م باتجاه الشرق، ثم 80 م باتجاه الغرب. أوجد: (أ) المسافة الكلية. (ب) الإزاحة الكلية.</div>
-    </div>
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي</div>
-        <button class="neu-btn" data-reveal-steps="steps-q5" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-      <ol class="steps hidden-steps" id="steps-q5">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">(أ) المسافة = مجموع الأطوال المقطوعة فعليًا</p>
-          <div class="calc-flow"><div class="calc-line calc-box">\( d = 50 + 80 = 130 \text{ m} \)</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">(ب) الإزاحة: الشرق موجب، الغرب سالب</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( \Delta x = (+50) + (-80) \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( \Delta x = -30 \text{ m} \) (أي 30 م غربًا)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ المسافة = 130 م — الإزاحة = 30 م باتجاه الغرب</div>
-    </div>
-
-    <!-- Q6 -->
-    <div class="example fade-up" style="margin-top:2rem">
-      <div class="example-head"><div class="example-title"><span class="example-badge">6</span> السؤال 6</div></div>
-      <div class="example-problem">تؤثر قوتان مقدارهما 12 نيوتن و7 نيوتن في نفس الجسم وعلى نفس الخط المستقيم وبنفس الاتجاه. أوجد مقدار القوة المحصّلة.</div>
-    </div>
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي</div>
-        <button class="neu-btn" data-reveal-steps="steps-q6" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-      <ol class="steps hidden-steps" id="steps-q6">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">القوتان في نفس الاتجاه، فتُجمعان جبريًا مباشرة (بنفس الإشارة)</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( F_{\text{محصّلة}} = 12 + 7 \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( F_{\text{محصّلة}} = 19 \text{ N} \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ القوة المحصّلة = 19 نيوتن، في نفس اتجاه القوتين.</div>
-    </div>
-
-    <!-- Q7 -->
-    <div class="example fade-up" style="margin-top:2rem">
-      <div class="example-head"><div class="example-title"><span class="example-badge">7</span> السؤال 7</div></div>
-      <div class="example-problem">كم عدد الأرقام المعنوية في العدد 0.00530؟</div>
-    </div>
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي</div>
-        <button class="neu-btn" data-reveal-steps="steps-q7" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-      <ol class="steps hidden-steps" id="steps-q7">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">الأصفار قبل أول رقم غير صفري (5) غير معنوية (القاعدة 3)</p>
-          <div class="calc-flow"><div class="calc-line calc-box">0.00 ⇐ غير معنوية</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">الرقمان 5 و3 معنويان بلا شك (القاعدة 1)</p>
-          <div class="calc-flow"><div class="calc-line calc-box">5, 3 ⇐ معنويان</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">3</span><div class="step-body">
-          <p class="calc-note">الصفر الأخير بعد الفاصلة وبعد رقم معنوٍ يُعد معنويًا (القاعدة 4)</p>
-          <div class="calc-flow"><div class="calc-line calc-box">0 (الأخير) ⇐ معنوي</div></div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ العدد 0.00530 يحتوي 3 أرقام معنوية (5، 3، 0)</div>
-    </div>
-
-    <!-- Q8 -->
-    <div class="example fade-up" style="margin-top:2rem">
-      <div class="example-head"><div class="example-title"><span class="example-badge">8</span> السؤال 8</div></div>
-      <div class="example-problem">احسب ناتج 15.2 ÷ 3.0، وعبّر عن الناتج بعدد الأرقام المعنوية الصحيح.</div>
-    </div>
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي</div>
-        <button class="neu-btn" data-reveal-steps="steps-q8" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-      <ol class="steps hidden-steps" id="steps-q8">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">نحدد عدد الأرقام المعنوية: 15.2 لها 3، و3.0 لها 2</p>
-          <div class="calc-flow"><div class="calc-line calc-box">15.2 ⇐ 3 — 3.0 ⇐ 2</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">نقسم كما هو (الناتج الخام)</p>
-          <div class="calc-flow"><div class="calc-line">\( 15.2 \div 3.0 = 5.0\overline{6} \)</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">3</span><div class="step-body">
-          <p class="calc-note">نقرّب الناتج لأقل عدد أرقام معنوية بين المُدخلَين (رقمان)</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( 5.0\overline{6} \rightarrow \) نُقرَّب إلى رقمين معنويين</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( 5.1 \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ 15.2 ÷ 3.0 ≈ 5.1 (برقمين معنويين)</div>
+      <div class="exercise-final">✓ α = 4π rad/s² ≈ 12.57 rad/s²   ·   θ = 200π rad   ·   عدد الدورات = 100 دورة</div>
     </div>
   </section>
 
-  <section class="section fade-up" id="summary" data-navlabel="📋 خلاصة الفصل">
+  <section class="section fade-up" id="suvat-widget" data-navlabel="🕹️ محاكاة الحركة الدورانية المنتظمة">
     <div class="card neu">
-      <h2>📋 خلاصة الفصل الأول</h2>
+      <h2>🕹️ محاكاة تفاعلية: معادلات الحركة الدورانية المنتظمة التعجيل</h2>
+      <p>حرّك المزلاجات لاختيار السرعة الزاوية الابتدائية \(\omega_0\) والتعجيل الزاوي α، وشاهد القرص وهو يدور وفق المعادلتين (13) و(14)، مع إعادة الدورة تلقائيًا كل \(t\) ثانية.</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="suvatSvg" viewBox="0 0 260 260" width="260" height="260" role="img" aria-label="قرص دوّار بتعجيل زاوي منتظم"></svg></div>
+        <div class="io-row">
+          <label for="w0Slider" style="min-width:9rem">ω₀ = <span id="w0Val">0</span> rad/s</label>
+          <input type="range" id="w0Slider" class="neu-range" min="0" max="5" step="0.5" value="0">
+        </div>
+        <div class="io-row">
+          <label for="alphaSlider" style="min-width:9rem">α = <span id="alphaVal">3.14</span> rad/s²</label>
+          <input type="range" id="alphaSlider" class="neu-range" min="-3" max="4" step="0.1" value="3.14">
+        </div>
+        <div class="io-row">
+          <label for="tEndSlider" style="min-width:9rem">مدة الدورة t = <span id="tEndVal">10</span> s</label>
+          <input type="range" id="tEndSlider" class="neu-range" min="3" max="15" step="1" value="10">
+        </div>
+        <div class="rule-box" id="suvatReadout">ω(t) = — rad/s   ·   θ(t) = — rad</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>1.</span><span>العلاقة بين التعجيل الزاوي (α) والتعجيل المماسي \(a_T\) لجسم يدور بنصف قطر (r) هي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>\( a_T = \alpha/r \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( a_T = r\alpha \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( a_T = r+\alpha \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( a_T = r^2\alpha \)</span></label>
+        </div>
+        <div class="quiz-explain">المعادلة (11): \(a_T=r\alpha\).</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>2.</span><span>يصبح التعجيل الزاوي صفرًا عندما:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>تتغيّر السرعة الزاوية باستمرار</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تكون السرعة الخطية على محيط الدائرة ثابتة المقدار</span></label>
+          <label class="quiz-opt"><input type="radio"><span>يزداد نصف القطر</span></label>
+          <label class="quiz-opt"><input type="radio"><span>يبدأ الجسم من السكون</span></label>
+        </div>
+        <div class="quiz-explain">التعجيل الزاوي ينشأ من تغيّر السرعة الخطية أو الزاوية؛ فإذا بقيت السرعة الخطية ثابتة المقدار يكون التعجيل الزاوي معدومًا.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>3.</span><span>إذا بدأت الحركة الدورانية من السكون فإن قيمة \(\omega_1\) تُعوَّض في المعادلات بـ:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>∞</span></label>
+          <label class="quiz-opt"><input type="radio"><span>1</span></label>
+          <label class="quiz-opt"><input type="radio"><span>صفر</span></label>
+          <label class="quiz-opt"><input type="radio"><span>2π</span></label>
+        </div>
+        <div class="quiz-explain">السكون يعني عدم وجود سرعة زاوية ابتدائية، أي \(\omega_1=0\).</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>4.</span><span>عند تباطؤ جسم دوّار، فإن إشارة التعجيل الزاوي تكون:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>موجبة دائمًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>سالبة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>معدومة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>غير محددة</span></label>
+        </div>
+        <div class="quiz-explain">عند التباطؤ يسبق التعجيل الزاوي إشارة سالبة، لأن السرعة الزاوية تتناقص مع الزمن.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>5.</span><span>معادلة الازاحة الزاوية للحركة الدورانية المنتظمة التعجيل هي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>\( \theta-\theta_0 = \omega_0 t + \tfrac{1}{2}\alpha t^2 \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( \theta = \omega t \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( \theta = \alpha t^2 \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( \theta = \omega_0/\alpha \)</span></label>
+        </div>
+        <div class="quiz-explain">المعادلة (14): \(\theta-\theta_0=\omega_0 t+\tfrac{1}{2}\alpha t^2\)، وهي نظير معادلة الحركة الخطية \(s=v_1t+\tfrac{1}{2}at^2\).</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
       <ul class="summary-list">
-        <li><span>الكميات الأساسية سبع لا تُعرَّف بدلالة غيرها؛ وكل ما عداها كميات مشتقة تُحسب منها.</span></li>
-        <li><span>النظام الدولي للوحدات يوحّد القياس عالميًا، وتحويل الوحدات يقوم على الضرب في عامل تحويل نسبي.</span></li>
-        <li><span>الكمية القياسية تُحدَّد برقم ووحدة، أما المتجهة فتحتاج مقدارًا واتجاهًا معًا.</span></li>
-        <li><span>الأرقام المعنوية تعكس درجة الثقة بالقياس، ويجب الحفاظ على عددها الصحيح في كل عملية حسابية.</span></li>
+        <li><span>التعجيل الزاوي \(\alpha=\Delta\omega/\Delta t\)، ويرتبط بالتعجيل المماسي بالعلاقة \(a_T=r\alpha\).</span></li>
+        <li><span>معدل التعجيل الزاوي \(\alpha_{av}=(\omega_2-\omega_1)/(t_2-t_1)\).</span></li>
+        <li><span>معادلات الحركة الدورانية المنتظمة التعجيل: \(\omega=\omega_0+\alpha t\)، \(\theta-\theta_0=\omega_0t+\tfrac12\alpha t^2\)، \(\omega^2=\omega_0^2+2\alpha(\theta-\theta_0)\).</span></li>
+        <li><span>عند البدء من السكون: \(\omega_1=0\). وعند التباطؤ: α سالبة.</span></li>
       </ul>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l5" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l5">
+        <svg viewBox="0 0 480 240" width="480" height="240" role="img" aria-label="خريطة التعجيل الزاوي الذهنية">
+          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
+            <line x1="240" y1="120" x2="100" y2="45"/>
+            <line x1="240" y1="120" x2="100" y2="195"/>
+            <line x1="240" y1="120" x2="380" y2="45"/>
+            <line x1="240" y1="120" x2="380" y2="195"/>
+          </g>
+          <g>
+            <circle cx="240" cy="120" r="50" fill="#7c6fee"/>
+            <text x="240" y="124" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">التعجيل الزاوي</text>
+          </g>
+          <g><circle cx="100" cy="45" r="44" fill="#3fa9f5"/>
+            <text x="100" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">α=Δω/Δt</text>
+            <text x="100" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">aT=rα</text></g>
+          <g><circle cx="100" cy="195" r="44" fill="#2fd18f"/>
+            <text x="100" y="198" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">ω=ω₀+αt</text></g>
+          <g><circle cx="380" cy="45" r="44" fill="#ffab5e"/>
+            <text x="380" y="48" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">θ=ω₀t+½αt²</text></g>
+          <g><circle cx="380" cy="195" r="44" fill="#ff6b9d"/>
+            <text x="380" y="198" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">ω²=ω₀²+2αθ</text></g>
+        </svg>
+      </div>
     </div>
   </section>
 
@@ -287,10 +367,85 @@
   <nav class="lesson-nav" data-auto></nav>
 </main>
 
-<footer class="site-footer">الفصل الأول: الكميات الفيزيائية والقياس — الدرس 5: مراجعة الفصل</footer>
+<footer class="site-footer">الفصل الأول: الحركة الدائرية والدورانية — الدرس 5: التعجيل الزاوي والحركة المنتظمة</footer>
 
 <script src="../../assets/js/plot.js"></script>
 <script src="../../assets/js/quiz.js"></script>
 <script src="../../assets/js/site-ch1.js"></script>
+<script>
+(function(){
+  var ns = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("suvatSvg");
+  var w0Slider = document.getElementById("w0Slider");
+  var alphaSlider = document.getElementById("alphaSlider");
+  var tEndSlider = document.getElementById("tEndSlider");
+  var w0Val = document.getElementById("w0Val");
+  var alphaVal = document.getElementById("alphaVal");
+  var tEndVal = document.getElementById("tEndVal");
+  var readout = document.getElementById("suvatReadout");
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var cx=130, cy=130, R=90;
+  var startTime = null;
+
+  function buildStatic(){
+    while(svg.firstChild) svg.removeChild(svg.firstChild);
+    var disc = document.createElementNS(ns,"circle");
+    disc.setAttribute("cx",cx); disc.setAttribute("cy",cy); disc.setAttribute("r",R);
+    disc.setAttribute("fill","var(--surface)"); disc.setAttribute("stroke","var(--text-faint)"); disc.setAttribute("stroke-width","2");
+    svg.appendChild(disc);
+    var spoke = document.createElementNS(ns,"line");
+    spoke.setAttribute("id","spoke"); spoke.setAttribute("x1",cx); spoke.setAttribute("y1",cy);
+    spoke.setAttribute("x2",cx+R); spoke.setAttribute("y2",cy);
+    spoke.setAttribute("stroke","var(--accent-purple, #7c6fee)"); spoke.setAttribute("stroke-width","4"); spoke.setAttribute("stroke-linecap","round");
+    svg.appendChild(spoke);
+    var dot = document.createElementNS(ns,"circle");
+    dot.setAttribute("id","spokeDot"); dot.setAttribute("cx",cx+R); dot.setAttribute("cy",cy); dot.setAttribute("r",7);
+    dot.setAttribute("fill","var(--accent-red)");
+    svg.appendChild(dot);
+    var center = document.createElementNS(ns,"circle");
+    center.setAttribute("cx",cx); center.setAttribute("cy",cy); center.setAttribute("r",4); center.setAttribute("fill","var(--text-secondary)");
+    svg.appendChild(center);
+  }
+  buildStatic();
+  var spoke = document.getElementById("spoke");
+  var spokeDot = document.getElementById("spokeDot");
+
+  function paramsChanged(){
+    w0Val.textContent = w0Slider.value;
+    alphaVal.textContent = parseFloat(alphaSlider.value).toFixed(2);
+    tEndVal.textContent = tEndSlider.value;
+  }
+  [w0Slider, alphaSlider, tEndSlider].forEach(function(s){ s.addEventListener("input", paramsChanged); });
+  paramsChanged();
+
+  function frame(now){
+    if(startTime === null) startTime = now;
+    var w0 = parseFloat(w0Slider.value);
+    var alpha = parseFloat(alphaSlider.value);
+    var tEnd = parseFloat(tEndSlider.value);
+    var elapsed = ((now-startTime)/1000) % tEnd;
+
+    var theta = w0*elapsed + 0.5*alpha*elapsed*elapsed;
+    var omega = w0 + alpha*elapsed;
+    var thetaMod = theta % (2*Math.PI);
+    if(thetaMod < 0) thetaMod += 2*Math.PI;
+
+    spoke.setAttribute("x2", cx+R*Math.cos(-thetaMod));
+    spoke.setAttribute("y2", cy+R*Math.sin(-thetaMod));
+    spokeDot.setAttribute("cx", cx+R*Math.cos(-thetaMod));
+    spokeDot.setAttribute("cy", cy+R*Math.sin(-thetaMod));
+
+    readout.innerHTML = "t=" + elapsed.toFixed(1) + " s &nbsp;·&nbsp; ω(t) = " + omega.toFixed(2) + " rad/s &nbsp;·&nbsp; θ(t) = " + theta.toFixed(2) + " rad";
+
+    requestAnimationFrame(frame);
+  }
+  if(reduceMotion){
+    readout.textContent = "حرّك المزلاجات لمشاهدة القيم المحسوبة (المحاكاة المتحركة موقوفة حسب إعدادات النظام).";
+  } else {
+    requestAnimationFrame(frame);
+  }
+})();
+</script>
 </body>
 </html>

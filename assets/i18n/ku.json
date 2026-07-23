@@ -58,11 +58,14 @@
     "en": "🇬🇧 English"
   },
   "ch1": {
-    "sidebarSubtitle": "کەمیە فیزیاییەکان و پێوانە",
-    "lesson1NavTitle": "1) کەمیە بنەڕەتی و دەرهاتووەکان",
-    "lesson2NavTitle": "2) سیستەمی نێودەوڵەتی و گۆڕینی یەکەکان",
-    "lesson3NavTitle": "3) کەمیە سکالەر و ڤێکتۆر",
-    "lesson4NavTitle": "4) ژمارە بەرچاوەکان و وردی",
-    "lesson5NavTitle": "5) پێداچوونەوەی بەش"
+    "sidebarSubtitle": "جوڵانەوەی بازنەیی و خولانەوە",
+    "lesson1NavTitle": "1) جوڵانەوەی بازنەیی و خێرایی ناوەندی",
+    "lesson2NavTitle": "2) کۆی خێرایی و هێزی ناوەندی",
+    "lesson3NavTitle": "3) خولی مانگی دەستکرد و یاساکانی کێپلەر",
+    "lesson4NavTitle": "4) جێبەجێبوونی گۆشەیی و خێرایی",
+    "lesson5NavTitle": "5) خێرایی گۆشەیی و جوڵانەوەی ڕێکوپێک",
+    "lesson6NavTitle": "6) خۆمەڵی بەرگری",
+    "lesson7NavTitle": "7) وزە، کار و مۆمێنتۆمی گۆشەیی",
+    "lesson8NavTitle": "8) پرسیار و کێشەکانی بەش"
   }
 }

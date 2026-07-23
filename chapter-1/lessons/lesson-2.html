@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>الدرس 2: النظام الدولي للوحدات وتحويل الوحدات — الفصل الأول</title>
-<meta name="description" content="النظام الدولي للوحدات، بادئات الوحدات (كيلو، سنتي، ملّي)، وطريقة التحويل بين الوحدات باستخدام عامل التحويل، مع أمثلة محلولة ومحوّل وحدات تفاعلي.">
+<title>الدرس 2: محصلة التعجيل والقوة المركزية — الفصل الأول</title>
+<meta name="description" content="التعجيل المماسي والمركزي في الحركة الدائرية، تعريف القوة المركزية واشتقاقها من قانون نيوتن الثاني، مع مثال عن سيارة تدور حول منعطف ومحاكاة تفاعلية.">
 <link rel="stylesheet" href="../../assets/css/theme.css">
 <script>
   MathJax = {
@@ -25,87 +25,83 @@
     <ol>
       <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
       <li><a href="../index.html">الفصل 1</a></li>
-      <li aria-current="page">النظام الدولي وتحويل الوحدات</li>
+      <li aria-current="page">محصلة التعجيل والقوة المركزية</li>
     </ol>
   </nav>
 
   <div dir="rtl" lang="ar">
 
   <section class="hero fade-up">
-    <span class="eyebrow">📖 الدرس 2 من 5 · الفصل الأول</span>
-    <h1>النظام الدولي للوحدات وتحويل الوحدات</h1>
-    <p class="lead">لكي يفهم عالِم في اليابان قياسًا سجّله عالِم في مصر، لا بد من لغة وحدات مشتركة. في هذا الدرس نتعرّف على النظام الدولي للوحدات (SI) وبادئاته، ونتعلّم كيف نحوّل بين مضاعفات الوحدة الواحدة وأجزائها بثقة.</p>
+    <span class="eyebrow">📖 الدرس 2 من 8 · الفصل الأول</span>
+    <h1>محصلة التعجيل والقوة المركزية</h1>
+    <p class="lead">2-2-1 محصلة التعجيل في الحركة الدائرية · 3-1 القوة المركزية</p>
   </section>
 
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
       <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يوضّح المقصود بالنظام الدولي للوحدات وأهمية توحيده عالميًا.</span></li>
-        <li><span class="obj-num">2</span><span>يعدد بادئات النظام الدولي الشائعة وقيمة كل منها.</span></li>
-        <li><span class="obj-num">3</span><span>يحوّل بين مضاعفات وحدة ما وأجزائها باستخدام عامل التحويل.</span></li>
-        <li><span class="obj-num">4</span><span>يحل مسائل تطبيقية على تحويل الوحدات، بما فيها تحويل وحدات السرعة المركّبة.</span></li>
+        <li><span class="obj-num">1</span><span>يميّز بين التعجيل المماسي والتعجيل المركزي لجسم متحرك في مسار دائري.</span></li>
+        <li><span class="obj-num">2</span><span>يعرّف القوة المركزية ويشتق علاقتها من قانون نيوتن الثاني.</span></li>
+        <li><span class="obj-num">3</span><span>يعلّل عدم إنجاز القوة المركزية شغلاً على الجسم الدائر.</span></li>
+        <li><span class="obj-num">4</span><span>يحل مسائل تطبيقية على القوة المركزية الناتجة عن الاحتكاك.</span></li>
       </ol>
     </div>
   </section>
 
   <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
     <div class="card neu">
-      <h2>💡 لماذا نحتاج نظامًا موحدًا للوحدات؟</h2>
-      <p>قبل توحيد النظام الدولي، كانت كل دولة أو مجموعة علماء تستخدم وحداتها الخاصة (الميل، القدم، الأوقية...)، ما كان يسبب أخطاء جسيمة عند تبادل النتائج العلمية والهندسية. لذلك اتُّفق عالميًا على <b>النظام الدولي للوحدات (SI)</b>، الذي يعتمد الكميات الأساسية السبع التي درسناها في الدرس السابق ووحدة قياسية واحدة لكل منها.</p>
+      <h2>💡 2-2-1 محصلة التعجيل في الحركة الدائرية</h2>
+      <p>مما سبق لاحظنا أن الجسم المتحرك في مسار دائري له تعجيلان: الأول يوازي السرعة الخطية ويأتي من تغيّر قيمتها ويُدعى <b>بالتعجيل المماسي</b> \( \left(\vec{a_T}=\dfrac{\Delta \vec{v}}{\Delta t}\right) \)، والآخر عمودي عليها ويأتي من تغيّر اتجاهها فقط ويُدعى <b>بالتعجيل المركزي</b> \( \left(\vec{a_c}=\dfrac{v^2}{r}\right) \) كما هو موضح بالشكل (2-1).</p>
     </div>
   </section>
 
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف 1-4 — النظام الدولي للوحدات (SI)</span>
-      <p style="margin:.3rem 0">منظومة وحدات قياس متفق عليها عالميًا، تحدد وحدة أساسية واحدة لكل كمية أساسية (كالمتر للطول والكيلوغرام للكتلة)، وتُشتق منها وحدات جميع الكميات الأخرى.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف 1-5 — البادئة (Prefix)</span>
-      <p style="margin:.3rem 0">مقطع يُضاف قبل اسم الوحدة للتعبير عن مضاعف عشري لها أو جزء عشري منها، مثل «كيلو» بمعنى ألف، و«ملّي» بمعنى جزء من ألف.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h2>📋 بادئات النظام الدولي الشائعة</h2>
-      <p style="color:var(--text-secondary);margin-top:0">كل بادئة تمثّل قوة للعدد 10 تُضرب أو تُقسم بها الوحدة الأساسية:</p>
-      <div class="grid grid-3" style="margin-top:1rem">
-        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
-          <strong>كيلو (k)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{3}\) = 1000</span>
-        </div>
-        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
-          <strong>هكتو (h)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{2}\) = 100</span>
-        </div>
-        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
-          <strong>ديكا (da)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{1}\) = 10</span>
-        </div>
-        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
-          <strong>ديسي (d)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{-1}\) = 0.1</span>
-        </div>
-        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
-          <strong>سنتي (c)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{-2}\) = 0.01</span>
-        </div>
-        <div class="neu-inset" style="padding:.9rem 1rem;text-align:center">
-          <strong>ملّي (m)</strong><br><span style="color:var(--text-secondary);font-size:.88rem">\(10^{-3}\) = 0.001</span>
+  <section class="section fade-up" id="fig21" data-navlabel="🕹️ الشكل 2-1 تفاعلي">
+    <div class="diagram-card neu">
+      <h3 style="margin-top:0">🕹️ إعادة إنشاء الشكل 2-1: التعجيل في الحركة الدائرية</h3>
+      <p style="color:var(--text-secondary)">حرّك المزلاج لتغيير مقدار التعجيل المماسي، وشاهد التعجيل المحصّل (الأزرق) كمجموع متجهي للتعجيل المركزي (الأحمر، دائمًا نحو المركز) والتعجيل المماسي (الأخضر، مماس للمسار).</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="fig21Svg" viewBox="0 0 360 300" width="360" height="300" role="img" aria-label="التعجيل المحصل في الحركة الدائرية"></svg></div>
+        <div class="io-row">
+          <label for="tanAccSlider" style="min-width:9rem">التعجيل المماسي a<sub>T</sub> = <span id="tanAccVal">3</span></label>
+          <input type="range" id="tanAccSlider" class="neu-range" min="0" max="6" step="0.5" value="3">
         </div>
       </div>
     </div>
   </section>
 
   <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
-      <span class="def-label" style="color:var(--accent-orange)">🔍 تعليل — لماذا نضرب في عامل التحويل بدل الجمع أو الطرح؟</span>
-      <p style="margin:.3rem 0">لأن العلاقة بين وحدتين تقيسان الكمية نفسها هي علاقة <b>نسبية (ضربية)</b> وليست جمعية. فمثلًا 1 كم = 1000 م، أي إن كل وحدة كيلومتر واحدة تقابل 1000 وحدة متر. لذلك فإن تحويل عدد معيّن من الكيلومترات إلى أمتار يتطلب ضربه في 1000 — تمامًا كما نضرب عدد الدزينات في 12 لنحصل على عدد الحبّات، لا أن نجمع 12 على العدد.</p>
+    <div class="def-box">
+      <span class="def-label">📌 3-1 القوة المركزية</span>
+      <p style="margin:.3rem 0">بالرغم من ثبوت مقدار السرعة الخطية المماسية، إلا أن تغيّر الاتجاه يؤدي إلى حصول تعجيل مركزي في الحركة على المسار الدائري، وبما أن الحركة ذات تعجيل إذن لا بد أن تكون محصلة القوى لا تساوي صفرًا (حسب قانون نيوتن الثاني في الحركة)؛ هذا يعني وجود قوة باتجاه التعجيل المركزي تُدعى <b>القوة المركزية (F<sub>c</sub>)</b>، تتّجه نحو مركز الدائرة.</p>
     </div>
   </section>
 
   <section class="section fade-up">
-    <div class="rule-box">$$ \text{القيمة بالوحدة الجديدة} = \text{القيمة بالوحدة القديمة} \times \text{عامل التحويل} $$</div>
+    <div class="rule-box">
+      <p style="margin:0 0 .4rem">ومن تطبيق قانون نيوتن الثاني:</p>
+      $$ \sum \vec{F} = m\vec{a} \;\Rightarrow\; \vec{F_c} = m\vec{a_c} \;\Rightarrow\; \vec{F_c} = m\dfrac{v^2}{r} \qquad \text{...(3)} $$
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>إن جميع الأجسام المتحركة في مسار دائري تكون مرتبطة بقوة مركزية تحاول إبقاء الأجسام متحركة دائريًا، فمثلًا إن جزيئات الماء الملتصقة بالملابس عندما تدور في مجفّف الغسالة تكون مرتبطة بقوة مركزية مع الملابس؛ وهذه القوة هي قوة احتكاك أثناء عملية التجفيف، فإن هذه القوة غير كافية لإبقاء جزيئات الماء ملتصقة بالملابس بحيث عند زيادة سرعة الدوران تصبح غير كافية، لذلك تنطلق باتجاه المماس لمحيط دائرة الدوران وتنفصل عن الملابس.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
+      <span class="def-label" style="color:var(--accent-orange)">🔍 تعليل — لماذا لا تنجز القوة المركزية شغلاً على جسم يتحرك حركة دائرية منتظمة؟</span>
+      <p style="margin:.3rem 0">تُعتبر القوة المركزية محصلة مجموعة قوى غير متعادلة، حيث تُكسب الجسم المتحرك دائريًا تعجيلًا مركزيًا يكون عموديًا على اتجاه السرعة الآنية للجسم دائمًا، فلا تُنجز شغلًا بالمعنى الفيزيائي، ولا تقوم بسحب الجسم باتجاهها، ولا يكون الجسم متسارعًا خطيًا تحت تأثيرها، حيث تعمل فقط على تغيير المسار المستقيم المعتاد للجسم إلى مسار دائري.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">💡</span>
+      <span><b>هل تعلم؟</b> أن أساس عمل أجهزة الطرد المركزي (Centrifuge) يعتمد على تغيّر القوة المركزية بالاعتماد على كتلة المادة، وبالتالي يمكن فصل المواد المختلفة في الكتلة أو الكثافة عن بعضها. يحتوي الجهاز على حاوية توضع داخلها العينات المختلفة في الكتلة ومثبتة بمحرك يدور بسرعة متعددة، ويُستعمل في الطب (فصل مكونات الدم)، وأجهزة متقدمة أخرى تُستعمل في تخصيب اليورانيوم 235 عن اليورانيوم 238.</span>
+    </div>
   </section>
 
   <section class="section fade-up" id="examples" data-navlabel="✍️ أمثلة محلولة">
@@ -113,101 +109,89 @@
     <p class="lead" style="margin-top:0">كل مثال يليه مباشرة بطاقة الحل التفصيلي.</p>
 
     <div class="example fade-up">
-      <div class="example-head">
-        <div class="example-title"><span class="example-badge">1</span> مثال 1</div>
+      <div class="example-head"><div class="example-title"><span class="example-badge">2</span> مثال (2)</div></div>
+      <div class="example-problem">أحسب أقصى سرعة (بوحدات km/h) تستطيع أن تدور بها سيارة حول منعطف مستو دون انزلاق، إذا كان نصف قطره \(25\ \text{m}\)، وكان معامل الاحتكاك السكوني بين الاطارات والطريق يساوي \(0.8\)؟</div>
+      <div class="diagram-wrap" style="margin-top:1rem">
+        <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="سيارة تدور حول منعطف دائري مستوٍ">
+          <ellipse cx="150" cy="120" rx="120" ry="26" fill="none" stroke="var(--text-faint)" stroke-width="2" stroke-dasharray="5 5"/>
+          <circle cx="150" cy="120" r="3" fill="var(--text-faint)"/>
+          <rect x="205" y="105" width="30" height="18" rx="4" fill="var(--accent-blue)"/>
+          <text x="150" y="60" text-anchor="middle" font-family="Cairo,sans-serif" font-size="13" fill="var(--text-secondary)">r = 25 m</text>
+        </svg>
+        <span class="diagram-caption">مسار دائري مستوٍ نصف قطره r لسيارة تدور دون انزلاق</span>
       </div>
-      <div class="example-problem">حوّل 5.2 كم إلى أمتار، ثم إلى سنتيمترات.</div>
     </div>
-
     <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
       <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)">
-          <span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي
-        </div>
-        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-      <ol class="steps hidden-steps" id="steps-ex1">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">نستخدم عامل التحويل: 1 كم = 1000 م</p>
-          <div class="calc-flow"><div class="calc-line">\( 5.2 \text{ km} \times 1000 = 5200 \text{ m} \)</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">لتحويل الأمتار إلى سنتيمترات: 1 م = 100 سم</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( 5200 \text{ m} \times 100 \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( = 520000 \text{ cm} \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ 5.2 كم = 5200 م = 520000 سم</div>
-    </div>
-
-    <div class="example fade-up" style="margin-top:2rem">
-      <div class="example-head">
-        <div class="example-title"><span class="example-badge">2</span> مثال 2</div>
-      </div>
-      <div class="example-problem">تسير سيارة بسرعة 72 كم/سا. عبّر عن سرعتها بوحدة m/s (متر لكل ثانية).</div>
-      <div class="neu-inset" style="padding:1rem 1.2rem;margin-top:1rem">
-        <p style="margin:.2rem 0"><b>🔧 فكرة الحل:</b> نحوّل الكيلومترات إلى أمتار، والساعات إلى ثوانٍ، بشكل منفصل.</p>
-      </div>
-    </div>
-
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)">
-          <span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي
-        </div>
+        <div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي</div>
         <button class="neu-btn" data-reveal-steps="steps-ex2" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
       </div>
       <ol class="steps hidden-steps" id="steps-ex2">
         <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">نحوّل الكيلومتر إلى متر: 1 كم = 1000 م</p>
-          <div class="calc-flow"><div class="calc-line calc-box">\( 72 \text{ km} = 72000 \text{ m} \)</div></div>
+          <p class="calc-note">القوة المركزية اللازمة تنشأ عن قوة الاحتكاك السكوني القصوى بين الإطارات والطريق</p>
+          <div class="calc-flow"><div class="calc-line calc-box">\( F_{s(\max)} = \mu_s N \)</div></div>
         </div></li>
         <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">نحوّل الساعة إلى ثانية: 1 سا = 3600 ثانية</p>
-          <div class="calc-flow"><div class="calc-line calc-box">\( 1 \text{ h} = 3600 \text{ s} \)</div></div>
+          <p class="calc-note">قوة رد الفعل العمودي (N) تساوي وزن السيارة (mg) على طريق مستوٍ</p>
+          <div class="calc-flow"><div class="calc-line calc-box">\( N = mg \)</div></div>
         </div></li>
         <li class="step"><span class="step-dot">3</span><div class="step-body">
-          <p class="calc-note">نكتب السرعة بالوحدتين الجديدتين ونقسم</p>
+          <p class="calc-note">نساوي القوة المركزية مع قوة الاحتكاك القصوى</p>
           <div class="calc-flow">
-            <div class="calc-line">\( v = \dfrac{72000 \text{ m}}{3600 \text{ s}} \)</div>
+            <div class="calc-line">\( F_c = F_{s(\max)} \;\Rightarrow\; m\dfrac{v^2}{r} = \mu_s (mg) \)</div>
             <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( v = 20 \text{ m/s} \)</div>
+            <div class="calc-line calc-box">\( v = \sqrt{\mu_s \, r \, g} = \sqrt{0.8 \times 25 \times 9.8} = 14\ \text{m/s} \)</div>
+          </div>
+        </div></li>
+        <li class="step"><span class="step-dot">4</span><div class="step-body">
+          <p class="calc-note">نحوّل الناتج إلى km/h</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( 14\ \dfrac{\text{m}}{\text{s}} \times \dfrac{1}{1000}\dfrac{\text{km}}{\text{m}} \times \dfrac{3600}{1}\dfrac{\text{s}}{\text{h}} \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( = 50.4\ \text{km/h} \)</div>
           </div>
         </div></li>
       </ol>
       <div class="callout tip" style="margin-top:.8rem">
         <span class="icon">💬</span>
-        <span>طريقة مختصرة يستخدمها كثيرون: للتحويل من km/h إلى m/s، اقسم على 3.6 مباشرة (لأن 1000÷3600 = 1/3.6). جرّب: 72 ÷ 3.6 = 20 ✓</span>
+        <span><b>ملاحظة:</b> في حال حصول انزلاق فإن قوة الاحتكاك ستتحول إلى قوة احتكاك حركي وتُحسب من العلاقة \( F_k=\mu_k N \)، حيث \(\mu_k\) معامل الاحتكاك الحركي.</span>
       </div>
-      <div class="exercise-final">✓ سرعة السيارة = 20 m/s</div>
+      <div class="exercise-final">✓ أقصى سرعة آمنة = 14 m/s = 50.4 km/h</div>
     </div>
   </section>
 
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محوّل وحدات">
+  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة سيارة على منعطف">
     <div class="card neu">
-      <h2>🕹️ أداة تفاعلية: محوّل وحدات الطول</h2>
-      <p>أدخل قيمة، واختر وحدة البدء ووحدة الوصول، وشاهد الناتج يتحدّث فور تغييرك لأي حقل.</p>
+      <h2>🕹️ محاكاة تفاعلية: هل تنزلق السيارة في المنعطف؟</h2>
+      <p>حرّك مزلاج السرعة وشاهد مباشرة إن كانت السيارة تحافظ على المسار الدائري (نصف القطر 25 م، معامل الاحتكاك 0.8) أم تنزلق للخارج عندما تتجاوز السرعة الآمنة المحسوبة في المثال (2).</p>
       <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="curveSvg" viewBox="0 0 360 280" width="360" height="280" role="img" aria-label="محاكاة سيارة تدور حول منعطف"></svg></div>
         <div class="io-row">
-          <input type="number" id="convValue" class="neu-input" value="1" style="max-width:9rem" aria-label="القيمة">
-          <select id="convFrom" class="neu-input" style="max-width:9rem">
-            <option value="1000">كيلومتر (km)</option>
-            <option value="1" selected>متر (m)</option>
-            <option value="0.01">سنتيمتر (cm)</option>
-            <option value="0.001">مليمتر (mm)</option>
-          </select>
-          <span style="font-weight:800;color:var(--accent-purple)">=</span>
-          <select id="convTo" class="neu-input" style="max-width:9rem">
-            <option value="1000">كيلومتر (km)</option>
-            <option value="1">متر (m)</option>
-            <option value="0.01" selected>سنتيمتر (cm)</option>
-            <option value="0.001">مليمتر (mm)</option>
-          </select>
+          <label for="carSpeed" style="min-width:9rem">سرعة السيارة = <span id="carSpeedVal">40</span> km/h</label>
+          <input type="range" id="carSpeed" class="neu-range" min="10" max="80" step="1" value="40">
         </div>
-        <div class="rule-box" id="convResult">1 m = 100 cm</div>
+        <div class="rule-box" id="curveStatus">آمنة ✅ — القوة المركزية اللازمة أقل من أقصى احتكاك متاح</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="banked-curve" data-navlabel="🛣️ المنعطف المائل">
+    <div class="callout tip">
+      <span class="icon">💡</span>
+      <span><b>هل تعلم؟</b> أن تصميم مخارج الطرق السريعة ومضمار سباق السيارات يتم بشكل مائل قليلاً وذلك لزيادة القوة المركزية الجاذبة، حيث يصبح رد فعل الطريق على السيارة مائلاً ويتحلل الى مركبتين أحدهما عمودية على الطريق وتعادل وزن الجسم والاخرى تكون باتجاه المركز تسهم مع قوة الاحتكاك في زيادة القوة المركزية الجاذبة وتمنع انزلاق السيارة.</span>
+    </div>
+
+    <div class="card neu">
+      <h2>🕹️ إعادة إنشاء الشكل: تحليل قوى المنعطف المائل</h2>
+      <p>حرّك مزلاج زاوية الميل \( \theta \) لمشاهدة كيف تتحلّل قوة رد الفعل العمودي \( F_N \) إلى مركبتين: مركبة رأسية \( F_N\cos\theta \) توازن وزن السيارة، ومركبة أفقية \( F_N\sin\theta \) تُسهم مع الاحتكاك في توفير القوة المركزية نحو المركز — تمامًا كما في شكل الكتاب التوضيحي.</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="bankSvg" viewBox="0 0 360 260" width="360" height="260" role="img" aria-label="تحليل قوى السيارة على منعطف مائل"></svg></div>
+        <div class="io-row">
+          <label for="bankAngle" style="min-width:9rem">زاوية الميل θ = <span id="bankAngleVal">15</span>°</label>
+          <input type="range" id="bankAngle" class="neu-range" min="0" max="40" step="1" value="15">
+        </div>
+        <div class="rule-box">\( v_{\text{مثالية}} = \sqrt{r\,g\,\tan\theta} \)</div>
+        <p style="margin:.4rem 0 0">عند نصف قطر منعطف 25 m، السرعة المثالية التي لا تحتاج فيها السيارة إلى أي احتكاك عند هذه الزاوية تساوي <b id="bankSpeedVal">8.1</b> m/s.</p>
       </div>
     </div>
   </section>
@@ -216,59 +200,59 @@
     <div class="neu quiz" data-quiz>
       <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
 
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>بادئة «كيلو» تعني ضرب الوحدة بِـ:</span></div>
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>1.</span><span>التعجيل المماسي في الحركة الدائرية ينشأ من:</span></div>
         <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>100</span></label>
-          <label class="quiz-opt"><input type="radio"><span>1000</span></label>
-          <label class="quiz-opt"><input type="radio"><span>0.001</span></label>
-          <label class="quiz-opt"><input type="radio"><span>10</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تغيّر اتجاه السرعة فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>ثبات مقدار السرعة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تغيّر مقدار (قيمة) السرعة الخطية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>زيادة نصف القطر</span></label>
         </div>
-        <div class="quiz-explain">كيلو = \(10^3\) = 1000، مثل الكيلوغرام = 1000 غرام.</div>
+        <div class="quiz-explain">التعجيل المماسي \(a_T=\Delta v/\Delta t\) ينشأ من تغيّر قيمة السرعة الخطية، بخلاف التعجيل المركزي الذي ينشأ من تغيّر الاتجاه فقط.</div>
       </div>
 
       <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>2.</span><span>1 ملّيمتر يساوي:</span></div>
+        <div class="quiz-q-title"><span>2.</span><span>القوة المركزية تتّجه دائمًا:</span></div>
         <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>10 سم</span></label>
-          <label class="quiz-opt"><input type="radio"><span>0.1 سم</span></label>
-          <label class="quiz-opt"><input type="radio"><span>0.01 م</span></label>
-          <label class="quiz-opt"><input type="radio"><span>100 م</span></label>
+          <label class="quiz-opt"><input type="radio"><span>مماسة للمسار الدائري</span></label>
+          <label class="quiz-opt"><input type="radio"><span>نحو مركز الدائرة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>بعيدًا عن المركز</span></label>
+          <label class="quiz-opt"><input type="radio"><span>عمودية على مستوى الحركة</span></label>
         </div>
-        <div class="quiz-explain">بما أن 1 م = 100 سم = 1000 مم، فإن كل مليمتر يساوي 1/10 سم، أي 0.1 سم.</div>
+        <div class="quiz-explain">القوة المركزية هي محصلة القوى المسبّبة للتعجيل المركزي، وتتّجه دائمًا نحو مركز الدائرة.</div>
       </div>
 
       <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>لتحويل قيمة من km/h إلى m/s نقسمها على:</span></div>
+        <div class="quiz-q-title"><span>3.</span><span>لماذا لا تُنجز القوة المركزية شغلًا على جسم يدور حركة دائرية منتظمة؟</span></div>
         <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>3.6</span></label>
-          <label class="quiz-opt"><input type="radio"><span>1000</span></label>
-          <label class="quiz-opt"><input type="radio"><span>3600</span></label>
-          <label class="quiz-opt"><input type="radio"><span>60</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لأنها عمودية دائمًا على اتجاه السرعة الآنية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لأن مقدارها صفر دائمًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لأن الجسم لا يتحرك فعليًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لأنها تزيد سرعة الجسم باستمرار</span></label>
         </div>
-        <div class="quiz-explain">لأن 1000 م ÷ 3600 ثانية = 1/3.6، فالقسمة على 3.6 تكافئ ضرب الكيلومتر/ساعة بمعامل التحويل كاملًا.</div>
+        <div class="quiz-explain">الشغل الفيزيائي يتطلب مركبة قوة موازية للإزاحة؛ وبما أن القوة المركزية عمودية دائمًا على السرعة اللحظية، فلا تُنجز شغلًا.</div>
       </div>
 
       <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>سيارة سرعتها 10 m/s، ما سرعتها بوحدة km/h؟</span></div>
+        <div class="quiz-q-title"><span>4.</span><span>في مثال دوران السيارة حول منعطف مستوٍ، القوة المركزية اللازمة تنشأ من:</span></div>
         <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>10</span></label>
-          <label class="quiz-opt"><input type="radio"><span>3.6</span></label>
-          <label class="quiz-opt"><input type="radio"><span>27.7</span></label>
-          <label class="quiz-opt"><input type="radio"><span>36</span></label>
+          <label class="quiz-opt"><input type="radio"><span>وزن السيارة فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>قوة المحرك</span></label>
+          <label class="quiz-opt"><input type="radio"><span>دفع الهواء</span></label>
+          <label class="quiz-opt"><input type="radio"><span>قوة الاحتكاك السكوني بين الإطارات والطريق</span></label>
         </div>
-        <div class="quiz-explain">للتحويل من m/s إلى km/h نضرب في 3.6: \(10 \times 3.6 = 36\) km/h.</div>
+        <div class="quiz-explain">على الطريق المستوي، قوة الاحتكاك السكوني القصوى بين الإطارات والطريق هي التي توفّر القوة المركزية اللازمة لإبقاء السيارة على مسارها.</div>
       </div>
 
       <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>لماذا نضرب في عامل التحويل بدل الجمع عند تحويل الوحدات؟</span></div>
+        <div class="quiz-q-title"><span>5.</span><span>إذا تجاوزت سرعة السيارة السرعة الآمنة على منعطف مستوٍ، فإن السيارة:</span></div>
         <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>لأن الجمع أصعب حسابيًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لأن العلاقة بين الوحدتين نسبية (ضربية) لا جمعية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لأن الوحدات أرقام عشوائية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لأن الضرب يُلغي الوحدة القديمة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تتوقف فجأة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تنزلق للخارج بعيدًا عن مركز المنعطف</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تنزلق نحو مركز المنعطف</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لا يتغيّر مسارها</span></label>
         </div>
-        <div class="quiz-explain">كل وحدة من الوحدة الكبيرة تقابل عددًا ثابتًا من الوحدة الصغيرة، وهذا تناسب ضربي وليس علاقة جمعية.</div>
+        <div class="quiz-explain">عندما تتجاوز السرعة الحد الآمن، لا تكفي قوة الاحتكاك السكوني لتوفير القوة المركزية اللازمة، فتنزلق الإطارات وتخرج السيارة عن مسارها الدائري إلى الخارج.</div>
       </div>
 
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
@@ -280,10 +264,10 @@
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
       <ul class="summary-list">
-        <li><span>النظام الدولي للوحدات (SI) يوحّد وحدة القياس عالميًا لكل كمية أساسية.</span></li>
-        <li><span>البادئات (كيلو، سنتي، ملّي...) تمثّل قوى للعدد 10 تُضرب أو تُقسم بها الوحدة الأساسية.</span></li>
-        <li><span>التحويل بين الوحدات يعتمد الضرب في عامل التحويل، لأن العلاقة بين الوحدتين نسبية.</span></li>
-        <li><span>لتحويل km/h إلى m/s، نقسم على 3.6؛ وللعكس نضرب في 3.6.</span></li>
+        <li><span>التعجيل المماسي \(a_T\) ناتج عن تغيّر مقدار السرعة، والتعجيل المركزي \(a_c\) ناتج عن تغيّر اتجاهها.</span></li>
+        <li><span>القوة المركزية \(F_c=mv^2/r\) هي محصلة القوى المسبّبة للتعجيل المركزي، وتتّجه نحو المركز.</span></li>
+        <li><span>القوة المركزية عمودية دائمًا على السرعة اللحظية، لذلك لا تُنجز شغلًا.</span></li>
+        <li><span>في دوران سيارة على طريق مستوٍ، الاحتكاك السكوني هو مصدر القوة المركزية.</span></li>
       </ul>
     </div>
   </section>
@@ -294,66 +278,238 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l2" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <p style="color:var(--text-secondary);margin-top:.3rem">ملخص بصري سريع لمفاهيم الدرس.</p>
       <div class="mindmap-wrap hidden-steps" id="mindmap-l2">
-        <svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للدرس الثاني">
-          <line x1="410" y1="180" x2="150" y2="80" stroke="#b3bdcc" stroke-width="2"/>
-          <line x1="410" y1="180" x2="670" y2="80" stroke="#b3bdcc" stroke-width="2"/>
-          <line x1="410" y1="180" x2="150" y2="280" stroke="#b3bdcc" stroke-width="2"/>
-          <line x1="410" y1="180" x2="670" y2="280" stroke="#b3bdcc" stroke-width="2"/>
-
-          <g><circle cx="410" cy="180" r="58" fill="#3fa9f5"/>
-            <text x="410" y="176" text-anchor="middle" fill="#fff" font-weight="800" font-size="14" font-family="Cairo,sans-serif">النظام</text>
-            <text x="410" y="195" text-anchor="middle" fill="#fff" font-weight="800" font-size="14" font-family="Cairo,sans-serif">الدولي</text></g>
-
-          <g><circle cx="150" cy="80" r="50" fill="#7c6fee"/>
-            <text x="150" y="84" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">بادئات</text></g>
-
-          <g><circle cx="670" cy="80" r="50" fill="#2fd18f"/>
-            <text x="670" y="76" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">عامل</text>
-            <text x="670" y="93" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">التحويل</text></g>
-
-          <g><circle cx="150" cy="280" r="50" fill="#ffab5e"/>
-            <text x="150" y="284" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">km ↔ m</text></g>
-
-          <g><circle cx="670" cy="280" r="50" fill="#ff6b9d"/>
-            <text x="670" y="284" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">km/h ÷3.6</text></g>
+        <svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للدرس الثاني">
+          <line x1="410" y1="150" x2="180" y2="80" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="410" y1="150" x2="640" y2="80" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="410" y1="150" x2="410" y2="250" stroke="#b3bdcc" stroke-width="2"/>
+          <g><circle cx="410" cy="150" r="56" fill="#3fa9f5"/>
+            <text x="410" y="146" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">القوة</text>
+            <text x="410" y="163" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">المركزية</text></g>
+          <g><circle cx="180" cy="80" r="48" fill="#7c6fee"/>
+            <text x="180" y="84" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">Fc=mv²/r</text></g>
+          <g><circle cx="640" cy="80" r="48" fill="#2fd18f"/>
+            <text x="640" y="84" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">لا شغل</text></g>
+          <g><circle cx="410" cy="250" r="48" fill="#ffab5e"/>
+            <text x="410" y="254" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">احتكاك السيارة</text></g>
         </svg>
       </div>
     </div>
   </section>
-
   </div>
 
   <nav class="lesson-nav" data-auto></nav>
 </main>
 
-<footer class="site-footer">الفصل الأول: الكميات الفيزيائية والقياس — الدرس 2: النظام الدولي وتحويل الوحدات</footer>
+<footer class="site-footer">الفصل الأول: الحركة الدائرية والدورانية — الدرس 2: محصلة التعجيل والقوة المركزية</footer>
 
 <script src="../../assets/js/plot.js"></script>
 <script src="../../assets/js/quiz.js"></script>
 <script src="../../assets/js/site-ch1.js"></script>
 <script>
 (function(){
-  var UNIT_NAMES = {"1000":"km", "1":"m", "0.01":"cm", "0.001":"mm"};
-  var valueInput = document.getElementById("convValue");
-  var fromSelect = document.getElementById("convFrom");
-  var toSelect = document.getElementById("convTo");
-  var result = document.getElementById("convResult");
-  function render(){
-    var value = parseFloat(valueInput.value) || 0;
-    var fromFactor = parseFloat(fromSelect.value);
-    var toFactor = parseFloat(toSelect.value);
-    var meters = value * fromFactor;
-    var converted = meters / toFactor;
-    var rounded = Math.round(converted * 1e6) / 1e6;
-    result.textContent = value + " " + UNIT_NAMES[fromSelect.value] + " = " + rounded + " " + UNIT_NAMES[toSelect.value];
+  // ===== Figure 2-1 recreation: resultant acceleration =====
+  var svg1 = document.getElementById("fig21Svg");
+  var ns = "http://www.w3.org/2000/svg";
+  var slider = document.getElementById("tanAccSlider");
+  var sliderVal = document.getElementById("tanAccVal");
+  var cx1=180, cy1=150, R1=90;
+
+  function drawFig21(){
+    var aT = parseFloat(slider.value);
+    sliderVal.textContent = aT;
+    while(svg1.firstChild) svg1.removeChild(svg1.firstChild);
+    var circle = document.createElementNS(ns,"circle");
+    circle.setAttribute("cx",cx1); circle.setAttribute("cy",cy1); circle.setAttribute("r",R1);
+    circle.setAttribute("fill","none"); circle.setAttribute("stroke","var(--text-faint)"); circle.setAttribute("stroke-width","1.5");
+    svg1.appendChild(circle);
+
+    var angle = -Math.PI/4;
+    var px = cx1+R1*Math.cos(angle), py = cy1+R1*Math.sin(angle);
+
+    function arrow(x1,y1,x2,y2,color,width){
+      var l = document.createElementNS(ns,"line");
+      l.setAttribute("x1",x1); l.setAttribute("y1",y1); l.setAttribute("x2",x2); l.setAttribute("y2",y2);
+      l.setAttribute("stroke",color); l.setAttribute("stroke-width",width||3); l.setAttribute("stroke-linecap","round");
+      svg1.appendChild(l);
+      var ang = Math.atan2(y2-y1,x2-x1);
+      var hl=10, a1=ang+Math.PI-0.4, a2=ang+Math.PI+0.4;
+      var head = document.createElementNS(ns,"polygon");
+      head.setAttribute("points", x2+","+y2+" "+(x2+hl*Math.cos(a1))+","+(y2+hl*Math.sin(a1))+" "+(x2+hl*Math.cos(a2))+","+(y2+hl*Math.sin(a2)));
+      head.setAttribute("fill",color);
+      svg1.appendChild(head);
+    }
+
+    // centripetal (toward center) fixed length
+    var acLen = 40;
+    var acX = px + (cx1-px)/R1*acLen, acY = py + (cy1-py)/R1*acLen;
+    arrow(px,py,acX,acY,"var(--accent-red)",3.5);
+
+    // tangential (perpendicular), length scales with aT
+    var tanLen = 15 + aT*10;
+    var tx = -Math.sin(angle), ty = Math.cos(angle);
+    var tanX = px + tx*tanLen, tanY = py + ty*tanLen;
+    if(aT > 0.1){ arrow(px,py,tanX,tanY,"var(--accent-green)",3.5); }
+
+    // resultant = sum of both vectors
+    var resX = px + (acX-px) + (tanX-px);
+    var resY = py + (acY-py) + (tanY-py);
+    arrow(px,py,resX,resY,"var(--accent-blue)",4);
+
+    var dot = document.createElementNS(ns,"circle");
+    dot.setAttribute("cx",px); dot.setAttribute("cy",py); dot.setAttribute("r",6); dot.setAttribute("fill","var(--text-primary)");
+    svg1.appendChild(dot);
+
+    var labels = [["aᴄ (مركزي)","var(--accent-red)",20],["aT (مماسي)","var(--accent-green)",40],["a (محصّل)","var(--accent-blue)",60]];
+    labels.forEach(function(l,i){
+      var t = document.createElementNS(ns,"text");
+      t.setAttribute("x",14); t.setAttribute("y",l[2]);
+      t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size","12"); t.setAttribute("fill",l[1]);
+      t.textContent = l[0];
+      svg1.appendChild(t);
+    });
   }
-  [valueInput, fromSelect, toSelect].forEach(function(el){
-    el.addEventListener("input", render);
-    el.addEventListener("change", render);
-  });
-  render();
+  slider.addEventListener("input", drawFig21);
+  drawFig21();
+
+  // ===== Car cornering simulation =====
+  var svg2 = document.getElementById("curveSvg");
+  var speedInput = document.getElementById("carSpeed");
+  var speedVal = document.getElementById("carSpeedVal");
+  var statusBox = document.getElementById("curveStatus");
+  var R_TRACK = 25, MU = 0.8, G = 9.8;
+  var vSafeMs = Math.sqrt(MU*R_TRACK*G);
+  var vSafeKmh = vSafeMs*3.6;
+  var carAngle = 0;
+
+  function drawCar(){
+    var speedKmh = parseFloat(speedInput.value);
+    speedVal.textContent = speedKmh;
+    var slipping = speedKmh > vSafeKmh;
+
+    while(svg2.firstChild) svg2.removeChild(svg2.firstChild);
+    var cx2=180, cy2=140, rx=130, ry=55;
+    var track = document.createElementNS(ns,"ellipse");
+    track.setAttribute("cx",cx2); track.setAttribute("cy",cy2); track.setAttribute("rx",rx); track.setAttribute("ry",ry);
+    track.setAttribute("fill","none"); track.setAttribute("stroke", slipping? "var(--accent-red)":"var(--text-faint)");
+    track.setAttribute("stroke-width","2"); track.setAttribute("stroke-dasharray","6 5");
+    svg2.appendChild(track);
+
+    var carX = cx2 + rx*Math.cos(carAngle);
+    var carY = cy2 + ry*Math.sin(carAngle);
+    var offsetR = slipping ? 18 : 0;
+    var dirX = Math.cos(carAngle), dirY = Math.sin(carAngle)*(ry/rx);
+    var norm = Math.sqrt(dirX*dirX+dirY*dirY)||1;
+    carX += (dirX/norm)*offsetR;
+    carY += (dirY/norm)*offsetR;
+
+    var car = document.createElementNS(ns,"circle");
+    car.setAttribute("cx",carX); car.setAttribute("cy",carY); car.setAttribute("r",9);
+    car.setAttribute("fill", slipping ? "var(--accent-red)" : "var(--accent-green)");
+    svg2.appendChild(car);
+
+    var label = document.createElementNS(ns,"text");
+    label.setAttribute("x",cx2); label.setAttribute("y",20);
+    label.setAttribute("text-anchor","middle"); label.setAttribute("font-family","Cairo,sans-serif");
+    label.setAttribute("font-size","13"); label.setAttribute("fill", slipping ? "var(--accent-red)" : "var(--accent-green)");
+    label.setAttribute("font-weight","800");
+    label.textContent = slipping ? "⚠️ انزلاق!" : "✅ مسار آمن";
+    svg2.appendChild(label);
+
+    statusBox.textContent = slipping
+      ? "خطر ⚠️ — السرعة تتجاوز الحد الآمن (" + vSafeKmh.toFixed(1) + " km/h) وتتجاوز القوة المركزية اللازمة أقصى احتكاك متاح"
+      : "آمنة ✅ — القوة المركزية اللازمة أقل من أقصى احتكاك متاح (الحد الآمن " + vSafeKmh.toFixed(1) + " km/h)";
+  }
+  var raf2;
+  function tick2(){
+    var speedKmh = parseFloat(speedInput.value);
+    carAngle += 0.008 + speedKmh*0.00025;
+    drawCar();
+    raf2 = requestAnimationFrame(tick2);
+  }
+  speedInput.addEventListener("input", drawCar);
+  drawCar();
+  if(!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)){
+    raf2 = requestAnimationFrame(tick2);
+  }
+
+  // ===== Banked curve force decomposition =====
+  var svg3 = document.getElementById("bankSvg");
+  var angleInput = document.getElementById("bankAngle");
+  var angleVal = document.getElementById("bankAngleVal");
+  var bankSpeedVal = document.getElementById("bankSpeedVal");
+  var R_BANK = 25, G_BANK = 9.8;
+
+  function arrow3(x1,y1,x2,y2,color,width,dashed){
+    var l = document.createElementNS(ns,"line");
+    l.setAttribute("x1",x1); l.setAttribute("y1",y1); l.setAttribute("x2",x2); l.setAttribute("y2",y2);
+    l.setAttribute("stroke",color); l.setAttribute("stroke-width",width||3); l.setAttribute("stroke-linecap","round");
+    if(dashed) l.setAttribute("stroke-dasharray","4 4");
+    svg3.appendChild(l);
+    var ang = Math.atan2(y2-y1,x2-x1);
+    var hl=9, a1=ang+Math.PI-0.4, a2=ang+Math.PI+0.4;
+    var head = document.createElementNS(ns,"polygon");
+    head.setAttribute("points", x2+","+y2+" "+(x2+hl*Math.cos(a1))+","+(y2+hl*Math.sin(a1))+" "+(x2+hl*Math.cos(a2))+","+(y2+hl*Math.sin(a2)));
+    head.setAttribute("fill",color);
+    svg3.appendChild(head);
+  }
+
+  function drawBank(){
+    var thetaDeg = parseFloat(angleInput.value);
+    angleVal.textContent = thetaDeg;
+    var theta = thetaDeg*Math.PI/180;
+    var vIdeal = Math.sqrt(R_BANK*G_BANK*Math.tan(theta));
+    bankSpeedVal.textContent = vIdeal.toFixed(1);
+
+    while(svg3.firstChild) svg3.removeChild(svg3.firstChild);
+
+    var baseY = 210, leftX = 40, rightX = 320;
+    var riseX = rightX - (rightX-leftX)*0.55;
+    var riseY = baseY - (rightX-leftX)*0.55*Math.tan(theta);
+
+    var ramp = document.createElementNS(ns,"polygon");
+    ramp.setAttribute("points", leftX+","+baseY+" "+rightX+","+baseY+" "+rightX+","+riseY);
+    ramp.setAttribute("fill","var(--surface-alt, #e9edf3)"); ramp.setAttribute("stroke","var(--text-faint)"); ramp.setAttribute("stroke-width","1.5");
+    svg3.appendChild(ramp);
+
+    var carPx=0.62, carX = leftX + (rightX-leftX)*carPx;
+    var carY = baseY - (rightX-leftX)*carPx*Math.tan(theta);
+
+    var car = document.createElementNS(ns,"circle");
+    car.setAttribute("cx",carX); car.setAttribute("cy",carY-8); car.setAttribute("r",8);
+    car.setAttribute("fill","var(--accent-blue)");
+    svg3.appendChild(car);
+
+    var ox=carX, oy=carY-8;
+    var mgLen=55;
+    arrow3(ox,oy,ox,oy+mgLen,"var(--text-secondary)",3);
+
+    var nLen=70;
+    var nx = -Math.sin(theta), ny=-Math.cos(theta);
+    var nEndX = ox+nx*nLen, nEndY = oy+ny*nLen;
+    arrow3(ox,oy,nEndX,nEndY,"var(--accent-purple, #7c6fee)",3.5);
+
+    var vertX = ox, vertY = oy+ny*nLen;
+    arrow3(ox,oy,vertX,vertY,"var(--accent-green)",2.5,true);
+    var horizX = ox+nx*nLen, horizY=oy;
+    arrow3(ox,oy,horizX,horizY,"var(--accent-red)",2.5,true);
+
+    function label(x,y,txt,color){
+      var t = document.createElementNS(ns,"text");
+      t.setAttribute("x",x); t.setAttribute("y",y);
+      t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size","12"); t.setAttribute("fill",color);
+      t.setAttribute("font-weight","700");
+      t.textContent = txt;
+      svg3.appendChild(t);
+    }
+    label(ox+6, oy+mgLen+4, "mg", "var(--text-secondary)");
+    label(nEndX+6, nEndY, "Fɴ", "var(--accent-purple, #7c6fee)");
+    label(vertX+6, vertY-4, "Fɴcosθ", "var(--accent-green)");
+    label(horizX-10, horizY-8, "Fɴsinθ (نحو المركز)", "var(--accent-red)");
+    label(leftX+8, baseY-8, "θ", "var(--text-secondary)");
+  }
+  angleInput.addEventListener("input", drawBank);
+  drawBank();
 })();
 </script>
 </body>

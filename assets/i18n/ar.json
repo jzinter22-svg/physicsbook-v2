@@ -58,11 +58,14 @@
     "en": "🇬🇧 English"
   },
   "ch1": {
-    "sidebarSubtitle": "الكميات الفيزيائية والقياس",
-    "lesson1NavTitle": "1) الكميات الأساسية والمشتقة",
-    "lesson2NavTitle": "2) النظام الدولي وتحويل الوحدات",
-    "lesson3NavTitle": "3) الكميات القياسية والمتجهة",
-    "lesson4NavTitle": "4) الأرقام المعنوية والدقة",
-    "lesson5NavTitle": "5) مراجعة الفصل"
+    "sidebarSubtitle": "الحركة الدائرية والدورانية",
+    "lesson1NavTitle": "1) الحركة الدائرية والتعجيل المركزي",
+    "lesson2NavTitle": "2) محصلة التعجيل والقوة المركزية",
+    "lesson3NavTitle": "3) مدارات الأقمار وقوانين كبلر",
+    "lesson4NavTitle": "4) الازاحة والسرعة الزاويتان",
+    "lesson5NavTitle": "5) التعجيل الزاوي والحركة المنتظمة",
+    "lesson6NavTitle": "6) عزم القصور الذاتي",
+    "lesson7NavTitle": "7) الطاقة والشغل والزخم الزاوي",
+    "lesson8NavTitle": "8) أسئلة ومسائل الفصل"
   }
 }
