@@ -3,12 +3,13 @@
 
 ## Golden Reference
 
-No chapter has been written yet. Until one exists, `templates/` (the
-chapter, lesson, and behavior-script templates) is the canonical baseline.
-Once the first real chapter is built, promote it to golden reference here
-and require every later chapter to match it in structure, interaction
-patterns, and code quality — the same way this project's Math Book
-counterpart treats its own reference chapter.
+Nine chapter hubs exist (`chapter-1/` … `chapter-9/`) but none has lesson
+content yet. Until one does, `templates/` (the chapter, lesson, and
+behavior-script templates) is the canonical baseline. Once the first real
+chapter is built, promote it to golden reference here and require every
+later chapter to match it in structure, interaction patterns, and code
+quality — the same way this project's Math Book counterpart treats its own
+reference chapter.
 
 ---
 
