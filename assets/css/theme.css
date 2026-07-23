@@ -241,6 +241,11 @@ body{
   font-weight:900;
   line-height:1.15;
   margin:0 0 .85rem;
+}
+/* Negative letter-spacing is safe for Latin display type but risks
+   breaking cursive glyph joining in Arabic/Kurdish (both shaped scripts),
+   so it's scoped to LTR (English) only rather than applied globally. */
+[dir="ltr"] .hero .hero-brand-title{
   letter-spacing:-.01em;
 }
 .hero-subtitle{

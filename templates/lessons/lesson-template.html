@@ -105,17 +105,33 @@
     <h2 style="margin-bottom:.25rem">✍️ Worked examples</h2>
     <p class="lead" style="margin-top:0">Click "Show solution steps" on each example to reveal the solution one step at a time.</p>
 
+    <!-- Every numerical/mathematical problem is a QUESTION card immediately
+         followed by its own SOLUTION card, in this fixed order inside the
+         solution card: المعطيات (Given) → المطلوب (Required) → hidden
+         step-by-step solution (behind the reveal toggle) → boxed final
+         answer (always visible). Never start solving before المعطيات and
+         المطلوب are stated — see quality-improvement pass, chapter 1. -->
     <div class="example fade-up">
+      <div class="example-head"><h2 style="margin:0">📝 مثال (1)</h2></div>
+      <p>[نص المسألة، مع الصياغة الرياضية اللازمة.]</p>
+    </div>
+
+    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
       <div class="example-head">
-        <div class="example-title"><span class="example-badge">1</span> Example 1</div>
-        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">Show solution steps</button>
+        <h2 style="margin:0">✓ الحل التفصيلي</h2>
+        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
       </div>
-      <div class="example-problem">[Problem statement, with inline math as needed.]</div>
-      <div class="neu-inset" style="padding:1rem 1.2rem;margin-bottom:1rem">
-        <p style="margin:.2rem 0"><b>🎯 Find:</b> [what's being solved for]</p>
-        <p style="margin:.2rem 0"><b>📋 Given:</b> [known values / relations]</p>
-        <p style="margin:.2rem 0"><b>🔧 Using:</b> [the rule/definition this example applies]</p>
-      </div>
+
+      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
+      <ul class="summary-list" style="margin-bottom:1rem">
+        <li><span>\( [\text{symbol}] = [\text{value}]\ [\text{unit}] \) — [وصف الكمية، مع أي تحويل وحدات لازم]</span></li>
+        <!-- add one <li> per given quantity; always show the SI unit and
+             any conversion (e.g. km→m, rpm→rad/s) needed before substitution -->
+      </ul>
+
+      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
+      <p style="margin:0 0 1rem">[ما المطلوب حسابه بالضبط.]</p>
+
       <ol class="steps hidden-steps" id="steps-ex1">
         <li class="step"><span class="step-dot">1</span><div class="step-body">
           <p class="calc-note">[what this step does]</p>
@@ -139,9 +155,9 @@
       </div>
       <div class="exercise-final">✓ [Final boxed answer]</div>
     </div>
-    <!-- duplicate the .example block above for additional worked examples;
-         add class="exercise-card" for a student-facing practice problem
-         instead of a fully worked example -->
+    <!-- duplicate the pair of .example blocks above for additional worked
+         examples; add class="exercise-card" for a student-facing practice
+         problem instead of a fully worked example -->
   </section>
 
   <!-- ===== Interactive widget ===== -->
