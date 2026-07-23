@@ -1,0 +1,60 @@
+{
+  "common": {
+    "skipToContent": "Skip to content",
+    "toggleTheme": "Toggle theme",
+    "tableOfContents": "Table of contents",
+    "closeMenu": "Close menu",
+    "chapterLessonsNav": "Chapter lessons",
+    "languageSwitcher": "Select language",
+    "breadcrumb": "Breadcrumb",
+    "previous": "Previous",
+    "next": "Next",
+    "percentComplete": "{pct}% complete",
+    "lessonsCount": "{n} lessons",
+    "enterChapter": "Enter chapter →",
+    "showSteps": "Show solution steps",
+    "hideSteps": "Hide solution steps",
+    "showMap": "Show map",
+    "hideMap": "Hide map",
+    "checkAnswers": "Check answers",
+    "scoreLabel": "Score: {correct} / {total}",
+    "scorePerfect": "🎉 Perfect!",
+    "scoreGood": "👍 Good — review the rest",
+    "scoreRetry": "🔁 Review the lesson and try again",
+    "checkUnderstanding": "🧠 Check your understanding",
+    "chapterHome": "Chapter Home",
+    "readyToBuild": "Ready to build",
+    "yourProgress": "Your progress in this chapter"
+  },
+  "brand": {
+    "name": "Interactive Physics Book"
+  },
+  "home": {
+    "pageTitle": "Interactive Physics Book",
+    "description": "Interactive Physics Book: an interactive textbook with worked examples, interactive widgets, self-check quizzes, and mind maps for every chapter.",
+    "eyebrow": "📘 Interactive Physics Book",
+    "title": "Welcome to your interactive textbook",
+    "lead": "Pick a chapter to begin: clear step-by-step explanations, worked examples you reveal one step at a time, interactive widgets, self-check quizzes, and mind maps for every lesson.",
+    "tagQuizzes": "🧠 Self-check quizzes",
+    "tagWidgets": "🕹️ Interactive widgets",
+    "tagMindmaps": "🗺 Mind maps",
+    "chaptersHeading": "📚 Chapters",
+    "footer": "Interactive Physics Book"
+  },
+  "chapter": {
+    "titleWithNumber": "Chapter {n}",
+    "pageTitle": "Chapter {n} — Interactive Physics Book",
+    "description": "Chapter {n} of the Interactive Physics Book. Lessons are not published yet.",
+    "eyebrow": "📘 Interactive Physics Book",
+    "lead": "This chapter is ready to build. Lessons, worked examples, interactive widgets, quizzes, and a mind map will appear here as they're added.",
+    "lessonsTag": "⏱ {n} lessons",
+    "contentsHeading": "📚 Chapter contents",
+    "emptyState": "Lessons will appear here as they're added.",
+    "footer": "Chapter {n} — Interactive Physics Book"
+  },
+  "lang": {
+    "ar": "🇮🇶 العربية",
+    "ku": "🏳️ کوردی",
+    "en": "🇬🇧 English"
+  }
+}

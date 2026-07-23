@@ -50,8 +50,11 @@
       });
       var total = questions.length;
       if(scoreEl){
-        scoreEl.textContent = "Score: " + correct + " / " + total +
-          (correct === total ? "  🎉 Perfect!" : correct >= total*0.6 ? "  👍 Good — review the rest" : "  🔁 Review the lesson and try again");
+        var t = window.PBI18n ? window.PBI18n.t : function(k){ return k; };
+        var verdict = correct === total ? t("common.scorePerfect")
+          : correct >= total*0.6 ? t("common.scoreGood")
+          : t("common.scoreRetry");
+        scoreEl.textContent = t("common.scoreLabel", {correct: correct, total: total}) + "  " + verdict;
       }
       if(correct === total && window.PBChapter && window.PBChapter.markComplete){
         window.PBChapter.markComplete(document.body.getAttribute("data-page"));

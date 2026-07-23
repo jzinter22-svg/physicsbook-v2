@@ -1,19 +1,20 @@
 <!doctype html>
-<html lang="en" dir="ltr" data-base="">
+<html lang="ar" dir="rtl" data-base="" data-assets="">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>كتاب الطبيعيات التفاعلي — Interactive Physics Book</title>
-<meta name="description" content="كتاب الطبيعيات التفاعلي — Interactive Physics Book: an interactive textbook with worked examples, interactive widgets, self-check quizzes, and mind maps for every chapter.">
+<title data-i18n-title-tag="home.pageTitle">كتاب الطبيعيات التفاعلي</title>
+<meta name="description" data-i18n-content="home.description" content="كتاب الطبيعيات التفاعلي: كتاب إلكتروني تفاعلي يضم أمثلة محلولة خطوة بخطوة، أدوات تفاعلية، اختبارات ذاتية، وخرائط ذهنية لكل فصل.">
 <link rel="stylesheet" href="assets/css/theme.css">
+<script src="assets/js/i18n.js"></script>
 </head>
 <body data-page="index.html">
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="index.html"><span class="brand-badge">P</span><span>Interactive Physics Book</span></a>
+    <a class="brand" href="index.html"><span class="brand-badge">P</span><span data-i18n="brand.name">كتاب الطبيعيات التفاعلي</span></a>
     <div class="header-actions">
-      <button class="neu-icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌓</button>
+      <button class="neu-icon-btn" id="themeToggle" data-i18n-title="common.toggleTheme" data-i18n-aria-label="common.toggleTheme" title="تبديل المظهر" aria-label="تبديل المظهر">🌓</button>
     </div>
   </div>
 </header>
@@ -22,13 +23,13 @@
   <section class="hero fade-up">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">📘 Interactive Physics Book · <span dir="rtl" lang="ar">كتاب الطبيعيات التفاعلي</span></span>
-        <h1>Welcome to your interactive textbook</h1>
-        <p class="lead">Pick a chapter to begin: clear step-by-step explanations, worked examples you reveal one step at a time, interactive widgets, self-check quizzes, and mind maps for every lesson.</p>
+        <span class="eyebrow" data-i18n="home.eyebrow">📘 كتاب الطبيعيات التفاعلي</span>
+        <h1 data-i18n="home.title">مرحباً بك في كتابك التفاعلي</h1>
+        <p class="lead" data-i18n="home.lead">اختر فصلاً لتبدأ: شرح مبسّط خطوة بخطوة، أمثلة محلولة تكشفها تدريجياً، أدوات تفاعلية، اختبارات ذاتية، وخرائط ذهنية لكل درس.</p>
         <div class="io-row" style="margin-top:1.25rem">
-          <span class="tag">🧠 Self-check quizzes</span>
-          <span class="tag">🕹️ Interactive widgets</span>
-          <span class="tag">🗺 Mind maps</span>
+          <span class="tag" data-i18n="home.tagQuizzes">🧠 اختبارات ذاتية</span>
+          <span class="tag" data-i18n="home.tagWidgets">🕹️ أدوات تفاعلية</span>
+          <span class="tag" data-i18n="home.tagMindmaps">🗺 خرائط ذهنية</span>
         </div>
       </div>
 
@@ -68,86 +69,86 @@
   </section>
 
   <section class="section fade-up">
-    <h2 style="margin-bottom:1rem">📚 Chapters</h2>
+    <h2 style="margin-bottom:1rem" data-i18n="home.chaptersHeading">📚 الفصول</h2>
     <div class="grid grid-2" id="chapterGrid">
 
       <a class="neu lesson-card" href="chapter-1/index.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#7c6fee,#3fa9f5)">1</span>
-        <h3 style="margin:.2rem 0">Chapter 1</h3>
+        <h3 style="margin:.2rem 0" data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":1}'>الفصل 1</h3>
         <div class="progress-track neu-sm" style="height:8px"><div class="progress-fill" style="width:0%"></div></div>
-        <span style="color:var(--text-secondary);font-size:.85rem">0 lessons · 0% complete</span>
-        <span class="lesson-go">Enter chapter →</span>
+        <span style="color:var(--text-secondary);font-size:.85rem"><span data-i18n="common.lessonsCount" data-i18n-params='{"n":0}'>0 دروس</span> · <span data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% مكتمل</span></span>
+        <span class="lesson-go" data-i18n="common.enterChapter">ادخل الفصل ←</span>
       </a>
 
       <a class="neu lesson-card" href="chapter-2/index.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#3fa9f5,#ff6b9d)">2</span>
-        <h3 style="margin:.2rem 0">Chapter 2</h3>
+        <h3 style="margin:.2rem 0" data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":2}'>الفصل 2</h3>
         <div class="progress-track neu-sm" style="height:8px"><div class="progress-fill" style="width:0%"></div></div>
-        <span style="color:var(--text-secondary);font-size:.85rem">0 lessons · 0% complete</span>
-        <span class="lesson-go">Enter chapter →</span>
+        <span style="color:var(--text-secondary);font-size:.85rem"><span data-i18n="common.lessonsCount" data-i18n-params='{"n":0}'>0 دروس</span> · <span data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% مكتمل</span></span>
+        <span class="lesson-go" data-i18n="common.enterChapter">ادخل الفصل ←</span>
       </a>
 
       <a class="neu lesson-card" href="chapter-3/index.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#ffab5e,#ff6b9d)">3</span>
-        <h3 style="margin:.2rem 0">Chapter 3</h3>
+        <h3 style="margin:.2rem 0" data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":3}'>الفصل 3</h3>
         <div class="progress-track neu-sm" style="height:8px"><div class="progress-fill" style="width:0%"></div></div>
-        <span style="color:var(--text-secondary);font-size:.85rem">0 lessons · 0% complete</span>
-        <span class="lesson-go">Enter chapter →</span>
+        <span style="color:var(--text-secondary);font-size:.85rem"><span data-i18n="common.lessonsCount" data-i18n-params='{"n":0}'>0 دروس</span> · <span data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% مكتمل</span></span>
+        <span class="lesson-go" data-i18n="common.enterChapter">ادخل الفصل ←</span>
       </a>
 
       <a class="neu lesson-card" href="chapter-4/index.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#2fd18f,#3fa9f5)">4</span>
-        <h3 style="margin:.2rem 0">Chapter 4</h3>
+        <h3 style="margin:.2rem 0" data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":4}'>الفصل 4</h3>
         <div class="progress-track neu-sm" style="height:8px"><div class="progress-fill" style="width:0%"></div></div>
-        <span style="color:var(--text-secondary);font-size:.85rem">0 lessons · 0% complete</span>
-        <span class="lesson-go">Enter chapter →</span>
+        <span style="color:var(--text-secondary);font-size:.85rem"><span data-i18n="common.lessonsCount" data-i18n-params='{"n":0}'>0 دروس</span> · <span data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% مكتمل</span></span>
+        <span class="lesson-go" data-i18n="common.enterChapter">ادخل الفصل ←</span>
       </a>
 
       <a class="neu lesson-card" href="chapter-5/index.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#7c6fee,#ff6b9d)">5</span>
-        <h3 style="margin:.2rem 0">Chapter 5</h3>
+        <h3 style="margin:.2rem 0" data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":5}'>الفصل 5</h3>
         <div class="progress-track neu-sm" style="height:8px"><div class="progress-fill" style="width:0%"></div></div>
-        <span style="color:var(--text-secondary);font-size:.85rem">0 lessons · 0% complete</span>
-        <span class="lesson-go">Enter chapter →</span>
+        <span style="color:var(--text-secondary);font-size:.85rem"><span data-i18n="common.lessonsCount" data-i18n-params='{"n":0}'>0 دروس</span> · <span data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% مكتمل</span></span>
+        <span class="lesson-go" data-i18n="common.enterChapter">ادخل الفصل ←</span>
       </a>
 
       <a class="neu lesson-card" href="chapter-6/index.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#3fa9f5,#2fd18f)">6</span>
-        <h3 style="margin:.2rem 0">Chapter 6</h3>
+        <h3 style="margin:.2rem 0" data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":6}'>الفصل 6</h3>
         <div class="progress-track neu-sm" style="height:8px"><div class="progress-fill" style="width:0%"></div></div>
-        <span style="color:var(--text-secondary);font-size:.85rem">0 lessons · 0% complete</span>
-        <span class="lesson-go">Enter chapter →</span>
+        <span style="color:var(--text-secondary);font-size:.85rem"><span data-i18n="common.lessonsCount" data-i18n-params='{"n":0}'>0 دروس</span> · <span data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% مكتمل</span></span>
+        <span class="lesson-go" data-i18n="common.enterChapter">ادخل الفصل ←</span>
       </a>
 
       <a class="neu lesson-card" href="chapter-7/index.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#ffab5e,#7c6fee)">7</span>
-        <h3 style="margin:.2rem 0">Chapter 7</h3>
+        <h3 style="margin:.2rem 0" data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":7}'>الفصل 7</h3>
         <div class="progress-track neu-sm" style="height:8px"><div class="progress-fill" style="width:0%"></div></div>
-        <span style="color:var(--text-secondary);font-size:.85rem">0 lessons · 0% complete</span>
-        <span class="lesson-go">Enter chapter →</span>
+        <span style="color:var(--text-secondary);font-size:.85rem"><span data-i18n="common.lessonsCount" data-i18n-params='{"n":0}'>0 دروس</span> · <span data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% مكتمل</span></span>
+        <span class="lesson-go" data-i18n="common.enterChapter">ادخل الفصل ←</span>
       </a>
 
       <a class="neu lesson-card" href="chapter-8/index.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#ff6b9d,#ffab5e)">8</span>
-        <h3 style="margin:.2rem 0">Chapter 8</h3>
+        <h3 style="margin:.2rem 0" data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":8}'>الفصل 8</h3>
         <div class="progress-track neu-sm" style="height:8px"><div class="progress-fill" style="width:0%"></div></div>
-        <span style="color:var(--text-secondary);font-size:.85rem">0 lessons · 0% complete</span>
-        <span class="lesson-go">Enter chapter →</span>
+        <span style="color:var(--text-secondary);font-size:.85rem"><span data-i18n="common.lessonsCount" data-i18n-params='{"n":0}'>0 دروس</span> · <span data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% مكتمل</span></span>
+        <span class="lesson-go" data-i18n="common.enterChapter">ادخل الفصل ←</span>
       </a>
 
       <a class="neu lesson-card" href="chapter-9/index.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#2fd18f,#7c6fee)">9</span>
-        <h3 style="margin:.2rem 0">Chapter 9</h3>
+        <h3 style="margin:.2rem 0" data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":9}'>الفصل 9</h3>
         <div class="progress-track neu-sm" style="height:8px"><div class="progress-fill" style="width:0%"></div></div>
-        <span style="color:var(--text-secondary);font-size:.85rem">0 lessons · 0% complete</span>
-        <span class="lesson-go">Enter chapter →</span>
+        <span style="color:var(--text-secondary);font-size:.85rem"><span data-i18n="common.lessonsCount" data-i18n-params='{"n":0}'>0 دروس</span> · <span data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% مكتمل</span></span>
+        <span class="lesson-go" data-i18n="common.enterChapter">ادخل الفصل ←</span>
       </a>
 
     </div>
   </section>
 </main>
 
-<footer class="site-footer">Interactive Physics Book · <span dir="rtl" lang="ar">كتاب الطبيعيات التفاعلي</span></footer>
+<footer class="site-footer" data-i18n="home.footer">كتاب الطبيعيات التفاعلي</footer>
 
 <script src="assets/js/site-home.js"></script>
 </body>

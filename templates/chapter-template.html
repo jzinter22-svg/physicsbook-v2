@@ -7,16 +7,27 @@
     3. Copy templates/chapter-behavior-template.js to assets/js/site-ch<N>.js
        and fill in its CONFIG block (see that file's own header comment).
     4. Replace every [bracketed placeholder] below with real content, and
-       duplicate the .lesson-card block once per lesson.
+       duplicate the .lesson-card block once per lesson. If the placeholder
+       text is genuine lesson/chapter content (not chrome), give it its own
+       translation key in assets/i18n/*.json instead of hardcoding it —
+       see "i18n" note below.
     5. Copy templates/lessons/lesson-template.html to
        chapter-<N>/lessons/lesson-<M>.html for each lesson.
     6. Add a card for this chapter to the home page's chapter grid.
 
   This file assumes it lives at chapter-<N>/index.html — asset paths below
   are relative to that location ("../assets/...").
+
+  i18n: elements already carrying a `data-i18n*` attribute are shared UI
+  chrome (breadcrumb, progress, headings) resolved through assets/js/i18n.js
+  from assets/i18n/*.json — leave those attributes in place. [Bracketed
+  placeholders] are this chapter's own content and have no key yet; once
+  written, add a key per language (e.g. "chapters.ch1.objective1") and give
+  the element a `data-i18n="chapters.ch1.objective1"` attribute too, so the
+  content translates instead of staying fixed in one language.
 -->
 <!doctype html>
-<html lang="en" dir="ltr" data-base="">
+<html lang="ar" dir="rtl" data-base="" data-assets="../">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -31,15 +42,16 @@
   };
 </script>
 <script src="../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../assets/js/i18n.js"></script>
 </head>
 <body data-page="index.html">
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">Skip to content</a>
 <header class="site-header"></header>
 
 <main class="container" id="main">
-  <nav class="breadcrumb" aria-label="Breadcrumb">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="Breadcrumb">
     <ol>
-      <li><a href="../index.html">Interactive Physics Book</a></li>
+      <li><a href="../index.html" data-i18n="brand.name">Interactive Physics Book</a></li>
       <li aria-current="page">[Chapter N: Topic Name]</li>
     </ol>
   </nav>
@@ -100,8 +112,8 @@
   <section class="fade-up">
     <div class="neu" style="padding:1.5rem 1.75rem">
       <div class="io-row" style="justify-content:space-between;margin-bottom:.6rem">
-        <strong>Your progress in this chapter</strong>
-        <span class="progress-label">0% complete</span>
+        <strong data-i18n="common.yourProgress">Your progress in this chapter</strong>
+        <span class="progress-label" data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% complete</span>
       </div>
       <div class="progress-track"><div class="progress-fill"></div></div>
     </div>
@@ -121,7 +133,7 @@
   </section>
 
   <section class="section fade-up">
-    <h2 style="margin-bottom:1rem">📚 Chapter contents</h2>
+    <h2 style="margin-bottom:1rem" data-i18n="chapter.contentsHeading">📚 Chapter contents</h2>
     <div class="grid grid-3">
 
       <!-- Repeat this .lesson-card block once per lesson, in order -->
@@ -171,7 +183,7 @@
   </section>
 </main>
 
-<footer class="site-footer">[Chapter N: Topic Name] — Interactive Physics Book</footer>
+<footer class="site-footer">[Chapter N: Topic Name] — <span data-i18n="brand.name">Interactive Physics Book</span></footer>
 
 <script src="../assets/js/site-ch{N}.js"></script>
 </body>

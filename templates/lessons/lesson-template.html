@@ -12,7 +12,7 @@
   paths below are relative to that location ("../../assets/...").
 -->
 <!doctype html>
-<html lang="en" dir="ltr" data-base="../">
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -27,15 +27,16 @@
   };
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
 </head>
 <body data-page="lessons/lesson-{M}.html">
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">Skip to content</a>
 <header class="site-header"></header>
 
 <main class="container" id="main">
-  <nav class="breadcrumb" aria-label="Breadcrumb">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="Breadcrumb">
     <ol>
-      <li><a href="../../index.html">Interactive Physics Book</a></li>
+      <li><a href="../../index.html" data-i18n="brand.name">Interactive Physics Book</a></li>
       <li><a href="../index.html">[Chapter N: Topic Name]</a></li>
       <li aria-current="page">[Lesson Title]</li>
     </ol>
@@ -107,7 +108,7 @@
     <div class="example fade-up">
       <div class="example-head">
         <div class="example-title"><span class="example-badge">1</span> Example 1</div>
-        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-show-label="Show solution steps" data-hide-label="Hide solution steps">Show solution steps</button>
+        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">Show solution steps</button>
       </div>
       <div class="example-problem">[Problem statement, with inline math as needed.]</div>
       <div class="neu-inset" style="padding:1rem 1.2rem;margin-bottom:1rem">
@@ -162,7 +163,7 @@
   <!-- ===== Self-check quiz — markup consumed by assets/js/quiz.js ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 Self-Check">
     <div class="neu quiz" data-quiz>
-      <h2>🧠 Check your understanding</h2>
+      <h2 data-i18n="common.checkUnderstanding">🧠 Check your understanding</h2>
 
       <div class="quiz-q" data-correct="2">
         <div class="quiz-q-title"><span>1.</span><span>[Question text]</span></div>
@@ -177,7 +178,7 @@
       <!-- add one .quiz-q block per question; data-correct is the 0-based
            index of the correct .quiz-opt -->
 
-      <button class="neu-btn primary" data-quiz-check>Check answers</button>
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">Check answers</button>
       <div class="quiz-score"></div>
     </div>
   </section>
@@ -199,7 +200,7 @@
     <div class="card neu">
       <div class="example-head">
         <h2 style="margin:0">🗺 Lesson mind map</h2>
-        <button class="neu-btn" data-reveal-steps="mindmap-lesson" aria-expanded="false" data-show-label="Show map" data-hide-label="Hide map">Show map</button>
+        <button class="neu-btn" data-reveal-steps="mindmap-lesson" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">Show map</button>
       </div>
       <p style="color:var(--text-secondary);margin-top:.3rem">A quick visual recap linking this lesson's concepts — useful for review before a test.</p>
       <div class="mindmap-wrap hidden-steps" id="mindmap-lesson">

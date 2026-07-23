@@ -6,12 +6,12 @@
 
   var CONFIG = {
     storageKeyPrefix: "ch1",
-    headerTitle: "Chapter 1",
+    chapterNumber: 1,
     brandBadge: "1",
-    sidebarSubtitle: "Ready to build",
+    sidebarSubtitleKey: "common.readyToBuild",
     lessons: [
-      { href: "index.html", title: "Chapter Home", root: true }
-      // { href: "lessons/lesson-1.html", title: "1) [Lesson title]" },
+      { href: "index.html", titleKey: "common.chapterHome", root: true }
+      // { href: "lessons/lesson-1.html", titleKey: "lessons.ch1.lesson1.navTitle" },
       // ... add one entry per lesson, in order, once lessons exist
     ],
     bgSymbols: ["•", "∘", "×", "+", "–", "="]
@@ -21,6 +21,10 @@
   var STORAGE_KEY = CONFIG.storageKeyPrefix + "_progress_v1";
   var THEME_KEY = "pb_theme"; /* shared site-wide theme preference across chapters */
   var LESSONS = CONFIG.lessons;
+
+  function t(key, params){
+    return window.PBI18n ? window.PBI18n.t(key, params) : key;
+  }
 
   function getBase(){
     var d = document.documentElement.getAttribute("data-base");
@@ -66,7 +70,7 @@
     LESSONS.forEach(function(l){ if(!l.root && p[l.href]) done++; });
     var pct = total ? Math.round((done/total)*100) : 0;
     document.querySelectorAll(".progress-fill").forEach(function(f){ f.style.width = pct + "%"; });
-    document.querySelectorAll(".progress-label").forEach(function(f){ f.textContent = pct + "% complete"; });
+    document.querySelectorAll(".progress-label").forEach(function(f){ f.textContent = t("common.percentComplete", {pct: pct}); });
     document.querySelectorAll(".sidebar-link").forEach(function(a){
       var href = a.getAttribute("data-href");
       if(href && p[href]) a.classList.add("is-done");
@@ -74,14 +78,18 @@
   }
 
   function applyTheme(){
-    var t = localStorage.getItem(THEME_KEY);
-    if(t) document.documentElement.setAttribute("data-theme", t);
+    var theme = localStorage.getItem(THEME_KEY);
+    if(theme) document.documentElement.setAttribute("data-theme", theme);
   }
   function toggleTheme(){
     var cur = document.documentElement.getAttribute("data-theme");
     var next = cur === "dark" ? "light" : "dark";
     document.documentElement.setAttribute("data-theme", next);
     localStorage.setItem(THEME_KEY, next);
+  }
+
+  function chapterTitle(){
+    return t("chapter.titleWithNumber", {n: CONFIG.chapterNumber});
   }
 
   function buildHeader(){
@@ -93,21 +101,29 @@
     var toggleBtn = document.createElement("button");
     toggleBtn.className = "neu-icon-btn sidebar-toggle-btn";
     toggleBtn.id = "sidebarToggle";
-    toggleBtn.setAttribute("aria-label", "Table of contents");
+    toggleBtn.setAttribute("aria-label", t("common.tableOfContents"));
     toggleBtn.setAttribute("aria-expanded", "false");
     toggleBtn.setAttribute("aria-controls", "sidebarNav");
-    toggleBtn.title = "Table of contents";
+    toggleBtn.title = t("common.tableOfContents");
     toggleBtn.textContent = "☰";
 
     var brand = document.createElement("a");
     brand.className = "brand";
     brand.href = base + "index.html";
-    brand.innerHTML = '<span class="brand-badge">' + CONFIG.brandBadge + '</span><span>' + CONFIG.headerTitle + '</span>';
+    brand.innerHTML = '<span class="brand-badge">' + CONFIG.brandBadge + '</span><span>' + chapterTitle() + '</span>';
+
+    var themeBtn = document.createElement("button");
+    themeBtn.className = "neu-icon-btn";
+    themeBtn.id = "themeToggle";
+    themeBtn.title = t("common.toggleTheme");
+    themeBtn.setAttribute("aria-label", t("common.toggleTheme"));
+    themeBtn.textContent = "🌓";
 
     var actions = document.createElement("div");
     actions.className = "header-actions";
-    actions.innerHTML = '<button class="neu-icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌓</button>';
-    actions.insertBefore(toggleBtn, actions.firstChild);
+    actions.appendChild(toggleBtn);
+    actions.appendChild(themeBtn);
+    if (window.PBI18n) window.PBI18n.mountSwitcher(actions);
 
     header.innerHTML = "";
     var container = document.createElement("div");
@@ -116,11 +132,18 @@
     container.appendChild(actions);
     header.appendChild(container);
 
-    document.getElementById("themeToggle").addEventListener("click", toggleTheme);
+    themeBtn.addEventListener("click", toggleTheme);
     toggleBtn.addEventListener("click", toggleSidebar);
   }
 
   function buildSidebar(){
+    // Remove any previous instance (rebuilt on language change) so repeated
+    // calls never stack duplicate sidebars/overlays.
+    var prevOverlay = document.getElementById("sidebarOverlay");
+    if (prevOverlay) prevOverlay.remove();
+    var prevAside = document.getElementById("sidebarNav");
+    if (prevAside) prevAside.remove();
+
     var overlay = document.createElement("div");
     overlay.className = "toc-overlay";
     overlay.id = "sidebarOverlay";
@@ -132,21 +155,22 @@
 
     var html = '<div class="sidebar-inner">' +
       '<div class="sidebar-topbar">' +
-        '<button class="neu-icon-btn sidebar-close-btn" id="sidebarClose" aria-label="Close menu">✕</button>' +
+        '<button class="neu-icon-btn sidebar-close-btn" id="sidebarClose" aria-label="'+t("common.closeMenu")+'">✕</button>' +
       '</div>' +
-      '<a class="sidebar-brand" href="'+base+'index.html"><span class="brand-badge">'+CONFIG.brandBadge+'</span><span>'+CONFIG.headerTitle+'</span></a>' +
-      '<div class="sidebar-subtitle">'+CONFIG.sidebarSubtitle+'</div>' +
+      '<a class="sidebar-brand" href="'+base+'index.html"><span class="brand-badge">'+CONFIG.brandBadge+'</span><span>'+chapterTitle()+'</span></a>' +
+      '<div class="sidebar-subtitle">'+t(CONFIG.sidebarSubtitleKey)+'</div>' +
       '<div class="sidebar-progress">' +
         '<div class="progress-track"><div class="progress-fill"></div></div>' +
         '<div class="progress-label"></div>' +
       '</div>' +
-      '<nav class="sidebar-nav" aria-label="Chapter lessons"><ul class="sidebar-list">';
+      '<nav class="sidebar-nav" aria-label="'+t("common.chapterLessonsNav")+'"><ul class="sidebar-list">';
 
     LESSONS.forEach(function(l){
       var href = base + l.href;
       var isCur = current === l.href;
+      var title = t(l.titleKey, l.titleParams);
       html += '<li class="sidebar-item'+(isCur?" active":"")+'">' +
-        '<a href="'+href+'" data-href="'+l.href+'" class="sidebar-link'+(l.root?" root":"")+(isCur?" current":"")+'"'+(isCur?' aria-current="page"':'')+'>'+l.title+'</a>';
+        '<a href="'+href+'" data-href="'+l.href+'" class="sidebar-link'+(l.root?" root":"")+(isCur?" current":"")+'"'+(isCur?' aria-current="page"':'')+'>'+title+'</a>';
       if(isCur){
         var subs = document.querySelectorAll("main section[id][data-navlabel]");
         if(subs.length){
@@ -189,8 +213,8 @@
   function closeSidebar(){
     document.getElementById("sidebarOverlay").classList.remove("open");
     document.getElementById("sidebarNav").classList.remove("open");
-    var t = document.getElementById("sidebarToggle");
-    if(t) t.setAttribute("aria-expanded", "false");
+    var toggleBtn = document.getElementById("sidebarToggle");
+    if(toggleBtn) toggleBtn.setAttribute("aria-expanded", "false");
   }
   function toggleSidebar(){
     var nav = document.getElementById("sidebarNav");
@@ -227,12 +251,12 @@
     var html = "";
     if(prev){
       html += '<a href="'+base+prev.href+'" class="neu nav-link-card"><span style="font-size:1.4rem" aria-hidden="true">←</span>' +
-        '<span><span class="dir">Previous</span><br><span class="lbl">'+prev.title+'</span></span></a>';
+        '<span><span class="dir">'+t("common.previous")+'</span><br><span class="lbl">'+t(prev.titleKey, prev.titleParams)+'</span></span></a>';
     } else { html += "<span></span>"; }
     if(next){
       html += '<a href="'+base+next.href+'" class="neu nav-link-card" style="margin-inline-start:auto;flex-direction:row-reverse;text-align:end">' +
         '<span style="font-size:1.4rem" aria-hidden="true">→</span>' +
-        '<span><span class="dir">Next</span><br><span class="lbl">'+next.title+'</span></span></a>';
+        '<span><span class="dir">'+t("common.next")+'</span><br><span class="lbl">'+t(next.titleKey, next.titleParams)+'</span></span></a>';
     }
     nav.innerHTML = html;
   }
@@ -259,8 +283,26 @@
     });
   }
 
+  /* Reveal-toggle buttons carry translation keys (not literal text) for
+     their two states, e.g. data-i18n-show="common.showSteps"
+     data-i18n-hide="common.hideSteps" (mind-map toggles use
+     common.showMap/common.hideMap instead). Re-run refreshRevealButton on
+     every language change so a button already in its "expanded" state
+     keeps showing the correct translated "hide" label instead of being
+     reset to "show" by a naive static data-i18n binding. */
+  function refreshRevealButton(btn){
+    var target = document.getElementById(btn.getAttribute("data-reveal-steps"));
+    var expanded = !!(target && target.classList.contains("shown"));
+    var showKey = btn.getAttribute("data-i18n-show") || "common.showSteps";
+    var hideKey = btn.getAttribute("data-i18n-hide") || "common.hideSteps";
+    btn.textContent = t(expanded ? hideKey : showKey);
+  }
+  function refreshAllRevealButtons(){
+    document.querySelectorAll("[data-reveal-steps]").forEach(refreshRevealButton);
+  }
   function setupStepReveals(){
     document.querySelectorAll("[data-reveal-steps]").forEach(function(btn){
+      refreshRevealButton(btn);
       btn.addEventListener("click", function(){
         var target = document.getElementById(btn.getAttribute("data-reveal-steps"));
         if(!target) return;
@@ -268,14 +310,13 @@
         if(already){
           target.classList.remove("shown");
           btn.setAttribute("aria-expanded", "false");
-          btn.textContent = btn.getAttribute("data-show-label") || "Show solution steps";
         } else {
           target.classList.add("shown");
           btn.setAttribute("aria-expanded", "true");
           var steps = target.querySelectorAll(".step");
           steps.forEach(function(s,i){ s.style.animationDelay = (i*0.15)+"s"; });
-          btn.textContent = btn.getAttribute("data-hide-label") || "Hide solution steps";
         }
+        refreshRevealButton(btn);
       });
     });
   }
@@ -335,21 +376,33 @@
     }
   }
 
-  function init(){
-    applyTheme();
-    forceRepaintAfterFonts();
-    buildAmbientBackground();
+  function renderDynamicUI(){
     buildHeader();
     buildSidebar();
     buildLessonNav();
     updateProgressUI();
+  }
+
+  function init(){
+    applyTheme();
+    forceRepaintAfterFonts();
+    buildAmbientBackground();
+    renderDynamicUI();
     revealOnScroll();
     setupStepReveals();
     if(window.PBQuiz) window.PBQuiz.init();
     typesetOnceReady();
+    if (window.PBI18n) window.PBI18n.onChange(function(){
+      renderDynamicUI();
+      refreshAllRevealButtons();
+    });
+  }
+
+  function start(){
+    if (window.PBI18n) window.PBI18n.ready(init); else init();
   }
 
   if(document.readyState === "loading"){
-    document.addEventListener("DOMContentLoaded", init);
-  } else { init(); }
+    document.addEventListener("DOMContentLoaded", start);
+  } else { start(); }
 })();

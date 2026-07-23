@@ -178,6 +178,24 @@ body{
 .progress-fill{height:100%;border-radius:20px;background:linear-gradient(90deg,var(--accent-purple),var(--accent-blue),var(--accent-pink));
   transition:width .6s cubic-bezier(.4,0,.2,1); width:0%}
 
+/* ===== Language switcher ===== */
+.lang-switch{position:relative;display:inline-flex}
+.lang-switch-btn{font-size:1.15rem}
+.lang-menu{
+  list-style:none;margin:0;padding:.4rem;position:absolute;top:calc(100% + 10px);inset-inline-end:0;
+  min-width:11rem;background:var(--surface);border-radius:var(--radius-sm);
+  box-shadow:10px 10px 22px var(--shadow-dark), -10px -10px 22px var(--shadow-light);
+  display:none;flex-direction:column;gap:.15rem;z-index:80;
+}
+.lang-menu.open{display:flex}
+.lang-menu-item{
+  display:block;width:100%;text-align:start;font:inherit;font-weight:700;font-size:.92rem;
+  padding:.65rem .85rem;border:none;border-radius:10px;background:transparent;color:var(--text-primary);
+  cursor:pointer;transition:background .15s ease;
+}
+.lang-menu-item:hover{background:rgba(124,111,238,.1)}
+.lang-menu-item.active{color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue))}
+
 /* ===== Breadcrumb navigation ===== */
 .breadcrumb{margin:1rem 0 0}
 .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:0;padding:0;font-size:.85rem;color:var(--text-secondary)}

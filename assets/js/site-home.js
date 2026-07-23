@@ -40,9 +40,15 @@
     revealOnScroll();
     var toggleBtn = document.getElementById("themeToggle");
     if(toggleBtn) toggleBtn.addEventListener("click", toggleTheme);
+    var actions = document.querySelector(".header-actions");
+    if(window.PBI18n) window.PBI18n.mountSwitcher(actions);
+  }
+
+  function start(){
+    if (window.PBI18n) window.PBI18n.ready(init); else init();
   }
 
   if(document.readyState === "loading"){
-    document.addEventListener("DOMContentLoaded", init);
-  } else { init(); }
+    document.addEventListener("DOMContentLoaded", start);
+  } else { start(); }
 })();
