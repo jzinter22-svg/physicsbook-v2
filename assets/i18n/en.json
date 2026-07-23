@@ -32,9 +32,9 @@
   "home": {
     "pageTitle": "Interactive Physics Book",
     "description": "Interactive Physics Book: an interactive textbook with worked examples, interactive widgets, self-check quizzes, and mind maps for every chapter.",
-    "eyebrow": "📘 Interactive Physics Book",
-    "title": "Welcome to your interactive textbook",
-    "lead": "Pick a chapter to begin: clear step-by-step explanations, worked examples you reveal one step at a time, interactive widgets, self-check quizzes, and mind maps for every lesson.",
+    "brandTitle": "📘 Interactive Physics Book",
+    "subtitle": "An interactive learning platform that teaches the physics curriculum step by step.",
+    "lead": "Start by choosing a chapter and enjoy simplified explanations, worked examples, interactive graphics, self-check quizzes, and mind maps for every lesson.",
     "tagQuizzes": "🧠 Self-check quizzes",
     "tagWidgets": "🕹️ Interactive widgets",
     "tagMindmaps": "🗺 Mind maps",

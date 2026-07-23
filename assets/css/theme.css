@@ -212,6 +212,26 @@ body{
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;color:var(--accent-purple);font-weight:700;font-size:.9rem}
 .lead{color:var(--text-secondary);font-size:1.05rem;max-width:60ch}
 
+/* Home hero: the project name is the single most prominent element on the
+   page (48px–64px, very bold, generous surrounding space). Selector needs
+   two classes (not just one) to out-specify the plain ".hero h1" rule
+   above for the same element, without touching that rule — which is what
+   still sizes the "Chapter N" heading on chapter pages. */
+.hero .hero-brand-title{
+  font-size:clamp(3rem, 4vw + 1.5rem, 4rem);
+  font-weight:900;
+  line-height:1.15;
+  margin:0 0 .85rem;
+  letter-spacing:-.01em;
+}
+.hero-subtitle{
+  color:var(--text-secondary);
+  font-weight:600;
+  font-size:clamp(1.05rem, 1vw + .8rem, 1.3rem);
+  max-width:56ch;
+  margin:0 0 1.1rem;
+}
+
 /* ===== Cards / Sections ===== */
 .section{padding:2rem 0}
 .card{padding:1.75rem;margin-bottom:1.5rem}
