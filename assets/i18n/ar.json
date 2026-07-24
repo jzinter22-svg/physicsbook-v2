@@ -97,5 +97,15 @@
     "lesson6NavTitle": "6) ربط المقاومة والمحث والمتسعة على التوالي",
     "lesson7NavTitle": "7) المحولة الكهربائية",
     "lesson8NavTitle": "8) أسئلة ومسائل الفصل"
+  },
+  "ch5": {
+    "sidebarSubtitle": "المواد شبه الموصلة والأجهزة الإلكترونية",
+    "lesson1NavTitle": "1) المواد شبه الموصلة (تداخل حزم الطاقة)",
+    "lesson2NavTitle": "2) المواد شبه الموصلة نوع N ونوع P",
+    "lesson3NavTitle": "3) الثنائي PN",
+    "lesson4NavTitle": "4) الترانزستور",
+    "lesson5NavTitle": "5) البث الكهرومغناطيسي",
+    "lesson6NavTitle": "6) الرادار",
+    "lesson7NavTitle": "7) أسئلة الفصل الخامس"
   }
 }

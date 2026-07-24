@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدرس 4: الترانزستور — الفصل الخامس</title>
+<meta name="description" content="4-5 الترانزستور: تاريخه، مزاياه، ترانزستور الوصلة ثنائية القطبية NPN وPNP، آلية عمله، شروط تشغيله.">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
+</head>
+<body data-page="lessons/lesson-4.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li><a href="../index.html">الفصل 5</a></li>
+      <li aria-current="page">الترانزستور</li>
+    </ol>
+  </nav>
+
+  <div dir="rtl" lang="ar">
+
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 الدرس 4 من 7 · 4-5</span>
+    <h1>الترانزستور Transistor</h1>
+    <p class="lead">أعظم اختراع في القرن العشرين بشهادة العلماء: عنصر إلكتروني فعّال من مواد شبه موصلة، حلّ محل الصمام الإلكتروني الضخم واستهلاكه العالي للطاقة، وأصبح حجر الأساس لكل الأجهزة الإلكترونية الحديثة.</p>
+  </section>
+
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
+    <div class="card neu">
+      <h2>🎯 أهداف الدرس</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يذكر نبذة تاريخية عن اختراع الترانزستور، ويبيّن أهم مزاياه مقارنة بالصمام الإلكتروني.</span></li>
+        <li><span class="obj-num">2</span><span>يوضّح تركيب ترانزستور الوصلة ثنائية القطبية بنوعيه NPN وPNP، ويسمّي أقطابه الثلاثة.</span></li>
+        <li><span class="obj-num">3</span><span>يشرح آلية عمل الترانزستور في التحكم بتيار قوي بواسطة تيار ضعيف، ومفهوم ربح الترانزستور.</span></li>
+        <li><span class="obj-num">4</span><span>يذكر الشرطين اللازمين لعمل الترانزستور، وأهم استخداماته.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="history" data-navlabel="💡 نبذة تاريخية">
+    <div class="card neu">
+      <h2>💡 4-5 الترانزستور Transistor</h2>
+      <p>بعد محاولات وتجارب عديدة قام بها العلماء، وللتخلص من عيوب الصمام الإلكتروني، تم اختراع الترانزستور الإلكتروني عام 1947م على يد ثلاثة من الفيزيائيين الأمريكيين العاملين في مختبرات (بيل الأمريكية) وهم: جون باردين، ووولتر براتين، وويليام شوكلي، والذين حصلوا على جائزة نوبل عام 1956م تقديرًا لجهودهم على هذا الإنجاز العظيم الذي خدم الإنسانية جمعاء.</p>
+      <p style="margin-top:.5rem">والترانزستور هو عنصر إلكتروني فعّال مصنوع من مواد شبه موصلة كالجرمانيوم والسيليكون، وله ثلاثة أقطاب كما هو الحال مع الصمام الثلاثي، ولكن بدون دائرة تسخين.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
+      <span class="def-label" style="color:var(--accent-green)">🔢 تعداد — مزايا الترانزستور مقارنة بالصمام الإلكتروني</span>
+      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem">
+        <li>يتميّز الترانزستور الإلكتروني على الصمام الإلكتروني بصغر حجمه الذي لا يتجاوز — إذا ما صُنع منفردًا — حجم حبة الحمص، أما إذا كان في دوائر متكاملة فإنه بالإمكان تصنيع ملايين الترانزستورات على شريحة لا تتجاوز مساحتها السنتمتر المربع الواحد، ما أدى إلى تقليص حجم وأوزان الأجهزة الكهربائية.</li>
+        <li>يعمل على جهد كهربائي منخفض جدًا لا يتجاوز عدة فولطات، وبقلة استهلاكه للطاقة الكهربائية التي تقاس بالميلي واط في الترانزستورات المنفردة وحتى النانو واط في الدوائر المتكاملة، ما أدى إلى إمكانية تصنيع أجهزة كهربائية مختلفة تعمل ببطاريات صغيرة الحجم ولفترات طويلة من الزمن.</li>
+        <li>بصلادته وجسمه المصمم من مواد صلبة، لا توجد في داخله أجزاء متحركة، ولذلك فهو لا يتأثر بالصدمات والاهتزازات الميكانيكية كما هو الحال مع الصمام الإلكتروني، فيمكن وضعه في الأجهزة المحمولة.</li>
+        <li>يتميّز بطول عمره التشغيلي الذي يمتد لعشرات السنوات، وبإمكانية عمله على نطاق واسع من درجات الحرارة.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>ومع اختراع الترانزستور الذي يعدّه العلماء أعظم اختراع في القرن العشرين، تجددت آمال المهندسين والفنيين والمنتجين في صنع معدات وأجهزة إلكترونية صغيرة الحجم وقليلة الاستهلاك للطاقة، كالحواسيب الرقمية والتلفزيونات الملوّنة والراديويات الصغيرة والهواتف المحمولة والآلات الحاسبة المكتبية واليدوية، وأصبح بالإمكان استعمالها في مختلف المركبات واستعمالها العابر للقارات وفي المركبات الفضائية والصواريخ والأقمار الاصطناعية... إلخ.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="bjt" data-navlabel="🔺 ترانزستور الوصلة">
+    <div class="card neu">
+      <h2>1-4-5 ترانزستور الوصلة ثنائية القطبية</h2>
+      <p>يتم تصنيع هذا النوع من الترانزستور من خلال تطعيم ثلاث مناطق متجاورة على بلورة نقية من السليكون، إما على شكل (سالب – موجب – سالب) (NPN) أو على شكل (موجب – سالب – موجب) (PNP)، ويتم توصيل أقطاب معدنية بهذه المناطق الثلاث؛ حيث يسمّى القطب الموصل بالمنطقة الوسطى بالقاعدة (Base) (B)، بينما تُسمّى الأقطاب الموصلة بالمنطقتين الخارجيتين بالباعث (Emitter) (E) والجامع (Collector) (C).</p>
+      <p style="margin-top:.5rem">يُطلق على هذا النوع من الترانزستور بثنائي القطبية، وذلك بسبب وجود وصلتين وكذلك مساهمة الفجوات والإلكترونات في حمل التيار الذي يسري داخل الترانزستور. يتطلب عمل هذا النوع من الترانزستور وجود وصلتين، وكي يعمل يكون في الغالب وضع الانحياز لإحداهما أماميًا وللأخرى عكسيًا، بينما إذا ما تم تصنيع الترانزستور بحيث يكون عرض منطقة القاعدة المنضبة المستنزفة للوصلة المنحازة عكسيًا قليلًا جدًا، بحيث إن معظم أجزائها تُغطّي الإلكترونات أو الفجوات التي تصل من منطقة القاعدة المنحازة أماميًا، فإنها ستقع في أسر المجال الكهربائي للمنطقة المنضبة المنحازة عكسيًا وسيمر تيار عالٍ فيها رغم أنها منحازة عكسيًا.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="diagram-card neu">
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 300 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 11-5 ترانزستور نوع NPN">
+          <g font-family="Cairo,sans-serif">
+            <rect x="30" y="55" width="60" height="70" fill="rgba(255,171,94,.2)" stroke="var(--accent-orange)" stroke-width="1.5"/>
+            <text x="60" y="95" text-anchor="middle" font-size="16" font-weight="800" fill="var(--accent-orange)">P</text>
+            <rect x="90" y="55" width="40" height="70" fill="rgba(63,169,245,.2)" stroke="var(--accent-blue)" stroke-width="1.5"/>
+            <text x="110" y="95" text-anchor="middle" font-size="16" font-weight="800" fill="var(--accent-blue)">N</text>
+            <rect x="130" y="55" width="60" height="70" fill="rgba(255,171,94,.2)" stroke="var(--accent-orange)" stroke-width="1.5"/>
+            <text x="160" y="95" text-anchor="middle" font-size="16" font-weight="800" fill="var(--accent-orange)">P</text>
+            <text x="110" y="145" text-anchor="middle" font-size="12" font-weight="800" fill="var(--text-primary)">PNP</text>
+
+            <text x="60" y="40" text-anchor="middle" font-size="11" font-weight="700">E</text>
+            <text x="10" y="94" text-anchor="middle" font-size="11" font-weight="700">B</text>
+            <text x="160" y="40" text-anchor="middle" font-size="11" font-weight="700">C</text>
+            <line x1="60" y1="45" x2="60" y2="55" stroke="var(--text-secondary)"/>
+            <line x1="20" y1="90" x2="30" y2="90" stroke="var(--text-secondary)"/>
+            <line x1="160" y1="45" x2="160" y2="55" stroke="var(--text-secondary)"/>
+          </g>
+        </svg>
+        <span class="diagram-caption">شكل 11-5 ترانزستور نوع (NPN) — كما ورد في الكتاب المدرسي</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="diagram-card neu">
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 300 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 12-5 ترانزستور نوع npn">
+          <g font-family="Cairo,sans-serif">
+            <rect x="30" y="55" width="60" height="70" fill="rgba(63,169,245,.2)" stroke="var(--accent-blue)" stroke-width="1.5"/>
+            <text x="60" y="95" text-anchor="middle" font-size="16" font-weight="800" fill="var(--accent-blue)">N</text>
+            <rect x="90" y="55" width="40" height="70" fill="rgba(255,171,94,.2)" stroke="var(--accent-orange)" stroke-width="1.5"/>
+            <text x="110" y="95" text-anchor="middle" font-size="16" font-weight="800" fill="var(--accent-orange)">P</text>
+            <rect x="130" y="55" width="60" height="70" fill="rgba(63,169,245,.2)" stroke="var(--accent-blue)" stroke-width="1.5"/>
+            <text x="160" y="95" text-anchor="middle" font-size="16" font-weight="800" fill="var(--accent-blue)">N</text>
+
+            <text x="60" y="40" text-anchor="middle" font-size="11" font-weight="700">E</text>
+            <text x="10" y="94" text-anchor="middle" font-size="11" font-weight="700">B</text>
+            <text x="160" y="40" text-anchor="middle" font-size="11" font-weight="700">C</text>
+            <line x1="60" y1="45" x2="60" y2="55" stroke="var(--text-secondary)" marker-end="url(#ieArrow)"/>
+            <line x1="20" y1="90" x2="30" y2="90" stroke="var(--text-secondary)"/>
+            <line x1="160" y1="45" x2="160" y2="55" stroke="var(--text-secondary)"/>
+            <defs><marker id="ieArrow" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="var(--text-secondary)"/></marker></defs>
+            <text x="220" y="90" text-anchor="middle" font-size="9" fill="var(--text-secondary)">السهم: اتجاه مرور</text>
+            <text x="220" y="103" text-anchor="middle" font-size="9" fill="var(--text-secondary)">التيار الاصطلاحي</text>
+          </g>
+        </svg>
+        <span class="diagram-caption">شكل 12-5 ترانزستور نوع (npn) — السهم يعرف اتجاه مرور التيار (الاصطلاحي) الخارج من الترانزستور NPN</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="gain" data-navlabel="📈 ربح الترانزستور">
+    <div class="card neu">
+      <h2>📈 آلية عمل الترانزستور وربحه</h2>
+      <p>إن هذه الآلية في طريقة عمل الترانزستور تُمكِّن تيارًا ضعيفًا يمر في القاعدة من التحكم بتيار قوي يمر بين الباعث والجامع، ويُطلق على نسبة تيار الجامع أو الباعث إلى تيار القاعدة بربح الترانزستور، ويمكن زيادة ربح الترانزستور من خلال تقليل عرض منطقة القاعدة، ويمكن الحصول على ربح قد يصل لعدة مئات.</p>
+      <div class="rule-box">$$ I_E = I_B + I_C $$</div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
+      <span class="def-label" style="color:var(--accent-orange)">🔍 تعليل — العيب الرئيسي للترانزستور ثنائي القطبية</span>
+      <p style="margin:.3rem 0">إن العيب الرئيسي للترانزستور ثنائي القطبية هو أن القاعدة تستعمل التيار الكهربائي للتحكم بعمل الترانزستور، ما يستدعي استعمال دائرة كهربائية خارجية دقيقة لضبط قيمة تيار القاعدة، والذي قد يؤدي أي انحراف أو تغيير في قيمته إلى تغيير مكان نقطة التشغيل التي يعمل عندها الترانزستور.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">💬</span>
+      <span><b>هل تعلم؟</b> أن العمل الأساسي للترانزستور هو تضخيم الإشارة الداخلة فيه، ومن هذه المضخّمات: المضخّم (pnp) ذو القاعدة المشتركة (قاعدة مؤرَّضة)، والمضخّم (pnp) ذو الباعث المشترك.</span>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
+      <span class="def-label" style="color:var(--accent-green)">🔢 تعداد — أهم استخدامات الترانزستور</span>
+      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem">
+        <li>يستعمل كمفتاح إلكتروني.</li>
+        <li>يستعمل كمكبّر أو لتكبير الإشارات الصغيرة.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="conditions" data-navlabel="✅ شروط التشغيل">
+    <div class="card neu">
+      <h2>✅ شروط عمل الترانزستور</h2>
+      <p>يجب أن يتوفّر شرطان لكي يعمل الترانزستور، وهما:</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box" style="border-inline-start-color:var(--accent-blue)">
+      <span class="def-label" style="color:var(--accent-blue)">🔢 تعداد — شرطا عمل الترانزستور</span>
+      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem">
+        <li>يجب أن تُزوَّد الوصلة بين القاعدة والباعث بالانحياز الأمامي.</li>
+        <li>يجب أن تُزوَّد الوصلة بين الجامع والقاعدة بالانحياز العكسي.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">💬</span>
+      <span><b>هل تعلم؟</b> أن تيار الجامع \(I_C\) يكون دائمًا أقل من تيار الباعث \(I_E\) بمقدار تيار القاعدة \(I_B\)، وذلك بسبب حصول عملية إعادة الالتحام التي تحصل في منطقة القاعدة بين الفجوات والإلكترونات. تيار القاعدة يكون نسبةً إلى التيار الباعث نسبة صغيرة جدًا لأن منطقة القاعدة رقيقة، ونسبة تطعيمها بالشوائب قليلة. إذا كان تيار القاعدة \(I_B\) يساوي مثلًا 1% من تيار الباعث \(I_E\)، فيكون تيار الجامع \(I_C\) قرابة 99% من تيار الباعث.</span>
+    </div>
+  </section>
+
+  <!-- ===== Interactive widget ===== -->
+  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: ترانزستور NPN مقابل PNP</h2>
+      <p>اختر نوع الترانزستور لمشاهدة اتجاه مرور التيار الاصطلاحي عبر أقطابه الثلاثة (الباعث E، القاعدة B، الجامع C)، مع العلاقة \(I_E = I_B + I_C\).</p>
+      <div class="io-panel">
+        <div class="io-row" role="group" aria-label="اختيار نوع الترانزستور">
+          <button class="neu-btn primary" data-ttype="npn" id="btnTNPN">NPN</button>
+          <button class="neu-btn" data-ttype="pnp" id="btnTPNP">PNP</button>
+        </div>
+        <div class="mindmap-wrap"><svg id="transSvg" viewBox="0 0 340 220" role="img" aria-label="محاكاة اتجاه التيار في الترانزستور"></svg></div>
+        <p id="transCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Self-check quiz ===== -->
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>1.</span><span>اخترع الترانزستور عام 1947م على يد علماء يعملون في:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>ناسا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>معهد ماساتشوستس للتقنية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>مختبرات بيل الأمريكية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>جامعة كامبردج</span></label>
+        </div>
+        <div class="quiz-explain">اخترعه جون باردين ووولتر براتين وويليام شوكلي في مختبرات بيل الأمريكية، وحصلوا على جائزة نوبل عام 1956م.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>2.</span><span>القطب الموصل بالمنطقة الوسطى في ترانزستور الوصلة ثنائية القطبية يسمى:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>الباعث (Emitter)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>القاعدة (Base)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الجامع (Collector)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>المهبط (Cathode)</span></label>
+        </div>
+        <div class="quiz-explain">القطب الموصل بالمنطقة الوسطى يسمى القاعدة (Base)، والقطبان الخارجيان هما الباعث والجامع.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>3.</span><span>الشرطان اللازمان لعمل الترانزستور هما:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>انحياز أمامي بين القاعدة والباعث، وانحياز عكسي بين الجامع والقاعدة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>انحياز عكسي في كلتا الوصلتين</span></label>
+          <label class="quiz-opt"><input type="radio"><span>انحياز أمامي في كلتا الوصلتين</span></label>
+          <label class="quiz-opt"><input type="radio"><span>عدم وجود أي انحياز</span></label>
+        </div>
+        <div class="quiz-explain">يجب أن تُزوَّد وصلة القاعدة-الباعث بالانحياز الأمامي، ووصلة الجامع-القاعدة بالانحياز العكسي.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="3">
+        <div class="quiz-q-title"><span>4.</span><span>يُطلق على نسبة تيار الجامع إلى تيار القاعدة اسم:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>حاجز الجهد</span></label>
+          <label class="quiz-opt"><input type="radio"><span>عامل القدرة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>التيار العكسي</span></label>
+          <label class="quiz-opt"><input type="radio"><span>ربح الترانزستور</span></label>
+        </div>
+        <div class="quiz-explain">نسبة تيار الجامع أو الباعث إلى تيار القاعدة تسمى ربح الترانزستور، ويزداد بتقليل عرض منطقة القاعدة.</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <!-- ===== Summary ===== -->
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
+      <ul class="summary-list">
+        <li><span>الترانزستور: عنصر إلكتروني من مواد شبه موصلة (اخترعه باردين وبراتين وشوكلي عام 1947م)، حلّ محل الصمام الإلكتروني بصغر حجمه وقلة استهلاكه وصلادته وطول عمره.</span></li>
+        <li><span>ترانزستور الوصلة ثنائية القطبية: ثلاث مناطق مطعّمة NPN أو PNP، بأقطاب الباعث E والقاعدة B والجامع C، ويحقق \(I_E=I_B+I_C\).</span></li>
+        <li><span>شرطا التشغيل: انحياز أمامي بين القاعدة والباعث، وانحياز عكسي بين الجامع والقاعدة.</span></li>
+        <li><span>تيار ضعيف في القاعدة يتحكم بتيار قوي بين الباعث والجامع؛ ونسبة هذا التحكم تسمى ربح الترانزستور.</span></li>
+        <li><span>أهم استخدامات الترانزستور: كمفتاح إلكتروني، وكمكبّر للإشارات الصغيرة.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Mind map ===== -->
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l4" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l4">
+        <svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للترانزستور">
+          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
+            <line x1="240" y1="130" x2="90" y2="45"/>
+            <line x1="240" y1="130" x2="90" y2="215"/>
+            <line x1="240" y1="130" x2="390" y2="45"/>
+            <line x1="240" y1="130" x2="390" y2="215"/>
+          </g>
+          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
+            <text x="240" y="135" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">الترانزستور</text></g>
+          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
+            <text x="90" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">E, B, C</text>
+            <text x="90" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">NPN / PNP</text></g>
+          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
+            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">IE=IB+IC</text>
+            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">ربح الترانزستور</text></g>
+          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
+            <text x="390" y="40" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">شرطا التشغيل</text>
+            <text x="390" y="53" text-anchor="middle" fill="#fff" font-weight="700" font-size="8.5" font-family="Cairo,sans-serif">أمامي/عكسي</text></g>
+          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
+            <text x="390" y="210" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">استخدامات</text>
+            <text x="390" y="224" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">مفتاح/مكبّر</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">الفصل الخامس: المواد شبه الموصلة والأجهزة الإلكترونية — الدرس 4: الترانزستور</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch5.js"></script>
+<script>
+(function(){
+  var ns = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("transSvg");
+  var caption = document.getElementById("transCaption");
+  var btnN = document.getElementById("btnTNPN");
+  var btnP = document.getElementById("btnTPNP");
+
+  function label(x,y,txt,color,size,weight){
+    var t = document.createElementNS(ns,"text");
+    t.setAttribute("x",x); t.setAttribute("y",y);
+    t.setAttribute("text-anchor","middle");
+    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||11); t.setAttribute("fill",color);
+    t.setAttribute("font-weight",weight||"700");
+    t.textContent = txt;
+    svg.appendChild(t);
+  }
+  function region(x,w,txt,color){
+    var r = document.createElementNS(ns,"rect");
+    r.setAttribute("x",x); r.setAttribute("y",60); r.setAttribute("width",w); r.setAttribute("height",90);
+    r.setAttribute("fill",color+"33"); r.setAttribute("stroke",color); r.setAttribute("stroke-width","1.5");
+    svg.appendChild(r);
+    label(x+w/2, 112, txt, color, 18, "800");
+  }
+  function arrow(x1,y1,x2,y2,color){
+    var defs = svg.querySelector("defs") || (function(){var d=document.createElementNS(ns,"defs"); svg.appendChild(d); return d;})();
+    var id = "arr_"+color.replace(/[^a-zA-Z0-9]/g,"");
+    if(!svg.querySelector("#"+id)){
+      var m = document.createElementNS(ns,"marker");
+      m.setAttribute("id",id); m.setAttribute("markerWidth","8"); m.setAttribute("markerHeight","8");
+      m.setAttribute("refX","4"); m.setAttribute("refY","4"); m.setAttribute("orient","auto");
+      var p = document.createElementNS(ns,"path"); p.setAttribute("d","M0,0 L8,4 L0,8 z"); p.setAttribute("fill",color);
+      m.appendChild(p); defs.appendChild(m);
+    }
+    var l = document.createElementNS(ns,"line");
+    l.setAttribute("x1",x1); l.setAttribute("y1",y1); l.setAttribute("x2",x2); l.setAttribute("y2",y2);
+    l.setAttribute("stroke",color); l.setAttribute("stroke-width","2.5"); l.setAttribute("marker-end","url(#"+id+")");
+    svg.appendChild(l);
+  }
+
+  var blue = "#3fa9f5", orange = "#ffab5e", green = "#2fd18f";
+
+  function draw(type){
+    while(svg.firstChild) svg.removeChild(svg.firstChild);
+    var isN = type === "npn";
+    var c1 = isN ? blue : orange, c2 = isN ? orange : blue;
+
+    region(40, 80, isN?"N":"P", c1);
+    region(120, 60, isN?"P":"N", c2);
+    region(180, 80, isN?"N":"P", c1);
+
+    label(80, 45, "E", "var(--text-primary)", 13, "800");
+    label(220, 45, "C", "var(--text-primary)", 13, "800");
+    label(20, 108, "B", "var(--text-primary)", 13, "800");
+
+    // wires
+    var w1 = document.createElementNS(ns,"line"); w1.setAttribute("x1",80); w1.setAttribute("y1",30); w1.setAttribute("x2",80); w1.setAttribute("y2",60);
+    w1.setAttribute("stroke","var(--text-secondary)"); w1.setAttribute("stroke-width","1.5"); svg.appendChild(w1);
+    var w2 = document.createElementNS(ns,"line"); w2.setAttribute("x1",220); w2.setAttribute("y1",30); w2.setAttribute("x2",220); w2.setAttribute("y2",60);
+    w2.setAttribute("stroke","var(--text-secondary)"); w2.setAttribute("stroke-width","1.5"); svg.appendChild(w2);
+    var w3 = document.createElementNS(ns,"line"); w3.setAttribute("x1",30); w3.setAttribute("y1",108); w3.setAttribute("x2",40); w3.setAttribute("y2",108);
+    w3.setAttribute("stroke","var(--text-secondary)"); w3.setAttribute("stroke-width","1.5"); svg.appendChild(w3);
+
+    if(isN){
+      // conventional current flows INTO collector and base, OUT of emitter
+      arrow(220, 15, 220, 24, green);
+      arrow(35, 108, 42, 108, green);
+      arrow(80, 32, 80, 18, green);
+      label(170,175,"التيار الاصطلاحي: يدخل من C وB، ويخرج من E","var(--text-secondary)",10.5,"700");
+    } else {
+      arrow(220, 28, 220, 15, green);
+      arrow(42, 108, 35, 108, green);
+      arrow(80, 18, 80, 24, green);
+      label(170,175,"التيار الاصطلاحي: يدخل من E، ويخرج من C وB","var(--text-secondary)",10.5,"700");
+    }
+
+    label(150, 200, "I_E = I_B + I_C", "var(--accent-purple)", 13, "800");
+
+    caption.textContent = isN
+      ? "ترانزستور NPN: منطقتا N خارجيتان تحصران منطقة P رقيقة في الوسط (القاعدة). التيار الاصطلاحي يدخل من الجامع والقاعدة ويخرج من الباعث."
+      : "ترانزستور PNP: منطقتا P خارجيتان تحصران منطقة N رقيقة في الوسط (القاعدة). التيار الاصطلاحي يدخل من الباعث ويخرج من الجامع والقاعدة.";
+
+    btnN.classList.toggle("primary", isN);
+    btnP.classList.toggle("primary", !isN);
+  }
+
+  btnN.addEventListener("click", function(){ draw("npn"); });
+  btnP.addEventListener("click", function(){ draw("pnp"); });
+  draw("npn");
+})();
+</script>
+</body>
+</html>

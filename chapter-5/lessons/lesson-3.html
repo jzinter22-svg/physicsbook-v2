@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدرس 3: الثنائي PN — الفصل الخامس</title>
+<meta name="description" content="3-5 الثنائي PN diode/(PN): المفرق، منطقة الاستنزاف، الانحياز الأمامي والعكسي، حاجز الجهد، أنواع الثنائيات.">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
+</head>
+<body data-page="lessons/lesson-3.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li><a href="../index.html">الفصل 5</a></li>
+      <li aria-current="page">الثنائي PN</li>
+    </ol>
+  </nav>
+
+  <div dir="rtl" lang="ar">
+
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 الدرس 3 من 7 · 3-5</span>
+    <h1>الثنائي PN diode/(PN)</h1>
+    <p class="lead">بربط مادة شبه موصلة نوع P بأخرى نوع N تتكوّن الوصلة PN وهي أبسط أجهزة أشباه الموصلات، ولها خاصية تمرير التيار في اتجاه واحد فقط — الأساس الذي يقوم عليه ثنائي الوصلة (الدايود).</p>
+  </section>
+
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
+    <div class="card neu">
+      <h2>🎯 أهداف الدرس</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يوضّح كيفية تكوّن المفرق PN ومنطقة الاستنزاف والحاجز الجهدي.</span></li>
+        <li><span class="obj-num">2</span><span>يفرّق بين حالتي الانحياز الأمامي والانحياز العكسي للثنائي PN وأثر كل منهما على التيار والمقاومة.</span></li>
+        <li><span class="obj-num">3</span><span>يذكر قيمة حاجز الجهد للثنائي المصنوع من السيليكون والجرمانيوم، وبعض أنواع الثنائيات واستخداماتها.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="junction" data-navlabel="💡 المفرق PN">
+    <div class="card neu">
+      <h2>💡 3-5 الثنائي PN diode/(PN)</h2>
+      <p>بعد أن عرفنا في الفقرة السابقة كيفية عمل مادة شبه موصلة من النوع السالب بعد إضافة الانتيمون إليها، وكذلك كيفية عمل مادة شبه موصلة من النوع الموجب بعد إضافة البورون إليها؛ وبما أن مادتي أشباه الموصلات من النوع الموجب ومن النوع السالب متعادلتان كهربائيًا فهما لا تفعلان من تلقاء نفسيهما.</p>
+      <p style="margin-top:.5rem">لذا يمكن الحصول على الثنائي PN بتشويب (تطعيم) بلورة (السليكون أو الجرمانيوم) النقية بنوعين من الشوائب: إحداهما ثلاثية التكافؤ (مثل البورون) والأخرى خماسية التكافؤ (مثل الانتيمون)، ويسمى السطح الفاصل بين المنطقتين بالمفرق أو الملتقى (Junction).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 تعريف — منطقة الاستنزاف (Depletion Region)</span>
+      <p style="margin:.3rem 0">من ملاحظتنا للشكل (9-5) نجد أن إلكترونات المنطقة N القريبة من المفرق PN تنتقل متجهة إلى المنطقة P تاركة خلفها أيونات موجبة، ونفس الحال بالنسبة للفجوات في المنطقة P والقريبة من المفرق PN تنتقل متجهة إلى المنطقة N تاركة خلفها أيونات سالبة. ونتيجة لهذه العملية تنشأ منطقة رقيقة على جانبي المفرق تحتوي على أيونات موجبة في المنطقة N وأيونات سالبة في المنطقة P تسمى منطقة الاستنزاف (Depletion).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="diagram-card neu">
+      <div class="diagram-wrap">
+        <svg viewBox="0 -8 320 198" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 9-5 مسافة الوصلة PN">
+          <g font-family="Cairo,sans-serif">
+            <rect x="20" y="30" width="120" height="100" fill="rgba(63,169,245,.15)" stroke="var(--accent-blue)" stroke-width="1.5"/>
+            <text x="80" y="20" text-anchor="middle" font-size="11" font-weight="700" fill="var(--accent-blue)">Neutral n-region</text>
+            <text x="80" y="145" text-anchor="middle" font-size="10" fill="var(--text-secondary)">المنطقة N</text>
+
+            <rect x="180" y="30" width="120" height="100" fill="rgba(255,171,94,.15)" stroke="var(--accent-orange)" stroke-width="1.5"/>
+            <text x="240" y="20" text-anchor="middle" font-size="11" font-weight="700" fill="var(--accent-orange)">Neutral p-region</text>
+            <text x="240" y="145" text-anchor="middle" font-size="10" fill="var(--text-secondary)">المنطقة P</text>
+
+            <rect x="140" y="30" width="40" height="100" fill="var(--surface)" stroke="var(--text-primary)" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <text x="160" y="170" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--text-primary)">منطقة الاستنزاف (Depletion)</text>
+
+            <text x="147" y="60" font-size="11" fill="var(--accent-blue)">⊕</text>
+            <text x="147" y="90" font-size="11" fill="var(--accent-blue)">⊕</text>
+            <text x="147" y="120" font-size="11" fill="var(--accent-blue)">⊕</text>
+            <text x="165" y="60" font-size="11" fill="var(--accent-orange)">⊖</text>
+            <text x="165" y="90" font-size="11" fill="var(--accent-orange)">⊖</text>
+            <text x="165" y="120" font-size="11" fill="var(--accent-orange)">⊖</text>
+
+            <line x1="160" y1="10" x2="160" y2="26" stroke="var(--text-primary)" stroke-width="1.5" marker-end="url(#jArrow)"/>
+            <text x="160" y="8" text-anchor="middle" font-size="10" font-weight="700">Junction (المفرق)</text>
+          </g>
+        </svg>
+        <span class="diagram-caption">شكل 9-5: مسافة الوصلة PN — أيونات موجبة تاركة في المنطقة N وأيونات سالبة تاركة في المنطقة P حول المفرق</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h2>⚡ حاجز الجهد (Potential Barrier)</h2>
+      <p>وباستمرار تكوّن أيونات موجبة وسالبة على جانبي المفرق حول هذه المنطقة (تسمى طبقة الاستنفاذ أو النضوب) سوف تحدث حالة توازن من الترسيب (حالة متعادلة كهربائيًا)، يتولّد منها مجال كهربائي يعمل فرق الجهد الكهربائي الناتج عنه على منع عبور إلكترونات إضافية عبر المفرق PN، وبذلك تتوقف عملية انتشار الإلكترونات، ويسمى هذا الحاجز بالحاجز الجهدي؛ لذا يتطلب تسليط فرق جهد كهربائي (بفولطية الانحياز) لتوفير ظروف مناسبة لعمل الثنائي PN.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h2>↔️ الانحياز الأمامي والانحياز العكسي</h2>
+      <p>فعند ربط المنطقة P بالقطب الموجب للبطارية والمنطقة N بالقطب السالب للبطارية، يكون الثنائي PN محيّزًا بالاتجاه الأمامي، أي ينساب تيار كبير خلال المفرق PN يسمى (بالتيار الأمامي) لأن مقاومة الثنائي PN تكون صغيرة.</p>
+      <p style="margin-top:.5rem">أما عند ربط المنطقة P بالقطب السالب للبطارية والمنطقة N بالقطب الموجب للبطارية، يكون الثنائي PN محيّزًا بالاتجاه العكسي، أي ينساب تيار صغير جدًا خلال المفرق PN يسمى بالتيار العكسي (يمكن إهماله) لأن مقاومة الثنائي PN تكون كبيرة.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h2>🔌 ثنائي الوصلة (الدايود)</h2>
+      <p>ثنائي الوصلة (الدايود) هو واحد من أبسط أجهزة أشباه الموصلات، وله خاصية تمرير التيار في اتجاه واحد. إن التأثير السابق يتحقق من دون جهد خارجي على الوصلة الفعلية، والنتيجة أن تكون الوصلة في حالة من التوازن. ومع ذلك إذا تم توصيل طرفي المادتين السالبة والموجبة بمصدر خارجي، يتوافر مصدر طاقة إضافي للتغلّب على الحاجز، ما يؤدي إلى أن تكون الإلكترونات الحرة قادرة على عبور منطقة النضوب (الاستنزاف) من أحد الجانبين إلى الجانب الآخر.</p>
+      <p style="margin-top:.5rem">إن طبقة النضوب (الاستنزاف) تتّسع مع زيادة الجهد العكسي المطبَّق، ويرجع ذلك إلى الاختلاف في الخواص الكهربائية على جانبي الوصلة، وينتج عن ذلك تعديل للتيار المتناوب — مثلًا إلى تيار أحادي الاتجاه معدَّل واحد.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="diagram-card neu">
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 260 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 10-5 بعض أنواع الدايود الثنائي">
+          <g font-family="Cairo,sans-serif">
+            <rect x="30" y="20" width="200" height="18" rx="4" fill="var(--surface)" stroke="var(--text-primary)" stroke-width="1.2"/>
+            <rect x="30" y="20" width="14" height="18" fill="var(--accent-purple)"/>
+            <rect x="45" y="46" width="170" height="16" rx="4" fill="var(--surface)" stroke="var(--text-primary)" stroke-width="1.2"/>
+            <rect x="45" y="46" width="12" height="16" fill="var(--accent-blue)"/>
+            <rect x="60" y="70" width="140" height="14" rx="4" fill="var(--surface)" stroke="var(--text-primary)" stroke-width="1.2"/>
+            <rect x="60" y="70" width="10" height="14" fill="var(--accent-orange)"/>
+            <rect x="75" y="92" width="110" height="12" rx="4" fill="var(--surface)" stroke="var(--text-primary)" stroke-width="1.2"/>
+            <rect x="75" y="92" width="8" height="12" fill="var(--accent-green)"/>
+          </g>
+        </svg>
+        <span class="diagram-caption">شكل 10-5: بعض أنواع الدايود الثنائي (الشريط الملوّن يحدد طرف الكاثود)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">💬</span>
+      <span><b>هل تعلم؟</b> أن مقدار حاجز الجهد في الثنائي (pn) عند درجة حرارة الغرفة (300 K) يساوي (0.7 V) للمصنوع من السيليكون، و(0.3 V) للمصنوع من الجرمانيوم. وهناك عدد من الثنائيات منها: a- الثنائي المتحسس للضوء. b- ثنائي الخلية الضوئية. c- الثنائي الباعث للضوء. d- الثنائي المعدِّل للتيار.</span>
+    </div>
+  </section>
+
+  <!-- ===== Interactive widget ===== -->
+  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: انحياز الثنائي PN</h2>
+      <p>اختر حالة الانحياز ولاحظ اتساع منطقة الاستنزاف واتجاه ومقدار التيار المار خلال المفرق PN.</p>
+      <div class="io-panel">
+        <div class="io-row" role="group" aria-label="اختيار حالة الانحياز">
+          <button class="neu-btn" data-bias="none" id="btnNone">بلا انحياز</button>
+          <button class="neu-btn primary" data-bias="forward" id="btnFwd">انحياز أمامي</button>
+          <button class="neu-btn" data-bias="reverse" id="btnRev">انحياز عكسي</button>
+        </div>
+        <div class="mindmap-wrap"><svg id="biasSvg" viewBox="0 0 380 216" role="img" aria-label="محاكاة انحياز الثنائي PN"></svg></div>
+        <p id="biasCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Self-check quiz ===== -->
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>1.</span><span>منطقة الاستنزاف تنشأ نتيجة:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>ارتفاع درجة الحرارة فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>انتقال الإلكترونات من N إلى P والفجوات من P إلى N حول المفرق</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تسليط ضوء خارجي على الثنائي</span></label>
+          <label class="quiz-opt"><input type="radio"><span>زيادة عدد ذرات السليكون</span></label>
+        </div>
+        <div class="quiz-explain">تنتقل إلكترونات المنطقة N القريبة من المفرق إلى المنطقة P تاركة أيونات موجبة، وتنتقل فجوات المنطقة P إلى المنطقة N تاركة أيونات سالبة، فتتكوّن منطقة الاستنزاف.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>2.</span><span>عند ربط المنطقة P بالقطب الموجب للبطارية والمنطقة N بالقطب السالب، يكون الثنائي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>محيّزًا بالاتجاه الأمامي، ومقاومته صغيرة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>محيّزًا بالاتجاه العكسي، ومقاومته صغيرة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>محيّزًا بالاتجاه العكسي، ومقاومته كبيرة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>غير محيّز إطلاقًا</span></label>
+        </div>
+        <div class="quiz-explain">ربط P بالموجب وN بالسالب يعطي انحيازًا أماميًا، فتصغر مقاومة الثنائي وينساب تيار أمامي كبير.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>3.</span><span>مقدار حاجز الجهد للثنائي المصنوع من السيليكون عند درجة حرارة الغرفة (300 K) يساوي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>0.3 V</span></label>
+          <label class="quiz-opt"><input type="radio"><span>1.0 V</span></label>
+          <label class="quiz-opt"><input type="radio"><span>0.7 V</span></label>
+          <label class="quiz-opt"><input type="radio"><span>5.0 V</span></label>
+        </div>
+        <div class="quiz-explain">حاجز الجهد يساوي (0.7 V) للثنائي المصنوع من السيليكون، و(0.3 V) للمصنوع من الجرمانيوم عند (300 K).</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>4.</span><span>الخاصية الأساسية لثنائي الوصلة (الدايود) هي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>تمرير التيار بالاتجاهين بالتساوي</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تمرير التيار في اتجاه واحد فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تخزين الشحنة الكهربائية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تكبير الإشارة الكهربائية</span></label>
+        </div>
+        <div class="quiz-explain">ثنائي الوصلة من أبسط أجهزة أشباه الموصلات وله خاصية تمرير التيار في اتجاه واحد فقط.</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <!-- ===== Summary ===== -->
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
+      <ul class="summary-list">
+        <li><span>الثنائي PN يتكوّن بتطعيم بلورة نقية بشائبتين (ثلاثية وخماسية التكافؤ) على منطقتين متجاورتين يفصل بينهما المفرق (Junction).</span></li>
+        <li><span>منطقة الاستنزاف (Depletion): طبقة رقيقة حول المفرق تحتوي أيونات موجبة في N وسالبة في P، ينشأ عنها الحاجز الجهدي الذي يمنع الانتشار الإضافي للإلكترونات.</span></li>
+        <li><span>الانحياز الأمامي (P على الموجب، N على السالب): مقاومة صغيرة وتيار أمامي كبير. الانحياز العكسي: مقاومة كبيرة وتيار عكسي صغير جدًا يمكن إهماله.</span></li>
+        <li><span>حاجز الجهد عند 300K: (0.7 V) للسيليكون و(0.3 V) للجرمانيوم.</span></li>
+        <li><span>ثنائي الوصلة (الدايود) يمرر التيار باتجاه واحد فقط، ومن أنواعه: المتحسس للضوء، الخلية الضوئية، الباعث للضوء، والمعدِّل للتيار.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Mind map ===== -->
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l3" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l3">
+        <svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للثنائي PN">
+          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
+            <line x1="240" y1="130" x2="90" y2="45"/>
+            <line x1="240" y1="130" x2="90" y2="215"/>
+            <line x1="240" y1="130" x2="390" y2="45"/>
+            <line x1="240" y1="130" x2="390" y2="215"/>
+          </g>
+          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
+            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">الثنائي</text>
+            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">PN</text></g>
+          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
+            <text x="90" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">منطقة</text>
+            <text x="90" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">الاستنزاف</text></g>
+          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
+            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">انحياز</text>
+            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">أمامي/عكسي</text></g>
+          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
+            <text x="390" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">حاجز الجهد</text>
+            <text x="390" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">0.7V Si / 0.3V Ge</text></g>
+          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
+            <text x="390" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">الدايود</text>
+            <text x="390" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">اتجاه واحد</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">الفصل الخامس: المواد شبه الموصلة والأجهزة الإلكترونية — الدرس 3: الثنائي PN</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch5.js"></script>
+<script>
+(function(){
+  var ns = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("biasSvg");
+  var caption = document.getElementById("biasCaption");
+  var btns = { none: document.getElementById("btnNone"), forward: document.getElementById("btnFwd"), reverse: document.getElementById("btnRev") };
+
+  function label(x,y,txt,color,size,weight,anchor){
+    var t = document.createElementNS(ns,"text");
+    t.setAttribute("x",x); t.setAttribute("y",y);
+    t.setAttribute("text-anchor",anchor||"middle");
+    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||11); t.setAttribute("fill",color);
+    t.setAttribute("font-weight",weight||"700");
+    t.textContent = txt;
+    svg.appendChild(t);
+  }
+
+  var DATA = {
+    none: {gap:22, arrows:0, text:"بلا انحياز خارجي: تتوازن منطقة الاستنزاف عند عرض ثابت، ولا يمر تيار صافٍ عبر المفرق."},
+    forward: {gap:8, arrows:5, text:"انحياز أمامي (P على الموجب، N على السالب): تضيق منطقة الاستنزاف وتصغر المقاومة، فينساب تيار أمامي كبير."},
+    reverse: {gap:44, arrows:0, text:"انحياز عكسي (P على السالب، N على الموجب): تتّسع منطقة الاستنزاف وتكبر المقاومة، فلا يمر إلا تيار عكسي ضئيل يمكن إهماله."}
+  };
+
+  function draw(bias){
+    while(svg.firstChild) svg.removeChild(svg.firstChild);
+    var d = DATA[bias];
+    var midX = 190, half = 90;
+    var nLeft = midX-half, nRight = midX-d.gap/2;
+    var pLeft = midX+d.gap/2, pRight = midX+half;
+
+    var rn = document.createElementNS(ns,"rect");
+    rn.setAttribute("x",nLeft); rn.setAttribute("y",40); rn.setAttribute("width",nRight-nLeft); rn.setAttribute("height",100);
+    rn.setAttribute("fill","rgba(63,169,245,.18)"); rn.setAttribute("stroke","var(--accent-blue)"); rn.setAttribute("stroke-width","1.5");
+    svg.appendChild(rn);
+    label((nLeft+nRight)/2, 125, "N", "var(--accent-blue)", 20, "800");
+
+    var rp = document.createElementNS(ns,"rect");
+    rp.setAttribute("x",pLeft); rp.setAttribute("y",40); rp.setAttribute("width",pRight-pLeft); rp.setAttribute("height",100);
+    rp.setAttribute("fill","rgba(255,171,94,.18)"); rp.setAttribute("stroke","var(--accent-orange)"); rp.setAttribute("stroke-width","1.5");
+    svg.appendChild(rp);
+    label((pLeft+pRight)/2, 125, "P", "var(--accent-orange)", 20, "800");
+
+    var dep = document.createElementNS(ns,"rect");
+    dep.setAttribute("x",nRight); dep.setAttribute("y",40); dep.setAttribute("width",pLeft-nRight); dep.setAttribute("height",100);
+    dep.setAttribute("fill","var(--surface)"); dep.setAttribute("stroke","var(--text-primary)"); dep.setAttribute("stroke-width","1"); dep.setAttribute("stroke-dasharray","3 2");
+    svg.appendChild(dep);
+    label(midX, 165, "منطقة الاستنزاف", "var(--text-secondary)", 10.5);
+
+    // battery
+    var bat = document.createElementNS(ns,"line");
+    bat.setAttribute("x1",30); bat.setAttribute("y1",185); bat.setAttribute("x2",350); bat.setAttribute("y2",185);
+    bat.setAttribute("stroke","var(--text-secondary)"); bat.setAttribute("stroke-width","1.5");
+    svg.appendChild(bat);
+    var lwireL = document.createElementNS(ns,"line");
+    lwireL.setAttribute("x1",30); lwireL.setAttribute("y1",90); lwireL.setAttribute("x2",30); lwireL.setAttribute("y2",185);
+    lwireL.setAttribute("stroke","var(--text-secondary)"); lwireL.setAttribute("stroke-width","1.5");
+    svg.appendChild(lwireL);
+    var lwireR = document.createElementNS(ns,"line");
+    lwireR.setAttribute("x1",350); lwireR.setAttribute("y1",90); lwireR.setAttribute("x2",350); lwireR.setAttribute("y2",185);
+    lwireR.setAttribute("stroke","var(--text-secondary)"); lwireR.setAttribute("stroke-width","1.5");
+    svg.appendChild(lwireR);
+    var wL = document.createElementNS(ns,"line");
+    wL.setAttribute("x1",30); wL.setAttribute("y1",90); wL.setAttribute("x2",nLeft); wL.setAttribute("y2",90);
+    wL.setAttribute("stroke","var(--text-secondary)"); wL.setAttribute("stroke-width","1.5");
+    svg.appendChild(wL);
+    var wR = document.createElementNS(ns,"line");
+    wR.setAttribute("x1",pRight); wR.setAttribute("y1",90); wR.setAttribute("x2",350); wR.setAttribute("y2",90);
+    wR.setAttribute("stroke","var(--text-secondary)"); wR.setAttribute("stroke-width","1.5");
+    svg.appendChild(wR);
+
+    var leftSign = bias==="forward" ? "−" : (bias==="reverse" ? "+" : "");
+    var rightSign = bias==="forward" ? "+" : (bias==="reverse" ? "−" : "");
+    label(30, 200, leftSign, "var(--text-primary)", 16, "800");
+    label(350, 200, rightSign, "var(--text-primary)", 16, "800");
+    if(bias !== "none"){
+      label(190, 205, "بطارية الانحياز", "var(--text-secondary)", 10);
+    }
+
+    if(d.arrows){
+      for(var i=0;i<d.arrows;i++){
+        var ax = 45 + i*62;
+        var ar = document.createElementNS(ns,"line");
+        ar.setAttribute("x1",ax); ar.setAttribute("y1",90); ar.setAttribute("x2",ax+38); ar.setAttribute("y2",90);
+        ar.setAttribute("stroke","var(--accent-green)"); ar.setAttribute("stroke-width","2.5"); ar.setAttribute("marker-end","url(#curArrow)");
+        svg.appendChild(ar);
+      }
+      var defs = document.createElementNS(ns,"defs");
+      defs.innerHTML = '<marker id="curArrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--accent-green)"/></marker>';
+      svg.insertBefore(defs, svg.firstChild);
+      label(midX, 25, "تيار أمامي كبير", "var(--accent-green)", 12, "800");
+    } else if(bias === "reverse"){
+      label(midX, 25, "تيار عكسي ضئيل (مهمل)", "var(--accent-pink)", 12, "800");
+    } else {
+      label(midX, 25, "لا يوجد تيار صافٍ", "var(--text-secondary)", 12, "800");
+    }
+
+    caption.textContent = d.text;
+    Object.keys(btns).forEach(function(k){ btns[k].classList.toggle("primary", k===bias); });
+  }
+
+  Object.keys(btns).forEach(function(k){ btns[k].addEventListener("click", function(){ draw(k); }); });
+  draw("forward");
+})();
+</script>
+</body>
+</html>

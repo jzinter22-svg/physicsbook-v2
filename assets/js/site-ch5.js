@@ -1,6 +1,6 @@
-/* Chapter 5 — behavior script instantiated from
-   templates/chapter-behavior-template.js. No lessons published yet:
-   LESSONS holds only the chapter-home entry until lesson pages are added. */
+/* Chapter 5 — المواد شبه الموصلة والأجهزة الإلكترونية — behavior script
+   instantiated from templates/chapter-behavior-template.js. Content sourced
+   from the official textbook PDF (pdf/كتاب الطبيعيات.pdf, pages 69-84). */
 (function(){
   "use strict";
 
@@ -8,13 +8,18 @@
     storageKeyPrefix: "ch5",
     chapterNumber: 5,
     brandBadge: "5",
-    sidebarSubtitleKey: "common.readyToBuild",
+    sidebarSubtitleKey: "ch5.sidebarSubtitle",
     lessons: [
-      { href: "index.html", titleKey: "common.chapterHome", root: true }
-      // { href: "lessons/lesson-1.html", titleKey: "lessons.ch5.lesson1.navTitle" },
-      // ... add one entry per lesson, in order, once lessons exist
+      { href: "index.html", titleKey: "common.chapterHome", root: true },
+      { href: "lessons/lesson-1.html", titleKey: "ch5.lesson1NavTitle" },
+      { href: "lessons/lesson-2.html", titleKey: "ch5.lesson2NavTitle" },
+      { href: "lessons/lesson-3.html", titleKey: "ch5.lesson3NavTitle" },
+      { href: "lessons/lesson-4.html", titleKey: "ch5.lesson4NavTitle" },
+      { href: "lessons/lesson-5.html", titleKey: "ch5.lesson5NavTitle" },
+      { href: "lessons/lesson-6.html", titleKey: "ch5.lesson6NavTitle" },
+      { href: "lessons/lesson-7.html", titleKey: "ch5.lesson7NavTitle" }
     ],
-    bgSymbols: ["•", "∘", "×", "+", "–", "="]
+    bgSymbols: ["N", "P", "PN", "e⁻", "λ", "Sb", "B", "Si"]
   };
   // ---------------------------------------------------------------------------
 

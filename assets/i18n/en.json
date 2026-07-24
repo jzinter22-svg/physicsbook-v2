@@ -97,5 +97,15 @@
     "lesson6NavTitle": "6) Resistance, Inductor & Capacitor in Series",
     "lesson7NavTitle": "7) The Electrical Transformer",
     "lesson8NavTitle": "8) Chapter Questions & Problems"
+  },
+  "ch5": {
+    "sidebarSubtitle": "Semiconductor Materials & Electronic Devices",
+    "lesson1NavTitle": "1) Semiconductor Materials (Energy Band Overlap)",
+    "lesson2NavTitle": "2) N-type and P-type Semiconductors",
+    "lesson3NavTitle": "3) The PN Junction Diode",
+    "lesson4NavTitle": "4) The Transistor",
+    "lesson5NavTitle": "5) Electromagnetic Broadcasting",
+    "lesson6NavTitle": "6) Radar",
+    "lesson7NavTitle": "7) Chapter 5 Questions"
   }
 }
