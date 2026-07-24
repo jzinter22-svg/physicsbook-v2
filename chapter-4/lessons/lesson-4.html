@@ -59,7 +59,7 @@
     <div class="card neu">
       <h2>🕹️ محاكاة تفاعلية: المتسعة في دائرة تيار متناوب (الشكل 9-4)</h2>
       <p>متسعة موصولة على التوالي مع أميتر ومصدر فولطية متناوبة، وتظهر عليها فولطية \(V_C\).</p>
-      <div class="mindmap-wrap"><svg id="capCircuitSvg" viewBox="0 0 320 170" width="320" height="170" role="img" aria-label="دائرة متسعة موصولة بمصدر فولطية متناوبة مع أميتر"></svg></div>
+      <div class="mindmap-wrap"><svg id="capCircuitSvg" viewBox="0 -12 320 182" width="320" height="182" role="img" aria-label="دائرة متسعة موصولة بمصدر فولطية متناوبة مع أميتر"></svg></div>
     </div>
   </section>
 
@@ -106,8 +106,10 @@
 
   <section class="section fade-up">
     <div class="rule-box">
-      $$ X_C \propto \dfrac{1}{f} \quad \text{(عند ثبوت } C\text{)} $$
-      $$ X_C \propto \dfrac{1}{C} \quad \text{(عند ثبوت } f\text{)} $$
+      $$ X_C \propto \dfrac{1}{f} $$
+      <p style="margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)">(عند ثبوت C)</p>
+      $$ X_C \propto \dfrac{1}{C} $$
+      <p style="margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)">(عند ثبوت f)</p>
       $$ X_C = \dfrac{1}{2\pi f C} $$
       <p style="margin:.6rem 0 0;font-size:.95rem">وبما أن \(\omega=2\pi f\)، لذلك \(X_C=\dfrac{1}{\omega C}\)، حيث (ω) هو التردد الزاوي.</p>
     </div>
@@ -319,13 +321,13 @@
       plate.setAttribute("stroke","var(--accent-purple)"); plate.setAttribute("stroke-width","3");
       circSvg.appendChild(plate);
     });
-    label(circSvg, midX, top-20, "متسعة", "var(--accent-purple)", 11);
+    label(circSvg, midX, top-12, "متسعة", "var(--accent-purple)", 11);
 
     var vcArrow = document.createElementNS(ns,"line");
-    vcArrow.setAttribute("x1",left); vcArrow.setAttribute("y1",18); vcArrow.setAttribute("x2",right); vcArrow.setAttribute("y2",18);
+    vcArrow.setAttribute("x1",left); vcArrow.setAttribute("y1",16); vcArrow.setAttribute("x2",right); vcArrow.setAttribute("y2",16);
     vcArrow.setAttribute("stroke","var(--accent-blue)"); vcArrow.setAttribute("stroke-width","1.5");
     circSvg.appendChild(vcArrow);
-    label(circSvg, midX, 14, "V_C", "var(--accent-blue)", 12);
+    label(circSvg, midX, 10, "V_C", "var(--accent-blue)", 12);
 
     // ammeter on right side
     var ammX = right, ammY = (top+bottom)/2;
@@ -368,7 +370,7 @@
 
   function drawPQ(){
     while(pqSvg.firstChild) pqSvg.removeChild(pqSvg.firstChild);
-    var gx=20, gy=20, gw=320, gh=140, midY=gy+gh/2;
+    var gx=20, gy=56, gw=320, gh=120, midY=gy+gh/2;
 
     var frame = document.createElementNS(ns,"rect");
     frame.setAttribute("x",gx); frame.setAttribute("y",gy); frame.setAttribute("width",gw); frame.setAttribute("height",gh);
@@ -403,9 +405,9 @@
     pLine.setAttribute("points", pPts); pLine.setAttribute("fill","none"); pLine.setAttribute("stroke","var(--accent-purple)"); pLine.setAttribute("stroke-width","2"); pLine.setAttribute("stroke-dasharray","2 2");
     pqSvg.appendChild(pLine);
 
-    label(pqSvg, gx+4, gy+16, "I_C", "var(--accent-red)", 11);
-    label(pqSvg, gx+4, gy+30, "V_C", "var(--accent-blue)", 11);
-    label(pqSvg, gx+4, gy+44, "P (متذبذبة حول الصفر)", "var(--accent-purple)", 10);
+    label(pqSvg, gx+4, 14, "I_C", "var(--accent-red)", 11);
+    label(pqSvg, gx+4, 28, "V_C", "var(--accent-blue)", 11);
+    label(pqSvg, gx+4, 42, "P (متذبذبة حول الصفر)", "var(--accent-purple)", 10);
   }
   function tickPQ(){ pqT += 0.04; drawPQ(); requestAnimationFrame(tickPQ); }
   if(reduceMotion){ drawPQ(); } else { requestAnimationFrame(tickPQ); }

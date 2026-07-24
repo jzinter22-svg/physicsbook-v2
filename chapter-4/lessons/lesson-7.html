@@ -126,8 +126,10 @@
 
   <section class="section fade-up">
     <div class="rule-box">
-      $$ P_1 = V_1 I_1 \qquad \text{قدرة الملف الابتدائي} $$
-      $$ P_2 = V_2 I_2 \qquad \text{قدرة الملف الثانوي} $$
+      $$ P_1 = V_1 I_1 $$
+      <p style="margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)">قدرة الملف الابتدائي</p>
+      $$ P_2 = V_2 I_2 $$
+      <p style="margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)">قدرة الملف الثانوي</p>
       <p style="margin:.6rem 0 0;font-size:.95rem">وعندما تكون المحولة مثالية، أي كفاءتها 100% تكون:</p>
       $$ P_1 = P_2 \quad\Rightarrow\quad V_1 I_1 = V_2 I_2 \quad\Rightarrow\quad \dfrac{V_2}{V_1} = \dfrac{I_1}{I_2} $$
       <p style="margin:.6rem 0 0;font-size:.95rem">لا تطبق هذه النسبة الا اذا كانت المحولة مثالية.</p>
@@ -136,7 +138,7 @@
 
   <section class="section fade-up">
     <div class="rule-box">
-      $$ \text{كفاءة المحولة} = \dfrac{\text{قدرة الملف الثانوي}}{\text{قدرة الملف الابتدائي}} \times 100\% $$
+      <p style="margin:0 0 .5rem;font-weight:700">كفاءة المحولة = (قدرة الملف الثانوي ÷ قدرة الملف الابتدائي) × 100%</p>
       $$ \eta = \dfrac{P_2}{P_1} \times 100\% $$
       <p style="margin:.6rem 0 0;font-size:.95rem">حيث (η) تمثّل كفاءة المحولة.</p>
     </div>
@@ -406,7 +408,7 @@
     w2b.setAttribute("x1",40); w2b.setAttribute("y1",coreY+100); w2b.setAttribute("x2",coreX-6); w2b.setAttribute("y2",coreY+100);
     w2b.setAttribute("stroke","var(--text-secondary)"); w2b.setAttribute("stroke-width","2");
     trSvg.appendChild(w2b);
-    label(trSvg, 40, coreY+85, "مصدر", "var(--text-secondary)", 10);
+    label(trSvg, 4, coreY+85, "مصدر", "var(--text-secondary)", 10);
 
     // load (right)
     var loadX = 320;
@@ -430,7 +432,7 @@
     l2b.setAttribute("x1",coreX+coreW+6); l2b.setAttribute("y1",coreY+100); l2b.setAttribute("x2",loadX); l2b.setAttribute("y2",coreY+100);
     l2b.setAttribute("stroke","var(--text-secondary)"); l2b.setAttribute("stroke-width","2");
     trSvg.appendChild(l2b);
-    label(trSvg, loadX, coreY+65, "حمل", "var(--text-secondary)", 10);
+    label(trSvg, loadX+18, coreY+58, "حمل", "var(--text-secondary)", 10);
 
     label(trSvg, coreX+coreW/2, coreY+coreH+22, "الفيض المغناطيسي المشترك", "var(--text-faint)", 9);
   })();
