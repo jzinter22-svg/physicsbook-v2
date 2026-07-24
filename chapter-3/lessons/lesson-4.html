@@ -78,7 +78,7 @@
       <h2>🕹️ محاكاة تفاعلية: مولد التيار المتناوب (الأشكال 10-3 و11-3)</h2>
       <p>شاهد الملف يدور داخل المجال المغناطيسي المنتظم، مع رسم الفولطية المتولدة لحظيًا: تكون صفرًا عندما يكون مستوى الملف عموديًا على الفيض (البداية)، وتبلغ أقصاها عندما يوازي مستوى الملف الفيض (بعد ربع دورة)، ثم تعود إلى الصفر (بعد نصف دورة)، وهكذا يتكرر التغيّر مكوّنًا دالة جيبية.</p>
       <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="acSvg" viewBox="0 0 380 200" width="380" height="200" role="img" aria-label="محاكاة مولد تيار متناوب ودورانه"></svg></div>
+        <div class="mindmap-wrap"><svg id="acSvg" viewBox="0 0 400 200" width="400" height="200" role="img" aria-label="محاكاة مولد تيار متناوب ودورانه"></svg></div>
         <div class="io-row" style="flex-wrap:wrap;gap:.5rem">
           <button class="neu-btn" id="acModeToggle">🔁 بدّل: حلقتا زلق (AC) / مبدّل (DC)</button>
         </div>
@@ -239,7 +239,7 @@
   function drawFrame(){
     while(svg.firstChild) svg.removeChild(svg.firstChild);
 
-    var cx=80, cy=95, R=45;
+    var cx=100, cy=95, R=45;
     var nBox = document.createElementNS(ns,"rect");
     nBox.setAttribute("x",cx-95); nBox.setAttribute("y",cy-50); nBox.setAttribute("width",40); nBox.setAttribute("height",100);
     nBox.setAttribute("fill","#ff6b9d");
@@ -272,7 +272,7 @@
     if(history.length > MAXHIST) history.shift();
 
     // graph
-    var gx=170, gy=40, gw=195, gh=110;
+    var gx=200, gy=40, gw=170, gh=110;
     var axis = document.createElementNS(ns,"line");
     axis.setAttribute("x1",gx); axis.setAttribute("y1",gy+gh/2); axis.setAttribute("x2",gx+gw); axis.setAttribute("y2",gy+gh/2);
     axis.setAttribute("stroke","var(--text-faint)"); axis.setAttribute("stroke-width","1");

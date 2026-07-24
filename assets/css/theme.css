@@ -74,6 +74,16 @@
 
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
+
+/* Every hand-drawn interactive/illustrative SVG in this project positions
+   <text> with explicit numeric x/y and plain LTR anchor semantics
+   (text-anchor "start" = grows right of x, "end" = grows left of x). Left
+   to inherit dir="rtl" from the page, an unset/"start" anchor flips to
+   grow leftward off negative x and gets clipped by the SVG viewport --
+   this does not affect Arabic glyph shaping/joining (governed by the
+   Unicode bidi/joining algorithms independent of this property), only
+   which edge "start" resolves to. */
+svg{direction:ltr}
 body{
   margin:0;
   font-family:'Cairo',ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;

@@ -261,13 +261,13 @@
     ray(midX+15, filmBottom, midX+55, 15, best.hex);
 
     var label1 = document.createElementNS(ns,"text");
-    label1.setAttribute("x", midX-70); label1.setAttribute("y", 20);
+    label1.setAttribute("x", midX-70); label1.setAttribute("y", 14);
     label1.setAttribute("font-family","Cairo,sans-serif"); label1.setAttribute("font-size","10"); label1.setAttribute("fill","var(--text-secondary)");
     label1.textContent = "شعاع منعكس من السطح الأمامي";
     svg.appendChild(label1);
 
     var label2 = document.createElementNS(ns,"text");
-    label2.setAttribute("x", midX+18); label2.setAttribute("y", 12);
+    label2.setAttribute("x", midX-70); label2.setAttribute("y", 30);
     label2.setAttribute("font-family","Cairo,sans-serif"); label2.setAttribute("font-size","10"); label2.setAttribute("fill","var(--text-secondary)");
     label2.textContent = "شعاع منعكس من السطح الخلفي";
     svg.appendChild(label2);

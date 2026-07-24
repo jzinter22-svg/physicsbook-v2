@@ -196,7 +196,7 @@
       <h2>🕹️ إعادة إنشاء الشكل: تحليل قوى المنعطف المائل</h2>
       <p>حرّك مزلاج زاوية الميل \( \theta \) لمشاهدة كيف تتحلّل قوة رد الفعل العمودي \( F_N \) إلى مركبتين: مركبة رأسية \( F_N\cos\theta \) توازن وزن السيارة، ومركبة أفقية \( F_N\sin\theta \) تُسهم مع الاحتكاك في توفير القوة المركزية نحو المركز — تمامًا كما في شكل الكتاب التوضيحي.</p>
       <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="bankSvg" viewBox="0 0 360 260" width="360" height="260" role="img" aria-label="تحليل قوى السيارة على منعطف مائل"></svg></div>
+        <div class="mindmap-wrap"><svg id="bankSvg" viewBox="0 0 360 300" width="360" height="300" role="img" aria-label="تحليل قوى السيارة على منعطف مائل"></svg></div>
         <div class="io-row">
           <label for="bankAngle" style="min-width:9rem">زاوية الميل θ = <span id="bankAngleVal">15</span>°</label>
           <input type="range" id="bankAngle" class="neu-range" min="0" max="40" step="1" value="15">
@@ -474,7 +474,7 @@
 
     while(svg3.firstChild) svg3.removeChild(svg3.firstChild);
 
-    var baseY = 210, leftX = 40, rightX = 320;
+    var baseY = 240, leftX = 40, rightX = 320;
     var riseX = rightX - (rightX-leftX)*0.55;
     var riseY = baseY - (rightX-leftX)*0.55*Math.tan(theta);
 
