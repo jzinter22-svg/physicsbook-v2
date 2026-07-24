@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدرس 2: قانون لينز — الفصل الثالث</title>
+<meta name="description" content="3-3 قانون لينز: قاعدة اليد اليمنى لتحديد اتجاه التيار المحتث، تحليل حركة موصل داخل مجال مغناطيسي، نص القانون، وعلاقته بحفظ الطاقة.">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
+</head>
+<body data-page="lessons/lesson-2.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li><a href="../index.html">الفصل 3</a></li>
+      <li aria-current="page">قانون لينز</li>
+    </ol>
+  </nav>
+
+  <div dir="rtl" lang="ar">
+
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 الدرس 2 من 6 · الفصل الثالث</span>
+    <h1>قانون لينز Lenz's law</h1>
+    <p class="lead">3-3 قانون لينز: قاعدة اليد اليمنى، اتجاه التيار المحتث، وعلاقته بحفظ الطاقة</p>
+  </section>
+
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
+    <div class="card neu">
+      <h2>🎯 أهداف الدرس</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يستعمل قاعدة اليد اليمنى لتحديد اتجاه التيار المحتث في موصل متحرك داخل مجال مغناطيسي.</span></li>
+        <li><span class="obj-num">2</span><span>ينص قانون لينز ويفسّره.</span></li>
+        <li><span class="obj-num">3</span><span>يوضّح كيف يحقق قانون لينز مبدأ حفظ الطاقة.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
+    <div class="card neu">
+      <h2>💡 3-3 قانون لينز Lenz's law</h2>
+      <p>إن مرور تيار كهربائي في موصل يؤدي إلى توليد مجال مغناطيسي حول الموصل. لتحديد اتجاه التيار المحتث يتم استعمال قاعدة اليد اليمنى، إذ يتم وضع أصابع اليد اليمنى (الإبهام والسبابة والوسطى) بشكل متعامد مع بعضها؛ تشير السبابة إلى اتجاه المجال المغناطيسي ويشير الإبهام إلى اتجاه حركة الموصل، أما الوسطى فتشير إلى اتجاه التيار المحتث.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="righthand-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 3-3">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: قاعدة اليد اليمنى (الشكل 3-3)</h2>
+      <p>اختر اتجاه حركة الموصل واتجاه المجال المغناطيسي، ولاحظ اتجاه التيار المحتث الناتج (السبابة = المجال، الإبهام = الحركة، الوسطى = التيار).</p>
+      <div class="io-row" style="flex-wrap:wrap;gap:.5rem">
+        <button class="neu-btn" data-vdir="down">↓ حركة الموصل لأسفل</button>
+        <button class="neu-btn" data-vdir="up">↑ حركة الموصل لأعلى</button>
+      </div>
+      <div class="io-row" style="flex-wrap:wrap;gap:.5rem;margin-top:.4rem">
+        <button class="neu-btn" data-bdir="right">→ مجال نحو اليمين (N يسار / S يمين)</button>
+        <button class="neu-btn" data-bdir="left">← مجال نحو اليسار (S يسار / N يمين)</button>
+      </div>
+      <div class="io-panel" style="margin-top:.6rem">
+        <div class="mindmap-wrap"><svg id="rhrSvg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="محاكاة قاعدة اليد اليمنى لتحديد اتجاه التيار المحتث"></svg></div>
+        <div class="rule-box" id="rhrStatus">التيار المحتث: —</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>كذلك الحال عند سريان التيارات المحتثة في الموصل ستنتج مجالًا مغناطيسيًا محتثًا خاصًا بها. يبيّن الشكل (4-3) تحريك ساق موصل داخل مجال مغناطيسي منتظم محتثًا بها، اتجاه خطوطه من اليمين إلى اليسار يكون كالآتي:</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p><b>1-</b> عند تحريك الموصل إلى الأسفل فسوف يتولد تيار محتث يحدد اتجاهه حسب قاعدة أمبير لليد اليمنى قاعدة الموصل، ويكون اتجاهه عموديًا على المجال المغناطيسي وخارجًا من الكتاب، ويُشار له بالعلامة (•) المؤشرة في مقطع السلك. أما اتجاه المجال المغناطيسي المحتث الذي ولّده التيار المحتث فيكون باتجاه عكس عقارب الساعة.</p>
+      <p>وحسب قانون أمبير، فيكون مع اتجاه المجال المغناطيسي الأصلي في أسفل الموصل والذي يؤدي إلى زيادة كثافة الفيض ويقوّي المجال، أما في أعلى الموصل فيكون المجالان متعاكسين فتقلّ كثافة الفيض ويضعف المجال، مما يؤدي إلى نشوء قوة عمودية على كل من المجال والتيار ويكون اتجاهها نحو الأعلى، أي بعكس اتجاه حركة الموصل؛ أي إن هذه القوة تحاول عرقلة حركة الموصل.</p>
+      <p><b>2-</b> عند تحريك الموصل نحو الأعلى في نفس المجال المذكور، فإن اتجاه التيار المحتث في الموصل سيكون باتجاه عمودي على الورقة مبتعدًا عن القارئ (عكس الحالة 1).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="conductor-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 4-3">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: قوة معاكسة لحركة الموصل (الشكل 4-3)</h2>
+      <p>بدّل اتجاه حركة الموصل داخل المجال المنتظم، وشاهد اتجاه التيار المحتث (نقطة = خارج الصفحة، إشارة × = داخل الصفحة)، والقوة المعاكسة الناتجة التي تحاول عرقلة حركة الموصل دائمًا (وفق قانون لينز).</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="lenzSvg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="محاكاة قوة معاكسة لحركة موصل داخل مجال مغناطيسي"></svg></div>
+        <button class="neu-btn" id="lenzToggle">↕ بدّل اتجاه حركة الموصل</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>ومما سبق فإن قانون لينز ينص على ما يأتي:</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box" style="border-color:var(--accent-red)">
+      <p style="margin:0">يولّد التيار المحتث في الدائرة الكهربائية المغلقة مجالًا مغناطيسيًا معاكسًا بتأثيره للتغيّر المغناطيسي الخارجي المسبّب لتوليد هذا التيار.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h3 style="margin-top:0">📋 ومن قانون لينز يمكن استنتاج ما يأتي</h3>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يحقق مبدأ حفظ الطاقة: فالمجال المغناطيسي المحتث الناتج عن التيار المحتث يولّد قوة معاكسة للمجال المؤثّر.</span></li>
+        <li><span class="obj-num">2</span><span>يجب إنجاز شغل للتغلّب على القوة المعاكسة: هذا الشغل المنجز سيتحول إلى طاقة كامنة للإلكترونات في الجزء الموصل الذي يتحرك داخل المجال إذا كان ضمن دائرة مفتوحة. أما إذا كانت ضمن دائرة مغلقة فإن الطاقة الكامنة ستتصرف بشكل تيار محتث، ومن الممكن أن يولّد شغلًا ميكانيكيًا أو حرارة أو كيمياويًا.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>1.</span><span>في قاعدة اليد اليمنى لتحديد اتجاه التيار المحتث، تشير السبابة إلى:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>اتجاه حركة الموصل</span></label>
+          <label class="quiz-opt"><input type="radio"><span>اتجاه التيار المحتث</span></label>
+          <label class="quiz-opt"><input type="radio"><span>اتجاه المجال المغناطيسي</span></label>
+          <label class="quiz-opt"><input type="radio"><span>اتجاه القوة المعاكسة فقط</span></label>
+        </div>
+        <div class="quiz-explain">السبابة تشير إلى اتجاه المجال المغناطيسي، والإبهام إلى اتجاه حركة الموصل، والوسطى إلى اتجاه التيار المحتث.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>2.</span><span>ينص قانون لينز على أن التيار المحتث يولّد مجالًا مغناطيسيًا:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>بنفس اتجاه التغيّر المغناطيسي المسبّب له</span></label>
+          <label class="quiz-opt"><input type="radio"><span>معاكسًا للتغيّر المغناطيسي الخارجي المسبّب لتوليده</span></label>
+          <label class="quiz-opt"><input type="radio"><span>عموديًا على التغيّر المغناطيسي بلا أي علاقة اتجاهية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لا علاقة له بالتغيّر المغناطيسي إطلاقًا</span></label>
+        </div>
+        <div class="quiz-explain">قانون لينز: التيار المحتث يولّد مجالًا مغناطيسيًا معاكسًا بتأثيره للتغيّر المغناطيسي الخارجي المسبّب له.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>3.</span><span>القوة الناشئة على الموصل المتحرك داخل المجال المغناطيسي نتيجة التيار المحتث تكون:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>معاكسة لحركة الموصل (تعرقل حركته)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>بنفس اتجاه حركة الموصل (تسرّع حركته)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>معدومة دائمًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>عمودية على مستوى الحركة فقط بلا أي أثر</span></label>
+        </div>
+        <div class="quiz-explain">حسب قانون لينز، تنشأ قوة معاكسة لحركة الموصل تحاول عرقلتها، وهذا هو أساس تحقيق مبدأ حفظ الطاقة.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>4.</span><span>الشغل المنجز للتغلّب على القوة المعاكسة في دائرة مغلقة يتحول إلى:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>طاقة تُفقد دون أي أثر</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تيار محتث قد يولّد شغلًا ميكانيكيًا أو حرارة أو تفاعلًا كيمياويًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>مجالًا كهربائيًا ساكنًا فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>كتلة إضافية للموصل</span></label>
+        </div>
+        <div class="quiz-explain">في الدائرة المغلقة، الشغل المنجز يتحول إلى طاقة التيار المحتث، والذي قد يولّد شغلًا ميكانيكيًا أو حرارة أو كيمياويًا.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="3">
+        <div class="quiz-q-title"><span>5.</span><span>لو كان قانون لينز عكس ما هو عليه (أي أن التيار المحتث يقوّي التغيّر المسبّب له بدلًا من معاكسته)، فإن ذلك:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>لن يغيّر شيئًا في الفيزياء</span></label>
+          <label class="quiz-opt"><input type="radio"><span>سيجعل التيار المحتث أضعف فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>سيقلّل من كفاءة المولدات فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>سيخالف مبدأ حفظ الطاقة (طاقة تتولد من العدم)</span></label>
+        </div>
+        <div class="quiz-explain">لو كان التيار المحتث يقوّي التغيّر المسبّب له، لتضخّمت الطاقة ذاتيًا دون أي مصدر خارجي، وهذا يخالف مبدأ حفظ الطاقة؛ لذا يجب أن يكون التيار المحتث معاكسًا (قانون لينز) لا معززًا.</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
+      <ul class="summary-list">
+        <li><span>قاعدة اليد اليمنى: السبابة = المجال المغناطيسي، الإبهام = حركة الموصل، الوسطى = التيار المحتث.</span></li>
+        <li><span>قانون لينز: التيار المحتث يولّد مجالًا مغناطيسيًا معاكسًا للتغيّر الخارجي المسبّب له.</span></li>
+        <li><span>القوة الناتجة عن التيار المحتث تعاكس دائمًا حركة الموصل المسبّبة له.</span></li>
+        <li><span>قانون لينز يحقق مبدأ حفظ الطاقة: الشغل المبذول للتغلّب على القوة المعاكسة يتحول إلى طاقة التيار المحتث.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l2" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l2">
+        <svg viewBox="0 0 480 200" width="480" height="200" role="img" aria-label="خريطة قانون لينز الذهنية">
+          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
+            <line x1="240" y1="100" x2="100" y2="45"/>
+            <line x1="240" y1="100" x2="100" y2="155"/>
+            <line x1="240" y1="100" x2="380" y2="100"/>
+          </g>
+          <g>
+            <circle cx="240" cy="100" r="48" fill="#7c6fee"/>
+            <text x="240" y="104" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">قانون لينز</text>
+          </g>
+          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
+            <text x="100" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">قاعدة اليد</text>
+            <text x="100" y="54" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">اليمنى</text></g>
+          <g><circle cx="100" cy="155" r="42" fill="#2fd18f"/>
+            <text x="100" y="158" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">قوة معاكسة</text></g>
+          <g><circle cx="380" cy="100" r="42" fill="#ffab5e"/>
+            <text x="380" y="97" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">حفظ</text>
+            <text x="380" y="109" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">الطاقة</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">الفصل الثالث: الحث الكهرومغناطيسي — الدرس 2: قانون لينز</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch3.js"></script>
+<script>
+(function(){
+  var ns = "http://www.w3.org/2000/svg";
+
+  function arrow(svg,x1,y1,x2,y2,color,width){
+    var l = document.createElementNS(ns,"line");
+    l.setAttribute("x1",x1); l.setAttribute("y1",y1); l.setAttribute("x2",x2); l.setAttribute("y2",y2);
+    l.setAttribute("stroke",color); l.setAttribute("stroke-width",width||3); l.setAttribute("stroke-linecap","round");
+    svg.appendChild(l);
+    var ang = Math.atan2(y2-y1,x2-x1);
+    var hl=9, a1=ang+Math.PI-0.4, a2=ang+Math.PI+0.4;
+    var head = document.createElementNS(ns,"polygon");
+    head.setAttribute("points", x2+","+y2+" "+(x2+hl*Math.cos(a1))+","+(y2+hl*Math.sin(a1))+" "+(x2+hl*Math.cos(a2))+","+(y2+hl*Math.sin(a2)));
+    head.setAttribute("fill",color);
+    svg.appendChild(head);
+  }
+  function label(svg,x,y,txt,color,size){
+    var t = document.createElementNS(ns,"text");
+    t.setAttribute("x",x); t.setAttribute("y",y);
+    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||11); t.setAttribute("fill",color);
+    t.setAttribute("font-weight","700");
+    t.textContent = txt;
+    svg.appendChild(t);
+  }
+
+  // ===== Right-hand-rule widget (Figure 3-3) =====
+  var rhrSvg = document.getElementById("rhrSvg");
+  var rhrStatus = document.getElementById("rhrStatus");
+  var vDir = "down", bDir = "right";
+
+  function computeCurrentDir(){
+    // v x B via right-hand rule; z=+out of page
+    var vy = vDir === "down" ? -1 : 1;
+    var bx = bDir === "right" ? 1 : -1;
+    // v=(0,vy,0), B=(bx,0,0); v x B = (vy*0-0*0, 0*bx-0*0, 0*0-vy*bx) = (0,0,-vy*bx)
+    var z = -vy*bx;
+    return z > 0 ? "out" : "into";
+  }
+
+  function drawRHR(){
+    while(rhrSvg.firstChild) rhrSvg.removeChild(rhrSvg.firstChild);
+    var cx=160, cy=100;
+
+    var bx2 = bDir === "right" ? 1 : -1;
+    arrow(rhrSvg, cx-70*bx2, cy, cx+70*bx2, cy, "var(--accent-blue)", 3);
+    label(rhrSvg, cx-10, cy-14, "B", "var(--accent-blue)", 14);
+
+    var vy2 = vDir === "down" ? 1 : -1;
+    arrow(rhrSvg, cx, cy-50*vy2, cx, cy+50*vy2, "var(--accent-orange, #ffab5e)", 3);
+    label(rhrSvg, cx+10, cy+ (vy2>0?55:-45), "v (الموصل)", "var(--accent-orange, #ffab5e)", 12);
+
+    var dir = computeCurrentDir();
+    var dot = document.createElementNS(ns,"circle");
+    dot.setAttribute("cx",cx); dot.setAttribute("cy",cy); dot.setAttribute("r",16);
+    dot.setAttribute("fill","var(--surface)"); dot.setAttribute("stroke","var(--accent-red)"); dot.setAttribute("stroke-width","3");
+    rhrSvg.appendChild(dot);
+    var symbol = document.createElementNS(ns,"text");
+    symbol.setAttribute("x",cx); symbol.setAttribute("y",cy+6);
+    symbol.setAttribute("text-anchor","middle"); symbol.setAttribute("font-size","18"); symbol.setAttribute("font-weight","900"); symbol.setAttribute("fill","var(--accent-red)");
+    symbol.textContent = dir === "out" ? "•" : "×";
+    rhrSvg.appendChild(symbol);
+
+    rhrStatus.textContent = "التيار المحتث: " + (dir === "out" ? "خارج من الصفحة (نحو القارئ) •" : "داخل الصفحة (بعيدًا عن القارئ) ×");
+  }
+  document.querySelectorAll("[data-vdir]").forEach(function(btn){
+    btn.addEventListener("click", function(){ vDir = btn.getAttribute("data-vdir"); drawRHR(); });
+  });
+  document.querySelectorAll("[data-bdir]").forEach(function(btn){
+    btn.addEventListener("click", function(){ bDir = btn.getAttribute("data-bdir"); drawRHR(); });
+  });
+  drawRHR();
+
+  // ===== Lenz opposing-force widget (Figure 4-3) =====
+  var lenzSvg = document.getElementById("lenzSvg");
+  var lenzToggle = document.getElementById("lenzToggle");
+  var lenzDown = true;
+
+  function drawLenz(){
+    while(lenzSvg.firstChild) lenzSvg.removeChild(lenzSvg.firstChild);
+    var nBox = document.createElementNS(ns,"rect");
+    nBox.setAttribute("x",20); nBox.setAttribute("y",50); nBox.setAttribute("width",50); nBox.setAttribute("height",100);
+    nBox.setAttribute("fill","#ff6b9d");
+    lenzSvg.appendChild(nBox);
+    var nLabel = document.createElementNS(ns,"text");
+    nLabel.setAttribute("x",45); nLabel.setAttribute("y",105); nLabel.setAttribute("text-anchor","middle"); nLabel.setAttribute("font-size","18"); nLabel.setAttribute("font-weight","800"); nLabel.setAttribute("fill","#fff");
+    nLabel.textContent="N";
+    lenzSvg.appendChild(nLabel);
+
+    var sBox = document.createElementNS(ns,"rect");
+    sBox.setAttribute("x",250); sBox.setAttribute("y",50); sBox.setAttribute("width",50); sBox.setAttribute("height",100);
+    sBox.setAttribute("fill","#3fa9f5");
+    lenzSvg.appendChild(sBox);
+    var sLabel = document.createElementNS(ns,"text");
+    sLabel.setAttribute("x",275); sLabel.setAttribute("y",105); sLabel.setAttribute("text-anchor","middle"); sLabel.setAttribute("font-size","18"); sLabel.setAttribute("font-weight","800"); sLabel.setAttribute("fill","#fff");
+    sLabel.textContent="S";
+    lenzSvg.appendChild(sLabel);
+
+    for(var i=0;i<3;i++){
+      arrow(lenzSvg, 80, 70+i*30, 240, 70+i*30, "var(--text-faint)", 1.5);
+    }
+
+    var condX = 160;
+    var cond = document.createElementNS(ns,"line");
+    cond.setAttribute("x1",condX); cond.setAttribute("y1",50); cond.setAttribute("x2",condX); cond.setAttribute("y2",150);
+    cond.setAttribute("stroke","var(--text-primary)"); cond.setAttribute("stroke-width","5"); cond.setAttribute("stroke-linecap","round");
+    lenzSvg.appendChild(cond);
+
+    var vArrowDir = lenzDown ? 1 : -1;
+    arrow(lenzSvg, condX, 100-25*vArrowDir, condX, 100+25*vArrowDir, "var(--accent-orange, #ffab5e)", 3);
+    label(lenzSvg, condX+10, 100 - 30*vArrowDir, "v", "var(--accent-orange, #ffab5e)", 13);
+
+    // current direction: N-left/S-right field (rightward +x), v down => out of page (per earlier derivation)
+    var vy = lenzDown ? -1 : 1;
+    var z = -vy*1; // bx=1 (rightward)
+    var dir = z>0 ? "out" : "into";
+    var dot = document.createElementNS(ns,"circle");
+    dot.setAttribute("cx",condX); dot.setAttribute("cy",100); dot.setAttribute("r",14);
+    dot.setAttribute("fill","var(--surface)"); dot.setAttribute("stroke","var(--accent-red)"); dot.setAttribute("stroke-width","3");
+    lenzSvg.appendChild(dot);
+    var sym = document.createElementNS(ns,"text");
+    sym.setAttribute("x",condX); sym.setAttribute("y",106); sym.setAttribute("text-anchor","middle"); sym.setAttribute("font-size","16"); sym.setAttribute("font-weight","900"); sym.setAttribute("fill","var(--accent-red)");
+    sym.textContent = dir==="out" ? "•" : "×";
+    lenzSvg.appendChild(sym);
+
+    // opposing force: always opposite to v
+    arrow(lenzSvg, condX-40, 100+25*vArrowDir, condX-40, 100-25*vArrowDir, "var(--accent-green)", 3);
+    label(lenzSvg, condX-75, 100 + 30*vArrowDir, "قوة معاكسة", "var(--accent-green)", 11);
+
+    var caption = document.createElementNS(ns,"text");
+    caption.setAttribute("x",160); caption.setAttribute("y",185);
+    caption.setAttribute("text-anchor","middle"); caption.setAttribute("font-family","Cairo,sans-serif"); caption.setAttribute("font-size","11"); caption.setAttribute("font-weight","700"); caption.setAttribute("fill","var(--text-secondary)");
+    caption.textContent = lenzDown ? "الموصل يتحرك لأسفل → تيار خارج الصفحة" : "الموصل يتحرك لأعلى → تيار داخل الصفحة";
+    lenzSvg.appendChild(caption);
+  }
+  lenzToggle.addEventListener("click", function(){ lenzDown = !lenzDown; drawLenz(); });
+  drawLenz();
+})();
+</script>
+</body>
+</html>

@@ -77,5 +77,14 @@
     "lesson5NavTitle": "5) Polarization",
     "lesson6NavTitle": "6) Light Scattering",
     "lesson7NavTitle": "7) Chapter Questions & Problems"
+  },
+  "ch3": {
+    "sidebarSubtitle": "Electromagnetic Induction",
+    "lesson1NavTitle": "1) Introduction & Faraday's Law",
+    "lesson2NavTitle": "2) Lenz's Law",
+    "lesson3NavTitle": "3) Eddy Currents & Self-Induction",
+    "lesson4NavTitle": "4) The Electric Generator",
+    "lesson5NavTitle": "5) The Electric Motor",
+    "lesson6NavTitle": "6) Chapter Questions & Problems"
   }
 }

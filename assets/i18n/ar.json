@@ -77,5 +77,14 @@
     "lesson5NavTitle": "5) الاستقطاب",
     "lesson6NavTitle": "6) استطارة الضوء",
     "lesson7NavTitle": "7) أسئلة ومسائل الفصل"
+  },
+  "ch3": {
+    "sidebarSubtitle": "الحث الكهرومغناطيسي",
+    "lesson1NavTitle": "1) تمهيد وقانون فاراداي",
+    "lesson2NavTitle": "2) قانون لينز",
+    "lesson3NavTitle": "3) التيارات الدوامة والحث الذاتي",
+    "lesson4NavTitle": "4) المولد الكهربائي",
+    "lesson5NavTitle": "5) المحرك الكهربائي",
+    "lesson6NavTitle": "6) أسئلة ومسائل الفصل"
   }
 }

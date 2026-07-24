@@ -1,6 +1,7 @@
-/* Chapter 3 — behavior script instantiated from
-   templates/chapter-behavior-template.js. No lessons published yet:
-   LESSONS holds only the chapter-home entry until lesson pages are added. */
+/* Chapter 3 — الحث الكهرومغناطيسي (Electromagnetic Induction) — behavior
+   script instantiated from templates/chapter-behavior-template.js. Content
+   sourced from the official textbook PDF (pdf/كتاب الطبيعيات.pdf,
+   pages 35-48). */
 (function(){
   "use strict";
 
@@ -8,13 +9,17 @@
     storageKeyPrefix: "ch3",
     chapterNumber: 3,
     brandBadge: "3",
-    sidebarSubtitleKey: "common.readyToBuild",
+    sidebarSubtitleKey: "ch3.sidebarSubtitle",
     lessons: [
-      { href: "index.html", titleKey: "common.chapterHome", root: true }
-      // { href: "lessons/lesson-1.html", titleKey: "lessons.ch3.lesson1.navTitle" },
-      // ... add one entry per lesson, in order, once lessons exist
+      { href: "index.html", titleKey: "common.chapterHome", root: true },
+      { href: "lessons/lesson-1.html", titleKey: "ch3.lesson1NavTitle" },
+      { href: "lessons/lesson-2.html", titleKey: "ch3.lesson2NavTitle" },
+      { href: "lessons/lesson-3.html", titleKey: "ch3.lesson3NavTitle" },
+      { href: "lessons/lesson-4.html", titleKey: "ch3.lesson4NavTitle" },
+      { href: "lessons/lesson-5.html", titleKey: "ch3.lesson5NavTitle" },
+      { href: "lessons/lesson-6.html", titleKey: "ch3.lesson6NavTitle" }
     ],
-    bgSymbols: ["•", "∘", "×", "+", "–", "="]
+    bgSymbols: ["B", "ε", "Φ", "L", "N", "I"]
   };
   // ---------------------------------------------------------------------------
 
