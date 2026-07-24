@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدرس 4: الحيود وتطبيقاته — الفصل الثاني</title>
+<meta name="description" content="6-2 الحيود في الضوء وتفسيره الموجي، 7-2 ظاهرة التداخل والحيود للضوء وتطبيقاتها في الأشعة السينية والتلسكوب والمايكروسكوب.">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
+</head>
+<body data-page="lessons/lesson-4.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li><a href="../index.html">الفصل 2</a></li>
+      <li aria-current="page">الحيود وتطبيقاته</li>
+    </ol>
+  </nav>
+
+  <div dir="rtl" lang="ar">
+
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 الدرس 4 من 7 · الفصل الثاني</span>
+    <h1>الحيود وتطبيقاته Diffraction</h1>
+    <p class="lead">6-2 الحيود في الضوء · 7-2 ظاهرة التداخل والحيود للضوء وتطبيقاتها</p>
+  </section>
+
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
+    <div class="card neu">
+      <h2>🎯 أهداف الدرس</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يعرّف ظاهرة الحيود ويفسّرها استنادًا إلى الطبيعة الموجية للضوء.</span></li>
+        <li><span class="obj-num">2</span><span>يوضّح متى تكون ظاهرة الحيود أكثر وضوحًا، ولماذا يصعب ملاحظتها في الضوء.</span></li>
+        <li><span class="obj-num">3</span><span>يذكر تطبيقات الحيود، وبالأخص حيود الأشعة السينية بواسطة البلورات.</span></li>
+        <li><span class="obj-num">4</span><span>يوضّح لماذا لا يمكن تفسير التداخل والحيود إلا بالنظرية الموجية للضوء.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
+    <div class="def-box">
+      <span class="def-label">📌 6-2 الحيود في الضوء Light of Diffraction</span>
+      <p style="margin:.3rem 0">من المعروف عن انتشار الضوء بخطوط مستقيمة في الأوساط المتجانسة تكوّن الظلال، وتكوّن الصور المقلوبة بواسطة الثقوب الصغيرة، وقانون التربيع العكسي لشدة الاستضاءة. ولكن الموجات الضوئية تحيد عند عبورها عوائق صغيرة بالنسبة لأطوالها الموجية. ويمكن تعريف حيود الضوء بأنه انتشار الضوء وانبساطه في المنطقة التي تقع خلف العائق الذي يقف في طريقه، والعائق هنا يكون شقًا ضيقًا أو سلكًا رفيعًا.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>فسّر العالم فرينل عام (1815 م) ظاهرة حيود الضوء عندما أرجعها إلى الطبيعة الموجية للضوء: أنّ كل نقطة في جبهة الموجة تُعتبر مصدرًا ثانويًا لموجات تنتشر خلف العائق، وعند تداخلها تظهر المناطق المضيئة والمظلمة والتي تُسمّى (هُدُب الحيود). تكون ظاهرة الحيود أكثر وضوحًا في الموجات الطويلة كالموجات المائية والموجات الصوتية، أما الموجات الضوئية فيكون حيودها قليلًا جدًا لقصر طولها الموجي.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="diffraction-widget" data-navlabel="🕹️ إعادة إنشاء الشكلين 9-2 و10-2">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: حيود الموجات عند فجوة (الشكلان 9-2 و10-2)</h2>
+      <p>حرّك مزلاج عرض الفجوة نسبةً إلى الطول الموجي، ولاحظ: كلّما ضاقت الفجوة بالمقارنة بالطول الموجي ازداد انحناء الموجات وانتشارها خلف الحاجز (حيود أوضح)، وكلّما اتّسعت الفجوة انتشرت الموجات بشكل شبه مستقيم (حيود أقل وضوحًا).</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="gapSvg" viewBox="0 0 360 220" width="360" height="220" role="img" aria-label="محاكاة حيود موجات عند فجوة بعرض متغيّر"></svg></div>
+        <div class="io-row">
+          <label for="gapSlider" style="min-width:11rem">نسبة عرض الفجوة a/λ = <span id="gapVal">4</span></label>
+          <input type="range" id="gapSlider" class="neu-range" min="0.5" max="8" step="0.25" value="4">
+        </div>
+        <div class="rule-box" id="gapStatus">حيود متوسط</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>من المعروف عن سلوك الموجات أنه بعد الحيود يحصل تداخل، ويلاحظ نموذج لهُدُب التداخل البنّاء والهُدُب الاتلافي المظلمة (الخطوط المظلمة).</p>
+      <p>بما أن أطوال موجات الإشعاع الضوئي صغيرة جدًا، لذلك لا يمكن مشاهدة الحيود في الضوء إلا على مسافة كبيرة من الحاجز. إنّ ظاهرة الحيود هي انعطاف الضوء وانحناؤه حول عوائق صغيرة وانتشاره خلال الفتحات الصغيرة، ويكون شديد الوضوح للموجات الصغيرة.</p>
+      <p>تحدث هذه الظاهرة أيضًا للجسيمات الأولية مثل الإلكترون والنيوترون، إذ يحدث الحيود مع المادة ويُدرس بميكانيك الكم في الدراسات الحديثة.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>تُشاهَد ظاهرة الحيود كثيرًا مع أنظمة البلورات، ويمكن بدراستها تعيين الشكل البلوري للمعادن، فمنها بلورة مكعّبة أو بلورة سداسية أو مستطيلة وغيرها.</p>
+      <p>ومن استعمالات الحيود اختبار معرفة ما إذا كانت الأشياء المختلفة تُحيد فيها الموجات أم لا؛ فمثلًا حيود الأشعة السينية (X-ray) بواسطة البلورات، إذ أثبت أنّ هذه الأشعة هي عبارة عن موجات.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="bragg-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 11-2">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: انعكاس الأشعة السينية من طبقة الذرّات (الشكل 11-2)</h2>
+      <p>حرّك مزلاج زاوية السقوط θ، ولاحظ فرق المسار \(d\sin\theta\) بين الأشعة المنعكسة من الذرّات المتجاورة في المستوى نفسه، ومتى يتحقق تداخل بنّاء بين الأشعة المنعكسة.</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="braggSvg" viewBox="0 0 320 180" width="320" height="180" role="img" aria-label="محاكاة انعكاس الأشعة السينية من مستوي ذرات"></svg></div>
+        <div class="io-row">
+          <label for="braggSlider" style="min-width:9rem">زاوية السقوط θ = <span id="braggThetaVal">30</span>°</label>
+          <input type="range" id="braggSlider" class="neu-range" min="5" max="80" step="1" value="30">
+        </div>
+        <div class="rule-box" id="braggStatus">فرق المسار d sinθ = 0.50 d</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 7-2 ظاهرة التداخل والحيود للضوء</span>
+      <p style="margin:.3rem 0">لقد علمت عزيزي الطالب أن الضوء أحد صور الطاقة التي لا يمكن للإنسان الاستغناء عنها، وهو عبارة عن موجات كهرومغناطيسية ذات طبيعة موجية تنتشر في الفراغ بسرعة ثابتة \((3\times10^{8}\ \text{m/s})\)؛ لذلك فإن تفسير ظاهرة التداخل — والتي تمثّل التقاء موجتين وتراكبهما معًا، مما ينتج مناطق تزداد فيها شدة الموجات (تداخل بنّاء) وأخرى تنقص فيها الشدة (تداخل اتلافي) — لا يمكن تفسيرها إلا ضمن النظرية الموجية، ولا يمكن تفسيرها حسب نظرية نيوتن الجسيمية.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>أما ظاهرة الحيود في الضوء، والتي تنصّ على أنّ الموجات الضوئية تنحرف وتنتشر حول حاجز ضيّق أو فتحة صغيرة، فإنه كلّما كان حجم الحاجز أو الفتحة صغيرًا بالمقارنة بطول الموجة كانت ظاهرة الحيود أكثر وضوحًا. ومن الأمثلة على ظاهرة الحيود قوس المطر (rainbow) والهالات المتكوّنة حول القمر، وفي بعض التطبيقات التقنية يضع حدودًا أساسية لدرجة نقاء صور الكاميرا والتلسكوب والمايكروسكوب، وله دور في الطب كما في ظاهرة حيود الأشعة السينية (X-ray).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h3 style="margin-top:0">📋 من تقنيات حيود الأشعة السينية</h3>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>دراسة الطبيعة البلورية للمادة.</span></li>
+        <li><span class="obj-num">2</span><span>دراسة التركيب الكيميائي لبعض الأجسام.</span></li>
+        <li><span class="obj-num">3</span><span>دراسة الخواص الفيزيائية للمواد ذات الطبقات الرقيقة من خلال حساب زاوية السقوط وزاوية التشتت وطول الموجة وطاقة الإشعاع.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>1.</span><span>حيود الضوء هو:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>انعكاس الضوء عن سطح أملس</span></label>
+          <label class="quiz-opt"><input type="radio"><span>انكسار الضوء بين وسطين مختلفين</span></label>
+          <label class="quiz-opt"><input type="radio"><span>انتشار الضوء وانبساطه في المنطقة الواقعة خلف عائق يقف في طريقه</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تحلّل الضوء الأبيض إلى ألوان الطيف</span></label>
+        </div>
+        <div class="quiz-explain">حيود الضوء هو انتشار الضوء وانبساطه في المنطقة التي تقع خلف عائق (شق ضيق أو سلك رفيع) يقف في طريقه.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>2.</span><span>فسّر العالم فرينل ظاهرة حيود الضوء بالاستناد إلى:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>نظرية نيوتن الجسيمية للضوء</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الطبيعة الموجية للضوء، إذ تُعدّ كل نقطة من جبهة الموجة مصدرًا ثانويًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>نظرية النسبية الخاصة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>قانون التربيع العكسي للاستضاءة فقط</span></label>
+        </div>
+        <div class="quiz-explain">فسّر فرينل عام 1815 الحيود بردّه إلى الطبيعة الموجية للضوء: كل نقطة من جبهة الموجة مصدر ثانوي لموجات تتداخل خلف العائق.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>3.</span><span>يصعب ملاحظة حيود الضوء بسهولة (بخلاف الموجات المائية والصوتية) بسبب:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>قصر الطول الموجي للضوء مقارنة بالعوائق المألوفة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>سرعة الضوء الكبيرة جدًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>أن الضوء لا يحيد إطلاقًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>أن الضوء موجة طولية</span></label>
+        </div>
+        <div class="quiz-explain">لأن الطول الموجي للضوء قصير جدًا، فإن حيوده يكون واضحًا فقط أمام عوائق أو فتحات صغيرة جدًا مقارنة به.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="3">
+        <div class="quiz-q-title"><span>4.</span><span>حيود الأشعة السينية (X-ray) بواسطة البلورات أثبت أن هذه الأشعة:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>جسيمات فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لا تتفاعل مع المادة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>أشعة غير كهرومغناطيسية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>عبارة عن موجات</span></label>
+        </div>
+        <div class="quiz-explain">حيود الأشعة السينية بواسطة البلورات دليل على طبيعتها الموجية.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>5.</span><span>لا يمكن تفسير ظاهرتَي التداخل والحيود في الضوء وفق:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>النظرية الموجية للضوء</span></label>
+          <label class="quiz-opt"><input type="radio"><span>نظرية نيوتن الجسيمية للضوء</span></label>
+          <label class="quiz-opt"><input type="radio"><span>معادلات ماكسويل الكهرومغناطيسية</span></label>
+          <label class="quiz-opt"><input type="radio"><span>مبدأ هيغنز لتموضع مصادر الموجات الثانوية</span></label>
+        </div>
+        <div class="quiz-explain">التداخل والحيود ظاهرتان موجيتان بحتتان، ولا يمكن تفسيرهما وفق نظرية نيوتن الجسيمية للضوء.</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
+      <ul class="summary-list">
+        <li><span>الحيود: انتشار الضوء وانبساطه خلف عائق صغير، فسّره فرينل بالاستناد إلى الطبيعة الموجية للضوء (مبدأ هيغنز).</span></li>
+        <li><span>الحيود أكثر وضوحًا كلّما صغر حجم العائق أو الفتحة مقارنة بالطول الموجي.</span></li>
+        <li><span>يحدث الحيود أيضًا مع الجسيمات الأولية (إلكترون، نيوترون) ويُدرس في ميكانيك الكم.</span></li>
+        <li><span>حيود الأشعة السينية بالبلورات يُستعمل لدراسة الطبيعة البلورية والتركيب الكيميائي والخواص الفيزيائية للمواد.</span></li>
+        <li><span>التداخل والحيود ظاهرتان موجيتان لا تُفسَّران بنظرية نيوتن الجسيمية.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l4" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l4">
+        <svg viewBox="0 0 480 220" width="480" height="220" role="img" aria-label="خريطة الحيود الذهنية">
+          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
+            <line x1="240" y1="110" x2="100" y2="45"/>
+            <line x1="240" y1="110" x2="100" y2="175"/>
+            <line x1="240" y1="110" x2="380" y2="45"/>
+            <line x1="240" y1="110" x2="380" y2="175"/>
+          </g>
+          <g>
+            <circle cx="240" cy="110" r="48" fill="#7c6fee"/>
+            <text x="240" y="114" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">الحيود</text>
+          </g>
+          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
+            <text x="100" y="48" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">مبدأ فرينل</text></g>
+          <g><circle cx="100" cy="175" r="42" fill="#2fd18f"/>
+            <text x="100" y="172" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">حيود الإلكترون</text>
+            <text x="100" y="184" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">ميكانيك الكم</text></g>
+          <g><circle cx="380" cy="45" r="42" fill="#ffab5e"/>
+            <text x="380" y="48" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">حيود X-ray</text></g>
+          <g><circle cx="380" cy="175" r="42" fill="#ff6b9d"/>
+            <text x="380" y="172" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">قوس المطر</text>
+            <text x="380" y="184" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">هالة القمر</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">الفصل الثاني: التداخل والاستقطاب والحيود والاستطارة — الدرس 4: الحيود وتطبيقاته</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch2.js"></script>
+<script>
+(function(){
+  var ns = "http://www.w3.org/2000/svg";
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // ===== Gap diffraction widget (Figures 9-2, 10-2) =====
+  var gapSvg = document.getElementById("gapSvg");
+  var gapSlider = document.getElementById("gapSlider");
+  var gapVal = document.getElementById("gapVal");
+  var gapStatus = document.getElementById("gapStatus");
+  var tGap = 0;
+
+  function drawGap(){
+    var ratio = parseFloat(gapSlider.value);
+    gapVal.textContent = ratio.toFixed(2);
+    gapStatus.textContent = ratio < 1.5 ? "حيود واضح جدًا 🌊 (الفجوة قريبة من الطول الموجي)" :
+                             ratio < 3.5 ? "حيود ملحوظ" : "حيود ضعيف تقريبًا خط مستقيم";
+
+    while(gapSvg.firstChild) gapSvg.removeChild(gapSvg.firstChild);
+    var wallY = 90, gapHalf = Math.min(40, Math.max(6, ratio*5)), cx = 130;
+
+    [[0,wallY-gapHalf],[wallY+gapHalf,220]].forEach(function(seg){
+      var h = seg[1]-seg[0];
+      if(h <= 0) return;
+      var wall = document.createElementNS(ns,"rect");
+      wall.setAttribute("x",100); wall.setAttribute("y",seg[0]); wall.setAttribute("width",30); wall.setAttribute("height",h);
+      wall.setAttribute("fill","var(--text-faint)");
+      gapSvg.appendChild(wall);
+    });
+
+    for(var i=1;i<=5;i++){
+      var r = 20*i + (tGap%20);
+      var spreadAngle = Math.min(1.5, 0.35 + 1.1/ratio);
+      var path = document.createElementNS(ns,"path");
+      var y0 = wallY;
+      var x0 = cx + r*Math.cos(0);
+      var a1 = -spreadAngle, a2 = spreadAngle;
+      var pts = [];
+      for(var a=a1; a<=a2; a+=0.1){
+        pts.push((cx + r*Math.cos(a)).toFixed(1)+","+(wallY + r*Math.sin(a)).toFixed(1));
+      }
+      path.setAttribute("points", pts.join(" "));
+      path.setAttribute("fill","none");
+      var poly = document.createElementNS(ns,"polyline");
+      poly.setAttribute("points", pts.join(" "));
+      poly.setAttribute("fill","none"); poly.setAttribute("stroke","var(--accent-blue)"); poly.setAttribute("stroke-width","2");
+      poly.setAttribute("opacity", (1 - i*0.15).toFixed(2));
+      gapSvg.appendChild(poly);
+    }
+
+    for(var j=1;j<=4;j++){
+      var rr = 20*j + (tGap%20);
+      if(cx-rr < 100){
+        var incoming = document.createElementNS(ns,"line");
+        incoming.setAttribute("x1", Math.max(5,cx-rr)); incoming.setAttribute("y1", wallY);
+        incoming.setAttribute("x2", Math.min(100,cx-rr+20)); incoming.setAttribute("y2", wallY);
+        incoming.setAttribute("stroke","var(--text-faint)"); incoming.setAttribute("stroke-width","1.5"); incoming.setAttribute("opacity","0.4");
+        gapSvg.appendChild(incoming);
+      }
+    }
+    var srcLabel = document.createElementNS(ns,"text");
+    srcLabel.setAttribute("x",50); srcLabel.setAttribute("y",wallY-10);
+    srcLabel.setAttribute("font-family","Cairo,sans-serif"); srcLabel.setAttribute("font-size","11"); srcLabel.setAttribute("fill","var(--text-secondary)");
+    srcLabel.textContent = "موجات ساقطة";
+    gapSvg.appendChild(srcLabel);
+  }
+  gapSlider.addEventListener("input", drawGap);
+  function tickGap(){ tGap += 0.6; drawGap(); requestAnimationFrame(tickGap); }
+  if(reduceMotion){ drawGap(); } else { requestAnimationFrame(tickGap); }
+
+  // ===== Bragg-style X-ray widget (Figure 11-2) =====
+  var braggSvg = document.getElementById("braggSvg");
+  var braggSlider = document.getElementById("braggSlider");
+  var braggThetaVal = document.getElementById("braggThetaVal");
+  var braggStatus = document.getElementById("braggStatus");
+
+  function drawBragg(){
+    var thetaDeg = parseFloat(braggSlider.value);
+    braggThetaVal.textContent = thetaDeg;
+    var theta = thetaDeg*Math.PI/180;
+    var pathDiffOverD = Math.sin(theta);
+    braggStatus.textContent = "فرق المسار d sinθ = " + pathDiffOverD.toFixed(2) + " d" +
+      (Math.abs(pathDiffOverD % 1) < 0.05 || Math.abs(pathDiffOverD % 1 - 1) < 0.05 ? " → قريب من عدد صحيح من الطول الموجي (تقوية محتملة)" : "");
+
+    while(braggSvg.firstChild) braggSvg.removeChild(braggSvg.firstChild);
+    var y1 = 70, y2 = 110, spacing = 40, cx = 160;
+    for(var row=0; row<2; row++){
+      var y = row===0 ? y1 : y2;
+      for(var i=-2;i<=2;i++){
+        var dot = document.createElementNS(ns,"circle");
+        dot.setAttribute("cx", cx+i*spacing); dot.setAttribute("cy", y); dot.setAttribute("r",6);
+        dot.setAttribute("fill","var(--text-secondary)");
+        braggSvg.appendChild(dot);
+      }
+    }
+    function ray(x1,yy1,x2,yy2,color){
+      var l = document.createElementNS(ns,"line");
+      l.setAttribute("x1",x1); l.setAttribute("y1",yy1); l.setAttribute("x2",x2); l.setAttribute("y2",yy2);
+      l.setAttribute("stroke",color); l.setAttribute("stroke-width","2");
+      braggSvg.appendChild(l);
+    }
+    var len = 70;
+    ray(cx - len*Math.cos(theta), y1 - len*Math.sin(theta), cx, y1, "var(--accent-orange, #ffab5e)");
+    ray(cx, y1, cx + len*Math.cos(theta), y1 - len*Math.sin(theta), "var(--accent-blue)");
+    var cx2 = cx + spacing;
+    ray(cx2 - len*Math.cos(theta), y2 - len*Math.sin(theta), cx2, y2, "var(--accent-orange, #ffab5e)");
+    ray(cx2, y2, cx2 + len*Math.cos(theta), y2 - len*Math.sin(theta), "var(--accent-blue)");
+
+    var dLabel = document.createElementNS(ns,"text");
+    dLabel.setAttribute("x", cx-18); dLabel.setAttribute("y", (y1+y2)/2+4);
+    dLabel.setAttribute("font-family","Cairo,sans-serif"); dLabel.setAttribute("font-size","12"); dLabel.setAttribute("font-weight","700"); dLabel.setAttribute("fill","var(--text-primary)");
+    dLabel.textContent = "d";
+    braggSvg.appendChild(dLabel);
+    var dLine = document.createElementNS(ns,"line");
+    dLine.setAttribute("x1",cx-10); dLine.setAttribute("y1",y1); dLine.setAttribute("x2",cx-10); dLine.setAttribute("y2",y2);
+    dLine.setAttribute("stroke","var(--text-secondary)"); dLine.setAttribute("stroke-width","1");
+    braggSvg.appendChild(dLine);
+  }
+  braggSlider.addEventListener("input", drawBragg);
+  drawBragg();
+})();
+</script>
+</body>
+</html>

@@ -67,5 +67,15 @@
     "lesson6NavTitle": "6) عزم القصور الذاتي",
     "lesson7NavTitle": "7) الطاقة والشغل والزخم الزاوي",
     "lesson8NavTitle": "8) أسئلة ومسائل الفصل"
+  },
+  "ch2": {
+    "sidebarSubtitle": "التداخل والاستقطاب والحيود والاستطارة",
+    "lesson1NavTitle": "1) تمهيد وظاهرتا التداخل والتشاكه",
+    "lesson2NavTitle": "2) تجربة يونك",
+    "lesson3NavTitle": "3) التداخل في الأغشية الرقيقة",
+    "lesson4NavTitle": "4) الحيود وتطبيقاته",
+    "lesson5NavTitle": "5) الاستقطاب",
+    "lesson6NavTitle": "6) استطارة الضوء",
+    "lesson7NavTitle": "7) أسئلة ومسائل الفصل"
   }
 }

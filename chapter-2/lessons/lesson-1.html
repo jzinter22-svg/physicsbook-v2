@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدرس 1: تمهيد والتداخل والتشاكه — الفصل الثاني</title>
+<meta name="description" content="1-2 المقدمة، 2-2 التداخل: شرطا التداخل والتداخل البناء والاتلافي، 3-2 التشاكه: تعريفه ومصادره وطرائق الحصول على مصدرين متشاكهين.">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
+</head>
+<body data-page="lessons/lesson-1.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li><a href="../index.html">الفصل 2</a></li>
+      <li aria-current="page">تمهيد والتداخل والتشاكه</li>
+    </ol>
+  </nav>
+
+  <div dir="rtl" lang="ar">
+
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 الدرس 1 من 7 · الفصل الثاني</span>
+    <h1>تمهيد والتداخل والتشاكه</h1>
+    <p class="lead">1-2 المقدمة · 2-2 التداخل (Interference) · 3-2 التشاكه (Coherence)</p>
+  </section>
+
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
+    <div class="card neu">
+      <h2>🎯 أهداف الدرس</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يعرّف ظاهرة التداخل ويذكر شرطَي حدوثه بين موجتين.</span></li>
+        <li><span class="obj-num">2</span><span>يميّز بين التداخل البناء والتداخل الاتلافي من حيث فرق المسار البصري.</span></li>
+        <li><span class="obj-num">3</span><span>يعرّف مفهوم التشاكه ويذكر مصادر الحصول على موجتين متشاكهتين.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
+    <div class="card neu">
+      <h2>💡 1-2 المقدمة</h2>
+      <p>لقد تعرّف الطالب عزيزي في دراستك السابقة في المرحلة الاولى والثانية ماهو الضوء وما طبيعته؟ ودرست ظواهر الانعكاس والانكسار وقوانينهما، وفي هذا الفصل سوف تتعرّف على ظواهر اخرى للضوء والتي تثبت طبيعته الموجية كالتداخل والحيود والاستقطاب والاستطارة.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 2-2 التداخل Interference</span>
+      <p style="margin:.3rem 0">يُعرف التداخل أنه من الصفات العامة للموجات، ويحدث التداخل اذا حصل تراكب أو اندماج موجتين أو أكثر من الموجات المنتشرة في وسط ما.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="interference-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 1-2">
+    <div class="card neu">
+      <h2>🕹️ إعادة إنشاء الشكل 1-2: التداخل البناء والاتلافي والمختلط</h2>
+      <p>حرّك مزلاج فرق المسار البصري \(\Delta\ell\) (بوحدات الطول الموجي λ) بين موجتين متشاكهتين، وشاهد الموجة المحصّلة (الأرجوانية) تتراوح بين تداخل بناء (تقوية الموجة) وتداخل اتلافي (إلغاء الموجة).</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="interfSvg" viewBox="0 0 420 220" width="420" height="220" role="img" aria-label="محاكاة تداخل موجتين ومحصلتهما"></svg></div>
+        <div class="io-row">
+          <label for="pathDiffSlider" style="min-width:9rem">Δℓ = <span id="pathDiffVal">0</span> λ</label>
+          <input type="range" id="pathDiffSlider" class="neu-range" min="0" max="2" step="0.05" value="0">
+        </div>
+        <div class="rule-box" id="interfStatus">تداخل بناء ✅ — Δℓ = 0 (عدد صحيح من λ)</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>هناك شرطان لحدوث التداخل بين موجتين هما: (1) أن تكون الموجتان متشاكهتين، (2) أن يكون اهتزازهما بمستوى واحد وفي وسط واحد وأن تتّجها نحو نقطة واحدة في الوقت نفسه.</p>
+      <p>وكمثال لذلك دعنا نأخذ سلكين ونعمل على تحريكهما ونضعهما على سطح حوض ماء، إذ يلامس السلكان المهتزّان سطح الحوض. سوف تلاحظ عزيزي الطالب تراكب موجات الماء الناتجة عن اهتزاز السلكين المتماثلين، ومن ملاحظتنا للتداخل الحاصل للموجات على سطح الماء في الحوض يتّضح لنا وجود نوعين من التداخل هما:</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 1- التداخل البناء</span>
+      <p style="margin:.3rem 0">يحصل عندما تكون الموجتان بالطور نفسه والسعة نفسها عند نقطة معينة، أو أن يكون فرق المسار البصري بينهما صفرًا أو أعدادًا صحيحة من الطول الموجي:</p>
+      <p style="text-align:center">\( \Delta\ell = 0,\ \lambda,\ 2\lambda,\ 3\lambda,\ \dots \)</p>
+      <p style="margin:.3rem 0 0">وتكون الطاقة الناتجة عن التداخل مساوية لمجموع طاقتَي الموجتين المتداخلتين، أي حدوث تقوية في طاقة الموجة.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 2- التداخل الاتلافي</span>
+      <p style="margin:.3rem 0">يحصل عندما تكون الموجتان بطورين متعاكسين وسعتين متساويتين، وأن يكون فرق المسار البصري بينهما يساوي أعدادًا فردية من نصف الطول الموجي:</p>
+      <p style="text-align:center">\( \Delta\ell = \tfrac12\lambda,\ \tfrac32\lambda,\ \dots \)</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">💡</span>
+      <span><b>هل تعلم؟</b> أن التداخل الاتلافي يوفّر وسيلة تقليل أو إلغاء الضوضاء، والفكرة تأتي من استخدام أداة إلكترونية لتحليل الضوضاء، وعند ذلك تُنتج مرآة للموجات الصوتية تُلغي الموجات غير المرغوبة. وهذه التقنية تُستعمل من أجل حجب الضوضاء في مقصورة الطائرة أو أي مكان يُفضّل فيه عزل الموجات غير المرغوبة عن مجموع الموجات الواصلة إلى الأذن.</span>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 3-2 التشاكه Coherence</span>
+      <p style="margin:.3rem 0">معناه أن أي مصدرين أو مصادر ذات صفات متماثلة للتموّج من حيث الطول والاتجاه والطاقة فإنها تكون متشاكهة ويحدث بينها تداخل بناء مستديم؛ حيث يُقال إن الموجتين متشاكهتان اذا كانتا متساويتين بالتردد ومتقاربتين بالسعة وكان فرق الطور بينهما ثابت المقدار.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h3 style="margin-top:0">📋 مصادر التشاكه التي يمكن الحصول منها على موجتين متشاكهتين</h3>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>الليزر.</span></li>
+        <li><span class="obj-num">2</span><span>تجزئة الطاقة الموجية، وتتم بطريقتين: <br>
+          (a) تقسيم جبهة الموجة: كما في تجربة يونك (الحاجز ذو شقّين)، الموشور، المزدوج في مرآة فرينيل، مرآة لويد. <br>
+          (b) تقسيم سعة الموجة: كما في الانعكاس الجزئي والانكسار الجزئي الذي يحدث في الأغشية الرقيقة، ومقياس مايكلسون.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>حيث هنا يمثّل التشاكه الموجي الترابط بين موجات الحزمة الضوئية الواحدة، ويعمل في تقوية بعضها البعض لتعطي طاقة وقدرة عالية، وانّما ليس فقط في الموجات الضوئية، وانّما يمكن الحصول على تشاكه موجي في الموجات الصوتية أيضًا.</p>
+      <p>فلو أخذنا مصدرَين للصوت مثل \((S_1,S_2)\)، فعندما يتحرك \(S_1\) إلى الأعلى و\(S_2\) إلى الأسفل — مثل عصاتين تضربان طبلًا — ففي هذه الحالة يكون فرق الطورين \((S_1,S_2)\) يساوي \(180°\) فتُسمع الصوتان منفردَين. أما إذا كانت الحركة نفسها في الوقت نفسه لـ \((S_1,S_2)\) فسوف تُسمع صوتًا مدوّيًا قويًا.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="speakers-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 2-2">
+    <div class="card neu">
+      <h2>🕹️ إعادة إنشاء الشكل 2-2: تشاكه مصدرَي صوت</h2>
+      <p>اضغط الزر للتبديل بين حركة السمّاعتين بالطور نفسه (تشاكه بنّاء، صوت مدوٍّ قوي) وحركتهما بطورين متعاكسين (فرق طور 180°، صوتان منفصلان).</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="speakersSvg" viewBox="0 0 320 180" width="320" height="180" role="img" aria-label="محاكاة تشاكه مصدرين صوتيين"></svg></div>
+        <button class="neu-btn" id="speakersToggle">🔁 بدّل فرق الطور</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>1.</span><span>يحدث التداخل عندما:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>تنعكس موجة واحدة عن سطح أملس</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تتراكب أو تندمج موجتان أو أكثر من الموجات المنتشرة في وسط ما</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تنكسر موجة عند انتقالها بين وسطين</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تتغيّر سعة موجة منفردة بمرور الزمن</span></label>
+        </div>
+        <div class="quiz-explain">التداخل من الصفات العامة للموجات، ويحدث عند تراكب أو اندماج موجتين أو أكثر في الوسط نفسه.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>2.</span><span>يحصل التداخل البناء عندما يكون فرق المسار البصري بين الموجتين:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>صفرًا أو عددًا صحيحًا من الطول الموجي</span></label>
+          <label class="quiz-opt"><input type="radio"><span>عددًا فرديًا من نصف الطول الموجي</span></label>
+          <label class="quiz-opt"><input type="radio"><span>ربع الطول الموجي دائمًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>أكبر من الطول الموجي بمقدار عشوائي</span></label>
+        </div>
+        <div class="quiz-explain">التداخل البناء يحصل عند \(\Delta\ell=0,\lambda,2\lambda,3\lambda,\dots\).</div>
+      </div>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>3.</span><span>يُقال إن موجتين متشاكهتان إذا:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>كانتا مختلفتين بالتردد ومتساويتين بالسعة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>كان فرق الطور بينهما يتغيّر باستمرار</span></label>
+          <label class="quiz-opt"><input type="radio"><span>كانتا متساويتين بالتردد ومتقاربتين بالسعة وفرق الطور بينهما ثابت</span></label>
+          <label class="quiz-opt"><input type="radio"><span>كانت إحداهما ضوئية والأخرى صوتية</span></label>
+        </div>
+        <div class="quiz-explain">التشاكه يتطلب تساوي التردد وتقارب السعة وثبات فرق الطور بين الموجتين.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>4.</span><span>من مصادر الحصول على موجتين متشاكهتين:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>الليزر، أو تجزئة الطاقة الموجية بتقسيم جبهة أو سعة الموجة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>مصباح صوديوم عادي فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>أي مصدرين ضوئيين عشوائيين</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الشمس فقط</span></label>
+        </div>
+        <div class="quiz-explain">يمكن الحصول على مصدرين متشاكهين من الليزر، أو من تجزئة طاقة موجة واحدة بتقسيم جبهة الموجة (كتجربة يونك) أو تقسيم سعتها (كالأغشية الرقيقة ومقياس مايكلسون).</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>5.</span><span>هل يقتصر التشاكه الموجي على الموجات الضوئية فقط؟</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>نعم، لا يحدث إلا في الضوء</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لا، يمكن الحصول على تشاكه موجي في الموجات الصوتية أيضًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>نعم، ويقتصر على أشعة الليزر فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لا يوجد تشاكه في أي نوع من الموجات</span></label>
+        </div>
+        <div class="quiz-explain">التشاكه ظاهرة عامة للموجات؛ فكما يمكن الحصول عليه في الموجات الضوئية، يمكن أيضًا الحصول عليه في الموجات الصوتية كما في مثال السمّاعتين.</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
+      <ul class="summary-list">
+        <li><span>التداخل: تراكب أو اندماج موجتين أو أكثر في وسط واحد، ويشترط تشاكه الموجتين واتحاد مستوى الاهتزاز والوسط.</span></li>
+        <li><span>التداخل البناء: \(\Delta\ell=0,\lambda,2\lambda,\dots\) — تقوية الطاقة. التداخل الاتلافي: \(\Delta\ell=\tfrac12\lambda,\tfrac32\lambda,\dots\) — إلغاء الطاقة.</span></li>
+        <li><span>التشاكه: تساوي التردد وتقارب السعة وثبات فرق الطور بين موجتين.</span></li>
+        <li><span>مصادر التشاكه: الليزر، أو تجزئة طاقة موجة واحدة (تقسيم جبهة الموجة أو تقسيم سعتها).</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l1" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l1">
+        <svg viewBox="0 0 480 240" width="480" height="240" role="img" aria-label="خريطة التداخل والتشاكه الذهنية">
+          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
+            <line x1="240" y1="120" x2="100" y2="45"/>
+            <line x1="240" y1="120" x2="100" y2="195"/>
+            <line x1="240" y1="120" x2="380" y2="45"/>
+            <line x1="240" y1="120" x2="380" y2="195"/>
+          </g>
+          <g>
+            <circle cx="240" cy="120" r="50" fill="#7c6fee"/>
+            <text x="240" y="116" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">التداخل</text>
+            <text x="240" y="132" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">والتشاكه</text>
+          </g>
+          <g><circle cx="100" cy="45" r="44" fill="#3fa9f5"/>
+            <text x="100" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">تداخل بناء</text>
+            <text x="100" y="55" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">Δℓ=nλ</text></g>
+          <g><circle cx="100" cy="195" r="44" fill="#2fd18f"/>
+            <text x="100" y="192" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">تداخل اتلافي</text>
+            <text x="100" y="205" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">Δℓ=(n+½)λ</text></g>
+          <g><circle cx="380" cy="45" r="44" fill="#ffab5e"/>
+            <text x="380" y="48" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">شرطا التداخل</text></g>
+          <g><circle cx="380" cy="195" r="44" fill="#ff6b9d"/>
+            <text x="380" y="192" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">مصادر التشاكه</text>
+            <text x="380" y="205" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">ليزر/تجزئة الطاقة</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">الفصل الثاني: التداخل والاستقطاب والحيود والاستطارة — الدرس 1: تمهيد والتداخل والتشاكه</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch2.js"></script>
+<script>
+(function(){
+  var ns = "http://www.w3.org/2000/svg";
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // ===== Interference superposition widget (Figure 1-2) =====
+  var svg1 = document.getElementById("interfSvg");
+  var pdSlider = document.getElementById("pathDiffSlider");
+  var pdVal = document.getElementById("pathDiffVal");
+  var statusBox = document.getElementById("interfStatus");
+  var W = 420, H = 220;
+  var rows = [ {y: 45, color: "var(--accent-blue)", label:"موجة 1"},
+               {y: 100, color: "var(--accent-green)", label:"موجة 2"},
+               {y: 165, color: "var(--accent-purple, #7c6fee)", label:"المحصّلة"} ];
+  var tGlobal = 0;
+
+  function waveY(baseY, amp, x, phase){
+    return baseY - amp*Math.sin(2*Math.PI*(x/60) - phase);
+  }
+
+  function pathToPoints(baseY, amp, phase){
+    var pts = [];
+    for(var x=10; x<=W-10; x+=4){
+      pts.push(x.toFixed(1)+","+waveY(baseY, amp, x, phase).toFixed(1));
+    }
+    return pts.join(" ");
+  }
+
+  function drawInterference(){
+    var dl = parseFloat(pdSlider.value);
+    pdVal.textContent = dl.toFixed(2);
+    var phase2 = dl*2*Math.PI;
+
+    var nearInt = Math.abs(dl - Math.round(dl)) < 0.06;
+    var nearHalf = Math.abs(dl - (Math.floor(dl)+0.5)) < 0.06;
+    if(nearInt){
+      statusBox.textContent = "تداخل بناء ✅ — Δℓ = " + Math.round(dl) + "λ (عدد صحيح من λ)";
+    } else if(nearHalf){
+      statusBox.textContent = "تداخل اتلافي ⛔ — Δℓ = " + dl.toFixed(2) + "λ (عدد فردي من نصف λ)";
+    } else {
+      statusBox.textContent = "تداخل مختلط 🔶 — Δℓ = " + dl.toFixed(2) + "λ";
+    }
+
+    while(svg1.firstChild) svg1.removeChild(svg1.firstChild);
+    var amp1 = 18, amp2 = 18;
+
+    rows.forEach(function(r){
+      var line = document.createElementNS(ns,"line");
+      line.setAttribute("x1",8); line.setAttribute("y1",r.y); line.setAttribute("x2",W-8); line.setAttribute("y2",r.y);
+      line.setAttribute("stroke","var(--text-faint)"); line.setAttribute("stroke-width","1"); line.setAttribute("stroke-dasharray","2 4");
+      svg1.appendChild(line);
+    });
+
+    var p1 = document.createElementNS(ns,"polyline");
+    p1.setAttribute("id","wave1poly");
+    p1.setAttribute("points", pathToPoints(rows[0].y, amp1, tGlobal));
+    p1.setAttribute("fill","none"); p1.setAttribute("stroke", rows[0].color); p1.setAttribute("stroke-width","2.5");
+    svg1.appendChild(p1);
+
+    var p2 = document.createElementNS(ns,"polyline");
+    p2.setAttribute("id","wave2poly");
+    p2.setAttribute("points", pathToPoints(rows[1].y, amp2, tGlobal + phase2));
+    p2.setAttribute("fill","none"); p2.setAttribute("stroke", rows[1].color); p2.setAttribute("stroke-width","2.5");
+    svg1.appendChild(p2);
+
+    var resPts = [];
+    for(var x=10; x<=W-10; x+=4){
+      var y1 = waveY(0, amp1, x, tGlobal);
+      var y2 = waveY(0, amp2, x, tGlobal + phase2);
+      var sum = y1 + y2;
+      resPts.push(x.toFixed(1)+","+(rows[2].y - sum).toFixed(1));
+    }
+    var p3 = document.createElementNS(ns,"polyline");
+    p3.setAttribute("id","wave3poly");
+    p3.setAttribute("points", resPts.join(" "));
+    p3.setAttribute("fill","none"); p3.setAttribute("stroke", rows[2].color); p3.setAttribute("stroke-width","3.5");
+    svg1.appendChild(p3);
+
+    rows.forEach(function(r){
+      var t = document.createElementNS(ns,"text");
+      t.setAttribute("x",14); t.setAttribute("y", r.y - 24);
+      t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size","11"); t.setAttribute("fill",r.color);
+      t.setAttribute("font-weight","700");
+      t.textContent = r.label;
+      svg1.appendChild(t);
+    });
+  }
+  pdSlider.addEventListener("input", drawInterference);
+
+  function tick1(){
+    tGlobal += 0.05;
+    drawInterference();
+    requestAnimationFrame(tick1);
+  }
+  if(reduceMotion){ drawInterference(); } else { requestAnimationFrame(tick1); }
+
+  // ===== Speakers coherence widget (Figure 2-2) =====
+  var svg2 = document.getElementById("speakersSvg");
+  var toggleBtn = document.getElementById("speakersToggle");
+  var inPhase = true;
+  var tGlobal2 = 0;
+
+  function drawSpeakers(){
+    while(svg2.firstChild) svg2.removeChild(svg2.firstChild);
+    var cx1=90, cx2=230, cy=90;
+    var d1 = Math.sin(tGlobal2) * 14;
+    var d2 = inPhase ? Math.sin(tGlobal2) * 14 : -Math.sin(tGlobal2) * 14;
+
+    [[cx1,"S1",d1,"var(--accent-blue)"],[cx2,"S2",d2,"var(--accent-red)"]].forEach(function(sp){
+      var box = document.createElementNS(ns,"rect");
+      box.setAttribute("x", sp[0]-16); box.setAttribute("y", cy-20); box.setAttribute("width",32); box.setAttribute("height",40);
+      box.setAttribute("rx",6); box.setAttribute("fill","var(--surface)"); box.setAttribute("stroke","var(--text-faint)"); box.setAttribute("stroke-width","1.5");
+      svg2.appendChild(box);
+      var cone = document.createElementNS(ns,"circle");
+      cone.setAttribute("cx", sp[0]); cone.setAttribute("cy", cy + sp[2]); cone.setAttribute("r",10);
+      cone.setAttribute("fill", sp[3]);
+      svg2.appendChild(cone);
+      var lbl = document.createElementNS(ns,"text");
+      lbl.setAttribute("x", sp[0]); lbl.setAttribute("y", cy+45);
+      lbl.setAttribute("text-anchor","middle"); lbl.setAttribute("font-family","Cairo,sans-serif");
+      lbl.setAttribute("font-size","12"); lbl.setAttribute("font-weight","700"); lbl.setAttribute("fill","var(--text-secondary)");
+      lbl.textContent = sp[1];
+      svg2.appendChild(lbl);
+    });
+
+    var resAmp = inPhase ? Math.abs(Math.sin(tGlobal2))*22+14 : 6;
+    var res = document.createElementNS(ns,"circle");
+    res.setAttribute("cx",160); res.setAttribute("cy",140); res.setAttribute("r", resAmp);
+    res.setAttribute("fill", inPhase ? "var(--accent-purple, #7c6fee)" : "var(--text-faint)");
+    res.setAttribute("opacity","0.55");
+    svg2.appendChild(res);
+
+    var caption = document.createElementNS(ns,"text");
+    caption.setAttribute("x",160); caption.setAttribute("y",170);
+    caption.setAttribute("text-anchor","middle"); caption.setAttribute("font-family","Cairo,sans-serif");
+    caption.setAttribute("font-size","12"); caption.setAttribute("font-weight","800");
+    caption.setAttribute("fill", inPhase ? "var(--accent-purple, #7c6fee)" : "var(--text-secondary)");
+    caption.textContent = inPhase ? "فرق طور = 0° → صوت مدوٍّ قوي" : "فرق طور = 180° → صوتان منفصلان";
+    svg2.appendChild(caption);
+  }
+  toggleBtn.addEventListener("click", function(){ inPhase = !inPhase; });
+  function tick2(){
+    tGlobal2 += 0.08;
+    drawSpeakers();
+    requestAnimationFrame(tick2);
+  }
+  if(reduceMotion){ drawSpeakers(); } else { requestAnimationFrame(tick2); }
+})();
+</script>
+</body>
+</html>

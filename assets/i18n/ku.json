@@ -67,5 +67,15 @@
     "lesson6NavTitle": "6) خۆمەڵی بەرگری",
     "lesson7NavTitle": "7) وزە، کار و مۆمێنتۆمی گۆشەیی",
     "lesson8NavTitle": "8) پرسیار و کێشەکانی بەش"
+  },
+  "ch2": {
+    "sidebarSubtitle": "تێکەڵبوون، پۆلاریزەکردن، لادان و پەرشوبڵاوبوونەوە",
+    "lesson1NavTitle": "1) پێشەکی، تێکەڵبوون و هاوشێوەیی",
+    "lesson2NavTitle": "2) ئەزموونی یەنگ",
+    "lesson3NavTitle": "3) تێکەڵبوون لە پەردە باریکەکان",
+    "lesson4NavTitle": "4) لادان و بەکارهێنانەکانی",
+    "lesson5NavTitle": "5) پۆلاریزەکردن",
+    "lesson6NavTitle": "6) پەرشوبڵاوبوونەوەی ڕووناکی",
+    "lesson7NavTitle": "7) پرسیار و کێشەکانی بەش"
   }
 }

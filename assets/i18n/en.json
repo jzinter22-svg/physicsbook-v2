@@ -67,5 +67,15 @@
     "lesson6NavTitle": "6) Moment of Inertia",
     "lesson7NavTitle": "7) Energy, Work & Angular Momentum",
     "lesson8NavTitle": "8) Chapter Questions & Problems"
+  },
+  "ch2": {
+    "sidebarSubtitle": "Interference, Polarization, Diffraction & Scattering",
+    "lesson1NavTitle": "1) Introduction, Interference & Coherence",
+    "lesson2NavTitle": "2) Young's Experiment",
+    "lesson3NavTitle": "3) Interference in Thin Films",
+    "lesson4NavTitle": "4) Diffraction and Its Applications",
+    "lesson5NavTitle": "5) Polarization",
+    "lesson6NavTitle": "6) Light Scattering",
+    "lesson7NavTitle": "7) Chapter Questions & Problems"
   }
 }
