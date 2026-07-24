@@ -67,6 +67,18 @@
     </div>
   </section>
 
+  <section class="section fade-up" id="eddybrake-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 6-3">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: القوة المعاكسة للتيارات الدوامة (الشكل 6-3)</h2>
+      <p>عندما تتحرك صفيحة معدنية أسفل قطب مغناطيسي، تتولّد تيارات دوامة عند حافتَي المنطقة المؤثَّرة بالمجال (عند الدخول وعند الخروج)، وحسب قانون لينز فإن هذه التيارات الدوامة المحتثة تولّد قوة معاكسة لحركة الصفيحة (اتجاه الإعاقة)؛ وهذا هو أساس عمل مكابح التيارات الدوامة المستعملة في بعض العجلات الثقيلة.</p>
+      <div class="io-row">
+        <button class="neu-btn" id="eddyBrakeToggle">▶ ابدأ حركة الصفيحة</button>
+      </div>
+      <div class="mindmap-wrap" style="margin-top:.6rem"><svg id="eddyBrakeSvg" viewBox="0 0 360 170" width="360" height="170" role="img" aria-label="محاكاة التيارات الدوامة والقوة المعاكسة عند حركة صفيحة معدنية أسفل مغناطيس"></svg></div>
+      <div class="rule-box" id="eddyBrakeStatus">الصفيحة ساكنة: لا يوجد تغيّر في الفيض، ولا تيارات دوامة.</div>
+    </div>
+  </section>
+
   <section class="section fade-up">
     <div class="card neu">
       <h3 style="margin-top:0">📋 من التطبيقات العملية للتيارات الدوامة</h3>
@@ -299,6 +311,27 @@
   var ns = "http://www.w3.org/2000/svg";
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  function arrow(svg,x1,y1,x2,y2,color,width){
+    var l = document.createElementNS(ns,"line");
+    l.setAttribute("x1",x1); l.setAttribute("y1",y1); l.setAttribute("x2",x2); l.setAttribute("y2",y2);
+    l.setAttribute("stroke",color); l.setAttribute("stroke-width",width||3); l.setAttribute("stroke-linecap","round");
+    svg.appendChild(l);
+    var ang = Math.atan2(y2-y1,x2-x1);
+    var hl=9, a1=ang+Math.PI-0.4, a2=ang+Math.PI+0.4;
+    var head = document.createElementNS(ns,"polygon");
+    head.setAttribute("points", x2+","+y2+" "+(x2+hl*Math.cos(a1))+","+(y2+hl*Math.sin(a1))+" "+(x2+hl*Math.cos(a2))+","+(y2+hl*Math.sin(a2)));
+    head.setAttribute("fill",color);
+    svg.appendChild(head);
+  }
+  function label(svg,x,y,txt,color,size){
+    var t = document.createElementNS(ns,"text");
+    t.setAttribute("x",x); t.setAttribute("y",y);
+    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||11); t.setAttribute("fill",color);
+    t.setAttribute("font-weight","700");
+    t.textContent = txt;
+    svg.appendChild(t);
+  }
+
   // ===== Eddy current comparison widget (Figure 5-3) =====
   var eddySvg = document.getElementById("eddySvg");
   var eddyToggle = document.getElementById("eddyToggle");
@@ -348,6 +381,67 @@
   eddyToggle.addEventListener("click", function(){ laminated = !laminated; drawEddy(); });
   function tickEddy(){ tEddy += 0.4; drawEddy(); requestAnimationFrame(tickEddy); }
   if(reduceMotion){ drawEddy(); } else { requestAnimationFrame(tickEddy); }
+
+  // ===== Eddy-current braking widget (Figure 6-3) =====
+  var brakeSvg = document.getElementById("eddyBrakeSvg");
+  var brakeToggle = document.getElementById("eddyBrakeToggle");
+  var brakeStatus = document.getElementById("eddyBrakeStatus");
+  var brakeMoving = false;
+  var plateX = 0;
+
+  function drawEddyBrake(){
+    while(brakeSvg.firstChild) brakeSvg.removeChild(brakeSvg.firstChild);
+
+    var magnetCx = 180, magnetW = 60, magnetTop = 15, magnetH = 40;
+    var plateY = 90, plateH = 26, plateW = 340;
+
+    var plate = document.createElementNS(ns,"rect");
+    plate.setAttribute("x", 10); plate.setAttribute("y", plateY); plate.setAttribute("width", plateW); plate.setAttribute("height", plateH);
+    plate.setAttribute("fill", "#c7ccd6"); plate.setAttribute("stroke", "var(--text-faint)");
+    brakeSvg.appendChild(plate);
+    var plateLbl = document.createElementNS(ns,"text");
+    plateLbl.setAttribute("x", 30); plateLbl.setAttribute("y", plateY+plateH+16);
+    plateLbl.setAttribute("font-family","Cairo,sans-serif"); plateLbl.setAttribute("font-size","11"); plateLbl.setAttribute("fill","var(--text-secondary)");
+    plateLbl.textContent = "صفيحة معدنية";
+    brakeSvg.appendChild(plateLbl);
+
+    var magnet = document.createElementNS(ns,"rect");
+    magnet.setAttribute("x", magnetCx-magnetW/2); magnet.setAttribute("y", magnetTop); magnet.setAttribute("width", magnetW); magnet.setAttribute("height", magnetH);
+    magnet.setAttribute("fill", "#6b7280");
+    brakeSvg.appendChild(magnet);
+    var nLbl = document.createElementNS(ns,"text");
+    nLbl.setAttribute("x", magnetCx); nLbl.setAttribute("y", magnetTop+magnetH/2+5);
+    nLbl.setAttribute("text-anchor","middle"); nLbl.setAttribute("font-weight","800"); nLbl.setAttribute("font-size","15"); nLbl.setAttribute("fill","#fff");
+    nLbl.textContent = "N";
+    brakeSvg.appendChild(nLbl);
+
+    // motion arrow (plate moves rightward under fixed magnet)
+    arrow(brakeSvg, 40, plateY-14, 90, plateY-14, "var(--accent-orange, #ffab5e)", 3);
+    label(brakeSvg, 30, plateY-20, "اتجاه الحركة", "var(--accent-orange, #ffab5e)", 10);
+
+    if(brakeMoving){
+      // eddy loops at leading (right) and trailing (left) edges of the magnet's footprint on the plate
+      [-1,1].forEach(function(side){
+        var lx = magnetCx + side*22;
+        var loop = document.createElementNS(ns,"ellipse");
+        loop.setAttribute("cx", lx); loop.setAttribute("cy", plateY+plateH/2); loop.setAttribute("rx", 16); loop.setAttribute("ry", 10);
+        loop.setAttribute("fill","none"); loop.setAttribute("stroke","var(--accent-red)"); loop.setAttribute("stroke-width","2");
+        brakeSvg.appendChild(loop);
+      });
+      // retarding force: opposes plate motion (points left, i.e. against the rightward motion arrow)
+      arrow(brakeSvg, magnetCx+50, plateY+plateH+34, magnetCx+10, plateY+plateH+34, "var(--accent-green)", 3);
+      label(brakeSvg, magnetCx+15, plateY+plateH+48, "قوة الإعاقة (تعاكس الحركة)", "var(--accent-green)", 10);
+      brakeStatus.textContent = "الصفيحة تتحرك: تتولد تيارات دوامة عند حافتَي المغناطيس، وتنشأ قوة معاكسة لحركة الصفيحة (قانون لينز) — أساس مكابح التيارات الدوامة.";
+    } else {
+      brakeStatus.textContent = "الصفيحة ساكنة: لا يوجد تغيّر في الفيض المغناطيسي، ولا تيارات دوامة، ولا قوة معاكسة.";
+    }
+  }
+  brakeToggle.addEventListener("click", function(){
+    brakeMoving = !brakeMoving;
+    brakeToggle.textContent = brakeMoving ? "⏸ أوقف حركة الصفيحة" : "▶ ابدأ حركة الصفيحة";
+    drawEddyBrake();
+  });
+  drawEddyBrake();
 
   // ===== Self-inductance EMF calculator =====
   var lSlider = document.getElementById("lSlider");
