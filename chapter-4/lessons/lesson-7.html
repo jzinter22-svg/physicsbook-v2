@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدرس 7: المحولة الكهربائية — الفصل الرابع</title>
+<meta name="description" content="9-4 المحولة الكهربائية: أجزاؤها وأنواعها وقوانينها، كفاءة المحولة، ونقل الطاقة الكهربائية، بمثال محلول.">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
+</head>
+<body data-page="lessons/lesson-7.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li><a href="../index.html">الفصل 4</a></li>
+      <li aria-current="page">المحولة الكهربائية</li>
+    </ol>
+  </nav>
+
+  <div dir="rtl" lang="ar">
+
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 الدرس 7 من 8 · الفصل الرابع</span>
+    <h1>المحولة الكهربائية</h1>
+    <p class="lead">9-4 المحولة الكهربائية Transformer: 1-9-4 أنواع المحولات · 2-9-4 قوانين المحولة · 3-9-4 نقل الطاقة الكهربائية</p>
+  </section>
+
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
+    <div class="card neu">
+      <h2>🎯 أهداف الدرس</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يذكر أساس عمل المحولة الكهربائية وأجزاءها الرئيسة.</span></li>
+        <li><span class="obj-num">2</span><span>يميّز بين المحولة الرافعة والمحولة الخافضة.</span></li>
+        <li><span class="obj-num">3</span><span>يكتب قوانين المحولة ويحسب كفاءتها.</span></li>
+        <li><span class="obj-num">4</span><span>يوضّح طريقة نقل الطاقة الكهربائية لمسافات بعيدة.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
+    <div class="def-box">
+      <span class="def-label">📌 9-4 المحولة الكهربائية Transformer</span>
+      <p style="margin:.3rem 0">المحولة الكهربائية هي جهاز من اجهزة التيار المتناوب تستعمل لرفع أو خفض الفولطية المتناوبة. واساس عمل المحولة: يعتمد عمل المحولة الكهربائية على مبدأ الحث المتبادل بين ملفين متجاورين بينهما تواشج مغناطيسي تام.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="transformer-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 18-4">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: أجزاء المحولة الكهربائية (الشكل 18-4)</h2>
+      <p>محولة كهربائية تتكوّن من نواة حديدية مغلقة، وملفَين معزولَين كهربائيًا ومختلفَين في عدد اللفات: الملف الابتدائي يربط بالمصدر، والملف الثانوي يربط بالحمل (الجهاز).</p>
+      <div class="mindmap-wrap"><svg id="transformerSvg" viewBox="0 0 360 200" width="360" height="200" role="img" aria-label="رسم توضيحي لمحولة كهربائية بملفين ونواة حديدية"></svg></div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h3 style="margin-top:0">📋 تتكون أجزاء المحولة من الآتي</h3>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>النواة: وتصنع بشكل مغلق كي يتوافر التواشج المغناطيسي التام في ملفاتها وبنفوذية عالية وتصنع من الحديد المطاوع لتقليل خسائر الرادة الهسترة فتزداد كفاءتها وتصنع ايضًا بشكل صفائح رقيقة مكبوسة ومعزولة عن بعضها عزلًا كهربائيًا لتقليل خسائر التيارات الدوامة.</span></li>
+        <li><span class="obj-num">2</span><span>ملفين معزولين كهربائيا عن بعضهما ومختلفين في عدد لفاتهما، يربط الملف الابتدائي بالمصدر المتناوب والملف الثانوي يربط بالجهاز (الحمل)، كما هو في الشكل (18-4) ولاتحتوي المحولة على مفتاح تلقائي لذلك تعتبر من اجهزة التيار المتناوب فقط.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">💡</span>
+      <span><b>هل تعلم؟</b> ان في محولات التردد العالي تصنع النواة من مادة الفيرايت والتي تمتاز بمقاومة عالية نسبيًا فتقل فيها خسائر الهسترة وكذلك تمتاز بنفوذيتها المغناطيسية العالية جدًا.</span>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 1-9-4 أنواع المحولات</span>
+      <p style="margin:.3rem 0"><b>1- المحولات الرافعة:</b> هي تلك المحولات التي تقوم برفع الفولطية المتناوبة وخفض التيار في الملف الثانوي عما كان عليه بالملف الابتدائي وذلك عندما تكون عدد لفات الملف الثانوي أكبر من عدد لفات الملف الابتدائي كما هو في المحولات التي تربط في محطات توليد الطاقة الكهربائية.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 المحولات الخافضة</span>
+      <p style="margin:.3rem 0"><b>2- المحولات الخافضة:</b> هي تلك المحولات التي تقوم بخفض الفولطية ورفع التيار في الملف الثانوي عما كان عليه بالملف الابتدائي وذلك عندما تكون عدد لفات الملف الثانوي أقل من عدد لفات الملف الابتدائي كما هو في شاحن الهاتف النقال (الموبايل) وغيرها.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="transformer-type-widget" data-navlabel="🕹️ رافعة أم خافضة؟">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: محولة رافعة أم خافضة؟</h2>
+      <p>حرّك مزلاج نسبة عدد اللفات \((N_2/N_1)\) وشاهد نوع المحولة يتغيّر، مع رسم تخطيطي يقارن سماكة الملفين (تمثيلًا لعدد اللفات).</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="typeSvg" viewBox="0 0 320 170" width="320" height="170" role="img" aria-label="مقارنة بصرية بين محولة رافعة وخافضة حسب نسبة عدد اللفات"></svg></div>
+        <div class="io-row">
+          <label for="turnsRatio" style="min-width:9rem">N₂/N₁</label>
+          <input type="range" id="turnsRatio" class="neu-range" min="0.2" max="4" step="0.1" value="1">
+        </div>
+        <div class="rule-box" id="typeStatus">—</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 2-9-4 قوانين المحولة</span>
+      <p style="margin:.3rem 0">تُعرَف النسبة بين عدد لفات الملف الثانوي/عدد لفات الملف الابتدائي بأنها نسبة التحويل ويرمز لها \(N_2/N_1\). فإذا كانت \(N_2/N_1&gt;1\) فإن المحولة تكون رافعة، و\(N_2/N_1&lt;1\) فإن المحولة تكون خافضة. كذلك أن:</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ \dfrac{N_2}{N_1} = \dfrac{V_2}{V_1} $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">حيث \(V_2\) تمثّل فولطية الملف الثانوي، \(V_1\) فولطية الملف الابتدائي.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ P_1 = V_1 I_1 \qquad \text{قدرة الملف الابتدائي} $$
+      $$ P_2 = V_2 I_2 \qquad \text{قدرة الملف الثانوي} $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">وعندما تكون المحولة مثالية، أي كفاءتها 100% تكون:</p>
+      $$ P_1 = P_2 \quad\Rightarrow\quad V_1 I_1 = V_2 I_2 \quad\Rightarrow\quad \dfrac{V_2}{V_1} = \dfrac{I_1}{I_2} $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">لا تطبق هذه النسبة الا اذا كانت المحولة مثالية.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ \text{كفاءة المحولة} = \dfrac{\text{قدرة الملف الثانوي}}{\text{قدرة الملف الابتدائي}} \times 100\% $$
+      $$ \eta = \dfrac{P_2}{P_1} \times 100\% $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">حيث (η) تمثّل كفاءة المحولة.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h3 style="margin-top:0">📋 إن كفاءة المحولة لا تصل الى 100% بسبب الآتي</h3>
+      <p style="margin:0 0 .6rem">خسائر المحولة الكلية = قدرة الملف الابتدائي - قدرة الملف الثانوي</p>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>ضياع جزء من الطاقة الكهربائية بشكل حرارة في اسلاك الملفين.</span></li>
+        <li><span class="obj-num">2</span><span>ضياع جزء من الطاقة الكهربائية على شكل حرارة تتولد في قلب المحولة بسبب التيارات الدوامة.</span></li>
+        <li><span class="obj-num">3</span><span>ضياع جزء من الطاقة الكهربائية على شكل هسترة في مادة القلب الحديدي.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">📝</span>
+      <span><b>ملاحظة:</b> تغمر المحولات ذات الطاقة العالية في نوع خاص من الزيت لان الزيت سيعمل كمشع للحرارة المتولدة في ملفات المحولة ويعمل على تبريدها وبذلك تحافظ على سلامتها.</span>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="example7" data-navlabel="📝 مثال 7">
+    <div class="example">
+      <div class="example-head"><h2 style="margin:0">📝 مثال (7)</h2></div>
+      <p>محولة نسبة التحويل فيها \(\left(\dfrac{12}{1}\right)\) وكفاءتها 96% فاذا كان تيار الملف الثانوي \((4\ \text{A})\) وفولطية الملف الثانوي \((4800\ \text{V})\) فما هي: 1- قدرة الملف الابتدائي. 2- تيار الملف الابتدائي.</p>
+    </div>
+
+    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
+      <div class="example-head">
+        <h2 style="margin:0">✓ الحل التفصيلي</h2>
+        <button class="neu-btn" data-reveal-steps="steps-ex7" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
+      </div>
+
+      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
+      <ul class="summary-list" style="margin-bottom:1rem">
+        <li><span>\( N_2/N_1 = 12/1 \) — نسبة التحويل</span></li>
+        <li><span>\( \eta = 96\% \) — كفاءة المحولة</span></li>
+        <li><span>\( I_2 = 4\ \text{A} \) — تيار الملف الثانوي</span></li>
+        <li><span>\( V_2 = 4800\ \text{Volt} \) — فولطية الملف الثانوي</span></li>
+      </ul>
+
+      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
+      <p style="margin:0 0 1rem">1- \(P_1\). 2- \(I_1\).</p>
+
+      <ol class="steps hidden-steps" id="steps-ex7">
+        <li class="step"><span class="step-dot">1</span><div class="step-body">
+          <p class="calc-note">1- نحسب قدرة الملف الثانوي أولًا، ثم نطبّق علاقة الكفاءة لإيجاد قدرة الملف الابتدائي</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( P_2 = V_2 I_2 = 4800\times4 = 19200\ \text{W} \)</div>
+            <div class="calc-line">\( \eta = \dfrac{P_2}{P_1}\times100\% \quad\Rightarrow\quad 96\% = \dfrac{19200}{P_1}\times100\% \)</div>
+            <div class="calc-line">\( P_1 = \dfrac{19200}{96}\times100 \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( P_1 = 20000\ \text{W} \)</div>
+          </div>
+        </div></li>
+        <li class="step"><span class="step-dot">2</span><div class="step-body">
+          <p class="calc-note">2- نطبّق علاقة نسبة التحويل لإيجاد \(V_1\)، ثم نطبّق \(P_1=V_1I_1\) لإيجاد \(I_1\)</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( \dfrac{N_2}{N_1}=\dfrac{V_2}{V_1} \quad\Rightarrow\quad \dfrac{12}{1}=\dfrac{4800}{V_1} \quad\Rightarrow\quad V_1=\dfrac{4800}{12}=400\ \text{Volt} \)</div>
+            <div class="calc-line">\( P_1 = V_1 I_1 \quad\Rightarrow\quad 20000 = 400\times I_1 \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( I_1 = \dfrac{20000}{400} = 50\ \text{A} \)</div>
+          </div>
+        </div></li>
+      </ol>
+      <div class="exercise-final">✓ P_1 = 20000 W · I_1 = 50 A</div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout warn">
+      <span class="icon">🤔</span>
+      <span><b>فكر:</b> ما هي الاجراءات الاخرى لتقليل خسائر القدرة بالمحولات؟</span>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 3-9-4 نقل الطاقة الكهربائية</span>
+      <p style="margin:.3rem 0">إذا أرسلت الطاقة الكهربائية الى مسافات بعيدة فسوف يكون هناك فقد وعلى شكل حرارة بسبب مقاومة اسلاك النقل لان (الحرارة ∝ مربع التيار × المقاومة حسب قانون جول) ولتقليل القدرة الضائعة هذه ترسل الطاقة الكهربائية بفولطية عالية وتيار واطئ في أسلاك النقل المحولة على أبراج عالية وذلك باستعمال محولات رافعة للفولطية عند محطة التوليد للطاقة ومحولات خافضة للفولطية المجهزة للحمل.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>1.</span><span>يعتمد عمل المحولة الكهربائية على مبدأ:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>الحث الذاتي</span></label>
+          <label class="quiz-opt"><input type="radio"><span>التيارات الدوامة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الحث المتبادل بين ملفين متجاورين</span></label>
+          <label class="quiz-opt"><input type="radio"><span>قوة لورنتز</span></label>
+        </div>
+        <div class="quiz-explain">يعتمد عمل المحولة الكهربائية على مبدأ الحث المتبادل بين ملفين متجاورين بينهما تواشج مغناطيسي تام.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>2.</span><span>إذا كانت \(N_2/N_1>1\) فإن المحولة تكون:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>خافضة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>رافعة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>مثالية دائمًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>عديمة الفائدة</span></label>
+        </div>
+        <div class="quiz-explain">إذا كانت \(N_2/N_1>1\) (عدد لفات الملف الثانوي أكبر) فإن المحولة تكون رافعة للفولطية.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>3.</span><span>لا تحتوي المحولة الكهربائية على مفتاح تلقائي، لذلك فهي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>من أجهزة التيار المتناوب فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>من أجهزة التيار المستمر فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تعمل مع التيارين معًا بنفس الكفاءة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لا تعمل مع أي نوع من التيار</span></label>
+        </div>
+        <div class="quiz-explain">لا تحتوي المحولة على مفتاح تلقائي، لذلك تعتبر من أجهزة التيار المتناوب فقط.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="3">
+        <div class="quiz-q-title"><span>4.</span><span>خسائر المحولة الكلية لا تشمل:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>حرارة في أسلاك الملفين</span></label>
+          <label class="quiz-opt"><input type="radio"><span>حرارة بسبب التيارات الدوامة في القلب</span></label>
+          <label class="quiz-opt"><input type="radio"><span>خسائر الهسترة في مادة القلب الحديدي</span></label>
+          <label class="quiz-opt"><input type="radio"><span>خسائر ناتجة عن ربط المحولة بمصدر تيار مستمر</span></label>
+        </div>
+        <div class="quiz-explain">خسائر المحولة الثلاثة الرئيسة هي: حرارة في أسلاك الملفين، حرارة التيارات الدوامة في القلب، وخسائر الهسترة في مادة القلب — والمحولة أصلًا لا تُربط بتيار مستمر.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>5.</span><span>لتقليل القدرة الضائعة عند نقل الطاقة الكهربائية لمسافات بعيدة، تُرسَل الطاقة بـ:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>فولطية واطئة وتيار عالٍ</span></label>
+          <label class="quiz-opt"><input type="radio"><span>فولطية عالية وتيار واطئ</span></label>
+          <label class="quiz-opt"><input type="radio"><span>فولطية وتيار عاليين معًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>فولطية وتيار واطئين معًا</span></label>
+        </div>
+        <div class="quiz-explain">تُرسَل الطاقة الكهربائية بفولطية عالية وتيار واطئ لتقليل القدرة الضائعة كحرارة (حسب قانون جول: الحرارة ∝ مربع التيار)، باستعمال محولات رافعة عند التوليد وخافضة عند الحمل.</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
+      <ul class="summary-list">
+        <li><span>المحولة: تعمل بمبدأ الحث المتبادل بين ملفين على نواة حديدية مغلقة؛ من أجهزة التيار المتناوب فقط.</span></li>
+        <li><span>رافعة عندما \(N_2/N_1&gt;1\)، وخافضة عندما \(N_2/N_1&lt;1\)؛ \(N_2/N_1=V_2/V_1\).</span></li>
+        <li><span>عند المحولة المثالية: \(V_2/V_1=I_1/I_2\)؛ الكفاءة \(\eta=(P_2/P_1)\times100\%\) ولا تصل 100% بسبب خسائر الحرارة والتيارات الدوامة والهسترة.</span></li>
+        <li><span>نقل الطاقة يتم بفولطية عالية وتيار واطئ لتقليل الفقد الحراري، بمحولات رافعة عند التوليد وخافضة عند الحمل.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l7" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l7">
+        <svg viewBox="0 0 480 200" width="480" height="200" role="img" aria-label="خريطة المحولة الكهربائية الذهنية">
+          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
+            <line x1="240" y1="100" x2="100" y2="45"/>
+            <line x1="240" y1="100" x2="100" y2="155"/>
+            <line x1="240" y1="100" x2="380" y2="100"/>
+          </g>
+          <g>
+            <circle cx="240" cy="100" r="48" fill="#7c6fee"/>
+            <text x="240" y="104" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">المحولة</text>
+          </g>
+          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
+            <text x="100" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">رافعة/خافضة</text>
+            <text x="100" y="54" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">N2/N1</text></g>
+          <g><circle cx="100" cy="155" r="42" fill="#2fd18f"/>
+            <text x="100" y="152" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">η=P2/P1</text>
+            <text x="100" y="164" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">×100%</text></g>
+          <g><circle cx="380" cy="100" r="42" fill="#ffab5e"/>
+            <text x="380" y="97" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">نقل الطاقة</text>
+            <text x="380" y="109" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">V عالي I واطئ</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">الفصل الرابع: دوائر التيار المتناوب — الدرس 7: المحولة الكهربائية</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch4.js"></script>
+<script>
+(function(){
+  var ns = "http://www.w3.org/2000/svg";
+
+  function label(svg,x,y,txt,color,size){
+    var t = document.createElementNS(ns,"text");
+    t.setAttribute("x",x); t.setAttribute("y",y);
+    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||11); t.setAttribute("fill",color);
+    t.setAttribute("font-weight","700");
+    t.textContent = txt;
+    svg.appendChild(t);
+  }
+
+  // ===== Static transformer diagram (Figure 18-4) =====
+  var trSvg = document.getElementById("transformerSvg");
+  (function drawTransformer(){
+    var coreX=140, coreY=40, coreW=80, coreH=110;
+    var core = document.createElementNS(ns,"rect");
+    core.setAttribute("x",coreX); core.setAttribute("y",coreY); core.setAttribute("width",coreW); core.setAttribute("height",coreH);
+    core.setAttribute("fill","none"); core.setAttribute("stroke","var(--accent-orange, #ffab5e)"); core.setAttribute("stroke-width","10");
+    trSvg.appendChild(core);
+    label(trSvg, coreX+coreW/2, coreY-10, "النواة", "var(--accent-orange, #ffab5e)", 11);
+
+    // primary coil (left leg)
+    for(var i=0;i<5;i++){
+      var c1 = document.createElementNS(ns,"ellipse");
+      c1.setAttribute("cx",coreX-6); c1.setAttribute("cy",coreY+20+i*16); c1.setAttribute("rx",14); c1.setAttribute("ry",8);
+      c1.setAttribute("fill","none"); c1.setAttribute("stroke","var(--accent-blue)"); c1.setAttribute("stroke-width","2.5");
+      trSvg.appendChild(c1);
+    }
+    label(trSvg, coreX-20, coreY+10, "N1", "var(--accent-blue)", 11);
+
+    // secondary coil (right leg)
+    for(var j=0;j<5;j++){
+      var c2 = document.createElementNS(ns,"ellipse");
+      c2.setAttribute("cx",coreX+coreW+6); c2.setAttribute("cy",coreY+20+j*16); c2.setAttribute("rx",14); c2.setAttribute("ry",8);
+      c2.setAttribute("fill","none"); c2.setAttribute("stroke","var(--accent-red)"); c2.setAttribute("stroke-width","2.5");
+      trSvg.appendChild(c2);
+    }
+    label(trSvg, coreX+coreW+8, coreY+10, "N2", "var(--accent-red)", 11);
+
+    // source (left)
+    var src = document.createElementNS(ns,"circle");
+    src.setAttribute("cx",40); src.setAttribute("cy",coreY+55); src.setAttribute("r",16);
+    src.setAttribute("fill","var(--surface)"); src.setAttribute("stroke","var(--text-secondary)"); src.setAttribute("stroke-width","2");
+    trSvg.appendChild(src);
+    var wave = document.createElementNS(ns,"path");
+    wave.setAttribute("d","M 32 "+(coreY+55)+" q 4 -8, 8 0 t 8 0");
+    wave.setAttribute("fill","none"); wave.setAttribute("stroke","var(--text-secondary)"); wave.setAttribute("stroke-width","1.5");
+    trSvg.appendChild(wave);
+    var w1 = document.createElementNS(ns,"line");
+    w1.setAttribute("x1",40); w1.setAttribute("y1",coreY+55-16); w1.setAttribute("x2",40); w1.setAttribute("y2",coreY+20);
+    w1.setAttribute("stroke","var(--text-secondary)"); w1.setAttribute("stroke-width","2");
+    trSvg.appendChild(w1);
+    var w1b = document.createElementNS(ns,"line");
+    w1b.setAttribute("x1",40); w1b.setAttribute("y1",coreY+20); w1b.setAttribute("x2",coreX-6); w1b.setAttribute("y2",coreY+20);
+    w1b.setAttribute("stroke","var(--text-secondary)"); w1b.setAttribute("stroke-width","2");
+    trSvg.appendChild(w1b);
+    var w2 = document.createElementNS(ns,"line");
+    w2.setAttribute("x1",40); w2.setAttribute("y1",coreY+55+16); w2.setAttribute("x2",40); w2.setAttribute("y2",coreY+100);
+    w2.setAttribute("stroke","var(--text-secondary)"); w2.setAttribute("stroke-width","2");
+    trSvg.appendChild(w2);
+    var w2b = document.createElementNS(ns,"line");
+    w2b.setAttribute("x1",40); w2b.setAttribute("y1",coreY+100); w2b.setAttribute("x2",coreX-6); w2b.setAttribute("y2",coreY+100);
+    w2b.setAttribute("stroke","var(--text-secondary)"); w2b.setAttribute("stroke-width","2");
+    trSvg.appendChild(w2b);
+    label(trSvg, 40, coreY+85, "مصدر", "var(--text-secondary)", 10);
+
+    // load (right)
+    var loadX = 320;
+    var load = document.createElementNS(ns,"rect");
+    load.setAttribute("x",loadX-14); load.setAttribute("y",coreY+40); load.setAttribute("width",28); load.setAttribute("height",30);
+    load.setAttribute("fill","var(--surface)"); load.setAttribute("stroke","var(--text-secondary)"); load.setAttribute("stroke-width","2");
+    trSvg.appendChild(load);
+    var l1 = document.createElementNS(ns,"line");
+    l1.setAttribute("x1",loadX); l1.setAttribute("y1",coreY+20); l1.setAttribute("x2",loadX); l1.setAttribute("y2",coreY+40);
+    l1.setAttribute("stroke","var(--text-secondary)"); l1.setAttribute("stroke-width","2");
+    trSvg.appendChild(l1);
+    var l1b = document.createElementNS(ns,"line");
+    l1b.setAttribute("x1",coreX+coreW+6); l1b.setAttribute("y1",coreY+20); l1b.setAttribute("x2",loadX); l1b.setAttribute("y2",coreY+20);
+    l1b.setAttribute("stroke","var(--text-secondary)"); l1b.setAttribute("stroke-width","2");
+    trSvg.appendChild(l1b);
+    var l2 = document.createElementNS(ns,"line");
+    l2.setAttribute("x1",loadX); l2.setAttribute("y1",coreY+70); l2.setAttribute("x2",loadX); l2.setAttribute("y2",coreY+100);
+    l2.setAttribute("stroke","var(--text-secondary)"); l2.setAttribute("stroke-width","2");
+    trSvg.appendChild(l2);
+    var l2b = document.createElementNS(ns,"line");
+    l2b.setAttribute("x1",coreX+coreW+6); l2b.setAttribute("y1",coreY+100); l2b.setAttribute("x2",loadX); l2b.setAttribute("y2",coreY+100);
+    l2b.setAttribute("stroke","var(--text-secondary)"); l2b.setAttribute("stroke-width","2");
+    trSvg.appendChild(l2b);
+    label(trSvg, loadX, coreY+65, "حمل", "var(--text-secondary)", 10);
+
+    label(trSvg, coreX+coreW/2, coreY+coreH+22, "الفيض المغناطيسي المشترك", "var(--text-faint)", 9);
+  })();
+
+  // ===== Step-up vs step-down comparison widget =====
+  var typeSvg = document.getElementById("typeSvg");
+  var ratioInput = document.getElementById("turnsRatio");
+  var typeStatus = document.getElementById("typeStatus");
+
+  function drawType(){
+    while(typeSvg.firstChild) typeSvg.removeChild(typeSvg.firstChild);
+    var ratio = parseFloat(ratioInput.value);
+    var n1turns = 5, n2turns = Math.max(2, Math.min(9, Math.round(n1turns*ratio)));
+
+    var coreX=140, coreY=25, coreW=40, coreH=120;
+    var core = document.createElementNS(ns,"rect");
+    core.setAttribute("x",coreX); core.setAttribute("y",coreY); core.setAttribute("width",coreW); core.setAttribute("height",coreH);
+    core.setAttribute("fill","none"); core.setAttribute("stroke","var(--accent-orange, #ffab5e)"); core.setAttribute("stroke-width","8");
+    typeSvg.appendChild(core);
+
+    for(var i=0;i<n1turns;i++){
+      var c1 = document.createElementNS(ns,"ellipse");
+      c1.setAttribute("cx",coreX-4); c1.setAttribute("cy",coreY+15+i*(coreH-30)/(n1turns-1||1)); c1.setAttribute("rx",12); c1.setAttribute("ry",7);
+      c1.setAttribute("fill","none"); c1.setAttribute("stroke","var(--accent-blue)"); c1.setAttribute("stroke-width","2.5");
+      typeSvg.appendChild(c1);
+    }
+    label(typeSvg, coreX-50, coreY+coreH/2, "N1="+n1turns, "var(--accent-blue)", 12);
+
+    for(var j=0;j<n2turns;j++){
+      var c2 = document.createElementNS(ns,"ellipse");
+      c2.setAttribute("cx",coreX+coreW+4); c2.setAttribute("cy",coreY+15+j*(coreH-30)/(n2turns-1||1)); c2.setAttribute("rx",12); c2.setAttribute("ry",7);
+      c2.setAttribute("fill","none"); c2.setAttribute("stroke","var(--accent-red)"); c2.setAttribute("stroke-width","2.5");
+      typeSvg.appendChild(c2);
+    }
+    label(typeSvg, coreX+coreW+38, coreY+coreH/2, "N2="+n2turns, "var(--accent-red)", 12);
+
+    if(ratio > 1){
+      typeStatus.textContent = "N2/N1 = " + ratio.toFixed(1) + " > 1 → محولة رافعة (V يرتفع، I ينخفض في الملف الثانوي)";
+    } else if(ratio < 1){
+      typeStatus.textContent = "N2/N1 = " + ratio.toFixed(1) + " < 1 → محولة خافضة (V ينخفض، I يرتفع في الملف الثانوي)";
+    } else {
+      typeStatus.textContent = "N2/N1 = 1 → عدد اللفات متساوٍ (لا رفع ولا خفض للفولطية)";
+    }
+  }
+  ratioInput.addEventListener("input", drawType);
+  drawType();
+})();
+</script>
+</body>
+</html>

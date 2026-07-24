@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title data-i18n-title-tag="chapter.pageTitle" data-i18n-params='{"n":4}'>الفصل 4 — كتاب الطبيعيات التفاعلي</title>
-<meta name="description" data-i18n-content="chapter.description" data-i18n-params='{"n":4}' content="الفصل 4 من كتاب الطبيعيات التفاعلي. لم تُنشر الدروس بعد.">
+<title>الفصل 4: دوائر التيار المتناوب — كتاب الطبيعيات التفاعلي</title>
+<meta name="description" content="الفصل الرابع من كتاب الطبيعيات التفاعلي: دوائر التيار المتناوب — تعريف التيار المتناوب والقيمة المؤثرة، المقاومة الخالصة، المحث، المتسعة، دوائر RL وRC وRLC المتوالية، والمحولة الكهربائية — بأمثلة محلولة وأدوات تفاعلية.">
 <link rel="stylesheet" href="../assets/css/theme.css">
 <script>
   MathJax = {
@@ -24,16 +24,56 @@
   <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
     <ol>
       <li><a href="../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
-      <li aria-current="page" data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":4}'>الفصل 4</li>
+      <li aria-current="page">الفصل 4</li>
     </ol>
   </nav>
 
+  <div dir="rtl" lang="ar">
+
   <section class="hero fade-up">
-    <span class="eyebrow" data-i18n="chapter.eyebrow">📘 كتاب الطبيعيات التفاعلي</span>
-    <h1 data-i18n="chapter.titleWithNumber" data-i18n-params='{"n":4}'>الفصل 4</h1>
-    <p class="lead" data-i18n="chapter.lead">هذا الفصل جاهز للبناء. ستظهر هنا الدروس والأمثلة المحلولة والأدوات التفاعلية والاختبارات والخريطة الذهنية عند إضافتها.</p>
-    <div class="io-row" style="margin-top:1.25rem">
-      <span class="tag" data-i18n="chapter.lessonsTag" data-i18n-params='{"n":0}'>⏱ 0 دروس</span>
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">📘 كتاب الطبيعيات التفاعلي · الصف الثالث · الفرع الصناعي</span>
+        <h1>الفصل الرابع: دوائر التيار المتناوب <span style="color:var(--accent-blue)">AC Circuits</span></h1>
+        <p class="lead">من الموجة الجيبية للتيار المتناوب إلى المقاومة الخالصة والمحث والمتسعة، ومن دوائرها المتوالية المختلطة إلى المحولة الكهربائية: في هذا الفصل ندرس سلوك كل عنصر كهربائي مع التيار المتناوب، وقيمته المؤثرة، والممانعة، وعامل القدرة، والرنين الكهربائي.</p>
+        <div class="io-row" style="margin-top:1.25rem">
+          <a href="lessons/lesson-1.html" class="neu-btn primary">ابدأ الدرس الأول ←</a>
+          <span class="tag">⏱ 8 دروس</span>
+          <span class="tag">🧠 اختبارات ذاتية</span>
+          <span class="tag">🗺 خرائط ذهنية</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heroWaveGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#7c6fee"/>
+              <stop offset="1" stop-color="#3fa9f5"/>
+            </linearGradient>
+          </defs>
+          <g opacity=".85">
+            <path d="M 40 190 Q 90 90, 140 190 T 240 190 T 340 190 T 440 190" fill="none" stroke="url(#heroWaveGrad)" stroke-width="5"/>
+            <line x1="40" y1="190" x2="440" y2="190" stroke="var(--text-faint)" stroke-width="1.5" stroke-dasharray="4 4"/>
+          </g>
+          <g class="hero-float f2">
+            <rect x="70" y="270" width="70" height="46" rx="10" fill="var(--surface)" opacity=".95"/>
+            <text x="105" y="300" text-anchor="middle" font-family="Cairo,sans-serif" font-weight="800" font-size="20" fill="var(--accent-purple)">R</text>
+          </g>
+          <g class="hero-float f3">
+            <rect x="205" y="280" width="70" height="46" rx="10" fill="var(--surface)" opacity=".95"/>
+            <text x="240" y="310" text-anchor="middle" font-family="Cairo,sans-serif" font-weight="800" font-size="20" fill="var(--accent-blue)">X_L</text>
+          </g>
+          <g class="hero-float f1">
+            <rect x="340" y="270" width="70" height="46" rx="10" fill="var(--surface)" opacity=".95"/>
+            <text x="375" y="300" text-anchor="middle" font-family="Cairo,sans-serif" font-weight="800" font-size="20" fill="var(--accent-green)">X_C</text>
+          </g>
+          <g class="hero-float f2">
+            <rect x="205" y="60" width="80" height="46" rx="10" fill="var(--surface)" opacity=".95"/>
+            <text x="245" y="90" text-anchor="middle" font-family="Cairo,sans-serif" font-weight="800" font-size="18" fill="var(--accent-orange, #ffab5e)">cosØ</text>
+          </g>
+        </svg>
+      </div>
     </div>
   </section>
 
@@ -41,24 +81,138 @@
     <div class="neu" style="padding:1.5rem 1.75rem">
       <div class="io-row" style="justify-content:space-between;margin-bottom:.6rem">
         <strong data-i18n="common.yourProgress">تقدّمك في هذا الفصل</strong>
-        <span class="progress-label" data-i18n="common.percentComplete" data-i18n-params='{"pct":0}'>0% مكتمل</span>
+        <span class="progress-label">0% مكتمل</span>
       </div>
       <div class="progress-track"><div class="progress-fill"></div></div>
     </div>
   </section>
 
   <section class="section fade-up">
-    <h2 style="margin-bottom:1rem" data-i18n="chapter.contentsHeading">📚 محتويات الفصل</h2>
-    <div class="grid grid-3" id="lessonGrid">
-      <div class="empty-state neu" style="grid-column:1/-1">
-        <span class="icon" aria-hidden="true">📖</span>
-        <span data-i18n="chapter.emptyState">ستظهر الدروس هنا عند إضافتها.</span>
+    <div class="card neu">
+      <h2>🎯 الأهداف السلوكية</h2>
+      <p class="lead">بعد دراسة هذا الفصل سيكون الطالب قادرًا على أن يعرف:</p>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>التيار المتناوب.</span></li>
+        <li><span class="obj-num">2</span><span>المقدار المؤثر للتيار.</span></li>
+        <li><span class="obj-num">3</span><span>قوانين دائرة المقاومة الخالصة.</span></li>
+        <li><span class="obj-num">4</span><span>قوانين المحث الخالص في دائرة التيار المتناوب.</span></li>
+        <li><span class="obj-num">5</span><span>عامل القدرة.</span></li>
+        <li><span class="obj-num">6</span><span>قوانين المتسعة وعملها في دائرة التيار المتناوب.</span></li>
+        <li><span class="obj-num">7</span><span>جهاز المحولة الكهربائية وقوانينها وأنواعها.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <h2 style="margin-bottom:1rem">📚 مفردات الفصل</h2>
+    <div class="grid grid-3">
+
+      <a class="neu lesson-card" href="lessons/lesson-1.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#7c6fee,#3fa9f5)">1</span>
+        <h3 style="margin:.2rem 0">تعريف التيار المتناوب والقيمة المؤثرة</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">1-4 تعريف التيار المتناوب، 2-4 المقدار المؤثر للتيار والفولطية المتناوبة.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-2.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#3fa9f5,#ff6b9d)">2</span>
+        <h3 style="margin:.2rem 0">المقاومة الخالصة في دائرة التيار المتناوب</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">3-4: القدرة في دائرة المقاومة الخالصة، بمثال محلول.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-3.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#ffab5e,#ff6b9d)">3</span>
+        <h3 style="margin:.2rem 0">المحث في دائرة التيار المتناوب</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">4-4: الرادة الحثية X_L ومميزات الدائرة، بمثال محلول.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-4.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#2fd18f,#3fa9f5)">4</span>
+        <h3 style="margin:.2rem 0">المتسعة في دائرة التيار المتناوب</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">5-4: الرادة السعوية X_C ومميزات الدائرة، بمثال محلول.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-5.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#7c6fee,#ff6b9d)">5</span>
+        <h3 style="margin:.2rem 0">ربط مقاومة مع محث أو متسعة على التوالي</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">6-4، 7-4: الممانعة Z وزاوية فرق الطور وعامل القدرة، بمثالين محلولين.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-6.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#ffab5e,#7c6fee)">6</span>
+        <h3 style="margin:.2rem 0">ربط المقاومة والمحث والمتسعة على التوالي</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">8-4: القدرة وعامل القدرة، قوانين الربط المختلط، والرنين الكهربائي، بمثال محلول.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-7.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#2fd18f,#ff6b9d)">7</span>
+        <h3 style="margin:.2rem 0">المحولة الكهربائية</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">9-4: أنواع المحولات وقوانينها ونقل الطاقة الكهربائية، بمثال محلول.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+      <a class="neu lesson-card" href="lessons/lesson-8.html">
+        <span class="lesson-idx" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">8</span>
+        <h3 style="margin:.2rem 0">أسئلة ومسائل الفصل</h3>
+        <p style="color:var(--text-secondary);font-size:.92rem;margin:0">جميع أسئلة الاختيار من متعدد وإكمال الفراغات والأسئلة القصيرة والمسائل، محلولة بالتفصيل.</p>
+        <span class="lesson-go">ادخل الدرس ←</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <h2>🗺 خريطة الفصل الذهنية</h2>
+      <div class="mindmap-wrap">
+        <svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للفصل الرابع">
+          <defs>
+            <linearGradient id="gC4" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7c6fee"/><stop offset="1" stop-color="#3fa9f5"/>
+            </linearGradient>
+          </defs>
+          <line x1="450" y1="230" x2="180" y2="90" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="450" y1="230" x2="720" y2="90" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="450" y1="230" x2="150" y2="250" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="450" y1="230" x2="750" y2="250" stroke="#b3bdcc" stroke-width="2"/>
+          <line x1="450" y1="230" x2="450" y2="420" stroke="#b3bdcc" stroke-width="2"/>
+
+          <g class="mm-node"><circle cx="450" cy="230" r="66" fill="url(#gC4)"/>
+            <text x="450" y="224" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">دوائر التيار</text>
+            <text x="450" y="244" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">المتناوب</text></g>
+
+          <g class="mm-node"><circle cx="180" cy="90" r="54" fill="#ffab5e"/>
+            <text x="180" y="86" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">التيار AC</text>
+            <text x="180" y="102" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">والقيمة المؤثرة</text></g>
+
+          <g class="mm-node"><circle cx="720" cy="90" r="54" fill="#ff6b9d"/>
+            <text x="720" y="86" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">R وX_L</text>
+            <text x="720" y="102" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">وX_C</text></g>
+
+          <g class="mm-node"><circle cx="150" cy="250" r="54" fill="#2fd18f"/>
+            <text x="150" y="246" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">دوائر</text>
+            <text x="150" y="262" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">متوالية</text></g>
+
+          <g class="mm-node"><circle cx="750" cy="250" r="54" fill="#3fa9f5"/>
+            <text x="750" y="246" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">RLC</text>
+            <text x="750" y="262" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">والرنين</text></g>
+
+          <g class="mm-node"><circle cx="450" cy="420" r="54" fill="#7c6fee"/>
+            <text x="450" y="424" text-anchor="middle" fill="#fff" font-weight="700" font-size="12" font-family="Cairo,sans-serif">المحولة</text></g>
+        </svg>
       </div>
     </div>
   </section>
+  </div>
+
 </main>
 
-<footer class="site-footer" data-i18n="chapter.footer" data-i18n-params='{"n":4}'>الفصل 4 — كتاب الطبيعيات التفاعلي</footer>
+<footer class="site-footer">الفصل الرابع: دوائر التيار المتناوب — كتاب الطبيعيات التفاعلي</footer>
 
 <script src="../assets/js/site-ch4.js"></script>
 </body>

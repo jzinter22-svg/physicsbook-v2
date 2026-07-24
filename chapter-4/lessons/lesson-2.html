@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدرس 2: المقاومة الخالصة في دائرة التيار المتناوب — الفصل الرابع</title>
+<meta name="description" content="3-4 المقاومة الاومية الخالصة (صرف) في دائرة التيار المتناوب: القدرة الآنية والمتوسطة، بمثال محلول.">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
+</head>
+<body data-page="lessons/lesson-2.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li><a href="../index.html">الفصل 4</a></li>
+      <li aria-current="page">المقاومة الخالصة في دائرة التيار المتناوب</li>
+    </ol>
+  </nav>
+
+  <div dir="rtl" lang="ar">
+
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 الدرس 2 من 8 · الفصل الرابع</span>
+    <h1>المقاومة الخالصة في دائرة التيار المتناوب</h1>
+    <p class="lead">3-4 المقاومة الاومية الخالصة (صرف) في دائرة التيار المتناوب</p>
+  </section>
+
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
+    <div class="card neu">
+      <h2>🎯 أهداف الدرس</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يعرّف المقاومة الخالصة (الصرف) ويذكر خواص دائرتها.</span></li>
+        <li><span class="obj-num">2</span><span>يحلل منحني القدرة الآنية والمتوسطة في دائرة المقاومة الخالصة.</span></li>
+        <li><span class="obj-num">3</span><span>يحل مسائل حسابية على دائرة المقاومة الخالصة.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
+    <div class="def-box">
+      <span class="def-label">📌 3-4 المقاومة الاومية الخالصة (صرف) في دائرة التيار المتناوب</span>
+      <p style="margin:.3rem 0">يقصد بالمقاومة الخالصة (المقاومة النقية الاومية أو مقاومة الصرف) هي كل مقاومة لا تأثير للحث الذاتي لها، كما هو في الشكل (3-4)، وعندما يمر بها تيار فإن الطاقة الكهربائية تتحول فيها إلى حرارة فقط. إن هذا النوع من الاحمال لا يعتمد على تردد الدائرة (أي بمعنى أنه لا تتغير قيمة المقاومة بتغير تردد التيار).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="phase-widget" data-navlabel="🕹️ إعادة إنشاء الشكلين 3-4 و4-4">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: دائرة مقاومة صرف (الشكلان 3-4 و4-4)</h2>
+      <p>عندما يسري تيار متناوب في دائرة تحتوي على مقاومة خالصة نجد أن الفولطية والتيار يتغيران بالكيفية نفسها حيث يبلغان القيمة العظمى (الموجبة والسالبة) معًا؛ أي إنها بنفس الطور، حيث تكون زاوية فرق الطور بينهما تساوي صفرًا.</p>
+      <div class="io-panel">
+        <div class="mindmap-wrap"><svg id="phaseSvg" viewBox="0 0 360 190" width="360" height="190" role="img" aria-label="محاكاة الفولطية والتيار بنفس الطور في دائرة مقاومة خالصة"></svg></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <h3 style="margin-top:0">📋 القدرة في دائرة تحتوي على مقاومة اومية خالصة</h3>
+      <p>نعلم أن القدرة في الدائرة التي يمر بها تيار مستمر تساوي:</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ P = I\,V $$
+      <p style="margin:.6rem 0 0;font-size:.95rem">بينما القدرة في دائرة التيار المتناوب:</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">
+      $$ P_{\text{انية}} = I_{\text{انية}} \times V_{\text{انية}} $$
+      $$ P_{\text{انية}} = I_m\sin\theta \times V_m\sin\theta $$
+      $$ P_{\text{انية}} = I_m V_m \sin^2\theta $$
+    </div>
+  </section>
+
+  <section class="section fade-up" id="power-widget" data-navlabel="🕹️ منحني القدرة (الشكل 6-4)">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: منحني القدرة في مقاومة أومية خالصة (الشكل 6-4)</h2>
+      <p>لاحظ أن منحني القدرة يتغيّر من الصفر إلى القيمة العظمى الموجبة ولا يوجد منحني سالب للقدرة؛ لأن الفولطية والتيار بطور واحد — أي أن فرق الطور بينهما يساوي صفرًا — فإما أن يكونا موجبَين معًا وإما سالبَين معًا. لذا فإن معدل القدرة يساوي نصف حاصل ضرب القيمة العظمى لكل من الفولطية والتيار، وهي قدرة حقيقية مستهلكة في المقاومة تكون على شكل حرارة، وأن تردد منحني القدرة يساوي ضعف تردد منحني التيار.</p>
+      <div class="mindmap-wrap"><svg id="powerSvg" viewBox="0 0 360 200" width="360" height="200" role="img" aria-label="منحني القدرة الآنية والمتوسطة في مقاومة أومية خالصة"></svg></div>
+      <div class="rule-box">$$ P_{av} = \dfrac{I_m V_m}{2} $$</div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="example1" data-navlabel="📝 مثال 1">
+    <div class="example">
+      <div class="example-head"><h2 style="margin:0">📝 مثال (1)</h2></div>
+      <p>مولد تيار متناوب يمرر تيارًا من خلال مقاومة اومية خالصة مقدارها \((10\ \Omega)\) التيار معطى حسب العلاقة \((I=4\sin\theta)\) إحسب فيهما: 1- القيمة العظمى للتيار والقيمة العظمى للفولطية. 2- القيمة المؤثرة لكل من الفولطية والتيار. 3- الطاقة الحرارية التي يولّدها في المقاومة خلال \((0.8\text{s})\)؟</p>
+    </div>
+
+    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
+      <div class="example-head">
+        <h2 style="margin:0">✓ الحل التفصيلي</h2>
+        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
+      </div>
+
+      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
+      <ul class="summary-list" style="margin-bottom:1rem">
+        <li><span>\( R = 10\ \Omega \) — المقاومة الأومية الخالصة</span></li>
+        <li><span>\( I = 4\sin\theta \) — علاقة التيار الآني المعطاة</span></li>
+        <li><span>\( t = 0.8\ \text{s} \) — الزمن</span></li>
+      </ul>
+
+      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
+      <p style="margin:0 0 1rem">1- \(I_m\) و\(V_m\). 2- \(I_e\) و\(V_e\). 3- الطاقة الحرارية المتولدة \(E\).</p>
+
+      <ol class="steps hidden-steps" id="steps-ex1">
+        <li class="step"><span class="step-dot">1</span><div class="step-body">
+          <p class="calc-note">1- بالمقارنة مع \(I_{\text{الآني}}=I_m\sin\theta\) نجد القيمة العظمى للتيار، ثم نطبّق قانون أوم لإيجاد القيمة العظمى للفولطية</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( I_m = 4\ \text{A} \)</div>
+            <div class="calc-line">\( V_m = I_m \times R = 4 \times 10 \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( V_m = 40\ \text{Volt} \)</div>
+          </div>
+        </div></li>
+        <li class="step"><span class="step-dot">2</span><div class="step-body">
+          <p class="calc-note">2- نطبّق علاقة القيمة المؤثرة لكل من التيار والفولطية</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( I_e = 0.707\times I_m = 0.707\times 4 \)</div>
+            <div class="calc-line calc-box">\( I_e = 2.8\ \text{A} \)</div>
+            <div class="calc-line">\( V_e = 0.707\times V_m = 0.707\times 40 \)</div>
+            <div class="calc-line calc-box">\( V_e = 28.2\ \text{Volt} \)</div>
+          </div>
+        </div></li>
+        <li class="step"><span class="step-dot">3</span><div class="step-body">
+          <p class="calc-note">3- نطبّق قانون جول باستعمال القيمة المؤثرة للتيار (المكافئة حراريًا لتيار مستمر)</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( E = I_e^2\,R\,t = (2.8)^2\times 10\times 0.8 \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( E = 62.72\ \text{Joule} \)</div>
+          </div>
+        </div></li>
+      </ol>
+      <div class="exercise-final">✓ I_m = 4 A · V_m = 40 V · I_e = 2.8 A · V_e = 28.2 V · E = 62.72 J</div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>1.</span><span>المقاومة الخالصة (الصرف) هي المقاومة التي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>تعتمد على تردد الدائرة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لها تأثير حثي كبير</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لا تأثير للحث الذاتي لها</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تخزّن طاقة كهربائية حقيقية</span></label>
+        </div>
+        <div class="quiz-explain">المقاومة الخالصة (الصرف) هي كل مقاومة لا تأثير للحث الذاتي لها، ولا تعتمد قيمتها على تردد الدائرة.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>2.</span><span>زاوية فرق الطور بين الفولطية والتيار في دائرة المقاومة الخالصة تساوي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>صفرًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>90°</span></label>
+          <label class="quiz-opt"><input type="radio"><span>180°</span></label>
+          <label class="quiz-opt"><input type="radio"><span>-90°</span></label>
+        </div>
+        <div class="quiz-explain">في دائرة المقاومة الخالصة تبلغ الفولطية والتيار القيمة العظمى معًا؛ أي إنهما بنفس الطور وزاوية فرق الطور بينهما صفر.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>3.</span><span>منحني القدرة الآنية في دائرة مقاومة أومية خالصة:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>يكون سالبًا في نصف الدورة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لا يوجد فيه جزء سالب أبدًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>يساوي صفرًا دائمًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>عشوائي غير منتظم</span></label>
+        </div>
+        <div class="quiz-explain">بما أن الفولطية والتيار دائمًا بنفس الإشارة (موجبَين معًا أو سالبَين معًا)، فإن حاصل ضربهما (القدرة) يكون موجبًا دائمًا؛ فلا يوجد منحني سالب للقدرة.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="3">
+        <div class="quiz-q-title"><span>4.</span><span>معدل القدرة (القدرة المتوسطة) في دائرة مقاومة خالصة يساوي:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>\( I_m V_m \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( 2\,I_m V_m \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( I_m + V_m \)</span></label>
+          <label class="quiz-opt"><input type="radio"><span>\( \dfrac{I_m V_m}{2} \)</span></label>
+        </div>
+        <div class="quiz-explain">معدل القدرة يساوي نصف حاصل ضرب القيمة العظمى للتيار والفولطية: \(P_{av}=I_mV_m/2\)، وهي قدرة حقيقية مستهلكة على شكل حرارة.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>5.</span><span>تردد منحني القدرة في دائرة مقاومة خالصة مقارنة بتردد منحني التيار:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>يساوي نصف تردد التيار</span></label>
+          <label class="quiz-opt"><input type="radio"><span>يساوي ضعف تردد التيار</span></label>
+          <label class="quiz-opt"><input type="radio"><span>يساوي تردد التيار نفسه</span></label>
+          <label class="quiz-opt"><input type="radio"><span>لا علاقة له بتردد التيار</span></label>
+        </div>
+        <div class="quiz-explain">بما أن \(P_{\text{انية}}=I_mV_m\sin^2\theta\)، فإن تردد منحني القدرة يساوي ضعف تردد منحني التيار.</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
+      <ul class="summary-list">
+        <li><span>المقاومة الخالصة: لا تأثير للحث الذاتي لها، ولا تعتمد على تردد الدائرة.</span></li>
+        <li><span>الفولطية والتيار بنفس الطور (فرق الطور = صفر)، فتبلغان القيمة العظمى معًا.</span></li>
+        <li><span>\(P_{\text{انية}}=I_mV_m\sin^2\theta\)، وهي دائمًا موجبة (لا يوجد منحني سالب للقدرة).</span></li>
+        <li><span>معدل القدرة \(P_{av}=I_mV_m/2\)، وهي قدرة حقيقية حرارية، وتردد منحنيها ضعف تردد التيار.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l2" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l2">
+        <svg viewBox="0 0 480 200" width="480" height="200" role="img" aria-label="خريطة المقاومة الخالصة الذهنية">
+          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
+            <line x1="240" y1="100" x2="100" y2="45"/>
+            <line x1="240" y1="100" x2="100" y2="155"/>
+            <line x1="240" y1="100" x2="380" y2="100"/>
+          </g>
+          <g>
+            <circle cx="240" cy="100" r="48" fill="#7c6fee"/>
+            <text x="240" y="96" text-anchor="middle" fill="#fff" font-weight="800" font-size="10" font-family="Cairo,sans-serif">مقاومة</text>
+            <text x="240" y="110" text-anchor="middle" fill="#fff" font-weight="800" font-size="10" font-family="Cairo,sans-serif">خالصة</text>
+          </g>
+          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
+            <text x="100" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">فرق طور=0</text></g>
+          <g><circle cx="100" cy="155" r="42" fill="#2fd18f"/>
+            <text x="100" y="152" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">P=ImVmsin²θ</text>
+            <text x="100" y="164" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">دائمًا موجبة</text></g>
+          <g><circle cx="380" cy="100" r="42" fill="#ffab5e"/>
+            <text x="380" y="97" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">Pav=</text>
+            <text x="380" y="109" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">ImVm/2</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">الفصل الرابع: دوائر التيار المتناوب — الدرس 2: المقاومة الخالصة في دائرة التيار المتناوب</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch4.js"></script>
+<script>
+(function(){
+  var ns = "http://www.w3.org/2000/svg";
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function label(svg,x,y,txt,color,size){
+    var t = document.createElementNS(ns,"text");
+    t.setAttribute("x",x); t.setAttribute("y",y);
+    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||11); t.setAttribute("fill",color);
+    t.setAttribute("font-weight","700");
+    t.textContent = txt;
+    svg.appendChild(t);
+  }
+
+  // ===== V,I in-phase waveform widget (Figures 3-4 / 4-4) =====
+  var phaseSvg = document.getElementById("phaseSvg");
+  var phaseT = 0;
+
+  function drawPhase(){
+    while(phaseSvg.firstChild) phaseSvg.removeChild(phaseSvg.firstChild);
+    var gx=20, gy=20, gw=320, gh=130, midY=gy+gh/2;
+
+    var frame = document.createElementNS(ns,"rect");
+    frame.setAttribute("x",gx); frame.setAttribute("y",gy); frame.setAttribute("width",gw); frame.setAttribute("height",gh);
+    frame.setAttribute("fill","none"); frame.setAttribute("stroke","var(--text-faint)");
+    phaseSvg.appendChild(frame);
+    var axis = document.createElementNS(ns,"line");
+    axis.setAttribute("x1",gx); axis.setAttribute("y1",midY); axis.setAttribute("x2",gx+gw); axis.setAttribute("y2",midY);
+    axis.setAttribute("stroke","var(--text-faint)");
+    phaseSvg.appendChild(axis);
+
+    ["V","I"].forEach(function(kind){
+      var amp = kind==="V" ? 55 : 38;
+      var color = kind==="V" ? "var(--accent-blue)" : "var(--accent-red)";
+      var pts = [];
+      for(var x=gx;x<=gx+gw;x+=3){
+        var theta = ((x-gx)/gw)*Math.PI*2*2 + phaseT;
+        var y = midY - amp*Math.sin(theta);
+        pts.push(x.toFixed(1)+","+y.toFixed(1));
+      }
+      var poly = document.createElementNS(ns,"polyline");
+      poly.setAttribute("points", pts.join(" "));
+      poly.setAttribute("fill","none"); poly.setAttribute("stroke",color); poly.setAttribute("stroke-width","2.5");
+      phaseSvg.appendChild(poly);
+    });
+    label(phaseSvg, gx+4, gy+16, "V_R", "var(--accent-blue)", 12);
+    label(phaseSvg, gx+4, gy+32, "I_R", "var(--accent-red)", 12);
+
+    var cap = document.createElementNS(ns,"text");
+    cap.setAttribute("x",gx+gw/2); cap.setAttribute("y",gy+gh+22);
+    cap.setAttribute("text-anchor","middle"); cap.setAttribute("font-family","Cairo,sans-serif"); cap.setAttribute("font-size","11"); cap.setAttribute("font-weight","700"); cap.setAttribute("fill","var(--text-secondary)");
+    cap.textContent = "الفولطية والتيار يبلغان القيمة العظمى معًا — بنفس الطور";
+    phaseSvg.appendChild(cap);
+  }
+  function tickPhase(){ phaseT += 0.04; drawPhase(); requestAnimationFrame(tickPhase); }
+  if(reduceMotion){ drawPhase(); } else { requestAnimationFrame(tickPhase); }
+
+  // ===== Power curve widget (Figure 6-4) =====
+  var powerSvg = document.getElementById("powerSvg");
+  var powerT = 0;
+
+  function drawPower(){
+    while(powerSvg.firstChild) powerSvg.removeChild(powerSvg.firstChild);
+    var gx=20, gy=20, gw=320, gh=140, baseY=gy+gh;
+
+    var frame = document.createElementNS(ns,"rect");
+    frame.setAttribute("x",gx); frame.setAttribute("y",gy); frame.setAttribute("width",gw); frame.setAttribute("height",gh);
+    frame.setAttribute("fill","none"); frame.setAttribute("stroke","var(--text-faint)");
+    powerSvg.appendChild(frame);
+    var axis = document.createElementNS(ns,"line");
+    axis.setAttribute("x1",gx); axis.setAttribute("y1",baseY); axis.setAttribute("x2",gx+gw); axis.setAttribute("y2",baseY);
+    axis.setAttribute("stroke","var(--text-faint)");
+    powerSvg.appendChild(axis);
+
+    var pts = [];
+    for(var x=gx;x<=gx+gw;x+=3){
+      var theta = ((x-gx)/gw)*Math.PI*2*2 + powerT;
+      var p = Math.pow(Math.sin(theta),2);
+      var y = baseY - p*gh;
+      pts.push(x.toFixed(1)+","+y.toFixed(1));
+    }
+    var poly = document.createElementNS(ns,"polyline");
+    poly.setAttribute("points", pts.join(" "));
+    poly.setAttribute("fill","none"); poly.setAttribute("stroke","var(--accent-purple)"); poly.setAttribute("stroke-width","2.5");
+    powerSvg.appendChild(poly);
+
+    var avgY = baseY - 0.5*gh;
+    var avgLine = document.createElementNS(ns,"line");
+    avgLine.setAttribute("x1",gx); avgLine.setAttribute("y1",avgY); avgLine.setAttribute("x2",gx+gw); avgLine.setAttribute("y2",avgY);
+    avgLine.setAttribute("stroke","var(--accent-green)"); avgLine.setAttribute("stroke-width","2"); avgLine.setAttribute("stroke-dasharray","5 4");
+    powerSvg.appendChild(avgLine);
+    label(powerSvg, gx+4, avgY-6, "P_av = ImVm/2", "var(--accent-green)", 11);
+    label(powerSvg, gx+4, gy+16, "P (القدرة الآنية)", "var(--accent-purple)", 11);
+  }
+  function tickPower(){ powerT += 0.04; drawPower(); requestAnimationFrame(tickPower); }
+  if(reduceMotion){ drawPower(); } else { requestAnimationFrame(tickPower); }
+})();
+</script>
+</body>
+</html>

@@ -86,5 +86,16 @@
     "lesson4NavTitle": "4) The Electric Generator",
     "lesson5NavTitle": "5) The Electric Motor",
     "lesson6NavTitle": "6) Chapter Questions & Problems"
+  },
+  "ch4": {
+    "sidebarSubtitle": "AC Circuits",
+    "lesson1NavTitle": "1) AC Current Definition & Effective Value",
+    "lesson2NavTitle": "2) Pure Resistance in an AC Circuit",
+    "lesson3NavTitle": "3) The Inductor in an AC Circuit",
+    "lesson4NavTitle": "4) The Capacitor in an AC Circuit",
+    "lesson5NavTitle": "5) Resistance with an Inductor or Capacitor in Series",
+    "lesson6NavTitle": "6) Resistance, Inductor & Capacitor in Series",
+    "lesson7NavTitle": "7) The Electrical Transformer",
+    "lesson8NavTitle": "8) Chapter Questions & Problems"
   }
 }

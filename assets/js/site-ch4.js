@@ -1,6 +1,6 @@
-/* Chapter 4 — behavior script instantiated from
-   templates/chapter-behavior-template.js. No lessons published yet:
-   LESSONS holds only the chapter-home entry until lesson pages are added. */
+/* Chapter 4 — دوائر التيار المتناوب (AC Circuits) — behavior script
+   instantiated from templates/chapter-behavior-template.js. Content sourced
+   from the official textbook PDF (pdf/كتاب الطبيعيات.pdf, pages 49-68). */
 (function(){
   "use strict";
 
@@ -8,13 +8,19 @@
     storageKeyPrefix: "ch4",
     chapterNumber: 4,
     brandBadge: "4",
-    sidebarSubtitleKey: "common.readyToBuild",
+    sidebarSubtitleKey: "ch4.sidebarSubtitle",
     lessons: [
-      { href: "index.html", titleKey: "common.chapterHome", root: true }
-      // { href: "lessons/lesson-1.html", titleKey: "lessons.ch4.lesson1.navTitle" },
-      // ... add one entry per lesson, in order, once lessons exist
+      { href: "index.html", titleKey: "common.chapterHome", root: true },
+      { href: "lessons/lesson-1.html", titleKey: "ch4.lesson1NavTitle" },
+      { href: "lessons/lesson-2.html", titleKey: "ch4.lesson2NavTitle" },
+      { href: "lessons/lesson-3.html", titleKey: "ch4.lesson3NavTitle" },
+      { href: "lessons/lesson-4.html", titleKey: "ch4.lesson4NavTitle" },
+      { href: "lessons/lesson-5.html", titleKey: "ch4.lesson5NavTitle" },
+      { href: "lessons/lesson-6.html", titleKey: "ch4.lesson6NavTitle" },
+      { href: "lessons/lesson-7.html", titleKey: "ch4.lesson7NavTitle" },
+      { href: "lessons/lesson-8.html", titleKey: "ch4.lesson8NavTitle" }
     ],
-    bgSymbols: ["•", "∘", "×", "+", "–", "="]
+    bgSymbols: ["V", "I", "R", "X", "Z", "ω", "Φ", "cosØ"]
   };
   // ---------------------------------------------------------------------------
 
