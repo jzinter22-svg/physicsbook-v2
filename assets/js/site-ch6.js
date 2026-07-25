@@ -1,6 +1,6 @@
-/* Chapter 6 — behavior script instantiated from
-   templates/chapter-behavior-template.js. No lessons published yet:
-   LESSONS holds only the chapter-home entry until lesson pages are added. */
+/* Chapter 6 — الليزر والبلازما — behavior script instantiated from
+   templates/chapter-behavior-template.js. Content sourced from the
+   official textbook PDF (pdf/كتاب الطبيعيات.pdf, pages 85-101). */
 (function(){
   "use strict";
 
@@ -8,13 +8,21 @@
     storageKeyPrefix: "ch6",
     chapterNumber: 6,
     brandBadge: "6",
-    sidebarSubtitleKey: "common.readyToBuild",
+    sidebarSubtitleKey: "ch6.sidebarSubtitle",
     lessons: [
-      { href: "index.html", titleKey: "common.chapterHome", root: true }
-      // { href: "lessons/lesson-1.html", titleKey: "lessons.ch6.lesson1.navTitle" },
-      // ... add one entry per lesson, in order, once lessons exist
+      { href: "index.html", titleKey: "common.chapterHome", root: true },
+      { href: "lessons/lesson-1.html", titleKey: "ch6.lesson1NavTitle" },
+      { href: "lessons/lesson-2.html", titleKey: "ch6.lesson2NavTitle" },
+      { href: "lessons/lesson-3.html", titleKey: "ch6.lesson3NavTitle" },
+      { href: "lessons/lesson-4.html", titleKey: "ch6.lesson4NavTitle" },
+      { href: "lessons/lesson-5.html", titleKey: "ch6.lesson5NavTitle" },
+      { href: "lessons/lesson-6.html", titleKey: "ch6.lesson6NavTitle" },
+      { href: "lessons/lesson-7.html", titleKey: "ch6.lesson7NavTitle" },
+      { href: "lessons/lesson-8.html", titleKey: "ch6.lesson8NavTitle" },
+      { href: "lessons/lesson-9.html", titleKey: "ch6.lesson9NavTitle" },
+      { href: "lessons/lesson-10.html", titleKey: "ch6.lesson10NavTitle" }
     ],
-    bgSymbols: ["•", "∘", "×", "+", "–", "="]
+    bgSymbols: ["hf", "E₁", "E₂", "λ", "+", "−", "He", "Ne"]
   };
   // ---------------------------------------------------------------------------
 

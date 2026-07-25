@@ -107,5 +107,18 @@
     "lesson5NavTitle": "5) البث الكهرومغناطيسي",
     "lesson6NavTitle": "6) الرادار",
     "lesson7NavTitle": "7) أسئلة الفصل الخامس"
+  },
+  "ch6": {
+    "sidebarSubtitle": "الليزر والبلازما",
+    "lesson1NavTitle": "1) الليزر والميزر",
+    "lesson2NavTitle": "2) خصائص أشعة الليزر",
+    "lesson3NavTitle": "3) أسس عمل الليزر",
+    "lesson4NavTitle": "4) مكونات أجهزة الليزر",
+    "lesson5NavTitle": "5) منظومات مستويات الليزر",
+    "lesson6NavTitle": "6) أنواع الليزر",
+    "lesson7NavTitle": "7) بعض تطبيقات الليزر",
+    "lesson8NavTitle": "8) البلازما",
+    "lesson9NavTitle": "9) بعض تطبيقات البلازما",
+    "lesson10NavTitle": "10) أسئلة الفصل السادس"
   }
 }

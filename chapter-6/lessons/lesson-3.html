@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدرس 3: أسس عمل الليزر — الفصل السادس</title>
+<meta name="description" content="3-6 أسس عمل الليزر: الامتصاص المحث، الانبعاث التلقائي، الانبعاث المحفز، والتوزيع المعكوس.">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
+</head>
+<body data-page="lessons/lesson-3.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li><a href="../index.html">الفصل 6</a></li>
+      <li aria-current="page">أسس عمل الليزر</li>
+    </ol>
+  </nav>
+
+  <div dir="rtl" lang="ar">
+
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 الدرس 3 من 10 · 3-6</span>
+    <h1>أسس عمل الليزر The Foundation of The Laser Working</h1>
+    <p class="lead">تكتسب ثلاث عمليات فيزيائية أهمية كبيرة في الأسس الفيزيائية لتوليد الليزر: الامتصاص المحث، الانبعاث التلقائي، والانبعاث المحفز — وصولًا إلى مفهوم التوزيع المعكوس الذي يجعل الفعل الليزري ممكنًا.</p>
+  </section>
+
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
+    <div class="card neu">
+      <h2>🎯 أهداف الدرس</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يوضّح عملية الامتصاص المحث وشرط انتقال الذرة بين مستويين للطاقة.</span></li>
+        <li><span class="obj-num">2</span><span>يفرّق بين الانبعاث التلقائي والانبعاث المحفز من حيث الآلية وخواص الفوتونات الناتجة.</span></li>
+        <li><span class="obj-num">3</span><span>يوضّح مفهوم التوزيع المعكوس وأهميته في تحقيق الفعل الليزري.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
+    <div class="card neu">
+      <h2>💡 3-6 أسس عمل الليزر The Foundation of The Laser Working</h2>
+      <p>هنالك ثلاث عمليات تكتسب أهمية كبيرة في الأسس الفيزيائية لتوليد الليزر هي: (الامتصاص المحث، الانبعاث التلقائي، الانبعاث المحفز).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">$$ hf = E_2 - E_1 $$</div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box">
+      <span class="def-label">📌 تعريف — رموز قانون انتقال الطاقة</span>
+      <ul style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.3rem">
+        <li>\( h \) — ثابت بلانك ويساوي (\(6.63\times10^{-34}\ \text{J.s}\)) جول.ثا</li>
+        <li>\( f \) — التردد الضوئي الساقط بوحدة هيرتز (Hz)</li>
+        <li>\( E_2, E_1 \) — مستويات الطاقة بوحدة الإلكترون فولت (eV)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="absorption" data-navlabel="1️⃣ الامتصاص المحث">
+    <div class="def-box" style="border-inline-start-color:var(--accent-blue)">
+      <span class="def-label" style="color:var(--accent-blue)">📌 1- الامتصاص المحث Induced Absorption</span>
+      <p style="margin:.3rem 0">هو انتقال الذرة من مستوى طاقة واطئ (\(E_1\)) إلى مستوى طاقة متهيج (\(E_2\))، وذلك بامتصاص فوتون طاقته تساوي فرق الطاقة بين هذين المستويين، أي أن: \( hf = E_2 - E_1 \)، لاحظ الشكل (6-6).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="diagram-card neu">
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 6-6 يوضح الامتصاص المحث">
+          <g font-family="Cairo,sans-serif">
+            <text x="60" y="15" text-anchor="middle" font-size="10" fill="var(--text-secondary)">قبل</text>
+            <line x1="20" y1="40" x2="100" y2="40" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="108" y="44" font-size="11" fill="var(--text-primary)">E₂</text>
+            <line x1="20" y1="95" x2="100" y2="95" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="108" y="99" font-size="11" fill="var(--text-primary)">E₁</text>
+            <circle cx="55" cy="95" r="5" fill="var(--accent-green)"/>
+            <line x1="55" y1="88" x2="55" y2="47" stroke="var(--accent-blue)" stroke-width="1.5" stroke-dasharray="3 2" marker-end="url(#upArrow6)"/>
+            <text x="15" y="60" text-anchor="middle" font-size="9" fill="var(--accent-pink)">hf</text>
+            <path d="M2,64 q4,-5 8,0 t8,0" fill="none" stroke="var(--accent-pink)" stroke-width="1.5"/>
+            <text x="60" y="130" text-anchor="middle" font-size="9" fill="var(--text-secondary)">ذرة في المستوى الأرضي</text>
+
+            <text x="240" y="15" text-anchor="middle" font-size="10" fill="var(--text-secondary)">بعد</text>
+            <line x1="200" y1="40" x2="280" y2="40" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="288" y="44" font-size="11" fill="var(--text-primary)">E₂</text>
+            <line x1="200" y1="95" x2="280" y2="95" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="288" y="99" font-size="11" fill="var(--text-primary)">E₁</text>
+            <circle cx="235" cy="40" r="5" fill="var(--accent-green)"/>
+            <defs><marker id="upArrow6" markerWidth="7" markerHeight="7" refX="3.5" refY="0" orient="auto"><path d="M0,7 L3.5,0 L7,7 z" fill="var(--accent-blue)"/></marker></defs>
+          </g>
+        </svg>
+        <span class="diagram-caption">شكل 6-6: الامتصاص المحث — الذرة تمتص فوتونًا فتنتقل من المستوى الأرضي E₁ إلى المستوى المتهيج E₂</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="spontaneous" data-navlabel="2️⃣ الانبعاث التلقائي">
+    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
+      <span class="def-label" style="color:var(--accent-green)">📌 2- الانبعاث التلقائي Spontaneous Emission</span>
+      <p style="margin:.3rem 0">عندما تصبح الذرة في مستوى الطاقة الأعلى (مستوى التهيج) تميل دائمًا إلى حالة الاستقرار، فتعود تلقائيًا بعد (فترة زمنية قصيرة تسمى العمر الزمني لمستوى التهيج) إلى المستوى الأرضي، ويصاحب هذا الانتقال انبعاث فوتون تساوي طاقته فرق الطاقة بين المستويين: \( hf = E_2 - E_1 \) (ويسمى هذا الانتقال بالانبعاث التلقائي)، لاحظ الشكل (7-6).</p>
+      <p style="margin:.3rem 0">وتكون فوتونات هذا الانتقال مختلفة من حيث الطور والاتجاه فتنبعث في جميع الاتجاهات كما في الضوء الاعتيادي، لاحظ الشكل (8-6).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="diagram-card neu">
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 7-6 و8-6 الانبعاث التلقائي وفوتونات مختلفة الطور والاتجاه">
+          <g font-family="Cairo,sans-serif">
+            <text x="60" y="15" text-anchor="middle" font-size="10" fill="var(--text-secondary)">قبل</text>
+            <line x1="20" y1="40" x2="100" y2="40" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="108" y="44" font-size="11" fill="var(--text-primary)">E₂</text>
+            <line x1="20" y1="95" x2="100" y2="95" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="108" y="99" font-size="11" fill="var(--text-primary)">E₁</text>
+            <circle cx="55" cy="40" r="5" fill="var(--accent-green)"/>
+            <text x="60" y="130" text-anchor="middle" font-size="9" fill="var(--text-secondary)">ذرة في مستوى التهيج</text>
+
+            <text x="240" y="15" text-anchor="middle" font-size="10" fill="var(--text-secondary)">بعد</text>
+            <line x1="200" y1="40" x2="280" y2="40" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="288" y="44" font-size="11" fill="var(--text-primary)">E₂</text>
+            <line x1="200" y1="95" x2="280" y2="95" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="288" y="99" font-size="11" fill="var(--text-primary)">E₁</text>
+            <circle cx="235" cy="95" r="5" fill="var(--accent-green)"/>
+            <line x1="235" y1="47" x2="235" y2="88" stroke="var(--accent-orange)" stroke-width="1.5" stroke-dasharray="3 2" marker-end="url(#dnArrow6)"/>
+            <path d="M245,60 q4,-5 8,0 t8,0" fill="none" stroke="var(--accent-orange)" stroke-width="1.5"/>
+            <defs><marker id="dnArrow6" markerWidth="7" markerHeight="7" refX="3.5" refY="7" orient="auto"><path d="M0,0 L3.5,7 L7,0 z" fill="var(--accent-orange)"/></marker></defs>
+          </g>
+        </svg>
+        <span class="diagram-caption">شكل 7-6: الانبعاث التلقائي — الذرة تعود تلقائيًا من E₂ إلى E₁ باعثة فوتونًا عشوائي الاتجاه والطور</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">💬</span>
+      <span><b>هل تعلم؟</b> العمر الزمني للمستوى: هو فترة زمنية قصيرة جدًا يمكن أن يمكثها الإلكترون في مستوى الطاقة الأعلى الذي ينتقل إليه في الذرة المثارة.</span>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="stimulated" data-navlabel="3️⃣ الانبعاث المحفز">
+    <div class="def-box" style="border-inline-start-color:var(--accent-pink)">
+      <span class="def-label" style="color:var(--accent-pink)">📌 3- الانبعاث المحفز Stimulated Emission</span>
+      <p style="margin:.3rem 0">عندما يصطدم فوتون بذرة موجودة في مستوى التهيج (\(E_2\)) بحيث تكون طاقته مساوية تمامًا لفرق الطاقة بين المستويين (\(E_2-E_1\))، فإنه سوف يحفّز الذرة لتنتقل من المستوى (\(E_2\)) إلى المستوى الأوطأ (\(E_1\))، ما يؤدي إلى انبعاث فوتون جديد مماثل (من حيث الطاقة والتردد والطور والاتجاه) للفوتون الذي اصطدم بالذرة (ويسمى هذا النوع من الانتقال بالانبعاث المحفز)، لاحظ الشكل (9-6).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="diagram-card neu">
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 9-6 الانبعاث المحفز">
+          <g font-family="Cairo,sans-serif">
+            <text x="60" y="15" text-anchor="middle" font-size="10" fill="var(--text-secondary)">قبل</text>
+            <line x1="20" y1="40" x2="100" y2="40" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="108" y="44" font-size="11" fill="var(--text-primary)">E₂</text>
+            <line x1="20" y1="95" x2="100" y2="95" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="108" y="99" font-size="11" fill="var(--text-primary)">E₁</text>
+            <circle cx="55" cy="40" r="5" fill="var(--accent-green)"/>
+            <path d="M2,38 q4,-5 8,0 t8,0" fill="none" stroke="var(--accent-pink)" stroke-width="1.5"/>
+            <line x1="18" y1="40" x2="45" y2="40" stroke="var(--accent-pink)" stroke-width="1.5" marker-end="url(#ph1)"/>
+            <defs><marker id="ph1" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="var(--accent-pink)"/></marker></defs>
+
+            <text x="240" y="15" text-anchor="middle" font-size="10" fill="var(--text-secondary)">بعد</text>
+            <line x1="200" y1="40" x2="280" y2="40" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="288" y="44" font-size="11" fill="var(--text-primary)">E₂</text>
+            <line x1="200" y1="95" x2="280" y2="95" stroke="var(--text-primary)" stroke-width="2"/>
+            <text x="288" y="99" font-size="11" fill="var(--text-primary)">E₁</text>
+            <circle cx="235" cy="95" r="5" fill="var(--accent-green)"/>
+            <path d="M255,35 q4,-5 8,0 t8,0" fill="none" stroke="var(--accent-pink)" stroke-width="1.5"/>
+            <line x1="253" y1="37" x2="290" y2="30" stroke="var(--accent-pink)" stroke-width="1.5" marker-end="url(#ph2)"/>
+            <path d="M255,50 q4,-5 8,0 t8,0" fill="none" stroke="var(--accent-pink)" stroke-width="1.5"/>
+            <line x1="253" y1="52" x2="290" y2="45" stroke="var(--accent-pink)" stroke-width="1.5" marker-end="url(#ph3)"/>
+            <defs>
+              <marker id="ph2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="var(--accent-pink)"/></marker>
+              <marker id="ph3" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="var(--accent-pink)"/></marker>
+            </defs>
+          </g>
+        </svg>
+        <span class="diagram-caption">شكل 9-6: الانبعاث المحفز — فوتون ساقط يحفّز الذرة فينتج فوتونان متماثلان في الطاقة والتردد والطور والاتجاه</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout warn">
+      <span class="icon">📌</span>
+      <span><b>تذكّر:</b> للحصول على الانبعاث المحفز يجب الحصول على الانبعاث التلقائي أولًا.</span>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="inversion" data-navlabel="🔄 التوزيع المعكوس">
+    <div class="card neu">
+      <h2>🔄 حالة الاتزان الحراري والتوزيع المعكوس</h2>
+      <p>في الظروف القياسية (حالة الاتزان الحراري) لأية مادة، فإن معظم الذرات تكون في المستويات الواطئة للطاقة، والنسبة الأقل من الذرات تكون متهيجة في المستويات العليا للطاقة، لاحظ الشكل (10-6).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">💬</span>
+      <span><b>هل تعلم؟</b> لزيادة احتمالية الانبعاث المحفز، يجب أن يكون عدد الذرات المتهيجة في المستويات العليا للطاقة أكبر من عدد الذرات الواطئة في المستويات الواطئة للطاقة، أي أن يكون توزيع الذرات بشكل معكوس؛ لذا تسمى هذه العملية (بالتوزيع المعكوس).</span>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
+      <span class="def-label" style="color:var(--accent-purple)">📌 تعريف — التوزيع المعكوس (Population Inversion)</span>
+      <p style="margin:.3rem 0">هو الحالة التي يكون فيها عدد الذرات في مستوى الطاقة الأعلى أكبر من عددها في مستوى الطاقة الأوطأ، خلافًا لحالة الاتزان الحراري الاعتيادية، وهو الشرط الضروري لتحقيق الانبعاث المحفز وتوليد أشعة الليزر.</p>
+    </div>
+  </section>
+
+  <!-- ===== Interactive widget ===== -->
+  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: العمليات الثلاث الأساسية</h2>
+      <p>اختر العملية لمشاهدة حركة الذرة والفوتونات بين مستويي الطاقة E₁ وE₂.</p>
+      <div class="io-panel">
+        <div class="io-row" role="group" aria-label="اختيار العملية">
+          <button class="neu-btn primary" data-mode="absorption" id="btnAbs">الامتصاص المحث</button>
+          <button class="neu-btn" data-mode="spontaneous" id="btnSpon">الانبعاث التلقائي</button>
+          <button class="neu-btn" data-mode="stimulated" id="btnStim">الانبعاث المحفز</button>
+        </div>
+        <div class="mindmap-wrap"><svg id="atomSvg" viewBox="0 0 360 200" role="img" aria-label="محاكاة تفاعل الفوتونات مع الذرة"></svg></div>
+        <p id="atomCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Self-check quiz ===== -->
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>1.</span><span>انتقال الذرة من مستوى واطئ إلى مستوى متهيج بامتصاص فوتون يسمى:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>الامتصاص المحث</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الانبعاث التلقائي</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الانبعاث المحفز</span></label>
+          <label class="quiz-opt"><input type="radio"><span>التوزيع المعكوس</span></label>
+        </div>
+        <div class="quiz-explain">الامتصاص المحث هو انتقال الذرة من مستوى واطئ E₁ إلى مستوى متهيج E₂ بامتصاص فوتون طاقته hf=E₂-E₁.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>2.</span><span>الفوتونات الناتجة عن الانبعاث التلقائي تكون:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>متماثلة في الطور والاتجاه</span></label>
+          <label class="quiz-opt"><input type="radio"><span>مختلفة في الطور والاتجاه</span></label>
+          <label class="quiz-opt"><input type="radio"><span>معدومة الطاقة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>ثابتة الاتجاه فقط</span></label>
+        </div>
+        <div class="quiz-explain">فوتونات الانبعاث التلقائي مختلفة من حيث الطور والاتجاه، فتنبعث في جميع الاتجاهات كالضوء الاعتيادي.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>3.</span><span>الشرط اللازم لحدوث الانبعاث المحفز هو:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>غياب أي فوتون قادم</span></label>
+          <label class="quiz-opt"><input type="radio"><span>أن تكون الذرة في المستوى الأرضي</span></label>
+          <label class="quiz-opt"><input type="radio"><span>اصطدام فوتون طاقته تساوي فرق الطاقة بين المستويين بذرة في مستوى التهيج</span></label>
+          <label class="quiz-opt"><input type="radio"><span>ارتفاع درجة الحرارة فقط</span></label>
+        </div>
+        <div class="quiz-explain">الانبعاث المحفز يحدث عندما يصطدم فوتون طاقته تساوي (E₂-E₁) بذرة في مستوى التهيج، فينتج فوتون جديد مماثل تمامًا للفوتون الساقط.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>4.</span><span>في حالة الاتزان الحراري القياسية، تتوزع معظم ذرات المادة في:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>المستويات العليا للطاقة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>المستويات الواطئة للطاقة</span></label>
+          <label class="quiz-opt"><input type="radio"><span>توزيع متساوٍ بين جميع المستويات</span></label>
+          <label class="quiz-opt"><input type="radio"><span>خارج الذرة تمامًا</span></label>
+        </div>
+        <div class="quiz-explain">في حالة الاتزان الحراري تكون معظم الذرات في المستويات الواطئة للطاقة، والنسبة الأقل في المستويات العليا.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>5.</span><span>حالة زيادة عدد الذرات المتهيجة في المستويات العليا عن عددها في المستويات الواطئة تسمى:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>التوزيع المعكوس</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الاتزان الحراري</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الامتصاص المحث</span></label>
+          <label class="quiz-opt"><input type="radio"><span>حاجز الجهد</span></label>
+        </div>
+        <div class="quiz-explain">التوزيع المعكوس هو الحالة التي يزيد فيها عدد الذرات المتهيجة عن عدد الذرات في المستويات الواطئة، وهو شرط ضروري لتحقيق الانبعاث المحفز.</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <!-- ===== Summary ===== -->
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
+      <ul class="summary-list">
+        <li><span>قانون انتقال الطاقة بين مستويين: \(hf=E_2-E_1\)، حيث h ثابت بلانك (\(6.63\times10^{-34}\ \text{J.s}\)).</span></li>
+        <li><span>الامتصاص المحث: انتقال من E₁ إلى E₂ بامتصاص فوتون. الانبعاث التلقائي: عودة عشوائية من E₂ إلى E₁ بعد العمر الزمني للمستوى.</span></li>
+        <li><span>الانبعاث المحفز: فوتون ساقط طاقته (E₂-E₁) يحفّز ذرة في التهيج فينتج فوتون جديد مماثل تمامًا — أساس عمل الليزر.</span></li>
+        <li><span>التوزيع المعكوس: أن يكون عدد الذرات في المستوى الأعلى أكبر من عددها في المستوى الأوطأ، خلافًا للاتزان الحراري الاعتيادي — وهو الشرط الضروري لتوليد الليزر.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Mind map ===== -->
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l3" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l3">
+        <svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية لأسس عمل الليزر">
+          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
+            <line x1="240" y1="130" x2="90" y2="45"/>
+            <line x1="240" y1="130" x2="90" y2="215"/>
+            <line x1="240" y1="130" x2="390" y2="45"/>
+            <line x1="240" y1="130" x2="390" y2="215"/>
+          </g>
+          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
+            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">أسس عمل</text>
+            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">الليزر</text></g>
+          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
+            <text x="90" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">امتصاص</text>
+            <text x="90" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">محث</text></g>
+          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
+            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">انبعاث</text>
+            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">تلقائي</text></g>
+          <g><circle cx="390" cy="45" r="46" fill="#ff6b9d"/>
+            <text x="390" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">انبعاث</text>
+            <text x="390" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">محفز</text></g>
+          <g><circle cx="390" cy="215" r="46" fill="#ffab5e"/>
+            <text x="390" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">توزيع</text>
+            <text x="390" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">معكوس</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">الفصل السادس: الليزر والبلازما — الدرس 3: أسس عمل الليزر</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch6.js"></script>
+<script>
+(function(){
+  var ns = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("atomSvg");
+  var caption = document.getElementById("atomCaption");
+  var btns = { absorption: document.getElementById("btnAbs"), spontaneous: document.getElementById("btnSpon"), stimulated: document.getElementById("btnStim") };
+  var animating = false;
+
+  function label(x,y,txt,color,size,weight,anchor){
+    var t = document.createElementNS(ns,"text");
+    t.setAttribute("x",x); t.setAttribute("y",y);
+    t.setAttribute("text-anchor",anchor||"middle");
+    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||12); t.setAttribute("fill",color);
+    t.setAttribute("font-weight",weight||"700");
+    t.textContent = txt;
+    svg.appendChild(t);
+  }
+  function photonMark(x,y,color){
+    var p = document.createElementNS(ns,"path");
+    p.setAttribute("d","M"+(x-8)+","+y+" q4,-7 8,0 t8,0");
+    p.setAttribute("fill","none"); p.setAttribute("stroke",color); p.setAttribute("stroke-width","2");
+    svg.appendChild(p);
+    return p;
+  }
+
+  var e1y = 150, e2y = 60, leftX = 60, rightX = 300;
+
+  function drawBase(){
+    while(svg.firstChild) svg.removeChild(svg.firstChild);
+    var l2 = document.createElementNS(ns,"line");
+    l2.setAttribute("x1",leftX); l2.setAttribute("y1",e2y); l2.setAttribute("x2",rightX); l2.setAttribute("y2",e2y);
+    l2.setAttribute("stroke","var(--text-primary)"); l2.setAttribute("stroke-width","2.5");
+    svg.appendChild(l2);
+    label(rightX+18, e2y+4, "E₂", "var(--text-primary)", 13, "800");
+    var l1 = document.createElementNS(ns,"line");
+    l1.setAttribute("x1",leftX); l1.setAttribute("y1",e1y); l1.setAttribute("x2",rightX); l1.setAttribute("y2",e1y);
+    l1.setAttribute("stroke","var(--text-primary)"); l1.setAttribute("stroke-width","2.5");
+    svg.appendChild(l1);
+    label(rightX+18, e1y+4, "E₁", "var(--text-primary)", 13, "800");
+  }
+
+  function electron(cx, cy){
+    var c = document.createElementNS(ns,"circle");
+    c.setAttribute("cx",cx); c.setAttribute("cy",cy); c.setAttribute("r","7");
+    c.setAttribute("fill","var(--accent-green)");
+    svg.appendChild(c);
+    return c;
+  }
+
+  function run(mode){
+    if(animating) return;
+    animating = true;
+    Object.keys(btns).forEach(function(k){ btns[k].classList.toggle("primary", k===mode); });
+    drawBase();
+    var atomX = (leftX+rightX)/2;
+
+    if(mode === "absorption"){
+      caption.textContent = "فوتون قادم يصطدم بالذرة في المستوى الأرضي E₁ فتمتص طاقته وتنتقل إلى المستوى المتهيج E₂.";
+      var e = electron(atomX, e1y);
+      var ph = photonMark(atomX-70, e1y, "var(--accent-pink)");
+      var t0 = null;
+      function frame(ts){
+        if(t0===null) t0=ts;
+        var el = ts - t0, dur = 700;
+        if(el <= dur){
+          var f = el/dur;
+          ph.setAttribute("transform","translate("+(70*f)+",0)");
+          requestAnimationFrame(frame);
+        } else {
+          svg.removeChild(ph);
+          e.setAttribute("cy", e2y);
+          label(atomX, (e1y+e2y)/2, "امتصاص", "var(--accent-blue)", 10, "800");
+          animating = false;
+        }
+      }
+      requestAnimationFrame(frame);
+
+    } else if(mode === "spontaneous"){
+      caption.textContent = "الذرة في مستوى التهيج E₂ تعود تلقائيًا بعد العمر الزمني للمستوى إلى E₁ باعثة فوتونًا عشوائي الاتجاه.";
+      var e2 = electron(atomX, e2y);
+      var t1 = null;
+      function frame2(ts){
+        if(t1===null) t1=ts;
+        var el = ts - t1;
+        if(el <= 500){
+          requestAnimationFrame(frame2);
+        } else if(el <= 1000){
+          var f = (el-500)/500;
+          e2.setAttribute("cy", e2y + (e1y-e2y)*f);
+          requestAnimationFrame(frame2);
+        } else {
+          e2.setAttribute("cy", e1y);
+          photonMark(atomX+40, e1y-30, "var(--accent-orange)");
+          label(atomX+40, e1y-45, "فوتون عشوائي الاتجاه", "var(--accent-orange)", 9.5, "800");
+          animating = false;
+        }
+      }
+      requestAnimationFrame(frame2);
+
+    } else {
+      caption.textContent = "فوتون ساقط يحفّز الذرة الموجودة في E₂ فتنتقل إلى E₁، وينتج فوتون جديد مماثل تمامًا للفوتون الساقط في الطاقة والطور والاتجاه.";
+      var e3 = electron(atomX, e2y);
+      var phIn = photonMark(atomX-70, e2y, "var(--accent-pink)");
+      var t2 = null;
+      function frame3(ts){
+        if(t2===null) t2=ts;
+        var el = ts - t2, dur=700;
+        if(el <= dur){
+          var f = el/dur;
+          phIn.setAttribute("transform","translate("+(70*f)+",0)");
+          requestAnimationFrame(frame3);
+        } else {
+          svg.removeChild(phIn);
+          e3.setAttribute("cy", e1y);
+          var out1 = photonMark(atomX+40, e2y, "var(--accent-pink)");
+          var out2 = photonMark(atomX+40, e2y, "var(--accent-pink)");
+          out1.setAttribute("transform","translate(0,0)");
+          out2.setAttribute("transform","translate(0,0)");
+          var t3 = null;
+          function frame4(ts2){
+            if(t3===null) t3=ts2;
+            var el2 = ts2-t3, dur2=600;
+            if(el2 <= dur2){
+              var f2 = el2/dur2;
+              out1.setAttribute("transform","translate("+(60*f2)+","+(-30*f2)+")");
+              out2.setAttribute("transform","translate("+(60*f2)+","+(-30*f2)+")");
+              requestAnimationFrame(frame4);
+            } else {
+              label(atomX+70, e2y-45, "فوتونان متماثلان", "var(--accent-pink)", 10, "800");
+              animating = false;
+            }
+          }
+          requestAnimationFrame(frame4);
+        }
+      }
+      requestAnimationFrame(frame3);
+    }
+  }
+
+  btns.absorption.addEventListener("click", function(){ run("absorption"); });
+  btns.spontaneous.addEventListener("click", function(){ run("spontaneous"); });
+  btns.stimulated.addEventListener("click", function(){ run("stimulated"); });
+
+  drawBase();
+  electron((leftX+rightX)/2, e1y);
+  caption.textContent = "اضغط على أحد الأزرار أعلاه لمشاهدة العملية.";
+})();
+</script>
+</body>
+</html>

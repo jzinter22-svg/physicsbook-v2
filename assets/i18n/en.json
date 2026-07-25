@@ -107,5 +107,18 @@
     "lesson5NavTitle": "5) Electromagnetic Broadcasting",
     "lesson6NavTitle": "6) Radar",
     "lesson7NavTitle": "7) Chapter 5 Questions"
+  },
+  "ch6": {
+    "sidebarSubtitle": "Laser and Plasma",
+    "lesson1NavTitle": "1) Laser and Maser",
+    "lesson2NavTitle": "2) Properties of Laser",
+    "lesson3NavTitle": "3) The Foundation of Laser Working",
+    "lesson4NavTitle": "4) Constituents of Laser",
+    "lesson5NavTitle": "5) Laser Levels System",
+    "lesson6NavTitle": "6) Types of Laser",
+    "lesson7NavTitle": "7) Applications of Laser",
+    "lesson8NavTitle": "8) Plasma",
+    "lesson9NavTitle": "9) Applications of Plasma",
+    "lesson10NavTitle": "10) Chapter 6 Questions"
   }
 }

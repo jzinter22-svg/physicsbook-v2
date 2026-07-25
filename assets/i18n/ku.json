@@ -107,5 +107,18 @@
     "lesson5NavTitle": "5) بڵاوکردنەوەی ئەلیکترۆمەگنەتیکی",
     "lesson6NavTitle": "6) ڕادار",
     "lesson7NavTitle": "7) پرسیارەکانی بەشی پێنجەم"
+  },
+  "ch6": {
+    "sidebarSubtitle": "لەیزەر و پلازما",
+    "lesson1NavTitle": "1) لەیزەر و مەیزەر",
+    "lesson2NavTitle": "2) تایبەتمەندییەکانی تیشکی لەیزەر",
+    "lesson3NavTitle": "3) بنەماکانی کارکردنی لەیزەر",
+    "lesson4NavTitle": "4) پێکهاتەکانی ئامێری لەیزەر",
+    "lesson5NavTitle": "5) سیستەمی ئاستەکانی لەیزەر",
+    "lesson6NavTitle": "6) جۆرەکانی لەیزەر",
+    "lesson7NavTitle": "7) هەندێک بەکارهێنانی لەیزەر",
+    "lesson8NavTitle": "8) پلازما",
+    "lesson9NavTitle": "9) هەندێک بەکارهێنانی پلازما",
+    "lesson10NavTitle": "10) پرسیارەکانی بەشی شەشەم"
   }
 }
