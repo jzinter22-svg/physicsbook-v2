@@ -307,11 +307,11 @@
     svg.appendChild(pipe);
 
     var rig = document.createElementNS(ns,"polygon");
-    rig.setAttribute("points","170,44 210,44 190,15");
+    rig.setAttribute("points","170,44 210,44 190,22");
     rig.setAttribute("fill","var(--text-secondary)");
     svg.appendChild(rig);
 
-    label(190, 20, "برج البئر", "var(--text-secondary)", 9, "700");
+    label(190, 14, "برج البئر", "var(--text-secondary)", 9, "700");
   }
 
   function stopAnim(){ if(raf){ cancelAnimationFrame(raf); raf = null; } }
