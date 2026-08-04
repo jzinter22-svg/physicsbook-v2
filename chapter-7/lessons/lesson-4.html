@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدرس 4: نواتج التكرير — الفصل السابع</title>
+<meta name="description" content="4-7 نواتج التكرير: برج التكرير التجزيئي، مقتطعات النفط الخام، جداول نواتج التكرير واستعمالاتها، وعملية التكسير الحراري والمحفز.">
+<link rel="stylesheet" href="../../assets/css/theme.css">
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
+    chtml: { scale: 1.02 },
+    startup: { typeset: false }
+  };
+</script>
+<script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/i18n.js"></script>
+</head>
+<body data-page="lessons/lesson-4.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li><a href="../index.html">الفصل 7</a></li>
+      <li aria-current="page">نواتج التكرير</li>
+    </ol>
+  </nav>
+
+  <div dir="rtl" lang="ar">
+
+  <section class="hero fade-up">
+    <span class="eyebrow">📖 الدرس 4 من 5 · 4-7</span>
+    <h1>نواتج التكرير</h1>
+    <p class="lead">كيف يتحول النفط الخام إلى البنزين والديزل وزيت التشحيم والقار؟ تعرّف في هذا الدرس على برج التكرير التجزيئي، ونواتج التكرير المختلفة، وعملية التكسير التي تحوّل الزيوت الثقيلة إلى مشتقات أخف وأكثر فائدة.</p>
+  </section>
+
+  <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
+    <div class="card neu">
+      <h2>🎯 أهداف الدرس</h2>
+      <ol class="obj-list">
+        <li><span class="obj-num">1</span><span>يصف مبدأ عمل برج التكرير التجزيئي في مصفاة النفط.</span></li>
+        <li><span class="obj-num">2</span><span>يذكر نواتج تكرير النفط الخام المختلفة ودرجات غليانها واستخداماتها.</span></li>
+        <li><span class="obj-num">3</span><span>يفرّق بين التكسير الحراري والتكسير المحفز، ويكتب معادلة تكسير الهكسان.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
+    <div class="card neu">
+      <h2>💡 4-7 نواتج التكرير</h2>
+      <p>إن نواتج التكرير الأولية هي خليط من عدة مركبات متقاربة في درجات الغليان، ويمكن إعادة تقطيرها تجزيئيًا للحصول على مشتقات لها استعمالات محددة. وتُعتبر بعض المركبات التي نحصل عليها بالتكرير أكثر فائدة من غيرها؛ حيث يوجد سوق أكبر لمركبات البنزين والديزل وزيوت التشحيم والقار.</p>
+    </div>
+  </section>
+
+  <!-- ===== Interactive widget ===== -->
+  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
+    <div class="card neu">
+      <h2>🕹️ محاكاة تفاعلية: برج التكرير التجزيئي</h2>
+      <p>اضغط زر "ابدأ التقطير" لمشاهدة كيفية تصاعد أبخرة النفط الخام داخل البرج، وتكثّف كل مقطع عند الارتفاع الموافق لدرجة غليانه.</p>
+      <div class="io-panel">
+        <div class="io-row" role="group" aria-label="تشغيل المحاكاة">
+          <button class="neu-btn primary" id="btnDistill">🔥 ابدأ التقطير</button>
+        </div>
+        <div class="mindmap-wrap"><svg id="towerSvg" viewBox="0 -24 420 374" role="img" aria-label="محاكاة برج التكرير التجزيئي لمقتطعات النفط الخام"></svg></div>
+        <p id="towerCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
+      </div>
+      <p class="diagram-caption" style="text-align:center;margin-top:.5rem">شكل 6-7 و7-7: برج التكرير — يُسخَّن النفط الخام أسفل البرج إلى درجة حرارة أعلى من 400°C فيتبخر ويتجزأ إلى مقتطعات تتكثف كل منها عند الارتفاع الموافق لدرجة غليانها</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>يتم تسخين النفط الخام أسفل البرج إلى درجة حرارة أعلى من 400°C بمعزل عن الهواء، فيتبخر ويتجزأ إلى مقتطعات، ويحدث ذلك أثناء صعود الأبخرة إلى أعلى العمود. تكون درجات غليان المقتطعات الثقيلة كزيوت التشحيم أعلى، ومن ثم تكون باردة بدرجة كافية للتحول مرة أخرى إلى سوائل، ويتم مساعدة ذلك التكثيف باستعمال أغطية الفقاعة التي تسمح بتكثف الأبخرة ذات درجات الغليان العالية، وصعود الأبخرة ذات درجات الغليان المنخفضة إلى أعلى البرج.</p>
+      <p>وكلما صعدت المقتطعات إلى الأعلى كانت أخف؛ ففي البنزين الخفيف يكون لونه أصفر باهتًا، وهو سائل يحترق بسهولة بلهب نظيف. وبالمقارنة، يكون لون المقتطعات الثقيلة (ذات درجات الغليان الأعلى) بنيًا قاتمًا، وتكون هذه المواد لزجة يصعب اشتعالها، وتحترق بلهب ملوَّث بالسناج (جسيمات دقيقة للكاربون).</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="diagram-card neu">
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 8-7 الكميات النسبية لمقتطعات النفط الخام المختلفة">
+          <g font-family="Cairo,sans-serif">
+            <rect x="80" y="15" width="140" height="14" fill="#c9e8ff" stroke="#1a1a2e" stroke-width="1"/>
+            <text x="230" y="26" font-size="10" font-weight="700" fill="var(--text-primary)">غازات بترولية 2%</text>
+            <rect x="80" y="29" width="140" height="14" fill="#ffe08a" stroke="#1a1a2e" stroke-width="1"/>
+            <text x="230" y="40" font-size="10" font-weight="700" fill="var(--text-primary)">بنزين 5%</text>
+            <rect x="80" y="43" width="140" height="18" fill="#ffc46b" stroke="#1a1a2e" stroke-width="1"/>
+            <text x="230" y="55" font-size="10" font-weight="700" fill="var(--text-primary)">نفط 10%</text>
+            <rect x="80" y="61" width="140" height="20" fill="#f0954a" stroke="#1a1a2e" stroke-width="1"/>
+            <text x="230" y="74" font-size="10" font-weight="700" fill="var(--text-primary)">برافين 13%</text>
+            <rect x="80" y="81" width="140" height="30" fill="#c9743a" stroke="#1a1a2e" stroke-width="1"/>
+            <text x="230" y="99" font-size="10" font-weight="700" fill="var(--text-primary)">ديزل 20%</text>
+            <rect x="80" y="111" width="140" height="75" fill="#5a3a24" stroke="#1a1a2e" stroke-width="1"/>
+            <text x="230" y="150" font-size="10" font-weight="700" fill="var(--text-primary)">زيوت تشحيم</text>
+            <text x="230" y="164" font-size="10" font-weight="700" fill="var(--text-primary)">وقار 50%</text>
+          </g>
+        </svg>
+        <span class="diagram-caption">الشكل 8-7: الكميات النسبية لمقتطعات النفط الخام المختلفة</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu" style="overflow-x:auto">
+      <h2 style="margin-bottom:.8rem">📊 جدول 1-7: نواتج تكرير البترول واستعماله اليومي</h2>
+      <table style="width:100%;border-collapse:collapse;text-align:center;min-width:420px">
+        <thead>
+          <tr style="background:var(--surface)">
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">المشتق</th>
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">نسبته في نواتج التكرير (%)</th>
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">نسبة استخدامه اليومي (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">الغازات البترولية</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">2</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">5</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">البنزين</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">5</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">25</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">النفط</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">10</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">5</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">البرافين</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">13</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">10</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">الديزل</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">20</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">25</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">زيت التشحيم</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">20</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">15</td></tr>
+          <tr><td style="padding:.6rem">القار</td><td style="padding:.6rem">30</td><td style="padding:.6rem">15</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>لذلك طوّرت شركات البترول طرائق تمكّنهم من تحويل الزيوت الثقيلة التي تتكون من جزيئات ضخمة إلى مشتقات خفيفة وأكثر فائدة، مثل الكازولين والمواد الأولية لصناعة البلاستيك.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu" style="overflow-x:auto">
+      <h2 style="margin-bottom:.8rem">📊 جدول 2-7: نواتج تكرير النفط الخام وبعض استعمالاتها</h2>
+      <table style="width:100%;border-collapse:collapse;text-align:center;min-width:520px">
+        <thead>
+          <tr style="background:var(--surface)">
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">المشتق</th>
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">درجة الغليان (°C)</th>
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">حجم الجزيء (عدد ذرات الكاربون)</th>
+            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">الاستخدامات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">غازات بترولية</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">أدنى من 40</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">حتى 4 ذرات كاربون</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">الميثان للطهي، والبيوتان لغاز المخيمات</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">بنزين ونفط</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">40 – 130</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">4 – 12 ذرة كاربون</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">البنزين للسيارات، والنفط وقودًا للمواقد الخفيفة</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">زيت برافين (كيروسين)</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">150 – 200</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">10 – 16 ذرة كاربون</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">البرافين للتسخين، ووقود للطائرات</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">زيت ديزل</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">225 – 300</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">14 – 25 ذرة كاربون</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">وقود لسيارات النقل والسفن</td></tr>
+          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">زيت تشحيم</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">300 – 400</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">20 – 70 ذرة كاربون</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">تشحيم الماكينات والمحركات</td></tr>
+          <tr><td style="padding:.6rem">قار</td><td style="padding:.6rem">أعلى من 400</td><td style="padding:.6rem">راسب</td><td style="padding:.6rem">يُسخَّن القار مع الرمل والحصى ليصبح قطرانًا لرصف الطرق</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== Worked example ===== -->
+  <section class="section fade-up" id="examples" data-navlabel="✍️ مثال محلول">
+    <div class="example fade-up">
+      <div class="example-head"><h2 style="margin:0">📝 مثال (1)</h2></div>
+      <p>حسب جدول (1-7)، تبلغ نسبة الديزل في نواتج التكرير الأولية 20%، بينما تبلغ نسبة استخدامه اليومي 25%. احسب النسبة المئوية للزيادة في الطلب اليومي على الديزل مقارنة بنسبة إنتاجه من عملية التكرير الأولية.</p>
+    </div>
+
+    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
+      <div class="example-head">
+        <h2 style="margin:0">✓ الحل التفصيلي</h2>
+        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
+      </div>
+
+      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
+      <ul class="summary-list" style="margin-bottom:1rem">
+        <li><span>نسبة الديزل في نواتج التكرير الأولية (الإنتاج) = 20% (من جدول 1-7)</span></li>
+        <li><span>نسبة استخدامه اليومي (الطلب) = 25% (من جدول 1-7)</span></li>
+      </ul>
+
+      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
+      <p style="margin:0 0 1rem">النسبة المئوية للزيادة في الطلب اليومي على الديزل مقارنة بنسبة إنتاجه.</p>
+
+      <ol class="steps hidden-steps" id="steps-ex1">
+        <li class="step"><span class="step-dot">1</span><div class="step-body">
+          <p class="calc-note">نحسب مقدار الزيادة المطلقة بين نسبة الاستخدام اليومي ونسبة الإنتاج</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( \text{الزيادة} = 25\% - 20\% \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( \text{الزيادة} = 5\% \)</div>
+          </div>
+        </div></li>
+        <li class="step"><span class="step-dot">2</span><div class="step-body">
+          <p class="calc-note">نحسب النسبة المئوية للزيادة النسبية بالمقارنة مع نسبة الإنتاج الأصلية (20%)</p>
+          <div class="calc-flow">
+            <div class="calc-line">\( \text{النسبة المئوية للزيادة} = \dfrac{5\%}{20\%}\times 100\% \)</div>
+            <div class="calc-arrow">↓</div>
+            <div class="calc-line calc-box">\( \text{النسبة المئوية للزيادة} = 25\% \)</div>
+          </div>
+        </div></li>
+      </ol>
+      <div class="exercise-final">✓ يزيد الطلب اليومي على الديزل بنسبة 25% عن نسبة إنتاجه من عملية التكرير الأولية</div>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="card neu">
+      <p>ولتحويل الزيوت الثقيلة إلى مشتقات خفيفة وأكثر فائدة، تُستعمل عملية تُسمّى التكسير، وتتم فقط بالتسخين (التكسير الحراري)، أو بمساعدة عامل محفز أو مساعد (التكسير المحفز) وهو الأكثر شيوعًا.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
+      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — نوعا عملية التكسير</span>
+      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem">
+        <li><b>التكسير الحراري:</b> يتم فقط بالتسخين، من دون عامل مساعد.</li>
+        <li><b>التكسير المحفز:</b> يتم بمساعدة عامل محفز أو مساعد، وهو الأكثر شيوعًا. ومن العوامل المحفزة مسحوق أوكسيد الألمنيوم \(Al_2O_3\) أو أوكسيد السليكون \(SiO_2\)، إذ توفّر تلك المواد مساحة سطحية ساخنة كبيرة لتسريع عملية التكسير من دون أن تستهلك هي نفسها في العملية.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
+      <span class="def-label" style="color:var(--accent-green)">🔍 تعليل — لماذا تُعدّ عملية التكسير مصدرًا صناعيًا مهمًا للهيدروجين؟</span>
+      <p style="margin:.3rem 0">يُعدّ الألكانات من أكثر المركبات المكوّنة للنفط الخام، لذلك تُستخدم في عملية التكسير الحراري لإنتاج مركبات أخرى؛ فمثلًا الهكسان، وهو ألكان يتكون من ست ذرات كاربون، يتكون عادة عند تكسير هذا الجزيء الضخم المشبع جزيء مشبع أصغر كالبيوتان، وجزيء غير مشبع كالإيثين، ويتكون في كثير من الأحيان غاز الهيدروجين؛ لذلك تُعتبر عملية التكسير مصدرًا صناعيًا مهمًا للهيدروجين، وهو مهم جدًا كوقود عن طريق خلايا الوقود.</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="rule-box">$$ C_6H_{14(l)} \xrightarrow{\Delta} C_4H_{10(g)} + C_2H_4{}_{(g)} $$</div>
+    <div class="card neu" style="text-align:center;margin-top:.5rem">
+      <p style="margin:0;font-weight:700">هكسان ⟶ بيوتان + إيثين (تكسير حراري بالتسخين \(\Delta\))</p>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="callout tip">
+      <span class="icon">💬</span>
+      <span><b>هل تعلم؟</b> أن هناك نوعًا من الأشجار (أشجار يوفوربيا) تحتوي عصارتها على ثلث هيدروكاربونات، ويمكن أن تُستعمل تلك الهيدروكاربونات في إنتاج البنزين والديزل والبلاستيك. سُمّيت هذه الأشجار باسم شجرة السنجاب؛ لأن حيوان السنجاب يبتعد عن عصارتها الزيتية.</span>
+    </div>
+  </section>
+
+  <section class="section fade-up">
+    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
+      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — منتجات مصنّعة من النفط الخام</span>
+      <p style="margin:.3rem 0">يُعدّ النفط الخام مادة خامًا لصناعة عدد كبير من المنتجات، منها:</p>
+      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem;columns:2;column-gap:1.5rem">
+        <li>البلاستيك.</li>
+        <li>مستحضرات التجميل.</li>
+        <li>الوقود.</li>
+        <li>المبيدات.</li>
+        <li>الأدوية.</li>
+        <li>المنظفات.</li>
+        <li>المطاط الصناعي.</li>
+        <li>الدهانات.</li>
+        <li>الغراء.</li>
+        <li>الإطارات.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Self-check quiz ===== -->
+  <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
+    <div class="neu quiz" data-quiz>
+      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
+
+      <div class="quiz-q" data-correct="1">
+        <div class="quiz-q-title"><span>1.</span><span>تتكثف المقتطعات الثقيلة كزيوت التشحيم في برج التكرير عند مستوى:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>أعلى البرج، حيث تكون الحرارة منخفضة جدًا</span></label>
+          <label class="quiz-opt"><input type="radio"><span>أسفل البرج، حيث تكون درجة غليانها أعلى</span></label>
+          <label class="quiz-opt"><input type="radio"><span>منتصف البرج فقط</span></label>
+          <label class="quiz-opt"><input type="radio"><span>خارج البرج تمامًا</span></label>
+        </div>
+        <div class="quiz-explain">تكون درجات غليان المقتطعات الثقيلة كزيوت التشحيم أعلى، فتتكثف عند الارتفاعات الأدنى (الأسخن نسبيًا) في البرج، بينما تصعد المقتطعات الخفيفة إلى أعلى البرج.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="2">
+        <div class="quiz-q-title"><span>2.</span><span>التكسير المحفز هو الأكثر شيوعًا؛ لأنه يستعين بعامل محفز مثل:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>الماء</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الملح</span></label>
+          <label class="quiz-opt"><input type="radio"><span>أوكسيد الألمنيوم أو أوكسيد السليكون</span></label>
+          <label class="quiz-opt"><input type="radio"><span>الكحول</span></label>
+        </div>
+        <div class="quiz-explain">من العوامل المحفزة في التكسير المحفز مسحوق أوكسيد الألمنيوم Al₂O₃ أو أوكسيد السليكون SiO₂.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="0">
+        <div class="quiz-q-title"><span>3.</span><span>عند تكسير الهكسان (C₆H₁₄) حراريًا، ينتج:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>بيوتان وإيثين</span></label>
+          <label class="quiz-opt"><input type="radio"><span>ميثان وأوكسجين</span></label>
+          <label class="quiz-opt"><input type="radio"><span>بروبان وماء</span></label>
+          <label class="quiz-opt"><input type="radio"><span>بنزين ونفط فقط</span></label>
+        </div>
+        <div class="quiz-explain">\( C_6H_{14(l)} \xrightarrow{\Delta} C_4H_{10(g)} + C_2H_4{}_{(g)} \)؛ يتكسّر الهكسان إلى بيوتان وإيثين.</div>
+      </div>
+
+      <div class="quiz-q" data-correct="3">
+        <div class="quiz-q-title"><span>4.</span><span>يُعدّ القار من نواتج التكرير الأكثر فائدة في:</span></div>
+        <div class="quiz-options">
+          <label class="quiz-opt"><input type="radio"><span>وقود الطائرات</span></label>
+          <label class="quiz-opt"><input type="radio"><span>تشحيم المحركات</span></label>
+          <label class="quiz-opt"><input type="radio"><span>غاز المخيمات</span></label>
+          <label class="quiz-opt"><input type="radio"><span>رصف الطرق بعد تسخينه مع الرمل والحصى</span></label>
+        </div>
+        <div class="quiz-explain">يُسخَّن القار مع الرمل والحصى ليصبح قطرانًا يُستعمل لرصف الطرق.</div>
+      </div>
+
+      <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
+      <div class="quiz-score"></div>
+    </div>
+  </section>
+
+  <!-- ===== Summary ===== -->
+  <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
+    <div class="card neu">
+      <h2>📋 ملخص الدرس</h2>
+      <ul class="summary-list">
+        <li><span>يُسخَّن النفط الخام أسفل برج التكرير إلى أعلى من 400°C فيتبخر ويتجزأ إلى مقتطعات تتكثف كل منها عند الارتفاع الموافق لدرجة غليانها.</span></li>
+        <li><span>المقتطعات الثقيلة (زيوت تشحيم وقار) تتكثف أسفل البرج، بينما تصعد المقتطعات الخفيفة (غازات، بنزين) إلى أعلى البرج.</span></li>
+        <li><span>نواتج التكرير الرئيسية: غازات بترولية، بنزين ونفط، برافين (كيروسين)، ديزل، زيت تشحيم، وقار — لكل منها استخداماته الخاصة.</span></li>
+        <li><span>التكسير عملية تحوّل الزيوت الثقيلة إلى مشتقات خفيفة، وتكون حرارية أو محفزة (الأكثر شيوعًا)، وينتج عنها غالبًا غاز الهيدروجين.</span></li>
+        <li><span>النفط الخام مادة خام لصناعة البلاستيك ومستحضرات التجميل والوقود والمبيدات والأدوية والمنظفات والمطاط الصناعي والدهانات والغراء والإطارات.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Mind map ===== -->
+  <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
+    <div class="card neu">
+      <div class="example-head">
+        <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
+        <button class="neu-btn" data-reveal-steps="mindmap-l4" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
+      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l4">
+        <svg viewBox="0 -3 480 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية لنواتج التكرير">
+          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
+            <line x1="240" y1="130" x2="90" y2="45"/>
+            <line x1="240" y1="130" x2="90" y2="215"/>
+            <line x1="240" y1="130" x2="390" y2="45"/>
+            <line x1="240" y1="130" x2="390" y2="215"/>
+          </g>
+          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
+            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">نواتج</text>
+            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">التكرير</text></g>
+          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
+            <text x="90" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">برج التكرير</text></g>
+          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
+            <text x="90" y="219" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">جداول المشتقات</text></g>
+          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
+            <text x="390" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">التكسير</text></g>
+          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
+            <text x="390" y="219" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">منتجات النفط</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <nav class="lesson-nav" data-auto></nav>
+</main>
+
+<footer class="site-footer">الفصل السابع: النفط الخام — الدرس 4: نواتج التكرير</footer>
+
+<script src="../../assets/js/plot.js"></script>
+<script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/site-ch7.js"></script>
+<script>
+(function(){
+  var ns = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("towerSvg");
+  var caption = document.getElementById("towerCaption");
+  var btn = document.getElementById("btnDistill");
+  var raf = null;
+  var running = false;
+
+  /* Tower body x=150..250 (width 100), y=20 (top) .. y=290 (bottom, hottest) */
+  var TOWER_X = 150, TOWER_W = 100, TOWER_TOP = 20, TOWER_BOTTOM = 290;
+
+  var BANDS = [
+    {key:"gas",    yTarget:20,  temp:null,  label:"غازات بترولية",      color:"#3fa9f5", side:"up"},
+    {key:"benzin", yTarget:90,  temp:"100°C", label:"بنزين (نفط)",       color:"#ffd166", side:"right"},
+    {key:"paraf",  yTarget:145, temp:"200°C", label:"برافين (كيروسين)", color:"#f0954a", side:"right"},
+    {key:"diesel", yTarget:200, temp:"300°C", label:"زيت الديزل",        color:"#c9743a", side:"right"},
+    {key:"lube",   yTarget:255, temp:"400°C", label:"زيت تشحيم وقار",    color:"#7a5230", side:"right"}
+  ];
+
+  function el(tag, attrs){
+    var e = document.createElementNS(ns, tag);
+    for(var k in attrs) e.setAttribute(k, attrs[k]);
+    return e;
+  }
+
+  function label(x,y,txt,color,size,weight,anchor){
+    var t = el("text", {x:x, y:y, "text-anchor":anchor||"middle", "font-family":"Cairo,sans-serif", "font-size":size||10, fill:color, "font-weight":weight||"700"});
+    t.textContent = txt;
+    svg.appendChild(t);
+    return t;
+  }
+
+  function drawStatic(){
+    while(svg.firstChild) svg.removeChild(svg.firstChild);
+
+    /* Tower outline */
+    svg.appendChild(el("rect", {x:TOWER_X, y:TOWER_TOP, width:TOWER_W, height:TOWER_BOTTOM-TOWER_TOP, rx:10, fill:"var(--surface)", stroke:"var(--text-secondary)", "stroke-width":2}));
+
+    /* Temperature band lines + labels on the left */
+    BANDS.slice(1).forEach(function(b){
+      var line = el("line", {x1:TOWER_X, y1:b.yTarget+22, x2:TOWER_X+TOWER_W, y2:b.yTarget+22, stroke:"var(--text-faint)", "stroke-width":1, "stroke-dasharray":"3,3"});
+      svg.appendChild(line);
+      label(TOWER_X-12, b.yTarget+18, b.temp, "var(--text-secondary)", 9, "700", "end");
+    });
+
+    /* Furnace + crude input */
+    svg.appendChild(el("rect", {x:TOWER_X+20, y:TOWER_BOTTOM, width:60, height:24, rx:6, fill:"#c0392b"}));
+    label(TOWER_X+50, TOWER_BOTTOM+16, "فرن 500°C", "#fff", 9, "800");
+    var pipe = el("line", {x1:40, y1:TOWER_BOTTOM+12, x2:TOWER_X+20, y2:TOWER_BOTTOM+12, stroke:"var(--text-secondary)", "stroke-width":6});
+    svg.appendChild(pipe);
+    label(40, TOWER_BOTTOM+2, "زيت خام", "var(--text-primary)", 10, "800", "start");
+
+    /* Output arrows + labels for each band */
+    BANDS.forEach(function(b){
+      if(b.side === "up"){
+        var a = el("line", {x1:TOWER_X+TOWER_W/2, y1:TOWER_TOP, x2:TOWER_X+TOWER_W/2, y2:TOWER_TOP-16, stroke:b.color, "stroke-width":3, opacity:0, id:"arrow-"+b.key});
+        svg.appendChild(a);
+        var lab = label(TOWER_X+TOWER_W/2, TOWER_TOP-22, b.label, b.color, 10, "800");
+        lab.setAttribute("id", "lbl-"+b.key); lab.setAttribute("opacity", 0);
+      } else {
+        var a2 = el("line", {x1:TOWER_X+TOWER_W, y1:b.yTarget+10, x2:TOWER_X+TOWER_W+28, y2:b.yTarget+10, stroke:b.color, "stroke-width":3, opacity:0, id:"arrow-"+b.key});
+        svg.appendChild(a2);
+        var lab2 = label(TOWER_X+TOWER_W+34, b.yTarget+14, b.label, b.color, 10, "800", "start");
+        lab2.setAttribute("id", "lbl-"+b.key); lab2.setAttribute("opacity", 0);
+      }
+    });
+  }
+
+  function resetOutputs(){
+    BANDS.forEach(function(b){
+      var a = document.getElementById("arrow-"+b.key);
+      var l = document.getElementById("lbl-"+b.key);
+      if(a) a.setAttribute("opacity", 0);
+      if(l) l.setAttribute("opacity", 0);
+    });
+  }
+
+  function runDistillation(){
+    if(running) return;
+    running = true;
+    resetOutputs();
+    caption.textContent = "يُسخَّن النفط الخام في الفرن، وتصعد الأبخرة داخل البرج...";
+
+    var dots = BANDS.map(function(b){
+      var d = el("circle", {cx:TOWER_X+TOWER_W/2, cy:TOWER_BOTTOM+10, r:5, fill:b.color});
+      svg.appendChild(d);
+      return {el:d, band:b, done:false};
+    });
+
+    var t0 = null;
+    var totalDuration = 3200;
+
+    function step(ts){
+      if(!t0) t0 = ts;
+      var elapsed = ts - t0;
+      var allDone = true;
+      dots.forEach(function(item){
+        if(item.done) return;
+        allDone = false;
+        var startY = TOWER_BOTTOM+10;
+        var distance = startY - item.band.yTarget;
+        var duration = 900 + (TOWER_BOTTOM - item.band.yTarget) * 6;
+        var p = Math.min(elapsed / duration, 1);
+        var y = startY - distance * p;
+        item.el.setAttribute("cy", y);
+        if(p >= 1){
+          item.done = true;
+          item.el.setAttribute("opacity", 0);
+          var a = document.getElementById("arrow-"+item.band.key);
+          var l = document.getElementById("lbl-"+item.band.key);
+          if(a) a.setAttribute("opacity", 1);
+          if(l) l.setAttribute("opacity", 1);
+          caption.textContent = "تكثّف مقطع " + item.band.label + (item.band.temp ? (" عند " + item.band.temp) : " في أعلى البرج");
+        }
+      });
+      if(!allDone){
+        raf = requestAnimationFrame(step);
+      } else {
+        running = false;
+        caption.textContent = "اكتمل التقطير التجزيئي — تكثّفت جميع المقتطعات كل عند درجة غليانها.";
+      }
+    }
+    raf = requestAnimationFrame(step);
+  }
+
+  btn.addEventListener("click", runDistillation);
+
+  drawStatic();
+  caption.textContent = "اضغط \"ابدأ التقطير\" لمشاهدة صعود الأبخرة وتكثّف كل مقطع عند ارتفاعه الموافق.";
+})();
+</script>
+</body>
+</html>

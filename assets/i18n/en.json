@@ -120,5 +120,13 @@
     "lesson8NavTitle": "8) Plasma",
     "lesson9NavTitle": "9) Applications of Plasma",
     "lesson10NavTitle": "10) Chapter 6 Questions"
+  },
+  "ch7": {
+    "sidebarSubtitle": "Crude Oil",
+    "lesson1NavTitle": "1) Types of Crude Oil by World Classification",
+    "lesson2NavTitle": "2) Chemical Composition of Crude Oil",
+    "lesson3NavTitle": "3) Extraction of Crude Oil",
+    "lesson4NavTitle": "4) Refining Products",
+    "lesson5NavTitle": "5) Chapter 7 Questions"
   }
 }

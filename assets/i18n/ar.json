@@ -120,5 +120,13 @@
     "lesson8NavTitle": "8) البلازما",
     "lesson9NavTitle": "9) بعض تطبيقات البلازما",
     "lesson10NavTitle": "10) أسئلة الفصل السادس"
+  },
+  "ch7": {
+    "sidebarSubtitle": "النفط الخام",
+    "lesson1NavTitle": "1) أنواع النفط الخام حسب التصنيف العالمي",
+    "lesson2NavTitle": "2) التركيب الكيميائي للنفط الخام",
+    "lesson3NavTitle": "3) إستخراج النفط الخام",
+    "lesson4NavTitle": "4) نواتج التكرير",
+    "lesson5NavTitle": "5) أسئلة الفصل السابع"
   }
 }

@@ -1,6 +1,6 @@
 /* Chapter 7 — behavior script instantiated from
-   templates/chapter-behavior-template.js. No lessons published yet:
-   LESSONS holds only the chapter-home entry until lesson pages are added. */
+   templates/chapter-behavior-template.js. Covers PDF pages 102-109
+   (Part 2 — Chemistry, Chapter 7: النفط الخام / Crude Oil). */
 (function(){
   "use strict";
 
@@ -8,13 +8,16 @@
     storageKeyPrefix: "ch7",
     chapterNumber: 7,
     brandBadge: "7",
-    sidebarSubtitleKey: "common.readyToBuild",
+    sidebarSubtitleKey: "ch7.sidebarSubtitle",
     lessons: [
-      { href: "index.html", titleKey: "common.chapterHome", root: true }
-      // { href: "lessons/lesson-1.html", titleKey: "lessons.ch7.lesson1.navTitle" },
-      // ... add one entry per lesson, in order, once lessons exist
+      { href: "index.html", titleKey: "common.chapterHome", root: true },
+      { href: "lessons/lesson-1.html", titleKey: "ch7.lesson1NavTitle" },
+      { href: "lessons/lesson-2.html", titleKey: "ch7.lesson2NavTitle" },
+      { href: "lessons/lesson-3.html", titleKey: "ch7.lesson3NavTitle" },
+      { href: "lessons/lesson-4.html", titleKey: "ch7.lesson4NavTitle" },
+      { href: "lessons/lesson-5.html", titleKey: "ch7.lesson5NavTitle" }
     ],
-    bgSymbols: ["•", "∘", "×", "+", "–", "="]
+    bgSymbols: ["🛢️", "⛽", "C", "H", "Δ", "°C"]
   };
   // ---------------------------------------------------------------------------
 
