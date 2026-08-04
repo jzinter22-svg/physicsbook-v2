@@ -128,5 +128,17 @@
     "lesson3NavTitle": "3) إستخراج النفط الخام",
     "lesson4NavTitle": "4) نواتج التكرير",
     "lesson5NavTitle": "5) أسئلة الفصل السابع"
+  },
+  "ch8": {
+    "sidebarSubtitle": "الفلزات والسبائك",
+    "lesson1NavTitle": "1) الفلزات",
+    "lesson2NavTitle": "2) الطرائق والأجهزة المستعملة في استخلاص الفلزات",
+    "lesson3NavTitle": "3) الطرائق والأجهزة المستعملة في تنقية الفلزات",
+    "lesson4NavTitle": "4) السبائك",
+    "lesson5NavTitle": "5) أنواع السبائك",
+    "lesson6NavTitle": "6) طرائق صنع السبائك",
+    "lesson7NavTitle": "7) استعمالات السبائك",
+    "lesson8NavTitle": "8) بعض أنواع السبائك المستعملة في البيئة العراقية",
+    "lesson9NavTitle": "9) أسئلة الفصل الثامن"
   }
 }

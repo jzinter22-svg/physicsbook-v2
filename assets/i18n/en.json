@@ -128,5 +128,17 @@
     "lesson3NavTitle": "3) Extraction of Crude Oil",
     "lesson4NavTitle": "4) Refining Products",
     "lesson5NavTitle": "5) Chapter 7 Questions"
+  },
+  "ch8": {
+    "sidebarSubtitle": "Metals and Alloys",
+    "lesson1NavTitle": "1) Metals",
+    "lesson2NavTitle": "2) Methods and Devices Used in Extracting Metals",
+    "lesson3NavTitle": "3) Methods and Devices Used in Purifying Metals",
+    "lesson4NavTitle": "4) Alloys",
+    "lesson5NavTitle": "5) Types of Alloys",
+    "lesson6NavTitle": "6) Methods of Making Alloys",
+    "lesson7NavTitle": "7) Uses of Alloys",
+    "lesson8NavTitle": "8) Some Alloys Used in the Iraqi Environment",
+    "lesson9NavTitle": "9) Chapter 8 Questions"
   }
 }

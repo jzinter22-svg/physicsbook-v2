@@ -1,6 +1,6 @@
 /* Chapter 8 — behavior script instantiated from
-   templates/chapter-behavior-template.js. No lessons published yet:
-   LESSONS holds only the chapter-home entry until lesson pages are added. */
+   templates/chapter-behavior-template.js. Covers PDF pages 110-120
+   (Part 2 — Chemistry, Chapter 8: الفلزات والسبائك / Metals and Alloys). */
 (function(){
   "use strict";
 
@@ -8,13 +8,20 @@
     storageKeyPrefix: "ch8",
     chapterNumber: 8,
     brandBadge: "8",
-    sidebarSubtitleKey: "common.readyToBuild",
+    sidebarSubtitleKey: "ch8.sidebarSubtitle",
     lessons: [
-      { href: "index.html", titleKey: "common.chapterHome", root: true }
-      // { href: "lessons/lesson-1.html", titleKey: "lessons.ch8.lesson1.navTitle" },
-      // ... add one entry per lesson, in order, once lessons exist
+      { href: "index.html", titleKey: "common.chapterHome", root: true },
+      { href: "lessons/lesson-1.html", titleKey: "ch8.lesson1NavTitle" },
+      { href: "lessons/lesson-2.html", titleKey: "ch8.lesson2NavTitle" },
+      { href: "lessons/lesson-3.html", titleKey: "ch8.lesson3NavTitle" },
+      { href: "lessons/lesson-4.html", titleKey: "ch8.lesson4NavTitle" },
+      { href: "lessons/lesson-5.html", titleKey: "ch8.lesson5NavTitle" },
+      { href: "lessons/lesson-6.html", titleKey: "ch8.lesson6NavTitle" },
+      { href: "lessons/lesson-7.html", titleKey: "ch8.lesson7NavTitle" },
+      { href: "lessons/lesson-8.html", titleKey: "ch8.lesson8NavTitle" },
+      { href: "lessons/lesson-9.html", titleKey: "ch8.lesson9NavTitle" }
     ],
-    bgSymbols: ["•", "∘", "×", "+", "–", "="]
+    bgSymbols: ["Fe", "Cu", "Al", "⚙", "⚗", "🔩"]
   };
   // ---------------------------------------------------------------------------
 
