@@ -6,6 +6,69 @@
 <title>الدرس 1: أنواع النفط الخام حسب التصنيف العالمي — الفصل السابع</title>
 <meta name="description" content="1-7 أنواع النفط الخام حسب التصنيف العالمي: تصنيف النفط حسب الكثافة (خفيف/ثقيل) وحسب نسبة الكبريت (حلو/مر)، وانتشار مصادر النفط في العالم.">
 <link rel="stylesheet" href="../../assets/css/theme.css">
+<style>
+  /* ===== Scoped styles for the "Global crude oil sources" interactive map (lesson 1 only) ===== */
+  .worldmap-legend{display:flex;flex-wrap:wrap;gap:.9rem 1.4rem;margin:.8rem 0 0;padding:.7rem 1rem;
+    background:var(--surface);border-radius:var(--radius-sm);
+    box-shadow:inset 3px 3px 7px var(--shadow-dark), inset -3px -3px 7px var(--shadow-light)}
+  .worldmap-legend .legend-item{display:flex;align-items:center;gap:.45rem;font-size:.82rem;color:var(--text-secondary);font-weight:600}
+  .worldmap-legend .legend-dot{width:12px;height:12px;border-radius:50%;background:var(--accent-green);flex:0 0 auto;box-shadow:0 0 0 2px #fff, 0 1px 3px rgba(0,0,0,.25)}
+  .worldmap-legend .legend-size{display:inline-flex;align-items:center;gap:.25rem;flex:0 0 auto}
+  .worldmap-legend .legend-size span{border-radius:50%;background:var(--accent-blue);box-shadow:0 0 0 2px #fff}
+  .worldmap-legend .legend-size span:first-child{width:7px;height:7px}
+  .worldmap-legend .legend-size span:last-child{width:15px;height:15px}
+
+  .worldmap-stage{position:relative;border-radius:var(--radius-md);overflow:hidden;margin-top:.9rem;
+    background:linear-gradient(160deg,rgba(63,169,245,.10),rgba(47,209,143,.06));padding:.4rem}
+  .worldmap-stage svg{display:block;margin:0 auto;width:100%;max-width:760px;height:auto}
+  #mapZoomGroup{transform-origin:0 0;transform-box:fill-box;transition:transform .85s cubic-bezier(.22,.61,.36,1)}
+  .worldmap-ocean{fill:url(#oceanGrad)}
+  .worldmap-graticule{stroke:var(--text-faint);stroke-width:.6;opacity:.22;fill:none}
+  .worldmap-land{fill:var(--surface);stroke:var(--shadow-dark);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+
+  .worldmap-hit{fill:transparent}
+  .worldmap-marker-group{cursor:pointer}
+  .worldmap-marker-group:focus{outline:none}
+  .worldmap-marker-group:focus-visible .worldmap-marker{stroke:var(--text-primary);stroke-width:3}
+  .worldmap-marker{r:var(--r,9);stroke:#fff;stroke-width:2;transition:r .25s ease,filter .25s ease}
+  .worldmap-marker-group:hover .worldmap-marker,
+  .worldmap-marker-group:focus-visible .worldmap-marker{r:calc(var(--r,9) * 1.3);filter:brightness(1.12)}
+  .worldmap-marker-halo{r:calc(var(--r,9) * 1.7);opacity:0;pointer-events:none;transform-origin:center;transform-box:fill-box}
+  .worldmap-marker-halo.active{animation:mapPulse 1.7s ease-out infinite}
+  .worldmap-label{font-family:Cairo,sans-serif;font-weight:800;pointer-events:none;paint-order:stroke;stroke:var(--surface);stroke-width:3.5px;stroke-linejoin:round}
+  @keyframes mapPulse{
+    0%{opacity:.5;transform:scale(.6)}
+    75%{opacity:0;transform:scale(1.9)}
+    100%{opacity:0;transform:scale(1.9)}
+  }
+
+  .worldmap-card-info{position:absolute;top:.9rem;inset-inline-start:.9rem;width:min(300px,72%);
+    background:rgba(255,255,255,.6);backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);
+    border:1px solid rgba(255,255,255,.55);border-radius:var(--radius-md);
+    box-shadow:0 12px 32px rgba(20,30,60,.2);padding:.95rem 1.1rem;
+    opacity:0;pointer-events:none;transform:translateY(-10px) scale(.96);transition:opacity .4s ease,transform .4s ease}
+  .worldmap-card-info.visible{opacity:1;pointer-events:auto;transform:translateY(0) scale(1)}
+  :root[data-theme="dark"] .worldmap-card-info{background:rgba(28,33,46,.62);border-color:rgba(255,255,255,.1)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .worldmap-card-info{background:rgba(28,33,46,.62);border-color:rgba(255,255,255,.1)}}
+  .info-card-head{display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem}
+  .info-card-dot{width:14px;height:14px;border-radius:50%;flex:0 0 auto;box-shadow:0 0 0 2px #fff}
+  .info-card-head h3{margin:0;font-size:1rem;color:var(--text-primary)}
+  .worldmap-card-info p{margin:.4rem 0;font-size:.85rem;line-height:1.6;color:var(--text-secondary)}
+  .worldmap-card-info p b{color:var(--text-primary)}
+  .info-card-note{font-style:italic;font-size:.8rem !important}
+
+  @media (max-width:760px){
+    .worldmap-card-info{position:static;width:auto;margin-top:.8rem;transform:none;opacity:1;
+      transition:box-shadow .3s ease}
+    .worldmap-card-info:not(.visible){display:none}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    #mapZoomGroup{transition:none}
+    .worldmap-marker-halo.active{animation:none;opacity:.4}
+    .worldmap-card-info{transition:none}
+  }
+</style>
 <script>
   MathJax = {
     tex: { inlineMath: [['\\(','\\)'],['$','$']], displayMath: [['\\[','\\]'],['$$','$$']] },
@@ -68,22 +131,69 @@
     </div>
   </section>
 
-  <!-- ===== Interactive widget ===== -->
+  <!-- ===== Interactive widget: realistic world map ===== -->
   <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
     <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: مصادر النفط الخام في العالم</h2>
-      <p>اضغط على أي منطقة من مناطق العالم لمعرفة موقعها من حيث تواجد النفط الخام.</p>
-      <div class="io-panel">
-        <div class="io-row" role="group" aria-label="اختيار منطقة">
-          <button class="neu-btn primary" data-region="gulf" id="btnGulf">الخليج العربي</button>
-          <button class="neu-btn" data-region="mideast" id="btnMideast">الشرق الأوسط</button>
-          <button class="neu-btn" data-region="nigeria" id="btnNigeria">نيجيريا</button>
-          <button class="neu-btn" data-region="russia" id="btnRussia">روسيا وآسيا</button>
-          <button class="neu-btn" data-region="venezuela" id="btnVenezuela">فنزويلا</button>
-          <button class="neu-btn" data-region="arctic" id="btnArctic">القطب الشمالي</button>
+      <h2>🕹️ محاكاة تفاعلية: أهم مناطق إنتاج النفط الخام في العالم</h2>
+      <p>اضغط زر أي منطقة أدناه لتُكبِّر الخريطة وتُبرز موقعها الجغرافي الحقيقي، مع بطاقة معلومات عن أهميتها في إنتاج النفط الخام.</p>
+
+      <div class="io-row" role="group" aria-label="اختيار منطقة على الخريطة">
+        <button class="neu-btn" data-region="gulf" id="btnGulf" aria-pressed="false">الخليج العربي</button>
+        <button class="neu-btn" data-region="mideast" id="btnMideast" aria-pressed="false">الشرق الأوسط</button>
+        <button class="neu-btn" data-region="russia" id="btnRussia" aria-pressed="false">روسيا وآسيا الوسطى</button>
+        <button class="neu-btn" data-region="nigeria" id="btnNigeria" aria-pressed="false">نيجيريا</button>
+        <button class="neu-btn" data-region="venezuela" id="btnVenezuela" aria-pressed="false">فنزويلا</button>
+        <button class="neu-btn" data-region="arctic" id="btnArctic" aria-pressed="false">المنطقة القطبية الشمالية</button>
+        <button class="neu-btn" data-region="" id="btnReset" title="عرض الخريطة كاملة">🌍 الخريطة كاملة</button>
+      </div>
+
+      <div class="worldmap-stage">
+        <svg id="worldMapSvg" viewBox="0 -18 1000 536" role="img" aria-label="خريطة تفاعلية لأهم مناطق إنتاج النفط الخام في العالم">
+          <defs>
+            <linearGradient id="oceanGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#bfe1fb"/>
+              <stop offset="1" stop-color="#a9d6f7"/>
+            </linearGradient>
+          </defs>
+          <rect class="worldmap-ocean" x="1" y="-17" width="998" height="534" rx="26"/>
+          <g class="worldmap-graticule" aria-hidden="true">
+            <line x1="0" y1="125" x2="1000" y2="125"/>
+            <line x1="0" y1="250" x2="1000" y2="250"/>
+            <line x1="0" y1="375" x2="1000" y2="375"/>
+            <line x1="167" y1="-18" x2="167" y2="518"/>
+            <line x1="333" y1="-18" x2="333" y2="518"/>
+            <line x1="500" y1="-18" x2="500" y2="518"/>
+            <line x1="667" y1="-18" x2="667" y2="518"/>
+            <line x1="833" y1="-18" x2="833" y2="518"/>
+          </g>
+          <g id="mapZoomGroup">
+            <g class="worldmap-landmasses">
+              <path class="worldmap-land" d="M56,56 L236,56 L292,61 L347,111 L278,181 L231,200 L208,194 L153,153 L69,83 Z"/>
+              <path class="worldmap-land" d="M278,222 L333,222 L403,264 L389,314 L339,347 L311,403 L292,292 L278,250 Z"/>
+              <path class="worldmap-land" d="M452,153 L528,147 L589,164 L619,217 L611,253 L597,319 L556,347 L533,300 L525,239 L472,233 L453,192 Z"/>
+              <path class="worldmap-land" d="M475,131 L486,114 L528,100 L583,83 L667,61 L778,47 L889,47 L972,81 L889,125 L839,164 L792,222 L764,208 L714,228 L689,183 L656,178 L642,217 L619,217 L597,167 L597,147 L578,136 L542,144 Z"/>
+              <path class="worldmap-land" d="M814,311 L861,283 L903,297 L925,328 L903,356 L819,344 Z"/>
+            </g>
+            <g id="mapMarkers"></g>
+          </g>
+        </svg>
+
+        <div class="worldmap-card-info" id="worldInfoCard" aria-live="polite">
+          <div class="info-card-head">
+            <span class="info-card-dot" id="infoDot" style="background:var(--accent-blue)"></span>
+            <h3 id="infoName">اختر منطقة من الأزرار أعلاه</h3>
+          </div>
+          <p id="infoImportance">ستظهر هنا معلومات عن أهمية المنطقة المختارة في إنتاج النفط الخام عالميًا.</p>
+          <p><b>أبرز الدول المنتجة:</b> <span id="infoCountries">—</span></p>
+          <p><b>نسبة الاحتياطي العالمي التقريبية:</b> <span id="infoShare">—</span></p>
+          <p class="info-card-note" id="infoNote">💡 خريطة تعليمية مبسّطة مبنية على المواقع الجغرافية الحقيقية.</p>
         </div>
-        <div class="mindmap-wrap"><svg id="worldSvg" viewBox="0 0 460 240" role="img" aria-label="خريطة توضيحية لمصادر النفط الخام في العالم"></svg></div>
-        <p id="worldCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
+      </div>
+
+      <div class="worldmap-legend">
+        <span class="legend-item"><span class="legend-dot"></span> نقطة ملوّنة = منطقة رئيسية لإنتاج النفط الخام</span>
+        <span class="legend-item"><span class="legend-size"><span></span><span></span></span> حجم النقطة يعبّر عن الأهمية النسبية للمنطقة</span>
+        <span class="legend-item">🗺️ خريطة تعليمية مبسّطة مبنية على مواقع جغرافية حقيقية، وليست رسمًا دقيقًا للحدود السياسية</span>
       </div>
     </div>
   </section>
@@ -230,69 +340,184 @@
 <script src="../../assets/js/site-ch7.js"></script>
 <script>
 (function(){
+  "use strict";
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("worldSvg");
-  var caption = document.getElementById("worldCaption");
+  var svg = document.getElementById("worldMapSvg");
+  var zoomGroup = document.getElementById("mapZoomGroup");
+  var markersGroup = document.getElementById("mapMarkers");
   var buttons = document.querySelectorAll("[data-region]");
+  var infoCard = document.getElementById("worldInfoCard");
+  var infoDot = document.getElementById("infoDot");
+  var infoName = document.getElementById("infoName");
+  var infoImportance = document.getElementById("infoImportance");
+  var infoCountries = document.getElementById("infoCountries");
+  var infoShare = document.getElementById("infoShare");
+  var infoNote = document.getElementById("infoNote");
 
+  /* Marker coordinates are plotted from real longitude/latitude on an
+     equirectangular projection (viewBox 1000x500, so x = 500 + lon*2.778,
+     y = 250 - lat*2.778) — the same projection used to trace the continent
+     paths above — so every marker sits on its true geographic location
+     rather than an abstract placeholder box. */
   var REGIONS = {
-    gulf:      {cx:305, cy:150, label:"الخليج العربي",  color:"#2fd18f", text:"الخليج العربي من أهم مناطق العالم تواجدًا للنفط الخام، وترتفع فيه نسبة الأنواع الخفيفة المطلوبة عالميًا."},
-    mideast:   {cx:235, cy:75,  label:"الشرق الأوسط",   color:"#3fa9f5", text:"يوجد النفط الخام في أماكن متعددة من الشرق الأوسط، وهي من أهم مناطق إنتاج النفط في العالم."},
-    nigeria:   {cx:205, cy:165, label:"نيجيريا",        color:"#ffab5e", text:"تحوي نيجيريا في أفريقيا مخزونًا مهمًا من النفط الخام."},
-    russia:    {cx:335, cy:55,  label:"روسيا وآسيا",     color:"#7c6fee", text:"يمتد وجود النفط الخام من روسيا في آسيا إلى مناطق أخرى من القارة."},
-    venezuela: {cx:120, cy:150, label:"فنزويلا",         color:"#ff6b9d", text:"تحوي فنزويلا في أمريكا الجنوبية مخزونًا كبيرًا من النفط الخام."},
-    arctic:    {cx:270, cy:32,  label:"القطب الشمالي",   color:"#22c1c3", text:"حتى القطب الشمالي يحوي مخزونًا من البترول، وقد أصبح البحث عنه يتم في أماكن نائية جدًا مثل الثلوج القطبية."}
+    gulf: {
+      cx:639, cy:178, r:11, color:"#2fd18f",
+      name:"الخليج العربي",
+      importance:"يضمّ الخليج العربي أكبر تجمّع لحقول النفط الخام سهلة الاستخراج في العالم، وتُطل عليه أبرز الدول المصدِّرة للنفط.",
+      countries:"السعودية، العراق، الكويت، الإمارات العربية المتحدة، قطر، إيران",
+      share:"أكثر من 30% من الاحتياطي العالمي المؤكد تقريبًا",
+      note:"💡 يُعدّ مضيق هرمز عند مدخل الخليج ممرًا مائيًا حيويًا يمر عبره جزء كبير من صادرات النفط العالمية."
+    },
+    mideast: {
+      cx:617, cy:172, r:14, color:"#3fa9f5",
+      name:"الشرق الأوسط",
+      importance:"أكبر منطقة إنتاجية للنفط الخام في العالم؛ إذ تتركّز فيه احتياطيات ضخمة يسهل الوصول إليها بكلفة استخراج منخفضة نسبيًا.",
+      countries:"السعودية، العراق، إيران، الكويت، الإمارات، عُمان",
+      share:"نحو 48% من الاحتياطي العالمي المؤكد تقريبًا",
+      note:"💡 قرب كثير من حقول المنطقة من سطح الأرض يجعل تكلفة استخراج النفط منها من الأقل عالميًا."
+    },
+    russia: {
+      cx:667, cy:97, r:10, color:"#7c6fee",
+      name:"روسيا وآسيا الوسطى",
+      importance:"تمتلك روسيا احتياطيات ضخمة من النفط والغاز الطبيعي، وتُعدّ من أكبر الدول المصدِّرة للطاقة في العالم.",
+      countries:"روسيا الاتحادية، كازاخستان، أذربيجان، تركمانستان",
+      share:"نحو 6% من الاحتياطي العالمي المؤكد للنفط تقريبًا (لروسيا وحدها)",
+      note:"💡 تتركّز أهم الحقول الروسية في سيبيريا الغربية وعلى امتداد بحر قزوين."
+    },
+    nigeria: {
+      cx:522, cy:225, r:7, color:"#ffab5e",
+      name:"نيجيريا",
+      importance:"أكبر منتج للنفط الخام في قارة أفريقيا، ويتركّز إنتاجها في دلتا نهر النيجر وسواحل خليج غينيا.",
+      countries:"نيجيريا (إلى جانب دول أفريقية منتجة أخرى مثل أنغولا والجزائر وليبيا)",
+      share:"نحو 2% من الاحتياطي العالمي المؤكد تقريبًا",
+      note:"💡 يُستخرج جزء كبير من نفط نيجيريا من حقول بحرية قبالة سواحلها."
+    },
+    venezuela: {
+      cx:317, cy:228, r:12, color:"#ff6b9d",
+      name:"فنزويلا",
+      importance:"تمتلك فنزويلا أكبر احتياطي مؤكد من النفط الخام في العالم، ويتركّز معظمه في حزام أورينوكو.",
+      countries:"فنزويلا، إحدى الدول المؤسِّسة لمنظمة أوبك",
+      share:"نحو 18% من الاحتياطي العالمي المؤكد تقريبًا (الأعلى عالميًا)",
+      note:"💡 جزء كبير من نفط فنزويلا نفط ثقيل، ما يتطلب تقنيات خاصة لاستخراجه وتكريره."
+    },
+    arctic: {
+      cx:500, cy:33, r:9, color:"#22c1c3",
+      name:"المنطقة القطبية الشمالية",
+      importance:"تشير الدراسات الجيولوجية إلى احتمال وجود كميات كبيرة من النفط والغاز غير المكتشفة أسفل قاع المحيط المتجمد الشمالي.",
+      countries:"مناطق تابعة لروسيا وكندا والولايات المتحدة (ألاسكا) والنرويج",
+      share:"يُقدَّر أن نحو 13% من موارد النفط غير المكتشفة عالميًا قد توجد هنا (تقدير جيولوجي وليس احتياطيًا مؤكدًا)",
+      note:"💡 يجعل الجليد وصعوبة الوصول تكلفة استخراج النفط من القطب الشمالي مرتفعة جدًا مقارنة بغيره من المناطق."
+    }
   };
 
-  function label(x,y,txt,color,size,weight){
-    var t = document.createElementNS(ns,"text");
-    t.setAttribute("x",x); t.setAttribute("y",y);
-    t.setAttribute("text-anchor","middle");
-    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||10); t.setAttribute("fill",color);
-    t.setAttribute("font-weight",weight||"700");
-    t.textContent = txt;
-    svg.appendChild(t);
+  var VIEW_CX = 500, VIEW_CY = 250, ZOOM_SCALE = 2.5;
+
+  function el(tag, attrs){
+    var e = document.createElementNS(ns, tag);
+    for(var k in attrs) e.setAttribute(k, attrs[k]);
+    return e;
   }
 
-  function drawWorld(){
-    var blobs = [
-      {x:40,  y:60,  w:150, h:110}, /* Americas */
-      {x:210, y:30,  w:150, h:70},  /* Europe/Russia */
-      {x:200, y:95,  w:170, h:110}, /* Africa/Middle East/Asia */
-      {x:370, y:80,  w:70,  h:70}   /* Asia east */
-    ];
-    blobs.forEach(function(b){
-      var r = document.createElementNS(ns,"rect");
-      r.setAttribute("x",b.x); r.setAttribute("y",b.y); r.setAttribute("width",b.w); r.setAttribute("height",b.h);
-      r.setAttribute("rx",22); r.setAttribute("fill","var(--surface)"); r.setAttribute("stroke","var(--text-faint)"); r.setAttribute("stroke-width","1.5");
-      svg.appendChild(r);
-    });
-  }
-
-  function draw(active){
-    while(svg.firstChild) svg.removeChild(svg.firstChild);
-    drawWorld();
+  function buildMarkers(){
     Object.keys(REGIONS).forEach(function(key){
       var r = REGIONS[key];
-      var isActive = key === active;
-      var c = document.createElementNS(ns,"circle");
-      c.setAttribute("cx",r.cx); c.setAttribute("cy",r.cy); c.setAttribute("r", isActive ? 15 : 9);
-      c.setAttribute("fill", r.color);
-      c.setAttribute("stroke","#fff"); c.setAttribute("stroke-width", isActive ? 3 : 1.5);
-      svg.appendChild(c);
-      var offset = isActive ? 20 : 13;
-      var ly = Math.max(r.cy - offset, 16);
-      label(r.cx, ly, r.label, r.color, isActive ? 11 : 9, isActive ? "800" : "700");
+      var g = el("g", {
+        "class":"worldmap-marker-group",
+        "data-region":key,
+        "tabindex":"0",
+        "role":"button",
+        "aria-label":r.name + " — اضغط لعرض معلومات المنطقة على الخريطة"
+      });
+      var hit = el("circle", {cx:r.cx, cy:r.cy, r:22, "class":"worldmap-hit"});
+      var halo = el("circle", {cx:r.cx, cy:r.cy, fill:r.color, "class":"worldmap-marker-halo", id:"halo-"+key});
+      halo.style.setProperty("--r", r.r);
+      var dot = el("circle", {cx:r.cx, cy:r.cy, r:r.r, fill:r.color, "class":"worldmap-marker", id:"dot-"+key});
+      dot.style.setProperty("--r", r.r);
+      /* Gulf sits geographically right next to the Middle East marker, so its
+         label is dropped below the dot instead of above to keep the two
+         labels from colliding. */
+      var labelY = key === "gulf" ? r.cy + r.r + 15 : r.cy - r.r - 8;
+      var lbl = el("text", {
+        x:r.cx, y:labelY, "text-anchor":"middle",
+        "class":"worldmap-label", fill:r.color, "font-size":13
+      });
+      lbl.textContent = r.name;
+
+      g.appendChild(hit);
+      g.appendChild(halo);
+      g.appendChild(dot);
+      g.appendChild(lbl);
+      markersGroup.appendChild(g);
+
+      g.addEventListener("click", function(){ selectRegion(key); });
+      g.addEventListener("keydown", function(ev){
+        if(ev.key === "Enter" || ev.key === " " || ev.key === "Spacebar"){
+          ev.preventDefault();
+          selectRegion(key);
+        }
+      });
     });
-    caption.textContent = REGIONS[active].text;
-    buttons.forEach(function(b){ b.classList.toggle("primary", b.getAttribute("data-region") === active); });
+  }
+
+  function applyZoom(key){
+    if(!key){
+      zoomGroup.style.transform = "translate(0px,0px) scale(1)";
+      return;
+    }
+    var r = REGIONS[key];
+    var s = ZOOM_SCALE;
+    var tx = VIEW_CX - r.cx * s;
+    var ty = VIEW_CY - r.cy * s;
+    zoomGroup.style.transform = "translate(" + tx + "px," + ty + "px) scale(" + s + ")";
+  }
+
+  function updateInfoCard(key){
+    if(!key){
+      infoDot.style.background = "var(--accent-blue)";
+      infoName.textContent = "اختر منطقة من الأزرار أعلاه";
+      infoImportance.textContent = "ستظهر هنا معلومات عن أهمية المنطقة المختارة في إنتاج النفط الخام عالميًا.";
+      infoCountries.textContent = "—";
+      infoShare.textContent = "—";
+      infoNote.textContent = "💡 خريطة تعليمية مبسّطة مبنية على المواقع الجغرافية الحقيقية.";
+      infoCard.classList.remove("visible");
+      return;
+    }
+    var r = REGIONS[key];
+    infoDot.style.background = r.color;
+    infoName.textContent = r.name;
+    infoImportance.textContent = r.importance;
+    infoCountries.textContent = r.countries;
+    infoShare.textContent = r.share;
+    infoNote.textContent = r.note;
+    infoCard.classList.add("visible");
+  }
+
+  function selectRegion(key){
+    applyZoom(key);
+    updateInfoCard(key);
+
+    document.querySelectorAll(".worldmap-marker-halo").forEach(function(h){ h.classList.remove("active"); });
+    if(key){
+      var halo = document.getElementById("halo-" + key);
+      if(halo) halo.classList.add("active");
+    }
+
+    buttons.forEach(function(b){
+      var isActive = b.getAttribute("data-region") === key && key !== "";
+      b.classList.toggle("primary", isActive);
+      b.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
   }
 
   buttons.forEach(function(b){
-    b.addEventListener("click", function(){ draw(b.getAttribute("data-region")); });
+    b.addEventListener("click", function(){
+      var region = b.getAttribute("data-region");
+      selectRegion(region || null);
+    });
   });
 
-  draw("gulf");
+  buildMarkers();
+  selectRegion(null);
 })();
 </script>
 </body>
