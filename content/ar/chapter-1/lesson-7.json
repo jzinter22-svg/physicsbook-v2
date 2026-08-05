@@ -138,7 +138,7 @@
       "type": "callout",
       "icon": "💡",
       "strong": "هل تعلم؟",
-      "html": "<b>هل تعلم؟</b> تُصنع عجلة الدرّاجة واغلب كتلتها في أطارها لجعل عزم قصورها الذاتي كبيرًا وذلك للحفاظ على اتزانها أثناء الحركة.",
+      "html": "تُصنع عجلة الدرّاجة واغلب كتلتها في أطارها لجعل عزم قصورها الذاتي كبيرًا وذلك للحفاظ على اتزانها أثناء الحركة.",
       "sectionGroup": 13,
       "sectionId": null,
       "sectionNavLabel": null
@@ -182,7 +182,7 @@
       "type": "callout",
       "icon": "🤔",
       "strong": "فكر:",
-      "html": "<b>فكر:</b> ماذا نتوقّع لو كان محور الدوران على بعد 0.25 m (أي عند نصف قطر أصغر)؟ جرّب ذلك بنفسك في الأداة التفاعلية أدناه.",
+      "html": "ماذا نتوقّع لو كان محور الدوران على بعد 0.25 m (أي عند نصف قطر أصغر)؟ جرّب ذلك بنفسك في الأداة التفاعلية أدناه.",
       "sectionGroup": 15,
       "sectionId": null,
       "sectionNavLabel": null
@@ -216,6 +216,7 @@
       "presets": null,
       "ruleBoxHtml": "\\( I=\\tfrac{2}{5}(10)r^2 = \\) <b id=\"sphereIVal\">1.000</b> kg·m²",
       "ruleBoxId": null,
+      "trailingHtml": null,
       "sectionGroup": 16,
       "sectionId": "sphere-widget",
       "sectionNavLabel": "🕹️ استكشف: نصف القطر وعزم القصور"
@@ -319,6 +320,7 @@
       "presets": null,
       "ruleBoxHtml": null,
       "ruleBoxId": "skaterReadout",
+      "trailingHtml": null,
       "sectionGroup": 18,
       "sectionId": "conservation-widget",
       "sectionNavLabel": "🕹️ حفظ الزخم الزاوي"

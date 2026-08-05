@@ -203,7 +203,7 @@
       "type": "callout",
       "icon": "⚠️",
       "strong": "ملاحظتان مهمتان:",
-      "html": "<b>ملاحظتان مهمتان:</b> إذا بدأت الحركة من السكون يجب التعويض عن \\((\\omega_1)\\) بصفر. وعند التباطؤ يسبق التعجيل الزاوي إشارة سالبة.",
+      "html": "إذا بدأت الحركة من السكون يجب التعويض عن \\((\\omega_1)\\) بصفر. وعند التباطؤ يسبق التعجيل الزاوي إشارة سالبة.",
       "sectionGroup": 11,
       "sectionId": null,
       "sectionNavLabel": null
@@ -348,6 +348,7 @@
       "presets": null,
       "ruleBoxHtml": null,
       "ruleBoxId": "suvatReadout",
+      "trailingHtml": null,
       "sectionGroup": 13,
       "sectionId": "suvat-widget",
       "sectionNavLabel": "🕹️ محاكاة الحركة الدورانية المنتظمة"

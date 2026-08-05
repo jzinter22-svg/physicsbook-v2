@@ -1,0 +1,395 @@
+{
+  "lessonNumber": 2,
+  "chapterNumber": 1,
+  "meta": {
+    "pageTitle": "Lesson 2: Resultant Acceleration and Centripetal Force — Chapter 1",
+    "description": "Tangential and centripetal acceleration in circular motion, the definition of centripetal force and its derivation from Newton's second law, with a solved example about a car cornering and an interactive simulation.",
+    "breadcrumbChapter": "Chapter 1",
+    "breadcrumbLesson": "Resultant Acceleration and Centripetal Force",
+    "footer": "Chapter 1: Circular and Rotational Motion — Lesson 2: Resultant Acceleration and Centripetal Force"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 2 of 8 · Chapter 1",
+    "title": "Resultant Acceleration and Centripetal Force",
+    "lead": "2-2-1 Resultant acceleration in circular motion · 3-1 Centripetal force"
+  },
+  "objectives": [
+    "Distinguishes between tangential acceleration and centripetal acceleration for a body moving along a circular path.",
+    "Defines centripetal force and derives its relation from Newton's second law.",
+    "Explains why centripetal force does no work on a body moving in a circle.",
+    "Solves applied problems on centripetal force arising from friction."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 2-2-1 Resultant acceleration in circular motion",
+      "html": "From the above we noted that a body moving along a circular path has two accelerations: the first is parallel to the linear velocity and arises from a change in its magnitude, called <b>tangential acceleration</b> \\( \\left(\\vec{a_T}=\\dfrac{\\Delta \\vec{v}}{\\Delta t}\\right) \\); the other is perpendicular to it and arises only from a change in its direction, called <b>centripetal acceleration</b> \\( \\left(\\vec{a_c}=\\dfrac{v^2}{r}\\right) \\), as shown in Figure (2-1).",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "simulation",
+      "svgId": "fig21Svg",
+      "svgAriaLabel": "Resultant acceleration in circular motion",
+      "svgViewBox": "0 0 360 300",
+      "svgWidth": "360",
+      "svgHeight": "300",
+      "sectionHeading": "🕹️ Recreating Figure 2-1: acceleration in circular motion",
+      "descriptionHtml": "Drag the slider to change the magnitude of the tangential acceleration, and watch the resultant acceleration (blue) as the vector sum of the centripetal acceleration (red, always toward the center) and the tangential acceleration (green, tangent to the path).",
+      "controls": [
+        {
+          "labelHtml": "Tangential acceleration a<sub>T</sub> = <span id=\"tanAccVal\">3</span>",
+          "inputId": "tanAccSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "6",
+          "inputStep": "0.5",
+          "inputValue": "3"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxHtml": null,
+      "ruleBoxId": null,
+      "trailingHtml": null,
+      "sectionGroup": 1,
+      "sectionId": "fig21",
+      "sectionNavLabel": "🕹️ Interactive Figure 2-1",
+      "labels": {
+        "accCentripetal": "aᴄ (centripetal)",
+        "accTangential": "aT (tangential)",
+        "accResultant": "a (resultant)"
+      }
+    },
+    {
+      "type": "definition",
+      "label": "📌 3-1 Centripetal force",
+      "html": "Although the magnitude of the tangential linear speed stays constant, the change in direction produces a centripetal acceleration in the motion along the circular path. Since the motion has an acceleration, the net force cannot be zero (by Newton's second law of motion); this means there exists a force in the direction of the centripetal acceleration called <b>centripetal force (F<sub>c</sub>)</b>, directed toward the center of the circle.",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .4rem\">Applying Newton's second law:</p>\n      $$ \\sum \\vec{F} = m\\vec{a} \\;\\Rightarrow\\; \\vec{F_c} = m\\vec{a_c} \\;\\Rightarrow\\; \\vec{F_c} = m\\dfrac{v^2}{r} \\qquad \\text{...(3)} $$",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "Every body moving along a circular path is subject to a centripetal force that tries to keep it moving in a circle. For example, water droplets clinging to clothes spinning in a washing machine's dryer are held by a centripetal force with the clothes — this force is a friction force during the drying process. This force is not enough to keep the water droplets stuck to the clothes, so as the spin speed increases it becomes insufficient, and the droplets fly off tangent to the circle of rotation, separating from the clothes.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Explanation — Why does centripetal force do no work on a body moving in uniform circular motion?",
+      "html": "Centripetal force is the resultant of a set of unbalanced forces that gives the circularly moving body a centripetal acceleration always perpendicular to its instantaneous velocity, so it does no work in the physical sense: it does not pull the body toward itself, and the body does not accelerate linearly under its influence — it only changes the body's usual straight path into a circular one.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "Did you know?",
+      "html": "The basic operating principle of centrifuges relies on varying the centripetal force depending on a material's mass, making it possible to separate materials of different mass or density from one another. The device contains a container holding samples of different mass, mounted on a motor spinning at a variable speed; it is used in medicine (separating blood components), and in advanced devices used to enrich uranium-235 from uranium-238.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "✍️ Solved examples",
+      "leadHtml": "Each example is immediately followed by its detailed-solution card.",
+      "sectionGroup": 7,
+      "sectionId": "examples",
+      "sectionNavLabel": "✍️ Solved examples"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "Find the maximum speed (in km/h) at which a car can travel around a flat curve without skidding, if its radius is \\(25\\ \\text{m}\\) and the coefficient of static friction between the tires and the road is \\(0.8\\).",
+      "diagramSvg": "<svg aria-label=\"A car traveling around a flat circular curve\" role=\"img\" viewbox=\"0 0 300 160\" xmlns=\"http://www.w3.org/2000/svg\">\n<ellipse cx=\"150\" cy=\"120\" fill=\"none\" rx=\"120\" ry=\"26\" stroke=\"var(--text-faint)\" stroke-dasharray=\"5 5\" stroke-width=\"2\"></ellipse>\n<circle cx=\"150\" cy=\"120\" fill=\"var(--text-faint)\" r=\"3\"></circle>\n<rect fill=\"var(--accent-blue)\" height=\"18\" rx=\"4\" width=\"30\" x=\"205\" y=\"105\"></rect>\n<text fill=\"var(--text-secondary)\" font-family=\"Cairo,sans-serif\" font-size=\"13\" text-anchor=\"middle\" x=\"150\" y=\"60\">r = 25 m</text>\n</svg>",
+      "diagramCaption": "A flat circular path of radius r for a car traveling without skidding",
+      "solution": {
+        "given": [
+          "\\( \\mu_s = 0.8 \\) — coefficient of static friction between the tires and the road",
+          "\\( r = 25\\ \\text{m} \\) — radius of the curve",
+          "\\( g = 9.8\\ \\text{m/s}^2 \\) — acceleration due to gravity (constant)"
+        ],
+        "required": "Find the maximum speed (in km/h) at which the car can travel around the curve without skidding.",
+        "steps": [
+          {
+            "note": "The required centripetal force arises from the maximum static friction force between the tires and the road",
+            "calc": [
+              {
+                "kind": "box",
+                "latex": "\\( F_{s(\\max)} = \\mu_s N \\)"
+              }
+            ]
+          },
+          {
+            "note": "The normal reaction force (N) equals the car's weight (mg) on a flat road",
+            "calc": [
+              {
+                "kind": "box",
+                "latex": "\\( N = mg \\)"
+              }
+            ]
+          },
+          {
+            "note": "Equate the centripetal force with the maximum friction force",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( F_c = F_{s(\\max)} \\;\\Rightarrow\\; m\\dfrac{v^2}{r} = \\mu_s (mg) \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( v = \\sqrt{\\mu_s \\, r \\, g} = \\sqrt{0.8 \\times 25 \\times 9.8} = 14\\ \\text{m/s} \\)"
+              }
+            ]
+          },
+          {
+            "note": "Convert the result to km/h",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( 14\\ \\dfrac{\\text{m}}{\\text{s}} \\times \\dfrac{1}{1000}\\dfrac{\\text{km}}{\\text{m}} \\times \\dfrac{3600}{1}\\dfrac{\\text{s}}{\\text{h}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( = 50.4\\ \\text{km/h} \\)"
+              }
+            ]
+          }
+        ],
+        "note": {
+          "icon": "💬",
+          "strong": "Note:",
+          "html": "If skidding occurs, the friction force switches to kinetic friction, computed from \\( F_k=\\mu_k N \\), where \\(\\mu_k\\) is the coefficient of kinetic friction."
+        },
+        "final": "✓ Maximum safe speed = 14 m/s = 50.4 km/h"
+      },
+      "sectionGroup": 7,
+      "sectionId": "examples",
+      "sectionNavLabel": "✍️ Solved examples"
+    },
+    {
+      "type": "simulation",
+      "svgId": "curveSvg",
+      "svgAriaLabel": "Simulation of a car traveling around a curve",
+      "svgViewBox": "0 0 360 280",
+      "svgWidth": "360",
+      "svgHeight": "280",
+      "sectionHeading": "🕹️ Interactive simulation: does the car skid on the curve?",
+      "descriptionHtml": "Drag the speed slider and watch directly whether the car stays on its circular path (radius 25 m, friction coefficient 0.8) or skids outward once it exceeds the safe speed computed in Example (2).",
+      "controls": [
+        {
+          "labelHtml": "Car speed = <span id=\"carSpeedVal\">40</span> km/h",
+          "inputId": "carSpeed",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "10",
+          "inputMax": "80",
+          "inputStep": "1",
+          "inputValue": "40"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxHtml": null,
+      "ruleBoxId": "curveStatus",
+      "trailingHtml": null,
+      "sectionGroup": 8,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Car-cornering simulation",
+      "labels": {
+        "slipWarning": "⚠️ Skidding!",
+        "safePath": "✅ Safe path",
+        "statusDanger": "Danger ⚠️ — speed exceeds the safe limit ({v} km/h); the required centripetal force exceeds the maximum available friction",
+        "statusSafe": "Safe ✅ — the required centripetal force is below the maximum available friction (safe limit {v} km/h)"
+      }
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "Did you know?",
+      "html": "Highway exit ramps and race tracks are designed with a slight bank to increase the inward centripetal force: the road's reaction to the car becomes tilted and resolves into two components — one perpendicular to the road that balances the body's weight, and another directed toward the center that, together with friction, increases the inward centripetal force and prevents the car from skidding.",
+      "sectionGroup": 9,
+      "sectionId": "banked-curve",
+      "sectionNavLabel": "🛣️ The banked curve"
+    },
+    {
+      "type": "simulation",
+      "svgId": "bankSvg",
+      "svgAriaLabel": "Force analysis for a car on a banked curve",
+      "svgViewBox": "0 0 360 300",
+      "svgWidth": "360",
+      "svgHeight": "300",
+      "sectionHeading": "🕹️ Recreating the figure: force analysis on a banked curve",
+      "descriptionHtml": "Drag the bank-angle slider \\( \\theta \\) to see how the normal reaction force \\( F_N \\) resolves into two components: a vertical component \\( F_N\\cos\\theta \\) that balances the car's weight, and a horizontal component \\( F_N\\sin\\theta \\) that, together with friction, provides the centripetal force toward the center — exactly as in the textbook's illustrative figure.",
+      "controls": [
+        {
+          "labelHtml": "Bank angle θ = <span id=\"bankAngleVal\">15</span>°",
+          "inputId": "bankAngle",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "40",
+          "inputStep": "1",
+          "inputValue": "15"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxHtml": "<span style=\"font-weight:700\">Ideal speed:</span> \\( v = \\sqrt{r\\,g\\,\\tan\\theta} \\)",
+      "ruleBoxId": null,
+      "trailingHtml": "For a curve radius of 25 m, the ideal speed that needs no friction at all at this angle equals <b id=\"bankSpeedVal\">8.1</b> m/s.",
+      "sectionGroup": 9,
+      "sectionId": "banked-curve",
+      "sectionNavLabel": "🛣️ The banked curve",
+      "labels": {
+        "towardCenter": "(toward the center)"
+      }
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check your understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "Tangential acceleration in circular motion arises from:",
+        "options": [
+          "A change in the direction of the velocity only",
+          "A constant magnitude of the velocity",
+          "A change in the magnitude (value) of the linear speed",
+          "An increase in the radius"
+        ],
+        "explain": "Tangential acceleration \\(a_T=\\Delta v/\\Delta t\\) arises from a change in the magnitude of the linear speed, unlike centripetal acceleration, which arises only from a change in direction."
+      },
+      {
+        "correct": 1,
+        "question": "Centripetal force always points:",
+        "options": [
+          "Tangent to the circular path",
+          "Toward the center of the circle",
+          "Away from the center",
+          "Perpendicular to the plane of motion"
+        ],
+        "explain": "Centripetal force is the resultant of the forces causing the centripetal acceleration, and it always points toward the center of the circle."
+      },
+      {
+        "correct": 0,
+        "question": "Why does centripetal force do no work on a body moving in uniform circular motion?",
+        "options": [
+          "Because it is always perpendicular to the instantaneous velocity",
+          "Because its magnitude is always zero",
+          "Because the body is not actually moving",
+          "Because it continuously increases the body's speed"
+        ],
+        "explain": "Physical work requires a force component parallel to the displacement; since centripetal force is always perpendicular to the instantaneous velocity, it does no work."
+      },
+      {
+        "correct": 3,
+        "question": "In the example of a car cornering on a flat curve, the required centripetal force arises from:",
+        "options": [
+          "The car's weight only",
+          "The engine's force",
+          "Air resistance",
+          "The static friction force between the tires and the road"
+        ],
+        "explain": "On a flat road, the maximum static friction force between the tires and the road is what supplies the centripetal force needed to keep the car on its path."
+      },
+      {
+        "correct": 1,
+        "question": "If a car's speed exceeds the safe speed on a flat curve, the car:",
+        "options": [
+          "Stops suddenly",
+          "Skids outward, away from the center of the curve",
+          "Skids toward the center of the curve",
+          "Its path stays unchanged"
+        ],
+        "explain": "Once speed exceeds the safe limit, the static friction force is no longer enough to supply the required centripetal force, so the tires skid and the car leaves its circular path outward."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson summary",
+    "items": [
+      "Tangential acceleration \\(a_T\\) results from a change in the magnitude of the speed; centripetal acceleration \\(a_c\\) results from a change in its direction.",
+      "Centripetal force \\(F_c=mv^2/r\\) is the resultant of the forces causing centripetal acceleration, and it points toward the center.",
+      "Centripetal force is always perpendicular to the instantaneous velocity, so it does no work.",
+      "For a car cornering on a flat road, static friction is the source of the centripetal force."
+    ]
+  },
+  "mindmap": {
+    "ariaLabel": "Mind map for Lesson 2",
+    "viewBox": "0 0 820 300",
+    "center": {
+      "cx": 410.0,
+      "cy": 150.0,
+      "r": 56.0,
+      "color": "#3fa9f5",
+      "lines": [
+        "Centripetal",
+        "force"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 180.0,
+        "cy": 80.0,
+        "r": 48.0,
+        "color": "#7c6fee",
+        "lines": [
+          "Fc=mv²/r"
+        ]
+      },
+      {
+        "cx": 640.0,
+        "cy": 80.0,
+        "r": 48.0,
+        "color": "#2fd18f",
+        "lines": [
+          "No work"
+        ]
+      },
+      {
+        "cx": 410.0,
+        "cy": 250.0,
+        "r": 48.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Car friction"
+        ]
+      }
+    ]
+  }
+}

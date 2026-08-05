@@ -81,7 +81,7 @@
       case "enumeration":
         return renderDefBox(b);
       case "callout":
-        return '<div class="callout tip"><span class="icon">' + esc(b.icon) + "</span><span><b>" + esc(b.strong) + "</b> " + html(b.html) + "</span></div>";
+        return '<div class="callout tip"><span class="icon">' + esc(b.icon) + "</span><span>" + (b.strong ? "<b>" + esc(b.strong) + "</b> " : "") + html(b.html) + "</span></div>";
       case "formula":
         return '<div class="rule-box"' + (b.id ? ' id="' + esc(b.id) + '"' : "") + ">" + html(b.html) + "</div>";
       case "table":
@@ -150,7 +150,7 @@
       }).join("") + "</ol>";
     }
     if(sol.note){
-      out += '<div class="callout tip" style="margin-top:.8rem"><span class="icon">' + esc(sol.note.icon) + "</span><span><b>" + esc(sol.note.strong) + "</b> " + html(sol.note.html) + "</span></div>";
+      out += '<div class="callout tip" style="margin-top:.8rem"><span class="icon">' + esc(sol.note.icon) + "</span><span>" + (sol.note.strong ? "<b>" + esc(sol.note.strong) + "</b> " : "") + html(sol.note.html) + "</span></div>";
     }
     if(sol.final){
       out += '<div class="exercise-final">' + html(sol.final) + "</div>";
@@ -197,7 +197,8 @@
     return '<div class="card neu"><h2>' + esc(b.sectionHeading) + "</h2>" +
       (b.descriptionHtml ? "<p>" + html(b.descriptionHtml) + "</p>" : "") +
       (presets ? '<div class="io-row" style="flex-wrap:wrap;gap:.5rem">' + presets + "</div>" : "") +
-      '<div class="io-panel">' + select + svgMount + controls + buttons + ruleBox + "</div></div>";
+      '<div class="io-panel">' + select + svgMount + controls + buttons + ruleBox +
+      (b.trailingHtml ? "<p>" + html(b.trailingHtml) + "</p>" : "") + "</div></div>";
   }
 
   // ===== Mindmap (shared geometry across every lesson + the hub) ===========

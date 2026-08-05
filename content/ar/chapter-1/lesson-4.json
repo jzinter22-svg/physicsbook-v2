@@ -137,6 +137,7 @@
       "presets": null,
       "ruleBoxHtml": "نصف القطر r = 2 m ← طول القوس \\( S=r\\theta= \\) <b id=\"arcLenVal\">2.09</b> m",
       "ruleBoxId": null,
+      "trailingHtml": null,
       "sectionGroup": 7,
       "sectionId": "theta-widget",
       "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 7-1"
@@ -203,6 +204,7 @@
       "presets": null,
       "ruleBoxHtml": null,
       "ruleBoxId": null,
+      "trailingHtml": null,
       "sectionGroup": 13,
       "sectionId": "rhr-widget",
       "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 8-1"
@@ -227,7 +229,7 @@
       "type": "callout",
       "icon": "💡",
       "strong": "هل تعلم؟",
-      "html": "<b>هل تعلم؟</b> أن مشغل الاقراص المرنة (CD) يحتوي على محرك يقوم بتدوير القرص بتحكم المرن الذي يتراوح ما بين 200 الى 500 دورة في الدقيقة ليقوم شعاع الليزر بقراءة المعلومات المثبتة على القرص.",
+      "html": "أن مشغل الاقراص المرنة (CD) يحتوي على محرك يقوم بتدوير القرص بتحكم المرن الذي يتراوح ما بين 200 الى 500 دورة في الدقيقة ليقوم شعاع الليزر بقراءة المعلومات المثبتة على القرص.",
       "sectionGroup": 16,
       "sectionId": null,
       "sectionNavLabel": null
@@ -355,6 +357,7 @@
       "presets": null,
       "ruleBoxHtml": "\\( \\omega_{av} = \\dfrac{\\theta_2-\\theta_1}{\\Delta t} = \\) <b id=\"omegaAvVal\">1.57</b> rad/s (بافتراض Δt = 1 s)",
       "ruleBoxId": null,
+      "trailingHtml": null,
       "sectionGroup": 20,
       "sectionId": "omega-av-widget",
       "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 9-1"

@@ -195,6 +195,7 @@
       "presets": null,
       "ruleBoxHtml": null,
       "ruleBoxId": "shapeFormula",
+      "trailingHtml": null,
       "sectionGroup": 6,
       "sectionId": "shape-widget",
       "sectionNavLabel": "🕹️ حاسبة عزم القصور الذاتي"
@@ -252,6 +253,7 @@
       "presets": null,
       "ruleBoxHtml": null,
       "ruleBoxId": "torqueReadout",
+      "trailingHtml": null,
       "sectionGroup": 7,
       "sectionId": "torque-widget",
       "sectionNavLabel": "🕹️ سباق τ=Iα"

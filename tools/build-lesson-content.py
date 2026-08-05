@@ -35,6 +35,19 @@ def text(el):
     return el.get_text(" ", strip=True) if el else ""
 
 
+def html_after_lead_b(el):
+    """inner_html(el) with its first <b> child removed — for callout bodies
+    like <span><b>ملاحظة:</b> رest of the sentence</span>, where the <b>'s
+    text is already captured separately as the block's `strong` field.
+    Keeping it in `html` too would make the renderer show it twice."""
+    if el is None:
+        return ""
+    b = el.find("b")
+    if b:
+        b.extract()
+    return inner_html(el)
+
+
 def classify_defbox(box):
     label = text(box.select_one(".def-label"))
     if "🔍" in label or "تعليل" in label:
@@ -167,7 +180,7 @@ def extract_example(problem_div, solution_div, number):
         sol["note"] = {
             "icon": text(note_callout.select_one(".icon")),
             "strong": text(strong) if strong else "",
-            "html": inner_html(note_callout.select_one("span:nth-of-type(2)") or note_callout),
+            "html": html_after_lead_b(note_callout.select_one("span:nth-of-type(2)") or note_callout),
         }
     final = solution_div.select_one(".exercise-final")
     sol["final"] = inner_html(final) if final else None
@@ -229,6 +242,13 @@ def extract_simulation(section):
     presets = section.select("[data-preset]")
     preset_list = [{"value": p.get("data-preset"), "label": text(p)} for p in presets] if presets else None
     rule_box = panel.select_one(".rule-box")
+    # A <p> living directly inside .io-panel itself, after the rule-box
+    # (e.g. lesson 2's banked-curve widget: "...the ideal speed at this
+    # angle equals <b id="bankSpeedVal">8.1</b> m/s.") often holds a live-
+    # computed value the widget's own JS writes into — capture it as markup
+    # (not text()) so the <b id="..."> the widget targets survives.
+    trailing_ps = panel.find_all("p", recursive=False)
+    trailing_html = "".join(inner_html(p) for p in trailing_ps) if trailing_ps else None
     return {
         "svgId": svg.get("id") if svg else None,
         "svgAriaLabel": svg.get("aria-label", "") if svg else "",
@@ -245,6 +265,7 @@ def extract_simulation(section):
         "presets": preset_list,
         "ruleBoxHtml": inner_html(rule_box) if rule_box and not rule_box.get("id") else None,
         "ruleBoxId": rule_box.get("id") if rule_box else None,
+        "trailingHtml": trailing_html,
     }
 
 
@@ -295,6 +316,26 @@ def extract_lesson(path, lesson_num, chapter_num, total_lessons):
             continue
         start_len = len(data["content"])
         try:
+            # A section can mix an unrelated .callout with a simulation card
+            # as direct-child siblings (e.g. lesson 2's "banked-curve"
+            # section: a "did you know?" callout followed by the banked-
+            # curve widget's own .card) — extract_simulation only looks
+            # inside the widget's own card, so that sibling callout would
+            # otherwise be silently dropped. Emit it as its own block first.
+            # Scoped to sections that actually contain a simulation panel,
+            # so a section that's *only* a callout still falls through to
+            # the single-callout branch below instead of double-emitting.
+            if sec.select_one(".io-panel"):
+                for callout in sec.find_all("div", class_="callout", recursive=False):
+                    strong = callout.find("b")
+                    span2 = callout.select_one("span:nth-of-type(2)")
+                    data["content"].append({
+                        "type": "callout",
+                        "icon": text(callout.select_one(".icon")),
+                        "strong": text(strong) if strong else "",
+                        "html": html_after_lead_b(span2) if span2 else html_after_lead_b(callout),
+                    })
+
             sim = extract_simulation(sec)
             if sim:
                 data["content"].append({"type": "simulation", **sim})
@@ -369,7 +410,7 @@ def extract_lesson(path, lesson_num, chapter_num, total_lessons):
                     "type": "callout",
                     "icon": text(callout.select_one(".icon")),
                     "strong": text(strong) if strong else "",
-                    "html": inner_html(span2) if span2 else inner_html(callout),
+                    "html": html_after_lead_b(span2) if span2 else html_after_lead_b(callout),
                 })
                 continue
 

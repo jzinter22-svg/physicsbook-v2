@@ -40,7 +40,7 @@
       "type": "callout",
       "icon": "📝",
       "strong": "ملاحظة:",
-      "html": "<b>ملاحظة:</b> تُعدّ الشمس مركز الجذب في حالة دوران كواكب المجموعة الشمسية حولها، وتُعد الارض مركز الجذب في حالة دوران الاقمار الاصطناعية حولها.",
+      "html": "تُعدّ الشمس مركز الجذب في حالة دوران كواكب المجموعة الشمسية حولها، وتُعد الارض مركز الجذب في حالة دوران الاقمار الاصطناعية حولها.",
       "sectionGroup": 2,
       "sectionId": null,
       "sectionNavLabel": null
@@ -74,6 +74,7 @@
       "presets": null,
       "ruleBoxHtml": null,
       "ruleBoxId": null,
+      "trailingHtml": null,
       "sectionGroup": 3,
       "sectionId": "law1-widget",
       "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 5-1"
@@ -102,6 +103,7 @@
       "presets": null,
       "ruleBoxHtml": null,
       "ruleBoxId": "law2Speed",
+      "trailingHtml": null,
       "sectionGroup": 5,
       "sectionId": "law2-widget",
       "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 6-1"
@@ -126,7 +128,7 @@
       "type": "callout",
       "icon": "🧠",
       "strong": "تذكر:",
-      "html": "<b>تذكر:</b> أن أي كتلتين في الكون تجذب أحدهما الاخرى بقوة تتناسب طرديًا مع حاصل ضرب الكتلتين (M,m) وعكسيًا مع مربع المسافة بينهما (r)، وهذا مايُطلق عليه بقانون الجذب العام لنيوتن، ورياضيًا:",
+      "html": "أن أي كتلتين في الكون تجذب أحدهما الاخرى بقوة تتناسب طرديًا مع حاصل ضرب الكتلتين (M,m) وعكسيًا مع مربع المسافة بينهما (r)، وهذا مايُطلق عليه بقانون الجذب العام لنيوتن، ورياضيًا:",
       "sectionGroup": 8,
       "sectionId": null,
       "sectionNavLabel": null
@@ -181,6 +183,7 @@
       ],
       "ruleBoxHtml": "الزمن الدوري t ≈ <b id=\"orbitTVal\">1.54</b> ساعة",
       "ruleBoxId": null,
+      "trailingHtml": null,
       "sectionGroup": 10,
       "sectionId": "law3-widget",
       "sectionNavLabel": "🕹️ تحقق من قانون كبلر الثالث"
