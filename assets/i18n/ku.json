@@ -24,7 +24,11 @@
     "checkUnderstanding": "🧠 تێگەیشتنت بپشکنە",
     "chapterHome": "ماڵپەڕی بەش",
     "readyToBuild": "ئامادەیە بۆ دروستکردن",
-    "yourProgress": "پێشکەوتنت لەم بەشەدا"
+    "yourProgress": "پێشکەوتنت لەم بەشەدا",
+    "example": "نموونە",
+    "detailedSolution": "چارەسەری وردەکاری",
+    "given": "دراوەکان",
+    "required": "داواکراو"
   },
   "brand": {
     "name": "کتێبی فیزیای کارلێکدار"

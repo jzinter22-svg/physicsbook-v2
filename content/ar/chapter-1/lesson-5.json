@@ -1,0 +1,477 @@
+{
+  "lessonNumber": 5,
+  "chapterNumber": 1,
+  "meta": {
+    "pageTitle": "الدرس 5: التعجيل الزاوي والحركة الدورانية المنتظمة — الفصل الأول",
+    "description": "3-5-1 التعجيل الزاوي وعلاقته بالتعجيل المماسي، 4-5-1 التعجيل الزاوي المنتظم ومعادلات الحركة الدورانية المنتظمة التعجيل، مع مثالين محلولين.",
+    "breadcrumbChapter": "الفصل 1",
+    "breadcrumbLesson": "التعجيل الزاوي والحركة المنتظمة",
+    "footer": "الفصل الأول: الحركة الدائرية والدورانية — الدرس 5: التعجيل الزاوي والحركة المنتظمة"
+  },
+  "hero": {
+    "eyebrow": "📖 الدرس 5 من 8 · الفصل الأول",
+    "title": "التعجيل الزاوي والحركة الدورانية المنتظمة",
+    "lead": "3-5-1 التعجيل الزاوي (α) · 4-5-1 التعجيل الزاوي المنتظم"
+  },
+  "objectives": [
+    "يعرّف التعجيل الزاوي (α) ويشتق علاقته بالتعجيل المماسي \\(a_T=r\\alpha\\).",
+    "يوضّح معنى الحركة الدورانية المنتظمة التعجيل ومعدل السرعة الزاوية.",
+    "يكتب معادلات الحركة الدورانية المنتظمة التعجيل الثلاث ويقارنها بنظيراتها الخطية.",
+    "يحل مسائل حسابية على الحركة الدورانية المنتظمة التعجيل باستعمال هذه المعادلات."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 3-5-1 التعجيل الزاوي",
+      "html": "إذا افترضنا أن جسمًا يحصل تغيّرًا في السرعة الخطية المماسة \\((\\Delta v_T)\\) عند الحركة على المنحنى (S) وعليه ستتغير السرعة الزاوية بثبوت نصف قطر الدائرة (r)، وهذا يعني أن الحركة ستكون بتعجيل، فتصبح المعادلة (8):",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 الشرح"
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\Delta v_T = r\\Delta\\omega \\qquad \\text{...(9)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">وبقسمة طرفي المعادلة (9) على (Δt) نحصل على الآتي:</p>\n      $$ \\dfrac{\\Delta v_T}{\\Delta t} = r\\dfrac{\\Delta\\omega}{\\Delta t} \\qquad \\text{...(10)} $$",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .4rem\">الكمية \\(a_T=\\dfrac{\\Delta v_T}{\\Delta t}\\) تمثل التعجيل المماسي، أي إن: أما الكمية \\(\\alpha=\\dfrac{\\Delta\\omega}{\\Delta t}\\) فتمثل التعجيل الزاوي ويرمز له بالرمز (α)، ويقاس التعجيل الزاوي بوحدات \\(\\text{rad/s}^2\\)، وبتعويض \\(a_T\\) و α في المعادلة (10) نحصل على الآتي:</p>\n      $$ a_T = r\\alpha \\qquad \\text{...(11)} $$",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "نلاحظ من المعادلة (11) أن التعجيل الزاوي مرتبط بالتعجيل الخطي، وهذا يعني أن التعجيل الزاوي يحصل نتيجة تغيّر السرعة الخطية أو السرعة الزاوية ويصبح صفرًا إذا كانت سرعة الجسم الخطية على محيط الدائرة ثابتة المقدار.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>عجلة نصف قطرها (40 cm) تدور حول محور ثابت، وتتزايد سرعتها بانتظام من السكون حتى تصل الى (600 rpm) في زمن (20 s). أوجد: (a) التعجيل الزاوي، (b) التعجيل المماسي لنقطة على حافة العجلة.</p>",
+      "solution": {
+        "given": [
+          "\\( r = 40\\ \\text{cm} = 0.40\\ \\text{m} \\) — نصف قطر العجلة",
+          "\\( \\omega_1 = 0 \\) — السرعة الزاوية الابتدائية (تبدأ من السكون)",
+          "\\( \\omega_2 = 600\\ \\text{rpm} = 62.8\\ \\text{rad/s} \\) — السرعة الزاوية النهائية (بعد التحويل)",
+          "\\( t = 20\\ \\text{s} \\) — الزمن اللازم للوصول إلى السرعة النهائية"
+        ],
+        "required": "(a) احسب التعجيل الزاوي α. (b) احسب التعجيل المماسي \\(a_T\\) لنقطة على حافة العجلة.",
+        "steps": [
+          {
+            "note": "نحوّل السرعة الزاوية النهائية إلى وحدات (rad/s)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\omega = \\left(600\\ \\dfrac{\\text{rev}}{\\text{min}}\\right)\\times\\left(\\dfrac{1\\ \\text{min}}{60\\ \\text{s}}\\right)\\times\\left(\\dfrac{2\\pi\\ \\text{rad}}{1\\ \\text{rev}}\\right) \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\omega = 62.8\\ \\text{rad/s} \\)"
+              }
+            ]
+          },
+          {
+            "note": "(a) التعجيل الزاوي — الجسم يبدأ بالحركة من السكون: \\(t_1=0،\\ \\omega_1=0\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\alpha = \\dfrac{\\Delta\\omega}{\\Delta t} = \\dfrac{\\omega_2-\\omega_1}{t_2-t_1} = \\dfrac{62.8-0}{20} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\alpha = 3.14\\ \\text{rad/s}^2 \\)"
+              }
+            ]
+          },
+          {
+            "note": "(b) التعجيل المماسي عند r=40 cm=0.40 m",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( a_T = r\\alpha = (0.40\\ \\text{m})(3.14\\ \\text{rad/s}^2) \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( a_T = 1.25\\ \\text{m/s}^2 \\approx 1.3\\ \\text{m/s}^2 \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ α = 3.14 rad/s²   ·   a_T ≈ 1.3 m/s²"
+      },
+      "sectionGroup": 4,
+      "sectionId": "example4",
+      "sectionNavLabel": "📝 مثال 4"
+    },
+    {
+      "type": "definition",
+      "label": "📌 4-5-1 التعجيل الزاوي المنتظم",
+      "html": "يتحرك الجسم بتعجيل زاوي (α) إذا كانت محصلة العزوم المؤثرة عليه لا تساوي صفرًا، فإذا كانت السرعة الزاوية لجسم يتحرك على مسار دائري في النقطة (A) هي \\((\\omega_1)\\) وفي النقطة (B) هي \\((\\omega_2)\\)، فيكون متوسط السرعة الزاوية اللحظية:",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\omega_{av} = \\dfrac{\\omega_1+\\omega_2}{2} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">ولذلك يعرّف معدل التعجيل الزاوي بأنه معدل تغيّر السرعة الزاوية لوحدة الزمن، ويُعطى بالعلاقة:</p>\n      $$ \\alpha_{av} = \\dfrac{\\Delta\\omega}{\\Delta t} = \\dfrac{\\omega_2-\\omega_1}{t_2-t_1} \\qquad \\text{...(12)} $$",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "وبببساطة يمكن التوصّل الى قوانين الحركة الدورانية ذات التعجيل الزاوي المنتظم بشكل مشابه الى قوانين الحركة الخطية ذات التعجيل المنتظم، بعد الاستعاضة عن الازاحة الخطية (x) بالازاحة الزاوية (θ)، والسرعة الخطية (v) بالسرعة الزاوية (ω)، والتعجيل الخطي (a) بالتعجيل الزاوي (α)، لتكون معادلات الحركة الدورانية كما يأتي:",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\omega = \\omega_0 + \\alpha t \\qquad \\text{...(13)} $$\n      $$ \\theta-\\theta_0 = \\omega_0 t + \\tfrac{1}{2}\\alpha t^2 \\qquad \\text{...(14)} $$\n      $$ \\omega^2 = \\omega_0^2 + 2\\alpha(\\theta-\\theta_0) \\qquad \\text{...(15)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">حيث \\((\\omega_0,\\theta_0)\\) تمثل السرعة الزاوية والازاحة الزاوية الابتدائيتين.</p>",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "أما العلاقة بين المقادير الفيزيائية في الحركة الدورانية والخطية، وفي حالة ثبوت نصف القطر الدائرية، فهي:",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "\\( s=\\theta r \\qquad v=\\omega r \\qquad a_T=\\alpha r \\)",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "لذا يمكن أن نبيّن أن قوانين الحركة الخطية ذات تعجيل خطي منتظم وقوانين الحركة الدورانية ذات التعجيل الزاوي المنتظم متناظرة كما في الجدول الآتي:",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "table",
+      "heading": "📊 مقارنة معادلات الحركة الخطية والدورانية المنتظمتي التعجيل",
+      "headers": [
+        "قوانين الحركة الدورانية",
+        "قوانين الحركة الخطية"
+      ],
+      "rows": [
+        [
+          "\\( \\omega_2 = \\omega_1 + \\alpha t \\)",
+          "\\( v_2 = v_1 + at \\)"
+        ],
+        [
+          "\\( \\theta = \\omega_1 t + \\tfrac{1}{2}\\alpha t^2 \\)",
+          "\\( s = v_1 t + \\tfrac{1}{2}at^2 \\)"
+        ],
+        [
+          "\\( \\omega_2^2 = \\omega_1^2 + 2\\alpha\\theta \\)",
+          "\\( v_2^2 = v_1^2 + 2as \\)"
+        ]
+      ],
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "⚠️",
+      "strong": "ملاحظتان مهمتان:",
+      "html": "<b>ملاحظتان مهمتان:</b> إذا بدأت الحركة من السكون يجب التعويض عن \\((\\omega_1)\\) بصفر. وعند التباطؤ يسبق التعجيل الزاوي إشارة سالبة.",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>بدأ محرك كهربائي دورانه من السكون، وبلغت سرعته الزاوية (1200 rev/min) بعد مرور زمن مقداره (10 s)، ما مقدار تعجيله الزاوي والازاحة الزاوية التي قطعها وعدد الدورات الكلية؟</p>",
+      "solution": {
+        "given": [
+          "\\( \\omega_0 = 0 \\) — يبدأ المحرك دورانه من السكون",
+          "\\( \\omega = 1200\\ \\text{rev/min} \\) — السرعة الزاوية بعد زمن t (تحتاج إلى تحويل إلى rad/s)",
+          "\\( t = 10\\ \\text{s} \\) — الزمن اللازم للوصول إلى هذه السرعة"
+        ],
+        "required": "احسب التعجيل الزاوي α، والإزاحة الزاوية θ التي قطعها المحرك، وعدد الدورات الكلية.",
+        "steps": [
+          {
+            "note": "بما أن المحرك الكهربائي بدأ دورانه من السكون فإن \\(\\omega_0=0\\)، ونحوّل السرعة الزاوية النهائية إلى (rad/s)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\omega = \\dfrac{N\\times 2\\pi}{t} = \\dfrac{1200\\ (\\text{rev/min})\\times 2\\pi\\ (\\text{rad/rev})}{60\\ (\\text{s/min})} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\omega = 40\\pi\\ \\text{rad/s} \\)"
+              }
+            ]
+          },
+          {
+            "note": "التعجيل الزاوي من المعادلة (13): \\(\\omega=\\omega_0+\\alpha t\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( 40\\pi = 0 + \\alpha(10) \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\alpha = 4\\pi\\ \\text{rad/s}^2 \\)"
+              }
+            ]
+          },
+          {
+            "note": "الازاحة الزاوية من المعادلة (14): \\(\\theta-\\theta_0=\\omega_0 t+\\tfrac{1}{2}\\alpha t^2\\)، حيث \\(\\theta_0=0،\\ \\omega_0=0\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\theta = 0 + \\tfrac{1}{2}(4\\pi)(10)^2 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\theta = 200\\pi\\ \\text{rad} \\)"
+              }
+            ]
+          },
+          {
+            "note": "عدد الدورات الكلية: 1 rev = 2π rad",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( N = \\dfrac{\\theta}{2\\pi} = \\dfrac{200\\pi}{2\\pi} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( = 100\\ \\text{rev} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ α = 4π rad/s² ≈ 12.57 rad/s²   ·   θ = 200π rad   ·   عدد الدورات = 100 دورة"
+      },
+      "sectionGroup": 12,
+      "sectionId": "example5",
+      "sectionNavLabel": "📝 مثال 5"
+    },
+    {
+      "type": "simulation",
+      "svgId": "suvatSvg",
+      "svgAriaLabel": "قرص دوّار بتعجيل زاوي منتظم",
+      "svgViewBox": "0 0 260 260",
+      "svgWidth": "260",
+      "svgHeight": "260",
+      "sectionHeading": "🕹️ محاكاة تفاعلية: معادلات الحركة الدورانية المنتظمة التعجيل",
+      "descriptionHtml": "حرّك المزلاجات لاختيار السرعة الزاوية الابتدائية \\(\\omega_0\\) والتعجيل الزاوي α، وشاهد القرص وهو يدور وفق المعادلتين (13) و(14)، مع إعادة الدورة تلقائيًا كل \\(t\\) ثانية.",
+      "controls": [
+        {
+          "labelHtml": "ω₀ = <span id=\"w0Val\">0</span> rad/s",
+          "inputId": "w0Slider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "5",
+          "inputStep": "0.5",
+          "inputValue": "0"
+        },
+        {
+          "labelHtml": "α = <span id=\"alphaVal\">3.14</span> rad/s²",
+          "inputId": "alphaSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "-3",
+          "inputMax": "4",
+          "inputStep": "0.1",
+          "inputValue": "3.14"
+        },
+        {
+          "labelHtml": "مدة الدورة t = <span id=\"tEndVal\">10</span> s",
+          "inputId": "tEndSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "3",
+          "inputMax": "15",
+          "inputStep": "1",
+          "inputValue": "10"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxHtml": null,
+      "ruleBoxId": "suvatReadout",
+      "sectionGroup": 13,
+      "sectionId": "suvat-widget",
+      "sectionNavLabel": "🕹️ محاكاة الحركة الدورانية المنتظمة"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 اختبر فهمك",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "العلاقة بين التعجيل الزاوي (α) والتعجيل المماسي \\(a_T\\) لجسم يدور بنصف قطر (r) هي:",
+        "options": [
+          "\\( a_T = \\alpha/r \\)",
+          "\\( a_T = r\\alpha \\)",
+          "\\( a_T = r+\\alpha \\)",
+          "\\( a_T = r^2\\alpha \\)"
+        ],
+        "explain": "المعادلة (11): \\(a_T=r\\alpha\\)."
+      },
+      {
+        "correct": 1,
+        "question": "يصبح التعجيل الزاوي صفرًا عندما:",
+        "options": [
+          "تتغيّر السرعة الزاوية باستمرار",
+          "تكون السرعة الخطية على محيط الدائرة ثابتة المقدار",
+          "يزداد نصف القطر",
+          "يبدأ الجسم من السكون"
+        ],
+        "explain": "التعجيل الزاوي ينشأ من تغيّر السرعة الخطية أو الزاوية؛ فإذا بقيت السرعة الخطية ثابتة المقدار يكون التعجيل الزاوي معدومًا."
+      },
+      {
+        "correct": 2,
+        "question": "إذا بدأت الحركة الدورانية من السكون فإن قيمة \\(\\omega_1\\) تُعوَّض في المعادلات بـ:",
+        "options": [
+          "∞",
+          "1",
+          "صفر",
+          "2π"
+        ],
+        "explain": "السكون يعني عدم وجود سرعة زاوية ابتدائية، أي \\(\\omega_1=0\\)."
+      },
+      {
+        "correct": 1,
+        "question": "عند تباطؤ جسم دوّار، فإن إشارة التعجيل الزاوي تكون:",
+        "options": [
+          "موجبة دائمًا",
+          "سالبة",
+          "معدومة",
+          "غير محددة"
+        ],
+        "explain": "عند التباطؤ يسبق التعجيل الزاوي إشارة سالبة، لأن السرعة الزاوية تتناقص مع الزمن."
+      },
+      {
+        "correct": 0,
+        "question": "معادلة الازاحة الزاوية للحركة الدورانية المنتظمة التعجيل هي:",
+        "options": [
+          "\\( \\theta-\\theta_0 = \\omega_0 t + \\tfrac{1}{2}\\alpha t^2 \\)",
+          "\\( \\theta = \\omega t \\)",
+          "\\( \\theta = \\alpha t^2 \\)",
+          "\\( \\theta = \\omega_0/\\alpha \\)"
+        ],
+        "explain": "المعادلة (14): \\(\\theta-\\theta_0=\\omega_0 t+\\tfrac{1}{2}\\alpha t^2\\)، وهي نظير معادلة الحركة الخطية \\(s=v_1t+\\tfrac{1}{2}at^2\\)."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 ملخص الدرس",
+    "items": [
+      "التعجيل الزاوي \\(\\alpha=\\Delta\\omega/\\Delta t\\)، ويرتبط بالتعجيل المماسي بالعلاقة \\(a_T=r\\alpha\\).",
+      "معدل التعجيل الزاوي \\(\\alpha_{av}=(\\omega_2-\\omega_1)/(t_2-t_1)\\).",
+      "معادلات الحركة الدورانية المنتظمة التعجيل: \\(\\omega=\\omega_0+\\alpha t\\)، \\(\\theta-\\theta_0=\\omega_0t+\\tfrac12\\alpha t^2\\)، \\(\\omega^2=\\omega_0^2+2\\alpha(\\theta-\\theta_0)\\).",
+      "عند البدء من السكون: \\(\\omega_1=0\\). وعند التباطؤ: α سالبة."
+    ]
+  },
+  "mindmap": {
+    "ariaLabel": "خريطة التعجيل الزاوي الذهنية",
+    "viewBox": "0 0 480 240",
+    "center": {
+      "cx": 240.0,
+      "cy": 120.0,
+      "r": 50.0,
+      "color": "#7c6fee",
+      "lines": [
+        "التعجيل الزاوي"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 44.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "α=Δω/Δt",
+          "aT=rα"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 195.0,
+        "r": 44.0,
+        "color": "#2fd18f",
+        "lines": [
+          "ω=ω₀+αt"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 45.0,
+        "r": 44.0,
+        "color": "#ffab5e",
+        "lines": [
+          "θ=ω₀t+½αt²"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 195.0,
+        "r": 44.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "ω²=ω₀²+2αθ"
+        ]
+      }
+    ]
+  }
+}

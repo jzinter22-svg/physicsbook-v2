@@ -24,7 +24,11 @@
     "checkUnderstanding": "🧠 اختبر فهمك",
     "chapterHome": "الصفحة الرئيسية للفصل",
     "readyToBuild": "جاهز للبناء",
-    "yourProgress": "تقدّمك في هذا الفصل"
+    "yourProgress": "تقدّمك في هذا الفصل",
+    "example": "مثال",
+    "detailedSolution": "الحل التفصيلي",
+    "given": "المعطيات",
+    "required": "المطلوب"
   },
   "brand": {
     "name": "كتاب الطبيعيات التفاعلي"

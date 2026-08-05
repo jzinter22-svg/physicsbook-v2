@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-1.html">
@@ -42,177 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يوضّح مفهوم الحركة الدائرية ويميّزها عن الحركة الانتقالية الخطية.</span></li>
-        <li><span class="obj-num">2</span><span>يعرّف التعجيل المركزي ويذكر خصائصه.</span></li>
-        <li><span class="obj-num">3</span><span>يشتق علاقة التعجيل المركزي بدلالة السرعة الخطية ونصف القطر، وبدلالة السرعة الزاوية.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="card neu">
-      <h2>💡 1-1 تمهيد</h2>
-      <p>درسنا في مراحل سابقة السرعة والتعجيل في الحركة الانتقالية الخطية، ولكن إذا تأملنا الحركات المألوفة في حياتنا اليومية وجدنا أن الحركة التي يدور فيها الجسم حول محور ثابت أو متغير أكثر شيوعًا من الحركة على خط مستقيم، فحركة المخرطة والمروحة الكهربائية وعجلات السيارة وعقارب الساعة كلها أمثلة على الحركة الدورانية. ولدراسة الحركة الدورانية نبدأ بعرض للحركة الدائرية وهي الحركة التي يدور فيها جسيم حول محيط دائرة وبانطلاق ثابت أو متغير.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h2>💡 2-1 الحركة الدائرية (Circular motion)</h2>
-      <p>تُعد حركة القمر حول الأرض وحركة الإلكترون حول النواة في الذرة من الأمثلة المهمة على الحركة الدائرية في مستوٍ واحد، حيث يبقى مقدار السرعة ثابتًا ولكن اتجاهها يتغير باستمرار من نقطة إلى أخرى مع بقاء الجسم الدائر في نفس المستوى، راسمًا بذلك دائرة تكون فيها الأرض المركز في حالة دوران القمر حول الأرض، والبروتون في حالة دوران الإلكترون في ذرة الهيدروجين. لذلك يمكن القول إن الحركة الدائرية تمثل حركة جسم على مسار دائري كما في الأمثلة السابقة.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 1-2-1 التعجيل المركزي (a<sub>c</sub>)</span>
-      <p style="margin:.3rem 0">هو المعدل الزمني لتغيّر اتجاه الحركة، أي أنه ينشأ بسبب تغيير اتجاه الحركة دون الاعتماد على مقدارها.</p>
-    </div>
-  </section>
-
-  <!-- Figure 1-1 recreated as an interactive graphic below (§ interactive) -->
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h2>💡 خصائص التعجيل المركزي</h2>
-      <p>من مميزات هذا التعجيل أنه ثابت المقدار ومتغيّر في الاتجاه إذا كانت الحركة الدائرية منتظمة، كما في حركة جسم مربوط بخيط عندما يتحرك أفقيًا، ويكون متغيّرًا في المقدار والاتجاه إذا كانت الحركة الدائرية غير منتظمة، وفي كلتا الحالتين يتّجه نحو مركز الدوران؛ لذا سُمّي بالتعجيل المركزي. ويعتمد هذا التعجيل على عاملين هما مربع انطلاق الجسم ونصف قطر الدوران المتحرك به، ويُعطى بالعلاقة:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ a_c = \dfrac{v^2}{r} \qquad \text{...(1)} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">إذ إن: <b>v</b> انطلاق الجسم، <b>r</b> نصف قطر مساره الدائري.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      <p style="margin:0 0 .4rem">وبدلالة السرعة الزاوية:</p>
-      $$ a_c = \dfrac{(\omega r)^2}{r} = \omega^2 r \qquad \text{...(2)} $$
-    </div>
-  </section>
-
-  <section class="section fade-up" id="examples" data-navlabel="✍️ أمثلة محلولة">
-    <h2 style="margin-bottom:.25rem">✍️ أمثلة محلولة</h2>
-    <p class="lead" style="margin-top:0">كل مثال يليه مباشرة بطاقة الحل التفصيلي.</p>
-
-    <div class="example fade-up">
-      <div class="example-head"><div class="example-title"><span class="example-badge">1</span> مثال (1)</div></div>
-      <div class="example-problem">قمر صناعي يدور حول الأرض بسرعة خطية \(363.4\ \text{m/s}\)، أحسب تعجيله المركزي إذا كانت المسافة بين الأرض والقمر الصناعي هي \(5000\ \text{km}\)؟</div>
-    </div>
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الحل التفصيلي</div>
-        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( v = 363.4\ \text{m/s} \) — السرعة الخطية للقمر الصناعي</span></li>
-        <li><span>\( r = 5000\ \text{km} = 5\times10^{6}\ \text{m} \) — نصف قطر المدار (بعد تحويله إلى النظام الدولي)</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">احسب التعجيل المركزي \(a_c\).</p>
-
-      <ol class="steps hidden-steps" id="steps-ex1">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">نطبّق قانون التعجيل المركزي بدلالة السرعة الخطية</p>
-          <div class="calc-flow"><div class="calc-line">\( a_c = \dfrac{v^2}{r} \)</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">نحوّل نصف القطر من كيلومتر إلى متر ثم نعوّض</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( a_c = \dfrac{(363.4\ \text{m/s})^2}{(5000 \times 1000\ \text{m})} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( a_c = 0.0264\ \text{m/s}^2 \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ التعجيل المركزي = 0.0264 m/s²</div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة الحركة الدائرية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: التعجيل المركزي (إعادة إنشاء الشكل 1-1)</h2>
-      <p>حرّك المزلاجين لتغيير انطلاق الجسم (v) ونصف قطر مساره (r)، وشاهد الجسم يدور على المسار الدائري مع متجه السرعة المماسية (أخضر) ومتجه التعجيل المركزي (أحمر) المتّجه دائمًا نحو المركز.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="circMotionSvg" viewBox="0 0 420 340" width="420" height="340" role="img" aria-label="محاكاة جسم يتحرك بحركة دائرية منتظمة"></svg></div>
-        <div class="io-row">
-          <label for="cmSpeed" style="min-width:9rem">الانطلاق v = <span id="cmSpeedVal">4</span> m/s</label>
-          <input type="range" id="cmSpeed" class="neu-range" min="1" max="8" step="0.5" value="4">
-        </div>
-        <div class="io-row">
-          <label for="cmRadius" style="min-width:9rem">نصف القطر r = <span id="cmRadiusVal">3</span> m</label>
-          <input type="range" id="cmRadius" class="neu-range" min="1" max="4" step="0.25" value="3">
-        </div>
-        <div class="rule-box" id="cmFormula">$$ a_c = \dfrac{v^2}{r} = 5.33\ \text{m/s}^2 $$</div>
-      </div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
       <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>في الحركة الدائرية المنتظمة، يبقى ثابتًا:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>اتجاه السرعة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مقدار السرعة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>متجه السرعة بالكامل</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا شيء يبقى ثابتًا</span></label>
-        </div>
-        <div class="quiz-explain">في الحركة الدائرية يبقى مقدار السرعة ثابتًا بينما يتغيّر اتجاهها باستمرار من نقطة إلى أخرى.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>التعجيل المركزي ينشأ بسبب:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>تغيّر مقدار السرعة فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>ثبات اتجاه الحركة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تغيّر اتجاه الحركة دون الاعتماد على مقدارها</span></label>
-          <label class="quiz-opt"><input type="radio"><span>زيادة نصف قطر المسار</span></label>
-        </div>
-        <div class="quiz-explain">التعجيل المركزي هو المعدل الزمني لتغيّر اتجاه الحركة، وينشأ بسبب تغيير الاتجاه بصرف النظر عن مقدار السرعة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>في الحركة الدائرية المنتظمة، يكون التعجيل المركزي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>ثابت المقدار ومتغيّر الاتجاه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>متغيّر المقدار والاتجاه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>ثابت المقدار والاتجاه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>معدومًا دائمًا</span></label>
-        </div>
-        <div class="quiz-explain">في الحركة الدائرية المنتظمة، التعجيل المركزي ثابت المقدار لكنه يتغيّر في الاتجاه ليبقى متّجهًا دائمًا نحو مركز الدوران.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>العلاقة الصحيحة للتعجيل المركزي بدلالة السرعة الزاوية هي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( a_c = \omega r^2 \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( a_c = \omega/r \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( a_c = \omega^2/r \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( a_c = \omega^2 r \)</span></label>
-        </div>
-        <div class="quiz-explain">من \( a_c=v^2/r \) وبتعويض \( v=\omega r \) نحصل على \( a_c=(\omega r)^2/r=\omega^2 r \).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>التعجيل المركزي يعتمد على:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الكتلة ونصف القطر</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مربع الانطلاق ونصف قطر الدوران</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الزمن الدوري فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>القوة المؤثرة فقط</span></label>
-        </div>
-        <div class="quiz-explain">من العلاقة \( a_c=v^2/r \)، يعتمد التعجيل المركزي على مربع انطلاق الجسم ونصف قطر الدوران المتحرك به.</div>
-      </div>
-
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -221,11 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>الحركة الدائرية: حركة جسم على مسار دائري بمقدار سرعة ثابت واتجاه متغيّر باستمرار.</span></li>
-        <li><span>التعجيل المركزي: المعدل الزمني لتغيّر اتجاه الحركة، ويتّجه دائمًا نحو مركز الدوران.</span></li>
-        <li><span>\( a_c = v^2/r = \omega^2 r \).</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -235,24 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l1" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l1">
-        <svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للدرس الأول">
-          <line x1="410" y1="150" x2="180" y2="80" stroke="#b3bdcc" stroke-width="2"/>
-          <line x1="410" y1="150" x2="640" y2="80" stroke="#b3bdcc" stroke-width="2"/>
-          <line x1="410" y1="150" x2="410" y2="250" stroke="#b3bdcc" stroke-width="2"/>
-          <g><circle cx="410" cy="150" r="56" fill="#7c6fee"/>
-            <text x="410" y="146" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">الحركة</text>
-            <text x="410" y="163" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">الدائرية</text></g>
-          <g><circle cx="180" cy="80" r="48" fill="#3fa9f5"/>
-            <text x="180" y="76" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">سرعة ثابتة</text>
-            <text x="180" y="92" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">المقدار</text></g>
-          <g><circle cx="640" cy="80" r="48" fill="#2fd18f"/>
-            <text x="640" y="76" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">اتجاه</text>
-            <text x="640" y="92" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">متغيّر</text></g>
-          <g><circle cx="410" cy="250" r="48" fill="#ffab5e"/>
-            <text x="410" y="254" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">aₒ=v²/r=ω²r</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l1"></div>
     </div>
   </section>
   </div>
@@ -267,14 +85,9 @@
 <script src="../../assets/js/site-ch1.js"></script>
 <script>
 (function(){
-  var svg = document.getElementById("circMotionSvg");
   var ns = "http://www.w3.org/2000/svg";
   var W=420, H=340, cx=210, cy=170, pxPerM=30;
-  var speedInput = document.getElementById("cmSpeed");
-  var radiusInput = document.getElementById("cmRadius");
-  var speedVal = document.getElementById("cmSpeedVal");
-  var radiusVal = document.getElementById("cmRadiusVal");
-  var formula = document.getElementById("cmFormula");
+  var svg, speedInput, radiusInput, speedVal, radiusVal, formula;
   var angle = 0, raf = null, lastT = null;
 
   function draw(){
@@ -321,13 +134,17 @@
     var legend = document.createElementNS(ns,"text");
     legend.setAttribute("x",10); legend.setAttribute("y",20);
     legend.setAttribute("font-family","Cairo,sans-serif"); legend.setAttribute("font-size","12"); legend.setAttribute("fill","var(--accent-green)");
-    legend.textContent = "— v (مماسية)";
+    legend.textContent = "— " + simText("velLegend", "v (مماسية)");
     svg.appendChild(legend);
     var legend2 = document.createElementNS(ns,"text");
     legend2.setAttribute("x",10); legend2.setAttribute("y",38);
     legend2.setAttribute("font-family","Cairo,sans-serif"); legend2.setAttribute("font-size","12"); legend2.setAttribute("fill","var(--accent-red)");
-    legend2.textContent = "— aᴄ (مركزي)";
+    legend2.textContent = "— " + simText("accLegend", "aᴄ (مركزي)");
     svg.appendChild(legend2);
+  }
+
+  function simText(key, fallback){
+    return (window.PBLessonEngine && window.PBLessonEngine.simText(key, fallback)) || fallback;
   }
 
   function updateFormula(){
@@ -352,18 +169,30 @@
     raf = requestAnimationFrame(tick);
   }
 
-  speedInput.addEventListener("input", updateFormula);
-  radiusInput.addEventListener("input", updateFormula);
-
-  function start(){
+  // Re-run on every lesson-engine render (first paint AND every language
+  // switch): the lesson content — including this widget's own <svg>/<input>
+  // mount points — is rendered from JSON, so it doesn't exist yet at
+  // DOMContentLoaded and gets replaced wholesale on each language switch.
+  // Re-query the elements and restart the raf loop fresh each time.
+  function boot(){
+    if(raf){ cancelAnimationFrame(raf); raf = null; }
+    lastT = null;
+    svg = document.getElementById("circMotionSvg");
+    speedInput = document.getElementById("cmSpeed");
+    radiusInput = document.getElementById("cmRadius");
+    speedVal = document.getElementById("cmSpeedVal");
+    radiusVal = document.getElementById("cmRadiusVal");
+    formula = document.getElementById("cmFormula");
+    if(!svg || !speedInput || !radiusInput) return;
+    speedInput.addEventListener("input", updateFormula);
+    radiusInput.addEventListener("input", updateFormula);
     updateFormula();
     draw();
     if(!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)){
       raf = requestAnimationFrame(tick);
     }
   }
-  document.addEventListener("DOMContentLoaded", start);
-  if(document.readyState !== "loading") start();
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

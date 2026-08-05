@@ -24,7 +24,11 @@
     "checkUnderstanding": "🧠 Check your understanding",
     "chapterHome": "Chapter Home",
     "readyToBuild": "Ready to build",
-    "yourProgress": "Your progress in this chapter"
+    "yourProgress": "Your progress in this chapter",
+    "example": "Example",
+    "detailedSolution": "Detailed Solution",
+    "given": "Given",
+    "required": "Required"
   },
   "brand": {
     "name": "Interactive Physics Book"
