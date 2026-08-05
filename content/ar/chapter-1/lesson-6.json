@@ -38,21 +38,7 @@
     },
     {
       "type": "paragraph",
-      "html": "ويعبّر عن قانون نيوتن الثاني بحاصل ضرب الكتلة في التعجيل، أي أن:",
-      "sectionGroup": 2,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "paragraph",
-      "html": "\\( F=ma \\qquad \\text{...(17)} \\)",
-      "sectionGroup": 2,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "paragraph",
-      "html": "وفي الحركة الدورانية تصبح المعادلة (17):",
+      "html": "ويعبّر عن قانون نيوتن الثاني بحاصل ضرب الكتلة في التعجيل، أي أن:</p><p>\\( F=ma \\qquad \\text{...(17)} \\)</p><p>وفي الحركة الدورانية تصبح المعادلة (17):",
       "sectionGroup": 2,
       "sectionId": null,
       "sectionNavLabel": null

@@ -155,21 +155,7 @@
     },
     {
       "type": "paragraph",
-      "html": "أما العلاقة بين المقادير الفيزيائية في الحركة الدورانية والخطية، وفي حالة ثبوت نصف القطر الدائرية، فهي:",
-      "sectionGroup": 9,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "paragraph",
-      "html": "\\( s=\\theta r \\qquad v=\\omega r \\qquad a_T=\\alpha r \\)",
-      "sectionGroup": 9,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "paragraph",
-      "html": "لذا يمكن أن نبيّن أن قوانين الحركة الخطية ذات تعجيل خطي منتظم وقوانين الحركة الدورانية ذات التعجيل الزاوي المنتظم متناظرة كما في الجدول الآتي:",
+      "html": "أما العلاقة بين المقادير الفيزيائية في الحركة الدورانية والخطية، وفي حالة ثبوت نصف القطر الدائرية، فهي:</p><p>\\( s=\\theta r \\qquad v=\\omega r \\qquad a_T=\\alpha r \\)</p><p>لذا يمكن أن نبيّن أن قوانين الحركة الخطية ذات تعجيل خطي منتظم وقوانين الحركة الدورانية ذات التعجيل الزاوي المنتظم متناظرة كما في الجدول الآتي:",
       "sectionGroup": 9,
       "sectionId": null,
       "sectionNavLabel": null

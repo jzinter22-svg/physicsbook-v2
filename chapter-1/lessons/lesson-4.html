@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-4.html">
@@ -42,304 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يوضّح المفهوم العام للحركة الدورانية ويقارنها بالحركة الخطية بدلالة المقادير المتناظرة.</span></li>
-        <li><span class="obj-num">2</span><span>يعرّف الازاحة الزاوية (θ) ويشتق العلاقة بينها وبين الازاحة الخطية (S).</span></li>
-        <li><span class="obj-num">3</span><span>يعرّف السرعة الزاوية (ω) ويشتق العلاقة \(v_T=\omega r\) باستخدام قاعدة اليد اليمنى لتحديد اتجاهها.</span></li>
-        <li><span class="obj-num">4</span><span>يحسب السرعة الزاوية والسرعة المماسية من معطيات عملية.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="card neu">
-      <h2>💡 5-1 الحركة الدورانية</h2>
-      <p>إن معظم أنواع الحركة في حياتنا اليومية تتألف من انتقال الجسم ودورانه حول محور معين في نفس الوقت، مثل دوران الارض حول محورها دورةً واحدةً كل 24 ساعة، وتدور دورة واحدة حول الشمس لكل 365 يوماً. كذلك حركة عجلة السيارة التي تشتمل على الحركتين الدورانية والانتقالية.</p>
-      <p>توصف الحركة الدورانية بدلالة الازاحة الزاوية (θ) والسرعة الزاوية (ω) والتعجيل الزاوي (α). وفي جميع الحالات يمكن تعويض المقادير الفيزيائية في الحركة الدورانية بدلاً من المقادير الفيزيائية في الحركة الخطية ولجميع القوانين كما هو في الجدول (1-1).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu" style="overflow-x:auto">
-      <h2 style="margin-bottom:.8rem">📊 جدول 1-1: المقادير الفيزياوية للحركة الخطية والحركة الدورانية</h2>
-      <table style="width:100%;border-collapse:collapse;text-align:center;min-width:420px">
-        <thead>
-          <tr style="background:var(--surface)">
-            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">المقدار الفيزيائي</th>
-            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">الحركة الخطية</th>
-            <th style="padding:.7rem;border-bottom:2px solid var(--accent-blue)">الحركة الدورانية</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">الكتلة</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">m</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">نعوض بدل الكتلة بعزم القصور الذاتي I</td></tr>
-          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">الازاحة</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">S</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">θ</td></tr>
-          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">السرعة</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">v</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">ω</td></tr>
-          <tr><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">التعجيل</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">a</td><td style="padding:.6rem;border-bottom:1px solid var(--shadow-dark)">α</td></tr>
-          <tr><td style="padding:.6rem">القوة</td><td style="padding:.6rem">F</td><td style="padding:.6rem">نعوض بدل القوة بالعزم المدور τ</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 1-5-1 الازاحة الزاوية</span>
-      <p style="margin:.3rem 0">هي الزاوية المركزية التي يقطعها الجسم المتحرك دورانيًا حيث إذا تحرك جسيم على مسار دائري نصف قطره (r) وانتقل من النقطة (A) الى النقطة (B) قاطعًا قوسًا طوله (S) على محيط الدائرة، فالزاوية المقابلة للقوس تدعى بالإزاحة الزاوية ويرمز لها بالرمز (θ)، ويكون اتجاهها موجبًا اذا كانت عكس اتجاه عقارب الساعة وسالبًا اذا كان اتجاهها مع اتجاه عقارب الساعة، وتقاس بوحدات نصف القطرية (rad).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      <p style="margin:0 0 .5rem;font-weight:700">الزاوية بالتقدير الدائري = طول القوس ÷ نصف القطر</p>
-      $$ \theta_{\text{rad}} = \dfrac{S}{r} \qquad \text{...(1)} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ \therefore\ S = r\theta \qquad \text{...(2)} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">وهذه العلاقة تربط بين الازاحة الخطية (S) والازاحة الزاوية (θ) لها.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">📝</span>
-      <span>الزاوية النصف قطرية (Radian) لا تقاس بالمتر أو اجزائه أو اكبر منه لأن وحدات الازاحة الزاوية ليست فقط قطرية، وأنما يمكن تقدير الازاحة الزاوية بالدرجات الستينية أو بعدد الدورات؛ لذا فأن الدورة الكاملة تعادل (2π) بالمقياس الستيني وتقابل (360°) بالمقياس القطري، أي أن:</span>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ 1\ \text{revolution} = 2\pi\ (\text{rad}) = 360^{\circ} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">أي أن عدد الدورات = \( \dfrac{\theta}{2\pi} \)</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="theta-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 7-1">
-    <div class="card neu">
-      <h2>🕹️ إعادة إنشاء الشكل 1-7: الازاحة الزاوية والقوس</h2>
-      <p>حرّك مزلاج الزاوية θ لمشاهدة الجسم ينتقل من A إلى B، ولاحظ كيف يتغيّر طول القوس الممسوح S بحسب العلاقة \(S=r\theta\).</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="thetaSvg" viewBox="0 0 320 240" width="320" height="240" role="img" aria-label="جسيم يتحرك على منحنى دائرة قاطعًا زاوية وقوسًا"></svg></div>
-        <div class="io-row">
-          <label for="thetaSlider" style="min-width:9rem">θ = <span id="thetaDegVal">60</span>° (<span id="thetaRadVal">1.05</span> rad)</label>
-          <input type="range" id="thetaSlider" class="neu-range" min="0" max="300" step="1" value="60">
-        </div>
-        <div class="rule-box">نصف القطر r = 2 m ← طول القوس \( S=r\theta= \) <b id="arcLenVal">2.09</b> m</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 2-5-1 السرعة الزاوية</span>
-      <p style="margin:.3rem 0">نلاحظ أيضًا أن (S) تتغير مع تغير (θ) وبثبوت نصف قطر الدائرة، وعليه:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ \Delta S = r\Delta\theta \qquad \text{...(3)} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">وبقسمة طرفي المعادلة (3) على (Δt) نحصل على:</p>
-      $$ \dfrac{\Delta S}{\Delta t} = r\dfrac{\Delta\theta}{\Delta t} \qquad \text{...(4)} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      <p style="margin:0 0 .4rem">تمثل \( \dfrac{\Delta S}{\Delta t} \) السرعة الخطية المماسية لمحيط الدائرة ويرمز لها بالرمز \(v_T\)، أي إن:</p>
-      $$ v_T = \dfrac{\Delta S}{\Delta t} \qquad \text{...(5)} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      <p style="margin:0 0 .4rem">أما \( \dfrac{\Delta\theta}{\Delta t} \) فإنها تمثل التغيّر في الزاوية القطرية مع الزمن، وتدعى بالسرعة الزاوية ويرمز لها بالرمز (ω)، وتقاس بوحدات (rad/s)، أي إن:</p>
-      $$ \omega = \dfrac{\Delta\theta}{\Delta t} \qquad \text{...(6)} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">📝</span>
-      <span>تُعدّ السرعة الزاوية من المقادير الفيزيائية الاتجاهية، ويكون اتجاهها عموديًا على المستوي الذي يحتوي (r) و(vT)، ويتم تحديدها باستعمال قاعدة اليد اليمنى.</span>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="rhr-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 8-1">
-    <div class="card neu">
-      <h2>🕹️ إعادة إنشاء الشكل 1-8: قاعدة اليد اليمنى لاتجاه ω</h2>
-      <p>اضغط الزر لعكس اتجاه الدوران، ولاحظ كيف ينعكس اتجاه متجه السرعة الزاوية (ω) وفق قاعدة اليد اليمنى: لفّ أصابع اليد اليمنى باتجاه الدوران فيشير الإبهام إلى اتجاه ω.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="rhrSvg" viewBox="0 0 320 300" width="320" height="300" role="img" aria-label="قاعدة اليد اليمنى لتحديد اتجاه السرعة الزاوية"></svg></div>
-        <button class="neu-btn" id="rhrToggle">↺ عكس اتجاه الدوران</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      <p style="margin:0 0 .4rem">وبتعويض العلاقة (5) و(6) في (4) نحصل على:</p>
-      $$ v_T = \omega r \qquad \text{...(7)} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      <p style="margin:0 0 .4rem">وعند دوران الجسم دورة كاملة فإن مقدار الازاحة الزاوية تساوي (2π)، فتصبح السرعة الزاوية بعد التعويض بالمعادلة (7):</p>
-      $$ \omega = \dfrac{2\pi}{t} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">إذ إن t: يمثل زمن الدورة الكاملة، ومقلوب هذا الزمن يدعى بالتردد ويرمز له بالرمز (f) ويقاس بوحدات (دورة/ثانية) أو الهيرتز (Hz)، فتصبح السرعة الزاوية بدلالة التردد:</p>
-      $$ \omega = 2\pi f $$
-      <p style="margin:.4rem 0 0;font-size:.95rem">ويسمى هنا بالتردد الزاوي.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">💡</span>
-      <span><b>هل تعلم؟</b> أن مشغل الاقراص المرنة (CD) يحتوي على محرك يقوم بتدوير القرص بتحكم المرن الذي يتراوح ما بين 200 الى 500 دورة في الدقيقة ليقوم شعاع الليزر بقراءة المعلومات المثبتة على القرص.</span>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="example3" data-navlabel="📝 مثال 3">
-    <div class="example">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (3)</h2></div>
-      <p>مروحة تدور بمعدل (900 rpm) (أي 900 دورة/دقيقة).</p>
-      <p>(a) احسب السرعة الزاوية لأي نقطة على إحدى ريش المروحة.</p>
-      <p>(b) احسب السرعة المماسية لحافة الريشة إذا كانت المسافة من المركز الى الحافة (20 cm).</p>
-    </div>
-
-    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
-        <button class="neu-btn" data-reveal-steps="steps-ex3" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( N = 900\ \text{rpm} = 900 \) دورة/دقيقة — معدل دوران المروحة</span></li>
-        <li><span>\( t = 60\ \text{s} \) — الزمن المقابل لعدد الدورات (لتحويل الوحدات إلى ثوانٍ)</span></li>
-        <li><span>\( r = 20\ \text{cm} = 0.20\ \text{m} \) — المسافة من المركز إلى حافة الريشة (بعد التحويل)</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">(a) احسب السرعة الزاوية ω لأي نقطة على إحدى ريش المروحة. (b) احسب السرعة المماسية v لحافة الريشة.</p>
-
-      <ol class="steps hidden-steps" id="steps-ex3">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">(a) السرعة الزاوية: عدد الدورات N=900 خلال t=60 s</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( \omega = \dfrac{N\times 2\pi}{t} = \dfrac{900\times 2\pi}{60} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( \omega = 30\pi\ \text{rad/s} \approx 94.2\ \text{rad/s} \)</div>
-          </div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">(b) السرعة المماسية عند r=20 cm=0.20 m</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( v = \omega r = 30\pi \times 0.20 \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( v = 30\times 3.14\times 0.20 = 18.84\ \text{m/s} \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ ω = 30π rad/s ≈ 94.2 rad/s   ·   v = 18.84 m/s</div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>ولنفرض أن جسمًا يدور في مسار دائري نصف قطره (r)، فإن موضعه الزاوي في أي لحظة يتحدد بمقدار الازاحة الزاوية (θ)، فإذا كان موضع الجسم عند الزمن \((t_1)\) هو \((\theta_1)\) ثم صار عند موضع \((\theta_2)\) في الزمن \((t_2)\)، لذلك نجد أنه قد دار ازاحة زاوية مقدارها:</p>
-      <p style="text-align:center">\( \Delta\theta = \theta_2 - \theta_1 \) خلال فترة زمنية: \( \Delta t = t_2 - t_1 \)</p>
-      <p>وعليه يعرّف معدل السرعة الزاوية:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ \omega_{av} = \dfrac{\Delta\theta}{\Delta t} = \dfrac{\theta_2-\theta_1}{t_2-t_1} \qquad \text{...(8)} $$
-    </div>
-  </section>
-
-  <section class="section fade-up" id="omega-av-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 9-1">
-    <div class="card neu">
-      <h2>🕹️ إعادة إنشاء الشكل 1-9: معدل السرعة الزاوية</h2>
-      <p>حرّك المزلاجين لتحديد موضعي الجسم A (عند θ₁) وB (عند θ₂)، ولاحظ كيف يُحسب معدل السرعة الزاوية بين الموضعين خلال فترة زمنية ثابتة قدرها 1 ثانية.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="omegaAvSvg" viewBox="0 0 320 240" width="320" height="240" role="img" aria-label="موضعان زاويان A و B على دائرة ومعدل السرعة الزاوية بينهما"></svg></div>
-        <div class="io-row">
-          <label for="theta1Slider" style="min-width:9rem">θ₁ = <span id="theta1Val">20</span>°</label>
-          <input type="range" id="theta1Slider" class="neu-range" min="0" max="340" step="1" value="20">
-        </div>
-        <div class="io-row">
-          <label for="theta2Slider" style="min-width:9rem">θ₂ = <span id="theta2Val">110</span>°</label>
-          <input type="range" id="theta2Slider" class="neu-range" min="0" max="340" step="1" value="110">
-        </div>
-        <div class="rule-box">\( \omega_{av} = \dfrac{\theta_2-\theta_1}{\Delta t} = \) <b id="omegaAvVal">1.57</b> rad/s (بافتراض Δt = 1 s)</div>
-      </div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
       <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>1.</span><span>في الحركة الدورانية، المقدار المناظر للكتلة (m) في الحركة الخطية هو:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الازاحة الزاوية θ</span></label>
-          <label class="quiz-opt"><input type="radio"><span>السرعة الزاوية ω</span></label>
-          <label class="quiz-opt"><input type="radio"><span>عزم القصور الذاتي I</span></label>
-          <label class="quiz-opt"><input type="radio"><span>العزم المدور τ</span></label>
-        </div>
-        <div class="quiz-explain">وفق الجدول (1-1)، يُستعاض عن الكتلة (m) في الحركة الدورانية بعزم القصور الذاتي (I).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>2.</span><span>العلاقة بين الازاحة الخطية (S) والازاحة الزاوية (θ) لجسم يدور بنصف قطر (r) هي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( S = r\theta \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( S = \theta/r \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( S = r/\theta \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( S = r+\theta \)</span></label>
-        </div>
-        <div class="quiz-explain">من تعريف الزاوية النصف قطرية: \(\theta=S/r\)، وبالتالي \(S=r\theta\).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>3.</span><span>الدورة الكاملة الواحدة (360°) تعادل بالمقياس القطري (Radian):</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>π rad</span></label>
-          <label class="quiz-opt"><input type="radio"><span>2π rad</span></label>
-          <label class="quiz-opt"><input type="radio"><span>π/2 rad</span></label>
-          <label class="quiz-opt"><input type="radio"><span>4π rad</span></label>
-        </div>
-        <div class="quiz-explain">1 دورة = 2π (rad) = 360°.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>العلاقة بين السرعة المماسية \(v_T\) والسرعة الزاوية ω لجسم يدور بنصف قطر r هي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( v_T = \omega/r \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( v_T = \omega + r \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( v_T = \omega^2 r \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( v_T = \omega r \)</span></label>
-        </div>
-        <div class="quiz-explain">المعادلة (7): \(v_T=\omega r\).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>5.</span><span>يُحدَّد اتجاه متجه السرعة الزاوية (ω) باستعمال:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>قاعدة القوة المركزية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>قانون نيوتن الثالث</span></label>
-          <label class="quiz-opt"><input type="radio"><span>قاعدة اليد اليمنى</span></label>
-          <label class="quiz-opt"><input type="radio"><span>قانون كبلر الثاني</span></label>
-        </div>
-        <div class="quiz-explain">يُستعمل اتجاه إبهام اليد اليمنى عند لفّ الأصابع باتجاه الدوران لتحديد اتجاه ω، وهو عمودي على مستوي (r) و(vT).</div>
-      </div>
-
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -348,12 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>الازاحة الزاوية θ=S/r، وبالتالي S=rθ، وتقاس بالراديان أو الدرجات أو عدد الدورات (1 دورة=2π rad=360°).</span></li>
-        <li><span>السرعة الزاوية ω=Δθ/Δt، وترتبط بالسرعة المماسية بالعلاقة \(v_T=\omega r\).</span></li>
-        <li><span>اتجاه ω يُحدَّد بقاعدة اليد اليمنى، وهو عمودي على مستوي r و vT.</span></li>
-        <li><span>معدل السرعة الزاوية \(\omega_{av}=(\theta_2-\theta_1)/(t_2-t_1)\).</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -363,31 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l4" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l4">
-        <svg viewBox="0 0 480 240" width="480" height="240" role="img" aria-label="خريطة الازاحة والسرعة الزاويتين الذهنية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="120" x2="100" y2="45"/>
-            <line x1="240" y1="120" x2="100" y2="195"/>
-            <line x1="240" y1="120" x2="380" y2="45"/>
-            <line x1="240" y1="120" x2="380" y2="195"/>
-          </g>
-          <g>
-            <circle cx="240" cy="120" r="50" fill="#7c6fee"/>
-            <text x="240" y="124" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">الحركة الدورانية</text>
-          </g>
-          <g><circle cx="100" cy="45" r="44" fill="#3fa9f5"/>
-            <text x="100" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">θ</text>
-            <text x="100" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">S=rθ</text></g>
-          <g><circle cx="100" cy="195" r="44" fill="#2fd18f"/>
-            <text x="100" y="192" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">ω</text>
-            <text x="100" y="206" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">vT=ωr</text></g>
-          <g><circle cx="380" cy="45" r="44" fill="#ffab5e"/>
-            <text x="380" y="48" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">اليد اليمنى</text></g>
-          <g><circle cx="380" cy="195" r="44" fill="#ff6b9d"/>
-            <text x="380" y="192" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">ω=2πf</text>
-            <text x="380" y="205" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">التردد</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l4"></div>
     </div>
   </section>
 
@@ -431,13 +114,12 @@
     var large = (a2-a1) > Math.PI ? 1 : 0;
     return "M"+x1+","+y1+" A"+r+","+r+" 0 "+large+" 1 "+x2+","+y2;
   }
+  function simText(key, fallback){
+    return (window.PBLessonEngine && window.PBLessonEngine.simText(key, fallback)) || fallback;
+  }
 
   // ===== Figure 7-1: theta / arc widget =====
-  var svgT = document.getElementById("thetaSvg");
-  var thetaSlider = document.getElementById("thetaSlider");
-  var thetaDegVal = document.getElementById("thetaDegVal");
-  var thetaRadVal = document.getElementById("thetaRadVal");
-  var arcLenVal = document.getElementById("arcLenVal");
+  var svgT, thetaSlider, thetaDegVal, thetaRadVal, arcLenVal;
   var Ocx=140, Ocy=140, Rpx=90, R_M=2;
 
   function drawTheta(){
@@ -477,12 +159,9 @@
     svgT.appendChild(lr2);
     label(svgT, Ocx+18, Ocy-18, "θ", "var(--accent-blue)", 15);
   }
-  thetaSlider.addEventListener("input", drawTheta);
-  drawTheta();
 
   // ===== Figure 8-1: right-hand rule widget =====
-  var svgR = document.getElementById("rhrSvg");
-  var rhrToggle = document.getElementById("rhrToggle");
+  var svgR, rhrToggle;
   var rhrCW = false;
 
   function drawRHR(){
@@ -508,7 +187,7 @@
     arrow(svgR, cx, omegaY1, cx, omegaY2, "var(--accent-red)", 4.5);
     label(svgR, cx+12, (omegaY1+omegaY2)/2+4, "ω", "var(--accent-red)", 15);
 
-    var caption = rhrCW ? "دوران مع عقارب الساعة → ω للداخل ⊗" : "دوران عكس عقارب الساعة → ω للخارج ⊙";
+    var caption = rhrCW ? simText("rhrCW","دوران مع عقارب الساعة → ω للداخل ⊗") : simText("rhrCCW","دوران عكس عقارب الساعة → ω للخارج ⊙");
     var capText = document.createElementNS(ns,"text");
     capText.setAttribute("x",cx); capText.setAttribute("y",280);
     capText.setAttribute("text-anchor","middle"); capText.setAttribute("font-family","Cairo,sans-serif");
@@ -516,16 +195,8 @@
     capText.textContent = caption;
     svgR.appendChild(capText);
   }
-  rhrToggle.addEventListener("click", function(){ rhrCW = !rhrCW; drawRHR(); });
-  drawRHR();
-
   // ===== Figure 9-1: omega average widget =====
-  var svgW = document.getElementById("omegaAvSvg");
-  var t1Slider = document.getElementById("theta1Slider");
-  var t2Slider = document.getElementById("theta2Slider");
-  var t1Val = document.getElementById("theta1Val");
-  var t2Val = document.getElementById("theta2Val");
-  var omegaAvVal = document.getElementById("omegaAvVal");
+  var svgW, t1Slider, t2Slider, t1Val, t2Val, omegaAvVal;
   var Ocx2=140, Ocy2=130, Rpx2=85;
 
   function drawOmegaAv(){
@@ -563,9 +234,42 @@
     arc.setAttribute("fill","none"); arc.setAttribute("stroke","var(--accent-blue)"); arc.setAttribute("stroke-width","2.5");
     svgW.appendChild(arc);
   }
-  t1Slider.addEventListener("input", drawOmegaAv);
-  t2Slider.addEventListener("input", drawOmegaAv);
-  drawOmegaAv();
+
+  // Re-run on every lesson-engine render (first paint AND every language
+  // switch): all three widgets' mount points are rendered from JSON, so
+  // they don't exist yet at DOMContentLoaded and get replaced wholesale on
+  // each language switch.
+  function boot(){
+    svgT = document.getElementById("thetaSvg");
+    thetaSlider = document.getElementById("thetaSlider");
+    thetaDegVal = document.getElementById("thetaDegVal");
+    thetaRadVal = document.getElementById("thetaRadVal");
+    arcLenVal = document.getElementById("arcLenVal");
+    if(svgT && thetaSlider){
+      thetaSlider.addEventListener("input", drawTheta);
+      drawTheta();
+    }
+
+    svgR = document.getElementById("rhrSvg");
+    rhrToggle = document.getElementById("rhrToggle");
+    if(svgR && rhrToggle){
+      rhrToggle.addEventListener("click", function(){ rhrCW = !rhrCW; drawRHR(); });
+      drawRHR();
+    }
+
+    svgW = document.getElementById("omegaAvSvg");
+    t1Slider = document.getElementById("theta1Slider");
+    t2Slider = document.getElementById("theta2Slider");
+    t1Val = document.getElementById("theta1Val");
+    t2Val = document.getElementById("theta2Val");
+    omegaAvVal = document.getElementById("omegaAvVal");
+    if(svgW && t1Slider){
+      t1Slider.addEventListener("input", drawOmegaAv);
+      t2Slider.addEventListener("input", drawOmegaAv);
+      drawOmegaAv();
+    }
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

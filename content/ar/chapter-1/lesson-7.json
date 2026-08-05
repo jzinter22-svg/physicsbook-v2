@@ -92,14 +92,7 @@
     },
     {
       "type": "paragraph",
-      "html": "الزخم الخطي = mv",
-      "sectionGroup": 9,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "paragraph",
-      "html": "بالتعويض نحصل على:",
+      "html": "الزخم الخطي = mv</p><p>بالتعويض نحصل على:",
       "sectionGroup": 9,
       "sectionId": null,
       "sectionNavLabel": null
@@ -122,14 +115,7 @@
     },
     {
       "type": "paragraph",
-      "html": "حيث \\(\\omega_i, \\omega_f\\) تمثل السرعتين الزاويتين النهائية والابتدائية. أما التغيّر في الزخم الزاوي فيدعى بالدفع الزاوي، والذي يساوي حاصل ضرب العزم المدور في زمن تأثيره:",
-      "sectionGroup": 12,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "paragraph",
-      "html": "الدفع الزاوي = τt",
+      "html": "حيث \\(\\omega_i, \\omega_f\\) تمثل السرعتين الزاويتين النهائية والابتدائية. أما التغيّر في الزخم الزاوي فيدعى بالدفع الزاوي، والذي يساوي حاصل ضرب العزم المدور في زمن تأثيره:</p><p>الدفع الزاوي = τt",
       "sectionGroup": 12,
       "sectionId": null,
       "sectionNavLabel": null

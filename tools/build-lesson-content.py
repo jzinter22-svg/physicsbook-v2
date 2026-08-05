@@ -454,11 +454,19 @@ def extract_lesson(path, lesson_num, chapter_num, total_lessons):
             if card:
                 h2c = card.find("h2")
                 paras = card.find_all("p", recursive=False)
+                # The renderer wraps this html in one outer <p>...</p> (see
+                # renderBlock's "explanation"/"paragraph" cases) — joining
+                # multiple sibling <p>s with plain "" ran them together with
+                # no space, and previously each got its own content-array
+                # entry (and its own separate .card wrapper once rendered)
+                # even though they're one card in the source. Joining with
+                # "</p><p>" closes/reopens correctly inside that outer <p>,
+                # preserving both the paragraph break and the single card.
+                joined = "</p><p>".join(inner_html(p) for p in paras)
                 if h2c:
-                    data["content"].append({"type": "explanation", "heading": text(h2c), "html": "".join(inner_html(p) for p in paras)})
+                    data["content"].append({"type": "explanation", "heading": text(h2c), "html": joined})
                 else:
-                    for p in paras:
-                        data["content"].append({"type": "paragraph", "html": inner_html(p)})
+                    data["content"].append({"type": "paragraph", "html": joined})
                 continue
 
             # Every recognized shape has been tried and none matched — this
