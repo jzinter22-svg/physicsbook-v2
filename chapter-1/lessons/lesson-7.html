@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-7.html">
@@ -42,293 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يشتق علاقة الطاقة الحركية الدورانية \(E_r=\tfrac12 I\omega^2\) من نظيرتها الخطية.</span></li>
-        <li><span class="obj-num">2</span><span>يحسب الشغل والقدرة في الحركة الدورانية بدلالة العزم والازاحة الزاوية والسرعة الزاوية.</span></li>
-        <li><span class="obj-num">3</span><span>يعرّف الزخم الزاوي \(L=I\omega\) ويربطه بالزخم الخطي والدفع الزاوي.</span></li>
-        <li><span class="obj-num">4</span><span>يحل مسائل حسابية على الطاقة والشغل والقدرة والزخم الزاوي لجسم دوّار.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="def-box">
-      <span class="def-label">📌 6-1 الطاقة في الحركة الدورانية</span>
-      <p style="margin:.3rem 0">بما أن الطاقة الحركية في الحركة الخطية الانتقالية \((E_k)\) توصف بالعلاقة:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ E_k = \tfrac{1}{2}mv^2 $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">إذ إن: m كتلة الجسم، v سرعة الجسم.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>وعند التعويض بدل السرعة الخطية بالسرعة الزاوية \((v=\omega r)\)، وبدل الكتلة نعوّض عزم القصور الذاتي \((I=mr^2)\)، فإننا نحصل على:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ E_r = \tfrac{1}{2}I\omega^2 \qquad \text{...(19)} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">يمثل (I) عزم القصور الذاتي للجسم الصلد حول محور دوران معيّن.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 7-1 الشغل والقدرة في الحركة الدورانية</span>
-      <p style="margin:.3rem 0">لنفرض أن قوة مقدارها (F) أثّرت على جسم يتحرك على مسار دائري نصف قطره (r) بازاحة خطية مقدارها (Δs) وازاحة زاوية (Δθ)، فيكون الشغل في الحركة الخطية عبارة عن حاصل ضرب القوة في الازاحة الخطية:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ \Delta W = F\Delta s $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">وإذا ما تم التعويض عن الازاحة الخطية (Δs) بالازاحة الزاوية (Δθ) والقوة (F) بالعزم (τ) نحصل على الآتي — الشغل المنجز في الحركة الدورانية:</p>
-      $$ \Delta W = \tau\Delta\theta = \tau(\theta_2-\theta_1) \qquad \text{...(20)} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>أما القدرة (P)، فإنها تعرّف بالشغل المنجز لوحدة الزمن: \(P=\dfrac{\Delta W}{\Delta t}\)، وفي الحركة الدورانية: \(P=\dfrac{\tau\Delta\theta}{\Delta t}\) ⇒</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box" style="border-color:var(--accent-red)">
-      $$ P = \tau\omega \qquad \text{...(21)} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 8-1 الزخم الزاوي</span>
-      <p style="margin:.3rem 0">يعرّف الزخم الخطي لجسم كتلته (m) يتحرك على مسار خطي بأنه حاصل ضرب الكتلة في السرعة الخطية، وإذا ما استبدلنا الكتلة بعزم القصور الذاتي والسرعة الخطية بالسرعة الزاوية فإننا نحصل على العلاقة الرياضية للزخم الزاوي:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p style="text-align:center">الزخم الخطي = mv</p>
-      <p>بالتعويض نحصل على:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box" style="border-color:var(--accent-red)">
-      $$ L = I\omega \qquad \text{...(22)} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">يمثل الزخم الزاوي ووحداته \(\left(\dfrac{\text{kg}\cdot\text{m}^2}{\text{s}}\right)\).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box" style="border-color:var(--accent-red)">
-      $$ \Delta L = I\omega_f - I\omega_i = I(\omega_f-\omega_i) $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>حيث \(\omega_i, \omega_f\) تمثل السرعتين الزاويتين النهائية والابتدائية. أما التغيّر في الزخم الزاوي فيدعى بالدفع الزاوي، والذي يساوي حاصل ضرب العزم المدور في زمن تأثيره:</p>
-      <p style="text-align:center">الدفع الزاوي = τt</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">💡</span>
-      <span><b>هل تعلم؟</b> تُصنع عجلة الدرّاجة واغلب كتلتها في أطارها لجعل عزم قصورها الذاتي كبيرًا وذلك للحفاظ على اتزانها أثناء الحركة.</span>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="example6" data-navlabel="📝 مثال 6">
-    <div class="example">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (6)</h2></div>
-      <p>احسب عزم القصور الذاتي لكرة صلدة تدور حول احد اقطارها، كتلتها (10 kg) وان نصف قطرها (50 cm)؟</p>
-    </div>
-
-    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
-        <button class="neu-btn" data-reveal-steps="steps-ex6" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( m = 10\ \text{kg} \) — كتلة الكرة</span></li>
-        <li><span>\( r = 50\ \text{cm} = 0.5\ \text{m} \) — نصف قطر الكرة (بعد التحويل إلى النظام الدولي)</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">احسب عزم القصور الذاتي I للكرة الصلدة حول أحد أقطارها.</p>
-
-      <ol class="steps hidden-steps" id="steps-ex6">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">عزم القصور الذاتي لكرة صلدة حول القطر (جدول 2-1): \(I=\tfrac25 mr^2\)، حيث m=10 kg، r=0.5 m</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( I = \tfrac{2}{5}\times 10\times(0.5)^2 \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( I = 1\ \text{kg}\cdot\text{m}^2 \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ I = 1 kg·m²</div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">🤔</span>
-      <span><b>فكر:</b> ماذا نتوقّع لو كان محور الدوران على بعد 0.25 m (أي عند نصف قطر أصغر)؟ جرّب ذلك بنفسك في الأداة التفاعلية أدناه.</span>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="sphere-widget" data-navlabel="🕹️ استكشف: نصف القطر وعزم القصور">
-    <div class="card neu">
-      <h2>🕹️ استكشاف تفاعلي: كيف يتغيّر عزم القصور الذاتي مع نصف القطر؟</h2>
-      <p>حرّك المزلاج لتغيير نصف قطر دوران الكرة (بنفس كتلة المثال 10 kg)، وقارن القيمة عند r=0.5 m (كما في المثال) وعند r=0.25 m (وفق سؤال «فكر»).</p>
-      <div class="io-row">
-        <label for="sphereR" style="min-width:9rem">r = <span id="sphereRVal">0.50</span> m</label>
-        <input type="range" id="sphereR" class="neu-range" min="0.1" max="0.8" step="0.01" value="0.5">
-      </div>
-      <div class="rule-box">\( I=\tfrac{2}{5}(10)r^2 = \) <b id="sphereIVal">1.000</b> kg·m²</div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="example7" data-navlabel="📝 مثال 7">
-    <div class="example">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (7)</h2></div>
-      <p>قرص عزم قصوره الذاتي (2 kg·m²) يدور حول محوره بزخم زاوي منتظم مقداره (50 kg·m²/s)، فما مقدار: 1- سرعته الزاوية. 2- طاقته الحركية الدورانية. 3- الدفع الزاوي. 4- الشغل الزاوي.</p>
-    </div>
-
-    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
-        <button class="neu-btn" data-reveal-steps="steps-ex7" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( I = 2\ \text{kg}\cdot\text{m}^2 \) — عزم القصور الذاتي للقرص</span></li>
-        <li><span>\( L = 50\ \text{kg}\cdot\text{m}^2/\text{s} \) — الزخم الزاوي، وهو منتظم (ثابت) بمرور الزمن</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">احسب: (1) السرعة الزاوية ω. (2) الطاقة الحركية الدورانية Er. (3) الدفع الزاوي. (4) الشغل الزاوي.</p>
-
-      <ol class="steps hidden-steps" id="steps-ex7">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">1- السرعة الزاوية: من \(L=I\omega\)</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( \omega = \dfrac{L}{I} = \dfrac{50}{2} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( \omega = 25\ \text{rad/s} \)</div>
-          </div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">2- الطاقة الحركية الدورانية: من \(E_r=\tfrac12 I\omega^2\)</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( E_r = \tfrac{1}{2}\times 2\times(25)^2 \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( E_r = 625\ \text{J} \)</div>
-          </div>
-        </div></li>
-        <li class="step"><span class="step-dot">3</span><div class="step-body">
-          <p class="calc-note">3- الدفع الزاوي: بما أن الزخم الزاوي منتظم (ثابت) بمرور الزمن، فلا يوجد تغيّر في الزخم الزاوي</p>
-          <div class="calc-flow">
-            <div class="calc-line calc-box">\( \Delta L = 0 \)</div>
-          </div>
-        </div></li>
-        <li class="step"><span class="step-dot">4</span><div class="step-body">
-          <p class="calc-note">4- الشغل الزاوي: لعدم وجود تغيّر في الطاقة الحركية الدورانية (السرعة الزاوية ثابتة)</p>
-          <div class="calc-flow">
-            <div class="calc-line calc-box">\( \Delta W = 0 \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ ω = 25 rad/s   ·   Er = 625 J   ·   الدفع الزاوي = صفر   ·   الشغل الزاوي = صفر</div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="conservation-widget" data-navlabel="🕹️ حفظ الزخم الزاوي">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: حفظ الزخم الزاوي (كالمتزلج الدائر)</h2>
-      <p>عندما يقرّب المتزلج الدائر ذراعيه من جسمه يقلّ عزم قصوره الذاتي (I)؛ وبما أن الزخم الزاوي \(L=I\omega\) محفوظ (ثابت) في غياب عزم خارجي، فإن سرعته الزاوية (ω) تزداد تلقائيًا. حرّك مزلاج وضع الذراعين وشاهد ذلك مباشرة.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="skaterSvg" viewBox="0 0 260 260" width="260" height="260" role="img" aria-label="محاكاة متزلج دائر يقرّب ذراعيه فتزداد سرعته الزاوية"></svg></div>
-        <div class="io-row">
-          <label for="armsSlider" style="min-width:9rem">امتداد الذراعين</label>
-          <input type="range" id="armsSlider" class="neu-range" min="0" max="1" step="0.01" value="1">
-        </div>
-        <div class="rule-box" id="skaterReadout">I = — kg·m²  ·  ω = — rad/s  ·  Er = — J</div>
-      </div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
       <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>الطاقة الحركية الدورانية لجسم صلد تُعطى بالعلاقة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( E_r=mv^2 \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( E_r=\tfrac12 I\omega^2 \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( E_r=I\omega \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( E_r=\tfrac12 mv^2 \)</span></label>
-        </div>
-        <div class="quiz-explain">المعادلة (19): \(E_r=\tfrac12 I\omega^2\)، وهي نظير \(E_k=\tfrac12 mv^2\) بعد التعويض.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>2.</span><span>الشغل المنجز في الحركة الدورانية يُعطى بالعلاقة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( \Delta W=Fs \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( \Delta W=\tau\Delta\theta \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( \Delta W=I\alpha \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( \Delta W=L\omega \)</span></label>
-        </div>
-        <div class="quiz-explain">المعادلة (20): \(\Delta W=\tau\Delta\theta\).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>3.</span><span>القدرة في الحركة الدورانية تُعطى بالعلاقة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( P=\tau/\omega \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( P=\tau\omega \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( P=\tau+\omega \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( P=\omega/\tau \)</span></label>
-        </div>
-        <div class="quiz-explain">المعادلة (21): \(P=\tau\omega\).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>4.</span><span>الزخم الزاوي لجسم دوّار يُعطى بالعلاقة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( L=I\alpha \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( L=I\omega \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( L=mv \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( L=\tau t \)</span></label>
-        </div>
-        <div class="quiz-explain">المعادلة (22): \(L=I\omega\).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>إذا كان الزخم الزاوي لجسم دوّار ثابتًا (منتظمًا) بمرور الزمن، فإن الدفع الزاوي المؤثر عليه خلال تلك الفترة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>يساوي τt دائمًا وبقيمة موجبة كبيرة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يساوي صفرًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يساوي L</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يساوي Iω دائمًا</span></label>
-        </div>
-        <div class="quiz-explain">الدفع الزاوي يساوي التغيّر في الزخم الزاوي (ΔL)؛ فإذا كان الزخم الزاوي ثابتًا فإن ΔL=0 وبالتالي الدفع الزاوي صفر.</div>
-      </div>
-
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -337,12 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>الطاقة الحركية الدورانية \(E_r=\tfrac12 I\omega^2\).</span></li>
-        <li><span>الشغل الدوراني \(\Delta W=\tau\Delta\theta\)، والقدرة الدورانية \(P=\tau\omega\).</span></li>
-        <li><span>الزخم الزاوي \(L=I\omega\)، والدفع الزاوي = τt = ΔL.</span></li>
-        <li><span>عند ثبات الزخم الزاوي، يعوّض نقص عزم القصور الذاتي بزيادة السرعة الزاوية (حفظ الزخم الزاوي).</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -352,31 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l7" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l7">
-        <svg viewBox="0 0 480 220" width="480" height="220" role="img" aria-label="خريطة الطاقة والشغل والزخم الزاوي الذهنية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="110" x2="100" y2="45"/>
-            <line x1="240" y1="110" x2="100" y2="175"/>
-            <line x1="240" y1="110" x2="380" y2="45"/>
-            <line x1="240" y1="110" x2="380" y2="175"/>
-          </g>
-          <g>
-            <circle cx="240" cy="110" r="48" fill="#7c6fee"/>
-            <text x="240" y="106" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">الطاقة والشغل</text>
-            <text x="240" y="120" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">والزخم الزاوي</text>
-          </g>
-          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
-            <text x="100" y="48" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">Er=½Iω²</text></g>
-          <g><circle cx="100" cy="175" r="42" fill="#2fd18f"/>
-            <text x="100" y="172" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">ΔW=τΔθ</text>
-            <text x="100" y="184" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">P=τω</text></g>
-          <g><circle cx="380" cy="45" r="42" fill="#ffab5e"/>
-            <text x="380" y="48" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">L=Iω</text></g>
-          <g><circle cx="380" cy="175" r="42" fill="#ff6b9d"/>
-            <text x="380" y="172" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">الدفع الزاوي</text>
-            <text x="380" y="184" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">=τt=ΔL</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l7"></div>
     </div>
   </section>
 
@@ -395,28 +89,22 @@
   var ns = "http://www.w3.org/2000/svg";
 
   // ===== Sphere I explorer (example 6 extension) =====
-  var sphereR = document.getElementById("sphereR");
-  var sphereRVal = document.getElementById("sphereRVal");
-  var sphereIVal = document.getElementById("sphereIVal");
+  var sphereR, sphereRVal, sphereIVal;
   function updateSphere(){
     var r = parseFloat(sphereR.value);
     sphereRVal.textContent = r.toFixed(2);
     var I = 0.4*10*r*r;
     sphereIVal.textContent = I.toFixed(3);
   }
-  sphereR.addEventListener("input", updateSphere);
-  updateSphere();
 
   // ===== Conservation of angular momentum (figure skater) =====
-  var svgS = document.getElementById("skaterSvg");
-  var armsSlider = document.getElementById("armsSlider");
-  var skaterReadout = document.getElementById("skaterReadout");
+  var svgS, armsSlider, skaterReadout;
   var L_FIXED = 8; // kg*m^2/s
   var I_BODY = 1;
   var I_ARMS_MAX = 3;
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var phase = 0;
-  var lastTime = null;
+  var lastTime = null, rafId = null;
 
   function computeI(){
     var ext = parseFloat(armsSlider.value);
@@ -458,14 +146,37 @@
     var omega = L_FIXED/computeI();
     phase += omega*dt*0.35;
     drawSkater();
-    requestAnimationFrame(skaterFrame);
+    rafId = requestAnimationFrame(skaterFrame);
   }
-  armsSlider.addEventListener("input", function(){ if(reduceMotion) drawSkater(); });
-  if(reduceMotion){
-    drawSkater();
-  } else {
-    requestAnimationFrame(skaterFrame);
+
+  // Re-run on every lesson-engine render (first paint AND every language
+  // switch): both widgets' mount points are rendered from JSON, so they
+  // don't exist yet at DOMContentLoaded and get replaced wholesale on each
+  // language switch.
+  function boot(){
+    sphereR = document.getElementById("sphereR");
+    sphereRVal = document.getElementById("sphereRVal");
+    sphereIVal = document.getElementById("sphereIVal");
+    if(sphereR){
+      sphereR.addEventListener("input", updateSphere);
+      updateSphere();
+    }
+
+    if(rafId){ cancelAnimationFrame(rafId); rafId = null; }
+    lastTime = null;
+    svgS = document.getElementById("skaterSvg");
+    armsSlider = document.getElementById("armsSlider");
+    skaterReadout = document.getElementById("skaterReadout");
+    if(svgS){
+      armsSlider.addEventListener("input", function(){ if(reduceMotion) drawSkater(); });
+      if(reduceMotion){
+        drawSkater();
+      } else {
+        rafId = requestAnimationFrame(skaterFrame);
+      }
+    }
   }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>
