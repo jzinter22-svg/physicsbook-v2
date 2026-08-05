@@ -42,6 +42,7 @@
     if(toggleBtn) toggleBtn.addEventListener("click", toggleTheme);
     var actions = document.querySelector(".header-actions");
     if(window.PBI18n) window.PBI18n.mountSwitcher(actions);
+    if(window.PBSearch) window.PBSearch.mountButton(actions);
   }
 
   function start(){

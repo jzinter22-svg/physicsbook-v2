@@ -130,6 +130,7 @@
     actions.appendChild(toggleBtn);
     actions.appendChild(themeBtn);
     if (window.PBI18n) window.PBI18n.mountSwitcher(actions);
+    if (window.PBSearch) window.PBSearch.mountButton(actions);
 
     header.innerHTML = "";
     var container = document.createElement("div");

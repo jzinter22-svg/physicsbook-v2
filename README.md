@@ -171,3 +171,45 @@ reveal, chained-equation flows, diagram/figure containers, interactive
 slider + live SVG plot widgets, self-check quizzes, summary lists, mind-map
 SVG containers, and prev/next lesson navigation (auto-built from each
 chapter's lesson list).
+
+## Smart Search
+
+A fullscreen search overlay (`assets/js/search.js` + `assets/css/search.css`)
+indexes every chapter, lesson, definition, تعليل/تعداد box, worked example
+and its solution, formula, figure, table, interactive-simulation title, quiz
+question, and a curated physical-quantity dictionary — searchable across the
+whole book, not just the current page.
+
+**Index**: `assets/search/index.json` is a static, prebuilt file — nothing is
+scanned or parsed at search time. Regenerate it after editing lesson content:
+
+```
+python3 tools/build-search-index.py
+```
+
+(requires `beautifulsoup4` + `lxml`: `pip3 install beautifulsoup4 lxml`).
+Commit the regenerated `index.json` alongside your content change.
+
+**Client**: `search.js` fetches that JSON once (prefetched idly after page
+load, awaited on first open — never re-fetched, never re-parsed from HTML)
+and keeps it in memory. Every keystroke (150ms-debounced) re-ranks that
+in-memory array with plain substring/word matching against a precomputed,
+Arabic-normalized `norm` field per item — no regex, no DOM queries, so a
+full search stays well under the ~1,200-item index's linear-scan cost.
+
+**Arabic matching**: `normalizeArabic()` folds hamza carriers (أ إ آ ٱ ء),
+ي/ى/ئ, و/ؤ, and ة/ه to one canonical form and strips diacritics/tatweel, so
+`سرعة` matches `السرعة` and `الطاقه` matches `الطاقة`. This function is
+duplicated nowhere else — `tools/build-search-index.py` intentionally ships
+raw title/text only and lets the client normalize once, so there is exactly
+one place that owns these rules.
+
+**Integration**: every page loads `search.css`/`search.js` (see any
+`<head>`) and each chapter's `buildHeader()` (and `site-home.js`) calls
+`window.PBSearch.mountButton(actions)` right next to the existing language
+switcher — the same `header-actions` container `PBI18n.mountSwitcher` already
+uses. Open it from that button, `Ctrl+K`, or `/` (both registered globally,
+not just while the button is visible). Opening a result navigates to
+`<lesson>.html#pbsearch:<snippet>`; every page checks that hash on load,
+scrolls the matching content into view, and flashes it — no per-item IDs had
+to be added to the existing 60 lesson pages for this to work.
