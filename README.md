@@ -7,7 +7,7 @@ and mind maps — organized as a home hub → chapters → lessons. Fully
 trilingual (Arabic default, Kurdish/Sorani, English) with live language
 switching — see [Internationalization](#internationalization-i18n) below.
 
-The book has **nine chapter hubs** (`chapter-1/` … `chapter-9/`), each
+The book has **eight chapter hubs** (`chapter-1/` … `chapter-8/`), each
 wired up with its own progress tracking, sidebar, and breadcrumb — but with
 **no lessons yet**. No physics content has been written; every chapter is
 an empty, ready-to-build shell. See `templates/` for the reusable
@@ -17,8 +17,8 @@ to build them and to add lessons later.
 ## Project structure
 
 ```
-index.html                          Home page: hero + 9 chapter cards
-chapter-1/ … chapter-9/
+index.html                          Home page: hero + 8 chapter cards
+chapter-1/ … chapter-8/
   index.html                        Chapter hub: title, breadcrumb, empty
                                      progress bar, empty lesson grid — no
                                      lessons/ subfolder yet
@@ -33,7 +33,7 @@ assets/
                                      language switcher, translation lookup,
                                      lang/dir attribute management
     site-home.js                    Home page behavior (theme toggle, reveal)
-    site-ch1.js … site-ch9.js       Per-chapter behavior script, one per
+    site-ch1.js … site-ch8.js       Per-chapter behavior script, one per
                                      chapter (header/sidebar/progress),
                                      instantiated from the template below
                                      with an empty lesson list

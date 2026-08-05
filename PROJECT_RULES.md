@@ -3,7 +3,7 @@
 
 ## Golden Reference
 
-Nine chapter hubs exist (`chapter-1/` … `chapter-9/`) but none has lesson
+Eight chapter hubs exist (`chapter-1/` … `chapter-8/`) but none has lesson
 content yet. Until one does, `templates/` (the chapter, lesson, and
 behavior-script templates) is the canonical baseline. Once the first real
 chapter is built, promote it to golden reference here and require every
