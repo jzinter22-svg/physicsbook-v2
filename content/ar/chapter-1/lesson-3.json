@@ -72,12 +72,15 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": null,
       "trailingHtml": null,
       "sectionGroup": 3,
       "sectionId": "law1-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 5-1"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 5-1",
+      "ruleBoxes": [],
+      "labels": {
+        "focus1": "بؤرة 1 (مركز الجذب)",
+        "focus2": "بؤرة 2"
+      }
     },
     {
       "type": "definition",
@@ -101,12 +104,22 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": "law2Speed",
       "trailingHtml": null,
       "sectionGroup": 5,
       "sectionId": "law2-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 6-1"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 6-1",
+      "ruleBoxes": [
+        {
+          "id": "law2Speed",
+          "html": null
+        }
+      ],
+      "labels": {
+        "speedVeryFast": "سريعة جدًا (قرب الحضيض) 🚀",
+        "speedVerySlow": "بطيئة جدًا (قرب الأوج) 🐢",
+        "speedMedium": "متوسطة",
+        "speedStatus": "حالة السرعة الحالية: "
+      }
     },
     {
       "type": "definition",
@@ -181,12 +194,20 @@
           "label": "🌐 مدار ساكن أرضي (قمر بث)"
         }
       ],
-      "ruleBoxHtml": "الزمن الدوري t ≈ <b id=\"orbitTVal\">1.54</b> ساعة",
-      "ruleBoxId": null,
       "trailingHtml": null,
       "sectionGroup": 10,
       "sectionId": "law3-widget",
-      "sectionNavLabel": "🕹️ تحقق من قانون كبلر الثالث"
+      "sectionNavLabel": "🕹️ تحقق من قانون كبلر الثالث",
+      "ruleBoxes": [
+        {
+          "id": null,
+          "html": "الزمن الدوري t ≈ <b id=\"orbitTVal\">1.54</b> ساعة"
+        },
+        {
+          "id": null,
+          "html": "\\( r^3/t^2 \\approx \\) <b id=\"orbitRatioVal\">—</b> (km³/hr²) — شبه ثابتة عند كل قيم r"
+        }
+      ]
     }
   ],
   "quiz": {

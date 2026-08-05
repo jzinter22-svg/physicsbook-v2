@@ -55,8 +55,6 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": null,
       "trailingHtml": null,
       "sectionGroup": 1,
       "sectionId": "fig21",
@@ -65,7 +63,8 @@
         "accCentripetal": "aᴄ (centripetal)",
         "accTangential": "aT (tangential)",
         "accResultant": "a (resultant)"
-      }
+      },
+      "ruleBoxes": []
     },
     {
       "type": "definition",
@@ -220,8 +219,6 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": "curveStatus",
       "trailingHtml": null,
       "sectionGroup": 8,
       "sectionId": "interactive",
@@ -231,7 +228,13 @@
         "safePath": "✅ Safe path",
         "statusDanger": "Danger ⚠️ — speed exceeds the safe limit ({v} km/h); the required centripetal force exceeds the maximum available friction",
         "statusSafe": "Safe ✅ — the required centripetal force is below the maximum available friction (safe limit {v} km/h)"
-      }
+      },
+      "ruleBoxes": [
+        {
+          "id": "curveStatus",
+          "html": null
+        }
+      ]
     },
     {
       "type": "callout",
@@ -269,15 +272,19 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": "<span style=\"font-weight:700\">Ideal speed:</span> \\( v = \\sqrt{r\\,g\\,\\tan\\theta} \\)",
-      "ruleBoxId": null,
       "trailingHtml": "For a curve radius of 25 m, the ideal speed that needs no friction at all at this angle equals <b id=\"bankSpeedVal\">8.1</b> m/s.",
       "sectionGroup": 9,
       "sectionId": "banked-curve",
       "sectionNavLabel": "🛣️ The banked curve",
       "labels": {
         "towardCenter": "(toward the center)"
-      }
+      },
+      "ruleBoxes": [
+        {
+          "id": null,
+          "html": "<span style=\"font-weight:700\">Ideal speed:</span> \\( v = \\sqrt{r\\,g\\,\\tan\\theta} \\)"
+        }
+      ]
     }
   ],
   "quiz": {

@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-3.html">
@@ -42,174 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يوضّح قوانين كبلر الثلاثة لحركة الكواكب والأقمار الاصطناعية.</span></li>
-        <li><span class="obj-num">2</span><span>يحدد موقع مركز الجذب (البؤرة) في المسار البيضوي لأي قمر أو كوكب.</span></li>
-        <li><span class="obj-num">3</span><span>يفسر سبب تغيّر سرعة الجسم الدائر عبر مساره البيضوي استنادًا إلى قانون المساحات.</span></li>
-        <li><span class="obj-num">4</span><span>يربط بين قانون الجذب العام لنيوتن وقانون كبلر الثالث.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="card neu">
-      <h2>💡 4-1 مدارات الأقمار الاصطناعية وقوانين كبلر</h2>
-      <p>تخضع حركة الاقمار الاصطناعية حول الكرة الارضية الى قوانين كبلر والتي تحدد حركة الكواكب السيارة وحركة النجوم في المجرات وهي كما يلي:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 القانون الأول (قانون المسارات)</span>
-      <p style="margin:.3rem 0">تتحرك الكواكب (أو الاقمار) في مسارات بيضوية حول جذبها الذي يقع عند أحد البؤرتين.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">📝</span>
-      <span><b>ملاحظة:</b> تُعدّ الشمس مركز الجذب في حالة دوران كواكب المجموعة الشمسية حولها، وتُعد الارض مركز الجذب في حالة دوران الاقمار الاصطناعية حولها.</span>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="law1-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 5-1">
-    <div class="card neu">
-      <h2>🕹️ إعادة إنشاء الشكل 1-5: مسار بيضوي وبؤرتان</h2>
-      <p>حرّك مزلاج الاستطالة (الشُّطُوذ) لمشاهدة كيف يتغيّر شكل المسار البيضوي، مع بقاء مركز الجذب دائمًا عند البؤرة الأولى (وليس عند مركز الشكل).</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="law1Svg" viewBox="0 0 360 240" width="360" height="240" role="img" aria-label="مسار بيضوي حول بؤرة الجذب"></svg></div>
-        <div class="io-row">
-          <label for="eccSlider" style="min-width:9rem">الاستطالة e = <span id="eccVal">0.3</span></label>
-          <input type="range" id="eccSlider" class="neu-range" min="0" max="0.7" step="0.05" value="0.3">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 القانون الثاني (قانون المساحات)</span>
-      <p style="margin:.3rem 0">يمسح الخط الواصل بين مركز الجذب الى الكوكب (أو القمر) مساحات متساوية في أزمان متساوية.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="law2-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 6-1">
-    <div class="card neu">
-      <h2>🕹️ إعادة إنشاء الشكل 1-6: مساحات متساوية في أزمان متساوية</h2>
-      <p>راقب القطعة الملوّنة التي يمسحها الخط الواصل بين مركز الجذب والجسم الدائر خلال آخر نافذة زمنية ثابتة: بالقرب من الحضيض (أقرب نقطة) تكون القطعة قصيرة وعريضة لأن السرعة كبيرة، وبالقرب من الأوج (أبعد نقطة) تكون طويلة ونحيفة لأن السرعة صغيرة — إلا أن مساحتيهما متساويتان تقريبًا.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="law2Svg" viewBox="0 0 360 240" width="360" height="240" role="img" aria-label="محاكاة مساحات متساوية في أزمان متساوية"></svg></div>
-        <div class="rule-box" id="law2Speed">السرعة الزاوية الحالية: — </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 القانون الثالث (قانون التناسب)</span>
-      <p style="margin:.3rem 0">يتناسب مربع الزمن الدوري لحركة الكواكب (أو القمر) طرديًا مع مكعب نصف القطر الكبير لمساره. فإذا كان الزمن الدوري <b>t</b> ونصف القطر الكبير <b>r</b> فإن:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ t^2 \propto r^3 $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">🧠</span>
-      <span><b>تذكر:</b> أن أي كتلتين في الكون تجذب أحدهما الاخرى بقوة تتناسب طرديًا مع حاصل ضرب الكتلتين (M,m) وعكسيًا مع مربع المسافة بينهما (r)، وهذا مايُطلق عليه بقانون الجذب العام لنيوتن، ورياضيًا:</span>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ F_G = G\dfrac{Mm}{r^2} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">إذ إن <b>G</b> ثابت الجذب العام ومقداره: \( 6.67\times10^{-11}\ \dfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \)</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="law3-widget" data-navlabel="🕹️ تحقق من قانون كبلر الثالث">
-    <div class="card neu">
-      <h2>🕹️ تحقّق تفاعلي: قانون كبلر الثالث لأقمار الأرض الاصطناعية</h2>
-      <p>باستخدام قانون الجذب العام لنيوتن يمكن حساب الزمن الدوري لأي قمر صناعي عند نصف قطر مداره <b>r</b> (مقاسًا من مركز الأرض). حرّك المزلاج أو اختر أحد الأقمار الحقيقية أدناه، ولاحظ أن النسبة \(r^3/t^2\) تبقى ثابتة تقريبًا مهما تغيّر نصف القطر — وهذا بالضبط ما ينص عليه قانون كبلر الثالث.</p>
-      <div class="io-row" style="flex-wrap:wrap;gap:.5rem">
-        <button class="neu-btn" data-preset="6771">🛰️ مدار منخفض (كمحطة الفضاء)</button>
-        <button class="neu-btn" data-preset="26560">📡 مدار GPS</button>
-        <button class="neu-btn" data-preset="42164">🌐 مدار ساكن أرضي (قمر بث)</button>
-      </div>
-      <div class="io-panel" style="margin-top:.6rem">
-        <div class="io-row">
-          <label for="orbitR" style="min-width:9rem">نصف قطر المدار r = <span id="orbitRVal">6771</span> km</label>
-          <input type="range" id="orbitR" class="neu-range" min="6700" max="45000" step="1" value="6771">
-        </div>
-        <div class="rule-box">الزمن الدوري t ≈ <b id="orbitTVal">1.54</b> ساعة</div>
-        <div class="rule-box">\( r^3/t^2 \approx \) <b id="orbitRatioVal">—</b> (km³/hr²) — شبه ثابتة عند كل قيم r</div>
-      </div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
       <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>المسار الذي تتحرك فيه الكواكب حول الشمس وفق قانون كبلر الأول هو:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>دائري تمامًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>بيضوي ومركز الجذب في إحدى بؤرتيه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>حلزوني مفتوح</span></label>
-          <label class="quiz-opt"><input type="radio"><span>خط مستقيم</span></label>
-        </div>
-        <div class="quiz-explain">ينص قانون المسارات على أن الكواكب والأقمار تتحرك في مسارات بيضوية يقع مركز الجذب عند إحدى بؤرتيها، وليس عند مركز الشكل.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>2.</span><span>عند اقتراب الكوكب من الحضيض (أقرب نقطة لمركز الجذب)، فإن سرعته:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>تقلّ</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تزداد</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تبقى ثابتة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تنعدم</span></label>
-        </div>
-        <div class="quiz-explain">حسب قانون المساحات، لتبقى المساحة الممسوحة في زمن معيّن ثابتة رغم قصر المسافة إلى المركز، يجب أن تزداد سرعة الجسم بالقرب من الحضيض.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>3.</span><span>وفقًا لقانون كبلر الثالث، العلاقة بين الزمن الدوري t ونصف القطر الأكبر r هي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( t \propto r \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( t^2 \propto r \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( t^2 \propto r^3 \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( t \propto r^3 \)</span></label>
-        </div>
-        <div class="quiz-explain">قانون التناسب: مربع الزمن الدوري يتناسب طرديًا مع مكعب نصف القطر الكبير للمسار.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>4.</span><span>ينص قانون الجذب العام لنيوتن على أن قوة التجاذب بين كتلتين:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>تتناسب طرديًا مع المسافة بينهما</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تتناسب عكسيًا مع مربع المسافة بينهما</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا تعتمد على كتلتيهما</span></label>
-          <label class="quiz-opt"><input type="radio"><span>ثابتة دائمًا مهما تغيّرت المسافة</span></label>
-        </div>
-        <div class="quiz-explain">\( F_G = G\dfrac{Mm}{r^2} \) — القوة تتناسب طرديًا مع حاصل ضرب الكتلتين وعكسيًا مع مربع المسافة بينهما.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>5.</span><span>في حالة دوران الأقمار الاصطناعية حول الأرض، يقع مركز الجذب (البؤرة) عند:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>القمر الصناعي نفسه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>منتصف المسار البيضوي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مركز الأرض</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الشمس</span></label>
-        </div>
-        <div class="quiz-explain">مركز الجذب هو الجسم الأكبر كتلة الذي يدور حوله الجسم الأصغر؛ فالأرض هي مركز الجذب لأقمارها الاصطناعية، تمامًا كما أن الشمس مركز الجذب لكواكب المجموعة الشمسية.</div>
-      </div>
-
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -218,12 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>قانون المسارات: الكواكب والأقمار تدور في مسارات بيضوية، ومركز الجذب يقع عند إحدى البؤرتين.</span></li>
-        <li><span>قانون المساحات: الخط الواصل بين مركز الجذب والجسم الدائر يمسح مساحات متساوية في أزمان متساوية، فتزداد السرعة قرب الحضيض وتقل قرب الأوج.</span></li>
-        <li><span>قانون التناسب: \( t^2 \propto r^3 \) — مربع الزمن الدوري يتناسب طرديًا مع مكعب نصف القطر الأكبر.</span></li>
-        <li><span>قانون الجذب العام لنيوتن \( F_G=GMm/r^2 \) هو الأساس الفيزيائي الذي يفسّر قوانين كبلر الثلاثة.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -233,33 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l3" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l3">
-        <svg viewBox="0 0 480 260" width="480" height="260" role="img" aria-label="خريطة قوانين كبلر الذهنية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="50"/>
-            <line x1="240" y1="130" x2="90" y2="210"/>
-            <line x1="240" y1="130" x2="390" y2="50"/>
-            <line x1="240" y1="130" x2="390" y2="210"/>
-          </g>
-          <g>
-            <circle cx="240" cy="130" r="52" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">قوانين</text>
-            <text x="240" y="144" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">كبلر</text>
-          </g>
-          <g><circle cx="90" cy="50" r="46" fill="#3fa9f5"/>
-            <text x="90" y="46" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">المسارات</text>
-            <text x="90" y="60" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">بيضوي/بؤرة</text></g>
-          <g><circle cx="90" cy="210" r="46" fill="#2fd18f"/>
-            <text x="90" y="206" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">المساحات</text>
-            <text x="90" y="220" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">سرعة متغيرة</text></g>
-          <g><circle cx="390" cy="50" r="46" fill="#ffab5e"/>
-            <text x="390" y="46" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">التناسب</text>
-            <text x="390" y="60" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">t²∝r³</text></g>
-          <g><circle cx="390" cy="210" r="46" fill="#ff6b9d"/>
-            <text x="390" y="206" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">جذب نيوتن</text>
-            <text x="390" y="220" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">F=GMm/r²</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l3"></div>
     </div>
   </section>
 
@@ -276,6 +87,9 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
+  function simText(key, fallback){
+    return (window.PBLessonEngine && window.PBLessonEngine.simText(key, fallback)) || fallback;
+  }
 
   function arrow(svg,x1,y1,x2,y2,color,width){
     var l = document.createElementNS(ns,"line");
@@ -299,9 +113,7 @@
   }
 
   // ===== Law 1: ellipse with focus =====
-  var svg1 = document.getElementById("law1Svg");
-  var eccSlider = document.getElementById("eccSlider");
-  var eccVal = document.getElementById("eccVal");
+  var svg1, eccSlider, eccVal;
   var F1x = 180, F1y = 120, A = 100;
 
   function orbitR(a, e, theta){ return a*(1-e*e)/(1+e*Math.cos(theta)); }
@@ -328,12 +140,12 @@
     var f1 = document.createElementNS(ns,"circle");
     f1.setAttribute("cx",F1x); f1.setAttribute("cy",F1y); f1.setAttribute("r",7); f1.setAttribute("fill","#ffab5e");
     svg1.appendChild(f1);
-    label(svg1, F1x-8, F1y+22, "بؤرة 1 (مركز الجذب)", "#ffab5e", 10);
+    label(svg1, F1x-8, F1y+22, simText("focus1","بؤرة 1 (مركز الجذب)"), "#ffab5e", 10);
 
     var f2 = document.createElementNS(ns,"circle");
     f2.setAttribute("cx",F2x); f2.setAttribute("cy",F1y); f2.setAttribute("r",5); f2.setAttribute("fill","var(--text-faint)");
     svg1.appendChild(f2);
-    label(svg1, F2x-20, F1y-14, "بؤرة 2", "var(--text-secondary)", 10);
+    label(svg1, F2x-20, F1y-14, simText("focus2","بؤرة 2"), "var(--text-secondary)", 10);
 
     var theta0 = -0.7;
     var r0 = orbitR(A,e,theta0);
@@ -350,12 +162,9 @@
     arrow(svg1, px, py, px+vx/vlen*36, py+vy/vlen*36, "var(--accent-green)", 3);
     label(svg1, px+8, py-14, "Vᴛ", "var(--accent-green)", 12);
   }
-  eccSlider.addEventListener("input", drawLaw1);
-  drawLaw1();
 
   // ===== Law 2: equal areas in equal time =====
-  var svg2 = document.getElementById("law2Svg");
-  var speedLabel = document.getElementById("law2Speed");
+  var svg2, speedLabel;
   var F2focusX = 130, F2focusY = 120, A2 = 110, E2 = 0.55;
   var theta2 = 0, H2 = 3.2;
   var trail = [];
@@ -401,11 +210,11 @@
     svg2.appendChild(planet);
 
     var rNorm = (cur.r - A2*(1-E2)) / (A2*(1+E2) - A2*(1-E2));
-    var speedTxt = rNorm < 0.15 ? "سريعة جدًا (قرب الحضيض) 🚀" : (rNorm > 0.85 ? "بطيئة جدًا (قرب الأوج) 🐢" : "متوسطة");
-    speedLabel.textContent = "حالة السرعة الحالية: " + speedTxt;
+    var speedTxt = rNorm < 0.15 ? simText("speedVeryFast","سريعة جدًا (قرب الحضيض) 🚀") : (rNorm > 0.85 ? simText("speedVerySlow","بطيئة جدًا (قرب الأوج) 🐢") : simText("speedMedium","متوسطة"));
+    speedLabel.textContent = simText("speedStatus","حالة السرعة الحالية: ") + speedTxt;
   }
 
-  var lastT = null;
+  var lastT = null, rafLaw2 = null;
   function tickLaw2(now){
     if(lastT === null) lastT = now;
     var dt = Math.min((now-lastT)/1000, 0.05);
@@ -417,19 +226,11 @@
     trail.push({ x: pointAt2(theta2).x, y: pointAt2(theta2).y, t: now });
     while(trail.length && now - trail[0].t > WINDOW_MS) trail.shift();
     drawLaw2();
-    requestAnimationFrame(tickLaw2);
-  }
-  if(reduceMotion){
-    drawLaw2();
-  } else {
-    requestAnimationFrame(tickLaw2);
+    rafLaw2 = requestAnimationFrame(tickLaw2);
   }
 
   // ===== Law 3: Kepler verification via Newton gravitation =====
-  var orbitRSlider = document.getElementById("orbitR");
-  var orbitRVal = document.getElementById("orbitRVal");
-  var orbitTVal = document.getElementById("orbitTVal");
-  var orbitRatioVal = document.getElementById("orbitRatioVal");
+  var orbitRSlider, orbitRVal, orbitTVal, orbitRatioVal;
   var GM = 3.986e14; // m^3/s^2, Earth's standard gravitational parameter
 
   function drawLaw3(){
@@ -442,14 +243,44 @@
     var ratio = Math.pow(rKm,3)/Math.pow(tHr,2);
     orbitRatioVal.textContent = ratio.toExponential(3);
   }
-  orbitRSlider.addEventListener("input", drawLaw3);
-  document.querySelectorAll("[data-preset]").forEach(function(btn){
-    btn.addEventListener("click", function(){
-      orbitRSlider.value = btn.getAttribute("data-preset");
+  // Re-run on every lesson-engine render (first paint AND every language
+  // switch): all three widgets' mount points are rendered from JSON, so
+  // they don't exist yet at DOMContentLoaded and get replaced wholesale on
+  // each language switch. Re-query elements and restart raf loops fresh.
+  function boot(){
+    if(rafLaw2){ cancelAnimationFrame(rafLaw2); rafLaw2 = null; }
+    lastT = null;
+
+    svg1 = document.getElementById("law1Svg");
+    eccSlider = document.getElementById("eccSlider");
+    eccVal = document.getElementById("eccVal");
+    if(svg1 && eccSlider){
+      eccSlider.addEventListener("input", drawLaw1);
+      drawLaw1();
+    }
+
+    svg2 = document.getElementById("law2Svg");
+    speedLabel = document.getElementById("law2Speed");
+    if(svg2){
+      if(reduceMotion){ drawLaw2(); } else { rafLaw2 = requestAnimationFrame(tickLaw2); }
+    }
+
+    orbitRSlider = document.getElementById("orbitR");
+    orbitRVal = document.getElementById("orbitRVal");
+    orbitTVal = document.getElementById("orbitTVal");
+    orbitRatioVal = document.getElementById("orbitRatioVal");
+    if(orbitRSlider){
+      orbitRSlider.addEventListener("input", drawLaw3);
+      document.querySelectorAll("[data-preset]").forEach(function(btn){
+        btn.addEventListener("click", function(){
+          orbitRSlider.value = btn.getAttribute("data-preset");
+          drawLaw3();
+        });
+      });
       drawLaw3();
-    });
-  });
-  drawLaw3();
+    }
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

@@ -135,8 +135,12 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": "نصف القطر r = 2 m ← طول القوس \\( S=r\\theta= \\) <b id=\"arcLenVal\">2.09</b> m",
-      "ruleBoxId": null,
+      "ruleBoxes": [
+        {
+          "html": "نصف القطر r = 2 m ← طول القوس \\( S=r\\theta= \\) <b id=\"arcLenVal\">2.09</b> m",
+          "id": null
+        }
+      ],
       "trailingHtml": null,
       "sectionGroup": 7,
       "sectionId": "theta-widget",
@@ -202,8 +206,7 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": null,
+      "ruleBoxes": [],
       "trailingHtml": null,
       "sectionGroup": 13,
       "sectionId": "rhr-widget",
@@ -355,8 +358,12 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": "\\( \\omega_{av} = \\dfrac{\\theta_2-\\theta_1}{\\Delta t} = \\) <b id=\"omegaAvVal\">1.57</b> rad/s (بافتراض Δt = 1 s)",
-      "ruleBoxId": null,
+      "ruleBoxes": [
+        {
+          "html": "\\( \\omega_{av} = \\dfrac{\\theta_2-\\theta_1}{\\Delta t} = \\) <b id=\"omegaAvVal\">1.57</b> rad/s (بافتراض Δt = 1 s)",
+          "id": null
+        }
+      ],
       "trailingHtml": null,
       "sectionGroup": 20,
       "sectionId": "omega-av-widget",

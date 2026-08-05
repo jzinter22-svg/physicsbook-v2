@@ -55,8 +55,6 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": null,
       "trailingHtml": null,
       "sectionGroup": 1,
       "sectionId": "fig21",
@@ -65,7 +63,8 @@
         "accCentripetal": "aᴄ (مركزي)",
         "accTangential": "aT (مماسي)",
         "accResultant": "a (محصّل)"
-      }
+      },
+      "ruleBoxes": []
     },
     {
       "type": "definition",
@@ -220,8 +219,6 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": "curveStatus",
       "trailingHtml": null,
       "sectionGroup": 8,
       "sectionId": "interactive",
@@ -231,7 +228,13 @@
         "safePath": "✅ مسار آمن",
         "statusDanger": "خطر ⚠️ — السرعة تتجاوز الحد الآمن ({v} km/h) وتتجاوز القوة المركزية اللازمة أقصى احتكاك متاح",
         "statusSafe": "آمنة ✅ — القوة المركزية اللازمة أقل من أقصى احتكاك متاح (الحد الآمن {v} km/h)"
-      }
+      },
+      "ruleBoxes": [
+        {
+          "id": "curveStatus",
+          "html": null
+        }
+      ]
     },
     {
       "type": "callout",
@@ -269,15 +272,19 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": "<span style=\"font-weight:700\">السرعة المثالية:</span> \\( v = \\sqrt{r\\,g\\,\\tan\\theta} \\)",
-      "ruleBoxId": null,
       "trailingHtml": "عند نصف قطر منعطف 25 m، السرعة المثالية التي لا تحتاج فيها السيارة إلى أي احتكاك عند هذه الزاوية تساوي <b id=\"bankSpeedVal\">8.1</b> m/s.",
       "sectionGroup": 9,
       "sectionId": "banked-curve",
       "sectionNavLabel": "🛣️ المنعطف المائل",
       "labels": {
         "towardCenter": "(نحو المركز)"
-      }
+      },
+      "ruleBoxes": [
+        {
+          "id": null,
+          "html": "<span style=\"font-weight:700\">السرعة المثالية:</span> \\( v = \\sqrt{r\\,g\\,\\tan\\theta} \\)"
+        }
+      ]
     }
   ],
   "quiz": {

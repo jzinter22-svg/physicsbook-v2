@@ -184,9 +184,11 @@
         b.selectOptions.map(function(o){ return '<option value="' + esc(o.value) + '">' + esc(o.text) + "</option>"; }).join("") +
         "</select>"
       : "";
-    var ruleBox = b.ruleBoxId
-      ? '<div class="rule-box" id="' + esc(b.ruleBoxId) + '"></div>'
-      : (b.ruleBoxHtml ? '<div class="rule-box">' + html(b.ruleBoxHtml) + "</div>" : "");
+    var ruleBoxes = (b.ruleBoxes || []).map(function(rb){
+      return rb.id
+        ? '<div class="rule-box" id="' + esc(rb.id) + '"></div>'
+        : '<div class="rule-box">' + html(rb.html) + "</div>";
+    }).join("");
     var svgAttrs = (b.svgViewBox ? ' viewBox="' + esc(b.svgViewBox) + '"' : "") +
       (b.svgWidth ? ' width="' + esc(b.svgWidth) + '"' : "") +
       (b.svgHeight ? ' height="' + esc(b.svgHeight) + '"' : "");
@@ -197,7 +199,7 @@
     return '<div class="card neu"><h2>' + esc(b.sectionHeading) + "</h2>" +
       (b.descriptionHtml ? "<p>" + html(b.descriptionHtml) + "</p>" : "") +
       (presets ? '<div class="io-row" style="flex-wrap:wrap;gap:.5rem">' + presets + "</div>" : "") +
-      '<div class="io-panel">' + select + svgMount + controls + buttons + ruleBox +
+      '<div class="io-panel">' + select + svgMount + controls + buttons + ruleBoxes +
       (b.trailingHtml ? "<p>" + html(b.trailingHtml) + "</p>" : "") + "</div></div>";
   }
 

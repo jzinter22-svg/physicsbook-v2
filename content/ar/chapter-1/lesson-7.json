@@ -214,8 +214,12 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": "\\( I=\\tfrac{2}{5}(10)r^2 = \\) <b id=\"sphereIVal\">1.000</b> kg·m²",
-      "ruleBoxId": null,
+      "ruleBoxes": [
+        {
+          "html": "\\( I=\\tfrac{2}{5}(10)r^2 = \\) <b id=\"sphereIVal\">1.000</b> kg·m²",
+          "id": null
+        }
+      ],
       "trailingHtml": null,
       "sectionGroup": 16,
       "sectionId": "sphere-widget",
@@ -318,8 +322,12 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": "skaterReadout",
+      "ruleBoxes": [
+        {
+          "html": null,
+          "id": "skaterReadout"
+        }
+      ],
       "trailingHtml": null,
       "sectionGroup": 18,
       "sectionId": "conservation-widget",

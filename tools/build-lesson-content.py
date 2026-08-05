@@ -241,7 +241,14 @@ def extract_simulation(section):
         select_options = [{"value": o.get("value"), "text": text(o)} for o in select.select("option")]
     presets = section.select("[data-preset]")
     preset_list = [{"value": p.get("data-preset"), "label": text(p)} for p in presets] if presets else None
-    rule_box = panel.select_one(".rule-box")
+    # Almost every widget has at most one .rule-box, but lesson 3's Kepler-
+    # verification widget has two side by side (period AND r³/t² ratio) —
+    # select_one() would silently keep only the first and drop the second
+    # live-computed readout entirely, so collect all of them as a list.
+    rule_boxes = [
+        {"html": None if rb.get("id") else inner_html(rb), "id": rb.get("id")}
+        for rb in panel.select(".rule-box")
+    ]
     # A <p> living directly inside .io-panel itself, after the rule-box
     # (e.g. lesson 2's banked-curve widget: "...the ideal speed at this
     # angle equals <b id="bankSpeedVal">8.1</b> m/s.") often holds a live-
@@ -263,8 +270,7 @@ def extract_simulation(section):
         "selectId": select_id,
         "selectOptions": select_options,
         "presets": preset_list,
-        "ruleBoxHtml": inner_html(rule_box) if rule_box and not rule_box.get("id") else None,
-        "ruleBoxId": rule_box.get("id") if rule_box else None,
+        "ruleBoxes": rule_boxes,
         "trailingHtml": trailing_html,
     }
 

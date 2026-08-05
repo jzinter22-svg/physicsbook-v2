@@ -158,15 +158,19 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": "cmFormula",
       "labels": {
         "velLegend": "v (مماسية)",
         "accLegend": "aᴄ (مركزي)"
       },
       "sectionGroup": 7,
       "sectionId": "interactive",
-      "sectionNavLabel": "🕹️ محاكاة الحركة الدائرية"
+      "sectionNavLabel": "🕹️ محاكاة الحركة الدائرية",
+      "ruleBoxes": [
+        {
+          "id": "cmFormula",
+          "html": null
+        }
+      ]
     }
   ],
   "quiz": {

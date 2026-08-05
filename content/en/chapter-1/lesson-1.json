@@ -158,15 +158,19 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": "cmFormula",
       "labels": {
         "velLegend": "v (tangential)",
         "accLegend": "aᴄ (centripetal)"
       },
       "sectionGroup": 7,
       "sectionId": "interactive",
-      "sectionNavLabel": "🕹️ Circular-motion simulation"
+      "sectionNavLabel": "🕹️ Circular-motion simulation",
+      "ruleBoxes": [
+        {
+          "id": "cmFormula",
+          "html": null
+        }
+      ]
     }
   ],
   "quiz": {

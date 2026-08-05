@@ -193,8 +193,12 @@
         }
       ],
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": "shapeFormula",
+      "ruleBoxes": [
+        {
+          "html": null,
+          "id": "shapeFormula"
+        }
+      ],
       "trailingHtml": null,
       "sectionGroup": 6,
       "sectionId": "shape-widget",
@@ -251,8 +255,12 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxHtml": null,
-      "ruleBoxId": "torqueReadout",
+      "ruleBoxes": [
+        {
+          "html": null,
+          "id": "torqueReadout"
+        }
+      ],
       "trailingHtml": null,
       "sectionGroup": 7,
       "sectionId": "torque-widget",
