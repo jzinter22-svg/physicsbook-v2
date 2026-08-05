@@ -341,7 +341,10 @@
       "trailingHtml": null,
       "sectionGroup": 13,
       "sectionId": "suvat-widget",
-      "sectionNavLabel": "🕹️ محاكاة الحركة الدورانية المنتظمة"
+      "sectionNavLabel": "🕹️ محاكاة الحركة الدورانية المنتظمة",
+      "labels": {
+        "reducedMotionNotice": "حرّك المزلاجات لمشاهدة القيم المحسوبة (المحاكاة المتحركة موقوفة حسب إعدادات النظام)."
+      }
     }
   ],
   "quiz": {
