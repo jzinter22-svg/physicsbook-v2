@@ -1,0 +1,139 @@
+{
+  "categories": [
+    {"id":"length","name":"الطول","icon":"📏","siSymbol":"m","siName":"متر","units":[
+      {"id":"km","name":"كيلومتر","symbol":"km","a":1000,"b":0},
+      {"id":"m","name":"متر","symbol":"m","a":1,"b":0},
+      {"id":"cm","name":"سنتيمتر","symbol":"cm","a":0.01,"b":0},
+      {"id":"mm","name":"ملّيمتر","symbol":"mm","a":0.001,"b":0},
+      {"id":"mi","name":"ميل","symbol":"mi","a":1609.344,"b":0},
+      {"id":"yd","name":"ياردة","symbol":"yd","a":0.9144,"b":0},
+      {"id":"ft","name":"قدم","symbol":"ft","a":0.3048,"b":0},
+      {"id":"in","name":"إنش","symbol":"in","a":0.0254,"b":0}
+    ]},
+    {"id":"mass","name":"الكتلة","icon":"⚖️","siSymbol":"kg","siName":"كيلوغرام","units":[
+      {"id":"ton","name":"طن متري","symbol":"t","a":1000,"b":0},
+      {"id":"kg","name":"كيلوغرام","symbol":"kg","a":1,"b":0},
+      {"id":"g","name":"غرام","symbol":"g","a":0.001,"b":0},
+      {"id":"mg","name":"ملّيغرام","symbol":"mg","a":0.000001,"b":0},
+      {"id":"lb","name":"باوند (رطل)","symbol":"lb","a":0.45359237,"b":0},
+      {"id":"oz","name":"أونصة","symbol":"oz","a":0.0283495231,"b":0}
+    ]},
+    {"id":"time","name":"الزمن","icon":"⏱","siSymbol":"s","siName":"ثانية","units":[
+      {"id":"day","name":"يوم","symbol":"day","a":86400,"b":0},
+      {"id":"hr","name":"ساعة","symbol":"hr","a":3600,"b":0},
+      {"id":"min","name":"دقيقة","symbol":"min","a":60,"b":0},
+      {"id":"s","name":"ثانية","symbol":"s","a":1,"b":0},
+      {"id":"ms","name":"ملّي ثانية","symbol":"ms","a":0.001,"b":0}
+    ]},
+    {"id":"area","name":"المساحة","icon":"◻️","siSymbol":"m²","siName":"متر مربع","units":[
+      {"id":"km2","name":"كيلومتر مربع","symbol":"km²","a":1000000,"b":0},
+      {"id":"hectare","name":"هكتار","symbol":"ha","a":10000,"b":0},
+      {"id":"dunum","name":"دونم (عراقي)","symbol":"دونم","a":2500,"b":0},
+      {"id":"acre","name":"فدان (Acre)","symbol":"acre","a":4046.8564224,"b":0},
+      {"id":"m2","name":"متر مربع","symbol":"m²","a":1,"b":0},
+      {"id":"cm2","name":"سنتيمتر مربع","symbol":"cm²","a":0.0001,"b":0}
+    ]},
+    {"id":"volume","name":"الحجم","icon":"🧊","siSymbol":"m³","siName":"متر مكعب","units":[
+      {"id":"m3","name":"متر مكعب","symbol":"m³","a":1,"b":0},
+      {"id":"liter","name":"لتر","symbol":"L","a":0.001,"b":0},
+      {"id":"ml","name":"ملّي لتر (سم³)","symbol":"mL","a":0.000001,"b":0},
+      {"id":"gallon","name":"غالون أمريكي","symbol":"gal","a":0.003785411784,"b":0}
+    ]},
+    {"id":"speed","name":"السرعة","icon":"🚀","siSymbol":"m/s","siName":"متر/ثانية","units":[
+      {"id":"ms","name":"متر/ثانية","symbol":"m/s","a":1,"b":0},
+      {"id":"kmh","name":"كيلومتر/ساعة","symbol":"km/h","a":0.2777777778,"b":0},
+      {"id":"mph","name":"ميل/ساعة","symbol":"mph","a":0.44704,"b":0},
+      {"id":"knot","name":"عقدة بحرية","symbol":"kn","a":0.5144444444,"b":0}
+    ]},
+    {"id":"acceleration","name":"التعجيل","icon":"📈","siSymbol":"m/s²","siName":"متر/ثانية²","units":[
+      {"id":"ms2","name":"متر/ثانية²","symbol":"m/s²","a":1,"b":0},
+      {"id":"cms2","name":"سنتيمتر/ثانية²","symbol":"cm/s²","a":0.01,"b":0},
+      {"id":"g","name":"تعجيل الجاذبية الأرضية","symbol":"g","a":9.80665,"b":0}
+    ]},
+    {"id":"force","name":"القوة","icon":"💪","siSymbol":"N","siName":"نيوتن","units":[
+      {"id":"kn","name":"كيلونيوتن","symbol":"kN","a":1000,"b":0},
+      {"id":"n","name":"نيوتن","symbol":"N","a":1,"b":0},
+      {"id":"dyne","name":"داين","symbol":"dyn","a":0.00001,"b":0},
+      {"id":"kgf","name":"كيلوغرام قوة","symbol":"kgf","a":9.80665,"b":0},
+      {"id":"lbf","name":"باوند قوة","symbol":"lbf","a":4.4482216153,"b":0}
+    ]},
+    {"id":"pressure","name":"الضغط","icon":"🌡️","siSymbol":"Pa","siName":"باسكال","units":[
+      {"id":"bar","name":"بار","symbol":"bar","a":100000,"b":0},
+      {"id":"atm","name":"ضغط جوي","symbol":"atm","a":101325,"b":0},
+      {"id":"kpa","name":"كيلوباسكال","symbol":"kPa","a":1000,"b":0},
+      {"id":"pa","name":"باسكال","symbol":"Pa","a":1,"b":0},
+      {"id":"mmhg","name":"ملّم زئبق","symbol":"mmHg","a":133.322,"b":0},
+      {"id":"psi","name":"باوند/إنش²","symbol":"psi","a":6894.757,"b":0}
+    ]},
+    {"id":"energyWork","name":"الطاقة والشغل","icon":"⚡","siSymbol":"J","siName":"جول","units":[
+      {"id":"kwh","name":"كيلوواط ساعة","symbol":"kWh","a":3600000,"b":0},
+      {"id":"kcal","name":"كيلوسعرة حرارية","symbol":"kcal","a":4184,"b":0},
+      {"id":"kj","name":"كيلوجول","symbol":"kJ","a":1000,"b":0},
+      {"id":"cal","name":"سعرة حرارية","symbol":"cal","a":4.184,"b":0},
+      {"id":"j","name":"جول","symbol":"J","a":1,"b":0},
+      {"id":"ev","name":"إلكترون فولت","symbol":"eV","a":1.602176634e-19,"b":0}
+    ]},
+    {"id":"power","name":"القدرة","icon":"🔋","siSymbol":"W","siName":"واط","units":[
+      {"id":"mw","name":"ميغاواط","symbol":"MW","a":1000000,"b":0},
+      {"id":"kw","name":"كيلوواط","symbol":"kW","a":1000,"b":0},
+      {"id":"w","name":"واط","symbol":"W","a":1,"b":0},
+      {"id":"hp","name":"حصان (Horsepower)","symbol":"hp","a":745.699872,"b":0}
+    ]},
+    {"id":"current","name":"التيار الكهربائي","icon":"🔌","siSymbol":"A","siName":"أمبير","units":[
+      {"id":"ka","name":"كيلوأمبير","symbol":"kA","a":1000,"b":0},
+      {"id":"a","name":"أمبير","symbol":"A","a":1,"b":0},
+      {"id":"ma","name":"ملّي أمبير","symbol":"mA","a":0.001,"b":0},
+      {"id":"ua","name":"مايكرو أمبير","symbol":"µA","a":0.000001,"b":0}
+    ]},
+    {"id":"voltage","name":"الفولتية (الجهد الكهربائي)","icon":"🔋","siSymbol":"V","siName":"فولت","units":[
+      {"id":"kv","name":"كيلوفولت","symbol":"kV","a":1000,"b":0},
+      {"id":"v","name":"فولت","symbol":"V","a":1,"b":0},
+      {"id":"mv","name":"ملّي فولت","symbol":"mV","a":0.001,"b":0}
+    ]},
+    {"id":"resistance","name":"المقاومة الكهربائية","icon":"🧯","siSymbol":"Ω","siName":"أوم","units":[
+      {"id":"mohm","name":"ميغاأوم","symbol":"MΩ","a":1000000,"b":0},
+      {"id":"kohm","name":"كيلوأوم","symbol":"kΩ","a":1000,"b":0},
+      {"id":"ohm","name":"أوم","symbol":"Ω","a":1,"b":0},
+      {"id":"mohm2","name":"ملّي أوم","symbol":"mΩ","a":0.001,"b":0}
+    ]},
+    {"id":"charge","name":"الشحنة الكهربائية","icon":"⚡","siSymbol":"C","siName":"كولوم","units":[
+      {"id":"ah","name":"أمبير ساعة","symbol":"Ah","a":3600,"b":0},
+      {"id":"c","name":"كولوم","symbol":"C","a":1,"b":0},
+      {"id":"mc","name":"ملّي كولوم","symbol":"mC","a":0.001,"b":0},
+      {"id":"uc","name":"مايكرو كولوم","symbol":"µC","a":0.000001,"b":0}
+    ]},
+    {"id":"frequency","name":"التردد","icon":"🌊","siSymbol":"Hz","siName":"هرتز","units":[
+      {"id":"ghz","name":"غيغاهرتز","symbol":"GHz","a":1000000000,"b":0},
+      {"id":"mhz","name":"ميغاهرتز","symbol":"MHz","a":1000000,"b":0},
+      {"id":"khz","name":"كيلوهرتز","symbol":"kHz","a":1000,"b":0},
+      {"id":"hz","name":"هرتز","symbol":"Hz","a":1,"b":0}
+    ]},
+    {"id":"wavelength","name":"الطول الموجي","icon":"〰️","siSymbol":"m","siName":"متر","units":[
+      {"id":"m","name":"متر","symbol":"m","a":1,"b":0},
+      {"id":"um","name":"مايكرومتر","symbol":"µm","a":0.000001,"b":0},
+      {"id":"nm","name":"نانومتر","symbol":"nm","a":0.000000001,"b":0},
+      {"id":"ang","name":"أنغستروم","symbol":"Å","a":1e-10,"b":0}
+    ]},
+    {"id":"temperature","name":"درجة الحرارة","icon":"🌡️","siSymbol":"K","siName":"كلفن","affine":true,"units":[
+      {"id":"k","name":"كلفن","symbol":"K","a":1,"b":0},
+      {"id":"c","name":"سيليزيوس (مئوية)","symbol":"°C","a":1,"b":273.15},
+      {"id":"f","name":"فهرنهايت","symbol":"°F","a":0.5555555556,"b":255.3722222}
+    ]},
+    {"id":"magneticField","name":"المجال المغناطيسي","icon":"🧲","siSymbol":"T","siName":"تسلا","units":[
+      {"id":"t","name":"تسلا","symbol":"T","a":1,"b":0},
+      {"id":"mt","name":"ملّي تسلا","symbol":"mT","a":0.001,"b":0},
+      {"id":"ut","name":"مايكرو تسلا","symbol":"µT","a":0.000001,"b":0},
+      {"id":"g","name":"غاوس","symbol":"G","a":0.0001,"b":0}
+    ]},
+    {"id":"angle","name":"الزاوية","icon":"📐","siSymbol":"rad","siName":"راديان","units":[
+      {"id":"rev","name":"دورة كاملة","symbol":"rev","a":6.283185307,"b":0},
+      {"id":"deg","name":"درجة","symbol":"°","a":0.0174532925,"b":0},
+      {"id":"rad","name":"راديان","symbol":"rad","a":1,"b":0}
+    ]},
+    {"id":"density","name":"الكثافة","icon":"🪨","siSymbol":"kg/m³","siName":"كيلوغرام/متر³","units":[
+      {"id":"kgm3","name":"كيلوغرام/متر³","symbol":"kg/m³","a":1,"b":0},
+      {"id":"gcm3","name":"غرام/سم³","symbol":"g/cm³","a":1000,"b":0},
+      {"id":"gml","name":"غرام/ملّي لتر","symbol":"g/mL","a":1000,"b":0}
+    ]}
+  ]
+}

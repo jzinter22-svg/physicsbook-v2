@@ -213,3 +213,52 @@ not just while the button is visible). Opening a result navigates to
 `<lesson>.html#pbsearch:<snippet>`; every page checks that hash on load,
 scrolls the matching content into view, and flashes it — no per-item IDs had
 to be added to the existing 60 lesson pages for this to work.
+
+## Book-wide tool pages
+
+Four standalone pages sit alongside the chapter hubs — `formulas/`,
+`dictionary/`, `units/`, `calculator/` — linked from a new "🧰 أدوات الكتاب"
+section on the home page and cross-linked to each other via a small
+`.tools-subnav` bar. They share one header pattern
+(`assets/js/page-shell.js`'s `PBToolsShell.init(activeId, onReady)`, which
+builds the same brand/theme/language/search header every chapter page uses)
+and one stylesheet (`assets/css/tools.css`), and are indexed in Smart Search
+itself (`type: "tool"`) so `Ctrl+K` finds them too.
+
+- **القوانين الفيزيائية** (`formulas/`, `assets/js/page-formulas.js`) —
+  every `.rule-box` from all 8 chapters as its own card (name, MathJax-
+  rendered equation, matched physical quantities/symbols/units, a nearby-
+  paragraph explanation, and an "افتح الدرس" link), with instant search and
+  chapter filter chips. Sourced from the *same* `assets/search/index.json`
+  Smart Search already loads (via `window.PBSearch.fetchIndex()`) — no
+  second fetch, no separate index. The quantity-matching and the raw-LaTeX
+  capture (`formula`/`raw`/`explanation`/`quantities` fields) live in
+  `tools/build-search-index.py`'s formula extraction.
+- **قاموس المصطلحات** (`dictionary/`, `page-dictionary.js`) — every
+  `definition`-type index item as a Term/Definition card, alphabetized by
+  the *normalized* term (so hamza/alef-maqsura variants group under one
+  letter instead of interleaving) via `Intl.Collator("ar")`, with instant
+  search and highlight reusing `window.PBSearch.highlight()`.
+- **الوحدات والتحويلات** (`units/`, `page-units.js` + `assets/data/units.json`)
+  — 21 categories, each unit stored as `{a, b}` so `valueInSI = value*a + b`
+  (linear for everything, affine only for temperature) — one converter
+  formula handles every category, no special-casing. Fully client-side,
+  updates live on input with no submit button.
+- **الآلة الحاسبة العلمية** (`calculator/`, `assets/js/calc-engine.js` +
+  `page-calculator.js`) — the parser/evaluator (`calc-engine.js`) is a
+  hand-written recursive-descent tokenizer/evaluator with **no `eval()` or
+  `new Function()`** — typed text is only ever walked as data, never
+  executed as code. `page-calculator.js` is UI wiring only. Keyboard
+  shortcuts are attached to the calculator's own display element (not
+  `document`) so they can't collide with Smart Search's global `Ctrl+K`/`/`
+  shortcuts.
+
+**A note on RTL for these pages**: short mixed Latin/symbol strings (button
+labels like `n!`, `1/x`, `×10ˣ`; the calculator's expression/history) need
+an explicit `direction:ltr` in `tools.css` — without it, the bidi algorithm
+reorders these short runs inside the page's `dir="rtl"` context (the same
+class of issue `theme.css` already documents for SVG `<text>`). Dark-mode
+overrides in this file also need *both* the explicit `[data-theme="dark"]`
+selector *and* the matching `@media (prefers-color-scheme: dark)` block —
+omitting the second leaves a visible bug for anyone whose OS is in dark mode
+but who hasn't touched the in-page theme toggle yet.

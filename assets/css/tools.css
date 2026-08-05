@@ -1,0 +1,281 @@
+/* ===========================================================================
+   Shared styles for the 4 book-wide tool pages (formulas/, dictionary/,
+   units/, calculator/) — scoped to its own file per this project's existing
+   convention (see splash.css, search.css) since these are page-specific,
+   not layout primitives. Every color/radius/shadow/font below reuses
+   theme.css's own custom properties — nothing is redefined.
+   =========================================================================== */
+
+/* ===== Tools sub-nav (replaces the per-chapter sidebar on these pages) === */
+.tools-subnav{
+  background:var(--bg);
+  border-block-end:1px solid rgba(120,130,150,.14);
+  position:sticky;top:var(--header-h);z-index:40;
+}
+.tools-subnav-inner{
+  display:flex;gap:.5rem;padding:.6rem 1.25rem;overflow-x:auto;
+  scrollbar-width:thin;
+}
+.tools-subnav-link{
+  flex:0 0 auto;white-space:nowrap;
+  font-size:.85rem;font-weight:700;color:var(--text-secondary);
+  text-decoration:none;padding:.5rem 1rem;border-radius:16px;
+  transition:color .15s ease, background .15s ease;
+}
+.tools-subnav-link:hover{color:var(--accent-purple)}
+.tools-subnav-link.is-active{
+  color:#fff;
+  background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
+  box-shadow:0 4px 12px rgba(76,89,220,.3);
+}
+
+/* ===== Shared page hero ===== */
+.tools-hero{padding:2.2rem 0 1rem;text-align:center}
+.tools-hero h1{margin:.2rem 0;font-size:clamp(1.6rem,4vw,2.2rem)}
+.tools-hero p{color:var(--text-secondary);max-width:60ch;margin:0 auto;font-weight:600}
+
+/* ===== Shared instant-search bar (Formula Reference / Dictionary) ===== */
+.tools-searchbar{
+  display:flex;align-items:center;gap:.6rem;
+  padding:.85rem 1.1rem;margin:1.2rem 0;
+  border-radius:var(--radius-md);
+  background:var(--surface);
+  box-shadow:inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);
+}
+.tools-searchbar input{
+  flex:1;border:none;background:transparent;font-family:inherit;
+  font-size:1.02rem;font-weight:600;color:var(--text-primary);outline:none;
+}
+.tools-searchbar input::placeholder{color:var(--text-faint)}
+.tools-searchbar .icon{font-size:1.15rem;opacity:.7}
+.tools-resultcount{color:var(--text-faint);font-size:.85rem;font-weight:700;white-space:nowrap}
+
+/* ===== Shared chapter filter chips ===== */
+.tools-filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
+.tools-chip{
+  border:none;cursor:pointer;font-weight:700;font-size:.82rem;
+  padding:.45rem .9rem;border-radius:18px;color:var(--text-secondary);
+  background:var(--surface);
+  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+}
+.tools-chip.is-active{
+  color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
+  box-shadow:0 4px 12px rgba(76,89,220,.3);
+}
+
+.tools-emptystate{
+  text-align:center;padding:3rem 1rem;color:var(--text-secondary);
+}
+.tools-emptystate .icon{font-size:2.4rem;display:block;margin-bottom:.5rem;opacity:.7}
+
+/* ===== Module 1: Formula Reference ===== */
+.formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.1rem}
+.formula-card{
+  display:flex;flex-direction:column;gap:.6rem;
+  padding:1.25rem;border-radius:var(--radius-md);
+  background:var(--surface);
+  box-shadow:5px 5px 12px var(--shadow-dark), -5px -5px 12px var(--shadow-light);
+}
+.formula-card-crumbs{font-size:.75rem;font-weight:700;color:var(--accent-purple)}
+.formula-card-title{font-weight:800;font-size:1rem;color:var(--text-primary);line-height:1.6}
+.formula-eq{
+  overflow-x:auto;text-align:center;padding:.6rem .3rem;
+  border-radius:var(--radius-sm);
+  background:rgba(124,111,238,.07);
+}
+:root[data-theme="dark"] .formula-eq{background:rgba(124,111,238,.15)}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .formula-eq{background:rgba(124,111,238,.15)}
+}
+.formula-explain{font-size:.85rem;color:var(--text-secondary);line-height:1.75}
+.formula-quantities{display:flex;flex-wrap:wrap;gap:.4rem}
+.formula-qty-chip{
+  font-size:.75rem;font-weight:700;color:var(--text-primary);
+  background:rgba(63,169,245,.12);border-radius:8px;padding:.28rem .55rem;
+}
+.formula-qty-chip b{color:var(--accent-blue);font-weight:800}
+.formula-card-open{
+  margin-top:auto;align-self:flex-start;
+  font-size:.82rem;font-weight:800;color:#fff;text-decoration:none;
+  padding:.5rem 1rem;border-radius:14px;
+  background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
+}
+
+/* ===== Module 2: Terminology Dictionary ===== */
+.dict-letter{
+  font-size:1.1rem;font-weight:900;color:#fff;
+  display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:50%;
+  background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
+  margin:1.6rem 0 .8rem;
+  position:sticky;top:calc(var(--header-h) + 56px);z-index:5;
+}
+.dict-group:first-child .dict-letter{margin-top:0}
+.dict-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.9rem}
+.dict-card{
+  padding:1.1rem 1.2rem;border-radius:var(--radius-md);
+  background:var(--surface);
+  box-shadow:4px 4px 10px var(--shadow-dark), -4px -4px 10px var(--shadow-light);
+  display:flex;flex-direction:column;gap:.45rem;
+}
+.dict-term{font-weight:800;font-size:1rem;color:var(--text-primary)}
+.dict-def{font-size:.85rem;color:var(--text-secondary);line-height:1.75}
+.dict-card-crumbs{font-size:.72rem;font-weight:700;color:var(--accent-purple)}
+.dict-card-open{
+  align-self:flex-start;font-size:.78rem;font-weight:800;color:var(--accent-blue);text-decoration:none;
+}
+.dict-card-open:hover{text-decoration:underline}
+
+/* ===== Module 3: Units & Conversion Center ===== */
+.units-jumplist{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.6rem}
+.units-jumplist a{
+  font-size:.78rem;font-weight:700;color:var(--text-secondary);text-decoration:none;
+  background:var(--surface);border-radius:14px;padding:.4rem .8rem;
+  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+}
+.units-jumplist a:hover{color:var(--accent-purple)}
+
+.units-category{padding:1.5rem 1.5rem 1.75rem;margin-bottom:1.4rem;scroll-margin-top:calc(var(--header-h) + 70px)}
+.units-cat-head{display:flex;align-items:center;gap:.8rem;margin-bottom:1.1rem}
+.units-cat-icon{
+  flex:0 0 auto;width:46px;height:46px;border-radius:14px;font-size:1.4rem;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,rgba(124,111,238,.16),rgba(63,169,245,.16));
+}
+.units-cat-head h2{margin:0;font-size:1.15rem}
+.units-cat-si{font-size:.78rem;color:var(--text-faint);font-weight:700}
+
+.units-converter-row{
+  display:grid;grid-template-columns:1fr 1fr auto 1fr;gap:.6rem;align-items:center;
+}
+.units-input,.units-select{
+  font-family:inherit;font-size:.95rem;font-weight:700;color:var(--text-primary);
+  border:none;border-radius:var(--radius-sm);padding:.7rem .8rem;
+  background:var(--surface);
+  box-shadow:inset 3px 3px 7px var(--shadow-dark), inset -3px -3px 7px var(--shadow-light);
+  width:100%;
+}
+.units-swap{
+  cursor:pointer;width:38px;height:38px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;
+  background:var(--surface);color:var(--accent-purple);
+  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+  border:none;
+}
+.units-result{
+  margin-top:1rem;padding:.9rem 1.1rem;border-radius:var(--radius-sm);
+  background:rgba(47,209,143,.1);font-weight:800;font-size:1.05rem;color:var(--text-primary);
+}
+.units-result b{color:var(--accent-green)}
+:root[data-theme="dark"] .units-result{background:rgba(47,209,143,.16)}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .units-result{background:rgba(47,209,143,.16)}
+}
+
+.units-table-details{margin-top:1rem}
+.units-table-details summary{cursor:pointer;font-weight:700;color:var(--accent-blue);font-size:.85rem}
+.units-table-details table{width:100%;border-collapse:collapse;margin-top:.6rem;font-size:.82rem}
+.units-table-details th,.units-table-details td{padding:.45rem .6rem;text-align:center;border-bottom:1px solid rgba(120,130,150,.15)}
+.units-table-details th{color:var(--text-secondary)}
+
+.units-formula-note,.units-example{font-size:.82rem;color:var(--text-secondary);margin:.5rem 0 0;line-height:1.7}
+.units-example{color:var(--accent-purple);font-weight:700}
+
+/* ===== Module 4: Scientific Calculator ===== */
+.calc-wrap{
+  max-width:560px;margin:0 auto;
+  padding:1.4rem;border-radius:var(--radius-lg);
+  background:var(--surface);
+  box-shadow:8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
+}
+.calc-toprow{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.8rem;flex-wrap:wrap}
+.calc-mode-group{display:flex;gap:.4rem}
+.calc-mode-btn{
+  font-size:.75rem;font-weight:800;border:none;cursor:pointer;
+  padding:.4rem .75rem;border-radius:12px;color:var(--text-secondary);
+  background:var(--surface);
+  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+}
+.calc-mode-btn.is-active{color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue))}
+.calc-mem-group{display:flex;gap:.35rem}
+.calc-mem-btn{
+  font-size:.7rem;font-weight:800;border:none;cursor:pointer;width:34px;height:34px;border-radius:10px;
+  color:var(--text-secondary);background:var(--surface);
+  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+}
+.calc-mem-btn.has-value{color:var(--accent-purple)}
+
+.calc-display{
+  border-radius:var(--radius-md);padding:1rem 1.1rem;margin-bottom:.9rem;
+  background:var(--surface);
+  box-shadow:inset 4px 4px 9px var(--shadow-dark), inset -4px -4px 9px var(--shadow-light);
+  text-align:end;
+}
+.calc-expr{
+  min-height:1.6em;font-size:1.35rem;font-weight:700;color:var(--text-primary);
+  word-break:break-all;direction:ltr;text-align:end;outline:none;
+}
+.calc-preview{min-height:1.2em;font-size:.95rem;color:var(--text-faint);font-weight:600;direction:ltr}
+.calc-error{color:var(--accent-red)}
+
+/* Both grids are empty in the static HTML and only filled in by
+   page-calculator.js on init — without a reserved min-height, the ~50
+   buttons popping in after that JS runs shifts the history panel and
+   footer down by half a screen (a real, measured layout shift). Values
+   below match each breakpoint's actual rendered height. */
+.calc-sci-grid,.calc-basic-grid{display:grid;gap:.45rem;margin-bottom:.5rem}
+.calc-sci-grid{grid-template-columns:repeat(6,1fr);min-height:253px}
+.calc-basic-grid{grid-template-columns:repeat(4,1fr);min-height:285px}
+.calc-btn{
+  font-family:inherit;border:none;cursor:pointer;border-radius:12px;
+  padding:.65rem .3rem;font-size:.82rem;font-weight:700;color:var(--text-primary);
+  background:var(--surface);
+  box-shadow:3px 3px 7px var(--shadow-dark), -3px -3px 7px var(--shadow-light);
+  transition:transform .1s ease;
+  /* Button labels are math notation ("n!", "1/x", "×10ˣ", "ˣ√y"), not RTL
+     prose — without this, the bidi algorithm reorders these short mixed
+     Latin/symbol runs inside the page's dir="rtl" context (same fix
+     theme.css already applies to SVG text and this file applies to
+     .calc-expr/.calc-preview above). */
+  direction:ltr;
+}
+.calc-btn:active{transform:scale(.94)}
+.calc-btn.op{color:var(--accent-blue);font-size:1.05rem}
+.calc-btn.equals{
+  color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
+  grid-column:span 1;
+}
+.calc-btn.clear{color:var(--accent-red)}
+.calc-btn.wide{grid-column:span 2}
+
+.calc-history{margin-top:1.2rem}
+.calc-history-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem}
+.calc-history-head h2{margin:0;font-size:1rem}
+.calc-history-actions{display:flex;gap:.5rem}
+.calc-history-list{list-style:none;margin:0;padding:0;min-height:52px;max-height:220px;overflow-y:auto;display:flex;flex-direction:column;gap:.4rem}
+.calc-history-item{
+  display:flex;justify-content:space-between;align-items:center;gap:.6rem;
+  padding:.55rem .8rem;border-radius:var(--radius-sm);cursor:pointer;
+  background:var(--surface);
+  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+}
+.calc-history-expr{font-size:.78rem;color:var(--text-faint);direction:ltr;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.calc-history-result{font-weight:800;color:var(--text-primary);direction:ltr}
+.calc-copybtn{
+  border:none;cursor:pointer;background:transparent;color:var(--accent-blue);font-size:.85rem;font-weight:700;
+}
+
+@media (max-width:480px){
+  .calc-sci-grid{grid-template-columns:repeat(4,1fr);min-height:338px}
+  .calc-basic-grid{min-height:276px}
+  .calc-btn{font-size:.75rem;padding:.6rem .2rem}
+}
+
+@media (max-width:640px){
+  .tools-subnav{position:static}
+  .formula-grid{grid-template-columns:1fr}
+  .dict-grid{grid-template-columns:1fr}
+  .dict-letter{position:static}
+  .units-converter-row{grid-template-columns:1fr}
+  .units-swap{justify-self:center}
+}

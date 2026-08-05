@@ -136,6 +136,21 @@ QUANTITIES = [
     {"symbol": "ρ", "name": "الكثافة", "unit": "kg/m³", "aliases": ["rho", "density", "كثافة"], "chapters": [7, 8]},
 ]
 
+
+def find_quantities_in(formula_text):
+    """Which QUANTITIES symbols appear in a cleaned formula string. Matches
+    the symbol literally (works for both plain letters like "F" and
+    underscore-subscript forms like "a_c", since clean_text() never strips
+    underscores) guarded by non-alphanumeric boundaries so "T" doesn't
+    match inside "text" or "R" inside a longer token."""
+    found = []
+    for q in QUANTITIES:
+        pattern = r"(?<![A-Za-z0-9_])" + re.escape(q["symbol"]) + r"(?![A-Za-z0-9_])"
+        if re.search(pattern, formula_text):
+            found.append({"symbol": q["symbol"], "name": q["name"], "unit": q["unit"]})
+    return found
+
+
 TYPE_LABELS_AR = {
     "definition": "تعريف",
     "explanation": "تعليل",
@@ -150,6 +165,7 @@ TYPE_LABELS_AR = {
     "lesson": "درس",
     "chapter": "فصل",
     "quantity": "كمية فيزيائية",
+    "tool": "أداة",
 }
 
 
@@ -196,14 +212,24 @@ def extract_lesson(items, soup, chapter_num, lesson_num, href, lesson_title, is_
 
     # ---- Formulas (.rule-box) — kept in its own `formula` field (raw-ish,
     # cleaned) rather than duplicated into `text`, so search.js's generic
-    # preview renderer just reads `item.formula || item.text`. ------------
+    # preview renderer just reads `item.formula || item.text`. Also captures
+    # `raw` (the untouched LaTeX source, still wrapped in its $$.../\(...\)
+    # delimiters) for the Formula Reference page to hand straight to
+    # MathJax, and `quantities` (symbols recognized from QUANTITIES) for
+    # that page's "physical quantities / symbols / units" card fields. -----
     for i, box in enumerate(main.select(".rule-box")):
-        formula = clean_text(text_of(box), limit=160)
+        raw = text_of(box).strip()
+        formula = clean_text(raw, limit=160)
         heading = box.find_previous(["h2", "h3"])
         title = clean_text(text_of(heading), 90) if heading else lesson_title
+        section = box.find_parent("section")
+        intro_p = section.find("p") if section else None
+        explanation = clean_text(text_of(intro_p), limit=220) if intro_p else ""
+        quantities = find_quantities_in(formula)
         make_item(items, id=f"c{chapter_num}-l{lesson_num}-formula-{i}", type="formula",
                   chapterNum=chapter_num, lessonNum=lesson_num, href=href,
-                  title=title, formula=formula, jump=None)
+                  title=title, formula=formula, raw=raw, explanation=explanation or None,
+                  quantities=(quantities or None), jump=None)
 
     # ---- Worked examples / end-of-chapter exercises + their solutions -----
     ex_type = "exercise" if is_questions_lesson else "example"
@@ -329,6 +355,22 @@ def main():
         make_item(items, id=f"quantity-{q['symbol']}", type="quantity", chapterNum=(q["chapters"][0] if q["chapters"] else None),
                   lessonNum=None, href=(related_lessons[0] if related_lessons else "index.html"),
                   title=f"{q['name']} ({q['symbol']})", text=f"الوحدة: {q['unit']}", jump=None)
+
+    # ---- The 4 book-wide tool pages (formulas/dictionary/units/calculator)
+    # — static entries so Ctrl+K can jump straight to them too. --------------
+    TOOL_PAGES = [
+        {"id": "formulas", "title": "القوانين الفيزيائية", "href": "formulas/index.html",
+         "text": "مرجع شامل لكل القوانين والمعادلات الفيزيائية في الكتاب مصنّفة حسب الفصل والدرس"},
+        {"id": "dictionary", "title": "قاموس المصطلحات", "href": "dictionary/index.html",
+         "text": "قاموس أبجدي لكل التعريفات والمصطلحات الفيزيائية الواردة في الكتاب"},
+        {"id": "units", "title": "الوحدات والتحويلات", "href": "units/index.html",
+         "text": "محول وحدات تفاعلي فوري للطول والكتلة والزمن والقوة والضغط والطاقة والكهرباء وغيرها"},
+        {"id": "calculator", "title": "الآلة الحاسبة العلمية", "href": "calculator/index.html",
+         "text": "آلة حاسبة علمية كاملة بدوال مثلثية ولوغاريتمية وذاكرة وسجل عمليات"},
+    ]
+    for tp in TOOL_PAGES:
+        make_item(items, id=f"tool-{tp['id']}", type="tool", chapterNum=None, lessonNum=None,
+                  href=tp["href"], title=tp["title"], text=tp["text"], jump=None)
 
     out = {
         "version": 1,

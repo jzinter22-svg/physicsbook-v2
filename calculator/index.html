@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="../" data-assets="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الآلة الحاسبة العلمية — كتاب الطبيعيات التفاعلي</title>
+<meta name="description" content="آلة حاسبة علمية متكاملة: حساب أساسي، أقواس، أسس وجذور، لوغاريتمات، دوال مثلثية وقطعية زائدة، ذاكرة، وضعا الدرجة والراديان، وسجل عمليات.">
+<link rel="stylesheet" href="../assets/css/theme.css">
+<link rel="stylesheet" href="../assets/css/search.css">
+<link rel="stylesheet" href="../assets/css/tools.css">
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/search.js" defer></script>
+<script src="../assets/js/page-shell.js" defer></script>
+</head>
+<body data-page="index.html">
+<a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
+<header class="site-header"></header>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" data-i18n-aria-label="common.breadcrumb" aria-label="مسار التصفح">
+    <ol>
+      <li><a href="../index.html" data-i18n="brand.name">كتاب الطبيعيات التفاعلي</a></li>
+      <li aria-current="page">الآلة الحاسبة العلمية</li>
+    </ol>
+  </nav>
+
+  <section class="tools-hero fade-up">
+    <h1>🧮 الآلة الحاسبة العلمية</h1>
+    <p>حاسبة علمية كاملة: عمليات أساسية وأقواس وأسس وجذور ولوغاريتمات ودوال مثلثية وقطعية زائدة، مع ذاكرة وسجل عمليات ووضعي الدرجة والراديان.</p>
+  </section>
+
+  <section class="section fade-up">
+    <div class="calc-wrap">
+      <div class="calc-toprow">
+        <div class="calc-mem-group" role="group" aria-label="ذاكرة الآلة الحاسبة">
+          <button type="button" class="calc-mem-btn" data-mem="mc" title="مسح الذاكرة (MC)">MC</button>
+          <button type="button" class="calc-mem-btn" data-mem="mr" title="استدعاء الذاكرة (MR)">MR</button>
+          <button type="button" class="calc-mem-btn" data-mem="mplus" title="إضافة إلى الذاكرة (M+)">M+</button>
+          <button type="button" class="calc-mem-btn" data-mem="mminus" title="طرح من الذاكرة (M-)">M-</button>
+        </div>
+        <div class="calc-mode-group" role="group" aria-label="وضع الزاوية">
+          <button type="button" class="calc-mode-btn is-active" data-angle="deg">DEG</button>
+          <button type="button" class="calc-mode-btn" data-angle="rad">RAD</button>
+        </div>
+      </div>
+
+      <div class="calc-display">
+        <div class="calc-expr" id="calcExpr" tabindex="0" role="textbox" aria-label="التعبير الحسابي" aria-multiline="false">0</div>
+        <div class="calc-preview" id="calcPreview">&nbsp;</div>
+      </div>
+
+      <div class="calc-sci-grid" id="calcSciGrid" aria-label="الدوال العلمية"></div>
+      <div class="calc-basic-grid" id="calcBasicGrid" aria-label="لوحة الأرقام والعمليات الأساسية"></div>
+
+      <div class="calc-history">
+        <div class="calc-history-head">
+          <h2>🕘 سجل العمليات</h2>
+          <div class="calc-history-actions">
+            <button type="button" class="calc-copybtn" id="calcCopyLast">نسخ آخر نتيجة</button>
+            <button type="button" class="calc-copybtn" id="calcClearHistory">مسح السجل</button>
+          </div>
+        </div>
+        <ul class="calc-history-list" id="calcHistoryList"></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">كتاب الطبيعيات التفاعلي — الآلة الحاسبة العلمية</footer>
+
+<script src="../assets/js/calc-engine.js" defer></script>
+<script src="../assets/js/page-calculator.js" defer></script>
+</body>
+</html>

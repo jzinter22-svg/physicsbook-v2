@@ -43,10 +43,10 @@
   var TYPE_ICON = {
     definition: "📌", explanation: "🔍", enumeration: "🔢", example: "✏️",
     exercise: "❓", solution: "✅", simulation: "🕹️", figure: "🖼️",
-    formula: "📐", table: "📊", lesson: "📖", chapter: "📚", quantity: "⚛️"
+    formula: "📐", table: "📊", lesson: "📖", chapter: "📚", quantity: "⚛️", tool: "🧰"
   };
   var FILTER_TYPES = ["definition", "explanation", "enumeration", "example",
-    "exercise", "solution", "simulation", "figure", "formula", "lesson", "chapter"];
+    "exercise", "solution", "simulation", "figure", "formula", "lesson", "chapter", "tool"];
 
   // Base ranking per content type — approximates the spec's stated priority
   // (lesson title > definition > explanation > keyword/quantity > example >
@@ -54,7 +54,7 @@
   // layers exact/prefix-title bonuses on top so a literal title match always
   // wins regardless of type.
   var TYPE_RANK = {
-    lesson: 100, chapter: 95, definition: 90, explanation: 85, quantity: 80,
+    lesson: 100, chapter: 95, definition: 90, explanation: 85, quantity: 80, tool: 70,
     example: 60, exercise: 55, solution: 50, formula: 45, enumeration: 40,
     simulation: 35, figure: 30, table: 20
   };
@@ -673,5 +673,15 @@
     document.addEventListener("DOMContentLoaded", init);
   } else { init(); }
 
-  window.PBSearch = {open: open, close: close, mountButton: mountButton};
+  window.PBSearch = {
+    open: open, close: close, mountButton: mountButton,
+    // Shared utilities reused by the Formula Reference / Terminology
+    // Dictionary pages so Arabic normalization and highlight rendering
+    // live in exactly one place rather than being copy-pasted per page.
+    normalizeArabic: normalizeArabic,
+    buildFuzzyRegex: buildFuzzyRegex,
+    highlight: highlight,
+    escapeHtml: escapeHtml,
+    fetchIndex: fetchIndex
+  };
 })();
