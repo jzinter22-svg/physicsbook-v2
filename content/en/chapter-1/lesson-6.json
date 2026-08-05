@@ -1,0 +1,379 @@
+{
+  "lessonNumber": 6,
+  "chapterNumber": 1,
+  "meta": {
+    "pageTitle": "Lesson 6: Moment of Inertia — Chapter 1",
+    "description": "5-5-1 Moment of inertia: its definition, the torque law of rotational motion τ=Iα, and a table of moments of inertia for seven common geometric shapes.",
+    "breadcrumbChapter": "Chapter 1",
+    "breadcrumbLesson": "Moment of Inertia",
+    "footer": "Chapter 1: Circular and Rotational Motion — Lesson 6: Moment of Inertia"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 6 of 8 · Chapter 1",
+    "title": "Moment of Inertia",
+    "lead": "5-5-1 Moment of inertia (I) · the torque law of rotational motion \\(\\tau=I\\alpha\\)"
+  },
+  "objectives": [
+    "Defines moment of inertia (I) and explains its dependence on mass, its distribution, and the rotation pattern.",
+    "Writes the torque law of rotational motion \\(\\tau=I\\alpha\\) and compares it with Newton's second law \\(F=ma\\).",
+    "Determines the moment of inertia for various geometric shapes using Table (2-1).",
+    "Explains the effect of mass distribution on the value of the moment of inertia and on the angular acceleration produced by a given torque."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 5-5-1 Moment of inertia",
+      "html": "The moment of inertia of a body rotating about an axis is expressed as the product of its mass and the square of the radius of rotation, denoted by the symbol (I). It represents the resistance a body offers against any change in its rotational speed, and depends on the pattern of mass distribution, the body's shape, and its mass.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ I = mr^2 \\qquad \\text{...(16)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">The units of moment of inertia are: \\(\\text{kg}\\cdot\\text{m}^2\\).</p>",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "Newton's second law is expressed as the product of mass and acceleration, that is:</p><p>\\( F=ma \\qquad \\text{...(17)} \\)</p><p>In rotational motion, equation (17) becomes:",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\tau = I\\alpha \\qquad \\text{...(18)} $$\n      <p style=\"margin:.6rem 0 0;font-size:1rem;font-weight:700;color:var(--accent-red)\">The torque law of rotational motion</p>",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "This equation represents Newton's second law in rotational motion, where torque (τ) replaces force (F), moment of inertia (I) replaces mass (m), and angular acceleration (α) replaces linear acceleration (a).",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "table",
+      "heading": "📊 Table 2-1: moments of inertia for some systems",
+      "headers": [
+        "Body and axis",
+        "Moment of inertia"
+      ],
+      "rows": [
+        [
+          "Long rod or wire, about a perpendicular axis through the center of mass",
+          "\\( I=\\tfrac{1}{12}mL^2 \\)"
+        ],
+        [
+          "Thin hoop, about a perpendicular axis through the center",
+          "\\( I=mr^2 \\)"
+        ],
+        [
+          "Solid sphere, about a diameter",
+          "\\( I=\\tfrac{2}{5}mr^2 \\)"
+        ],
+        [
+          "Plate, about a perpendicular axis through the center of mass",
+          "\\( I=\\tfrac{1}{12}m(a^2+b^2) \\)"
+        ],
+        [
+          "Solid disc or cylinder, about its axis through the center of mass",
+          "\\( I=\\tfrac{1}{2}mr^2 \\)"
+        ],
+        [
+          "Hollow sphere, about a diameter",
+          "\\( I=\\tfrac{2}{3}mr^2 \\)"
+        ],
+        [
+          "Plate, about a parallel axis through the center of mass",
+          "\\( I=\\tfrac{2}{3}ma^2 \\)"
+        ]
+      ],
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "shapeSvg",
+      "svgAriaLabel": "Illustration of the selected shape",
+      "svgViewBox": "0 0 260 140",
+      "svgWidth": "260",
+      "svgHeight": "140",
+      "sectionHeading": "🕹️ Recreating Table 2-1 as an interactive calculator",
+      "descriptionHtml": "Choose one of the seven shapes from the textbook's table, and drag the mass and characteristic-length sliders to see the moment of inertia (I) computed instantly using the correct formula for that shape.",
+      "controls": [
+        {
+          "labelHtml": "Mass m = <span id=\"shapeMassVal\">2.0</span> kg",
+          "inputId": "shapeMass",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0.5",
+          "inputMax": "10",
+          "inputStep": "0.1",
+          "inputValue": "2.0"
+        },
+        {
+          "labelHtml": "<span id=\"shapeALabel\">r</span> = <span id=\"shapeAVal\">0.5</span> m",
+          "inputId": "shapeA",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0.1",
+          "inputMax": "2",
+          "inputStep": "0.05",
+          "inputValue": "0.5"
+        },
+        {
+          "labelHtml": "<span id=\"shapeBLabel\">b</span> = <span id=\"shapeBVal\">0.3</span> m",
+          "inputId": "shapeB",
+          "rowId": "shapeBRow",
+          "rowStyle": "display:none",
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0.1",
+          "inputMax": "2",
+          "inputStep": "0.05",
+          "inputValue": "0.3"
+        }
+      ],
+      "buttons": null,
+      "selectId": "shapeSelect",
+      "selectOptions": [
+        {
+          "value": "0",
+          "text": "Long rod/wire (about a perpendicular axis through the center of mass) — I=(1/12)mL²"
+        },
+        {
+          "value": "1",
+          "text": "Thin hoop (about a perpendicular axis through the center) — I=mr²"
+        },
+        {
+          "value": "2",
+          "text": "Solid sphere (about a diameter) — I=(2/5)mr²"
+        },
+        {
+          "value": "3",
+          "text": "Plate (about a perpendicular axis through the center of mass) — I=(1/12)m(a²+b²)"
+        },
+        {
+          "value": "4",
+          "text": "Solid disc/cylinder (about its central axis) — I=(1/2)mr²"
+        },
+        {
+          "value": "5",
+          "text": "Hollow sphere (about a diameter) — I=(2/3)mr²"
+        },
+        {
+          "value": "6",
+          "text": "Plate (about a parallel axis through the center of mass) — I=(2/3)ma²"
+        }
+      ],
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": null,
+          "id": "shapeFormula"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 6,
+      "sectionId": "shape-widget",
+      "sectionNavLabel": "🕹️ Moment-of-inertia calculator"
+    },
+    {
+      "type": "simulation",
+      "svgId": "torqueSvg",
+      "svgAriaLabel": "Comparing angular acceleration for two discs with different moments of inertia under the same torque",
+      "svgViewBox": "0 0 320 170",
+      "svgWidth": "320",
+      "svgHeight": "170",
+      "sectionHeading": "🕹️ Interactive simulation: same torque, different moments of inertia",
+      "descriptionHtml": "The same torque (τ) is applied to two discs with different moments of inertia (I). Drag the sliders and see which one spins faster — a direct application of the law \\(\\alpha=\\tau/I\\).",
+      "controls": [
+        {
+          "labelHtml": "Torque τ = <span id=\"torqueTauVal\">4</span> N·m",
+          "inputId": "torqueTau",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "1",
+          "inputMax": "10",
+          "inputStep": "0.5",
+          "inputValue": "4"
+        },
+        {
+          "labelHtml": "I₁ (left) = <span id=\"iaVal\">1</span> kg·m²",
+          "inputId": "iaSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0.5",
+          "inputMax": "6",
+          "inputStep": "0.1",
+          "inputValue": "1"
+        },
+        {
+          "labelHtml": "I₂ (right) = <span id=\"ibVal\">3</span> kg·m²",
+          "inputId": "ibSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0.5",
+          "inputMax": "6",
+          "inputStep": "0.1",
+          "inputValue": "3"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": null,
+          "id": "torqueReadout"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 7,
+      "sectionId": "torque-widget",
+      "sectionNavLabel": "🕹️ τ=Iα race"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check your understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "A body's moment of inertia depends on:",
+        "options": [
+          "Mass only",
+          "Mass, its distribution, the body's shape, and its rotation pattern",
+          "Angular velocity only",
+          "Time only"
+        ],
+        "explain": "Moment of inertia depends on mass, the pattern of its distribution, and the body's shape — not just the amount of mass."
+      },
+      {
+        "correct": 1,
+        "question": "The SI units of moment of inertia are:",
+        "options": [
+          "\\( \\text{kg/m}^2 \\)",
+          "\\( \\text{kg}\\cdot\\text{m}^2 \\)",
+          "\\( \\text{N}\\cdot\\text{m} \\)",
+          "\\( \\text{kg}\\cdot\\text{m/s}^2 \\)"
+        ],
+        "explain": "From equation (16): \\(I=mr^2\\), so its units are \\(\\text{kg}\\cdot\\text{m}^2\\)."
+      },
+      {
+        "correct": 1,
+        "question": "The torque law of rotational motion (the counterpart of \\(F=ma\\)) is:",
+        "options": [
+          "\\( \\tau=I\\omega \\)",
+          "\\( \\tau=I\\alpha \\)",
+          "\\( \\tau=Fr \\)",
+          "\\( \\tau=mr^2 \\)"
+        ],
+        "explain": "Equation (18): \\(\\tau=I\\alpha\\)."
+      },
+      {
+        "correct": 1,
+        "question": "The moment of inertia of a solid disc rotating about its central axis is:",
+        "options": [
+          "\\( mr^2 \\)",
+          "\\( \\tfrac{1}{2}mr^2 \\)",
+          "\\( \\tfrac{2}{5}mr^2 \\)",
+          "\\( \\tfrac{1}{12}mL^2 \\)"
+        ],
+        "explain": "From Table (2-1): the moment of inertia of a solid disc or cylinder about its central axis is \\(I=\\tfrac12 mr^2\\)."
+      },
+      {
+        "correct": 1,
+        "question": "When the same torque is applied to two bodies with different moments of inertia, the body with the larger moment of inertia:",
+        "options": [
+          "Accelerates angularly faster",
+          "Accelerates angularly more slowly",
+          "Always remains at rest",
+          "Has no relation to angular acceleration"
+        ],
+        "explain": "Since \\(\\alpha=\\tau/I\\), the larger the moment of inertia (I), the smaller the angular acceleration (α) produced by the same torque."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson summary",
+    "items": [
+      "Moment of inertia \\(I=mr^2\\) represents a body's resistance to any change in its rotational speed.",
+      "The torque law of rotational motion \\(\\tau=I\\alpha\\) is the counterpart of Newton's second law \\(F=ma\\).",
+      "Moment of inertia varies with the body's shape, its mass distribution, and its axis of rotation (Table 2-1).",
+      "For the same applied torque, the body with the larger moment of inertia gains a smaller angular acceleration."
+    ]
+  },
+  "mindmap": {
+    "ariaLabel": "Mind map for moment of inertia",
+    "viewBox": "0 0 480 220",
+    "center": {
+      "cx": 240.0,
+      "cy": 110.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Moment of",
+        "inertia I"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "I=mr²"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "τ=Iα"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Table 2-1",
+          "7 shapes"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Mass distribution",
+          "not just its amount"
+        ]
+      }
+    ]
+  }
+}
