@@ -1,0 +1,48 @@
+{
+  "chapterNumber": 2,
+  "meta": {
+    "pageTitle": "Chapter 2: Interference, Polarization, Diffraction, and Scattering — Interactive Physics Book",
+    "description": "Chapter Two of the Interactive Physics Book: the wave phenomena of light — interference and coherence, Young's experiment, thin-film interference, diffraction, polarization, and the scattering of light — with solved examples and interactive tools.",
+    "breadcrumbChapter": "Chapter 2",
+    "footer": "Chapter Two: Interference, Polarization, Diffraction, and Scattering — Interactive Physics Book"
+  },
+  "hero": {
+    "eyebrow": "📘 Interactive Physics Book · Third Grade · Industrial Track",
+    "titleHtml": "Chapter Two: Interference, Polarization, Diffraction, and Scattering <span style=\"color:var(--accent-blue)\">Wave Phenomena of Light</span>",
+    "lead": "From the colors of a soap bubble to the blue of the sky and the red of sunset: in this chapter we study the wave phenomena of light — interference and coherence, Young's experiment, thin-film interference, diffraction, polarization, and the scattering of light.",
+    "startLessonLabel": "Start the First Lesson ←",
+    "tags": ["⏱ 7 lessons", "🧠 Self-quizzes", "🗺 Mind maps"]
+  },
+  "objectivesHeading": "🎯 Behavioral Objectives",
+  "objectivesLead": "After completing this chapter, the student will be able to:",
+  "objectives": [
+    "Know the concept of interference, coherence, and the conditions for interference in thin films.",
+    "Understand Young's experiment for the formation of interference fringes with incident light.",
+    "Know the concept of diffraction and grasp some phenomena related to it.",
+    "Know the concept of polarization and how to distinguish between ordinary light and polarized light.",
+    "Know the concept of the scattering phenomenon in light."
+  ],
+  "lessonsHeading": "📚 Chapter Contents",
+  "enterLessonLabel": "Enter the Lesson ←",
+  "lessons": [
+    {"title": "Introduction, Interference, and Coherence", "description": "2-1 Introduction, 2-2 Interference, 2-3 Coherence."},
+    {"title": "Young's Experiment", "description": "2-4: Young's fringe model, λ=aX/nD, and the experiment's uses."},
+    {"title": "Thin-Film Interference", "description": "2-5: the colors of soap bubbles and thin oil films."},
+    {"title": "Diffraction and Its Applications", "description": "2-6 Diffraction of light, 2-7 the interference and diffraction of light."},
+    {"title": "Polarization", "description": "2-8: polarized light, the methods of obtaining it, and its applications."},
+    {"title": "Scattering of Light", "description": "2-9: why the sky is blue and why the sun reddens at sunset."},
+    {"title": "Chapter Questions and Problems", "description": "2-10: all multiple-choice, short-answer, and calculation problems, fully solved."}
+  ],
+  "mindmap": {
+    "heading": "🗺 Chapter Mind Map",
+    "ariaLabel": "Mind map of Chapter Two",
+    "viewBox": "0 0 900 460",
+    "center": {"cx": 450, "cy": 230, "r": 66, "lines": ["Wave Phenomena", "of Light"]},
+    "satellites": [
+      {"cx": 180, "cy": 90, "r": 54, "color": "#ffab5e", "lines": ["Interference &", "Young's exp."]},
+      {"cx": 720, "cy": 90, "r": 54, "color": "#ff6b9d", "lines": ["Diffraction"]},
+      {"cx": 150, "cy": 250, "r": 54, "color": "#2fd18f", "lines": ["Polarization"]},
+      {"cx": 750, "cy": 250, "r": 54, "color": "#3fa9f5", "lines": ["Scattering"]}
+    ]
+  }
+}
