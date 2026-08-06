@@ -1,0 +1,236 @@
+{
+  "lessonNumber": 1,
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "Lesson 1: Laser and Maser — Chapter Six",
+    "description": "6-1 Laser and Maser: the origin of the names laser and maser, Einstein's 1917 theory, Townes's maser in 1954, Maiman's laser in 1960.",
+    "breadcrumbChapter": "Chapter 6",
+    "breadcrumbLesson": "Laser and Maser",
+    "footer": "Chapter Six: Laser and Plasma — Lesson 1: Laser and Maser"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 1 of 10 · 6-1",
+    "title": "Laser and Maser الليزر والميزر",
+    "lead": "Laser technology is one of the advanced sciences that has entered a great many applications and scientific research fields, appearing as a key element in CD/DVD drives, the electronics industry, precise distance measurement, metal cutting and welding equipment, and dental instruments, among others."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Define the laser and the maser and explain the origin of each name.",
+    "Give a brief historical account of how the idea of the laser developed: Einstein's theory, Townes's maser, and Maiman's laser.",
+    "List some of the fields in which laser technology is applied in science, industry, and medicine."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 6-1 Laser and Maser الليزر والميزر",
+      "html": "Laser technology is one of the advanced sciences that has entered a great many applications and scientific research fields; we find it as a key element in CD/DVD drives, in the electronics industry, and in precise distance measurement — especially of space objects — as well as in metal cutting and welding equipment, dental instruments, and other uses that we will explore in the laser-applications section. But what exactly is a laser, and what sets it apart from other light sources?",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Laser (LASER)",
+      "html": "The name Laser is an acronym formed from the initial letters of the words in the phrase:",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 6-1 The first ruby laser device\" role=\"img\" viewbox=\"0 0 300 180\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"var(--text-secondary)\" height=\"40\" width=\"16\" x=\"30\" y=\"70\"></rect>\n<rect fill=\"var(--text-secondary)\" height=\"40\" width=\"16\" x=\"230\" y=\"70\"></rect>\n<rect fill=\"rgba(255,107,157,.25)\" height=\"20\" stroke=\"var(--accent-pink)\" stroke-width=\"1.5\" width=\"184\" x=\"46\" y=\"80\"></rect>\n<text fill=\"var(--accent-pink)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"138\" y=\"94\">Ruby crystal</text>\n<line stroke=\"var(--accent-orange)\" stroke-width=\"3\" x1=\"252\" x2=\"285\" y1=\"90\" y2=\"90\"></line>\n<polygon fill=\"var(--accent-orange)\" points=\"285,84 300,90 285,96\"></polygon>\n<text fill=\"var(--accent-orange)\" font-size=\"9\" text-anchor=\"middle\" x=\"270\" y=\"75\">Laser beam</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"138\" y=\"60\">Flash lamp (optical pumping)</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"30\" y=\"130\">Fully reflective mirror</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"246\" y=\"130\">Partially reflective mirror</text>\n</g>\n</svg>",
+      "caption": "Figure 6-1: The first ruby laser device (T.H. Maiman, 1960) — a ruby crystal between two mirrors with an optical pumping source",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "But before the laser was produced, an amplified, stimulated emission of electromagnetic radiation had already been achieved in the microwave spectrum, called the maser — a name formed from the initial letters of how the maser works, in the following phrase:",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Maser (MASER)",
+      "html": "Microwave Amplification by Stimulated Emission of Radiation",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "Did you know?",
+      "html": "The scientist Charles Townes managed to design the first device that amplified microwaves using the technique of stimulated emission, producing the ammonia maser in 1954.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "timelineSvg",
+      "svgAriaLabel": "Timeline of the discovery of the laser",
+      "svgViewBox": "0 0 480 160",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive simulation: Timeline of the laser's discovery",
+      "descriptionHtml": "Move the slider to explore the three key milestones in the development of the laser idea, from theory to the first working device.",
+      "controls": [
+        {
+          "labelHtml": "Year",
+          "inputId": "timelineSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "2",
+          "inputStep": "1",
+          "inputValue": "0"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "—",
+          "id": "timelineCaption",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": "",
+      "labels": {
+        "evt0Title": "Einstein",
+        "evt0Text": "Albert Einstein laid the theoretical foundation for the process of stimulated emission of radiation.",
+        "evt1Title": "Townes",
+        "evt1Text": "Charles Townes designed the first maser device (microwave amplification) and produced the ammonia maser.",
+        "evt2Title": "Maiman",
+        "evt2Text": "T.H. Maiman designed the first working laser device using a ruby crystal."
+      },
+      "sectionGroup": 6,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 0,
+        "question": "The word Laser means amplification of light by:",
+        "options": [
+          "Stimulated emission of radiation",
+          "Spontaneous emission of radiation",
+          "Induced absorption of radiation",
+          "Optical refraction"
+        ],
+        "explain": "Laser = Light Amplification by Stimulated Emission of Radiation — that is, the amplification of light by the stimulated emission of radiation."
+      },
+      {
+        "correct": 2,
+        "question": "The scientist who laid the theoretical foundation for the process of stimulated emission of radiation in 1917 was:",
+        "options": [
+          "Charles Townes",
+          "T.H. Maiman",
+          "Albert Einstein",
+          "Max Planck"
+        ],
+        "explain": "Albert Einstein laid the theoretical foundation for the process of stimulated emission of radiation in 1917."
+      },
+      {
+        "correct": 1,
+        "question": "The first working laser device was designed in 1960 using a crystal of:",
+        "options": [
+          "Silicon",
+          "Ruby",
+          "Quartz",
+          "Germanium"
+        ],
+        "explain": "The scientist T.H. Maiman designed the first laser device in 1960 using a ruby crystal (Ruby Laser)."
+      },
+      {
+        "correct": 0,
+        "question": "The word Maser means the amplification of:",
+        "options": [
+          "Microwaves by the stimulated emission of radiation",
+          "Visible light only",
+          "X-rays",
+          "Sound waves"
+        ],
+        "explain": "Maser = Microwave Amplification by Stimulated Emission of Radiation — that is, the amplification of microwaves by the stimulated emission of radiation."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Laser = Light Amplification by Stimulated Emission of Radiation.",
+      "Maser = Microwave Amplification by Stimulated Emission of Radiation.",
+      "Einstein laid the theoretical foundation for stimulated emission in 1917; Townes designed the first maser (ammonia) in 1954; Maiman designed the first laser (ruby) in 1960.",
+      "Laser technology has wide-ranging applications in CD/DVD drives, electronics, distance measurement, metal welding, dentistry, and more."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of the laser and the maser",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Laser &",
+        "Maser"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Einstein",
+          "1917"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Townes",
+          "Maser 1954"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Maiman",
+          "Laser 1960"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Ruby",
+          "Crystal"
+        ]
+      }
+    ]
+  }
+}

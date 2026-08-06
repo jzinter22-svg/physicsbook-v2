@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-1.html">
@@ -42,138 +43,16 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يعرّف الليزر والميزر ويبيّن أصل تسمية كل منهما.</span></li>
-        <li><span class="obj-num">2</span><span>يذكر نبذة تاريخية عن تطور فكرة الليزر: نظرية أينشتاين، ميزر تاونز، وليزر ميمان.</span></li>
-        <li><span class="obj-num">3</span><span>يعدّد بعض مجالات تطبيق تكنولوجيا الليزر في العلوم والصناعة والطب.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 1-6 الليزر والميزر Laser and Maser</h2>
-      <p>تُعدّ تكنولوجيا الليزر من العلوم المتطورة التي دخلت في العديد من التطبيقات والأبحاث العلمية، فنجدها عنصرًا أساسًا في أجهزة تشغيل الأقراص المدمجة وفي صناعة الالكترونيات وقياس المسافات بدقة وخاصة الأجسام الفضائية، أو في معدات قطع ولحام المعادن، أو في آلات الأسنان وغيرها التي سيتم معرفة بعضها في محور تطبيقات الليزر. ولكن ما الليزر وما الذي يميزه عن المصادر الضوئية الأخرى؟</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — الليزر (LASER)</span>
-      <p style="margin:.3rem 0">جاءت تسمية الليزر (Laser) من الأحرف الأولى للكلمات من الجملة:</p>
-      <p style="margin:.3rem 0;font-weight:700;text-align:center;direction:ltr">Light Amplification by Stimulated Emission of Radiation</p>
-      <p style="margin:.3rem 0">وتعني (تضخيم الضوء بواسطة الانبعاث المحفز للإشعاع)، حيث وضع العالم البرت أينشتاين الأساس النظري لعملية الانبعاث المحفز للإشعاع عام 1917، وقد صُمّم أول جهاز في عام 1960 من قبل العالم (T.H. Maiman) باستعمال بلورة الياقوت (Ruby Laser).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 1-6 جهاز ليزر الياقوت الأول">
-          <g font-family="Cairo,sans-serif">
-            <rect x="30" y="70" width="16" height="40" fill="var(--text-secondary)"/>
-            <rect x="230" y="70" width="16" height="40" fill="var(--text-secondary)"/>
-            <rect x="46" y="80" width="184" height="20" fill="rgba(255,107,157,.25)" stroke="var(--accent-pink)" stroke-width="1.5"/>
-            <text x="138" y="94" text-anchor="middle" font-size="10" font-weight="700" fill="var(--accent-pink)">بلورة الياقوت</text>
-            <line x1="252" y1="90" x2="285" y2="90" stroke="var(--accent-orange)" stroke-width="3"/>
-            <polygon points="285,84 300,90 285,96" fill="var(--accent-orange)"/>
-            <text x="270" y="75" text-anchor="middle" font-size="9" fill="var(--accent-orange)">شعاع ليزر</text>
-            <text x="138" y="60" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text-primary)">مصباح ومضي (ضخ ضوئي)</text>
-            <text x="30" y="130" text-anchor="middle" font-size="9" fill="var(--text-secondary)">مرآة عاكسة كليًا</text>
-            <text x="246" y="130" text-anchor="middle" font-size="9" fill="var(--text-secondary)">مرآة عاكسة جزئيًا</text>
-          </g>
-        </svg>
-        <span class="diagram-caption">شكل 1-6: جهاز ليزر الياقوت الأول (T.H. Maiman، 1960) — بلورة ياقوت بين مرآتين ومصدر ضخ ضوئي</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>ولكن قبل إنتاج الليزر تم تحقيق انبعاث أشعة كهرومغناطيسية مضخمة ومنبعثة بالتحفيز في طيف الأشعة الدقيقة سميت (maser)، والتي جاءت من الأحرف الأولى لفكرة عمل الميزر في العبارة التالية:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-blue)">
-      <span class="def-label" style="color:var(--accent-blue)">📌 تعريف — الميزر (MASER)</span>
-      <p style="margin:.3rem 0;font-weight:700;text-align:center;direction:ltr">Microwave Amplification by Stimulated Emission of Radiation</p>
-      <p style="margin:.3rem 0">وتعني (تضخيم الموجات الدقيقة بواسطة الانبعاث المحفز للإشعاع).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">💬</span>
-      <span><b>هل تعلم؟</b> أن العالم تشارلز تاونز تمكّن من تصميم أول جهاز يقوم بتضخيم الموجات الدقيقة باستعمال تقنية الانبعاث المحفز، وإنتاج ميزر الأمونيا عام 1954.</span>
-    </div>
-  </section>
-
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: الخط الزمني لاكتشاف الليزر</h2>
-      <p>حرّك المؤشر لاستعراض المحطات الثلاث الأساسية في تطور فكرة الليزر، من النظرية إلى أول جهاز فعلي.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="timelineSvg" viewBox="0 0 480 160" role="img" aria-label="الخط الزمني لاكتشاف الليزر"></svg></div>
-        <div class="io-row">
-          <label for="timelineSlider" style="min-width:8rem">السنة</label>
-          <input type="range" id="timelineSlider" class="neu-range" min="0" max="2" step="1" value="0">
-        </div>
-        <p id="timelineCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>1.</span><span>تعني كلمة Laser (تضخيم الضوء بواسطة):</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الانبعاث المحفز للإشعاع</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الانبعاث التلقائي للإشعاع</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الامتصاص المحث للإشعاع</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الانكسار الضوئي</span></label>
-        </div>
-        <div class="quiz-explain">Laser = Light Amplification by Stimulated Emission of Radiation، أي تضخيم الضوء بواسطة الانبعاث المحفز للإشعاع.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>وضع الأساس النظري لعملية الانبعاث المحفز للإشعاع عام 1917 العالم:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>تشارلز تاونز</span></label>
-          <label class="quiz-opt"><input type="radio"><span>ت.هـ. ميمان</span></label>
-          <label class="quiz-opt"><input type="radio"><span>ألبرت أينشتاين</span></label>
-          <label class="quiz-opt"><input type="radio"><span>ماكس بلانك</span></label>
-        </div>
-        <div class="quiz-explain">وضع ألبرت أينشتاين الأساس النظري لعملية الانبعاث المحفز للإشعاع عام 1917.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>3.</span><span>صُمّم أول جهاز ليزر فعلي عام 1960 باستعمال بلورة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>السيليكون</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الياقوت (Ruby)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الكوارتز</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الجرمانيوم</span></label>
-        </div>
-        <div class="quiz-explain">صمّم العالم (T.H. Maiman) أول جهاز ليزر عام 1960 باستعمال بلورة الياقوت (Ruby Laser).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>4.</span><span>تعني كلمة Maser (تضخيم):</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الموجات الدقيقة بواسطة الانبعاث المحفز للإشعاع</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الضوء المرئي فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الأشعة السينية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الموجات الصوتية</span></label>
-        </div>
-        <div class="quiz-explain">Maser = Microwave Amplification by Stimulated Emission of Radiation، أي تضخيم الموجات الدقيقة بواسطة الانبعاث المحفز للإشعاع.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -183,12 +62,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>Laser = Light Amplification by Stimulated Emission of Radiation (تضخيم الضوء بواسطة الانبعاث المحفز للإشعاع).</span></li>
-        <li><span>Maser = Microwave Amplification by Stimulated Emission of Radiation (تضخيم الموجات الدقيقة بواسطة الانبعاث المحفز للإشعاع).</span></li>
-        <li><span>وضع أينشتاين الأساس النظري للانبعاث المحفز عام 1917؛ صمّم تاونز أول ميزر (أمونيا) عام 1954؛ صمّم ميمان أول ليزر (ياقوت) عام 1960.</span></li>
-        <li><span>لتكنولوجيا الليزر تطبيقات واسعة في أجهزة الأقراص المدمجة والالكترونيات وقياس المسافات ولحام المعادن وطب الأسنان وغيرها.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -199,31 +73,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l1" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l1">
-        <svg viewBox="0 -3 480 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للليزر والميزر">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">الليزر</text>
-            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">والميزر</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">أينشتاين</text>
-            <text x="90" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">1917</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">تاونز</text>
-            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">ميزر 1954</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">ميمان</text>
-            <text x="390" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">ليزر 1960</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">بلورة</text>
-            <text x="390" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">الياقوت</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l1"></div>
     </div>
   </section>
 
@@ -240,15 +90,16 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("timelineSvg");
-  var slider = document.getElementById("timelineSlider");
-  var caption = document.getElementById("timelineCaption");
+  var svg, slider, caption;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
-  var EVENTS = [
-    {x:80, year:"1917", title:"أينشتاين", text:"وضع ألبرت أينشتاين الأساس النظري لعملية الانبعاث المحفز للإشعاع.", color:"#3fa9f5"},
-    {x:240, year:"1954", title:"تاونز", text:"صمّم تشارلز تاونز أول جهاز ميزر (تضخيم الموجات الدقيقة) وأنتج ميزر الأمونيا.", color:"#2fd18f"},
-    {x:400, year:"1960", title:"ميمان", text:"صمّم ت.هـ. ميمان أول جهاز ليزر فعلي باستعمال بلورة الياقوت.", color:"#ff6b9d"}
-  ];
+  function EVENTS(){
+    return [
+      {x:80, year:"1917", title:t("evt0Title","أينشتاين"), text:t("evt0Text","وضع ألبرت أينشتاين الأساس النظري لعملية الانبعاث المحفز للإشعاع."), color:"#3fa9f5"},
+      {x:240, year:"1954", title:t("evt1Title","تاونز"), text:t("evt1Text","صمّم تشارلز تاونز أول جهاز ميزر (تضخيم الموجات الدقيقة) وأنتج ميزر الأمونيا."), color:"#2fd18f"},
+      {x:400, year:"1960", title:t("evt2Title","ميمان"), text:t("evt2Text","صمّم ت.هـ. ميمان أول جهاز ليزر فعلي باستعمال بلورة الياقوت."), color:"#ff6b9d"}
+    ];
+  }
 
   function label(x,y,txt,color,size,weight){
     var t = document.createElementNS(ns,"text");
@@ -261,13 +112,14 @@
   }
 
   function draw(idx){
+    var events = EVENTS();
     while(svg.firstChild) svg.removeChild(svg.firstChild);
     var line = document.createElementNS(ns,"line");
     line.setAttribute("x1",80); line.setAttribute("y1",90); line.setAttribute("x2",400); line.setAttribute("y2",90);
     line.setAttribute("stroke","var(--text-faint)"); line.setAttribute("stroke-width","3");
     svg.appendChild(line);
 
-    EVENTS.forEach(function(ev, i){
+    events.forEach(function(ev, i){
       var active = i === idx;
       var c = document.createElementNS(ns,"circle");
       c.setAttribute("cx",ev.x); c.setAttribute("cy",90); c.setAttribute("r", active? 22 : 14);
@@ -278,11 +130,18 @@
       label(ev.x, active? 135:125, ev.title, ev.color, active?13:11, "700");
     });
 
-    caption.textContent = EVENTS[idx].text;
+    caption.textContent = events[idx].text;
   }
 
-  slider.addEventListener("input", function(){ draw(parseInt(slider.value,10)); });
-  draw(0);
+  function boot(){
+    svg = document.getElementById("timelineSvg");
+    slider = document.getElementById("timelineSlider");
+    caption = document.getElementById("timelineCaption");
+    if(!svg || !slider) return;
+    slider.addEventListener("input", function(){ draw(parseInt(slider.value,10)); });
+    draw(0);
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>
