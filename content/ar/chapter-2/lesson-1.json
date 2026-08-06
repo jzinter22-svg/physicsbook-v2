@@ -73,7 +73,18 @@
       "trailingHtml": null,
       "sectionGroup": 2,
       "sectionId": "interference-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 1-2"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 1-2",
+      "labels": {
+        "wave1Label": "موجة 1",
+        "wave2Label": "موجة 2",
+        "resultantLabel": "المحصّلة",
+        "statusConstructivePrefix": "تداخل بناء ✅ — Δℓ = ",
+        "statusConstructiveSuffix": "λ (عدد صحيح من λ)",
+        "statusDestructivePrefix": "تداخل اتلافي ⛔ — Δℓ = ",
+        "statusDestructiveSuffix": "λ (عدد فردي من نصف λ)",
+        "statusMixedPrefix": "تداخل مختلط 🔶 — Δℓ = ",
+        "statusMixedSuffix": "λ"
+      }
     },
     {
       "type": "paragraph",
@@ -159,7 +170,11 @@
       "trailingHtml": null,
       "sectionGroup": 10,
       "sectionId": "speakers-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 2-2"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 2-2",
+      "labels": {
+        "captionInPhase": "فرق طور = 0° → صوت مدوٍّ قوي",
+        "captionOutPhase": "فرق طور = 180° → صوتان منفصلان"
+      }
     }
   ],
   "quiz": {

@@ -1,0 +1,304 @@
+{
+  "lessonNumber": 1,
+  "chapterNumber": 2,
+  "meta": {
+    "pageTitle": "Lesson 1: Introduction, Interference, and Coherence — Chapter 2",
+    "description": "2-1 Introduction, 2-2 Interference: the two conditions for interference, constructive and destructive interference, 2-3 Coherence: definition, sources, and methods of obtaining two coherent sources.",
+    "breadcrumbChapter": "Chapter 2",
+    "breadcrumbLesson": "Introduction, Interference, and Coherence",
+    "footer": "Chapter 2: Interference, Polarization, Diffraction, and Scattering — Lesson 1: Introduction, Interference, and Coherence"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 1 of 7 · Chapter 2",
+    "title": "Introduction, Interference, and Coherence",
+    "lead": "2-1 Introduction · 2-2 Interference · 2-3 Coherence"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Defines the phenomenon of interference and states the two conditions for it to occur between two waves.",
+    "Distinguishes between constructive and destructive interference in terms of optical path difference.",
+    "Defines the concept of coherence and states the sources for obtaining two coherent waves."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 2-1 Introduction",
+      "html": "In your earlier studies, dear student, you learned what light is and its nature, and you studied the phenomena of reflection and refraction and their laws. In this chapter you will learn about other phenomena of light that prove its wave nature, such as interference, diffraction, polarization, and scattering.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "definition",
+      "label": "📌 2-2 Interference",
+      "html": "Interference is known as one of the general properties of waves, and it occurs when a superposition or combination of two or more waves propagating in some medium takes place.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "interfSvg",
+      "svgAriaLabel": "Simulation of two interfering waves and their resultant",
+      "svgViewBox": "0 0 420 220",
+      "svgWidth": "420",
+      "svgHeight": "220",
+      "sectionHeading": "🕹️ Recreating Figure 2-1: Constructive, Destructive, and Mixed Interference",
+      "descriptionHtml": "Move the optical path difference slider \\(\\Delta\\ell\\) (in units of wavelength λ) between two coherent waves, and watch the resultant wave (purple) range between constructive interference (wave reinforcement) and destructive interference (wave cancellation).",
+      "controls": [
+        {
+          "labelHtml": "Δℓ = <span id=\"pathDiffVal\">0</span> λ",
+          "inputId": "pathDiffSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "2",
+          "inputStep": "0.05",
+          "inputValue": "0"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": null,
+          "id": "interfStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "interference-widget",
+      "sectionNavLabel": "🕹️ Recreating Figure 2-1",
+      "labels": {
+        "wave1Label": "Wave 1",
+        "wave2Label": "Wave 2",
+        "resultantLabel": "Resultant",
+        "statusConstructivePrefix": "Constructive interference ✅ — Δℓ = ",
+        "statusConstructiveSuffix": "λ (a whole number of λ)",
+        "statusDestructivePrefix": "Destructive interference ⛔ — Δℓ = ",
+        "statusDestructiveSuffix": "λ (an odd number of half λ)",
+        "statusMixedPrefix": "Mixed interference 🔶 — Δℓ = ",
+        "statusMixedSuffix": "λ"
+      }
+    },
+    {
+      "type": "paragraph",
+      "html": "There are two conditions for interference to occur between two waves: (1) the two waves must be coherent, (2) their vibration must be in one plane and in one medium, and they must be directed toward one point at the same time.</p><p>As an example, let's take two wires and move them, placing them on the surface of a water tank so that the two vibrating wires touch the surface of the tank. You will notice, dear student, the superposition of the water waves resulting from the vibration of the two identical wires, and from our observation of the interference occurring in the waves on the water's surface in the tank, it becomes clear that there are two types of interference:",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 1- Constructive Interference",
+      "html": "This occurs when the two waves are in the same phase and have the same amplitude at a given point, or when the optical path difference between them is zero or a whole number of wavelengths:",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 2- Destructive Interference",
+      "html": "This occurs when the two waves are in opposite phases with equal amplitudes, and the optical path difference between them equals an odd number of half-wavelengths:",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "Did you know?",
+      "html": "Destructive interference provides a way to reduce or cancel noise. The idea comes from using an electronic device to analyze noise, which then produces a mirror-image sound wave that cancels the unwanted waves. This technique is used to block noise in an airplane cabin or any place where it is preferable to isolate unwanted waves from the total waves reaching the ear.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 2-3 Coherence",
+      "html": "This means that any two or more sources with identical wave properties — in terms of wavelength, direction, and energy — are coherent, and a permanent constructive interference occurs between them; two waves are said to be coherent if they are equal in frequency, close in amplitude, and have a constant phase difference between them.",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "list",
+      "heading": "📋 Sources from which two coherent waves can be obtained",
+      "items": [
+        "A laser.",
+        "Splitting the energy of a single wave, done in two ways: <br/>\n          (a) wavefront splitting: as in Young's experiment (the double-slit barrier), the biprism, Fresnel's double mirror, and Lloyd's mirror. <br/>\n          (b) amplitude splitting: as in the partial reflection and partial refraction that occur in thin films, and the Michelson interferometer."
+      ],
+      "ordered": true,
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "Here, wave coherence represents the correlation between the waves of a single light beam, working to reinforce one another to give high energy and power — and this isn't limited to light waves; wave coherence can also be obtained in sound waves.</p><p>If we take two sound sources such as \\((S_1,S_2)\\), when \\(S_1\\) moves upward and \\(S_2\\) moves downward — like two sticks striking a drum — the phase difference between \\((S_1,S_2)\\) is \\(180°\\), and the two sounds are heard separately. But if the same motion happens at the same time for \\((S_1,S_2)\\), a single strong, resounding sound will be heard.",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "speakersSvg",
+      "svgAriaLabel": "Simulation of coherence between two sound sources",
+      "svgViewBox": "0 0 320 180",
+      "svgWidth": "320",
+      "svgHeight": "180",
+      "sectionHeading": "🕹️ Recreating Figure 2-2: Coherence of Two Sound Sources",
+      "descriptionHtml": "Press the button to toggle between the two speakers moving in the same phase (constructive coherence, a strong resounding sound) and moving in opposite phases (180° phase difference, two separate sounds).",
+      "controls": [],
+      "buttons": [
+        {
+          "id": "speakersToggle",
+          "html": "🔁 Toggle Phase Difference"
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "sectionGroup": 10,
+      "sectionId": "speakers-widget",
+      "sectionNavLabel": "🕹️ Recreating Figure 2-2",
+      "labels": {
+        "captionInPhase": "Phase difference = 0° → strong resounding sound",
+        "captionOutPhase": "Phase difference = 180° → two separate sounds"
+      }
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check your understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "Interference occurs when:",
+        "options": [
+          "a single wave is reflected off a smooth surface",
+          "two or more waves propagating in some medium are superposed or combined",
+          "a wave is refracted when passing between two media",
+          "the amplitude of a single wave changes over time"
+        ],
+        "explain": "Interference is one of the general properties of waves, and it occurs when two or more waves are superposed or combined in the same medium."
+      },
+      {
+        "correct": 0,
+        "question": "Constructive interference occurs when the optical path difference between the two waves is:",
+        "options": [
+          "zero or a whole number of wavelengths",
+          "an odd number of half-wavelengths",
+          "always a quarter wavelength",
+          "greater than the wavelength by a random amount"
+        ],
+        "explain": "Constructive interference occurs at \\(\\Delta\\ell=0,\\lambda,2\\lambda,3\\lambda,\\dots\\)."
+      },
+      {
+        "correct": 2,
+        "question": "Two waves are said to be coherent if:",
+        "options": [
+          "they differ in frequency and are equal in amplitude",
+          "the phase difference between them keeps changing",
+          "they are equal in frequency, close in amplitude, and have a constant phase difference between them",
+          "one is a light wave and the other is a sound wave"
+        ],
+        "explain": "Coherence requires equal frequency, close amplitude, and a constant phase difference between the two waves."
+      },
+      {
+        "correct": 0,
+        "question": "Among the sources for obtaining two coherent waves:",
+        "options": [
+          "a laser, or splitting a single wave's energy by wavefront or amplitude division",
+          "an ordinary sodium lamp only",
+          "any two random light sources",
+          "the Sun only"
+        ],
+        "explain": "Two coherent sources can be obtained from a laser, or by splitting a single wave's energy through wavefront division (as in Young's experiment) or amplitude division (as in thin films and the Michelson interferometer)."
+      },
+      {
+        "correct": 1,
+        "question": "Is wave coherence limited to light waves only?",
+        "options": [
+          "Yes, it only occurs in light",
+          "No, wave coherence can also be obtained in sound waves",
+          "Yes, and it is limited to laser light only",
+          "There is no coherence in any type of wave"
+        ],
+        "explain": "Coherence is a general wave phenomenon; just as it can be obtained in light waves, it can also be obtained in sound waves, as in the two-speaker example."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Interference: the superposition or combination of two or more waves in one medium, requiring the two waves to be coherent and to share the same plane of vibration and medium.",
+      "Constructive interference: \\(\\Delta\\ell=0,\\lambda,2\\lambda,\\dots\\) — energy reinforcement. Destructive interference: \\(\\Delta\\ell=\\tfrac12\\lambda,\\tfrac32\\lambda,\\dots\\) — energy cancellation.",
+      "Coherence: equal frequency, close amplitude, and a constant phase difference between two waves.",
+      "Sources of coherence: a laser, or splitting a single wave's energy (by wavefront division or amplitude division)."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Interference and coherence mind map",
+    "viewBox": "0 0 480 240",
+    "center": {
+      "cx": 240.0,
+      "cy": 120.0,
+      "r": 50.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Interference",
+        "and Coherence"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 44.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Constructive",
+          "Δℓ=nλ"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 195.0,
+        "r": 44.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Destructive",
+          "Δℓ=(n+½)λ"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 45.0,
+        "r": 44.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Conditions for",
+          "Interference"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 195.0,
+        "r": 44.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Sources of",
+          "Coherence"
+        ]
+      }
+    ]
+  }
+}

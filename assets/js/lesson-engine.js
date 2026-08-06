@@ -1,14 +1,18 @@
 /* ===========================================================================
    Lesson content engine — window.PBLessonEngine.
    ---------------------------------------------------------------------------
-   Renders a chapter-1 lesson (or the chapter-1 hub) from content/<lang>/
-   chapter-1/*.json (see content/README.md for the full schema) instead of
+   Renders any chapter's lesson (or that chapter's hub) from content/<lang>/
+   chapter-<N>/*.json (see content/README.md for the full schema) instead of
    static HTML, and re-renders in place — no page reload — when the site
    language changes, preserving scroll position, which reveal-steps blocks
-   are open, and the visible interactive-simulation state.
+   are open, and the visible interactive-simulation state. Chapter number is
+   read from the URL (getContext()), not hardcoded — every chapter with a
+   content/ar/chapter-<N> + content/en/chapter-<N> pair works automatically,
+   no engine change needed to add one; each chapter still owns its own
+   site-ch<N>.js for header/sidebar/scrollspy chrome (untouched by this file).
 
    Deliberately independent of templates/chapter-behavior-template.js /
-   site-ch1.js: this engine owns only the <main> content area. Header,
+   site-chN.js: this engine owns only the <main> content area. Header,
    sidebar, theme, and the language switcher itself are untouched — they
    already work, and re-implementing them here would duplicate real,
    working code. The two compose through window.PBI18n.onChange, which
@@ -17,7 +21,7 @@
 (function(){
   "use strict";
 
-  var SUPPORTED_LANGS = ["ar", "en"]; // content/<lang>/chapter-1 — the pilot's scope; ku follows the same shape once translated
+  var SUPPORTED_LANGS = ["ar", "en"]; // content/<lang>/chapter-<N> — ku follows the same shape once translated
   var cache = {}; // "lang:chapterNum:lessonNum|hub" -> parsed JSON (in-memory, per session)
   var currentSimLabels = {}; // this render's simulation label dicts, keyed by widget svgId/section
   var pendingRelabel = []; // callbacks widgets register to re-run their own redraw after a language change
@@ -486,7 +490,7 @@
 
   function init(){
     var ctx = getContext();
-    if(!ctx.chapterNum || ctx.chapterNum !== 1) return; // pilot scope: chapter 1 only
+    if(!ctx.chapterNum) return;
     var start = function(){
       doRender(activeLang());
       if(window.PBI18n){
