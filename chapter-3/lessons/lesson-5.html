@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-5.html">
@@ -42,140 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يفهم عمل المحرك ويميّزه عن عمل المولد.</span></li>
-        <li><span class="obj-num">2</span><span>يستعمل قاعدة المحرك لتحديد اتجاه حركة موصل يحمل تيارًا داخل مجال مغناطيسي.</span></li>
-        <li><span class="obj-num">3</span><span>يفسّر كيف يتولد العزم المدوّر للمحرك.</span></li>
-        <li><span class="obj-num">4</span><span>يفهم أسباب حدوث القوة الدافعة الكهربائية المضادة للمحرك.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="def-box">
-      <span class="def-label">📌 7-3 المحرك الكهربائي للتيار المستمر</span>
-      <p style="margin:.3rem 0">المحرك الكهربائي جهاز يقوم بتحويل الطاقة الكهربائية إلى طاقة ميكانيكية بوجود مجال مغناطيسي؛ أي إن المحرك يتكوّن من نفس الأجزاء التي يتكوّن منها مولد التيار المستمر ولكن يعمل عكس عمله. رسمًا تخطيطيًا بسيطًا لمحرك إذ يبعث مصدر القوة الدافعة الكهربائية (البطارية) التيار خلال الملف الذي يقع منه جزء في المجال المغناطيسي الذي يوفّر مغناطيسًا دائمًا، وهذا المغناطيس الخارجي الذي يجعل النواة تتعرض لعزم دوراني حول محورها (يمكنك عزيزي الطالب بادارة النواة الطالب الادراك بأن النواة تدور في الاتجاه المبين أدناه إذا طبقت قاعدة اليد اليمنى) وهكذا فالطاقة التي تقدمها البطارية تجعل المحور يدور، أي تبذل شغلًا خارجيًا.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 1-7-3 قاعدة المحرك</span>
-      <p style="margin:.3rem 0">عمل المحرك هو عكس عمل المولد؛ حيث إذا مرّ تيار في قطعة موصل موضوعة في مجال مغناطيسي، فإن هذا الموصل سوف يتحرك داخل المجال. ولتحديد اتجاه حركة الموصل نستعمل قاعدة اليد اليمنى والتي تُعرَف بقاعدة المحرك.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="motorrule-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 15-3">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: قاعدة المحرك (الشكل 15-3)</h2>
-      <p>اختر اتجاه التيار في الموصل واتجاه المجال المغناطيسي، ولاحظ اتجاه القوة (الحركة) الناتجة على الموصل — عكس مسألة المولد تمامًا: هنا التيار والمجال معلومان، والحركة هي الناتج.</p>
-      <div class="io-row" style="flex-wrap:wrap;gap:.5rem">
-        <button class="neu-btn" data-idir="out">• التيار خارج الصفحة</button>
-        <button class="neu-btn" data-idir="into">× التيار داخل الصفحة</button>
-      </div>
-      <div class="io-row" style="flex-wrap:wrap;gap:.5rem;margin-top:.4rem">
-        <button class="neu-btn" data-bdir2="right">→ مجال نحو اليمين</button>
-        <button class="neu-btn" data-bdir2="left">← مجال نحو اليسار</button>
-      </div>
-      <div class="io-panel" style="margin-top:.6rem">
-        <div class="mindmap-wrap"><svg id="motorRuleSvg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="محاكاة قاعدة المحرك لتحديد اتجاه القوة على الموصل"></svg></div>
-        <div class="rule-box" id="motorRuleStatus">اتجاه القوة (الحركة): —</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 2-7-3 كيف يتولد العزم المدوّر للمحرك</span>
-      <p style="margin:.3rem 0">يستند عمل المحرك على أنه إذا مرّ تيار في موصل موضوع في مجال مغناطيسي يتولّد مجال مغناطيسي؛ وهذا التيار يشوّه المجال الأصلي، وهذا يسبّب تولّد قوتين متوازيتين تحاولان تدوير الموصل داخل المجال. إحدى القوتين تكون متجهة نحو الأسفل في الجزء الذي يدخل فيه التيار، ونحو الأعلى في الجزء الذي يخرج منه التيار، كما هو موضح في الشكل (16-3). وهاتان القوتان متساويتان في المقدار ومتعاكستان في الاتجاه، بذلك تشكّلان مزدوجًا يولّد عزمًا يعمل على تدوير الملف حول محوره.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="torque-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 16-3">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: توليد العزم المدوّر للمحرك (الشكل 16-3)</h2>
-      <p>ملف يحمل تيارًا داخل مجال مغناطيسي منتظم بين قطبين N-S: على أحد جانبَي الملف تتّجه القوة إلى الأعلى وعلى الجانب الآخر إلى الأسفل، فيتشكّل مزدوج قوًى (عزم) يدير الملف حول محوره باستمرار.</p>
-      <div class="mindmap-wrap"><svg id="torqueSvg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="محاكاة دوران ملف بفعل العزم المدوّر داخل مجال مغناطيسي"></svg></div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h3 style="margin-top:0">📋 كيف يستمر دوران المحرك بلا توقف (الشكل 16-3)</h3>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يبدأ الدوران نتيجة التنافر بين القطبين الشماليين لحافة الملف والمغناطيس الكبير، وكذلك الحال بين قطبيهما الجنوبيين.</span></li>
-        <li><span class="obj-num">2</span><span>يستمر الدوران عندما تمر حافة الملف بالفراغ بين قطبَي المغناطيس الكبير، إذ تنجذب الأقطاب المختلفة للحافة والمغناطيس بعضها نحو بعض.</span></li>
-        <li><span class="obj-num">3</span><span>ينعكس التيار (بفضل الجامع المشقوق) فتنعكس أقطاب حافة الملف بعد أن تمر بالفراغ بين نصفَي الحلقة المشقوقة، فيستمر الدوران دون توقف.</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">💡</span>
-      <span><b>هل تعلم؟</b> المحرك يشابه إلى حدّ كبير مولد التيار المستمر، فالملف الذي يدور داخل المجال المغناطيسي في المحرك تتولد بداخله قوة دافعة كهربائية حسب قانون فاراداي، وهذه القوة تكون باتجاه معاكس للقوة الدافعة التي تعمل على دوران المحرك (فولطية المصدر) حسب قانون لينز. تُسمّى هذه القوة المعاكسة بالقوة الدافعة الكهربائية المضادة للمحرك.</span>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>1.</span><span>المحرك يحوّل الطاقة الكهربائية إلى طاقة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>ميكانيكية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>حرارية فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>ضوئية فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>كيمياوية فقط</span></label>
-        </div>
-        <div class="quiz-explain">المحرك جهاز يحوّل الطاقة الكهربائية إلى طاقة ميكانيكية بوجود مجال مغناطيسي.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>2.</span><span>عمل المحرك هو:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>مطابق تمامًا لعمل المولد</span></label>
-          <label class="quiz-opt"><input type="radio"><span>عكس عمل المولد</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا علاقة له بعمل المولد إطلاقًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يعمل فقط بدون مجال مغناطيسي</span></label>
-        </div>
-        <div class="quiz-explain">المحرك يتكوّن من نفس أجزاء مولد التيار المستمر لكنه يعمل بشكل عكسي: تيار كهربائي يدخل فيتولد عنه حركة، بدلًا من حركة تولّد تيارًا.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>3.</span><span>العزم المدوّر للمحرك ينشأ عن:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>قوة واحدة فقط مؤثرة في مركز الملف</span></label>
-          <label class="quiz-opt"><input type="radio"><span>وزن الملف نفسه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مزدوج من قوتين متساويتين ومتعاكستين على جانبَي الملف</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الاحتكاك بين الفرشتين وحلقتي الزلق</span></label>
-        </div>
-        <div class="quiz-explain">القوتان المتساويتان والمتعاكستان الاتجاه على جانبَي الملف تشكّلان مزدوجًا يولّد العزم المدوّر.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>القوة الدافعة الكهربائية المضادة للمحرك تنشأ لأن:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الملف لا يدور إطلاقًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>البطارية معطوبة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>المقاومة الخارجية معدومة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الملف الدوّار داخل المجال المغناطيسي يولّد قوة دافعة كهربائية حسب قانون فاراداي معاكسة لفولطية المصدر</span></label>
-        </div>
-        <div class="quiz-explain">دوران ملف المحرك داخل المجال المغناطيسي يولّد قوة دافعة كهربائية وفق قانون فاراداي، وتكون معاكسة لفولطية المصدر وفق قانون لينز، وتُسمّى بالقوة الدافعة الكهربائية المضادة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>في قاعدة المحرك، إذا كانا التيار والمجال المغناطيسي معلومَين، فإن المجهول الذي نحدده هو:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>شدة التيار</span></label>
-          <label class="quiz-opt"><input type="radio"><span>اتجاه القوة (الحركة) المؤثرة على الموصل</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مقاومة الدائرة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>عدد لفات الملف</span></label>
-        </div>
-        <div class="quiz-explain">في قاعدة المحرك، التيار والمجال معلومان مسبقًا (نحدّدهما نحن)، والمجهول الذي نستنتجه هو اتجاه القوة المؤثرة على الموصل (حركته).</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -184,12 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>المحرك يحوّل الطاقة الكهربائية إلى ميكانيكية، وهو عكس عمل المولد ويتكوّن من الأجزاء نفسها.</span></li>
-        <li><span>قاعدة المحرك: تيار ومجال معلومان → نحدد اتجاه القوة (الحركة) الناتجة.</span></li>
-        <li><span>العزم المدوّر ينشأ من مزدوج قوتين متساويتين متعاكستين على جانبَي الملف.</span></li>
-        <li><span>القوة الدافعة الكهربائية المضادة: قوة يولّدها دوران ملف المحرك نفسه (حسب فاراداي)، وتعاكس فولطية المصدر (حسب لينز).</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -199,27 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l5" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l5">
-        <svg viewBox="0 0 480 200" width="480" height="200" role="img" aria-label="خريطة المحرك الكهربائي الذهنية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="100" x2="100" y2="45"/>
-            <line x1="240" y1="100" x2="100" y2="155"/>
-            <line x1="240" y1="100" x2="380" y2="100"/>
-          </g>
-          <g>
-            <circle cx="240" cy="100" r="48" fill="#7c6fee"/>
-            <text x="240" y="104" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">المحرك</text>
-          </g>
-          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
-            <text x="100" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">قاعدة</text>
-            <text x="100" y="54" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">المحرك</text></g>
-          <g><circle cx="100" cy="155" r="42" fill="#2fd18f"/>
-            <text x="100" y="158" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">عزم مدوّر</text></g>
-          <g><circle cx="380" cy="100" r="42" fill="#ffab5e"/>
-            <text x="380" y="97" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">قوة دافعة</text>
-            <text x="380" y="109" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">مضادة</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l5"></div>
     </div>
   </section>
 
@@ -259,9 +110,10 @@
     svg.appendChild(t);
   }
 
+  var simT = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
+
   // ===== Motor rule widget (Figure 15-3) =====
-  var mrSvg = document.getElementById("motorRuleSvg");
-  var mrStatus = document.getElementById("motorRuleStatus");
+  var mrSvg, mrStatus;
   var iDir = "out", bDir2 = "right";
 
   function computeForceDir(){
@@ -295,21 +147,15 @@
     var forceDir = computeForceDir();
     var fy = forceDir === "up" ? -1 : 1;
     arrow(mrSvg, cx, cy-70*(-fy), cx, cy+70*fy, "var(--accent-green)", 4);
-    label(mrSvg, cx+10, cy + (fy>0? 85:-75), "F (الحركة)", "var(--accent-green)", 12);
+    label(mrSvg, cx+10, cy + (fy>0? 85:-75), simT("forceLabel", "F (الحركة)"), "var(--accent-green)", 12);
 
-    mrStatus.textContent = "اتجاه القوة (الحركة): " + (forceDir === "up" ? "نحو الأعلى ↑" : "نحو الأسفل ↓");
+    mrStatus.textContent = simT("statusPrefix", "اتجاه القوة (الحركة): ") + (forceDir === "up" ? simT("statusUp", "نحو الأعلى ↑") : simT("statusDown", "نحو الأسفل ↓"));
   }
-  document.querySelectorAll("[data-idir]").forEach(function(btn){
-    btn.addEventListener("click", function(){ iDir = btn.getAttribute("data-idir"); drawMotorRule(); });
-  });
-  document.querySelectorAll("[data-bdir2]").forEach(function(btn){
-    btn.addEventListener("click", function(){ bDir2 = btn.getAttribute("data-bdir2"); drawMotorRule(); });
-  });
-  drawMotorRule();
 
   // ===== Torque generation animation (Figure 16-3) =====
-  var tSvg = document.getElementById("torqueSvg");
+  var tSvg;
   var torqueAngle = 0;
+  var torqueRafId = null;
 
   function drawTorque(){
     while(tSvg.firstChild) tSvg.removeChild(tSvg.firstChild);
@@ -343,11 +189,31 @@
     var caption = document.createElementNS(ns,"text");
     caption.setAttribute("x",160); caption.setAttribute("y",185);
     caption.setAttribute("text-anchor","middle"); caption.setAttribute("font-family","Cairo,sans-serif"); caption.setAttribute("font-size","11"); caption.setAttribute("font-weight","700"); caption.setAttribute("fill","var(--text-secondary)");
-    caption.textContent = "مزدوج القوتين يولّد عزمًا يدير الملف باستمرار";
+    caption.textContent = simT("captionLabel", "مزدوج القوتين يولّد عزمًا يدير الملف باستمرار");
     tSvg.appendChild(caption);
   }
-  function tickTorque(){ torqueAngle += 0.04; drawTorque(); requestAnimationFrame(tickTorque); }
-  if(reduceMotion){ drawTorque(); } else { requestAnimationFrame(tickTorque); }
+  function tickTorque(){ torqueAngle += 0.04; drawTorque(); torqueRafId = requestAnimationFrame(tickTorque); }
+
+  function boot(){
+    mrSvg = document.getElementById("motorRuleSvg");
+    mrStatus = document.getElementById("motorRuleStatus");
+    if(mrSvg && mrStatus){
+      document.querySelectorAll("[data-idir]").forEach(function(btn){
+        btn.addEventListener("click", function(){ iDir = btn.getAttribute("data-idir"); drawMotorRule(); });
+      });
+      document.querySelectorAll("[data-bdir2]").forEach(function(btn){
+        btn.addEventListener("click", function(){ bDir2 = btn.getAttribute("data-bdir2"); drawMotorRule(); });
+      });
+      drawMotorRule();
+    }
+
+    tSvg = document.getElementById("torqueSvg");
+    if(tSvg){
+      if(torqueRafId !== null){ cancelAnimationFrame(torqueRafId); torqueRafId = null; }
+      if(reduceMotion){ drawTorque(); } else { torqueRafId = requestAnimationFrame(tickTorque); }
+    }
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

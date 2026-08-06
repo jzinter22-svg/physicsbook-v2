@@ -1,0 +1,277 @@
+{
+  "lessonNumber": 5,
+  "chapterNumber": 3,
+  "meta": {
+    "pageTitle": "Lesson 5: The Electric Motor — Chapter Three",
+    "description": "3-7 The DC electric motor: the motor rule, how the driving torque is generated, and the motor's back electromotive force.",
+    "breadcrumbChapter": "Chapter 3",
+    "breadcrumbLesson": "The Electric Motor",
+    "footer": "Chapter Three: Electromagnetic Induction — Lesson 5: The Electric Motor"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 5 of 6 · Chapter Three",
+    "title": "The Electric Motor",
+    "lead": "3-7 The Motor: 3-7-1 The Motor Rule · 3-7-2 Generating the Torque · 3-7-3 The Back Electromotive Force"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Understand how the motor works and distinguish it from the generator.",
+    "Use the motor rule to determine the direction of motion of a current-carrying conductor inside a magnetic field.",
+    "Explain how the motor's driving torque is generated.",
+    "Understand the causes of the motor's back electromotive force."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 3-7 The DC Electric Motor",
+      "html": "The electric motor is a device that converts electrical energy into mechanical energy in the presence of a magnetic field; that is, the motor consists of the same parts as a DC generator but operates in reverse. A simple schematic diagram of a motor shows the electromotive-force source (the battery) driving a current through the coil, part of which lies within the magnetic field provided by a permanent magnet. This external magnet subjects the armature to a rotational torque about its axis (you, dear student, can see for yourself, by turning the armature, that it rotates in the direction shown below if you apply the right-hand rule). In this way, the energy supplied by the battery makes the shaft rotate — that is, it does external work.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "definition",
+      "label": "📌 3-7-1 The Motor Rule",
+      "html": "The motor's operation is the reverse of the generator's: if a current passes through a piece of conductor placed in a magnetic field, that conductor will move within the field. To determine the direction of the conductor's motion we use the right-hand rule, known in this context as the motor rule.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "motorRuleSvg",
+      "svgAriaLabel": "Simulation of the motor rule for determining the direction of the force on the conductor",
+      "svgViewBox": "0 0 320 200",
+      "svgWidth": "320",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive Simulation: The Motor Rule (Figure 3-15)",
+      "descriptionHtml": "Choose the direction of the current in the conductor and the direction of the magnetic field, and observe the resulting direction of the force (motion) on the conductor — exactly the reverse of the generator problem: here the current and the field are known, and the motion is the result.",
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "• Current out of the page",
+          "class": "neu-btn",
+          "data": {
+            "data-idir": "out"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "× Current into the page",
+          "class": "neu-btn",
+          "data": {
+            "data-idir": "into"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "→ Field pointing right",
+          "class": "neu-btn",
+          "data": {
+            "data-bdir2": "right"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "← Field pointing left",
+          "class": "neu-btn",
+          "data": {
+            "data-bdir2": "left"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "Direction of the force (motion): —",
+          "id": "motorRuleStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "motorrule-widget",
+      "sectionNavLabel": "🕹️ Recreate Figure 3-15",
+      "labels": {
+        "forceLabel": "F (motion)",
+        "statusPrefix": "Direction of the force (motion): ",
+        "statusUp": "upward ↑",
+        "statusDown": "downward ↓"
+      }
+    },
+    {
+      "type": "definition",
+      "label": "📌 3-7-2 How the Motor's Driving Torque Is Generated",
+      "html": "The motor's operation relies on the fact that if a current passes through a conductor placed in a magnetic field, a magnetic field is generated; this current distorts the original field, causing two parallel forces to arise that try to rotate the conductor within the field. One of the two forces points downward on the side where the current enters, and upward on the side where the current leaves, as shown in figure (3-16). These two forces are equal in magnitude and opposite in direction, so together they form a couple that generates a torque that rotates the coil about its axis.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "torqueSvg",
+      "svgAriaLabel": "Simulation of a coil rotating due to the driving torque inside a magnetic field",
+      "svgViewBox": "0 0 320 200",
+      "svgWidth": "320",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive Simulation: Generating the Motor's Driving Torque (Figure 3-16)",
+      "descriptionHtml": "A current-carrying coil inside a uniform magnetic field between N and S poles: on one side of the coil the force points upward, and on the other side it points downward, forming a couple of forces (a torque) that keeps rotating the coil about its axis continuously.",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "sectionGroup": 4,
+      "sectionId": "torque-widget",
+      "sectionNavLabel": "🕹️ Recreate Figure 3-16",
+      "labels": {
+        "captionLabel": "A couple of forces generates a torque that keeps the coil rotating"
+      }
+    },
+    {
+      "type": "list",
+      "heading": "📋 How the Motor's Rotation Continues Without Stopping (Figure 3-16)",
+      "items": [
+        "Rotation begins as a result of the repulsion between the north poles of the coil's edge and the large magnet, and likewise between their south poles.",
+        "Rotation continues as the coil's edge passes through the gap between the poles of the large magnet, since the differing poles of the edge and the magnet attract one another.",
+        "The current reverses (thanks to the split commutator), so the poles of the coil's edge reverse after it passes through the gap between the two halves of the split ring, and the rotation continues without stopping."
+      ],
+      "ordered": true,
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "Did you know?",
+      "html": "The motor closely resembles the DC generator: the coil that rotates inside the magnetic field in the motor develops an electromotive force within it, by Faraday's law, and this force is in a direction opposing the driving force that turns the motor (the source voltage), by Lenz's law. This opposing force is called the motor's back electromotive force.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 0,
+        "question": "The motor converts electrical energy into energy that is:",
+        "options": [
+          "Mechanical",
+          "Thermal only",
+          "Light only",
+          "Chemical only"
+        ],
+        "explain": "The motor is a device that converts electrical energy into mechanical energy in the presence of a magnetic field."
+      },
+      {
+        "correct": 1,
+        "question": "The motor's operation is:",
+        "options": [
+          "Exactly identical to the generator's",
+          "The reverse of the generator's",
+          "Completely unrelated to the generator's",
+          "Only works without a magnetic field"
+        ],
+        "explain": "The motor consists of the same parts as a DC generator, but works in reverse: an electric current enters and produces motion, instead of motion producing a current."
+      },
+      {
+        "correct": 2,
+        "question": "The motor's driving torque arises from:",
+        "options": [
+          "A single force acting at the center of the coil only",
+          "The coil's own weight",
+          "A couple of two equal, opposite forces on the two sides of the coil",
+          "Friction between the brushes and the slip rings"
+        ],
+        "explain": "The two equal and opposite forces on the two sides of the coil form a couple that generates the driving torque."
+      },
+      {
+        "correct": 3,
+        "question": "The motor's back electromotive force arises because:",
+        "options": [
+          "The coil does not rotate at all",
+          "The battery is faulty",
+          "The external resistance is zero",
+          "The rotating coil inside the magnetic field generates an electromotive force, by Faraday's law, opposing the source voltage"
+        ],
+        "explain": "The rotation of the motor's coil inside the magnetic field generates an electromotive force by Faraday's law, which opposes the source voltage by Lenz's law, and is called the back electromotive force."
+      },
+      {
+        "correct": 1,
+        "question": "In the motor rule, if the current and the magnetic field are known, the unknown we determine is:",
+        "options": [
+          "The magnitude of the current",
+          "The direction of the force (motion) acting on the conductor",
+          "The circuit's resistance",
+          "The number of turns in the coil"
+        ],
+        "explain": "In the motor rule, the current and the field are known in advance (we set them), and the unknown we deduce is the direction of the force acting on the conductor (its motion)."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "The motor converts electrical energy into mechanical energy; it is the reverse of the generator and consists of the same parts.",
+      "The motor rule: known current and field → we determine the direction of the resulting force (motion).",
+      "The driving torque arises from a couple of two equal, opposite forces on the two sides of the coil.",
+      "The back electromotive force: a force generated by the rotation of the motor's own coil (by Faraday's law), opposing the source voltage (by Lenz's law)."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of the electric motor",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "The Motor"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Motor",
+          "rule"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Driving torque"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Back",
+          "EMF"
+        ]
+      }
+    ]
+  }
+}
