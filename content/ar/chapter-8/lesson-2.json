@@ -99,8 +99,37 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxes": [],
+      "ruleBoxes": [
+        {
+          "html": "الألمنيوم (Al) — يقع في أعلى سلسلة النشاط، لذلك يحتاج اختزالًا قويًا لأكسيده يتحقق عادة بالتحليل الكهربائي.",
+          "id": "ladderCaption",
+          "wrapperClass": "rule-box"
+        }
+      ],
       "trailingHtml": "",
+      "labels": {
+        "metal_K": "البوتاسيوم",
+        "metal_Na": "الصوديوم",
+        "metal_Ca": "الكالسيوم",
+        "metal_Mg": "المغنيسيوم",
+        "metal_Al": "الألمنيوم",
+        "metal_Zn": "الخارصين",
+        "metal_Fe": "الحديد",
+        "metal_Sn": "القصدير",
+        "metal_Pb": "الرصاص",
+        "metal_Cu": "النحاس",
+        "metal_Hg": "الزئبق",
+        "metal_Ag": "الفضة",
+        "metal_Pt": "البلاتين",
+        "method_electro_label": "تحليل كهربائي",
+        "method_coke_label": "صهر مع فحم الكوك",
+        "method_heat_label": "تسخين بسيط",
+        "method_electro_text": "يقع في أعلى سلسلة النشاط، لذلك يحتاج اختزالًا قويًا لأكسيده يتحقق عادة بالتحليل الكهربائي.",
+        "method_coke_text": "يقع في وسط سلسلة النشاط، فيمكن اختزاله بالتسخين الشديد مع عامل مختزل مثل فحم الكوك (الصهر).",
+        "method_heat_text": "يقع في أسفل سلسلة النشاط (الأقل نشاطًا)، لذلك يُستخلص بمجرد تسخين خامه.",
+        "topLabel": "الأكثر نشاطًا",
+        "bottomLabel": "الأقل نشاطًا"
+      },
       "sectionGroup": 8,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"

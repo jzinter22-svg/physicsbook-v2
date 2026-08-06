@@ -1,0 +1,340 @@
+{
+  "lessonNumber": 2,
+  "chapterNumber": 8,
+  "meta": {
+    "pageTitle": "Lesson 2: Methods and Equipment Used in Extracting Metals — Chapter Eight",
+    "description": "8-2 Methods and equipment used in extracting metals: the activity series, displacement and reduction reactions, and the economic condition for extraction.",
+    "breadcrumbChapter": "Chapter 8",
+    "breadcrumbLesson": "Methods and Equipment Used in Extracting Metals",
+    "footer": "Chapter Eight: Metals and Alloys — Lesson 2: Methods and Equipment Used in Extracting Metals"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 2 of 9 · 8-2",
+    "title": "Methods and Equipment Used in Extracting Metals",
+    "lead": "Why were some metals discovered thousands of years ago while aluminum was extracted only recently? The answer lies in the chemical activity series of metals, the focus of this lesson."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Arrange metals according to their chemical activity series.",
+    "Define an ore, and state the most important reactions used in extracting metals.",
+    "Explain the economic condition needed for an extraction process to be viable.",
+    "Relate a metal's position in the activity series to its suitable extraction method."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 The Activity Series of Metals",
+      "html": "The stability of metallic compounds depends on the activity series of metals, in which the most active metals are arranged at the top and the least active at the bottom. Active metals tend to form positive ions easily by losing electrons. Inactive metals, on the other hand, prefer to remain in an uncombined form, i.e. as the element itself. Note Figure (8-7), which shows the activity series of metals.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 8-7: the activity series of metals\" role=\"img\" viewbox=\"-14 -8 274 316\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<defs>\n<lineargradient id=\"activityGrad\" x1=\"0\" x2=\"0\" y1=\"0\" y2=\"1\">\n<stop offset=\"0\" stop-color=\"#3fa9f5\"></stop>\n<stop offset=\"1\" stop-color=\"#ff6b6b\"></stop>\n</lineargradient>\n</defs>\n<rect fill=\"url(#activityGrad)\" height=\"260\" rx=\"8\" width=\"16\" x=\"20\" y=\"15\"></rect>\n<polygon fill=\"#ff6b6b\" points=\"28,275 18,290 38,290\"></polygon>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"28\" y=\"10\">Stable ions</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"28\" y=\"298\">Decreasing activity</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"24\">K</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"40\">Na</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"56\">Ca</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" x=\"90\" y=\"40\">Cold water</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"80\">Mg</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"96\">Al</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"112\">Zn</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"128\">Fe</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"144\">Pb</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" x=\"100\" y=\"112\">Steam</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"168\">H</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"190\">Cu</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"206\">Hg</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"222\">Ag</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" x=\"52\" y=\"238\">Pt</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" x=\"100\" y=\"150\">Dilute acids</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" x=\"105\" y=\"210\">Concentrated acids</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" font-weight=\"700\" x=\"52\" y=\"256\">Stable atoms</text>\n</g>\n</svg>",
+      "caption": "Figure 8-7: the activity series of metals — from most active (K) at the top to least active (Pt) at the bottom",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Ore",
+      "html": "Rock containing a sufficient amount of a metal's compounds to make extracting the metal from it economically viable is called an ore.",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The metals found at the lowest end of the activity series (the least active) were discovered earlier in nature, and humanity used them before the metals at the top of the series (the most active). The less active metals, such as gold, silver, and copper, occur free in nature, and were therefore discovered early. Most other metals, such as sodium (Na), calcium (Ca), and aluminum (Al), occur combined with other elements as compounds in the rocks that make up the Earth's crust, which delayed their discovery.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Metal Extraction Reactions",
+      "html": "Rock containing a sufficient amount of a metal's compounds to make its extraction economically viable is called an ore. Displacement reactions and oxidation-reduction reactions (loss and gain of oxygen) are among the important methods used in extracting some metals from their compounds; the more active metal displaces the less active metal from its compounds, and this less active metal separates out as a free element.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Explanation — Why must the metal used in extraction be cheaper than the metal being extracted?",
+      "html": "For an extraction process to be economically viable, the more active metal used must be inexpensive (i.e. cheaper than the metal being extracted). For example, although aluminum can displace iron from its ores to yield free iron in the thermite reaction, aluminum is more expensive than iron, which makes using this reaction to extract iron from its ores economically unviable.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "Extracting metals from their ores is very important to industrial progress, and among the most important metals currently used in industry are: sodium, iron, aluminum, copper, and manganese. Extracting metals is not limited to displacement or oxidation-reduction reactions only — there are other methods that depend on the metal's position in the activity series mentioned above.</p><p>Since the compound (ore) of any metal higher in the series is harder to extract than that of any metal below it in the series, extracting sodium from sodium chloride is harder than extracting copper from copper ore. Sodium chloride is very stable; it converts to molten sodium only when heated to a temperature of about 801°C, because sodium ions are extremely stable. But mercury metal can be obtained simply by heating its ore, because mercury ions are not entirely stable.</p><p>Every time a metal is extracted from its ore, this involves reduction of the metal ion; because the metal exists as an ion in the ore, and for the metal to be extracted as a free element it must gain electrons, which is called reduction, as the equations below show.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ Na^+ + e^- \\rightarrow Na $$",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "ladderSvg",
+      "svgAriaLabel": "Simulation of the activity series and extraction methods",
+      "svgViewBox": "0 0 380 260",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: the Activity Series and the Suitable Extraction Method",
+      "descriptionHtml": "Click any metal on the ladder to find out its suitable extraction method based on its position in the activity series.",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "Aluminum (Al) — it lies at the top of the activity series, so it needs strong reduction of its oxide, usually achieved by electrolysis.",
+          "id": "ladderCaption",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": "",
+      "labels": {
+        "metal_K": "Potassium",
+        "metal_Na": "Sodium",
+        "metal_Ca": "Calcium",
+        "metal_Mg": "Magnesium",
+        "metal_Al": "Aluminum",
+        "metal_Zn": "Zinc",
+        "metal_Fe": "Iron",
+        "metal_Sn": "Tin",
+        "metal_Pb": "Lead",
+        "metal_Cu": "Copper",
+        "metal_Hg": "Mercury",
+        "metal_Ag": "Silver",
+        "metal_Pt": "Platinum",
+        "method_electro_label": "Electrolysis",
+        "method_coke_label": "Smelting with coke",
+        "method_heat_label": "Simple heating",
+        "method_electro_text": "It lies at the top of the activity series, so it needs strong reduction of its oxide, usually achieved by electrolysis.",
+        "method_coke_text": "It lies in the middle of the activity series, so it can be reduced by strong heating with a reducing agent such as coke (smelting).",
+        "method_heat_text": "It lies at the bottom of the activity series (least active), so it is extracted simply by heating its ore.",
+        "topLabel": "Most active",
+        "bottomLabel": "Least active"
+      },
+      "sectionGroup": 8,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation"
+    },
+    {
+      "type": "paragraph",
+      "html": "Metals found at the top of the activity series require strong reduction of their oxides, usually achieved by electrolysis. Elements found in the middle of the series, such as iron, can be reduced by strong heating with a reducing agent such as coke, which is called smelting. Less active metals, such as mercury, are extracted simply by heating.",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "table",
+      "heading": "📊 Table 8-5: How Metals Are Extracted from Their Ores",
+      "headers": [
+        "Metal",
+        "Ore",
+        "Main Chemical Component",
+        "Extraction Method"
+      ],
+      "rows": [
+        [
+          "Potassium",
+          "Carnallite",
+          "KMgCl₃",
+          "Electrolytic extraction; the metal deposits on the cathode"
+        ],
+        [
+          "Sodium",
+          "Rock salt",
+          "NaCl"
+        ],
+        [
+          "Calcium",
+          "Chalk, limestone",
+          "CaCO₃"
+        ],
+        [
+          "Magnesium",
+          "Dolomite",
+          "CaMg(CO₃)₂"
+        ],
+        [
+          "Aluminum",
+          "Bauxite",
+          "Al₂O₃"
+        ],
+        [
+          "Zinc",
+          "Zinc blende",
+          "ZnS",
+          "Extraction by heating with coke in a furnace"
+        ],
+        [
+          "Iron",
+          "Hematite",
+          "Fe₂O₃"
+        ],
+        [
+          "Tin",
+          "Tinstone (cassiterite)",
+          "SnO₂"
+        ],
+        [
+          "Lead",
+          "Galena",
+          "PbS"
+        ],
+        [
+          "Copper",
+          "Copper pyrite (chalcopyrite)",
+          "CuFeS₂",
+          "Roasting the ore by heating only"
+        ],
+        [
+          "Mercury",
+          "Cinnabar",
+          "HgS"
+        ]
+      ],
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "Less active metals, such as gold, silver, and copper, were discovered early because they:",
+        "options": [
+          "have an attractive color",
+          "are inexpensive",
+          "occur free in nature",
+          "are lightweight"
+        ],
+        "explain": "Less active metals such as gold, silver, and copper occur free in nature, and were therefore discovered early."
+      },
+      {
+        "correct": 1,
+        "question": "Rock containing a sufficient amount of a metal's compounds to make its extraction economically viable is called:",
+        "options": [
+          "an alloy",
+          "an ore",
+          "a solution",
+          "a melt"
+        ],
+        "explain": "Rock containing a sufficient amount of a metal's compounds to make extracting the metal from it economically viable is called an ore."
+      },
+      {
+        "correct": 0,
+        "question": "Aluminum is not used economically to extract iron from its ores despite its effectiveness in the thermite reaction, because:",
+        "options": [
+          "aluminum is more expensive than iron",
+          "aluminum is less active than iron",
+          "aluminum does not react with iron",
+          "iron is heavier than aluminum"
+        ],
+        "explain": "For extraction to be economically viable, the more active metal used must be cheaper than the metal being extracted, and aluminum is more expensive than iron."
+      },
+      {
+        "correct": 3,
+        "question": "Extracting a metal from its ore always involves:",
+        "options": [
+          "oxidation of the metal ion",
+          "evaporation of the metal",
+          "freezing of the metal",
+          "reduction of the metal ion by gaining electrons"
+        ],
+        "explain": "Every time a metal is extracted from its ore, this involves reduction of the metal ion; it must gain electrons to become a free metal."
+      },
+      {
+        "correct": 1,
+        "question": "Metals at the top of the activity series (such as potassium and sodium) are usually extracted by:",
+        "options": [
+          "simple heating only",
+          "electrolysis",
+          "rapid cooling",
+          "mechanical hammering"
+        ],
+        "explain": "Metals found at the top of the activity series require strong reduction of their oxides, usually achieved by electrolysis."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "The activity series arranges metals from most active (top) to least active (bottom); the less active metals were discovered early because they occur free in nature.",
+      "An ore is rock containing a sufficient amount of a metal's compounds to make its extraction economically viable.",
+      "For extraction to be economically viable, the more active metal used must be cheaper than the metal being extracted.",
+      "Extracting a metal always involves reduction of its ion by gaining electrons; the most active metals need electrolysis, the mid-series metals need smelting with coke, and the least active metals are extracted by simple heating."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of metal extraction",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Metal",
+        "Extraction"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Activity series"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Electrolysis"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Smelting with coke"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Simple heating"
+        ]
+      }
+    ]
+  }
+}
