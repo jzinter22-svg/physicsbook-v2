@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-1.html">
@@ -42,251 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يصف تجربة فاراداي ويستنتج الشرط اللازم لتوليد تيار محتث.</span></li>
-        <li><span class="obj-num">2</span><span>ينص قانون فاراداي ويكتب صيغته الرياضية.</span></li>
-        <li><span class="obj-num">3</span><span>يحل مسائل حسابية على قانون فاراداي للحث الكهرومغناطيسي.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="card neu">
-      <h2>💡 1-3 تمهيد</h2>
-      <p>درست سابقًا أن التيارات الكهربائية تولّد مجالات مغناطيسية، وهو واحد من ثلاثة إنجازات علمية رئيسة قامت على أساسها الثورة الصناعية في العالم منذ أكثر من مئة عام. وقد كان هذا الإنجاز على يدي العالم أورستد. والسؤال الذي يتبادر الآن إلى الأذهان هو: هل يمكن للمجالات المغناطيسية أن تولّدها تيارات كهربائية؟</p>
-      <p>استطاع العالم مايكل فاراداي (1791-1867) في إنكلترا والعالم جوزيف هنري (1797-1878) بالولايات المتحدة الأمريكية وبشكل مستقل عن بعضهما من الإجابة التأكيدية عن هذا السؤال عام 1831، وسنقدّم الآن تجربة تبيّن هذا التأثير بشكل واضح.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="magnet-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 1-3">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: تجربة فاراداي (الشكل 1-3)</h2>
-      <p>حرّك المغناطيس بالسحب داخل الملف وخارجه، ولاحظ مؤشر الكلفانوميتر لا ينحرف إلا أثناء حركة المغناطيس (أي أثناء تغيّر الفيض المغناطيسي المخترق للملف)، ويعود إلى الصفر فور توقف الحركة، وينحرف بالاتجاه المعاكس عند عكس اتجاه الحركة.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="magnetSvg" viewBox="0 0 360 220" width="360" height="220" role="img" aria-label="محاكاة مغناطيس متحرك داخل ملف وكلفانوميتر"></svg></div>
-        <div class="io-row">
-          <label for="magnetSlider" style="min-width:9rem">موضع المغناطيس</label>
-          <input type="range" id="magnetSlider" class="neu-range" min="-100" max="100" step="1" value="-100">
-        </div>
-        <div class="rule-box" id="magnetStatus">مؤشر الكلفانوميتر: صفر (لا حركة)</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>عندما تُدفع الساق المغناطيسية بباتجاه قطب الملف نلاحظ انحراف مؤشر الكلفانوميتر إلى احد اتجاهي مقياسه، كما هو في الشكل (a-1-3): إشارة إلى تولّد تيار كهربائي نتيجة تقاطع خطوط الفيض المغناطيسي معه. وعندما يقف المغناطيس عن الحركة فان الفيض المغناطيسي، أي لا يوجد تغيّر في الفيض المغناطيسي، فلا يمرّ تيار في الملف ويعود مؤشر الكلفانوميتر إلى الصفر كما هو في شكل (b-1-3).</p>
-      <p>أما لو سحبنا الساق المغناطيسية بالاتجاه المعاكس بعيدًا عن الملف فان الفيض يأخذ بالتناقص، وسينحرف مؤشر الكلفانوميتر إلى الاتجاه المعاكس دلالة على أن اتجاه التيار عكس اتجاه (c-1-3).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 التيار المحتث والحث الكهرومغناطيسي</span>
-      <p style="margin:.3rem 0">يُعرَف التيار المتولد بهذه الطريقة بالتيار المحتث (Induced Current) ويُرمز له بـ \(I_{ind}\)، وتُعرَف العملية بالحث الكهرومغناطيسي (Electromagnetic Induction).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h3 style="margin-top:0">📋 نستنتج من هذه التجربة (وهي أحد تجارب فاراداي) ما يأتي</h3>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>إذا تغيّر الفيض المغناطيسي (تناقص أو تزايد) الذي يقطع دائرة مغلقة، تتولّد قوة دافعة كهربائية محتثة في تلك الدائرة.</span></li>
-        <li><span class="obj-num">2</span><span>التغيّر في الفيض المغناطيسي \((\Delta\varnothing)\) لوحدة الزمن هو العامل الأساس الذي يولّد التيار المحتث في الدائرة المغلقة.</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 2-3 قانون فاراداي Faraday's law</span>
-      <p style="margin:.3rem 0">يمكن تفسير قانون فاراداي في التجربة الآتية: نستعمل ملفين من سلكين ملفوفين حول قرص موصل من الحديد المطاوع. يربط احد الملفين مع بطارية ومفتاح (الدائرة X) التي في جهة اليسار، وتُسمى بدائرة الملف الابتدائي. بينما يربط الملف الثاني على التوالي مع كلفانوميتر ويُسمى بدائرة الملف الثانوي (الدائرة Y إلى اليمين).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>عند إغلاق المفتاح في دائرة الملف الابتدائي سوف يؤدي إلى إنحراف مؤشر الكلفانوميتر إلى أحد جانبَي الصفر رجوعه تدريجيًا إلى الصفر. إن انحراف مؤشر الكلفانوميتر دليل على سريان تيار في الملف الثانوي، وسببه أن الحث الابتدائي ولّد مجالًا مغناطيسيًا في الساق الحديدية مما يقطعه فيض الملف الثانوي فأحدث قوة دافعة كهربائية محتثة. أما عودة مؤشر الكلفانوميتر إلى الصفر فهو دليل على توقف سريان التيار في الملف الثانوي نتيجة عدم تغيّر الفيض المغناطيسي الذي يخترق الملف الثانوي لوحدة الزمن \(\left(\dfrac{\Delta\varnothing}{\Delta t}\right)\).</p>
-      <p>كما لاحظ فاراداي بأن مؤشر الكلفانوميتر سينحرف مرة أخرى لحظة فتح المفتاح ولكن بالاتجاه المعاكس، ومن ثم يعود إلى الصفر.</p>
-      <p>ومن تلك المشاهدات نستنتج أن هنالك قوة دافعة كهربائية محتثة ستتولد في حلقة مغلقة نتيجة لحصول تغيّر في الفيض المغناطيسي الذي يخترق الملف لوحدة الزمن والمسبب لنشوء تيار الحث (ولا يهمّ سببه).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box" style="border-color:var(--accent-red)">
-      <p style="margin:0 0 .6rem;font-weight:800;color:var(--accent-red)">قانون فاراداي</p>
-      <p style="margin:0">القوة الدافعة الكهربائية المحتثة المتولدة في دائرة مغلقة تتناسب طرديًا مع التغيّر الحاصل مع الفيض المغناطيسي الذي يقطع الدائرة لوحدة الزمن.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ \varepsilon_{ind} = -\dfrac{\Delta\varnothing}{\Delta t} \qquad \text{...(1)} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">ويُعدّ قانون فاراداي من أكثر مبادئ الكهربائية والمغناطيسية أهمية، بل يُعتبر أساسًا لعمل المولدات والمحركات وعدد كبير من الأجهزة المهمة.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>وإذا كان لدينا ملف سلكي عدد لفاته (N) فإن قانون فاراداي يصبح:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ \varepsilon_{ind} = -N\dfrac{\Delta\varnothing}{\Delta t} \qquad \text{...(2)} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">📝</span>
-      <span>الإشارة السالبة في القانون وُضعت للدلالة على أن اتجاه القوة الدافعة الكهربائية المحتثة يعاكس التغيّر في الفيض المغناطيسي الذي في الملف حثًّا، والتي يُحدَّد منها اتجاه التيار المحتث في الدائرة.</span>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="example1" data-navlabel="📝 مثال 1">
-    <div class="example">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (1)</h2></div>
-      <p>ملف يتكوّن من 40 لفة، فإذا فيه تحرّك هذا الملف بصورة عمودية خلال فيض مقداره \((3\times10^{-5}\ \text{weber})\) خلال فترة زمنية (0.02 s) فما مقدار القوة الدافعة الكهربائية المحتثة \(\varepsilon_{ind}\)؟</p>
-    </div>
-
-    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
-        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( N = 40 \) لفة — عدد لفات الملف</span></li>
-        <li><span>\( \Delta\varnothing = 3\times10^{-5}\ \text{Wb} \) — مقدار الفيض المغناطيسي المخترق للملف</span></li>
-        <li><span>\( \Delta t = 0.02\ \text{s} \) — الفترة الزمنية</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">احسب القوة الدافعة الكهربائية المحتثة \(\varepsilon_{ind}\).</p>
-
-      <ol class="steps hidden-steps" id="steps-ex1">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">نطبّق قانون فاراداي للملف ذي N لفة</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( \varepsilon_{ind} = -N\dfrac{\Delta\varnothing}{\Delta t} = -40\times\dfrac{3\times10^{-5}}{0.02} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( \varepsilon_{ind} = -0.06\ \text{V} \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ ε_ind = −0.06 V</div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="example2" data-navlabel="📝 مثال 2">
-    <div class="example">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (2)</h2></div>
-      <p>ملف عدد لفاته 100 ومساحة اللفة الواحدة \((10\ \text{cm}^2)\)، إن كثافة فيضه المغناطيسي التي تخترق الملف تتغيّر من \((0\ \text{T})\) إلى \((1\ \text{T})\) خلال زمن \((0.2\ \text{s})\). أحسب: 1- القوة الدافعة الكهربائية \(\varepsilon_{ind}\) الناشئة في الملف. 2- التيار المنساب في الدائرة الكهربائية علمًا أن مقاومة الدائرة الكلية \((100\ \Omega)\).</p>
-    </div>
-
-    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
-        <button class="neu-btn" data-reveal-steps="steps-ex2" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( N = 100 \) لفة</span></li>
-        <li><span>\( A = 10\ \text{cm}^2 = 10\times10^{-4}\ \text{m}^2 \) — مساحة اللفة الواحدة (بعد التحويل)</span></li>
-        <li><span>\( B_1 = 0\ \text{T},\ B_2 = 1\ \text{T} \) — كثافة الفيض المغناطيسي الابتدائية والنهائية</span></li>
-        <li><span>\( \Delta t = 0.2\ \text{s} \)</span></li>
-        <li><span>\( R = 100\ \Omega \) — مقاومة الدائرة الكلية</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">1- احسب \(\varepsilon_{ind}\). 2- احسب التيار I المنساب في الدائرة.</p>
-
-      <ol class="steps hidden-steps" id="steps-ex2">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">1- نحسب \(\Delta B\) ثم نطبّق قانون فاراداي، حيث \(\Delta\varnothing = A\Delta B\)</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( \Delta B = B_2 - B_1 = 1 - 0 = 1\ \text{T} \)</div>
-            <div class="calc-line">\( \varepsilon_{ind} = -N\dfrac{A\Delta B}{\Delta t} = -\dfrac{100\times(10\times10^{-4})\times 1}{0.2} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( \varepsilon_{ind} = -0.5\ \text{V} \)</div>
-          </div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">2- من قانون أوم: \(I=\varepsilon_{ind}/R\)</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( I = \dfrac{0.5}{100} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( I = 5\times10^{-3}\ \text{A} \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ ε_ind = −0.5 V   ·   I = 5×10⁻³ A</div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>1.</span><span>يتولد تيار محتث في ملف عندما:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>يوضع المغناطيس ساكنًا داخل الملف</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يبتعد الملف عن أي مصدر مغناطيسي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يتغيّر الفيض المغناطيسي المخترق للملف مع الزمن</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يزداد عدد لفات الملف فقط دون أي حركة</span></label>
-        </div>
-        <div class="quiz-explain">التيار المحتث يتولد فقط عندما يتغيّر الفيض المغناطيسي المخترق للدائرة مع الزمن؛ فإذا كان المغناطيس ساكنًا لا يتولد أي تيار.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>2.</span><span>صيغة قانون فاراداي لملف ذي N لفة هي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( \varepsilon_{ind}=N\varnothing \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( \varepsilon_{ind}=-N\dfrac{\Delta\varnothing}{\Delta t} \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( \varepsilon_{ind}=\dfrac{N}{\Delta\varnothing} \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( \varepsilon_{ind}=N\Delta t \)</span></label>
-        </div>
-        <div class="quiz-explain">المعادلة (2): \(\varepsilon_{ind}=-N\Delta\varnothing/\Delta t\).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>الإشارة السالبة في قانون فاراداي تدل على:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>أن القوة الدافعة المحتثة تعاكس التغيّر في الفيض المغناطيسي المسبّب لها</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أن التيار المحتث سالب دائمًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أن الفيض المغناطيسي دائمًا يتناقص</span></label>
-          <label class="quiz-opt"><input type="radio"><span>خطأً مطبعيًا لا معنى له</span></label>
-        </div>
-        <div class="quiz-explain">الإشارة السالبة تدل على أن اتجاه القوة الدافعة المحتثة يعاكس التغيّر في الفيض المغناطيسي.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>عند توقف حركة المغناطيس داخل ملف موصول بكلفانوميتر:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>يبقى المؤشر منحرفًا بأقصى قيمة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يهتز المؤشر باستمرار</span></label>
-          <label class="quiz-opt"><input type="radio"><span>ينعكس اتجاه انحراف المؤشر</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يعود المؤشر إلى الصفر</span></label>
-        </div>
-        <div class="quiz-explain">عند توقف الحركة، يتوقف تغيّر الفيض المغناطيسي، فيتوقف التيار المحتث ويعود مؤشر الكلفانوميتر إلى الصفر.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>العامل الأساس الذي يولّد التيار المحتث في دائرة مغلقة هو:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>مقدار الفيض المغناطيسي الثابت</span></label>
-          <label class="quiz-opt"><input type="radio"><span>معدّل التغيّر في الفيض المغناطيسي لوحدة الزمن</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مقاومة الدائرة فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>عدد الملفات في المصنع</span></label>
-        </div>
-        <div class="quiz-explain">قانون فاراداي: القوة الدافعة المحتثة تتناسب طرديًا مع معدّل تغيّر الفيض المغناطيسي لوحدة الزمن \((\Delta\varnothing/\Delta t)\).</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -295,12 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>تجربة فاراداي: تغيّر الفيض المغناطيسي المخترق لملف يولّد تيارًا محتثًا (Induced Current) فيه.</span></li>
-        <li><span>قانون فاراداي: \(\varepsilon_{ind}=-\Delta\varnothing/\Delta t\)، ولملف ذي N لفة: \(\varepsilon_{ind}=-N\Delta\varnothing/\Delta t\).</span></li>
-        <li><span>الإشارة السالبة تدل على أن القوة الدافعة المحتثة تعاكس التغيّر في الفيض المسبّب لها.</span></li>
-        <li><span>لا تيار محتث بلا تغيّر في الفيض المغناطيسي لوحدة الزمن.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -310,30 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l1" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l1">
-        <svg viewBox="0 0 480 220" width="480" height="220" role="img" aria-label="خريطة قانون فاراداي الذهنية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="110" x2="100" y2="45"/>
-            <line x1="240" y1="110" x2="100" y2="175"/>
-            <line x1="240" y1="110" x2="380" y2="45"/>
-            <line x1="240" y1="110" x2="380" y2="175"/>
-          </g>
-          <g>
-            <circle cx="240" cy="110" r="48" fill="#7c6fee"/>
-            <text x="240" y="114" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">قانون فاراداي</text>
-          </g>
-          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
-            <text x="100" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">تجربة</text>
-            <text x="100" y="54" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">المغناطيس والملف</text></g>
-          <g><circle cx="100" cy="175" r="42" fill="#2fd18f"/>
-            <text x="100" y="178" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">I_ind</text></g>
-          <g><circle cx="380" cy="45" r="42" fill="#ffab5e"/>
-            <text x="380" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">ε=−NΔØ/Δt</text></g>
-          <g><circle cx="380" cy="175" r="42" fill="#ff6b9d"/>
-            <text x="380" y="172" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">إشارة سالبة</text>
-            <text x="380" y="184" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">تعاكس التغيّر</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l1"></div>
     </div>
   </section>
 
@@ -350,11 +87,12 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("magnetSvg");
-  var slider = document.getElementById("magnetSlider");
-  var statusBox = document.getElementById("magnetStatus");
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
+  var svg, slider, statusBox;
   var lastPos = -100, lastTime = null;
   var needleAngle = 0;
+  var rafId = null;
 
   function drawFrame(){
     while(svg.firstChild) svg.removeChild(svg.firstChild);
@@ -420,7 +158,7 @@
     var gLabel = document.createElementNS(ns,"text");
     gLabel.setAttribute("x",gCx); gLabel.setAttribute("y",gCy+50);
     gLabel.setAttribute("text-anchor","middle"); gLabel.setAttribute("font-family","Cairo,sans-serif"); gLabel.setAttribute("font-size","11"); gLabel.setAttribute("fill","var(--text-secondary)");
-    gLabel.textContent = "كلفانوميتر";
+    gLabel.textContent = t("galvanometerLabel", "كلفانوميتر");
     svg.appendChild(gLabel);
 
     var wire1 = document.createElementNS(ns,"line");
@@ -433,11 +171,11 @@
     svg.appendChild(wire2);
 
     if(Math.abs(velocity) < 2){
-      statusBox.textContent = "مؤشر الكلفانوميتر: صفر (لا تغيّر في الفيض المغناطيسي)";
+      statusBox.textContent = t("statusZero", "مؤشر الكلفانوميتر: صفر (لا تغيّر في الفيض المغناطيسي)");
     } else if(velocity > 0){
-      statusBox.textContent = "انحراف نحو اليمين — المغناطيس يقترب (الفيض يزداد)";
+      statusBox.textContent = t("statusRight", "انحراف نحو اليمين — المغناطيس يقترب (الفيض يزداد)");
     } else {
-      statusBox.textContent = "انحراف نحو اليسار — المغناطيس يبتعد (الفيض يتناقص)";
+      statusBox.textContent = t("statusLeft", "انحراف نحو اليسار — المغناطيس يبتعد (الفيض يتناقص)");
     }
   }
   /* No separate "input" listener: the continuous rAF loop below already
@@ -447,8 +185,19 @@
      changes -- racing the rAF loop and consuming the position delta
      (updating lastPos) before the loop's own next frame can see it,
      which made the needle never register the drag. */
-  function tick(){ drawFrame(); requestAnimationFrame(tick); }
-  requestAnimationFrame(tick);
+  function tick(){ drawFrame(); rafId = requestAnimationFrame(tick); }
+  function boot(){
+    svg = document.getElementById("magnetSvg");
+    slider = document.getElementById("magnetSlider");
+    statusBox = document.getElementById("magnetStatus");
+    if(!svg || !slider) return;
+    lastPos = parseFloat(slider.value);
+    lastTime = null;
+    needleAngle = 0;
+    if(rafId !== null){ cancelAnimationFrame(rafId); rafId = null; }
+    if(reduceMotion){ drawFrame(); } else { rafId = requestAnimationFrame(tick); }
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

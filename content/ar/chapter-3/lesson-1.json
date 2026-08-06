@@ -65,7 +65,13 @@
       "trailingHtml": null,
       "sectionGroup": 1,
       "sectionId": "magnet-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 1-3"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 1-3",
+      "labels": {
+        "galvanometerLabel": "كلفانوميتر",
+        "statusZero": "مؤشر الكلفانوميتر: صفر (لا تغيّر في الفيض المغناطيسي)",
+        "statusRight": "انحراف نحو اليمين — المغناطيس يقترب (الفيض يزداد)",
+        "statusLeft": "انحراف نحو اليسار — المغناطيس يبتعد (الفيض يتناقص)"
+      }
     },
     {
       "type": "paragraph",
