@@ -109,8 +109,23 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxes": [],
+      "ruleBoxes": [
+        {
+          "html": "الترابط بين ذرات الفلز بأواصر سكما (σ) القوية يحتاج طاقة عالية لتنكسر — ولهذا تمتاز الفلزات بكثافة ودرجة انصهار عالية.",
+          "id": "propCaption",
+          "wrapperClass": "rule-box"
+        }
+      ],
       "trailingHtml": "",
+      "labels": {
+        "textDensity": "الترابط بين ذرات الفلز بأواصر سكما (σ) القوية يحتاج طاقة عالية لتنكسر — ولهذا تمتاز الفلزات بكثافة ودرجة انصهار عالية.",
+        "textMalleable": "قوى التجاذب بين الذرات قوية لكنها مرنة، فتنزلق طبقات الذرات فوق بعضها عند تسليط قوة، فيكون الفلز قابلًا للطرق والسحب.",
+        "textThermal": "تنتقل الطاقة الحرارية بالاهتزاز من ذرة إلى التي تليها، وتساعد إلكترونات التكافؤ الحرة على توصيل الحرارة أيضًا.",
+        "textElectric": "تتحرك الإلكترونات التكافؤ الحرة الخارجية للفلز نحو الطرف الموجب في الدائرة الكهربائية، ويحل محلها إلكترونات من الطرف السالب.",
+        "thermalLabel": "تنتقل الحرارة بالاهتزاز من ذرة لأخرى",
+        "negLabel": "− سالب",
+        "posLabel": "+ موجب"
+      },
       "sectionGroup": 3,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"
@@ -435,7 +450,7 @@
       "type": "diagram",
       "heading": null,
       "descHtml": null,
-      "svg": "<svg aria-label=\"شكل 6-8 تركيب الفلزات والسبائك\" role=\"img\" viewbox=\"0 0 340 200\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<!-- pure metal grid -->\n<g id=\"pureGrid\"></g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"70\" y=\"30\">فلز نقي</text>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"2\" x1=\"30\" x2=\"10\" y1=\"80\" y2=\"60\"></line>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"30\" y=\"55\">قوة خارجية</text>\n<polygon fill=\"var(--accent-orange)\" points=\"140,95 165,95 165,105 175,105 152,120 130,105 140,105\"></polygon>\n<!-- alloy grid -->\n<g id=\"alloyGrid\"></g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"270\" y=\"30\">سبيكة</text>\n<text fill=\"var(--accent-pink)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"270\" y=\"185\">ذرة فلزية إضافية</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"270\" y=\"65\">ذرات فلزية تزلق</text>\n</g>\n</svg>",
+      "svg": "<svg id=\"fig6-8-svg\" aria-label=\"شكل 6-8 تركيب الفلزات والسبائك\" role=\"img\" viewbox=\"0 0 340 200\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<!-- pure metal grid -->\n<g id=\"pureGrid\"></g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"70\" y=\"30\">فلز نقي</text>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"2\" x1=\"30\" x2=\"10\" y1=\"80\" y2=\"60\"></line>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"30\" y=\"55\">قوة خارجية</text>\n<polygon fill=\"var(--accent-orange)\" points=\"140,95 165,95 165,105 175,105 152,120 130,105 140,105\"></polygon>\n<!-- alloy grid -->\n<g id=\"alloyGrid\"></g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"270\" y=\"30\">سبيكة</text>\n<text fill=\"var(--accent-pink)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"270\" y=\"185\">ذرة فلزية إضافية</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"270\" y=\"65\">ذرات فلزية تزلق</text>\n</g>\n</svg>",
       "caption": "الشكل 6-8: تركيب الفلزات والسبائك — إضافة ذرة فلزية مختلفة الحجم تمنع انزلاق الذرات بسهولة",
       "sectionGroup": 14,
       "sectionId": null,
