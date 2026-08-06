@@ -79,6 +79,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-1.html">
@@ -105,178 +106,16 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يعرّف النفط الخام (البترول) ويبيّن أهميته في الاقتصاد العراقي والعالمي.</span></li>
-        <li><span class="obj-num">2</span><span>يذكر أهم مناطق تواجد النفط الخام في العالم.</span></li>
-        <li><span class="obj-num">3</span><span>يصنّف النفط الخام حسب كثافته (خفيف/ثقيل) وحسب نسبة الكبريت فيه (حلو/مر).</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 1-7 أنواع النفط الخام حسب التصنيف العالمي</h2>
-      <p>يُطلق على النفط الخام اسم البترول، والذي يسمى أيضًا الزيت المعدني، وهو المصدر الرئيسي للهيدروكاربونات، وهي مركبات عضوية تتكون من عنصري الكاربون والهيدروجين، كما عرفت سابقًا.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — النفط الخام (البترول)</span>
-      <p style="margin:.3rem 0">النفط الخام (البترول)، ويُسمّى أيضًا الزيت المعدني، هو المصدر الرئيسي للهيدروكاربونات، وهي مركبات عضوية تتكون من عنصري الكاربون والهيدروجين.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>يوجد النفط الخام (البترول) في أماكن متعددة على مستوى العالم، من الخليج العربي إلى الشرق الأوسط إلى نيجيريا في أفريقيا، ومن روسيا في آسيا إلى فنزويلا في أمريكا الجنوبية، وحتى القطب الشمالي يحوي مخزونًا من البترول. ويلاحظ مهندسو البترول أن المخزون الذي يسهل العثور عليه الآن قد يستنفَذ، وأن البحث عن البترول أصبح يتم في أماكن نائية جدًا مثل الصحاري والثلوج القطبية.</p>
-    </div>
-  </section>
-
-  <!-- ===== Interactive widget: realistic world map ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: أهم مناطق إنتاج النفط الخام في العالم</h2>
-      <p>اضغط زر أي منطقة أدناه لتُكبِّر الخريطة وتُبرز موقعها الجغرافي الحقيقي، مع بطاقة معلومات عن أهميتها في إنتاج النفط الخام.</p>
-
-      <div class="io-row" role="group" aria-label="اختيار منطقة على الخريطة">
-        <button class="neu-btn" data-region="gulf" id="btnGulf" aria-pressed="false">الخليج العربي</button>
-        <button class="neu-btn" data-region="mideast" id="btnMideast" aria-pressed="false">الشرق الأوسط</button>
-        <button class="neu-btn" data-region="russia" id="btnRussia" aria-pressed="false">روسيا وآسيا الوسطى</button>
-        <button class="neu-btn" data-region="nigeria" id="btnNigeria" aria-pressed="false">نيجيريا</button>
-        <button class="neu-btn" data-region="venezuela" id="btnVenezuela" aria-pressed="false">فنزويلا</button>
-        <button class="neu-btn" data-region="arctic" id="btnArctic" aria-pressed="false">المنطقة القطبية الشمالية</button>
-        <button class="neu-btn" data-region="" id="btnReset" title="عرض الخريطة كاملة">🌍 الخريطة كاملة</button>
-      </div>
-
-      <div class="worldmap-stage">
-        <svg id="worldMapSvg" viewBox="0 -18 1000 536" role="img" aria-label="خريطة تفاعلية لأهم مناطق إنتاج النفط الخام في العالم">
-          <defs>
-            <linearGradient id="oceanGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#bfe1fb"/>
-              <stop offset="1" stop-color="#a9d6f7"/>
-            </linearGradient>
-          </defs>
-          <rect class="worldmap-ocean" x="1" y="-17" width="998" height="534" rx="26"/>
-          <g class="worldmap-graticule" aria-hidden="true">
-            <line x1="0" y1="125" x2="1000" y2="125"/>
-            <line x1="0" y1="250" x2="1000" y2="250"/>
-            <line x1="0" y1="375" x2="1000" y2="375"/>
-            <line x1="167" y1="-18" x2="167" y2="518"/>
-            <line x1="333" y1="-18" x2="333" y2="518"/>
-            <line x1="500" y1="-18" x2="500" y2="518"/>
-            <line x1="667" y1="-18" x2="667" y2="518"/>
-            <line x1="833" y1="-18" x2="833" y2="518"/>
-          </g>
-          <g id="mapZoomGroup">
-            <g class="worldmap-landmasses">
-              <path class="worldmap-land" d="M56,56 L236,56 L292,61 L347,111 L278,181 L231,200 L208,194 L153,153 L69,83 Z"/>
-              <path class="worldmap-land" d="M278,222 L333,222 L403,264 L389,314 L339,347 L311,403 L292,292 L278,250 Z"/>
-              <path class="worldmap-land" d="M452,153 L528,147 L589,164 L619,217 L611,253 L597,319 L556,347 L533,300 L525,239 L472,233 L453,192 Z"/>
-              <path class="worldmap-land" d="M475,131 L486,114 L528,100 L583,83 L667,61 L778,47 L889,47 L972,81 L889,125 L839,164 L792,222 L764,208 L714,228 L689,183 L656,178 L642,217 L619,217 L597,167 L597,147 L578,136 L542,144 Z"/>
-              <path class="worldmap-land" d="M814,311 L861,283 L903,297 L925,328 L903,356 L819,344 Z"/>
-            </g>
-            <g id="mapMarkers"></g>
-          </g>
-        </svg>
-
-        <div class="worldmap-card-info" id="worldInfoCard" aria-live="polite">
-          <div class="info-card-head">
-            <span class="info-card-dot" id="infoDot" style="background:var(--accent-blue)"></span>
-            <h3 id="infoName">اختر منطقة من الأزرار أعلاه</h3>
-          </div>
-          <p id="infoImportance">ستظهر هنا معلومات عن أهمية المنطقة المختارة في إنتاج النفط الخام عالميًا.</p>
-          <p><b>أبرز الدول المنتجة:</b> <span id="infoCountries">—</span></p>
-          <p><b>نسبة الاحتياطي العالمي التقريبية:</b> <span id="infoShare">—</span></p>
-          <p class="info-card-note" id="infoNote">💡 خريطة تعليمية مبسّطة مبنية على المواقع الجغرافية الحقيقية.</p>
-        </div>
-      </div>
-
-      <div class="worldmap-legend">
-        <span class="legend-item"><span class="legend-dot"></span> نقطة ملوّنة = منطقة رئيسية لإنتاج النفط الخام</span>
-        <span class="legend-item"><span class="legend-size"><span></span><span></span></span> حجم النقطة يعبّر عن الأهمية النسبية للمنطقة</span>
-        <span class="legend-item">🗺️ خريطة تعليمية مبسّطة مبنية على مواقع جغرافية حقيقية، وليست رسمًا دقيقًا للحدود السياسية</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — تصنيف النفط الخام</span>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem">
-        <li><b>حسب الكثافة (الكتلة النوعية):</b> يُصنَّف النفط الخام تبعًا لمكان المنشأ (مثلًا برنت)، أو عن طريق كتلته النوعية، أو حسب كثافته إلى: نفط ثقيل (Heavy) ونفط خفيف (Light). وترجع خاصية اختلاف كثافة البترول إلى نسبة الهيدروكاربونات الثقيلة فيه، فكلما زادت هذه النسبة زادت كثافة النفط.</li>
-        <li><b>حسب نسبة الكبريت:</b> يمكن تصنيف البترول إلى بترول حلو (Sweet) تكون نسبة الكبريت فيه منخفضة، وبترول مر (Bitter) تكون نسبة الكبريت فيه عالية.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
-      <span class="def-label" style="color:var(--accent-green)">🔍 تعليل — لماذا يُعدّ النفط الخفيف الأكثر طلبًا والأغلى سعرًا؟</span>
-      <p style="margin:.3rem 0">يُعدّ النفط الخفيف الأكثر طلبًا والأغلى سعرًا، وذلك بسبب إمكانية الحصول على كميات كبيرة من المشتقات البترولية منه، وبالذات الكازولين (Gasoline)، والذي يُعدّ المشتق البترولي الأكثر طلبًا في العالم. أما النوع الحلو (منخفض الكبريت) من البترول فهو الأكثر طلبًا في السوق العالمية.</p>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>النفط الخام يُسمّى أيضًا:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الغاز الطبيعي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الزيت المعدني</span></label>
-          <label class="quiz-opt"><input type="radio"><span>القار</span></label>
-          <label class="quiz-opt"><input type="radio"><span>البايوغاز</span></label>
-        </div>
-        <div class="quiz-explain">يُطلق على النفط الخام اسم البترول، ويُسمّى أيضًا الزيت المعدني، وهو المصدر الرئيسي للهيدروكاربونات.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>يتكون الهيدروكاربون من عنصري:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الكبريت والأوكسجين</span></label>
-          <label class="quiz-opt"><input type="radio"><span>النيتروجين والهيدروجين</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الكاربون والهيدروجين</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الكاربون والأوكسجين</span></label>
-        </div>
-        <div class="quiz-explain">الهيدروكاربونات مركبات عضوية تتكون من عنصري الكاربون والهيدروجين.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>يُصنَّف النفط حسب كثافته إلى:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>نفط خفيف (Light) ونفط ثقيل (Heavy)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>نفط حلو ونفط ساخن</span></label>
-          <label class="quiz-opt"><input type="radio"><span>نفط سائل ونفط غازي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>نفط أبيض ونفط أسود</span></label>
-        </div>
-        <div class="quiz-explain">يُصنَّف النفط الخام حسب كثافته إلى نفط ثقيل (Heavy) ونفط خفيف (Light).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>البترول (Sweet) هو البترول الذي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>لونه فاتح</span></label>
-          <label class="quiz-opt"><input type="radio"><span>كثافته عالية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>نسبة الكبريت فيه عالية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>نسبة الكبريت فيه منخفضة</span></label>
-        </div>
-        <div class="quiz-explain">بترول حلو (Sweet) تكون نسبة الكبريت فيه منخفضة، وهو الأكثر طلبًا في السوق العالمية.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>يُعدّ النفط الخفيف الأكثر طلبًا؛ لأن:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>لونه أفتح من النفط الثقيل</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يمكن الحصول منه على كميات كبيرة من المشتقات البترولية وبالذات الكازولين</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يوجد بكميات أكبر في العالم</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا يحتاج إلى تكرير</span></label>
-        </div>
-        <div class="quiz-explain">يُعدّ النفط الخفيف الأكثر طلبًا والأغلى سعرًا بسبب إمكانية الحصول على كميات كبيرة من المشتقات البترولية منه، وبالذات الكازولين، الذي يُعدّ المشتق البترولي الأكثر طلبًا في العالم.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -286,12 +125,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>النفط الخام (البترول) هو المصدر الرئيسي للهيدروكاربونات، ويُسمّى أيضًا الزيت المعدني.</span></li>
-        <li><span>يتواجد النفط الخام في مناطق عديدة من العالم: الخليج العربي، الشرق الأوسط، نيجيريا، روسيا، آسيا، فنزويلا، والقطب الشمالي.</span></li>
-        <li><span>يُصنَّف النفط حسب الكثافة إلى خفيف (Light) وثقيل (Heavy)، وحسب نسبة الكبريت إلى حلو (Sweet) ومر (Bitter).</span></li>
-        <li><span>النفط الخفيف والحلو هما الأكثر طلبًا في السوق العالمية.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -302,31 +136,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l1" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l1">
-        <svg viewBox="0 -3 480 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية لأنواع النفط الخام">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">أنواع النفط</text>
-            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">الخام</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">مصادر النفط</text>
-            <text x="90" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">في العالم</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">خفيف/ثقيل</text>
-            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">حسب الكثافة</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">حلو/مر</text>
-            <text x="390" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">حسب الكبريت</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">الكازولين</text>
-            <text x="390" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">الأكثر طلبًا</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l1"></div>
     </div>
   </section>
 
@@ -344,67 +154,65 @@
 (function(){
   "use strict";
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("worldMapSvg");
-  var zoomGroup = document.getElementById("mapZoomGroup");
-  var markersGroup = document.getElementById("mapMarkers");
-  var buttons = document.querySelectorAll("[data-region]");
-  var infoCard = document.getElementById("worldInfoCard");
-  var infoDot = document.getElementById("infoDot");
-  var infoName = document.getElementById("infoName");
-  var infoImportance = document.getElementById("infoImportance");
-  var infoCountries = document.getElementById("infoCountries");
-  var infoShare = document.getElementById("infoShare");
-  var infoNote = document.getElementById("infoNote");
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
+  function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+
+  /* The JSON content pipeline only captures the widget's io-panel controls
+     (svg mount + buttons) — it has no schema slot for the freeform info-card
+     / legend markup or the svg's static base geography (ocean, graticule,
+     landmasses), since those never existed as generic "simulation" fields.
+     So boot() below rebuilds all of that by hand every render, the same way
+     draw() in the ch2 widgets rebuilds their whole svg from scratch each
+     time — nothing here is cached from the old static HTML. */
+
+  var svg, zoomGroup, markersGroup, buttons, infoCard, infoDot, infoName, infoImportance, infoCountries, infoShare, infoNote;
 
   /* Marker coordinates are plotted from real longitude/latitude on an
      equirectangular projection (viewBox 1000x500, so x = 500 + lon*2.778,
      y = 250 - lat*2.778) — the same projection used to trace the continent
-     paths above — so every marker sits on its true geographic location
-     rather than an abstract placeholder box. */
-  var REGIONS = {
+     paths below — so every marker sits on its true geographic location
+     rather than an abstract placeholder box. Names come from the (already
+     translated) region buttons; importance/countries/share/note come from
+     the lesson JSON's "labels" dict via simText(), falling back to these
+     Arabic literals if labels are ever missing. */
+  var REGION_DEFAULTS = {
     gulf: {
-      cx:639, cy:178, r:11, color:"#2fd18f",
-      name:"الخليج العربي",
+      cx:639, cy:178, r:11, color:"#2fd18f", name:"الخليج العربي",
       importance:"يضمّ الخليج العربي أكبر تجمّع لحقول النفط الخام سهلة الاستخراج في العالم، وتُطل عليه أبرز الدول المصدِّرة للنفط.",
       countries:"السعودية، العراق، الكويت، الإمارات العربية المتحدة، قطر، إيران",
       share:"أكثر من 30% من الاحتياطي العالمي المؤكد تقريبًا",
       note:"💡 يُعدّ مضيق هرمز عند مدخل الخليج ممرًا مائيًا حيويًا يمر عبره جزء كبير من صادرات النفط العالمية."
     },
     mideast: {
-      cx:617, cy:172, r:14, color:"#3fa9f5",
-      name:"الشرق الأوسط",
+      cx:617, cy:172, r:14, color:"#3fa9f5", name:"الشرق الأوسط",
       importance:"أكبر منطقة إنتاجية للنفط الخام في العالم؛ إذ تتركّز فيه احتياطيات ضخمة يسهل الوصول إليها بكلفة استخراج منخفضة نسبيًا.",
       countries:"السعودية، العراق، إيران، الكويت، الإمارات، عُمان",
       share:"نحو 48% من الاحتياطي العالمي المؤكد تقريبًا",
       note:"💡 قرب كثير من حقول المنطقة من سطح الأرض يجعل تكلفة استخراج النفط منها من الأقل عالميًا."
     },
     russia: {
-      cx:667, cy:97, r:10, color:"#7c6fee",
-      name:"روسيا وآسيا الوسطى",
+      cx:667, cy:97, r:10, color:"#7c6fee", name:"روسيا وآسيا الوسطى",
       importance:"تمتلك روسيا احتياطيات ضخمة من النفط والغاز الطبيعي، وتُعدّ من أكبر الدول المصدِّرة للطاقة في العالم.",
       countries:"روسيا الاتحادية، كازاخستان، أذربيجان، تركمانستان",
       share:"نحو 6% من الاحتياطي العالمي المؤكد للنفط تقريبًا (لروسيا وحدها)",
       note:"💡 تتركّز أهم الحقول الروسية في سيبيريا الغربية وعلى امتداد بحر قزوين."
     },
     nigeria: {
-      cx:522, cy:225, r:7, color:"#ffab5e",
-      name:"نيجيريا",
+      cx:522, cy:225, r:7, color:"#ffab5e", name:"نيجيريا",
       importance:"أكبر منتج للنفط الخام في قارة أفريقيا، ويتركّز إنتاجها في دلتا نهر النيجر وسواحل خليج غينيا.",
       countries:"نيجيريا (إلى جانب دول أفريقية منتجة أخرى مثل أنغولا والجزائر وليبيا)",
       share:"نحو 2% من الاحتياطي العالمي المؤكد تقريبًا",
       note:"💡 يُستخرج جزء كبير من نفط نيجيريا من حقول بحرية قبالة سواحلها."
     },
     venezuela: {
-      cx:317, cy:228, r:12, color:"#ff6b9d",
-      name:"فنزويلا",
+      cx:317, cy:228, r:12, color:"#ff6b9d", name:"فنزويلا",
       importance:"تمتلك فنزويلا أكبر احتياطي مؤكد من النفط الخام في العالم، ويتركّز معظمه في حزام أورينوكو.",
       countries:"فنزويلا، إحدى الدول المؤسِّسة لمنظمة أوبك",
       share:"نحو 18% من الاحتياطي العالمي المؤكد تقريبًا (الأعلى عالميًا)",
       note:"💡 جزء كبير من نفط فنزويلا نفط ثقيل، ما يتطلب تقنيات خاصة لاستخراجه وتكريره."
     },
     arctic: {
-      cx:500, cy:33, r:9, color:"#22c1c3",
-      name:"المنطقة القطبية الشمالية",
+      cx:500, cy:33, r:9, color:"#22c1c3", name:"المنطقة القطبية الشمالية",
       importance:"تشير الدراسات الجيولوجية إلى احتمال وجود كميات كبيرة من النفط والغاز غير المكتشفة أسفل قاع المحيط المتجمد الشمالي.",
       countries:"مناطق تابعة لروسيا وكندا والولايات المتحدة (ألاسكا) والنرويج",
       share:"يُقدَّر أن نحو 13% من موارد النفط غير المكتشفة عالميًا قد توجد هنا (تقدير جيولوجي وليس احتياطيًا مؤكدًا)",
@@ -420,15 +228,83 @@
     return e;
   }
 
+  function regionData(key){
+    var d = REGION_DEFAULTS[key];
+    var btn = document.getElementById("btn" + key.charAt(0).toUpperCase() + key.slice(1));
+    return {
+      cx:d.cx, cy:d.cy, r:d.r, color:d.color,
+      name: (btn && btn.textContent.trim()) || d.name,
+      importance: t(key + "Importance", d.importance),
+      countries: t(key + "Countries", d.countries),
+      share: t(key + "Share", d.share),
+      note: t(key + "Note", d.note)
+    };
+  }
+
+  function buildStaticGeo(){
+    svg.innerHTML =
+      '<defs><linearGradient id="oceanGrad" x1="0" y1="0" x2="0" y2="1">' +
+        '<stop offset="0" stop-color="#bfe1fb"/><stop offset="1" stop-color="#a9d6f7"/>' +
+      '</linearGradient></defs>' +
+      '<rect class="worldmap-ocean" x="1" y="-17" width="998" height="534" rx="26"/>' +
+      '<g class="worldmap-graticule" aria-hidden="true">' +
+        '<line x1="0" y1="125" x2="1000" y2="125"/><line x1="0" y1="250" x2="1000" y2="250"/><line x1="0" y1="375" x2="1000" y2="375"/>' +
+        '<line x1="167" y1="-18" x2="167" y2="518"/><line x1="333" y1="-18" x2="333" y2="518"/><line x1="500" y1="-18" x2="500" y2="518"/>' +
+        '<line x1="667" y1="-18" x2="667" y2="518"/><line x1="833" y1="-18" x2="833" y2="518"/>' +
+      '</g>' +
+      '<g id="mapZoomGroup">' +
+        '<g class="worldmap-landmasses">' +
+          '<path class="worldmap-land" d="M56,56 L236,56 L292,61 L347,111 L278,181 L231,200 L208,194 L153,153 L69,83 Z"/>' +
+          '<path class="worldmap-land" d="M278,222 L333,222 L403,264 L389,314 L339,347 L311,403 L292,292 L278,250 Z"/>' +
+          '<path class="worldmap-land" d="M452,153 L528,147 L589,164 L619,217 L611,253 L597,319 L556,347 L533,300 L525,239 L472,233 L453,192 Z"/>' +
+          '<path class="worldmap-land" d="M475,131 L486,114 L528,100 L583,83 L667,61 L778,47 L889,47 L972,81 L889,125 L839,164 L792,222 L764,208 L714,228 L689,183 L656,178 L642,217 L619,217 L597,167 L597,147 L578,136 L542,144 Z"/>' +
+          '<path class="worldmap-land" d="M814,311 L861,283 L903,297 L925,328 L903,356 L819,344 Z"/>' +
+        '</g>' +
+        '<g id="mapMarkers"></g>' +
+      '</g>';
+    zoomGroup = document.getElementById("mapZoomGroup");
+    markersGroup = document.getElementById("mapMarkers");
+  }
+
+  function buildInfoCardAndLegend(stage){
+    var info = document.createElement("div");
+    info.className = "worldmap-card-info";
+    info.id = "worldInfoCard";
+    info.setAttribute("aria-live", "polite");
+    info.innerHTML =
+      '<div class="info-card-head"><span class="info-card-dot" id="infoDot" style="background:var(--accent-blue)"></span><h3 id="infoName"></h3></div>' +
+      '<p id="infoImportance"></p>' +
+      '<p><b>' + esc(t("countriesLabel", "أبرز الدول المنتجة:")) + '</b> <span id="infoCountries">—</span></p>' +
+      '<p><b>' + esc(t("shareLabel", "نسبة الاحتياطي العالمي التقريبية:")) + '</b> <span id="infoShare">—</span></p>' +
+      '<p class="info-card-note" id="infoNote"></p>';
+    stage.appendChild(info);
+
+    var legend = document.createElement("div");
+    legend.className = "worldmap-legend";
+    legend.innerHTML =
+      '<span class="legend-item"><span class="legend-dot"></span> ' + esc(t("legendDot", "نقطة ملوّنة = منطقة رئيسية لإنتاج النفط الخام")) + '</span>' +
+      '<span class="legend-item"><span class="legend-size"><span></span><span></span></span> ' + esc(t("legendSize", "حجم النقطة يعبّر عن الأهمية النسبية للمنطقة")) + '</span>' +
+      '<span class="legend-item">' + esc(t("legendNote", "🗺️ خريطة تعليمية مبسّطة مبنية على مواقع جغرافية حقيقية، وليست رسمًا دقيقًا للحدود السياسية")) + '</span>';
+    stage.parentElement.appendChild(legend);
+
+    infoCard = info;
+    infoDot = document.getElementById("infoDot");
+    infoName = document.getElementById("infoName");
+    infoImportance = document.getElementById("infoImportance");
+    infoCountries = document.getElementById("infoCountries");
+    infoShare = document.getElementById("infoShare");
+    infoNote = document.getElementById("infoNote");
+  }
+
   function buildMarkers(){
-    Object.keys(REGIONS).forEach(function(key){
-      var r = REGIONS[key];
+    Object.keys(REGION_DEFAULTS).forEach(function(key){
+      var r = regionData(key);
       var g = el("g", {
         "class":"worldmap-marker-group",
         "data-region":key,
         "tabindex":"0",
         "role":"button",
-        "aria-label":r.name + " — اضغط لعرض معلومات المنطقة على الخريطة"
+        "aria-label":r.name + t("markerAriaSuffix", " — اضغط لعرض معلومات المنطقة على الخريطة")
       });
       var hit = el("circle", {cx:r.cx, cy:r.cy, r:22, "class":"worldmap-hit"});
       var halo = el("circle", {cx:r.cx, cy:r.cy, fill:r.color, "class":"worldmap-marker-halo", id:"halo-"+key});
@@ -466,7 +342,7 @@
       zoomGroup.style.transform = "translate(0px,0px) scale(1)";
       return;
     }
-    var r = REGIONS[key];
+    var r = regionData(key);
     var s = ZOOM_SCALE;
     var tx = VIEW_CX - r.cx * s;
     var ty = VIEW_CY - r.cy * s;
@@ -476,15 +352,15 @@
   function updateInfoCard(key){
     if(!key){
       infoDot.style.background = "var(--accent-blue)";
-      infoName.textContent = "اختر منطقة من الأزرار أعلاه";
-      infoImportance.textContent = "ستظهر هنا معلومات عن أهمية المنطقة المختارة في إنتاج النفط الخام عالميًا.";
+      infoName.textContent = t("defaultName", "اختر منطقة من الأزرار أعلاه");
+      infoImportance.textContent = t("defaultImportance", "ستظهر هنا معلومات عن أهمية المنطقة المختارة في إنتاج النفط الخام عالميًا.");
       infoCountries.textContent = "—";
       infoShare.textContent = "—";
-      infoNote.textContent = "💡 خريطة تعليمية مبسّطة مبنية على المواقع الجغرافية الحقيقية.";
+      infoNote.textContent = t("defaultNote", "💡 خريطة تعليمية مبسّطة مبنية على المواقع الجغرافية الحقيقية.");
       infoCard.classList.remove("visible");
       return;
     }
-    var r = REGIONS[key];
+    var r = regionData(key);
     infoDot.style.background = r.color;
     infoName.textContent = r.name;
     infoImportance.textContent = r.importance;
@@ -511,15 +387,38 @@
     });
   }
 
-  buttons.forEach(function(b){
-    b.addEventListener("click", function(){
-      var region = b.getAttribute("data-region");
-      selectRegion(region || null);
-    });
-  });
+  function boot(){
+    svg = document.getElementById("worldMapSvg");
+    if(!svg) return;
+    buttons = Array.prototype.slice.call(document.querySelectorAll("[data-region]"));
 
-  buildMarkers();
-  selectRegion(null);
+    buildStaticGeo();
+
+    var stage = svg.parentElement;
+    stage.className = "worldmap-stage";
+    buildInfoCardAndLegend(stage);
+
+    var buttonsRow = buttons.length ? buttons[0].parentElement : null;
+    if(buttonsRow){
+      buttonsRow.setAttribute("role", "group");
+      buttonsRow.setAttribute("aria-label", t("regionGroupAriaLabel", "اختيار منطقة على الخريطة"));
+    }
+    var resetBtn = document.getElementById("btnReset");
+    if(resetBtn) resetBtn.title = t("resetTitle", "عرض الخريطة كاملة");
+
+    buildMarkers();
+
+    buttons.forEach(function(b){
+      b.addEventListener("click", function(){
+        var region = b.getAttribute("data-region");
+        selectRegion(region || null);
+      });
+    });
+
+    selectRegion(null);
+  }
+
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>
