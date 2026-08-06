@@ -1,473 +1,473 @@
 {
- "lessonNumber": 5,
- "chapterNumber": 1,
- "meta": {
-  "pageTitle": "Lesson 5: Angular Acceleration and Uniformly Accelerated Rotational Motion — Chapter 1",
-  "description": "3-5-1 Angular acceleration and its relation to tangential acceleration, 4-5-1 uniform angular acceleration and the equations of uniformly accelerated rotational motion, with two solved examples.",
-  "breadcrumbChapter": "Chapter 1",
-  "breadcrumbLesson": "Angular Acceleration and Uniform Motion",
-  "footer": "Chapter 1: Circular and Rotational Motion — Lesson 5: Angular Acceleration and Uniform Motion"
- },
- "hero": {
-  "eyebrow": "📖 Lesson 5 of 8 · Chapter 1",
-  "title": "Angular Acceleration and Uniformly Accelerated Rotational Motion",
-  "lead": "3-5-1 Angular acceleration (α) · 4-5-1 Uniform angular acceleration"
- },
- "objectivesHeading": "🎯 Lesson Objectives",
- "objectives": [
-  "Defines angular acceleration (α) and derives its relation to tangential acceleration \\(a_T=r\\alpha\\).",
-  "Explains the meaning of uniformly accelerated rotational motion and average angular velocity.",
-  "Writes the three equations of uniformly accelerated rotational motion and compares them with their linear counterparts.",
-  "Solves numerical problems on uniformly accelerated rotational motion using these equations."
- ],
- "content": [
-  {
-   "type": "definition",
-   "label": "📌 3-5-1 Angular acceleration",
-   "html": "Suppose a body undergoes a change in tangential linear speed \\((\\Delta v_T)\\) while moving along the curve (S); as a result, its angular velocity changes while the circle's radius (r) stays constant. This means the motion has an acceleration, so equation (8) becomes:",
-   "sectionGroup": 0,
-   "sectionId": "content",
-   "sectionNavLabel": "💡 Explanation"
+  "lessonNumber": 5,
+  "chapterNumber": 1,
+  "meta": {
+    "pageTitle": "Lesson 5: Angular Acceleration and Uniformly Accelerated Rotational Motion — Chapter 1",
+    "description": "3-5-1 Angular acceleration and its relation to tangential acceleration, 4-5-1 uniform angular acceleration and the equations of uniformly accelerated rotational motion, with two solved examples.",
+    "breadcrumbChapter": "Chapter 1",
+    "breadcrumbLesson": "Angular Acceleration and Uniform Motion",
+    "footer": "Chapter 1: Circular and Rotational Motion — Lesson 5: Angular Acceleration and Uniform Motion"
   },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ \\Delta v_T = r\\Delta\\omega \\qquad \\text{...(9)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">Dividing both sides of equation (9) by (Δt) gives:</p>\n      $$ \\dfrac{\\Delta v_T}{\\Delta t} = r\\dfrac{\\Delta\\omega}{\\Delta t} \\qquad \\text{...(10)} $$",
-   "sectionGroup": 1,
-   "sectionId": null,
-   "sectionNavLabel": null
+  "hero": {
+    "eyebrow": "📖 Lesson 5 of 8 · Chapter 1",
+    "title": "Angular Acceleration and Uniformly Accelerated Rotational Motion",
+    "lead": "3-5-1 Angular acceleration (α) · 4-5-1 Uniform angular acceleration"
   },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "<p style=\"margin:0 0 .4rem\">The quantity \\(a_T=\\dfrac{\\Delta v_T}{\\Delta t}\\) represents the tangential acceleration; the quantity \\(\\alpha=\\dfrac{\\Delta\\omega}{\\Delta t}\\) represents the angular acceleration, denoted by the symbol (α) and measured in units of \\(\\text{rad/s}^2\\). Substituting \\(a_T\\) and α into equation (10) gives:</p>\n      $$ a_T = r\\alpha \\qquad \\text{...(11)} $$",
-   "sectionGroup": 2,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "paragraph",
-   "html": "We notice from equation (11) that angular acceleration is linked to tangential acceleration — meaning angular acceleration arises from a change in linear speed or angular speed, and becomes zero if the body's linear speed around the circle's circumference stays constant.",
-   "sectionGroup": 3,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "example",
-   "number": 1,
-   "problemHtml": "<p>A wheel of radius (40 cm) rotates about a fixed axis, with its speed increasing uniformly from rest until it reaches (600 rpm) in a time of (20 s). Find: (a) the angular acceleration, (b) the tangential acceleration of a point on the rim of the wheel.</p>",
-   "solution": {
-    "given": [
-     "\\( r = 40\\ \\text{cm} = 0.40\\ \\text{m} \\) — the wheel's radius",
-     "\\( \\omega_1 = 0 \\) — the initial angular velocity (starts from rest)",
-     "\\( \\omega_2 = 600\\ \\text{rpm} = 62.8\\ \\text{rad/s} \\) — the final angular velocity (after conversion)",
-     "\\( t = 20\\ \\text{s} \\) — the time needed to reach the final speed"
-    ],
-    "required": "(a) Find the angular acceleration α. (b) Find the tangential acceleration \\(a_T\\) of a point on the rim of the wheel.",
-    "steps": [
-     {
-      "note": "Convert the final angular velocity to units of (rad/s)",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( \\omega = \\left(600\\ \\dfrac{\\text{rev}}{\\text{min}}\\right)\\times\\left(\\dfrac{1\\ \\text{min}}{60\\ \\text{s}}\\right)\\times\\left(\\dfrac{2\\pi\\ \\text{rad}}{1\\ \\text{rev}}\\right) \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( \\omega = 62.8\\ \\text{rad/s} \\)"
-       }
-      ]
-     },
-     {
-      "note": "(a) Angular acceleration — the body starts from rest: \\(t_1=0,\\ \\omega_1=0\\)",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( \\alpha = \\dfrac{\\Delta\\omega}{\\Delta t} = \\dfrac{\\omega_2-\\omega_1}{t_2-t_1} = \\dfrac{62.8-0}{20} \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( \\alpha = 3.14\\ \\text{rad/s}^2 \\)"
-       }
-      ]
-     },
-     {
-      "note": "(b) Tangential acceleration at r=40 cm=0.40 m",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( a_T = r\\alpha = (0.40\\ \\text{m})(3.14\\ \\text{rad/s}^2) \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( a_T = 1.25\\ \\text{m/s}^2 \\approx 1.3\\ \\text{m/s}^2 \\)"
-       }
-      ]
-     }
-    ],
-    "final": "✓ α = 3.14 rad/s²   ·   a_T ≈ 1.3 m/s²"
-   },
-   "sectionGroup": 4,
-   "sectionId": "example4",
-   "sectionNavLabel": "📝 Example 4"
-  },
-  {
-   "type": "definition",
-   "label": "📌 4-5-1 Uniform angular acceleration",
-   "html": "A body moves with angular acceleration (α) when the net torque acting on it is not zero. If the angular velocity of a body moving along a circular path is \\((\\omega_1)\\) at point (A) and \\((\\omega_2)\\) at point (B), the average instantaneous angular velocity is:",
-   "sectionGroup": 5,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ \\omega_{av} = \\dfrac{\\omega_1+\\omega_2}{2} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">The average angular acceleration is therefore defined as the rate of change of angular velocity per unit time, given by the relation:</p>\n      $$ \\alpha_{av} = \\dfrac{\\Delta\\omega}{\\Delta t} = \\dfrac{\\omega_2-\\omega_1}{t_2-t_1} \\qquad \\text{...(12)} $$",
-   "sectionGroup": 6,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "paragraph",
-   "html": "The equations of rotational motion with uniform angular acceleration can be derived, quite simply, in the same way as the equations of linear motion with uniform acceleration, by substituting angular displacement (θ) for linear displacement (x), angular velocity (ω) for linear velocity (v), and angular acceleration (α) for linear acceleration (a). The equations of rotational motion then become:",
-   "sectionGroup": 7,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ \\omega = \\omega_0 + \\alpha t \\qquad \\text{...(13)} $$\n      $$ \\theta-\\theta_0 = \\omega_0 t + \\tfrac{1}{2}\\alpha t^2 \\qquad \\text{...(14)} $$\n      $$ \\omega^2 = \\omega_0^2 + 2\\alpha(\\theta-\\theta_0) \\qquad \\text{...(15)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where \\((\\omega_0,\\theta_0)\\) represent the initial angular velocity and initial angular displacement.</p>",
-   "sectionGroup": 8,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "paragraph",
-   "html": "As for the relation between the physical quantities in rotational and linear motion, when the circle's radius is constant, it is:</p><p>\\( s=\\theta r \\qquad v=\\omega r \\qquad a_T=\\alpha r \\)</p><p>We can therefore show that the laws of linear motion with uniform linear acceleration and the laws of rotational motion with uniform angular acceleration are analogous, as in the following table:",
-   "sectionGroup": 9,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "table",
-   "heading": "📊 Comparison of the equations of uniformly accelerated linear and rotational motion",
-   "headers": [
-    "Rotational-motion laws",
-    "Linear-motion laws"
-   ],
-   "rows": [
-    [
-     "\\( \\omega_2 = \\omega_1 + \\alpha t \\)",
-     "\\( v_2 = v_1 + at \\)"
-    ],
-    [
-     "\\( \\theta = \\omega_1 t + \\tfrac{1}{2}\\alpha t^2 \\)",
-     "\\( s = v_1 t + \\tfrac{1}{2}at^2 \\)"
-    ],
-    [
-     "\\( \\omega_2^2 = \\omega_1^2 + 2\\alpha\\theta \\)",
-     "\\( v_2^2 = v_1^2 + 2as \\)"
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Defines angular acceleration (α) and derives its relation to tangential acceleration \\(a_T=r\\alpha\\).",
+    "Explains the meaning of uniformly accelerated rotational motion and average angular velocity.",
+    "Writes the three equations of uniformly accelerated rotational motion and compares them with their linear counterparts.",
+    "Solves numerical problems on uniformly accelerated rotational motion using these equations."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 3-5-1 Angular acceleration",
+      "html": "Suppose a body undergoes a change in tangential linear speed \\((\\Delta v_T)\\) while moving along the curve (S); as a result, its angular velocity changes while the circle's radius (r) stays constant. This means the motion has an acceleration, so equation (8) becomes:",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\Delta v_T = r\\Delta\\omega \\qquad \\text{...(9)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">Dividing both sides of equation (9) by (Δt) gives:</p>\n      $$ \\dfrac{\\Delta v_T}{\\Delta t} = r\\dfrac{\\Delta\\omega}{\\Delta t} \\qquad \\text{...(10)} $$",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .4rem\">The quantity \\(a_T=\\dfrac{\\Delta v_T}{\\Delta t}\\) represents the tangential acceleration; the quantity \\(\\alpha=\\dfrac{\\Delta\\omega}{\\Delta t}\\) represents the angular acceleration, denoted by the symbol (α) and measured in units of \\(\\text{rad/s}^2\\). Substituting \\(a_T\\) and α into equation (10) gives:</p>\n      $$ a_T = r\\alpha \\qquad \\text{...(11)} $$",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "We notice from equation (11) that angular acceleration is linked to tangential acceleration — meaning angular acceleration arises from a change in linear speed or angular speed, and becomes zero if the body's linear speed around the circle's circumference stays constant.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>A wheel of radius (40 cm) rotates about a fixed axis, with its speed increasing uniformly from rest until it reaches (600 rpm) in a time of (20 s). Find: (a) the angular acceleration, (b) the tangential acceleration of a point on the rim of the wheel.</p>",
+      "solution": {
+        "given": [
+          "\\( r = 40\\ \\text{cm} = 0.40\\ \\text{m} \\) — the wheel's radius",
+          "\\( \\omega_1 = 0 \\) — the initial angular velocity (starts from rest)",
+          "\\( \\omega_2 = 600\\ \\text{rpm} = 62.8\\ \\text{rad/s} \\) — the final angular velocity (after conversion)",
+          "\\( t = 20\\ \\text{s} \\) — the time needed to reach the final speed"
+        ],
+        "required": "(a) Find the angular acceleration α. (b) Find the tangential acceleration \\(a_T\\) of a point on the rim of the wheel.",
+        "steps": [
+          {
+            "note": "Convert the final angular velocity to units of (rad/s)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\omega = \\left(600\\ \\dfrac{\\text{rev}}{\\text{min}}\\right)\\times\\left(\\dfrac{1\\ \\text{min}}{60\\ \\text{s}}\\right)\\times\\left(\\dfrac{2\\pi\\ \\text{rad}}{1\\ \\text{rev}}\\right) \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\omega = 62.8\\ \\text{rad/s} \\)"
+              }
+            ]
+          },
+          {
+            "note": "(a) Angular acceleration — the body starts from rest: \\(t_1=0,\\ \\omega_1=0\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\alpha = \\dfrac{\\Delta\\omega}{\\Delta t} = \\dfrac{\\omega_2-\\omega_1}{t_2-t_1} = \\dfrac{62.8-0}{20} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\alpha = 3.14\\ \\text{rad/s}^2 \\)"
+              }
+            ]
+          },
+          {
+            "note": "(b) Tangential acceleration at r=40 cm=0.40 m",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( a_T = r\\alpha = (0.40\\ \\text{m})(3.14\\ \\text{rad/s}^2) \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( a_T = 1.25\\ \\text{m/s}^2 \\approx 1.3\\ \\text{m/s}^2 \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ α = 3.14 rad/s²   ·   a_T ≈ 1.3 m/s²"
+      },
+      "sectionGroup": 4,
+      "sectionId": "example4",
+      "sectionNavLabel": "📝 Example 4"
+    },
+    {
+      "type": "definition",
+      "label": "📌 4-5-1 Uniform angular acceleration",
+      "html": "A body moves with angular acceleration (α) when the net torque acting on it is not zero. If the angular velocity of a body moving along a circular path is \\((\\omega_1)\\) at point (A) and \\((\\omega_2)\\) at point (B), the average instantaneous angular velocity is:",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\omega_{av} = \\dfrac{\\omega_1+\\omega_2}{2} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">The average angular acceleration is therefore defined as the rate of change of angular velocity per unit time, given by the relation:</p>\n      $$ \\alpha_{av} = \\dfrac{\\Delta\\omega}{\\Delta t} = \\dfrac{\\omega_2-\\omega_1}{t_2-t_1} \\qquad \\text{...(12)} $$",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The equations of rotational motion with uniform angular acceleration can be derived, quite simply, in the same way as the equations of linear motion with uniform acceleration, by substituting angular displacement (θ) for linear displacement (x), angular velocity (ω) for linear velocity (v), and angular acceleration (α) for linear acceleration (a). The equations of rotational motion then become:",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\omega = \\omega_0 + \\alpha t \\qquad \\text{...(13)} $$\n      $$ \\theta-\\theta_0 = \\omega_0 t + \\tfrac{1}{2}\\alpha t^2 \\qquad \\text{...(14)} $$\n      $$ \\omega^2 = \\omega_0^2 + 2\\alpha(\\theta-\\theta_0) \\qquad \\text{...(15)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where \\((\\omega_0,\\theta_0)\\) represent the initial angular velocity and initial angular displacement.</p>",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "As for the relation between the physical quantities in rotational and linear motion, when the circle's radius is constant, it is:</p><p>\\( s=\\theta r \\qquad v=\\omega r \\qquad a_T=\\alpha r \\)</p><p>We can therefore show that the laws of linear motion with uniform linear acceleration and the laws of rotational motion with uniform angular acceleration are analogous, as in the following table:",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "table",
+      "heading": "📊 Comparison of the equations of uniformly accelerated linear and rotational motion",
+      "headers": [
+        "Rotational-motion laws",
+        "Linear-motion laws"
+      ],
+      "rows": [
+        [
+          "\\( \\omega_2 = \\omega_1 + \\alpha t \\)",
+          "\\( v_2 = v_1 + at \\)"
+        ],
+        [
+          "\\( \\theta = \\omega_1 t + \\tfrac{1}{2}\\alpha t^2 \\)",
+          "\\( s = v_1 t + \\tfrac{1}{2}at^2 \\)"
+        ],
+        [
+          "\\( \\omega_2^2 = \\omega_1^2 + 2\\alpha\\theta \\)",
+          "\\( v_2^2 = v_1^2 + 2as \\)"
+        ]
+      ],
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "⚠️",
+      "strong": "Two important notes:",
+      "html": "If the motion starts from rest, \\((\\omega_1)\\) must be substituted with zero. And when decelerating, the angular acceleration carries a negative sign.",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>An electric motor starts rotating from rest, and its angular velocity reaches (1200 rev/min) after a time of (10 s). What are its angular acceleration, the angular displacement it covers, and the total number of revolutions?</p>",
+      "solution": {
+        "given": [
+          "\\( \\omega_0 = 0 \\) — the motor starts rotating from rest",
+          "\\( \\omega = 1200\\ \\text{rev/min} \\) — the angular velocity after time t (needs converting to rad/s)",
+          "\\( t = 10\\ \\text{s} \\) — the time needed to reach this speed"
+        ],
+        "required": "Find the angular acceleration α, the angular displacement θ covered by the motor, and the total number of revolutions.",
+        "steps": [
+          {
+            "note": "Since the electric motor starts rotating from rest, \\(\\omega_0=0\\); convert the final angular velocity to (rad/s)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\omega = \\dfrac{N\\times 2\\pi}{t} = \\dfrac{1200\\ (\\text{rev/min})\\times 2\\pi\\ (\\text{rad/rev})}{60\\ (\\text{s/min})} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\omega = 40\\pi\\ \\text{rad/s} \\)"
+              }
+            ]
+          },
+          {
+            "note": "Angular acceleration from equation (13): \\(\\omega=\\omega_0+\\alpha t\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( 40\\pi = 0 + \\alpha(10) \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\alpha = 4\\pi\\ \\text{rad/s}^2 \\)"
+              }
+            ]
+          },
+          {
+            "note": "Angular displacement from equation (14): \\(\\theta-\\theta_0=\\omega_0 t+\\tfrac{1}{2}\\alpha t^2\\), where \\(\\theta_0=0,\\ \\omega_0=0\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\theta = 0 + \\tfrac{1}{2}(4\\pi)(10)^2 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\theta = 200\\pi\\ \\text{rad} \\)"
+              }
+            ]
+          },
+          {
+            "note": "Total number of revolutions: 1 rev = 2π rad",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( N = \\dfrac{\\theta}{2\\pi} = \\dfrac{200\\pi}{2\\pi} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( = 100\\ \\text{rev} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ α = 4π rad/s² ≈ 12.57 rad/s²   ·   θ = 200π rad   ·   number of revolutions = 100"
+      },
+      "sectionGroup": 12,
+      "sectionId": "example5",
+      "sectionNavLabel": "📝 Example 5"
+    },
+    {
+      "type": "simulation",
+      "svgId": "suvatSvg",
+      "svgAriaLabel": "A disc rotating with uniform angular acceleration",
+      "svgViewBox": "0 0 260 260",
+      "svgWidth": "260",
+      "svgHeight": "260",
+      "sectionHeading": "🕹️ Interactive simulation: the equations of uniformly accelerated rotational motion",
+      "descriptionHtml": "Drag the sliders to choose the initial angular velocity \\(\\omega_0\\) and the angular acceleration α, and watch the disc rotate according to equations (13) and (14), automatically restarting the cycle every \\(t\\) seconds.",
+      "controls": [
+        {
+          "labelHtml": "ω₀ = <span id=\"w0Val\">0</span> rad/s",
+          "inputId": "w0Slider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "5",
+          "inputStep": "0.5",
+          "inputValue": "0"
+        },
+        {
+          "labelHtml": "α = <span id=\"alphaVal\">3.14</span> rad/s²",
+          "inputId": "alphaSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "-3",
+          "inputMax": "4",
+          "inputStep": "0.1",
+          "inputValue": "3.14"
+        },
+        {
+          "labelHtml": "Cycle duration t = <span id=\"tEndVal\">10</span> s",
+          "inputId": "tEndSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "3",
+          "inputMax": "15",
+          "inputStep": "1",
+          "inputValue": "10"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": null,
+          "id": "suvatReadout"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 13,
+      "sectionId": "suvat-widget",
+      "sectionNavLabel": "🕹️ Uniformly-accelerated-rotation simulation",
+      "labels": {
+        "reducedMotionNotice": "Drag the sliders to see the computed values (the animated simulation is paused per your system's motion settings)."
+      }
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check your understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "For a body rotating with radius (r), the relation between angular acceleration (α) and tangential acceleration \\(a_T\\) is:",
+        "options": [
+          "\\( a_T = \\alpha/r \\)",
+          "\\( a_T = r\\alpha \\)",
+          "\\( a_T = r+\\alpha \\)",
+          "\\( a_T = r^2\\alpha \\)"
+        ],
+        "explain": "Equation (11): \\(a_T=r\\alpha\\)."
+      },
+      {
+        "correct": 1,
+        "question": "Angular acceleration becomes zero when:",
+        "options": [
+          "The angular velocity keeps changing",
+          "The linear speed around the circle's circumference stays constant",
+          "The radius increases",
+          "The body starts from rest"
+        ],
+        "explain": "Angular acceleration arises from a change in linear or angular speed; if the linear speed stays constant, the angular acceleration is zero."
+      },
+      {
+        "correct": 2,
+        "question": "If rotational motion starts from rest, the value of \\(\\omega_1\\) is substituted in the equations with:",
+        "options": [
+          "∞",
+          "1",
+          "Zero",
+          "2π"
+        ],
+        "explain": "Rest means there is no initial angular velocity, i.e. \\(\\omega_1=0\\)."
+      },
+      {
+        "correct": 1,
+        "question": "When a rotating body decelerates, the sign of the angular acceleration is:",
+        "options": [
+          "Always positive",
+          "Negative",
+          "Zero",
+          "Undetermined"
+        ],
+        "explain": "During deceleration, the angular acceleration carries a negative sign, because the angular velocity decreases with time."
+      },
+      {
+        "correct": 0,
+        "question": "The angular-displacement equation for uniformly accelerated rotational motion is:",
+        "options": [
+          "\\( \\theta-\\theta_0 = \\omega_0 t + \\tfrac{1}{2}\\alpha t^2 \\)",
+          "\\( \\theta = \\omega t \\)",
+          "\\( \\theta = \\alpha t^2 \\)",
+          "\\( \\theta = \\omega_0/\\alpha \\)"
+        ],
+        "explain": "Equation (14): \\(\\theta-\\theta_0=\\omega_0 t+\\tfrac{1}{2}\\alpha t^2\\), the counterpart of the linear-motion equation \\(s=v_1t+\\tfrac{1}{2}at^2\\)."
+      }
     ]
-   ],
-   "sectionGroup": 10,
-   "sectionId": null,
-   "sectionNavLabel": null
   },
-  {
-   "type": "callout",
-   "icon": "⚠️",
-   "strong": "Two important notes:",
-   "html": "If the motion starts from rest, \\((\\omega_1)\\) must be substituted with zero. And when decelerating, the angular acceleration carries a negative sign.",
-   "sectionGroup": 11,
-   "sectionId": null,
-   "sectionNavLabel": null
+  "summary": {
+    "heading": "📋 Lesson summary",
+    "items": [
+      "Angular acceleration \\(\\alpha=\\Delta\\omega/\\Delta t\\), related to tangential acceleration by \\(a_T=r\\alpha\\).",
+      "Average angular acceleration \\(\\alpha_{av}=(\\omega_2-\\omega_1)/(t_2-t_1)\\).",
+      "Equations of uniformly accelerated rotational motion: \\(\\omega=\\omega_0+\\alpha t\\), \\(\\theta-\\theta_0=\\omega_0t+\\tfrac12\\alpha t^2\\), \\(\\omega^2=\\omega_0^2+2\\alpha(\\theta-\\theta_0)\\).",
+      "Starting from rest: \\(\\omega_1=0\\). When decelerating: α is negative."
+    ]
   },
-  {
-   "type": "example",
-   "number": 2,
-   "problemHtml": "<p>An electric motor starts rotating from rest, and its angular velocity reaches (1200 rev/min) after a time of (10 s). What are its angular acceleration, the angular displacement it covers, and the total number of revolutions?</p>",
-   "solution": {
-    "given": [
-     "\\( \\omega_0 = 0 \\) — the motor starts rotating from rest",
-     "\\( \\omega = 1200\\ \\text{rev/min} \\) — the angular velocity after time t (needs converting to rad/s)",
-     "\\( t = 10\\ \\text{s} \\) — the time needed to reach this speed"
-    ],
-    "required": "Find the angular acceleration α, the angular displacement θ covered by the motor, and the total number of revolutions.",
-    "steps": [
-     {
-      "note": "Since the electric motor starts rotating from rest, \\(\\omega_0=0\\); convert the final angular velocity to (rad/s)",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( \\omega = \\dfrac{N\\times 2\\pi}{t} = \\dfrac{1200\\ (\\text{rev/min})\\times 2\\pi\\ (\\text{rad/rev})}{60\\ (\\text{s/min})} \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( \\omega = 40\\pi\\ \\text{rad/s} \\)"
-       }
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map for angular acceleration",
+    "viewBox": "0 0 480 240",
+    "center": {
+      "cx": 240.0,
+      "cy": 120.0,
+      "r": 50.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Angular acceleration"
       ]
-     },
-     {
-      "note": "Angular acceleration from equation (13): \\(\\omega=\\omega_0+\\alpha t\\)",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( 40\\pi = 0 + \\alpha(10) \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( \\alpha = 4\\pi\\ \\text{rad/s}^2 \\)"
-       }
-      ]
-     },
-     {
-      "note": "Angular displacement from equation (14): \\(\\theta-\\theta_0=\\omega_0 t+\\tfrac{1}{2}\\alpha t^2\\), where \\(\\theta_0=0,\\ \\omega_0=0\\)",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( \\theta = 0 + \\tfrac{1}{2}(4\\pi)(10)^2 \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( \\theta = 200\\pi\\ \\text{rad} \\)"
-       }
-      ]
-     },
-     {
-      "note": "Total number of revolutions: 1 rev = 2π rad",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( N = \\dfrac{\\theta}{2\\pi} = \\dfrac{200\\pi}{2\\pi} \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( = 100\\ \\text{rev} \\)"
-       }
-      ]
-     }
-    ],
-    "final": "✓ α = 4π rad/s² ≈ 12.57 rad/s²   ·   θ = 200π rad   ·   number of revolutions = 100"
-   },
-   "sectionGroup": 12,
-   "sectionId": "example5",
-   "sectionNavLabel": "📝 Example 5"
-  },
-  {
-   "type": "simulation",
-   "svgId": "suvatSvg",
-   "svgAriaLabel": "A disc rotating with uniform angular acceleration",
-   "svgViewBox": "0 0 260 260",
-   "svgWidth": "260",
-   "svgHeight": "260",
-   "sectionHeading": "🕹️ Interactive simulation: the equations of uniformly accelerated rotational motion",
-   "descriptionHtml": "Drag the sliders to choose the initial angular velocity \\(\\omega_0\\) and the angular acceleration α, and watch the disc rotate according to equations (13) and (14), automatically restarting the cycle every \\(t\\) seconds.",
-   "controls": [
-    {
-     "labelHtml": "ω₀ = <span id=\"w0Val\">0</span> rad/s",
-     "inputId": "w0Slider",
-     "rowId": null,
-     "rowStyle": null,
-     "inputType": "range",
-     "inputClass": "neu-range",
-     "inputMin": "0",
-     "inputMax": "5",
-     "inputStep": "0.5",
-     "inputValue": "0"
     },
-    {
-     "labelHtml": "α = <span id=\"alphaVal\">3.14</span> rad/s²",
-     "inputId": "alphaSlider",
-     "rowId": null,
-     "rowStyle": null,
-     "inputType": "range",
-     "inputClass": "neu-range",
-     "inputMin": "-3",
-     "inputMax": "4",
-     "inputStep": "0.1",
-     "inputValue": "3.14"
-    },
-    {
-     "labelHtml": "Cycle duration t = <span id=\"tEndVal\">10</span> s",
-     "inputId": "tEndSlider",
-     "rowId": null,
-     "rowStyle": null,
-     "inputType": "range",
-     "inputClass": "neu-range",
-     "inputMin": "3",
-     "inputMax": "15",
-     "inputStep": "1",
-     "inputValue": "10"
-    }
-   ],
-   "buttons": null,
-   "selectId": null,
-   "selectOptions": null,
-   "presets": null,
-   "ruleBoxes": [
-    {
-     "html": null,
-     "id": "suvatReadout"
-    }
-   ],
-   "trailingHtml": null,
-   "sectionGroup": 13,
-   "sectionId": "suvat-widget",
-   "sectionNavLabel": "🕹️ Uniformly-accelerated-rotation simulation",
-   "labels": {
-    "reducedMotionNotice": "Drag the sliders to see the computed values (the animated simulation is paused per your system's motion settings)."
-   }
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 44.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "α=Δω/Δt",
+          "aT=rα"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 195.0,
+        "r": 44.0,
+        "color": "#2fd18f",
+        "lines": [
+          "ω=ω₀+αt"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 45.0,
+        "r": 44.0,
+        "color": "#ffab5e",
+        "lines": [
+          "θ=ω₀t+½αt²"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 195.0,
+        "r": 44.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "ω²=ω₀²+2αθ"
+        ]
+      }
+    ]
   }
- ],
- "quiz": {
-  "heading": "🧠 Check your understanding",
-  "questions": [
-   {
-    "correct": 1,
-    "question": "For a body rotating with radius (r), the relation between angular acceleration (α) and tangential acceleration \\(a_T\\) is:",
-    "options": [
-     "\\( a_T = \\alpha/r \\)",
-     "\\( a_T = r\\alpha \\)",
-     "\\( a_T = r+\\alpha \\)",
-     "\\( a_T = r^2\\alpha \\)"
-    ],
-    "explain": "Equation (11): \\(a_T=r\\alpha\\)."
-   },
-   {
-    "correct": 1,
-    "question": "Angular acceleration becomes zero when:",
-    "options": [
-     "The angular velocity keeps changing",
-     "The linear speed around the circle's circumference stays constant",
-     "The radius increases",
-     "The body starts from rest"
-    ],
-    "explain": "Angular acceleration arises from a change in linear or angular speed; if the linear speed stays constant, the angular acceleration is zero."
-   },
-   {
-    "correct": 2,
-    "question": "If rotational motion starts from rest, the value of \\(\\omega_1\\) is substituted in the equations with:",
-    "options": [
-     "∞",
-     "1",
-     "Zero",
-     "2π"
-    ],
-    "explain": "Rest means there is no initial angular velocity, i.e. \\(\\omega_1=0\\)."
-   },
-   {
-    "correct": 1,
-    "question": "When a rotating body decelerates, the sign of the angular acceleration is:",
-    "options": [
-     "Always positive",
-     "Negative",
-     "Zero",
-     "Undetermined"
-    ],
-    "explain": "During deceleration, the angular acceleration carries a negative sign, because the angular velocity decreases with time."
-   },
-   {
-    "correct": 0,
-    "question": "The angular-displacement equation for uniformly accelerated rotational motion is:",
-    "options": [
-     "\\( \\theta-\\theta_0 = \\omega_0 t + \\tfrac{1}{2}\\alpha t^2 \\)",
-     "\\( \\theta = \\omega t \\)",
-     "\\( \\theta = \\alpha t^2 \\)",
-     "\\( \\theta = \\omega_0/\\alpha \\)"
-    ],
-    "explain": "Equation (14): \\(\\theta-\\theta_0=\\omega_0 t+\\tfrac{1}{2}\\alpha t^2\\), the counterpart of the linear-motion equation \\(s=v_1t+\\tfrac{1}{2}at^2\\)."
-   }
-  ]
- },
- "summary": {
-  "heading": "📋 Lesson summary",
-  "items": [
-   "Angular acceleration \\(\\alpha=\\Delta\\omega/\\Delta t\\), related to tangential acceleration by \\(a_T=r\\alpha\\).",
-   "Average angular acceleration \\(\\alpha_{av}=(\\omega_2-\\omega_1)/(t_2-t_1)\\).",
-   "Equations of uniformly accelerated rotational motion: \\(\\omega=\\omega_0+\\alpha t\\), \\(\\theta-\\theta_0=\\omega_0t+\\tfrac12\\alpha t^2\\), \\(\\omega^2=\\omega_0^2+2\\alpha(\\theta-\\theta_0)\\).",
-   "Starting from rest: \\(\\omega_1=0\\). When decelerating: α is negative."
-  ]
- },
- "mindmap": {
-  "heading": "🗺 Lesson Mind Map",
-  "ariaLabel": "Mind map for angular acceleration",
-  "viewBox": "0 0 480 240",
-  "center": {
-   "cx": 240.0,
-   "cy": 120.0,
-   "r": 50.0,
-   "color": "#7c6fee",
-   "lines": [
-    "Angular acceleration"
-   ]
-  },
-  "satellites": [
-   {
-    "cx": 100.0,
-    "cy": 45.0,
-    "r": 44.0,
-    "color": "#3fa9f5",
-    "lines": [
-     "α=Δω/Δt",
-     "aT=rα"
-    ]
-   },
-   {
-    "cx": 100.0,
-    "cy": 195.0,
-    "r": 44.0,
-    "color": "#2fd18f",
-    "lines": [
-     "ω=ω₀+αt"
-    ]
-   },
-   {
-    "cx": 380.0,
-    "cy": 45.0,
-    "r": 44.0,
-    "color": "#ffab5e",
-    "lines": [
-     "θ=ω₀t+½αt²"
-    ]
-   },
-   {
-    "cx": 380.0,
-    "cy": 195.0,
-    "r": 44.0,
-    "color": "#ff6b9d",
-    "lines": [
-     "ω²=ω₀²+2αθ"
-    ]
-   }
-  ]
- }
 }

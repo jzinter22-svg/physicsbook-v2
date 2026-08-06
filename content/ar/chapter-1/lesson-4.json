@@ -1,488 +1,488 @@
 {
- "lessonNumber": 4,
- "chapterNumber": 1,
- "meta": {
-  "pageTitle": "الدرس 4: الازاحة والسرعة الزاويتان — الفصل الأول",
-  "description": "5-1 الحركة الدورانية: المقادير الفيزيائية المتناظرة، 1-5-1 الازاحة الزاوية، 2-5-1 السرعة الزاوية وعلاقتها بالسرعة الخطية، مع مثال محلول عن مروحة دوارة.",
-  "breadcrumbChapter": "الفصل 1",
-  "breadcrumbLesson": "الازاحة والسرعة الزاويتان",
-  "footer": "الفصل الأول: الحركة الدائرية والدورانية — الدرس 4: الازاحة والسرعة الزاويتان"
- },
- "hero": {
-  "eyebrow": "📖 الدرس 4 من 8 · الفصل الأول",
-  "title": "الازاحة والسرعة الزاويتان",
-  "lead": "5-1 الحركة الدورانية · 1-5-1 الازاحة الزاوية (θ) · 2-5-1 السرعة الزاوية (ω)"
- },
- "objectivesHeading": "🎯 أهداف الدرس",
- "objectives": [
-  "يوضّح المفهوم العام للحركة الدورانية ويقارنها بالحركة الخطية بدلالة المقادير المتناظرة.",
-  "يعرّف الازاحة الزاوية (θ) ويشتق العلاقة بينها وبين الازاحة الخطية (S).",
-  "يعرّف السرعة الزاوية (ω) ويشتق العلاقة \\(v_T=\\omega r\\) باستخدام قاعدة اليد اليمنى لتحديد اتجاهها.",
-  "يحسب السرعة الزاوية والسرعة المماسية من معطيات عملية."
- ],
- "content": [
-  {
-   "type": "explanation",
-   "heading": "💡 5-1 الحركة الدورانية",
-   "html": "إن معظم أنواع الحركة في حياتنا اليومية تتألف من انتقال الجسم ودورانه حول محور معين في نفس الوقت، مثل دوران الارض حول محورها دورةً واحدةً كل 24 ساعة، وتدور دورة واحدة حول الشمس لكل 365 يوماً. كذلك حركة عجلة السيارة التي تشتمل على الحركتين الدورانية والانتقالية.</p><p>توصف الحركة الدورانية بدلالة الازاحة الزاوية (θ) والسرعة الزاوية (ω) والتعجيل الزاوي (α). وفي جميع الحالات يمكن تعويض المقادير الفيزيائية في الحركة الدورانية بدلاً من المقادير الفيزيائية في الحركة الخطية ولجميع القوانين كما هو في الجدول (1-1).",
-   "sectionGroup": 0,
-   "sectionId": "content",
-   "sectionNavLabel": "💡 الشرح"
+  "lessonNumber": 4,
+  "chapterNumber": 1,
+  "meta": {
+    "pageTitle": "الدرس 4: الازاحة والسرعة الزاويتان — الفصل الأول",
+    "description": "5-1 الحركة الدورانية: المقادير الفيزيائية المتناظرة، 1-5-1 الازاحة الزاوية، 2-5-1 السرعة الزاوية وعلاقتها بالسرعة الخطية، مع مثال محلول عن مروحة دوارة.",
+    "breadcrumbChapter": "الفصل 1",
+    "breadcrumbLesson": "الازاحة والسرعة الزاويتان",
+    "footer": "الفصل الأول: الحركة الدائرية والدورانية — الدرس 4: الازاحة والسرعة الزاويتان"
   },
-  {
-   "type": "table",
-   "heading": "📊 جدول 1-1: المقادير الفيزياوية للحركة الخطية والحركة الدورانية",
-   "headers": [
-    "المقدار الفيزيائي",
-    "الحركة الخطية",
-    "الحركة الدورانية"
-   ],
-   "rows": [
-    [
-     "الكتلة",
-     "m",
-     "نعوض بدل الكتلة بعزم القصور الذاتي I"
-    ],
-    [
-     "الازاحة",
-     "S",
-     "θ"
-    ],
-    [
-     "السرعة",
-     "v",
-     "ω"
-    ],
-    [
-     "التعجيل",
-     "a",
-     "α"
-    ],
-    [
-     "القوة",
-     "F",
-     "نعوض بدل القوة بالعزم المدور τ"
-    ]
-   ],
-   "sectionGroup": 1,
-   "sectionId": null,
-   "sectionNavLabel": null
+  "hero": {
+    "eyebrow": "📖 الدرس 4 من 8 · الفصل الأول",
+    "title": "الازاحة والسرعة الزاويتان",
+    "lead": "5-1 الحركة الدورانية · 1-5-1 الازاحة الزاوية (θ) · 2-5-1 السرعة الزاوية (ω)"
   },
-  {
-   "type": "definition",
-   "label": "📌 1-5-1 الازاحة الزاوية",
-   "html": "هي الزاوية المركزية التي يقطعها الجسم المتحرك دورانيًا حيث إذا تحرك جسيم على مسار دائري نصف قطره (r) وانتقل من النقطة (A) الى النقطة (B) قاطعًا قوسًا طوله (S) على محيط الدائرة، فالزاوية المقابلة للقوس تدعى بالإزاحة الزاوية ويرمز لها بالرمز (θ)، ويكون اتجاهها موجبًا اذا كانت عكس اتجاه عقارب الساعة وسالبًا اذا كان اتجاهها مع اتجاه عقارب الساعة، وتقاس بوحدات نصف القطرية (rad).",
-   "sectionGroup": 2,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "<p style=\"margin:0 0 .5rem;font-weight:700\">الزاوية بالتقدير الدائري = طول القوس ÷ نصف القطر</p>\n      $$ \\theta_{\\text{rad}} = \\dfrac{S}{r} \\qquad \\text{...(1)} $$",
-   "sectionGroup": 3,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ \\therefore\\ S = r\\theta \\qquad \\text{...(2)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">وهذه العلاقة تربط بين الازاحة الخطية (S) والازاحة الزاوية (θ) لها.</p>",
-   "sectionGroup": 4,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "callout",
-   "icon": "📝",
-   "strong": "",
-   "html": "الزاوية النصف قطرية (Radian) لا تقاس بالمتر أو اجزائه أو اكبر منه لأن وحدات الازاحة الزاوية ليست فقط قطرية، وأنما يمكن تقدير الازاحة الزاوية بالدرجات الستينية أو بعدد الدورات؛ لذا فأن الدورة الكاملة تعادل (2π) بالمقياس الستيني وتقابل (360°) بالمقياس القطري، أي أن:",
-   "sectionGroup": 5,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ 1\\ \\text{revolution} = 2\\pi\\ (\\text{rad}) = 360^{\\circ} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">أي أن عدد الدورات = \\( \\dfrac{\\theta}{2\\pi} \\)</p>",
-   "sectionGroup": 6,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "simulation",
-   "svgId": "thetaSvg",
-   "svgAriaLabel": "جسيم يتحرك على منحنى دائرة قاطعًا زاوية وقوسًا",
-   "svgViewBox": "0 0 320 240",
-   "svgWidth": "320",
-   "svgHeight": "240",
-   "sectionHeading": "🕹️ إعادة إنشاء الشكل 1-7: الازاحة الزاوية والقوس",
-   "descriptionHtml": "حرّك مزلاج الزاوية θ لمشاهدة الجسم ينتقل من A إلى B، ولاحظ كيف يتغيّر طول القوس الممسوح S بحسب العلاقة \\(S=r\\theta\\).",
-   "controls": [
+  "objectivesHeading": "🎯 أهداف الدرس",
+  "objectives": [
+    "يوضّح المفهوم العام للحركة الدورانية ويقارنها بالحركة الخطية بدلالة المقادير المتناظرة.",
+    "يعرّف الازاحة الزاوية (θ) ويشتق العلاقة بينها وبين الازاحة الخطية (S).",
+    "يعرّف السرعة الزاوية (ω) ويشتق العلاقة \\(v_T=\\omega r\\) باستخدام قاعدة اليد اليمنى لتحديد اتجاهها.",
+    "يحسب السرعة الزاوية والسرعة المماسية من معطيات عملية."
+  ],
+  "content": [
     {
-     "labelHtml": "θ = <span id=\"thetaDegVal\">60</span>° (<span id=\"thetaRadVal\">1.05</span> rad)",
-     "inputId": "thetaSlider",
-     "rowId": null,
-     "rowStyle": null,
-     "inputType": "range",
-     "inputClass": "neu-range",
-     "inputMin": "0",
-     "inputMax": "300",
-     "inputStep": "1",
-     "inputValue": "60"
-    }
-   ],
-   "buttons": null,
-   "selectId": null,
-   "selectOptions": null,
-   "presets": null,
-   "ruleBoxes": [
-    {
-     "html": "نصف القطر r = 2 m ← طول القوس \\( S=r\\theta= \\) <b id=\"arcLenVal\">2.09</b> m",
-     "id": null
-    }
-   ],
-   "trailingHtml": null,
-   "sectionGroup": 7,
-   "sectionId": "theta-widget",
-   "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 7-1"
-  },
-  {
-   "type": "definition",
-   "label": "📌 2-5-1 السرعة الزاوية",
-   "html": "نلاحظ أيضًا أن (S) تتغير مع تغير (θ) وبثبوت نصف قطر الدائرة، وعليه:",
-   "sectionGroup": 8,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ \\Delta S = r\\Delta\\theta \\qquad \\text{...(3)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">وبقسمة طرفي المعادلة (3) على (Δt) نحصل على:</p>\n      $$ \\dfrac{\\Delta S}{\\Delta t} = r\\dfrac{\\Delta\\theta}{\\Delta t} \\qquad \\text{...(4)} $$",
-   "sectionGroup": 9,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "<p style=\"margin:0 0 .4rem\">تمثل \\( \\dfrac{\\Delta S}{\\Delta t} \\) السرعة الخطية المماسية لمحيط الدائرة ويرمز لها بالرمز \\(v_T\\)، أي إن:</p>\n      $$ v_T = \\dfrac{\\Delta S}{\\Delta t} \\qquad \\text{...(5)} $$",
-   "sectionGroup": 10,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "<p style=\"margin:0 0 .4rem\">أما \\( \\dfrac{\\Delta\\theta}{\\Delta t} \\) فإنها تمثل التغيّر في الزاوية القطرية مع الزمن، وتدعى بالسرعة الزاوية ويرمز لها بالرمز (ω)، وتقاس بوحدات (rad/s)، أي إن:</p>\n      $$ \\omega = \\dfrac{\\Delta\\theta}{\\Delta t} \\qquad \\text{...(6)} $$",
-   "sectionGroup": 11,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "callout",
-   "icon": "📝",
-   "strong": "",
-   "html": "تُعدّ السرعة الزاوية من المقادير الفيزيائية الاتجاهية، ويكون اتجاهها عموديًا على المستوي الذي يحتوي (r) و(vT)، ويتم تحديدها باستعمال قاعدة اليد اليمنى.",
-   "sectionGroup": 12,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "simulation",
-   "svgId": "rhrSvg",
-   "svgAriaLabel": "قاعدة اليد اليمنى لتحديد اتجاه السرعة الزاوية",
-   "svgViewBox": "0 0 320 300",
-   "svgWidth": "320",
-   "svgHeight": "300",
-   "sectionHeading": "🕹️ إعادة إنشاء الشكل 1-8: قاعدة اليد اليمنى لاتجاه ω",
-   "descriptionHtml": "اضغط الزر لعكس اتجاه الدوران، ولاحظ كيف ينعكس اتجاه متجه السرعة الزاوية (ω) وفق قاعدة اليد اليمنى: لفّ أصابع اليد اليمنى باتجاه الدوران فيشير الإبهام إلى اتجاه ω.",
-   "controls": [],
-   "buttons": [
-    {
-     "id": "rhrToggle",
-     "html": "↺ عكس اتجاه الدوران"
-    }
-   ],
-   "selectId": null,
-   "selectOptions": null,
-   "presets": null,
-   "ruleBoxes": [],
-   "trailingHtml": null,
-   "sectionGroup": 13,
-   "sectionId": "rhr-widget",
-   "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 8-1",
-   "labels": {
-    "rhrCW": "دوران مع عقارب الساعة → ω للداخل ⊗",
-    "rhrCCW": "دوران عكس عقارب الساعة → ω للخارج ⊙"
-   }
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "<p style=\"margin:0 0 .4rem\">وبتعويض العلاقة (5) و(6) في (4) نحصل على:</p>\n      $$ v_T = \\omega r \\qquad \\text{...(7)} $$",
-   "sectionGroup": 14,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "<p style=\"margin:0 0 .4rem\">وعند دوران الجسم دورة كاملة فإن مقدار الازاحة الزاوية تساوي (2π)، فتصبح السرعة الزاوية بعد التعويض بالمعادلة (7):</p>\n      $$ \\omega = \\dfrac{2\\pi}{t} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">إذ إن t: يمثل زمن الدورة الكاملة، ومقلوب هذا الزمن يدعى بالتردد ويرمز له بالرمز (f) ويقاس بوحدات (دورة/ثانية) أو الهيرتز (Hz)، فتصبح السرعة الزاوية بدلالة التردد:</p>\n      $$ \\omega = 2\\pi f $$\n      <p style=\"margin:.4rem 0 0;font-size:.95rem\">ويسمى هنا بالتردد الزاوي.</p>",
-   "sectionGroup": 15,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "callout",
-   "icon": "💡",
-   "strong": "هل تعلم؟",
-   "html": "أن مشغل الاقراص المرنة (CD) يحتوي على محرك يقوم بتدوير القرص بتحكم المرن الذي يتراوح ما بين 200 الى 500 دورة في الدقيقة ليقوم شعاع الليزر بقراءة المعلومات المثبتة على القرص.",
-   "sectionGroup": 16,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "example",
-   "number": 1,
-   "problemHtml": "<p>مروحة تدور بمعدل (900 rpm) (أي 900 دورة/دقيقة).</p><p>(a) احسب السرعة الزاوية لأي نقطة على إحدى ريش المروحة.</p><p>(b) احسب السرعة المماسية لحافة الريشة إذا كانت المسافة من المركز الى الحافة (20 cm).</p>",
-   "solution": {
-    "given": [
-     "\\( N = 900\\ \\text{rpm} = 900 \\) دورة/دقيقة — معدل دوران المروحة",
-     "\\( t = 60\\ \\text{s} \\) — الزمن المقابل لعدد الدورات (لتحويل الوحدات إلى ثوانٍ)",
-     "\\( r = 20\\ \\text{cm} = 0.20\\ \\text{m} \\) — المسافة من المركز إلى حافة الريشة (بعد التحويل)"
-    ],
-    "required": "(a) احسب السرعة الزاوية ω لأي نقطة على إحدى ريش المروحة. (b) احسب السرعة المماسية v لحافة الريشة.",
-    "steps": [
-     {
-      "note": "(a) السرعة الزاوية: عدد الدورات N=900 خلال t=60 s",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( \\omega = \\dfrac{N\\times 2\\pi}{t} = \\dfrac{900\\times 2\\pi}{60} \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( \\omega = 30\\pi\\ \\text{rad/s} \\approx 94.2\\ \\text{rad/s} \\)"
-       }
-      ]
-     },
-     {
-      "note": "(b) السرعة المماسية عند r=20 cm=0.20 m",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( v = \\omega r = 30\\pi \\times 0.20 \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( v = 30\\times 3.14\\times 0.20 = 18.84\\ \\text{m/s} \\)"
-       }
-      ]
-     }
-    ],
-    "final": "✓ ω = 30π rad/s ≈ 94.2 rad/s   ·   v = 18.84 m/s"
-   },
-   "sectionGroup": 17,
-   "sectionId": "example3",
-   "sectionNavLabel": "📝 مثال 3"
-  },
-  {
-   "type": "paragraph",
-   "html": "ولنفرض أن جسمًا يدور في مسار دائري نصف قطره (r)، فإن موضعه الزاوي في أي لحظة يتحدد بمقدار الازاحة الزاوية (θ)، فإذا كان موضع الجسم عند الزمن \\((t_1)\\) هو \\((\\theta_1)\\) ثم صار عند موضع \\((\\theta_2)\\) في الزمن \\((t_2)\\)، لذلك نجد أنه قد دار ازاحة زاوية مقدارها:</p><p>\\( \\Delta\\theta = \\theta_2 - \\theta_1 \\) خلال فترة زمنية: \\( \\Delta t = t_2 - t_1 \\)</p><p>وعليه يعرّف معدل السرعة الزاوية:",
-   "sectionGroup": 18,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ \\omega_{av} = \\dfrac{\\Delta\\theta}{\\Delta t} = \\dfrac{\\theta_2-\\theta_1}{t_2-t_1} \\qquad \\text{...(8)} $$",
-   "sectionGroup": 19,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "simulation",
-   "svgId": "omegaAvSvg",
-   "svgAriaLabel": "موضعان زاويان A و B على دائرة ومعدل السرعة الزاوية بينهما",
-   "svgViewBox": "0 0 320 240",
-   "svgWidth": "320",
-   "svgHeight": "240",
-   "sectionHeading": "🕹️ إعادة إنشاء الشكل 1-9: معدل السرعة الزاوية",
-   "descriptionHtml": "حرّك المزلاجين لتحديد موضعي الجسم A (عند θ₁) وB (عند θ₂)، ولاحظ كيف يُحسب معدل السرعة الزاوية بين الموضعين خلال فترة زمنية ثابتة قدرها 1 ثانية.",
-   "controls": [
-    {
-     "labelHtml": "θ₁ = <span id=\"theta1Val\">20</span>°",
-     "inputId": "theta1Slider",
-     "rowId": null,
-     "rowStyle": null,
-     "inputType": "range",
-     "inputClass": "neu-range",
-     "inputMin": "0",
-     "inputMax": "340",
-     "inputStep": "1",
-     "inputValue": "20"
+      "type": "explanation",
+      "heading": "💡 5-1 الحركة الدورانية",
+      "html": "إن معظم أنواع الحركة في حياتنا اليومية تتألف من انتقال الجسم ودورانه حول محور معين في نفس الوقت، مثل دوران الارض حول محورها دورةً واحدةً كل 24 ساعة، وتدور دورة واحدة حول الشمس لكل 365 يوماً. كذلك حركة عجلة السيارة التي تشتمل على الحركتين الدورانية والانتقالية.</p><p>توصف الحركة الدورانية بدلالة الازاحة الزاوية (θ) والسرعة الزاوية (ω) والتعجيل الزاوي (α). وفي جميع الحالات يمكن تعويض المقادير الفيزيائية في الحركة الدورانية بدلاً من المقادير الفيزيائية في الحركة الخطية ولجميع القوانين كما هو في الجدول (1-1).",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 الشرح"
     },
     {
-     "labelHtml": "θ₂ = <span id=\"theta2Val\">110</span>°",
-     "inputId": "theta2Slider",
-     "rowId": null,
-     "rowStyle": null,
-     "inputType": "range",
-     "inputClass": "neu-range",
-     "inputMin": "0",
-     "inputMax": "340",
-     "inputStep": "1",
-     "inputValue": "110"
-    }
-   ],
-   "buttons": null,
-   "selectId": null,
-   "selectOptions": null,
-   "presets": null,
-   "ruleBoxes": [
+      "type": "table",
+      "heading": "📊 جدول 1-1: المقادير الفيزياوية للحركة الخطية والحركة الدورانية",
+      "headers": [
+        "المقدار الفيزيائي",
+        "الحركة الخطية",
+        "الحركة الدورانية"
+      ],
+      "rows": [
+        [
+          "الكتلة",
+          "m",
+          "نعوض بدل الكتلة بعزم القصور الذاتي I"
+        ],
+        [
+          "الازاحة",
+          "S",
+          "θ"
+        ],
+        [
+          "السرعة",
+          "v",
+          "ω"
+        ],
+        [
+          "التعجيل",
+          "a",
+          "α"
+        ],
+        [
+          "القوة",
+          "F",
+          "نعوض بدل القوة بالعزم المدور τ"
+        ]
+      ],
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
     {
-     "html": "\\( \\omega_{av} = \\dfrac{\\theta_2-\\theta_1}{\\Delta t} = \\) <b id=\"omegaAvVal\">1.57</b> rad/s (بافتراض Δt = 1 s)",
-     "id": null
+      "type": "definition",
+      "label": "📌 1-5-1 الازاحة الزاوية",
+      "html": "هي الزاوية المركزية التي يقطعها الجسم المتحرك دورانيًا حيث إذا تحرك جسيم على مسار دائري نصف قطره (r) وانتقل من النقطة (A) الى النقطة (B) قاطعًا قوسًا طوله (S) على محيط الدائرة، فالزاوية المقابلة للقوس تدعى بالإزاحة الزاوية ويرمز لها بالرمز (θ)، ويكون اتجاهها موجبًا اذا كانت عكس اتجاه عقارب الساعة وسالبًا اذا كان اتجاهها مع اتجاه عقارب الساعة، وتقاس بوحدات نصف القطرية (rad).",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .5rem;font-weight:700\">الزاوية بالتقدير الدائري = طول القوس ÷ نصف القطر</p>\n      $$ \\theta_{\\text{rad}} = \\dfrac{S}{r} \\qquad \\text{...(1)} $$",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\therefore\\ S = r\\theta \\qquad \\text{...(2)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">وهذه العلاقة تربط بين الازاحة الخطية (S) والازاحة الزاوية (θ) لها.</p>",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "📝",
+      "strong": "",
+      "html": "الزاوية النصف قطرية (Radian) لا تقاس بالمتر أو اجزائه أو اكبر منه لأن وحدات الازاحة الزاوية ليست فقط قطرية، وأنما يمكن تقدير الازاحة الزاوية بالدرجات الستينية أو بعدد الدورات؛ لذا فأن الدورة الكاملة تعادل (2π) بالمقياس الستيني وتقابل (360°) بالمقياس القطري، أي أن:",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ 1\\ \\text{revolution} = 2\\pi\\ (\\text{rad}) = 360^{\\circ} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">أي أن عدد الدورات = \\( \\dfrac{\\theta}{2\\pi} \\)</p>",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "thetaSvg",
+      "svgAriaLabel": "جسيم يتحرك على منحنى دائرة قاطعًا زاوية وقوسًا",
+      "svgViewBox": "0 0 320 240",
+      "svgWidth": "320",
+      "svgHeight": "240",
+      "sectionHeading": "🕹️ إعادة إنشاء الشكل 1-7: الازاحة الزاوية والقوس",
+      "descriptionHtml": "حرّك مزلاج الزاوية θ لمشاهدة الجسم ينتقل من A إلى B، ولاحظ كيف يتغيّر طول القوس الممسوح S بحسب العلاقة \\(S=r\\theta\\).",
+      "controls": [
+        {
+          "labelHtml": "θ = <span id=\"thetaDegVal\">60</span>° (<span id=\"thetaRadVal\">1.05</span> rad)",
+          "inputId": "thetaSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "300",
+          "inputStep": "1",
+          "inputValue": "60"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "نصف القطر r = 2 m ← طول القوس \\( S=r\\theta= \\) <b id=\"arcLenVal\">2.09</b> m",
+          "id": null
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 7,
+      "sectionId": "theta-widget",
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 7-1"
+    },
+    {
+      "type": "definition",
+      "label": "📌 2-5-1 السرعة الزاوية",
+      "html": "نلاحظ أيضًا أن (S) تتغير مع تغير (θ) وبثبوت نصف قطر الدائرة، وعليه:",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\Delta S = r\\Delta\\theta \\qquad \\text{...(3)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">وبقسمة طرفي المعادلة (3) على (Δt) نحصل على:</p>\n      $$ \\dfrac{\\Delta S}{\\Delta t} = r\\dfrac{\\Delta\\theta}{\\Delta t} \\qquad \\text{...(4)} $$",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .4rem\">تمثل \\( \\dfrac{\\Delta S}{\\Delta t} \\) السرعة الخطية المماسية لمحيط الدائرة ويرمز لها بالرمز \\(v_T\\)، أي إن:</p>\n      $$ v_T = \\dfrac{\\Delta S}{\\Delta t} \\qquad \\text{...(5)} $$",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .4rem\">أما \\( \\dfrac{\\Delta\\theta}{\\Delta t} \\) فإنها تمثل التغيّر في الزاوية القطرية مع الزمن، وتدعى بالسرعة الزاوية ويرمز لها بالرمز (ω)، وتقاس بوحدات (rad/s)، أي إن:</p>\n      $$ \\omega = \\dfrac{\\Delta\\theta}{\\Delta t} \\qquad \\text{...(6)} $$",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "📝",
+      "strong": "",
+      "html": "تُعدّ السرعة الزاوية من المقادير الفيزيائية الاتجاهية، ويكون اتجاهها عموديًا على المستوي الذي يحتوي (r) و(vT)، ويتم تحديدها باستعمال قاعدة اليد اليمنى.",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "rhrSvg",
+      "svgAriaLabel": "قاعدة اليد اليمنى لتحديد اتجاه السرعة الزاوية",
+      "svgViewBox": "0 0 320 300",
+      "svgWidth": "320",
+      "svgHeight": "300",
+      "sectionHeading": "🕹️ إعادة إنشاء الشكل 1-8: قاعدة اليد اليمنى لاتجاه ω",
+      "descriptionHtml": "اضغط الزر لعكس اتجاه الدوران، ولاحظ كيف ينعكس اتجاه متجه السرعة الزاوية (ω) وفق قاعدة اليد اليمنى: لفّ أصابع اليد اليمنى باتجاه الدوران فيشير الإبهام إلى اتجاه ω.",
+      "controls": [],
+      "buttons": [
+        {
+          "id": "rhrToggle",
+          "html": "↺ عكس اتجاه الدوران"
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "sectionGroup": 13,
+      "sectionId": "rhr-widget",
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 8-1",
+      "labels": {
+        "rhrCW": "دوران مع عقارب الساعة → ω للداخل ⊗",
+        "rhrCCW": "دوران عكس عقارب الساعة → ω للخارج ⊙"
+      }
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .4rem\">وبتعويض العلاقة (5) و(6) في (4) نحصل على:</p>\n      $$ v_T = \\omega r \\qquad \\text{...(7)} $$",
+      "sectionGroup": 14,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .4rem\">وعند دوران الجسم دورة كاملة فإن مقدار الازاحة الزاوية تساوي (2π)، فتصبح السرعة الزاوية بعد التعويض بالمعادلة (7):</p>\n      $$ \\omega = \\dfrac{2\\pi}{t} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">إذ إن t: يمثل زمن الدورة الكاملة، ومقلوب هذا الزمن يدعى بالتردد ويرمز له بالرمز (f) ويقاس بوحدات (دورة/ثانية) أو الهيرتز (Hz)، فتصبح السرعة الزاوية بدلالة التردد:</p>\n      $$ \\omega = 2\\pi f $$\n      <p style=\"margin:.4rem 0 0;font-size:.95rem\">ويسمى هنا بالتردد الزاوي.</p>",
+      "sectionGroup": 15,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "هل تعلم؟",
+      "html": "أن مشغل الاقراص المرنة (CD) يحتوي على محرك يقوم بتدوير القرص بتحكم المرن الذي يتراوح ما بين 200 الى 500 دورة في الدقيقة ليقوم شعاع الليزر بقراءة المعلومات المثبتة على القرص.",
+      "sectionGroup": 16,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>مروحة تدور بمعدل (900 rpm) (أي 900 دورة/دقيقة).</p><p>(a) احسب السرعة الزاوية لأي نقطة على إحدى ريش المروحة.</p><p>(b) احسب السرعة المماسية لحافة الريشة إذا كانت المسافة من المركز الى الحافة (20 cm).</p>",
+      "solution": {
+        "given": [
+          "\\( N = 900\\ \\text{rpm} = 900 \\) دورة/دقيقة — معدل دوران المروحة",
+          "\\( t = 60\\ \\text{s} \\) — الزمن المقابل لعدد الدورات (لتحويل الوحدات إلى ثوانٍ)",
+          "\\( r = 20\\ \\text{cm} = 0.20\\ \\text{m} \\) — المسافة من المركز إلى حافة الريشة (بعد التحويل)"
+        ],
+        "required": "(a) احسب السرعة الزاوية ω لأي نقطة على إحدى ريش المروحة. (b) احسب السرعة المماسية v لحافة الريشة.",
+        "steps": [
+          {
+            "note": "(a) السرعة الزاوية: عدد الدورات N=900 خلال t=60 s",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\omega = \\dfrac{N\\times 2\\pi}{t} = \\dfrac{900\\times 2\\pi}{60} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\omega = 30\\pi\\ \\text{rad/s} \\approx 94.2\\ \\text{rad/s} \\)"
+              }
+            ]
+          },
+          {
+            "note": "(b) السرعة المماسية عند r=20 cm=0.20 m",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( v = \\omega r = 30\\pi \\times 0.20 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( v = 30\\times 3.14\\times 0.20 = 18.84\\ \\text{m/s} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ ω = 30π rad/s ≈ 94.2 rad/s   ·   v = 18.84 m/s"
+      },
+      "sectionGroup": 17,
+      "sectionId": "example3",
+      "sectionNavLabel": "📝 مثال 3"
+    },
+    {
+      "type": "paragraph",
+      "html": "ولنفرض أن جسمًا يدور في مسار دائري نصف قطره (r)، فإن موضعه الزاوي في أي لحظة يتحدد بمقدار الازاحة الزاوية (θ)، فإذا كان موضع الجسم عند الزمن \\((t_1)\\) هو \\((\\theta_1)\\) ثم صار عند موضع \\((\\theta_2)\\) في الزمن \\((t_2)\\)، لذلك نجد أنه قد دار ازاحة زاوية مقدارها:</p><p>\\( \\Delta\\theta = \\theta_2 - \\theta_1 \\) خلال فترة زمنية: \\( \\Delta t = t_2 - t_1 \\)</p><p>وعليه يعرّف معدل السرعة الزاوية:",
+      "sectionGroup": 18,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\omega_{av} = \\dfrac{\\Delta\\theta}{\\Delta t} = \\dfrac{\\theta_2-\\theta_1}{t_2-t_1} \\qquad \\text{...(8)} $$",
+      "sectionGroup": 19,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "omegaAvSvg",
+      "svgAriaLabel": "موضعان زاويان A و B على دائرة ومعدل السرعة الزاوية بينهما",
+      "svgViewBox": "0 0 320 240",
+      "svgWidth": "320",
+      "svgHeight": "240",
+      "sectionHeading": "🕹️ إعادة إنشاء الشكل 1-9: معدل السرعة الزاوية",
+      "descriptionHtml": "حرّك المزلاجين لتحديد موضعي الجسم A (عند θ₁) وB (عند θ₂)، ولاحظ كيف يُحسب معدل السرعة الزاوية بين الموضعين خلال فترة زمنية ثابتة قدرها 1 ثانية.",
+      "controls": [
+        {
+          "labelHtml": "θ₁ = <span id=\"theta1Val\">20</span>°",
+          "inputId": "theta1Slider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "340",
+          "inputStep": "1",
+          "inputValue": "20"
+        },
+        {
+          "labelHtml": "θ₂ = <span id=\"theta2Val\">110</span>°",
+          "inputId": "theta2Slider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "340",
+          "inputStep": "1",
+          "inputValue": "110"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "\\( \\omega_{av} = \\dfrac{\\theta_2-\\theta_1}{\\Delta t} = \\) <b id=\"omegaAvVal\">1.57</b> rad/s (بافتراض Δt = 1 s)",
+          "id": null
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 20,
+      "sectionId": "omega-av-widget",
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 9-1"
     }
-   ],
-   "trailingHtml": null,
-   "sectionGroup": 20,
-   "sectionId": "omega-av-widget",
-   "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 9-1"
-  }
- ],
- "quiz": {
-  "heading": "🧠 اختبر فهمك",
-  "questions": [
-   {
-    "correct": 2,
-    "question": "في الحركة الدورانية، المقدار المناظر للكتلة (m) في الحركة الخطية هو:",
-    "options": [
-     "الازاحة الزاوية θ",
-     "السرعة الزاوية ω",
-     "عزم القصور الذاتي I",
-     "العزم المدور τ"
-    ],
-    "explain": "وفق الجدول (1-1)، يُستعاض عن الكتلة (m) في الحركة الدورانية بعزم القصور الذاتي (I)."
-   },
-   {
-    "correct": 0,
-    "question": "العلاقة بين الازاحة الخطية (S) والازاحة الزاوية (θ) لجسم يدور بنصف قطر (r) هي:",
-    "options": [
-     "\\( S = r\\theta \\)",
-     "\\( S = \\theta/r \\)",
-     "\\( S = r/\\theta \\)",
-     "\\( S = r+\\theta \\)"
-    ],
-    "explain": "من تعريف الزاوية النصف قطرية: \\(\\theta=S/r\\)، وبالتالي \\(S=r\\theta\\)."
-   },
-   {
-    "correct": 1,
-    "question": "الدورة الكاملة الواحدة (360°) تعادل بالمقياس القطري (Radian):",
-    "options": [
-     "π rad",
-     "2π rad",
-     "π/2 rad",
-     "4π rad"
-    ],
-    "explain": "1 دورة = 2π (rad) = 360°."
-   },
-   {
-    "correct": 3,
-    "question": "العلاقة بين السرعة المماسية \\(v_T\\) والسرعة الزاوية ω لجسم يدور بنصف قطر r هي:",
-    "options": [
-     "\\( v_T = \\omega/r \\)",
-     "\\( v_T = \\omega + r \\)",
-     "\\( v_T = \\omega^2 r \\)",
-     "\\( v_T = \\omega r \\)"
-    ],
-    "explain": "المعادلة (7): \\(v_T=\\omega r\\)."
-   },
-   {
-    "correct": 2,
-    "question": "يُحدَّد اتجاه متجه السرعة الزاوية (ω) باستعمال:",
-    "options": [
-     "قاعدة القوة المركزية",
-     "قانون نيوتن الثالث",
-     "قاعدة اليد اليمنى",
-     "قانون كبلر الثاني"
-    ],
-    "explain": "يُستعمل اتجاه إبهام اليد اليمنى عند لفّ الأصابع باتجاه الدوران لتحديد اتجاه ω، وهو عمودي على مستوي (r) و(vT)."
-   }
-  ]
- },
- "summary": {
-  "heading": "📋 ملخص الدرس",
-  "items": [
-   "الازاحة الزاوية θ=S/r، وبالتالي S=rθ، وتقاس بالراديان أو الدرجات أو عدد الدورات (1 دورة=2π rad=360°).",
-   "السرعة الزاوية ω=Δθ/Δt، وترتبط بالسرعة المماسية بالعلاقة \\(v_T=\\omega r\\).",
-   "اتجاه ω يُحدَّد بقاعدة اليد اليمنى، وهو عمودي على مستوي r و vT.",
-   "معدل السرعة الزاوية \\(\\omega_{av}=(\\theta_2-\\theta_1)/(t_2-t_1)\\)."
-  ]
- },
- "mindmap": {
-  "heading": "🗺 خريطة الدرس الذهنية",
-  "ariaLabel": "خريطة الازاحة والسرعة الزاويتين الذهنية",
-  "viewBox": "0 0 480 240",
-  "center": {
-   "cx": 240.0,
-   "cy": 120.0,
-   "r": 50.0,
-   "color": "#7c6fee",
-   "lines": [
-    "الحركة الدورانية"
-   ]
+  ],
+  "quiz": {
+    "heading": "🧠 اختبر فهمك",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "في الحركة الدورانية، المقدار المناظر للكتلة (m) في الحركة الخطية هو:",
+        "options": [
+          "الازاحة الزاوية θ",
+          "السرعة الزاوية ω",
+          "عزم القصور الذاتي I",
+          "العزم المدور τ"
+        ],
+        "explain": "وفق الجدول (1-1)، يُستعاض عن الكتلة (m) في الحركة الدورانية بعزم القصور الذاتي (I)."
+      },
+      {
+        "correct": 0,
+        "question": "العلاقة بين الازاحة الخطية (S) والازاحة الزاوية (θ) لجسم يدور بنصف قطر (r) هي:",
+        "options": [
+          "\\( S = r\\theta \\)",
+          "\\( S = \\theta/r \\)",
+          "\\( S = r/\\theta \\)",
+          "\\( S = r+\\theta \\)"
+        ],
+        "explain": "من تعريف الزاوية النصف قطرية: \\(\\theta=S/r\\)، وبالتالي \\(S=r\\theta\\)."
+      },
+      {
+        "correct": 1,
+        "question": "الدورة الكاملة الواحدة (360°) تعادل بالمقياس القطري (Radian):",
+        "options": [
+          "π rad",
+          "2π rad",
+          "π/2 rad",
+          "4π rad"
+        ],
+        "explain": "1 دورة = 2π (rad) = 360°."
+      },
+      {
+        "correct": 3,
+        "question": "العلاقة بين السرعة المماسية \\(v_T\\) والسرعة الزاوية ω لجسم يدور بنصف قطر r هي:",
+        "options": [
+          "\\( v_T = \\omega/r \\)",
+          "\\( v_T = \\omega + r \\)",
+          "\\( v_T = \\omega^2 r \\)",
+          "\\( v_T = \\omega r \\)"
+        ],
+        "explain": "المعادلة (7): \\(v_T=\\omega r\\)."
+      },
+      {
+        "correct": 2,
+        "question": "يُحدَّد اتجاه متجه السرعة الزاوية (ω) باستعمال:",
+        "options": [
+          "قاعدة القوة المركزية",
+          "قانون نيوتن الثالث",
+          "قاعدة اليد اليمنى",
+          "قانون كبلر الثاني"
+        ],
+        "explain": "يُستعمل اتجاه إبهام اليد اليمنى عند لفّ الأصابع باتجاه الدوران لتحديد اتجاه ω، وهو عمودي على مستوي (r) و(vT)."
+      }
+    ]
   },
-  "satellites": [
-   {
-    "cx": 100.0,
-    "cy": 45.0,
-    "r": 44.0,
-    "color": "#3fa9f5",
-    "lines": [
-     "θ",
-     "S=rθ"
+  "summary": {
+    "heading": "📋 ملخص الدرس",
+    "items": [
+      "الازاحة الزاوية θ=S/r، وبالتالي S=rθ، وتقاس بالراديان أو الدرجات أو عدد الدورات (1 دورة=2π rad=360°).",
+      "السرعة الزاوية ω=Δθ/Δt، وترتبط بالسرعة المماسية بالعلاقة \\(v_T=\\omega r\\).",
+      "اتجاه ω يُحدَّد بقاعدة اليد اليمنى، وهو عمودي على مستوي r و vT.",
+      "معدل السرعة الزاوية \\(\\omega_{av}=(\\theta_2-\\theta_1)/(t_2-t_1)\\)."
     ]
-   },
-   {
-    "cx": 100.0,
-    "cy": 195.0,
-    "r": 44.0,
-    "color": "#2fd18f",
-    "lines": [
-     "ω",
-     "vT=ωr"
+  },
+  "mindmap": {
+    "heading": "🗺 خريطة الدرس الذهنية",
+    "ariaLabel": "خريطة الازاحة والسرعة الزاويتين الذهنية",
+    "viewBox": "0 0 480 240",
+    "center": {
+      "cx": 240.0,
+      "cy": 120.0,
+      "r": 50.0,
+      "color": "#7c6fee",
+      "lines": [
+        "الحركة الدورانية"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 44.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "θ",
+          "S=rθ"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 195.0,
+        "r": 44.0,
+        "color": "#2fd18f",
+        "lines": [
+          "ω",
+          "vT=ωr"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 45.0,
+        "r": 44.0,
+        "color": "#ffab5e",
+        "lines": [
+          "اليد اليمنى"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 195.0,
+        "r": 44.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "ω=2πf",
+          "التردد"
+        ]
+      }
     ]
-   },
-   {
-    "cx": 380.0,
-    "cy": 45.0,
-    "r": 44.0,
-    "color": "#ffab5e",
-    "lines": [
-     "اليد اليمنى"
-    ]
-   },
-   {
-    "cx": 380.0,
-    "cy": 195.0,
-    "r": 44.0,
-    "color": "#ff6b9d",
-    "lines": [
-     "ω=2πf",
-     "التردد"
-    ]
-   }
-  ]
- }
+  }
 }

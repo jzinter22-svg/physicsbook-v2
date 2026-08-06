@@ -1,448 +1,448 @@
 {
- "lessonNumber": 7,
- "chapterNumber": 1,
- "meta": {
-  "pageTitle": "الدرس 7: الطاقة والشغل والزخم الزاوي — الفصل الأول",
-  "description": "6-1 الطاقة في الحركة الدورانية، 7-1 الشغل والقدرة في الحركة الدورانية، 8-1 الزخم الزاوي، مع مثالين محلولين عن عزم القصور الذاتي والزخم الزاوي المنتظم.",
-  "breadcrumbChapter": "الفصل 1",
-  "breadcrumbLesson": "الطاقة والشغل والزخم الزاوي",
-  "footer": "الفصل الأول: الحركة الدائرية والدورانية — الدرس 7: الطاقة والشغل والزخم الزاوي"
- },
- "hero": {
-  "eyebrow": "📖 الدرس 7 من 8 · الفصل الأول",
-  "title": "الطاقة والشغل والزخم الزاوي",
-  "lead": "6-1 الطاقة في الحركة الدورانية · 7-1 الشغل والقدرة · 8-1 الزخم الزاوي"
- },
- "objectivesHeading": "🎯 أهداف الدرس",
- "objectives": [
-  "يشتق علاقة الطاقة الحركية الدورانية \\(E_r=\\tfrac12 I\\omega^2\\) من نظيرتها الخطية.",
-  "يحسب الشغل والقدرة في الحركة الدورانية بدلالة العزم والازاحة الزاوية والسرعة الزاوية.",
-  "يعرّف الزخم الزاوي \\(L=I\\omega\\) ويربطه بالزخم الخطي والدفع الزاوي.",
-  "يحل مسائل حسابية على الطاقة والشغل والقدرة والزخم الزاوي لجسم دوّار."
- ],
- "content": [
-  {
-   "type": "definition",
-   "label": "📌 6-1 الطاقة في الحركة الدورانية",
-   "html": "بما أن الطاقة الحركية في الحركة الخطية الانتقالية \\((E_k)\\) توصف بالعلاقة:",
-   "sectionGroup": 0,
-   "sectionId": "content",
-   "sectionNavLabel": "💡 الشرح"
+  "lessonNumber": 7,
+  "chapterNumber": 1,
+  "meta": {
+    "pageTitle": "الدرس 7: الطاقة والشغل والزخم الزاوي — الفصل الأول",
+    "description": "6-1 الطاقة في الحركة الدورانية، 7-1 الشغل والقدرة في الحركة الدورانية، 8-1 الزخم الزاوي، مع مثالين محلولين عن عزم القصور الذاتي والزخم الزاوي المنتظم.",
+    "breadcrumbChapter": "الفصل 1",
+    "breadcrumbLesson": "الطاقة والشغل والزخم الزاوي",
+    "footer": "الفصل الأول: الحركة الدائرية والدورانية — الدرس 7: الطاقة والشغل والزخم الزاوي"
   },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ E_k = \\tfrac{1}{2}mv^2 $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">إذ إن: m كتلة الجسم، v سرعة الجسم.</p>",
-   "sectionGroup": 1,
-   "sectionId": null,
-   "sectionNavLabel": null
+  "hero": {
+    "eyebrow": "📖 الدرس 7 من 8 · الفصل الأول",
+    "title": "الطاقة والشغل والزخم الزاوي",
+    "lead": "6-1 الطاقة في الحركة الدورانية · 7-1 الشغل والقدرة · 8-1 الزخم الزاوي"
   },
-  {
-   "type": "paragraph",
-   "html": "وعند التعويض بدل السرعة الخطية بالسرعة الزاوية \\((v=\\omega r)\\)، وبدل الكتلة نعوّض عزم القصور الذاتي \\((I=mr^2)\\)، فإننا نحصل على:",
-   "sectionGroup": 2,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ E_r = \\tfrac{1}{2}I\\omega^2 \\qquad \\text{...(19)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">يمثل (I) عزم القصور الذاتي للجسم الصلد حول محور دوران معيّن.</p>",
-   "sectionGroup": 3,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "definition",
-   "label": "📌 7-1 الشغل والقدرة في الحركة الدورانية",
-   "html": "لنفرض أن قوة مقدارها (F) أثّرت على جسم يتحرك على مسار دائري نصف قطره (r) بازاحة خطية مقدارها (Δs) وازاحة زاوية (Δθ)، فيكون الشغل في الحركة الخطية عبارة عن حاصل ضرب القوة في الازاحة الخطية:",
-   "sectionGroup": 4,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ \\Delta W = F\\Delta s $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">وإذا ما تم التعويض عن الازاحة الخطية (Δs) بالازاحة الزاوية (Δθ) والقوة (F) بالعزم (τ) نحصل على الآتي — الشغل المنجز في الحركة الدورانية:</p>\n      $$ \\Delta W = \\tau\\Delta\\theta = \\tau(\\theta_2-\\theta_1) \\qquad \\text{...(20)} $$",
-   "sectionGroup": 5,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "paragraph",
-   "html": "أما القدرة (P)، فإنها تعرّف بالشغل المنجز لوحدة الزمن: \\(P=\\dfrac{\\Delta W}{\\Delta t}\\)، وفي الحركة الدورانية: \\(P=\\dfrac{\\tau\\Delta\\theta}{\\Delta t}\\) ⇒",
-   "sectionGroup": 6,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ P = \\tau\\omega \\qquad \\text{...(21)} $$",
-   "sectionGroup": 7,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "definition",
-   "label": "📌 8-1 الزخم الزاوي",
-   "html": "يعرّف الزخم الخطي لجسم كتلته (m) يتحرك على مسار خطي بأنه حاصل ضرب الكتلة في السرعة الخطية، وإذا ما استبدلنا الكتلة بعزم القصور الذاتي والسرعة الخطية بالسرعة الزاوية فإننا نحصل على العلاقة الرياضية للزخم الزاوي:",
-   "sectionGroup": 8,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "paragraph",
-   "html": "الزخم الخطي = mv</p><p>بالتعويض نحصل على:",
-   "sectionGroup": 9,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ L = I\\omega \\qquad \\text{...(22)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">يمثل الزخم الزاوي ووحداته \\(\\left(\\dfrac{\\text{kg}\\cdot\\text{m}^2}{\\text{s}}\\right)\\).</p>",
-   "sectionGroup": 10,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ \\Delta L = I\\omega_f - I\\omega_i = I(\\omega_f-\\omega_i) $$",
-   "sectionGroup": 11,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "paragraph",
-   "html": "حيث \\(\\omega_i, \\omega_f\\) تمثل السرعتين الزاويتين النهائية والابتدائية. أما التغيّر في الزخم الزاوي فيدعى بالدفع الزاوي، والذي يساوي حاصل ضرب العزم المدور في زمن تأثيره:</p><p>الدفع الزاوي = τt",
-   "sectionGroup": 12,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "callout",
-   "icon": "💡",
-   "strong": "هل تعلم؟",
-   "html": "تُصنع عجلة الدرّاجة واغلب كتلتها في أطارها لجعل عزم قصورها الذاتي كبيرًا وذلك للحفاظ على اتزانها أثناء الحركة.",
-   "sectionGroup": 13,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "example",
-   "number": 1,
-   "problemHtml": "<p>احسب عزم القصور الذاتي لكرة صلدة تدور حول احد اقطارها، كتلتها (10 kg) وان نصف قطرها (50 cm)؟</p>",
-   "solution": {
-    "given": [
-     "\\( m = 10\\ \\text{kg} \\) — كتلة الكرة",
-     "\\( r = 50\\ \\text{cm} = 0.5\\ \\text{m} \\) — نصف قطر الكرة (بعد التحويل إلى النظام الدولي)"
-    ],
-    "required": "احسب عزم القصور الذاتي I للكرة الصلدة حول أحد أقطارها.",
-    "steps": [
-     {
-      "note": "عزم القصور الذاتي لكرة صلدة حول القطر (جدول 2-1): \\(I=\\tfrac25 mr^2\\)، حيث m=10 kg، r=0.5 m",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( I = \\tfrac{2}{5}\\times 10\\times(0.5)^2 \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( I = 1\\ \\text{kg}\\cdot\\text{m}^2 \\)"
-       }
-      ]
-     }
-    ],
-    "final": "✓ I = 1 kg·m²"
-   },
-   "sectionGroup": 14,
-   "sectionId": "example6",
-   "sectionNavLabel": "📝 مثال 6"
-  },
-  {
-   "type": "callout",
-   "icon": "🤔",
-   "strong": "فكر:",
-   "html": "ماذا نتوقّع لو كان محور الدوران على بعد 0.25 m (أي عند نصف قطر أصغر)؟ جرّب ذلك بنفسك في الأداة التفاعلية أدناه.",
-   "sectionGroup": 15,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "simulation",
-   "svgId": null,
-   "svgAriaLabel": "",
-   "svgViewBox": null,
-   "svgWidth": null,
-   "svgHeight": null,
-   "sectionHeading": "🕹️ استكشاف تفاعلي: كيف يتغيّر عزم القصور الذاتي مع نصف القطر؟",
-   "descriptionHtml": "حرّك المزلاج لتغيير نصف قطر دوران الكرة (بنفس كتلة المثال 10 kg)، وقارن القيمة عند r=0.5 m (كما في المثال) وعند r=0.25 m (وفق سؤال «فكر»).",
-   "controls": [
+  "objectivesHeading": "🎯 أهداف الدرس",
+  "objectives": [
+    "يشتق علاقة الطاقة الحركية الدورانية \\(E_r=\\tfrac12 I\\omega^2\\) من نظيرتها الخطية.",
+    "يحسب الشغل والقدرة في الحركة الدورانية بدلالة العزم والازاحة الزاوية والسرعة الزاوية.",
+    "يعرّف الزخم الزاوي \\(L=I\\omega\\) ويربطه بالزخم الخطي والدفع الزاوي.",
+    "يحل مسائل حسابية على الطاقة والشغل والقدرة والزخم الزاوي لجسم دوّار."
+  ],
+  "content": [
     {
-     "labelHtml": "r = <span id=\"sphereRVal\">0.50</span> m",
-     "inputId": "sphereR",
-     "rowId": null,
-     "rowStyle": null,
-     "inputType": "range",
-     "inputClass": "neu-range",
-     "inputMin": "0.1",
-     "inputMax": "0.8",
-     "inputStep": "0.01",
-     "inputValue": "0.5"
-    }
-   ],
-   "buttons": null,
-   "selectId": null,
-   "selectOptions": null,
-   "presets": null,
-   "ruleBoxes": [
+      "type": "definition",
+      "label": "📌 6-1 الطاقة في الحركة الدورانية",
+      "html": "بما أن الطاقة الحركية في الحركة الخطية الانتقالية \\((E_k)\\) توصف بالعلاقة:",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 الشرح"
+    },
     {
-     "html": "\\( I=\\tfrac{2}{5}(10)r^2 = \\) <b id=\"sphereIVal\">1.000</b> kg·m²",
-     "id": null
+      "type": "formula",
+      "id": null,
+      "html": "$$ E_k = \\tfrac{1}{2}mv^2 $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">إذ إن: m كتلة الجسم، v سرعة الجسم.</p>",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "وعند التعويض بدل السرعة الخطية بالسرعة الزاوية \\((v=\\omega r)\\)، وبدل الكتلة نعوّض عزم القصور الذاتي \\((I=mr^2)\\)، فإننا نحصل على:",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ E_r = \\tfrac{1}{2}I\\omega^2 \\qquad \\text{...(19)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">يمثل (I) عزم القصور الذاتي للجسم الصلد حول محور دوران معيّن.</p>",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 7-1 الشغل والقدرة في الحركة الدورانية",
+      "html": "لنفرض أن قوة مقدارها (F) أثّرت على جسم يتحرك على مسار دائري نصف قطره (r) بازاحة خطية مقدارها (Δs) وازاحة زاوية (Δθ)، فيكون الشغل في الحركة الخطية عبارة عن حاصل ضرب القوة في الازاحة الخطية:",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\Delta W = F\\Delta s $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">وإذا ما تم التعويض عن الازاحة الخطية (Δs) بالازاحة الزاوية (Δθ) والقوة (F) بالعزم (τ) نحصل على الآتي — الشغل المنجز في الحركة الدورانية:</p>\n      $$ \\Delta W = \\tau\\Delta\\theta = \\tau(\\theta_2-\\theta_1) \\qquad \\text{...(20)} $$",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "أما القدرة (P)، فإنها تعرّف بالشغل المنجز لوحدة الزمن: \\(P=\\dfrac{\\Delta W}{\\Delta t}\\)، وفي الحركة الدورانية: \\(P=\\dfrac{\\tau\\Delta\\theta}{\\Delta t}\\) ⇒",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ P = \\tau\\omega \\qquad \\text{...(21)} $$",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 8-1 الزخم الزاوي",
+      "html": "يعرّف الزخم الخطي لجسم كتلته (m) يتحرك على مسار خطي بأنه حاصل ضرب الكتلة في السرعة الخطية، وإذا ما استبدلنا الكتلة بعزم القصور الذاتي والسرعة الخطية بالسرعة الزاوية فإننا نحصل على العلاقة الرياضية للزخم الزاوي:",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "الزخم الخطي = mv</p><p>بالتعويض نحصل على:",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ L = I\\omega \\qquad \\text{...(22)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">يمثل الزخم الزاوي ووحداته \\(\\left(\\dfrac{\\text{kg}\\cdot\\text{m}^2}{\\text{s}}\\right)\\).</p>",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\Delta L = I\\omega_f - I\\omega_i = I(\\omega_f-\\omega_i) $$",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "حيث \\(\\omega_i, \\omega_f\\) تمثل السرعتين الزاويتين النهائية والابتدائية. أما التغيّر في الزخم الزاوي فيدعى بالدفع الزاوي، والذي يساوي حاصل ضرب العزم المدور في زمن تأثيره:</p><p>الدفع الزاوي = τt",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "هل تعلم؟",
+      "html": "تُصنع عجلة الدرّاجة واغلب كتلتها في أطارها لجعل عزم قصورها الذاتي كبيرًا وذلك للحفاظ على اتزانها أثناء الحركة.",
+      "sectionGroup": 13,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>احسب عزم القصور الذاتي لكرة صلدة تدور حول احد اقطارها، كتلتها (10 kg) وان نصف قطرها (50 cm)؟</p>",
+      "solution": {
+        "given": [
+          "\\( m = 10\\ \\text{kg} \\) — كتلة الكرة",
+          "\\( r = 50\\ \\text{cm} = 0.5\\ \\text{m} \\) — نصف قطر الكرة (بعد التحويل إلى النظام الدولي)"
+        ],
+        "required": "احسب عزم القصور الذاتي I للكرة الصلدة حول أحد أقطارها.",
+        "steps": [
+          {
+            "note": "عزم القصور الذاتي لكرة صلدة حول القطر (جدول 2-1): \\(I=\\tfrac25 mr^2\\)، حيث m=10 kg، r=0.5 m",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( I = \\tfrac{2}{5}\\times 10\\times(0.5)^2 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I = 1\\ \\text{kg}\\cdot\\text{m}^2 \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ I = 1 kg·m²"
+      },
+      "sectionGroup": 14,
+      "sectionId": "example6",
+      "sectionNavLabel": "📝 مثال 6"
+    },
+    {
+      "type": "callout",
+      "icon": "🤔",
+      "strong": "فكر:",
+      "html": "ماذا نتوقّع لو كان محور الدوران على بعد 0.25 m (أي عند نصف قطر أصغر)؟ جرّب ذلك بنفسك في الأداة التفاعلية أدناه.",
+      "sectionGroup": 15,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ استكشاف تفاعلي: كيف يتغيّر عزم القصور الذاتي مع نصف القطر؟",
+      "descriptionHtml": "حرّك المزلاج لتغيير نصف قطر دوران الكرة (بنفس كتلة المثال 10 kg)، وقارن القيمة عند r=0.5 m (كما في المثال) وعند r=0.25 m (وفق سؤال «فكر»).",
+      "controls": [
+        {
+          "labelHtml": "r = <span id=\"sphereRVal\">0.50</span> m",
+          "inputId": "sphereR",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0.1",
+          "inputMax": "0.8",
+          "inputStep": "0.01",
+          "inputValue": "0.5"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "\\( I=\\tfrac{2}{5}(10)r^2 = \\) <b id=\"sphereIVal\">1.000</b> kg·m²",
+          "id": null
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 16,
+      "sectionId": "sphere-widget",
+      "sectionNavLabel": "🕹️ استكشف: نصف القطر وعزم القصور"
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>قرص عزم قصوره الذاتي (2 kg·m²) يدور حول محوره بزخم زاوي منتظم مقداره (50 kg·m²/s)، فما مقدار: 1- سرعته الزاوية. 2- طاقته الحركية الدورانية. 3- الدفع الزاوي. 4- الشغل الزاوي.</p>",
+      "solution": {
+        "given": [
+          "\\( I = 2\\ \\text{kg}\\cdot\\text{m}^2 \\) — عزم القصور الذاتي للقرص",
+          "\\( L = 50\\ \\text{kg}\\cdot\\text{m}^2/\\text{s} \\) — الزخم الزاوي، وهو منتظم (ثابت) بمرور الزمن"
+        ],
+        "required": "احسب: (1) السرعة الزاوية ω. (2) الطاقة الحركية الدورانية Er. (3) الدفع الزاوي. (4) الشغل الزاوي.",
+        "steps": [
+          {
+            "note": "1- السرعة الزاوية: من \\(L=I\\omega\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\omega = \\dfrac{L}{I} = \\dfrac{50}{2} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\omega = 25\\ \\text{rad/s} \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- الطاقة الحركية الدورانية: من \\(E_r=\\tfrac12 I\\omega^2\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( E_r = \\tfrac{1}{2}\\times 2\\times(25)^2 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( E_r = 625\\ \\text{J} \\)"
+              }
+            ]
+          },
+          {
+            "note": "3- الدفع الزاوي: بما أن الزخم الزاوي منتظم (ثابت) بمرور الزمن، فلا يوجد تغيّر في الزخم الزاوي",
+            "calc": [
+              {
+                "kind": "box",
+                "latex": "\\( \\Delta L = 0 \\)"
+              }
+            ]
+          },
+          {
+            "note": "4- الشغل الزاوي: لعدم وجود تغيّر في الطاقة الحركية الدورانية (السرعة الزاوية ثابتة)",
+            "calc": [
+              {
+                "kind": "box",
+                "latex": "\\( \\Delta W = 0 \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ ω = 25 rad/s   ·   Er = 625 J   ·   الدفع الزاوي = صفر   ·   الشغل الزاوي = صفر"
+      },
+      "sectionGroup": 17,
+      "sectionId": "example7",
+      "sectionNavLabel": "📝 مثال 7"
+    },
+    {
+      "type": "simulation",
+      "svgId": "skaterSvg",
+      "svgAriaLabel": "محاكاة متزلج دائر يقرّب ذراعيه فتزداد سرعته الزاوية",
+      "svgViewBox": "0 0 260 260",
+      "svgWidth": "260",
+      "svgHeight": "260",
+      "sectionHeading": "🕹️ محاكاة تفاعلية: حفظ الزخم الزاوي (كالمتزلج الدائر)",
+      "descriptionHtml": "عندما يقرّب المتزلج الدائر ذراعيه من جسمه يقلّ عزم قصوره الذاتي (I)؛ وبما أن الزخم الزاوي \\(L=I\\omega\\) محفوظ (ثابت) في غياب عزم خارجي، فإن سرعته الزاوية (ω) تزداد تلقائيًا. حرّك مزلاج وضع الذراعين وشاهد ذلك مباشرة.",
+      "controls": [
+        {
+          "labelHtml": "امتداد الذراعين",
+          "inputId": "armsSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "1",
+          "inputStep": "0.01",
+          "inputValue": "1"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": null,
+          "id": "skaterReadout"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 18,
+      "sectionId": "conservation-widget",
+      "sectionNavLabel": "🕹️ حفظ الزخم الزاوي"
     }
-   ],
-   "trailingHtml": null,
-   "sectionGroup": 16,
-   "sectionId": "sphere-widget",
-   "sectionNavLabel": "🕹️ استكشف: نصف القطر وعزم القصور"
+  ],
+  "quiz": {
+    "heading": "🧠 اختبر فهمك",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "الطاقة الحركية الدورانية لجسم صلد تُعطى بالعلاقة:",
+        "options": [
+          "\\( E_r=mv^2 \\)",
+          "\\( E_r=\\tfrac12 I\\omega^2 \\)",
+          "\\( E_r=I\\omega \\)",
+          "\\( E_r=\\tfrac12 mv^2 \\)"
+        ],
+        "explain": "المعادلة (19): \\(E_r=\\tfrac12 I\\omega^2\\)، وهي نظير \\(E_k=\\tfrac12 mv^2\\) بعد التعويض."
+      },
+      {
+        "correct": 1,
+        "question": "الشغل المنجز في الحركة الدورانية يُعطى بالعلاقة:",
+        "options": [
+          "\\( \\Delta W=Fs \\)",
+          "\\( \\Delta W=\\tau\\Delta\\theta \\)",
+          "\\( \\Delta W=I\\alpha \\)",
+          "\\( \\Delta W=L\\omega \\)"
+        ],
+        "explain": "المعادلة (20): \\(\\Delta W=\\tau\\Delta\\theta\\)."
+      },
+      {
+        "correct": 1,
+        "question": "القدرة في الحركة الدورانية تُعطى بالعلاقة:",
+        "options": [
+          "\\( P=\\tau/\\omega \\)",
+          "\\( P=\\tau\\omega \\)",
+          "\\( P=\\tau+\\omega \\)",
+          "\\( P=\\omega/\\tau \\)"
+        ],
+        "explain": "المعادلة (21): \\(P=\\tau\\omega\\)."
+      },
+      {
+        "correct": 1,
+        "question": "الزخم الزاوي لجسم دوّار يُعطى بالعلاقة:",
+        "options": [
+          "\\( L=I\\alpha \\)",
+          "\\( L=I\\omega \\)",
+          "\\( L=mv \\)",
+          "\\( L=\\tau t \\)"
+        ],
+        "explain": "المعادلة (22): \\(L=I\\omega\\)."
+      },
+      {
+        "correct": 1,
+        "question": "إذا كان الزخم الزاوي لجسم دوّار ثابتًا (منتظمًا) بمرور الزمن، فإن الدفع الزاوي المؤثر عليه خلال تلك الفترة:",
+        "options": [
+          "يساوي τt دائمًا وبقيمة موجبة كبيرة",
+          "يساوي صفرًا",
+          "يساوي L",
+          "يساوي Iω دائمًا"
+        ],
+        "explain": "الدفع الزاوي يساوي التغيّر في الزخم الزاوي (ΔL)؛ فإذا كان الزخم الزاوي ثابتًا فإن ΔL=0 وبالتالي الدفع الزاوي صفر."
+      }
+    ]
   },
-  {
-   "type": "example",
-   "number": 2,
-   "problemHtml": "<p>قرص عزم قصوره الذاتي (2 kg·m²) يدور حول محوره بزخم زاوي منتظم مقداره (50 kg·m²/s)، فما مقدار: 1- سرعته الزاوية. 2- طاقته الحركية الدورانية. 3- الدفع الزاوي. 4- الشغل الزاوي.</p>",
-   "solution": {
-    "given": [
-     "\\( I = 2\\ \\text{kg}\\cdot\\text{m}^2 \\) — عزم القصور الذاتي للقرص",
-     "\\( L = 50\\ \\text{kg}\\cdot\\text{m}^2/\\text{s} \\) — الزخم الزاوي، وهو منتظم (ثابت) بمرور الزمن"
-    ],
-    "required": "احسب: (1) السرعة الزاوية ω. (2) الطاقة الحركية الدورانية Er. (3) الدفع الزاوي. (4) الشغل الزاوي.",
-    "steps": [
-     {
-      "note": "1- السرعة الزاوية: من \\(L=I\\omega\\)",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( \\omega = \\dfrac{L}{I} = \\dfrac{50}{2} \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( \\omega = 25\\ \\text{rad/s} \\)"
-       }
-      ]
-     },
-     {
-      "note": "2- الطاقة الحركية الدورانية: من \\(E_r=\\tfrac12 I\\omega^2\\)",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( E_r = \\tfrac{1}{2}\\times 2\\times(25)^2 \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( E_r = 625\\ \\text{J} \\)"
-       }
-      ]
-     },
-     {
-      "note": "3- الدفع الزاوي: بما أن الزخم الزاوي منتظم (ثابت) بمرور الزمن، فلا يوجد تغيّر في الزخم الزاوي",
-      "calc": [
-       {
-        "kind": "box",
-        "latex": "\\( \\Delta L = 0 \\)"
-       }
-      ]
-     },
-     {
-      "note": "4- الشغل الزاوي: لعدم وجود تغيّر في الطاقة الحركية الدورانية (السرعة الزاوية ثابتة)",
-      "calc": [
-       {
-        "kind": "box",
-        "latex": "\\( \\Delta W = 0 \\)"
-       }
-      ]
-     }
-    ],
-    "final": "✓ ω = 25 rad/s   ·   Er = 625 J   ·   الدفع الزاوي = صفر   ·   الشغل الزاوي = صفر"
-   },
-   "sectionGroup": 17,
-   "sectionId": "example7",
-   "sectionNavLabel": "📝 مثال 7"
+  "summary": {
+    "heading": "📋 ملخص الدرس",
+    "items": [
+      "الطاقة الحركية الدورانية \\(E_r=\\tfrac12 I\\omega^2\\).",
+      "الشغل الدوراني \\(\\Delta W=\\tau\\Delta\\theta\\)، والقدرة الدورانية \\(P=\\tau\\omega\\).",
+      "الزخم الزاوي \\(L=I\\omega\\)، والدفع الزاوي = τt = ΔL.",
+      "عند ثبات الزخم الزاوي، يعوّض نقص عزم القصور الذاتي بزيادة السرعة الزاوية (حفظ الزخم الزاوي)."
+    ]
   },
-  {
-   "type": "simulation",
-   "svgId": "skaterSvg",
-   "svgAriaLabel": "محاكاة متزلج دائر يقرّب ذراعيه فتزداد سرعته الزاوية",
-   "svgViewBox": "0 0 260 260",
-   "svgWidth": "260",
-   "svgHeight": "260",
-   "sectionHeading": "🕹️ محاكاة تفاعلية: حفظ الزخم الزاوي (كالمتزلج الدائر)",
-   "descriptionHtml": "عندما يقرّب المتزلج الدائر ذراعيه من جسمه يقلّ عزم قصوره الذاتي (I)؛ وبما أن الزخم الزاوي \\(L=I\\omega\\) محفوظ (ثابت) في غياب عزم خارجي، فإن سرعته الزاوية (ω) تزداد تلقائيًا. حرّك مزلاج وضع الذراعين وشاهد ذلك مباشرة.",
-   "controls": [
-    {
-     "labelHtml": "امتداد الذراعين",
-     "inputId": "armsSlider",
-     "rowId": null,
-     "rowStyle": null,
-     "inputType": "range",
-     "inputClass": "neu-range",
-     "inputMin": "0",
-     "inputMax": "1",
-     "inputStep": "0.01",
-     "inputValue": "1"
-    }
-   ],
-   "buttons": null,
-   "selectId": null,
-   "selectOptions": null,
-   "presets": null,
-   "ruleBoxes": [
-    {
-     "html": null,
-     "id": "skaterReadout"
-    }
-   ],
-   "trailingHtml": null,
-   "sectionGroup": 18,
-   "sectionId": "conservation-widget",
-   "sectionNavLabel": "🕹️ حفظ الزخم الزاوي"
+  "mindmap": {
+    "heading": "🗺 خريطة الدرس الذهنية",
+    "ariaLabel": "خريطة الطاقة والشغل والزخم الزاوي الذهنية",
+    "viewBox": "0 0 480 220",
+    "center": {
+      "cx": 240.0,
+      "cy": 110.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "الطاقة والشغل",
+        "والزخم الزاوي"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Er=½Iω²"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "ΔW=τΔθ",
+          "P=τω"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "L=Iω"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "الدفع الزاوي",
+          "=τt=ΔL"
+        ]
+      }
+    ]
   }
- ],
- "quiz": {
-  "heading": "🧠 اختبر فهمك",
-  "questions": [
-   {
-    "correct": 1,
-    "question": "الطاقة الحركية الدورانية لجسم صلد تُعطى بالعلاقة:",
-    "options": [
-     "\\( E_r=mv^2 \\)",
-     "\\( E_r=\\tfrac12 I\\omega^2 \\)",
-     "\\( E_r=I\\omega \\)",
-     "\\( E_r=\\tfrac12 mv^2 \\)"
-    ],
-    "explain": "المعادلة (19): \\(E_r=\\tfrac12 I\\omega^2\\)، وهي نظير \\(E_k=\\tfrac12 mv^2\\) بعد التعويض."
-   },
-   {
-    "correct": 1,
-    "question": "الشغل المنجز في الحركة الدورانية يُعطى بالعلاقة:",
-    "options": [
-     "\\( \\Delta W=Fs \\)",
-     "\\( \\Delta W=\\tau\\Delta\\theta \\)",
-     "\\( \\Delta W=I\\alpha \\)",
-     "\\( \\Delta W=L\\omega \\)"
-    ],
-    "explain": "المعادلة (20): \\(\\Delta W=\\tau\\Delta\\theta\\)."
-   },
-   {
-    "correct": 1,
-    "question": "القدرة في الحركة الدورانية تُعطى بالعلاقة:",
-    "options": [
-     "\\( P=\\tau/\\omega \\)",
-     "\\( P=\\tau\\omega \\)",
-     "\\( P=\\tau+\\omega \\)",
-     "\\( P=\\omega/\\tau \\)"
-    ],
-    "explain": "المعادلة (21): \\(P=\\tau\\omega\\)."
-   },
-   {
-    "correct": 1,
-    "question": "الزخم الزاوي لجسم دوّار يُعطى بالعلاقة:",
-    "options": [
-     "\\( L=I\\alpha \\)",
-     "\\( L=I\\omega \\)",
-     "\\( L=mv \\)",
-     "\\( L=\\tau t \\)"
-    ],
-    "explain": "المعادلة (22): \\(L=I\\omega\\)."
-   },
-   {
-    "correct": 1,
-    "question": "إذا كان الزخم الزاوي لجسم دوّار ثابتًا (منتظمًا) بمرور الزمن، فإن الدفع الزاوي المؤثر عليه خلال تلك الفترة:",
-    "options": [
-     "يساوي τt دائمًا وبقيمة موجبة كبيرة",
-     "يساوي صفرًا",
-     "يساوي L",
-     "يساوي Iω دائمًا"
-    ],
-    "explain": "الدفع الزاوي يساوي التغيّر في الزخم الزاوي (ΔL)؛ فإذا كان الزخم الزاوي ثابتًا فإن ΔL=0 وبالتالي الدفع الزاوي صفر."
-   }
-  ]
- },
- "summary": {
-  "heading": "📋 ملخص الدرس",
-  "items": [
-   "الطاقة الحركية الدورانية \\(E_r=\\tfrac12 I\\omega^2\\).",
-   "الشغل الدوراني \\(\\Delta W=\\tau\\Delta\\theta\\)، والقدرة الدورانية \\(P=\\tau\\omega\\).",
-   "الزخم الزاوي \\(L=I\\omega\\)، والدفع الزاوي = τt = ΔL.",
-   "عند ثبات الزخم الزاوي، يعوّض نقص عزم القصور الذاتي بزيادة السرعة الزاوية (حفظ الزخم الزاوي)."
-  ]
- },
- "mindmap": {
-  "heading": "🗺 خريطة الدرس الذهنية",
-  "ariaLabel": "خريطة الطاقة والشغل والزخم الزاوي الذهنية",
-  "viewBox": "0 0 480 220",
-  "center": {
-   "cx": 240.0,
-   "cy": 110.0,
-   "r": 48.0,
-   "color": "#7c6fee",
-   "lines": [
-    "الطاقة والشغل",
-    "والزخم الزاوي"
-   ]
-  },
-  "satellites": [
-   {
-    "cx": 100.0,
-    "cy": 45.0,
-    "r": 42.0,
-    "color": "#3fa9f5",
-    "lines": [
-     "Er=½Iω²"
-    ]
-   },
-   {
-    "cx": 100.0,
-    "cy": 175.0,
-    "r": 42.0,
-    "color": "#2fd18f",
-    "lines": [
-     "ΔW=τΔθ",
-     "P=τω"
-    ]
-   },
-   {
-    "cx": 380.0,
-    "cy": 45.0,
-    "r": 42.0,
-    "color": "#ffab5e",
-    "lines": [
-     "L=Iω"
-    ]
-   },
-   {
-    "cx": 380.0,
-    "cy": 175.0,
-    "r": 42.0,
-    "color": "#ff6b9d",
-    "lines": [
-     "الدفع الزاوي",
-     "=τt=ΔL"
-    ]
-   }
-  ]
- }
 }

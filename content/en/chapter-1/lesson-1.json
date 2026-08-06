@@ -1,291 +1,291 @@
 {
- "lessonNumber": 1,
- "chapterNumber": 1,
- "meta": {
-  "pageTitle": "Lesson 1: Circular Motion and Centripetal Acceleration — Chapter 1",
-  "description": "An introduction to rotational motion, the definition of circular motion, and centripetal acceleration: its definition, properties, and relation to linear and angular speed, with a solved example about a satellite.",
-  "breadcrumbChapter": "Chapter 1",
-  "breadcrumbLesson": "Circular Motion and Centripetal Acceleration",
-  "footer": "Chapter 1: Circular and Rotational Motion — Lesson 1: Circular Motion and Centripetal Acceleration"
- },
- "hero": {
-  "eyebrow": "📖 Lesson 1 of 8 · Chapter 1",
-  "title": "Circular Motion and Centripetal Acceleration",
-  "lead": "1-1 Introduction · 2-1 Circular motion · 1-2-1 Centripetal acceleration (a<sub>c</sub>)"
- },
- "objectivesHeading": "🎯 Lesson Objectives",
- "objectives": [
-  "Explains the concept of circular motion and distinguishes it from linear translational motion.",
-  "Defines centripetal acceleration and states its properties.",
-  "Derives the relation for centripetal acceleration in terms of linear speed and radius, and in terms of angular speed."
- ],
- "content": [
-  {
-   "type": "explanation",
-   "heading": "💡 1-1 Introduction",
-   "html": "In earlier stages we studied speed and acceleration in linear translational motion. But if we consider the motions we encounter in everyday life, we find that motion in which a body rotates about a fixed or changing axis is far more common than motion along a straight line — the motion of a lathe, an electric fan, a car's wheels, and a clock's hands are all examples of rotational motion. To study rotational motion, we begin with circular motion: the motion of a particle around the circumference of a circle at a constant or variable speed.",
-   "sectionGroup": 0,
-   "sectionId": "content",
-   "sectionNavLabel": "💡 Explanation"
+  "lessonNumber": 1,
+  "chapterNumber": 1,
+  "meta": {
+    "pageTitle": "Lesson 1: Circular Motion and Centripetal Acceleration — Chapter 1",
+    "description": "An introduction to rotational motion, the definition of circular motion, and centripetal acceleration: its definition, properties, and relation to linear and angular speed, with a solved example about a satellite.",
+    "breadcrumbChapter": "Chapter 1",
+    "breadcrumbLesson": "Circular Motion and Centripetal Acceleration",
+    "footer": "Chapter 1: Circular and Rotational Motion — Lesson 1: Circular Motion and Centripetal Acceleration"
   },
-  {
-   "type": "explanation",
-   "heading": "💡 2-1 Circular motion",
-   "html": "The motion of the Moon around the Earth and the motion of an electron around the nucleus of an atom are important examples of circular motion in a single plane, where the magnitude of the speed stays constant while its direction keeps changing from one point to another, with the moving body remaining in the same plane, tracing out a circle — the Earth being the center in the case of the Moon's orbit, and the proton being the center in the case of the electron's motion in a hydrogen atom. We can therefore say that circular motion is the motion of a body along a circular path, as in the examples above.",
-   "sectionGroup": 1,
-   "sectionId": null,
-   "sectionNavLabel": null
+  "hero": {
+    "eyebrow": "📖 Lesson 1 of 8 · Chapter 1",
+    "title": "Circular Motion and Centripetal Acceleration",
+    "lead": "1-1 Introduction · 2-1 Circular motion · 1-2-1 Centripetal acceleration (a<sub>c</sub>)"
   },
-  {
-   "type": "definition",
-   "label": "📌 1-2-1 Centripetal acceleration (a<sub>c</sub>)",
-   "html": "The time rate of change of the direction of motion — that is, it arises from the change in the direction of motion, independent of its magnitude.",
-   "sectionGroup": 2,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "explanation",
-   "heading": "💡 Properties of centripetal acceleration",
-   "html": "One feature of this acceleration is that it is constant in magnitude but changing in direction when the circular motion is uniform, as in the motion of a body tied to a string moving horizontally; it is variable in both magnitude and direction when the circular motion is non-uniform. In both cases it points toward the center of rotation — hence the name \"centripetal\" acceleration. This acceleration depends on two factors: the square of the body's speed and the radius of the circular path it moves along, and is given by the relation:",
-   "sectionGroup": 3,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "$$ a_c = \\dfrac{v^2}{r} \\qquad \\text{...(1)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where: <b>v</b> is the body's speed, <b>r</b> is the radius of its circular path.</p>",
-   "sectionGroup": 4,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "formula",
-   "id": null,
-   "html": "<p style=\"margin:0 0 .4rem\">In terms of angular speed:</p>\n      $$ a_c = \\dfrac{(\\omega r)^2}{r} = \\omega^2 r \\qquad \\text{...(2)} $$",
-   "sectionGroup": 5,
-   "sectionId": null,
-   "sectionNavLabel": null
-  },
-  {
-   "type": "sectionIntro",
-   "heading": "✍️ Solved examples",
-   "leadHtml": "Each example is immediately followed by its detailed-solution card.",
-   "sectionGroup": 6,
-   "sectionId": "examples",
-   "sectionNavLabel": "✍️ Solved examples"
-  },
-  {
-   "type": "example",
-   "number": 1,
-   "problemHtml": "A satellite orbits the Earth with a linear speed of \\(363.4\\ \\text{m/s}\\). Find its centripetal acceleration if the distance between the Earth and the satellite is \\(5000\\ \\text{km}\\).",
-   "solution": {
-    "given": [
-     "\\( v = 363.4\\ \\text{m/s} \\) — the satellite's linear speed",
-     "\\( r = 5000\\ \\text{km} = 5\\times10^{6}\\ \\text{m} \\) — the orbital radius (converted to SI units)"
-    ],
-    "required": "Find the centripetal acceleration \\(a_c\\).",
-    "steps": [
-     {
-      "note": "Apply the centripetal-acceleration law in terms of linear speed",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( a_c = \\dfrac{v^2}{r} \\)"
-       }
-      ]
-     },
-     {
-      "note": "Convert the radius from kilometers to meters, then substitute",
-      "calc": [
-       {
-        "kind": "line",
-        "latex": "\\( a_c = \\dfrac{(363.4\\ \\text{m/s})^2}{(5000 \\times 1000\\ \\text{m})} \\)"
-       },
-       {
-        "kind": "arrow",
-        "latex": "↓"
-       },
-       {
-        "kind": "box",
-        "latex": "\\( a_c = 0.0264\\ \\text{m/s}^2 \\)"
-       }
-      ]
-     }
-    ],
-    "final": "✓ Centripetal acceleration = 0.0264 m/s²"
-   },
-   "sectionGroup": 6,
-   "sectionId": "examples",
-   "sectionNavLabel": "✍️ Solved examples"
-  },
-  {
-   "type": "simulation",
-   "svgId": "circMotionSvg",
-   "svgAriaLabel": "Simulation of a body moving in uniform circular motion",
-   "svgViewBox": "0 0 420 340",
-   "svgWidth": "420",
-   "svgHeight": "340",
-   "sectionHeading": "🕹️ Interactive simulation: centripetal acceleration (recreating Figure 1-1)",
-   "descriptionHtml": "Drag the two sliders to change the body's speed (v) and the radius of its path (r), and watch the body travel the circular path with its tangential-velocity vector (green) and centripetal-acceleration vector (red), which always points toward the center.",
-   "controls": [
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Explains the concept of circular motion and distinguishes it from linear translational motion.",
+    "Defines centripetal acceleration and states its properties.",
+    "Derives the relation for centripetal acceleration in terms of linear speed and radius, and in terms of angular speed."
+  ],
+  "content": [
     {
-     "labelHtml": "Speed v = <span id=\"cmSpeedVal\">4</span> m/s",
-     "inputId": "cmSpeed",
-     "rowId": null,
-     "rowStyle": null,
-     "inputType": "range",
-     "inputClass": "neu-range",
-     "inputMin": "1",
-     "inputMax": "8",
-     "inputStep": "0.5",
-     "inputValue": "4"
+      "type": "explanation",
+      "heading": "💡 1-1 Introduction",
+      "html": "In earlier stages we studied speed and acceleration in linear translational motion. But if we consider the motions we encounter in everyday life, we find that motion in which a body rotates about a fixed or changing axis is far more common than motion along a straight line — the motion of a lathe, an electric fan, a car's wheels, and a clock's hands are all examples of rotational motion. To study rotational motion, we begin with circular motion: the motion of a particle around the circumference of a circle at a constant or variable speed.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
     },
     {
-     "labelHtml": "Radius r = <span id=\"cmRadiusVal\">3</span> m",
-     "inputId": "cmRadius",
-     "rowId": null,
-     "rowStyle": null,
-     "inputType": "range",
-     "inputClass": "neu-range",
-     "inputMin": "1",
-     "inputMax": "4",
-     "inputStep": "0.25",
-     "inputValue": "3"
-    }
-   ],
-   "buttons": null,
-   "selectId": null,
-   "selectOptions": null,
-   "presets": null,
-   "labels": {
-    "velLegend": "v (tangential)",
-    "accLegend": "aᴄ (centripetal)"
-   },
-   "sectionGroup": 7,
-   "sectionId": "interactive",
-   "sectionNavLabel": "🕹️ Circular-motion simulation",
-   "ruleBoxes": [
+      "type": "explanation",
+      "heading": "💡 2-1 Circular motion",
+      "html": "The motion of the Moon around the Earth and the motion of an electron around the nucleus of an atom are important examples of circular motion in a single plane, where the magnitude of the speed stays constant while its direction keeps changing from one point to another, with the moving body remaining in the same plane, tracing out a circle — the Earth being the center in the case of the Moon's orbit, and the proton being the center in the case of the electron's motion in a hydrogen atom. We can therefore say that circular motion is the motion of a body along a circular path, as in the examples above.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
     {
-     "id": "cmFormula",
-     "html": null
+      "type": "definition",
+      "label": "📌 1-2-1 Centripetal acceleration (a<sub>c</sub>)",
+      "html": "The time rate of change of the direction of motion — that is, it arises from the change in the direction of motion, independent of its magnitude.",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "💡 Properties of centripetal acceleration",
+      "html": "One feature of this acceleration is that it is constant in magnitude but changing in direction when the circular motion is uniform, as in the motion of a body tied to a string moving horizontally; it is variable in both magnitude and direction when the circular motion is non-uniform. In both cases it points toward the center of rotation — hence the name \"centripetal\" acceleration. This acceleration depends on two factors: the square of the body's speed and the radius of the circular path it moves along, and is given by the relation:",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ a_c = \\dfrac{v^2}{r} \\qquad \\text{...(1)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where: <b>v</b> is the body's speed, <b>r</b> is the radius of its circular path.</p>",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .4rem\">In terms of angular speed:</p>\n      $$ a_c = \\dfrac{(\\omega r)^2}{r} = \\omega^2 r \\qquad \\text{...(2)} $$",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "✍️ Solved examples",
+      "leadHtml": "Each example is immediately followed by its detailed-solution card.",
+      "sectionGroup": 6,
+      "sectionId": "examples",
+      "sectionNavLabel": "✍️ Solved examples"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "A satellite orbits the Earth with a linear speed of \\(363.4\\ \\text{m/s}\\). Find its centripetal acceleration if the distance between the Earth and the satellite is \\(5000\\ \\text{km}\\).",
+      "solution": {
+        "given": [
+          "\\( v = 363.4\\ \\text{m/s} \\) — the satellite's linear speed",
+          "\\( r = 5000\\ \\text{km} = 5\\times10^{6}\\ \\text{m} \\) — the orbital radius (converted to SI units)"
+        ],
+        "required": "Find the centripetal acceleration \\(a_c\\).",
+        "steps": [
+          {
+            "note": "Apply the centripetal-acceleration law in terms of linear speed",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( a_c = \\dfrac{v^2}{r} \\)"
+              }
+            ]
+          },
+          {
+            "note": "Convert the radius from kilometers to meters, then substitute",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( a_c = \\dfrac{(363.4\\ \\text{m/s})^2}{(5000 \\times 1000\\ \\text{m})} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( a_c = 0.0264\\ \\text{m/s}^2 \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ Centripetal acceleration = 0.0264 m/s²"
+      },
+      "sectionGroup": 6,
+      "sectionId": "examples",
+      "sectionNavLabel": "✍️ Solved examples"
+    },
+    {
+      "type": "simulation",
+      "svgId": "circMotionSvg",
+      "svgAriaLabel": "Simulation of a body moving in uniform circular motion",
+      "svgViewBox": "0 0 420 340",
+      "svgWidth": "420",
+      "svgHeight": "340",
+      "sectionHeading": "🕹️ Interactive simulation: centripetal acceleration (recreating Figure 1-1)",
+      "descriptionHtml": "Drag the two sliders to change the body's speed (v) and the radius of its path (r), and watch the body travel the circular path with its tangential-velocity vector (green) and centripetal-acceleration vector (red), which always points toward the center.",
+      "controls": [
+        {
+          "labelHtml": "Speed v = <span id=\"cmSpeedVal\">4</span> m/s",
+          "inputId": "cmSpeed",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "1",
+          "inputMax": "8",
+          "inputStep": "0.5",
+          "inputValue": "4"
+        },
+        {
+          "labelHtml": "Radius r = <span id=\"cmRadiusVal\">3</span> m",
+          "inputId": "cmRadius",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "1",
+          "inputMax": "4",
+          "inputStep": "0.25",
+          "inputValue": "3"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "labels": {
+        "velLegend": "v (tangential)",
+        "accLegend": "aᴄ (centripetal)"
+      },
+      "sectionGroup": 7,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Circular-motion simulation",
+      "ruleBoxes": [
+        {
+          "id": "cmFormula",
+          "html": null
+        }
+      ]
     }
-   ]
-  }
- ],
- "quiz": {
-  "heading": "🧠 Check your understanding",
-  "questions": [
-   {
-    "correct": 1,
-    "question": "In uniform circular motion, what stays constant?",
-    "options": [
-     "The direction of the velocity",
-     "The magnitude of the velocity",
-     "The entire velocity vector",
-     "Nothing stays constant"
-    ],
-    "explain": "In circular motion, the magnitude of the velocity stays constant while its direction keeps changing continuously from point to point."
-   },
-   {
-    "correct": 2,
-    "question": "Centripetal acceleration arises because of:",
-    "options": [
-     "A change in the magnitude of the velocity only",
-     "A constant direction of motion",
-     "A change in the direction of motion, independent of its magnitude",
-     "An increase in the radius of the path"
-    ],
-    "explain": "Centripetal acceleration is the time rate of change of the direction of motion, arising from the change in direction regardless of the magnitude of the speed."
-   },
-   {
-    "correct": 0,
-    "question": "In uniform circular motion, the centripetal acceleration is:",
-    "options": [
-     "Constant in magnitude, changing in direction",
-     "Variable in both magnitude and direction",
-     "Constant in both magnitude and direction",
-     "Always zero"
-    ],
-    "explain": "In uniform circular motion, the centripetal acceleration is constant in magnitude but changes in direction, always pointing toward the center of rotation."
-   },
-   {
-    "correct": 3,
-    "question": "The correct expression for centripetal acceleration in terms of angular speed is:",
-    "options": [
-     "\\( a_c = \\omega r^2 \\)",
-     "\\( a_c = \\omega/r \\)",
-     "\\( a_c = \\omega^2/r \\)",
-     "\\( a_c = \\omega^2 r \\)"
-    ],
-    "explain": "From \\( a_c=v^2/r \\), substituting \\( v=\\omega r \\) gives \\( a_c=(\\omega r)^2/r=\\omega^2 r \\)."
-   },
-   {
-    "correct": 1,
-    "question": "Centripetal acceleration depends on:",
-    "options": [
-     "Mass and radius",
-     "The square of the speed and the radius of rotation",
-     "The period only",
-     "The applied force only"
-    ],
-    "explain": "From \\( a_c=v^2/r \\), centripetal acceleration depends on the square of the body's speed and the radius of the circular path it moves along."
-   }
-  ]
- },
- "summary": {
-  "heading": "📋 Lesson summary",
-  "items": [
-   "Circular motion: motion of a body along a circular path with constant speed and continuously changing direction.",
-   "Centripetal acceleration: the time rate of change of the direction of motion, always pointing toward the center of rotation.",
-   "\\( a_c = v^2/r = \\omega^2 r \\)."
-  ]
- },
- "mindmap": {
-  "heading": "🗺 Lesson Mind Map",
-  "ariaLabel": "Mind map for Lesson 1",
-  "viewBox": "0 0 820 300",
-  "center": {
-   "cx": 410.0,
-   "cy": 150.0,
-   "r": 56.0,
-   "color": "#7c6fee",
-   "lines": [
-    "Circular",
-    "motion"
-   ]
+  ],
+  "quiz": {
+    "heading": "🧠 Check your understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "In uniform circular motion, what stays constant?",
+        "options": [
+          "The direction of the velocity",
+          "The magnitude of the velocity",
+          "The entire velocity vector",
+          "Nothing stays constant"
+        ],
+        "explain": "In circular motion, the magnitude of the velocity stays constant while its direction keeps changing continuously from point to point."
+      },
+      {
+        "correct": 2,
+        "question": "Centripetal acceleration arises because of:",
+        "options": [
+          "A change in the magnitude of the velocity only",
+          "A constant direction of motion",
+          "A change in the direction of motion, independent of its magnitude",
+          "An increase in the radius of the path"
+        ],
+        "explain": "Centripetal acceleration is the time rate of change of the direction of motion, arising from the change in direction regardless of the magnitude of the speed."
+      },
+      {
+        "correct": 0,
+        "question": "In uniform circular motion, the centripetal acceleration is:",
+        "options": [
+          "Constant in magnitude, changing in direction",
+          "Variable in both magnitude and direction",
+          "Constant in both magnitude and direction",
+          "Always zero"
+        ],
+        "explain": "In uniform circular motion, the centripetal acceleration is constant in magnitude but changes in direction, always pointing toward the center of rotation."
+      },
+      {
+        "correct": 3,
+        "question": "The correct expression for centripetal acceleration in terms of angular speed is:",
+        "options": [
+          "\\( a_c = \\omega r^2 \\)",
+          "\\( a_c = \\omega/r \\)",
+          "\\( a_c = \\omega^2/r \\)",
+          "\\( a_c = \\omega^2 r \\)"
+        ],
+        "explain": "From \\( a_c=v^2/r \\), substituting \\( v=\\omega r \\) gives \\( a_c=(\\omega r)^2/r=\\omega^2 r \\)."
+      },
+      {
+        "correct": 1,
+        "question": "Centripetal acceleration depends on:",
+        "options": [
+          "Mass and radius",
+          "The square of the speed and the radius of rotation",
+          "The period only",
+          "The applied force only"
+        ],
+        "explain": "From \\( a_c=v^2/r \\), centripetal acceleration depends on the square of the body's speed and the radius of the circular path it moves along."
+      }
+    ]
   },
-  "satellites": [
-   {
-    "cx": 180.0,
-    "cy": 80.0,
-    "r": 48.0,
-    "color": "#3fa9f5",
-    "lines": [
-     "Constant",
-     "speed"
+  "summary": {
+    "heading": "📋 Lesson summary",
+    "items": [
+      "Circular motion: motion of a body along a circular path with constant speed and continuously changing direction.",
+      "Centripetal acceleration: the time rate of change of the direction of motion, always pointing toward the center of rotation.",
+      "\\( a_c = v^2/r = \\omega^2 r \\)."
     ]
-   },
-   {
-    "cx": 640.0,
-    "cy": 80.0,
-    "r": 48.0,
-    "color": "#2fd18f",
-    "lines": [
-     "Changing",
-     "direction"
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map for Lesson 1",
+    "viewBox": "0 0 820 300",
+    "center": {
+      "cx": 410.0,
+      "cy": 150.0,
+      "r": 56.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Circular",
+        "motion"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 180.0,
+        "cy": 80.0,
+        "r": 48.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Constant",
+          "speed"
+        ]
+      },
+      {
+        "cx": 640.0,
+        "cy": 80.0,
+        "r": 48.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Changing",
+          "direction"
+        ]
+      },
+      {
+        "cx": 410.0,
+        "cy": 250.0,
+        "r": 48.0,
+        "color": "#ffab5e",
+        "lines": [
+          "aₒ=v²/r=ω²r"
+        ]
+      }
     ]
-   },
-   {
-    "cx": 410.0,
-    "cy": 250.0,
-    "r": 48.0,
-    "color": "#ffab5e",
-    "lines": [
-     "aₒ=v²/r=ω²r"
-    ]
-   }
-  ]
- }
+  }
 }
