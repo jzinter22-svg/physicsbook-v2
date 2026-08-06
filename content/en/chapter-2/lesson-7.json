@@ -1,0 +1,616 @@
+{
+  "lessonNumber": 7,
+  "chapterNumber": 2,
+  "meta": {
+    "pageTitle": "Lesson 7: Chapter Questions and Problems — Chapter Two",
+    "description": "2-10 Chapter Two questions and problems: multiple-choice questions, short questions, and the three calculation problems, each fully solved.",
+    "breadcrumbChapter": "Chapter 2",
+    "breadcrumbLesson": "Chapter Questions and Problems",
+    "footer": "Chapter Two: Interference, Polarization, Diffraction, and Scattering — Lesson 7: Chapter Questions and Problems"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 7 of 7 · Chapter Two",
+    "title": "Chapter Two Questions and Problems",
+    "lead": "2-10 Chapter questions and problems: multiple choice · short questions · calculation problems — all fully solved"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Reviews the key concepts and laws of Chapter Two by solving multiple-choice questions.",
+    "Answers short questions about interference, diffraction, polarization, and scattering.",
+    "Solves the three calculation problems with detailed steps using all the chapter's laws."
+  ],
+  "content": [
+    {
+      "type": "sectionIntro",
+      "heading": "✅ Q1: Choose the Correct Answer",
+      "leadHtml": null,
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>The reason for the appearance of color in thin oil films and soap bubbles is the phenomenon of:</p><ul><li>a- Scattering</li><li>b- Interference</li><li>c- Diffraction</li><li>d- The Doppler effect</li></ul>",
+      "label": "1",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The colors of thin films result from the interference of the two waves reflected from the front and back surfaces of the film.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — Interference",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>The blue color of the sky is attributed to the following:</p><ul><li>a- Air molecules are blue</li><li>b- The color of the eye's lenses is blue</li><li>c- Light scatters more efficiently at short wavelengths</li><li>d- Light scatters more efficiently at long wavelengths</li></ul>",
+      "label": "2",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The amount of scattering is inversely proportional to the fourth power of the wavelength; short waves (like blue) scatter far more efficiently than long waves.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: c — Light scatters more efficiently at short wavelengths",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 3,
+      "problemHtml": "<p>Diffraction is attributed to the following:</p><ul><li>a- The splitting of a white light beam into colored components</li><li>b- Light interference producing bright colors in thin oil films</li><li>c- The bending of waves around the edge of an obstacle</li><li>d- An increase in frequency due to the motion of the wave source relative to the observer</li></ul>",
+      "label": "3",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Diffraction is the bending of light around the edge of an obstacle, or its spreading through a small opening.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: c — The bending of waves around the edge of an obstacle",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 4,
+      "problemHtml": "<p>When the crest of one wave meets the crest of another, the result is:</p><ul><li>a- Constructive interference</li><li>b- Destructive interference</li><li>c- Diffraction</li><li>d- Reflection</li></ul>",
+      "label": "4",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "A crest meeting a crest (same phase, same amplitude) represents constructive interference (reinforcement).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Constructive interference",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 5,
+      "problemHtml": "<p>X-rays used to examine materials have wavelengths that are:</p><ul><li>a- Long</li><li>b- Short</li><li>c- Of medium frequency</li><li>d- Within the red range</li></ul>",
+      "label": "5",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "For rays to diffract off the spacing between atoms (on the order of angstroms), their wavelength must be short, close to these spacings.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — Short",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 6,
+      "problemHtml": "<p>The power of light scattering is proportional to the following:</p><ul><li>a- Directly with the wavelength</li><li>b- Directly with the frequency</li><li>c- Directly with the wave amplitude</li><li>d- Inversely with the fourth power of the wavelength</li></ul>",
+      "label": "6",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The amount of scattering \\(\\propto 1/\\lambda^4\\).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: d — Inversely with the fourth power of the wavelength",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 7,
+      "problemHtml": "<p>Which of the following phenomena proves that light is a transverse wave:</p><ul><li>a- Interference</li><li>b- Diffraction</li><li>c- Scattering</li><li>d- Polarization</li></ul>",
+      "label": "7",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Polarization only occurs for transverse waves, so demonstrating that light can be polarized is evidence that it is a transverse wave.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: d — Polarization",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 8,
+      "problemHtml": "<p>Above Earth's atmosphere, the sky appears:</p><ul><li>a- Blue</li><li>b- Black</li><li>c- Multiple colors</li><li>d- Orange</li></ul>",
+      "label": "8",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "In the absence of the atmosphere that scatters light, there is no scattered light arriving from every direction, so the sky appears black.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — Black",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 9,
+      "problemHtml": "<p>Constructive interference occurs whenever the phase difference between the two interfering waves is:</p><ul><li>a- An integer number of wavelengths</li><li>b- Half a wavelength</li><li>c- A third of a wavelength</li><li>d- A quarter of a wavelength</li></ul>",
+      "label": "9",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Constructive interference: \\(\\Delta\\ell=0,\\lambda,2\\lambda,\\dots\\) — that is, an integer number of wavelengths.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — An integer number of wavelengths",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 10,
+      "problemHtml": "<p>A polarized light beam has the following:</p><ul><li>a- Electric and magnetic fields with random directions</li><li>b- The electric field vibrates in a single plane</li><li>c- Electric fields with random directions</li><li>d- The electric field vibrates in some directions more than others</li></ul>",
+      "label": "10",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "In polarized light, the electric field vibrates perpendicular, in a single plane only.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — The electric field vibrates in a single plane",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 11,
+      "problemHtml": "<p>Longitudinal waves cannot exhibit:</p><ul><li>a- Refraction</li><li>b- Reflection</li><li>c- Polarization</li><li>d- Diffraction</li></ul>",
+      "label": "11",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Polarization is limited to transverse waves, and longitudinal waves cannot exhibit it.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: c — Polarization",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "🧩 Short Questions",
+      "leadHtml": null,
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 Short Questions"
+    },
+    {
+      "type": "example",
+      "number": 12,
+      "problemHtml": "<p>Is the phenomenon that occurs in Young's experiment diffraction, interference, or both together? Explain.</p>",
+      "label": "Q2",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Both phenomena occur in Young's experiment: each of the two slits causes diffraction of the light (its spreading behind the narrow slit), then the two spreading waves emerging from the slits interfere to form the pattern of bright and dark fringes (Young's fringes) on the screen.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Both phenomena occur together: diffraction at each slit, then interference between the two resulting waves",
+        "label": "Answer"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 Short Questions"
+    },
+    {
+      "type": "example",
+      "number": 13,
+      "problemHtml": "<p>Which waves can be polarized: infrared rays or sound waves? Why?</p>",
+      "label": "Q3",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Infrared rays can be polarized because they are transverse electromagnetic waves, while sound waves are longitudinal waves (their particles vibrate along the same direction as their propagation), so they cannot be polarized.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Infrared rays (a transverse wave); sound (a longitudinal wave) cannot be polarized",
+        "label": "Answer"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 Short Questions"
+    },
+    {
+      "type": "example",
+      "number": 14,
+      "problemHtml": "<p>What are light waves called in which the electric field vibrates perpendicular to their direction of propagation, in a single plane?</p>",
+      "label": "Q4",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "This is precisely the definition of polarized light.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Called polarized light",
+        "label": "Answer"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 Short Questions"
+    },
+    {
+      "type": "example",
+      "number": 15,
+      "problemHtml": "<p>What is meant by each of the following: 1- Constructive interference. 2- Scattering. 3- Diffraction.</p>",
+      "label": "Q5",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1- Constructive interference: the superposition of two coherent waves in the same phase (or with an optical path difference equal to an integer number of wavelengths), increasing the intensity of the resulting wave.",
+            "calc": []
+          },
+          {
+            "note": "2- Scattering: a special case of diffraction that occurs when light passes through a medium containing particles whose diameters are close to the wavelength, causing short waves to scatter more efficiently.",
+            "calc": []
+          },
+          {
+            "note": "3- Diffraction: the spreading and bending of light into the region behind a small obstacle (a narrow slit or thin wire) standing in its path.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Three definitions: constructive interference, scattering, and diffraction (as detailed above)",
+        "label": "Answer"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 Short Questions"
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "🧮 Chapter Two Problems",
+      "leadHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Problems"
+    },
+    {
+      "type": "example",
+      "number": 16,
+      "problemHtml": "<p>Monochromatic light was used to illuminate two narrow parallel slits, the distance between them being (a=0.8 mm). Interference appeared on a screen (50 cm) from them, and if the distance between every two consecutive bright fringes is (0.304 mm), calculate the wavelength of the light used.</p>",
+      "label": "Problem 1",
+      "solution": {
+        "given": [
+          "\\( a = 0.8\\ \\text{mm} = 0.8\\times10^{-3}\\ \\text{m} \\) — the separation between the slits (after conversion)",
+          "\\( D = 50\\ \\text{cm} = 0.5\\ \\text{m} \\) — the distance of the screen from the slits (after conversion)",
+          "\\( \\Delta X = 0.304\\ \\text{mm} = 0.304\\times10^{-3}\\ \\text{m} \\) — the distance between two consecutive bright fringes (after conversion)"
+        ],
+        "required": "Calculate the wavelength \\(\\lambda\\) of the light used.",
+        "steps": [
+          {
+            "note": "The fringe-spacing relation: \\(\\Delta X=\\lambda D/a\\); rearranging to solve for λ",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\lambda = \\dfrac{\\Delta X \\cdot a}{D} \\)"
+              }
+            ]
+          },
+          {
+            "note": "Substituting the values",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\lambda = \\dfrac{(0.304\\times10^{-3})(0.8\\times10^{-3})}{0.5} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\lambda = 4.864\\times10^{-7}\\ \\text{m} \\approx 486\\ \\text{nm} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ λ ≈ 486 nm",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 2,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Problems"
+    },
+    {
+      "type": "example",
+      "number": 17,
+      "problemHtml": "<p>A single slit of width (0.1 mm) is illuminated by parallel monochromatic light of wavelength (600 nm), and diffraction bands are observed on a screen (40 cm) from the slit. What is the distance of the third dark fringe from the center of the bright central fringe (order n=3)?</p>",
+      "label": "Problem 2",
+      "solution": {
+        "given": [
+          "\\( a = 0.1\\ \\text{mm} = 1\\times10^{-4}\\ \\text{m} \\) — the width of the single slit (after conversion)",
+          "\\( \\lambda = 600\\ \\text{nm} = 6\\times10^{-7}\\ \\text{m} \\) — the wavelength (after conversion)",
+          "\\( D = 40\\ \\text{cm} = 0.4\\ \\text{m} \\) — the distance of the screen from the slit (after conversion)",
+          "\\( n = 3 \\) — the order of the dark fringe"
+        ],
+        "required": "Calculate the distance of the third dark fringe from the center of the diffraction pattern.",
+        "steps": [
+          {
+            "note": "For the dark diffraction fringes of a single slit, the same form used for a fringe's position is used: \\(y_n = n\\lambda D/a\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( y_3 = \\dfrac{3\\times(6\\times10^{-7})\\times 0.4}{1\\times10^{-4}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( y_3 = 7.2\\times10^{-3}\\ \\text{m} = 0.72\\ \\text{cm} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ y₃ = 0.72 cm",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 2,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Problems"
+    },
+    {
+      "type": "example",
+      "number": 18,
+      "problemHtml": "<p>Monochromatic light of wavelength (432 nm) was used in Young's two-slit experiment, and it was found that the distance between the first bright fringe and the central fringe equals (0.2 mm). If the screen is (6 m) from the slits, what is the distance between the slits?</p>",
+      "label": "Problem 3",
+      "solution": {
+        "given": [
+          "\\( \\lambda = 432\\ \\text{nm} = 432\\times10^{-9}\\ \\text{m} \\) — the wavelength (after conversion)",
+          "\\( X = 0.2\\ \\text{mm} = 0.2\\times10^{-3}\\ \\text{m} \\) — the distance of the first bright fringe from the central fringe (after conversion)",
+          "\\( D = 6\\ \\text{m} \\) — the distance of the screen from the slits",
+          "\\( n = 1 \\) — the fringe order (first bright fringe)"
+        ],
+        "required": "Calculate the distance between the slits \\(a\\).",
+        "steps": [
+          {
+            "note": "From the relation \\(\\lambda=aX/nD\\), rearranging to solve for \\(a\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( a = \\dfrac{\\lambda nD}{X} \\)"
+              }
+            ]
+          },
+          {
+            "note": "Substituting the given values",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( a = \\dfrac{(432\\times10^{-9})(1)(6)}{0.2\\times10^{-3}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( a = 1.296\\times10^{-2}\\ \\text{m} = 12.96\\ \\text{mm} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ a = 12.96 mm",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 2,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Problems"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Final Review of Chapter Two",
+    "questions": [
+      {
+        "correct": 0,
+        "question": "The two fundamental conditions for interference between two waves are:",
+        "options": [
+          "That the two waves be coherent, share a vibration direction, and travel in one medium",
+          "That one be a light wave and the other a sound wave",
+          "That they differ greatly in frequency",
+          "That they propagate in two different media"
+        ],
+        "explain": "Interference requires that the two waves be coherent, and share the same plane of vibration, medium, and direction toward the same point at the same time."
+      },
+      {
+        "correct": 2,
+        "question": "The fundamental relation in Young's experiment is:",
+        "options": [
+          "\\( F=ma \\)",
+          "\\( E=mc^2 \\)",
+          "\\( \\lambda=aX/nD \\)",
+          "\\( v=f\\lambda \\)"
+        ],
+        "explain": "The relation \\(\\lambda=aX/nD\\) relates the wavelength to the dimensions of Young's experiment setup."
+      },
+      {
+        "correct": 1,
+        "question": "The two factors affecting interference in thin films are:",
+        "options": [
+          "Temperature and pressure",
+          "The film thickness and the phase reversal upon reflection",
+          "The speed of light and the angle of incidence only",
+          "The mass of the film and its volume"
+        ],
+        "explain": "Interference in thin films depends on the film thickness (extra path = 2t) and on the phase reversal (π) upon reflection at the front surface."
+      },
+      {
+        "correct": 3,
+        "question": "Polarization is evidence that light is a __ wave:",
+        "options": [
+          "Longitudinal",
+          "Mechanical",
+          "Sound",
+          "Transverse"
+        ],
+        "explain": "Polarization occurs only for transverse waves, and light's ability to be polarized is evidence of its transverse nature."
+      },
+      {
+        "correct": 1,
+        "question": "The amount of light scattering is inversely proportional to:",
+        "options": [
+          "The square of the wave amplitude",
+          "The fourth power of the wavelength",
+          "The speed of light",
+          "The angle of incidence only"
+        ],
+        "explain": "The amount of scattering \\(\\propto 1/\\lambda^4\\); therefore short wavelengths (blue) scatter far more than long wavelengths (red)."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Chapter Two Summary",
+    "items": [
+      "Interference: the superposition of two coherent waves; constructive at \\(\\Delta\\ell=n\\lambda\\), destructive at \\(\\Delta\\ell=(n+\\tfrac12)\\lambda\\).",
+      "Young's experiment: \\(\\lambda=aX/nD\\), producing regular bright and dark fringes that prove the wave nature of light.",
+      "Interference in thin films depends on the film thickness and phase reversal, and explains the colors of soap bubbles and oil films.",
+      "Diffraction: the bending of light around small obstacles, explained by Fresnel using wave theory, and used in the study of crystals (X-ray diffraction).",
+      "Polarization: evidence of the transverse nature of light; achieved by selective absorption, reflection, or double refraction.",
+      "Scattering: \\(\\propto 1/\\lambda^4\\) — explains the blue of the sky and the reddening of the sun at sunrise and sunset."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Chapter Two Mind Map",
+    "ariaLabel": "Comprehensive mind map of Chapter Two",
+    "viewBox": "0 0 520 240",
+    "center": {
+      "cx": 260.0,
+      "cy": 120.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Wave Phenomena",
+        "of Light"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Interference",
+          "Young's experiment"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 195.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Thin films"
+        ]
+      },
+      {
+        "cx": 430.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Diffraction"
+        ]
+      },
+      {
+        "cx": 430.0,
+        "cy": 195.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Polarization",
+          "and scattering"
+        ]
+      }
+    ]
+  }
+}
