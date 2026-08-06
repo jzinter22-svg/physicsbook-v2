@@ -72,9 +72,27 @@
       "sectionNavLabel": null
     },
     {
-      "type": "formula",
-      "id": null,
-      "html": "$$ P_{av} = \\dfrac{I_m V_m}{2} $$",
+      "type": "simulation",
+      "svgId": "powerSvg",
+      "svgAriaLabel": "منحني القدرة الآنية والمتوسطة في مقاومة أومية خالصة",
+      "svgViewBox": "0 0 360 200",
+      "svgWidth": "360",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ محاكاة تفاعلية: منحني القدرة في مقاومة أومية خالصة (الشكل 6-4)",
+      "descriptionHtml": "لاحظ أن منحني القدرة يتغيّر من الصفر إلى القيمة العظمى الموجبة ولا يوجد منحني سالب للقدرة؛ لأن الفولطية والتيار بطور واحد — أي أن فرق الطور بينهما يساوي صفرًا — فإما أن يكونا موجبَين معًا وإما سالبَين معًا. لذا فإن معدل القدرة يساوي نصف حاصل ضرب القيمة العظمى لكل من الفولطية والتيار، وهي قدرة حقيقية مستهلكة في المقاومة تكون على شكل حرارة، وأن تردد منحني القدرة يساوي ضعف تردد منحني التيار.",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "$$ P_{av} = \\dfrac{I_m V_m}{2} $$",
+          "id": null,
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
       "sectionGroup": 5,
       "sectionId": "power-widget",
       "sectionNavLabel": "🕹️ منحني القدرة (الشكل 6-4)"

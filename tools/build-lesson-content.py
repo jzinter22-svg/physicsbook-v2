@@ -268,8 +268,20 @@ def extract_simulation(section):
     # animated SVG + a live-updating rule-box readout, no user control at
     # all — still needs to be a simulation block (not fall through to being
     # misread as a bare "formula" block, which would silently drop its
-    # heading, description, and the SVG mount itself).
-    has_live_svg = panel and panel.select_one("svg[id]")
+    # heading, description, and the SVG mount itself). Checked across the
+    # whole section (not just panel): several such passive-animation
+    # widgets (e.g. ch2 l5's EM-wave illustration) have no .io-panel
+    # wrapper at all — just a bare .mindmap-wrap svg inside a plain .card —
+    # so scoping to panel alone would miss them and silently lose the SVG
+    # mount to the generic "explanation" fallback. Excludes svgs nested
+    # inside .example (e.g. ch3 l6's short-answer section, which mixes a
+    # handful of Q&A .example pairs with small id'd illustration svgs
+    # embedded *inside* individual answers) — those aren't a section-level
+    # widget at all, and matching them here would make the whole mixed
+    # section get swallowed into one bogus simulation block, dropping
+    # every sibling .example in it.
+    has_live_svg = next((svg for svg in section.select(".mindmap-wrap svg[id]")
+                          if svg.find_parent(class_="example") is None), None)
     if not has_control and not has_live_svg:
         return None
     panel = panel or section
