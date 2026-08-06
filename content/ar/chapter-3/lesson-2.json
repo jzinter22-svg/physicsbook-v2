@@ -89,7 +89,13 @@
       "trailingHtml": null,
       "sectionGroup": 1,
       "sectionId": "righthand-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 3-3"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 3-3",
+      "labels": {
+        "rhrConductorLabel": "v (الموصل)",
+        "rhrStatusPrefix": "التيار المحتث: ",
+        "rhrStatusOut": "خارج من الصفحة (نحو القارئ) •",
+        "rhrStatusInto": "داخل الصفحة (بعيدًا عن القارئ) ×"
+      }
     },
     {
       "type": "paragraph",
@@ -138,7 +144,13 @@
       "trailingHtml": null,
       "sectionGroup": 5,
       "sectionId": "conductor-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 4-3"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 4-3",
+      "labels": {
+        "lenzConductorLabel": "v",
+        "opposingForceLabel": "قوة معاكسة",
+        "captionDown": "الموصل يتحرك لأسفل → تيار خارج الصفحة",
+        "captionUp": "الموصل يتحرك لأعلى → تيار داخل الصفحة"
+      }
     },
     {
       "type": "paragraph",
