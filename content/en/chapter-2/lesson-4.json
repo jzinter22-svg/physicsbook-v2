@@ -1,0 +1,295 @@
+{
+  "lessonNumber": 4,
+  "chapterNumber": 2,
+  "meta": {
+    "pageTitle": "Lesson 4: Diffraction and Its Applications — Chapter Two",
+    "description": "2-6 Diffraction of light and its wave explanation; 2-7 the interference and diffraction phenomena of light and their applications in X-rays, telescopes, and microscopes.",
+    "breadcrumbChapter": "Chapter 2",
+    "breadcrumbLesson": "Diffraction and Its Applications",
+    "footer": "Chapter Two: Interference, Polarization, Diffraction, and Scattering — Lesson 4: Diffraction and Its Applications"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 4 of 7 · Chapter Two",
+    "title": "Diffraction and Its Applications",
+    "lead": "2-6 Diffraction of Light · 2-7 The Interference and Diffraction of Light and Their Applications"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Defines the phenomenon of diffraction and explains it based on the wave nature of light.",
+    "Clarifies when diffraction is more noticeable, and why it is difficult to observe in light.",
+    "States applications of diffraction, especially X-ray diffraction by crystals.",
+    "Explains why interference and diffraction can only be explained by the wave theory of light."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 2-6 Diffraction of Light",
+      "html": "It is well known that light travels in straight lines in homogeneous media, forming shadows, forming inverted images through small pinholes, and obeying the inverse-square law of illumination intensity. However, light waves diffract when passing obstacles that are small compared to their wavelengths. Diffraction of light can be defined as the spreading and bending of light into the region behind an obstacle standing in its path, where the obstacle here is a narrow slit or a thin wire.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "paragraph",
+      "html": "The scientist Fresnel explained the phenomenon of light diffraction in 1815 when he attributed it to the wave nature of light: every point on a wavefront is considered a secondary source of waves that spread out behind the obstacle, and when they interfere, bright and dark regions appear, called (diffraction fringes). Diffraction is more noticeable for long waves such as water waves and sound waves, while light waves diffract very little because of their short wavelength.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "gapSvg",
+      "svgAriaLabel": "Simulation of wave diffraction at a gap of variable width",
+      "svgViewBox": "0 0 360 220",
+      "svgWidth": "360",
+      "svgHeight": "220",
+      "sectionHeading": "🕹️ Interactive Simulation: Wave Diffraction at a Gap (Figures 2-9 and 2-10)",
+      "descriptionHtml": "Drag the gap-width slider relative to the wavelength, and observe: the narrower the gap compared to the wavelength, the more the waves curve and spread behind the barrier (more noticeable diffraction), and the wider the gap, the more the waves spread almost in a straight line (less noticeable diffraction).",
+      "controls": [
+        {
+          "labelHtml": "Gap-width ratio a/λ = <span id=\"gapVal\">4</span>",
+          "inputId": "gapSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0.5",
+          "inputMax": "8",
+          "inputStep": "0.25",
+          "inputValue": "4"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "Moderate diffraction",
+          "id": "gapStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "diffraction-widget",
+      "sectionNavLabel": "🕹️ Recreating Figures 2-9 and 2-10",
+      "labels": {
+        "gapStatusVeryClear": "Very pronounced diffraction 🌊 (gap close to the wavelength)",
+        "gapStatusNoticeable": "Noticeable diffraction",
+        "gapStatusWeak": "Weak diffraction — nearly a straight line",
+        "srcLabel": "Incident waves"
+      }
+    },
+    {
+      "type": "paragraph",
+      "html": "It is well known about wave behavior that interference occurs after diffraction, and a pattern of constructive interference fringes and dark destructive fringes (dark lines) is observed.</p><p>Since the wavelengths of light radiation are very small, diffraction in light can only be observed at a large distance from the barrier. The phenomenon of diffraction is the bending of light around small obstacles and its spreading through small openings, and it is most pronounced for small waves.</p><p>This phenomenon also occurs with elementary particles such as the electron and the neutron, since diffraction occurs with matter and is studied in quantum mechanics in modern studies.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The phenomenon of diffraction is frequently observed with crystal systems, and by studying it the crystalline shape of metals can be determined — some are cubic crystals, hexagonal crystals, rectangular, and others.</p><p>Among the uses of diffraction is testing whether waves diffract in different objects or not; for example, the diffraction of X-rays by crystals, which proved that these rays are waves.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "braggSvg",
+      "svgAriaLabel": "Simulation of X-ray reflection from a plane of atoms",
+      "svgViewBox": "0 0 320 180",
+      "svgWidth": "320",
+      "svgHeight": "180",
+      "sectionHeading": "🕹️ Interactive Simulation: X-ray Reflection from a Layer of Atoms (Figure 2-11)",
+      "descriptionHtml": "Drag the angle-of-incidence slider θ, and observe the path difference \\(d\\sin\\theta\\) between the rays reflected from neighboring atoms in the same plane, and when constructive interference is achieved between the reflected rays.",
+      "controls": [
+        {
+          "labelHtml": "Angle of incidence θ = <span id=\"braggThetaVal\">30</span>°",
+          "inputId": "braggSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputMin": "5",
+          "inputMax": "80",
+          "inputStep": "1",
+          "inputValue": "30",
+          "inputClass": "neu-range"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "Path difference d sinθ = 0.50 d",
+          "id": "braggStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 5,
+      "sectionId": "bragg-widget",
+      "sectionNavLabel": "🕹️ Recreating Figure 2-11",
+      "labels": {
+        "braggStatusPrefix": "Path difference d sinθ = ",
+        "braggStatusSuffix": " d",
+        "braggStatusNote": " → close to an integer number of wavelengths (possible reinforcement)"
+      }
+    },
+    {
+      "type": "definition",
+      "label": "📌 2-7 The Interference and Diffraction Phenomena of Light",
+      "html": "You have learned, dear student, that light is one of the forms of energy that humans cannot do without, and it consists of electromagnetic waves of a wave nature that propagate in vacuum at a constant speed \\((3\\times10^{8}\\ \\text{m/s})\\); therefore, the explanation of the phenomenon of interference — which represents the meeting and superposition of two waves, producing regions where the wave intensity increases (constructive interference) and others where the intensity decreases (destructive interference) — can only be explained within the wave theory, and cannot be explained according to Newton's particle theory.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "As for the phenomenon of diffraction in light, which states that light waves bend and spread around a narrow barrier or small opening, the smaller the size of the barrier or opening compared to the wavelength, the more pronounced the diffraction phenomenon. Examples of the diffraction phenomenon include the rainbow and the halos formed around the moon, and in some technical applications it places fundamental limits on the sharpness of camera, telescope, and microscope images, and it has a role in medicine as in the phenomenon of X-ray diffraction.",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "list",
+      "heading": "📋 Techniques of X-ray Diffraction",
+      "items": [
+        "Studying the crystalline nature of matter.",
+        "Studying the chemical composition of certain objects.",
+        "Studying the physical properties of thin-layered materials by calculating the angle of incidence, the scattering angle, the wavelength, and the radiation energy."
+      ],
+      "ordered": true,
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "Diffraction of light is:",
+        "options": [
+          "Reflection of light off a smooth surface",
+          "Refraction of light between two different media",
+          "The spreading and bending of light into the region behind an obstacle standing in its path",
+          "The dispersion of white light into the colors of the spectrum"
+        ],
+        "explain": "Diffraction of light is the spreading and bending of light into the region behind an obstacle (a narrow slit or a thin wire) standing in its path."
+      },
+      {
+        "correct": 1,
+        "question": "The scientist Fresnel explained the phenomenon of light diffraction based on:",
+        "options": [
+          "Newton's particle theory of light",
+          "The wave nature of light, in which every point on the wavefront is a secondary source",
+          "The special theory of relativity",
+          "The inverse-square law of illumination only"
+        ],
+        "explain": "In 1815, Fresnel explained diffraction by attributing it to the wave nature of light: every point on the wavefront is a secondary source of waves that interfere behind the obstacle."
+      },
+      {
+        "correct": 0,
+        "question": "Diffraction of light is difficult to observe easily (unlike water and sound waves) because of:",
+        "options": [
+          "The short wavelength of light compared to familiar obstacles",
+          "The very high speed of light",
+          "Light does not diffract at all",
+          "Light is a longitudinal wave"
+        ],
+        "explain": "Because the wavelength of light is very short, its diffraction is only noticeable in front of obstacles or openings that are very small compared to it."
+      },
+      {
+        "correct": 3,
+        "question": "The diffraction of X-rays by crystals proved that these rays are:",
+        "options": [
+          "Particles only",
+          "Do not interact with matter",
+          "Non-electromagnetic rays",
+          "Waves"
+        ],
+        "explain": "The diffraction of X-rays by crystals is evidence of their wave nature."
+      },
+      {
+        "correct": 1,
+        "question": "The phenomena of interference and diffraction in light cannot be explained according to:",
+        "options": [
+          "The wave theory of light",
+          "Newton's particle theory of light",
+          "Maxwell's electromagnetic equations",
+          "Huygens's principle for the placement of secondary wave sources"
+        ],
+        "explain": "Interference and diffraction are purely wave phenomena, and cannot be explained according to Newton's particle theory of light."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Diffraction: the spreading and bending of light behind a small obstacle, explained by Fresnel based on the wave nature of light (Huygens's principle).",
+      "Diffraction is more noticeable the smaller the obstacle or opening is compared to the wavelength.",
+      "Diffraction also occurs with elementary particles (electron, neutron) and is studied in quantum mechanics.",
+      "X-ray diffraction by crystals is used to study the crystalline nature, chemical composition, and physical properties of materials.",
+      "Interference and diffraction are wave phenomena that cannot be explained by Newton's particle theory."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of diffraction",
+    "viewBox": "0 0 480 220",
+    "center": {
+      "cx": 240.0,
+      "cy": 110.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Diffraction"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Fresnel's principle"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Electron diffraction",
+          "Quantum mechanics"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "X-ray diffraction"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Rainbow",
+          "Moon halo"
+        ]
+      }
+    ]
+  }
+}

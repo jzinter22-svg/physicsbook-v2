@@ -73,7 +73,13 @@
       "trailingHtml": null,
       "sectionGroup": 2,
       "sectionId": "diffraction-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكلين 9-2 و10-2"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكلين 9-2 و10-2",
+      "labels": {
+        "gapStatusVeryClear": "حيود واضح جدًا 🌊 (الفجوة قريبة من الطول الموجي)",
+        "gapStatusNoticeable": "حيود ملحوظ",
+        "gapStatusWeak": "حيود ضعيف تقريبًا خط مستقيم",
+        "srcLabel": "موجات ساقطة"
+      }
     },
     {
       "type": "paragraph",
@@ -126,7 +132,12 @@
       "trailingHtml": null,
       "sectionGroup": 5,
       "sectionId": "bragg-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 11-2"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 11-2",
+      "labels": {
+        "braggStatusPrefix": "فرق المسار d sinθ = ",
+        "braggStatusSuffix": " d",
+        "braggStatusNote": " → قريب من عدد صحيح من الطول الموجي (تقوية محتملة)"
+      }
     },
     {
       "type": "definition",
