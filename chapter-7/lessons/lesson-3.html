@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-3.html">
@@ -42,160 +43,16 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يذكر طريقتي حفر آبار النفط الخام: الحفر بالدق والحفر الرحوي.</span></li>
-        <li><span class="obj-num">2</span><span>يعرف دور التقنيات الصناعية في زيادة معدلات استخراج النفط الاقتصادية.</span></li>
-        <li><span class="obj-num">3</span><span>يعلّل استعمال طرائق الحقن والاستخراج الحراري في بعض آبار النفط.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 3-7 إستخراج النفط الخام</h2>
-      <p>يتم استخراج البترول أو النفط الخام بوساطة حفر بئر ليصل إلى مستودعات البترول تحت الأرض، وتكون بطريقتين.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — طريقتا حفر آبار النفط</span>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem">
-        <li><b>الحفر بالدق:</b> طريقة قديمة توقف استخدامها منذ فترة طويلة، وتتم بحفر ثقب في الأرض بدقّها دقًّا متواصلًا بأداة ثقيلة حادة الطرق.</li>
-        <li><b>الحفر الرحوي:</b> طريقة حديثة، مشابهة لمثقب النجار عند ثقب الخشب، حيث يتم الحفر بوساطة آلة تُدعى الحفارة، تشق طريقها في أثناء دورانها بحركة طاحنة إلى أعماق متزايدة من تحت سطح الأرض.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 4-7 كيفية استخراج النفط الخام قديمًا بوساطة الدق">
-          <g font-family="Cairo,sans-serif">
-            <rect x="0" y="150" width="280" height="30" fill="var(--surface)"/>
-            <line x1="100" y1="150" x2="100" y2="40" stroke="var(--text-secondary)" stroke-width="5"/>
-            <polygon points="70,40 130,40 100,15" fill="var(--text-secondary)"/>
-            <line x1="80" y1="150" x2="80" y2="70" stroke="var(--text-secondary)" stroke-width="4"/>
-            <line x1="120" y1="150" x2="120" y2="70" stroke="var(--text-secondary)" stroke-width="4"/>
-            <line x1="80" y1="70" x2="120" y2="70" stroke="var(--text-secondary)" stroke-width="4"/>
-            <rect x="90" y="150" width="20" height="10" fill="var(--accent-pink)"/>
-            <line x1="100" y1="160" x2="100" y2="190" stroke="var(--text-faint)" stroke-width="4" stroke-dasharray="3,3"/>
-            <text x="180" y="60" text-anchor="middle" font-size="11" font-weight="700" fill="var(--text-primary)">أداة ثقيلة</text>
-            <text x="180" y="74" text-anchor="middle" font-size="11" font-weight="700" fill="var(--text-primary)">حادة الطرق</text>
-            <text x="100" y="180" text-anchor="middle" font-size="10" font-weight="700" fill="var(--accent-pink)">دقّ متواصل نحو المستودع</text>
-          </g>
-        </svg>
-        <span class="diagram-caption">الشكل 4-7: كيفية استخراج النفط الخام قديمًا بوساطة الدق</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 5-7 كيفية استخراج النفط الخام بطريقة الحفر الرحوي">
-          <g font-family="Cairo,sans-serif">
-            <rect x="0" y="150" width="280" height="30" fill="var(--surface)"/>
-            <line x1="140" y1="150" x2="140" y2="30" stroke="var(--text-secondary)" stroke-width="6"/>
-            <circle cx="140" cy="25" r="12" fill="var(--accent-blue)"/>
-            <g transform="translate(140,25)">
-              <line x1="-10" y1="0" x2="10" y2="0" stroke="#fff" stroke-width="2"/>
-              <line x1="0" y1="-10" x2="0" y2="10" stroke="#fff" stroke-width="2"/>
-            </g>
-            <polygon points="132,150 148,150 152,165 128,165" fill="var(--accent-orange)"/>
-            <text x="200" y="30" text-anchor="middle" font-size="10" font-weight="700" fill="var(--accent-blue)">الحفّارة الدوّارة</text>
-            <text x="140" y="178" text-anchor="middle" font-size="10" font-weight="700" fill="var(--accent-orange)">رأس الحفر يشق طريقه بحركة دوران طاحنة</text>
-          </g>
-        </svg>
-        <span class="diagram-caption">الشكل 5-7: كيفية استخراج النفط الخام بطريقة الحفر الرحوي</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
-      <span class="def-label" style="color:var(--accent-green)">🔍 تعليل — لماذا يتم حقن الماء أو البخار أو الغازات في بعض آبار النفط؟</span>
-      <p style="margin:.3rem 0">هناك بعض الآبار يصل النفط فيها للسطح بطريقة طبيعية، وبعض الآبار يتم ضخ الماء أو البخار أو خليط الغازات المختلفة للمستودع لإبقاء معدلات الاستخراج الاقتصادية مستمرة. فعند زيادة الضغط تحت الأرض في مستودع الغاز بحيث يكون كافيًا، يبدأ النفط الخام بالخروج إلى السطح تحت تأثير هذا الضغط. وخلال فترة حياة البئر يقل الضغط، وعندما يقل إلى حدود معينة لا يكون كافيًا لدفع النفط إلى السطح، عندئذ يتم استخراج الجزء المتبقي في البئر بطرائق استخراج النفط الإضافية التي يتم فيها استعمال تقنيات مختلفة.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — طرائق استخراج النفط</span>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem">
-        <li><b>الاستخلاص المبدئي (الطبيعي):</b> يكون الضغط الطبيعي في المستودع كافيًا لوضع عدد من الصمامات على رأس البئر بشبكة الأنابيب للتخزين.</li>
-        <li><b>الاستخراج بالحقن:</b> ضخ الماء أو البخار أو خليط الغازات المختلفة للمستودع، لإبقاء معدلات الاستخراج الاقتصادية مستمرة بعد قلّة الضغط الطبيعي.</li>
-        <li><b>الاستخراج الحراري:</b> يعتمد على تسخين النفط وجعله أسهل للاستخراج، ويكون حقن البخار أكثر التقنيات استخدامًا في هذه الطريقة، وغالبًا ما يتم ذلك عن طريق التوليد المزدوج؛ إذ يُستخدم توربين (مولد) لإنتاج الكهرباء، وتُستخدم الحرارة الناتجة عنه لإنتاج البخار الذي يُحقن في المستودع. وتُستخدم هذه الطريقة بعد التأكد من جدواها الاقتصادية.</li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: طرائق استخراج النفط الخام</h2>
-      <p>اختر طريقة الاستخراج لمشاهدة كيفية خروج النفط من المستودع إلى السطح في كل حالة.</p>
-      <div class="io-panel">
-        <div class="io-row" role="group" aria-label="اختيار طريقة الاستخراج">
-          <button class="neu-btn primary" data-method="natural" id="btnNatural">استخلاص طبيعي</button>
-          <button class="neu-btn" data-method="inject" id="btnInject">استخراج بالحقن</button>
-          <button class="neu-btn" data-method="thermal" id="btnThermal">استخراج حراري</button>
-        </div>
-        <div class="mindmap-wrap"><svg id="wellSvg" viewBox="0 0 380 220" role="img" aria-label="محاكاة طرائق استخراج النفط الخام"></svg></div>
-        <p id="wellCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>طريقة الحفر التي توقف استخدامها منذ فترة طويلة هي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الحفر الرحوي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الحفر بالدق</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الحفر بالليزر</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الحفر الحراري</span></label>
-        </div>
-        <div class="quiz-explain">الحفر بالدق طريقة قديمة توقف استخدامها منذ فترة طويلة، وتتم بحفر ثقب بأداة ثقيلة حادة الطرق.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>طريقة الحفر الرحوي تُشبه في مبدأ عملها:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>مطرقة الحداد</span></label>
-          <label class="quiz-opt"><input type="radio"><span>منشار الخشب</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مثقب النجار عند ثقب الخشب</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مضخة الماء</span></label>
-        </div>
-        <div class="quiz-explain">الحفر الرحوي طريقة حديثة مشابهة لمثقب النجار عند ثقب الخشب، حيث تشق الحفارة طريقها بحركة دورانية طاحنة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>3.</span><span>عندما يقل الضغط الطبيعي في البئر عن الحد الكافي لدفع النفط إلى السطح، يتم:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>إغلاق البئر نهائيًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>حفر بئر جديد بالدق</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الانتظار حتى يعود الضغط من تلقاء نفسه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>استخراج الجزء المتبقي بطرائق إضافية مثل الحقن أو الاستخراج الحراري</span></label>
-        </div>
-        <div class="quiz-explain">عندما يقل الضغط عن الحد الكافي، يتم استخراج الجزء المتبقي في البئر بطرائق استخراج النفط الإضافية التي يتم فيها استعمال تقنيات مختلفة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>4.</span><span>يعتمد الاستخراج الحراري للنفط على:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>تسخين النفط وجعله أسهل للاستخراج، غالبًا بحقن البخار</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تبريد النفط ليصبح أكثف</span></label>
-          <label class="quiz-opt"><input type="radio"><span>إضافة مواد كيميائية ملوّنة للنفط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>حفر عدة آبار متوازية فقط</span></label>
-        </div>
-        <div class="quiz-explain">يعتمد الاستخراج الحراري على تسخين النفط وجعله أسهل للاستخراج، ويكون حقن البخار أكثر التقنيات استخدامًا في هذه الطريقة، وغالبًا ما يتم ذلك عن طريق التوليد المزدوج.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -205,12 +62,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>يستخرج النفط الخام بحفر بئر يصل إلى المستودع، بطريقتين: الحفر بالدق (قديمة) والحفر الرحوي (حديثة).</span></li>
-        <li><span>الاستخلاص المبدئي يعتمد على الضغط الطبيعي في المستودع لدفع النفط إلى السطح.</span></li>
-        <li><span>عند قلة الضغط، يتم حقن الماء أو البخار أو الغازات لإبقاء معدلات الاستخراج الاقتصادية مستمرة.</span></li>
-        <li><span>الاستخراج الحراري يعتمد على تسخين النفط (غالبًا بحقن البخار عبر التوليد المزدوج) لخفض كثافته وتسهيل استخراجه.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -221,29 +73,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l3" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l3">
-        <svg viewBox="0 -3 480 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية لاستخراج النفط الخام">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">إستخراج</text>
-            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">النفط الخام</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">الحفر بالدق</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="219" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">الحفر الرحوي</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">استخراج</text>
-            <text x="390" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">بالحقن</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">استخراج</text>
-            <text x="390" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">حراري</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l3"></div>
     </div>
   </section>
 
@@ -260,26 +90,28 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("wellSvg");
-  var caption = document.getElementById("wellCaption");
-  var buttons = document.querySelectorAll("[data-method]");
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
+  var svg, caption, buttons;
   var raf = null;
   var t0 = null;
+  var currentMethod = "natural";
 
-  var TEXTS = {
-    natural: "الاستخلاص الطبيعي: يكون الضغط الطبيعي داخل المستودع كافيًا لدفع النفط إلى السطح عبر شبكة الأنابيب.",
-    inject:  "الاستخراج بالحقن: يُضخّ الماء أو البخار أو خليط الغازات إلى المستودع لرفع الضغط وإبقاء معدلات الاستخراج الاقتصادية مستمرة.",
-    thermal: "الاستخراج الحراري: يُحقن البخار الساخن (عبر التوليد المزدوج) لتسخين النفط وخفض كثافته، فيسهل دفعه إلى السطح."
-  };
+  function texts(){
+    return {
+      natural: t("textNatural", "الاستخلاص الطبيعي: يكون الضغط الطبيعي داخل المستودع كافيًا لدفع النفط إلى السطح عبر شبكة الأنابيب."),
+      inject:  t("textInject", "الاستخراج بالحقن: يُضخّ الماء أو البخار أو خليط الغازات إلى المستودع لرفع الضغط وإبقاء معدلات الاستخراج الاقتصادية مستمرة."),
+      thermal: t("textThermal", "الاستخراج الحراري: يُحقن البخار الساخن (عبر التوليد المزدوج) لتسخين النفط وخفض كثافته، فيسهل دفعه إلى السطح.")
+    };
+  }
 
   function label(x,y,txt,color,size,weight){
-    var t = document.createElementNS(ns,"text");
-    t.setAttribute("x",x); t.setAttribute("y",y);
-    t.setAttribute("text-anchor","middle");
-    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||10); t.setAttribute("fill",color);
-    t.setAttribute("font-weight",weight||"700");
-    t.textContent = txt;
-    svg.appendChild(t);
+    var el = document.createElementNS(ns,"text");
+    el.setAttribute("x",x); el.setAttribute("y",y);
+    el.setAttribute("text-anchor","middle");
+    el.setAttribute("font-family","Cairo,sans-serif"); el.setAttribute("font-size",size||10); el.setAttribute("fill",color);
+    el.setAttribute("font-weight",weight||"700");
+    el.textContent = txt;
+    svg.appendChild(el);
   }
 
   function circ(cx,cy,r,fill,id){
@@ -301,7 +133,7 @@
     reservoir.setAttribute("x",130); reservoir.setAttribute("y",170); reservoir.setAttribute("width",120); reservoir.setAttribute("height",34);
     reservoir.setAttribute("rx",10); reservoir.setAttribute("fill","#3a2416"); reservoir.setAttribute("stroke","var(--text-faint)"); reservoir.setAttribute("stroke-width","1.5");
     svg.appendChild(reservoir);
-    label(190, 191, "المستودع", "#fff", 10, "700");
+    label(190, 191, t("reservoirLabel","المستودع"), "#fff", 10, "700");
 
     var pipe = document.createElementNS(ns,"rect");
     pipe.setAttribute("x",182); pipe.setAttribute("y",44); pipe.setAttribute("width",16); pipe.setAttribute("height",130);
@@ -313,7 +145,7 @@
     rig.setAttribute("fill","var(--text-secondary)");
     svg.appendChild(rig);
 
-    label(190, 14, "برج البئر", "var(--text-secondary)", 9, "700");
+    label(190, 14, t("rigLabel","برج البئر"), "var(--text-secondary)", 9, "700");
   }
 
   function stopAnim(){ if(raf){ cancelAnimationFrame(raf); raf = null; } }
@@ -345,7 +177,7 @@
     defs.innerHTML = '<marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--accent-blue)"/></marker>';
     svg.appendChild(defs);
     svg.appendChild(injArrow);
-    label(255, 60, "حقن ماء/بخار/غاز", "var(--accent-blue)", 9, "700");
+    label(255, 60, t("injectArrowLabel","حقن ماء/بخار/غاز"), "var(--accent-blue)", 9, "700");
 
     var dots = [circ(190,178,4,"var(--accent-orange)"), circ(190,192,4,"var(--accent-orange)"), circ(190,200,4,"var(--accent-orange)")];
     t0 = null;
@@ -372,7 +204,7 @@
     defs.innerHTML = '<marker id="arrowPink" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--accent-pink)"/></marker>';
     svg.appendChild(defs);
     svg.appendChild(steamArrow);
-    label(130, 60, "حقن بخار ساخن", "var(--accent-pink)", 9, "700");
+    label(130, 60, t("thermalArrowLabel","حقن بخار ساخن"), "var(--accent-pink)", 9, "700");
 
     var dots = [circ(190,178,5,"var(--accent-orange)"), circ(190,192,5,"var(--accent-orange)")];
     t0 = null;
@@ -392,19 +224,28 @@
   }
 
   function draw(method){
+    currentMethod = method;
     drawBase();
     if(method === "natural") animateNatural();
     else if(method === "inject") animateInject();
     else animateThermal();
-    caption.textContent = TEXTS[method];
+    caption.textContent = texts()[method];
     buttons.forEach(function(b){ b.classList.toggle("primary", b.getAttribute("data-method") === method); });
   }
 
-  buttons.forEach(function(b){
-    b.addEventListener("click", function(){ draw(b.getAttribute("data-method")); });
-  });
+  function boot(){
+    svg = document.getElementById("wellSvg");
+    caption = document.getElementById("wellCaption");
+    buttons = Array.prototype.slice.call(document.querySelectorAll("[data-method]"));
+    if(!svg || !caption || !buttons.length) return;
 
-  draw("natural");
+    buttons.forEach(function(b){
+      b.addEventListener("click", function(){ draw(b.getAttribute("data-method")); });
+    });
+
+    draw(currentMethod);
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

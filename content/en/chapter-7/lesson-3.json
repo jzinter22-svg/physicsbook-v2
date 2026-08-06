@@ -1,0 +1,261 @@
+{
+  "lessonNumber": 3,
+  "chapterNumber": 7,
+  "meta": {
+    "pageTitle": "Lesson 3: Extracting Crude Oil — Chapter Seven",
+    "description": "7-3 Extracting crude oil: percussion drilling and rotary drilling, and methods of increasing extraction rates (injection and thermal recovery).",
+    "breadcrumbChapter": "Chapter 7",
+    "breadcrumbLesson": "Extracting Crude Oil",
+    "footer": "Chapter Seven: Crude Oil — Lesson 3: Extracting Crude Oil"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 3 of 5 · 7-3",
+    "title": "Extracting Crude Oil",
+    "lead": "How does crude oil travel from its underground reservoirs to the surface? In this lesson, learn the two methods of drilling oil wells, and the methods used to increase extraction rates."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "States the two methods of drilling crude oil wells: percussion drilling and rotary drilling.",
+    "Knows the role of industrial technologies in increasing economic oil extraction rates.",
+    "Explains the use of injection and thermal extraction methods in some oil wells."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 7-3 Extracting Crude Oil",
+      "html": "Petroleum, or crude oil, is extracted by drilling a well down to the petroleum reservoirs underground, and this is done in one of two ways.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — The Two Methods of Drilling Oil Wells",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem\">\n<li><b>Percussion drilling:</b> An old method that has long fallen out of use, done by pounding a hole into the ground with continuous, heavy blows from a sharp, heavy tool.</li>\n<li><b>Rotary drilling:</b> A modern method, similar to a carpenter's drill boring into wood, in which a machine called a drill rig cuts its way down, grinding as it rotates, to increasing depths beneath the Earth's surface.</li>\n</ol>",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 7-4 how crude oil was historically extracted by percussion drilling\" role=\"img\" viewbox=\"0 0 280 190\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"var(--surface)\" height=\"30\" width=\"280\" x=\"0\" y=\"150\"></rect>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"5\" x1=\"100\" x2=\"100\" y1=\"150\" y2=\"40\"></line>\n<polygon fill=\"var(--text-secondary)\" points=\"70,40 130,40 100,15\"></polygon>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"4\" x1=\"80\" x2=\"80\" y1=\"150\" y2=\"70\"></line>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"4\" x1=\"120\" x2=\"120\" y1=\"150\" y2=\"70\"></line>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"4\" x1=\"80\" x2=\"120\" y1=\"70\" y2=\"70\"></line>\n<rect fill=\"var(--accent-pink)\" height=\"10\" width=\"20\" x=\"90\" y=\"150\"></rect>\n<line stroke=\"var(--text-faint)\" stroke-dasharray=\"3,3\" stroke-width=\"4\" x1=\"100\" x2=\"100\" y1=\"160\" y2=\"190\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"180\" y=\"60\">Heavy</text>\n<text fill=\"var(--text-primary)\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"180\" y=\"74\">sharp tool</text>\n<text fill=\"var(--accent-pink)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"100\" y=\"180\">Continuous pounding toward the reservoir</text>\n</g>\n</svg>",
+      "caption": "Figure 7-4: How crude oil was historically extracted by percussion drilling",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 7-5 how crude oil is extracted by rotary drilling\" role=\"img\" viewbox=\"0 0 280 190\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"var(--surface)\" height=\"30\" width=\"280\" x=\"0\" y=\"150\"></rect>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"6\" x1=\"140\" x2=\"140\" y1=\"150\" y2=\"30\"></line>\n<circle cx=\"140\" cy=\"25\" fill=\"var(--accent-blue)\" r=\"12\"></circle>\n<g transform=\"translate(140,25)\">\n<line stroke=\"#fff\" stroke-width=\"2\" x1=\"-10\" x2=\"10\" y1=\"0\" y2=\"0\"></line>\n<line stroke=\"#fff\" stroke-width=\"2\" x1=\"0\" x2=\"0\" y1=\"-10\" y2=\"10\"></line>\n</g>\n<polygon fill=\"var(--accent-orange)\" points=\"132,150 148,150 152,165 128,165\"></polygon>\n<text fill=\"var(--accent-blue)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"200\" y=\"30\">Rotary drill rig</text>\n<text fill=\"var(--accent-orange)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"140\" y=\"178\">Drill bit cuts its way down with a grinding, rotating motion</text>\n</g>\n</svg>",
+      "caption": "Figure 7-5: How crude oil is extracted by rotary drilling",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Reasoning — Why is water, steam, or gas injected into some oil wells?",
+      "html": "In some wells, oil reaches the surface naturally, while in others, water, steam, or a mixture of various gases is pumped into the reservoir to keep economic extraction rates going. When the underground pressure in the gas reservoir increases enough, crude oil begins to come to the surface under that pressure. Over the life of the well, the pressure drops, and once it falls below a certain limit it is no longer enough to push the oil to the surface — at that point, the remaining oil in the well is extracted using additional extraction methods that make use of different technologies.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Methods of Oil Extraction",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem\">\n<li><b>Primary (natural) recovery:</b> The natural pressure in the reservoir is enough to place a number of valves at the wellhead connected to a pipe network for storage.</li>\n<li><b>Injection extraction:</b> Pumping water, steam, or a mixture of various gases into the reservoir, to keep economic extraction rates going once the natural pressure declines.</li>\n<li><b>Thermal extraction:</b> Relies on heating the oil to make it easier to extract; steam injection is the most widely-used technique in this method, often carried out through cogeneration, where a turbine (generator) produces electricity, and the resulting heat is used to produce the steam that is injected into the reservoir. This method is used once its economic feasibility has been confirmed.</li>\n</ol>",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "wellSvg",
+      "svgAriaLabel": "Simulation of crude oil extraction methods",
+      "svgViewBox": "0 0 380 220",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: Methods of Crude Oil Extraction",
+      "descriptionHtml": "Choose an extraction method to see how oil moves from the reservoir to the surface in each case.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnNatural",
+          "html": "Natural recovery",
+          "class": "neu-btn primary",
+          "data": {
+            "data-method": "natural"
+          },
+          "style": null
+        },
+        {
+          "id": "btnInject",
+          "html": "Injection extraction",
+          "class": "neu-btn",
+          "data": {
+            "data-method": "inject"
+          },
+          "style": null
+        },
+        {
+          "id": "btnThermal",
+          "html": "Thermal extraction",
+          "class": "neu-btn",
+          "data": {
+            "data-method": "thermal"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "<p id=\"wellCaption\" style=\"text-align:center;color:var(--text-secondary);font-weight:700;margin:0\"></p>",
+      "sectionGroup": 6,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "reservoirLabel": "Reservoir",
+        "rigLabel": "Wellhead rig",
+        "injectArrowLabel": "Water/steam/gas injection",
+        "thermalArrowLabel": "Hot steam injection",
+        "textNatural": "Natural recovery: the natural pressure inside the reservoir is enough to push oil to the surface through the pipe network.",
+        "textInject": "Injection extraction: water, steam, or a gas mixture is pumped into the reservoir to raise the pressure and keep economic extraction rates going.",
+        "textThermal": "Thermal extraction: hot steam (via cogeneration) is injected to heat the oil and lower its density, making it easier to push to the surface."
+      }
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "The drilling method that has long fallen out of use is:",
+        "options": [
+          "Rotary drilling",
+          "Percussion drilling",
+          "Laser drilling",
+          "Thermal drilling"
+        ],
+        "explain": "Percussion drilling is an old method that has long fallen out of use, done by pounding a hole with a sharp, heavy tool."
+      },
+      {
+        "correct": 2,
+        "question": "In its basic principle, rotary drilling resembles:",
+        "options": [
+          "A blacksmith's hammer",
+          "A wood saw",
+          "A carpenter's drill boring into wood",
+          "A water pump"
+        ],
+        "explain": "Rotary drilling is a modern method similar to a carpenter's drill boring into wood, in which the drill rig cuts its way down with a rotating, grinding motion."
+      },
+      {
+        "correct": 3,
+        "question": "When the natural pressure in a well falls below the level needed to push oil to the surface, what happens is:",
+        "options": [
+          "The well is closed permanently",
+          "A new well is drilled by percussion",
+          "Operators wait for the pressure to return on its own",
+          "The remaining oil is extracted using additional methods such as injection or thermal extraction"
+        ],
+        "explain": "When the pressure falls below the sufficient level, the remaining oil in the well is extracted using additional extraction methods that make use of different technologies."
+      },
+      {
+        "correct": 0,
+        "question": "Thermal extraction of oil relies on:",
+        "options": [
+          "Heating the oil to make it easier to extract, often by steam injection",
+          "Cooling the oil to make it denser",
+          "Adding colored chemicals to the oil",
+          "Drilling several parallel wells only"
+        ],
+        "explain": "Thermal extraction relies on heating the oil to make it easier to extract; steam injection is the most widely-used technique in this method, often carried out through cogeneration."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Crude oil is extracted by drilling a well down to the reservoir, using one of two methods: percussion drilling (old) or rotary drilling (modern).",
+      "Primary recovery relies on the natural pressure in the reservoir to push oil to the surface.",
+      "When pressure declines, water, steam, or gases are injected to keep economic extraction rates going.",
+      "Thermal extraction relies on heating the oil (often by steam injection via cogeneration) to lower its density and make it easier to extract."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of crude oil extraction",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Extracting",
+        "Crude Oil"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Percussion",
+          "drilling"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Rotary",
+          "drilling"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Injection",
+          "extraction"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Thermal",
+          "extraction"
+        ]
+      }
+    ]
+  }
+}
