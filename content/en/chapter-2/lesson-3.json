@@ -1,0 +1,207 @@
+{
+  "lessonNumber": 3,
+  "chapterNumber": 2,
+  "meta": {
+    "pageTitle": "Lesson 3: Thin-Film Interference — Chapter Two",
+    "description": "2-5 Thin-Film Interference: the colors of soap bubbles and oil slicks, the effect of film thickness and phase reversal, and why a film looks colorful under white light.",
+    "breadcrumbChapter": "Chapter 2",
+    "breadcrumbLesson": "Thin-Film Interference",
+    "footer": "Chapter Two: Interference, Polarization, Diffraction, and Scattering — Lesson 3: Thin-Film Interference"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 3 of 7 · Chapter Two",
+    "title": "Thin-Film Interference",
+    "lead": "2-5 Thin-Film Interference: why do soap bubbles and oil slicks shine with rainbow colors?"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Explains why bright colors appear in soap bubbles and thin oil films.",
+    "States the two factors that govern interference in thin films: film thickness and phase reversal.",
+    "Explains why a thin film appears colored when illuminated with white light."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 2-5 Thin-Film Interference",
+      "html": "We all notice the bright colors that appear in soap bubbles and thin oil films. This phenomenon can be attributed to the combination of reflection and interference of light.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "paragraph",
+      "html": "When monochromatic light (of a specific wavelength) with a particular color falls on a thin oil film, part of the light reflects off the top surface, while another part passes through the film and then reflects off the bottom surface. The two reflected waves undergo a change in phase, and when combined, constructive or destructive interference occurs between them depending on the phase difference, forming a set of bright and dark fringes.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The film thickness is an important factor in the appearance of bright and dark fringes; it is one of the two factors that thin-film interference depends on, since the reflected waves travel an extra path from the back surface of the film equal to twice its thickness. The other factor affecting interference in thin films is the phase reversal that the waves reflected from the front surface undergo, whose magnitude is (π) or (180°); this represents constructive interference in that part of the film, making it a good reflector that appears bright.</p><p>The interference between the waves can be illustrated in the case of a layer of oil floating on the surface of water, as shown in Figure (2-7).",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "filmSvg",
+      "svgAriaLabel": "Diagram of two rays reflecting from the two surfaces of a thin film",
+      "svgViewBox": "0 0 320 200",
+      "svgWidth": "320",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive Simulation: Film Thickness and Reflected Color",
+      "descriptionHtml": "Drag the film-thickness slider \\(t\\), and watch how the optical path difference between the two reflected rays (from the front and back surfaces) changes, and which color of the visible spectrum achieves constructive interference (and appears prominent in the reflection) at that particular thickness — exactly as happens in a thin oil film illuminated with white light.",
+      "controls": [
+        {
+          "labelHtml": "Film thickness t = <span id=\"thicknessVal\">150</span> nm",
+          "inputId": "thicknessSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "50",
+          "inputMax": "400",
+          "inputStep": "5",
+          "inputValue": "150"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "Closest color achieving constructive interference at this thickness: —",
+          "id": "filmStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 3,
+      "sectionId": "film-widget",
+      "sectionNavLabel": "🕹️ Recreating Figures 2-6, 2-7, and 2-8",
+      "labels": {
+        "colorViolet": "Violet",
+        "colorBlue": "Blue",
+        "colorGreen": "Green",
+        "colorYellow": "Yellow",
+        "colorRed": "Red",
+        "filmStatusPrefix": "Closest color achieving constructive interference at this thickness: ",
+        "rayLabelFront": "Ray reflected from the front surface",
+        "rayLabelBack": "Ray reflected from the back surface"
+      }
+    },
+    {
+      "type": "paragraph",
+      "html": "Shining light of a particular color on the thin oil film produces bright and dark areas, and its pattern depends on the phase difference and the film thickness. The colored fringes you see in oil or soap films depend on these same two factors, and this thickness is usually close to or less than the wavelengths of visible light; therefore, if illuminated with white light, constructive interference may occur for only one wavelength without the rest of the wavelengths emitted by the source; hence the light reflected by the film can appear colored.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "The reason bright colors appear in soap bubbles and thin oil films is:",
+        "options": [
+          "Scattering",
+          "The combination of reflection and interference of light",
+          "Polarization",
+          "Refraction of light only, without reflection"
+        ],
+        "explain": "This phenomenon is attributed to the combination of light reflecting off the two surfaces of the film and the interference of the two reflected waves."
+      },
+      {
+        "correct": 2,
+        "question": "The two factors that interference in thin films depends on are:",
+        "options": [
+          "The color of the light and its speed only",
+          "The film's temperature and density",
+          "The film thickness and the phase reversal upon reflection at the front surface",
+          "The angle of incidence of the light only"
+        ],
+        "explain": "Interference in thin films depends on the extra path resulting from the film thickness (twice the thickness), and on the phase reversal (π or 180°) that occurs upon reflection at the front surface."
+      },
+      {
+        "correct": 0,
+        "question": "The wave reflected from the back surface of the film travels an extra path equal to:",
+        "options": [
+          "Twice the film thickness",
+          "Half the film thickness",
+          "The film thickness itself",
+          "The square of the film thickness"
+        ],
+        "explain": "The wave enters the film, reflects off its back surface, then crosses the film again, so its extra path inside the film equals twice its thickness."
+      },
+      {
+        "correct": 1,
+        "question": "When a thin oil film is illuminated with white light, the film appears colored because:",
+        "options": [
+          "The oil absorbs all wavelengths except one fixed color, always",
+          "Constructive interference occurs for only one wavelength at a given thickness, and not for the rest of the wavelengths",
+          "White light itself contains only one color",
+          "The oil always reflects only blue light, regardless of the thickness"
+        ],
+        "explain": "Because the film thickness is close to the wavelengths of visible light, constructive interference is achieved at a given thickness for only one wavelength among the colors of white light, so that color appears prominent in the reflection."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "The colors of soap bubbles and thin oil films result from the interference of light reflected from the front and back surfaces of the film.",
+      "The film thickness determines an extra path equal to twice the thickness for the wave that transmits through and reflects back.",
+      "A phase reversal (π or 180°) occurs when the wave reflects off the front surface of the film.",
+      "Under white-light illumination, constructive interference is achieved for only one wavelength at each thickness, so the film appears colored."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of thin-film interference",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Thin-Film",
+        "Interference"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Film thickness",
+          "path = 2t"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Phase reversal",
+          "π = 180°"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "White light",
+          "← rainbow colors"
+        ]
+      }
+    ]
+  }
+}

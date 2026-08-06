@@ -79,7 +79,17 @@
       "trailingHtml": null,
       "sectionGroup": 3,
       "sectionId": "film-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الأشكال 6-2 و7-2 و8-2"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الأشكال 6-2 و7-2 و8-2",
+      "labels": {
+        "colorViolet": "بنفسجي",
+        "colorBlue": "أزرق",
+        "colorGreen": "أخضر",
+        "colorYellow": "أصفر",
+        "colorRed": "أحمر",
+        "filmStatusPrefix": "أقرب لون يحقّق تداخلًا بنّاءً عند هذا السُمك: ",
+        "rayLabelFront": "شعاع منعكس من السطح الأمامي",
+        "rayLabelBack": "شعاع منعكس من السطح الخلفي"
+      }
     },
     {
       "type": "paragraph",
