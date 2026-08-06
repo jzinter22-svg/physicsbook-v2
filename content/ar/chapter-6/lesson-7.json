@@ -71,7 +71,9 @@
       "buttons": [
         {
           "id": "btnFiber",
-          "html": "📡 أرسل الإشارة"
+          "html": "📡 أرسل الإشارة",
+          "class": "neu-btn primary",
+          "data": null
         }
       ],
       "selectId": null,

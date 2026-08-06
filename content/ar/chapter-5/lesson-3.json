@@ -115,15 +115,27 @@
       "buttons": [
         {
           "id": "btnNone",
-          "html": "بلا انحياز"
+          "html": "بلا انحياز",
+          "class": "neu-btn",
+          "data": {
+            "data-bias": "none"
+          }
         },
         {
           "id": "btnFwd",
-          "html": "انحياز أمامي"
+          "html": "انحياز أمامي",
+          "class": "neu-btn primary",
+          "data": {
+            "data-bias": "forward"
+          }
         },
         {
           "id": "btnRev",
-          "html": "انحياز عكسي"
+          "html": "انحياز عكسي",
+          "class": "neu-btn",
+          "data": {
+            "data-bias": "reverse"
+          }
         }
       ],
       "selectId": null,

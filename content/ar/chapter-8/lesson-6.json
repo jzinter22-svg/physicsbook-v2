@@ -54,15 +54,27 @@
       "buttons": [
         {
           "id": "btnDirect",
-          "html": "المباشرة"
+          "html": "المباشرة",
+          "class": "neu-btn primary",
+          "data": {
+            "data-method": "direct"
+          }
         },
         {
           "id": "btnOneStage",
-          "html": "غير مباشرة — مرحلة واحدة"
+          "html": "غير مباشرة — مرحلة واحدة",
+          "class": "neu-btn",
+          "data": {
+            "data-method": "onestage"
+          }
         },
         {
           "id": "btnTwoStage",
-          "html": "غير مباشرة — مرحلتان"
+          "html": "غير مباشرة — مرحلتان",
+          "class": "neu-btn",
+          "data": {
+            "data-method": "twostage"
+          }
         }
       ],
       "selectId": null,

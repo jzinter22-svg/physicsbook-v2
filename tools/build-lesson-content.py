@@ -238,6 +238,18 @@ def extract_simulation(section):
     description, control/button labels, aria-labels) becomes data."""
     panel = section.select_one(".io-panel")
     has_control = section.select_one(".io-row input, .io-row select, .io-panel button[id]")
+    # Button-driven "info card" widgets (e.g. an 8-way laser-type picker, or
+    # a use-case picker for alloys) have neither an .io-panel wrapper nor
+    # ids on their buttons — just a bare .io-row of buttons carrying
+    # data-* attributes the widget's own JS reads via querySelectorAll, and
+    # a live-updating .def-box (not .rule-box) as the output area. Any
+    # button with an id OR a data- attribute counts as a live control too,
+    # not just ones already inside a recognized .io-panel.
+    if not has_control:
+        has_control = next(
+            (b for b in section.select("button") if b.get("id") or any(k.startswith("data-") for k in b.attrs)),
+            None,
+        )
     # law2-widget (lesson 3) has neither: it's a purely passive, continuously
     # animated SVG + a live-updating rule-box readout, no user control at
     # all — still needs to be a simulation block (not fall through to being
@@ -271,7 +283,26 @@ def extract_simulation(section):
             "inputStep": inp.get("step") if inp else None,
             "inputValue": inp.get("value") if inp else None,
         })
-    buttons = [{"id": b.get("id"), "html": inner_html(b)} for b in panel.find_all("button", id=True, recursive=True)]
+    # id=True catches the common "one toggle button" case; the data-*
+    # fallback catches multi-way picker buttons (data-laser="ruby" etc.)
+    # that the widget's own JS selects by attribute instead of id — some
+    # have both (id for the widget's own getElementById calls, data-* for
+    # "which one was clicked"), so dedupe by identity, not by which
+    # predicate matched.
+    all_buttons = panel.find_all("button", id=True, recursive=True) + \
+        [b for b in panel.find_all("button", recursive=True) if any(k.startswith("data-") for k in b.attrs)]
+    seen_buttons = []
+    buttons = []
+    for b in all_buttons:
+        if any(b is sb for sb in seen_buttons):
+            continue
+        seen_buttons.append(b)
+        data_attrs = {k: v for k, v in b.attrs.items() if k.startswith("data-")}
+        buttons.append({
+            "id": b.get("id"), "html": inner_html(b),
+            "class": " ".join(b.get("class", [])) or None,
+            "data": data_attrs or None,
+        })
     select = panel.select_one("select")
     select_id = select.get("id") if select else None
     select_options = None
@@ -283,9 +314,17 @@ def extract_simulation(section):
     # verification widget has two side by side (period AND r³/t² ratio) —
     # select_one() would silently keep only the first and drop the second
     # live-computed readout entirely, so collect all of them as a list.
+    # Also covers a live-updating .def-box output area (e.g. an id'd info
+    # card a button-picker widget fills in) — wrapperClass records which of
+    # the two component styles to reproduce. html is always captured (not
+    # nulled when id is present): most such boxes are empty shells the
+    # widget's JS immediately overwrites via textContent, but the info-card
+    # shape has its OWN nested id'd <span>/<p> children (e.g.
+    # #laserInfoTitle/#laserInfoBody) that the renderer must reproduce
+    # verbatim for the widget's getElementById calls to find anything.
     rule_boxes = [
-        {"html": None if rb.get("id") else inner_html(rb), "id": rb.get("id")}
-        for rb in panel.select(".rule-box")
+        {"html": inner_html(rb), "id": rb.get("id"), "wrapperClass": "def-box" if "def-box" in (rb.get("class") or []) else "rule-box"}
+        for rb in panel.select(".rule-box, .def-box[id]")
     ]
     # A <p> living directly inside .io-panel itself, after the rule-box
     # (e.g. lesson 2's banked-curve widget: "...the ideal speed at this
@@ -490,22 +529,56 @@ def extract_lesson(path, lesson_num, chapter_num, total_lessons):
                 continue
 
             card = sec.select_one(".card")
+            list_el = card.select_one(".obj-list, .summary-list") if card else None
+            if card and list_el:
+                # A plain content card whose body is a list (e.g. "sources of
+                # coherence: 1) laser, 2) wave-splitting..." as .obj-list, or
+                # a "symbol glossary" as .summary-list) rather than
+                # paragraphs — same components the objectives/summary
+                # sections use, just embedded mid-lesson. Must be checked
+                # before the generic .card branch below: that branch only
+                # looks for <p> children, so a heading+list card with no <p>
+                # at all would fall through with joined="" and silently lose
+                # the entire list. `ordered` tells the renderer which of the
+                # two (numbered-circle vs plain-bullet) to reproduce.
+                hc = card.find(["h2", "h3"])
+                items = [inner_html(li.select_one("span:nth-of-type(2)") or li) for li in list_el.select(":scope > li")]
+                data["content"].append({
+                    "type": "list", "heading": text(hc) if hc else None, "items": items,
+                    "ordered": "obj-list" in (list_el.get("class") or []),
+                })
+                continue
+
+            card = sec.select_one(".card")
             if card:
                 h2c = card.find("h2")
+                h3c = card.find("h3")
                 paras = card.find_all("p", recursive=False)
-                # The renderer wraps this html in one outer <p>...</p> (see
-                # renderBlock's "explanation"/"paragraph" cases) — joining
-                # multiple sibling <p>s with plain "" ran them together with
-                # no space, and previously each got its own content-array
-                # entry (and its own separate .card wrapper once rendered)
-                # even though they're one card in the source. Joining with
-                # "</p><p>" closes/reopens correctly inside that outer <p>,
-                # preserving both the paragraph break and the single card.
-                joined = "</p><p>".join(inner_html(p) for p in paras)
-                if h2c:
-                    data["content"].append({"type": "explanation", "heading": text(h2c), "html": joined})
+                if not paras and not h2c and not h3c:
+                    print(f"  !! EMPTY CARD in {path.name} section {sec_id!r}: no <p>, no heading")
+                elif not paras:
+                    # A bare sub-section title with no body of its own — the
+                    # actual content continues in sibling sections (def-box
+                    # entries, another card, etc.). Reusing sectionIntro's
+                    # shape (leadHtml=None already renders heading-only)
+                    # instead of losing the heading to an empty paragraph.
+                    data["content"].append({"type": "sectionIntro", "heading": text(h2c or h3c), "leadHtml": None})
+                    continue
                 else:
-                    data["content"].append({"type": "paragraph", "html": joined})
+                    # The renderer wraps this html in one outer <p>...</p>
+                    # (see renderBlock's "explanation"/"paragraph" cases) —
+                    # joining multiple sibling <p>s with plain "" ran them
+                    # together with no space, and previously each got its
+                    # own content-array entry (and its own separate .card
+                    # wrapper once rendered) even though they're one card in
+                    # the source. Joining with "</p><p>" closes/reopens
+                    # correctly inside that outer <p>, preserving both the
+                    # paragraph break and the single card.
+                    joined = "</p><p>".join(inner_html(p) for p in paras)
+                    if h2c:
+                        data["content"].append({"type": "explanation", "heading": text(h2c), "html": joined})
+                    else:
+                        data["content"].append({"type": "paragraph", "html": joined})
                 continue
 
             # Every recognized shape has been tried and none matched — this

@@ -156,11 +156,19 @@
       "buttons": [
         {
           "id": "btnTNPN",
-          "html": "NPN"
+          "html": "NPN",
+          "class": "neu-btn primary",
+          "data": {
+            "data-ttype": "npn"
+          }
         },
         {
           "id": "btnTPNP",
-          "html": "PNP"
+          "html": "PNP",
+          "class": "neu-btn",
+          "data": {
+            "data-ttype": "pnp"
+          }
         }
       ],
       "selectId": null,

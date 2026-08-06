@@ -62,11 +62,19 @@
       "buttons": [
         {
           "id": "btnNeon",
-          "html": "مصباح النيون"
+          "html": "مصباح النيون",
+          "class": "neu-btn primary",
+          "data": {
+            "data-lamp": "neon"
+          }
         },
         {
           "id": "btnFluor",
-          "html": "مصباح الفلورسنت"
+          "html": "مصباح الفلورسنت",
+          "class": "neu-btn",
+          "data": {
+            "data-lamp": "fluorescent"
+          }
         }
       ],
       "selectId": null,

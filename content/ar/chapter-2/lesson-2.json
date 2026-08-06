@@ -53,8 +53,16 @@
       "sectionNavLabel": null
     },
     {
-      "type": "paragraph",
-      "html": "",
+      "type": "list",
+      "heading": "📋 دلالة رموز العلاقة",
+      "items": [
+        "<span>\\(X\\) — المسافة بين صورة الهدب وصورة الهدب المركزي، وتقاس بالمتر (m).</span>",
+        "<span>\\(a\\) — البعد بين الشقّين، ويقاس بالمتر (m).</span>",
+        "<span>\\(D\\) — المسافة بين الشقّين والشاشة، وتقاس بالمتر (m).</span>",
+        "<span>\\(n\\) — مرتبة الهدب.</span>",
+        "<span>\\(\\lambda\\) — الطول الموجي، ويقاس بالمتر (m).</span>"
+      ],
+      "ordered": false,
       "sectionGroup": 4,
       "sectionId": null,
       "sectionNavLabel": null
@@ -108,7 +116,8 @@
       "ruleBoxes": [
         {
           "html": "مسافة الفصل بين الأهداب \\( \\Delta X = \\dfrac{\\lambda D}{a} = \\) <b id=\"deltaXVal\">0.85</b> mm",
-          "id": null
+          "id": null,
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,
@@ -117,56 +126,47 @@
       "sectionNavLabel": "🕹️ محاكاة تجربة يونك"
     },
     {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<p>في تجربة يونك التي يُستعمل فيها مصباح الصوديوم، والذي طوله الموجي (590 nm)، والذي يبعد عن الشاشة (0.96 m)، وكانت المسافة بين الهدب الرابع والهدب المركزي (3.2 mm). احسب المسافة الفاصلة بين الشقّين.</p>",
-      "label": "📝 مثال (1)",
-      "solution": {
-        "given": [
-          "\\( \\lambda = 590\\ \\text{nm} = 590\\times10^{-9}\\ \\text{m} \\) — الطول الموجي لضوء الصوديوم (بعد التحويل)",
-          "\\( D = 0.96\\ \\text{m} \\) — بُعد الشاشة عن الشقّين",
-          "\\( X = 3.2\\ \\text{mm} = 3.2\\times10^{-3}\\ \\text{m} \\) — المسافة بين الهدب الرابع والهدب المركزي (بعد التحويل)",
-          "\\( n = 4 \\) — مرتبة الهدب"
-        ],
-        "required": "احسب المسافة الفاصلة بين الشقّين \\(a\\).",
-        "steps": [
-          {
-            "note": "نعيد ترتيب العلاقة \\(\\lambda=aX/nD\\) لإيجاد \\(a\\)",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( \\lambda = \\dfrac{aX}{nD} \\;\\Rightarrow\\; a = \\dfrac{\\lambda nD}{X} \\)"
-              }
-            ]
-          },
-          {
-            "note": "نعوّض القيم المعطاة",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( a = \\dfrac{590\\times10^{-9}\\times 4\\times 0.96}{3.2\\times10^{-3}} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( a = 0.0071\\ \\text{m} = 0.71\\ \\text{mm} \\)"
-              }
-            ]
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "📝 مثال (1)",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-ex1",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ a = 0.71 mm",
-        "label": "الحل التفصيلي"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 7,
       "sectionId": "example1",
       "sectionNavLabel": "📝 مثال 1"
     },
     {
-      "type": "paragraph",
-      "html": "",
+      "type": "list",
+      "heading": "📋 تُستعمل تجربة يونك في",
+      "items": [
+        "دراسة ظاهرة التداخل البنّاء في الضوء.",
+        "تعيين الطول الموجي لضوء أحادي اللون.",
+        "تعيين المسافة بين هدابين متتاليين من النوع نفسه.",
+        "البحث في طبيعة الضوء وإثبات طبيعته الموجية.",
+        "إثبات وجود خاصية الموجة لجميع الجسيمات مثل الإلكترونات وغيرها."
+      ],
+      "ordered": true,
       "sectionGroup": 8,
       "sectionId": null,
       "sectionNavLabel": null

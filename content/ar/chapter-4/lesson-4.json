@@ -67,8 +67,17 @@
       "sectionNavLabel": "🕹️ فرق الطور -90°"
     },
     {
-      "type": "paragraph",
-      "html": "",
+      "type": "list",
+      "heading": "📋 نستنتج من هذا",
+      "items": [
+        "أن \\((V_C)\\) تتخلف عن تيار المتسعة \\(I_C\\) بزاوية فرق طور (90°)، كما هو في الشكل (11-4).",
+        "لقد وجد أن الرادة السعوية تتناسب عكسيًا مع تردد الدائرة (f) عند ثبوت سعة المتسعة (C) وعكسيًا مع السعة عند ثبوت التردد.",
+        "يتغير منحني القدرة بين القيمة العظمى الموجبة والقيمة العظمى السالبة فإن القدرة الآنية لدورة كاملة يساوي صفرًا وتردد منحني القدرة ضعف تردد منحني التيار.",
+        "ليس هناك قدرة حقيقية تستهلك في السعة الخالصة لدورة كاملة.",
+        "المنحني الموجب يمثّل الطاقة الكهربائية المخزونة في المتسعة (عملية شحن).",
+        "المنحني السالب يمثّل الطاقة التى تعود لتتفرغ بالمصدر (عملية تفريغ) ويحصل عند نمو التيار."
+      ],
+      "ordered": true,
       "sectionGroup": 6,
       "sectionId": null,
       "sectionNavLabel": null
@@ -91,56 +100,32 @@
       "sectionNavLabel": null
     },
     {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<p>رُبطت متسعة سعتها \\((400\\ \\mu F)\\) لمصدر متناوب فولطيته \\((100\\ \\text{Volt})\\) وتردد \\(\\left(\\dfrac{50}{\\pi}\\ \\text{Hz}\\right)\\) احسب: 1- الرادة السعوية \\((X_C)\\). 2- شدة التيار المار بالدائرة \\((I_C)\\).</p>",
-      "label": "📝 مثال (3)",
-      "solution": {
-        "given": [
-          "\\( C = 400\\ \\mu F = 400\\times10^{-6}\\ \\text{F} \\) — سعة المتسعة (بعد التحويل)",
-          "\\( V = 100\\ \\text{Volt} \\) — فولطية المصدر",
-          "\\( f = 50/\\pi\\ \\text{Hz} \\) — تردد المصدر"
-        ],
-        "required": "1- \\(X_C\\). 2- \\(I_C\\).",
-        "steps": [
-          {
-            "note": "1- نطبّق علاقة الرادة السعوية",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( X_C = \\dfrac{1}{2\\pi f C} = \\dfrac{1}{2\\pi\\times\\frac{50}{\\pi}\\times 400\\times10^{-6}} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( X_C = 25\\ \\Omega \\)"
-              }
-            ]
-          },
-          {
-            "note": "2- نطبّق علاقة الرادة السعوية لإيجاد التيار",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( I_C = \\dfrac{V_C}{X_C} = \\dfrac{100}{25} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( I_C = 4\\ \\text{A} \\)"
-              }
-            ]
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "📝 مثال (3)",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-ex3",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ X_C = 25 Ω · I_C = 4 A — تيار الدائرة",
-        "label": "الحل التفصيلي"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 9,
       "sectionId": "example3",
       "sectionNavLabel": "📝 مثال 3"

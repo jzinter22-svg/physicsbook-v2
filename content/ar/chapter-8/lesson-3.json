@@ -127,7 +127,9 @@
       "buttons": [
         {
           "id": "btnCycle",
-          "html": "▶️ ابدأ الدورة"
+          "html": "▶️ ابدأ الدورة",
+          "class": "neu-btn primary",
+          "data": null
         }
       ],
       "selectId": null,

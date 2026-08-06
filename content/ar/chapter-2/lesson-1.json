@@ -65,8 +65,9 @@
       "presets": null,
       "ruleBoxes": [
         {
-          "html": null,
-          "id": "interfStatus"
+          "html": "تداخل بناء ✅ — Δℓ = 0 (عدد صحيح من λ)",
+          "id": "interfStatus",
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,
@@ -115,8 +116,13 @@
       "sectionNavLabel": null
     },
     {
-      "type": "paragraph",
-      "html": "",
+      "type": "list",
+      "heading": "📋 مصادر التشاكه التي يمكن الحصول منها على موجتين متشاكهتين",
+      "items": [
+        "الليزر.",
+        "تجزئة الطاقة الموجية، وتتم بطريقتين: <br/>\n          (a) تقسيم جبهة الموجة: كما في تجربة يونك (الحاجز ذو شقّين)، الموشور، المزدوج في مرآة فرينيل، مرآة لويد. <br/>\n          (b) تقسيم سعة الموجة: كما في الانعكاس الجزئي والانكسار الجزئي الذي يحدث في الأغشية الرقيقة، ومقياس مايكلسون."
+      ],
+      "ordered": true,
       "sectionGroup": 8,
       "sectionId": null,
       "sectionNavLabel": null
@@ -141,7 +147,9 @@
       "buttons": [
         {
           "id": "speakersToggle",
-          "html": "🔁 بدّل فرق الطور"
+          "html": "🔁 بدّل فرق الطور",
+          "class": "neu-btn",
+          "data": null
         }
       ],
       "selectId": null,

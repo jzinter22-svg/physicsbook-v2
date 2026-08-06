@@ -91,7 +91,8 @@
       "ruleBoxes": [
         {
           "html": "الشدة النافذة \\( I = I_0\\cos^2\\theta = \\) <b id=\"polIntensityVal\">100</b>%",
-          "id": null
+          "id": null,
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,
@@ -100,8 +101,9 @@
       "sectionNavLabel": "🕹️ إعادة إنشاء الشكلين 13-2 و14-2"
     },
     {
-      "type": "paragraph",
-      "html": "",
+      "type": "sectionIntro",
+      "heading": "📋 طرائق الحصول على الضوء المستقطب",
+      "leadHtml": null,
       "sectionGroup": 6,
       "sectionId": null,
       "sectionNavLabel": null
@@ -131,8 +133,17 @@
       "sectionNavLabel": null
     },
     {
-      "type": "paragraph",
-      "html": "",
+      "type": "list",
+      "heading": "📋 من التطبيقات العملية لظاهرة الاستقطاب",
+      "items": [
+        "النظارات الشمسية (لتقليل نفاذ ضوء أشعة الشمس).",
+        "في دراسة الظواهر الفلكية.",
+        "في دراسة علم الأحياء.",
+        "في دراسة الخواص البلورية لبعض المواد.",
+        "دراسة تركيب كثير من المواد الشفافة باستعمال مرشّحات الاستقطاب.",
+        "الكشف عن مواقع الاجهاد (نقاط الضعف) في بعض المواد مثل عدسات النظارات والأدوات العملية."
+      ],
+      "ordered": true,
       "sectionGroup": 10,
       "sectionId": null,
       "sectionNavLabel": null

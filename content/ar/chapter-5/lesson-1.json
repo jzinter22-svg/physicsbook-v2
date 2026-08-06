@@ -89,9 +89,9 @@
       "sectionNavLabel": null
     },
     {
-      "type": "explanation",
+      "type": "sectionIntro",
       "heading": "2-1-5 مميزات وصفات حزم الطاقة في المواد الموصلة وشبه الموصلة والعازلة",
-      "html": "",
+      "leadHtml": null,
       "sectionGroup": 8,
       "sectionId": "properties",
       "sectionNavLabel": "📋 خواص حزم الطاقة"
@@ -200,15 +200,27 @@
       "buttons": [
         {
           "id": "btnConductor",
-          "html": "موصل"
+          "html": "موصل",
+          "class": "neu-btn primary",
+          "data": {
+            "data-material": "conductor"
+          }
         },
         {
           "id": "btnSemi",
-          "html": "شبه موصل"
+          "html": "شبه موصل",
+          "class": "neu-btn",
+          "data": {
+            "data-material": "semiconductor"
+          }
         },
         {
           "id": "btnInsulator",
-          "html": "عازل"
+          "html": "عازل",
+          "class": "neu-btn",
+          "data": {
+            "data-material": "insulator"
+          }
         }
       ],
       "selectId": null,

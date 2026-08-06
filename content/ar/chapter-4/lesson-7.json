@@ -38,8 +38,13 @@
       "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 18-4"
     },
     {
-      "type": "paragraph",
-      "html": "",
+      "type": "list",
+      "heading": "📋 تتكون أجزاء المحولة من الآتي",
+      "items": [
+        "النواة: وتصنع بشكل مغلق كي يتوافر التواشج المغناطيسي التام في ملفاتها وبنفوذية عالية وتصنع من الحديد المطاوع لتقليل خسائر الرادة الهسترة فتزداد كفاءتها وتصنع ايضًا بشكل صفائح رقيقة مكبوسة ومعزولة عن بعضها عزلًا كهربائيًا لتقليل خسائر التيارات الدوامة.",
+        "ملفين معزولين كهربائيا عن بعضهما ومختلفين في عدد لفاتهما، يربط الملف الابتدائي بالمصدر المتناوب والملف الثانوي يربط بالجهاز (الحمل)، كما هو في الشكل (18-4) ولاتحتوي المحولة على مفتاح تلقائي لذلك تعتبر من اجهزة التيار المتناوب فقط."
+      ],
+      "ordered": true,
       "sectionGroup": 2,
       "sectionId": null,
       "sectionNavLabel": null
@@ -98,8 +103,9 @@
       "presets": null,
       "ruleBoxes": [
         {
-          "html": null,
-          "id": "typeStatus"
+          "html": "—",
+          "id": "typeStatus",
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,
@@ -140,8 +146,14 @@
       "sectionNavLabel": null
     },
     {
-      "type": "paragraph",
-      "html": "خسائر المحولة الكلية = قدرة الملف الابتدائي - قدرة الملف الثانوي",
+      "type": "list",
+      "heading": "📋 إن كفاءة المحولة لا تصل الى 100% بسبب الآتي",
+      "items": [
+        "ضياع جزء من الطاقة الكهربائية بشكل حرارة في اسلاك الملفين.",
+        "ضياع جزء من الطاقة الكهربائية على شكل حرارة تتولد في قلب المحولة بسبب التيارات الدوامة.",
+        "ضياع جزء من الطاقة الكهربائية على شكل هسترة في مادة القلب الحديدي."
+      ],
+      "ordered": true,
       "sectionGroup": 11,
       "sectionId": null,
       "sectionNavLabel": null
@@ -156,69 +168,32 @@
       "sectionNavLabel": null
     },
     {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<p>محولة نسبة التحويل فيها \\(\\left(\\dfrac{12}{1}\\right)\\) وكفاءتها 96% فاذا كان تيار الملف الثانوي \\((4\\ \\text{A})\\) وفولطية الملف الثانوي \\((4800\\ \\text{V})\\) فما هي: 1- قدرة الملف الابتدائي. 2- تيار الملف الابتدائي.</p>",
-      "label": "📝 مثال (7)",
-      "solution": {
-        "given": [
-          "\\( N_2/N_1 = 12/1 \\) — نسبة التحويل",
-          "\\( \\eta = 96\\% \\) — كفاءة المحولة",
-          "\\( I_2 = 4\\ \\text{A} \\) — تيار الملف الثانوي",
-          "\\( V_2 = 4800\\ \\text{Volt} \\) — فولطية الملف الثانوي"
-        ],
-        "required": "1- \\(P_1\\). 2- \\(I_1\\).",
-        "steps": [
-          {
-            "note": "1- نحسب قدرة الملف الثانوي أولًا، ثم نطبّق علاقة الكفاءة لإيجاد قدرة الملف الابتدائي",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( P_2 = V_2 I_2 = 4800\\times4 = 19200\\ \\text{W} \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( \\eta = \\dfrac{P_2}{P_1}\\times100\\% \\quad\\Rightarrow\\quad 96\\% = \\dfrac{19200}{P_1}\\times100\\% \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( P_1 = \\dfrac{19200}{96}\\times100 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( P_1 = 20000\\ \\text{W} \\)"
-              }
-            ]
-          },
-          {
-            "note": "2- نطبّق علاقة نسبة التحويل لإيجاد \\(V_1\\)، ثم نطبّق \\(P_1=V_1I_1\\) لإيجاد \\(I_1\\)",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( \\dfrac{N_2}{N_1}=\\dfrac{V_2}{V_1} \\quad\\Rightarrow\\quad \\dfrac{12}{1}=\\dfrac{4800}{V_1} \\quad\\Rightarrow\\quad V_1=\\dfrac{4800}{12}=400\\ \\text{Volt} \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( P_1 = V_1 I_1 \\quad\\Rightarrow\\quad 20000 = 400\\times I_1 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( I_1 = \\dfrac{20000}{400} = 50\\ \\text{A} \\)"
-              }
-            ]
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "📝 مثال (7)",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-ex7",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ P_1 = 20000 W · I_1 = 50 A",
-        "label": "الحل التفصيلي"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 13,
       "sectionId": "example7",
       "sectionNavLabel": "📝 مثال 7"

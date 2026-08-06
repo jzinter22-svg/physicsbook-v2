@@ -53,15 +53,27 @@
       "buttons": [
         {
           "id": "btnC5",
-          "html": "عملة 5 فلوس"
+          "html": "عملة 5 فلوس",
+          "class": "neu-btn primary",
+          "data": {
+            "data-coin": "c5"
+          }
         },
         {
           "id": "btnC10",
-          "html": "عملة 10 فلوس"
+          "html": "عملة 10 فلوس",
+          "class": "neu-btn",
+          "data": {
+            "data-coin": "c10"
+          }
         },
         {
           "id": "btnC25",
-          "html": "عملة 25 فلسًا"
+          "html": "عملة 25 فلسًا",
+          "class": "neu-btn",
+          "data": {
+            "data-coin": "c25"
+          }
         }
       ],
       "selectId": null,

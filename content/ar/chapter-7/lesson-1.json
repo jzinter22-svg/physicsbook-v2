@@ -44,9 +44,91 @@
       "sectionNavLabel": null
     },
     {
-      "type": "explanation",
-      "heading": "🕹️ محاكاة تفاعلية: أهم مناطق إنتاج النفط الخام في العالم",
-      "html": "اضغط زر أي منطقة أدناه لتُكبِّر الخريطة وتُبرز موقعها الجغرافي الحقيقي، مع بطاقة معلومات عن أهميتها في إنتاج النفط الخام.",
+      "type": "simulation",
+      "svgId": "worldMapSvg",
+      "svgAriaLabel": "خريطة تفاعلية لأهم مناطق إنتاج النفط الخام في العالم",
+      "svgViewBox": "0 -18 1000 536",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ محاكاة تفاعلية: أهم مناطق إنتاج النفط الخام في العالم",
+      "descriptionHtml": "اضغط زر أي منطقة أدناه لتُكبِّر الخريطة وتُبرز موقعها الجغرافي الحقيقي، مع بطاقة معلومات عن أهميتها في إنتاج النفط الخام.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnGulf",
+          "html": "الخليج العربي",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "gulf"
+          }
+        },
+        {
+          "id": "btnMideast",
+          "html": "الشرق الأوسط",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "mideast"
+          }
+        },
+        {
+          "id": "btnRussia",
+          "html": "روسيا وآسيا الوسطى",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "russia"
+          }
+        },
+        {
+          "id": "btnNigeria",
+          "html": "نيجيريا",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "nigeria"
+          }
+        },
+        {
+          "id": "btnVenezuela",
+          "html": "فنزويلا",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "venezuela"
+          }
+        },
+        {
+          "id": "btnArctic",
+          "html": "المنطقة القطبية الشمالية",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "arctic"
+          }
+        },
+        {
+          "id": "btnReset",
+          "html": "🌍 الخريطة كاملة",
+          "class": "neu-btn",
+          "data": {
+            "data-region": ""
+          }
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 3,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"

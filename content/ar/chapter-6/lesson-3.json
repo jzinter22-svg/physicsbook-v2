@@ -167,15 +167,27 @@
       "buttons": [
         {
           "id": "btnAbs",
-          "html": "الامتصاص المحث"
+          "html": "الامتصاص المحث",
+          "class": "neu-btn primary",
+          "data": {
+            "data-mode": "absorption"
+          }
         },
         {
           "id": "btnSpon",
-          "html": "الانبعاث التلقائي"
+          "html": "الانبعاث التلقائي",
+          "class": "neu-btn",
+          "data": {
+            "data-mode": "spontaneous"
+          }
         },
         {
           "id": "btnStim",
-          "html": "الانبعاث المحفز"
+          "html": "الانبعاث المحفز",
+          "class": "neu-btn",
+          "data": {
+            "data-mode": "stimulated"
+          }
         }
       ],
       "selectId": null,

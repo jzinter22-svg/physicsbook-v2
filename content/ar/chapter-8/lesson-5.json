@@ -53,11 +53,19 @@
       "buttons": [
         {
           "id": "btnSingle",
-          "html": "سبيكة الطور الواحد"
+          "html": "سبيكة الطور الواحد",
+          "class": "neu-btn primary",
+          "data": {
+            "data-phase": "single"
+          }
         },
         {
           "id": "btnMulti",
-          "html": "السبيكة المتعددة الأطوار"
+          "html": "السبيكة المتعددة الأطوار",
+          "class": "neu-btn",
+          "data": {
+            "data-phase": "multi"
+          }
         }
       ],
       "selectId": null,

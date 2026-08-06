@@ -38,9 +38,9 @@
       "sectionNavLabel": null
     },
     {
-      "type": "explanation",
+      "type": "sectionIntro",
       "heading": "1-6-6 الليزرات الصلبة",
-      "html": "",
+      "leadHtml": null,
       "sectionGroup": 2,
       "sectionId": "solidlaser",
       "sectionNavLabel": "1️⃣ الليزرات الصلبة"
@@ -72,9 +72,9 @@
       "sectionNavLabel": null
     },
     {
-      "type": "explanation",
+      "type": "sectionIntro",
       "heading": "2-6-6 الليزرات الغازية",
-      "html": "",
+      "leadHtml": null,
       "sectionGroup": 6,
       "sectionId": "gaslaser",
       "sectionNavLabel": "2️⃣ الليزرات الغازية"
@@ -124,9 +124,105 @@
       "sectionNavLabel": null
     },
     {
-      "type": "definition",
-      "label": "",
-      "html": "",
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ محاكاة تفاعلية: دليل أنواع الليزر",
+      "descriptionHtml": "اختر نوع الليزر لعرض بطاقة معلومات عن وسطه الفعال ومميزاته.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": "flex-wrap:wrap",
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": null,
+          "html": "الياقوت",
+          "class": "neu-btn primary",
+          "data": {
+            "data-laser": "ruby"
+          }
+        },
+        {
+          "id": null,
+          "html": "Nd:YAG",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "ndyag"
+          }
+        },
+        {
+          "id": null,
+          "html": "هيليوم-نيون",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "hene"
+          }
+        },
+        {
+          "id": null,
+          "html": "CO₂",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "co2"
+          }
+        },
+        {
+          "id": null,
+          "html": "الاكسامير",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "excimer"
+          }
+        },
+        {
+          "id": null,
+          "html": "الصبغة",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "dye"
+          }
+        },
+        {
+          "id": null,
+          "html": "شبه الموصل",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "semi"
+          }
+        },
+        {
+          "id": null,
+          "html": "الكيميائي",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "chemical"
+          }
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "<span class=\"def-label\" id=\"laserInfoTitle\"></span>\n<p id=\"laserInfoBody\" style=\"margin:.3rem 0\"></p>",
+          "id": "laserInfoCard",
+          "wrapperClass": "def-box"
+        }
+      ],
+      "trailingHtml": null,
       "sectionGroup": 12,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"

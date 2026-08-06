@@ -80,81 +80,32 @@
       "sectionNavLabel": "🕹️ منحني القدرة (الشكل 6-4)"
     },
     {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<p>مولد تيار متناوب يمرر تيارًا من خلال مقاومة اومية خالصة مقدارها \\((10\\ \\Omega)\\) التيار معطى حسب العلاقة \\((I=4\\sin\\theta)\\) إحسب فيهما: 1- القيمة العظمى للتيار والقيمة العظمى للفولطية. 2- القيمة المؤثرة لكل من الفولطية والتيار. 3- الطاقة الحرارية التي يولّدها في المقاومة خلال \\((0.8\\text{s})\\)؟</p>",
-      "label": "📝 مثال (1)",
-      "solution": {
-        "given": [
-          "\\( R = 10\\ \\Omega \\) — المقاومة الأومية الخالصة",
-          "\\( I = 4\\sin\\theta \\) — علاقة التيار الآني المعطاة",
-          "\\( t = 0.8\\ \\text{s} \\) — الزمن"
-        ],
-        "required": "1- \\(I_m\\) و\\(V_m\\). 2- \\(I_e\\) و\\(V_e\\). 3- الطاقة الحرارية المتولدة \\(E\\).",
-        "steps": [
-          {
-            "note": "1- بالمقارنة مع \\(I=I_m\\sin\\theta\\) نجد القيمة العظمى للتيار، ثم نطبّق قانون أوم لإيجاد القيمة العظمى للفولطية",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( I_m = 4\\ \\text{A} \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( V_m = I_m \\times R = 4 \\times 10 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( V_m = 40\\ \\text{Volt} \\)"
-              }
-            ]
-          },
-          {
-            "note": "2- نطبّق علاقة القيمة المؤثرة لكل من التيار والفولطية",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( I_e = 0.707\\times I_m = 0.707\\times 4 \\)"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( I_e = 2.8\\ \\text{A} \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( V_e = 0.707\\times V_m = 0.707\\times 40 \\)"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( V_e = 28.2\\ \\text{Volt} \\)"
-              }
-            ]
-          },
-          {
-            "note": "3- نطبّق قانون جول باستعمال القيمة المؤثرة للتيار (المكافئة حراريًا لتيار مستمر)",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( E = I_e^2\\,R\\,t = (2.8)^2\\times 10\\times 0.8 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( E = 62.72\\ \\text{Joule} \\)"
-              }
-            ]
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "📝 مثال (1)",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-ex1",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ I_m = 4 A · V_m = 40 V · I_e = 2.8 A · V_e = 28.2 V · E = 62.72 J",
-        "label": "الحل التفصيلي"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 6,
       "sectionId": "example1",
       "sectionNavLabel": "📝 مثال 1"

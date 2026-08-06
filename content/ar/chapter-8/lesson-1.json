@@ -71,19 +71,35 @@
       "buttons": [
         {
           "id": "btnDensity",
-          "html": "1- الكثافة والانصهار"
+          "html": "1- الكثافة والانصهار",
+          "class": "neu-btn primary",
+          "data": {
+            "data-prop": "density"
+          }
         },
         {
           "id": "btnMalleable",
-          "html": "2- الطرق والسحب"
+          "html": "2- الطرق والسحب",
+          "class": "neu-btn",
+          "data": {
+            "data-prop": "malleable"
+          }
         },
         {
           "id": "btnThermal",
-          "html": "3- التوصيل الحراري"
+          "html": "3- التوصيل الحراري",
+          "class": "neu-btn",
+          "data": {
+            "data-prop": "thermal"
+          }
         },
         {
           "id": "btnElectric",
-          "html": "4- التوصيل الكهربائي"
+          "html": "4- التوصيل الكهربائي",
+          "class": "neu-btn",
+          "data": {
+            "data-prop": "electric"
+          }
         }
       ],
       "selectId": null,

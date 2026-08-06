@@ -98,15 +98,27 @@
       "buttons": [
         {
           "id": "btnNatural",
-          "html": "استخلاص طبيعي"
+          "html": "استخلاص طبيعي",
+          "class": "neu-btn primary",
+          "data": {
+            "data-method": "natural"
+          }
         },
         {
           "id": "btnInject",
-          "html": "استخراج بالحقن"
+          "html": "استخراج بالحقن",
+          "class": "neu-btn",
+          "data": {
+            "data-method": "inject"
+          }
         },
         {
           "id": "btnThermal",
-          "html": "استخراج حراري"
+          "html": "استخراج حراري",
+          "class": "neu-btn",
+          "data": {
+            "data-method": "thermal"
+          }
         }
       ],
       "selectId": null,

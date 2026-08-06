@@ -71,8 +71,9 @@
       "presets": null,
       "ruleBoxes": [
         {
-          "html": null,
-          "id": "filmStatus"
+          "html": "أقرب لون يحقّق تداخلًا بنّاءً عند هذا السُمك: —",
+          "id": "filmStatus",
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,

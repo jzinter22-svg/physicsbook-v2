@@ -57,8 +57,9 @@
       "presets": null,
       "ruleBoxes": [
         {
-          "html": null,
-          "id": "magnetStatus"
+          "html": "مؤشر الكلفانوميتر: صفر (لا حركة)",
+          "id": "magnetStatus",
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,
@@ -82,8 +83,13 @@
       "sectionNavLabel": null
     },
     {
-      "type": "paragraph",
-      "html": "",
+      "type": "list",
+      "heading": "📋 نستنتج من هذه التجربة (وهي أحد تجارب فاراداي) ما يأتي",
+      "items": [
+        "إذا تغيّر الفيض المغناطيسي (تناقص أو تزايد) الذي يقطع دائرة مغلقة، تتولّد قوة دافعة كهربائية محتثة في تلك الدائرة.",
+        "التغيّر في الفيض المغناطيسي \\((\\Delta\\varnothing)\\) لوحدة الزمن هو العامل الأساس الذي يولّد التيار المحتث في الدائرة المغلقة."
+      ],
+      "ordered": true,
       "sectionGroup": 4,
       "sectionId": null,
       "sectionNavLabel": null
@@ -144,100 +150,63 @@
       "sectionNavLabel": null
     },
     {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<p>ملف يتكوّن من 40 لفة، فإذا فيه تحرّك هذا الملف بصورة عمودية خلال فيض مقداره \\((3\\times10^{-5}\\ \\text{weber})\\) خلال فترة زمنية (0.02 s) فما مقدار القوة الدافعة الكهربائية المحتثة \\(\\varepsilon_{ind}\\)؟</p>",
-      "label": "📝 مثال (1)",
-      "solution": {
-        "given": [
-          "\\( N = 40 \\) لفة — عدد لفات الملف",
-          "\\( \\Delta\\varnothing = 3\\times10^{-5}\\ \\text{Wb} \\) — مقدار الفيض المغناطيسي المخترق للملف",
-          "\\( \\Delta t = 0.02\\ \\text{s} \\) — الفترة الزمنية"
-        ],
-        "required": "احسب القوة الدافعة الكهربائية المحتثة \\(\\varepsilon_{ind}\\).",
-        "steps": [
-          {
-            "note": "نطبّق قانون فاراداي للملف ذي N لفة",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( \\varepsilon_{ind} = -N\\dfrac{\\Delta\\varnothing}{\\Delta t} = -40\\times\\dfrac{3\\times10^{-5}}{0.02} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( \\varepsilon_{ind} = -0.06\\ \\text{V} \\)"
-              }
-            ]
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "📝 مثال (1)",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-ex1",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ ε_ind = −0.06 V",
-        "label": "الحل التفصيلي"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 12,
       "sectionId": "example1",
       "sectionNavLabel": "📝 مثال 1"
     },
     {
-      "type": "example",
-      "number": 2,
-      "problemHtml": "<p>ملف عدد لفاته 100 ومساحة اللفة الواحدة \\((10\\ \\text{cm}^2)\\)، إن كثافة فيضه المغناطيسي التي تخترق الملف تتغيّر من \\((0\\ \\text{T})\\) إلى \\((1\\ \\text{T})\\) خلال زمن \\((0.2\\ \\text{s})\\). أحسب: 1- القوة الدافعة الكهربائية \\(\\varepsilon_{ind}\\) الناشئة في الملف. 2- التيار المنساب في الدائرة الكهربائية علمًا أن مقاومة الدائرة الكلية \\((100\\ \\Omega)\\).</p>",
-      "label": "📝 مثال (2)",
-      "solution": {
-        "given": [
-          "\\( N = 100 \\) لفة",
-          "\\( A = 10\\ \\text{cm}^2 = 10\\times10^{-4}\\ \\text{m}^2 \\) — مساحة اللفة الواحدة (بعد التحويل)",
-          "\\( B_1 = 0\\ \\text{T},\\ B_2 = 1\\ \\text{T} \\) — كثافة الفيض المغناطيسي الابتدائية والنهائية",
-          "\\( \\Delta t = 0.2\\ \\text{s} \\)",
-          "\\( R = 100\\ \\Omega \\) — مقاومة الدائرة الكلية"
-        ],
-        "required": "1- احسب \\(\\varepsilon_{ind}\\). 2- احسب التيار I المنساب في الدائرة.",
-        "steps": [
-          {
-            "note": "1- نحسب \\(\\Delta B\\) ثم نطبّق قانون فاراداي، حيث \\(\\Delta\\varnothing = A\\Delta B\\)",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( \\Delta B = B_2 - B_1 = 1 - 0 = 1\\ \\text{T} \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( \\varepsilon_{ind} = -N\\dfrac{A\\Delta B}{\\Delta t} = -\\dfrac{100\\times(10\\times10^{-4})\\times 1}{0.2} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( \\varepsilon_{ind} = -0.5\\ \\text{V} \\)"
-              }
-            ]
-          },
-          {
-            "note": "2- من قانون أوم: \\(I=\\varepsilon_{ind}/R\\)",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( I = \\dfrac{0.5}{100} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( I = 5\\times10^{-3}\\ \\text{A} \\)"
-              }
-            ]
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "📝 مثال (2)",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-ex2",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ ε_ind = −0.5 V   ·   I = 5×10⁻³ A",
-        "label": "الحل التفصيلي"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 13,
       "sectionId": "example2",
       "sectionNavLabel": "📝 مثال 2"

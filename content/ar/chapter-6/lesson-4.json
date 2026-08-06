@@ -21,9 +21,14 @@
   ],
   "content": [
     {
-      "type": "explanation",
+      "type": "list",
       "heading": "💡 4-6 مكونات أجهزة الليزر Constituents of Laser",
-      "html": "يوضّح الشكل (11-6) المكونات الأساسية التي يُشترط وجودها في أجهزة الليزر، وهي:",
+      "items": [
+        "الوسط الفعال",
+        "المرنان",
+        "تقنية الضخ"
+      ],
+      "ordered": true,
       "sectionGroup": 0,
       "sectionId": "intro",
       "sectionNavLabel": "💡 تمهيد"
@@ -113,7 +118,9 @@
       "buttons": [
         {
           "id": "btnPump",
-          "html": "▶️ ابدأ التضخيم"
+          "html": "▶️ ابدأ التضخيم",
+          "class": "neu-btn primary",
+          "data": null
         }
       ],
       "selectId": null,

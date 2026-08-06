@@ -92,6 +92,15 @@
           '<span class="diagram-caption">' + esc(b.caption) + "</span></div></div>";
       case "sectionIntro":
         return "<h2 style=\"margin-bottom:.25rem\">" + esc(b.heading) + "</h2>" + (b.leadHtml ? '<p class="lead" style="margin-top:0">' + html(b.leadHtml) + "</p>" : "");
+      case "list":
+        return '<div class="card neu">' + (b.heading ? '<h3 style="margin-top:0">' + esc(b.heading) + "</h3>" : "") +
+          (b.ordered
+            ? '<ol class="obj-list">' + (b.items || []).map(function(it, i){
+                return '<li><span class="obj-num">' + (i + 1) + "</span><span>" + html(it) + "</span></li>";
+              }).join("") + "</ol>"
+            : '<ul class="summary-list">' + (b.items || []).map(function(it){
+                return "<li><span>" + html(it) + "</span></li>";
+              }).join("") + "</ul>") + "</div>";
       case "example":
         return renderExample(b);
       case "simulation":
@@ -183,7 +192,9 @@
       return '<div class="io-row"' + attrs + '><label for="' + esc(c.inputId) + '" style="min-width:9rem">' + html(c.labelHtml) + "</label>" + inputEl + "</div>";
     }).join("");
     var buttons = (b.buttons || []).map(function(btn){
-      return '<button class="neu-btn" id="' + esc(btn.id) + '">' + html(btn.html) + "</button>";
+      var dataAttrs = "";
+      for(var k in (btn.data || {})){ dataAttrs += " " + esc(k) + '="' + esc(btn.data[k]) + '"'; }
+      return '<button class="' + esc(btn.class || "neu-btn") + '"' + (btn.id ? ' id="' + esc(btn.id) + '"' : "") + dataAttrs + ">" + html(btn.html) + "</button>";
     }).join("");
     var presets = (b.presets || []).map(function(p){
       return '<button class="neu-btn" data-preset="' + esc(p.value) + '">' + esc(p.label) + "</button>";
@@ -194,9 +205,7 @@
         "</select>"
       : "";
     var ruleBoxes = (b.ruleBoxes || []).map(function(rb){
-      return rb.id
-        ? '<div class="rule-box" id="' + esc(rb.id) + '"></div>'
-        : '<div class="rule-box">' + html(rb.html) + "</div>";
+      return '<div class="' + esc(rb.wrapperClass || "rule-box") + '"' + (rb.id ? ' id="' + esc(rb.id) + '"' : "") + ">" + html(rb.html) + "</div>";
     }).join("");
     var svgAttrs = (b.svgViewBox ? ' viewBox="' + esc(b.svgViewBox) + '"' : "") +
       (b.svgWidth ? ' width="' + esc(b.svgWidth) + '"' : "") +

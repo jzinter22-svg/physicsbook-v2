@@ -231,8 +231,9 @@
       "presets": null,
       "ruleBoxes": [
         {
-          "html": null,
-          "id": "effStatus"
+          "html": "عند θ = 90°: الفولطية الآنية = القيمة العظمى تمامًا.",
+          "id": "effStatus",
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,

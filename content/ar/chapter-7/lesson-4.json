@@ -54,7 +54,9 @@
       "buttons": [
         {
           "id": "btnDistill",
-          "html": "🔥 ابدأ التقطير"
+          "html": "🔥 ابدأ التقطير",
+          "class": "neu-btn primary",
+          "data": null
         }
       ],
       "selectId": null,
@@ -191,55 +193,32 @@
       "sectionNavLabel": null
     },
     {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<p>حسب جدول (1-7)، تبلغ نسبة الديزل في نواتج التكرير الأولية 20%، بينما تبلغ نسبة استخدامه اليومي 25%. احسب النسبة المئوية للزيادة في الطلب اليومي على الديزل مقارنة بنسبة إنتاجه من عملية التكرير الأولية.</p>",
-      "label": "📝 مثال (1)",
-      "solution": {
-        "given": [
-          "نسبة الديزل في نواتج التكرير الأولية (الإنتاج) = 20% (من جدول 1-7)",
-          "نسبة استخدامه اليومي (الطلب) = 25% (من جدول 1-7)"
-        ],
-        "required": "النسبة المئوية للزيادة في الطلب اليومي على الديزل مقارنة بنسبة إنتاجه.",
-        "steps": [
-          {
-            "note": "نحسب مقدار الزيادة المطلقة بين نسبة الاستخدام اليومي ونسبة الإنتاج",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( \\text{الزيادة} = 25\\% - 20\\% \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( \\text{الزيادة} = 5\\% \\)"
-              }
-            ]
-          },
-          {
-            "note": "نحسب النسبة المئوية للزيادة النسبية بالمقارنة مع نسبة الإنتاج الأصلية (20%)",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( \\text{النسبة المئوية للزيادة} = \\dfrac{5\\%}{20\\%}\\times 100\\% \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( \\text{النسبة المئوية للزيادة} = 25\\% \\)"
-              }
-            ]
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "📝 مثال (1)",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-ex1",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ يزيد الطلب اليومي على الديزل بنسبة 25% عن نسبة إنتاجه من عملية التكرير الأولية",
-        "label": "الحل التفصيلي"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 7,
       "sectionId": "examples",
       "sectionNavLabel": "✍️ مثال محلول"

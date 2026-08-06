@@ -29,24 +29,105 @@
       "sectionNavLabel": "💡 الشرح"
     },
     {
-      "type": "formula",
-      "id": "eddyStatus",
-      "html": "صفيحة معدنية صلدة: حلقات تيار دوامة كبيرة → فقدان حراري أعلى",
+      "type": "simulation",
+      "svgId": "eddySvg",
+      "svgAriaLabel": "مقارنة التيارات الدوامة في صفيحة صلدة وصفائح مشرّحة",
+      "svgViewBox": "0 0 360 180",
+      "svgWidth": "360",
+      "svgHeight": "180",
+      "sectionHeading": "🕹️ محاكاة تفاعلية: التيارات الدوامة في صفيحة صلدة مقابل صفائح مُشرَّحة (الشكل 5-3)",
+      "descriptionHtml": "ولتقليل الحرارة المتولدة بسبب هذه التيارات الدوامة، يُتَّخذ الجسم المعدني على شكل صفائح معدنية رقيقة ومعزولة بعضها عن الآخر كما هو في المحوّلات، بدلًا من قطعة معدنية صلدة واحدة. بدّل بين الحالتين لمشاهدة الفرق في حجم حلقات التيار الدوامة الناتجة.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "eddyToggle",
+          "html": "🔁 بدّل: صفيحة صلدة / صفائح مُشرَّحة معزولة",
+          "class": "neu-btn",
+          "data": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "صفيحة معدنية صلدة: حلقات تيار دوامة كبيرة → فقدان حراري أعلى",
+          "id": "eddyStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
       "sectionGroup": 1,
       "sectionId": "eddy-widget",
       "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 5-3"
     },
     {
-      "type": "formula",
-      "id": "eddyBrakeStatus",
-      "html": "الصفيحة ساكنة: لا يوجد تغيّر في الفيض، ولا تيارات دوامة.",
+      "type": "simulation",
+      "svgId": "eddyBrakeSvg",
+      "svgAriaLabel": "محاكاة التيارات الدوامة والقوة المعاكسة عند حركة صفيحة معدنية أسفل مغناطيس",
+      "svgViewBox": "0 0 360 170",
+      "svgWidth": "360",
+      "svgHeight": "170",
+      "sectionHeading": "🕹️ محاكاة تفاعلية: القوة المعاكسة للتيارات الدوامة (الشكل 6-3)",
+      "descriptionHtml": "عندما تتحرك صفيحة معدنية أسفل قطب مغناطيسي، تتولّد تيارات دوامة عند حافتَي المنطقة المؤثَّرة بالمجال (عند الدخول وعند الخروج)، وحسب قانون لينز فإن هذه التيارات الدوامة المحتثة تولّد قوة معاكسة لحركة الصفيحة (اتجاه الإعاقة)؛ وهذا هو أساس عمل مكابح التيارات الدوامة المستعملة في بعض العجلات الثقيلة.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "eddyBrakeToggle",
+          "html": "▶ ابدأ حركة الصفيحة",
+          "class": "neu-btn",
+          "data": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "الصفيحة ساكنة: لا يوجد تغيّر في الفيض، ولا تيارات دوامة.",
+          "id": "eddyBrakeStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
       "sectionGroup": 2,
       "sectionId": "eddybrake-widget",
       "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 6-3"
     },
     {
-      "type": "paragraph",
-      "html": "",
+      "type": "list",
+      "heading": "📋 من التطبيقات العملية للتيارات الدوامة",
+      "items": [
+        "أفران صهر المعادن (أفران الحث).",
+        "أجهزة كشف المعادن."
+      ],
+      "ordered": true,
       "sectionGroup": 3,
       "sectionId": null,
       "sectionNavLabel": null
@@ -60,8 +141,14 @@
       "sectionNavLabel": null
     },
     {
-      "type": "paragraph",
-      "html": "يبيّن الشكل (9-3) دائرة كهربائية مكوّنة من ملف ذي قلب حديدي ومقاومة وبطارية ومفتاح كهربائي. فعند غلق المفتاح في الدائرة الكهربائية يحدث ما يأتي:",
+      "type": "list",
+      "heading": null,
+      "items": [
+        "يزداد التيار المار في الدائرة مع الزمن.",
+        "يزداد الفيض المغناطيسي خلال الدائرة نتيجة لازدياد التيار.",
+        "يؤدي الفيض المتزايد إلى توليد قوة دافعة كهربائية في الدائرة لتعكس الزيادة في الفيض المغناطيسي (حسب قانون لينز)."
+      ],
+      "ordered": true,
       "sectionGroup": 5,
       "sectionId": null,
       "sectionNavLabel": null
@@ -146,7 +233,8 @@
       "ruleBoxes": [
         {
           "html": "\\( \\varepsilon_{ind} = -L\\dfrac{\\Delta I}{\\Delta t} = \\) <b id=\"selfEmfVal\">-1.00</b> V",
-          "id": null
+          "id": null,
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,
@@ -155,39 +243,32 @@
       "sectionNavLabel": "🕹️ حاسبة القوة الدافعة المحتثة ذاتيًا"
     },
     {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<p>ملف يتألف من 800 لفة متقاربة جدًا، يمرّ فيه تيار شدته \\((6\\ \\text{mA})\\). جد معامل الحث الذاتي للملف إذا كان الفيض المخترق له بسبب التيار يساوي \\((3\\times10^{-8}\\ \\text{weber})\\).</p>",
-      "label": "📝 مثال (3)",
-      "solution": {
-        "given": [
-          "\\( N = 800 \\) لفة",
-          "\\( \\Delta I = 6\\ \\text{mA} = 6\\times10^{-3}\\ \\text{A} \\) — شدة التيار (بعد التحويل)",
-          "\\( \\Delta\\varnothing = 3\\times10^{-8}\\ \\text{Wb} \\) — الفيض المخترق للملف"
-        ],
-        "required": "احسب معامل الحث الذاتي L للملف.",
-        "steps": [
-          {
-            "note": "نطبّق علاقة معامل الحث الذاتي",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( L = N\\dfrac{\\Delta\\varnothing}{\\Delta I} = 800\\times\\dfrac{3\\times10^{-8}}{6\\times10^{-3}} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( L = 4\\times10^{-3}\\ \\text{H} \\)"
-              }
-            ]
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "📝 مثال (3)",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-ex3",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ L = 4×10⁻³ H = 4 mH",
-        "label": "الحل التفصيلي"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 12,
       "sectionId": "example3",
       "sectionNavLabel": "📝 مثال 3"

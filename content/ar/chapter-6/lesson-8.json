@@ -95,19 +95,35 @@
       "buttons": [
         {
           "id": "btnSolid",
-          "html": "صلب"
+          "html": "صلب",
+          "class": "neu-btn",
+          "data": {
+            "data-state": "solid"
+          }
         },
         {
           "id": "btnLiquid",
-          "html": "سائل"
+          "html": "سائل",
+          "class": "neu-btn",
+          "data": {
+            "data-state": "liquid"
+          }
         },
         {
           "id": "btnGas",
-          "html": "غاز"
+          "html": "غاز",
+          "class": "neu-btn",
+          "data": {
+            "data-state": "gas"
+          }
         },
         {
           "id": "btnPlasma",
-          "html": "بلازما"
+          "html": "بلازما",
+          "class": "neu-btn primary",
+          "data": {
+            "data-state": "plasma"
+          }
         }
       ],
       "selectId": null,

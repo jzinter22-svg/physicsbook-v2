@@ -29,409 +29,432 @@
       "sectionNavLabel": "💡 تمهيد"
     },
     {
-      "type": "sectionIntro",
-      "heading": "س1: اختر العبارة الصحيحة من العبارات الآتية",
-      "leadHtml": null,
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "س1: اختر العبارة الصحيحة من العبارات الآتية",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q1-1",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q1-2",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q1-3",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q1-4",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q1-5",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q1-6",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q1-7",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q1-8",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q1-9",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q1-10",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 1,
       "sectionId": "q1",
       "sectionNavLabel": "1️⃣ س1"
     },
     {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<p>خزان مصنوع من فلز مثالي لتخزين الماء البارد، لكنه يتآكل بسرعة عند استعماله في تخزين حامض الكبريتيك المخفف. الفلز المصنوع منه الخزان هو:</p><ul>\n<li>a- الخارصين.</li>\n<li>b- الرصاص.</li>\n<li>c- النحاس.</li>\n<li>d- الكالسيوم.</li>\n</ul>",
-      "label": "س1 (1)",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "الخارصين فلز مناسب لخزانات الماء البارد (يُستعمل في الجلفنة لحماية المعادن من التآكل)، لكنه فلز نشيط نسبيًا في سلسلة النشاط، فيتفاعل بسرعة مع حامض الكبريتيك المخفف مطلقًا غاز الهيدروجين. أما النحاس فلا يتفاعل مع الحمض المخفف، والرصاص يقاوم الحمض المخفف بتكوين طبقة عازلة، والكالسيوم يتفاعل بعنف مع الماء نفسه فلا يصلح للخزان أصلًا.",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "س2",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q2",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة الصحيحة: a — الخارصين",
-        "label": "الحل"
-      },
-      "sectionGroup": 1,
-      "sectionId": "q1",
-      "sectionNavLabel": "1️⃣ س1"
-    },
-    {
-      "type": "example",
-      "number": 2,
-      "problemHtml": "<p>أي الأكاسيد التالية يمكن اختزاله بالكاربون؟</p><ul>\n<li>a- أوكسيد الألمنيوم.</li>\n<li>b- أوكسيد الرصاص.</li>\n<li>c- أوكسيد الكالسيوم.</li>\n<li>d- أوكسيد المغنيسيوم.</li>\n</ul>",
-      "label": "س1 (2)",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "يمكن اختزال أكاسيد الفلزات الموجودة أسفل الكاربون في سلسلة النشاط بالكاربون (كالرصاص)، أما الألمنيوم والكالسيوم والمغنيسيوم فتقع أعلى الكاربون في سلسلة النشاط، وتحتاج اختزالًا قويًا (تحليلًا كهربائيًا) لا يمكن أن يوفره الكاربون.",
-            "calc": []
-          }
-        ],
-        "final": "✓ الإجابة الصحيحة: b — أوكسيد الرصاص",
-        "label": "الحل"
-      },
-      "sectionGroup": 1,
-      "sectionId": "q1",
-      "sectionNavLabel": "1️⃣ س1"
-    },
-    {
-      "type": "example",
-      "number": 3,
-      "problemHtml": "<p>الفلز الذي يوجد عند قمة سلسلة النشاط:</p><ul>\n<li>a- يفقد إلكترونًا بسهولة.</li>\n<li>b- تكون مركباته غير ثابتة.</li>\n<li>c- يحترق لتكوين أوكسيد حامضي.</li>\n<li>d- يكون أوكسيده السهل اختزاله بالكاربون.</li>\n</ul>",
-      "label": "س1 (3)",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "الفلزات النشيطة تفقد إلكتروناتها بسهولة لتكوين أيونات موجبة، وتكون مركباتها ثابتة جدًا (وليس العكس)، وأكسيدها قاعدي وليس حامضيًا، ويصعب اختزال أكسيدها بالكاربون (يحتاج تحليلًا كهربائيًا).",
-            "calc": []
-          }
-        ],
-        "final": "✓ الإجابة الصحيحة: a — يفقد إلكترونًا بسهولة",
-        "label": "الحل"
-      },
-      "sectionGroup": 1,
-      "sectionId": "q1",
-      "sectionNavLabel": "1️⃣ س1"
-    },
-    {
-      "type": "example",
-      "number": 4,
-      "problemHtml": "<p>عند التحليل الكهربائي لمنصهر كلوريد الصوديوم NaCl، فإن ما يحدث عند الأنود هو:</p><ul>\n<li>a- تأكسد Cl⁻.</li>\n<li>b- اختزال Cl⁻.</li>\n<li>c- تأكسد Na⁺.</li>\n<li>d- اختزال Na⁺.</li>\n</ul>",
-      "label": "س1 (4)",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "الأنود هو القطب الموجب الذي يحدث عنده دائمًا التأكسد (فقدان إلكترونات)، فتتأكسد أيونات الكلوريد Cl⁻ لتكوين غاز الكلور. أما عند الكاثود (القطب السالب) فيحدث اختزال Na⁺ ليترسب فلز الصوديوم.",
-            "calc": []
-          }
-        ],
-        "final": "✓ الإجابة الصحيحة: a — تأكسد Cl⁻",
-        "label": "الحل"
-      },
-      "sectionGroup": 1,
-      "sectionId": "q1",
-      "sectionNavLabel": "1️⃣ س1"
-    },
-    {
-      "type": "example",
-      "number": 5,
-      "problemHtml": "<p>استخلاص الفلزات من خاماتها (تحويلها من أيونات إلى عناصر) يتضمّن دائمًا:</p><ul>\n<li>a- أكسدة.</li>\n<li>b- اختزال.</li>\n<li>c- تحليل كهربائي.</li>\n<li>d- تسخين مع الفحم.</li>\n</ul>",
-      "label": "س1 (5)",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "في كل مرة يُستخلص فيها الفلز من خامه يتضمّن ذلك اختزال أيون الفلز؛ لأن الفلز يكون بهيئة أيون في الخام ويجب أن يكتسب إلكترونات ليصبح فلزًا حرًا. أما التحليل الكهربائي والتسخين مع الفحم فهما طريقتان محددتان تستعملان حسب موقع الفلز في سلسلة النشاط، وليستا شرطًا دائمًا.",
-            "calc": []
-          }
-        ],
-        "final": "✓ الإجابة الصحيحة: b — اختزال",
-        "label": "الحل"
-      },
-      "sectionGroup": 1,
-      "sectionId": "q1",
-      "sectionNavLabel": "1️⃣ س1"
-    },
-    {
-      "type": "example",
-      "number": 6,
-      "problemHtml": "<p>السبائك تتكون من الآتي:</p><ul>\n<li>a- الفلزات فقط.</li>\n<li>b- الفلزات ولافلزات.</li>\n<li>c- الفلزات والماء.</li>\n</ul>",
-      "label": "س1 (6)",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "السبيكة تحتوي على كمية كبيرة من الفلز الأساس وكميات أقل من مكوّنات أخرى قد تكون فلزات أو لافلزات مثل الكاربون والسليكون.",
-            "calc": []
-          }
-        ],
-        "final": "✓ الإجابة الصحيحة: b — الفلزات ولافلزات",
-        "label": "الحل"
-      },
-      "sectionGroup": 1,
-      "sectionId": "q1",
-      "sectionNavLabel": "1️⃣ س1"
-    },
-    {
-      "type": "example",
-      "number": 7,
-      "problemHtml": "<p>الفولاذ أحد سبائك:</p><ul>\n<li>a- القصدير.</li>\n<li>b- الكاربون.</li>\n<li>c- الحديد.</li>\n</ul>",
-      "label": "س1 (7)",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "الفولاذ (الصلب) سبيكة أساسها الحديد، تتكوّن بإضافة الكاربون بنسب معينة إلى الحديد النقي.",
-            "calc": []
-          }
-        ],
-        "final": "✓ الإجابة الصحيحة: c — الحديد",
-        "label": "الحل"
-      },
-      "sectionGroup": 1,
-      "sectionId": "q1",
-      "sectionNavLabel": "1️⃣ س1"
-    },
-    {
-      "type": "example",
-      "number": 8,
-      "problemHtml": "<p>السبيكة تكون:</p><ul>\n<li>a- أقل صلابة من مكوّناتها.</li>\n<li>b- أكبر صلابة من مكوّناتها.</li>\n<li>c- ليس لها صلابة.</li>\n</ul>",
-      "label": "س1 (8)",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "من خصائص السبائك أنها أقوى وأصلب (أصلد) من الفلزات المكوّنة لها.",
-            "calc": []
-          }
-        ],
-        "final": "✓ الإجابة الصحيحة: b — أكبر صلابة من مكوّناتها",
-        "label": "الحل"
-      },
-      "sectionGroup": 1,
-      "sectionId": "q1",
-      "sectionNavLabel": "1️⃣ س1"
-    },
-    {
-      "type": "example",
-      "number": 9,
-      "problemHtml": "<p>تُستخدم سبيكة الألمنيوم في صناعة الآتي:</p><ul>\n<li>a- الكيمياويات.</li>\n<li>b- المواد البتروكيميائية.</li>\n<li>c- هياكل الطائرات.</li>\n</ul>",
-      "label": "س1 (9)",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "سبيكة الألمنيوم والنحاس والمنغنيز والمغنيسيوم تُستعمل في صناعة هياكل الطائرات تحديدًا.",
-            "calc": []
-          }
-        ],
-        "final": "✓ الإجابة الصحيحة: c — هياكل الطائرات",
-        "label": "الحل"
-      },
-      "sectionGroup": 1,
-      "sectionId": "q1",
-      "sectionNavLabel": "1️⃣ س1"
-    },
-    {
-      "type": "example",
-      "number": 10,
-      "problemHtml": "<p>السبيكة تتكون من مواد:</p><ul>\n<li>a- صلبة.</li>\n<li>b- سائلة.</li>\n<li>c- غازية.</li>\n</ul>",
-      "label": "س1 (10)",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "تُصنع السبائك من خلط الفلزات المنصهرة ثم تصلبها لتُستعمل بهيئتها الصلبة النهائية.",
-            "calc": []
-          }
-        ],
-        "final": "✓ الإجابة الصحيحة: a — صلبة",
-        "label": "الحل"
-      },
-      "sectionGroup": 1,
-      "sectionId": "q1",
-      "sectionNavLabel": "1️⃣ س1"
-    },
-    {
-      "type": "example",
-      "number": 11,
-      "problemHtml": "<p>عرّف السبيكة وأعط مثالًا لها.</p>",
-      "label": "س2",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "السبيكة خليط متكوّن من فلز وعنصر آخر، يحتوي على كمية كبيرة من الفلز الأساس وكميات أقل من مكوّنات أخرى قد تكون فلزات أو لافلزات كالكاربون والسليكون. مثال: سبيكة البرونز (نحاس + قصدير).",
-            "calc": []
-          }
-        ],
-        "final": "✓ الإجابة: خليط من فلز أساس وعنصر آخر بنسبة أقل؛ مثال: البرونز (نحاس + قصدير)",
-        "label": "الإجابة"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 2,
       "sectionId": "q2",
       "sectionNavLabel": "2️⃣ س2"
     },
     {
-      "type": "example",
-      "number": 12,
-      "problemHtml": "<p>عدد استعمالات السبائك.</p>",
-      "label": "س3",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "1) صمامات دائرة التبريد وأنظمة الكشف عن الحرائق. 2) الطب (حشوات وجسور الأسنان وجهاز السلك الموجّه الطبي). 3) هياكل الطائرات. 4) الدعامات في الأبنية وهياكل الجسور. 5) الأدوات المطبخية ومعدات الصناعات النفطية ومحطات توليد الكهرباء.",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "س3",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q3",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ راجع الاستعمالات الخمسة أعلاه",
-        "label": "الإجابة"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 3,
       "sectionId": "q3",
       "sectionNavLabel": "3️⃣ س3"
     },
     {
-      "type": "example",
-      "number": 13,
-      "problemHtml": "<p>ما هي مميزات السبائك؟</p>",
-      "label": "س4",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "1) أقوى وأصلب من الفلزات المكوّنة لها. 2) درجات انصهارها أقل من الفلزات النقية. 3) معظمها أقل قابلية للتشكل، مع وجود سبائك فائقة اللدونة. 4) قليل منها جيد التوصيل للكهرباء، مع وجود سبائك فائقة التوصيل.",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "س4",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q4",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ راجع الخصائص الأربع أعلاه",
-        "label": "الإجابة"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 4,
       "sectionId": "q4",
       "sectionNavLabel": "4️⃣ س4"
     },
     {
-      "type": "example",
-      "number": 14,
-      "problemHtml": "<p>ما هي أنواع السبائك؟</p>",
-      "label": "س5",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "نوعان: سبائك الطور الواحد (حبيبات ذات تركيب متشابه، مثل النحاس والنيكل)، والسبائك المتعددة الأطوار (عدة أنواع من الحبيبات الممتزجة، مثل الفولاذ).",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "س5",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q5",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة: سبائك الطور الواحد، والسبائك المتعددة الأطوار",
-        "label": "الإجابة"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 5,
       "sectionId": "q5",
       "sectionNavLabel": "5️⃣ س5"
     },
     {
-      "type": "example",
-      "number": 15,
-      "problemHtml": "<p>ما هي سبيكة البرونز؟</p>",
-      "label": "س6",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "يُعتقد أنها أول سبيكة صنعها الإنسان، وتتكون في البداية من النحاس والزرنيخ، ثم اكتُشف القصدير ووُضع مع النحاس فأنتج نوعًا جيدًا من البرونز، تمتاز بأنها أصلب من النحاس وأكثر قابلية للصهر والقولبة، واستُعملت في صناعة الأدوات والحلي والأسلحة.",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "س6",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q6",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة: سبيكة النحاس مع الزرنيخ ثم القصدير، أصلب من النحاس وأكثر قابلية للصهر والقولبة",
-        "label": "الإجابة"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 6,
       "sectionId": "q6",
       "sectionNavLabel": "6️⃣ س6"
     },
     {
-      "type": "example",
-      "number": 16,
-      "problemHtml": "<p>ما طرق صنع السبائك؟</p>",
-      "label": "س7",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "الطريقة المباشرة (مزج المنصهرات مباشرة)، والطريقة غير المباشرة، وتنقسم إلى: طريقة ذات مرحلة واحدة (صهر الفلز الأساس ثم إذابة الفلزات الأخرى فيه)، وطريقة ذات مرحلتين (تصنيع سبيكة أولية ثم إضافة وزن معلوم من فلز آخر).",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "س7",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q7",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة: الطريقة المباشرة، والطريقة غير المباشرة (بمرحلة واحدة أو مرحلتين)",
-        "label": "الإجابة"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 7,
       "sectionId": "q7",
       "sectionNavLabel": "7️⃣ س7"
     },
     {
-      "type": "example",
-      "number": 17,
-      "problemHtml": "<p>اذكر نوعين من السبائك المستعملة في البيئة العراقية مع ذكر مكان استعمالها.</p>",
-      "label": "س8",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "1) سبيكة النحاس والنيكل: استُعملت في نقود فئتي 5 و10 فلوس العراقية القديمة. 2) سبيكة الرصاص: تُستعمل في اللحام وصناعة البطاريات السائلة ومكابس السوائل وأحرف الطباعة.",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "س8",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q8",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة: سبيكة النحاس والنيكل (النقود المعدنية)، وسبيكة الرصاص (اللحام والبطاريات)",
-        "label": "الإجابة"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 8,
       "sectionId": "q8",
       "sectionNavLabel": "8️⃣ س8"
     },
     {
-      "type": "example",
-      "number": 18,
-      "problemHtml": "<p>اذكر الصفات العامة للفلزات والتي تجعلها مهمة من الناحية الصناعية.</p>",
-      "label": "س9",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "1) كثافة ودرجة انصهار عالية. 2) قابلية الطرق والسحب. 3) قابلية التوصيل الحراري. 4) قابلية التوصيل الكهربائي.",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "س9",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q9",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة: كثافة وانصهار عالٍ، طرق وسحب، توصيل حراري، توصيل كهربائي",
-        "label": "الإجابة"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 9,
       "sectionId": "q9",
       "sectionNavLabel": "9️⃣ س9"
     },
     {
-      "type": "example",
-      "number": 19,
-      "problemHtml": "<p>أي الفلزات تُستخدم بصورة أكثر من غيرها؟</p>",
-      "label": "س10",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "من أهم الفلزات المستخدمة حاليًا في الصناعة: الصوديوم، والحديد، والألمنيوم، والنحاس، والمنغنيز.",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "س10",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q10",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة: الصوديوم، الحديد، الألمنيوم، النحاس، والمنغنيز",
-        "label": "الإجابة"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 10,
       "sectionId": "q10",
       "sectionNavLabel": "🔟 س10"
     },
     {
-      "type": "example",
-      "number": 20,
-      "problemHtml": "<p>هل يمكن إعادة تدوير الفلزات؟ اذكر المراحل الخاصة بذلك.</p>",
-      "label": "س11",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "نعم، يمكن إعادة تدوير الفلزات. المراحل: خام من الأرض ← تعدين ← تركيز الخام ← استخلاص بالإصهار أو التحليل الكهربائي ← فلز غير نقي ← تنقية ← فلز نقي ← صناعة إنتاج المنتجات ← فلز عادم ← إعادة تدوير (يعود الفلز العادم إلى مرحلتي التركيز أو الاستخلاص من جديد)، وهذا يوفّر الطاقة والموارد الطبيعية.",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "س11",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-q11",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ نعم؛ الدورة: خام ← تعدين ← تركيز ← استخلاص ← فلز غير نقي ← تنقية ← فلز نقي ← تصنيع ← فلز عادم ← إعادة تدوير",
-        "label": "الإجابة"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 11,
       "sectionId": "q11",
       "sectionNavLabel": "1️⃣1️⃣ س11"

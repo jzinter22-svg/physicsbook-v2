@@ -21,9 +21,13 @@
   ],
   "content": [
     {
-      "type": "explanation",
+      "type": "list",
       "heading": "💡 5-6 منظومات مستويات الليزر Laser Levels System",
-      "html": "يمكن تصنيف منظومات توليد الليزر تبعًا لنوع منظومات مستويات الطاقة إلى منظومتين:",
+      "items": [
+        "المنظومة ثلاثية المستوى three-level system",
+        "المنظومة رباعية المستوى four-level system"
+      ],
+      "ordered": true,
       "sectionGroup": 0,
       "sectionId": "intro",
       "sectionNavLabel": "💡 تمهيد"
@@ -111,15 +115,25 @@
       "buttons": [
         {
           "id": "btnThree",
-          "html": "ثلاثية المستوى"
+          "html": "ثلاثية المستوى",
+          "class": "neu-btn primary",
+          "data": {
+            "data-sys": "three"
+          }
         },
         {
           "id": "btnFour",
-          "html": "رباعية المستوى"
+          "html": "رباعية المستوى",
+          "class": "neu-btn",
+          "data": {
+            "data-sys": "four"
+          }
         },
         {
           "id": "btnPumpAtom",
-          "html": "⚡ ضخ ذرة"
+          "html": "⚡ ضخ ذرة",
+          "class": "neu-btn",
+          "data": null
         }
       ],
       "selectId": null,

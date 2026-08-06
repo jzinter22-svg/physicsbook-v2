@@ -111,8 +111,9 @@
       "presets": null,
       "ruleBoxes": [
         {
-          "html": null,
-          "id": "rlcStatus"
+          "html": "—",
+          "id": "rlcStatus",
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,
@@ -144,97 +145,32 @@
       "sectionNavLabel": null
     },
     {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<p>دائرة تيار متناوب تتألف من ملف مهمل مقاومته وحث ذاتي، ومقاومة مقدارها \\((40\\ \\Omega)\\)، ومتسعة رادتها السعوية \\((10\\ \\Omega)\\) مربوطة جميعها على التوالي، والقدرة المستهلكة \\((160\\ W)\\)، فأذا كان تردد الدائرة \\(\\left(\\dfrac{500}{\\pi}\\ \\text{Hz}\\right)\\) وحث الملف \\((40\\ \\text{mH})\\) والتيار المار بالدائرة \\((2\\ \\text{A})\\) أحسب: 1- فولطية المصدر. 2- عامل القدرة.</p>",
-      "label": "📝 مثال (6)",
-      "solution": {
-        "given": [
-          "\\( R = 40\\ \\Omega \\) — المقاومة",
-          "\\( X_C = 10\\ \\Omega \\) — الرادة السعوية",
-          "\\( P = 160\\ \\text{W} \\) — القدرة المستهلكة",
-          "\\( f = 500/\\pi\\ \\text{Hz} \\) — تردد الدائرة",
-          "\\( L = 40\\ \\text{mH} = 40\\times10^{-3}\\ \\text{H} \\) — حث الملف (بعد التحويل)",
-          "\\( I_T = 2\\ \\text{A} \\) — تيار الدائرة"
-        ],
-        "required": "1- \\(V_T\\). 2- \\(\\cos\\emptyset\\).",
-        "steps": [
-          {
-            "note": "1- نحسب الرادة الحثية أولًا",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( X_L=2\\pi fL=2\\pi\\times\\dfrac{500}{\\pi}\\times40\\times10^{-3} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( X_L=40\\ \\Omega \\)"
-              }
-            ]
-          },
-          {
-            "note": "2- نحسب الممانعة (خواص حثية لأن \\(X_L>X_C\\))",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( Z=\\sqrt{R^2+(X_L-X_C)^2}=\\sqrt{40^2+(40-10)^2} \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( Z=\\sqrt{1600+900}=\\sqrt{2500} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( Z=50\\ \\Omega \\)"
-              }
-            ]
-          },
-          {
-            "note": "3- نطبّق قانون أوم لإيجاد فولطية المصدر",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( V_T=I_T\\,Z=2\\times50 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( V_T=100\\ \\text{Volt} \\)"
-              }
-            ]
-          },
-          {
-            "note": "4- نطبّق علاقة عامل القدرة",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( \\cos\\emptyset=\\dfrac{R}{Z}=\\dfrac{40}{50} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( \\cos\\emptyset=0.8 \\)"
-              }
-            ]
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "📝 مثال (6)",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-ex6",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ V_T = 100 Volt · cosØ = 0.8",
-        "label": "الحل التفصيلي"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 9,
       "sectionId": "example6",
       "sectionNavLabel": "📝 مثال 6"
@@ -285,8 +221,9 @@
       "presets": null,
       "ruleBoxes": [
         {
-          "html": null,
-          "id": "resStatus"
+          "html": "—",
+          "id": "resStatus",
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,

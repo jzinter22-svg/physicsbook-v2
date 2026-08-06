@@ -28,9 +28,81 @@
       "sectionNavLabel": "💡 تمهيد"
     },
     {
-      "type": "definition",
-      "label": "",
-      "html": "",
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ محاكاة تفاعلية: مجالات استعمال السبائك",
+      "descriptionHtml": "اضغط أي مجال لمعرفة كيفية استعمال السبائك فيه.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnCooling",
+          "html": "🧯 التبريد وكشف الحرائق",
+          "class": "neu-btn primary",
+          "data": {
+            "data-use": "cooling"
+          }
+        },
+        {
+          "id": "btnMedical",
+          "html": "🦷 الطب",
+          "class": "neu-btn",
+          "data": {
+            "data-use": "medical"
+          }
+        },
+        {
+          "id": "btnAircraft",
+          "html": "✈️ هياكل الطائرات",
+          "class": "neu-btn",
+          "data": {
+            "data-use": "aircraft"
+          }
+        },
+        {
+          "id": "btnBuilding",
+          "html": "🏗️ الأبنية والجسور",
+          "class": "neu-btn",
+          "data": {
+            "data-use": "building"
+          }
+        },
+        {
+          "id": "btnKitchen",
+          "html": "🍳 المطبخ والصناعة النفطية",
+          "class": "neu-btn",
+          "data": {
+            "data-use": "kitchen"
+          }
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "<span class=\"def-label\" id=\"useInfoLabel\"></span>\n<p id=\"useInfoText\" style=\"margin:.3rem 0\"></p>",
+          "id": "useInfoCard",
+          "wrapperClass": "def-box"
+        }
+      ],
+      "trailingHtml": null,
       "sectionGroup": 1,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"

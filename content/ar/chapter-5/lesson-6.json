@@ -38,9 +38,9 @@
       "sectionNavLabel": null
     },
     {
-      "type": "explanation",
+      "type": "sectionIntro",
       "heading": "1-6-5 أجزاء ومكونات الرادار",
-      "html": "",
+      "leadHtml": null,
       "sectionGroup": 2,
       "sectionId": "parts",
       "sectionNavLabel": "🧩 مكونات الرادار"
@@ -87,7 +87,9 @@
       "buttons": [
         {
           "id": "btnPulse",
-          "html": "📡 أرسل نبضة"
+          "html": "📡 أرسل نبضة",
+          "class": "neu-btn primary",
+          "data": null
         }
       ],
       "selectId": null,
@@ -116,9 +118,9 @@
       "sectionNavLabel": null
     },
     {
-      "type": "explanation",
+      "type": "sectionIntro",
       "heading": "4-6-5 أهم تطبيقات واستعمالات الرادار",
-      "html": "",
+      "leadHtml": null,
       "sectionGroup": 8,
       "sectionId": "uses",
       "sectionNavLabel": "🌍 استعمالات الرادار"

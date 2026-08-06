@@ -17,135 +17,92 @@
   "objectives": [],
   "content": [
     {
-      "type": "sectionIntro",
-      "heading": "✅ س1: اختر العبارة الصحيحة لكل من العبارات الآتية",
-      "leadHtml": "كل سؤال يليه مباشرة بطاقة الحل.",
-      "sectionGroup": 0,
-      "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
-    },
-    {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- \\(1.5\\,V_m\\)</li>\n<li>b- \\(0.707\\,V_m\\)</li>\n<li>c- \\(0.636\\,V_m\\)</li>\n<li>d- \\(\\sqrt{2}\\,V_m\\)</li>\n</ul>",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "القيمة المؤثرة للفولطية المتناوبة \\(V_e=0.707\\,V_m\\) دائمًا، وهي علاقة ثابتة درسناها في الدرس الأول.",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "✅ س1: اختر العبارة الصحيحة لكل من العبارات الآتية",
+      "descriptionHtml": "كل سؤال يليه مباشرة بطاقة الحل.",
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-mcq1",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة الصحيحة: b — \\(0.707\\,V_m\\)"
-      },
-      "sectionGroup": 0,
-      "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
-    },
-    {
-      "type": "example",
-      "number": 2,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- حقيقيًا</li>\n<li>b- اكبر ما يمكن</li>\n<li>c- صفرًا</li>\n<li>d- ليس أيًا مما سبق</li>\n</ul>",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "المقاومة الأومية الخالصة تستهلك قدرة حقيقية تظهر على شكل حرارة، بخلاف المحث الصرف والمتسعة الصرف اللذين لا يستهلكان قدرة حقيقية.",
-            "calc": []
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-mcq2",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة الصحيحة: a — حقيقيًا"
-      },
-      "sectionGroup": 0,
-      "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
-    },
-    {
-      "type": "example",
-      "number": 3,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- محركًا</li>\n<li>b- مولدًا</li>\n<li>c- ملفًا</li>\n<li>d- محولة كهربائية</li>\n</ul>",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "المحولة الرافعة هي الجهاز المستعمل لرفع الفولطية المتناوبة، اعتمادًا على مبدأ الحث المتبادل.",
-            "calc": []
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-mcq3",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة الصحيحة: d — محولة كهربائية"
-      },
-      "sectionGroup": 0,
-      "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
-    },
-    {
-      "type": "example",
-      "number": 4,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- أكبر منها.</li>\n<li>b- أقل منها.</li>\n<li>c- مساوية لها.</li>\n<li>d- ليس أيًا مما سبق.</li>\n</ul>",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "بما أن \\(Z=\\sqrt{R^2+(X_L-X_C)^2}\\)، فإن الحد الثاني تحت الجذر يكون دائمًا موجبًا أو صفرًا (عند الرنين)، لذا فإن Z أكبر من أو تساوي R، وبصورة عامة (باستثناء حالة الرنين) تكون Z أكبر من R.",
-            "calc": []
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-mcq4",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة الصحيحة: a — أكبر منها"
-      },
-      "sectionGroup": 0,
-      "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
-    },
-    {
-      "type": "example",
-      "number": 5,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- صفر.</li>\n<li>b- أكبر من الواحد.</li>\n<li>c- أقل من الواحد.</li>\n<li>d- ليس أيًا مما سبق.</li>\n</ul>",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "في المحث الصرف تتقدم الفولطية على التيار بزاوية 90°، فيكون \\(\\cos90°=0\\)، أي إن عامل القدرة يساوي صفرًا.",
-            "calc": []
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-mcq5",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة الصحيحة: a — صفر"
-      },
-      "sectionGroup": 0,
-      "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
-    },
-    {
-      "type": "example",
-      "number": 6,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- بالمصدر.</li>\n<li>b- بالجهاز (الحمل).</li>\n<li>c- بالنواة.</li>\n<li>d- ليس أيًا مما سبق.</li>\n</ul>",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "يربط الملف الابتدائي بالمصدر المتناوب، بينما يربط الملف الثانوي بالجهاز (الحمل).",
-            "calc": []
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-mcq6",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة الصحيحة: b — بالجهاز (الحمل)"
-      },
-      "sectionGroup": 0,
-      "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
-    },
-    {
-      "type": "example",
-      "number": 7,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- التيارات الدوامة.</li>\n<li>b- ربط المحولة على التوالي.</li>\n<li>c- كبر حجم المحولة.</li>\n<li>d- وجود مجال مغناطيسي.</li>\n</ul>",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "من أسباب خسائر القدرة في المحولة الكهربائية: التيارات الدوامة المتولدة في قلبها الحديدي، إضافة إلى خسائر الحرارة في الأسلاك وخسائر الهسترة.",
-            "calc": []
+        },
+        {
+          "id": null,
+          "html": "إظهار الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-mcq7",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ الإجابة الصحيحة: a — التيارات الدوامة"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "كل سؤال يليه مباشرة بطاقة الحل.",
       "sectionGroup": 0,
       "sectionId": "mcqs",
       "sectionNavLabel": "✅ س1: اختيار من متعدد"
@@ -160,7 +117,7 @@
     },
     {
       "type": "example",
-      "number": 8,
+      "number": 1,
       "problemHtml": "",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -168,7 +125,7 @@
     },
     {
       "type": "example",
-      "number": 9,
+      "number": 2,
       "problemHtml": "<div class=\"exercise-final\">✓ حقيقية (فعلية)</div>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -176,7 +133,7 @@
     },
     {
       "type": "example",
-      "number": 10,
+      "number": 3,
       "problemHtml": "",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -184,7 +141,7 @@
     },
     {
       "type": "example",
-      "number": 11,
+      "number": 4,
       "problemHtml": "<div class=\"exercise-final\">✓ المقاومة الأومية (الخالصة)</div>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -192,7 +149,7 @@
     },
     {
       "type": "example",
-      "number": 12,
+      "number": 5,
       "problemHtml": "",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -200,7 +157,7 @@
     },
     {
       "type": "example",
-      "number": 13,
+      "number": 6,
       "problemHtml": "<div class=\"exercise-final\">✓ الأوم (Ω)</div>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -208,7 +165,7 @@
     },
     {
       "type": "example",
-      "number": 14,
+      "number": 7,
       "problemHtml": "",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -216,7 +173,7 @@
     },
     {
       "type": "example",
-      "number": 15,
+      "number": 8,
       "problemHtml": "<div class=\"exercise-final\">✓ الاتجاهية (المتجهة)</div>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -224,7 +181,7 @@
     },
     {
       "type": "example",
-      "number": 16,
+      "number": 9,
       "problemHtml": "",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -232,7 +189,7 @@
     },
     {
       "type": "example",
-      "number": 17,
+      "number": 10,
       "problemHtml": "<div class=\"exercise-final\">✓ فولطية عالية · تيار واطئ</div>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -240,7 +197,7 @@
     },
     {
       "type": "example",
-      "number": 18,
+      "number": 11,
       "problemHtml": "",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -248,7 +205,7 @@
     },
     {
       "type": "example",
-      "number": 19,
+      "number": 12,
       "problemHtml": "<div class=\"exercise-final\">✓ المتناوب</div>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -256,7 +213,7 @@
     },
     {
       "type": "example",
-      "number": 20,
+      "number": 13,
       "problemHtml": "",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
@@ -264,501 +221,180 @@
     },
     {
       "type": "example",
-      "number": 21,
+      "number": 14,
       "problemHtml": "<div class=\"exercise-final\">✓ متسعات</div>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
       "sectionNavLabel": "✏️ س2: إكمال الفراغات"
     },
     {
-      "type": "sectionIntro",
-      "heading": "📝 أسئلة قصيرة",
-      "leadHtml": null,
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "📝 أسئلة قصيرة",
+      "descriptionHtml": null,
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-sq3",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-sq4",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-sq5",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-sq6",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-sq7",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-sq8",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        },
+        {
+          "id": null,
+          "html": "إظهار الإجابة",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-sq9",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
+          }
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
       "sectionGroup": 2,
       "sectionId": "shortq",
       "sectionNavLabel": "📝 أسئلة قصيرة"
     },
     {
-      "type": "example",
-      "number": 22,
-      "problemHtml": "",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "في دائرة التيار المستمر تعمل المتسعة عمل المفتاح المفتوح بعد فترة قصيرة من شحنها الكامل (لا يمر تيار). أما في دائرة التيار المتناوب فتعمل عمل المفتاح المغلق، إذ يتم شحنها وتفريغها بالتعاقب كل ربع دورة، فيسجل الأميتر مرور تيار باستمرار رغم وجود العازل بين لوحيها.",
-            "calc": []
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🧮 مسائل الفصل",
+      "descriptionHtml": "كل مسألة محلولة بالكامل وفق بنية المعطيات ↓ المطلوب ↓ الحل التفصيلي ↓ الجواب النهائي.",
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-p1",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ مفتاح مفتوح في التيار المستمر — مفتاح مغلق (شحن وتفريغ دوري) في التيار المتناوب"
-      },
-      "sectionGroup": 2,
-      "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
-    },
-    {
-      "type": "example",
-      "number": 23,
-      "problemHtml": "",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "القيمة المؤثرة للتيار المتناوب هي قيمة التيار المستمر المكافئة حراريًا التي تولّد نفس كمية الحرارة في مقاومة معينة خلال نفس الزمن الذي يولّده التيار المتناوب فيها. علاقتها بالقيمة العظمى: \\(I_e=0.707\\,I_m\\).",
-            "calc": []
+        },
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-p2",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ I_e = 0.707 I_m"
-      },
-      "sectionGroup": 2,
-      "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
-    },
-    {
-      "type": "example",
-      "number": 24,
-      "problemHtml": "",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "مع بطارية (تيار مستمر) وأسلاك ومصباح: الصندوق الذي يضيء فيه المصباح بشكل ثابت ومستمر يحتوي على مقاومة أو محث (لأن X_L=0 مع تيار مستمر فيسلك المحث سلوك مقاومة عادية). أما الصندوق الذي لا يضيء فيه المصباح إطلاقًا (أو يومض لحظيًا ثم ينطفئ) فيحتوي على متسعة، لأنها تعمل عمل المفتاح المفتوح بعد شحنها الكامل في دائرة التيار المستمر.",
-            "calc": []
+        },
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-p3",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ المتسعة تُعرف بانطفاء المصباح (مفتاح مفتوح)؛ التمييز بين المقاومة والمحث يحتاج مصدر تيار متناوب متغيّر التردد لملاحظة أثر X_L"
-      },
-      "sectionGroup": 2,
-      "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
-    },
-    {
-      "type": "example",
-      "number": 25,
-      "problemHtml": "",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "1- المقاومة الخالصة: فرق الطور = صفر، فـ \\(\\cos\\emptyset=\\cos0°=1\\).",
-            "calc": []
-          },
-          {
-            "note": "2- المحث الخالص: فرق الطور = 90°، فـ \\(\\cos\\emptyset=\\cos90°=0\\).",
-            "calc": []
-          },
-          {
-            "note": "3- المتسعة الخالصة: فرق الطور = 90° (بالاتجاه المعاكس)، فـ \\(\\cos\\emptyset=\\cos90°=0\\).",
-            "calc": []
+        },
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-p4",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ المقاومة: 1 · المحث: 0 · المتسعة: 0"
-      },
-      "sectionGroup": 2,
-      "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
-    },
-    {
-      "type": "example",
-      "number": 26,
-      "problemHtml": "",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "لأن عمل المحولة يعتمد على مبدأ الحث المتبادل، الذي يتطلب تغيّرًا مستمرًا في الفيض المغناطيسي؛ ولا يحدث هذا التغيّر إلا مع تيار متغيّر الشدة والاتجاه (متناوب)، إذ لا تحتوي المحولة على مفتاح تلقائي لعمل ذلك مع تيار مستمر ثابت.",
-            "calc": []
+        },
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-p5",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ تعتمد على الحث المتبادل الذي يتطلب فيضًا مغناطيسيًا متغيرًا باستمرار، وهذا لا يتحقق إلا مع التيار المتناوب"
-      },
-      "sectionGroup": 2,
-      "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
-    },
-    {
-      "type": "example",
-      "number": 27,
-      "problemHtml": "",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "1- ضياع جزء من الطاقة الكهربائية بشكل حرارة في أسلاك الملفين. 2- ضياع جزء منها على شكل حرارة تتولد في قلب المحولة بسبب التيارات الدوامة. 3- ضياع جزء منها على شكل هسترة في مادة القلب الحديدي.",
-            "calc": []
+        },
+        {
+          "id": null,
+          "html": "إظهار خطوات الحل",
+          "class": "neu-btn",
+          "data": {
+            "data-reveal-steps": "steps-p6",
+            "data-i18n-show": "common.showSteps",
+            "data-i18n-hide": "common.hideSteps"
           }
-        ],
-        "final": "✓ حرارة في الأسلاك · تيارات دوامة في القلب · هسترة في مادة القلب"
-      },
-      "sectionGroup": 2,
-      "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
-    },
-    {
-      "type": "example",
-      "number": 28,
-      "problemHtml": "",
-      "solution": {
-        "required": null,
-        "steps": [
-          {
-            "note": "تُربط المحولة الخافضة في مناطق التجهيز للحمل، لتخفيض الفولطية العالية المستعملة في النقل إلى فولطية آمنة مناسبة للمستهلك.",
-            "calc": []
-          }
-        ],
-        "final": "✓ المحولة الخافضة"
-      },
-      "sectionGroup": 2,
-      "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
-    },
-    {
-      "type": "sectionIntro",
-      "heading": "🧮 مسائل الفصل",
-      "leadHtml": "كل مسألة محلولة بالكامل وفق بنية المعطيات ↓ المطلوب ↓ الحل التفصيلي ↓ الجواب النهائي.",
-      "sectionGroup": 3,
-      "sectionId": "problems",
-      "sectionNavLabel": "🧮 مسائل الفصل"
-    },
-    {
-      "type": "example",
-      "number": 29,
-      "problemHtml": "<p>دائرة تيار متناوب تحتوي على مقاومة اومية خالصة يتراوح فيها التيار المتناوب المتناوب بين \\((-10,\\ +10)\\) والفولطية المتناوبة تتراوح ما بين \\((-14.14,\\ +14.14)\\) أحسب الآتي: 1- التيار المؤثر. 2- الفولطية المؤثرة. 3- مقدار المقاومة؟</p>",
-      "label": "📝 مسألة (1)",
-      "solution": {
-        "given": [
-          "\\( I_m = 10\\ \\text{A} \\) — القيمة العظمى للتيار (يتراوح بين −10 و+10)",
-          "\\( V_m = 14.14\\ \\text{Volt} \\) — القيمة العظمى للفولطية"
-        ],
-        "required": "1- \\(I_e\\). 2- \\(V_e\\). 3- R.",
-        "steps": [
-          {
-            "note": "1- نطبّق علاقة القيمة المؤثرة للتيار",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( I_e = 0.707\\times I_m = 0.707\\times10 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( I_e = 7.07\\ \\text{A} \\)"
-              }
-            ]
-          },
-          {
-            "note": "2- نطبّق علاقة القيمة المؤثرة للفولطية",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( V_e = 0.707\\times V_m = 0.707\\times14.14 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( V_e = 10\\ \\text{Volt} \\)"
-              }
-            ]
-          },
-          {
-            "note": "3- نطبّق قانون أوم بالقيم المؤثرة (أو العظمى؛ النسبة واحدة)",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( R = \\dfrac{V_e}{I_e} = \\dfrac{10}{7.07} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( R = 1.4\\ \\Omega \\)"
-              }
-            ]
-          }
-        ],
-        "final": "✓ I_e = 7.07 A · V_e = 10 Volt · R = 1.4 Ω",
-        "label": "الحل التفصيلي"
-      },
-      "sectionGroup": 3,
-      "sectionId": "problems",
-      "sectionNavLabel": "🧮 مسائل الفصل"
-    },
-    {
-      "type": "example",
-      "number": 30,
-      "problemHtml": "<p>رُبط ملف الى مصدر فولطية متناوبة تردّدها \\(\\left(\\dfrac{500}{\\pi}\\ \\text{Hz}\\right)\\) فأصبحت قيمة الرادة الحثية \\((125\\ \\Omega)\\) احسب حث المحث؟</p>",
-      "label": "📝 مسألة (2)",
-      "solution": {
-        "given": [
-          "\\( f = 500/\\pi\\ \\text{Hz} \\) — التردد",
-          "\\( X_L = 125\\ \\Omega \\) — الرادة الحثية"
-        ],
-        "required": "حث المحث L.",
-        "steps": [
-          {
-            "note": "نطبّق علاقة الرادة الحثية ونعيد ترتيبها لإيجاد L",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( X_L=2\\pi fL \\quad\\Rightarrow\\quad L=\\dfrac{X_L}{2\\pi f}=\\dfrac{125}{2\\pi\\times\\frac{500}{\\pi}} \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( L=\\dfrac{125}{1000} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( L=0.125\\ \\text{H} \\)"
-              }
-            ]
-          }
-        ],
-        "final": "✓ L = 0.125 H",
-        "label": "الحل التفصيلي"
-      },
-      "sectionGroup": 3,
-      "sectionId": "problems",
-      "sectionNavLabel": "🧮 مسائل الفصل"
-    },
-    {
-      "type": "example",
-      "number": 31,
-      "problemHtml": "<p>رُبطت متسعة الى مصدر تيار متناوب فإذا كانت قيمة سعة المتسعة \\(\\left(\\dfrac{100}{\\pi}\\ \\mu F\\right)\\) ورادة المتسعة مقدارها \\((100\\ \\Omega)\\) احسب تردد الدائرة الكهربائية؟</p>",
-      "label": "📝 مسألة (3)",
-      "solution": {
-        "given": [
-          "\\( C = 100/\\pi\\ \\mu F = \\dfrac{100}{\\pi}\\times10^{-6}\\ \\text{F} \\) — سعة المتسعة (بعد التحويل)",
-          "\\( X_C = 100\\ \\Omega \\) — الرادة السعوية"
-        ],
-        "required": "تردد الدائرة f.",
-        "steps": [
-          {
-            "note": "نطبّق علاقة الرادة السعوية ونعيد ترتيبها لإيجاد f",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( X_C=\\dfrac{1}{2\\pi fC} \\quad\\Rightarrow\\quad f=\\dfrac{1}{2\\pi C X_C} \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( f=\\dfrac{1}{2\\pi\\times\\frac{100}{\\pi}\\times10^{-6}\\times100} \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( f=\\dfrac{1}{0.02} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( f=50\\ \\text{Hz} \\)"
-              }
-            ]
-          }
-        ],
-        "final": "✓ f = 50 Hz",
-        "label": "الحل التفصيلي"
-      },
-      "sectionGroup": 3,
-      "sectionId": "problems",
-      "sectionNavLabel": "🧮 مسائل الفصل"
-    },
-    {
-      "type": "example",
-      "number": 32,
-      "problemHtml": "<p>رُبطت مقاومة مقدارها \\((3\\ \\Omega)\\) مع محث حثه الذاتي \\((50\\ \\text{mH})\\) ومصدر فولطية متناوبة ترددها \\(\\left(\\dfrac{40}{\\pi}\\ \\text{Hz}\\right)\\) على التوالي وكان تيار الدائرة \\((2\\ \\text{A})\\) احسب فولطية المصدر؟</p>",
-      "label": "📝 مسألة (4)",
-      "solution": {
-        "given": [
-          "\\( R = 3\\ \\Omega \\) — المقاومة",
-          "\\( L = 50\\ \\text{mH} = 50\\times10^{-3}\\ \\text{H} \\) — حث المحث (بعد التحويل)",
-          "\\( f = 40/\\pi\\ \\text{Hz} \\) — التردد",
-          "\\( I_T = 2\\ \\text{A} \\) — تيار الدائرة"
-        ],
-        "required": "فولطية المصدر V.",
-        "steps": [
-          {
-            "note": "نحسب الرادة الحثية أولًا",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( X_L=2\\pi fL=2\\pi\\times\\dfrac{40}{\\pi}\\times50\\times10^{-3} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( X_L=4\\ \\Omega \\)"
-              }
-            ]
-          },
-          {
-            "note": "نحسب الممانعة، ثم نطبّق قانون أوم لإيجاد الفولطية",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( Z=\\sqrt{R^2+X_L^2}=\\sqrt{3^2+4^2}=\\sqrt{9+16}=\\sqrt{25} \\)"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( Z=5\\ \\Omega \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( V=I_T\\,Z=2\\times5 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( V=10\\ \\text{Volt} \\)"
-              }
-            ]
-          }
-        ],
-        "final": "✓ V = 10 Volt",
-        "label": "الحل التفصيلي"
-      },
-      "sectionGroup": 3,
-      "sectionId": "problems",
-      "sectionNavLabel": "🧮 مسائل الفصل"
-    },
-    {
-      "type": "example",
-      "number": 33,
-      "problemHtml": "<p>رُبطت متسعة سعتها \\((200\\ \\mu F)\\) مع مقاومة أومية مقدارها \\((40\\ \\Omega)\\) على التوالي لمصدر كهربائي متناوب تردده \\(\\left(\\dfrac{250}{3\\pi}\\ \\text{Hz}\\right)\\) فإذا كانت القدرة المستهلكة في الدائرة \\((1000\\ \\text{W})\\) احسب فولطية المصدر؟</p>",
-      "label": "📝 مسألة (5)",
-      "solution": {
-        "given": [
-          "\\( C = 200\\ \\mu F = 200\\times10^{-6}\\ \\text{F} \\) — سعة المتسعة (بعد التحويل)",
-          "\\( R = 40\\ \\Omega \\) — المقاومة",
-          "\\( f = 250/(3\\pi)\\ \\text{Hz} \\) — التردد",
-          "\\( P = 1000\\ \\text{W} \\) — القدرة المستهلكة"
-        ],
-        "required": "فولطية المصدر \\(V_T\\).",
-        "steps": [
-          {
-            "note": "نحسب الرادة السعوية والممانعة",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( X_C=\\dfrac{1}{2\\pi fC}=\\dfrac{1}{2\\pi\\times\\frac{250}{3\\pi}\\times200\\times10^{-6}} \\)"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( X_C=30\\ \\Omega \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( Z=\\sqrt{R^2+X_C^2}=\\sqrt{40^2+30^2}=\\sqrt{1600+900}=\\sqrt{2500} \\)"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( Z=50\\ \\Omega \\)"
-              }
-            ]
-          },
-          {
-            "note": "نجد تيار الدائرة من القدرة المستهلكة \\((P=I_T^2R)\\)، ثم نطبّق قانون أوم لإيجاد الفولطية",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( P=I_T^2 R \\quad\\Rightarrow\\quad 1000=I_T^2\\times40 \\quad\\Rightarrow\\quad I_T^2=25 \\)"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( I_T=5\\ \\text{A} \\)"
-              },
-              {
-                "kind": "line",
-                "latex": "\\( V_T=I_T\\,Z=5\\times50 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( V_T=250\\ \\text{Volt} \\)"
-              }
-            ]
-          }
-        ],
-        "final": "✓ V_T = 250 Volt",
-        "label": "الحل التفصيلي"
-      },
-      "sectionGroup": 3,
-      "sectionId": "problems",
-      "sectionNavLabel": "🧮 مسائل الفصل"
-    },
-    {
-      "type": "example",
-      "number": 34,
-      "problemHtml": "<p>اذا كانت قدرة الملف الابتدائي في محولة كهربائية يساوي \\((1000\\ \\text{W})\\) وقدرة الملف الثانوي \\((900\\ \\text{W})\\). أحسب: 1- القدرة الضائعة بالمحولة. 2- كفاءة المحولة.</p>",
-      "label": "📝 مسألة (6)",
-      "solution": {
-        "given": [
-          "\\( P_1 = 1000\\ \\text{W} \\) — قدرة الملف الابتدائي",
-          "\\( P_2 = 900\\ \\text{W} \\) — قدرة الملف الثانوي"
-        ],
-        "required": "1- القدرة الضائعة. 2- η.",
-        "steps": [
-          {
-            "note": "1- القدرة الضائعة = قدرة الملف الابتدائي − قدرة الملف الثانوي",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( \\Delta P = P_1 - P_2 = 1000-900 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( \\Delta P = 100\\ \\text{W} \\)"
-              }
-            ]
-          },
-          {
-            "note": "2- نطبّق علاقة كفاءة المحولة",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( \\eta=\\dfrac{P_2}{P_1}\\times100\\%=\\dfrac{900}{1000}\\times100\\% \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( \\eta=90\\% \\)"
-              }
-            ]
-          }
-        ],
-        "final": "✓ القدرة الضائعة = 100 W · η = 90%",
-        "label": "الحل التفصيلي"
-      },
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "كل مسألة محلولة بالكامل وفق بنية المعطيات ↓ المطلوب ↓ الحل التفصيلي ↓ الجواب النهائي.",
       "sectionGroup": 3,
       "sectionId": "problems",
       "sectionNavLabel": "🧮 مسائل الفصل"

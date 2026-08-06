@@ -65,8 +65,9 @@
       "presets": null,
       "ruleBoxes": [
         {
-          "html": null,
-          "id": "gapStatus"
+          "html": "حيود متوسط",
+          "id": "gapStatus",
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,
@@ -117,8 +118,9 @@
       "presets": null,
       "ruleBoxes": [
         {
-          "html": null,
-          "id": "braggStatus"
+          "html": "فرق المسار d sinθ = 0.50 d",
+          "id": "braggStatus",
+          "wrapperClass": "rule-box"
         }
       ],
       "trailingHtml": null,
@@ -142,8 +144,14 @@
       "sectionNavLabel": null
     },
     {
-      "type": "paragraph",
-      "html": "",
+      "type": "list",
+      "heading": "📋 من تقنيات حيود الأشعة السينية",
+      "items": [
+        "دراسة الطبيعة البلورية للمادة.",
+        "دراسة التركيب الكيميائي لبعض الأجسام.",
+        "دراسة الخواص الفيزيائية للمواد ذات الطبقات الرقيقة من خلال حساب زاوية السقوط وزاوية التشتت وطول الموجة وطاقة الإشعاع."
+      ],
+      "ordered": true,
       "sectionGroup": 8,
       "sectionId": null,
       "sectionNavLabel": null

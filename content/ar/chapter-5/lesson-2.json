@@ -122,11 +122,19 @@
       "buttons": [
         {
           "id": "btnNType",
-          "html": "نوع N (شائبة مانحة Sb)"
+          "html": "نوع N (شائبة مانحة Sb)",
+          "class": "neu-btn primary",
+          "data": {
+            "data-type": "n"
+          }
         },
         {
           "id": "btnPType",
-          "html": "نوع P (شائبة قابلة B)"
+          "html": "نوع P (شائبة قابلة B)",
+          "class": "neu-btn",
+          "data": {
+            "data-type": "p"
+          }
         }
       ],
       "selectId": null,

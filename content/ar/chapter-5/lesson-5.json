@@ -120,11 +120,19 @@
       "buttons": [
         {
           "id": "btnGround",
-          "html": "موجة أرضية"
+          "html": "موجة أرضية",
+          "class": "neu-btn primary",
+          "data": {
+            "data-wave": "ground"
+          }
         },
         {
           "id": "btnSky",
-          "html": "موجة سماوية"
+          "html": "موجة سماوية",
+          "class": "neu-btn",
+          "data": {
+            "data-wave": "sky"
+          }
         }
       ],
       "selectId": null,
