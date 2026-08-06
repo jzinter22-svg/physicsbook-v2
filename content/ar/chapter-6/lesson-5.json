@@ -142,8 +142,22 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxes": [],
+      "ruleBoxes": [
+        {
+          "html": "—",
+          "id": "levelStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
       "trailingHtml": null,
+      "labels": {
+        "statusStart": "اضغط زر «ضخ ذرة» لبدء تجميع الذرات في المستوى شبه المستقر",
+        "labelInversionAchieved": "التوزيع المعكوس! ✓",
+        "statusLaserEmitted": "🔴 انطلقت أشعة الليزر من الانتقال بين المستويين!",
+        "statusRestart": "اضغط زر «ضخ ذرة» لبدء تجميع الذرات من جديد",
+        "statusCountPrefix": "عدد الذرات في المستوى شبه المستقر: ",
+        "statusCountSuffix": " من 5 لتحقيق التوزيع المعكوس"
+      },
       "sectionGroup": 6,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"
