@@ -1,0 +1,770 @@
+{
+ "lessonNumber": 8,
+ "chapterNumber": 1,
+ "meta": {
+  "pageTitle": "Lesson 8: Chapter Questions and Problems — Chapter 1",
+  "description": "1-9 Chapter 1 questions and problems: multiple-choice questions, reasoning questions, a theory question on moment of inertia, and five calculation problems, each solved in full detail.",
+  "breadcrumbChapter": "Chapter 1",
+  "breadcrumbLesson": "Chapter Questions and Problems",
+  "footer": "Chapter 1: Circular and Rotational Motion — Lesson 8: Chapter Questions and Problems"
+ },
+ "hero": {
+  "eyebrow": "📖 Lesson 8 of 8 · Chapter 1",
+  "title": "Chapter 1 Questions and Problems",
+  "lead": "1-9 Chapter questions and problems: multiple choice · reasoning · theory question · calculation problems — all solved in detail"
+ },
+ "objectives": [
+  "Reviews the chapter's key concepts and laws by solving multiple-choice questions.",
+  "Explains physical phenomena related to circular and rotational motion using the laws studied.",
+  "Clarifies the concept of moment of inertia and the factors affecting it by answering a theory question.",
+  "Solves the five calculation problems with detailed steps, using every law from the chapter."
+ ],
+ "content": [
+  {
+   "type": "sectionIntro",
+   "heading": "✅ Q1: Choose the Correct Answer",
+   "leadHtml": null,
+   "sectionGroup": 0,
+   "sectionId": "mcqs",
+   "sectionNavLabel": "✅ Multiple Choice"
+  },
+  {
+   "type": "example",
+   "number": 1,
+   "problemHtml": "<p>In uniform circular motion, the tangential speed of the object is:</p><ul>\n<li>a- constant in magnitude and direction</li>\n<li>b- constant in magnitude and changing in direction</li>\n<li>c- changing in magnitude and constant in direction</li>\n<li>d- changing in magnitude and direction</li>\n</ul>",
+   "label": "1",
+   "solution": {
+    "required": null,
+    "steps": [
+     {
+      "note": "In uniform circular motion the magnitude of the linear speed stays constant, but its direction keeps changing continuously because it is tangent to the circular path at every point.",
+      "calc": []
+     }
+    ],
+    "final": "✓ Correct answer: b — constant in magnitude and changing in direction",
+    "label": "Solution"
+   },
+   "sectionGroup": 0,
+   "sectionId": "mcqs",
+   "sectionNavLabel": "✅ Multiple Choice"
+  },
+  {
+   "type": "example",
+   "number": 2,
+   "problemHtml": "<p>The centripetal force in circular motion is proportional to:</p><ul>\n<li>a- directly to the radius of the path</li>\n<li>b- inversely to the square of the radius of the path</li>\n<li>c- directly to the square of the radius of the path</li>\n<li>d- inversely to the radius of the path</li>\n</ul>",
+   "label": "2",
+   "solution": {
+    "required": null,
+    "steps": [
+     {
+      "note": "From equation (3): \\(F_c=\\dfrac{mv^2}{r}\\). With the linear speed (v) and mass (m) held constant, the centripetal force is inversely proportional to the radius (r) raised to the first power, not to its square.",
+      "calc": []
+     }
+    ],
+    "final": "✓ Correct answer: d — inversely to the radius of the path",
+    "label": "Solution"
+   },
+   "sectionGroup": 0,
+   "sectionId": "mcqs",
+   "sectionNavLabel": "✅ Multiple Choice"
+  },
+  {
+   "type": "example",
+   "number": 3,
+   "problemHtml": "<p>When a fan rotates with an angular speed of 60π (rad/s), its period in seconds equals:</p><ul>\n<li>a- 30</li>\n<li>b- 1/60</li>\n<li>c- 1/30</li>\n<li>d- 1/20</li>\n</ul>",
+   "label": "3",
+   "solution": {
+    "given": [
+     "\\( \\omega = 60\\pi\\ \\text{rad/s} \\) — the fan's angular speed"
+    ],
+    "required": "Calculate the period T.",
+    "steps": [
+     {
+      "note": "",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( \\omega=\\dfrac{2\\pi}{T} \\;\\Rightarrow\\; T=\\dfrac{2\\pi}{\\omega}=\\dfrac{2\\pi}{60\\pi} \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( T=\\dfrac{1}{30}\\ \\text{s} \\)"
+       }
+      ]
+     }
+    ],
+    "final": "✓ Correct answer: c — 1/30",
+    "label": "Solution"
+   },
+   "sectionGroup": 0,
+   "sectionId": "mcqs",
+   "sectionNavLabel": "✅ Multiple Choice"
+  },
+  {
+   "type": "example",
+   "number": 4,
+   "problemHtml": "<p>A stone is tied to the end of a string of length (0.4 m) and swung in a horizontal position with a period of (0.2 s). Its centripetal acceleration in (m/s²) equals:</p><ul>\n<li>a- 20π</li>\n<li>b- 40π</li>\n<li>c- 20π²</li>\n<li>d- 40π²</li>\n</ul>",
+   "label": "4",
+   "solution": {
+    "given": [
+     "\\( r = 0.4\\ \\text{m} \\) — length of the string (radius of rotation)",
+     "\\( T = 0.2\\ \\text{s} \\) — the period"
+    ],
+    "required": "Calculate the centripetal acceleration \\(a_c\\) in m/s².",
+    "steps": [
+     {
+      "note": "",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( \\omega=\\dfrac{2\\pi}{T}=\\dfrac{2\\pi}{0.2}=10\\pi\\ \\text{rad/s} \\)"
+       }
+      ]
+     },
+     {
+      "note": "",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( a_c=\\omega^2 r=(10\\pi)^2\\times 0.4 \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( a_c=40\\pi^2\\ \\text{m/s}^2 \\)"
+       }
+      ]
+     }
+    ],
+    "final": "✓ Correct answer: d — 40π²",
+    "label": "Solution"
+   },
+   "sectionGroup": 0,
+   "sectionId": "mcqs",
+   "sectionNavLabel": "✅ Multiple Choice"
+  },
+  {
+   "type": "example",
+   "number": 5,
+   "problemHtml": "<p>Two balls, one solid and one hollow, have the same mass and radius but different densities. The moment of inertia about an axis through the center of mass is:</p><ul>\n<li>a- greater for the solid ball than the hollow one</li>\n<li>b- greater for the hollow ball than the solid one</li>\n<li>c- equal for both</li>\n<li>d- zero for both</li>\n</ul>",
+   "label": "5",
+   "solution": {
+    "required": null,
+    "steps": [
+     {
+      "note": "From Table (2-1): the solid ball has \\(I=\\tfrac25 mr^2=0.4\\,mr^2\\), while the hollow ball has \\(I=\\tfrac23 mr^2\\approx0.667\\,mr^2\\). Because the hollow ball's mass is distributed at its outer surface (farther from the axis), while the solid ball's mass is spread throughout its whole volume, its moment of inertia is greater for the same mass and radius.",
+      "calc": []
+     }
+    ],
+    "final": "✓ Correct answer: b — greater for the hollow ball than the solid one",
+    "label": "Solution"
+   },
+   "sectionGroup": 0,
+   "sectionId": "mcqs",
+   "sectionNavLabel": "✅ Multiple Choice"
+  },
+  {
+   "type": "example",
+   "number": 6,
+   "problemHtml": "<p>One of the following units represents the units of angular momentum:</p><ul>\n<li>a- N.s</li>\n<li>b- (kg.m²)/s</li>\n<li>c- (J.s)/m</li>\n<li>d- (kg.m)/s</li>\n</ul>",
+   "label": "6",
+   "solution": {
+    "required": null,
+    "steps": [
+     {
+      "note": "From equation (22): \\(L=I\\omega\\); the units of I are \\(\\text{kg}\\cdot\\text{m}^2\\) and the units of ω are \\(\\text{s}^{-1}\\), so the units of L are \\(\\text{kg}\\cdot\\text{m}^2/\\text{s}\\).",
+      "calc": []
+     }
+    ],
+    "final": "✓ Correct answer: b — (kg.m²)/s",
+    "label": "Solution"
+   },
+   "sectionGroup": 0,
+   "sectionId": "mcqs",
+   "sectionNavLabel": "✅ Multiple Choice"
+  },
+  {
+   "type": "example",
+   "number": 7,
+   "problemHtml": "<p>A rider on a Ferris wheel takes half a minute to complete one revolution. The Ferris wheel's angular speed in (rad/s) equals:</p><ul>\n<li>a- π/15</li>\n<li>b- π/30</li>\n<li>c- 30π</li>\n<li>d- 15π</li>\n</ul>",
+   "label": "7",
+   "solution": {
+    "given": [
+     "\\( T = \\) half a minute \\( = 30\\ \\text{s} \\) — the Ferris wheel's period"
+    ],
+    "required": "Calculate the angular speed ω in rad/s.",
+    "steps": [
+     {
+      "note": "",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( T=30\\ \\text{s} \\;\\Rightarrow\\; \\omega=\\dfrac{2\\pi}{T}=\\dfrac{2\\pi}{30} \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( \\omega=\\dfrac{\\pi}{15}\\ \\text{rad/s} \\)"
+       }
+      ]
+     }
+    ],
+    "final": "✓ Correct answer: a — π/15",
+    "label": "Solution"
+   },
+   "sectionGroup": 0,
+   "sectionId": "mcqs",
+   "sectionNavLabel": "✅ Multiple Choice"
+  },
+  {
+   "type": "example",
+   "number": 8,
+   "problemHtml": "<p>The maximum safe linear speed for a car on a banked circular curve depends on:</p><ul>\n<li>a- the curve's radius and the object's mass</li>\n<li>b- the curve's radius and the curve's banking angle</li>\n<li>c- the curve's banking angle and the object's mass</li>\n<li>d- the curve's banking angle only</li>\n</ul>",
+   "label": "8",
+   "solution": {
+    "required": null,
+    "steps": [
+     {
+      "note": "From an analysis of the forces on a frictionless banked curve, the ideal speed is \\(v=\\sqrt{rg\\tan\\theta}\\) — which depends only on the curve's radius (r) and its banking angle (θ), and does not depend at all on the car's mass.",
+      "calc": []
+     }
+    ],
+    "final": "✓ Correct answer: b — the curve's radius and the curve's banking angle",
+    "label": "Solution"
+   },
+   "sectionGroup": 0,
+   "sectionId": "mcqs",
+   "sectionNavLabel": "✅ Multiple Choice"
+  },
+  {
+   "type": "sectionIntro",
+   "heading": "🧩 Q2: Explain the Following (State the Reason)",
+   "leadHtml": null,
+   "sectionGroup": 1,
+   "sectionId": "illal",
+   "sectionNavLabel": "🧩 Reasoning"
+  },
+  {
+   "type": "example",
+   "number": 9,
+   "problemHtml": "<p>An object moving in uniform circular motion has a centripetal acceleration.</p>",
+   "label": "1",
+   "solution": {
+    "required": null,
+    "steps": [
+     {
+      "note": "Although the magnitude of the linear speed stays constant in uniform circular motion, its direction keeps changing from one instant to the next. Since acceleration is the time rate of change of the velocity vector (whether in magnitude, direction, or both), a change in direction alone is enough to produce an acceleration, and this acceleration always points toward the center of the circle — hence it is called the centripetal acceleration.",
+      "calc": []
+     }
+    ],
+    "final": "✓ Reason: the velocity's direction keeps changing continuously even though its magnitude stays constant",
+    "label": "Reasoning"
+   },
+   "sectionGroup": 1,
+   "sectionId": "illal",
+   "sectionNavLabel": "🧩 Reasoning"
+  },
+  {
+   "type": "example",
+   "number": 10,
+   "problemHtml": "<p>A cyclist leans toward the center when moving along a circular path.</p>",
+   "label": "2",
+   "solution": {
+    "required": null,
+    "steps": [
+     {
+      "note": "By leaning toward the center, the resultant of the road's reaction force (normal force plus friction) tilts away from the vertical and gains a horizontal component directed toward the center of the path. This horizontal component is what supplies the centripetal force needed to keep the bicycle and rider on the circular path without sliding or tipping outward — exactly as in the analysis of a banked curve.",
+      "calc": []
+     }
+    ],
+    "final": "✓ Reason: leaning generates a horizontal component of the reaction force that supplies the needed centripetal force",
+    "label": "Reasoning"
+   },
+   "sectionGroup": 1,
+   "sectionId": "illal",
+   "sectionNavLabel": "🧩 Reasoning"
+  },
+  {
+   "type": "example",
+   "number": 11,
+   "problemHtml": "<p>The centripetal force does no work on an object moving in uniform circular motion.</p>",
+   "label": "3",
+   "solution": {
+    "required": null,
+    "steps": [
+     {
+      "note": "Work = force × displacement × cosine of the angle between them, and the centripetal force is always perpendicular (at 90°) to the direction of the instantaneous velocity tangent to the path. Since cos 90° = zero, the work done is zero, which explains why the kinetic energy (and hence the speed) stays constant in uniform circular motion.",
+      "calc": []
+     }
+    ],
+    "final": "✓ Reason: the centripetal force is always perpendicular to the instantaneous velocity, so the cosine of the angle between them = zero",
+    "label": "Reasoning"
+   },
+   "sectionGroup": 1,
+   "sectionId": "illal",
+   "sectionNavLabel": "🧩 Reasoning"
+  },
+  {
+   "type": "example",
+   "number": 12,
+   "problemHtml": "<p>A diver curls their body when jumping from a diving platform.</p>",
+   "label": "4",
+   "solution": {
+    "required": null,
+    "steps": [
+     {
+      "note": "While airborne, no external torque acts on the diver, so their angular momentum \\(L=I\\omega\\) stays conserved. When the diver curls their body, they bring their mass closer to the axis of rotation, which decreases their moment of inertia (I). Since L is constant, their angular speed (ω) automatically increases, letting them complete more aerial rotations before straightening out again (which increases I and decreases ω) to enter the water spinning more slowly and safely.",
+      "calc": []
+     }
+    ],
+    "final": "✓ Reason: bringing the mass closer to the axis of rotation decreases I, and since L is constant, ω increases (conservation of angular momentum)",
+    "label": "Reasoning"
+   },
+   "sectionGroup": 1,
+   "sectionId": "illal",
+   "sectionNavLabel": "🧩 Reasoning"
+  },
+  {
+   "type": "sectionIntro",
+   "heading": "📖 Q3: Theory Question",
+   "leadHtml": null,
+   "sectionGroup": 2,
+   "sectionId": "theory",
+   "sectionNavLabel": "📖 Theory Question"
+  },
+  {
+   "type": "example",
+   "number": 13,
+   "problemHtml": "<p>What is the moment of inertia? What does it depend on?</p>",
+   "label": "Question",
+   "solution": {
+    "required": null,
+    "steps": [
+     {
+      "note": "The moment of inertia (I) is a measure of a rotating body's resistance to any change in its angular speed; it is the rotational counterpart of mass (m) in linear motion.",
+      "calc": []
+     },
+     {
+      "note": "It depends on two factors: (1) the object's mass, and (2) how that mass is distributed relative to the axis of rotation — the farther the mass is from the axis, the greater the moment of inertia, and the closer it is, the smaller it is, even if the total mass and outer shape are the same (as shown by Table 2-1 and Example 6-5, which illustrate how I differs with the object's shape and its axis of rotation).",
+      "calc": []
+     }
+    ],
+    "final": "✓ I = a measure of resistance to change in angular speed, depending on the mass and its distribution about the axis of rotation",
+    "label": "Answer"
+   },
+   "sectionGroup": 2,
+   "sectionId": "theory",
+   "sectionNavLabel": "📖 Theory Question"
+  },
+  {
+   "type": "sectionIntro",
+   "heading": "🧮 Problems",
+   "leadHtml": null,
+   "sectionGroup": 3,
+   "sectionId": "problems",
+   "sectionNavLabel": "🧮 Problems"
+  },
+  {
+   "type": "example",
+   "number": 14,
+   "problemHtml": "<p>Calculate the centripetal acceleration of an object tied to a string of length (0.5 m), moving at a speed of (5 m/s)?</p>",
+   "label": "Problem 1",
+   "solution": {
+    "given": [
+     "\\( r = 0.5\\ \\text{m} \\) — length of the string (radius of rotation)",
+     "\\( v = 5\\ \\text{m/s} \\) — the object's speed"
+    ],
+    "required": "Calculate the centripetal acceleration \\(a_c\\).",
+    "steps": [
+     {
+      "note": "",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( a_c=\\dfrac{v^2}{r}=\\dfrac{(5)^2}{0.5} \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( a_c=50\\ \\text{m/s}^2 \\)"
+       }
+      ]
+     }
+    ],
+    "final": "✓ ac = 50 m/s²",
+    "label": "Detailed Solution"
+   },
+   "sectionGroup": 3,
+   "sectionId": "problems",
+   "sectionNavLabel": "🧮 Problems"
+  },
+  {
+   "type": "example",
+   "number": 15,
+   "problemHtml": "<p>A washing machine's spin drum rotates at (900 rpm), then slows to (300 rpm) over 50 revolutions. Calculate: (a) the angular acceleration. (b) the time needed to complete these 50 revolutions.</p>",
+   "label": "Problem 2",
+   "solution": {
+    "given": [
+     "\\( \\omega_1 = 900\\ \\text{rpm} = 30\\pi\\ \\text{rad/s} \\) — initial angular speed (after conversion)",
+     "\\( \\omega_2 = 300\\ \\text{rpm} = 10\\pi\\ \\text{rad/s} \\) — final angular speed (after conversion)",
+     "\\( \\theta = 50\\ \\text{rev} = 100\\pi\\ \\text{rad} \\) — number of revolutions during which the slowdown occurred (after conversion)"
+    ],
+    "required": "(a) Calculate the angular acceleration α. (b) Calculate the time needed to complete these 50 revolutions.",
+    "steps": [
+     {
+      "note": "Convert both angular speeds and the angular displacement to (rad/s) and (rad)",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( \\omega_1=900\\ \\text{rpm}=30\\pi\\ \\text{rad/s} \\qquad \\omega_2=300\\ \\text{rpm}=10\\pi\\ \\text{rad/s} \\)"
+       },
+       {
+        "kind": "line",
+        "latex": "\\( \\theta = 50\\ \\text{rev} = 100\\pi\\ \\text{rad} \\)"
+       }
+      ]
+     },
+     {
+      "note": "(a) The angular acceleration from equation (15): \\(\\omega_2^2=\\omega_1^2+2\\alpha\\theta\\)",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( (10\\pi)^2=(30\\pi)^2+2\\alpha(100\\pi) \\)"
+       },
+       {
+        "kind": "line",
+        "latex": "\\( 100\\pi^2-900\\pi^2=200\\pi\\alpha \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( \\alpha=-4\\pi\\ \\text{rad/s}^2 \\)"
+       }
+      ]
+     },
+     {
+      "note": "(b) The time from equation (13): \\(\\omega_2=\\omega_1+\\alpha t\\)",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( 10\\pi = 30\\pi + (-4\\pi)t \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( t=5\\ \\text{s} \\)"
+       }
+      ]
+     }
+    ],
+    "final": "✓ α = −4π rad/s² ≈ −12.57 rad/s²   ·   t = 5 s",
+    "label": "Detailed Solution"
+   },
+   "sectionGroup": 3,
+   "sectionId": "problems",
+   "sectionNavLabel": "🧮 Problems"
+  },
+  {
+   "type": "example",
+   "number": 16,
+   "problemHtml": "<p>A rope of length (2 m) can withstand a maximum tension of (5 kN). Calculate the maximum angular speed (in rpm) at which a (10 kg) object tied to one end of the rope can rotate.</p>",
+   "label": "Problem 3",
+   "solution": {
+    "given": [
+     "\\( r = 2\\ \\text{m} \\) — length of the rope (radius of rotation)",
+     "\\( F_{\\max} = 5\\ \\text{kN} = 5000\\ \\text{N} \\) — maximum tension the rope can withstand (after conversion)",
+     "\\( m = 10\\ \\text{kg} \\) — mass of the object tied to the end of the rope"
+    ],
+    "required": "Calculate the maximum angular speed \\(\\omega_{\\max}\\) (in rpm) at which the object can rotate without breaking the rope.",
+    "steps": [
+     {
+      "note": "The maximum tension in the rope supplies the maximum centripetal force: \\(F_{c(\\max)}=m\\omega_{\\max}^2 r\\)",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( 5000=10\\times\\omega_{\\max}^2\\times 2 \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( \\omega_{\\max}=\\sqrt{250}\\approx 15.81\\ \\text{rad/s} \\)"
+       }
+      ]
+     },
+     {
+      "note": "Convert the result to revolutions per minute (rpm)",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( \\omega_{\\max}(\\text{rpm}) = 15.81\\ \\dfrac{\\text{rad}}{\\text{s}} \\times \\dfrac{60\\ \\text{s}}{1\\ \\text{min}} \\times \\dfrac{1\\ \\text{rev}}{2\\pi\\ \\text{rad}} \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( \\omega_{\\max}\\approx 151\\ \\text{rpm} \\)"
+       }
+      ]
+     }
+    ],
+    "final": "✓ ω_max ≈ 15.81 rad/s ≈ 151 rpm",
+    "label": "Detailed Solution"
+   },
+   "sectionGroup": 3,
+   "sectionId": "problems",
+   "sectionNavLabel": "🧮 Problems"
+  },
+  {
+   "type": "example",
+   "number": 17,
+   "problemHtml": "<p>A motor rotates at (20 rev/s) and delivers a torque of (75 N·m). What power does the motor deliver, in watts and in horsepower?</p>",
+   "label": "Problem 4",
+   "solution": {
+    "given": [
+     "\\( N = 20\\ \\text{rev/s} \\) — the motor's angular speed (in revolutions per second)",
+     "\\( \\tau = 75\\ \\text{N}\\cdot\\text{m} \\) — the torque the motor delivers",
+     "\\( 1\\ \\text{hp} = 745.7\\ \\text{W} \\) — the conversion factor from watts to horsepower"
+    ],
+    "required": "Calculate the power P the motor delivers, in watts and in horsepower.",
+    "steps": [
+     {
+      "note": "Convert the angular speed to (rad/s)",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( \\omega = 20\\ \\text{rev/s}\\times 2\\pi = 40\\pi\\ \\text{rad/s}\\approx 125.66\\ \\text{rad/s} \\)"
+       }
+      ]
+     },
+     {
+      "note": "The power from equation (21): \\(P=\\tau\\omega\\)",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( P = 75\\times 125.66 \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( P\\approx 9420\\ \\text{Watt} \\)"
+       }
+      ]
+     },
+     {
+      "note": "Convert to horsepower (1 hp = 745.7 W)",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( P(\\text{hp}) = \\dfrac{9420}{745.7} \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( P\\approx 12.6\\ \\text{hp} \\)"
+       }
+      ]
+     }
+    ],
+    "final": "✓ P ≈ 9420 Watt ≈ 12.6 hp",
+    "label": "Detailed Solution"
+   },
+   "sectionGroup": 3,
+   "sectionId": "problems",
+   "sectionNavLabel": "🧮 Problems"
+  },
+  {
+   "type": "example",
+   "number": 18,
+   "problemHtml": "<p>Calculate the moment of inertia of a solid ball rotating about one of its diameters, given a mass of (20 kg) and a diameter of (50 cm)?</p>",
+   "label": "Problem 5",
+   "solution": {
+    "given": [
+     "\\( m = 20\\ \\text{kg} \\) — the ball's mass",
+     "diameter \\( = 50\\ \\text{cm} \\;\\Rightarrow\\; r = 25\\ \\text{cm} = 0.25\\ \\text{m} \\) — the radius (after conversion)"
+    ],
+    "required": "Calculate the moment of inertia I of the solid ball about one of its diameters.",
+    "steps": [
+     {
+      "note": "The diameter is 50 cm, so the radius r = 25 cm = 0.25 m",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( I=\\tfrac{2}{5}mr^2 = \\tfrac{2}{5}\\times 20\\times (0.25)^2 \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( I=0.5\\ \\text{kg}\\cdot\\text{m}^2 \\)"
+       }
+      ]
+     }
+    ],
+    "final": "✓ I = 0.5 kg·m²",
+    "label": "Detailed Solution"
+   },
+   "sectionGroup": 3,
+   "sectionId": "problems",
+   "sectionNavLabel": "🧮 Problems"
+  }
+ ],
+ "quiz": {
+  "heading": "🧠 Final Chapter 1 Review",
+  "questions": [
+   {
+    "correct": 1,
+    "question": "The centripetal acceleration in circular motion arises from:",
+    "options": [
+     "a change in the magnitude of the linear speed",
+     "a change in the direction of the linear velocity",
+     "the radius staying constant only",
+     "an increase in mass"
+    ],
+    "explain": "The centripetal acceleration arises from the continuous change in the direction of the linear velocity, and it always points toward the center."
+   },
+   {
+    "correct": 2,
+    "question": "According to Kepler's first law, planets orbit in paths that are:",
+    "options": [
+     "perfectly circular",
+     "spiral",
+     "elliptical, with the center of attraction at one of the two foci",
+     "a straight line"
+    ],
+    "explain": "The law of orbits: orbits are elliptical in shape, and the center of attraction lies at one of the two foci, not at the center of the shape."
+   },
+   {
+    "correct": 3,
+    "question": "The relation \\(v_T=\\omega r\\) links:",
+    "options": [
+     "linear and angular displacement",
+     "linear and angular acceleration",
+     "linear and angular momentum",
+     "the tangential linear speed and the angular speed"
+    ],
+    "explain": "Equation (7): \\(v_T=\\omega r\\) links the tangential speed to the angular speed and the radius."
+   },
+   {
+    "correct": 1,
+    "question": "The law of rotational torque (the counterpart of \\(F=ma\\)) is:",
+    "options": [
+     "\\( L=I\\omega \\)",
+     "\\( \\tau=I\\alpha \\)",
+     "\\( E_r=\\tfrac12 I\\omega^2 \\)",
+     "\\( P=\\tau\\omega \\)"
+    ],
+    "explain": "Equation (18): \\(\\tau=I\\alpha\\)."
+   },
+   {
+    "correct": 1,
+    "question": "With the angular momentum (L) of a rotating object held constant, if its moment of inertia (I) decreases, then its angular speed (ω):",
+    "options": [
+     "decreases",
+     "increases",
+     "stays constant",
+     "becomes zero"
+    ],
+    "explain": "Since \\(L=I\\omega\\) is constant, a decrease in (I) must be matched by an increase in (ω) (as in the example of the diver and the spinning skater)."
+   }
+  ]
+ },
+ "summary": {
+  "heading": "📋 Chapter 1 Summary",
+  "items": [
+   "Circular motion: centripetal acceleration \\(a_c=v^2/r=\\omega^2 r\\), and centripetal force \\(F_c=mv^2/r\\) directed toward the center, doing no work.",
+   "Kepler's three laws describe the orbits of planets and satellites, and are linked to Newton's law of universal gravitation \\(F_G=GMm/r^2\\).",
+   "Rotational motion: \\(\\theta=S/r\\), \\(\\omega=\\Delta\\theta/\\Delta t\\), \\(v_T=\\omega r\\), \\(\\alpha=\\Delta\\omega/\\Delta t\\), \\(a_T=r\\alpha\\).",
+   "Equations of uniformly accelerated rotational motion: \\(\\omega=\\omega_0+\\alpha t\\), \\(\\theta-\\theta_0=\\omega_0t+\\tfrac12\\alpha t^2\\), \\(\\omega^2=\\omega_0^2+2\\alpha(\\theta-\\theta_0)\\).",
+   "Moment of inertia (I) is the counterpart of mass, and the torque law \\(\\tau=I\\alpha\\) is the counterpart of \\(F=ma\\).",
+   "Rotational kinetic energy \\(E_r=\\tfrac12 I\\omega^2\\), work \\(\\Delta W=\\tau\\Delta\\theta\\), power \\(P=\\tau\\omega\\), and angular momentum \\(L=I\\omega\\), conserved in the absence of external torque."
+  ]
+ },
+ "mindmap": {
+  "ariaLabel": "Comprehensive Chapter 1 mind map",
+  "viewBox": "0 0 520 260",
+  "center": {
+   "cx": 260.0,
+   "cy": 130.0,
+   "r": 55.0,
+   "color": "#7c6fee",
+   "lines": [
+    "Circular and",
+    "Rotational Motion"
+   ]
+  },
+  "satellites": [
+   {
+    "cx": 90.0,
+    "cy": 45.0,
+    "r": 46.0,
+    "color": "#3fa9f5",
+    "lines": [
+     "Fc=mv²/r",
+     "Kepler's laws"
+    ]
+   },
+   {
+    "cx": 90.0,
+    "cy": 215.0,
+    "r": 46.0,
+    "color": "#2fd18f",
+    "lines": [
+     "θ,ω,α",
+     "vT=ωr"
+    ]
+   },
+   {
+    "cx": 430.0,
+    "cy": 45.0,
+    "r": 46.0,
+    "color": "#ffab5e",
+    "lines": [
+     "I, τ=Iα",
+     "Table 2-1"
+    ]
+   },
+   {
+    "cx": 430.0,
+    "cy": 215.0,
+    "r": 46.0,
+    "color": "#ff6b9d",
+    "lines": [
+     "Er,W,P",
+     "L=Iω"
+    ]
+   }
+  ]
+ }
+}

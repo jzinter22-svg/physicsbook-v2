@@ -143,6 +143,17 @@ def extract_example(problem_div, solution_div, number):
                  and not (c.get("class") and "diagram-wrap" in c.get("class"))]
         problem_html = "".join(parts)
     ex = {"number": number, "problemHtml": problem_html}
+    # Lessons 1-7's problem head always wraps its number in a
+    # .example-badge span (rendered as "N  مثال (N)"); lesson 8's
+    # mcq/illal/theory/problems heads have no badge at all — just a bare
+    # h2 ("1", "مسألة 1", "السؤال"). That structural difference is the
+    # reliable signal for whether the default "مثال (N)" title applies or
+    # the source's own literal label must be preserved instead.
+    problem_head = problem_div.select_one(".example-head")
+    if problem_head and not problem_head.select_one(".example-badge"):
+        h2 = problem_head.select_one("h2")
+        if h2:
+            ex["label"] = text(h2).strip()
     diagram = problem_div.select_one(".diagram-wrap")
     if diagram:
         ex["diagramSvg"] = str(diagram.find("svg"))
@@ -184,6 +195,19 @@ def extract_example(problem_div, solution_div, number):
         }
     final = solution_div.select_one(".exercise-final")
     sol["final"] = inner_html(final) if final else None
+    # Same badge-vs-bare-h2 signal as the problem head, but the bare h2
+    # here also carries a literal leading "✓" baked into its text (lesson
+    # 8: "✓ الحل" / "✓ التعليل" / "✓ الإجابة") since it has no separate
+    # checkmark badge span to supply that glyph — strip it so the renderer
+    # can prepend its own "✓" badge consistently either way.
+    sol_head = solution_div.select_one(".example-head")
+    if sol_head and not sol_head.select_one(".example-badge"):
+        h2 = sol_head.select_one("h2")
+        if h2:
+            label = text(h2).strip()
+            if label.startswith("✓"):
+                label = label[1:].strip()
+            sol["label"] = label
     ex["solution"] = sol
     return ex
 

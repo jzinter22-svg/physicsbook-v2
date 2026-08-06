@@ -116,8 +116,16 @@
   }
 
   function renderExample(b){
+    // Lessons 1-7 use the standard numbered-badge "مثال (N)" title. Lesson
+    // 8's mcq/illal/theory/problems items carry their own literal label
+    // ("1", "مسألة 1", "السؤال") captured at extraction time instead — no
+    // badge chip, just that label as-is (matching the source markup, which
+    // has no .example-badge there either).
+    var titleHtml = b.label != null
+      ? esc(b.label)
+      : '<span class="example-badge">' + b.number + "</span> " + esc((window.PBI18n && window.PBI18n.t("common.example")) || "مثال") + " (" + b.number + ")";
     var out = '<div class="example fade-up">' +
-      '<div class="example-head"><div class="example-title"><span class="example-badge">' + b.number + "</span> " + esc((window.PBI18n && window.PBI18n.t("common.example")) || "مثال") + " (" + b.number + ")</div></div>" +
+      '<div class="example-head"><div class="example-title">' + titleHtml + "</div></div>" +
       '<div class="example-problem">' + html(b.problemHtml) + "</div>";
     if(b.diagramSvg){
       out += '<div class="diagram-wrap" style="margin-top:1rem">' + b.diagramSvg + '<span class="diagram-caption">' + esc(b.diagramCaption) + "</span></div>";
@@ -126,9 +134,10 @@
     if(!b.solution) return out;
     var sol = b.solution;
     var stepsId = "steps-ex" + b.number;
+    var solTitle = sol.label != null ? esc(sol.label) : esc((window.PBI18n && window.PBI18n.t("common.detailedSolution")) || "الحل التفصيلي");
     out += '<div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">' +
       '<div class="example-head"><div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> ' +
-      esc((window.PBI18n && window.PBI18n.t("common.detailedSolution")) || "الحل التفصيلي") + "</div>" +
+      solTitle + "</div>" +
       '<button class="neu-btn" data-reveal-steps="' + stepsId + '" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">' +
       esc((window.PBI18n && window.PBI18n.t("common.showSteps")) || "إظهار خطوات الحل") + "</button></div>";
     if(sol.given && sol.given.length){
@@ -285,6 +294,8 @@
     if(data.quiz){
       var quizWrap = document.querySelector("[data-quiz]");
       if(quizWrap){
+        var quizHeadingEl = quizWrap.querySelector("h2");
+        if(quizHeadingEl && data.quiz.heading) quizHeadingEl.textContent = data.quiz.heading;
         var container = document.createElement("div");
         container.innerHTML = data.quiz.questions.map(function(q, i){
           return '<div class="quiz-q" data-correct="' + q.correct + '">' +
