@@ -1,0 +1,303 @@
+{
+  "lessonNumber": 4,
+  "chapterNumber": 4,
+  "meta": {
+    "pageTitle": "Lesson 4: The Capacitor in an AC Circuit — Chapter 4",
+    "description": "4-5 The capacitor in an AC circuit: capacitive reactance X_C, circuit properties, with a solved example.",
+    "breadcrumbChapter": "Chapter 4",
+    "breadcrumbLesson": "The Capacitor in an AC Circuit",
+    "footer": "Chapter Four: AC Circuits — Lesson 4: The Capacitor in an AC Circuit"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 4 of 8 · Chapter Four",
+    "title": "The Capacitor in an AC Circuit",
+    "lead": "4-5 The capacitor in an AC circuit: capacitive reactance X_C"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Compare the operation of a capacitor in a DC circuit with its operation in an AC circuit.",
+    "Write the capacitive-reactance relation \\(X_C\\) and list the properties of a pure-capacitor circuit.",
+    "Solve numerical problems on the capacitor in an AC circuit."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 4-5 The Capacitor in an AC Circuit",
+      "html": "The operation of a pure capacitor in a DC circuit is like that of an open switch, because after a short interval we observe that the ammeter's needle no longer deflects, indicating that no electric current is flowing, since the capacitor has become fully charged and the potential difference across its plates has become equal to the source's potential difference. Its operation in an AC circuit, however, is like that of a closed switch, because the ammeter deflects, recording a flow of current despite the insulator between the capacitor's plates, as the capacitor successively charges and discharges every quarter cycle of the current's passage, periodically, as shown in Figure (4-9).",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "simulation",
+      "svgId": "capCircuitSvg",
+      "svgAriaLabel": "A capacitor circuit connected to an AC voltage source with an ammeter",
+      "svgViewBox": "0 -12 320 182",
+      "svgWidth": "320",
+      "svgHeight": "182",
+      "sectionHeading": "🕹️ Interactive simulation: the capacitor in an AC circuit (Figure 4-9)",
+      "descriptionHtml": "A capacitor connected in series with an ammeter and an AC voltage source, showing the voltage \\(V_C\\) across it.",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "labels": {
+        "capacitorLabel": "Capacitor",
+        "sourceLabel": "AC voltage source"
+      },
+      "sectionGroup": 1,
+      "sectionId": "capacitor-widget",
+      "sectionNavLabel": "🕹️ Recreating Figure 4-9"
+    },
+    {
+      "type": "paragraph",
+      "html": "The capacitor shows an opposition to the change in the electric current flowing in the circuit, called the capacitive reactance \\((X_C)\\), measured in ohms; Ohm's law's mathematical form is applied to it:",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ X_C = \\dfrac{V_C}{I_C} $$",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "This opposition is not considered an ohmic resistance because it does not consume real power and is not subject to Joule's heating law. When the instantaneous voltage \\((V_C)\\) is zero, the charge on the capacitor's plates at that instant is also zero, so \\(I_C\\) is at its maximum (positive) value, then it begins to fall as \\((V_C)\\) increases; and when the capacitor's charge reaches its maximum value, \\((I_C)\\) becomes zero and \\((V_C)\\) is at its maximum value — indicating that the current leads the voltage by a phase-difference angle of (90°), as shown in Figure (4-10), which represents the power curve.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "capPQSvg",
+      "svgAriaLabel": "The capacitor's current and voltage with a 90° phase difference, and the oscillating power curve",
+      "svgViewBox": "0 0 360 200",
+      "svgWidth": "360",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive simulation: the phase difference between current and voltage (Figures 4-10 and 4-11)",
+      "descriptionHtml": "Watch the capacitor's current \\(I_C\\) lead its voltage \\(V_C\\) by an angle of 90° (that is, \\(V_C\\) lags \\(I_C\\)), and the resulting instantaneous power curve oscillate about zero exactly as in the pure inductor.",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "labels": {
+        "pOscLabel": "P (oscillating about zero)"
+      },
+      "sectionGroup": 5,
+      "sectionId": "capacitor-phase-widget",
+      "sectionNavLabel": "🕹️ -90° Phase Difference"
+    },
+    {
+      "type": "list",
+      "heading": "📋 We Conclude from This",
+      "items": [
+        "\\((V_C)\\) lags the capacitor's current \\(I_C\\) by a phase-difference angle of (90°), as shown in Figure (4-11).",
+        "The capacitive reactance has been found to be inversely proportional to the circuit's frequency (f), when the capacitor's capacitance (C) is fixed, and inversely proportional to the capacitance, when the frequency is fixed.",
+        "The power curve varies between a positive maximum value and a negative maximum value, so the instantaneous power over a full cycle equals zero, and the frequency of the power curve is twice the frequency of the current curve.",
+        "There is no real power consumed in the pure capacitance over a full cycle.",
+        "The positive curve represents the electrical energy stored in the capacitor (the charging process).",
+        "The negative curve represents the energy returning to discharge back into the source (the discharging process), occurring while the current is growing."
+      ],
+      "ordered": true,
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ X_C \\propto \\dfrac{1}{f} $$\n      <p style=\"margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)\">(when C is fixed)</p>\n      $$ X_C \\propto \\dfrac{1}{C} $$\n      <p style=\"margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)\">(when f is fixed)</p>\n      $$ X_C = \\dfrac{1}{2\\pi f C} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">and since \\(\\omega=2\\pi f\\), it follows that \\(X_C=\\dfrac{1}{\\omega C}\\), where (ω) is the angular frequency.</p>",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "🤔",
+      "strong": "Think:",
+      "html": "What are the factors that affect a capacitor's capacitance?",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>A capacitor of capacitance \\((400\\ \\mu F)\\) is connected to an AC source of voltage \\((100\\ \\text{Volt})\\) and frequency \\(\\left(\\dfrac{50}{\\pi}\\ \\text{Hz}\\right)\\). Calculate: 1- The capacitive reactance \\((X_C)\\). 2- The magnitude of the current flowing in the circuit \\((I_C)\\).</p>",
+      "label": "📝 Example (3)",
+      "solution": {
+        "given": [
+          "\\( C = 400\\ \\mu F = 400\\times10^{-6}\\ \\text{F} \\) — the capacitor's capacitance (after conversion)",
+          "\\( V = 100\\ \\text{Volt} \\) — the source's voltage",
+          "\\( f = 50/\\pi\\ \\text{Hz} \\) — the source's frequency"
+        ],
+        "required": "1- \\(X_C\\). 2- \\(I_C\\).",
+        "steps": [
+          {
+            "note": "1- We apply the capacitive-reactance relation",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_C = \\dfrac{1}{2\\pi f C} = \\dfrac{1}{2\\pi\\times\\frac{50}{\\pi}\\times 400\\times10^{-6}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( X_C = 25\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- We apply the capacitive-reactance relation to find the current",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( I_C = \\dfrac{V_C}{X_C} = \\dfrac{100}{25} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I_C = 4\\ \\text{A} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ X_C = 25 Ω · I_C = 4 A — the circuit's current",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 9,
+      "sectionId": "example3",
+      "sectionNavLabel": "📝 Example 3"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "A capacitor in a DC circuit, after a short time, behaves like:",
+        "options": [
+          "An always-closed switch",
+          "An open switch",
+          "A pure resistance",
+          "A pure inductor"
+        ],
+        "explain": "After it is fully charged, no current flows in a DC circuit, so the capacitor behaves like an open switch."
+      },
+      {
+        "correct": 2,
+        "question": "In a pure-capacitor circuit, the current \\(I_C\\) relative to the voltage \\(V_C\\):",
+        "options": [
+          "Lags it by 90°",
+          "Is exactly in phase with it",
+          "Leads it by 90°",
+          "Opposes it by 180°"
+        ],
+        "explain": "The capacitor's current \\(I_C\\) leads its voltage \\(V_C\\) by a phase-difference angle of 90° (or equivalently: \\(V_C\\) lags \\(I_C\\) by 90°)."
+      },
+      {
+        "correct": 0,
+        "question": "The capacitive reactance \\(X_C\\) is proportional:",
+        "options": [
+          "Inversely with frequency and inversely with capacitance",
+          "Directly with frequency and directly with capacitance",
+          "Directly with frequency and inversely with capacitance",
+          "It is unrelated to frequency or capacitance"
+        ],
+        "explain": "\\(X_C=1/(2\\pi fC)\\); it varies inversely with both the circuit's frequency (f) and the capacitor's capacitance (C)."
+      },
+      {
+        "correct": 3,
+        "question": "The real power consumption in a pure capacitance over a full cycle equals:",
+        "options": [
+          "\\( I_mV_m \\)",
+          "\\( I_mV_m/2 \\)",
+          "Twice \\( I_mV_m \\)",
+          "Zero"
+        ],
+        "explain": "The power curve alternates between a positive maximum and an equal negative maximum, so no real power is consumed in the pure capacitance over a full cycle."
+      },
+      {
+        "correct": 1,
+        "question": "When the capacitor's charge is at its maximum value, the current \\(I_C\\):",
+        "options": [
+          "Is also at its maximum possible value",
+          "Is zero",
+          "Always opposes the direction of the voltage",
+          "Is undefined"
+        ],
+        "explain": "When the capacitor's charge reaches its maximum value, \\(V_C\\) is at its maximum value and \\(I_C\\) becomes zero — this is the basis of the 90° phase difference between them."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "The capacitor behaves like an open switch in direct current, and like a closed switch in alternating current (periodic charging and discharging).",
+      "The capacitive reactance \\(X_C=V_C/I_C=1/(2\\pi fC)=1/(\\omega C)\\); it varies inversely with frequency and capacitance.",
+      "\\(I_C\\) leads \\(V_C\\) by 90°; there is no real power consumption over a full cycle.",
+      "The frequency of the power curve is twice the frequency of the current curve, as with the pure inductor."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of the capacitor in alternating current",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "The Capacitor"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "X_C=1/2πfC"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "IC leads",
+          "VC by 90°"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "No real",
+          "power"
+        ]
+      }
+    ]
+  }
+}

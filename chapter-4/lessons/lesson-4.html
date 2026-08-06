@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-4.html">
@@ -42,191 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يقارن بين عمل المتسعة في دائرة التيار المستمر ودائرة التيار المتناوب.</span></li>
-        <li><span class="obj-num">2</span><span>يكتب علاقة الرادة السعوية \(X_C\) ويذكر مميزات دائرة المتسعة الخالصة.</span></li>
-        <li><span class="obj-num">3</span><span>يحل مسائل حسابية على المتسعة في دائرة التيار المتناوب.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="def-box">
-      <span class="def-label">📌 5-4 المتسعة في دائرة التيار المتناوب</span>
-      <p style="margin:.3rem 0">إن عمل المتسعة ذات سعة صرف في دائرة التيار المستمر يعمل كعمل المفتاح المفتوح وذلك لانه بعد فترة قصيرة نلاحظ مؤشر الاميتر لا ينحرف، دلالة على عدم مرور تيار كهربائي حيث تم شحن المتسعة بالكامل وأصبح فرق الجهد عبر لوحيها مساويًا لفرق الجهد للمصدر. اما عملها في دائرة التيار المتناوب فتعمل عمل المفتاح المغلق لان الاميتر ينحرف مسجلًا مرور تيار على الرغم من وجود العازل بين لوحي المتسعة، حيث يتم بالتعاقب عملية شحن وتفريغ كل ربع دورة من دورة مرور التيار وبصورة دورية، كما هو في الشكل (9-4).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="capacitor-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 9-4">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: المتسعة في دائرة تيار متناوب (الشكل 9-4)</h2>
-      <p>متسعة موصولة على التوالي مع أميتر ومصدر فولطية متناوبة، وتظهر عليها فولطية \(V_C\).</p>
-      <div class="mindmap-wrap"><svg id="capCircuitSvg" viewBox="0 -12 320 182" width="320" height="182" role="img" aria-label="دائرة متسعة موصولة بمصدر فولطية متناوبة مع أميتر"></svg></div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>ان المتسعة تبدي معاكسة لتغير التيار الكهربائي المار في الدائرة تسمى الرادة السعوية \((X_C)\) وتقاس بالاوم ويُطبَّق عليها الصيغة الرياضية لقانون أوم:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ X_C = \dfrac{V_C}{I_C} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h3 style="margin-top:0">📖 تعليل: لماذا لا تُعد الرادة السعوية مقاومة أومية؟</h3>
-      <p>ولا تعتبر هذه المعاكسة مقاومة اومية لعدم استهلاكها قدرة حقيقية ولا تخضع لقانون جول الحراري. عندما تكون الفولطية الانية \((V_C)\) صفرًا فإن شحنة لوحي المتسعة في هذه اللحظة تكون صفرًا ايضًا فيكون \(I_C\) عند مقداره الاعظم (الموجب) ثم يأخذ بالهبوط عند ازدياد \((V_C)\)، وعندما تصل شحنة المتسعة مقدارها الاعظم يصبح \((I_C)\) صفرًا وتصبح \((V_C)\) في مقدارها الاعظم، وهذا يدل على أن التيار يسبق الفولطية بزاويتي فرق طور (90°)، كما هو في الشكل (10-4) والذي يمثّل منحني القدرة.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="capacitor-phase-widget" data-navlabel="🕹️ فرق الطور -90°">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: فرق الطور بين التيار والفولطية (الشكلان 10-4 و11-4)</h2>
-      <p>شاهد تيار المتسعة \(I_C\) يتقدم على فولطيتها \(V_C\) بزاوية 90° (أي إن \(V_C\) تتأخر عن \(I_C\))، ومنحني القدرة الآنية الناتج يتذبذب حول الصفر تمامًا كما في المحث الخالص.</p>
-      <div class="mindmap-wrap"><svg id="capPQSvg" viewBox="0 0 360 200" width="360" height="200" role="img" aria-label="تيار وفولطية المتسعة بفارق طور 90° ومنحني القدرة المتذبذب"></svg></div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h3 style="margin-top:0">📋 نستنتج من هذا</h3>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>أن \((V_C)\) تتخلف عن تيار المتسعة \(I_C\) بزاوية فرق طور (90°)، كما هو في الشكل (11-4).</span></li>
-        <li><span class="obj-num">2</span><span>لقد وجد أن الرادة السعوية تتناسب عكسيًا مع تردد الدائرة (f) عند ثبوت سعة المتسعة (C) وعكسيًا مع السعة عند ثبوت التردد.</span></li>
-        <li><span class="obj-num">3</span><span>يتغير منحني القدرة بين القيمة العظمى الموجبة والقيمة العظمى السالبة فإن القدرة الآنية لدورة كاملة يساوي صفرًا وتردد منحني القدرة ضعف تردد منحني التيار.</span></li>
-        <li><span class="obj-num">4</span><span>ليس هناك قدرة حقيقية تستهلك في السعة الخالصة لدورة كاملة.</span></li>
-        <li><span class="obj-num">5</span><span>المنحني الموجب يمثّل الطاقة الكهربائية المخزونة في المتسعة (عملية شحن).</span></li>
-        <li><span class="obj-num">6</span><span>المنحني السالب يمثّل الطاقة التى تعود لتتفرغ بالمصدر (عملية تفريغ) ويحصل عند نمو التيار.</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ X_C \propto \dfrac{1}{f} $$
-      <p style="margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)">(عند ثبوت C)</p>
-      $$ X_C \propto \dfrac{1}{C} $$
-      <p style="margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)">(عند ثبوت f)</p>
-      $$ X_C = \dfrac{1}{2\pi f C} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">وبما أن \(\omega=2\pi f\)، لذلك \(X_C=\dfrac{1}{\omega C}\)، حيث (ω) هو التردد الزاوي.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout warn">
-      <span class="icon">🤔</span>
-      <span><b>فكر:</b> ما هي العوامل المؤثرة على سعة المتسعة؟</span>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="example3" data-navlabel="📝 مثال 3">
-    <div class="example">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (3)</h2></div>
-      <p>رُبطت متسعة سعتها \((400\ \mu F)\) لمصدر متناوب فولطيته \((100\ \text{Volt})\) وتردد \(\left(\dfrac{50}{\pi}\ \text{Hz}\right)\) احسب: 1- الرادة السعوية \((X_C)\). 2- شدة التيار المار بالدائرة \((I_C)\).</p>
-    </div>
-
-    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
-        <button class="neu-btn" data-reveal-steps="steps-ex3" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( C = 400\ \mu F = 400\times10^{-6}\ \text{F} \) — سعة المتسعة (بعد التحويل)</span></li>
-        <li><span>\( V = 100\ \text{Volt} \) — فولطية المصدر</span></li>
-        <li><span>\( f = 50/\pi\ \text{Hz} \) — تردد المصدر</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">1- \(X_C\). 2- \(I_C\).</p>
-
-      <ol class="steps hidden-steps" id="steps-ex3">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">1- نطبّق علاقة الرادة السعوية</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( X_C = \dfrac{1}{2\pi f C} = \dfrac{1}{2\pi\times\frac{50}{\pi}\times 400\times10^{-6}} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( X_C = 25\ \Omega \)</div>
-          </div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">2- نطبّق علاقة الرادة السعوية لإيجاد التيار</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( I_C = \dfrac{V_C}{X_C} = \dfrac{100}{25} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( I_C = 4\ \text{A} \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ X_C = 25 Ω · I_C = 4 A — تيار الدائرة</div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>المتسعة في دائرة التيار المستمر بعد فترة قصيرة تعمل عمل:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>المفتاح المغلق دائمًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>المفتاح المفتوح</span></label>
-          <label class="quiz-opt"><input type="radio"><span>المقاومة الخالصة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>المحث الخالص</span></label>
-        </div>
-        <div class="quiz-explain">بعد شحنها الكامل، لا يمر تيار في دائرة التيار المستمر، فتعمل المتسعة عمل المفتاح المفتوح.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>في دائرة المتسعة الخالصة، التيار \(I_C\) بالنسبة للفولطية \(V_C\):</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>يتأخر عنها بزاوية 90°</span></label>
-          <label class="quiz-opt"><input type="radio"><span>بنفس الطور تمامًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يتقدم عليها بزاوية 90°</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يعاكسها بزاوية 180°</span></label>
-        </div>
-        <div class="quiz-explain">تيار المتسعة \(I_C\) يتقدم على فولطيتها \(V_C\) بزاوية فرق طور 90° (أو بصيغة أخرى: \(V_C\) تتخلف عن \(I_C\) بزاوية 90°).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>الرادة السعوية \(X_C\) تتناسب:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>عكسيًا مع التردد وعكسيًا مع السعة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>طرديًا مع التردد وطرديًا مع السعة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>طرديًا مع التردد وعكسيًا مع السعة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا علاقة لها بالتردد أو السعة</span></label>
-        </div>
-        <div class="quiz-explain">\(X_C=1/(2\pi fC)\)؛ تتناسب عكسيًا مع كل من تردد الدائرة (f) وسعة المتسعة (C).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>استهلاك القدرة الحقيقية في سعة خالصة لدورة كاملة يساوي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( I_mV_m \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( I_mV_m/2 \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>ضعف \( I_mV_m \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>صفرًا</span></label>
-        </div>
-        <div class="quiz-explain">يتغير منحني القدرة بين قيمة عظمى موجبة وأخرى سالبة مساوية لها، فلا تُستهلك قدرة حقيقية في السعة الخالصة لدورة كاملة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>عندما تكون شحنة المتسعة عند أعظم قيمة لها، فإن التيار \(I_C\):</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>يكون أعظم ما يمكن أيضًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يكون صفرًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يعاكس اتجاه الفولطية دائمًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>غير محدد</span></label>
-        </div>
-        <div class="quiz-explain">عندما تصل شحنة المتسعة إلى أعظم قيمة، تصبح \(V_C\) في أعظم قيمتها ويصبح \(I_C\) صفرًا — وهذا هو أساس فرق الطور 90° بينهما.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -235,12 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>المتسعة تعمل عمل المفتاح المفتوح في التيار المستمر، وعمل المفتاح المغلق في التيار المتناوب (شحن وتفريغ دوري).</span></li>
-        <li><span>الرادة السعوية \(X_C=V_C/I_C=1/(2\pi fC)=1/(\omega C)\)؛ تتناسب عكسيًا مع التردد والسعة.</span></li>
-        <li><span>\(I_C\) يتقدم على \(V_C\) بزاوية 90°؛ لا استهلاك حقيقي للقدرة في دورة كاملة.</span></li>
-        <li><span>تردد منحني القدرة ضعف تردد منحني التيار، كما في المحث الخالص.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -250,27 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l4" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l4">
-        <svg viewBox="0 0 480 200" width="480" height="200" role="img" aria-label="خريطة المتسعة في التيار المتناوب الذهنية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="100" x2="100" y2="45"/>
-            <line x1="240" y1="100" x2="100" y2="155"/>
-            <line x1="240" y1="100" x2="380" y2="100"/>
-          </g>
-          <g>
-            <circle cx="240" cy="100" r="48" fill="#7c6fee"/>
-            <text x="240" y="104" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">المتسعة</text>
-          </g>
-          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
-            <text x="100" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">X_C=1/2πfC</text></g>
-          <g><circle cx="100" cy="155" r="42" fill="#2fd18f"/>
-            <text x="100" y="152" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">IC يتقدم</text>
-            <text x="100" y="164" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">90° على VC</text></g>
-          <g><circle cx="380" cy="100" r="42" fill="#ffab5e"/>
-            <text x="380" y="97" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">لا قدرة</text>
-            <text x="380" y="109" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">حقيقية</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l4"></div>
     </div>
   </section>
 
@@ -288,19 +88,21 @@
 (function(){
   var ns = "http://www.w3.org/2000/svg";
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
   function label(svg,x,y,txt,color,size){
-    var t = document.createElementNS(ns,"text");
-    t.setAttribute("x",x); t.setAttribute("y",y);
-    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||11); t.setAttribute("fill",color);
-    t.setAttribute("font-weight","700");
-    t.textContent = txt;
-    svg.appendChild(t);
+    var el = document.createElementNS(ns,"text");
+    el.setAttribute("x",x); el.setAttribute("y",y);
+    el.setAttribute("font-family","Cairo,sans-serif"); el.setAttribute("font-size",size||11); el.setAttribute("fill",color);
+    el.setAttribute("font-weight","700");
+    el.textContent = txt;
+    svg.appendChild(el);
   }
 
   // ===== Static pure-capacitor circuit diagram (Figure 9-4) =====
-  var circSvg = document.getElementById("capCircuitSvg");
-  (function drawCircuit(){
+  var circSvg;
+
+  function drawCircuit(){
     var left=40, right=280, top=40, bottom=130, midX=(left+right)/2;
 
     var wireTop1 = document.createElementNS(ns,"line");
@@ -323,7 +125,7 @@
       plate.setAttribute("stroke","var(--accent-purple)"); plate.setAttribute("stroke-width","3");
       circSvg.appendChild(plate);
     });
-    label(circSvg, midX, top-12, "متسعة", "var(--accent-purple)", 11);
+    label(circSvg, midX, top-12, t("capacitorLabel","متسعة"), "var(--accent-purple)", 11);
 
     var vcArrow = document.createElementNS(ns,"line");
     vcArrow.setAttribute("x1",left); vcArrow.setAttribute("y1",16); vcArrow.setAttribute("x2",right); vcArrow.setAttribute("y2",16);
@@ -363,12 +165,13 @@
     wireBottom2.setAttribute("x1",midX+16); wireBottom2.setAttribute("y1",bottom); wireBottom2.setAttribute("x2",right); wireBottom2.setAttribute("y2",bottom);
     wireBottom2.setAttribute("stroke","var(--text-secondary)"); wireBottom2.setAttribute("stroke-width","2");
     circSvg.appendChild(wireBottom2);
-    label(circSvg, midX, bottom+34, "مصدر الفولطية المتناوبة", "var(--text-secondary)", 10);
-  })();
+    label(circSvg, midX, bottom+34, t("sourceLabel","مصدر الفولطية المتناوبة"), "var(--text-secondary)", 10);
+  }
 
   // ===== Capacitor phase + power widget (Figures 10-4, 11-4) =====
-  var pqSvg = document.getElementById("capPQSvg");
+  var pqSvg;
   var pqT = 0;
+  var pqRafId = null;
 
   function drawPQ(){
     while(pqSvg.firstChild) pqSvg.removeChild(pqSvg.firstChild);
@@ -409,10 +212,22 @@
 
     label(pqSvg, gx+4, 14, "I_C", "var(--accent-red)", 11);
     label(pqSvg, gx+4, 28, "V_C", "var(--accent-blue)", 11);
-    label(pqSvg, gx+4, 42, "P (متذبذبة حول الصفر)", "var(--accent-purple)", 10);
+    label(pqSvg, gx+4, 42, t("pOscLabel","P (متذبذبة حول الصفر)"), "var(--accent-purple)", 10);
   }
-  function tickPQ(){ pqT += 0.04; drawPQ(); requestAnimationFrame(tickPQ); }
-  if(reduceMotion){ drawPQ(); } else { requestAnimationFrame(tickPQ); }
+  function tickPQ(){ pqT += 0.04; drawPQ(); pqRafId = requestAnimationFrame(tickPQ); }
+
+  function boot(){
+    circSvg = document.getElementById("capCircuitSvg");
+    pqSvg = document.getElementById("capPQSvg");
+    if(!circSvg || !pqSvg) return;
+
+    while(circSvg.firstChild) circSvg.removeChild(circSvg.firstChild);
+    drawCircuit();
+
+    if(pqRafId !== null){ cancelAnimationFrame(pqRafId); pqRafId = null; }
+    if(reduceMotion){ drawPQ(); } else { pqRafId = requestAnimationFrame(tickPQ); }
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>
