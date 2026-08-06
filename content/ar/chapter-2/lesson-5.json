@@ -47,7 +47,11 @@
       "trailingHtml": null,
       "sectionGroup": 1,
       "sectionId": "emwave-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 12-2"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 12-2",
+      "labels": {
+        "labelE": "E — المجال الكهربائي",
+        "labelB": "B — المجال المغناطيسي"
+      }
     },
     {
       "type": "paragraph",
@@ -110,7 +114,12 @@
       "trailingHtml": null,
       "sectionGroup": 5,
       "sectionId": "polarizer-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكلين 13-2 و14-2"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكلين 13-2 و14-2",
+      "labels": {
+        "unpolLabel": "ضوء غير مستقطب",
+        "filter1Label": "مرشّح 1 (رأسي)",
+        "analyzerLabel": "المحلِّل (θ)"
+      }
     },
     {
       "type": "sectionIntro",

@@ -1,0 +1,307 @@
+{
+  "lessonNumber": 5,
+  "chapterNumber": 2,
+  "meta": {
+    "pageTitle": "Lesson 5: Polarization — Chapter Two",
+    "description": "2-8 Polarization: the definition of polarized light, the three methods of obtaining it (selective absorption, reflection, double refraction), and its practical applications.",
+    "breadcrumbChapter": "Chapter 2",
+    "breadcrumbLesson": "Polarization",
+    "footer": "Chapter Two: Interference, Polarization, Diffraction, and Scattering — Lesson 5: Polarization"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 5 of 7 · Chapter Two",
+    "title": "Polarization",
+    "lead": "2-8 Polarization: its definition, the methods of obtaining polarized light, and its applications"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Defines polarized light and distinguishes it from ordinary (unpolarized) light.",
+    "Explains why only transverse waves — not longitudinal waves — can be polarized.",
+    "States the three methods of obtaining polarized light.",
+    "States practical applications of the phenomenon of polarization."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 2-8 Polarization",
+      "html": "Since light waves are electromagnetic waves and undergo interference and diffraction as covered previously, there is a phenomenon that occurs only for transverse waves and not for longitudinal waves — this phenomenon is polarization, which proves that the electric-field wave of light vibrates perpendicular to the magnetic field, in a single plane only.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "simulation",
+      "svgId": "emSvg",
+      "svgAriaLabel": "Simulation of an electromagnetic wave with two perpendicular fields",
+      "svgViewBox": "0 0 380 200",
+      "svgWidth": "380",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Recreating Figure 2-12: The Electric and Magnetic Fields in an Electromagnetic Wave",
+      "descriptionHtml": "An electromagnetic wave moving to the right: the electric field (red) vibrates vertically, and the magnetic field (blue) vibrates horizontally, and both are perpendicular to the direction of wave propagation and to each other.",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "sectionGroup": 1,
+      "sectionId": "emwave-widget",
+      "sectionNavLabel": "🕹️ Recreating Figure 2-12",
+      "labels": {
+        "labelE": "E — Electric Field",
+        "labelB": "B — Magnetic Field"
+      }
+    },
+    {
+      "type": "paragraph",
+      "html": "We can picture polarization as follows: if we imagine transverse waves created in a shaken rope, these waves will take on several directions — such waves are called unpolarized waves. But suppose this shaken rope passes through a vertical slit; this slit will stop all the horizontal components and allow only the vertical components to pass through it, so the resulting wave through it is called a polarized wave.",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition of Polarized Light",
+      "html": "The polarized light wave can be defined as the wave in which the vibration of the electric field is perpendicular, in a single plane only, to its direction of propagation, which is caused by its incidence on a plate called the polarizing plate.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "📝",
+      "strong": "",
+      "html": "To prove that a wave is transverse, all you need is to demonstrate its ability to be polarized. A longitudinal wave — such as sound waves, whose particles oscillate along the same line as the wave's propagation — cannot be polarized.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "polSvg",
+      "svgAriaLabel": "Simulation of light passing through two polarizing filters at a variable angle",
+      "svgViewBox": "0 0 380 160",
+      "svgWidth": "380",
+      "svgHeight": "160",
+      "sectionHeading": "🕹️ Interactive Simulation: Two Polarizing Filters (Figures 2-13 and 2-14)",
+      "descriptionHtml": "Unpolarized light first passes through a first polarizing filter (making it vertically polarized), then through a second filter (the analyzer) at an angle θ that you can rotate. Notice how the intensity of the transmitted light changes with the analyzer's angle.",
+      "controls": [
+        {
+          "labelHtml": "Analyzer angle θ = <span id=\"polThetaVal\">0</span>°",
+          "inputId": "polSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "90",
+          "inputStep": "1",
+          "inputValue": "0"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "Transmitted intensity \\( I = I_0\\cos^2\\theta = \\) <b id=\"polIntensityVal\">100</b>%",
+          "id": null,
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 5,
+      "sectionId": "polarizer-widget",
+      "sectionNavLabel": "🕹️ Recreating Figures 2-13 and 2-14",
+      "labels": {
+        "unpolLabel": "Unpolarized light",
+        "filter1Label": "Filter 1 (vertical)",
+        "analyzerLabel": "Analyzer (θ)"
+      }
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "📋 Methods of Obtaining Polarized Light",
+      "leadHtml": null,
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 1- Polarization by Selective Absorption",
+      "html": "Such as using a tourmaline crystal, which has the property of selectively absorbing one of the two perpendicular components of the light wave.",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 2- Polarization by Reflection",
+      "html": "Light reflected from a polished surface — such as glass or mica — is partially polarized.",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 3- Polarization by Double Refraction",
+      "html": "When a light beam falls on a calcite crystal \\((\\text{CaCO}_3)\\), the beam splits inside the crystal into two beams, and these two beams do not interfere despite being similar; this proves that light is a transverse wave, because the plane of polarization of one beam is perpendicular to that of the other.",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "list",
+      "heading": "📋 Some Practical Applications of Polarization",
+      "items": [
+        "Sunglasses (to reduce the transmission of sunlight).",
+        "In the study of astronomical phenomena.",
+        "In the study of biology.",
+        "In the study of the crystalline properties of certain materials.",
+        "Studying the composition of many transparent materials using polarizing filters.",
+        "Detecting stress locations (points of weakness) in certain materials, such as eyeglass lenses and practical tools."
+      ],
+      "ordered": true,
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "Did you know?",
+      "html": "Polarized lenses in sunglasses allow only a limited part of the bright light to pass through, thereby reducing the intensity of light reaching the eye.",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "The phenomenon of polarization occurs only in:",
+        "options": [
+          "Longitudinal waves only",
+          "Sound waves only",
+          "Transverse waves, not longitudinal ones",
+          "All types of waves without exception"
+        ],
+        "explain": "Polarization is a phenomenon that occurs only for transverse waves (like light), and does not occur for longitudinal waves (like sound)."
+      },
+      {
+        "correct": 1,
+        "question": "Polarized light is light in which the vibration of:",
+        "options": [
+          "The magnetic field only, in all directions",
+          "The electric field is perpendicular, in a single plane only, to the direction of wave propagation",
+          "The electric field is in all random directions",
+          "The particles is along the direction of wave propagation itself"
+        ],
+        "explain": "Polarized light: in it, the electric field vibrates perpendicular, in a single plane only, to the direction of wave propagation."
+      },
+      {
+        "correct": 3,
+        "question": "When a light beam falls on a calcite crystal (CaCO₃), it:",
+        "options": [
+          "Vanishes completely",
+          "Reflects at a single angle only",
+          "Fully transforms into a longitudinal wave",
+          "Splits into two beams with perpendicular polarization that do not interfere"
+        ],
+        "explain": "Double refraction in a calcite crystal splits the light beam into two beams, the plane of polarization of one perpendicular to the other, which is evidence of the transverse nature of the light wave."
+      },
+      {
+        "correct": 0,
+        "question": "Light reflected from a polished surface such as glass is:",
+        "options": [
+          "Partially polarized",
+          "Not polarized at all",
+          "Fully 100% polarized",
+          "Zero intensity"
+        ],
+        "explain": "Polarization by reflection from a polished surface (such as glass or mica) produces only partially polarized light."
+      },
+      {
+        "correct": 1,
+        "question": "Among the practical applications of polarization:",
+        "options": [
+          "Measuring the temperature of objects remotely",
+          "Sunglasses and detecting stress locations in transparent materials",
+          "Generating electrical energy",
+          "Accelerating subatomic particles"
+        ],
+        "explain": "Applications of polarization include: sunglasses, the study of astronomical phenomena, biology, and crystalline properties, and detecting stress locations in transparent materials."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Polarization is a phenomenon that proves the transverse nature of light, and does not occur in longitudinal waves.",
+      "Polarized light: the electric field vibrates in a single plane only, perpendicular to the direction of propagation.",
+      "Methods of obtaining polarized light: selective absorption (tourmaline), reflection (glass/mica), double refraction (calcite).",
+      "Its applications: sunglasses, astronomy, biology, the study of crystals and transparent materials, and stress detection."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of polarization",
+    "viewBox": "0 0 480 220",
+    "center": {
+      "cx": 240.0,
+      "cy": 110.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Polarization"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Selective",
+          "absorption"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Partial",
+          "reflection"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Double",
+          "refraction"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Applications",
+          "sunglasses"
+        ]
+      }
+    ]
+  }
+}
