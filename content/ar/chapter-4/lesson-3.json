@@ -67,6 +67,10 @@
       "presets": null,
       "ruleBoxes": [],
       "trailingHtml": null,
+      "labels": {
+        "inductorLabel": "المحث",
+        "sourceLabel": "مصدر الفولطية المتناوبة"
+      },
       "sectionGroup": 4,
       "sectionId": "inductor-widget",
       "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 7-4"
@@ -133,6 +137,9 @@
       "presets": null,
       "ruleBoxes": [],
       "trailingHtml": null,
+      "labels": {
+        "pOscLabel": "P (متذبذبة حول الصفر)"
+      },
       "sectionGroup": 10,
       "sectionId": "phasewidget-l",
       "sectionNavLabel": "🕹️ فرق الطور 90°"

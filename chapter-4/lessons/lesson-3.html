@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-3.html">
@@ -42,210 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يعرّف المحث الصرف ويكتب علاقة الرادة الحثية \(X_L\).</span></li>
-        <li><span class="obj-num">2</span><span>يذكر مميزات دائرة المحث الخالص في التيار المتناوب.</span></li>
-        <li><span class="obj-num">3</span><span>يحل مسائل حسابية على المحث في دائرة التيار المتناوب.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="def-box">
-      <span class="def-label">📌 4-4 المحث في دائرة التيار المتناوب</span>
-      <p style="margin:.3rem 0">يسمى الملف بالمحث الصرف اذا كانت مقاومته الاومية تساوي صفرًا، وهي حالة مثالية لأن المقاومة الاومية لاتنعدم في الموصلات الفلزية، وهي صفة ملازمة لها الا في درجات الحرارة المنخفضة جدًا (القريبة من الصفر المطلق). إن الفولطية المطبقة المتناوبة هي الفولطية الحثية \((V_L)\) هي التي تسبب في توليد \(\varepsilon_{\text{ind},L}\).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ \varepsilon_{\text{ind},L} = -L\dfrac{\Delta I}{\Delta t} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>إن هذه الفولطية المحتثة هي أساس المعاكسة التي يبديها المحث نحو التغير بالتيار، والتي تسمى بالرادة الحثية \((X_L)\) وتقاس بالأوم وتُطبَّق عليها الصيغة الرياضية الخاصة بقانون أوم، كما هو في الشكل (7-4).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ X_L = \dfrac{V_L}{I_L} $$
-    </div>
-  </section>
-
-  <section class="section fade-up" id="inductor-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 7-4">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: دائرة محث صرف (الشكل 7-4)</h2>
-      <p>محث موصول مع مصدر فولطية متناوبة، وتظهر عليه فولطية الحث \(V_L\).</p>
-      <div class="mindmap-wrap"><svg id="inductorCircuitSvg" viewBox="0 -12 320 182" width="320" height="182" role="img" aria-label="دائرة محث خالص موصولة بمصدر فولطية متناوبة"></svg></div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>لا تعتبر الرادة الحثية مقاومة (قدرة) وذلك لانها لاتستهلك ولا تخضع لقانون جول الحراري. لقد وجد نظريًا من التجارب العملية ان الرادة الحثية تتغير طرديًا مع كل من تردد التيار المتناوب (f) عند ثبوت الحث الذاتي المحث (L) ومع الحث الذاتي عند ثبوت التردد.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ X_L \propto f $$
-      <p style="margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)">(عند ثبوت L)</p>
-      $$ X_L \propto L $$
-      <p style="margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)">(عند ثبوت f)</p>
-      $$ X_L = 2\pi f L $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">حيث (L) معامل الحث الذاتي للمحث ويقاس بالهنري (H)، وكذلك: \(\omega=2\pi f\)، \(X_L=\omega L\).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 رموز العلاقة</span>
-      <p style="margin:.3rem 0">حيث إن (f) يمثّل تردد الفولطية ويقاس بالهرتز (Hz)، و(ω) يمثّل التردد الزاوي للدائرة الكهربائية.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout warn">
-      <span class="icon">🤔</span>
-      <span><b>فكر:</b> لماذا تكون \(X_L=0\) عند ربط ملف بالتيار المستمر؟</span>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h3 style="margin-top:0">📋 مميزات هذه الدائرة</h3>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>ان فولطية الحث \((V_L)\) تتقدم على التيار الحثي \((I_L)\) بزاوية فرق طور مقدارها 90°، كما هو في الشكل (a-8-4).</span></li>
-        <li><span class="obj-num">2</span><span>لا يوجد استهلاك قدرة حقيقية في هذه الدائرة لان الجزء الموجب يعاكسه الجزء السالب في منحني القدرة لدورة كاملة.</span></li>
-        <li><span class="obj-num">3</span><span>ان الرادة الحثية \((X_L)\) (المعاكسة التي يبديها الملف للتغير بالتيار) للتيارات الواطئة التردد اقل مما هي للتيارات العالية التردد، لذلك يستعمل المحث لفصل الذبذبات المنخفضة والعالية التردد في اجهزة الاستقبال الإذاعي.</span></li>
-        <li><span class="obj-num">4</span><span>المنحني الموجب للقدرة في المحث الخالص يمثّل الطاقة المنقولة من المصدر الى المحث والتي تكون على شكل مجال مغناطيسي ويحصل ذلك عندما ينمو التيار. اما المنحني السالب للقدرة فيمثّل الطاقة المنقولة من المحث الى المصدر ويحصل عند تلاشي التيار، كما هو في الشكل (b-8-4).</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="phasewidget-l" data-navlabel="🕹️ فرق الطور 90°">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: فرق الطور وتبادل الطاقة (الشكلان 8-4-a وb-8-4)</h2>
-      <p>شاهد فولطية المحث \(V_L\) تتقدم على تياره \(I_L\) بزاوية 90°، ومنحني القدرة الآنية الناتج يتناوب بين قيمة موجبة (طاقة تُخزَّن في المجال المغناطيسي) وقيمة سالبة مساوية لها تمامًا (طاقة تعود إلى المصدر)، بحيث يكون المعدل الكلي للقدرة صفرًا.</p>
-      <div class="mindmap-wrap"><svg id="inductorPQSvg" viewBox="0 0 360 200" width="360" height="200" role="img" aria-label="فولطية وتيار المحث بفارق طور 90° ومنحني القدرة المتذبذب"></svg></div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="example2" data-navlabel="📝 مثال 2">
-    <div class="example">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (2)</h2></div>
-      <p>محث معامل حثه الذاتي (0.2H) وتردد الدائرة \(\left(\dfrac{50}{\pi}\ \text{Hz}\right)\) وكانت أعظم فولطية في المصدر الذي ربط معه معطى بالعلاقة \((V_m=200\sqrt{2})\)، احسب: 1- الرادة الحثية \((X_L)\). 2- التيار المار بالدائرة \((I_L)\).</p>
-    </div>
-
-    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
-        <button class="neu-btn" data-reveal-steps="steps-ex2" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( L = 0.2\ \text{H} \) — معامل الحث الذاتي</span></li>
-        <li><span>\( f = 50/\pi\ \text{Hz} \) — تردد الدائرة</span></li>
-        <li><span>\( V_m = 200\sqrt{2}\ \text{Volt} \) — أعظم فولطية للمصدر</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">1- \(X_L\). 2- \(I_L\).</p>
-
-      <ol class="steps hidden-steps" id="steps-ex2">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">1- نطبّق علاقة الرادة الحثية</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( X_L = 2\pi f L = 2\pi\times\dfrac{50}{\pi}\times 0.2 \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( X_L = 20\ \Omega \)</div>
-          </div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">2- نحسب القيمة المؤثرة للفولطية، ثم نطبّق علاقة الرادة الحثية لإيجاد التيار</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( V_e = 0.707\times V_m = 0.707\times 200\sqrt{2} \)</div>
-            <div class="calc-line calc-box">\( V_e = 200\ \text{Volt} \)</div>
-            <div class="calc-line">\( \because X_L=\dfrac{V_L}{I_L} \quad\therefore\quad I_L=\dfrac{V_L}{X_L}=\dfrac{200}{20} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( I_L = 10\ \text{A} \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ X_L = 20 Ω · I_L = 10 A</div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">💡</span>
-      <span><b>هل تعلم؟</b> إن الملف يسلك سلوك مقاومة في دائرة التيار المستمر لأن f=0 فإن \(X_L=0\).</span>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>1.</span><span>المحث الصرف هو ملف:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>مقاومته الاومية تساوي صفرًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مقاومته الاومية كبيرة جدًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا يتأثر بالتيار المتناوب إطلاقًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يستهلك قدرة حقيقية عالية</span></label>
-        </div>
-        <div class="quiz-explain">المحث الصرف هو ملف مقاومته الاومية تساوي صفرًا، وهي حالة مثالية.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>الرادة الحثية \(X_L\) تتناسب:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>عكسيًا مع التردد وعكسيًا مع الحث الذاتي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>عكسيًا مع التردد وطرديًا مع الحث الذاتي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>طرديًا مع التردد وطرديًا مع الحث الذاتي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا علاقة لها بالتردد ولا بالحث الذاتي</span></label>
-        </div>
-        <div class="quiz-explain">\(X_L=2\pi fL\)؛ تتناسب طرديًا مع كل من تردد الدائرة (f) ومعامل الحث الذاتي (L).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>3.</span><span>في دائرة المحث الخالص، فولطية الحث \(V_L\) بالنسبة للتيار \(I_L\):</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>تتأخر عنه بزاوية 90°</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تتقدم عليه بزاوية 90°</span></label>
-          <label class="quiz-opt"><input type="radio"><span>بنفس الطور تمامًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تعاكسه بزاوية 180°</span></label>
-        </div>
-        <div class="quiz-explain">فولطية الحث \(V_L\) تتقدم على التيار الحثي \(I_L\) بزاوية فرق طور مقدارها 90°.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>استهلاك القدرة الحقيقية في دائرة محث خالص لدورة كاملة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>أكبر ما يمكن</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يساوي \(I_mV_m\)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يساوي نصف القيمة العظمى فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا يوجد استهلاك قدرة حقيقية إطلاقًا</span></label>
-        </div>
-        <div class="quiz-explain">المنحنى الموجب للقدرة يعاكسه منحنى سالب مساوٍ له في القيمة خلال الدورة الكاملة، فلا يوجد استهلاك قدرة حقيقية.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>عند ربط ملف بدائرة تيار مستمر (f=0) فإن:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>تصبح رادته الحثية لا نهائية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تصبح رادته الحثية صفرًا فيسلك سلوك مقاومة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يمتنع مرور أي تيار فيه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يتلف الملف فورًا</span></label>
-        </div>
-        <div class="quiz-explain">بما أن \(X_L=2\pi fL\) وعند f=0 (تيار مستمر) فإن \(X_L=0\)، فيسلك الملف سلوك مقاومة عادية.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -254,12 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>المحث الصرف: مقاومته الاومية صفر، ورادته الحثية \(X_L=V_L/I_L=2\pi fL=\omega L\).</span></li>
-        <li><span>\(V_L\) تتقدم على \(I_L\) بزاوية 90°؛ لا استهلاك حقيقي للقدرة في دورة كاملة.</span></li>
-        <li><span>\(X_L\) تتناسب طرديًا مع التردد ومع الحث الذاتي؛ وعند f=0 (تيار مستمر) فإن \(X_L=0\).</span></li>
-        <li><span>يُستعمل المحث لفصل الترددات المنخفضة عن العالية في أجهزة الاستقبال الإذاعي.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -269,27 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l3" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l3">
-        <svg viewBox="0 0 480 200" width="480" height="200" role="img" aria-label="خريطة المحث في التيار المتناوب الذهنية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="100" x2="100" y2="45"/>
-            <line x1="240" y1="100" x2="100" y2="155"/>
-            <line x1="240" y1="100" x2="380" y2="100"/>
-          </g>
-          <g>
-            <circle cx="240" cy="100" r="48" fill="#7c6fee"/>
-            <text x="240" y="104" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">المحث</text>
-          </g>
-          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
-            <text x="100" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">X_L=2πfL</text></g>
-          <g><circle cx="100" cy="155" r="42" fill="#2fd18f"/>
-            <text x="100" y="152" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">VL يتقدم</text>
-            <text x="100" y="164" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">90° على IL</text></g>
-          <g><circle cx="380" cy="100" r="42" fill="#ffab5e"/>
-            <text x="380" y="97" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">لا قدرة</text>
-            <text x="380" y="109" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">حقيقية</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l3"></div>
     </div>
   </section>
 
@@ -307,19 +88,21 @@
 (function(){
   var ns = "http://www.w3.org/2000/svg";
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
   function label(svg,x,y,txt,color,size){
-    var t = document.createElementNS(ns,"text");
-    t.setAttribute("x",x); t.setAttribute("y",y);
-    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||11); t.setAttribute("fill",color);
-    t.setAttribute("font-weight","700");
-    t.textContent = txt;
-    svg.appendChild(t);
+    var el = document.createElementNS(ns,"text");
+    el.setAttribute("x",x); el.setAttribute("y",y);
+    el.setAttribute("font-family","Cairo,sans-serif"); el.setAttribute("font-size",size||11); el.setAttribute("fill",color);
+    el.setAttribute("font-weight","700");
+    el.textContent = txt;
+    svg.appendChild(el);
   }
 
   // ===== Static pure-inductor circuit diagram (Figure 7-4) =====
-  var circSvg = document.getElementById("inductorCircuitSvg");
-  (function drawCircuit(){
+  var circSvg;
+
+  function drawCircuit(){
     var left=40, right=280, top=40, bottom=130;
     var wire = document.createElementNS(ns,"polyline");
     wire.setAttribute("points", left+","+bottom+" "+left+","+top+" "+((left+right)/2-30)+","+top);
@@ -340,7 +123,7 @@
       arc.setAttribute("fill","none"); arc.setAttribute("stroke","var(--accent-purple)"); arc.setAttribute("stroke-width","2.5");
       circSvg.appendChild(arc);
     }
-    label(circSvg, (left+right)/2, top-12, "المحث", "var(--accent-purple)", 12);
+    label(circSvg, (left+right)/2, top-12, t("inductorLabel","المحث"), "var(--accent-purple)", 12);
     var vlArrowL = document.createElementNS(ns,"line");
     vlArrowL.setAttribute("x1",left); vlArrowL.setAttribute("y1",16); vlArrowL.setAttribute("x2",right); vlArrowL.setAttribute("y2",16);
     vlArrowL.setAttribute("stroke","var(--accent-blue)"); vlArrowL.setAttribute("stroke-width","1.5");
@@ -363,12 +146,13 @@
     wireBottom2.setAttribute("x1",(left+right)/2+16); wireBottom2.setAttribute("y1",bottom); wireBottom2.setAttribute("x2",right); wireBottom2.setAttribute("y2",bottom);
     wireBottom2.setAttribute("stroke","var(--text-secondary)"); wireBottom2.setAttribute("stroke-width","2");
     circSvg.appendChild(wireBottom2);
-    label(circSvg, (left+right)/2, bottom+34, "مصدر الفولطية المتناوبة", "var(--text-secondary)", 10);
-  })();
+    label(circSvg, (left+right)/2, bottom+34, t("sourceLabel","مصدر الفولطية المتناوبة"), "var(--text-secondary)", 10);
+  }
 
   // ===== Inductor phase + power widget (Figures 8-4-a, b-8-4) =====
-  var pqSvg = document.getElementById("inductorPQSvg");
+  var pqSvg;
   var pqT = 0;
+  var pqRafId = null;
 
   function drawPQ(){
     while(pqSvg.firstChild) pqSvg.removeChild(pqSvg.firstChild);
@@ -408,10 +192,22 @@
 
     label(pqSvg, gx+4, 14, "V_L", "var(--accent-blue)", 11);
     label(pqSvg, gx+4, 28, "I_L", "var(--accent-red)", 11);
-    label(pqSvg, gx+4, 42, "P (متذبذبة حول الصفر)", "var(--accent-purple)", 10);
+    label(pqSvg, gx+4, 42, t("pOscLabel","P (متذبذبة حول الصفر)"), "var(--accent-purple)", 10);
   }
-  function tickPQ(){ pqT += 0.04; drawPQ(); requestAnimationFrame(tickPQ); }
-  if(reduceMotion){ drawPQ(); } else { requestAnimationFrame(tickPQ); }
+  function tickPQ(){ pqT += 0.04; drawPQ(); pqRafId = requestAnimationFrame(tickPQ); }
+
+  function boot(){
+    circSvg = document.getElementById("inductorCircuitSvg");
+    pqSvg = document.getElementById("inductorPQSvg");
+    if(!circSvg || !pqSvg) return;
+
+    while(circSvg.firstChild) circSvg.removeChild(circSvg.firstChild);
+    drawCircuit();
+
+    if(pqRafId !== null){ cancelAnimationFrame(pqRafId); pqRafId = null; }
+    if(reduceMotion){ drawPQ(); } else { pqRafId = requestAnimationFrame(tickPQ); }
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>
