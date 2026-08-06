@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-1.html">
@@ -42,231 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يعرّف التيار المتناوب ويكتب صيغته الآنية.</span></li>
-        <li><span class="obj-num">2</span><span>يفهم معنى المقدار المؤثر للتيار والفولطية المتناوبة وعلاقتهما بالقيمة العظمى.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="card neu">
-      <h2>💡 تمهيد</h2>
-      <p>كما علمت عزيزي الطالب في دراستك السابقة أن هناك نوعين من التيار هما التيار المستمر (D.C) (Direct current) والتيار المتناوب (A.C) (Alternating current). وهنا في هذا الفصل سوف نتطلع على كل ما يتعلق بالتيار المتناوب، قيمته وكيفية الحصول عليه، وعلى بعض دوائره المهمة الكهربائية.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 1-4 تعريف التيار المتناوب</span>
-      <p style="margin:.3rem 0">يمكن تعريف التيار المتناوب (A.C) بأنه التيار المتغيّر الشدة والاتجاه بمرور الزمن، وشكل موجته موجة جيبية مستعرضة كما هو في الشكل (1-4).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="scope-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 1-4">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: موجة التيار المتناوب على راسم الإشارة (الشكل 1-4)</h2>
-      <p>حرّك مزلاجَي السعة والتردد وشاهد الموجة الجيبية للتيار المتناوب تُرسم بصورة مستمرة على شاشة راسم الإشارة، تمامًا كما تُشاهَد في المختبر.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="scopeSvg" viewBox="0 0 360 200" width="360" height="200" role="img" aria-label="محاكاة راسم إشارة يعرض موجة تيار متناوب جيبية"></svg></div>
-        <div class="io-row">
-          <label for="scopeAmp" style="min-width:9rem">السعة</label>
-          <input type="range" id="scopeAmp" class="neu-range" min="20" max="80" step="5" value="60">
-        </div>
-        <div class="io-row">
-          <label for="scopeFreq" style="min-width:9rem">التردد النسبي</label>
-          <input type="range" id="scopeFreq" class="neu-range" min="1" max="4" step="1" value="2">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>يمكن الحصول على هذا التيار من دوران ملف داخل مجال مغناطيسي (ظاهرة الحث الكهرومغناطيسي لفاراداي) وكما هو في مولدات التيار المتناوب، لذلك يمكن نقل هذا التيار لمسافات بعيدة والتحكم في مقداره.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>إن فرق الجهد المتناوب الذي نحصل عليه بوساطة المولدات ذات الملف الدوار يُعطى بالعلاقة:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ V = V_m \sin\theta $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 رموز العلاقة</span>
-      <p style="margin:.3rem 0">حيث (V) تمثّل قيمة الفولطية الآنية، و\(V_m\) تمثّل قيمة الفولطية العظمى.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>وعند تطبيق قانون أوم فإن التيار:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ I = \dfrac{V_m \sin\theta}{R} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>فأن التيار المتناوب في دائرة التيار المتناوب يُعطى بالعلاقة:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ I = I_m \sin\theta $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">وهو دالة جيبية أيضًا؛ حيث إن (I) التيار الآني، و\((I_m)\) التيار الأعظم.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>إن هذه القيم لكل من الفولطية والتيار يعتمد على تردد الدائرة الزاوي (ω) والذي يساوي:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ \omega = 2\pi f $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">حيث (f) يمثّل التردد الخطي.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">📝</span>
-      <span>ملاحظة: عزيزي الطالب، أن (ω) تمثّل أيضًا السرعة الزاوية كما درستها في الفصل الأول من الكتاب.</span>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>إن تصرّف الفولطية المتناوبة والتيار المتناوب يعتمد على نوع الحمل الذي يوضع بالدائرة الكهربائية، كما هو موضح في الشكل (2-4) الذي يمثّل الموجة الجيبية للفولطية.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="def-box" data-navlabel="📌 القيمة المؤثرة">
-    <div class="def-box">
-      <span class="def-label">📌 2-4 المقدار المؤثر للتيار والفولطية المتناوبة Effective Value for I.C and V.C</span>
-      <p style="margin:.3rem 0">عندما يمر تيار كهربائي متناوب في سلك ذي مقاومة (R) فإن السلك يسخن نتيجة مرور التيار فيه ويستهلك قدرًا من الطاقة كالتيار المستمر تمامًا، الذي يؤدي مروره في أسلاك المقاومة إلى رفع درجة حرارتها.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h3 style="margin-top:0">📖 تعليل: لماذا نحتاج إلى قيمة مؤثرة للتيار المتناوب؟</h3>
-      <p>ولما كانت الطاقة الكهربائية المستهلكة (E) يمكن حسابها من قانون جول \((E=I^2Rt)\) فإن إمكانية حساب الطاقة المستهلكة في حالة التيار المتناوب بتطبيق قانون جول تبدو متغيّرة، نظرًا لتغيّر شدة التيار من لحظة إلى أخرى. وبناءً على ذلك كان من المفيد اتخاذ قيمة للتيار المتناوب تولّد كمية من الحرارة في مقاومة بنفس المعدل الزمني مقارنةً لتوليدها في تيار مستمر.</p>
-      <p style="margin-top:.6rem">إذن، يمكن الاستنتاج من هذا أن الصفة المميزة للقيمة المؤثرة للتيار المتناوب هو التأثير الحراري، ومن العلاقات الحسابية لكل من القدرة الآنية والتيار الآني والأعظم نستنتج العلاقة الآتية والتي تمثّل معدل مربع قيمة التيار المؤثر.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ I_e = 0.707\, I_m $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">حيث إن \((I_e)\) القيمة المؤثرة للتيار، و\((I_m)\) القيمة العظمى للتيار.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ V_e = 0.707\, V_m $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">حيث إن \((V_e)\) القيمة المؤثرة للفولطية، و\((V_m)\) القيمة العظمى الفولطية.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="effective-widget" data-navlabel="🕹️ القيمة الآنية مقابل المؤثرة">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: القيمة الآنية مقابل القيمة المؤثرة</h2>
-      <p>حرّك المزلاج لتغيير الزاوية الطورية (θ) وشاهد كيف تتغيّر القيمة الآنية للفولطية باستمرار بينما يبقى الخط الأفقي الثابت يمثّل القيمة المؤثرة \((V_e=0.707\,V_m)\) — وهي القيمة الثابتة المكافئة حراريًا التي يقيسها الفولتميتر في المنزل.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="effSvg" viewBox="0 0 360 180" width="360" height="180" role="img" aria-label="مقارنة القيمة الآنية بالقيمة المؤثرة على موجة جيبية"></svg></div>
-        <div class="io-row">
-          <label for="effTheta" style="min-width:9rem">الزاوية θ</label>
-          <input type="range" id="effTheta" class="neu-range" min="0" max="360" step="5" value="90">
-        </div>
-        <div class="rule-box" id="effStatus">عند θ = 90°: الفولطية الآنية = القيمة العظمى تمامًا.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">💡</span>
-      <span><b>هل تعلم؟</b> أن القيم التي يسجلها مقياس التيار والفولطية في بيتك هي القيم الفعّالة المؤثرة والتي تشغّل الدائرة الكهربائية.</span>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>1.</span><span>التيار المتناوب هو التيار:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>ثابت الشدة والاتجاه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>متغيّر الشدة فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>متغيّر الشدة والاتجاه بمرور الزمن</span></label>
-          <label class="quiz-opt"><input type="radio"><span>معدوم الاتجاه دائمًا</span></label>
-        </div>
-        <div class="quiz-explain">التيار المتناوب هو التيار المتغيّر الشدة والاتجاه بمرور الزمن، وشكل موجته جيبية مستعرضة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>2.</span><span>القيمة المؤثرة للتيار المتناوب تساوي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( I_m \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( 0.707\,I_m \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( 2\,I_m \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( I_m/2 \)</span></label>
-        </div>
-        <div class="quiz-explain">القيمة المؤثرة للتيار \(I_e=0.707\,I_m\)، وبالمثل الفولطية \(V_e=0.707\,V_m\).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>3.</span><span>الصفة المميزة للقيمة المؤثرة للتيار المتناوب هي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>التأثير المغناطيسي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>التأثير الكيميائي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>التأثير الضوئي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>التأثير الحراري</span></label>
-        </div>
-        <div class="quiz-explain">القيمة المؤثرة للتيار المتناوب تُعرَّف بأنها القيمة التي تولّد نفس كمية الحرارة التي يولّدها تيار مستمر في نفس المقاومة وخلال نفس الزمن، فالتأثير الحراري هو المعيار.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>4.</span><span>يمكن الحصول على التيار المتناوب عمليًا من:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>البطارية الجافة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>دوران ملف داخل مجال مغناطيسي (الحث الكهرومغناطيسي)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الخلية الشمسية فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>المكثف المشحون فقط</span></label>
-        </div>
-        <div class="quiz-explain">يُحصل على التيار المتناوب من دوران ملف داخل مجال مغناطيسي، أي بظاهرة الحث الكهرومغناطيسي لفاراداي، كما في مولدات التيار المتناوب.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>5.</span><span>العلاقة الصحيحة بين التردد الزاوي (ω) والتردد الخطي (f) هي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( \omega = 2\pi f \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( \omega = f/2\pi \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( \omega = \pi f \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( \omega = f^2 \)</span></label>
-        </div>
-        <div class="quiz-explain">التردد الزاوي \(\omega=2\pi f\)، ويمثّل أيضًا السرعة الزاوية للدائرة الكهربائية.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -275,12 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>التيار المتناوب: تيار متغيّر الشدة والاتجاه بمرور الزمن، موجته جيبية: \(I=I_m\sin\theta\).</span></li>
-        <li><span>يُحصل عليه من دوران ملف داخل مجال مغناطيسي (الحث الكهرومغناطيسي)، وتردده الزاوي \(\omega=2\pi f\).</span></li>
-        <li><span>القيمة المؤثرة تعتمد على التأثير الحراري: \(I_e=0.707\,I_m\)، \(V_e=0.707\,V_m\).</span></li>
-        <li><span>أجهزة القياس المنزلية (الأميتر والفولتميتر) تسجّل القيم المؤثرة الفعّالة.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -290,32 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l1" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l1">
-        <svg viewBox="0 0 480 220" width="480" height="220" role="img" aria-label="خريطة التيار المتناوب والقيمة المؤثرة الذهنية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="110" x2="100" y2="48"/>
-            <line x1="240" y1="110" x2="100" y2="172"/>
-            <line x1="240" y1="110" x2="380" y2="48"/>
-            <line x1="240" y1="110" x2="380" y2="172"/>
-          </g>
-          <g>
-            <circle cx="240" cy="110" r="48" fill="#7c6fee"/>
-            <text x="240" y="106" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">التيار</text>
-            <text x="240" y="120" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">المتناوب</text>
-          </g>
-          <g><circle cx="100" cy="48" r="42" fill="#3fa9f5"/>
-            <text x="100" y="45" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">I=Im sinθ</text>
-            <text x="100" y="57" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">موجة جيبية</text></g>
-          <g><circle cx="100" cy="172" r="42" fill="#2fd18f"/>
-            <text x="100" y="176" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">ω=2πf</text></g>
-          <g><circle cx="380" cy="48" r="42" fill="#ffab5e"/>
-            <text x="380" y="45" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">Ie=0.707Im</text>
-            <text x="380" y="57" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">Ve=0.707Vm</text></g>
-          <g><circle cx="380" cy="172" r="42" fill="#ff6b9d"/>
-            <text x="380" y="169" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">التأثير</text>
-            <text x="380" y="181" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">الحراري</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l1"></div>
     </div>
   </section>
 
@@ -333,12 +88,12 @@
 (function(){
   var ns = "http://www.w3.org/2000/svg";
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
   // ===== Oscilloscope AC wave widget (Figure 1-4) =====
-  var scopeSvg = document.getElementById("scopeSvg");
-  var ampInput = document.getElementById("scopeAmp");
-  var freqInput = document.getElementById("scopeFreq");
+  var scopeSvg, ampInput, freqInput;
   var scopeT = 0;
+  var scopeRafId = null;
 
   function drawScope(){
     while(scopeSvg.firstChild) scopeSvg.removeChild(scopeSvg.firstChild);
@@ -378,15 +133,10 @@
     poly.setAttribute("fill","none"); poly.setAttribute("stroke","#eafff0"); poly.setAttribute("stroke-width","2.5");
     scopeSvg.appendChild(poly);
   }
-  ampInput.addEventListener("input", drawScope);
-  freqInput.addEventListener("input", drawScope);
-  function tickScope(){ scopeT += 0.05; drawScope(); requestAnimationFrame(tickScope); }
-  if(reduceMotion){ drawScope(); } else { requestAnimationFrame(tickScope); }
+  function tickScope(){ scopeT += 0.05; drawScope(); scopeRafId = requestAnimationFrame(tickScope); }
 
   // ===== Instantaneous vs effective value widget =====
-  var effSvg = document.getElementById("effSvg");
-  var effTheta = document.getElementById("effTheta");
-  var effStatus = document.getElementById("effStatus");
+  var effSvg, effTheta, effStatus;
   var Vm = 70, Ve = 0.707*Vm;
 
   function drawEff(){
@@ -439,10 +189,27 @@
 
     var vInst = Vm*Math.sin(thetaRad);
     var ratio = (vInst/Vm);
-    effStatus.textContent = "عند θ = " + thetaDeg + "°: الفولطية الآنية = " + (ratio>=0? "+":"") + Math.round(ratio*100) + "% من القيمة العظمى.";
+    effStatus.textContent = t("effStatusPrefix","عند θ = ") + thetaDeg + t("effStatusMid","°: الفولطية الآنية = ") + (ratio>=0? "+":"") + Math.round(ratio*100) + t("effStatusSuffix","% من القيمة العظمى.");
   }
-  effTheta.addEventListener("input", drawEff);
-  drawEff();
+
+  function boot(){
+    scopeSvg = document.getElementById("scopeSvg");
+    ampInput = document.getElementById("scopeAmp");
+    freqInput = document.getElementById("scopeFreq");
+    effSvg = document.getElementById("effSvg");
+    effTheta = document.getElementById("effTheta");
+    effStatus = document.getElementById("effStatus");
+    if(!scopeSvg || !effSvg) return;
+
+    ampInput.addEventListener("input", drawScope);
+    freqInput.addEventListener("input", drawScope);
+    if(scopeRafId !== null){ cancelAnimationFrame(scopeRafId); scopeRafId = null; }
+    if(reduceMotion){ drawScope(); } else { scopeRafId = requestAnimationFrame(tickScope); }
+
+    effTheta.addEventListener("input", drawEff);
+    drawEff();
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

@@ -237,6 +237,11 @@
         }
       ],
       "trailingHtml": null,
+      "labels": {
+        "effStatusPrefix": "عند θ = ",
+        "effStatusMid": "°: الفولطية الآنية = ",
+        "effStatusSuffix": "% من القيمة العظمى."
+      },
       "sectionGroup": 19,
       "sectionId": "effective-widget",
       "sectionNavLabel": "🕹️ القيمة الآنية مقابل المؤثرة"
