@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-1.html">
@@ -42,297 +43,16 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يميّز بين المواد الموصلة والعازلة وشبه الموصلة اعتمادًا على قابليتها للتوصيل الكهربائي.</span></li>
-        <li><span class="obj-num">2</span><span>يوضّح مفهوم حزم الطاقة في المادة الصلبة: حزمة التكافؤ، حزمة التوصيل، والفجوة الممنوعة بينهما.</span></li>
-        <li><span class="obj-num">3</span><span>يقارن بين عرض الفجوة الممنوعة في كل من المواد الموصلة وشبه الموصلة والعازلة.</span></li>
-        <li><span class="obj-num">4</span><span>يعلّل تأثير ارتفاع درجة الحرارة في قابلية التوصيل الكهربائي للمعادن.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 تمهيد</h2>
-      <p>إن التطور الكبير والسريع الحاصل في العالم شمل علم الإلكترونيات أيضًا حيث تم التطبيق في مجالات العلوم كافة، وبدأ التطور يدخل عالم الصناعة، فصُنعت الكثير من الأجهزة الإلكترونية المتطورة والحديثة ومنها التلفاز والراديو ومكبرات الصوت وأجهزة تضمين الإشارات وجهاز الراسمة الكاثودية وأجهزة البث والتسلّم والرادار وأجهزة أخرى في ميادين الطب والهندسة والفضاء والفلك والكيمياء وعلوم الحياة وأجهزة التحسس وغيرها.</p>
-      <p style="margin-top:.6rem">إن جميع هذه الأجهزة تعتمد في عملها على الثنائيات البلورية المختلفة والترانزستورات والدوائر المتكاملة، حيث يمثّل شكل أشكالًا عديدة للترانزستور.</p>
-      <div class="callout tip">
-        <span class="icon">💬</span>
-        <span><b>هل تعلم؟</b> أن إلكترونات التكافؤ هي الإلكترونات التي تشغل الغلاف الثانوي الخارجي للذرة، والتي هي الأكثر بعدًا عن النواة وتقع في غلاف التكافؤ. وأن هذه الإلكترونات (الإلكترونات التكافؤ) تمتلك قدرًا كبيرًا من الطاقة وتكون ضعيفة الارتباط مع النواة مقارنة بالإلكترونات الأخرى. وهذه الإلكترونات هي التي تشترك في التفاعلات الكيميائية وهي التي تحدد الخواص الإلكترونية للمادة.</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — المواد الموصلة (Conductors)</span>
-      <p style="margin:.3rem 0">هي المواد التي تسمح لمرور التيار الكهربائي من خلالها بسهولة، لأن الكترونات ذراتها التكافؤ ضعيفة الارتباط مع النواة فتتمكن بسهولة من فك ارتباطها مع الذرة وتصبح حرة الحركة (الإلكترونات الحرة)، ومنها الفضة والذهب والنحاس والألمنيوم، وهذه المواد تمتاز بأن ذراتها متماثلة ولها إلكترون واحد يرتبط مع النواة بسهولة ينفصل عنها.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
-      <span class="def-label" style="color:var(--accent-orange)">📌 تعريف — المواد العازلة (Insulators)</span>
-      <p style="margin:.3rem 0">هي المواد التي لا تسمح لمرور التيار الكهربائي (الإلكتروني) من خلالها في الظروف الاعتيادية، وذلك بسبب أن إلكترونات التكافؤ فيها مرتبطة ارتباطًا وثيقًا مع النواة ومقاومتها الكهربائية تكون كبيرة.</span></p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
-      <span class="def-label" style="color:var(--accent-green)">📌 تعريف — المواد شبه الموصلة (Semiconductors)</span>
-      <p style="margin:.3rem 0">هي تلك المواد التي تتحرك فيها الشحنات الكهربائية بحرية أقل وأكثر مما هو عليه في المواد الموصلة، ومقاومتها الكهربائية تكون بين الموصل والعازل. أما المواد شبه الموصلة النقية فهي تحتوي على وفرة من الإلكترونات الحرة (الإلكترونات التكافؤ التي فكّت ارتباطها مع النواة) فينشأ من مرورها التيار الالكتروني، ويمر فيها التيار الكهربائي بتسليط جهد مناسب بين طرفيها نتيجة حركة الإلكترونات الحرة باتجاه واحد لأن المواد الموصلة مقاومتها قليلة.</span></p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="bands" data-navlabel="⚡ حزم الطاقة">
-    <div class="card neu">
-      <h2>⚡ 1-1-5 حزم الطاقة في المواد الصلبة</h2>
-      <p>إن الإلكترونات في الذرة المنفردة تدور حول النواة بمدارات محددة وإن لكل مدار مستوى محدد من الطاقة.</p>
-      <p style="margin-top:.5rem">إن تداخل مستويات الطاقة مع بعضها البعض في المواد الموصلة يؤدي الى تأثير الإلكترونات لأية ذرة بإلكترونات الذرات الأخرى المجاورة لها في المادة نفسها.</p>
-      <p style="margin-top:.5rem">نتيجة لهذا التفاعل بين الذرات المتجاورة في المادة الواحدة تقسم مستويات الطاقة المسموح بها في الأغلفة الثانوية الخارجية المتقاربة مع بعضها بشكل حُزَم، وكل حزمة منها ذات مستويات طاقة ثانوية متقاربة مكوّنة ما يسمى بحزم الطاقة.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — حزمة التكافؤ (Valence Band)</span>
-      <p style="margin:.3rem 0">تحتوي هذه الحزمة على مستويات طاقة مسموح بها تكون واطئة الطاقة وتكون مملوءة كليًا أو جزئيًا بالإلكترونات، ولا يمكن أن تكون خالية من الإلكترونات. إن إلكترونات التكافؤ التي ترتبط مع النواة من الذرات المتجاورة بسبب قربها من النواة تكون مرتبطة بالنواة بقوى كبيرة.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-blue)">
-      <span class="def-label" style="color:var(--accent-blue)">📌 تعريف — حزمة التوصيل (Conduction Band)</span>
-      <p style="margin:.3rem 0">تحتوي على مستويات طاقة عالية أكبر من مستويات طاقة حزمة التكافؤ، وإلكتروناتها تسمّى إلكترونات التوصيل، وهذه الإلكترونات تنتقل بسهولة لتشارك في عملية التوصيل الكهربائي.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 2-5 يمثل حزم الطاقة في شبه الموصل والعازل والموصل">
-          <g font-family="Cairo,sans-serif">
-            <rect x="20" y="30" width="120" height="35" fill="none" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="80" y="52" text-anchor="middle" font-size="11" fill="var(--text-primary)">حزمة التوصيل</text>
-            <rect x="20" y="75" width="120" height="26" fill="none" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="80" y="92" text-anchor="middle" font-size="10" fill="var(--text-primary)">( 1 eV )</text>
-            <rect x="20" y="111" width="120" height="35" fill="none" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="80" y="133" text-anchor="middle" font-size="11" fill="var(--text-primary)">حزمة التكافؤ</text>
-            <text x="80" y="168" text-anchor="middle" font-size="13" font-weight="800" fill="var(--accent-blue)">شبه الموصل</text>
-
-            <rect x="180" y="20" width="120" height="35" fill="none" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="240" y="42" text-anchor="middle" font-size="11" fill="var(--text-primary)">حزمة التوصيل</text>
-            <rect x="180" y="55" width="120" height="46" fill="none" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="240" y="82" text-anchor="middle" font-size="10" fill="var(--text-primary)">( 5 - 10 eV )</text>
-            <rect x="180" y="101" width="120" height="45" fill="none" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="240" y="127" text-anchor="middle" font-size="11" fill="var(--text-primary)">حزمة التكافؤ</text>
-            <text x="240" y="168" text-anchor="middle" font-size="13" font-weight="800" fill="var(--accent-orange)">عازل</text>
-
-            <rect x="340" y="60" width="120" height="86" fill="none" stroke="var(--text-primary)" stroke-width="2"/>
-            <text x="400" y="98" text-anchor="middle" font-size="11" font-weight="700" fill="var(--text-primary)">حزمة التوصيل</text>
-            <line x1="340" y1="103" x2="460" y2="103" stroke="var(--text-primary)" stroke-width="1" stroke-dasharray="3 3"/>
-            <text x="400" y="168" text-anchor="middle" font-size="13" font-weight="800" fill="var(--accent-green)">موصل</text>
-          </g>
-        </svg>
-        <span class="diagram-caption">شكل 2-5: حزم الطاقة في شبه الموصل (فجوة ضيقة) والعازل (فجوة واسعة) والموصل (تداخل الحزمتين بلا فجوة)</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="properties" data-navlabel="📋 خواص حزم الطاقة">
-    <div class="card neu">
-      <h2>2-1-5 مميزات وصفات حزم الطاقة في المواد الموصلة وشبه الموصلة والعازلة</h2>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
-      <span class="def-label" style="color:var(--accent-green)">🔢 تعداد — حزم الطاقة في المواد الموصلة</span>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem">
-        <li>a- تتداخل حزمة التكافؤ مع حزمة التوصيل.</li>
-        <li>b- تنعدم فيها ثغرة الطاقة المحظورة بين حزمتي التكافؤ والتوصيل، لهذا تكون إلكترونات التكافؤ حرة طليقة الحركة خلال المادة الموصلة، فتمتلك المواد الموصلة قابلية توصيل كهربائي عالية.</li>
-        <li>c- إن قابلية التوصيل الكهربائي في المعادن بصورة عامة تقل عند ارتفاع درجة الحرارة، كما في الشكل (3-5).</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
-      <span class="def-label" style="color:var(--accent-orange)">🔍 تعليل — لماذا تقل قابلية التوصيل الكهربائي في المعادن عند ارتفاع درجة الحرارة؟</span>
-      <p style="margin:.3rem 0">إن قابلية التوصيل الكهربائي في المعادن بصورة عامة تقل عند ارتفاع درجة الحرارة، وذلك بسبب زيادة مقاومتها الكهربائية، ولزيادة الطاقة الاهتزازية للذرات أو الجزيئات؛ إذ إن اهتزاز الذرات المتزايد يعيق حركة الإلكترونات الحرة داخل المادة الموصلة فتزداد مقاومتها الكهربائية.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="-45 0 285 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 3-5 يبين قابلية التوصيل الكهربائي في المعادن">
-          <g font-family="Cairo,sans-serif">
-            <rect x="30" y="15" width="150" height="35" fill="var(--surface)" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="15" y="36" text-anchor="end" font-size="10" fill="var(--text-primary)">حزمة توصيل</text>
-            <rect x="30" y="50" width="150" height="26" fill="none" stroke="var(--text-primary)" stroke-width="1" stroke-dasharray="4 3"/>
-            <text x="15" y="66" text-anchor="end" font-size="9" fill="var(--text-secondary)">تداخل</text>
-            <rect x="30" y="76" width="150" height="35" fill="var(--surface)" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="15" y="97" text-anchor="end" font-size="10" fill="var(--text-primary)">حزمة تكافؤ</text>
-            <text x="105" y="135" text-anchor="middle" font-size="12" font-weight="800" fill="var(--accent-green)">معدن (موصل)</text>
-          </g>
-        </svg>
-        <span class="diagram-caption">شكل 3-5: تداخل حزمتي التكافؤ والتوصيل في المعادن — أساس ارتفاع قابلية توصيلها الكهربائي</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h2>2- حزم الطاقة في المواد شبه الموصلة</h2>
-      <p>إن المواد شبه الموصلة عند درجات الحرارة المنخفضة مثل صفر كلفن (0 K) وفي انعدام الضوء فهي تسلك سلوك المواد العازلة، كما هو في الشكل (4-5).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-blue)">
-      <span class="def-label" style="color:var(--accent-blue)">🔢 تعداد — حزم الطاقة في المواد شبه الموصلة (لذا فتكون فيها حزم الطاقة بالشكل الآتي)</span>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem">
-        <li>a- حزمة التكافؤ تكون مملوءة بإلكترونات التكافؤ.</li>
-        <li>b- حزمة التوصيل خالية من الإلكترونات.</li>
-        <li>c- ثغرة الطاقة المحظورة ضيقة نسبيًا.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="-45 0 285 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 4-5 يبين حزم الطاقة في المواد شبه الموصلة">
-          <g font-family="Cairo,sans-serif">
-            <rect x="30" y="15" width="150" height="35" fill="none" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="15" y="36" text-anchor="end" font-size="10" fill="var(--text-primary)">حزمة توصيل</text>
-            <rect x="30" y="50" width="150" height="24" fill="var(--surface)" stroke="var(--text-primary)" stroke-width="1" stroke-dasharray="4 3"/>
-            <text x="105" y="66" text-anchor="middle" font-size="8.5" fill="var(--text-secondary)">فجوة حزمة ممنوعة صغيرة</text>
-            <rect x="30" y="74" width="150" height="35" fill="var(--surface)" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="15" y="95" text-anchor="end" font-size="10" fill="var(--text-primary)">حزمة تكافؤ</text>
-            <text x="105" y="135" text-anchor="middle" font-size="12" font-weight="800" fill="var(--accent-blue)">شبه موصل</text>
-          </g>
-        </svg>
-        <span class="diagram-caption">شكل 4-5: حزم الطاقة في المواد شبه الموصلة — فجوة حزمة ممنوعة صغيرة</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — 3- حزم الطاقة في المواد العازلة</span>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem">
-        <li>a- حزمة التكافؤ مملوءة بإلكترونات التكافؤ.</li>
-        <li>b- حزمة التوصيل خالية من الإلكترونات.</li>
-        <li>c- ثغرة الطاقة المحظورة واسعة نسبيًا، كما في الشكل (5-5).</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="-45 0 285 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 5-5 يبين حزم الطاقة في المواد العازلة">
-          <g font-family="Cairo,sans-serif">
-            <rect x="30" y="12" width="150" height="30" fill="none" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="15" y="30" text-anchor="end" font-size="10" fill="var(--text-primary)">حزمة توصيل</text>
-            <rect x="30" y="42" width="150" height="42" fill="var(--surface)" stroke="var(--text-primary)" stroke-width="1" stroke-dasharray="4 3"/>
-            <text x="105" y="67" text-anchor="middle" font-size="8.5" fill="var(--text-secondary)">فجوة حزمة ممنوعة كبيرة</text>
-            <rect x="30" y="84" width="150" height="30" fill="var(--surface)" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <text x="15" y="102" text-anchor="end" font-size="10" fill="var(--text-primary)">حزمة تكافؤ</text>
-            <text x="105" y="135" text-anchor="middle" font-size="12" font-weight="800" fill="var(--accent-orange)">عازل</text>
-          </g>
-        </svg>
-        <span class="diagram-caption">شكل 5-5: حزم الطاقة في المواد العازلة — فجوة حزمة ممنوعة كبيرة</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — ثغرة الطاقة المحظورة (الفجوة الممنوعة)</span>
-      <p style="margin:.3rem 0">لا تحتوي الفجوة (الطاقة المحظورة) مستويات طاقة تسمح للإلكترونات أن تشغلها. لكي ينتقل الإلكترون من حزمة التكافؤ إلى حزمة التوصيل عبر ثغرة الطاقة المحظورة، يحتاج أن يكتسب طاقة كافية من مصدر خارجي، قد يكون طاقة حرارية أو ضوئية أو بتأثير مجال كهربائي، ويجب أن يكون مقدارها لا يقل عن مقدار ثغرة الطاقة المحظورة.</p>
-    </div>
-  </section>
-
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: قارن حزم الطاقة</h2>
-      <p>اختر نوع المادة لمشاهدة عرض الفجوة الممنوعة بين حزمة التكافؤ وحزمة التوصيل، ولاحظ كيف تختلف قابلية التوصيل الكهربائي تبعًا لعرض هذه الفجوة.</p>
-      <div class="io-panel">
-        <div class="io-row" role="group" aria-label="اختيار نوع المادة">
-          <button class="neu-btn primary" data-material="conductor" id="btnConductor">موصل</button>
-          <button class="neu-btn" data-material="semiconductor" id="btnSemi">شبه موصل</button>
-          <button class="neu-btn" data-material="insulator" id="btnInsulator">عازل</button>
-        </div>
-        <div class="mindmap-wrap"><svg id="bandSvg" viewBox="0 0 360 285" role="img" aria-label="محاكاة حزم الطاقة التفاعلية"></svg></div>
-        <p id="bandCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>1.</span><span>في أي أنواع المواد تتداخل حزمة التكافؤ مع حزمة التوصيل بلا فجوة ممنوعة؟</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>المواد الموصلة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>المواد شبه الموصلة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>المواد العازلة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا شيء مما سبق</span></label>
-        </div>
-        <div class="quiz-explain">في المواد الموصلة تتداخل حزمتا التكافؤ والتوصيل وتنعدم الفجوة الممنوعة بينهما، فتكون إلكترونات التكافؤ حرة الحركة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>2.</span><span>عرض الفجوة الممنوعة في المواد شبه الموصلة النقية يقارب:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>صفر</span></label>
-          <label class="quiz-opt"><input type="radio"><span>1 eV</span></label>
-          <label class="quiz-opt"><input type="radio"><span>10-5 eV</span></label>
-          <label class="quiz-opt"><input type="radio"><span>100 eV</span></label>
-        </div>
-        <div class="quiz-explain">كما في الشكل (2-5)، عرض الفجوة الممنوعة في شبه الموصل يقارب (1 eV)، بينما يتراوح في العازل بين (10-5 eV).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>3.</span><span>عند درجة حرارة صفر كلفن وفي انعدام الضوء، تسلك المادة شبه الموصلة سلوك:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>المادة الموصلة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الموصل الفائق</span></label>
-          <label class="quiz-opt"><input type="radio"><span>المادة العازلة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا شيء مما سبق</span></label>
-        </div>
-        <div class="quiz-explain">عند صفر كلفن (0K) وفي غياب الضوء تكون حزمة التوصيل خالية تمامًا من الإلكترونات، فتسلك المادة شبه الموصلة سلوك المادة العازلة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>4.</span><span>سبب قلة قابلية التوصيل الكهربائي في المعادن عند ارتفاع درجة الحرارة هو:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>قلة عدد الإلكترونات الحرة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>ازدياد المقاومة الكهربائية لزيادة الطاقة الاهتزازية للذرات</span></label>
-          <label class="quiz-opt"><input type="radio"><span>اتساع الفجوة الممنوعة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تحوّل المعدن إلى عازل</span></label>
-        </div>
-        <div class="quiz-explain">ارتفاع درجة الحرارة يزيد الطاقة الاهتزازية لذرات المعدن، مما يزيد مقاومته الكهربائية فتقل قابليته على التوصيل.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>5.</span><span>لكي ينتقل إلكترون من حزمة التكافؤ إلى حزمة التوصيل عبر الفجوة الممنوعة، يجب أن يكتسب طاقة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>لا تقل عن مقدار الفجوة الممنوعة، من مصدر حراري أو ضوئي أو كهربائي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أي مقدار مهما كان صغيرًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>من مصدر مغناطيسي فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا يحتاج إلى أي طاقة إضافية</span></label>
-        </div>
-        <div class="quiz-explain">يجب أن يكتسب الإلكترون طاقة كافية (حرارية أو ضوئية أو بتأثير مجال كهربائي) لا تقل عن مقدار الفجوة الممنوعة لينتقل إلى حزمة التوصيل.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -342,14 +62,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>تصنَّف المواد وفق قابليتها للتوصيل الكهربائي إلى: موصلة، وعازلة، وشبه موصلة (مقاومتها بين الموصل والعازل).</span></li>
-        <li><span>حزمة التكافؤ: مستويات طاقة واطئة مملوءة كليًا أو جزئيًا بالإلكترونات. حزمة التوصيل: مستويات طاقة أعلى تشارك في التوصيل الكهربائي.</span></li>
-        <li><span>المواد الموصلة: تتداخل الحزمتان بلا فجوة ممنوعة، فتكون قابلية التوصيل عالية، وتقل عند ارتفاع درجة الحرارة (ازدياد المقاومة).</span></li>
-        <li><span>المواد شبه الموصلة: حزمة تكافؤ ممتلئة، وحزمة توصيل خالية، وفجوة ممنوعة ضيقة نسبيًا (~1 eV). عند 0K وانعدام الضوء تسلك سلوك العازل.</span></li>
-        <li><span>المواد العازلة: نفس ترتيب شبه الموصل لكن بفجوة ممنوعة واسعة نسبيًا (10-5 eV تقريبًا).</span></li>
-        <li><span>انتقال إلكترون عبر الفجوة الممنوعة يتطلب اكتساب طاقة (حرارية/ضوئية/كهربائية) لا تقل عن مقدار الفجوة.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -360,31 +73,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l1" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l1">
-        <svg viewBox="0 -3 480 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية لحزم الطاقة">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">حزم الطاقة</text>
-            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">في المواد الصلبة</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#2fd18f"/>
-            <text x="90" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">موصل</text>
-            <text x="90" y="57" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">تداخل الحزمتين</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#3fa9f5"/>
-            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">شبه موصل</text>
-            <text x="90" y="227" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">فجوة ~1eV</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="11" font-family="Cairo,sans-serif">عازل</text>
-            <text x="390" y="57" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">فجوة 10-5eV</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="210" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">حزمة تكافؤ</text>
-            <text x="390" y="224" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">حزمة توصيل</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l1"></div>
     </div>
   </section>
 
@@ -401,13 +90,8 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("bandSvg");
-  var caption = document.getElementById("bandCaption");
-  var btns = {
-    conductor: document.getElementById("btnConductor"),
-    semiconductor: document.getElementById("btnSemi"),
-    insulator: document.getElementById("btnInsulator")
-  };
+  var svg, caption, btns;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
   function label(x, y, txt, color, size, weight){
     var t = document.createElementNS(ns,"text");
@@ -432,18 +116,23 @@
     svg.appendChild(c);
   }
 
-  var DATA = {
-    conductor: {gap:4, gapLabel:"لا توجد فجوة ممنوعة (تداخل)", color:"#2fd18f", cond:true,
-      text:"في الموصل: تتداخل حزمتا التكافؤ والتوصيل، فالإلكترونات حرّة الحركة وقابلية التوصيل عالية جدًا."},
-    semiconductor: {gap:46, gapLabel:"فجوة ضيقة ≈ 1 eV", color:"#3fa9f5", cond:false,
-      text:"في شبه الموصل: فجوة ممنوعة ضيقة نسبيًا (~1eV)، فبقليل من الطاقة الحرارية أو الضوئية تنتقل إلكترونات إلى حزمة التوصيل."},
-    insulator: {gap:110, gapLabel:"فجوة واسعة (10-5 eV تقريبًا)", color:"#ffab5e", cond:false,
-      text:"في العازل: فجوة ممنوعة واسعة نسبيًا، فلا تكفي الطاقة الحرارية الاعتيادية لنقل إلكترونات إلى حزمة التوصيل، لذا لا يمر التيار."}
-  };
+  function DATA(){
+    return {
+      conductor: {gap:4, gapLabel:t("gapConductor","لا توجد فجوة ممنوعة (تداخل)"), name:t("nameConductor","موصل"), color:"#2fd18f", cond:true,
+        text:t("textConductor","في الموصل: تتداخل حزمتا التكافؤ والتوصيل، فالإلكترونات حرّة الحركة وقابلية التوصيل عالية جدًا.")},
+      semiconductor: {gap:46, gapLabel:t("gapSemi","فجوة ضيقة ≈ 1 eV"), name:t("nameSemi","شبه موصل"), color:"#3fa9f5", cond:false,
+        text:t("textSemi","في شبه الموصل: فجوة ممنوعة ضيقة نسبيًا (~1eV)، فبقليل من الطاقة الحرارية أو الضوئية تنتقل إلكترونات إلى حزمة التوصيل.")},
+      insulator: {gap:110, gapLabel:t("gapInsulator","فجوة واسعة (10-5 eV تقريبًا)"), name:t("nameInsulator","عازل"), color:"#ffab5e", cond:false,
+        text:t("textInsulator","في العازل: فجوة ممنوعة واسعة نسبيًا، فلا تكفي الطاقة الحرارية الاعتيادية لنقل إلكترونات إلى حزمة التوصيل، لذا لا يمر التيار.")}
+    };
+  }
+
+  var currentType = "conductor";
 
   function draw(type){
+    currentType = type;
     while(svg.firstChild) svg.removeChild(svg.firstChild);
-    var d = DATA[type];
+    var d = DATA()[type];
     var left = 110, width = 140;
     var condTop = 40, condH = 40;
     var gapTop = condTop + condH;
@@ -451,7 +140,7 @@
     var valH = 50;
 
     rect(left, condTop, width, condH, d.cond ? "rgba(47,209,143,.18)" : "var(--surface)");
-    label(left+width/2, condTop+15, "حزمة التوصيل", "var(--text-primary)", 12);
+    label(left+width/2, condTop+15, t("condBandLabel","حزمة التوصيل"), "var(--text-primary)", 12);
 
     var gapRect = rect(left, gapTop, width, d.gap, "none", "var(--text-faint)");
     gapRect.setAttribute("stroke-dasharray","4 3");
@@ -460,7 +149,7 @@
     }
 
     rect(left, valTop, width, valH, "var(--surface)");
-    label(left+width/2, valTop+15, "حزمة التكافؤ", "var(--text-primary)", 12);
+    label(left+width/2, valTop+15, t("valBandLabel","حزمة التكافؤ"), "var(--text-primary)", 12);
 
     // valence band electrons (always full)
     for(var i=0;i<6;i++){
@@ -473,7 +162,7 @@
       }
     }
 
-    label(left+width/2, valTop+valH+30, type==="conductor"?"موصل":(type==="semiconductor"?"شبه موصل":"عازل"), d.color, 15, "800");
+    label(left+width/2, valTop+valH+30, d.name, d.color, 15, "800");
 
     caption.textContent = d.text;
 
@@ -482,11 +171,21 @@
     });
   }
 
-  Object.keys(btns).forEach(function(k){
-    btns[k].addEventListener("click", function(){ draw(k); });
-  });
-
-  draw("conductor");
+  function boot(){
+    svg = document.getElementById("bandSvg");
+    caption = document.getElementById("bandCaption");
+    btns = {
+      conductor: document.getElementById("btnConductor"),
+      semiconductor: document.getElementById("btnSemi"),
+      insulator: document.getElementById("btnInsulator")
+    };
+    if(!svg || !btns.conductor || !btns.semiconductor || !btns.insulator) return;
+    Object.keys(btns).forEach(function(k){
+      btns[k].addEventListener("click", function(){ draw(k); });
+    });
+    draw(currentType);
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

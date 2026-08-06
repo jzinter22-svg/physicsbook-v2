@@ -99,7 +99,7 @@
     {
       "type": "enumeration",
       "label": "🔢 تعداد — حزم الطاقة في المواد الموصلة",
-      "html": "<span class=\"def-label\" style=\"color:var(--accent-green)\">🔢 تعداد — حزم الطاقة في المواد الموصلة</span>\n<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- تتداخل حزمة التكافؤ مع حزمة التوصيل.</li>\n<li>b- تنعدم فيها ثغرة الطاقة المحظورة بين حزمتي التكافؤ والتوصيل، لهذا تكون إلكترونات التكافؤ حرة طليقة الحركة خلال المادة الموصلة، فتمتلك المواد الموصلة قابلية توصيل كهربائي عالية.</li>\n<li>c- إن قابلية التوصيل الكهربائي في المعادن بصورة عامة تقل عند ارتفاع درجة الحرارة، كما في الشكل (3-5).</li>\n</ol>",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- تتداخل حزمة التكافؤ مع حزمة التوصيل.</li>\n<li>b- تنعدم فيها ثغرة الطاقة المحظورة بين حزمتي التكافؤ والتوصيل، لهذا تكون إلكترونات التكافؤ حرة طليقة الحركة خلال المادة الموصلة، فتمتلك المواد الموصلة قابلية توصيل كهربائي عالية.</li>\n<li>c- إن قابلية التوصيل الكهربائي في المعادن بصورة عامة تقل عند ارتفاع درجة الحرارة، كما في الشكل (3-5).</li>\n</ol>",
       "sectionGroup": 9,
       "sectionId": null,
       "sectionNavLabel": null
@@ -133,7 +133,7 @@
     {
       "type": "enumeration",
       "label": "🔢 تعداد — حزم الطاقة في المواد شبه الموصلة (لذا فتكون فيها حزم الطاقة بالشكل الآتي)",
-      "html": "<span class=\"def-label\" style=\"color:var(--accent-blue)\">🔢 تعداد — حزم الطاقة في المواد شبه الموصلة (لذا فتكون فيها حزم الطاقة بالشكل الآتي)</span>\n<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- حزمة التكافؤ تكون مملوءة بإلكترونات التكافؤ.</li>\n<li>b- حزمة التوصيل خالية من الإلكترونات.</li>\n<li>c- ثغرة الطاقة المحظورة ضيقة نسبيًا.</li>\n</ol>",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- حزمة التكافؤ تكون مملوءة بإلكترونات التكافؤ.</li>\n<li>b- حزمة التوصيل خالية من الإلكترونات.</li>\n<li>c- ثغرة الطاقة المحظورة ضيقة نسبيًا.</li>\n</ol>",
       "sectionGroup": 13,
       "sectionId": null,
       "sectionNavLabel": null
@@ -151,7 +151,7 @@
     {
       "type": "enumeration",
       "label": "🔢 تعداد — 3- حزم الطاقة في المواد العازلة",
-      "html": "<span class=\"def-label\" style=\"color:var(--accent-purple)\">🔢 تعداد — 3- حزم الطاقة في المواد العازلة</span>\n<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- حزمة التكافؤ مملوءة بإلكترونات التكافؤ.</li>\n<li>b- حزمة التوصيل خالية من الإلكترونات.</li>\n<li>c- ثغرة الطاقة المحظورة واسعة نسبيًا، كما في الشكل (5-5).</li>\n</ol>",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- حزمة التكافؤ مملوءة بإلكترونات التكافؤ.</li>\n<li>b- حزمة التوصيل خالية من الإلكترونات.</li>\n<li>c- ثغرة الطاقة المحظورة واسعة نسبيًا، كما في الشكل (5-5).</li>\n</ol>",
       "sectionGroup": 15,
       "sectionId": null,
       "sectionNavLabel": null
@@ -229,8 +229,27 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxes": [],
+      "ruleBoxes": [
+        {
+          "html": "في الموصل: تتداخل حزمتا التكافؤ والتوصيل، فالإلكترونات حرّة الحركة وقابلية التوصيل عالية جدًا.",
+          "id": "bandCaption",
+          "wrapperClass": "diagram-caption"
+        }
+      ],
       "trailingHtml": "",
+      "labels": {
+        "condBandLabel": "حزمة التوصيل",
+        "valBandLabel": "حزمة التكافؤ",
+        "gapConductor": "لا توجد فجوة ممنوعة (تداخل)",
+        "gapSemi": "فجوة ضيقة ≈ 1 eV",
+        "gapInsulator": "فجوة واسعة (10-5 eV تقريبًا)",
+        "nameConductor": "موصل",
+        "nameSemi": "شبه موصل",
+        "nameInsulator": "عازل",
+        "textConductor": "في الموصل: تتداخل حزمتا التكافؤ والتوصيل، فالإلكترونات حرّة الحركة وقابلية التوصيل عالية جدًا.",
+        "textSemi": "في شبه الموصل: فجوة ممنوعة ضيقة نسبيًا (~1eV)، فبقليل من الطاقة الحرارية أو الضوئية تنتقل إلكترونات إلى حزمة التوصيل.",
+        "textInsulator": "في العازل: فجوة ممنوعة واسعة نسبيًا، فلا تكفي الطاقة الحرارية الاعتيادية لنقل إلكترونات إلى حزمة التوصيل، لذا لا يمر التيار."
+      },
       "sectionGroup": 18,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"
