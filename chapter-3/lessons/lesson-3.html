@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-3.html">
@@ -42,215 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يفهم حدوث التيارات الدوامة مع الرسوم، ويذكر تطبيقاتها العملية.</span></li>
-        <li><span class="obj-num">2</span><span>يفهم حدوث الحث الذاتي، ويعرّف معامل الحث الذاتي (L).</span></li>
-        <li><span class="obj-num">3</span><span>يحل مسائل حسابية على معامل الحث الذاتي.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="def-box">
-      <span class="def-label">📌 4-3 التيارات الدوامة</span>
-      <p style="margin:.3rem 0">في الكثير من الأجهزة الكهربائية (مثل أجهزة القياس والمحرّكات والمركبات وكاشف المعادن ومكابح بعض العجلات الثقيلة) نجد جسمًا معدنيًا يتحرك في مجال مغناطيسي متغيّر مع الزمن. وطبقًا لقانون فاراداي للحث فإن المجال المغناطيسي المتغيّر يولّد تيارات محتثة في الجسم المعدني في اتجاه عمودي على ذلك الفيض المغناطيسي، كما هو في شكل (a-5-3). تُسمّى هذه التيارات المحتثة بالتيارات الدوامة، لأنها تدور مكوّنة مسارات مغلقة داخل الجسم الموصل تشبه التيارات التي تتولد في الماء على شكل دوائر متحدة المركز. إن هذه التيارات المحتثة تسبّب فقدانًا حراريًا حسب قانون جول فتسخن الأجهزة الكهربائية، وهذه إحدى أضرار التيارات الدوامة.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="eddy-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 5-3">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: التيارات الدوامة في صفيحة صلدة مقابل صفائح مُشرَّحة (الشكل 5-3)</h2>
-      <p>ولتقليل الحرارة المتولدة بسبب هذه التيارات الدوامة، يُتَّخذ الجسم المعدني على شكل صفائح معدنية رقيقة ومعزولة بعضها عن الآخر كما هو في المحوّلات، بدلًا من قطعة معدنية صلدة واحدة. بدّل بين الحالتين لمشاهدة الفرق في حجم حلقات التيار الدوامة الناتجة.</p>
-      <div class="io-row">
-        <button class="neu-btn" id="eddyToggle">🔁 بدّل: صفيحة صلدة / صفائح مُشرَّحة معزولة</button>
-      </div>
-      <div class="mindmap-wrap" style="margin-top:.6rem"><svg id="eddySvg" viewBox="0 0 360 180" width="360" height="180" role="img" aria-label="مقارنة التيارات الدوامة في صفيحة صلدة وصفائح مشرّحة"></svg></div>
-      <div class="rule-box" id="eddyStatus">صفيحة معدنية صلدة: حلقات تيار دوامة كبيرة → فقدان حراري أعلى</div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="eddybrake-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 6-3">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: القوة المعاكسة للتيارات الدوامة (الشكل 6-3)</h2>
-      <p>عندما تتحرك صفيحة معدنية أسفل قطب مغناطيسي، تتولّد تيارات دوامة عند حافتَي المنطقة المؤثَّرة بالمجال (عند الدخول وعند الخروج)، وحسب قانون لينز فإن هذه التيارات الدوامة المحتثة تولّد قوة معاكسة لحركة الصفيحة (اتجاه الإعاقة)؛ وهذا هو أساس عمل مكابح التيارات الدوامة المستعملة في بعض العجلات الثقيلة.</p>
-      <div class="io-row">
-        <button class="neu-btn" id="eddyBrakeToggle">▶ ابدأ حركة الصفيحة</button>
-      </div>
-      <div class="mindmap-wrap" style="margin-top:.6rem"><svg id="eddyBrakeSvg" viewBox="0 0 360 170" width="360" height="170" role="img" aria-label="محاكاة التيارات الدوامة والقوة المعاكسة عند حركة صفيحة معدنية أسفل مغناطيس"></svg></div>
-      <div class="rule-box" id="eddyBrakeStatus">الصفيحة ساكنة: لا يوجد تغيّر في الفيض، ولا تيارات دوامة.</div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h3 style="margin-top:0">📋 من التطبيقات العملية للتيارات الدوامة</h3>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>أفران صهر المعادن (أفران الحث).</span></li>
-        <li><span class="obj-num">2</span><span>أجهزة كشف المعادن.</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 5-3 الحث الذاتي</span>
-      <p style="margin:.3rem 0">ينص قانون فاراداي إن أي تغيّر في الفيض المغناطيسي خلال ملف ما يستحث عنه قوة دافعة كهربائية في الملف يتسبّب فيه سريان تيار محتث والذي بدوره يولّد مجالًا مغناطيسيًا معاكسًا. وعليه فإن تغيّر التيار المار في الملف يؤدي إلى تغيّر في الفيض المار خلاله، وكلما طرأ تغيّر في التيار فإن القوة الدافعة الكهربائية المحتثة تستحدث ذاتيًا في الملف طالما كان التغيّر مستمرًا.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>يبيّن الشكل (9-3) دائرة كهربائية مكوّنة من ملف ذي قلب حديدي ومقاومة وبطارية ومفتاح كهربائي. فعند غلق المفتاح في الدائرة الكهربائية يحدث ما يأتي:</p>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يزداد التيار المار في الدائرة مع الزمن.</span></li>
-        <li><span class="obj-num">2</span><span>يزداد الفيض المغناطيسي خلال الدائرة نتيجة لازدياد التيار.</span></li>
-        <li><span class="obj-num">3</span><span>يؤدي الفيض المتزايد إلى توليد قوة دافعة كهربائية في الدائرة لتعكس الزيادة في الفيض المغناطيسي (حسب قانون لينز).</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>هذه القوة الدافعة الكهربائية المتولدة في الدائرة تعمل على عكس اتجاه التيار الأصلي، وهذا ناتج عن الزيادة في الفيض المغناطيسي نتيجة زيادة التيار عند غلق المفتاح. ويُعرَف هذا التأثير في الدائرة باسم الحث الذاتي. ان معدل تغيّر الفيض المغناطيسي خلال الملف يتناسب مع معدل تغيّر التيار في الملف، فإذا كان \((\Delta I/\Delta t)\) هو معدل تغيّر التيار في الملف فإن القوة الدافعة الكهربائية تكون:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ \varepsilon_{ind} = -N\dfrac{\Delta\varnothing}{\Delta t} = -L\dfrac{\Delta I}{\Delta t} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 معامل الحث الذاتي (L)</span>
-      <p style="margin:.3rem 0">حيث (L) ثابت التناسب ويُسمّى معامل الحث الذاتي، ويعتمد على الشكل الهندسي للملف ومادة قلب الملف وطوله ومساحة اللفة الواحدة وعدد لفاته، ووحدته الهنري (H).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>وإن خاصية الملف التي تتسبّب في توليد قوة كهربائية دافعة محتثة مضادة فيه عند تغيّر التيار المار به، تُدعى بالحث الذاتي، وأن قيمة معامل الحث الذاتي تُعطى بالعلاقة:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ L = N\dfrac{\Delta\varnothing}{\Delta I} $$
-    </div>
-  </section>
-
-  <section class="section fade-up" id="selfind-widget" data-navlabel="🕹️ حاسبة القوة الدافعة المحتثة ذاتيًا">
-    <div class="card neu">
-      <h2>🕹️ حاسبة تفاعلية: القوة الدافعة الكهربائية المحتثة ذاتيًا</h2>
-      <p>حرّك المزلاجين لتغيير معامل الحث الذاتي (L) ومعدّل تغيّر التيار \((\Delta I/\Delta t)\)، وشاهد القوة الدافعة الكهربائية المحتثة تُحسب مباشرة.</p>
-      <div class="io-row">
-        <label for="lSlider" style="min-width:9rem">معامل الحث الذاتي L = <span id="lVal">0.5</span> H</label>
-        <input type="range" id="lSlider" class="neu-range" min="0.1" max="5" step="0.1" value="0.5">
-      </div>
-      <div class="io-row">
-        <label for="didtSlider" style="min-width:9rem">ΔI/Δt = <span id="didtVal">2</span> A/s</label>
-        <input type="range" id="didtSlider" class="neu-range" min="0.5" max="10" step="0.5" value="2">
-      </div>
-      <div class="rule-box">\( \varepsilon_{ind} = -L\dfrac{\Delta I}{\Delta t} = \) <b id="selfEmfVal">-1.00</b> V</div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="example3" data-navlabel="📝 مثال 3">
-    <div class="example">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (3)</h2></div>
-      <p>ملف يتألف من 800 لفة متقاربة جدًا، يمرّ فيه تيار شدته \((6\ \text{mA})\). جد معامل الحث الذاتي للملف إذا كان الفيض المخترق له بسبب التيار يساوي \((3\times10^{-8}\ \text{weber})\).</p>
-    </div>
-
-    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
-        <button class="neu-btn" data-reveal-steps="steps-ex3" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( N = 800 \) لفة</span></li>
-        <li><span>\( \Delta I = 6\ \text{mA} = 6\times10^{-3}\ \text{A} \) — شدة التيار (بعد التحويل)</span></li>
-        <li><span>\( \Delta\varnothing = 3\times10^{-8}\ \text{Wb} \) — الفيض المخترق للملف</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">احسب معامل الحث الذاتي L للملف.</p>
-
-      <ol class="steps hidden-steps" id="steps-ex3">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">نطبّق علاقة معامل الحث الذاتي</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( L = N\dfrac{\Delta\varnothing}{\Delta I} = 800\times\dfrac{3\times10^{-8}}{6\times10^{-3}} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( L = 4\times10^{-3}\ \text{H} \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ L = 4×10⁻³ H = 4 mH</div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>التيارات الدوامة هي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>تيارات ثابتة تسري في أسلاك مستقيمة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تيارات محتثة تدور مكوّنة مسارات مغلقة داخل جسم موصل يتحرك في مجال مغناطيسي متغيّر</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تيارات تنتجها البطاريات فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تيارات لا علاقة لها بالمجال المغناطيسي</span></label>
-        </div>
-        <div class="quiz-explain">التيارات الدوامة تيارات محتثة تدور بمسارات مغلقة داخل الجسم الموصل المتحرك في مجال مغناطيسي متغيّر.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>2.</span><span>لتقليل الفقد الحراري بسبب التيارات الدوامة في المحوّلات، يُصنع القلب المعدني من:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>صفائح معدنية رقيقة معزولة بعضها عن الآخر</span></label>
-          <label class="quiz-opt"><input type="radio"><span>قطعة معدنية صلدة واحدة كبيرة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مادة عازلة تمامًا للكهرباء</span></label>
-          <label class="quiz-opt"><input type="radio"><span>سلك نحاسي واحد سميك</span></label>
-        </div>
-        <div class="quiz-explain">استعمال صفائح رقيقة ومعزولة بعضها عن الأخرى يقلّل حجم حلقات التيار الدوامة، فيقل الفقد الحراري.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>3.</span><span>الحث الذاتي هو تأثير ينتج عن:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>وجود مقاومة كهربائية في الدائرة فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>وجود بطارية ذات فولطية عالية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تغيّر التيار في الملف نفسه، مولّدًا قوة دافعة كهربائية معاكسة فيه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>دوران الملف حول محوره فقط</span></label>
-        </div>
-        <div class="quiz-explain">الحث الذاتي: تغيّر التيار المار في الملف يولّد فيه قوة دافعة كهربائية محتثة تعاكس هذا التغيّر.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>وحدة معامل الحث الذاتي (L) هي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الفولت (V)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الأوم (Ω)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الويبر (Wb)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الهنري (H)</span></label>
-        </div>
-        <div class="quiz-explain">وحدة معامل الحث الذاتي هي الهنري (H).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>يعتمد معامل الحث الذاتي لملف على:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>لون سلك الملف فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الشكل الهندسي للملف ومادة قلبه وطوله ومساحة اللفة وعدد لفاته</span></label>
-          <label class="quiz-opt"><input type="radio"><span>درجة حرارة الغرفة المحيطة فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>سعر المادة المصنوع منها الملف</span></label>
-        </div>
-        <div class="quiz-explain">معامل الحث الذاتي يعتمد على الشكل الهندسي للملف ومادة قلبه وطوله ومساحة اللفة الواحدة وعدد لفاته.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -259,12 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>التيارات الدوامة: تيارات محتثة تدور بمسارات مغلقة داخل جسم موصل متحرك في مجال متغيّر، وتُسبّب فقدًا حراريًا.</span></li>
-        <li><span>تُصنع الأجسام المعدنية على شكل صفائح رقيقة معزولة لتقليل التيارات الدوامة (كما في المحوّلات).</span></li>
-        <li><span>الحث الذاتي: تغيّر التيار في الملف يولّد فيه قوة دافعة كهربائية معاكسة، \(\varepsilon_{ind}=-L\Delta I/\Delta t\).</span></li>
-        <li><span>معامل الحث الذاتي \(L=N\Delta\varnothing/\Delta I\)، ووحدته الهنري (H).</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -274,27 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l3" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l3">
-        <svg viewBox="0 0 480 200" width="480" height="200" role="img" aria-label="خريطة التيارات الدوامة والحث الذاتي الذهنية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="100" x2="100" y2="45"/>
-            <line x1="240" y1="100" x2="100" y2="155"/>
-            <line x1="240" y1="100" x2="380" y2="100"/>
-          </g>
-          <g>
-            <circle cx="240" cy="100" r="48" fill="#7c6fee"/>
-            <text x="240" y="96" text-anchor="middle" fill="#fff" font-weight="800" font-size="10" font-family="Cairo,sans-serif">دوامة وحث</text>
-            <text x="240" y="110" text-anchor="middle" fill="#fff" font-weight="800" font-size="10" font-family="Cairo,sans-serif">ذاتي</text>
-          </g>
-          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
-            <text x="100" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">أفران صهر</text>
-            <text x="100" y="54" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">كاشف معادن</text></g>
-          <g><circle cx="100" cy="155" r="42" fill="#2fd18f"/>
-            <text x="100" y="158" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">صفائح مشرّحة</text></g>
-          <g><circle cx="380" cy="100" r="42" fill="#ffab5e"/>
-            <text x="380" y="103" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">L=NΔØ/ΔI</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l3"></div>
     </div>
   </section>
 
@@ -334,12 +110,13 @@
     svg.appendChild(t);
   }
 
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
+
   // ===== Eddy current comparison widget (Figure 5-3) =====
-  var eddySvg = document.getElementById("eddySvg");
-  var eddyToggle = document.getElementById("eddyToggle");
-  var eddyStatus = document.getElementById("eddyStatus");
+  var eddySvg, eddyToggle, eddyStatus;
   var laminated = false;
   var tEddy = 0;
+  var eddyRafId = null;
 
   function drawEddy(){
     while(eddySvg.firstChild) eddySvg.removeChild(eddySvg.firstChild);
@@ -358,7 +135,7 @@
         loop.setAttribute("stroke-dasharray","6 4"); loop.setAttribute("stroke-dashoffset", (-tEddy).toFixed(1));
         eddySvg.appendChild(loop);
       });
-      eddyStatus.textContent = "صفيحة معدنية صلدة: حلقات تيار دوامة كبيرة ← فقدان حراري أعلى";
+      eddyStatus.textContent = t("statusSolid", "صفيحة معدنية صلدة: حلقات تيار دوامة كبيرة ← فقدان حراري أعلى");
     } else {
       for(var i=0;i<7;i++){
         var sheet = document.createElementNS(ns,"rect");
@@ -371,23 +148,19 @@
         loop.setAttribute("stroke-dasharray","4 3"); loop.setAttribute("stroke-dashoffset", (-tEddy).toFixed(1));
         eddySvg.appendChild(loop);
       }
-      eddyStatus.textContent = "صفائح رقيقة معزولة: حلقات تيار دوامة صغيرة ← فقدان حراري أقل";
+      eddyStatus.textContent = t("statusLaminated", "صفائح رقيقة معزولة: حلقات تيار دوامة صغيرة ← فقدان حراري أقل");
     }
 
     var bArrow = document.createElementNS(ns,"text");
     bArrow.setAttribute("x",180); bArrow.setAttribute("y",165);
     bArrow.setAttribute("text-anchor","middle"); bArrow.setAttribute("font-family","Cairo,sans-serif"); bArrow.setAttribute("font-size","11"); bArrow.setAttribute("fill","var(--text-secondary)");
-    bArrow.textContent = "B متغيّر يخترق الصفيحة ⊗";
+    bArrow.textContent = t("fieldCaption", "B متغيّر يخترق الصفيحة ⊗");
     eddySvg.appendChild(bArrow);
   }
-  eddyToggle.addEventListener("click", function(){ laminated = !laminated; drawEddy(); });
-  function tickEddy(){ tEddy += 0.4; drawEddy(); requestAnimationFrame(tickEddy); }
-  if(reduceMotion){ drawEddy(); } else { requestAnimationFrame(tickEddy); }
+  function tickEddy(){ tEddy += 0.4; drawEddy(); eddyRafId = requestAnimationFrame(tickEddy); }
 
   // ===== Eddy-current braking widget (Figure 6-3) =====
-  var brakeSvg = document.getElementById("eddyBrakeSvg");
-  var brakeToggle = document.getElementById("eddyBrakeToggle");
-  var brakeStatus = document.getElementById("eddyBrakeStatus");
+  var brakeSvg, brakeToggle, brakeStatus;
   var brakeMoving = false;
   var plateX = 0;
 
@@ -404,7 +177,7 @@
     var plateLbl = document.createElementNS(ns,"text");
     plateLbl.setAttribute("x", 30); plateLbl.setAttribute("y", plateY+plateH+16);
     plateLbl.setAttribute("font-family","Cairo,sans-serif"); plateLbl.setAttribute("font-size","11"); plateLbl.setAttribute("fill","var(--text-secondary)");
-    plateLbl.textContent = "صفيحة معدنية";
+    plateLbl.textContent = t("plateLabel", "صفيحة معدنية");
     brakeSvg.appendChild(plateLbl);
 
     var magnet = document.createElementNS(ns,"rect");
@@ -419,7 +192,7 @@
 
     // motion arrow (plate moves rightward under fixed magnet)
     arrow(brakeSvg, 40, plateY-14, 90, plateY-14, "var(--accent-orange, #ffab5e)", 3);
-    label(brakeSvg, 30, plateY-20, "اتجاه الحركة", "var(--accent-orange, #ffab5e)", 10);
+    label(brakeSvg, 30, plateY-20, t("motionLabel", "اتجاه الحركة"), "var(--accent-orange, #ffab5e)", 10);
 
     if(brakeMoving){
       // eddy loops at leading (right) and trailing (left) edges of the magnet's footprint on the plate
@@ -432,25 +205,15 @@
       });
       // retarding force: opposes plate motion (points left, i.e. against the rightward motion arrow)
       arrow(brakeSvg, magnetCx+50, plateY+plateH+34, magnetCx+10, plateY+plateH+34, "var(--accent-green)", 3);
-      label(brakeSvg, magnetCx+15, plateY+plateH+48, "قوة الإعاقة (تعاكس الحركة)", "var(--accent-green)", 10);
-      brakeStatus.textContent = "الصفيحة تتحرك: تتولد تيارات دوامة عند حافتَي المغناطيس، وتنشأ قوة معاكسة لحركة الصفيحة (قانون لينز) — أساس مكابح التيارات الدوامة.";
+      label(brakeSvg, magnetCx+15, plateY+plateH+48, t("retardingForceLabel", "قوة الإعاقة (تعاكس الحركة)"), "var(--accent-green)", 10);
+      brakeStatus.textContent = t("statusMoving", "الصفيحة تتحرك: تتولد تيارات دوامة عند حافتَي المغناطيس، وتنشأ قوة معاكسة لحركة الصفيحة (قانون لينز) — أساس مكابح التيارات الدوامة.");
     } else {
-      brakeStatus.textContent = "الصفيحة ساكنة: لا يوجد تغيّر في الفيض المغناطيسي، ولا تيارات دوامة، ولا قوة معاكسة.";
+      brakeStatus.textContent = t("statusAtRest", "الصفيحة ساكنة: لا يوجد تغيّر في الفيض المغناطيسي، ولا تيارات دوامة، ولا قوة معاكسة.");
     }
   }
-  brakeToggle.addEventListener("click", function(){
-    brakeMoving = !brakeMoving;
-    brakeToggle.textContent = brakeMoving ? "⏸ أوقف حركة الصفيحة" : "▶ ابدأ حركة الصفيحة";
-    drawEddyBrake();
-  });
-  drawEddyBrake();
 
   // ===== Self-inductance EMF calculator =====
-  var lSlider = document.getElementById("lSlider");
-  var didtSlider = document.getElementById("didtSlider");
-  var lVal = document.getElementById("lVal");
-  var didtVal = document.getElementById("didtVal");
-  var selfEmfVal = document.getElementById("selfEmfVal");
+  var lSlider, didtSlider, lVal, didtVal, selfEmfVal;
 
   function updateSelfEmf(){
     var L = parseFloat(lSlider.value);
@@ -460,9 +223,41 @@
     var emf = -L*didt;
     selfEmfVal.textContent = emf.toFixed(2);
   }
-  lSlider.addEventListener("input", updateSelfEmf);
-  didtSlider.addEventListener("input", updateSelfEmf);
-  updateSelfEmf();
+
+  function boot(){
+    eddySvg = document.getElementById("eddySvg");
+    eddyToggle = document.getElementById("eddyToggle");
+    eddyStatus = document.getElementById("eddyStatus");
+    if(eddySvg && eddyToggle && eddyStatus){
+      eddyToggle.addEventListener("click", function(){ laminated = !laminated; drawEddy(); });
+      if(eddyRafId !== null){ cancelAnimationFrame(eddyRafId); eddyRafId = null; }
+      if(reduceMotion){ drawEddy(); } else { eddyRafId = requestAnimationFrame(tickEddy); }
+    }
+
+    brakeSvg = document.getElementById("eddyBrakeSvg");
+    brakeToggle = document.getElementById("eddyBrakeToggle");
+    brakeStatus = document.getElementById("eddyBrakeStatus");
+    if(brakeSvg && brakeToggle && brakeStatus){
+      brakeToggle.addEventListener("click", function(){
+        brakeMoving = !brakeMoving;
+        brakeToggle.textContent = brakeMoving ? t("stopBtn", "⏸ أوقف حركة الصفيحة") : t("startBtn", "▶ ابدأ حركة الصفيحة");
+        drawEddyBrake();
+      });
+      drawEddyBrake();
+    }
+
+    lSlider = document.getElementById("lSlider");
+    didtSlider = document.getElementById("didtSlider");
+    lVal = document.getElementById("lVal");
+    didtVal = document.getElementById("didtVal");
+    selfEmfVal = document.getElementById("selfEmfVal");
+    if(lSlider && didtSlider){
+      lSlider.addEventListener("input", updateSelfEmf);
+      didtSlider.addEventListener("input", updateSelfEmf);
+      updateSelfEmf();
+    }
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>
