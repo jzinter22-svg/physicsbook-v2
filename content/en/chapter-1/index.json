@@ -1,0 +1,119 @@
+{
+  "chapterNumber": 1,
+  "meta": {
+    "pageTitle": "Chapter 1: Circular and Rotational Motion — Interactive Physics Book",
+    "description": "Chapter 1 of the Interactive Physics Book: circular motion and centripetal acceleration, centripetal force, satellite orbits and Kepler's laws, rotational motion, moment of inertia, and angular momentum — with worked examples and interactive tools.",
+    "breadcrumbChapter": "Chapter 1",
+    "footer": "Chapter 1: Circular and Rotational Motion — Interactive Physics Book"
+  },
+  "hero": {
+    "eyebrow": "📘 Interactive Physics Book · Third Grade · Industrial Branch",
+    "titleHtml": "Chapter 1: Circular and Rotational Motion <span style=\"color:var(--accent-blue)\">Circular &amp; Rotational Motion</span>",
+    "lead": "From a car's spinning wheels to satellites orbiting the Earth: in this chapter we study circular and rotational motion, centripetal force, Kepler's laws, moment of inertia, and angular momentum.",
+    "startLessonLabel": "Start Lesson 1 ←",
+    "tags": [
+      "⏱ 8 lessons",
+      "🧠 self-check quizzes",
+      "🗺 mind maps"
+    ]
+  },
+  "objectivesHeading": "🎯 Behavioral Objectives",
+  "objectivesLead": "After completing this chapter, the student will be able to:",
+  "objectives": [
+    "Know circular and rotational motion, and centripetal force.",
+    "Know power, work, and rotational motion.",
+    "Grasp the following concepts and derive their values using mathematical equations: rotational motion, angular velocity, angular acceleration, moment of inertia, and power and work in rotational motion.",
+    "Know Kepler's laws of circular motion, with satellite motion as an example."
+  ],
+  "lessonsHeading": "📚 Chapter Contents",
+  "enterLessonLabel": "Enter lesson ←",
+  "lessons": [
+    {
+      "title": "Introduction, Circular Motion, and Centripetal Acceleration",
+      "description": "1-1 Introduction, 2-1 Circular motion, 1-2-1 Centripetal acceleration."
+    },
+    {
+      "title": "Resultant Acceleration and Centripetal Force",
+      "description": "2-2-1 Resultant acceleration in circular motion, 3-1 Centripetal force."
+    },
+    {
+      "title": "Satellite Orbits and Kepler's Laws",
+      "description": "4-1: The law of orbits, the law of areas, and the law of periods."
+    },
+    {
+      "title": "Rotational Motion: Angular Displacement and Angular Velocity",
+      "description": "5-1 Rotational motion, 1-5-1 Angular displacement, 2-5-1 Angular velocity."
+    },
+    {
+      "title": "Angular Acceleration and Uniformly Accelerated Rotational Motion",
+      "description": "3-5-1 Angular acceleration, 4-5-1 Uniformly accelerated angular motion."
+    },
+    {
+      "title": "Moment of Inertia",
+      "description": "5-5-1: Moment of inertia, the torque law, and a table of moments of inertia for common shapes."
+    },
+    {
+      "title": "Energy, Work, Power, and Angular Momentum",
+      "description": "6-1 Energy, 7-1 Work and power, 8-1 Angular momentum in rotational motion."
+    },
+    {
+      "title": "Chapter Questions and Problems",
+      "description": "9-1: All multiple-choice, reasoning, and calculation problems, solved in full detail."
+    }
+  ],
+  "mindmap": {
+    "heading": "🗺 Chapter Mind Map",
+    "ariaLabel": "Chapter 1 mind map",
+    "center": {
+      "cx": 450,
+      "cy": 230,
+      "r": 66,
+      "lines": [
+        "Circular and",
+        "Rotational Motion"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 180,
+        "cy": 90,
+        "r": 54,
+        "color": "#ffab5e",
+        "lines": [
+          "Centripetal",
+          "Force"
+        ]
+      },
+      {
+        "cx": 720,
+        "cy": 90,
+        "r": 54,
+        "color": "#ff6b9d",
+        "lines": [
+          "Kepler's",
+          "Laws"
+        ]
+      },
+      {
+        "cx": 150,
+        "cy": 250,
+        "r": 54,
+        "color": "#2fd18f",
+        "lines": [
+          "Moment of",
+          "Inertia"
+        ]
+      },
+      {
+        "cx": 750,
+        "cy": 250,
+        "r": 54,
+        "color": "#3fa9f5",
+        "lines": [
+          "Angular",
+          "Momentum"
+        ]
+      }
+    ]
+  }
+}
