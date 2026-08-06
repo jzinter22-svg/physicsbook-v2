@@ -195,11 +195,21 @@
         : "";
       return '<div class="io-row"' + attrs + '><label for="' + esc(c.inputId) + '" style="min-width:9rem">' + html(c.labelHtml) + "</label>" + inputEl + "</div>";
     }).join("");
-    var buttons = (b.buttons || []).map(function(btn){
+    var buttonEls = (b.buttons || []).map(function(btn){
       var dataAttrs = "";
       for(var k in (btn.data || {})){ dataAttrs += " " + esc(k) + '="' + esc(btn.data[k]) + '"'; }
-      return '<button class="' + esc(btn.class || "neu-btn") + '"' + (btn.id ? ' id="' + esc(btn.id) + '"' : "") + dataAttrs + ">" + html(btn.html) + "</button>";
-    }).join("");
+      return '<button class="' + esc(btn.class || "neu-btn") + '"' + (btn.id ? ' id="' + esc(btn.id) + '"' : "") +
+        (btn.style ? ' style="' + esc(btn.style) + '"' : "") + dataAttrs + ">" + html(btn.html) + "</button>";
+    });
+    // .io-panel is a CSS grid (one row per direct child): a lone toggle
+    // button (the common case, e.g. a "reverse direction" button) sitting
+    // as its own grid row is the tested/intended look, but 2+ buttons (a
+    // multi-way picker, e.g. wavelength-select buttons) need the same
+    // flex-wrap .io-row grouping "presets" already uses below, or they'd
+    // stack one-per-row instead of wrapping horizontally as a button group.
+    var buttons = buttonEls.length > 1
+      ? '<div class="io-row" style="flex-wrap:wrap;gap:.5rem">' + buttonEls.join("") + "</div>"
+      : buttonEls.join("");
     var presets = (b.presets || []).map(function(p){
       return '<button class="neu-btn" data-preset="' + esc(p.value) + '">' + esc(p.label) + "</button>";
     }).join("");

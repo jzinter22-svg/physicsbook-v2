@@ -58,7 +58,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-method": "direct"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnOneStage",
@@ -66,7 +67,8 @@
           "class": "neu-btn",
           "data": {
             "data-method": "onestage"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnTwoStage",
@@ -74,7 +76,8 @@
           "class": "neu-btn",
           "data": {
             "data-method": "twostage"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

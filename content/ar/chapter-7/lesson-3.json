@@ -102,7 +102,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-method": "natural"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnInject",
@@ -110,7 +111,8 @@
           "class": "neu-btn",
           "data": {
             "data-method": "inject"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnThermal",
@@ -118,7 +120,8 @@
           "class": "neu-btn",
           "data": {
             "data-method": "thermal"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

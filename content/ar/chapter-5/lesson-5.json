@@ -124,7 +124,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-wave": "ground"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnSky",
@@ -132,7 +133,8 @@
           "class": "neu-btn",
           "data": {
             "data-wave": "sky"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

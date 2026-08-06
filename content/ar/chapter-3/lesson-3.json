@@ -56,7 +56,8 @@
           "id": "eddyToggle",
           "html": "🔁 بدّل: صفيحة صلدة / صفائح مُشرَّحة معزولة",
           "class": "neu-btn",
-          "data": null
+          "data": null,
+          "style": null
         }
       ],
       "selectId": null,
@@ -102,7 +103,8 @@
           "id": "eddyBrakeToggle",
           "html": "▶ ابدأ حركة الصفيحة",
           "class": "neu-btn",
-          "data": null
+          "data": null,
+          "style": null
         }
       ],
       "selectId": null,

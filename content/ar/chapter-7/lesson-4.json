@@ -56,7 +56,8 @@
           "id": "btnDistill",
           "html": "🔥 ابدأ التقطير",
           "class": "neu-btn primary",
-          "data": null
+          "data": null,
+          "style": null
         }
       ],
       "selectId": null,

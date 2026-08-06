@@ -119,7 +119,8 @@
           "class": "neu-btn",
           "data": {
             "data-bias": "none"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnFwd",
@@ -127,7 +128,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-bias": "forward"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnRev",
@@ -135,7 +137,8 @@
           "class": "neu-btn",
           "data": {
             "data-bias": "reverse"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

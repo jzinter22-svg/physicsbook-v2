@@ -119,7 +119,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-sys": "three"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnFour",
@@ -127,13 +128,15 @@
           "class": "neu-btn",
           "data": {
             "data-sys": "four"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnPumpAtom",
           "html": "⚡ ضخ ذرة",
           "class": "neu-btn",
-          "data": null
+          "data": null,
+          "style": null
         }
       ],
       "selectId": null,

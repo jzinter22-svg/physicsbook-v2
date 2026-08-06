@@ -38,7 +38,44 @@
       "sectionHeading": "🕹️ محاكاة تفاعلية: قاعدة اليد اليمنى (الشكل 3-3)",
       "descriptionHtml": "اختر اتجاه حركة الموصل واتجاه المجال المغناطيسي، ولاحظ اتجاه التيار المحتث الناتج (السبابة = المجال، الإبهام = الحركة، الوسطى = التيار).",
       "controls": [],
-      "buttons": null,
+      "buttons": [
+        {
+          "id": null,
+          "html": "↓ حركة الموصل لأسفل",
+          "class": "neu-btn",
+          "data": {
+            "data-vdir": "down"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "↑ حركة الموصل لأعلى",
+          "class": "neu-btn",
+          "data": {
+            "data-vdir": "up"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "→ مجال نحو اليمين (N يسار / S يمين)",
+          "class": "neu-btn",
+          "data": {
+            "data-bdir": "right"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "← مجال نحو اليسار (S يسار / N يمين)",
+          "class": "neu-btn",
+          "data": {
+            "data-bdir": "left"
+          },
+          "style": null
+        }
+      ],
       "selectId": null,
       "selectOptions": null,
       "presets": null,
@@ -90,7 +127,8 @@
           "id": "lenzToggle",
           "html": "↕ بدّل اتجاه حركة الموصل",
           "class": "neu-btn",
-          "data": null
+          "data": null,
+          "style": null
         }
       ],
       "selectId": null,

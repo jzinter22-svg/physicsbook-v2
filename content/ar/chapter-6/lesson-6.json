@@ -153,7 +153,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-laser": "ruby"
-          }
+          },
+          "style": null
         },
         {
           "id": null,
@@ -161,7 +162,8 @@
           "class": "neu-btn",
           "data": {
             "data-laser": "ndyag"
-          }
+          },
+          "style": null
         },
         {
           "id": null,
@@ -169,7 +171,8 @@
           "class": "neu-btn",
           "data": {
             "data-laser": "hene"
-          }
+          },
+          "style": null
         },
         {
           "id": null,
@@ -177,7 +180,8 @@
           "class": "neu-btn",
           "data": {
             "data-laser": "co2"
-          }
+          },
+          "style": null
         },
         {
           "id": null,
@@ -185,7 +189,8 @@
           "class": "neu-btn",
           "data": {
             "data-laser": "excimer"
-          }
+          },
+          "style": null
         },
         {
           "id": null,
@@ -193,7 +198,8 @@
           "class": "neu-btn",
           "data": {
             "data-laser": "dye"
-          }
+          },
+          "style": null
         },
         {
           "id": null,
@@ -201,7 +207,8 @@
           "class": "neu-btn",
           "data": {
             "data-laser": "semi"
-          }
+          },
+          "style": null
         },
         {
           "id": null,
@@ -209,7 +216,8 @@
           "class": "neu-btn",
           "data": {
             "data-laser": "chemical"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

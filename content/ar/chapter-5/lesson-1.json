@@ -204,7 +204,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-material": "conductor"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnSemi",
@@ -212,7 +213,8 @@
           "class": "neu-btn",
           "data": {
             "data-material": "semiconductor"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnInsulator",
@@ -220,7 +222,8 @@
           "class": "neu-btn",
           "data": {
             "data-material": "insulator"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

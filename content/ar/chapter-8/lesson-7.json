@@ -57,7 +57,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-use": "cooling"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnMedical",
@@ -65,7 +66,8 @@
           "class": "neu-btn",
           "data": {
             "data-use": "medical"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnAircraft",
@@ -73,7 +75,8 @@
           "class": "neu-btn",
           "data": {
             "data-use": "aircraft"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnBuilding",
@@ -81,7 +84,8 @@
           "class": "neu-btn",
           "data": {
             "data-use": "building"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnKitchen",
@@ -89,7 +93,8 @@
           "class": "neu-btn",
           "data": {
             "data-use": "kitchen"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

@@ -99,7 +99,8 @@
           "class": "neu-btn",
           "data": {
             "data-state": "solid"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnLiquid",
@@ -107,7 +108,8 @@
           "class": "neu-btn",
           "data": {
             "data-state": "liquid"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnGas",
@@ -115,7 +117,8 @@
           "class": "neu-btn",
           "data": {
             "data-state": "gas"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnPlasma",
@@ -123,7 +126,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-state": "plasma"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

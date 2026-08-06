@@ -89,7 +89,8 @@
           "id": "btnPulse",
           "html": "📡 أرسل نبضة",
           "class": "neu-btn primary",
-          "data": null
+          "data": null,
+          "style": null
         }
       ],
       "selectId": null,

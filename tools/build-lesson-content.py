@@ -236,6 +236,20 @@ def extract_simulation(section):
     value, no canvas). The widget's own JS keeps driving whatever it draws/
     writes — that JS stays untouched; only the surrounding chrome (heading,
     description, control/button labels, aria-labels) becomes data."""
+    def is_sim_button(b):
+        # data-reveal-steps is the universal "show solution steps" toggle
+        # used inside every worked example/exercise's .example div, site-
+        # wide — never a simulation control. Excluding it (and anything
+        # nested inside .example, which only ever holds that same toggle or
+        # a plain step-reveal button, never a widget picker) keeps this
+        # broadened check from swallowing whole examples into a bogus
+        # "simulation" block.
+        if b.get("data-reveal-steps") is not None:
+            return False
+        if b.find_parent(class_="example") is not None:
+            return False
+        return bool(b.get("id")) or any(k.startswith("data-") for k in b.attrs)
+
     panel = section.select_one(".io-panel")
     has_control = section.select_one(".io-row input, .io-row select, .io-panel button[id]")
     # Button-driven "info card" widgets (e.g. an 8-way laser-type picker, or
@@ -244,21 +258,11 @@ def extract_simulation(section):
     # data-* attributes the widget's own JS reads via querySelectorAll, and
     # a live-updating .def-box (not .rule-box) as the output area. Any
     # button with an id OR a data- attribute counts as a live control too,
-    # not just ones already inside a recognized .io-panel.
+    # not just ones already inside a recognized .io-panel — checked across
+    # the whole section, since a picker row (e.g. Young's-experiment
+    # wavelength buttons) can sit as a sibling *before* .io-panel rather
+    # than inside it.
     if not has_control:
-        def is_sim_button(b):
-            # data-reveal-steps is the universal "show solution steps"
-            # toggle used inside every worked example/exercise's .example
-            # div, site-wide — never a simulation control. Excluding it (and
-            # anything nested inside .example, which only ever holds that
-            # same toggle or a plain step-reveal button, never a widget
-            # picker) keeps this broadened check from swallowing whole
-            # examples into a bogus "simulation" block.
-            if b.get("data-reveal-steps") is not None:
-                return False
-            if b.find_parent(class_="example") is not None:
-                return False
-            return bool(b.get("id")) or any(k.startswith("data-") for k in b.attrs)
         has_control = next((b for b in section.select("button") if is_sim_button(b)), None)
     # law2-widget (lesson 3) has neither: it's a purely passive, continuously
     # animated SVG + a live-updating rule-box readout, no user control at
@@ -293,25 +297,24 @@ def extract_simulation(section):
             "inputStep": inp.get("step") if inp else None,
             "inputValue": inp.get("value") if inp else None,
         })
-    # id=True catches the common "one toggle button" case; the data-*
-    # fallback catches multi-way picker buttons (data-laser="ruby" etc.)
-    # that the widget's own JS selects by attribute instead of id — some
-    # have both (id for the widget's own getElementById calls, data-* for
-    # "which one was clicked"), so dedupe by identity, not by which
-    # predicate matched.
-    all_buttons = panel.find_all("button", id=True, recursive=True) + \
-        [b for b in panel.find_all("button", recursive=True) if any(k.startswith("data-") for k in b.attrs)]
-    seen_buttons = []
+    # Searches the whole section (not just panel): a picker row can sit as a
+    # sibling *before* .io-panel rather than inside it (e.g. Young's-
+    # experiment wavelength buttons). is_sim_button's id-or-data-attribute
+    # test also naturally dedupes — each button is visited once.
     buttons = []
-    for b in all_buttons:
-        if any(b is sb for sb in seen_buttons):
+    for b in section.find_all("button", recursive=True):
+        if not is_sim_button(b):
             continue
-        seen_buttons.append(b)
         data_attrs = {k: v for k, v in b.attrs.items() if k.startswith("data-")}
         buttons.append({
             "id": b.get("id"), "html": inner_html(b),
             "class": " ".join(b.get("class", [])) or None,
             "data": data_attrs or None,
+            # A multi-way picker often color-codes each button (e.g. Young's-
+            # experiment wavelength buttons: a colored inline left-border
+            # matching that wavelength's visible color) — preserve it
+            # verbatim rather than dropping the accent.
+            "style": b.get("style"),
         })
     select = panel.select_one("select")
     select_id = select.get("id") if select else None

@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-2.html">
@@ -42,253 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يصف تجهيز تجربة يونك ويوضّح كيفية الحصول على مصدرين متشاكهين فيها.</span></li>
-        <li><span class="obj-num">2</span><span>يشتق العلاقة بين الطول الموجي ومسافة الشقين وبعد الشاشة ومرتبة الهدب.</span></li>
-        <li><span class="obj-num">3</span><span>يحل مسائل حسابية على تجربة يونك لإيجاد الطول الموجي أو أبعاد التجهيز.</span></li>
-        <li><span class="obj-num">4</span><span>يذكر استعمالات تجربة يونك في دراسة الضوء.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="card neu">
-      <h2>💡 4-2 تجربة يونك Young's Experiment</h2>
-      <p>يونك عالم بريطاني عاش للفترة (1773 – 1829) وهو أول من أنجز تجربة تراكب موجتين ضوئيتين. ولأجل توضيح الفكرة الاساسية وإعادة ما قام به يونك لابد لنا من تجهيز الآتي: قطعة من صفيحة الألمنيوم وقطعة من سلك النحاس. نسحب قطعة سلك النحاس حتى ينكسر ونعمل ثقبين صغيرين في صفيحة الألمنيوم قريبين من بعضهما. بعدها نرفع الصفيحة إلى الأعلى مقابل إحدى العينين ونراقب مصباحًا صغيرًا يبعد بمسافة. وحتى نجري التجربة وإجراء القياسات نوفّر الترتيب الآتي كما هو في الشكل (3-2).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="apparatus-widget" data-navlabel="🕹️ إعادة إنشاء الشكل 3-2">
-    <div class="card neu">
-      <h2>🕹️ إعادة إنشاء الشكل 2-3: ترتيب أجهزة تجربة يونك</h2>
-      <p>مصدر ضوئي ← عدسة لامّة ← شق يمكن التحكم به ← شق مزدوج ← شاشة شفافة يظهر عليها شكل الأهداب المتكوّنة.</p>
-      <div class="mindmap-wrap">
-        <svg viewBox="0 0 640 160" width="640" height="160" role="img" aria-label="مخطط ترتيب أجهزة تجربة يونك">
-          <g font-family="Cairo,sans-serif" font-size="11" fill="var(--text-secondary)" text-anchor="middle">
-            <circle cx="40" cy="80" r="14" fill="#ffab5e"/>
-            <text x="40" y="115">مصدر ضوئي</text>
-
-            <polygon points="110,50 130,80 110,110 118,80" fill="var(--accent-blue)" opacity=".6"/>
-            <text x="118" y="130">عدسة لامّة</text>
-
-            <line x1="200" y1="45" x2="200" y2="115" stroke="var(--text-faint)" stroke-width="6"/>
-            <rect x="197" y="75" width="6" height="10" fill="var(--bg)"/>
-            <text x="200" y="130">شق يمكن التحكم به</text>
-
-            <line x1="300" y1="45" x2="300" y2="115" stroke="var(--text-faint)" stroke-width="6"/>
-            <rect x="297" y="65" width="6" height="8" fill="var(--bg)"/>
-            <rect x="297" y="87" width="6" height="8" fill="var(--bg)"/>
-            <text x="300" y="130">شق مزدوج</text>
-
-            <rect x="470" y="35" width="90" height="90" fill="#e9f5e6" stroke="var(--text-faint)"/>
-            <g id="apparatusFringes"></g>
-            <text x="515" y="140">الشاشة الشفافة</text>
-          </g>
-          <line x1="55" y1="80" x2="105" y2="80" stroke="var(--text-faint)" stroke-width="1.5" marker-end="url(#arrowApp)"/>
-          <line x1="135" y1="80" x2="195" y2="80" stroke="var(--text-faint)" stroke-width="1.5" marker-end="url(#arrowApp)"/>
-          <line x1="205" y1="80" x2="295" y2="80" stroke="var(--text-faint)" stroke-width="1.5" marker-end="url(#arrowApp)"/>
-          <line x1="305" y1="80" x2="465" y2="80" stroke="var(--text-faint)" stroke-width="1.5" marker-end="url(#arrowApp)"/>
-          <defs>
-            <marker id="arrowApp" markerWidth="8" markerHeight="8" refX="5" refY="2.5" orient="auto">
-              <path d="M0,0 L5,2.5 L0,5 Z" fill="var(--text-faint)"/>
-            </marker>
-          </defs>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>إن نموذج التداخل يحوي خطوطًا مضيئة ومظلمة منتظمة للشقّين، هذه الخطوط تُسمّى هُدابات يونك (young's fringes). ومن الشكل الموضّح من اليمين إلى اليسار ابتداءً، يمكن أن نقدّر أن نموذج التداخل يغطّي 1 cm من الشاشة.</p>
-      <p>يساوي عددًا صحيحًا من الأطوال الموجية لكي يحصل التداخل البناء وهو الخط المضيء. فإذا كانت (a) بعيدة عن الشقّين و(D) بُعد الشاشة عن الشقّين \((D>a)\)، لذلك يكون \((S_1P\) و\(S_2P)\) متوازيَين تقريبًا وأن طول الموجة (λ).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ \lambda = \dfrac{aX}{nD} $$
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h3 style="margin-top:0">📋 دلالة رموز العلاقة</h3>
-      <ul class="summary-list">
-        <li><span>\(X\) — المسافة بين صورة الهدب وصورة الهدب المركزي، وتقاس بالمتر (m).</span></li>
-        <li><span>\(a\) — البعد بين الشقّين، ويقاس بالمتر (m).</span></li>
-        <li><span>\(D\) — المسافة بين الشقّين والشاشة، وتقاس بالمتر (m).</span></li>
-        <li><span>\(n\) — مرتبة الهدب.</span></li>
-        <li><span>\(\lambda\) — الطول الموجي، ويقاس بالمتر (m).</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>فإذا تم تحريك العدسة العينية بمقدار \(\Delta X\) من حالة عظمى مثلًا \(n=3\) إلى الحالة العظمى التالية مثلًا \(n=4\) فإنها تتحرك مسافة بمقدار \(\Delta X\)، وهذه تُسمّى مسافة الفصل بين الهدابات.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="dslit-widget" data-navlabel="🕹️ محاكاة تجربة يونك">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: نموذج هدابات يونك (الشكل 4-2)</h2>
-      <p>اختر لون الضوء (طوله الموجي)، وحرّك مزلاجَي البعد بين الشقّين (a) وبُعد الشاشة (D)، وراقب نموذج الأهداب المضيئة والمظلمة يتغيّر مباشرة على الشاشة، مع حساب مسافة الفصل بين الأهداب \(\Delta X\) حيًّا.</p>
-      <div class="io-row" style="flex-wrap:wrap;gap:.5rem">
-        <button class="neu-btn" data-wl="400" style="border-inline-start:5px solid #8b2fd1">بنفسجي 400nm</button>
-        <button class="neu-btn" data-wl="470" style="border-inline-start:5px solid #2f6fe0">أزرق 470nm</button>
-        <button class="neu-btn" data-wl="530" style="border-inline-start:5px solid #2fd16f">أخضر 530nm</button>
-        <button class="neu-btn" data-wl="590" style="border-inline-start:5px solid #e0b32f">أصفر (صوديوم) 590nm</button>
-        <button class="neu-btn" data-wl="650" style="border-inline-start:5px solid #e0402f">أحمر 650nm</button>
-      </div>
-      <div class="io-panel" style="margin-top:.6rem">
-        <div class="io-row">
-          <label for="slitASlider" style="min-width:9rem">البعد بين الشقّين a = <span id="slitAVal">0.5</span> mm</label>
-          <input type="range" id="slitASlider" class="neu-range" min="0.1" max="1.5" step="0.05" value="0.5">
-        </div>
-        <div class="io-row">
-          <label for="screenDSlider" style="min-width:9rem">بُعد الشاشة D = <span id="screenDVal">0.8</span> m</label>
-          <input type="range" id="screenDSlider" class="neu-range" min="0.3" max="1.5" step="0.05" value="0.8">
-        </div>
-        <div class="mindmap-wrap"><svg id="fringeSvg" viewBox="0 0 360 130" width="360" height="130" role="img" aria-label="نموذج أهداب يونك على الشاشة"></svg></div>
-        <div class="rule-box">مسافة الفصل بين الأهداب \( \Delta X = \dfrac{\lambda D}{a} = \) <b id="deltaXVal">0.85</b> mm</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="example1" data-navlabel="📝 مثال 1">
-    <div class="example">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (1)</h2></div>
-      <p>في تجربة يونك التي يُستعمل فيها مصباح الصوديوم، والذي طوله الموجي (590 nm)، والذي يبعد عن الشاشة (0.96 m)، وكانت المسافة بين الهدب الرابع والهدب المركزي (3.2 mm). احسب المسافة الفاصلة بين الشقّين.</p>
-    </div>
-
-    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
-        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( \lambda = 590\ \text{nm} = 590\times10^{-9}\ \text{m} \) — الطول الموجي لضوء الصوديوم (بعد التحويل)</span></li>
-        <li><span>\( D = 0.96\ \text{m} \) — بُعد الشاشة عن الشقّين</span></li>
-        <li><span>\( X = 3.2\ \text{mm} = 3.2\times10^{-3}\ \text{m} \) — المسافة بين الهدب الرابع والهدب المركزي (بعد التحويل)</span></li>
-        <li><span>\( n = 4 \) — مرتبة الهدب</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">احسب المسافة الفاصلة بين الشقّين \(a\).</p>
-
-      <ol class="steps hidden-steps" id="steps-ex1">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">نعيد ترتيب العلاقة \(\lambda=aX/nD\) لإيجاد \(a\)</p>
-          <div class="calc-flow"><div class="calc-line">\( \lambda = \dfrac{aX}{nD} \;\Rightarrow\; a = \dfrac{\lambda nD}{X} \)</div></div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">نعوّض القيم المعطاة</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( a = \dfrac{590\times10^{-9}\times 4\times 0.96}{3.2\times10^{-3}} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( a = 0.0071\ \text{m} = 0.71\ \text{mm} \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ a = 0.71 mm</div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h3 style="margin-top:0">📋 تُستعمل تجربة يونك في</h3>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>دراسة ظاهرة التداخل البنّاء في الضوء.</span></li>
-        <li><span class="obj-num">2</span><span>تعيين الطول الموجي لضوء أحادي اللون.</span></li>
-        <li><span class="obj-num">3</span><span>تعيين المسافة بين هدابين متتاليين من النوع نفسه.</span></li>
-        <li><span class="obj-num">4</span><span>البحث في طبيعة الضوء وإثبات طبيعته الموجية.</span></li>
-        <li><span class="obj-num">5</span><span>إثبات وجود خاصية الموجة لجميع الجسيمات مثل الإلكترونات وغيرها.</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>إن نمط هُدَب البناء الاتلافي يعتمد على فرق المسار البصري بين الموجتين المنعكستين. فإذا كان وفق المسار البصري فرق \((\lambda)\) عدد صحيح يمثّل التداخل بناءً، أما إذا كان فرق المسار البصري \((S_1,S_2)\) أنصاف فردية من الطول الموجي \(\left(\tfrac12\lambda\right)\) فيكون التداخل اتلافيًا كما ذكرنا سابقًا.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ \delta = a\sin\theta $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">فرق المسار البصري \(\delta\) بين الشعاعين الصادرَين عن الشقّين عند زاوية θ عن المحور المركزي (الشكل 5-2).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">💡</span>
-      <span><b>هل تعلم؟</b> من المستحيل الحصول على هُدابات التداخل في تجربة يونك عندما يكون البعد بين الشقّين أقل من الطول الموجي للضوء الساقط.</span>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>الخطوط المضيئة والمظلمة المنتظمة الناتجة عن تجربة يونك تُسمّى:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>أطياف يونك</span></label>
-          <label class="quiz-opt"><input type="radio"><span>هُدابات يونك</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أقطاب يونك</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أهرام يونك</span></label>
-        </div>
-        <div class="quiz-explain">تُسمّى هذه الخطوط المضيئة والمظلمة المنتظمة بهدابات يونك (young's fringes).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>في العلاقة \(\lambda=aX/nD\)، يمثّل الرمز (D):</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>البعد بين الشقّين</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مرتبة الهدب</span></label>
-          <label class="quiz-opt"><input type="radio"><span>المسافة بين الشقّين والشاشة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الطول الموجي</span></label>
-        </div>
-        <div class="quiz-explain">(D) تمثّل المسافة بين الشقّين والشاشة، وتقاس بالمتر.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>إذا زاد البعد بين الشقّين (a) مع ثبات باقي المتغيّرات، فإن مسافة الفصل بين الأهداب \(\Delta X\):</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>تقلّ</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تزداد</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تبقى ثابتة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تنعدم</span></label>
-        </div>
-        <div class="quiz-explain">بما أن \(\Delta X=\lambda D/a\)، فزيادة (a) تقلّل \(\Delta X\) (تتقارب الأهداب من بعضها).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>من استعمالات تجربة يونك:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>قياس كتلة الإلكترون فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>قياس سرعة الضوء في الفراغ</span></label>
-          <label class="quiz-opt"><input type="radio"><span>قياس شدة المجال المغناطيسي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تعيين الطول الموجي لضوء أحادي اللون وإثبات الطبيعة الموجية للضوء</span></label>
-        </div>
-        <div class="quiz-explain">من استعمالات تجربة يونك: دراسة التداخل، تعيين الطول الموجي، تعيين المسافة بين الهدابات، والبحث في طبيعة الضوء الموجية.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>لا يمكن الحصول على هدابات تداخل في تجربة يونك عندما:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>يكون البعد بين الشقّين أكبر بكثير من الطول الموجي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يكون البعد بين الشقّين أقل من الطول الموجي للضوء الساقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تكون الشاشة قريبة جدًا من الشقّين</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يكون الضوء أحادي اللون</span></label>
-        </div>
-        <div class="quiz-explain">من المستحيل الحصول على هدابات التداخل عندما يكون البعد بين الشقّين أقل من الطول الموجي للضوء الساقط.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -297,12 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>تجربة يونك تنتج مصدرَين متشاكهَين بتقسيم جبهة موجة ضوئية واحدة عبر شقّين متقاربين.</span></li>
-        <li><span>العلاقة الأساسية: \(\lambda=aX/nD\)، ومسافة الفصل بين الأهداب \(\Delta X=\lambda D/a\).</span></li>
-        <li><span>فرق المسار البصري \(\delta=a\sin\theta\): تداخل بنّاء عند \(n\lambda\)، وتداخل اتلافي عند \(\left(n+\tfrac12\right)\lambda\).</span></li>
-        <li><span>لا هدابات إذا كان البعد بين الشقّين أقل من الطول الموجي.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -312,31 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l2" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l2">
-        <svg viewBox="0 0 480 220" width="480" height="220" role="img" aria-label="خريطة تجربة يونك الذهنية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="110" x2="100" y2="45"/>
-            <line x1="240" y1="110" x2="100" y2="175"/>
-            <line x1="240" y1="110" x2="380" y2="45"/>
-            <line x1="240" y1="110" x2="380" y2="175"/>
-          </g>
-          <g>
-            <circle cx="240" cy="110" r="48" fill="#7c6fee"/>
-            <text x="240" y="106" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">تجربة يونك</text>
-            <text x="240" y="122" text-anchor="middle" fill="#fff" font-weight="800" font-size="10" font-family="Cairo,sans-serif">Young's Exp.</text>
-          </g>
-          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
-            <text x="100" y="48" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">λ=aX/nD</text></g>
-          <g><circle cx="100" cy="175" r="42" fill="#2fd18f"/>
-            <text x="100" y="172" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">ΔX=λD/a</text>
-            <text x="100" y="184" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">فصل الأهداب</text></g>
-          <g><circle cx="380" cy="45" r="42" fill="#ffab5e"/>
-            <text x="380" y="48" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">δ=a sinθ</text></g>
-          <g><circle cx="380" cy="175" r="42" fill="#ff6b9d"/>
-            <text x="380" y="172" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">استعمالات</text>
-            <text x="380" y="184" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">التجربة</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l2"></div>
     </div>
   </section>
 
@@ -359,13 +93,7 @@
   };
   var currentWl = 590;
 
-  var slitASlider = document.getElementById("slitASlider");
-  var screenDSlider = document.getElementById("screenDSlider");
-  var slitAVal = document.getElementById("slitAVal");
-  var screenDVal = document.getElementById("screenDVal");
-  var deltaXVal = document.getElementById("deltaXVal");
-  var fringeSvg = document.getElementById("fringeSvg");
-  var apparatusFringes = document.getElementById("apparatusFringes");
+  var slitASlider, screenDSlider, slitAVal, screenDVal, deltaXVal, fringeSvg, apparatusFringes;
 
   function drawFringesInto(container, wPx, hPx, offsetX, offsetY, deltaXmm, color){
     var displayRangeMM = 7*deltaXmm;
@@ -407,19 +135,38 @@
     fringeSvg.appendChild(bg);
     drawFringesInto(fringeSvg, 340, 100, 10, 15, deltaX_mm, color);
 
-    while(apparatusFringes.firstChild) apparatusFringes.removeChild(apparatusFringes.firstChild);
-    drawFringesInto(apparatusFringes, 80, 80, 480, 45, deltaX_mm, color);
+    if(apparatusFringes){
+      while(apparatusFringes.firstChild) apparatusFringes.removeChild(apparatusFringes.firstChild);
+      drawFringesInto(apparatusFringes, 80, 80, 480, 45, deltaX_mm, color);
+    }
   }
 
-  slitASlider.addEventListener("input", updateFringes);
-  screenDSlider.addEventListener("input", updateFringes);
-  document.querySelectorAll("[data-wl]").forEach(function(btn){
-    btn.addEventListener("click", function(){
-      currentWl = parseInt(btn.getAttribute("data-wl"),10);
-      updateFringes();
+  // Re-run on every lesson-engine render (first paint AND every language
+  // switch): the fringe widget's mount and the apparatus-diagram's
+  // #apparatusFringes group both come from JSON and get replaced wholesale
+  // on each language switch, so all element refs and listeners are
+  // re-acquired here rather than once at load.
+  function boot(){
+    slitASlider = document.getElementById("slitASlider");
+    screenDSlider = document.getElementById("screenDSlider");
+    slitAVal = document.getElementById("slitAVal");
+    screenDVal = document.getElementById("screenDVal");
+    deltaXVal = document.getElementById("deltaXVal");
+    fringeSvg = document.getElementById("fringeSvg");
+    apparatusFringes = document.getElementById("apparatusFringes");
+    if(!slitASlider || !fringeSvg) return;
+
+    slitASlider.addEventListener("input", updateFringes);
+    screenDSlider.addEventListener("input", updateFringes);
+    document.querySelectorAll("[data-wl]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        currentWl = parseInt(btn.getAttribute("data-wl"),10);
+        updateFringes();
+      });
     });
-  });
-  updateFringes();
+    updateFringes();
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

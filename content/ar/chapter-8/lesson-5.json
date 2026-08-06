@@ -57,7 +57,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-phase": "single"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnMulti",
@@ -65,7 +66,8 @@
           "class": "neu-btn",
           "data": {
             "data-phase": "multi"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

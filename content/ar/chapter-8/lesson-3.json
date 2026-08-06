@@ -129,7 +129,8 @@
           "id": "btnCycle",
           "html": "▶️ ابدأ الدورة",
           "class": "neu-btn primary",
-          "data": null
+          "data": null,
+          "style": null
         }
       ],
       "selectId": null,

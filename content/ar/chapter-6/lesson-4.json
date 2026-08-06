@@ -120,7 +120,8 @@
           "id": "btnPump",
           "html": "▶️ ابدأ التضخيم",
           "class": "neu-btn primary",
-          "data": null
+          "data": null,
+          "style": null
         }
       ],
       "selectId": null,

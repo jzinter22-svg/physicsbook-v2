@@ -47,7 +47,44 @@
       "sectionHeading": "🕹️ محاكاة تفاعلية: قاعدة المحرك (الشكل 15-3)",
       "descriptionHtml": "اختر اتجاه التيار في الموصل واتجاه المجال المغناطيسي، ولاحظ اتجاه القوة (الحركة) الناتجة على الموصل — عكس مسألة المولد تمامًا: هنا التيار والمجال معلومان، والحركة هي الناتج.",
       "controls": [],
-      "buttons": null,
+      "buttons": [
+        {
+          "id": null,
+          "html": "• التيار خارج الصفحة",
+          "class": "neu-btn",
+          "data": {
+            "data-idir": "out"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "× التيار داخل الصفحة",
+          "class": "neu-btn",
+          "data": {
+            "data-idir": "into"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "→ مجال نحو اليمين",
+          "class": "neu-btn",
+          "data": {
+            "data-bdir2": "right"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "← مجال نحو اليسار",
+          "class": "neu-btn",
+          "data": {
+            "data-bdir2": "left"
+          },
+          "style": null
+        }
+      ],
       "selectId": null,
       "selectOptions": null,
       "presets": null,

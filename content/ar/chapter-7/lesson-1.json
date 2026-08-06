@@ -73,7 +73,8 @@
           "class": "neu-btn",
           "data": {
             "data-region": "gulf"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnMideast",
@@ -81,7 +82,8 @@
           "class": "neu-btn",
           "data": {
             "data-region": "mideast"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnRussia",
@@ -89,7 +91,8 @@
           "class": "neu-btn",
           "data": {
             "data-region": "russia"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnNigeria",
@@ -97,7 +100,8 @@
           "class": "neu-btn",
           "data": {
             "data-region": "nigeria"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnVenezuela",
@@ -105,7 +109,8 @@
           "class": "neu-btn",
           "data": {
             "data-region": "venezuela"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnArctic",
@@ -113,7 +118,8 @@
           "class": "neu-btn",
           "data": {
             "data-region": "arctic"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnReset",
@@ -121,7 +127,8 @@
           "class": "neu-btn",
           "data": {
             "data-region": ""
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

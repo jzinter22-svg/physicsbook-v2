@@ -111,7 +111,53 @@
           "inputValue": "0.8"
         }
       ],
-      "buttons": null,
+      "buttons": [
+        {
+          "id": null,
+          "html": "بنفسجي 400nm",
+          "class": "neu-btn",
+          "data": {
+            "data-wl": "400"
+          },
+          "style": "border-inline-start:5px solid #8b2fd1"
+        },
+        {
+          "id": null,
+          "html": "أزرق 470nm",
+          "class": "neu-btn",
+          "data": {
+            "data-wl": "470"
+          },
+          "style": "border-inline-start:5px solid #2f6fe0"
+        },
+        {
+          "id": null,
+          "html": "أخضر 530nm",
+          "class": "neu-btn",
+          "data": {
+            "data-wl": "530"
+          },
+          "style": "border-inline-start:5px solid #2fd16f"
+        },
+        {
+          "id": null,
+          "html": "أصفر (صوديوم) 590nm",
+          "class": "neu-btn",
+          "data": {
+            "data-wl": "590"
+          },
+          "style": "border-inline-start:5px solid #e0b32f"
+        },
+        {
+          "id": null,
+          "html": "أحمر 650nm",
+          "class": "neu-btn",
+          "data": {
+            "data-wl": "650"
+          },
+          "style": "border-inline-start:5px solid #e0402f"
+        }
+      ],
       "selectId": null,
       "selectOptions": null,
       "presets": null,

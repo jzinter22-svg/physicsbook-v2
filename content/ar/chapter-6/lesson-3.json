@@ -171,7 +171,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-mode": "absorption"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnSpon",
@@ -179,7 +180,8 @@
           "class": "neu-btn",
           "data": {
             "data-mode": "spontaneous"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnStim",
@@ -187,7 +189,8 @@
           "class": "neu-btn",
           "data": {
             "data-mode": "stimulated"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

@@ -78,7 +78,8 @@
           "id": "acModeToggle",
           "html": "🔁 بدّل: حلقتا زلق (AC) / مبدّل (DC)",
           "class": "neu-btn",
-          "data": null
+          "data": null,
+          "style": null
         }
       ],
       "selectId": null,

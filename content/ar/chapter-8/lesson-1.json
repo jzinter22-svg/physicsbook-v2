@@ -75,7 +75,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-prop": "density"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnMalleable",
@@ -83,7 +84,8 @@
           "class": "neu-btn",
           "data": {
             "data-prop": "malleable"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnThermal",
@@ -91,7 +93,8 @@
           "class": "neu-btn",
           "data": {
             "data-prop": "thermal"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnElectric",
@@ -99,7 +102,8 @@
           "class": "neu-btn",
           "data": {
             "data-prop": "electric"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

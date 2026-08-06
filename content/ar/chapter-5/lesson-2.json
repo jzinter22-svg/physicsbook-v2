@@ -126,7 +126,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-type": "n"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnPType",
@@ -134,7 +135,8 @@
           "class": "neu-btn",
           "data": {
             "data-type": "p"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,

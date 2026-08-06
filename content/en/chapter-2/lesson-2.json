@@ -1,0 +1,388 @@
+{
+  "lessonNumber": 2,
+  "chapterNumber": 2,
+  "meta": {
+    "pageTitle": "Lesson 2: Young's Experiment — Chapter 2",
+    "description": "2-4 Young's Experiment: setting up the experiment, the fringe pattern, the relation λ=aX/nD, a worked example, and the uses of Young's experiment.",
+    "breadcrumbChapter": "Chapter 2",
+    "breadcrumbLesson": "Young's Experiment",
+    "footer": "Chapter 2: Interference, Polarization, Diffraction, and Scattering — Lesson 2: Young's Experiment"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 2 of 7 · Chapter 2",
+    "title": "Young's Experiment",
+    "lead": "2-4 Young's Experiment: the setup, the fringe pattern, the relation \\(\\lambda=aX/nD\\), and a worked example"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Describes the setup of Young's experiment and explains how two coherent sources are obtained in it.",
+    "Derives the relation between wavelength, slit separation, screen distance, and fringe order.",
+    "Solves calculation problems on Young's experiment to find the wavelength or the setup's dimensions.",
+    "States the uses of Young's experiment in the study of light."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 2-4 Young's Experiment",
+      "html": "Young was a British scientist who lived from 1773 to 1829, and he was the first to carry out an experiment on the superposition of two light waves. To illustrate the basic idea and recreate what Young did, we need to set up the following: a piece of aluminum sheet and a piece of copper wire. We pull the copper wire until it breaks, and make two small holes close to each other in the aluminum sheet. We then hold the sheet up in front of one eye and observe a small lamp some distance away. To carry out the experiment and take measurements, we use the setup shown in Figure 2-3.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "diagram",
+      "heading": "🕹️ Recreating Figure 2-3: The Apparatus Setup of Young's Experiment",
+      "descHtml": "Light source → converging lens → adjustable slit → double slit → transparent screen showing the resulting fringe pattern.",
+      "svg": "<svg aria-label=\"Diagram of the apparatus setup of Young's experiment\" height=\"160\" role=\"img\" viewbox=\"0 0 640 160\" width=\"640\">\n<g fill=\"var(--text-secondary)\" font-family=\"Cairo,sans-serif\" font-size=\"11\" text-anchor=\"middle\">\n<circle cx=\"40\" cy=\"80\" fill=\"#ffab5e\" r=\"14\"></circle>\n<text x=\"40\" y=\"115\">Light source</text>\n<polygon fill=\"var(--accent-blue)\" opacity=\".6\" points=\"110,50 130,80 110,110 118,80\"></polygon>\n<text x=\"118\" y=\"130\">Converging lens</text>\n<line stroke=\"var(--text-faint)\" stroke-width=\"6\" x1=\"200\" x2=\"200\" y1=\"45\" y2=\"115\"></line>\n<rect fill=\"var(--bg)\" height=\"10\" width=\"6\" x=\"197\" y=\"75\"></rect>\n<text x=\"200\" y=\"130\">Adjustable slit</text>\n<line stroke=\"var(--text-faint)\" stroke-width=\"6\" x1=\"300\" x2=\"300\" y1=\"45\" y2=\"115\"></line>\n<rect fill=\"var(--bg)\" height=\"8\" width=\"6\" x=\"297\" y=\"65\"></rect>\n<rect fill=\"var(--bg)\" height=\"8\" width=\"6\" x=\"297\" y=\"87\"></rect>\n<text x=\"300\" y=\"130\">Double slit</text>\n<rect fill=\"#e9f5e6\" height=\"90\" stroke=\"var(--text-faint)\" width=\"90\" x=\"470\" y=\"35\"></rect>\n<g id=\"apparatusFringes\"></g>\n<text x=\"515\" y=\"140\">Transparent screen</text>\n</g>\n<line marker-end=\"url(#arrowApp)\" stroke=\"var(--text-faint)\" stroke-width=\"1.5\" x1=\"55\" x2=\"105\" y1=\"80\" y2=\"80\"></line>\n<line marker-end=\"url(#arrowApp)\" stroke=\"var(--text-faint)\" stroke-width=\"1.5\" x1=\"135\" x2=\"195\" y1=\"80\" y2=\"80\"></line>\n<line marker-end=\"url(#arrowApp)\" stroke=\"var(--text-faint)\" stroke-width=\"1.5\" x1=\"205\" x2=\"295\" y1=\"80\" y2=\"80\"></line>\n<line marker-end=\"url(#arrowApp)\" stroke=\"var(--text-faint)\" stroke-width=\"1.5\" x1=\"305\" x2=\"465\" y1=\"80\" y2=\"80\"></line>\n<defs>\n<marker id=\"arrowApp\" markerheight=\"8\" markerwidth=\"8\" orient=\"auto\" refx=\"5\" refy=\"2.5\">\n<path d=\"M0,0 L5,2.5 L0,5 Z\" fill=\"var(--text-faint)\"></path>\n</marker>\n</defs>\n</svg>",
+      "caption": null,
+      "sectionGroup": 1,
+      "sectionId": "apparatus-widget",
+      "sectionNavLabel": "🕹️ Recreating Figure 2-3"
+    },
+    {
+      "type": "paragraph",
+      "html": "The interference pattern contains regular bright and dark lines from the two slits; these lines are called Young's fringes. From the figure shown, starting from right to left, we can estimate that the interference pattern covers 1 cm of the screen.</p><p>Constructive interference — the bright line — occurs when the path difference equals a whole number of wavelengths. If (a) is small compared to the slit separation and (D) is the screen's distance from the slits, with \\((D>a)\\), then \\((S_1P\\) and \\(S_2P)\\) are nearly parallel, and the wavelength is (λ).",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\lambda = \\dfrac{aX}{nD} $$",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "list",
+      "heading": "📋 Meaning of the Symbols in the Relation",
+      "items": [
+        "<span>\\(X\\) — the distance between a fringe and the central fringe, measured in meters (m).</span>",
+        "<span>\\(a\\) — the separation between the two slits, measured in meters (m).</span>",
+        "<span>\\(D\\) — the distance between the slits and the screen, measured in meters (m).</span>",
+        "<span>\\(n\\) — the fringe order.</span>",
+        "<span>\\(\\lambda\\) — the wavelength, measured in meters (m).</span>"
+      ],
+      "ordered": false,
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "If the eyepiece is moved by an amount \\(\\Delta X\\) from one maximum, say \\(n=3\\), to the next maximum, say \\(n=4\\), it moves a distance of \\(\\Delta X\\), which is called the fringe spacing.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "fringeSvg",
+      "svgAriaLabel": "Young's fringe pattern on the screen",
+      "svgViewBox": "0 0 360 130",
+      "svgWidth": "360",
+      "svgHeight": "130",
+      "sectionHeading": "🕹️ Interactive Simulation: Young's Fringe Pattern (Figure 2-4)",
+      "descriptionHtml": "Choose the light's color (its wavelength), move the sliders for the slit separation (a) and the screen distance (D), and watch the pattern of bright and dark fringes change live on the screen, with the fringe spacing \\(\\Delta X\\) computed live.",
+      "controls": [
+        {
+          "labelHtml": "Slit separation a = <span id=\"slitAVal\">0.5</span> mm",
+          "inputId": "slitASlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0.1",
+          "inputMax": "1.5",
+          "inputStep": "0.05",
+          "inputValue": "0.5"
+        },
+        {
+          "labelHtml": "Screen distance D = <span id=\"screenDVal\">0.8</span> m",
+          "inputId": "screenDSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0.3",
+          "inputMax": "1.5",
+          "inputStep": "0.05",
+          "inputValue": "0.8"
+        }
+      ],
+      "buttons": [
+        {
+          "id": null,
+          "html": "Violet 400nm",
+          "class": "neu-btn",
+          "data": {
+            "data-wl": "400"
+          },
+          "style": "border-inline-start:5px solid #8b2fd1"
+        },
+        {
+          "id": null,
+          "html": "Blue 470nm",
+          "class": "neu-btn",
+          "data": {
+            "data-wl": "470"
+          },
+          "style": "border-inline-start:5px solid #2f6fe0"
+        },
+        {
+          "id": null,
+          "html": "Green 530nm",
+          "class": "neu-btn",
+          "data": {
+            "data-wl": "530"
+          },
+          "style": "border-inline-start:5px solid #2fd16f"
+        },
+        {
+          "id": null,
+          "html": "Yellow (Sodium) 590nm",
+          "class": "neu-btn",
+          "data": {
+            "data-wl": "590"
+          },
+          "style": "border-inline-start:5px solid #e0b32f"
+        },
+        {
+          "id": null,
+          "html": "Red 650nm",
+          "class": "neu-btn",
+          "data": {
+            "data-wl": "650"
+          },
+          "style": "border-inline-start:5px solid #e0402f"
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "Fringe spacing \\( \\Delta X = \\dfrac{\\lambda D}{a} = \\) <b id=\"deltaXVal\">0.85</b> mm",
+          "id": null,
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 6,
+      "sectionId": "dslit-widget",
+      "sectionNavLabel": "🕹️ Young's Experiment Simulation"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>In Young's experiment using a sodium lamp with a wavelength of (590 nm), placed (0.96 m) from the screen, the distance between the fourth fringe and the central fringe was (3.2 mm). Calculate the separation between the slits.</p>",
+      "label": "📝 Example (1)",
+      "solution": {
+        "given": [
+          "\\( \\lambda = 590\\ \\text{nm} = 590\\times10^{-9}\\ \\text{m} \\) — wavelength of the sodium light (after conversion)",
+          "\\( D = 0.96\\ \\text{m} \\) — distance between the slits and the screen",
+          "\\( X = 3.2\\ \\text{mm} = 3.2\\times10^{-3}\\ \\text{m} \\) — distance between the fourth fringe and the central fringe (after conversion)",
+          "\\( n = 4 \\) — the fringe order"
+        ],
+        "required": "Calculate the separation between the slits \\(a\\).",
+        "steps": [
+          {
+            "note": "We rearrange the relation \\(\\lambda=aX/nD\\) to find \\(a\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\lambda = \\dfrac{aX}{nD} \\;\\Rightarrow\\; a = \\dfrac{\\lambda nD}{X} \\)"
+              }
+            ]
+          },
+          {
+            "note": "We substitute the given values",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( a = \\dfrac{590\\times10^{-9}\\times 4\\times 0.96}{3.2\\times10^{-3}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( a = 0.0071\\ \\text{m} = 0.71\\ \\text{mm} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ a = 0.71 mm",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 7,
+      "sectionId": "example1",
+      "sectionNavLabel": "📝 Example 1"
+    },
+    {
+      "type": "list",
+      "heading": "📋 Young's Experiment Is Used For",
+      "items": [
+        "Studying the phenomenon of constructive interference in light.",
+        "Determining the wavelength of monochromatic light.",
+        "Determining the distance between two successive fringes of the same type.",
+        "Investigating the nature of light and proving its wave nature.",
+        "Proving the existence of the wave property in all particles, such as electrons and others."
+      ],
+      "ordered": true,
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The pattern of constructive-destructive fringes depends on the optical path difference between the two reflected waves. If the optical path difference equals a whole number of wavelengths \\((\\lambda)\\), it represents constructive interference; but if the optical path difference \\((S_1,S_2)\\) equals an odd number of half-wavelengths \\(\\left(\\tfrac12\\lambda\\right)\\), the interference is destructive, as mentioned earlier.",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\delta = a\\sin\\theta $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">The optical path difference \\(\\delta\\) between the two rays emerging from the slits at an angle θ from the central axis (Figure 2-5).</p>",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "Did you know?",
+      "html": "It is impossible to obtain interference fringes in Young's experiment when the separation between the slits is less than the wavelength of the incident light.",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check your understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "The regular bright and dark lines produced by Young's experiment are called:",
+        "options": [
+          "Young's spectra",
+          "Young's fringes",
+          "Young's poles",
+          "Young's pyramids"
+        ],
+        "explain": "These regular bright and dark lines are called Young's fringes."
+      },
+      {
+        "correct": 2,
+        "question": "In the relation \\(\\lambda=aX/nD\\), the symbol (D) represents:",
+        "options": [
+          "the separation between the slits",
+          "the fringe order",
+          "the distance between the slits and the screen",
+          "the wavelength"
+        ],
+        "explain": "(D) represents the distance between the slits and the screen, measured in meters."
+      },
+      {
+        "correct": 0,
+        "question": "If the separation between the slits (a) increases while the other variables stay constant, the fringe spacing \\(\\Delta X\\):",
+        "options": [
+          "decreases",
+          "increases",
+          "stays constant",
+          "becomes zero"
+        ],
+        "explain": "Since \\(\\Delta X=\\lambda D/a\\), increasing (a) decreases \\(\\Delta X\\) (the fringes move closer together)."
+      },
+      {
+        "correct": 3,
+        "question": "Among the uses of Young's experiment:",
+        "options": [
+          "measuring the mass of the electron only",
+          "measuring the speed of light in vacuum",
+          "measuring the strength of a magnetic field",
+          "determining the wavelength of monochromatic light and proving the wave nature of light"
+        ],
+        "explain": "Young's experiment is used to study interference, determine wavelength, determine the distance between fringes, and investigate the wave nature of light."
+      },
+      {
+        "correct": 1,
+        "question": "Interference fringes cannot be obtained in Young's experiment when:",
+        "options": [
+          "the separation between the slits is much greater than the wavelength",
+          "the separation between the slits is less than the wavelength of the incident light",
+          "the screen is very close to the slits",
+          "the light is monochromatic"
+        ],
+        "explain": "It is impossible to obtain interference fringes when the separation between the slits is less than the wavelength of the incident light."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Young's experiment produces two coherent sources by splitting the wavefront of a single light wave through two closely spaced slits.",
+      "The basic relation: \\(\\lambda=aX/nD\\), and the fringe spacing \\(\\Delta X=\\lambda D/a\\).",
+      "Optical path difference \\(\\delta=a\\sin\\theta\\): constructive interference at \\(n\\lambda\\), destructive interference at \\(\\left(n+\\tfrac12\\right)\\lambda\\).",
+      "No fringes if the separation between the slits is less than the wavelength."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Young's experiment mind map",
+    "viewBox": "0 0 480 220",
+    "center": {
+      "cx": 240.0,
+      "cy": 110.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Young's",
+        "Experiment"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "λ=aX/nD"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "ΔX=λD/a",
+          "Fringe Spacing"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "δ=a sinθ"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Experiment",
+          "Uses"
+        ]
+      }
+    ]
+  }
+}

@@ -137,7 +137,8 @@
           "class": "neu-btn",
           "data": {
             "data-src": "ordinary"
-          }
+          },
+          "style": null
         },
         {
           "id": "btnLaser",
@@ -145,7 +146,8 @@
           "class": "neu-btn primary",
           "data": {
             "data-src": "laser"
-          }
+          },
+          "style": null
         }
       ],
       "selectId": null,
