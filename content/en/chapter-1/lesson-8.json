@@ -13,6 +13,7 @@
   "title": "Chapter 1 Questions and Problems",
   "lead": "1-9 Chapter questions and problems: multiple choice · reasoning · theory question · calculation problems — all solved in detail"
  },
+ "objectivesHeading": "🎯 Lesson Objectives",
  "objectives": [
   "Reviews the chapter's key concepts and laws by solving multiple-choice questions.",
   "Explains physical phenomena related to circular and rotational motion using the laws studied.",
@@ -712,6 +713,7 @@
   ]
  },
  "mindmap": {
+  "heading": "🗺 Chapter 1 Mind Map",
   "ariaLabel": "Comprehensive Chapter 1 mind map",
   "viewBox": "0 0 520 260",
   "center": {

@@ -1,486 +1,488 @@
 {
-  "lessonNumber": 4,
-  "chapterNumber": 1,
-  "meta": {
-    "pageTitle": "Lesson 4: Angular Displacement and Angular Velocity — Chapter 1",
-    "description": "5-1 Rotational motion: the analogous physical quantities, 1-5-1 angular displacement, 2-5-1 angular velocity and its relation to linear speed, with a solved example about a spinning fan.",
-    "breadcrumbChapter": "Chapter 1",
-    "breadcrumbLesson": "Angular Displacement and Angular Velocity",
-    "footer": "Chapter 1: Circular and Rotational Motion — Lesson 4: Angular Displacement and Angular Velocity"
+ "lessonNumber": 4,
+ "chapterNumber": 1,
+ "meta": {
+  "pageTitle": "Lesson 4: Angular Displacement and Angular Velocity — Chapter 1",
+  "description": "5-1 Rotational motion: the analogous physical quantities, 1-5-1 angular displacement, 2-5-1 angular velocity and its relation to linear speed, with a solved example about a spinning fan.",
+  "breadcrumbChapter": "Chapter 1",
+  "breadcrumbLesson": "Angular Displacement and Angular Velocity",
+  "footer": "Chapter 1: Circular and Rotational Motion — Lesson 4: Angular Displacement and Angular Velocity"
+ },
+ "hero": {
+  "eyebrow": "📖 Lesson 4 of 8 · Chapter 1",
+  "title": "Angular Displacement and Angular Velocity",
+  "lead": "5-1 Rotational motion · 1-5-1 Angular displacement (θ) · 2-5-1 Angular velocity (ω)"
+ },
+ "objectivesHeading": "🎯 Lesson Objectives",
+ "objectives": [
+  "Explains the general concept of rotational motion and compares it with linear motion in terms of analogous quantities.",
+  "Defines angular displacement (θ) and derives the relation between it and linear displacement (S).",
+  "Defines angular velocity (ω) and derives the relation \\(v_T=\\omega r\\), using the right-hand rule to determine its direction.",
+  "Computes angular velocity and tangential speed from practical data."
+ ],
+ "content": [
+  {
+   "type": "explanation",
+   "heading": "💡 5-1 Rotational motion",
+   "html": "Most kinds of motion in everyday life consist of a body translating and rotating about a certain axis at the same time — for example, the Earth's rotation about its own axis once every 24 hours, while it completes one revolution around the Sun every 365 days. Likewise, a car wheel's motion combines both rotational and translational motion.</p><p>Rotational motion is described in terms of angular displacement (θ), angular velocity (ω), and angular acceleration (α). In every case, the physical quantities of linear motion can be substituted with their rotational counterparts in all the laws, as shown in Table (1-1).",
+   "sectionGroup": 0,
+   "sectionId": "content",
+   "sectionNavLabel": "💡 Explanation"
   },
-  "hero": {
-    "eyebrow": "📖 Lesson 4 of 8 · Chapter 1",
-    "title": "Angular Displacement and Angular Velocity",
-    "lead": "5-1 Rotational motion · 1-5-1 Angular displacement (θ) · 2-5-1 Angular velocity (ω)"
+  {
+   "type": "table",
+   "heading": "📊 Table 1-1: physical quantities for linear motion and rotational motion",
+   "headers": [
+    "Physical quantity",
+    "Linear motion",
+    "Rotational motion"
+   ],
+   "rows": [
+    [
+     "Mass",
+     "m",
+     "Substitute moment of inertia I for mass"
+    ],
+    [
+     "Displacement",
+     "S",
+     "θ"
+    ],
+    [
+     "Velocity",
+     "v",
+     "ω"
+    ],
+    [
+     "Acceleration",
+     "a",
+     "α"
+    ],
+    [
+     "Force",
+     "F",
+     "Substitute torque τ for force"
+    ]
+   ],
+   "sectionGroup": 1,
+   "sectionId": null,
+   "sectionNavLabel": null
   },
-  "objectives": [
-    "Explains the general concept of rotational motion and compares it with linear motion in terms of analogous quantities.",
-    "Defines angular displacement (θ) and derives the relation between it and linear displacement (S).",
-    "Defines angular velocity (ω) and derives the relation \\(v_T=\\omega r\\), using the right-hand rule to determine its direction.",
-    "Computes angular velocity and tangential speed from practical data."
-  ],
-  "content": [
+  {
+   "type": "definition",
+   "label": "📌 1-5-1 Angular displacement",
+   "html": "The central angle swept by a rotating body. If a particle moves along a circular path of radius (r) from point (A) to point (B), tracing an arc of length (S) along the circle's circumference, the angle subtended by that arc is called the angular displacement, denoted by the symbol (θ). Its direction is positive if counterclockwise and negative if clockwise, and it is measured in radians (rad).",
+   "sectionGroup": 2,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "<p style=\"margin:0 0 .5rem;font-weight:700\">Angle in radian measure = arc length ÷ radius</p>\n      $$ \\theta_{\\text{rad}} = \\dfrac{S}{r} \\qquad \\text{...(1)} $$",
+   "sectionGroup": 3,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ \\therefore\\ S = r\\theta \\qquad \\text{...(2)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">This relation links the linear displacement (S) to its angular displacement (θ).</p>",
+   "sectionGroup": 4,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "callout",
+   "icon": "📝",
+   "strong": "",
+   "html": "The radian is not measured in meters or its multiples/submultiples, since angular displacement is not necessarily measured only in radians — it can also be expressed in degrees or in number of revolutions. A full revolution equals (2π) in radian measure and corresponds to (360°) in degree measure, that is:",
+   "sectionGroup": 5,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ 1\\ \\text{revolution} = 2\\pi\\ (\\text{rad}) = 360^{\\circ} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">So the number of revolutions = \\( \\dfrac{\\theta}{2\\pi} \\)</p>",
+   "sectionGroup": 6,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "simulation",
+   "svgId": "thetaSvg",
+   "svgAriaLabel": "A particle moving along a circle, sweeping an angle and an arc",
+   "svgViewBox": "0 0 320 240",
+   "svgWidth": "320",
+   "svgHeight": "240",
+   "sectionHeading": "🕹️ Recreating Figure 1-7: angular displacement and arc length",
+   "descriptionHtml": "Drag the angle slider θ to see the body move from A to B, and notice how the swept arc length S changes according to the relation \\(S=r\\theta\\).",
+   "controls": [
     {
-      "type": "explanation",
-      "heading": "💡 5-1 Rotational motion",
-      "html": "Most kinds of motion in everyday life consist of a body translating and rotating about a certain axis at the same time — for example, the Earth's rotation about its own axis once every 24 hours, while it completes one revolution around the Sun every 365 days. Likewise, a car wheel's motion combines both rotational and translational motion.</p><p>Rotational motion is described in terms of angular displacement (θ), angular velocity (ω), and angular acceleration (α). In every case, the physical quantities of linear motion can be substituted with their rotational counterparts in all the laws, as shown in Table (1-1).",
-      "sectionGroup": 0,
-      "sectionId": "content",
-      "sectionNavLabel": "💡 Explanation"
-    },
-    {
-      "type": "table",
-      "heading": "📊 Table 1-1: physical quantities for linear motion and rotational motion",
-      "headers": [
-        "Physical quantity",
-        "Linear motion",
-        "Rotational motion"
-      ],
-      "rows": [
-        [
-          "Mass",
-          "m",
-          "Substitute moment of inertia I for mass"
-        ],
-        [
-          "Displacement",
-          "S",
-          "θ"
-        ],
-        [
-          "Velocity",
-          "v",
-          "ω"
-        ],
-        [
-          "Acceleration",
-          "a",
-          "α"
-        ],
-        [
-          "Force",
-          "F",
-          "Substitute torque τ for force"
-        ]
-      ],
-      "sectionGroup": 1,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "definition",
-      "label": "📌 1-5-1 Angular displacement",
-      "html": "The central angle swept by a rotating body. If a particle moves along a circular path of radius (r) from point (A) to point (B), tracing an arc of length (S) along the circle's circumference, the angle subtended by that arc is called the angular displacement, denoted by the symbol (θ). Its direction is positive if counterclockwise and negative if clockwise, and it is measured in radians (rad).",
-      "sectionGroup": 2,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "<p style=\"margin:0 0 .5rem;font-weight:700\">Angle in radian measure = arc length ÷ radius</p>\n      $$ \\theta_{\\text{rad}} = \\dfrac{S}{r} \\qquad \\text{...(1)} $$",
-      "sectionGroup": 3,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ \\therefore\\ S = r\\theta \\qquad \\text{...(2)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">This relation links the linear displacement (S) to its angular displacement (θ).</p>",
-      "sectionGroup": 4,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "callout",
-      "icon": "📝",
-      "strong": "",
-      "html": "The radian is not measured in meters or its multiples/submultiples, since angular displacement is not necessarily measured only in radians — it can also be expressed in degrees or in number of revolutions. A full revolution equals (2π) in radian measure and corresponds to (360°) in degree measure, that is:",
-      "sectionGroup": 5,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ 1\\ \\text{revolution} = 2\\pi\\ (\\text{rad}) = 360^{\\circ} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">So the number of revolutions = \\( \\dfrac{\\theta}{2\\pi} \\)</p>",
-      "sectionGroup": 6,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "simulation",
-      "svgId": "thetaSvg",
-      "svgAriaLabel": "A particle moving along a circle, sweeping an angle and an arc",
-      "svgViewBox": "0 0 320 240",
-      "svgWidth": "320",
-      "svgHeight": "240",
-      "sectionHeading": "🕹️ Recreating Figure 1-7: angular displacement and arc length",
-      "descriptionHtml": "Drag the angle slider θ to see the body move from A to B, and notice how the swept arc length S changes according to the relation \\(S=r\\theta\\).",
-      "controls": [
-        {
-          "labelHtml": "θ = <span id=\"thetaDegVal\">60</span>° (<span id=\"thetaRadVal\">1.05</span> rad)",
-          "inputId": "thetaSlider",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "0",
-          "inputMax": "300",
-          "inputStep": "1",
-          "inputValue": "60"
-        }
-      ],
-      "buttons": null,
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [
-        {
-          "html": "Radius r = 2 m ← arc length \\( S=r\\theta= \\) <b id=\"arcLenVal\">2.09</b> m",
-          "id": null
-        }
-      ],
-      "trailingHtml": null,
-      "sectionGroup": 7,
-      "sectionId": "theta-widget",
-      "sectionNavLabel": "🕹️ Interactive Figure 7-1"
-    },
-    {
-      "type": "definition",
-      "label": "📌 2-5-1 Angular velocity",
-      "html": "We also notice that (S) changes as (θ) changes while the circle's radius stays constant, so:",
-      "sectionGroup": 8,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ \\Delta S = r\\Delta\\theta \\qquad \\text{...(3)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">Dividing both sides of equation (3) by (Δt) gives:</p>\n      $$ \\dfrac{\\Delta S}{\\Delta t} = r\\dfrac{\\Delta\\theta}{\\Delta t} \\qquad \\text{...(4)} $$",
-      "sectionGroup": 9,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "<p style=\"margin:0 0 .4rem\">\\( \\dfrac{\\Delta S}{\\Delta t} \\) represents the tangential linear speed along the circle's circumference, denoted by the symbol \\(v_T\\), that is:</p>\n      $$ v_T = \\dfrac{\\Delta S}{\\Delta t} \\qquad \\text{...(5)} $$",
-      "sectionGroup": 10,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "<p style=\"margin:0 0 .4rem\">\\( \\dfrac{\\Delta\\theta}{\\Delta t} \\) represents the rate of change of the angular position with time, called angular velocity, denoted by the symbol (ω), and measured in units of (rad/s), that is:</p>\n      $$ \\omega = \\dfrac{\\Delta\\theta}{\\Delta t} \\qquad \\text{...(6)} $$",
-      "sectionGroup": 11,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "callout",
-      "icon": "📝",
-      "strong": "",
-      "html": "Angular velocity is a vector physical quantity, with its direction perpendicular to the plane containing (r) and (vT), determined using the right-hand rule.",
-      "sectionGroup": 12,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "simulation",
-      "svgId": "rhrSvg",
-      "svgAriaLabel": "The right-hand rule for determining the direction of angular velocity",
-      "svgViewBox": "0 0 320 300",
-      "svgWidth": "320",
-      "svgHeight": "300",
-      "sectionHeading": "🕹️ Recreating Figure 1-8: the right-hand rule for the direction of ω",
-      "descriptionHtml": "Click the button to reverse the direction of rotation, and notice how the angular-velocity vector (ω) flips according to the right-hand rule: curl the fingers of the right hand in the direction of rotation, and the thumb points in the direction of ω.",
-      "controls": [],
-      "buttons": [
-        {
-          "id": "rhrToggle",
-          "html": "↺ Reverse rotation direction"
-        }
-      ],
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [],
-      "trailingHtml": null,
-      "sectionGroup": 13,
-      "sectionId": "rhr-widget",
-      "sectionNavLabel": "🕹️ Interactive Figure 8-1",
-      "labels": {
-        "rhrCW": "Clockwise rotation → ω points inward ⊗",
-        "rhrCCW": "Counterclockwise rotation → ω points outward ⊙"
-      }
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "<p style=\"margin:0 0 .4rem\">Substituting relations (5) and (6) into (4) gives:</p>\n      $$ v_T = \\omega r \\qquad \\text{...(7)} $$",
-      "sectionGroup": 14,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "<p style=\"margin:0 0 .4rem\">When a body completes one full revolution, its angular displacement equals (2π), so after substituting into equation (7) the angular velocity becomes:</p>\n      $$ \\omega = \\dfrac{2\\pi}{t} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where t is the time for one full revolution, and the reciprocal of this time is called the frequency, denoted by the symbol (f) and measured in units of (revolutions/second) or hertz (Hz). The angular velocity in terms of frequency then becomes:</p>\n      $$ \\omega = 2\\pi f $$\n      <p style=\"margin:.4rem 0 0;font-size:.95rem\">This is here called the angular frequency.</p>",
-      "sectionGroup": 15,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "callout",
-      "icon": "💡",
-      "strong": "Did you know?",
-      "html": "A CD player contains a motor that spins the disc at a variable speed ranging between 200 and 500 revolutions per minute, so that the laser beam can read the information recorded on the disc.",
-      "sectionGroup": 16,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<p>A fan spins at a rate of (900 rpm) (that is, 900 revolutions/minute).</p><p>(a) Find the angular velocity of any point on one of the fan blades.</p><p>(b) Find the tangential speed of the tip of a blade if the distance from the center to the tip is (20 cm).</p>",
-      "solution": {
-        "given": [
-          "\\( N = 900\\ \\text{rpm} = 900 \\) revolutions/minute — the fan's rotation rate",
-          "\\( t = 60\\ \\text{s} \\) — the time corresponding to that number of revolutions (converting the units to seconds)",
-          "\\( r = 20\\ \\text{cm} = 0.20\\ \\text{m} \\) — the distance from the center to the tip of the blade (after conversion)"
-        ],
-        "required": "(a) Find the angular velocity ω of any point on one of the fan blades. (b) Find the tangential speed v of the tip of a blade.",
-        "steps": [
-          {
-            "note": "(a) Angular velocity: N=900 revolutions over t=60 s",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( \\omega = \\dfrac{N\\times 2\\pi}{t} = \\dfrac{900\\times 2\\pi}{60} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( \\omega = 30\\pi\\ \\text{rad/s} \\approx 94.2\\ \\text{rad/s} \\)"
-              }
-            ]
-          },
-          {
-            "note": "(b) Tangential speed at r=20 cm=0.20 m",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( v = \\omega r = 30\\pi \\times 0.20 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( v = 30\\times 3.14\\times 0.20 = 18.84\\ \\text{m/s} \\)"
-              }
-            ]
-          }
-        ],
-        "final": "✓ ω = 30π rad/s ≈ 94.2 rad/s   ·   v = 18.84 m/s"
-      },
-      "sectionGroup": 17,
-      "sectionId": "example3",
-      "sectionNavLabel": "📝 Example 3"
-    },
-    {
-      "type": "paragraph",
-      "html": "Suppose a body moves along a circular path of radius (r); its angular position at any instant is determined by the angular displacement (θ). If the body's position at time \\((t_1)\\) is \\((\\theta_1)\\), and it is then at position \\((\\theta_2)\\) at time \\((t_2)\\), it has swept an angular displacement of magnitude:</p><p style=\"text-align:center\">\\( \\Delta\\theta = \\theta_2 - \\theta_1 \\) over a time interval: \\( \\Delta t = t_2 - t_1 \\)</p><p>The average angular velocity is then defined as:",
-      "sectionGroup": 18,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ \\omega_{av} = \\dfrac{\\Delta\\theta}{\\Delta t} = \\dfrac{\\theta_2-\\theta_1}{t_2-t_1} \\qquad \\text{...(8)} $$",
-      "sectionGroup": 19,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "simulation",
-      "svgId": "omegaAvSvg",
-      "svgAriaLabel": "Two angular positions A and B on a circle and the average angular velocity between them",
-      "svgViewBox": "0 0 320 240",
-      "svgWidth": "320",
-      "svgHeight": "240",
-      "sectionHeading": "🕹️ Recreating Figure 1-9: average angular velocity",
-      "descriptionHtml": "Drag the two sliders to set the body's positions A (at θ₁) and B (at θ₂), and see how the average angular velocity between the two positions is computed over a fixed time interval of 1 second.",
-      "controls": [
-        {
-          "labelHtml": "θ₁ = <span id=\"theta1Val\">20</span>°",
-          "inputId": "theta1Slider",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "0",
-          "inputMax": "340",
-          "inputStep": "1",
-          "inputValue": "20"
-        },
-        {
-          "labelHtml": "θ₂ = <span id=\"theta2Val\">110</span>°",
-          "inputId": "theta2Slider",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "0",
-          "inputMax": "340",
-          "inputStep": "1",
-          "inputValue": "110"
-        }
-      ],
-      "buttons": null,
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [
-        {
-          "html": "\\( \\omega_{av} = \\dfrac{\\theta_2-\\theta_1}{\\Delta t} = \\) <b id=\"omegaAvVal\">1.57</b> rad/s (assuming Δt = 1 s)",
-          "id": null
-        }
-      ],
-      "trailingHtml": null,
-      "sectionGroup": 20,
-      "sectionId": "omega-av-widget",
-      "sectionNavLabel": "🕹️ Interactive Figure 9-1"
+     "labelHtml": "θ = <span id=\"thetaDegVal\">60</span>° (<span id=\"thetaRadVal\">1.05</span> rad)",
+     "inputId": "thetaSlider",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "0",
+     "inputMax": "300",
+     "inputStep": "1",
+     "inputValue": "60"
     }
-  ],
-  "quiz": {
-    "heading": "🧠 Check your understanding",
-    "questions": [
-      {
-        "correct": 2,
-        "question": "In rotational motion, the quantity analogous to mass (m) in linear motion is:",
-        "options": [
-          "Angular displacement θ",
-          "Angular velocity ω",
-          "Moment of inertia I",
-          "Torque τ"
-        ],
-        "explain": "Per Table (1-1), mass (m) in rotational motion is replaced by the moment of inertia (I)."
-      },
-      {
-        "correct": 0,
-        "question": "For a body rotating with radius (r), the relation between the linear displacement (S) and the angular displacement (θ) is:",
-        "options": [
-          "\\( S = r\\theta \\)",
-          "\\( S = \\theta/r \\)",
-          "\\( S = r/\\theta \\)",
-          "\\( S = r+\\theta \\)"
-        ],
-        "explain": "From the definition of the radian: \\(\\theta=S/r\\), so \\(S=r\\theta\\)."
-      },
-      {
-        "correct": 1,
-        "question": "One full revolution (360°) equals, in radian measure:",
-        "options": [
-          "π rad",
-          "2π rad",
-          "π/2 rad",
-          "4π rad"
-        ],
-        "explain": "1 revolution = 2π (rad) = 360°."
-      },
-      {
-        "correct": 3,
-        "question": "For a body rotating with radius r, the relation between the tangential speed \\(v_T\\) and the angular velocity ω is:",
-        "options": [
-          "\\( v_T = \\omega/r \\)",
-          "\\( v_T = \\omega + r \\)",
-          "\\( v_T = \\omega^2 r \\)",
-          "\\( v_T = \\omega r \\)"
-        ],
-        "explain": "Equation (7): \\(v_T=\\omega r\\)."
-      },
-      {
-        "correct": 2,
-        "question": "The direction of the angular-velocity vector (ω) is determined using:",
-        "options": [
-          "The centripetal-force rule",
-          "Newton's third law",
-          "The right-hand rule",
-          "Kepler's second law"
-        ],
-        "explain": "The direction of the right-hand thumb, when the fingers curl in the direction of rotation, gives the direction of ω, which is perpendicular to the plane of (r) and (vT)."
-      }
-    ]
+   ],
+   "buttons": null,
+   "selectId": null,
+   "selectOptions": null,
+   "presets": null,
+   "ruleBoxes": [
+    {
+     "html": "Radius r = 2 m ← arc length \\( S=r\\theta= \\) <b id=\"arcLenVal\">2.09</b> m",
+     "id": null
+    }
+   ],
+   "trailingHtml": null,
+   "sectionGroup": 7,
+   "sectionId": "theta-widget",
+   "sectionNavLabel": "🕹️ Interactive Figure 7-1"
   },
-  "summary": {
-    "heading": "📋 Lesson summary",
-    "items": [
-      "Angular displacement θ=S/r, so S=rθ, measured in radians, degrees, or number of revolutions (1 revolution=2π rad=360°).",
-      "Angular velocity ω=Δθ/Δt, related to tangential speed by \\(v_T=\\omega r\\).",
-      "The direction of ω is determined by the right-hand rule, and it is perpendicular to the plane of r and vT.",
-      "Average angular velocity \\(\\omega_{av}=(\\theta_2-\\theta_1)/(t_2-t_1)\\)."
-    ]
+  {
+   "type": "definition",
+   "label": "📌 2-5-1 Angular velocity",
+   "html": "We also notice that (S) changes as (θ) changes while the circle's radius stays constant, so:",
+   "sectionGroup": 8,
+   "sectionId": null,
+   "sectionNavLabel": null
   },
-  "mindmap": {
-    "ariaLabel": "Mind map for angular displacement and angular velocity",
-    "viewBox": "0 0 480 240",
-    "center": {
-      "cx": 240.0,
-      "cy": 120.0,
-      "r": 50.0,
-      "color": "#7c6fee",
-      "lines": [
-        "Rotational motion"
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ \\Delta S = r\\Delta\\theta \\qquad \\text{...(3)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">Dividing both sides of equation (3) by (Δt) gives:</p>\n      $$ \\dfrac{\\Delta S}{\\Delta t} = r\\dfrac{\\Delta\\theta}{\\Delta t} \\qquad \\text{...(4)} $$",
+   "sectionGroup": 9,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "<p style=\"margin:0 0 .4rem\">\\( \\dfrac{\\Delta S}{\\Delta t} \\) represents the tangential linear speed along the circle's circumference, denoted by the symbol \\(v_T\\), that is:</p>\n      $$ v_T = \\dfrac{\\Delta S}{\\Delta t} \\qquad \\text{...(5)} $$",
+   "sectionGroup": 10,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "<p style=\"margin:0 0 .4rem\">\\( \\dfrac{\\Delta\\theta}{\\Delta t} \\) represents the rate of change of the angular position with time, called angular velocity, denoted by the symbol (ω), and measured in units of (rad/s), that is:</p>\n      $$ \\omega = \\dfrac{\\Delta\\theta}{\\Delta t} \\qquad \\text{...(6)} $$",
+   "sectionGroup": 11,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "callout",
+   "icon": "📝",
+   "strong": "",
+   "html": "Angular velocity is a vector physical quantity, with its direction perpendicular to the plane containing (r) and (vT), determined using the right-hand rule.",
+   "sectionGroup": 12,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "simulation",
+   "svgId": "rhrSvg",
+   "svgAriaLabel": "The right-hand rule for determining the direction of angular velocity",
+   "svgViewBox": "0 0 320 300",
+   "svgWidth": "320",
+   "svgHeight": "300",
+   "sectionHeading": "🕹️ Recreating Figure 1-8: the right-hand rule for the direction of ω",
+   "descriptionHtml": "Click the button to reverse the direction of rotation, and notice how the angular-velocity vector (ω) flips according to the right-hand rule: curl the fingers of the right hand in the direction of rotation, and the thumb points in the direction of ω.",
+   "controls": [],
+   "buttons": [
+    {
+     "id": "rhrToggle",
+     "html": "↺ Reverse rotation direction"
+    }
+   ],
+   "selectId": null,
+   "selectOptions": null,
+   "presets": null,
+   "ruleBoxes": [],
+   "trailingHtml": null,
+   "sectionGroup": 13,
+   "sectionId": "rhr-widget",
+   "sectionNavLabel": "🕹️ Interactive Figure 8-1",
+   "labels": {
+    "rhrCW": "Clockwise rotation → ω points inward ⊗",
+    "rhrCCW": "Counterclockwise rotation → ω points outward ⊙"
+   }
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "<p style=\"margin:0 0 .4rem\">Substituting relations (5) and (6) into (4) gives:</p>\n      $$ v_T = \\omega r \\qquad \\text{...(7)} $$",
+   "sectionGroup": 14,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "<p style=\"margin:0 0 .4rem\">When a body completes one full revolution, its angular displacement equals (2π), so after substituting into equation (7) the angular velocity becomes:</p>\n      $$ \\omega = \\dfrac{2\\pi}{t} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where t is the time for one full revolution, and the reciprocal of this time is called the frequency, denoted by the symbol (f) and measured in units of (revolutions/second) or hertz (Hz). The angular velocity in terms of frequency then becomes:</p>\n      $$ \\omega = 2\\pi f $$\n      <p style=\"margin:.4rem 0 0;font-size:.95rem\">This is here called the angular frequency.</p>",
+   "sectionGroup": 15,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "callout",
+   "icon": "💡",
+   "strong": "Did you know?",
+   "html": "A CD player contains a motor that spins the disc at a variable speed ranging between 200 and 500 revolutions per minute, so that the laser beam can read the information recorded on the disc.",
+   "sectionGroup": 16,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "example",
+   "number": 1,
+   "problemHtml": "<p>A fan spins at a rate of (900 rpm) (that is, 900 revolutions/minute).</p><p>(a) Find the angular velocity of any point on one of the fan blades.</p><p>(b) Find the tangential speed of the tip of a blade if the distance from the center to the tip is (20 cm).</p>",
+   "solution": {
+    "given": [
+     "\\( N = 900\\ \\text{rpm} = 900 \\) revolutions/minute — the fan's rotation rate",
+     "\\( t = 60\\ \\text{s} \\) — the time corresponding to that number of revolutions (converting the units to seconds)",
+     "\\( r = 20\\ \\text{cm} = 0.20\\ \\text{m} \\) — the distance from the center to the tip of the blade (after conversion)"
+    ],
+    "required": "(a) Find the angular velocity ω of any point on one of the fan blades. (b) Find the tangential speed v of the tip of a blade.",
+    "steps": [
+     {
+      "note": "(a) Angular velocity: N=900 revolutions over t=60 s",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( \\omega = \\dfrac{N\\times 2\\pi}{t} = \\dfrac{900\\times 2\\pi}{60} \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( \\omega = 30\\pi\\ \\text{rad/s} \\approx 94.2\\ \\text{rad/s} \\)"
+       }
       ]
+     },
+     {
+      "note": "(b) Tangential speed at r=20 cm=0.20 m",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( v = \\omega r = 30\\pi \\times 0.20 \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( v = 30\\times 3.14\\times 0.20 = 18.84\\ \\text{m/s} \\)"
+       }
+      ]
+     }
+    ],
+    "final": "✓ ω = 30π rad/s ≈ 94.2 rad/s   ·   v = 18.84 m/s"
+   },
+   "sectionGroup": 17,
+   "sectionId": "example3",
+   "sectionNavLabel": "📝 Example 3"
+  },
+  {
+   "type": "paragraph",
+   "html": "Suppose a body moves along a circular path of radius (r); its angular position at any instant is determined by the angular displacement (θ). If the body's position at time \\((t_1)\\) is \\((\\theta_1)\\), and it is then at position \\((\\theta_2)\\) at time \\((t_2)\\), it has swept an angular displacement of magnitude:</p><p style=\"text-align:center\">\\( \\Delta\\theta = \\theta_2 - \\theta_1 \\) over a time interval: \\( \\Delta t = t_2 - t_1 \\)</p><p>The average angular velocity is then defined as:",
+   "sectionGroup": 18,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ \\omega_{av} = \\dfrac{\\Delta\\theta}{\\Delta t} = \\dfrac{\\theta_2-\\theta_1}{t_2-t_1} \\qquad \\text{...(8)} $$",
+   "sectionGroup": 19,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "simulation",
+   "svgId": "omegaAvSvg",
+   "svgAriaLabel": "Two angular positions A and B on a circle and the average angular velocity between them",
+   "svgViewBox": "0 0 320 240",
+   "svgWidth": "320",
+   "svgHeight": "240",
+   "sectionHeading": "🕹️ Recreating Figure 1-9: average angular velocity",
+   "descriptionHtml": "Drag the two sliders to set the body's positions A (at θ₁) and B (at θ₂), and see how the average angular velocity between the two positions is computed over a fixed time interval of 1 second.",
+   "controls": [
+    {
+     "labelHtml": "θ₁ = <span id=\"theta1Val\">20</span>°",
+     "inputId": "theta1Slider",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "0",
+     "inputMax": "340",
+     "inputStep": "1",
+     "inputValue": "20"
     },
-    "satellites": [
-      {
-        "cx": 100.0,
-        "cy": 45.0,
-        "r": 44.0,
-        "color": "#3fa9f5",
-        "lines": [
-          "θ",
-          "S=rθ"
-        ]
-      },
-      {
-        "cx": 100.0,
-        "cy": 195.0,
-        "r": 44.0,
-        "color": "#2fd18f",
-        "lines": [
-          "ω",
-          "vT=ωr"
-        ]
-      },
-      {
-        "cx": 380.0,
-        "cy": 45.0,
-        "r": 44.0,
-        "color": "#ffab5e",
-        "lines": [
-          "Right-hand rule"
-        ]
-      },
-      {
-        "cx": 380.0,
-        "cy": 195.0,
-        "r": 44.0,
-        "color": "#ff6b9d",
-        "lines": [
-          "ω=2πf",
-          "Frequency"
-        ]
-      }
-    ]
+    {
+     "labelHtml": "θ₂ = <span id=\"theta2Val\">110</span>°",
+     "inputId": "theta2Slider",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "0",
+     "inputMax": "340",
+     "inputStep": "1",
+     "inputValue": "110"
+    }
+   ],
+   "buttons": null,
+   "selectId": null,
+   "selectOptions": null,
+   "presets": null,
+   "ruleBoxes": [
+    {
+     "html": "\\( \\omega_{av} = \\dfrac{\\theta_2-\\theta_1}{\\Delta t} = \\) <b id=\"omegaAvVal\">1.57</b> rad/s (assuming Δt = 1 s)",
+     "id": null
+    }
+   ],
+   "trailingHtml": null,
+   "sectionGroup": 20,
+   "sectionId": "omega-av-widget",
+   "sectionNavLabel": "🕹️ Interactive Figure 9-1"
   }
+ ],
+ "quiz": {
+  "heading": "🧠 Check your understanding",
+  "questions": [
+   {
+    "correct": 2,
+    "question": "In rotational motion, the quantity analogous to mass (m) in linear motion is:",
+    "options": [
+     "Angular displacement θ",
+     "Angular velocity ω",
+     "Moment of inertia I",
+     "Torque τ"
+    ],
+    "explain": "Per Table (1-1), mass (m) in rotational motion is replaced by the moment of inertia (I)."
+   },
+   {
+    "correct": 0,
+    "question": "For a body rotating with radius (r), the relation between the linear displacement (S) and the angular displacement (θ) is:",
+    "options": [
+     "\\( S = r\\theta \\)",
+     "\\( S = \\theta/r \\)",
+     "\\( S = r/\\theta \\)",
+     "\\( S = r+\\theta \\)"
+    ],
+    "explain": "From the definition of the radian: \\(\\theta=S/r\\), so \\(S=r\\theta\\)."
+   },
+   {
+    "correct": 1,
+    "question": "One full revolution (360°) equals, in radian measure:",
+    "options": [
+     "π rad",
+     "2π rad",
+     "π/2 rad",
+     "4π rad"
+    ],
+    "explain": "1 revolution = 2π (rad) = 360°."
+   },
+   {
+    "correct": 3,
+    "question": "For a body rotating with radius r, the relation between the tangential speed \\(v_T\\) and the angular velocity ω is:",
+    "options": [
+     "\\( v_T = \\omega/r \\)",
+     "\\( v_T = \\omega + r \\)",
+     "\\( v_T = \\omega^2 r \\)",
+     "\\( v_T = \\omega r \\)"
+    ],
+    "explain": "Equation (7): \\(v_T=\\omega r\\)."
+   },
+   {
+    "correct": 2,
+    "question": "The direction of the angular-velocity vector (ω) is determined using:",
+    "options": [
+     "The centripetal-force rule",
+     "Newton's third law",
+     "The right-hand rule",
+     "Kepler's second law"
+    ],
+    "explain": "The direction of the right-hand thumb, when the fingers curl in the direction of rotation, gives the direction of ω, which is perpendicular to the plane of (r) and (vT)."
+   }
+  ]
+ },
+ "summary": {
+  "heading": "📋 Lesson summary",
+  "items": [
+   "Angular displacement θ=S/r, so S=rθ, measured in radians, degrees, or number of revolutions (1 revolution=2π rad=360°).",
+   "Angular velocity ω=Δθ/Δt, related to tangential speed by \\(v_T=\\omega r\\).",
+   "The direction of ω is determined by the right-hand rule, and it is perpendicular to the plane of r and vT.",
+   "Average angular velocity \\(\\omega_{av}=(\\theta_2-\\theta_1)/(t_2-t_1)\\)."
+  ]
+ },
+ "mindmap": {
+  "heading": "🗺 Lesson Mind Map",
+  "ariaLabel": "Mind map for angular displacement and angular velocity",
+  "viewBox": "0 0 480 240",
+  "center": {
+   "cx": 240.0,
+   "cy": 120.0,
+   "r": 50.0,
+   "color": "#7c6fee",
+   "lines": [
+    "Rotational motion"
+   ]
+  },
+  "satellites": [
+   {
+    "cx": 100.0,
+    "cy": 45.0,
+    "r": 44.0,
+    "color": "#3fa9f5",
+    "lines": [
+     "θ",
+     "S=rθ"
+    ]
+   },
+   {
+    "cx": 100.0,
+    "cy": 195.0,
+    "r": 44.0,
+    "color": "#2fd18f",
+    "lines": [
+     "ω",
+     "vT=ωr"
+    ]
+   },
+   {
+    "cx": 380.0,
+    "cy": 45.0,
+    "r": 44.0,
+    "color": "#ffab5e",
+    "lines": [
+     "Right-hand rule"
+    ]
+   },
+   {
+    "cx": 380.0,
+    "cy": 195.0,
+    "r": 44.0,
+    "color": "#ff6b9d",
+    "lines": [
+     "ω=2πf",
+     "Frequency"
+    ]
+   }
+  ]
+ }
 }

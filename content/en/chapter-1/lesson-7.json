@@ -1,446 +1,448 @@
 {
-  "lessonNumber": 7,
-  "chapterNumber": 1,
-  "meta": {
-    "pageTitle": "Lesson 7: Energy, Work, and Angular Momentum — Chapter 1",
-    "description": "6-1 Energy in rotational motion, 7-1 work and power in rotational motion, 8-1 angular momentum, with two solved examples on moment of inertia and uniform angular momentum.",
-    "breadcrumbChapter": "Chapter 1",
-    "breadcrumbLesson": "Energy, Work, and Angular Momentum",
-    "footer": "Chapter 1: Circular and Rotational Motion — Lesson 7: Energy, Work, and Angular Momentum"
+ "lessonNumber": 7,
+ "chapterNumber": 1,
+ "meta": {
+  "pageTitle": "Lesson 7: Energy, Work, and Angular Momentum — Chapter 1",
+  "description": "6-1 Energy in rotational motion, 7-1 work and power in rotational motion, 8-1 angular momentum, with two solved examples on moment of inertia and uniform angular momentum.",
+  "breadcrumbChapter": "Chapter 1",
+  "breadcrumbLesson": "Energy, Work, and Angular Momentum",
+  "footer": "Chapter 1: Circular and Rotational Motion — Lesson 7: Energy, Work, and Angular Momentum"
+ },
+ "hero": {
+  "eyebrow": "📖 Lesson 7 of 8 · Chapter 1",
+  "title": "Energy, Work, and Angular Momentum",
+  "lead": "6-1 Energy in rotational motion · 7-1 Work and power · 8-1 Angular momentum"
+ },
+ "objectivesHeading": "🎯 Lesson Objectives",
+ "objectives": [
+  "Derives the rotational kinetic energy relation \\(E_r=\\tfrac12 I\\omega^2\\) from its linear counterpart.",
+  "Computes work and power in rotational motion in terms of torque, angular displacement, and angular velocity.",
+  "Defines angular momentum \\(L=I\\omega\\) and relates it to linear momentum and angular impulse.",
+  "Solves numerical problems on energy, work, power, and angular momentum for a rotating body."
+ ],
+ "content": [
+  {
+   "type": "definition",
+   "label": "📌 6-1 Energy in rotational motion",
+   "html": "Since the kinetic energy in linear translational motion \\((E_k)\\) is described by the relation:",
+   "sectionGroup": 0,
+   "sectionId": "content",
+   "sectionNavLabel": "💡 Explanation"
   },
-  "hero": {
-    "eyebrow": "📖 Lesson 7 of 8 · Chapter 1",
-    "title": "Energy, Work, and Angular Momentum",
-    "lead": "6-1 Energy in rotational motion · 7-1 Work and power · 8-1 Angular momentum"
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ E_k = \\tfrac{1}{2}mv^2 $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where: m is the body's mass, v is the body's speed.</p>",
+   "sectionGroup": 1,
+   "sectionId": null,
+   "sectionNavLabel": null
   },
-  "objectives": [
-    "Derives the rotational kinetic energy relation \\(E_r=\\tfrac12 I\\omega^2\\) from its linear counterpart.",
-    "Computes work and power in rotational motion in terms of torque, angular displacement, and angular velocity.",
-    "Defines angular momentum \\(L=I\\omega\\) and relates it to linear momentum and angular impulse.",
-    "Solves numerical problems on energy, work, power, and angular momentum for a rotating body."
-  ],
-  "content": [
-    {
-      "type": "definition",
-      "label": "📌 6-1 Energy in rotational motion",
-      "html": "Since the kinetic energy in linear translational motion \\((E_k)\\) is described by the relation:",
-      "sectionGroup": 0,
-      "sectionId": "content",
-      "sectionNavLabel": "💡 Explanation"
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ E_k = \\tfrac{1}{2}mv^2 $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where: m is the body's mass, v is the body's speed.</p>",
-      "sectionGroup": 1,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "paragraph",
-      "html": "Substituting angular velocity for linear speed \\((v=\\omega r)\\), and moment of inertia for mass \\((I=mr^2)\\), we obtain:",
-      "sectionGroup": 2,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ E_r = \\tfrac{1}{2}I\\omega^2 \\qquad \\text{...(19)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">(I) represents the moment of inertia of the rigid body about a given axis of rotation.</p>",
-      "sectionGroup": 3,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "definition",
-      "label": "📌 7-1 Work and power in rotational motion",
-      "html": "Suppose a force of magnitude (F) acts on a body moving along a circular path of radius (r), producing a linear displacement (Δs) and an angular displacement (Δθ). The work done in linear motion is the product of the force and the linear displacement:",
-      "sectionGroup": 4,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ \\Delta W = F\\Delta s $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">Substituting angular displacement (Δθ) for linear displacement (Δs), and torque (τ) for force (F), gives the work done in rotational motion:</p>\n      $$ \\Delta W = \\tau\\Delta\\theta = \\tau(\\theta_2-\\theta_1) \\qquad \\text{...(20)} $$",
-      "sectionGroup": 5,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "paragraph",
-      "html": "Power (P) is defined as the work done per unit time: \\(P=\\dfrac{\\Delta W}{\\Delta t}\\), and in rotational motion: \\(P=\\dfrac{\\tau\\Delta\\theta}{\\Delta t}\\) ⇒",
-      "sectionGroup": 6,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ P = \\tau\\omega \\qquad \\text{...(21)} $$",
-      "sectionGroup": 7,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "definition",
-      "label": "📌 8-1 Angular momentum",
-      "html": "The linear momentum of a body of mass (m) moving along a linear path is defined as the product of its mass and linear velocity. Substituting moment of inertia for mass and angular velocity for linear velocity gives the mathematical relation for angular momentum:",
-      "sectionGroup": 8,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "paragraph",
-      "html": "Linear momentum = mv</p><p>Substituting gives:",
-      "sectionGroup": 9,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ L = I\\omega \\qquad \\text{...(22)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">This represents the angular momentum, with units of \\(\\left(\\dfrac{\\text{kg}\\cdot\\text{m}^2}{\\text{s}}\\right)\\).</p>",
-      "sectionGroup": 10,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ \\Delta L = I\\omega_f - I\\omega_i = I(\\omega_f-\\omega_i) $$",
-      "sectionGroup": 11,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "paragraph",
-      "html": "where \\(\\omega_i, \\omega_f\\) represent the initial and final angular velocities. The change in angular momentum is called the angular impulse, which equals the product of the torque and the time it acts:</p><p>Angular impulse = τt",
-      "sectionGroup": 12,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "callout",
-      "icon": "💡",
-      "strong": "Did you know?",
-      "html": "A bicycle wheel is made with most of its mass in the rim, to give it a large moment of inertia that helps keep it stable while in motion.",
-      "sectionGroup": 13,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "example",
-      "number": 1,
-      "problemHtml": "<p>Find the moment of inertia of a solid sphere rotating about one of its diameters, given a mass of (10 kg) and a radius of (50 cm).</p>",
-      "solution": {
-        "given": [
-          "\\( m = 10\\ \\text{kg} \\) — the sphere's mass",
-          "\\( r = 50\\ \\text{cm} = 0.5\\ \\text{m} \\) — the sphere's radius (after conversion to SI units)"
-        ],
-        "required": "Find the moment of inertia I of the solid sphere about one of its diameters.",
-        "steps": [
-          {
-            "note": "Moment of inertia of a solid sphere about a diameter (Table 2-1): \\(I=\\tfrac25 mr^2\\), where m=10 kg, r=0.5 m",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( I = \\tfrac{2}{5}\\times 10\\times(0.5)^2 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( I = 1\\ \\text{kg}\\cdot\\text{m}^2 \\)"
-              }
-            ]
-          }
-        ],
-        "final": "✓ I = 1 kg·m²"
-      },
-      "sectionGroup": 14,
-      "sectionId": "example6",
-      "sectionNavLabel": "📝 Example 6"
-    },
-    {
-      "type": "callout",
-      "icon": "🤔",
-      "strong": "Think:",
-      "html": "What would you expect if the axis of rotation were at a distance of 0.25 m (that is, at a smaller radius)? Try it yourself in the interactive tool below.",
-      "sectionGroup": 15,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "simulation",
-      "svgId": null,
-      "svgAriaLabel": "",
-      "svgViewBox": null,
-      "svgWidth": null,
-      "svgHeight": null,
-      "sectionHeading": "🕹️ Interactive exploration: how does moment of inertia change with radius?",
-      "descriptionHtml": "Drag the slider to change the sphere's radius of rotation (keeping the same 10 kg mass as in the example), and compare the value at r=0.5 m (as in the example) with r=0.25 m (per the \"think\" question).",
-      "controls": [
-        {
-          "labelHtml": "r = <span id=\"sphereRVal\">0.50</span> m",
-          "inputId": "sphereR",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "0.1",
-          "inputMax": "0.8",
-          "inputStep": "0.01",
-          "inputValue": "0.5"
-        }
-      ],
-      "buttons": null,
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [
-        {
-          "html": "\\( I=\\tfrac{2}{5}(10)r^2 = \\) <b id=\"sphereIVal\">1.000</b> kg·m²",
-          "id": null
-        }
-      ],
-      "trailingHtml": null,
-      "sectionGroup": 16,
-      "sectionId": "sphere-widget",
-      "sectionNavLabel": "🕹️ Explore: radius and moment of inertia"
-    },
-    {
-      "type": "example",
-      "number": 2,
-      "problemHtml": "<p>A disc with a moment of inertia of (2 kg·m²) rotates about its axis with a uniform angular momentum of (50 kg·m²/s). Find: 1- its angular velocity. 2- its rotational kinetic energy. 3- the angular impulse. 4- the angular work.</p>",
-      "solution": {
-        "given": [
-          "\\( I = 2\\ \\text{kg}\\cdot\\text{m}^2 \\) — the disc's moment of inertia",
-          "\\( L = 50\\ \\text{kg}\\cdot\\text{m}^2/\\text{s} \\) — the angular momentum, uniform (constant) over time"
-        ],
-        "required": "Find: (1) the angular velocity ω. (2) the rotational kinetic energy Er. (3) the angular impulse. (4) the angular work.",
-        "steps": [
-          {
-            "note": "1- Angular velocity: from \\(L=I\\omega\\)",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( \\omega = \\dfrac{L}{I} = \\dfrac{50}{2} \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( \\omega = 25\\ \\text{rad/s} \\)"
-              }
-            ]
-          },
-          {
-            "note": "2- Rotational kinetic energy: from \\(E_r=\\tfrac12 I\\omega^2\\)",
-            "calc": [
-              {
-                "kind": "line",
-                "latex": "\\( E_r = \\tfrac{1}{2}\\times 2\\times(25)^2 \\)"
-              },
-              {
-                "kind": "arrow",
-                "latex": "↓"
-              },
-              {
-                "kind": "box",
-                "latex": "\\( E_r = 625\\ \\text{J} \\)"
-              }
-            ]
-          },
-          {
-            "note": "3- Angular impulse: since the angular momentum is uniform (constant) over time, there is no change in angular momentum",
-            "calc": [
-              {
-                "kind": "box",
-                "latex": "\\( \\Delta L = 0 \\)"
-              }
-            ]
-          },
-          {
-            "note": "4- Angular work: since there is no change in rotational kinetic energy (the angular velocity is constant)",
-            "calc": [
-              {
-                "kind": "box",
-                "latex": "\\( \\Delta W = 0 \\)"
-              }
-            ]
-          }
-        ],
-        "final": "✓ ω = 25 rad/s   ·   Er = 625 J   ·   angular impulse = zero   ·   angular work = zero"
-      },
-      "sectionGroup": 17,
-      "sectionId": "example7",
-      "sectionNavLabel": "📝 Example 7"
-    },
-    {
-      "type": "simulation",
-      "svgId": "skaterSvg",
-      "svgAriaLabel": "Simulation of a spinning skater pulling in their arms, increasing their angular velocity",
-      "svgViewBox": "0 0 260 260",
-      "svgWidth": "260",
-      "svgHeight": "260",
-      "sectionHeading": "🕹️ Interactive simulation: conservation of angular momentum (like a spinning skater)",
-      "descriptionHtml": "When a spinning skater pulls their arms in toward their body, their moment of inertia (I) decreases. Since angular momentum \\(L=I\\omega\\) is conserved (constant) in the absence of an external torque, their angular velocity (ω) automatically increases. Drag the arm-position slider and watch it happen directly.",
-      "controls": [
-        {
-          "labelHtml": "Arm extension",
-          "inputId": "armsSlider",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "0",
-          "inputMax": "1",
-          "inputStep": "0.01",
-          "inputValue": "1"
-        }
-      ],
-      "buttons": null,
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [
-        {
-          "html": null,
-          "id": "skaterReadout"
-        }
-      ],
-      "trailingHtml": null,
-      "sectionGroup": 18,
-      "sectionId": "conservation-widget",
-      "sectionNavLabel": "🕹️ Conservation of angular momentum"
-    }
-  ],
-  "quiz": {
-    "heading": "🧠 Check your understanding",
-    "questions": [
-      {
-        "correct": 1,
-        "question": "The rotational kinetic energy of a rigid body is given by:",
-        "options": [
-          "\\( E_r=mv^2 \\)",
-          "\\( E_r=\\tfrac12 I\\omega^2 \\)",
-          "\\( E_r=I\\omega \\)",
-          "\\( E_r=\\tfrac12 mv^2 \\)"
-        ],
-        "explain": "Equation (19): \\(E_r=\\tfrac12 I\\omega^2\\), the counterpart of \\(E_k=\\tfrac12 mv^2\\) after substitution."
-      },
-      {
-        "correct": 1,
-        "question": "The work done in rotational motion is given by:",
-        "options": [
-          "\\( \\Delta W=Fs \\)",
-          "\\( \\Delta W=\\tau\\Delta\\theta \\)",
-          "\\( \\Delta W=I\\alpha \\)",
-          "\\( \\Delta W=L\\omega \\)"
-        ],
-        "explain": "Equation (20): \\(\\Delta W=\\tau\\Delta\\theta\\)."
-      },
-      {
-        "correct": 1,
-        "question": "Power in rotational motion is given by:",
-        "options": [
-          "\\( P=\\tau/\\omega \\)",
-          "\\( P=\\tau\\omega \\)",
-          "\\( P=\\tau+\\omega \\)",
-          "\\( P=\\omega/\\tau \\)"
-        ],
-        "explain": "Equation (21): \\(P=\\tau\\omega\\)."
-      },
-      {
-        "correct": 1,
-        "question": "The angular momentum of a rotating body is given by:",
-        "options": [
-          "\\( L=I\\alpha \\)",
-          "\\( L=I\\omega \\)",
-          "\\( L=mv \\)",
-          "\\( L=\\tau t \\)"
-        ],
-        "explain": "Equation (22): \\(L=I\\omega\\)."
-      },
-      {
-        "correct": 1,
-        "question": "If the angular momentum of a rotating body is constant (uniform) over time, the angular impulse acting on it during that period:",
-        "options": [
-          "Always equals τt with a large positive value",
-          "Equals zero",
-          "Equals L",
-          "Always equals Iω"
-        ],
-        "explain": "Angular impulse equals the change in angular momentum (ΔL); if the angular momentum is constant, then ΔL=0, so the angular impulse is zero."
-      }
-    ]
+  {
+   "type": "paragraph",
+   "html": "Substituting angular velocity for linear speed \\((v=\\omega r)\\), and moment of inertia for mass \\((I=mr^2)\\), we obtain:",
+   "sectionGroup": 2,
+   "sectionId": null,
+   "sectionNavLabel": null
   },
-  "summary": {
-    "heading": "📋 Lesson summary",
-    "items": [
-      "Rotational kinetic energy \\(E_r=\\tfrac12 I\\omega^2\\).",
-      "Rotational work \\(\\Delta W=\\tau\\Delta\\theta\\), and rotational power \\(P=\\tau\\omega\\).",
-      "Angular momentum \\(L=I\\omega\\), and angular impulse = τt = ΔL.",
-      "When angular momentum is constant, a decrease in moment of inertia is compensated by an increase in angular velocity (conservation of angular momentum)."
-    ]
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ E_r = \\tfrac{1}{2}I\\omega^2 \\qquad \\text{...(19)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">(I) represents the moment of inertia of the rigid body about a given axis of rotation.</p>",
+   "sectionGroup": 3,
+   "sectionId": null,
+   "sectionNavLabel": null
   },
-  "mindmap": {
-    "ariaLabel": "Mind map for energy, work, and angular momentum",
-    "viewBox": "0 0 480 220",
-    "center": {
-      "cx": 240.0,
-      "cy": 110.0,
-      "r": 48.0,
-      "color": "#7c6fee",
-      "lines": [
-        "Energy, work,",
-        "angular momentum"
+  {
+   "type": "definition",
+   "label": "📌 7-1 Work and power in rotational motion",
+   "html": "Suppose a force of magnitude (F) acts on a body moving along a circular path of radius (r), producing a linear displacement (Δs) and an angular displacement (Δθ). The work done in linear motion is the product of the force and the linear displacement:",
+   "sectionGroup": 4,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ \\Delta W = F\\Delta s $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">Substituting angular displacement (Δθ) for linear displacement (Δs), and torque (τ) for force (F), gives the work done in rotational motion:</p>\n      $$ \\Delta W = \\tau\\Delta\\theta = \\tau(\\theta_2-\\theta_1) \\qquad \\text{...(20)} $$",
+   "sectionGroup": 5,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "paragraph",
+   "html": "Power (P) is defined as the work done per unit time: \\(P=\\dfrac{\\Delta W}{\\Delta t}\\), and in rotational motion: \\(P=\\dfrac{\\tau\\Delta\\theta}{\\Delta t}\\) ⇒",
+   "sectionGroup": 6,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ P = \\tau\\omega \\qquad \\text{...(21)} $$",
+   "sectionGroup": 7,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "definition",
+   "label": "📌 8-1 Angular momentum",
+   "html": "The linear momentum of a body of mass (m) moving along a linear path is defined as the product of its mass and linear velocity. Substituting moment of inertia for mass and angular velocity for linear velocity gives the mathematical relation for angular momentum:",
+   "sectionGroup": 8,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "paragraph",
+   "html": "Linear momentum = mv</p><p>Substituting gives:",
+   "sectionGroup": 9,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ L = I\\omega \\qquad \\text{...(22)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">This represents the angular momentum, with units of \\(\\left(\\dfrac{\\text{kg}\\cdot\\text{m}^2}{\\text{s}}\\right)\\).</p>",
+   "sectionGroup": 10,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ \\Delta L = I\\omega_f - I\\omega_i = I(\\omega_f-\\omega_i) $$",
+   "sectionGroup": 11,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "paragraph",
+   "html": "where \\(\\omega_i, \\omega_f\\) represent the initial and final angular velocities. The change in angular momentum is called the angular impulse, which equals the product of the torque and the time it acts:</p><p>Angular impulse = τt",
+   "sectionGroup": 12,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "callout",
+   "icon": "💡",
+   "strong": "Did you know?",
+   "html": "A bicycle wheel is made with most of its mass in the rim, to give it a large moment of inertia that helps keep it stable while in motion.",
+   "sectionGroup": 13,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "example",
+   "number": 1,
+   "problemHtml": "<p>Find the moment of inertia of a solid sphere rotating about one of its diameters, given a mass of (10 kg) and a radius of (50 cm).</p>",
+   "solution": {
+    "given": [
+     "\\( m = 10\\ \\text{kg} \\) — the sphere's mass",
+     "\\( r = 50\\ \\text{cm} = 0.5\\ \\text{m} \\) — the sphere's radius (after conversion to SI units)"
+    ],
+    "required": "Find the moment of inertia I of the solid sphere about one of its diameters.",
+    "steps": [
+     {
+      "note": "Moment of inertia of a solid sphere about a diameter (Table 2-1): \\(I=\\tfrac25 mr^2\\), where m=10 kg, r=0.5 m",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( I = \\tfrac{2}{5}\\times 10\\times(0.5)^2 \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( I = 1\\ \\text{kg}\\cdot\\text{m}^2 \\)"
+       }
       ]
-    },
-    "satellites": [
-      {
-        "cx": 100.0,
-        "cy": 45.0,
-        "r": 42.0,
-        "color": "#3fa9f5",
-        "lines": [
-          "Er=½Iω²"
-        ]
-      },
-      {
-        "cx": 100.0,
-        "cy": 175.0,
-        "r": 42.0,
-        "color": "#2fd18f",
-        "lines": [
-          "ΔW=τΔθ",
-          "P=τω"
-        ]
-      },
-      {
-        "cx": 380.0,
-        "cy": 45.0,
-        "r": 42.0,
-        "color": "#ffab5e",
-        "lines": [
-          "L=Iω"
-        ]
-      },
-      {
-        "cx": 380.0,
-        "cy": 175.0,
-        "r": 42.0,
-        "color": "#ff6b9d",
-        "lines": [
-          "Angular impulse",
-          "=τt=ΔL"
-        ]
-      }
-    ]
+     }
+    ],
+    "final": "✓ I = 1 kg·m²"
+   },
+   "sectionGroup": 14,
+   "sectionId": "example6",
+   "sectionNavLabel": "📝 Example 6"
+  },
+  {
+   "type": "callout",
+   "icon": "🤔",
+   "strong": "Think:",
+   "html": "What would you expect if the axis of rotation were at a distance of 0.25 m (that is, at a smaller radius)? Try it yourself in the interactive tool below.",
+   "sectionGroup": 15,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "simulation",
+   "svgId": null,
+   "svgAriaLabel": "",
+   "svgViewBox": null,
+   "svgWidth": null,
+   "svgHeight": null,
+   "sectionHeading": "🕹️ Interactive exploration: how does moment of inertia change with radius?",
+   "descriptionHtml": "Drag the slider to change the sphere's radius of rotation (keeping the same 10 kg mass as in the example), and compare the value at r=0.5 m (as in the example) with r=0.25 m (per the \"think\" question).",
+   "controls": [
+    {
+     "labelHtml": "r = <span id=\"sphereRVal\">0.50</span> m",
+     "inputId": "sphereR",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "0.1",
+     "inputMax": "0.8",
+     "inputStep": "0.01",
+     "inputValue": "0.5"
+    }
+   ],
+   "buttons": null,
+   "selectId": null,
+   "selectOptions": null,
+   "presets": null,
+   "ruleBoxes": [
+    {
+     "html": "\\( I=\\tfrac{2}{5}(10)r^2 = \\) <b id=\"sphereIVal\">1.000</b> kg·m²",
+     "id": null
+    }
+   ],
+   "trailingHtml": null,
+   "sectionGroup": 16,
+   "sectionId": "sphere-widget",
+   "sectionNavLabel": "🕹️ Explore: radius and moment of inertia"
+  },
+  {
+   "type": "example",
+   "number": 2,
+   "problemHtml": "<p>A disc with a moment of inertia of (2 kg·m²) rotates about its axis with a uniform angular momentum of (50 kg·m²/s). Find: 1- its angular velocity. 2- its rotational kinetic energy. 3- the angular impulse. 4- the angular work.</p>",
+   "solution": {
+    "given": [
+     "\\( I = 2\\ \\text{kg}\\cdot\\text{m}^2 \\) — the disc's moment of inertia",
+     "\\( L = 50\\ \\text{kg}\\cdot\\text{m}^2/\\text{s} \\) — the angular momentum, uniform (constant) over time"
+    ],
+    "required": "Find: (1) the angular velocity ω. (2) the rotational kinetic energy Er. (3) the angular impulse. (4) the angular work.",
+    "steps": [
+     {
+      "note": "1- Angular velocity: from \\(L=I\\omega\\)",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( \\omega = \\dfrac{L}{I} = \\dfrac{50}{2} \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( \\omega = 25\\ \\text{rad/s} \\)"
+       }
+      ]
+     },
+     {
+      "note": "2- Rotational kinetic energy: from \\(E_r=\\tfrac12 I\\omega^2\\)",
+      "calc": [
+       {
+        "kind": "line",
+        "latex": "\\( E_r = \\tfrac{1}{2}\\times 2\\times(25)^2 \\)"
+       },
+       {
+        "kind": "arrow",
+        "latex": "↓"
+       },
+       {
+        "kind": "box",
+        "latex": "\\( E_r = 625\\ \\text{J} \\)"
+       }
+      ]
+     },
+     {
+      "note": "3- Angular impulse: since the angular momentum is uniform (constant) over time, there is no change in angular momentum",
+      "calc": [
+       {
+        "kind": "box",
+        "latex": "\\( \\Delta L = 0 \\)"
+       }
+      ]
+     },
+     {
+      "note": "4- Angular work: since there is no change in rotational kinetic energy (the angular velocity is constant)",
+      "calc": [
+       {
+        "kind": "box",
+        "latex": "\\( \\Delta W = 0 \\)"
+       }
+      ]
+     }
+    ],
+    "final": "✓ ω = 25 rad/s   ·   Er = 625 J   ·   angular impulse = zero   ·   angular work = zero"
+   },
+   "sectionGroup": 17,
+   "sectionId": "example7",
+   "sectionNavLabel": "📝 Example 7"
+  },
+  {
+   "type": "simulation",
+   "svgId": "skaterSvg",
+   "svgAriaLabel": "Simulation of a spinning skater pulling in their arms, increasing their angular velocity",
+   "svgViewBox": "0 0 260 260",
+   "svgWidth": "260",
+   "svgHeight": "260",
+   "sectionHeading": "🕹️ Interactive simulation: conservation of angular momentum (like a spinning skater)",
+   "descriptionHtml": "When a spinning skater pulls their arms in toward their body, their moment of inertia (I) decreases. Since angular momentum \\(L=I\\omega\\) is conserved (constant) in the absence of an external torque, their angular velocity (ω) automatically increases. Drag the arm-position slider and watch it happen directly.",
+   "controls": [
+    {
+     "labelHtml": "Arm extension",
+     "inputId": "armsSlider",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "0",
+     "inputMax": "1",
+     "inputStep": "0.01",
+     "inputValue": "1"
+    }
+   ],
+   "buttons": null,
+   "selectId": null,
+   "selectOptions": null,
+   "presets": null,
+   "ruleBoxes": [
+    {
+     "html": null,
+     "id": "skaterReadout"
+    }
+   ],
+   "trailingHtml": null,
+   "sectionGroup": 18,
+   "sectionId": "conservation-widget",
+   "sectionNavLabel": "🕹️ Conservation of angular momentum"
   }
+ ],
+ "quiz": {
+  "heading": "🧠 Check your understanding",
+  "questions": [
+   {
+    "correct": 1,
+    "question": "The rotational kinetic energy of a rigid body is given by:",
+    "options": [
+     "\\( E_r=mv^2 \\)",
+     "\\( E_r=\\tfrac12 I\\omega^2 \\)",
+     "\\( E_r=I\\omega \\)",
+     "\\( E_r=\\tfrac12 mv^2 \\)"
+    ],
+    "explain": "Equation (19): \\(E_r=\\tfrac12 I\\omega^2\\), the counterpart of \\(E_k=\\tfrac12 mv^2\\) after substitution."
+   },
+   {
+    "correct": 1,
+    "question": "The work done in rotational motion is given by:",
+    "options": [
+     "\\( \\Delta W=Fs \\)",
+     "\\( \\Delta W=\\tau\\Delta\\theta \\)",
+     "\\( \\Delta W=I\\alpha \\)",
+     "\\( \\Delta W=L\\omega \\)"
+    ],
+    "explain": "Equation (20): \\(\\Delta W=\\tau\\Delta\\theta\\)."
+   },
+   {
+    "correct": 1,
+    "question": "Power in rotational motion is given by:",
+    "options": [
+     "\\( P=\\tau/\\omega \\)",
+     "\\( P=\\tau\\omega \\)",
+     "\\( P=\\tau+\\omega \\)",
+     "\\( P=\\omega/\\tau \\)"
+    ],
+    "explain": "Equation (21): \\(P=\\tau\\omega\\)."
+   },
+   {
+    "correct": 1,
+    "question": "The angular momentum of a rotating body is given by:",
+    "options": [
+     "\\( L=I\\alpha \\)",
+     "\\( L=I\\omega \\)",
+     "\\( L=mv \\)",
+     "\\( L=\\tau t \\)"
+    ],
+    "explain": "Equation (22): \\(L=I\\omega\\)."
+   },
+   {
+    "correct": 1,
+    "question": "If the angular momentum of a rotating body is constant (uniform) over time, the angular impulse acting on it during that period:",
+    "options": [
+     "Always equals τt with a large positive value",
+     "Equals zero",
+     "Equals L",
+     "Always equals Iω"
+    ],
+    "explain": "Angular impulse equals the change in angular momentum (ΔL); if the angular momentum is constant, then ΔL=0, so the angular impulse is zero."
+   }
+  ]
+ },
+ "summary": {
+  "heading": "📋 Lesson summary",
+  "items": [
+   "Rotational kinetic energy \\(E_r=\\tfrac12 I\\omega^2\\).",
+   "Rotational work \\(\\Delta W=\\tau\\Delta\\theta\\), and rotational power \\(P=\\tau\\omega\\).",
+   "Angular momentum \\(L=I\\omega\\), and angular impulse = τt = ΔL.",
+   "When angular momentum is constant, a decrease in moment of inertia is compensated by an increase in angular velocity (conservation of angular momentum)."
+  ]
+ },
+ "mindmap": {
+  "heading": "🗺 Lesson Mind Map",
+  "ariaLabel": "Mind map for energy, work, and angular momentum",
+  "viewBox": "0 0 480 220",
+  "center": {
+   "cx": 240.0,
+   "cy": 110.0,
+   "r": 48.0,
+   "color": "#7c6fee",
+   "lines": [
+    "Energy, work,",
+    "angular momentum"
+   ]
+  },
+  "satellites": [
+   {
+    "cx": 100.0,
+    "cy": 45.0,
+    "r": 42.0,
+    "color": "#3fa9f5",
+    "lines": [
+     "Er=½Iω²"
+    ]
+   },
+   {
+    "cx": 100.0,
+    "cy": 175.0,
+    "r": 42.0,
+    "color": "#2fd18f",
+    "lines": [
+     "ΔW=τΔθ",
+     "P=τω"
+    ]
+   },
+   {
+    "cx": 380.0,
+    "cy": 45.0,
+    "r": 42.0,
+    "color": "#ffab5e",
+    "lines": [
+     "L=Iω"
+    ]
+   },
+   {
+    "cx": 380.0,
+    "cy": 175.0,
+    "r": 42.0,
+    "color": "#ff6b9d",
+    "lines": [
+     "Angular impulse",
+     "=τt=ΔL"
+    ]
+   }
+  ]
+ }
 }

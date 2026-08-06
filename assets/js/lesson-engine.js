@@ -278,6 +278,8 @@
     setHtml(".hero h1", data.hero.title);
     setHtml(".hero p.lead", data.hero.lead);
 
+    var objHeadEl = document.querySelector("#objectives h2");
+    if(objHeadEl && data.objectivesHeading) objHeadEl.textContent = data.objectivesHeading;
     var objEl = document.querySelector("#objectives .obj-list");
     if(objEl){
       objEl.innerHTML = data.objectives.map(function(o, i){
@@ -330,6 +332,8 @@
     }
 
     if(data.mindmap){
+      var mmHeadEl = document.querySelector("#mindmap h2");
+      if(mmHeadEl && data.mindmap.heading) mmHeadEl.textContent = data.mindmap.heading;
       var mmWrap = document.querySelector("#mindmap .mindmap-wrap");
       if(mmWrap) mmWrap.innerHTML = renderMindmapSvg(data.mindmap);
     }
@@ -368,8 +372,10 @@
     });
 
     if(data.mindmap){
-      var mmWrap = document.querySelector("#mindmap .mindmap-wrap");
-      if(mmWrap) mmWrap.innerHTML = renderMindmapSvg(data.mindmap);
+      var hubMmHeadEl = document.querySelector("#mindmap h2");
+      if(hubMmHeadEl && data.mindmap.heading) hubMmHeadEl.textContent = data.mindmap.heading;
+      var hubMmWrap = document.querySelector("#mindmap .mindmap-wrap");
+      if(hubMmWrap) hubMmWrap.innerHTML = renderMindmapSvg(data.mindmap);
     }
   }
 

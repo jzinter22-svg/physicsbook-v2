@@ -73,6 +73,12 @@ def extract_objectives(soup):
     return [inner_html(li.select_one("span:nth-of-type(2)") or li) for li in obj_section.select(".obj-list li")]
 
 
+def extract_objectives_heading(soup):
+    obj_section = soup.select_one("#objectives")
+    h2 = obj_section.select_one("h2") if obj_section else None
+    return text(h2) if h2 else None
+
+
 def extract_mindmap(soup):
     wrap = soup.select_one("#mindmap .mindmap-wrap svg")
     if not wrap:
@@ -93,7 +99,9 @@ def extract_mindmap(soup):
     satellites = nodes[1:] if nodes else []
     # lxml's HTML parser lowercases SVG's camelCase attributes (viewBox -> viewbox)
     viewBox = wrap.get("viewBox") or wrap.get("viewbox")
+    mm_h2 = soup.select_one("#mindmap h2")
     return {
+        "heading": text(mm_h2) if mm_h2 else None,
         "ariaLabel": wrap.get("aria-label", ""),
         "viewBox": viewBox,
         "center": center,
@@ -318,6 +326,7 @@ def extract_lesson(path, lesson_num, chapter_num, total_lessons):
             "footer": text(footer),
         },
         "hero": extract_hero(soup),
+        "objectivesHeading": extract_objectives_heading(soup),
         "objectives": extract_objectives(soup),
         "content": [],
         "quiz": extract_quiz(soup),

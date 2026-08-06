@@ -1,338 +1,340 @@
 {
-  "lessonNumber": 3,
-  "chapterNumber": 1,
-  "meta": {
-    "pageTitle": "Lesson 3: Satellite Orbits and Kepler's Laws — Chapter 1",
-    "description": "Satellite orbits and Kepler's three laws: the law of orbits, the law of areas, and the law of periods, with a reminder of Newton's law of universal gravitation.",
-    "breadcrumbChapter": "Chapter 1",
-    "breadcrumbLesson": "Satellite Orbits and Kepler's Laws",
-    "footer": "Chapter 1: Circular and Rotational Motion — Lesson 3: Satellite Orbits and Kepler's Laws"
+ "lessonNumber": 3,
+ "chapterNumber": 1,
+ "meta": {
+  "pageTitle": "Lesson 3: Satellite Orbits and Kepler's Laws — Chapter 1",
+  "description": "Satellite orbits and Kepler's three laws: the law of orbits, the law of areas, and the law of periods, with a reminder of Newton's law of universal gravitation.",
+  "breadcrumbChapter": "Chapter 1",
+  "breadcrumbLesson": "Satellite Orbits and Kepler's Laws",
+  "footer": "Chapter 1: Circular and Rotational Motion — Lesson 3: Satellite Orbits and Kepler's Laws"
+ },
+ "hero": {
+  "eyebrow": "📖 Lesson 3 of 8 · Chapter 1",
+  "title": "Satellite Orbits and Kepler's Laws",
+  "lead": "4-1 Satellite orbits and Kepler's laws: the first law (law of orbits) · the second law (law of areas) · the third law (law of periods)"
+ },
+ "objectivesHeading": "🎯 Lesson Objectives",
+ "objectives": [
+  "Explains Kepler's three laws of planetary and satellite motion.",
+  "Locates the center of attraction (the focus) in the elliptical path of any satellite or planet.",
+  "Explains why an orbiting body's speed varies along its elliptical path, based on the law of areas.",
+  "Connects Newton's law of universal gravitation with Kepler's third law."
+ ],
+ "content": [
+  {
+   "type": "explanation",
+   "heading": "💡 4-1 Satellite orbits and Kepler's laws",
+   "html": "The motion of satellites around the Earth is governed by Kepler's laws, which also determine the motion of the planets and of stars within galaxies. They are as follows:",
+   "sectionGroup": 0,
+   "sectionId": "content",
+   "sectionNavLabel": "💡 Explanation"
   },
-  "hero": {
-    "eyebrow": "📖 Lesson 3 of 8 · Chapter 1",
-    "title": "Satellite Orbits and Kepler's Laws",
-    "lead": "4-1 Satellite orbits and Kepler's laws: the first law (law of orbits) · the second law (law of areas) · the third law (law of periods)"
+  {
+   "type": "definition",
+   "label": "📌 The first law (law of orbits)",
+   "html": "Planets (or satellites) move in elliptical orbits around their center of attraction, which lies at one of the two foci.",
+   "sectionGroup": 1,
+   "sectionId": null,
+   "sectionNavLabel": null
   },
-  "objectives": [
-    "Explains Kepler's three laws of planetary and satellite motion.",
-    "Locates the center of attraction (the focus) in the elliptical path of any satellite or planet.",
-    "Explains why an orbiting body's speed varies along its elliptical path, based on the law of areas.",
-    "Connects Newton's law of universal gravitation with Kepler's third law."
-  ],
-  "content": [
+  {
+   "type": "callout",
+   "icon": "📝",
+   "strong": "Note:",
+   "html": "The Sun is the center of attraction for the planets of the solar system orbiting it, and the Earth is the center of attraction for the satellites orbiting it.",
+   "sectionGroup": 2,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "simulation",
+   "svgId": "law1Svg",
+   "svgAriaLabel": "Elliptical orbit around the focus of attraction",
+   "svgViewBox": "0 0 360 240",
+   "svgWidth": "360",
+   "svgHeight": "240",
+   "sectionHeading": "🕹️ Recreating Figure 1-5: an elliptical orbit with two foci",
+   "descriptionHtml": "Drag the eccentricity slider to see how the shape of the elliptical orbit changes, while the center of attraction always stays at the first focus (not at the center of the shape).",
+   "controls": [
     {
-      "type": "explanation",
-      "heading": "💡 4-1 Satellite orbits and Kepler's laws",
-      "html": "The motion of satellites around the Earth is governed by Kepler's laws, which also determine the motion of the planets and of stars within galaxies. They are as follows:",
-      "sectionGroup": 0,
-      "sectionId": "content",
-      "sectionNavLabel": "💡 Explanation"
-    },
-    {
-      "type": "definition",
-      "label": "📌 The first law (law of orbits)",
-      "html": "Planets (or satellites) move in elliptical orbits around their center of attraction, which lies at one of the two foci.",
-      "sectionGroup": 1,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "callout",
-      "icon": "📝",
-      "strong": "Note:",
-      "html": "The Sun is the center of attraction for the planets of the solar system orbiting it, and the Earth is the center of attraction for the satellites orbiting it.",
-      "sectionGroup": 2,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "simulation",
-      "svgId": "law1Svg",
-      "svgAriaLabel": "Elliptical orbit around the focus of attraction",
-      "svgViewBox": "0 0 360 240",
-      "svgWidth": "360",
-      "svgHeight": "240",
-      "sectionHeading": "🕹️ Recreating Figure 1-5: an elliptical orbit with two foci",
-      "descriptionHtml": "Drag the eccentricity slider to see how the shape of the elliptical orbit changes, while the center of attraction always stays at the first focus (not at the center of the shape).",
-      "controls": [
-        {
-          "labelHtml": "Eccentricity e = <span id=\"eccVal\">0.3</span>",
-          "inputId": "eccSlider",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "0",
-          "inputMax": "0.7",
-          "inputStep": "0.05",
-          "inputValue": "0.3"
-        }
-      ],
-      "buttons": null,
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "trailingHtml": null,
-      "sectionGroup": 3,
-      "sectionId": "law1-widget",
-      "sectionNavLabel": "🕹️ Interactive Figure 5-1",
-      "ruleBoxes": [],
-      "labels": {
-        "focus1": "Focus 1 (center of attraction)",
-        "focus2": "Focus 2"
-      }
-    },
-    {
-      "type": "definition",
-      "label": "📌 The second law (law of areas)",
-      "html": "The line joining the center of attraction to the planet (or satellite) sweeps out equal areas in equal times.",
-      "sectionGroup": 4,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "simulation",
-      "svgId": "law2Svg",
-      "svgAriaLabel": "Simulation of equal areas in equal times",
-      "svgViewBox": "0 0 360 240",
-      "svgWidth": "360",
-      "svgHeight": "240",
-      "sectionHeading": "🕹️ Recreating Figure 1-6: equal areas in equal times",
-      "descriptionHtml": "Watch the colored wedge swept out by the line joining the center of attraction and the orbiting body over the last fixed time window: near perigee (the closest point) the wedge is short and wide because the speed is high, and near apogee (the farthest point) it is long and narrow because the speed is low — yet the two areas are approximately equal.",
-      "controls": [],
-      "buttons": null,
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "trailingHtml": null,
-      "sectionGroup": 5,
-      "sectionId": "law2-widget",
-      "sectionNavLabel": "🕹️ Interactive Figure 6-1",
-      "ruleBoxes": [
-        {
-          "id": "law2Speed",
-          "html": null
-        }
-      ],
-      "labels": {
-        "speedVeryFast": "Very fast (near perigee) 🚀",
-        "speedVerySlow": "Very slow (near apogee) 🐢",
-        "speedMedium": "Medium",
-        "speedStatus": "Current speed status: "
-      }
-    },
-    {
-      "type": "definition",
-      "label": "📌 The third law (law of periods)",
-      "html": "The square of the orbital period of a planet's (or satellite's) motion is directly proportional to the cube of the semi-major axis of its orbit. If the orbital period is <b>t</b> and the semi-major axis is <b>r</b>, then:",
-      "sectionGroup": 6,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ t^2 \\propto r^3 $$",
-      "sectionGroup": 7,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "callout",
-      "icon": "🧠",
-      "strong": "Remember:",
-      "html": "Any two masses in the universe attract each other with a force directly proportional to the product of the two masses (M,m) and inversely proportional to the square of the distance between them (r) — this is known as Newton's law of universal gravitation, and mathematically:",
-      "sectionGroup": 8,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ F_G = G\\dfrac{Mm}{r^2} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where <b>G</b> is the universal gravitational constant, equal to: \\( 6.67\\times10^{-11}\\ \\dfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\)</p>",
-      "sectionGroup": 9,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "simulation",
-      "svgId": null,
-      "svgAriaLabel": "",
-      "svgViewBox": null,
-      "svgWidth": null,
-      "svgHeight": null,
-      "sectionHeading": "🕹️ Interactive check: Kepler's third law for Earth satellites",
-      "descriptionHtml": "Using Newton's law of universal gravitation, the orbital period of any satellite can be computed from its orbital radius <b>r</b> (measured from the Earth's center). Drag the slider or pick one of the real satellites below, and notice that the ratio \\(r^3/t^2\\) stays roughly constant no matter how the radius changes — which is exactly what Kepler's third law states.",
-      "controls": [
-        {
-          "labelHtml": "Orbital radius r = <span id=\"orbitRVal\">6771</span> km",
-          "inputId": "orbitR",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "6700",
-          "inputMax": "45000",
-          "inputStep": "1",
-          "inputValue": "6771"
-        }
-      ],
-      "buttons": null,
-      "selectId": null,
-      "selectOptions": null,
-      "presets": [
-        {
-          "value": "6771",
-          "label": "🛰️ Low orbit (like the space station)"
-        },
-        {
-          "value": "26560",
-          "label": "📡 GPS orbit"
-        },
-        {
-          "value": "42164",
-          "label": "🌐 Geostationary orbit (broadcast satellite)"
-        }
-      ],
-      "trailingHtml": null,
-      "sectionGroup": 10,
-      "sectionId": "law3-widget",
-      "sectionNavLabel": "🕹️ Verify Kepler's third law",
-      "ruleBoxes": [
-        {
-          "id": null,
-          "html": "Orbital period t ≈ <b id=\"orbitTVal\">1.54</b> hours"
-        },
-        {
-          "id": null,
-          "html": "\\( r^3/t^2 \\approx \\) <b id=\"orbitRatioVal\">—</b> (km³/hr²) — nearly constant for every value of r"
-        }
-      ]
+     "labelHtml": "Eccentricity e = <span id=\"eccVal\">0.3</span>",
+     "inputId": "eccSlider",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "0",
+     "inputMax": "0.7",
+     "inputStep": "0.05",
+     "inputValue": "0.3"
     }
-  ],
-  "quiz": {
-    "heading": "🧠 Check your understanding",
-    "questions": [
-      {
-        "correct": 1,
-        "question": "According to Kepler's first law, the path along which planets move around the Sun is:",
-        "options": [
-          "Perfectly circular",
-          "Elliptical, with the center of attraction at one of its foci",
-          "An open spiral",
-          "A straight line"
-        ],
-        "explain": "The law of orbits states that planets and satellites move in elliptical paths with the center of attraction at one of the two foci, not at the center of the shape."
-      },
-      {
-        "correct": 1,
-        "question": "As a planet approaches perigee (the point closest to the center of attraction), its speed:",
-        "options": [
-          "Decreases",
-          "Increases",
-          "Stays constant",
-          "Becomes zero"
-        ],
-        "explain": "By the law of areas, for the area swept in a given time to stay constant despite the shorter distance to the center, the body's speed must increase near perigee."
-      },
-      {
-        "correct": 2,
-        "question": "According to Kepler's third law, the relation between the orbital period t and the semi-major axis r is:",
-        "options": [
-          "\\( t \\propto r \\)",
-          "\\( t^2 \\propto r \\)",
-          "\\( t^2 \\propto r^3 \\)",
-          "\\( t \\propto r^3 \\)"
-        ],
-        "explain": "The law of periods: the square of the orbital period is directly proportional to the cube of the semi-major axis of the orbit."
-      },
-      {
-        "correct": 1,
-        "question": "Newton's law of universal gravitation states that the attractive force between two masses:",
-        "options": [
-          "Is directly proportional to the distance between them",
-          "Is inversely proportional to the square of the distance between them",
-          "Does not depend on their masses",
-          "Is always constant regardless of the distance"
-        ],
-        "explain": "\\( F_G = G\\dfrac{Mm}{r^2} \\) — the force is directly proportional to the product of the two masses and inversely proportional to the square of the distance between them."
-      },
-      {
-        "correct": 2,
-        "question": "For satellites orbiting the Earth, the center of attraction (the focus) is located at:",
-        "options": [
-          "The satellite itself",
-          "The midpoint of the elliptical orbit",
-          "The center of the Earth",
-          "The Sun"
-        ],
-        "explain": "The center of attraction is the more massive body that the smaller body orbits; the Earth is the center of attraction for its satellites, just as the Sun is the center of attraction for the planets of the solar system."
-      }
-    ]
+   ],
+   "buttons": null,
+   "selectId": null,
+   "selectOptions": null,
+   "presets": null,
+   "trailingHtml": null,
+   "sectionGroup": 3,
+   "sectionId": "law1-widget",
+   "sectionNavLabel": "🕹️ Interactive Figure 5-1",
+   "ruleBoxes": [],
+   "labels": {
+    "focus1": "Focus 1 (center of attraction)",
+    "focus2": "Focus 2"
+   }
   },
-  "summary": {
-    "heading": "📋 Lesson summary",
-    "items": [
-      "Law of orbits: planets and satellites move in elliptical orbits, with the center of attraction at one of the two foci.",
-      "Law of areas: the line joining the center of attraction to the orbiting body sweeps equal areas in equal times, so speed increases near perigee and decreases near apogee.",
-      "Law of periods: \\( t^2 \\propto r^3 \\) — the square of the orbital period is directly proportional to the cube of the semi-major axis.",
-      "Newton's law of universal gravitation \\( F_G=GMm/r^2 \\) is the physical basis that explains Kepler's three laws."
-    ]
+  {
+   "type": "definition",
+   "label": "📌 The second law (law of areas)",
+   "html": "The line joining the center of attraction to the planet (or satellite) sweeps out equal areas in equal times.",
+   "sectionGroup": 4,
+   "sectionId": null,
+   "sectionNavLabel": null
   },
-  "mindmap": {
-    "ariaLabel": "Mind map for Kepler's laws",
-    "viewBox": "0 0 480 260",
-    "center": {
-      "cx": 240.0,
-      "cy": 130.0,
-      "r": 52.0,
-      "color": "#7c6fee",
-      "lines": [
-        "Kepler's",
-        "laws"
-      ]
+  {
+   "type": "simulation",
+   "svgId": "law2Svg",
+   "svgAriaLabel": "Simulation of equal areas in equal times",
+   "svgViewBox": "0 0 360 240",
+   "svgWidth": "360",
+   "svgHeight": "240",
+   "sectionHeading": "🕹️ Recreating Figure 1-6: equal areas in equal times",
+   "descriptionHtml": "Watch the colored wedge swept out by the line joining the center of attraction and the orbiting body over the last fixed time window: near perigee (the closest point) the wedge is short and wide because the speed is high, and near apogee (the farthest point) it is long and narrow because the speed is low — yet the two areas are approximately equal.",
+   "controls": [],
+   "buttons": null,
+   "selectId": null,
+   "selectOptions": null,
+   "presets": null,
+   "trailingHtml": null,
+   "sectionGroup": 5,
+   "sectionId": "law2-widget",
+   "sectionNavLabel": "🕹️ Interactive Figure 6-1",
+   "ruleBoxes": [
+    {
+     "id": "law2Speed",
+     "html": null
+    }
+   ],
+   "labels": {
+    "speedVeryFast": "Very fast (near perigee) 🚀",
+    "speedVerySlow": "Very slow (near apogee) 🐢",
+    "speedMedium": "Medium",
+    "speedStatus": "Current speed status: "
+   }
+  },
+  {
+   "type": "definition",
+   "label": "📌 The third law (law of periods)",
+   "html": "The square of the orbital period of a planet's (or satellite's) motion is directly proportional to the cube of the semi-major axis of its orbit. If the orbital period is <b>t</b> and the semi-major axis is <b>r</b>, then:",
+   "sectionGroup": 6,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ t^2 \\propto r^3 $$",
+   "sectionGroup": 7,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "callout",
+   "icon": "🧠",
+   "strong": "Remember:",
+   "html": "Any two masses in the universe attract each other with a force directly proportional to the product of the two masses (M,m) and inversely proportional to the square of the distance between them (r) — this is known as Newton's law of universal gravitation, and mathematically:",
+   "sectionGroup": 8,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ F_G = G\\dfrac{Mm}{r^2} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where <b>G</b> is the universal gravitational constant, equal to: \\( 6.67\\times10^{-11}\\ \\dfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\)</p>",
+   "sectionGroup": 9,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "simulation",
+   "svgId": null,
+   "svgAriaLabel": "",
+   "svgViewBox": null,
+   "svgWidth": null,
+   "svgHeight": null,
+   "sectionHeading": "🕹️ Interactive check: Kepler's third law for Earth satellites",
+   "descriptionHtml": "Using Newton's law of universal gravitation, the orbital period of any satellite can be computed from its orbital radius <b>r</b> (measured from the Earth's center). Drag the slider or pick one of the real satellites below, and notice that the ratio \\(r^3/t^2\\) stays roughly constant no matter how the radius changes — which is exactly what Kepler's third law states.",
+   "controls": [
+    {
+     "labelHtml": "Orbital radius r = <span id=\"orbitRVal\">6771</span> km",
+     "inputId": "orbitR",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "6700",
+     "inputMax": "45000",
+     "inputStep": "1",
+     "inputValue": "6771"
+    }
+   ],
+   "buttons": null,
+   "selectId": null,
+   "selectOptions": null,
+   "presets": [
+    {
+     "value": "6771",
+     "label": "🛰️ Low orbit (like the space station)"
     },
-    "satellites": [
-      {
-        "cx": 90.0,
-        "cy": 50.0,
-        "r": 46.0,
-        "color": "#3fa9f5",
-        "lines": [
-          "Orbits",
-          "ellipse/focus"
-        ]
-      },
-      {
-        "cx": 90.0,
-        "cy": 210.0,
-        "r": 46.0,
-        "color": "#2fd18f",
-        "lines": [
-          "Areas",
-          "variable speed"
-        ]
-      },
-      {
-        "cx": 390.0,
-        "cy": 50.0,
-        "r": 46.0,
-        "color": "#ffab5e",
-        "lines": [
-          "Periods",
-          "t²∝r³"
-        ]
-      },
-      {
-        "cx": 390.0,
-        "cy": 210.0,
-        "r": 46.0,
-        "color": "#ff6b9d",
-        "lines": [
-          "Newton gravity",
-          "F=GMm/r²"
-        ]
-      }
-    ]
+    {
+     "value": "26560",
+     "label": "📡 GPS orbit"
+    },
+    {
+     "value": "42164",
+     "label": "🌐 Geostationary orbit (broadcast satellite)"
+    }
+   ],
+   "trailingHtml": null,
+   "sectionGroup": 10,
+   "sectionId": "law3-widget",
+   "sectionNavLabel": "🕹️ Verify Kepler's third law",
+   "ruleBoxes": [
+    {
+     "id": null,
+     "html": "Orbital period t ≈ <b id=\"orbitTVal\">1.54</b> hours"
+    },
+    {
+     "id": null,
+     "html": "\\( r^3/t^2 \\approx \\) <b id=\"orbitRatioVal\">—</b> (km³/hr²) — nearly constant for every value of r"
+    }
+   ]
   }
+ ],
+ "quiz": {
+  "heading": "🧠 Check your understanding",
+  "questions": [
+   {
+    "correct": 1,
+    "question": "According to Kepler's first law, the path along which planets move around the Sun is:",
+    "options": [
+     "Perfectly circular",
+     "Elliptical, with the center of attraction at one of its foci",
+     "An open spiral",
+     "A straight line"
+    ],
+    "explain": "The law of orbits states that planets and satellites move in elliptical paths with the center of attraction at one of the two foci, not at the center of the shape."
+   },
+   {
+    "correct": 1,
+    "question": "As a planet approaches perigee (the point closest to the center of attraction), its speed:",
+    "options": [
+     "Decreases",
+     "Increases",
+     "Stays constant",
+     "Becomes zero"
+    ],
+    "explain": "By the law of areas, for the area swept in a given time to stay constant despite the shorter distance to the center, the body's speed must increase near perigee."
+   },
+   {
+    "correct": 2,
+    "question": "According to Kepler's third law, the relation between the orbital period t and the semi-major axis r is:",
+    "options": [
+     "\\( t \\propto r \\)",
+     "\\( t^2 \\propto r \\)",
+     "\\( t^2 \\propto r^3 \\)",
+     "\\( t \\propto r^3 \\)"
+    ],
+    "explain": "The law of periods: the square of the orbital period is directly proportional to the cube of the semi-major axis of the orbit."
+   },
+   {
+    "correct": 1,
+    "question": "Newton's law of universal gravitation states that the attractive force between two masses:",
+    "options": [
+     "Is directly proportional to the distance between them",
+     "Is inversely proportional to the square of the distance between them",
+     "Does not depend on their masses",
+     "Is always constant regardless of the distance"
+    ],
+    "explain": "\\( F_G = G\\dfrac{Mm}{r^2} \\) — the force is directly proportional to the product of the two masses and inversely proportional to the square of the distance between them."
+   },
+   {
+    "correct": 2,
+    "question": "For satellites orbiting the Earth, the center of attraction (the focus) is located at:",
+    "options": [
+     "The satellite itself",
+     "The midpoint of the elliptical orbit",
+     "The center of the Earth",
+     "The Sun"
+    ],
+    "explain": "The center of attraction is the more massive body that the smaller body orbits; the Earth is the center of attraction for its satellites, just as the Sun is the center of attraction for the planets of the solar system."
+   }
+  ]
+ },
+ "summary": {
+  "heading": "📋 Lesson summary",
+  "items": [
+   "Law of orbits: planets and satellites move in elliptical orbits, with the center of attraction at one of the two foci.",
+   "Law of areas: the line joining the center of attraction to the orbiting body sweeps equal areas in equal times, so speed increases near perigee and decreases near apogee.",
+   "Law of periods: \\( t^2 \\propto r^3 \\) — the square of the orbital period is directly proportional to the cube of the semi-major axis.",
+   "Newton's law of universal gravitation \\( F_G=GMm/r^2 \\) is the physical basis that explains Kepler's three laws."
+  ]
+ },
+ "mindmap": {
+  "heading": "🗺 Lesson Mind Map",
+  "ariaLabel": "Mind map for Kepler's laws",
+  "viewBox": "0 0 480 260",
+  "center": {
+   "cx": 240.0,
+   "cy": 130.0,
+   "r": 52.0,
+   "color": "#7c6fee",
+   "lines": [
+    "Kepler's",
+    "laws"
+   ]
+  },
+  "satellites": [
+   {
+    "cx": 90.0,
+    "cy": 50.0,
+    "r": 46.0,
+    "color": "#3fa9f5",
+    "lines": [
+     "Orbits",
+     "ellipse/focus"
+    ]
+   },
+   {
+    "cx": 90.0,
+    "cy": 210.0,
+    "r": 46.0,
+    "color": "#2fd18f",
+    "lines": [
+     "Areas",
+     "variable speed"
+    ]
+   },
+   {
+    "cx": 390.0,
+    "cy": 50.0,
+    "r": 46.0,
+    "color": "#ffab5e",
+    "lines": [
+     "Periods",
+     "t²∝r³"
+    ]
+   },
+   {
+    "cx": 390.0,
+    "cy": 210.0,
+    "r": 46.0,
+    "color": "#ff6b9d",
+    "lines": [
+     "Newton gravity",
+     "F=GMm/r²"
+    ]
+   }
+  ]
+ }
 }

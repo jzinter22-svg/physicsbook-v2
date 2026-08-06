@@ -1,379 +1,381 @@
 {
-  "lessonNumber": 6,
-  "chapterNumber": 1,
-  "meta": {
-    "pageTitle": "الدرس 6: عزم القصور الذاتي — الفصل الأول",
-    "description": "5-5-1 عزم القصور الذاتي: تعريفه، قانون العزم المدور للحركة الدورانية τ=Iα، وجدول عزم القصور الذاتي لسبعة أشكال هندسية شائعة.",
-    "breadcrumbChapter": "الفصل 1",
-    "breadcrumbLesson": "عزم القصور الذاتي",
-    "footer": "الفصل الأول: الحركة الدائرية والدورانية — الدرس 6: عزم القصور الذاتي"
+ "lessonNumber": 6,
+ "chapterNumber": 1,
+ "meta": {
+  "pageTitle": "الدرس 6: عزم القصور الذاتي — الفصل الأول",
+  "description": "5-5-1 عزم القصور الذاتي: تعريفه، قانون العزم المدور للحركة الدورانية τ=Iα، وجدول عزم القصور الذاتي لسبعة أشكال هندسية شائعة.",
+  "breadcrumbChapter": "الفصل 1",
+  "breadcrumbLesson": "عزم القصور الذاتي",
+  "footer": "الفصل الأول: الحركة الدائرية والدورانية — الدرس 6: عزم القصور الذاتي"
+ },
+ "hero": {
+  "eyebrow": "📖 الدرس 6 من 8 · الفصل الأول",
+  "title": "عزم القصور الذاتي",
+  "lead": "5-5-1 عزم القصور الذاتي (I) · قانون العزم المدور للحركة الدورانية \\(\\tau=I\\alpha\\)"
+ },
+ "objectivesHeading": "🎯 أهداف الدرس",
+ "objectives": [
+  "يعرّف عزم القصور الذاتي (I) ويوضّح اعتماده على الكتلة وتوزيعها ونمط الدوران.",
+  "يكتب قانون العزم المدور للحركة الدورانية \\(\\tau=I\\alpha\\) ويقارنه بقانون نيوتن الثاني \\(F=ma\\).",
+  "يحدد عزم القصور الذاتي لأشكال هندسية مختلفة باستعمال جدول (2-1).",
+  "يفسر تأثير توزيع الكتلة على قيمة عزم القصور الذاتي والتعجيل الزاوي الناتج عن عزم معيّن."
+ ],
+ "content": [
+  {
+   "type": "definition",
+   "label": "📌 5-5-1 عزم القصور الذاتي",
+   "html": "يعبّر عن عزم القصور الذاتي لجسم يدور حول محور بأنه حاصل ضرب الكتلة في مربع نصف قطر الدوران ويرمز له بالرمز (I) حيث انه يمثل المقاومة التي يبديها الجسم ضد اي تغيير في سرعته الدورانية وتعتمد على نمط توزيع الكتلة وشكل الجسم وكتلته.",
+   "sectionGroup": 0,
+   "sectionId": "content",
+   "sectionNavLabel": "💡 الشرح"
   },
-  "hero": {
-    "eyebrow": "📖 الدرس 6 من 8 · الفصل الأول",
-    "title": "عزم القصور الذاتي",
-    "lead": "5-5-1 عزم القصور الذاتي (I) · قانون العزم المدور للحركة الدورانية \\(\\tau=I\\alpha\\)"
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ I = mr^2 \\qquad \\text{...(16)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">ووحدات عزم القصور الذاتي: \\(\\text{kg}\\cdot\\text{m}^2\\).</p>",
+   "sectionGroup": 1,
+   "sectionId": null,
+   "sectionNavLabel": null
   },
-  "objectives": [
-    "يعرّف عزم القصور الذاتي (I) ويوضّح اعتماده على الكتلة وتوزيعها ونمط الدوران.",
-    "يكتب قانون العزم المدور للحركة الدورانية \\(\\tau=I\\alpha\\) ويقارنه بقانون نيوتن الثاني \\(F=ma\\).",
-    "يحدد عزم القصور الذاتي لأشكال هندسية مختلفة باستعمال جدول (2-1).",
-    "يفسر تأثير توزيع الكتلة على قيمة عزم القصور الذاتي والتعجيل الزاوي الناتج عن عزم معيّن."
-  ],
-  "content": [
+  {
+   "type": "paragraph",
+   "html": "ويعبّر عن قانون نيوتن الثاني بحاصل ضرب الكتلة في التعجيل، أي أن:</p><p>\\( F=ma \\qquad \\text{...(17)} \\)</p><p>وفي الحركة الدورانية تصبح المعادلة (17):",
+   "sectionGroup": 2,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "formula",
+   "id": null,
+   "html": "$$ \\tau = I\\alpha \\qquad \\text{...(18)} $$\n      <p style=\"margin:.6rem 0 0;font-size:1rem;font-weight:700;color:var(--accent-red)\">قانون العزم المدور للحركة الدورانية</p>",
+   "sectionGroup": 3,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "paragraph",
+   "html": "هذه المعادلة تمثل قانون نيوتن الثاني في الحركة الدورانية، حيث حل العزم (τ) محل القوة (F) وعزم القصور الذاتي (I) محل الكتلة (m) والتعجيل الزاوي (α) محل التعجيل الخطي (a).",
+   "sectionGroup": 4,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "table",
+   "heading": "📊 جدول 2-1: عزم القصور الذاتي لبعض الأنظمة",
+   "headers": [
+    "الجسم والمحور",
+    "عزم القصور الذاتي"
+   ],
+   "rows": [
+    [
+     "عمود أو سلك طويل، حول محور عمودي يمر بمركز الكتلة",
+     "\\( I=\\tfrac{1}{12}mL^2 \\)"
+    ],
+    [
+     "طوق رقيق، حول محور عمودي يمر بالمركز",
+     "\\( I=mr^2 \\)"
+    ],
+    [
+     "كرة صلدة، حول القطر",
+     "\\( I=\\tfrac{2}{5}mr^2 \\)"
+    ],
+    [
+     "صفيحة، حول محور عمودي يمر بمركز الكتلة",
+     "\\( I=\\tfrac{1}{12}m(a^2+b^2) \\)"
+    ],
+    [
+     "قرص أو اسطوانة صلدة، حول محورها المار بمركز الكتلة",
+     "\\( I=\\tfrac{1}{2}mr^2 \\)"
+    ],
+    [
+     "كرة مجوّفة، حول القطر",
+     "\\( I=\\tfrac{2}{3}mr^2 \\)"
+    ],
+    [
+     "صفيحة، حول محور موازٍ يمر بمركز الكتلة",
+     "\\( I=\\tfrac{2}{3}ma^2 \\)"
+    ]
+   ],
+   "sectionGroup": 5,
+   "sectionId": null,
+   "sectionNavLabel": null
+  },
+  {
+   "type": "simulation",
+   "svgId": "shapeSvg",
+   "svgAriaLabel": "رسم توضيحي للشكل المختار",
+   "svgViewBox": "0 0 260 140",
+   "svgWidth": "260",
+   "svgHeight": "140",
+   "sectionHeading": "🕹️ إعادة إنشاء الجدول 2-1 كحاسبة تفاعلية",
+   "descriptionHtml": "اختر أحد الأشكال السبعة من جدول الكتاب، وحرّك مزلاجي الكتلة والبعد المميز لمشاهدة عزم القصور الذاتي (I) يُحسب مباشرةً بالصيغة الصحيحة لهذا الشكل.",
+   "controls": [
     {
-      "type": "definition",
-      "label": "📌 5-5-1 عزم القصور الذاتي",
-      "html": "يعبّر عن عزم القصور الذاتي لجسم يدور حول محور بأنه حاصل ضرب الكتلة في مربع نصف قطر الدوران ويرمز له بالرمز (I) حيث انه يمثل المقاومة التي يبديها الجسم ضد اي تغيير في سرعته الدورانية وتعتمد على نمط توزيع الكتلة وشكل الجسم وكتلته.",
-      "sectionGroup": 0,
-      "sectionId": "content",
-      "sectionNavLabel": "💡 الشرح"
+     "labelHtml": "الكتلة m = <span id=\"shapeMassVal\">2.0</span> kg",
+     "inputId": "shapeMass",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "0.5",
+     "inputMax": "10",
+     "inputStep": "0.1",
+     "inputValue": "2.0"
     },
     {
-      "type": "formula",
-      "id": null,
-      "html": "$$ I = mr^2 \\qquad \\text{...(16)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">ووحدات عزم القصور الذاتي: \\(\\text{kg}\\cdot\\text{m}^2\\).</p>",
-      "sectionGroup": 1,
-      "sectionId": null,
-      "sectionNavLabel": null
+     "labelHtml": "<span id=\"shapeALabel\">r</span> = <span id=\"shapeAVal\">0.5</span> m",
+     "inputId": "shapeA",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "0.1",
+     "inputMax": "2",
+     "inputStep": "0.05",
+     "inputValue": "0.5"
     },
     {
-      "type": "paragraph",
-      "html": "ويعبّر عن قانون نيوتن الثاني بحاصل ضرب الكتلة في التعجيل، أي أن:</p><p>\\( F=ma \\qquad \\text{...(17)} \\)</p><p>وفي الحركة الدورانية تصبح المعادلة (17):",
-      "sectionGroup": 2,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "formula",
-      "id": null,
-      "html": "$$ \\tau = I\\alpha \\qquad \\text{...(18)} $$\n      <p style=\"margin:.6rem 0 0;font-size:1rem;font-weight:700;color:var(--accent-red)\">قانون العزم المدور للحركة الدورانية</p>",
-      "sectionGroup": 3,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "paragraph",
-      "html": "هذه المعادلة تمثل قانون نيوتن الثاني في الحركة الدورانية، حيث حل العزم (τ) محل القوة (F) وعزم القصور الذاتي (I) محل الكتلة (m) والتعجيل الزاوي (α) محل التعجيل الخطي (a).",
-      "sectionGroup": 4,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "table",
-      "heading": "📊 جدول 2-1: عزم القصور الذاتي لبعض الأنظمة",
-      "headers": [
-        "الجسم والمحور",
-        "عزم القصور الذاتي"
-      ],
-      "rows": [
-        [
-          "عمود أو سلك طويل، حول محور عمودي يمر بمركز الكتلة",
-          "\\( I=\\tfrac{1}{12}mL^2 \\)"
-        ],
-        [
-          "طوق رقيق، حول محور عمودي يمر بالمركز",
-          "\\( I=mr^2 \\)"
-        ],
-        [
-          "كرة صلدة، حول القطر",
-          "\\( I=\\tfrac{2}{5}mr^2 \\)"
-        ],
-        [
-          "صفيحة، حول محور عمودي يمر بمركز الكتلة",
-          "\\( I=\\tfrac{1}{12}m(a^2+b^2) \\)"
-        ],
-        [
-          "قرص أو اسطوانة صلدة، حول محورها المار بمركز الكتلة",
-          "\\( I=\\tfrac{1}{2}mr^2 \\)"
-        ],
-        [
-          "كرة مجوّفة، حول القطر",
-          "\\( I=\\tfrac{2}{3}mr^2 \\)"
-        ],
-        [
-          "صفيحة، حول محور موازٍ يمر بمركز الكتلة",
-          "\\( I=\\tfrac{2}{3}ma^2 \\)"
-        ]
-      ],
-      "sectionGroup": 5,
-      "sectionId": null,
-      "sectionNavLabel": null
-    },
-    {
-      "type": "simulation",
-      "svgId": "shapeSvg",
-      "svgAriaLabel": "رسم توضيحي للشكل المختار",
-      "svgViewBox": "0 0 260 140",
-      "svgWidth": "260",
-      "svgHeight": "140",
-      "sectionHeading": "🕹️ إعادة إنشاء الجدول 2-1 كحاسبة تفاعلية",
-      "descriptionHtml": "اختر أحد الأشكال السبعة من جدول الكتاب، وحرّك مزلاجي الكتلة والبعد المميز لمشاهدة عزم القصور الذاتي (I) يُحسب مباشرةً بالصيغة الصحيحة لهذا الشكل.",
-      "controls": [
-        {
-          "labelHtml": "الكتلة m = <span id=\"shapeMassVal\">2.0</span> kg",
-          "inputId": "shapeMass",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "0.5",
-          "inputMax": "10",
-          "inputStep": "0.1",
-          "inputValue": "2.0"
-        },
-        {
-          "labelHtml": "<span id=\"shapeALabel\">r</span> = <span id=\"shapeAVal\">0.5</span> m",
-          "inputId": "shapeA",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "0.1",
-          "inputMax": "2",
-          "inputStep": "0.05",
-          "inputValue": "0.5"
-        },
-        {
-          "labelHtml": "<span id=\"shapeBLabel\">b</span> = <span id=\"shapeBVal\">0.3</span> m",
-          "inputId": "shapeB",
-          "rowId": "shapeBRow",
-          "rowStyle": "display:none",
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "0.1",
-          "inputMax": "2",
-          "inputStep": "0.05",
-          "inputValue": "0.3"
-        }
-      ],
-      "buttons": null,
-      "selectId": "shapeSelect",
-      "selectOptions": [
-        {
-          "value": "0",
-          "text": "عمود/سلك طويل (حول محور عمودي بمركز الكتلة) — I=(1/12)mL²"
-        },
-        {
-          "value": "1",
-          "text": "طوق رقيق (حول محور عمودي بالمركز) — I=mr²"
-        },
-        {
-          "value": "2",
-          "text": "كرة صلدة (حول القطر) — I=(2/5)mr²"
-        },
-        {
-          "value": "3",
-          "text": "صفيحة (حول محور عمودي بمركز الكتلة) — I=(1/12)m(a²+b²)"
-        },
-        {
-          "value": "4",
-          "text": "قرص/اسطوانة صلدة (حول محورها المركزي) — I=(1/2)mr²"
-        },
-        {
-          "value": "5",
-          "text": "كرة مجوّفة (حول القطر) — I=(2/3)mr²"
-        },
-        {
-          "value": "6",
-          "text": "صفيحة (حول محور موازٍ بمركز الكتلة) — I=(2/3)ma²"
-        }
-      ],
-      "presets": null,
-      "ruleBoxes": [
-        {
-          "html": null,
-          "id": "shapeFormula"
-        }
-      ],
-      "trailingHtml": null,
-      "sectionGroup": 6,
-      "sectionId": "shape-widget",
-      "sectionNavLabel": "🕹️ حاسبة عزم القصور الذاتي"
-    },
-    {
-      "type": "simulation",
-      "svgId": "torqueSvg",
-      "svgAriaLabel": "مقارنة تعجيل زاوي لقرصين بعزمي قصور ذاتي مختلفين تحت العزم نفسه",
-      "svgViewBox": "0 0 320 170",
-      "svgWidth": "320",
-      "svgHeight": "170",
-      "sectionHeading": "🕹️ محاكاة تفاعلية: نفس العزم، عزوم قصور ذاتي مختلفة",
-      "descriptionHtml": "يُسلَّط العزم نفسه (τ) على قرصين مختلفين في عزم القصور الذاتي (I). حرّك المزلاجين وشاهد أيّهما يدور أسرع — تطبيقًا مباشرًا لقانون \\(\\alpha=\\tau/I\\).",
-      "controls": [
-        {
-          "labelHtml": "العزم τ = <span id=\"torqueTauVal\">4</span> N·m",
-          "inputId": "torqueTau",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "1",
-          "inputMax": "10",
-          "inputStep": "0.5",
-          "inputValue": "4"
-        },
-        {
-          "labelHtml": "I₁ (الأيسر) = <span id=\"iaVal\">1</span> kg·m²",
-          "inputId": "iaSlider",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "0.5",
-          "inputMax": "6",
-          "inputStep": "0.1",
-          "inputValue": "1"
-        },
-        {
-          "labelHtml": "I₂ (الأيمن) = <span id=\"ibVal\">3</span> kg·m²",
-          "inputId": "ibSlider",
-          "rowId": null,
-          "rowStyle": null,
-          "inputType": "range",
-          "inputClass": "neu-range",
-          "inputMin": "0.5",
-          "inputMax": "6",
-          "inputStep": "0.1",
-          "inputValue": "3"
-        }
-      ],
-      "buttons": null,
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [
-        {
-          "html": null,
-          "id": "torqueReadout"
-        }
-      ],
-      "trailingHtml": null,
-      "sectionGroup": 7,
-      "sectionId": "torque-widget",
-      "sectionNavLabel": "🕹️ سباق τ=Iα"
+     "labelHtml": "<span id=\"shapeBLabel\">b</span> = <span id=\"shapeBVal\">0.3</span> m",
+     "inputId": "shapeB",
+     "rowId": "shapeBRow",
+     "rowStyle": "display:none",
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "0.1",
+     "inputMax": "2",
+     "inputStep": "0.05",
+     "inputValue": "0.3"
     }
-  ],
-  "quiz": {
-    "heading": "🧠 اختبر فهمك",
-    "questions": [
-      {
-        "correct": 1,
-        "question": "يعتمد عزم القصور الذاتي لجسم على:",
-        "options": [
-          "الكتلة فقط",
-          "الكتلة وتوزيعها وشكل الجسم ونمط دورانه",
-          "السرعة الزاوية فقط",
-          "الزمن فقط"
-        ],
-        "explain": "عزم القصور الذاتي يعتمد على الكتلة ونمط توزيعها وشكل الجسم، وليس فقط على مقدار الكتلة."
-      },
-      {
-        "correct": 1,
-        "question": "وحدات عزم القصور الذاتي في النظام الدولي هي:",
-        "options": [
-          "\\( \\text{kg/m}^2 \\)",
-          "\\( \\text{kg}\\cdot\\text{m}^2 \\)",
-          "\\( \\text{N}\\cdot\\text{m} \\)",
-          "\\( \\text{kg}\\cdot\\text{m/s}^2 \\)"
-        ],
-        "explain": "من المعادلة (16): \\(I=mr^2\\)، فوحداته \\(\\text{kg}\\cdot\\text{m}^2\\)."
-      },
-      {
-        "correct": 1,
-        "question": "قانون العزم المدور للحركة الدورانية (نظير \\(F=ma\\)) هو:",
-        "options": [
-          "\\( \\tau=I\\omega \\)",
-          "\\( \\tau=I\\alpha \\)",
-          "\\( \\tau=Fr \\)",
-          "\\( \\tau=mr^2 \\)"
-        ],
-        "explain": "المعادلة (18): \\(\\tau=I\\alpha\\)."
-      },
-      {
-        "correct": 1,
-        "question": "عزم القصور الذاتي لقرص صلد يدور حول محوره المركزي هو:",
-        "options": [
-          "\\( mr^2 \\)",
-          "\\( \\tfrac{1}{2}mr^2 \\)",
-          "\\( \\tfrac{2}{5}mr^2 \\)",
-          "\\( \\tfrac{1}{12}mL^2 \\)"
-        ],
-        "explain": "من جدول (2-1): عزم القصور الذاتي لقرص أو اسطوانة صلدة حول محورها المركزي \\(I=\\tfrac12 mr^2\\)."
-      },
-      {
-        "correct": 1,
-        "question": "عند تسليط العزم نفسه على جسمين مختلفَي عزم القصور الذاتي، فإن الجسم ذا عزم القصور الذاتي الأكبر:",
-        "options": [
-          "يتسارع زاويًا بشكل أسرع",
-          "يتسارع زاويًا بشكل أبطأ",
-          "يبقى ساكنًا دائمًا",
-          "لا علاقة له بالتعجيل الزاوي"
-        ],
-        "explain": "بما أن \\(\\alpha=\\tau/I\\)، فكلما زاد عزم القصور الذاتي (I) قلّ التعجيل الزاوي (α) الناتج عن العزم نفسه."
-      }
-    ]
-  },
-  "summary": {
-    "heading": "📋 ملخص الدرس",
-    "items": [
-      "عزم القصور الذاتي \\(I=mr^2\\) يمثل مقاومة الجسم لأي تغيير في سرعته الدورانية.",
-      "قانون العزم المدور للحركة الدورانية \\(\\tau=I\\alpha\\) هو نظير قانون نيوتن الثاني \\(F=ma\\).",
-      "عزم القصور الذاتي يختلف باختلاف شكل الجسم وتوزيع كتلته ومحور دورانه (جدول 2-1).",
-      "لنفس العزم المسلَّط، الجسم ذو عزم القصور الذاتي الأكبر يكتسب تعجيلاً زاويًا أصغر."
-    ]
-  },
-  "mindmap": {
-    "ariaLabel": "خريطة عزم القصور الذاتي الذهنية",
-    "viewBox": "0 0 480 220",
-    "center": {
-      "cx": 240.0,
-      "cy": 110.0,
-      "r": 48.0,
-      "color": "#7c6fee",
-      "lines": [
-        "عزم القصور",
-        "الذاتي I"
-      ]
+   ],
+   "buttons": null,
+   "selectId": "shapeSelect",
+   "selectOptions": [
+    {
+     "value": "0",
+     "text": "عمود/سلك طويل (حول محور عمودي بمركز الكتلة) — I=(1/12)mL²"
     },
-    "satellites": [
-      {
-        "cx": 100.0,
-        "cy": 45.0,
-        "r": 42.0,
-        "color": "#3fa9f5",
-        "lines": [
-          "I=mr²"
-        ]
-      },
-      {
-        "cx": 100.0,
-        "cy": 175.0,
-        "r": 42.0,
-        "color": "#2fd18f",
-        "lines": [
-          "τ=Iα"
-        ]
-      },
-      {
-        "cx": 380.0,
-        "cy": 45.0,
-        "r": 42.0,
-        "color": "#ffab5e",
-        "lines": [
-          "جدول 2-1",
-          "7 أشكال"
-        ]
-      },
-      {
-        "cx": 380.0,
-        "cy": 175.0,
-        "r": 42.0,
-        "color": "#ff6b9d",
-        "lines": [
-          "توزيع الكتلة",
-          "وليس مقدارها فقط"
-        ]
-      }
-    ]
+    {
+     "value": "1",
+     "text": "طوق رقيق (حول محور عمودي بالمركز) — I=mr²"
+    },
+    {
+     "value": "2",
+     "text": "كرة صلدة (حول القطر) — I=(2/5)mr²"
+    },
+    {
+     "value": "3",
+     "text": "صفيحة (حول محور عمودي بمركز الكتلة) — I=(1/12)m(a²+b²)"
+    },
+    {
+     "value": "4",
+     "text": "قرص/اسطوانة صلدة (حول محورها المركزي) — I=(1/2)mr²"
+    },
+    {
+     "value": "5",
+     "text": "كرة مجوّفة (حول القطر) — I=(2/3)mr²"
+    },
+    {
+     "value": "6",
+     "text": "صفيحة (حول محور موازٍ بمركز الكتلة) — I=(2/3)ma²"
+    }
+   ],
+   "presets": null,
+   "ruleBoxes": [
+    {
+     "html": null,
+     "id": "shapeFormula"
+    }
+   ],
+   "trailingHtml": null,
+   "sectionGroup": 6,
+   "sectionId": "shape-widget",
+   "sectionNavLabel": "🕹️ حاسبة عزم القصور الذاتي"
+  },
+  {
+   "type": "simulation",
+   "svgId": "torqueSvg",
+   "svgAriaLabel": "مقارنة تعجيل زاوي لقرصين بعزمي قصور ذاتي مختلفين تحت العزم نفسه",
+   "svgViewBox": "0 0 320 170",
+   "svgWidth": "320",
+   "svgHeight": "170",
+   "sectionHeading": "🕹️ محاكاة تفاعلية: نفس العزم، عزوم قصور ذاتي مختلفة",
+   "descriptionHtml": "يُسلَّط العزم نفسه (τ) على قرصين مختلفين في عزم القصور الذاتي (I). حرّك المزلاجين وشاهد أيّهما يدور أسرع — تطبيقًا مباشرًا لقانون \\(\\alpha=\\tau/I\\).",
+   "controls": [
+    {
+     "labelHtml": "العزم τ = <span id=\"torqueTauVal\">4</span> N·m",
+     "inputId": "torqueTau",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "1",
+     "inputMax": "10",
+     "inputStep": "0.5",
+     "inputValue": "4"
+    },
+    {
+     "labelHtml": "I₁ (الأيسر) = <span id=\"iaVal\">1</span> kg·m²",
+     "inputId": "iaSlider",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "0.5",
+     "inputMax": "6",
+     "inputStep": "0.1",
+     "inputValue": "1"
+    },
+    {
+     "labelHtml": "I₂ (الأيمن) = <span id=\"ibVal\">3</span> kg·m²",
+     "inputId": "ibSlider",
+     "rowId": null,
+     "rowStyle": null,
+     "inputType": "range",
+     "inputClass": "neu-range",
+     "inputMin": "0.5",
+     "inputMax": "6",
+     "inputStep": "0.1",
+     "inputValue": "3"
+    }
+   ],
+   "buttons": null,
+   "selectId": null,
+   "selectOptions": null,
+   "presets": null,
+   "ruleBoxes": [
+    {
+     "html": null,
+     "id": "torqueReadout"
+    }
+   ],
+   "trailingHtml": null,
+   "sectionGroup": 7,
+   "sectionId": "torque-widget",
+   "sectionNavLabel": "🕹️ سباق τ=Iα"
   }
+ ],
+ "quiz": {
+  "heading": "🧠 اختبر فهمك",
+  "questions": [
+   {
+    "correct": 1,
+    "question": "يعتمد عزم القصور الذاتي لجسم على:",
+    "options": [
+     "الكتلة فقط",
+     "الكتلة وتوزيعها وشكل الجسم ونمط دورانه",
+     "السرعة الزاوية فقط",
+     "الزمن فقط"
+    ],
+    "explain": "عزم القصور الذاتي يعتمد على الكتلة ونمط توزيعها وشكل الجسم، وليس فقط على مقدار الكتلة."
+   },
+   {
+    "correct": 1,
+    "question": "وحدات عزم القصور الذاتي في النظام الدولي هي:",
+    "options": [
+     "\\( \\text{kg/m}^2 \\)",
+     "\\( \\text{kg}\\cdot\\text{m}^2 \\)",
+     "\\( \\text{N}\\cdot\\text{m} \\)",
+     "\\( \\text{kg}\\cdot\\text{m/s}^2 \\)"
+    ],
+    "explain": "من المعادلة (16): \\(I=mr^2\\)، فوحداته \\(\\text{kg}\\cdot\\text{m}^2\\)."
+   },
+   {
+    "correct": 1,
+    "question": "قانون العزم المدور للحركة الدورانية (نظير \\(F=ma\\)) هو:",
+    "options": [
+     "\\( \\tau=I\\omega \\)",
+     "\\( \\tau=I\\alpha \\)",
+     "\\( \\tau=Fr \\)",
+     "\\( \\tau=mr^2 \\)"
+    ],
+    "explain": "المعادلة (18): \\(\\tau=I\\alpha\\)."
+   },
+   {
+    "correct": 1,
+    "question": "عزم القصور الذاتي لقرص صلد يدور حول محوره المركزي هو:",
+    "options": [
+     "\\( mr^2 \\)",
+     "\\( \\tfrac{1}{2}mr^2 \\)",
+     "\\( \\tfrac{2}{5}mr^2 \\)",
+     "\\( \\tfrac{1}{12}mL^2 \\)"
+    ],
+    "explain": "من جدول (2-1): عزم القصور الذاتي لقرص أو اسطوانة صلدة حول محورها المركزي \\(I=\\tfrac12 mr^2\\)."
+   },
+   {
+    "correct": 1,
+    "question": "عند تسليط العزم نفسه على جسمين مختلفَي عزم القصور الذاتي، فإن الجسم ذا عزم القصور الذاتي الأكبر:",
+    "options": [
+     "يتسارع زاويًا بشكل أسرع",
+     "يتسارع زاويًا بشكل أبطأ",
+     "يبقى ساكنًا دائمًا",
+     "لا علاقة له بالتعجيل الزاوي"
+    ],
+    "explain": "بما أن \\(\\alpha=\\tau/I\\)، فكلما زاد عزم القصور الذاتي (I) قلّ التعجيل الزاوي (α) الناتج عن العزم نفسه."
+   }
+  ]
+ },
+ "summary": {
+  "heading": "📋 ملخص الدرس",
+  "items": [
+   "عزم القصور الذاتي \\(I=mr^2\\) يمثل مقاومة الجسم لأي تغيير في سرعته الدورانية.",
+   "قانون العزم المدور للحركة الدورانية \\(\\tau=I\\alpha\\) هو نظير قانون نيوتن الثاني \\(F=ma\\).",
+   "عزم القصور الذاتي يختلف باختلاف شكل الجسم وتوزيع كتلته ومحور دورانه (جدول 2-1).",
+   "لنفس العزم المسلَّط، الجسم ذو عزم القصور الذاتي الأكبر يكتسب تعجيلاً زاويًا أصغر."
+  ]
+ },
+ "mindmap": {
+  "heading": "🗺 خريطة الدرس الذهنية",
+  "ariaLabel": "خريطة عزم القصور الذاتي الذهنية",
+  "viewBox": "0 0 480 220",
+  "center": {
+   "cx": 240.0,
+   "cy": 110.0,
+   "r": 48.0,
+   "color": "#7c6fee",
+   "lines": [
+    "عزم القصور",
+    "الذاتي I"
+   ]
+  },
+  "satellites": [
+   {
+    "cx": 100.0,
+    "cy": 45.0,
+    "r": 42.0,
+    "color": "#3fa9f5",
+    "lines": [
+     "I=mr²"
+    ]
+   },
+   {
+    "cx": 100.0,
+    "cy": 175.0,
+    "r": 42.0,
+    "color": "#2fd18f",
+    "lines": [
+     "τ=Iα"
+    ]
+   },
+   {
+    "cx": 380.0,
+    "cy": 45.0,
+    "r": 42.0,
+    "color": "#ffab5e",
+    "lines": [
+     "جدول 2-1",
+     "7 أشكال"
+    ]
+   },
+   {
+    "cx": 380.0,
+    "cy": 175.0,
+    "r": 42.0,
+    "color": "#ff6b9d",
+    "lines": [
+     "توزيع الكتلة",
+     "وليس مقدارها فقط"
+    ]
+   }
+  ]
+ }
 }
