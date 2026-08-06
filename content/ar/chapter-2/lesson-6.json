@@ -66,7 +66,22 @@
       "trailingHtml": null,
       "sectionGroup": 2,
       "sectionId": "sky-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 15-2"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 15-2",
+      "labels": {
+        "pos1": "الظهيرة",
+        "pos2": "بعد الظهر",
+        "pos3": "بعد الظهر",
+        "pos4": "عصرًا",
+        "pos5": "عصرًا",
+        "pos6": "قُبيل الغروب",
+        "pos7": "قُبيل الغروب",
+        "pos8": "الغروب",
+        "pos9": "الغروب",
+        "pos10": "الغروب التام",
+        "scatterLabelBlue": "سماء زرقاء (استطارة الأزرق)",
+        "scatterLabelRed": "سماء وشمس محمرّة (مسار أطول)",
+        "eyeLabel": "مراقب"
+      }
     },
     {
       "type": "paragraph",

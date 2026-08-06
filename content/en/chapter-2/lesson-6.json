@@ -1,0 +1,233 @@
+{
+  "lessonNumber": 6,
+  "chapterNumber": 2,
+  "meta": {
+    "pageTitle": "Lesson 6: Scattering of Light — Chapter Two",
+    "description": "2-9 Scattering of light: why the sky is blue and why the sun reddens at sunrise and sunset, the scattering experiment, and the inverse fourth-power law with wavelength.",
+    "breadcrumbChapter": "Chapter 2",
+    "breadcrumbLesson": "Scattering of Light",
+    "footer": "Chapter Two: Interference, Polarization, Diffraction, and Scattering — Lesson 6: Scattering of Light"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 6 of 7 · Chapter Two",
+    "title": "Scattering of Light",
+    "lead": "2-9 Scattering of Light: why the sky is blue and why the sun reddens at sunrise and sunset"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Defines the phenomenon of scattering and clarifies its relation to diffraction.",
+    "Explains why the sky is blue and the sun reddens at sunrise and sunset.",
+    "States the inverse fourth-power law between the amount of scattering and the wavelength."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 2-9 Scattering of Light",
+      "html": "The phenomenon of scattering is considered a special case of diffraction: when a beam of white light passes through a medium containing particles whose diameters are close to the average wavelength of the light, this medium causes significant scattering of the short waves, so light with a bluish color is emitted.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "paragraph",
+      "html": "The blue color of the sky is attributed to the scattering of sunlight after the light rays collide with dust particles in the atmosphere. Blue light scatters more efficiently than the other colors, red for example. When we look at the sky, what we observe is the blue light coming from the sun that scatters away from the direct beam and appears blue.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "skySvg",
+      "svgAriaLabel": "Simulation of how the sun and sky color change with the length of the atmospheric path",
+      "svgViewBox": "0 0 360 200",
+      "svgWidth": "360",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive Simulation: From a Blue Sky to a Red Sunset (Figure 2-15)",
+      "descriptionHtml": "Drag the sun-position slider from noon to sunset. At noon, the path of the sun's rays through the atmosphere is relatively short, while at sunset the light travels a much longer path, so most of the blue light is scattered before reaching the eye directly, leaving the red light to pass through directly.",
+      "controls": [
+        {
+          "labelHtml": "Sun position: <span id=\"sunLabel\">Noon</span>",
+          "inputId": "sunSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "1",
+          "inputMax": "10",
+          "inputStep": "1",
+          "inputValue": "1"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "sky-widget",
+      "sectionNavLabel": "🕹️ Recreating Figure 2-15",
+      "labels": {
+        "pos1": "Noon", "pos2": "Afternoon", "pos3": "Afternoon",
+        "pos4": "Late afternoon", "pos5": "Late afternoon",
+        "pos6": "Just before sunset", "pos7": "Just before sunset",
+        "pos8": "Sunset", "pos9": "Sunset", "pos10": "Full sunset",
+        "scatterLabelBlue": "Blue sky (blue light scattering)",
+        "scatterLabelRed": "Reddened sky and sun (longer path)",
+        "eyeLabel": "Observer"
+      }
+    },
+    {
+      "type": "paragraph",
+      "html": "The origin of the sky's blue color can be demonstrated by adding a few drops of milk to a bottle of water, then passing light from a light source through the mixture. If we look at the bottle from a side perpendicular to the light beam that is scattered by the milk droplets, it appears blue, and if we look at the bottle from the direction opposite to the light beam's direction, the color will be a light orange.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The sun might appear red. Above the Earth's atmosphere, the sky is black, and the moon, stars, and planets are visible to an astronaut even during daytime. The amount of scattering is inversely proportional to the fourth power of the light's given wavelength \\((\\lambda^{-4})\\), and since the wavelength of red is roughly double the wavelength of blue, blue light scatters about 16 times more than red light.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .5rem;font-weight:700\">Amount of scattering</p>\n      $$ \\propto \\dfrac{1}{\\lambda^4} $$",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "Among the natural phenomena that show us the scattering of light: the blue of the sky and the red color of the sun's disk at sunrise and sunset. Some particles suspended in the air have sizes close to the average wavelength of white light, and scattering of white light occurs in proportions that depend on the wavelengths; at sunrise or sunset, the sun's rays travel a longer path through the layer of air, so the blue wavelengths are scattered earlier along the longer air path, and the light that reaches the eye unscattered is the red light.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "Did you know?",
+      "html": "The vivid colors of some birds' feathers result from the scattering of light.",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "The phenomenon of scattering is considered a special case of:",
+        "options": [
+          "Polarization",
+          "Interference",
+          "Diffraction",
+          "Refraction"
+        ],
+        "explain": "Scattering is a special case of diffraction, occurring when white light passes through a medium containing particles whose diameters are close to its wavelength."
+      },
+      {
+        "correct": 1,
+        "question": "The blue color of the sky is attributed to:",
+        "options": [
+          "The atmosphere absorbing all colors except blue",
+          "Blue light scattering more efficiently than the other colors",
+          "Sunlight reflecting off the surface of the oceans",
+          "Sunlight being polarized by air molecules"
+        ],
+        "explain": "Blue light scatters more efficiently than the other colors due to its short wavelength, reaching us from every direction of the sky."
+      },
+      {
+        "correct": 3,
+        "question": "The amount of scattering is proportional to the wavelength of light:",
+        "options": [
+          "Directly with the wavelength",
+          "Directly with the square of the wavelength",
+          "Inversely with the square of the wavelength",
+          "Inversely with the fourth power of the wavelength"
+        ],
+        "explain": "The amount of scattering is inversely proportional to \\(\\lambda^4\\), which is why blue light scatters about 16 times more than red."
+      },
+      {
+        "correct": 1,
+        "question": "The sun's disk appears red at sunrise and sunset because:",
+        "options": [
+          "The sun itself changes color at these times",
+          "Sunlight travels a longer path through the atmosphere, so most of the blue light is scattered away, leaving the red",
+          "The atmosphere reflects only red light at these times",
+          "The atmosphere is free of dust particles at these times"
+        ],
+        "explain": "At sunrise and sunset, light travels a longer path through the atmosphere, so most of the blue light is scattered away from the direct path, leaving the red light (which scatters least) to reach the eye directly."
+      },
+      {
+        "correct": 0,
+        "question": "Above Earth's atmosphere (in space), the sky appears to an astronaut:",
+        "options": [
+          "Black",
+          "Dark blue",
+          "Red",
+          "Bright white"
+        ],
+        "explain": "In the absence of the atmosphere that scatters light, the sky appears black above Earth's atmosphere, and the sun, moon, and stars are visible even during daytime."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Scattering is a special case of diffraction, occurring when light passes through particles whose diameters are close to its wavelength.",
+      "Blue light scatters more efficiently than red, which is why the sky appears blue.",
+      "The amount of scattering \\(\\propto 1/\\lambda^4\\); blue scatters about 16 times more than red.",
+      "At sunrise and sunset, the path of sunlight through the air lengthens, so blue is scattered away and red remains dominant."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of scattering",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Scattering"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Blue sky"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "1/λ⁴",
+          "Blue×16"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Sunrise/sunset",
+          "Red"
+        ]
+      }
+    ]
+  }
+}
