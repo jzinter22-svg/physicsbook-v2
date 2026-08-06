@@ -243,32 +243,39 @@
       "sectionNavLabel": "🕹️ حاسبة القوة الدافعة المحتثة ذاتيًا"
     },
     {
-      "type": "simulation",
-      "svgId": null,
-      "svgAriaLabel": "",
-      "svgViewBox": null,
-      "svgWidth": null,
-      "svgHeight": null,
-      "sectionHeading": "📝 مثال (3)",
-      "descriptionHtml": null,
-      "controls": [],
-      "buttons": [
-        {
-          "id": null,
-          "html": "إظهار خطوات الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-ex3",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>ملف يتألف من 800 لفة متقاربة جدًا، يمرّ فيه تيار شدته \\((6\\ \\text{mA})\\). جد معامل الحث الذاتي للملف إذا كان الفيض المخترق له بسبب التيار يساوي \\((3\\times10^{-8}\\ \\text{weber})\\).</p>",
+      "label": "📝 مثال (3)",
+      "solution": {
+        "given": [
+          "\\( N = 800 \\) لفة",
+          "\\( \\Delta I = 6\\ \\text{mA} = 6\\times10^{-3}\\ \\text{A} \\) — شدة التيار (بعد التحويل)",
+          "\\( \\Delta\\varnothing = 3\\times10^{-8}\\ \\text{Wb} \\) — الفيض المخترق للملف"
+        ],
+        "required": "احسب معامل الحث الذاتي L للملف.",
+        "steps": [
+          {
+            "note": "نطبّق علاقة معامل الحث الذاتي",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( L = N\\dfrac{\\Delta\\varnothing}{\\Delta I} = 800\\times\\dfrac{3\\times10^{-8}}{6\\times10^{-3}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( L = 4\\times10^{-3}\\ \\text{H} \\)"
+              }
+            ]
           }
-        }
-      ],
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [],
-      "trailingHtml": null,
+        ],
+        "final": "✓ L = 4×10⁻³ H = 4 mH",
+        "label": "الحل التفصيلي"
+      },
       "sectionGroup": 12,
       "sectionId": "example3",
       "sectionNavLabel": "📝 مثال 3"

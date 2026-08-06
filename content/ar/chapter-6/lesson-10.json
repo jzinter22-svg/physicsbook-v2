@@ -20,152 +20,313 @@
   ],
   "content": [
     {
-      "type": "simulation",
-      "svgId": null,
-      "svgAriaLabel": "",
-      "svgViewBox": null,
-      "svgWidth": null,
-      "svgHeight": null,
-      "sectionHeading": "📖 أسئلة الفصل السادس",
-      "descriptionHtml": null,
-      "controls": [],
-      "buttons": [
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q1-1",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+      "type": "sectionIntro",
+      "heading": "📖 أسئلة الفصل السادس",
+      "leadHtml": null,
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>يمكن استعمال عملية الضخ الكهربائي عندما يكون الوسط الفعال في الحالة:</p><ul>\n<li>a- الصلبة.</li>\n<li>b- السائلة.</li>\n<li>c- الغازية.</li>\n<li>d- ليس أي مما سبق.</li>\n</ul>",
+      "label": "س1 (1)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "تُستعمل تقنية الضخ الكهربائي بتسليط جهد كهربائي (تفريغ كهربائي) على الوسط الفعال، وهذا هو أسلوب ضخ ليزرات الحالة الغازية مثل ليزر الهيليوم-نيون وليزر ثنائي أوكسيد الكاربون.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q1-2",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ الإجابة الصحيحة: c — الغازية",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>يحدث الفعل الليزري عند حدوث انبعاث:</p><ul>\n<li>a- تلقائي فقط.</li>\n<li>b- محفز فقط.</li>\n<li>c- تلقائي ومحفز.</li>\n<li>d- محفز وتلقائي.</li>\n</ul>",
+      "label": "س1 (2)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "كما ورد في التذكير: \"للحصول على الانبعاث المحفز يجب الحصول على الانبعاث التلقائي أولًا\"، فالفعل الليزري لا يتحقق إلا بحدوث الانبعاثين معًا وبالترتيب: التلقائي أولًا ثم المحفز.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q1-3",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ الإجابة الصحيحة: تلقائي ومحفز (كلاهما ضروري، والتلقائي يسبق المحفز)",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 3,
+      "problemHtml": "<p>تعتمد عملية قياس المدى باستعمال أشعة الليزر على أحد خواصه وهي:</p><ul>\n<li>a- الاستقطاب.</li>\n<li>b- الاتجاهية.</li>\n<li>c- التشاكه.</li>\n<li>d- أحادي الطول الموجي.</li>\n</ul>",
+      "label": "س1 (3)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "قياس المدى يعتمد على إرسال حزمة ليزر ضيقة موازية (اتجاهية عالية) نحو الهدف واستقبال انعكاسها، فتحديد الاتجاه والمسافة بدقة يتطلب حزمة لا تتشتت — وهذه هي خاصية الاتجاهية.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q1-4",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ الإجابة الصحيحة: b — الاتجاهية",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 4,
+      "problemHtml": "<p>في نظام المستويات الأربعة المستعمل في إنتاج الليزر، يتحقق التوزيع المعكوس بين المستويين:</p><ul>\n<li>a- (E₄, E₃).</li>\n<li>b- (E₂, E₁).</li>\n<li>c- (E₃, E₂).</li>\n<li>d- (E₃, E₁).</li>\n</ul>",
+      "label": "س1 (4)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "في المنظومة رباعية المستوى، يتحقق التوزيع المعكوس بين المستوى شبه المستقر E₃ ومستوى الطاقة E₂ الذي يبقى شبه فارغ بسبب الهبوط السريع منه إلى E₁.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q1-5",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ الإجابة الصحيحة: c — (E₃, E₂)",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 5,
+      "problemHtml": "<p>تستعمل طريقة الضخ الضوئي في إنتاج ليزر:</p><ul>\n<li>a- الياقوت.</li>\n<li>b- شبه الموصل.</li>\n<li>c- الكيميائي.</li>\n<li>d- الهيليوم نيون.</li>\n</ul>",
+      "label": "س1 (5)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "ليزر الياقوت يُضخّ بواسطة المصباح الومضي، وهي تقنية الضخ الضوئي؛ بينما يُضخّ ليزر الهيليوم-نيون كهربائيًا، وليزر شبه الموصل بتيار كهربائي، والليزر الكيميائي بتفاعل كيميائي.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q1-6",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ الإجابة الصحيحة: a — الياقوت",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 6,
+      "problemHtml": "<p>تكون قدرة الضخ عالية عندما تعمل منظومة الليزر بنظام:</p><ul>\n<li>a- مستويين.</li>\n<li>b- ثلاثة مستويات.</li>\n<li>c- أربعة مستويات.</li>\n<li>d- أي عدد من المستويات.</li>\n</ul>",
+      "label": "س1 (6)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "نص الدرس صراحة: \"تتطلب هذه المنظومة [الرباعية] طاقة ضخ أقل لتحقيق التوزيع المعكوس مقارنة مع المنظومة الثلاثية المستوى\". وبالتالي فإن الثلاثية المستوى تتطلب طاقة ضخ أعلى.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q1-7",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ الإجابة الصحيحة: b — ثلاثة مستويات",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 7,
+      "problemHtml": "<p>في نظام ثلاثة مستويات المستعملة في إنتاج الليزر، يكون فيه المستوى شبه المستقر هو المستوى:</p><ul>\n<li>a- E₃.</li>\n<li>b- E₂.</li>\n<li>c- E₁.</li>\n<li>d- كل الاحتمالات السابقة ممكنة.</li>\n</ul>",
+      "label": "س1 (7)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "في المنظومة ثلاثية المستوى: E₁ المستوى الأرضي، E₂ المستوى شبه المستقر، E₃ مستوى التهيج.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الإجابة",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q2",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ الإجابة الصحيحة: b — E₂",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 8,
+      "problemHtml": "<p>ما خصائص شعاع الليزر؟</p>",
+      "label": "س2",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1- أحادي الطول الموجي (أحادي اللون): نقاوة ضوئية بلون واحد.",
+            "calc": []
+          },
+          {
+            "note": "2- الاتجاهية: حزم متوازية قليلة الانفراج تسير مسافات كبيرة.",
+            "calc": []
+          },
+          {
+            "note": "3- التشاكه: تماثل الموجات في الطور والاتجاه والطاقة.",
+            "calc": []
+          },
+          {
+            "note": "4- السطوع: شدة إشعاع عالية جدًا نتيجة تركيز الطاقة في حزمة ضيقة.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار التعليل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q3",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ أحادي الطول الموجي، الاتجاهية، التشاكه، السطوع",
+        "label": "الإجابة"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 9,
+      "problemHtml": "<p>علّل ما يأتي:</p><ol style=\"margin:.3rem 0 0;padding-inline-start:1.3rem\">\n<li>1- لا يتحلل ضوء الليزر عند إمراره خلال موشور زجاجي.</li>\n<li>2- لماذا يفضّل نظام المستويات الأربعة على نظام المستويات الثلاثة في الليزر.</li>\n<li>3- لماذا توضع المادة الفعالة بين مرآتين إحداهما ذات انعكاسية جزئية والأخرى كلية.</li>\n</ol>",
+      "label": "س3",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1- لأن ضوء الليزر أحادي الطول الموجي (لون واحد نقي)، والموشور يفرّق الضوء إلى ألوانه المكوّنة له بحسب اختلاف أطوالها الموجية؛ وبما أن الليزر لا يحتوي إلا طولًا موجيًا واحدًا، فلا يتحلل عبر الموشور.",
+            "calc": []
+          },
+          {
+            "note": "2- لأن المنظومة رباعية المستوى تتطلب طاقة ضخ أقل لتحقيق التوزيع المعكوس؛ إذ يكون المستوى الأدنى للانتقال الليزري (E₂) شبه فارغ دائمًا بسبب الهبوط السريع منه إلى المستوى الأرضي E₁، بخلاف المنظومة الثلاثية التي يكون فيها المستوى الأدنى (E₁) هو المستوى الأرضي المكتظ بالذرات أصلًا.",
+            "calc": []
+          },
+          {
+            "note": "3- لكي تتعاقب انعكاسات الضوء داخل المرنان (عبر المرآة الكلية الانعكاس) فيزداد عدد الفوتونات المتولدة بالانبعاث المحفز وتحصل عملية التضخيم، بينما تسمح المرآة الجزئية الانعكاس بنفاذ نسبة من الضوء المضخّم خارج المرنان كشعاع ليزر، وتعكس بقيته لإدامة عملية التضخيم.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الإجابة",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q4",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ أحادية الطول الموجي تمنع التحلل؛ قلة طاقة الضخ تفضّل النظام الرباعي؛ المرآتان (كلية وجزئية) تحققان التضخيم مع خروج جزء من الشعاع",
+        "label": "التعليل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 10,
+      "problemHtml": "<p>ما التصوير المجسم (الهولوغرافي) وبماذا يتميز عن التصوير العادي؟</p>",
+      "label": "س4",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "التصوير المجسم (الهولوغرافي) هو تقنية تصوير بالليزر تُستعمل للحصول على صورة مجسّمة ذات ثلاثة أبعاد (طول وعرض وارتفاع).",
+            "calc": []
+          },
+          {
+            "note": "يتميز عن التصوير العادي بأنه يسجّل السعة والطور للموجات الضوئية المنعكسة من الجسم، فتظهر جميع تفاصيل شكل الجسم بحيث تتم رؤيته من كل الاتجاهات، بينما التصوير الاعتيادي يسجّل شدة الأشعة فقط.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الإجابة",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q5",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ تصوير ثلاثي الأبعاد يسجّل السعة والطور (يُرى من كل الاتجاهات)، بخلاف التصوير العادي الذي يسجّل الشدة فقط",
+        "label": "الإجابة"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 11,
+      "problemHtml": "<p>كيف تصنَّف الليزرات وما أنواعها؟</p>",
+      "label": "س5",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "تُصنَّف الليزرات تبعًا لنوع مادة الوسط الفعال إلى ستة أنواع رئيسة:",
+            "calc": []
+          },
+          {
+            "note": "1- ليزر الحالة الصلبة (الياقوت، النيديميوم). 2- ليزر الحالة الغازية (الهيليوم-نيون، ثنائي أوكسيد الكاربون). 3- ليزر الاكسامير (غازات نبيلة). 4- ليزر الحالة السائلة (الصبغة العضوية). 5- ليزر أشباه الموصلات (زرنيخيد الكاليوم). 6- الليزر الكيميائي (فلوريد الديتيريوم).",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الإجابة",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q6",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ تُصنَّف حسب الوسط الفعال إلى: صلب، غازي، اكسامير، سائل، شبه موصل، كيميائي",
+        "label": "الإجابة"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 12,
+      "problemHtml": "<p>اذكر خمسة من تطبيقات البلازما.</p>",
+      "label": "س6",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1- تصنيع شاشات العرض التلفزيونية.",
+            "calc": []
+          },
+          {
+            "note": "2- البلازما في المصابيح (النيون والفلورسنت).",
+            "calc": []
+          },
+          {
+            "note": "3- الحصول على الطاقة من خلال الاندماج النووي الحراري.",
+            "calc": []
+          },
+          {
+            "note": "4- الطلاء بالبلازما لتقليل تأثير الحرارة المرتفعة على سطوح الطائرات والمركبات الفضائية.",
+            "calc": []
+          },
+          {
+            "note": "5- التطبيقات الطبية (تفتيت الحصى الكلوية بالموجات الصادمة، السيراميك الطبي، التعقيم).",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الإجابة",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-q7",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ من أمثلتها: شاشات العرض، المصابيح، الاندماج النووي، الطلاء الحراري للمركبات الفضائية، والتطبيقات الطبية",
+        "label": "الإجابة"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 أسئلة الفصل"
+    },
+    {
+      "type": "example",
+      "number": 13,
+      "problemHtml": "<p>ما الليزر الأهم الذي يستعمل في المجال الطبي؟</p>",
+      "label": "س7",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "يُعدّ ليزر ثنائي أوكسيد الكاربون (CO₂) من أهم وأشهر الليزرات المستعملة في الجراحة العامة، ويمتاز بالإمكانية العالية والدقة في تبخير وقطع الأنسجة الحية.",
+            "calc": []
           }
-        }
-      ],
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [],
-      "trailingHtml": null,
+        ],
+        "final": "✓ ليزر ثنائي أوكسيد الكاربون (CO₂)",
+        "label": "الإجابة"
+      },
       "sectionGroup": 0,
       "sectionId": "questions",
       "sectionNavLabel": "📖 أسئلة الفصل"

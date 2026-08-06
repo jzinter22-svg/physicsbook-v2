@@ -246,10 +246,20 @@ def extract_simulation(section):
     # button with an id OR a data- attribute counts as a live control too,
     # not just ones already inside a recognized .io-panel.
     if not has_control:
-        has_control = next(
-            (b for b in section.select("button") if b.get("id") or any(k.startswith("data-") for k in b.attrs)),
-            None,
-        )
+        def is_sim_button(b):
+            # data-reveal-steps is the universal "show solution steps"
+            # toggle used inside every worked example/exercise's .example
+            # div, site-wide — never a simulation control. Excluding it (and
+            # anything nested inside .example, which only ever holds that
+            # same toggle or a plain step-reveal button, never a widget
+            # picker) keeps this broadened check from swallowing whole
+            # examples into a bogus "simulation" block.
+            if b.get("data-reveal-steps") is not None:
+                return False
+            if b.find_parent(class_="example") is not None:
+                return False
+            return bool(b.get("id")) or any(k.startswith("data-") for k in b.attrs)
+        has_control = next((b for b in section.select("button") if is_sim_button(b)), None)
     # law2-widget (lesson 3) has neither: it's a purely passive, continuously
     # animated SVG + a live-updating rule-box readout, no user control at
     # all — still needs to be a simulation block (not fall through to being
@@ -525,6 +535,32 @@ def extract_lesson(path, lesson_num, chapter_num, total_lessons):
                     "descHtml": inner_html(diagram.select_one("p")) if diagram.select_one("p") else None,
                     "svg": str(svg) if svg else None,
                     "caption": text(diagram.select_one(".diagram-caption")),
+                })
+                continue
+
+            # A one-off shape seen in ch2 l2: a plain .card (not .diagram-card)
+            # wrapping a static, pre-drawn .mindmap-wrap svg with no id of its
+            # own and no live control anywhere in the section — a labeled
+            # apparatus schematic, not a JS-driven widget canvas (that's
+            # extract_simulation's job, tried earlier and correctly skipped
+            # this section since it has no input/select/button-with-id/data-*
+            # and no id'd svg to recognize as "live"). Reuse the "diagram"
+            # shape rather than inventing a new one — its svg field already
+            # carries the full markup (including any nested id'd child, e.g.
+            # a placeholder <g> a *different* widget's JS fills in) verbatim,
+            # translated the same way as any other embedded-HTML field: by
+            # editing the <text> nodes inside the captured svg string.
+            plain_svg_card = sec.select_one(".card")
+            svg_no_id = plain_svg_card.select_one(".mindmap-wrap svg") if plain_svg_card else None
+            if svg_no_id and not svg_no_id.get("id"):
+                h3 = plain_svg_card.find(["h2", "h3"])
+                p = plain_svg_card.find("p")
+                data["content"].append({
+                    "type": "diagram",
+                    "heading": text(h3) if h3 else None,
+                    "descHtml": inner_html(p) if p else None,
+                    "svg": str(svg_no_id),
+                    "caption": None,
                 })
                 continue
 

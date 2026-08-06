@@ -71,32 +71,38 @@
       "sectionNavLabel": null
     },
     {
-      "type": "simulation",
-      "svgId": null,
-      "svgAriaLabel": "",
-      "svgViewBox": null,
-      "svgWidth": null,
-      "svgHeight": null,
-      "sectionHeading": "📝 مثال (1)",
-      "descriptionHtml": null,
-      "controls": [],
-      "buttons": [
-        {
-          "id": null,
-          "html": "إظهار خطوات الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-ex1",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>مصباح تنكستن قدرته (100 watt) تبلغ شدة الإشعاع الصادرة منه قرابة (2000 watt/cm²)، في حين تبلغ شدة أشعة ليزر بالقدرة نفسها (100 watt) قرابة (\\(2\\times10^{9}\\ \\text{watt/cm}^2\\)). قارن بين شدتي الإشعاعين.</p>",
+      "label": "📝 مثال (1)",
+      "solution": {
+        "given": [
+          "\\( I_{\\text{تنكستن}} = 2000\\ \\text{watt/cm}^2 \\) — شدة إشعاع مصباح التنكستن",
+          "\\( I_{\\text{ليزر}} = 2\\times10^{9}\\ \\text{watt/cm}^2 \\) — شدة إشعاع الليزر بالقدرة نفسها"
+        ],
+        "required": "احسب كم مرة تفوق شدة إشعاع الليزر شدة إشعاع مصباح التنكستن الاعتيادي.",
+        "steps": [
+          {
+            "note": "نحسب نسبة شدة إشعاع الليزر إلى شدة إشعاع مصباح التنكستن",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\dfrac{I_{\\text{ليزر}}}{I_{\\text{تنكستن}}} = \\dfrac{2\\times10^{9}}{2000} = \\dfrac{2\\times10^{9}}{2\\times10^{3}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\dfrac{I_{\\text{ليزر}}}{I_{\\text{تنكستن}}} = 10^{6}\\ \\text{مرة} \\)"
+              }
+            ]
           }
-        }
-      ],
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [],
-      "trailingHtml": null,
+        ],
+        "final": "✓ شدة إشعاع الليزر أعلى بمقدار مليون (\\(10^6\\)) مرة من شدة الإشعاع الصادرة من مصباح التنكستن الاعتيادي بالقدرة نفسها",
+        "label": "الحل التفصيلي"
+      },
       "sectionGroup": 6,
       "sectionId": "examples",
       "sectionNavLabel": "✍️ مثال محلول"

@@ -114,32 +114,64 @@
       "sectionNavLabel": "🕹️ فرق الطور 90°"
     },
     {
-      "type": "simulation",
-      "svgId": null,
-      "svgAriaLabel": "",
-      "svgViewBox": null,
-      "svgWidth": null,
-      "svgHeight": null,
-      "sectionHeading": "📝 مثال (2)",
-      "descriptionHtml": null,
-      "controls": [],
-      "buttons": [
-        {
-          "id": null,
-          "html": "إظهار خطوات الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-ex2",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>محث معامل حثه الذاتي (0.2H) وتردد الدائرة \\(\\left(\\dfrac{50}{\\pi}\\ \\text{Hz}\\right)\\) وكانت أعظم فولطية في المصدر الذي ربط معه معطى بالعلاقة \\((V_m=200\\sqrt{2})\\)، احسب: 1- الرادة الحثية \\((X_L)\\). 2- التيار المار بالدائرة \\((I_L)\\).</p>",
+      "label": "📝 مثال (2)",
+      "solution": {
+        "given": [
+          "\\( L = 0.2\\ \\text{H} \\) — معامل الحث الذاتي",
+          "\\( f = 50/\\pi\\ \\text{Hz} \\) — تردد الدائرة",
+          "\\( V_m = 200\\sqrt{2}\\ \\text{Volt} \\) — أعظم فولطية للمصدر"
+        ],
+        "required": "1- \\(X_L\\). 2- \\(I_L\\).",
+        "steps": [
+          {
+            "note": "1- نطبّق علاقة الرادة الحثية",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_L = 2\\pi f L = 2\\pi\\times\\dfrac{50}{\\pi}\\times 0.2 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( X_L = 20\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- نحسب القيمة المؤثرة للفولطية، ثم نطبّق علاقة الرادة الحثية لإيجاد التيار",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( V_e = 0.707\\times V_m = 0.707\\times 200\\sqrt{2} \\)"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( V_e = 200\\ \\text{Volt} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( \\because X_L=\\dfrac{V_L}{I_L} \\quad\\therefore\\quad I_L=\\dfrac{V_L}{X_L}=\\dfrac{200}{20} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I_L = 10\\ \\text{A} \\)"
+              }
+            ]
           }
-        }
-      ],
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [],
-      "trailingHtml": null,
+        ],
+        "final": "✓ X_L = 20 Ω · I_L = 10 A",
+        "label": "الحل التفصيلي"
+      },
       "sectionGroup": 11,
       "sectionId": "example2",
       "sectionNavLabel": "📝 مثال 2"

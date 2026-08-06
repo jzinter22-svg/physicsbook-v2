@@ -127,32 +127,108 @@
       "sectionNavLabel": null
     },
     {
-      "type": "simulation",
-      "svgId": null,
-      "svgAriaLabel": "",
-      "svgViewBox": null,
-      "svgWidth": null,
-      "svgHeight": null,
-      "sectionHeading": "📝 مثال (4)",
-      "descriptionHtml": null,
-      "controls": [],
-      "buttons": [
-        {
-          "id": null,
-          "html": "إظهار خطوات الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-ex4",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>دائرة تيار متناوب تتألف من مقاومة مقدارها \\((15\\ \\Omega)\\) ومحث خالص رادته الحثية \\((20\\ \\Omega)\\) مع مصدر للتيار المتناوب على التوالي، فرق جهده \\((150\\ \\text{Volt})\\) وتردده \\(\\left(\\dfrac{500}{\\pi}\\ \\text{Hz}\\right)\\)، فما هو: 1- ممانعة الدائرة. 2- تيار الدائرة. 3- عامل القدرة. 4- زاوية فرق الطور بين الفولطية والتيار. 5- حث المحث؟</p>",
+      "label": "📝 مثال (4)",
+      "solution": {
+        "given": [
+          "\\( R = 15\\ \\Omega \\) — المقاومة",
+          "\\( X_L = 20\\ \\Omega \\) — الرادة الحثية",
+          "\\( V_T = 150\\ \\text{Volt} \\) — فرق جهد المصدر",
+          "\\( f = 500/\\pi\\ \\text{Hz} \\) — تردد الدائرة"
+        ],
+        "required": "1- Z. 2- \\(I_T\\). 3- \\(\\cos\\emptyset\\). 4- Ø. 5- L.",
+        "steps": [
+          {
+            "note": "1- نطبّق علاقة الممانعة",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( Z=\\sqrt{R^2+X_L^2}=\\sqrt{(15)^2+(20)^2}=\\sqrt{225+400}=\\sqrt{625} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( Z=25\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- نطبّق قانون أوم للدائرة الكلية",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( I_T=\\dfrac{V_T}{Z}=\\dfrac{150}{25} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I_T=6\\ \\text{A} \\)"
+              }
+            ]
+          },
+          {
+            "note": "3- نطبّق علاقة عامل القدرة",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\cos\\emptyset=\\dfrac{R}{Z}=\\dfrac{15}{25}=\\dfrac{3}{5} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\cos\\emptyset=0.6 \\)"
+              }
+            ]
+          },
+          {
+            "note": "4- نطبّق علاقة زاوية فرق الطور",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\tan\\emptyset=\\dfrac{X_L}{R}=\\dfrac{20}{15}=\\dfrac{4}{3} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\emptyset=53^\\circ \\)"
+              }
+            ]
+          },
+          {
+            "note": "5- نطبّق علاقة الرادة الحثية لإيجاد الحث الذاتي",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_L=2\\pi fL \\quad\\Rightarrow\\quad L=\\dfrac{X_L}{2\\pi f}=\\dfrac{20}{2\\pi\\times\\frac{500}{\\pi}}=\\dfrac{20}{1000} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( L=0.02\\ \\text{H} \\)"
+              }
+            ]
           }
-        }
-      ],
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [],
-      "trailingHtml": null,
+        ],
+        "final": "✓ Z = 25 Ω · I_T = 6 A · cosØ = 0.6 · Ø = 53° · L = 0.02 H",
+        "label": "الحل التفصيلي"
+      },
       "sectionGroup": 8,
       "sectionId": "example4",
       "sectionNavLabel": "📝 مثال 4"
@@ -247,32 +323,78 @@
       "sectionNavLabel": null
     },
     {
-      "type": "simulation",
-      "svgId": null,
-      "svgAriaLabel": "",
-      "svgViewBox": null,
-      "svgWidth": null,
-      "svgHeight": null,
-      "sectionHeading": "📝 مثال (5)",
-      "descriptionHtml": null,
-      "controls": [],
-      "buttons": [
-        {
-          "id": null,
-          "html": "إظهار خطوات الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-ex5",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>رُبطت متسعة سعتها \\((100\\ \\mu F)\\) وبين قطبَي مصدر للتيار المتناوب فولطيته \\((120\\ \\text{Volt})\\) وترددّه \\(\\left(\\dfrac{500}{\\pi}\\ \\text{Hz}\\right)\\) مع مقاومة مقدارها \\((10\\ \\Omega)\\) على التوالي احسب: 1- الرادة السعوية. 2- التيار المار بالدائرة. 3- زاوية فرق الطور بين الفولطية والتيار؟ علمًا أن تردد الدائرة \\(\\left(\\dfrac{500}{\\pi}\\ \\text{Hz}\\right)\\).</p>",
+      "label": "📝 مثال (5)",
+      "solution": {
+        "given": [
+          "\\( C = 100\\ \\mu F = 100\\times10^{-6}\\ \\text{F} \\) — سعة المتسعة (بعد التحويل)",
+          "\\( V_T = 120\\ \\text{Volt} \\) — فولطية المصدر",
+          "\\( f = 500/\\pi\\ \\text{Hz} \\) — تردد الدائرة",
+          "\\( R = 10\\ \\Omega \\) — المقاومة"
+        ],
+        "required": "1- \\(X_C\\). 2- \\(I_T\\). 3- Ø.",
+        "steps": [
+          {
+            "note": "1- نطبّق علاقة الرادة السعوية",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_C=\\dfrac{1}{2\\pi fC}=\\dfrac{1}{2\\pi\\times\\frac{500}{\\pi}\\times100\\times10^{-6}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( X_C=10\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- نحسب الممانعة أولًا ثم نطبّق قانون أوم",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( Z=\\sqrt{R^2+X_C^2}=\\sqrt{10^2+10^2}=10\\sqrt{2}\\ \\Omega \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( I_T=\\dfrac{V_T}{Z}=\\dfrac{120}{10\\sqrt{2}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I_T \\approx 8.5\\ \\text{A} \\)"
+              }
+            ]
+          },
+          {
+            "note": "3- نطبّق علاقة زاوية فرق الطور",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\tan\\emptyset=\\dfrac{-X_C}{R}=\\dfrac{-10}{10}=-1 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\emptyset=-45^\\circ \\)"
+              }
+            ]
           }
-        }
-      ],
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [],
-      "trailingHtml": null,
+        ],
+        "final": "✓ X_C = 10 Ω · I_T ≈ 8.5 A · Ø = −45°",
+        "label": "الحل التفصيلي"
+      },
       "sectionGroup": 15,
       "sectionId": "example5",
       "sectionNavLabel": "📝 مثال 5"

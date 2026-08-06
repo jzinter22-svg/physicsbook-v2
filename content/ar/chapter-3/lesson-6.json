@@ -21,194 +21,366 @@
   ],
   "content": [
     {
-      "type": "simulation",
-      "svgId": null,
-      "svgAriaLabel": "",
-      "svgViewBox": null,
-      "svgWidth": null,
-      "svgHeight": null,
-      "sectionHeading": "✅ س1: اختر العبارة الصحيحة لكل من العبارات الآتية",
-      "descriptionHtml": null,
-      "controls": [],
-      "buttons": [
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-mcq1",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
-          }
-        },
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-mcq2",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
-          }
-        },
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-mcq3",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
-          }
-        },
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-mcq4",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
-          }
-        },
-        {
-          "id": null,
-          "html": "إظهار الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-mcq5",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
-          }
-        }
-      ],
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [],
-      "trailingHtml": null,
+      "type": "sectionIntro",
+      "heading": "✅ س1: اختر العبارة الصحيحة لكل من العبارات الآتية",
+      "leadHtml": null,
       "sectionGroup": 0,
       "sectionId": "mcqs",
       "sectionNavLabel": "✅ اختيار من متعدد"
     },
     {
-      "type": "simulation",
-      "svgId": "genPartsSvg",
-      "svgAriaLabel": "رسم توضيحي لأجزاء مولد التيار المتناوب الأربعة",
-      "svgViewBox": "0 0 360 160",
-      "svgWidth": "360",
-      "svgHeight": "160",
-      "sectionHeading": "🧩 أسئلة قصيرة",
-      "descriptionHtml": null,
-      "controls": [],
-      "buttons": [
-        {
-          "id": null,
-          "html": "إظهار الإجابة",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-sq2",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>عند دوران ملف داخل مجال مغناطيسي منتظم وبسرعة زاوية ثابتة، نحصل على فولطية محتثة:</p><ul><li>a- ثابتة المقدار</li><li>b- ثابتة الاتجاه</li><li>c- متناوبة جيبية</li><li>d- نبضية</li></ul>",
+      "label": "1",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "دوران الملف بسرعة زاوية ثابتة داخل مجال منتظم ينتج فولطية تتغيّر كدالة جيبية للزمن (كما في مراحل الشكل 11-3).",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الإجابة",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-sq3",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ الإجابة الصحيحة: c — متناوبة جيبية",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ اختيار من متعدد"
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>أساس عمل أجهزة كشف المعادن:</p><ul><li>a- قانون لينز</li><li>b- التيارات الدوامة</li><li>c- ظاهرة فاراداي</li><li>d- ظاهرة الحث الذاتي</li></ul>",
+      "label": "2",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "أجهزة كشف المعادن تعمل بالاعتماد على التيارات الدوامة المحتثة في القطع المعدنية القريبة.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الإجابة",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-sq4",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ الإجابة الصحيحة: b — التيارات الدوامة",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ اختيار من متعدد"
+    },
+    {
+      "type": "example",
+      "number": 3,
+      "problemHtml": "<p>يحتوي مولد التيار المستمر على:</p><ul><li>a- ملف حث</li><li>b- حلقتي الزلق</li><li>c- الجامع (المبدل)</li><li>d- ليس أي مما سبق</li></ul>",
+      "label": "3",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "مولد التيار المستمر يستبدل حلقتي الزلق بجامع (مبدّل) ذي نصفين معزولين للحفاظ على اتجاه ثابت للتيار.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الإجابة",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-sq5",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ الإجابة الصحيحة: c — الجامع (المبدل)",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ اختيار من متعدد"
+    },
+    {
+      "type": "example",
+      "number": 4,
+      "problemHtml": "<p>المحرك يحوّل الطاقة الكهربائية إلى طاقة:</p><ul><li>a- ميكانيكية</li><li>b- حرارية</li><li>c- ضوئية</li><li>d- كيمياوية</li></ul>",
+      "label": "4",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "المحرك جهاز يحوّل الطاقة الكهربائية إلى طاقة ميكانيكية بوجود مجال مغناطيسي.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار الإجابة",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-sq6",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ الإجابة الصحيحة: a — ميكانيكية",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ اختيار من متعدد"
+    },
+    {
+      "type": "example",
+      "number": 5,
+      "problemHtml": "<p>يعتمد معامل الحث الذاتي للملف على:</p><ul><li>a- شكل الملف</li><li>b- طول الملف ومساحة اللفة الواحدة</li><li>c- عدد لفات الملف</li><li>d- كل ما سبق</li></ul>",
+      "label": "5",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "معامل الحث الذاتي يعتمد على الشكل الهندسي للملف ومادة قلبه وطوله ومساحة اللفة الواحدة وعدد لفاته مجتمعة.",
+            "calc": []
           }
-        }
-      ],
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [],
-      "trailingHtml": null,
+        ],
+        "final": "✓ الإجابة الصحيحة: d — كل ما سبق",
+        "label": "الحل"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ اختيار من متعدد"
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "🧩 أسئلة قصيرة",
+      "leadHtml": null,
       "sectionGroup": 1,
       "sectionId": "shortq",
       "sectionNavLabel": "🧩 أسئلة قصيرة"
     },
     {
-      "type": "simulation",
-      "svgId": null,
-      "svgAriaLabel": "",
-      "svgViewBox": null,
-      "svgWidth": null,
-      "svgHeight": null,
-      "sectionHeading": "🧮 المسائل",
-      "descriptionHtml": null,
-      "controls": [],
-      "buttons": [
-        {
-          "id": null,
-          "html": "إظهار خطوات الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-p1",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+      "type": "example",
+      "number": 6,
+      "problemHtml": "<p>عدد أجزاء مولد التيار المتناوب مع الرسم؟</p>",
+      "label": "س2",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "أربعة أجزاء رئيسة: (1) النواة — ملف معزول يدور حول محور في مجال مغناطيسي منتظم. (2) المغناطيس — ثابت أو كهربائي يحيط بالنواة. (3) حلقتا الزلق — تدوران مع الملف، وكل واحدة متصلة بأحد طرفيه. (4) الفرشتان — من الكاربون، تصلان بين حلقتَي الزلق والدائرة الخارجية.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار خطوات الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-p2",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ أربعة أجزاء: النواة، المغناطيس، حلقتا الزلق، الفرشتان",
+        "label": "الإجابة"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 أسئلة قصيرة"
+    },
+    {
+      "type": "example",
+      "number": 7,
+      "problemHtml": "<p>بيّن اتجاه مرور التيار المار في سلك موصل يتحرك في مجال مغناطيسي للحالات الآتية:</p>",
+      "label": "س3",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "نطبّق قاعدة اليد اليمنى (السبابة = المجال B، الإبهام = حركة الموصل v، الوسطى = التيار I) على كل حالة من الحالات الأربع.",
+            "calc": []
           }
-        },
-        {
-          "id": null,
-          "html": "إظهار خطوات الحل",
-          "class": "neu-btn",
-          "data": {
-            "data-reveal-steps": "steps-p3",
-            "data-i18n-show": "common.showSteps",
-            "data-i18n-hide": "common.hideSteps"
+        ],
+        "final": "✓ (a) خارج الصفحة •   (b) داخل الصفحة ×   (c) داخل الصفحة ×   (d) خارج الصفحة •",
+        "label": "الإجابة"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 أسئلة قصيرة"
+    },
+    {
+      "type": "example",
+      "number": 8,
+      "problemHtml": "<p>هل يحقق قانون لينز مبدأ حفظ الطاقة؟ وضّح ذلك.</p>",
+      "label": "س4",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "نعم، يحقق قانون لينز مبدأ حفظ الطاقة. فالمجال المغناطيسي المحتث الناتج عن التيار المحتث يولّد قوة معاكسة لحركة الموصل، ويجب إنجاز شغل خارجي للتغلّب على هذه القوة المعاكسة؛ وهذا الشغل هو الذي يتحول إلى طاقة التيار المحتث (حرارة أو شغلًا ميكانيكيًا أو كيمياويًا).",
+            "calc": []
+          },
+          {
+            "note": "لو كان العكس صحيحًا (أي أن التيار المحتث يقوّي التغيّر المسبّب له بدلًا من معاكسته)، لتضخّمت الطاقة ذاتيًا دون أي مصدر خارجي للطاقة، وهذا يخالف مبدأ حفظ الطاقة.",
+            "calc": []
           }
-        }
-      ],
-      "selectId": null,
-      "selectOptions": null,
-      "presets": null,
-      "ruleBoxes": [],
-      "trailingHtml": null,
+        ],
+        "final": "✓ نعم؛ القوة المعاكسة الناتجة تستوجب شغلًا خارجيًا يتحول إلى طاقة التيار المحتث، متوافقًا مع حفظ الطاقة",
+        "label": "الإجابة"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 أسئلة قصيرة"
+    },
+    {
+      "type": "example",
+      "number": 9,
+      "problemHtml": "<p>وضّح طريقة تحديد اتجاه التيار في نواة المولد الكهربائي؟</p>",
+      "label": "س5",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "تُستعمل قاعدة اليد اليمنى: توضع أصابع اليد اليمنى (الإبهام والسبابة والوسطى) بشكل متعامد بعضها مع بعض؛ تشير السبابة إلى اتجاه المجال المغناطيسي، ويشير الإبهام إلى اتجاه حركة الموصل (النواة)، بينما تشير الوسطى إلى اتجاه التيار المحتث فيه.",
+            "calc": []
+          }
+        ],
+        "final": "✓ باستعمال قاعدة اليد اليمنى (السبابة=المجال، الإبهام=الحركة، الوسطى=التيار)",
+        "label": "الإجابة"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 أسئلة قصيرة"
+    },
+    {
+      "type": "example",
+      "number": 10,
+      "problemHtml": "<p>كيف يمكن تغيير مولد التيار المتناوب ليولّد تيارًا مستمرًا؟</p>",
+      "label": "س6",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "باستبدال حلقتَي الزلق المنفصلتين بحلقة واحدة منشقة إلى نصفين معزولين كهربائيًا (الجامع أو المبدّل)، مع ضمان أن يتحول اتصال إحدى الفرشتين من نصف إلى آخر بالضبط عند اللحظة التي تحاول فيها الفولطية المحتثة عكس اتجاهها، مما يبقي اتجاه التيار في الدائرة الخارجية ثابتًا (وإن كان على شكل نبضات متغيّرة المقدار).",
+            "calc": []
+          }
+        ],
+        "final": "✓ استبدال حلقتَي الزلق بجامع (مبدّل) ذي نصفين معزولين متزامن مع انعكاس الفولطية",
+        "label": "الإجابة"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 أسئلة قصيرة"
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "🧮 المسائل",
+      "leadHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 المسائل"
+    },
+    {
+      "type": "example",
+      "number": 11,
+      "problemHtml": "<p>ملف عدد لفاته 6 ومساحته \\((10\\ \\text{cm}^2)\\) موضوع في مجال مغناطيسي كثافة فيضه \\((0.1\\ \\text{T})\\). تغيّر المجال خلال فترة زمنية مقدارها \\((1\\times10^{-3}\\ \\text{s})\\). جد مقدار القوة الدافعة الكهربائية المحتثة المتولدة عن الملف، إذا كان المجال المغناطيسي يؤثّر بصورة عمودية على سطح الملف.</p>",
+      "label": "مسألة 1",
+      "solution": {
+        "given": [
+          "\\( N = 6 \\) لفات",
+          "\\( A = 10\\ \\text{cm}^2 = 10\\times10^{-4}\\ \\text{m}^2 \\) — مساحة الملف (بعد التحويل)",
+          "\\( \\Delta B = 0.1\\ \\text{T} \\) — مقدار تغيّر كثافة الفيض المغناطيسي (يختفي أو يظهر بالكامل)",
+          "\\( \\Delta t = 1\\times10^{-3}\\ \\text{s} \\)"
+        ],
+        "required": "احسب القوة الدافعة الكهربائية المحتثة \\(\\varepsilon_{ind}\\).",
+        "steps": [
+          {
+            "note": "بما أن المجال يؤثر عموديًا على سطح الملف، فإن \\(\\Delta\\varnothing = A\\Delta B\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\varepsilon_{ind} = -N\\dfrac{A\\Delta B}{\\Delta t} = -6\\times\\dfrac{(10\\times10^{-4})\\times 0.1}{1\\times10^{-3}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\varepsilon_{ind} = -0.6\\ \\text{V} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ ε_ind = −0.6 V",
+        "label": "الحل التفصيلي"
+      },
+      "sectionGroup": 2,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 المسائل"
+    },
+    {
+      "type": "example",
+      "number": 12,
+      "problemHtml": "<p>ملف عدد لفاته 100 ومساحته \\((5\\ \\text{cm}^2)\\) موجود في مجال مغناطيسي منتظم كثافة فيضه \\((0.25\\ \\text{T})\\) يؤثر باتجاه عمودي على السطح. سُحب الملف بسرعة فأصبح خلال \\((0.01\\ \\text{s})\\) خارج المجال المغناطيسي. جد: 1- القوة الدافعة الكهربائية المحتثة. 2- الشحنة الكهربائية المارة خلال الملف، علمًا أن مقاومة الملف تساوي \\((20\\ \\Omega)\\).</p>",
+      "label": "مسألة 2",
+      "solution": {
+        "given": [
+          "\\( N = 100 \\) لفة",
+          "\\( A = 5\\ \\text{cm}^2 = 5\\times10^{-4}\\ \\text{m}^2 \\) — بعد التحويل",
+          "\\( B_i = 0.25\\ \\text{T},\\ B_f = 0 \\) — الملف يخرج تمامًا من المجال",
+          "\\( \\Delta t = 0.01\\ \\text{s} \\)",
+          "\\( R = 20\\ \\Omega \\) — مقاومة الملف"
+        ],
+        "required": "1- احسب \\(\\varepsilon_{ind}\\). 2- احسب الشحنة الكهربائية q المارة خلال الملف.",
+        "steps": [
+          {
+            "note": "1- نطبّق قانون فاراداي، حيث \\(\\Delta\\varnothing=A\\Delta B\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\varepsilon_{ind} = -N\\dfrac{A\\Delta B}{\\Delta t} = -\\dfrac{100\\times(5\\times10^{-4})\\times 0.25}{0.01} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\varepsilon_{ind} = -1.25\\ \\text{V} \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- نحسب التيار أولًا من قانون أوم، ثم الشحنة \\(q=I\\Delta t\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( I = \\dfrac{\\varepsilon_{ind}}{R} = \\dfrac{1.25}{20} = 0.0625\\ \\text{A} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( q = I\\times\\Delta t = 0.0625\\times 0.01 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( q = 6.25\\times10^{-4}\\ \\text{C} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ ε_ind = 1.25 V   ·   q = 6.25×10⁻⁴ C",
+        "label": "الحل التفصيلي"
+      },
+      "sectionGroup": 2,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 المسائل"
+    },
+    {
+      "type": "example",
+      "number": 13,
+      "problemHtml": "<p>ما عدد اللفات الواجب توفّرها لتوليد قوة دافعة كهربائية مقدارها \\((10\\ \\text{V})\\) في ملف متحرك داخل فيض مغناطيسي بمعدّل \\((5\\times10^{-3}\\ \\text{weber/s})\\)؟</p>",
+      "label": "مسألة 3",
+      "solution": {
+        "given": [
+          "\\( \\varepsilon_{ind} = 10\\ \\text{V} \\) — القوة الدافعة الكهربائية المطلوبة",
+          "\\( \\dfrac{\\Delta\\varnothing}{\\Delta t} = 5\\times10^{-3}\\ \\text{Wb/s} \\) — معدّل تغيّر الفيض (لكل لفة)"
+        ],
+        "required": "احسب عدد اللفات N اللازمة.",
+        "steps": [
+          {
+            "note": "من قانون فاراداي، نعيد الترتيب لإيجاد N",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\varepsilon_{ind} = N\\dfrac{\\Delta\\varnothing}{\\Delta t} \\;\\Rightarrow\\; N = \\dfrac{\\varepsilon_{ind}}{\\Delta\\varnothing/\\Delta t} = \\dfrac{10}{5\\times10^{-3}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( N = 2000 \\) لفة"
+              }
+            ]
+          }
+        ],
+        "final": "✓ N = 2000 لفة",
+        "label": "الحل التفصيلي"
+      },
       "sectionGroup": 2,
       "sectionId": "problems",
       "sectionNavLabel": "🧮 المسائل"
