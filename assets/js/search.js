@@ -27,7 +27,38 @@
 (function(){
   "use strict";
 
-  var INDEX_URL = "assets/search/index.json";
+  // Per-language index files (assets/search/index.ar.json / index.en.json,
+  // built by tools/build-search-index.py) — "ar" covers the whole book,
+  // "en" currently covers chapter 1 only (the multilingual pilot's scope).
+  // A language with no index yet falls back to "ar", same as
+  // lesson-engine.js's own SUPPORTED_LANGS fallback.
+  var INDEX_LANGS = ["ar", "en"];
+  function indexLang(){
+    var lang = window.PBI18n ? window.PBI18n.getLanguage() : "ar";
+    return INDEX_LANGS.indexOf(lang) === -1 ? "ar" : lang;
+  }
+  function indexUrl(){ return "assets/search/index." + indexLang() + ".json"; }
+  // A handful of result-card/status strings that vary with the *content*
+  // language (as opposed to the rest of the overlay's static chrome —
+  // placeholder, aria-labels, suggestion headings — which stays Arabic
+  // site-wide today, matching every other chapter's not-yet-translated
+  // search UI; only these are shown as a direct function of which
+  // language's index the user is actually searching).
+  var SEARCH_STRINGS = {
+    ar: {
+      chapterPrefix: "الفصل", openResult: "فتح النتيجة ←", unit: "الوحدة",
+      relatedFormulas: "قوانين ذات صلة", relatedLessons: "دروس ذات صلة",
+      loading: "جارٍ تحميل فهرس البحث…", loadError: "تعذّر تحميل فهرس البحث.",
+      noResultsInFilter: "لا نتائج ضمن هذا التصفية.",
+    },
+    en: {
+      chapterPrefix: "Chapter", openResult: "Open Result →", unit: "Unit",
+      relatedFormulas: "Related formulas", relatedLessons: "Related lessons",
+      loading: "Loading search index…", loadError: "Couldn't load the search index.",
+      noResultsInFilter: "No results in this filter.",
+    },
+  };
+  function ss(key){ return (SEARCH_STRINGS[indexLang()] || SEARCH_STRINGS.ar)[key]; }
   var DEBOUNCE_MS = 150;
   var MAX_RESULTS = 30;
   var MAX_RECENT = 8;
@@ -131,10 +162,14 @@
   }
 
   // -------------------------------------------------------------------------
-  // Index loading — fetched once, normalized once, cached forever in memory.
+  // Index loading — fetched once per language, normalized once, cached in
+  // memory. A language switch invalidates the cache (see the PBI18n.onChange
+  // listener near the bottom of this file) so search results always come
+  // from content in the currently active UI language, not a stale fetch.
   // -------------------------------------------------------------------------
   var indexData = null;
   var indexPromise = null;
+  var indexPromiseLang = null;
   var lessonByHref = {};
   var chapterByNum = {};
 
@@ -146,8 +181,12 @@
   }
 
   function fetchIndex(){
-    if(indexPromise) return indexPromise;
-    indexPromise = fetch(assetsBase() + INDEX_URL, {credentials: "same-origin"})
+    var lang = indexLang();
+    if(indexPromise && indexPromiseLang === lang) return indexPromise;
+    indexPromiseLang = lang;
+    lessonByHref = {};
+    chapterByNum = {};
+    indexPromise = fetch(assetsBase() + indexUrl(), {credentials: "same-origin"})
       .then(function(r){ if(!r.ok) throw new Error("search index HTTP " + r.status); return r.json(); })
       .then(function(data){
         data.items.forEach(function(it){
@@ -163,6 +202,7 @@
       })
       .catch(function(err){
         indexPromise = null; // allow a retry on the next open() rather than caching a permanent failure
+        indexPromiseLang = null;
         throw err;
       });
     return indexPromise;
@@ -416,7 +456,7 @@
     var chapter = chapterByNum[item.chapterNum];
     var lesson = item.lessonNum ? lessonByHref[item.href] : null;
     var crumbs = [];
-    if(chapter) crumbs.push(escapeHtml("الفصل " + chapter.num + ": " + chapter.title));
+    if(chapter) crumbs.push(escapeHtml(ss("chapterPrefix") + " " + chapter.num + ": " + chapter.title));
     if(lesson && item.type !== "lesson") crumbs.push(escapeHtml(lesson.title));
     var preview = item.text || item.formula || "";
     return (
@@ -427,7 +467,7 @@
         '</div>' +
         '<div class="pbsearch-card-title">' + highlight(item.title || "", regex) + '</div>' +
         (preview ? '<div class="pbsearch-card-preview">' + highlight(preview, regex) + '</div>' : "") +
-        '<span class="pbsearch-card-open">فتح النتيجة ←</span>' +
+        '<span class="pbsearch-card-open">' + escapeHtml(ss("openResult")) + '</span>' +
       '</div>'
     );
   }
@@ -446,10 +486,10 @@
         '<div class="pbsearch-qtycard-head">' +
           '<span class="pbsearch-qtycard-symbol">' + escapeHtml(q.symbol) + '</span>' +
           '<div><div class="pbsearch-qtycard-name">' + escapeHtml(q.name) + '</div>' +
-          '<div class="pbsearch-qtycard-unit">الوحدة: ' + escapeHtml(q.unit) + '</div></div>' +
+          '<div class="pbsearch-qtycard-unit">' + escapeHtml(ss("unit")) + ': ' + escapeHtml(q.unit) + '</div></div>' +
         '</div>' +
-        (formulas ? '<div class="pbsearch-qtycard-section"><b>قوانين ذات صلة</b><div class="pbsearch-qty-formulas">' + formulas + '</div></div>' : "") +
-        (lessons ? '<div class="pbsearch-qtycard-section"><b>دروس ذات صلة</b><div class="pbsearch-qty-lessons">' + lessons + '</div></div>' : "") +
+        (formulas ? '<div class="pbsearch-qtycard-section"><b>' + escapeHtml(ss("relatedFormulas")) + '</b><div class="pbsearch-qty-formulas">' + formulas + '</div></div>' : "") +
+        (lessons ? '<div class="pbsearch-qtycard-section"><b>' + escapeHtml(ss("relatedLessons")) + '</b><div class="pbsearch-qty-lessons">' + lessons + '</div></div>' : "") +
       '</div>'
     );
   }
@@ -515,7 +555,7 @@
   }
 
   function renderLoading(){
-    els.results.innerHTML = '<div class="pbsearch-loading">جارٍ تحميل فهرس البحث…</div>';
+    els.results.innerHTML = '<div class="pbsearch-loading">' + escapeHtml(ss("loading")) + '</div>';
   }
 
   function runSearch(){
@@ -525,7 +565,7 @@
     if(!indexData){
       renderLoading();
       fetchIndex().then(runSearch).catch(function(){
-        els.results.innerHTML = '<div class="pbsearch-empty"><p class="pbsearch-empty-title">تعذّر تحميل فهرس البحث.</p></div>';
+        els.results.innerHTML = '<div class="pbsearch-empty"><p class="pbsearch-empty-title">' + escapeHtml(ss("loadError")) + '</p></div>';
       });
       return;
     }
@@ -552,7 +592,7 @@
     // rich card above the regular result list, not just a generic row.
     quantities.slice(0, 2).forEach(function(q){ html += quantityCardHtml(q); });
     html += results.map(function(it){ return cardHtml(it, regex); }).join("");
-    els.results.innerHTML = html || '<div class="pbsearch-empty"><p class="pbsearch-empty-title">لا نتائج ضمن هذا التصفية.</p></div>';
+    els.results.innerHTML = html || '<div class="pbsearch-empty"><p class="pbsearch-empty-title">' + escapeHtml(ss("noResultsInFilter")) + '</p></div>';
 
     if(t0 && window.console && console.debug){
       var dt = performance.now() - t0;
@@ -658,6 +698,31 @@
     recordLastOpened(href, title);
   }
 
+  // Refreshes the filter-chip labels in place from indexData.typeLabels —
+  // buildOverlay() only ever runs once, so its chip text needs a manual
+  // update after a language switch loads a differently-labeled index.
+  function relabelFilterChips(){
+    if(!els) return;
+    var chips = els.filters.querySelectorAll(".pbsearch-chip[data-filter]");
+    chips.forEach(function(chip){
+      var t = chip.getAttribute("data-filter");
+      if(t === "all") return;
+      chip.textContent = (TYPE_ICON[t] || "") + " " + typeLabel(t);
+    });
+  }
+
+  function onLanguageChanged(){
+    // Discard the previous language's cached index immediately so a
+    // search fired before the new fetch resolves doesn't silently return
+    // stale-language results; runSearch()'s "!indexData" branch shows the
+    // loading state and re-runs once fetchIndex() settles.
+    indexData = null;
+    fetchIndex().then(function(){
+      relabelFilterChips();
+      if(els && !els.overlay.hidden) runSearch();
+    }).catch(function(){});
+  }
+
   function init(){
     document.addEventListener("keydown", onGlobalKeydown);
     handleIncomingJump();
@@ -667,6 +732,7 @@
     // same promise, so this is purely a head start, never a requirement).
     var idle = window.requestIdleCallback || function(fn){ setTimeout(fn, 1200); };
     idle(function(){ fetchIndex().catch(function(){}); });
+    if(window.PBI18n) window.PBI18n.onChange(onLanguageChanged);
   }
 
   if(document.readyState === "loading"){
