@@ -44,6 +44,9 @@
       "presets": null,
       "ruleBoxes": [],
       "trailingHtml": null,
+      "labels": {
+        "phaseCaption": "الفولطية والتيار يبلغان القيمة العظمى معًا — بنفس الطور"
+      },
       "sectionGroup": 1,
       "sectionId": "phase-widget",
       "sectionNavLabel": "🕹️ إعادة إنشاء الشكلين 3-4 و4-4"
@@ -93,6 +96,9 @@
         }
       ],
       "trailingHtml": null,
+      "labels": {
+        "powerCurveLabel": "P (القدرة الآنية)"
+      },
       "sectionGroup": 5,
       "sectionId": "power-widget",
       "sectionNavLabel": "🕹️ منحني القدرة (الشكل 6-4)"
