@@ -117,6 +117,11 @@
         }
       ],
       "trailingHtml": null,
+      "labels": {
+        "propsInductive": "خواص حثية (Ø موجبة)",
+        "propsCapacitive": "خواص سعوية (Ø سالبة)",
+        "propsResonance": "رنين كهربائي (Ø=0)"
+      },
       "sectionGroup": 5,
       "sectionId": "rlc-widget",
       "sectionNavLabel": "🕹️ المخطط الطوري لدائرة RLC"
@@ -292,6 +297,11 @@
         }
       ],
       "trailingHtml": null,
+      "labels": {
+        "resStatusResonance": "عند هذا التردد: X_L ≈ X_C — حالة الرنين الكهربائي! الممانعة عند أدنى قيمة لها (Z ≈ R).",
+        "resStatusInductive": "X_L > X_C: خواص الدائرة حثية.",
+        "resStatusCapacitive": "X_L < X_C: خواص الدائرة سعوية."
+      },
       "sectionGroup": 12,
       "sectionId": "resonance-widget",
       "sectionNavLabel": "🕹️ الرنين الكهربائي"
