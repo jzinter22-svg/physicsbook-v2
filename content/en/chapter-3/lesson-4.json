@@ -1,0 +1,243 @@
+{
+  "lessonNumber": 4,
+  "chapterNumber": 3,
+  "meta": {
+    "pageTitle": "Lesson 4: The Electric Generator — Chapter Three",
+    "description": "3-6 The electric generator: the AC generator with its four parts and the stages of generating a sinusoidal voltage, and the DC generator with the commutator.",
+    "breadcrumbChapter": "Chapter 3",
+    "breadcrumbLesson": "The Electric Generator",
+    "footer": "Chapter Three: Electromagnetic Induction — Lesson 4: The Electric Generator"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 4 of 6 · Chapter Three",
+    "title": "The Electric Generator",
+    "lead": "3-6 The Electric Generator: 3-6-1 The AC Generator · 3-6-2 The DC Generator"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "List the main parts of the AC generator.",
+    "Explain the stages of generating an alternating voltage as the coil rotates inside the magnetic field.",
+    "Show how the AC generator can be converted into a DC generator."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 3-6 The Electric Generator",
+      "html": "A device that converts mechanical energy into direct or alternating electrical energy. It does this by changing the magnetic flux through a coil, thereby inducing an electromotive force between the coil's two ends. Since the flux can be changed either by moving the magnet relative to the coil or by moving the coil relative to the magnet, and the second approach is easier in practice, it is the one usually used.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "definition",
+      "label": "📌 3-6-1 The AC Generator",
+      "html": "The AC generator consists of the following main parts:",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "list",
+      "heading": null,
+      "items": [
+        "<b>Armature:</b> consists of an insulated coil that rotates about an axis in a uniform magnetic field.",
+        "<b>Magnet:</b> can be a permanent magnet or an electromagnet surrounding the armature.",
+        "<b>Slip rings:</b> two rings that rotate with the coil as a single unit, each connected to one end of the coil.",
+        "<b>Brushes:</b> a pair of pieces of carbon (in practice sometimes called carbon brushes) that make the connection between the slip rings and the external circuit."
+      ],
+      "ordered": true,
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "acSvg",
+      "svgAriaLabel": "Simulation of an AC generator and its rotation",
+      "svgViewBox": "0 0 400 200",
+      "svgWidth": "400",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive Simulation: The AC Generator (Figures 3-10 and 3-11)",
+      "descriptionHtml": "Watch the coil rotate inside the uniform magnetic field, with a live plot of the instantaneous generated voltage: it is zero when the plane of the coil is perpendicular to the flux (the starting position), reaches its maximum when the plane of the coil is parallel to the flux (after a quarter turn), then returns to zero (after a half turn), and so the change repeats, forming a sine function.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": "flex-wrap:wrap;gap:.5rem",
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "acModeToggle",
+          "html": "🔁 Toggle: slip rings (AC) / commutator (DC)",
+          "class": "neu-btn",
+          "data": null,
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "Current mode: AC generator — sinusoidal voltage",
+          "id": "acStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 3,
+      "sectionId": "ac-widget",
+      "sectionNavLabel": "🕹️ Recreate Figures 3-10 and 3-11",
+      "labels": {
+        "graphLabel": "Voltage vs. time",
+        "statusAc": "Current mode: AC generator — sinusoidal voltage",
+        "statusDc": "Current mode: DC generator — pulses of fixed direction (via the commutator)"
+      }
+    },
+    {
+      "type": "list",
+      "heading": null,
+      "items": [
+        "In the initial position, where the plane of the coil is perpendicular to the magnetic flux, there is no change in the time rate of the magnetic flux at this instant, so both the induced electromotive force and the induced current are zero \\((\\varepsilon_{ind}=0,\\ I_{ind}=0)\\).",
+        "As the coil rotates, the time rate of change of magnetic flux increases as a result of the coil cutting across the flux, until the plane of the coil becomes parallel to the magnetic flux, cutting the flux perpendicularly (90°); at that point both the induced electromotive force and the induced current increase, reaching their maximum value at the end of the first quarter turn.",
+        "As the coil continues rotating past the first quarter turn, the time rate of change of magnetic flux begins to decrease until it becomes zero at the end of the second quarter (180°), at which point the plane of the coil is again perpendicular to the flux, so both the induced electromotive force and the current decrease, reaching zero at the end of the second quarter.",
+        "As the coil continues rotating past 180°, the direction of relative motion between the two sides of the coil and the magnetic field reverses, so the direction of both the induced electromotive force and the current reverses. The time rate of change of the cutting flux increases, causing an increase in the induced electromotive force and the induced current until they reach their maximum value again (but in a direction opposite to the first) at the end of the third quarter of the cycle (270°); they then decrease as the cutting flux changes until they reach zero at the end of the fourth quarter of the cycle (360°), and the process repeats. From this we can say that alternating current changes its direction and magnitude alternately, and the alternating current is a sinusoidal function as long as the armature's rotation rate is constant and the magnetic field is uniform."
+      ],
+      "ordered": true,
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 3-6-2 The DC Generator",
+      "html": "To make the current flowing in the coil maintain a fixed direction, without alternating, we must replace the two separate metal rings with a single ring split into two halves that are electrically insulated from one another, called the commutator. The two halves must be mounted in contact with the brushes so that, as the armature rotates, one of the brushes switches over from one ring half to the other at exactly the instant the current flowing in the coil is about to reverse direction, at the same moment the generated voltage reverses direction. The resulting current appears as continuous pulses in the external circuit, since it has been rectified by the generator's commutator, whereas the direct current taken from a battery has a constant magnitude and direction.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "The main parts of an AC generator are:",
+        "options": [
+          "The battery, the resistor, and the switch",
+          "The core, the motor, and the fan",
+          "The armature, the magnet, the slip rings, and the brushes",
+          "The capacitor, the coil, and the resistor"
+        ],
+        "explain": "The AC generator consists of the armature (the rotating coil), the magnet, the two slip rings, and the two brushes."
+      },
+      {
+        "correct": 1,
+        "question": "When the plane of the coil is perpendicular to the magnetic flux (the initial position), the induced electromotive force is:",
+        "options": [
+          "At its maximum value",
+          "Zero",
+          "Always negative",
+          "Constant throughout the cycle"
+        ],
+        "explain": "At this position there is no instantaneous change in the magnetic flux, so both the induced electromotive force and the induced current are zero."
+      },
+      {
+        "correct": 0,
+        "question": "The essential difference between an AC generator and a DC generator is:",
+        "options": [
+          "Replacing the two slip rings with a commutator having two insulated halves",
+          "The number of turns in the coil alone",
+          "The type of magnet used alone",
+          "The speed of rotation of the coil alone"
+        ],
+        "explain": "Replacing the two separate slip rings with a commutator having two insulated halves makes the current in the external circuit have a fixed direction (direct) instead of alternating."
+      },
+      {
+        "correct": 3,
+        "question": "The current generated by a DC generator (via the commutator) takes the form of:",
+        "options": [
+          "A perfectly constant straight line, exactly like a battery",
+          "A full sine wave, alternating positive and negative",
+          "Always zero",
+          "Continuous pulses of fixed direction (but varying magnitude)"
+        ],
+        "explain": "The current generated via the commutator appears as continuous pulses of fixed direction in the external circuit, unlike the constant-magnitude, constant-direction current taken from a battery."
+      },
+      {
+        "correct": 1,
+        "question": "The alternating current is a sinusoidal function of time as long as:",
+        "options": [
+          "The magnet is moving at a random speed",
+          "The armature's rotation rate is constant and the magnetic field is uniform",
+          "The brushes are made of copper",
+          "The external resistance is zero"
+        ],
+        "explain": "The alternating current is a sinusoidal function of time as long as the armature's rotation rate is constant and the magnetic field is uniform."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "The generator converts mechanical energy into electrical energy by changing the magnetic flux through a rotating coil.",
+      "AC generator: armature, magnet, slip rings, brushes — produces a sinusoidal voltage that alternates between the maximum positive and negative values.",
+      "At θ=0°,180°,360° the voltage is zero; at θ=90°,270° it reaches its maximum (in opposite directions).",
+      "DC generator: replacing the slip rings with a commutator produces a current of fixed direction, but in the form of pulses (not a constant magnitude like a battery)."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of the electric generator",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "The Generator"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "AC generator",
+          "Slip rings"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "DC generator",
+          "Commutator"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Sine function",
+          "4 stages"
+        ]
+      }
+    ]
+  }
+}

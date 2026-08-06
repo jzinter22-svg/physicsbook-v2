@@ -95,7 +95,12 @@
       "trailingHtml": null,
       "sectionGroup": 3,
       "sectionId": "ac-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكلين 10-3 و11-3"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكلين 10-3 و11-3",
+      "labels": {
+        "graphLabel": "الفولطية مقابل الزمن",
+        "statusAc": "الوضع الحالي: مولد تيار متناوب (AC) — فولطية جيبية",
+        "statusDc": "الوضع الحالي: مولد تيار مستمر (DC) — نبضات ثابتة الاتجاه (بواسطة المبدّل)"
+      }
     },
     {
       "type": "list",
