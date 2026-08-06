@@ -1,0 +1,526 @@
+{
+  "lessonNumber": 5,
+  "chapterNumber": 4,
+  "meta": {
+    "pageTitle": "Lesson 5: Connecting a Resistance with an Inductor or Capacitor in Series — Chapter 4",
+    "description": "4-6 Connecting a resistance and a pure inductor in series, 4-7 connecting a resistance and a pure capacitor in series: impedance, phase-difference angle, power factor, with two solved examples.",
+    "breadcrumbChapter": "Chapter 4",
+    "breadcrumbLesson": "Connecting a Resistance with an Inductor or Capacitor in Series",
+    "footer": "Chapter Four: AC Circuits — Lesson 5: Connecting a Resistance with an Inductor or Capacitor in Series"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 5 of 8 · Chapter Four",
+    "title": "Connecting a Resistance with an Inductor or Capacitor in Series",
+    "lead": "4-6 Connecting a resistance and a pure inductor in series · 4-7 Connecting a resistance and a pure capacitor in series"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Draw the voltage and impedance phasor diagram for a series RL circuit and compute the impedance and phase-difference angle.",
+    "Draw the voltage and impedance phasor diagram for a series RC circuit and compute the impedance and phase-difference angle.",
+    "Define the power factor and compute it in both circuits."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 4-6 Connecting a Resistance and a Pure Inductor in Series",
+      "html": "You learned, dear student, that the voltage across the resistance is in phase with the current, while the voltage across the inductor leads the current by a phase-difference angle of (90°); therefore the total voltage leads the current by a phase-difference angle (Ø). If we draw its phasor diagram, it will look like Figure (4-12).",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "simulation",
+      "svgId": "rlPhasorSvg",
+      "svgAriaLabel": "An interactive phasor diagram for a series resistance-and-inductor circuit",
+      "svgViewBox": "0 0 360 220",
+      "svgWidth": "360",
+      "svgHeight": "220",
+      "sectionHeading": "🕹️ Interactive simulation: the phasor diagram of a series RL circuit (Figures 4-12 and 4-13)",
+      "descriptionHtml": "Move the \\(V_R\\) and \\(V_L\\) sliders and watch the total-voltage phasor \\(V_T\\) and the impedance phasor \\(Z\\) change with them, along with the phase-difference angle (Ø) between them.",
+      "controls": [
+        {
+          "labelHtml": "V_R",
+          "inputId": "rlVR",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "20",
+          "inputMax": "100",
+          "inputStep": "5",
+          "inputValue": "60"
+        },
+        {
+          "labelHtml": "V_L",
+          "inputId": "rlVL",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "20",
+          "inputMax": "100",
+          "inputStep": "5",
+          "inputValue": "80"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "—",
+          "id": "rlStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "labels": {
+        "rlStatusMid": " · Ø = +",
+        "rlStatusSuffix": "° (the voltage leads the current)"
+      },
+      "sectionGroup": 1,
+      "sectionId": "rl-widget",
+      "sectionNavLabel": "🕹️ The Phasor Diagram of an RL Circuit"
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ V_T = \\sqrt{V_R^2 + V_L^2} $$\n      $$ \\tan\\emptyset = \\dfrac{V_L}{V_R} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where: \\(V_T\\) is the total voltage, \\(V_R\\) is the voltage across the resistance, \\(V_L\\) is the voltage across the inductor; used to find the phase-difference angle.</p>",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "A new factor will appear in this circuit, representing the ratio of the real power to the apparent power, called the power factor \\((\\cos\\emptyset)\\).",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\cos\\emptyset = \\dfrac{V_R}{V_T} $$",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "There is another diagram — the impedance diagram — which is the vector sum representing the combined opposition offered by the resistance and inductor against the alternating current, measured in ohms, and denoted by the symbol (Z); it is a vector quantity, as shown in the impedance phasor diagram (Figure 4-13).",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ Z = \\dfrac{V_T}{I_T} $$\n      <p style=\"margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)\">(by Ohm's law)</p>\n      $$ Z = \\sqrt{R^2 + X_L^2} $$\n      <p style=\"margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)\">(or from the phasor diagram)</p>\n      $$ \\tan\\emptyset = \\dfrac{X_L}{R} $$\n      $$ \\cos\\emptyset = \\dfrac{R}{Z} $$",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "🤔",
+      "strong": "Think:",
+      "html": "The resistance and the inductive reactance cannot be added arithmetically — why?",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>An AC circuit consists of a resistance of \\((15\\ \\Omega)\\) and a pure inductor of inductive reactance \\((20\\ \\Omega)\\), with an AC source connected in series, of potential difference \\((150\\ \\text{Volt})\\) and frequency \\(\\left(\\dfrac{500}{\\pi}\\ \\text{Hz}\\right)\\). Find: 1- The circuit's impedance. 2- The circuit's current. 3- The power factor. 4- The phase-difference angle between the voltage and the current. 5- The inductor's inductance?</p>",
+      "label": "📝 Example (4)",
+      "solution": {
+        "given": [
+          "\\( R = 15\\ \\Omega \\) — the resistance",
+          "\\( X_L = 20\\ \\Omega \\) — the inductive reactance",
+          "\\( V_T = 150\\ \\text{Volt} \\) — the source's potential difference",
+          "\\( f = 500/\\pi\\ \\text{Hz} \\) — the circuit's frequency"
+        ],
+        "required": "1- Z. 2- \\(I_T\\). 3- \\(\\cos\\emptyset\\). 4- Ø. 5- L.",
+        "steps": [
+          {
+            "note": "1- We apply the impedance relation",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( Z=\\sqrt{R^2+X_L^2}=\\sqrt{(15)^2+(20)^2}=\\sqrt{225+400}=\\sqrt{625} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( Z=25\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- We apply Ohm's law to the whole circuit",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( I_T=\\dfrac{V_T}{Z}=\\dfrac{150}{25} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I_T=6\\ \\text{A} \\)"
+              }
+            ]
+          },
+          {
+            "note": "3- We apply the power-factor relation",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\cos\\emptyset=\\dfrac{R}{Z}=\\dfrac{15}{25}=\\dfrac{3}{5} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\cos\\emptyset=0.6 \\)"
+              }
+            ]
+          },
+          {
+            "note": "4- We apply the phase-difference angle relation",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\tan\\emptyset=\\dfrac{X_L}{R}=\\dfrac{20}{15}=\\dfrac{4}{3} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\emptyset=53^\\circ \\)"
+              }
+            ]
+          },
+          {
+            "note": "5- We apply the inductive-reactance relation to find the self-inductance",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_L=2\\pi fL \\quad\\Rightarrow\\quad L=\\dfrac{X_L}{2\\pi f}=\\dfrac{20}{2\\pi\\times\\frac{500}{\\pi}}=\\dfrac{20}{1000} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( L=0.02\\ \\text{H} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ Z = 25 Ω · I_T = 6 A · cosØ = 0.6 · Ø = 53° · L = 0.02 H",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 8,
+      "sectionId": "example4",
+      "sectionNavLabel": "📝 Example 4"
+    },
+    {
+      "type": "definition",
+      "label": "📌 4-7 Connecting a Resistance and a Pure Capacitor in Series",
+      "html": "There is a voltage phasor diagram, as shown in Figure (4-14), from which we conclude the following.",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "rcPhasorSvg",
+      "svgAriaLabel": "An interactive phasor diagram for a series resistance-and-capacitor circuit",
+      "svgViewBox": "0 0 360 220",
+      "svgWidth": "360",
+      "svgHeight": "220",
+      "sectionHeading": "🕹️ Interactive simulation: the phasor diagram of a series RC circuit (Figures 4-14 and 4-15)",
+      "descriptionHtml": "Move the \\(V_R\\) and \\(V_C\\) sliders and watch the total-voltage phasor \\(V_T\\) lag \\(V_R\\) by an angle Ø (negative), because the capacitor's voltage is subtracted vectorially (downward).",
+      "controls": [
+        {
+          "labelHtml": "V_R",
+          "inputId": "rcVR",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "20",
+          "inputMax": "100",
+          "inputStep": "5",
+          "inputValue": "60"
+        },
+        {
+          "labelHtml": "V_C",
+          "inputId": "rcVC",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "20",
+          "inputMax": "100",
+          "inputStep": "5",
+          "inputValue": "60"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "—",
+          "id": "rcStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "labels": {
+        "rcStatusMid": " · Ø = -",
+        "rcStatusSuffix": "° (the current leads the voltage)"
+      },
+      "sectionGroup": 10,
+      "sectionId": "rc-widget",
+      "sectionNavLabel": "🕹️ The Phasor Diagram of an RC Circuit"
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ V_T = \\sqrt{V_R^2 + V_C^2} $$\n      $$ \\tan\\emptyset = \\dfrac{-V_C}{V_R} $$\n      <p style=\"margin:.2rem 0 0;font-size:.85rem;color:var(--text-secondary)\">(the phase-difference angle Ø)</p>",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "In a resistance circuit connected to an AC source, the voltage is in phase with the current; whereas in a capacitor circuit connected to an AC source, the total voltage lags — that is, the current leads the total voltage by the phase-difference angle Ø.",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "From the impedance phasor diagram we conclude the following:",
+      "sectionGroup": 13,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ Z = \\sqrt{R^2 + X_C^2} $$\n      $$ \\tan\\emptyset = \\dfrac{-X_C}{R} $$\n      $$ \\cos\\emptyset = \\dfrac{R}{Z} $$\n      <p style=\"margin:.2rem 0 .2rem;font-size:.85rem;color:var(--text-secondary)\">or</p>\n      $$ \\cos\\emptyset = \\dfrac{V_R}{V_T} $$\n      <p style=\"margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)\">(the power factor)</p>\n      $$ P = I_T V_T \\cos\\emptyset $$",
+      "sectionGroup": 14,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>A capacitor of capacitance \\((100\\ \\mu F)\\) is connected across the terminals of an AC source of voltage \\((120\\ \\text{Volt})\\) and frequency \\(\\left(\\dfrac{500}{\\pi}\\ \\text{Hz}\\right)\\), together with a resistance of \\((10\\ \\Omega)\\) in series. Calculate: 1- The capacitive reactance. 2- The current flowing in the circuit. 3- The phase-difference angle between the voltage and the current? Given that the circuit's frequency is \\(\\left(\\dfrac{500}{\\pi}\\ \\text{Hz}\\right)\\).</p>",
+      "label": "📝 Example (5)",
+      "solution": {
+        "given": [
+          "\\( C = 100\\ \\mu F = 100\\times10^{-6}\\ \\text{F} \\) — the capacitor's capacitance (after conversion)",
+          "\\( V_T = 120\\ \\text{Volt} \\) — the source's voltage",
+          "\\( f = 500/\\pi\\ \\text{Hz} \\) — the circuit's frequency",
+          "\\( R = 10\\ \\Omega \\) — the resistance"
+        ],
+        "required": "1- \\(X_C\\). 2- \\(I_T\\). 3- Ø.",
+        "steps": [
+          {
+            "note": "1- We apply the capacitive-reactance relation",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_C=\\dfrac{1}{2\\pi fC}=\\dfrac{1}{2\\pi\\times\\frac{500}{\\pi}\\times100\\times10^{-6}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( X_C=10\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- We first compute the impedance, then apply Ohm's law",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( Z=\\sqrt{R^2+X_C^2}=\\sqrt{10^2+10^2}=10\\sqrt{2}\\ \\Omega \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( I_T=\\dfrac{V_T}{Z}=\\dfrac{120}{10\\sqrt{2}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I_T \\approx 8.5\\ \\text{A} \\)"
+              }
+            ]
+          },
+          {
+            "note": "3- We apply the phase-difference angle relation",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\tan\\emptyset=\\dfrac{-X_C}{R}=\\dfrac{-10}{10}=-1 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\emptyset=-45^\\circ \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ X_C = 10 Ω · I_T ≈ 8.5 A · Ø = −45°",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 15,
+      "sectionId": "example5",
+      "sectionNavLabel": "📝 Example 5"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "In a series resistance-and-inductor circuit, the total voltage relative to the current:",
+        "options": [
+          "Lags it by 90°",
+          "Is exactly in phase with it",
+          "Leads it by a phase-difference angle Ø between zero and 90°",
+          "Leads it by an angle larger than 90°"
+        ],
+        "explain": "Since the resistance's voltage is in phase with the current and the inductor's voltage leads it by 90°, the total voltage leads the current by a phase-difference angle Ø that lies between zero and 90°."
+      },
+      {
+        "correct": 1,
+        "question": "The impedance of a series RL circuit is computed from the relation:",
+        "options": [
+          "\\( Z=R+X_L \\)",
+          "\\( Z=\\sqrt{R^2+X_L^2} \\)",
+          "\\( Z=R-X_L \\)",
+          "\\( Z=R\\times X_L \\)"
+        ],
+        "explain": "Since R and X_L are 90° out of phase, they are added vectorially: \\(Z=\\sqrt{R^2+X_L^2}\\), not by direct arithmetic addition."
+      },
+      {
+        "correct": 0,
+        "question": "In a series resistance-and-capacitor circuit, the current relative to the total voltage:",
+        "options": [
+          "Leads it by a phase-difference angle Ø",
+          "Always lags it",
+          "Is exactly in phase with it",
+          "Is unrelated to the voltage"
+        ],
+        "explain": "In a series RC circuit, the total voltage lags the current, that is, the current leads the total voltage by the phase-difference angle Ø."
+      },
+      {
+        "correct": 3,
+        "question": "The power factor is defined as the ratio between:",
+        "options": [
+          "The resistance and the inductive reactance",
+          "The current and the voltage",
+          "The apparent power and the real power",
+          "The real power and the apparent power"
+        ],
+        "explain": "The power factor is the ratio of the real power to the apparent power of the circuit, \\(\\cos\\emptyset=R/Z=V_R/V_T\\)."
+      },
+      {
+        "correct": 1,
+        "question": "In Example (4) that we studied, the phase-difference angle between the voltage and the current was:",
+        "options": [
+          "37°",
+          "53°",
+          "90°",
+          "0°"
+        ],
+        "explain": "From \\(\\tan\\emptyset=X_L/R=20/15=4/3\\), we get \\(\\emptyset=53°\\)."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Series RL circuit: \\(V_T=\\sqrt{V_R^2+V_L^2}\\), \\(Z=\\sqrt{R^2+X_L^2}\\), \\(\\tan\\emptyset=X_L/R\\), and the voltage leads the current.",
+      "Series RC circuit: \\(V_T=\\sqrt{V_R^2+V_C^2}\\), \\(Z=\\sqrt{R^2+X_C^2}\\), \\(\\tan\\emptyset=-X_C/R\\), and the current leads the voltage.",
+      "The power factor \\(\\cos\\emptyset=R/Z=V_R/V_T\\) in both circuits.",
+      "R and X cannot be added arithmetically because they differ in phase; they are added vectorially (Pythagorean theorem)."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of series RL and RC circuits",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Series RL",
+        "and RC"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Z=√(R²+X²)"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "cosØ=R/Z",
+          "power factor"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "RL: V leads",
+          "RC: I leads"
+        ]
+      }
+    ]
+  }
+}

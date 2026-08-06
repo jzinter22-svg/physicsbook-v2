@@ -75,6 +75,10 @@
         }
       ],
       "trailingHtml": null,
+      "labels": {
+        "rlStatusMid": " · Ø = +",
+        "rlStatusSuffix": "° (الفولطية تتقدم على التيار)"
+      },
       "sectionGroup": 1,
       "sectionId": "rl-widget",
       "sectionNavLabel": "🕹️ المخطط الطوري لدائرة RL"
@@ -288,6 +292,10 @@
         }
       ],
       "trailingHtml": null,
+      "labels": {
+        "rcStatusMid": " · Ø = -",
+        "rcStatusSuffix": "° (التيار يتقدم على الفولطية)"
+      },
       "sectionGroup": 10,
       "sectionId": "rc-widget",
       "sectionNavLabel": "🕹️ المخطط الطوري لدائرة RC"
