@@ -1,0 +1,224 @@
+{
+  "lessonNumber": 2,
+  "chapterNumber": 7,
+  "meta": {
+    "pageTitle": "Lesson 2: The Chemical Composition of Crude Oil (Mixture and Components) — Chapter Seven",
+    "description": "7-2 The Chemical Composition of Crude Oil: how fossil fuels form, how oil is trapped inside the Earth's crust, the definition of petroleum, and its uses.",
+    "breadcrumbChapter": "Chapter 7",
+    "breadcrumbLesson": "The Chemical Composition of Crude Oil",
+    "footer": "Chapter Seven: Crude Oil — Lesson 2: The Chemical Composition of Crude Oil"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 2 of 5 · 7-2",
+    "title": "The Chemical Composition of Crude Oil (Mixture and Components)",
+    "lead": "How does crude oil form underground over millions of years? What is its chemical composition and what is it used for? In this lesson, learn the story of how fossil fuels form, and the components of crude oil."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Describes how crude oil (fossil fuel) forms over millions of years.",
+    "Explains why petroleum is described as a fossil fuel and as a non-renewable energy source.",
+    "Defines petroleum and states its physical properties and its varied uses."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 7-2 The Chemical Composition of Crude Oil (Mixture and Components)",
+      "html": "Fossil fuels, which include petroleum and coal, formed millions of years ago from microscopic organic organisms called crustaceans that lived in the sea. After they died, their bodies settled on the seabed, and over the years were covered by silt, which compressed and pressed them together to form petroleum.</p><p>The petroleum then becomes trapped between layers of rock, and movement of the Earth's crust folded those layers so that the petroleum became trapped in pockets, as shown in Figure (7-2). Very often, as decomposition continues, gas collects above the petroleum; it is made up of 90% methane and is called natural gas, a very valuable fuel.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "simulation",
+      "svgId": "trapSvg",
+      "svgAriaLabel": "Figure 7-2 showing crude oil trapped inside the Earth's crust",
+      "svgViewBox": "0 0 400 240",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: The Layers of an Oil Reservoir Inside the Earth's Crust",
+      "descriptionHtml": "Press any layer of the reservoir to learn more about it.",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "<p id=\"trapCaption\" style=\"text-align:center;color:var(--text-secondary);font-weight:700;margin:0\"></p><p class=\"diagram-caption\" style=\"text-align:center;margin-top:.5rem\">Figure 7-2: Crude oil trapped inside the Earth's crust</p>",
+      "sectionGroup": 1,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "capLabel": "Impermeable layer",
+        "capText": "An impermeable rock layer that keeps gas and petroleum from escaping upward.",
+        "gasLabel": "Gas",
+        "gasText": "Natural gas (90% methane) collects at the top of the reservoir above the petroleum, because it is less dense than the petroleum.",
+        "oilLabel": "Petroleum",
+        "oilText": "Petroleum collects directly beneath the gas, trapped inside a pocket formed by folded rock layers.",
+        "shaleLabel": "Shale",
+        "shaleText": "A shale (fossilized clay) layer found within the reservoir's rock layers, which helps trap fluids.",
+        "waterLabel": "Water",
+        "waterText": "A layer of water lies beneath the petroleum, since water is denser than both petroleum and gas.",
+        "rockLabel": "Permeable rock",
+        "rockText": "Porous, permeable rock at the base of the reservoir, which allows fluids and gases to collect within its pores."
+      }
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Did You Know? Why Is Natural Gas a Good Fuel?",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>When burned, it gives off 25% less carbon than burned petroleum.</li>\n<li>It emits no sulfur into the air, unlike other petroleum components.</li>\n<li>It produces \\(CO_2\\) gas and water vapor when burned.</li>\n</ol>",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Reasoning — Why is petroleum described as a fossil fuel?",
+      "html": "Petroleum is described as a fossil fuel because it took millions of years to form, and it is a non-renewable energy source, meaning it cannot be replaced once used up. As demand for it continues, fossil fuels will not last much longer, which is why there is now an urgent search for alternative sources to petroleum and natural gas — biogas is considered a possible alternative to petroleum.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Petroleum (Crude Oil)",
+      "html": "Petroleum (crude oil) is a dense, flammable liquid, dark brown or greenish-brown in color, found in the upper layer of the Earth's crust. It is made up of a complex mixture of hydrocarbons, especially a series of alkanes, as shown in Figure (7-3).",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 7-3 crude oil (petroleum)\" role=\"img\" viewbox=\"0 0 260 170\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<ellipse cx=\"90\" cy=\"120\" fill=\"#2b1a10\" rx=\"55\" ry=\"16\"></ellipse>\n<path d=\"M 40 60 L 140 60 L 150 118 Q 150 136 90 136 Q 30 136 30 118 Z\" fill=\"#3a2416\" stroke=\"#1e1409\" stroke-width=\"2\"></path>\n<ellipse cx=\"90\" cy=\"60\" fill=\"#4a2f1c\" rx=\"50\" ry=\"13\" stroke=\"#1e1409\" stroke-width=\"2\"></ellipse>\n<path d=\"M 145 78 Q 200 95 215 130\" fill=\"none\" stroke=\"#3a2416\" stroke-linecap=\"round\" stroke-width=\"7\"></path>\n<ellipse cx=\"217\" cy=\"133\" fill=\"#2b1a10\" rx=\"10\" ry=\"6\"></ellipse>\n<path d=\"M 220 128 Q 235 138 233 150\" fill=\"none\" opacity=\".85\" stroke=\"#3a2416\" stroke-linecap=\"round\" stroke-width=\"5\"></path>\n<ellipse cx=\"234\" cy=\"152\" fill=\"#2b1a10\" opacity=\".85\" rx=\"6\" ry=\"4\"></ellipse>\n</g>\n</svg>",
+      "caption": "Figure 7-3: Crude oil (petroleum) — a dense, dark brown liquid poured from a storage barrel",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Uses of Crude Oil",
+      "html": "Crude oil is used in:</p><ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>Generating electrical power.</li>\n<li>Running factories.</li>\n<li>Powering cars.</li>\n<li>As a raw material for many chemical products, including: fertilizers, pesticides, many plastic tools, sheeting, pipes, fabrics, nylon, synthetic silk, synthetic leather, and medicines.</li>\n</ol>",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "Fossil fuels formed from the remains of microscopic organic organisms called:",
+        "options": [
+          "Fungi",
+          "Algae",
+          "Crustaceans",
+          "Bacteria"
+        ],
+        "explain": "Fossil fuels formed millions of years ago from microscopic organic organisms called crustaceans that lived in the sea."
+      },
+      {
+        "correct": 0,
+        "question": "The natural gas that collects above petroleum is made up of 90% of which gas:",
+        "options": [
+          "Methane",
+          "Oxygen",
+          "Carbon dioxide",
+          "Hydrogen"
+        ],
+        "explain": "Gas collects above petroleum that is made up of 90% methane, and is called natural gas — a very valuable fuel."
+      },
+      {
+        "correct": 1,
+        "question": "Petroleum is described as a fossil fuel and non-renewable because:",
+        "options": [
+          "It is a flammable liquid",
+          "It took millions of years to form and cannot be replaced once used up",
+          "Its color is dark brown",
+          "It is found in the upper Earth's crust"
+        ],
+        "explain": "Petroleum is described as a fossil fuel because it took millions of years to form and is a non-renewable energy source, meaning it cannot be replaced once used up."
+      },
+      {
+        "correct": 3,
+        "question": "Petroleum is made up of a complex mixture of hydrocarbons, especially a series of:",
+        "options": [
+          "Acids",
+          "Bases",
+          "Salts",
+          "Alkanes"
+        ],
+        "explain": "Petroleum is made up of a complex mixture of hydrocarbons, especially a series of alkanes."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Fossil fuels formed millions of years ago from the remains of marine crustacean organisms, and petroleum becomes trapped between rock layers in pockets.",
+      "Natural gas, made up of 90% methane, collects above the petroleum.",
+      "Petroleum is a non-renewable fossil fuel because it took millions of years to form; biogas is a possible alternative to it.",
+      "Petroleum is a dense, flammable liquid, dark brown or greenish-brown, a complex mixture of hydrocarbons and especially alkanes.",
+      "Petroleum is used to generate electricity, run factories, and power cars, and is a raw material for many chemical products."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of the chemical composition of crude oil",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Chemical",
+        "Composition"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Formation from",
+          "crustaceans"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Natural gas",
+          "90% methane"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Fossil",
+          "fuel"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Mixture of",
+          "alkanes"
+        ]
+      }
+    ]
+  }
+}

@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-2.html">
@@ -42,141 +43,16 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يصف كيفية تكوّن النفط الخام (الوقود الأحفوري) عبر ملايين السنين.</span></li>
-        <li><span class="obj-num">2</span><span>يعلّل وصف البترول بأنه وقود أحفوري وأنه من مصادر الطاقة غير المتجددة.</span></li>
-        <li><span class="obj-num">3</span><span>يعرّف البترول ويذكر خصائصه الفيزيائية واستخداماته المتنوعة.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 2-7 التركيب الكيميائي للنفط الخام (خليط ومكونات)</h2>
-      <p>تكوّن الوقود الأحفوري، والذي يشمل البترول والفحم، منذ ملايين الأعوام من كائنات عضوية ميكروسكوبية تسمى القشريات (Crustaceans) كانت تعيش في البحر، وبعد موتها استقرت أجسامها في قاعه، وتغطت على مدار السنوات بالطمي، ما أدى إلى كبسها وعصارتها لتكوين البترول.</p>
-      <p>يُنحجز البترول بعد ذلك بين طبقات الصخور، وتسببت حركة القشرة الأرضية في طي تلك الطبقات بحيث أصبح البترول محجوزًا في جيوب، كما هو مبين في الشكل (2-7). وفي كثير من الأحيان، ومع استمرار التحلل، يتجمع غاز فوق البترول، ويتكون من 90% ميثان ويُسمّى الغاز الطبيعي، وهو وقود قيّم جدًا.</p>
-    </div>
-  </section>
-
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: طبقات مكمن النفط داخل قشرة الأرض</h2>
-      <p>اضغط على أي طبقة من طبقات المكمن لمعرفة تفاصيلها.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="trapSvg" viewBox="0 0 400 240" role="img" aria-label="شكل 2-7 يبين وجود النفط الخام داخل قشرة الأرض"></svg></div>
-        <p id="trapCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-      <p class="diagram-caption" style="text-align:center;margin-top:.5rem">شكل 2-7: يبيّن وجود النفط الخام داخل قشرة الأرض</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — هل تعلم؟ لماذا يُعدّ الغاز الطبيعي وقودًا جيدًا؟</span>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem">
-        <li>يعطي عند احتراقه 25% كاربون أقل من البترول المحترق.</li>
-        <li>لا يبعث أي كبريت إلى الهواء، على عكس مكونات البترول الأخرى.</li>
-        <li>ينتج غاز \(CO_2\) وبخار الماء عند احتراقه.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
-      <span class="def-label" style="color:var(--accent-green)">🔍 تعليل — لماذا يوصف البترول بأنه وقود أحفوري؟</span>
-      <p style="margin:.3rem 0">يوصف البترول بأنه وقود أحفوري؛ لأنه استغرق ملايين السنين ليتكون، وهو من مصادر الطاقة غير المتجددة، مما يعني أنه لا يمكن تعويضه عند استنفاده. ومع استمرار الطلب عليه لن يستمر الوقود الأحفوري لزمن طويل، ولهذا يتم حاليًا البحث بإلحاح عن مصادر بديلة للبترول والغاز الطبيعي، ويُعدّ البايوغاز (الغاز الحيوي) بديلًا محتملًا للبترول.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — البترول (النفط الخام)</span>
-      <p style="margin:.3rem 0">البترول (النفط الخام) عبارة عن سائل كثيف قابل للاشتعال، بنّي غامق أو بنّي مخضّر، يوجد في الطبقة العليا من القشرة الأرضية. ويتكون من خليط معقد من الهيدروكاربونات، وخاصة من سلسلة من الألكانات، كما هو مبين في الشكل (3-7).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 3-7 النفط الخام (البترول)">
-          <g font-family="Cairo,sans-serif">
-            <ellipse cx="90" cy="120" rx="55" ry="16" fill="#2b1a10"/>
-            <path d="M 40 60 L 140 60 L 150 118 Q 150 136 90 136 Q 30 136 30 118 Z" fill="#3a2416" stroke="#1e1409" stroke-width="2"/>
-            <ellipse cx="90" cy="60" rx="50" ry="13" fill="#4a2f1c" stroke="#1e1409" stroke-width="2"/>
-            <path d="M 145 78 Q 200 95 215 130" fill="none" stroke="#3a2416" stroke-width="7" stroke-linecap="round"/>
-            <ellipse cx="217" cy="133" rx="10" ry="6" fill="#2b1a10"/>
-            <path d="M 220 128 Q 235 138 233 150" fill="none" stroke="#3a2416" stroke-width="5" stroke-linecap="round" opacity=".85"/>
-            <ellipse cx="234" cy="152" rx="6" ry="4" fill="#2b1a10" opacity=".85"/>
-          </g>
-        </svg>
-        <span class="diagram-caption">شكل 3-7: النفط الخام (البترول) — سائل بنّي غامق كثيف يُصبّ من برميل التخزين</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — استخدامات النفط الخام</span>
-      <p style="margin:.3rem 0">يُستعمل النفط الخام في:</p>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem">
-        <li>إنتاج الطاقة الكهربائية.</li>
-        <li>تشغيل المصانع.</li>
-        <li>تحريك السيارات.</li>
-        <li>مادة خام لعديد من المنتجات الكيميائية، بما فيها: الأسمدة، ومبيدات الحشرات، والكثير من الأدوات البلاستيكية، والرقائق، والأنابيب، والأقمشة، والنايلون، والحرير الاصطناعي، والجلود الاصطناعية، والأدوية.</li>
-      </ol>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>1.</span><span>تكوّن الوقود الأحفوري من بقايا كائنات عضوية ميكروسكوبية تُسمّى:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الفطريات</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الطحالب</span></label>
-          <label class="quiz-opt"><input type="radio"><span>القشريات (Crustaceans)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>البكتيريا</span></label>
-        </div>
-        <div class="quiz-explain">تكوّن الوقود الأحفوري منذ ملايين الأعوام من كائنات عضوية ميكروسكوبية تسمى القشريات (Crustaceans) كانت تعيش في البحر.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>2.</span><span>يتكون الغاز الطبيعي المتجمع فوق البترول بنسبة 90% من غاز:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الميثان</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الأوكسجين</span></label>
-          <label class="quiz-opt"><input type="radio"><span>ثنائي أوكسيد الكاربون</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الهيدروجين</span></label>
-        </div>
-        <div class="quiz-explain">يتجمع غاز فوق البترول يتكون من 90% ميثان، ويُسمّى الغاز الطبيعي، وهو وقود قيّم جدًا.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>3.</span><span>يوصف البترول بأنه وقود أحفوري وغير متجدد؛ لأنه:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>سائل قابل للاشتعال</span></label>
-          <label class="quiz-opt"><input type="radio"><span>استغرق ملايين السنين ليتكون ولا يمكن تعويضه عند استنفاده</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لونه بنّي غامق</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يوجد في القشرة الأرضية العليا</span></label>
-        </div>
-        <div class="quiz-explain">يوصف البترول بأنه وقود أحفوري؛ لأنه استغرق ملايين السنين ليتكون وهو من مصادر الطاقة غير المتجددة، مما يعني أنه لا يمكن تعويضه عند استنفاده.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>يتكون البترول من خليط معقد من الهيدروكاربونات، وخاصة من سلسلة من:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الأحماض</span></label>
-          <label class="quiz-opt"><input type="radio"><span>القواعد</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الأملاح</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الألكانات</span></label>
-        </div>
-        <div class="quiz-explain">يتكون البترول من خليط معقد من الهيدروكاربونات، وخاصة من سلسلة من الألكانات.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -186,13 +62,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>تكوّن الوقود الأحفوري منذ ملايين الأعوام من بقايا كائنات القشريات البحرية، ويُنحجز البترول بين طبقات الصخور في جيوب.</span></li>
-        <li><span>يتجمع فوق البترول غاز طبيعي يتكون من 90% ميثان.</span></li>
-        <li><span>البترول وقود أحفوري غير متجدد لأنه استغرق ملايين السنين ليتكون؛ والبايوغاز بديل محتمل له.</span></li>
-        <li><span>البترول سائل كثيف قابل للاشتعال، بنّي غامق أو بنّي مخضّر، خليط معقد من الهيدروكاربونات وخاصة الألكانات.</span></li>
-        <li><span>يُستعمل البترول لإنتاج الكهرباء وتشغيل المصانع وتحريك السيارات، وهو مادة خام لكثير من المنتجات الكيميائية.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -203,31 +73,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l2" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l2">
-        <svg viewBox="0 -3 480 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للتركيب الكيميائي للنفط الخام">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">التركيب</text>
-            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">الكيميائي</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">تكوّن</text>
-            <text x="90" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">القشريات</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">غاز طبيعي</text>
-            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">90% ميثان</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">وقود</text>
-            <text x="390" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">أحفوري</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">خليط</text>
-            <text x="390" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">ألكانات</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l2"></div>
     </div>
   </section>
 
@@ -244,29 +90,34 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("trapSvg");
-  var caption = document.getElementById("trapCaption");
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
+  var svg, caption;
+  var activeLayer = "oil";
 
-  var LAYERS = [
-    {key:"cap",   y:20,  h:22, fill:"#8d8d99", label:"طبقة غير نافذة",  text:"طبقة صخرية غير نافذة (Impermeable) تمنع هروب الغاز والبترول إلى الأعلى."},
-    {key:"gas",   y:42,  h:26, fill:"#c9e8ff", label:"غاز",             text:"يتجمع الغاز الطبيعي (90% ميثان) في أعلى المكمن فوق البترول، لأنه أخف كثافة منه."},
-    {key:"oil",   y:68,  h:34, fill:"#3a2416", label:"بترول",           text:"يتجمع البترول أسفل الغاز مباشرة، محجوزًا داخل جيب من طبقات الصخور المطوية."},
-    {key:"shale", y:102, h:22, fill:"#7a6a55", label:"طفل",             text:"طبقة الطفل (الصلصال المتصخر) توجد ضمن طبقات المكمن وتساعد على حجز السوائل."},
-    {key:"water", y:124, h:30, fill:"#7fc4e8", label:"ماء",             text:"توجد طبقة من الماء أسفل البترول، إذ يكون الماء أعلى كثافة من البترول والغاز."},
-    {key:"rock",  y:154, h:30, fill:"#b99a72", label:"صخر نافذ",        text:"صخر مسامي نافذ (Permeable) في قاعدة المكمن، يسمح للسوائل والغازات بالتجمع ضمن مسامه."}
-  ];
+  function layers(){
+    return [
+      {key:"cap",   y:20,  h:22, fill:"#8d8d99", label:t("capLabel","طبقة غير نافذة"),  text:t("capText","طبقة صخرية غير نافذة (Impermeable) تمنع هروب الغاز والبترول إلى الأعلى.")},
+      {key:"gas",   y:42,  h:26, fill:"#c9e8ff", label:t("gasLabel","غاز"),             text:t("gasText","يتجمع الغاز الطبيعي (90% ميثان) في أعلى المكمن فوق البترول، لأنه أخف كثافة منه.")},
+      {key:"oil",   y:68,  h:34, fill:"#3a2416", label:t("oilLabel","بترول"),           text:t("oilText","يتجمع البترول أسفل الغاز مباشرة، محجوزًا داخل جيب من طبقات الصخور المطوية.")},
+      {key:"shale", y:102, h:22, fill:"#7a6a55", label:t("shaleLabel","طفل"),           text:t("shaleText","طبقة الطفل (الصلصال المتصخر) توجد ضمن طبقات المكمن وتساعد على حجز السوائل.")},
+      {key:"water", y:124, h:30, fill:"#7fc4e8", label:t("waterLabel","ماء"),           text:t("waterText","توجد طبقة من الماء أسفل البترول، إذ يكون الماء أعلى كثافة من البترول والغاز.")},
+      {key:"rock",  y:154, h:30, fill:"#b99a72", label:t("rockLabel","صخر نافذ"),       text:t("rockText","صخر مسامي نافذ (Permeable) في قاعدة المكمن، يسمح للسوائل والغازات بالتجمع ضمن مسامه.")}
+    ];
+  }
 
   function label(x,y,txt,color,size,weight,anchor){
-    var t = document.createElementNS(ns,"text");
-    t.setAttribute("x",x); t.setAttribute("y",y);
-    t.setAttribute("text-anchor",anchor||"middle");
-    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||10); t.setAttribute("fill",color);
-    t.setAttribute("font-weight",weight||"700");
-    t.textContent = txt;
-    svg.appendChild(t);
+    var el = document.createElementNS(ns,"text");
+    el.setAttribute("x",x); el.setAttribute("y",y);
+    el.setAttribute("text-anchor",anchor||"middle");
+    el.setAttribute("font-family","Cairo,sans-serif"); el.setAttribute("font-size",size||10); el.setAttribute("fill",color);
+    el.setAttribute("font-weight",weight||"700");
+    el.textContent = txt;
+    svg.appendChild(el);
   }
 
   function draw(active){
+    activeLayer = active;
+    var LAYERS = layers();
     while(svg.firstChild) svg.removeChild(svg.firstChild);
     LAYERS.forEach(function(l){
       var isActive = l.key === active;
@@ -285,7 +136,13 @@
     caption.textContent = found.text;
   }
 
-  draw("oil");
+  function boot(){
+    svg = document.getElementById("trapSvg");
+    caption = document.getElementById("trapCaption");
+    if(!svg || !caption) return;
+    draw(activeLayer);
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

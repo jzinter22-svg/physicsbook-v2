@@ -43,15 +43,29 @@
       "selectOptions": null,
       "presets": null,
       "ruleBoxes": [],
-      "trailingHtml": "",
+      "trailingHtml": "<p id=\"trapCaption\" style=\"text-align:center;color:var(--text-secondary);font-weight:700;margin:0\"></p><p class=\"diagram-caption\" style=\"text-align:center;margin-top:.5rem\">شكل 2-7: يبيّن وجود النفط الخام داخل قشرة الأرض</p>",
       "sectionGroup": 1,
       "sectionId": "interactive",
-      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية",
+      "labels": {
+        "capLabel": "طبقة غير نافذة",
+        "capText": "طبقة صخرية غير نافذة (Impermeable) تمنع هروب الغاز والبترول إلى الأعلى.",
+        "gasLabel": "غاز",
+        "gasText": "يتجمع الغاز الطبيعي (90% ميثان) في أعلى المكمن فوق البترول، لأنه أخف كثافة منه.",
+        "oilLabel": "بترول",
+        "oilText": "يتجمع البترول أسفل الغاز مباشرة، محجوزًا داخل جيب من طبقات الصخور المطوية.",
+        "shaleLabel": "طفل",
+        "shaleText": "طبقة الطفل (الصلصال المتصخر) توجد ضمن طبقات المكمن وتساعد على حجز السوائل.",
+        "waterLabel": "ماء",
+        "waterText": "توجد طبقة من الماء أسفل البترول، إذ يكون الماء أعلى كثافة من البترول والغاز.",
+        "rockLabel": "صخر نافذ",
+        "rockText": "صخر مسامي نافذ (Permeable) في قاعدة المكمن، يسمح للسوائل والغازات بالتجمع ضمن مسامه."
+      }
     },
     {
       "type": "enumeration",
       "label": "🔢 تعداد — هل تعلم؟ لماذا يُعدّ الغاز الطبيعي وقودًا جيدًا؟",
-      "html": "<span class=\"def-label\" style=\"color:var(--accent-purple)\">🔢 تعداد — هل تعلم؟ لماذا يُعدّ الغاز الطبيعي وقودًا جيدًا؟</span>\n<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>يعطي عند احتراقه 25% كاربون أقل من البترول المحترق.</li>\n<li>لا يبعث أي كبريت إلى الهواء، على عكس مكونات البترول الأخرى.</li>\n<li>ينتج غاز \\(CO_2\\) وبخار الماء عند احتراقه.</li>\n</ol>",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>يعطي عند احتراقه 25% كاربون أقل من البترول المحترق.</li>\n<li>لا يبعث أي كبريت إلى الهواء، على عكس مكونات البترول الأخرى.</li>\n<li>ينتج غاز \\(CO_2\\) وبخار الماء عند احتراقه.</li>\n</ol>",
       "sectionGroup": 2,
       "sectionId": null,
       "sectionNavLabel": null
@@ -85,7 +99,7 @@
     {
       "type": "enumeration",
       "label": "🔢 تعداد — استخدامات النفط الخام",
-      "html": "يُستعمل النفط الخام في:",
+      "html": "يُستعمل النفط الخام في:</p><ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>إنتاج الطاقة الكهربائية.</li>\n<li>تشغيل المصانع.</li>\n<li>تحريك السيارات.</li>\n<li>مادة خام لعديد من المنتجات الكيميائية، بما فيها: الأسمدة، ومبيدات الحشرات، والكثير من الأدوات البلاستيكية، والرقائق، والأنابيب، والأقمشة، والنايلون، والحرير الاصطناعي، والجلود الاصطناعية، والأدوية.</li>\n</ol>",
       "sectionGroup": 6,
       "sectionId": null,
       "sectionNavLabel": null
