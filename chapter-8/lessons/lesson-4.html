@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-4.html">
@@ -42,112 +43,16 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يعرّف السبيكة ويعطي مثالًا لها.</span></li>
-        <li><span class="obj-num">2</span><span>يذكر نبذة تاريخية عن اكتشاف الإنسان للسبائك، بدءًا من نيازك الحديد وصولًا إلى سبيكة البرونز.</span></li>
-        <li><span class="obj-num">3</span><span>يعلّل تفضيل الإنسان القديم لسبيكة البرونز على النحاس النقي.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 4-8 السبائك</h2>
-      <p>عرفت عزيزي الطالب في دراستك السابقة الفلزات وخصائصها واختلافها من الناحية الفيزيائية والكيميائية، وهنا سوف تتعرف نوعًا آخر هو السبائك، وأنواعها.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — السبيكة</span>
-      <p style="margin:.3rem 0">السبيكة هي عبارة عن خليط متكون من فلز وعنصر آخر، حيث تحتوي معظم السبائك على الأقل واحد من عنصرين: كمية كبيرة من الفلز الرئيسي أو الفلز الأساس، وكميات أقل من المكوّنات الأخرى التي قد تكون فلزات أو لافلزات مثل الكاربون والسليكون.</p>
-    </div>
-  </section>
-
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: قصة اكتشاف الإنسان للسبائك</h2>
-      <p>حرّك المؤشر لاستعراض تطوّر اكتشاف الإنسان للسبائك عبر التاريخ، من نيازك الحديد إلى سبيكة البرونز.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="timelineSvg" viewBox="0 0 480 170" role="img" aria-label="محاكاة تطور اكتشاف السبائك عبر التاريخ"></svg></div>
-        <div class="io-row">
-          <label for="timelineSlider" style="min-width:8rem">المرحلة</label>
-          <input type="range" id="timelineSlider" class="neu-range" min="0" max="3" step="1" value="0">
-        </div>
-        <p id="timelineCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>اكتشف الإنسان السبائك في الطبيعة خلال عصور ما قبل التاريخ، واشتملت هذه السبائك على نيازك الحديد وخلائط الذهب والفضة في قاع الأنهار. إذ يُعتقد أن أول سبيكة صنعها الإنسان هي البرونز، والتي تتكون من النحاس والزرنيخ، ثم اكتُشف بعد ذلك القصدير ووُضع مع النحاس فأنتج نوعًا جيدًا من البرونز، ثم بدأت صناعة الأدوات والحلي والأسلحة، حيث تمتاز سبيكة البرونز بأنها أصلب من النحاس وأكثر قابلية للصهر والقولبة بأشكال مفيدة.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
-      <span class="def-label" style="color:var(--accent-green)">🔍 تعليل — لماذا فضّل الإنسان القديم سبيكة البرونز على النحاس النقي؟</span>
-      <p style="margin:.3rem 0">تمتاز سبيكة البرونز بأنها أصلب من النحاس النقي وأكثر قابلية للصهر والقولبة بأشكال مفيدة، ولهذا بدأت بعده صناعة الأدوات والحلي والأسلحة من سبيكة البرونز بدلًا من النحاس النقي.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>إن طرائق تكوين السبائك مختلفة من سبيكة إلى أخرى، حيث تعتمد هذه الطرائق على درجة انصهار المواد المتكوّنة منها، وكذلك على درجة انجمادها؛ إذ يمكن التحكم في خواص المواد المكوّنة للسبيكة بوساطة المعاملات الحرارية لكل مادة.</p>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>السبيكة هي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>فلز نقي واحد فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>خليط متكوّن من فلز وعنصر آخر</span></label>
-          <label class="quiz-opt"><input type="radio"><span>غاز نبيل</span></label>
-          <label class="quiz-opt"><input type="radio"><span>محلول مائي</span></label>
-        </div>
-        <div class="quiz-explain">السبيكة عبارة عن خليط متكوّن من فلز وعنصر آخر، يحتوي على كمية كبيرة من الفلز الأساس وكميات أقل من مكوّنات أخرى.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>يُعتقد أن أول سبيكة صنعها الإنسان هي البرونز، والتي تتكون في البداية من النحاس مع:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الذهب</span></label>
-          <label class="quiz-opt"><input type="radio"><span>القصدير مباشرة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الزرنيخ</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الفضة</span></label>
-        </div>
-        <div class="quiz-explain">يُعتقد أن أول سبيكة صنعها الإنسان هي البرونز، والتي تتكون من النحاس والزرنيخ، ثم اكتُشف القصدير لاحقًا فأنتج نوعًا جيدًا من البرونز.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>تمتاز سبيكة البرونز عن النحاس النقي بأنها:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>أصلب وأكثر قابلية للصهر والقولبة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أخف وزنًا بكثير</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا تصدأ إطلاقًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>شفافة</span></label>
-        </div>
-        <div class="quiz-explain">تمتاز سبيكة البرونز بأنها أصلب من النحاس وأكثر قابلية للصهر والقولبة بأشكال مفيدة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>من السبائك التي اكتشفها الإنسان في الطبيعة خلال عصور ما قبل التاريخ:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الفولاذ المقاوم للصدأ</span></label>
-          <label class="quiz-opt"><input type="radio"><span>سبيكة الألمنيوم والمغنيسيوم</span></label>
-          <label class="quiz-opt"><input type="radio"><span>سبيكة النيكل والكوبلت</span></label>
-          <label class="quiz-opt"><input type="radio"><span>نيازك الحديد وخلائط الذهب والفضة في قاع الأنهار</span></label>
-        </div>
-        <div class="quiz-explain">اكتشف الإنسان السبائك في الطبيعة خلال عصور ما قبل التاريخ، واشتملت هذه السبائك على نيازك الحديد وخلائط الذهب والفضة في قاع الأنهار.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -157,12 +62,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>السبيكة خليط متكوّن من فلز أساس بكمية كبيرة، وعناصر أخرى (فلزات أو لافلزات كالكاربون والسليكون) بكميات أقل.</span></li>
-        <li><span>اكتشف الإنسان السبائك في الطبيعة قبل التاريخ: نيازك الحديد وخلائط الذهب والفضة في قاع الأنهار.</span></li>
-        <li><span>يُعتقد أن أول سبيكة صنعها الإنسان هي البرونز (نحاس + زرنيخ)، ثم تطورت بإضافة القصدير لتصبح أصلب وأكثر قابلية للصهر والقولبة من النحاس النقي.</span></li>
-        <li><span>تعتمد طرائق تكوين السبائك على درجتي انصهار وانجماد موادها، ويمكن التحكم في خواصها بالمعاملات الحرارية.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -173,27 +73,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l4" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l4">
-        <svg viewBox="0 -3 480 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للسبائك">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="134" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">السبائك</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">تعريف السبيكة</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">نيازك</text>
-            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">الحديد</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">نحاس + زرنيخ</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="219" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">برونز</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l4"></div>
     </div>
   </section>
 
@@ -210,35 +90,39 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("timelineSvg");
-  var slider = document.getElementById("timelineSlider");
-  var caption = document.getElementById("timelineCaption");
+  var svg, slider, caption;
+  var activeIdx = 0;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
-  var EVENTS = [
-    {x:70,  title:"نيازك الحديد", color:"#7c6fee", text:"اكتشف الإنسان في عصور ما قبل التاريخ نيازك الحديد وخلائط الذهب والفضة في قاع الأنهار — أولى السبائك التي وجدها الإنسان جاهزة في الطبيعة."},
-    {x:190, title:"نحاس + زرنيخ", color:"#ffab5e", text:"يُعتقد أن أول سبيكة صنعها الإنسان هي البرونز، وتتكون من النحاس والزرنيخ."},
-    {x:310, title:"نحاس + قصدير", color:"#2fd18f", text:"اكتُشف القصدير ووُضع مع النحاس، فأنتج نوعًا جيدًا من البرونز."},
-    {x:410, title:"أدوات وأسلحة", color:"#ff6b9d", text:"بدأت صناعة الأدوات والحلي والأسلحة من سبيكة البرونز، لأنها أصلب من النحاس وأكثر قابلية للصهر والقولبة."}
-  ];
+  function EVENTS(){
+    return [
+      {x:70,  title:t("ev0_title","نيازك الحديد"), color:"#7c6fee", text:t("ev0_text","اكتشف الإنسان في عصور ما قبل التاريخ نيازك الحديد وخلائط الذهب والفضة في قاع الأنهار — أولى السبائك التي وجدها الإنسان جاهزة في الطبيعة.")},
+      {x:190, title:t("ev1_title","نحاس + زرنيخ"), color:"#ffab5e", text:t("ev1_text","يُعتقد أن أول سبيكة صنعها الإنسان هي البرونز، وتتكون من النحاس والزرنيخ.")},
+      {x:310, title:t("ev2_title","نحاس + قصدير"), color:"#2fd18f", text:t("ev2_text","اكتُشف القصدير ووُضع مع النحاس، فأنتج نوعًا جيدًا من البرونز.")},
+      {x:410, title:t("ev3_title","أدوات وأسلحة"), color:"#ff6b9d", text:t("ev3_text","بدأت صناعة الأدوات والحلي والأسلحة من سبيكة البرونز، لأنها أصلب من النحاس وأكثر قابلية للصهر والقولبة.")}
+    ];
+  }
 
   function label(x,y,txt,color,size,weight){
-    var t = document.createElementNS(ns,"text");
-    t.setAttribute("x",x); t.setAttribute("y",y);
-    t.setAttribute("text-anchor","middle");
-    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||10); t.setAttribute("fill",color);
-    t.setAttribute("font-weight",weight||"700");
-    t.textContent = txt;
-    svg.appendChild(t);
+    var te = document.createElementNS(ns,"text");
+    te.setAttribute("x",x); te.setAttribute("y",y);
+    te.setAttribute("text-anchor","middle");
+    te.setAttribute("font-family","Cairo,sans-serif"); te.setAttribute("font-size",size||10); te.setAttribute("fill",color);
+    te.setAttribute("font-weight",weight||"700");
+    te.textContent = txt;
+    svg.appendChild(te);
   }
 
   function draw(idx){
+    activeIdx = idx;
+    var events = EVENTS();
     while(svg.firstChild) svg.removeChild(svg.firstChild);
     var line = document.createElementNS(ns,"line");
     line.setAttribute("x1",50); line.setAttribute("y1",85); line.setAttribute("x2",430); line.setAttribute("y2",85);
     line.setAttribute("stroke","var(--text-faint)"); line.setAttribute("stroke-width","3");
     svg.appendChild(line);
 
-    EVENTS.forEach(function(ev, i){
+    events.forEach(function(ev, i){
       var active = i === idx;
       var c = document.createElementNS(ns,"circle");
       c.setAttribute("cx",ev.x); c.setAttribute("cy",85); c.setAttribute("r", active? 20 : 12);
@@ -248,11 +132,19 @@
       label(ev.x, active? 125:118, ev.title, ev.color, active?11:9.5, "800");
     });
 
-    caption.textContent = EVENTS[idx].text;
+    caption.textContent = events[idx].text;
   }
 
-  slider.addEventListener("input", function(){ draw(parseInt(slider.value,10)); });
-  draw(0);
+  function boot(){
+    svg = document.getElementById("timelineSvg");
+    slider = document.getElementById("timelineSlider");
+    caption = document.getElementById("timelineCaption");
+    if(!svg || !slider || !caption) return;
+    slider.value = activeIdx;
+    slider.addEventListener("input", function(){ draw(parseInt(slider.value,10)); });
+    draw(activeIdx);
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>
