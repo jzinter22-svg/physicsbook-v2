@@ -1,0 +1,250 @@
+{
+  "lessonNumber": 6,
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "الدرس 6: أنواع الليزر — الفصل السادس",
+    "description": "6-6 أنواع الليزر: الليزرات الصلبة والغازية وليزر الاكسامير والسائلة وأشباه الموصلات والكيميائية.",
+    "breadcrumbChapter": "الفصل 6",
+    "breadcrumbLesson": "أنواع الليزر",
+    "footer": "الفصل السادس: الليزر والبلازما — الدرس 6: أنواع الليزر"
+  },
+  "hero": {
+    "eyebrow": "📖 الدرس 6 من 10 · 6-6",
+    "title": "أنواع الليزر Types of Laser",
+    "lead": "يُصنَّف الليزر تبعًا لنوع مادة الوسط الفعال إلى ليزرات صلبة وغازية وسائلة وأشباه موصلات وكيميائية، لكل منها تركيب ومزايا واستعمالات خاصة."
+  },
+  "objectivesHeading": "🎯 أهداف الدرس",
+  "objectives": [
+    "يصنّف الليزرات تبعًا لنوع الوسط الفعال ويذكر مثالًا على كل نوع.",
+    "يوضّح تركيب ليزر الياقوت وليزر Nd:YAG وآلية عملهما.",
+    "يوضّح تركيب ليزر الهيليوم-نيون وليزر ثنائي أوكسيد الكاربون.",
+    "يوضّح تركيب ليزر أشباه الموصلات وآلية توليده للتوزيع المعكوس."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 6-6 أنواع الليزر Types of Laser",
+      "html": "يصنَّف الليزر تبعًا لنوع مادة الوسط الفعال إلى أنواع مختلفة من أمثلتها:",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 تمهيد"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 تعداد — تصنيف الليزر تبعًا للوسط الفعال",
+      "html": "<span class=\"def-label\" style=\"color:var(--accent-purple)\">🔢 تعداد — تصنيف الليزر تبعًا للوسط الفعال</span>\n<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>1- ليزر الحالة الصلبة Solid-State Laser: مثل ليزر الياقوت Ruby وليزر النيديميوم.</li>\n<li>2- ليزر الحالة الغازية Gas Laser: مثل ليزر الهيليوم-نيون وليزر ثنائي أوكسيد الكاربون.</li>\n<li>3- ليزر الاكسامير Excimer Laser: وهي الليزرات التي يمكن الحصول عليها باستعمال الغازات النبيلة مثل غاز الأركون والكربتون والزينون، ويُعدّ الليزر الناتج عنها من الأصناف المهمة والمفيدة وذات الأطوال الموجية في مدى الأشعة فوق البنفسجية.</li>\n<li>4- ليزر الحالة السائلة Liquid State Laser: مثل ليزر الصبغة العضوية وهي الليزرات التي يكون فيها الوسط الفعال بحالة سائلة من محاليل مركبات صبغة عضوية معينة مثل صبغة الرودامين (Rhodamine 6G) والتي ينتج عنها ليزر يمكن التحكم بالطول الموجي الصادر عنه.</li>\n<li>5- ليزر أشباه الموصلات Semiconductor Laser: مثل زرنيخيد الكاليوم.</li>\n<li>6- الليزر الكيميائي Chemical Laser: هو الليزر الذي ينتج عن طريق التفاعل الكيميائي مثل ليزر فلوريد الديتيريوم.</li>\n</ol>",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "1-6-6 الليزرات الصلبة",
+      "html": "",
+      "sectionGroup": 2,
+      "sectionId": "solidlaser",
+      "sectionNavLabel": "1️⃣ الليزرات الصلبة"
+    },
+    {
+      "type": "definition",
+      "label": "📌 ليزر الياقوت (Ruby Laser)",
+      "html": "تم استخدام الياقوت كوسط فعال في أول جهاز ليزر عام 1960، والياقوت بلورة تتواجد في الطبيعة بلونها الأحمر الفاتح، وتتكون من أوكسيد الألمنيوم (\\(\\text{Al}_2\\text{O}_3\\)) المطعّم بأيونات الكروم الثلاثية التأين (\\(\\text{Cr}^{+3}\\)) التي تعطي البلورة اللون الأحمر الفاتح، ويعمل جهاز الليزر هذا بنظام المستويات الثلاثة، ويتم فيه الضخ بواسطة المصباح الومضي، لاحظ الشكل (18-6) والشكل (19-6).",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 18-6 و19-6 ليزر الياقوت\" role=\"img\" viewbox=\"0 0 300 170\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<path d=\"M60,50 Q150,20 240,50 L240,90 Q150,120 60,90 Z\" fill=\"none\" stroke=\"var(--accent-orange)\" stroke-dasharray=\"4 3\" stroke-width=\"2\"></path>\n<text fill=\"var(--accent-orange)\" font-size=\"9.5\" text-anchor=\"middle\" x=\"150\" y=\"35\">مصباح ومضي (ضخ ضوئي)</text>\n<rect fill=\"var(--accent-pink)\" height=\"16\" opacity=\".7\" width=\"100\" x=\"100\" y=\"62\"></rect>\n<text fill=\"var(--accent-pink)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"150\" y=\"105\">بلورة الياقوت</text>\n<rect fill=\"var(--accent-purple)\" height=\"20\" width=\"14\" x=\"30\" y=\"60\"></rect>\n<rect fill=\"var(--accent-purple)\" height=\"20\" opacity=\".5\" width=\"14\" x=\"256\" y=\"60\"></rect>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"2\" x1=\"270\" x2=\"295\" y1=\"70\" y2=\"70\"></line>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"150\" y=\"145\">Al₂O₃ مطعّمة بأيونات Cr⁺³ — نظام ثلاثي المستوى، ضخ ضوئي</text>\n</g>\n</svg>",
+      "caption": "شكل 18-6/19-6: ليزر الياقوت — بلورة Al₂O₃ مطعّمة بـ Cr⁺³ بين مرآتين، تُضخّ بمصباح ومضي",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 ليزر Nd:YAG",
+      "html": "هو الليزر الذي يتكون الوسط الفعال فيه من مادة أوكسيد اليتريوم الألمنيوم الرباعية، وتسمى اختصارًا بالياك (YAG) (\\(\\text{Y}_3\\text{Al}_5\\text{O}_{12}\\))، والمطعّمة بنسبة معينة من أيونات النيديميوم (\\(\\text{Nd}^{+3}\\))، ويعمل بنظام المستويات الرباعية.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "2-6-6 الليزرات الغازية",
+      "html": "",
+      "sectionGroup": 6,
+      "sectionId": "gaslaser",
+      "sectionNavLabel": "2️⃣ الليزرات الغازية"
+    },
+    {
+      "type": "definition",
+      "label": "📌 ليزر الهيليوم-نيون (He-Ne Laser)",
+      "html": "هو الليزر الذي تم اكتشافه نهاية عام 1960 من قبل العالم جافان، ويتكون الوسط الفعال فيه من مزيج بنسب معينة من غاز النيون (Ne) وغاز الهيليوم (He) موضوعين في أنبوبة زجاجية وتحت ضغط (8-12) torr (torr=1mm Hg)، لاحظ الشكل (20-6). ويُستعمل التفريغ الكهربائي في إثارة الوسط الفعال بتسليط فولطية عالية تتراوح (2-4) kV على طرفي الأنبوبة الزجاجية، لاحظ الشكل (21-6).",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 20-6 و21-6 ليزر الهيليوم نيون\" role=\"img\" viewbox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"rgba(63,169,245,.18)\" height=\"35\" rx=\"16\" stroke=\"var(--accent-blue)\" stroke-width=\"1.5\" width=\"200\" x=\"50\" y=\"55\"></rect>\n<text fill=\"var(--accent-blue)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"150\" y=\"76\">مزيج غاز He + Ne (8-12 torr)</text>\n<rect fill=\"var(--accent-purple)\" height=\"41\" width=\"14\" x=\"35\" y=\"52\"></rect>\n<rect fill=\"var(--accent-purple)\" height=\"41\" opacity=\".5\" width=\"14\" x=\"251\" y=\"52\"></rect>\n<line stroke=\"var(--accent-orange)\" stroke-width=\"3\" x1=\"265\" x2=\"290\" y1=\"72\" y2=\"72\"></line>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"1.5\" x1=\"60\" x2=\"60\" y1=\"105\" y2=\"120\"></line>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"1.5\" x1=\"240\" x2=\"240\" y1=\"105\" y2=\"120\"></line>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"1.5\" x1=\"60\" x2=\"240\" y1=\"120\" y2=\"120\"></line>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"150\" y=\"135\">مصدر تفريغ كهربائي (2-4 kV)</text>\n</g>\n</svg>",
+      "caption": "شكل 20-6/21-6: ليزر الهيليوم-نيون — أنبوبة زجاجية بمزيج He/Ne يُثار بتفريغ كهربائي عالي الفولطية",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 ليزر ثنائي أوكسيد الكاربون (CO₂ Laser)",
+      "html": "وهو من أهم الليزرات الغازية بسبب كفاءته العالية التي تصل إلى حدود (30%) وقدرته العالية، ويتكون الوسط الفعال فيه من خليط بنسبة معينة من غاز ثنائي أوكسيد الكاربون (\\(\\text{CO}_2\\)) وغاز النيتروجين (\\(\\text{N}_2\\)) وغاز الهيليوم (He)، حيث تساعد الغازات المضافة في زيادة قدرته وكفاءته، وتستخدم تقنية التفريغ الكهربائي في ضخ هذا الليزر.",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 3-6-6 ليزر شبه الموصل",
+      "html": "هو الليزر الذي يتكون الوسط الفعال فيه من مواد شبه موصلة مانحة (n-type) وقابلة (p-type)، وتمثّل حزمة التوصيل مستوى الليزر العلوي وحزمة التكافؤ مستوى الليزر السفلي، لاحظ الشكل (22-6).",
+      "sectionGroup": 10,
+      "sectionId": "semiconductorlaser",
+      "sectionNavLabel": "3️⃣ ليزر شبه الموصل"
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 22-6 مكونات ليزر أشباه الموصلات\" role=\"img\" viewbox=\"0 0 280 150\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"var(--text-secondary)\" height=\"18\" opacity=\".5\" width=\"160\" x=\"60\" y=\"20\"></rect>\n<text fill=\"var(--text-secondary)\" font-size=\"8.5\" text-anchor=\"middle\" x=\"140\" y=\"15\">الطبقة العلوية</text>\n<rect fill=\"var(--accent-blue)\" height=\"18\" opacity=\".3\" width=\"160\" x=\"60\" y=\"38\"></rect>\n<text fill=\"var(--accent-blue)\" font-size=\"8\" text-anchor=\"middle\" x=\"235\" y=\"50\">n-type</text>\n<rect fill=\"var(--accent-pink)\" height=\"16\" opacity=\".55\" width=\"160\" x=\"60\" y=\"56\"></rect>\n<text fill=\"#fff\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"140\" y=\"67\">الوسط الفعال</text>\n<rect fill=\"var(--accent-orange)\" height=\"18\" opacity=\".3\" width=\"160\" x=\"60\" y=\"72\"></rect>\n<text fill=\"var(--accent-orange)\" font-size=\"8\" text-anchor=\"middle\" x=\"235\" y=\"84\">p-type</text>\n<rect fill=\"var(--text-secondary)\" height=\"18\" opacity=\".5\" width=\"160\" x=\"60\" y=\"90\"></rect>\n<line stroke=\"var(--accent-pink)\" stroke-width=\"3\" x1=\"140\" x2=\"140\" y1=\"56\" y2=\"30\"></line>\n<polygon fill=\"var(--accent-pink)\" points=\"134,30 140,15 146,30\"></polygon>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"140\" y=\"130\">GaAs — منطقة الوسط الفعال بين طبقتي n وp</text>\n</g>\n</svg>",
+      "caption": "شكل 22-6/23-6: مكونات الوسط الفعال في ليزر أشباه الموصلات — طبقة n-type وطبقة p-type تحصران الوسط الفعال",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "",
+      "html": "",
+      "sectionGroup": 12,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 اختبر فهمك",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "يعمل ليزر الياقوت بنظام مستويات:",
+        "options": [
+          "مستويين",
+          "أربعة مستويات",
+          "ثلاثة مستويات",
+          "خمسة مستويات"
+        ],
+        "explain": "ليزر الياقوت يعمل بنظام المستويات الثلاثة، ويتم فيه الضخ بواسطة المصباح الومضي."
+      },
+      {
+        "correct": 1,
+        "question": "الوسط الفعال في ليزر الهيليوم-نيون يوضع في:",
+        "options": [
+          "بلورة صلبة",
+          "أنبوبة زجاجية تحت ضغط منخفض",
+          "محلول سائل",
+          "شريحة أشباه موصلات"
+        ],
+        "explain": "يوضع مزيج غازي الهيليوم والنيون في أنبوبة زجاجية تحت ضغط (8-12) torr، ويُثار بالتفريغ الكهربائي."
+      },
+      {
+        "correct": 3,
+        "question": "تصل كفاءة ليزر ثنائي أوكسيد الكاربون إلى حدود:",
+        "options": [
+          "5%",
+          "10%",
+          "50%",
+          "30%"
+        ],
+        "explain": "يعد ليزر ثنائي أوكسيد الكاربون من أهم الليزرات الغازية بسبب كفاءته العالية التي تصل إلى حدود 30%."
+      },
+      {
+        "correct": 0,
+        "question": "في ليزر أشباه الموصلات، يمثّل مستوى الليزر العلوي:",
+        "options": [
+          "حزمة التوصيل",
+          "حزمة التكافؤ",
+          "الفجوة الممنوعة",
+          "نواة الذرة"
+        ],
+        "explain": "تمثّل حزمة التوصيل مستوى الليزر العلوي، وحزمة التكافؤ مستوى الليزر السفلي في ليزر أشباه الموصلات."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 ملخص الدرس",
+    "items": [
+      "يصنَّف الليزر تبعًا للوسط الفعال إلى: صلب (ياقوت، Nd:YAG)، غازي (He-Ne، CO₂)، اكسامير، سائل (صبغة)، شبه موصل (GaAs)، كيميائي (فلوريد الديتيريوم).",
+      "ليزر الياقوت: Al₂O₃ مطعّم بـ Cr⁺³، نظام ثلاثي المستوى، ضخ ضوئي. ليزر Nd:YAG: نظام رباعي المستوى.",
+      "ليزر الهيليوم-نيون: مزيج غازي في أنبوبة زجاجية، تفريغ كهربائي. ليزر CO₂: كفاءة تصل 30%، خليط CO₂+N₂+He.",
+      "ليزر أشباه الموصلات: حزمة التوصيل (n-type) مستوى علوي، حزمة التكافؤ (p-type) مستوى سفلي، ضخ بتيار كهربائي، مثاله GaAs."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 خريطة الدرس الذهنية",
+    "ariaLabel": "خريطة ذهنية لأنواع الليزر",
+    "viewBox": "0 0 480 260",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "أنواع",
+        "الليزر"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "صلب",
+          "ياقوت/YAG"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "غازي",
+          "He-Ne/CO₂"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "شبه موصل",
+          "GaAs"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "سائل/كيميائي",
+          "اكسامير"
+        ]
+      }
+    ]
+  }
+}

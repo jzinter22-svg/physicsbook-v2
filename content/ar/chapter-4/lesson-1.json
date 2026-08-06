@@ -1,0 +1,378 @@
+{
+  "lessonNumber": 1,
+  "chapterNumber": 4,
+  "meta": {
+    "pageTitle": "الدرس 1: تعريف التيار المتناوب والقيمة المؤثرة — الفصل الرابع",
+    "description": "1-4 تعريف التيار المتناوب: الموجة الجيبية والعلاقات الآنية، 2-4 المقدار المؤثر للتيار والفولطية المتناوبة.",
+    "breadcrumbChapter": "الفصل 4",
+    "breadcrumbLesson": "تعريف التيار المتناوب والقيمة المؤثرة",
+    "footer": "الفصل الرابع: دوائر التيار المتناوب — الدرس 1: تعريف التيار المتناوب والقيمة المؤثرة"
+  },
+  "hero": {
+    "eyebrow": "📖 الدرس 1 من 8 · الفصل الرابع",
+    "title": "تعريف التيار المتناوب والقيمة المؤثرة",
+    "lead": "1-4 تعريف التيار المتناوب · 2-4 المقدار المؤثر للتيار والفولطية المتناوبة"
+  },
+  "objectivesHeading": "🎯 أهداف الدرس",
+  "objectives": [
+    "يعرّف التيار المتناوب ويكتب صيغته الآنية.",
+    "يفهم معنى المقدار المؤثر للتيار والفولطية المتناوبة وعلاقتهما بالقيمة العظمى."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 تمهيد",
+      "html": "كما علمت عزيزي الطالب في دراستك السابقة أن هناك نوعين من التيار هما التيار المستمر (D.C) (Direct current) والتيار المتناوب (A.C) (Alternating current). وهنا في هذا الفصل سوف نتطلع على كل ما يتعلق بالتيار المتناوب، قيمته وكيفية الحصول عليه، وعلى بعض دوائره المهمة الكهربائية.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 الشرح"
+    },
+    {
+      "type": "definition",
+      "label": "📌 1-4 تعريف التيار المتناوب",
+      "html": "يمكن تعريف التيار المتناوب (A.C) بأنه التيار المتغيّر الشدة والاتجاه بمرور الزمن، وشكل موجته موجة جيبية مستعرضة كما هو في الشكل (1-4).",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "scopeSvg",
+      "svgAriaLabel": "محاكاة راسم إشارة يعرض موجة تيار متناوب جيبية",
+      "svgViewBox": "0 0 360 200",
+      "svgWidth": "360",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ محاكاة تفاعلية: موجة التيار المتناوب على راسم الإشارة (الشكل 1-4)",
+      "descriptionHtml": "حرّك مزلاجَي السعة والتردد وشاهد الموجة الجيبية للتيار المتناوب تُرسم بصورة مستمرة على شاشة راسم الإشارة، تمامًا كما تُشاهَد في المختبر.",
+      "controls": [
+        {
+          "labelHtml": "السعة",
+          "inputId": "scopeAmp",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "20",
+          "inputMax": "80",
+          "inputStep": "5",
+          "inputValue": "60"
+        },
+        {
+          "labelHtml": "التردد النسبي",
+          "inputId": "scopeFreq",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "1",
+          "inputMax": "4",
+          "inputStep": "1",
+          "inputValue": "2"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "scope-widget",
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 1-4"
+    },
+    {
+      "type": "paragraph",
+      "html": "يمكن الحصول على هذا التيار من دوران ملف داخل مجال مغناطيسي (ظاهرة الحث الكهرومغناطيسي لفاراداي) وكما هو في مولدات التيار المتناوب، لذلك يمكن نقل هذا التيار لمسافات بعيدة والتحكم في مقداره.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "إن فرق الجهد المتناوب الذي نحصل عليه بوساطة المولدات ذات الملف الدوار يُعطى بالعلاقة:",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ V = V_m \\sin\\theta $$",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 رموز العلاقة",
+      "html": "حيث (V) تمثّل قيمة الفولطية الآنية، و\\(V_m\\) تمثّل قيمة الفولطية العظمى.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "وعند تطبيق قانون أوم فإن التيار:",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ I = \\dfrac{V_m \\sin\\theta}{R} $$",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "فأن التيار المتناوب في دائرة التيار المتناوب يُعطى بالعلاقة:",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ I = I_m \\sin\\theta $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">وهو دالة جيبية أيضًا؛ حيث إن (I) التيار الآني، و\\((I_m)\\) التيار الأعظم.</p>",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "إن هذه القيم لكل من الفولطية والتيار يعتمد على تردد الدائرة الزاوي (ω) والذي يساوي:",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\omega = 2\\pi f $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">حيث (f) يمثّل التردد الخطي.</p>",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "📝",
+      "strong": "",
+      "html": "ملاحظة: عزيزي الطالب، أن (ω) تمثّل أيضًا السرعة الزاوية كما درستها في الفصل الأول من الكتاب.",
+      "sectionGroup": 13,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "إن تصرّف الفولطية المتناوبة والتيار المتناوب يعتمد على نوع الحمل الذي يوضع بالدائرة الكهربائية، كما هو موضح في الشكل (2-4) الذي يمثّل الموجة الجيبية للفولطية.",
+      "sectionGroup": 14,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 2-4 المقدار المؤثر للتيار والفولطية المتناوبة Effective Value for I.C and V.C",
+      "html": "عندما يمر تيار كهربائي متناوب في سلك ذي مقاومة (R) فإن السلك يسخن نتيجة مرور التيار فيه ويستهلك قدرًا من الطاقة كالتيار المستمر تمامًا، الذي يؤدي مروره في أسلاك المقاومة إلى رفع درجة حرارتها.",
+      "sectionGroup": 15,
+      "sectionId": "def-box",
+      "sectionNavLabel": "📌 القيمة المؤثرة"
+    },
+    {
+      "type": "paragraph",
+      "html": "ولما كانت الطاقة الكهربائية المستهلكة (E) يمكن حسابها من قانون جول \\((E=I^2Rt)\\) فإن إمكانية حساب الطاقة المستهلكة في حالة التيار المتناوب بتطبيق قانون جول تبدو متغيّرة، نظرًا لتغيّر شدة التيار من لحظة إلى أخرى. وبناءً على ذلك كان من المفيد اتخاذ قيمة للتيار المتناوب تولّد كمية من الحرارة في مقاومة بنفس المعدل الزمني مقارنةً لتوليدها في تيار مستمر.</p><p>إذن، يمكن الاستنتاج من هذا أن الصفة المميزة للقيمة المؤثرة للتيار المتناوب هو التأثير الحراري، ومن العلاقات الحسابية لكل من القدرة الآنية والتيار الآني والأعظم نستنتج العلاقة الآتية والتي تمثّل معدل مربع قيمة التيار المؤثر.",
+      "sectionGroup": 16,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ I_e = 0.707\\, I_m $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">حيث إن \\((I_e)\\) القيمة المؤثرة للتيار، و\\((I_m)\\) القيمة العظمى للتيار.</p>",
+      "sectionGroup": 17,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ V_e = 0.707\\, V_m $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">حيث إن \\((V_e)\\) القيمة المؤثرة للفولطية، و\\((V_m)\\) القيمة العظمى الفولطية.</p>",
+      "sectionGroup": 18,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "effSvg",
+      "svgAriaLabel": "مقارنة القيمة الآنية بالقيمة المؤثرة على موجة جيبية",
+      "svgViewBox": "0 0 360 180",
+      "svgWidth": "360",
+      "svgHeight": "180",
+      "sectionHeading": "🕹️ محاكاة تفاعلية: القيمة الآنية مقابل القيمة المؤثرة",
+      "descriptionHtml": "حرّك المزلاج لتغيير الزاوية الطورية (θ) وشاهد كيف تتغيّر القيمة الآنية للفولطية باستمرار بينما يبقى الخط الأفقي الثابت يمثّل القيمة المؤثرة \\((V_e=0.707\\,V_m)\\) — وهي القيمة الثابتة المكافئة حراريًا التي يقيسها الفولتميتر في المنزل.",
+      "controls": [
+        {
+          "labelHtml": "الزاوية θ",
+          "inputId": "effTheta",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "360",
+          "inputStep": "5",
+          "inputValue": "90"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": null,
+          "id": "effStatus"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 19,
+      "sectionId": "effective-widget",
+      "sectionNavLabel": "🕹️ القيمة الآنية مقابل المؤثرة"
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "هل تعلم؟",
+      "html": "أن القيم التي يسجلها مقياس التيار والفولطية في بيتك هي القيم الفعّالة المؤثرة والتي تشغّل الدائرة الكهربائية.",
+      "sectionGroup": 20,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 اختبر فهمك",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "التيار المتناوب هو التيار:",
+        "options": [
+          "ثابت الشدة والاتجاه",
+          "متغيّر الشدة فقط",
+          "متغيّر الشدة والاتجاه بمرور الزمن",
+          "معدوم الاتجاه دائمًا"
+        ],
+        "explain": "التيار المتناوب هو التيار المتغيّر الشدة والاتجاه بمرور الزمن، وشكل موجته جيبية مستعرضة."
+      },
+      {
+        "correct": 1,
+        "question": "القيمة المؤثرة للتيار المتناوب تساوي:",
+        "options": [
+          "\\( I_m \\)",
+          "\\( 0.707\\,I_m \\)",
+          "\\( 2\\,I_m \\)",
+          "\\( I_m/2 \\)"
+        ],
+        "explain": "القيمة المؤثرة للتيار \\(I_e=0.707\\,I_m\\)، وبالمثل الفولطية \\(V_e=0.707\\,V_m\\)."
+      },
+      {
+        "correct": 3,
+        "question": "الصفة المميزة للقيمة المؤثرة للتيار المتناوب هي:",
+        "options": [
+          "التأثير المغناطيسي",
+          "التأثير الكيميائي",
+          "التأثير الضوئي",
+          "التأثير الحراري"
+        ],
+        "explain": "القيمة المؤثرة للتيار المتناوب تُعرَّف بأنها القيمة التي تولّد نفس كمية الحرارة التي يولّدها تيار مستمر في نفس المقاومة وخلال نفس الزمن، فالتأثير الحراري هو المعيار."
+      },
+      {
+        "correct": 1,
+        "question": "يمكن الحصول على التيار المتناوب عمليًا من:",
+        "options": [
+          "البطارية الجافة",
+          "دوران ملف داخل مجال مغناطيسي (الحث الكهرومغناطيسي)",
+          "الخلية الشمسية فقط",
+          "المكثف المشحون فقط"
+        ],
+        "explain": "يُحصل على التيار المتناوب من دوران ملف داخل مجال مغناطيسي، أي بظاهرة الحث الكهرومغناطيسي لفاراداي، كما في مولدات التيار المتناوب."
+      },
+      {
+        "correct": 0,
+        "question": "العلاقة الصحيحة بين التردد الزاوي (ω) والتردد الخطي (f) هي:",
+        "options": [
+          "\\( \\omega = 2\\pi f \\)",
+          "\\( \\omega = f/2\\pi \\)",
+          "\\( \\omega = \\pi f \\)",
+          "\\( \\omega = f^2 \\)"
+        ],
+        "explain": "التردد الزاوي \\(\\omega=2\\pi f\\)، ويمثّل أيضًا السرعة الزاوية للدائرة الكهربائية."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 ملخص الدرس",
+    "items": [
+      "التيار المتناوب: تيار متغيّر الشدة والاتجاه بمرور الزمن، موجته جيبية: \\(I=I_m\\sin\\theta\\).",
+      "يُحصل عليه من دوران ملف داخل مجال مغناطيسي (الحث الكهرومغناطيسي)، وتردده الزاوي \\(\\omega=2\\pi f\\).",
+      "القيمة المؤثرة تعتمد على التأثير الحراري: \\(I_e=0.707\\,I_m\\)، \\(V_e=0.707\\,V_m\\).",
+      "أجهزة القياس المنزلية (الأميتر والفولتميتر) تسجّل القيم المؤثرة الفعّالة."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 خريطة الدرس الذهنية",
+    "ariaLabel": "خريطة التيار المتناوب والقيمة المؤثرة الذهنية",
+    "viewBox": "0 0 480 220",
+    "center": {
+      "cx": 240.0,
+      "cy": 110.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "التيار",
+        "المتناوب"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 48.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "I=Im sinθ",
+          "موجة جيبية"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 172.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "ω=2πf"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 48.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Ie=0.707Im",
+          "Ve=0.707Vm"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 172.0,
+        "r": 42.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "التأثير",
+          "الحراري"
+        ]
+      }
+    ]
+  }
+}

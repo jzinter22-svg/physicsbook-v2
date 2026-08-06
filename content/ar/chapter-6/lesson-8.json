@@ -1,0 +1,234 @@
+{
+  "lessonNumber": 8,
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "الدرس 8: البلازما — الفصل السادس",
+    "description": "8-6 البلازما: الحالة الرابعة للمادة، عوامل التأين، البلازما في الكون والغلاف الجوي.",
+    "breadcrumbChapter": "الفصل 6",
+    "breadcrumbLesson": "البلازما",
+    "footer": "الفصل السادس: الليزر والبلازما — الدرس 8: البلازما"
+  },
+  "hero": {
+    "eyebrow": "📖 الدرس 8 من 10 · 8-6",
+    "title": "البلازما Plasma",
+    "lead": "إلى جانب حالات المادة الثلاث المألوفة (الصلبة والسائلة والغازية)، توجد حالة رابعة تشكّل أكثر من 99% من مادة الكون: البلازما — غاز متأين تتساوى فيه شحنات الأيونات الموجبة والإلكترونات الحرة."
+  },
+  "objectivesHeading": "🎯 أهداف الدرس",
+  "objectives": [
+    "يعرّف البلازما بوصفها الحالة الرابعة للمادة ويبيّن خواصها.",
+    "يعدّد عوامل التأين المسؤولة عن نشوء البلازما.",
+    "يوضّح انتشار البلازما في الكون والغلاف الجوي للأرض."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 8-6 البلازما plasma",
+      "html": "إذا علمنا أن المادة توجد في الطبيعة في ثلاث حالات هي (الصلبة، السائلة، الغازية)، فإنه يمكن تصنيف البلازما على أنها الحالة الرابعة للمادة، وتتميز عن غيرها من الحالات بالطاقة الهائلة التي تمتلكها.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 تمهيد"
+    },
+    {
+      "type": "definition",
+      "label": "📌 تعريف — البلازما (Plasma)",
+      "html": "هي ذات صفات مقاربة للحالة الغازية، ويمكن وصفها بأنها غاز متأين يحتوي على أعداد متساوية من الأيونات موجبة الشحنة والإلكترونات سالبة الشحنة، حيث تكون الإلكترونات حرة وغير مرتبطة بذرة أو جزيء، لاحظ الشكل (34-6).",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 34-6 حالات المادة الأربع\" role=\"img\" viewbox=\"0 0 320 110\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"40\" y=\"15\">صلب Solid</text>\n<g fill=\"var(--accent-blue)\">\n<circle cx=\"24\" cy=\"35\" r=\"6\"></circle><circle cx=\"40\" cy=\"35\" r=\"6\"></circle><circle cx=\"56\" cy=\"35\" r=\"6\"></circle>\n<circle cx=\"24\" cy=\"51\" r=\"6\"></circle><circle cx=\"40\" cy=\"51\" r=\"6\"></circle><circle cx=\"56\" cy=\"51\" r=\"6\"></circle>\n<circle cx=\"24\" cy=\"67\" r=\"6\"></circle><circle cx=\"40\" cy=\"67\" r=\"6\"></circle><circle cx=\"56\" cy=\"67\" r=\"6\"></circle>\n</g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"120\" y=\"15\">سائل Liquid</text>\n<g fill=\"var(--accent-green)\">\n<circle cx=\"100\" cy=\"40\" r=\"6\"></circle><circle cx=\"116\" cy=\"34\" r=\"6\"></circle><circle cx=\"134\" cy=\"42\" r=\"6\"></circle>\n<circle cx=\"104\" cy=\"58\" r=\"6\"></circle><circle cx=\"122\" cy=\"64\" r=\"6\"></circle><circle cx=\"140\" cy=\"56\" r=\"6\"></circle>\n</g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"200\" y=\"15\">غاز Gas</text>\n<g fill=\"var(--accent-orange)\">\n<circle cx=\"180\" cy=\"30\" r=\"5\"></circle><circle cx=\"210\" cy=\"45\" r=\"5\"></circle><circle cx=\"190\" cy=\"65\" r=\"5\"></circle>\n<circle cx=\"220\" cy=\"25\" r=\"5\"></circle><circle cx=\"205\" cy=\"75\" r=\"5\"></circle>\n</g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"280\" y=\"15\">بلازما Plasma</text>\n<g>\n<circle cx=\"260\" cy=\"35\" fill=\"var(--accent-pink)\" r=\"5\"></circle>\n<text fill=\"#fff\" font-size=\"6\" text-anchor=\"middle\" x=\"260\" y=\"38\">+</text>\n<circle cx=\"290\" cy=\"55\" fill=\"var(--accent-pink)\" r=\"5\"></circle>\n<text fill=\"#fff\" font-size=\"6\" text-anchor=\"middle\" x=\"290\" y=\"58\">+</text>\n<circle cx=\"270\" cy=\"75\" fill=\"var(--accent-pink)\" r=\"5\"></circle>\n<text fill=\"#fff\" font-size=\"6\" text-anchor=\"middle\" x=\"270\" y=\"78\">+</text>\n<circle cx=\"275\" cy=\"30\" fill=\"var(--accent-blue)\" r=\"3\"></circle>\n<circle cx=\"300\" cy=\"35\" fill=\"var(--accent-blue)\" r=\"3\"></circle>\n<circle cx=\"255\" cy=\"60\" fill=\"var(--accent-blue)\" r=\"3\"></circle>\n<circle cx=\"295\" cy=\"75\" fill=\"var(--accent-blue)\" r=\"3\"></circle>\n</g>\n</g>\n</svg>",
+      "caption": "شكل 34-6: حالات المادة الأربع — البلازما غاز متأين من أيونات موجبة (وردي) وإلكترونات حرة (زرقاء صغيرة)",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "⚡ عوامل التأين المسؤولة عن نشوء البلازما",
+      "html": "تنتج البلازما من خلال التأثير على حجم معين من الغازات بعامل ما من عوامل التأين، مما يؤدي إلى خروج الإلكترونات من داخل الذرات والجزيئات.",
+      "sectionGroup": 3,
+      "sectionId": "ionization",
+      "sectionNavLabel": "⚡ عوامل التأين"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 تعداد — عوامل التأين المسؤولة عن نشوء البلازما",
+      "html": "<span class=\"def-label\" style=\"color:var(--accent-orange)\">🔢 تعداد — عوامل التأين المسؤولة عن نشوء البلازما</span>\n<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>الحرارة: كما هو في الشمس والنجوم، وهما كرات هائلة من البلازما.</li>\n<li>المجالات المغناطيسية: كما هو في الفراغات البينية بين النجوم والكواكب.</li>\n<li>المجالات الكهربائية: كما هو في المصابيح والبلازما.</li>\n<li>الطاقة الكهرومغناطيسية: كما في البرق الذي يصل تفريغه إلى (\\(3\\times10^{4}\\ \\text{A}\\)) و(\\(10^{8}\\ \\text{V}\\))، ويصدر عنها الضوء والموجات الراديوية والأشعة السينية كاما، وقد تصل درجة حرارة بلازما البرق إلى (28000 K)، لاحظ الشكل (35-6).</li>\n</ol>",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "وقد بيّنت الأبحاث أن (99%) من الكون يكون في حالة بلازما بدءًا من الشمس والنجوم والرياح الشمسية، وتظهر البلازما في الطبقة العليا للغلاف الجوي بسبب التأين الذي يسبّبه الأشعة فوق البنفسجية وأشعة (X)، وتكون أعلى كثافة للإلكترونات والأيونات في طبقة الأيونوسفير التي تظهر في الغلاف الجوي عند ارتفاع (50 km) ممتدة حتى نهايته.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "matterSvg",
+      "svgAriaLabel": "محاكاة حالات المادة الأربع",
+      "svgViewBox": "0 0 320 220",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ محاكاة تفاعلية: حالات المادة الأربع",
+      "descriptionHtml": "اختر حالة المادة لمشاهدة كيفية ترتيب الجسيمات فيها، ولاحظ كيف تنفصل الإلكترونات عن الأيونات في حالة البلازما.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnSolid",
+          "html": "صلب"
+        },
+        {
+          "id": "btnLiquid",
+          "html": "سائل"
+        },
+        {
+          "id": "btnGas",
+          "html": "غاز"
+        },
+        {
+          "id": "btnPlasma",
+          "html": "بلازما"
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "sectionGroup": 6,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 اختبر فهمك",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "تُصنَّف البلازما بوصفها حالة المادة:",
+        "options": [
+          "الأولى",
+          "الثانية",
+          "الرابعة",
+          "الخامسة"
+        ],
+        "explain": "إلى جانب الصلبة والسائلة والغازية، تُصنَّف البلازما على أنها الحالة الرابعة للمادة."
+      },
+      {
+        "correct": 0,
+        "question": "البلازما غاز متأين تكون فيه أعداد الأيونات الموجبة والإلكترونات:",
+        "options": [
+          "متساوية",
+          "الإلكترونات أكثر بكثير",
+          "الأيونات أكثر بكثير",
+          "لا علاقة بينهما"
+        ],
+        "explain": "البلازما غاز متأين يحتوي على أعداد متساوية من الأيونات الموجبة والإلكترونات الحرة السالبة."
+      },
+      {
+        "correct": 1,
+        "question": "من عوامل التأين المسؤولة عن نشوء البلازما:",
+        "options": [
+          "البرودة الشديدة فقط",
+          "الحرارة والمجالات المغناطيسية والكهربائية والطاقة الكهرومغناطيسية",
+          "الصوت فقط",
+          "الجاذبية الأرضية فقط"
+        ],
+        "explain": "من عوامل التأين: الحرارة (الشمس والنجوم)، المجالات المغناطيسية، المجالات الكهربائية، والطاقة الكهرومغناطيسية (كالبرق)."
+      },
+      {
+        "correct": 3,
+        "question": "تشكّل البلازما من مادة الكون نسبة تقارب:",
+        "options": [
+          "1%",
+          "25%",
+          "50%",
+          "99%"
+        ],
+        "explain": "بيّنت الأبحاث أن 99% من الكون في حالة بلازما، بدءًا من الشمس والنجوم والرياح الشمسية."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 ملخص الدرس",
+    "items": [
+      "البلازما: الحالة الرابعة للمادة، غاز متأين بأعداد متساوية من الأيونات الموجبة والإلكترونات الحرة.",
+      "عوامل التأين: الحرارة (شمس/نجوم)، المجالات المغناطيسية، المجالات الكهربائية، والطاقة الكهرومغناطيسية (كالبرق: 3×10⁴A، 10⁸V، حرارة تصل 28000K).",
+      "99% من مادة الكون في حالة بلازما؛ تظهر البلازما في طبقة الأيونوسفير بالغلاف الجوي بدءًا من ارتفاع 50km."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 خريطة الدرس الذهنية",
+    "ariaLabel": "خريطة ذهنية للبلازما",
+    "viewBox": "0 0 480 260",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "البلازما"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "الحالة",
+          "الرابعة"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "عوامل",
+          "التأين"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "99% من الكون"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "الأيونوسفير"
+        ]
+      }
+    ]
+  }
+}

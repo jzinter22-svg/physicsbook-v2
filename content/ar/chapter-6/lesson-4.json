@@ -1,0 +1,232 @@
+{
+  "lessonNumber": 4,
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "الدرس 4: مكونات أجهزة الليزر — الفصل السادس",
+    "description": "4-6 مكونات أجهزة الليزر: الوسط الفعال، المرنان، وتقنية الضخ بأنواعها الثلاثة.",
+    "breadcrumbChapter": "الفصل 6",
+    "breadcrumbLesson": "مكونات أجهزة الليزر",
+    "footer": "الفصل السادس: الليزر والبلازما — الدرس 4: مكونات أجهزة الليزر"
+  },
+  "hero": {
+    "eyebrow": "📖 الدرس 4 من 10 · 4-6",
+    "title": "مكونات أجهزة الليزر Constituents of Laser",
+    "lead": "ثلاثة مكونات أساسية يشترط وجودها في كل أجهزة الليزر: الوسط الفعال الذي يتحقق فيه التوزيع المعكوس، والمرنان الذي يضخّم الضوء بانعكاسات متكررة، وتقنية الضخ التي تزوّد الوسط الفعال بالطاقة اللازمة للتهيج."
+  },
+  "objectivesHeading": "🎯 أهداف الدرس",
+  "objectives": [
+    "يعرّف الوسط الفعال ويبيّن دوره في تحقيق التوزيع المعكوس.",
+    "يوضّح تركيب المرنان وآلية تضخيم الضوء بالانعكاسات المتكررة بين المرآتين.",
+    "يعدّد أنواع تقنية الضخ الثلاث ويميّز بينها."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 4-6 مكونات أجهزة الليزر Constituents of Laser",
+      "html": "يوضّح الشكل (11-6) المكونات الأساسية التي يُشترط وجودها في أجهزة الليزر، وهي:",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 تمهيد"
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 11-6 مخطط لمكونات جهاز الليزر\" role=\"img\" viewbox=\"-20 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"var(--accent-orange)\" height=\"20\" opacity=\".5\" width=\"260\" x=\"30\" y=\"130\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"160\" y=\"144\">مصدر الطاقة</text>\n<rect fill=\"rgba(255,107,157,.25)\" height=\"35\" stroke=\"var(--accent-pink)\" stroke-width=\"1.5\" width=\"120\" x=\"100\" y=\"60\"></rect>\n<text fill=\"var(--accent-pink)\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"160\" y=\"82\">الوسط الفعال</text>\n<rect fill=\"var(--accent-purple)\" height=\"45\" opacity=\".5\" width=\"18\" x=\"20\" y=\"55\"></rect>\n<text fill=\"var(--text-secondary)\" font-size=\"8.5\" text-anchor=\"middle\" x=\"14\" y=\"45\">مرآة عاكسة كليًا</text>\n<rect fill=\"var(--accent-purple)\" height=\"45\" opacity=\".3\" width=\"18\" x=\"282\" y=\"55\"></rect>\n<text fill=\"var(--text-secondary)\" font-size=\"8.5\" text-anchor=\"middle\" x=\"300\" y=\"45\">مرآة عاكسة جزئيًا</text>\n<g stroke=\"var(--text-secondary)\" stroke-width=\"1.2\">\n<line x1=\"45\" x2=\"70\" y1=\"130\" y2=\"100\"></line>\n<line x1=\"90\" x2=\"105\" y1=\"130\" y2=\"100\"></line>\n<line x1=\"135\" x2=\"140\" y1=\"130\" y2=\"100\"></line>\n<line x1=\"180\" x2=\"175\" y1=\"130\" y2=\"100\"></line>\n<line x1=\"225\" x2=\"210\" y1=\"130\" y2=\"100\"></line>\n</g>\n<polygon fill=\"var(--text-secondary)\" points=\"45,138 55,130 65,138\"></polygon>\n<polygon fill=\"var(--text-secondary)\" points=\"90,138 100,130 110,138\"></polygon>\n<polygon fill=\"var(--text-secondary)\" points=\"135,138 145,130 155,138\"></polygon>\n<polygon fill=\"var(--text-secondary)\" points=\"180,138 190,130 200,138\"></polygon>\n<polygon fill=\"var(--text-secondary)\" points=\"225,138 235,130 245,138\"></polygon>\n</g>\n</svg>",
+      "caption": "شكل 11-6: مخطط لمكونات جهاز الليزر — الوسط الفعال بين مرآتين، ومصدر الطاقة (تقنية الضخ) أسفله",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 1- الوسط الفعال Active Medium",
+      "html": "وهو مجموعة من ذرات أو جزيئات أو أيونات بحالة (صلبة أو سائلة أو غازية)، والتي يمكن أن يحصل فيها التوزيع المعكوس من خلال تجهيز الوسط الفعال بالشدة اللازمة لتهيجه.",
+      "sectionGroup": 2,
+      "sectionId": "activemedium",
+      "sectionNavLabel": "1️⃣ الوسط الفعال"
+    },
+    {
+      "type": "definition",
+      "label": "📌 2- المرنان Resonator",
+      "html": "وهو وعاء ذو تصميم مناسب يتكون من مرآتين، توضع المادة الفعالة بينهما، وتُصمَّم المرآتان بحيث تكونان متقابلتين، إحداهما عاكسة كليًا للضوء والثانية عاكسة جزئيًا، لاحظ الشكل (12-6).",
+      "sectionGroup": 3,
+      "sectionId": "resonator",
+      "sectionNavLabel": "2️⃣ المرنان"
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 12-6 المرنان\" role=\"img\" viewbox=\"-20 0 360 170\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<path d=\"M40,40 Q20,85 40,130\" fill=\"none\" stroke=\"var(--accent-purple)\" stroke-width=\"4\"></path>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"20\" y=\"30\">مرآة عاكسة كليًا</text>\n<path d=\"M260,40 Q280,85 260,130\" fill=\"none\" opacity=\".55\" stroke=\"var(--accent-purple)\" stroke-width=\"4\"></path>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"285\" y=\"30\">مرآة عاكسة جزئيًا</text>\n<rect fill=\"rgba(255,107,157,.2)\" height=\"50\" stroke=\"var(--accent-pink)\" stroke-width=\"1.5\" width=\"160\" x=\"70\" y=\"60\"></rect>\n<text fill=\"var(--accent-pink)\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"150\" y=\"90\">الوسط الفعال</text>\n<line stroke=\"var(--accent-orange)\" stroke-width=\"3\" x1=\"260\" x2=\"300\" y1=\"85\" y2=\"85\"></line>\n<polygon fill=\"var(--accent-orange)\" points=\"300,79 314,85 300,91\"></polygon>\n<text fill=\"var(--accent-orange)\" font-size=\"9\" text-anchor=\"middle\" x=\"290\" y=\"70\">أشعة ليزر</text>\n</g>\n</svg>",
+      "caption": "شكل 12-6: المرنان — الوسط الفعال بين مرآة عاكسة كليًا وأخرى عاكسة جزئيًا يخرج منها شعاع الليزر",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "لذا فالشعاع الساقط على إحداهما ينعكس موازيًا للمحور الأساس للمرآتين، ثم يسقط على المرآة الأخرى وينعكس عنها، وهكذا تتعاقب انعكاسات الأشعة داخل المرنان، فيزداد عدد الفوتونات المتولدة بالانبعاث المحفز بعد أن تحصل عملية التضخيم بعدد هائل، فيسمح المرآة ذات الانعكاس الجزئي بنفاذ نسبة من الضوء الساقط عليها خارج المرنان، وتعكس بقية الضوء داخل المرنان مرة أخرى لغرض إدامة عملية التضخيم.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 3- تقنية الضخ Pumping",
+      "html": "وهي التقنية المسؤولة عن تجهيز ذرات الوسط الفعال بالطاقة اللازمة لإثارتها ونقلها من مستوى الاستقرار إلى مستوى التهيج، وتحقيق حالة التوزيع المعكوس وتوليد الليزر.",
+      "sectionGroup": 6,
+      "sectionId": "pumping",
+      "sectionNavLabel": "3️⃣ تقنية الضخ"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 تعداد — أنواع تقنية الضخ الثلاثة",
+      "html": "<span class=\"def-label\" style=\"color:var(--accent-green)\">🔢 تعداد — أنواع تقنية الضخ الثلاثة</span>\n<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>1- تقنية الضخ الضوئي Optical Pumping.</li>\n<li>2- تقنية الضخ الكهربائي Electrical Pumping.</li>\n<li>3- تقنية الضخ الكيميائي Chemical Pumping.</li>\n</ol>",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "resonatorSvg",
+      "svgAriaLabel": "محاكاة تضخيم الضوء داخل المرنان",
+      "svgViewBox": "0 0 400 180",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ محاكاة تفاعلية: التضخيم داخل المرنان",
+      "descriptionHtml": "اضغط \"ابدأ التضخيم\" لمشاهدة الفوتونات وهي ترتد بين المرآتين، يزداد عددها بالانبعاث المحفز في كل عبور، حتى تخرج حزمة الليزر المضخّمة من المرآة الجزئية.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnPump",
+          "html": "▶️ ابدأ التضخيم"
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "sectionGroup": 8,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 اختبر فهمك",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "المجموعة من ذرات أو جزيئات أو أيونات التي يتحقق فيها التوزيع المعكوس تسمى:",
+        "options": [
+          "المرنان",
+          "الوسط الفعال",
+          "تقنية الضخ",
+          "حاجز الجهد"
+        ],
+        "explain": "الوسط الفعال هو مجموعة الذرات أو الجزيئات أو الأيونات التي يمكن أن يحصل فيها التوزيع المعكوس."
+      },
+      {
+        "correct": 2,
+        "question": "في المرنان، تكون إحدى المرآتين عاكسة كليًا والأخرى:",
+        "options": [
+          "عاكسة كليًا أيضًا",
+          "غير عاكسة إطلاقًا",
+          "عاكسة جزئيًا",
+          "ماصّة للضوء بالكامل"
+        ],
+        "explain": "تُصمَّم إحدى مرآتي المرنان عاكسة كليًا للضوء، والأخرى عاكسة جزئيًا للسماح بنفاذ حزمة الليزر منها."
+      },
+      {
+        "correct": 0,
+        "question": "التقنية المسؤولة عن نقل ذرات الوسط الفعال من مستوى الاستقرار إلى مستوى التهيج تسمى:",
+        "options": [
+          "تقنية الضخ",
+          "التوزيع المعكوس",
+          "الانبعاث التلقائي",
+          "الاتجاهية"
+        ],
+        "explain": "تقنية الضخ هي المسؤولة عن تجهيز ذرات الوسط الفعال بالطاقة اللازمة لنقلها من مستوى الاستقرار إلى مستوى التهيج."
+      },
+      {
+        "correct": 3,
+        "question": "أنواع تقنية الضخ الثلاثة هي:",
+        "options": [
+          "ضوئي، صوتي، مغناطيسي",
+          "كهربائي، حراري، ميكانيكي",
+          "كيميائي، نووي، مغناطيسي",
+          "ضوئي، كهربائي، كيميائي"
+        ],
+        "explain": "أنواع تقنية الضخ الثلاثة هي: الضخ الضوئي، والضخ الكهربائي، والضخ الكيميائي."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 ملخص الدرس",
+    "items": [
+      "الوسط الفعال: ذرات أو جزيئات أو أيونات (صلبة/سائلة/غازية) يتحقق فيها التوزيع المعكوس.",
+      "المرنان: مرآتان متقابلتان (إحداهما كلية الانعكاس والأخرى جزئية) تضخّمان الضوء بالانعكاسات المتكررة، ويخرج جزء من الحزمة عبر المرآة الجزئية كشعاع ليزر.",
+      "تقنية الضخ: تزوّد الوسط الفعال بالطاقة اللازمة للتهيج، وأنواعها الثلاثة: ضوئي، وكهربائي، وكيميائي."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 خريطة الدرس الذهنية",
+    "ariaLabel": "خريطة ذهنية لمكونات جهاز الليزر",
+    "viewBox": "0 0 480 260",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "مكونات",
+        "جهاز الليزر"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 80.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "الوسط",
+          "الفعال"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 190.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "المرنان"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 130.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "تقنية",
+          "الضخ"
+        ]
+      }
+    ]
+  }
+}

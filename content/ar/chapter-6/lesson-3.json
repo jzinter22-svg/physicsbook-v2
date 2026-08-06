@@ -1,0 +1,317 @@
+{
+  "lessonNumber": 3,
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "الدرس 3: أسس عمل الليزر — الفصل السادس",
+    "description": "3-6 أسس عمل الليزر: الامتصاص المحث، الانبعاث التلقائي، الانبعاث المحفز، والتوزيع المعكوس.",
+    "breadcrumbChapter": "الفصل 6",
+    "breadcrumbLesson": "أسس عمل الليزر",
+    "footer": "الفصل السادس: الليزر والبلازما — الدرس 3: أسس عمل الليزر"
+  },
+  "hero": {
+    "eyebrow": "📖 الدرس 3 من 10 · 3-6",
+    "title": "أسس عمل الليزر The Foundation of The Laser Working",
+    "lead": "تكتسب ثلاث عمليات فيزيائية أهمية كبيرة في الأسس الفيزيائية لتوليد الليزر: الامتصاص المحث، الانبعاث التلقائي، والانبعاث المحفز — وصولًا إلى مفهوم التوزيع المعكوس الذي يجعل الفعل الليزري ممكنًا."
+  },
+  "objectivesHeading": "🎯 أهداف الدرس",
+  "objectives": [
+    "يوضّح عملية الامتصاص المحث وشرط انتقال الذرة بين مستويين للطاقة.",
+    "يفرّق بين الانبعاث التلقائي والانبعاث المحفز من حيث الآلية وخواص الفوتونات الناتجة.",
+    "يوضّح مفهوم التوزيع المعكوس وأهميته في تحقيق الفعل الليزري."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 3-6 أسس عمل الليزر The Foundation of The Laser Working",
+      "html": "هنالك ثلاث عمليات تكتسب أهمية كبيرة في الأسس الفيزيائية لتوليد الليزر هي: (الامتصاص المحث، الانبعاث التلقائي، الانبعاث المحفز).",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 تمهيد"
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ hf = E_2 - E_1 $$",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 تعريف — رموز قانون انتقال الطاقة",
+      "html": "<span class=\"def-label\">📌 تعريف — رموز قانون انتقال الطاقة</span>\n<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.3rem\">\n<li>\\( h \\) — ثابت بلانك ويساوي (\\(6.63\\times10^{-34}\\ \\text{J.s}\\)) جول.ثا</li>\n<li>\\( f \\) — التردد الضوئي الساقط بوحدة هيرتز (Hz)</li>\n<li>\\( E_2, E_1 \\) — مستويات الطاقة بوحدة الإلكترون فولت (eV)</li>\n</ul>",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 1- الامتصاص المحث Induced Absorption",
+      "html": "هو انتقال الذرة من مستوى طاقة واطئ (\\(E_1\\)) إلى مستوى طاقة متهيج (\\(E_2\\))، وذلك بامتصاص فوتون طاقته تساوي فرق الطاقة بين هذين المستويين، أي أن: \\( hf = E_2 - E_1 \\)، لاحظ الشكل (6-6).",
+      "sectionGroup": 3,
+      "sectionId": "absorption",
+      "sectionNavLabel": "1️⃣ الامتصاص المحث"
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 6-6 يوضح الامتصاص المحث\" role=\"img\" viewbox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<text fill=\"var(--text-secondary)\" font-size=\"10\" text-anchor=\"middle\" x=\"60\" y=\"15\">قبل</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"20\" x2=\"100\" y1=\"40\" y2=\"40\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"108\" y=\"44\">E₂</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"20\" x2=\"100\" y1=\"95\" y2=\"95\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"108\" y=\"99\">E₁</text>\n<circle cx=\"55\" cy=\"95\" fill=\"var(--accent-green)\" r=\"5\"></circle>\n<line marker-end=\"url(#upArrow6)\" stroke=\"var(--accent-blue)\" stroke-dasharray=\"3 2\" stroke-width=\"1.5\" x1=\"55\" x2=\"55\" y1=\"88\" y2=\"47\"></line>\n<text fill=\"var(--accent-pink)\" font-size=\"9\" text-anchor=\"middle\" x=\"15\" y=\"60\">hf</text>\n<path d=\"M2,64 q4,-5 8,0 t8,0\" fill=\"none\" stroke=\"var(--accent-pink)\" stroke-width=\"1.5\"></path>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"60\" y=\"130\">ذرة في المستوى الأرضي</text>\n<text fill=\"var(--text-secondary)\" font-size=\"10\" text-anchor=\"middle\" x=\"240\" y=\"15\">بعد</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"200\" x2=\"280\" y1=\"40\" y2=\"40\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"288\" y=\"44\">E₂</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"200\" x2=\"280\" y1=\"95\" y2=\"95\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"288\" y=\"99\">E₁</text>\n<circle cx=\"235\" cy=\"40\" fill=\"var(--accent-green)\" r=\"5\"></circle>\n<defs><marker id=\"upArrow6\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"3.5\" refy=\"0\"><path d=\"M0,7 L3.5,0 L7,7 z\" fill=\"var(--accent-blue)\"></path></marker></defs>\n</g>\n</svg>",
+      "caption": "شكل 6-6: الامتصاص المحث — الذرة تمتص فوتونًا فتنتقل من المستوى الأرضي E₁ إلى المستوى المتهيج E₂",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 2- الانبعاث التلقائي Spontaneous Emission",
+      "html": "عندما تصبح الذرة في مستوى الطاقة الأعلى (مستوى التهيج) تميل دائمًا إلى حالة الاستقرار، فتعود تلقائيًا بعد (فترة زمنية قصيرة تسمى العمر الزمني لمستوى التهيج) إلى المستوى الأرضي، ويصاحب هذا الانتقال انبعاث فوتون تساوي طاقته فرق الطاقة بين المستويين: \\( hf = E_2 - E_1 \\) (ويسمى هذا الانتقال بالانبعاث التلقائي)، لاحظ الشكل (7-6).",
+      "sectionGroup": 5,
+      "sectionId": "spontaneous",
+      "sectionNavLabel": "2️⃣ الانبعاث التلقائي"
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 7-6 و8-6 الانبعاث التلقائي وفوتونات مختلفة الطور والاتجاه\" role=\"img\" viewbox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<text fill=\"var(--text-secondary)\" font-size=\"10\" text-anchor=\"middle\" x=\"60\" y=\"15\">قبل</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"20\" x2=\"100\" y1=\"40\" y2=\"40\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"108\" y=\"44\">E₂</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"20\" x2=\"100\" y1=\"95\" y2=\"95\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"108\" y=\"99\">E₁</text>\n<circle cx=\"55\" cy=\"40\" fill=\"var(--accent-green)\" r=\"5\"></circle>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"60\" y=\"130\">ذرة في مستوى التهيج</text>\n<text fill=\"var(--text-secondary)\" font-size=\"10\" text-anchor=\"middle\" x=\"240\" y=\"15\">بعد</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"200\" x2=\"280\" y1=\"40\" y2=\"40\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"288\" y=\"44\">E₂</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"200\" x2=\"280\" y1=\"95\" y2=\"95\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"288\" y=\"99\">E₁</text>\n<circle cx=\"235\" cy=\"95\" fill=\"var(--accent-green)\" r=\"5\"></circle>\n<line marker-end=\"url(#dnArrow6)\" stroke=\"var(--accent-orange)\" stroke-dasharray=\"3 2\" stroke-width=\"1.5\" x1=\"235\" x2=\"235\" y1=\"47\" y2=\"88\"></line>\n<path d=\"M245,60 q4,-5 8,0 t8,0\" fill=\"none\" stroke=\"var(--accent-orange)\" stroke-width=\"1.5\"></path>\n<defs><marker id=\"dnArrow6\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"3.5\" refy=\"7\"><path d=\"M0,0 L3.5,7 L7,0 z\" fill=\"var(--accent-orange)\"></path></marker></defs>\n</g>\n</svg>",
+      "caption": "شكل 7-6: الانبعاث التلقائي — الذرة تعود تلقائيًا من E₂ إلى E₁ باعثة فوتونًا عشوائي الاتجاه والطور",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "هل تعلم؟",
+      "html": "العمر الزمني للمستوى: هو فترة زمنية قصيرة جدًا يمكن أن يمكثها الإلكترون في مستوى الطاقة الأعلى الذي ينتقل إليه في الذرة المثارة.",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 3- الانبعاث المحفز Stimulated Emission",
+      "html": "عندما يصطدم فوتون بذرة موجودة في مستوى التهيج (\\(E_2\\)) بحيث تكون طاقته مساوية تمامًا لفرق الطاقة بين المستويين (\\(E_2-E_1\\))، فإنه سوف يحفّز الذرة لتنتقل من المستوى (\\(E_2\\)) إلى المستوى الأوطأ (\\(E_1\\))، ما يؤدي إلى انبعاث فوتون جديد مماثل (من حيث الطاقة والتردد والطور والاتجاه) للفوتون الذي اصطدم بالذرة (ويسمى هذا النوع من الانتقال بالانبعاث المحفز)، لاحظ الشكل (9-6).",
+      "sectionGroup": 8,
+      "sectionId": "stimulated",
+      "sectionNavLabel": "3️⃣ الانبعاث المحفز"
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 9-6 الانبعاث المحفز\" role=\"img\" viewbox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<text fill=\"var(--text-secondary)\" font-size=\"10\" text-anchor=\"middle\" x=\"60\" y=\"15\">قبل</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"20\" x2=\"100\" y1=\"40\" y2=\"40\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"108\" y=\"44\">E₂</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"20\" x2=\"100\" y1=\"95\" y2=\"95\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"108\" y=\"99\">E₁</text>\n<circle cx=\"55\" cy=\"40\" fill=\"var(--accent-green)\" r=\"5\"></circle>\n<path d=\"M2,38 q4,-5 8,0 t8,0\" fill=\"none\" stroke=\"var(--accent-pink)\" stroke-width=\"1.5\"></path>\n<line marker-end=\"url(#ph1)\" stroke=\"var(--accent-pink)\" stroke-width=\"1.5\" x1=\"18\" x2=\"45\" y1=\"40\" y2=\"40\"></line>\n<defs><marker id=\"ph1\" markerheight=\"6\" markerwidth=\"6\" orient=\"auto\" refx=\"3\" refy=\"3\"><path d=\"M0,0 L6,3 L0,6 z\" fill=\"var(--accent-pink)\"></path></marker></defs>\n<text fill=\"var(--text-secondary)\" font-size=\"10\" text-anchor=\"middle\" x=\"240\" y=\"15\">بعد</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"200\" x2=\"280\" y1=\"40\" y2=\"40\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"288\" y=\"44\">E₂</text>\n<line stroke=\"var(--text-primary)\" stroke-width=\"2\" x1=\"200\" x2=\"280\" y1=\"95\" y2=\"95\"></line>\n<text fill=\"var(--text-primary)\" font-size=\"11\" x=\"288\" y=\"99\">E₁</text>\n<circle cx=\"235\" cy=\"95\" fill=\"var(--accent-green)\" r=\"5\"></circle>\n<path d=\"M255,35 q4,-5 8,0 t8,0\" fill=\"none\" stroke=\"var(--accent-pink)\" stroke-width=\"1.5\"></path>\n<line marker-end=\"url(#ph2)\" stroke=\"var(--accent-pink)\" stroke-width=\"1.5\" x1=\"253\" x2=\"290\" y1=\"37\" y2=\"30\"></line>\n<path d=\"M255,50 q4,-5 8,0 t8,0\" fill=\"none\" stroke=\"var(--accent-pink)\" stroke-width=\"1.5\"></path>\n<line marker-end=\"url(#ph3)\" stroke=\"var(--accent-pink)\" stroke-width=\"1.5\" x1=\"253\" x2=\"290\" y1=\"52\" y2=\"45\"></line>\n<defs>\n<marker id=\"ph2\" markerheight=\"6\" markerwidth=\"6\" orient=\"auto\" refx=\"3\" refy=\"3\"><path d=\"M0,0 L6,3 L0,6 z\" fill=\"var(--accent-pink)\"></path></marker>\n<marker id=\"ph3\" markerheight=\"6\" markerwidth=\"6\" orient=\"auto\" refx=\"3\" refy=\"3\"><path d=\"M0,0 L6,3 L0,6 z\" fill=\"var(--accent-pink)\"></path></marker>\n</defs>\n</g>\n</svg>",
+      "caption": "شكل 9-6: الانبعاث المحفز — فوتون ساقط يحفّز الذرة فينتج فوتونان متماثلان في الطاقة والتردد والطور والاتجاه",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "📌",
+      "strong": "تذكّر:",
+      "html": "للحصول على الانبعاث المحفز يجب الحصول على الانبعاث التلقائي أولًا.",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "🔄 حالة الاتزان الحراري والتوزيع المعكوس",
+      "html": "في الظروف القياسية (حالة الاتزان الحراري) لأية مادة، فإن معظم الذرات تكون في المستويات الواطئة للطاقة، والنسبة الأقل من الذرات تكون متهيجة في المستويات العليا للطاقة، لاحظ الشكل (10-6).",
+      "sectionGroup": 11,
+      "sectionId": "inversion",
+      "sectionNavLabel": "🔄 التوزيع المعكوس"
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "هل تعلم؟",
+      "html": "لزيادة احتمالية الانبعاث المحفز، يجب أن يكون عدد الذرات المتهيجة في المستويات العليا للطاقة أكبر من عدد الذرات الواطئة في المستويات الواطئة للطاقة، أي أن يكون توزيع الذرات بشكل معكوس؛ لذا تسمى هذه العملية (بالتوزيع المعكوس).",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 تعريف — التوزيع المعكوس (Population Inversion)",
+      "html": "هو الحالة التي يكون فيها عدد الذرات في مستوى الطاقة الأعلى أكبر من عددها في مستوى الطاقة الأوطأ، خلافًا لحالة الاتزان الحراري الاعتيادية، وهو الشرط الضروري لتحقيق الانبعاث المحفز وتوليد أشعة الليزر.",
+      "sectionGroup": 13,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "atomSvg",
+      "svgAriaLabel": "محاكاة تفاعل الفوتونات مع الذرة",
+      "svgViewBox": "0 0 360 200",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ محاكاة تفاعلية: العمليات الثلاث الأساسية",
+      "descriptionHtml": "اختر العملية لمشاهدة حركة الذرة والفوتونات بين مستويي الطاقة E₁ وE₂.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnAbs",
+          "html": "الامتصاص المحث"
+        },
+        {
+          "id": "btnSpon",
+          "html": "الانبعاث التلقائي"
+        },
+        {
+          "id": "btnStim",
+          "html": "الانبعاث المحفز"
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "sectionGroup": 14,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 اختبر فهمك",
+    "questions": [
+      {
+        "correct": 0,
+        "question": "انتقال الذرة من مستوى واطئ إلى مستوى متهيج بامتصاص فوتون يسمى:",
+        "options": [
+          "الامتصاص المحث",
+          "الانبعاث التلقائي",
+          "الانبعاث المحفز",
+          "التوزيع المعكوس"
+        ],
+        "explain": "الامتصاص المحث هو انتقال الذرة من مستوى واطئ E₁ إلى مستوى متهيج E₂ بامتصاص فوتون طاقته hf=E₂-E₁."
+      },
+      {
+        "correct": 1,
+        "question": "الفوتونات الناتجة عن الانبعاث التلقائي تكون:",
+        "options": [
+          "متماثلة في الطور والاتجاه",
+          "مختلفة في الطور والاتجاه",
+          "معدومة الطاقة",
+          "ثابتة الاتجاه فقط"
+        ],
+        "explain": "فوتونات الانبعاث التلقائي مختلفة من حيث الطور والاتجاه، فتنبعث في جميع الاتجاهات كالضوء الاعتيادي."
+      },
+      {
+        "correct": 2,
+        "question": "الشرط اللازم لحدوث الانبعاث المحفز هو:",
+        "options": [
+          "غياب أي فوتون قادم",
+          "أن تكون الذرة في المستوى الأرضي",
+          "اصطدام فوتون طاقته تساوي فرق الطاقة بين المستويين بذرة في مستوى التهيج",
+          "ارتفاع درجة الحرارة فقط"
+        ],
+        "explain": "الانبعاث المحفز يحدث عندما يصطدم فوتون طاقته تساوي (E₂-E₁) بذرة في مستوى التهيج، فينتج فوتون جديد مماثل تمامًا للفوتون الساقط."
+      },
+      {
+        "correct": 1,
+        "question": "في حالة الاتزان الحراري القياسية، تتوزع معظم ذرات المادة في:",
+        "options": [
+          "المستويات العليا للطاقة",
+          "المستويات الواطئة للطاقة",
+          "توزيع متساوٍ بين جميع المستويات",
+          "خارج الذرة تمامًا"
+        ],
+        "explain": "في حالة الاتزان الحراري تكون معظم الذرات في المستويات الواطئة للطاقة، والنسبة الأقل في المستويات العليا."
+      },
+      {
+        "correct": 0,
+        "question": "حالة زيادة عدد الذرات المتهيجة في المستويات العليا عن عددها في المستويات الواطئة تسمى:",
+        "options": [
+          "التوزيع المعكوس",
+          "الاتزان الحراري",
+          "الامتصاص المحث",
+          "حاجز الجهد"
+        ],
+        "explain": "التوزيع المعكوس هو الحالة التي يزيد فيها عدد الذرات المتهيجة عن عدد الذرات في المستويات الواطئة، وهو شرط ضروري لتحقيق الانبعاث المحفز."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 ملخص الدرس",
+    "items": [
+      "قانون انتقال الطاقة بين مستويين: \\(hf=E_2-E_1\\)، حيث h ثابت بلانك (\\(6.63\\times10^{-34}\\ \\text{J.s}\\)).",
+      "الامتصاص المحث: انتقال من E₁ إلى E₂ بامتصاص فوتون. الانبعاث التلقائي: عودة عشوائية من E₂ إلى E₁ بعد العمر الزمني للمستوى.",
+      "الانبعاث المحفز: فوتون ساقط طاقته (E₂-E₁) يحفّز ذرة في التهيج فينتج فوتون جديد مماثل تمامًا — أساس عمل الليزر.",
+      "التوزيع المعكوس: أن يكون عدد الذرات في المستوى الأعلى أكبر من عددها في المستوى الأوطأ، خلافًا للاتزان الحراري الاعتيادي — وهو الشرط الضروري لتوليد الليزر."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 خريطة الدرس الذهنية",
+    "ariaLabel": "خريطة ذهنية لأسس عمل الليزر",
+    "viewBox": "0 0 480 260",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "أسس عمل",
+        "الليزر"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "امتصاص",
+          "محث"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "انبعاث",
+          "تلقائي"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "انبعاث",
+          "محفز"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "توزيع",
+          "معكوس"
+        ]
+      }
+    ]
+  }
+}

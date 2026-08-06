@@ -1,0 +1,222 @@
+{
+  "lessonNumber": 1,
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "الدرس 1: الليزر والميزر — الفصل السادس",
+    "description": "1-6 الليزر والميزر: أصل تسمية الليزر والميزر، نظرية أينشتاين 1917، ميزر تاونز 1954، ليزر ميمان 1960.",
+    "breadcrumbChapter": "الفصل 6",
+    "breadcrumbLesson": "الليزر والميزر",
+    "footer": "الفصل السادس: الليزر والبلازما — الدرس 1: الليزر والميزر"
+  },
+  "hero": {
+    "eyebrow": "📖 الدرس 1 من 10 · 1-6",
+    "title": "الليزر والميزر Laser and Maser",
+    "lead": "تُعدّ تكنولوجيا الليزر من العلوم المتطورة التي دخلت في العديد من التطبيقات والأبحاث العلمية، فوجدها عنصرًا أساسًا في أجهزة تشغيل الأقراص المدمجة وصناعة الالكترونيات وقياس المسافات بدقة، أو في معدات قطع ولحام المعادن، أو في آلات الأسنان وغيرها."
+  },
+  "objectivesHeading": "🎯 أهداف الدرس",
+  "objectives": [
+    "يعرّف الليزر والميزر ويبيّن أصل تسمية كل منهما.",
+    "يذكر نبذة تاريخية عن تطور فكرة الليزر: نظرية أينشتاين، ميزر تاونز، وليزر ميمان.",
+    "يعدّد بعض مجالات تطبيق تكنولوجيا الليزر في العلوم والصناعة والطب."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 1-6 الليزر والميزر Laser and Maser",
+      "html": "تُعدّ تكنولوجيا الليزر من العلوم المتطورة التي دخلت في العديد من التطبيقات والأبحاث العلمية، فنجدها عنصرًا أساسًا في أجهزة تشغيل الأقراص المدمجة وفي صناعة الالكترونيات وقياس المسافات بدقة وخاصة الأجسام الفضائية، أو في معدات قطع ولحام المعادن، أو في آلات الأسنان وغيرها التي سيتم معرفة بعضها في محور تطبيقات الليزر. ولكن ما الليزر وما الذي يميزه عن المصادر الضوئية الأخرى؟",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 تمهيد"
+    },
+    {
+      "type": "definition",
+      "label": "📌 تعريف — الليزر (LASER)",
+      "html": "جاءت تسمية الليزر (Laser) من الأحرف الأولى للكلمات من الجملة:",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 1-6 جهاز ليزر الياقوت الأول\" role=\"img\" viewbox=\"0 0 300 180\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"var(--text-secondary)\" height=\"40\" width=\"16\" x=\"30\" y=\"70\"></rect>\n<rect fill=\"var(--text-secondary)\" height=\"40\" width=\"16\" x=\"230\" y=\"70\"></rect>\n<rect fill=\"rgba(255,107,157,.25)\" height=\"20\" stroke=\"var(--accent-pink)\" stroke-width=\"1.5\" width=\"184\" x=\"46\" y=\"80\"></rect>\n<text fill=\"var(--accent-pink)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"138\" y=\"94\">بلورة الياقوت</text>\n<line stroke=\"var(--accent-orange)\" stroke-width=\"3\" x1=\"252\" x2=\"285\" y1=\"90\" y2=\"90\"></line>\n<polygon fill=\"var(--accent-orange)\" points=\"285,84 300,90 285,96\"></polygon>\n<text fill=\"var(--accent-orange)\" font-size=\"9\" text-anchor=\"middle\" x=\"270\" y=\"75\">شعاع ليزر</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"138\" y=\"60\">مصباح ومضي (ضخ ضوئي)</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"30\" y=\"130\">مرآة عاكسة كليًا</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"246\" y=\"130\">مرآة عاكسة جزئيًا</text>\n</g>\n</svg>",
+      "caption": "شكل 1-6: جهاز ليزر الياقوت الأول (T.H. Maiman، 1960) — بلورة ياقوت بين مرآتين ومصدر ضخ ضوئي",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "ولكن قبل إنتاج الليزر تم تحقيق انبعاث أشعة كهرومغناطيسية مضخمة ومنبعثة بالتحفيز في طيف الأشعة الدقيقة سميت (maser)، والتي جاءت من الأحرف الأولى لفكرة عمل الميزر في العبارة التالية:",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 تعريف — الميزر (MASER)",
+      "html": "Microwave Amplification by Stimulated Emission of Radiation",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "هل تعلم؟",
+      "html": "أن العالم تشارلز تاونز تمكّن من تصميم أول جهاز يقوم بتضخيم الموجات الدقيقة باستعمال تقنية الانبعاث المحفز، وإنتاج ميزر الأمونيا عام 1954.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "timelineSvg",
+      "svgAriaLabel": "الخط الزمني لاكتشاف الليزر",
+      "svgViewBox": "0 0 480 160",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ محاكاة تفاعلية: الخط الزمني لاكتشاف الليزر",
+      "descriptionHtml": "حرّك المؤشر لاستعراض المحطات الثلاث الأساسية في تطور فكرة الليزر، من النظرية إلى أول جهاز فعلي.",
+      "controls": [
+        {
+          "labelHtml": "السنة",
+          "inputId": "timelineSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "2",
+          "inputStep": "1",
+          "inputValue": "0"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "sectionGroup": 6,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 اختبر فهمك",
+    "questions": [
+      {
+        "correct": 0,
+        "question": "تعني كلمة Laser (تضخيم الضوء بواسطة):",
+        "options": [
+          "الانبعاث المحفز للإشعاع",
+          "الانبعاث التلقائي للإشعاع",
+          "الامتصاص المحث للإشعاع",
+          "الانكسار الضوئي"
+        ],
+        "explain": "Laser = Light Amplification by Stimulated Emission of Radiation، أي تضخيم الضوء بواسطة الانبعاث المحفز للإشعاع."
+      },
+      {
+        "correct": 2,
+        "question": "وضع الأساس النظري لعملية الانبعاث المحفز للإشعاع عام 1917 العالم:",
+        "options": [
+          "تشارلز تاونز",
+          "ت.هـ. ميمان",
+          "ألبرت أينشتاين",
+          "ماكس بلانك"
+        ],
+        "explain": "وضع ألبرت أينشتاين الأساس النظري لعملية الانبعاث المحفز للإشعاع عام 1917."
+      },
+      {
+        "correct": 1,
+        "question": "صُمّم أول جهاز ليزر فعلي عام 1960 باستعمال بلورة:",
+        "options": [
+          "السيليكون",
+          "الياقوت (Ruby)",
+          "الكوارتز",
+          "الجرمانيوم"
+        ],
+        "explain": "صمّم العالم (T.H. Maiman) أول جهاز ليزر عام 1960 باستعمال بلورة الياقوت (Ruby Laser)."
+      },
+      {
+        "correct": 0,
+        "question": "تعني كلمة Maser (تضخيم):",
+        "options": [
+          "الموجات الدقيقة بواسطة الانبعاث المحفز للإشعاع",
+          "الضوء المرئي فقط",
+          "الأشعة السينية",
+          "الموجات الصوتية"
+        ],
+        "explain": "Maser = Microwave Amplification by Stimulated Emission of Radiation، أي تضخيم الموجات الدقيقة بواسطة الانبعاث المحفز للإشعاع."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 ملخص الدرس",
+    "items": [
+      "Laser = Light Amplification by Stimulated Emission of Radiation (تضخيم الضوء بواسطة الانبعاث المحفز للإشعاع).",
+      "Maser = Microwave Amplification by Stimulated Emission of Radiation (تضخيم الموجات الدقيقة بواسطة الانبعاث المحفز للإشعاع).",
+      "وضع أينشتاين الأساس النظري للانبعاث المحفز عام 1917؛ صمّم تاونز أول ميزر (أمونيا) عام 1954؛ صمّم ميمان أول ليزر (ياقوت) عام 1960.",
+      "لتكنولوجيا الليزر تطبيقات واسعة في أجهزة الأقراص المدمجة والالكترونيات وقياس المسافات ولحام المعادن وطب الأسنان وغيرها."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 خريطة الدرس الذهنية",
+    "ariaLabel": "خريطة ذهنية للليزر والميزر",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "الليزر",
+        "والميزر"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "أينشتاين",
+          "1917"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "تاونز",
+          "ميزر 1954"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "ميمان",
+          "ليزر 1960"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "بلورة",
+          "الياقوت"
+        ]
+      }
+    ]
+  }
+}

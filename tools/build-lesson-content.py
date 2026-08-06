@@ -18,8 +18,14 @@ from pathlib import Path
 from bs4 import BeautifulSoup, NavigableString
 
 ROOT = Path(__file__).resolve().parent.parent
-CH1 = ROOT / "chapter-1"
-OUT = ROOT / "content" / "ar" / "chapter-1"
+
+
+def chapter_dir(cn):
+    return ROOT / f"chapter-{cn}"
+
+
+def out_dir(cn):
+    return ROOT / "content" / "ar" / f"chapter-{cn}"
 
 
 def inner_html(el):
@@ -520,14 +526,20 @@ def extract_lesson(path, lesson_num, chapter_num, total_lessons):
     return data
 
 
-def main():
-    ar_json = json.loads((ROOT / "assets/i18n/ar.json").read_text(encoding="utf-8"))
-    lesson_titles = ar_json["ch1"]
+def process_chapter(cn, ar_json):
+    lesson_titles = ar_json.get(f"ch{cn}", {})
     n = sum(1 for k in lesson_titles if re.match(r"lesson\d+NavTitle", k))
+    if not n:
+        print(f"Skipping chapter {cn}: no lessonNNavTitle keys found in ar.json's ch{cn}.")
+        return
 
-    OUT.mkdir(parents=True, exist_ok=True)
+    out = out_dir(cn)
+    out.mkdir(parents=True, exist_ok=True)
     for m in range(1, n + 1):
-        path = CH1 / "lessons" / f"lesson-{m}.html"
+        path = chapter_dir(cn) / "lessons" / f"lesson-{m}.html"
+        if not path.exists():
+            print(f"  !! MISSING {path}")
+            continue
         # Once a lesson's HTML has been refactored to the mount-point pattern
         # (its content sections replaced by <div id="lessonContentBlocks">),
         # this script has nothing left to extract — running it anyway would
@@ -535,12 +547,23 @@ def main():
         # Edit the JSON directly for a migrated lesson instead (see
         # content/README.md); skip it here rather than destroy real content.
         if "lessonContentBlocks" in path.read_text(encoding="utf-8"):
-            print(f"Skipping lesson-{m}: already migrated to the mount-point pattern (content/ar/chapter-1/lesson-{m}.json is now hand-maintained).")
+            print(f"Skipping ch{cn} lesson-{m}: already migrated to the mount-point pattern (content/ar/chapter-{cn}/lesson-{m}.json is now hand-maintained).")
             continue
-        data = extract_lesson(path, m, 1, n)
-        out_path = OUT / f"lesson-{m}.json"
+        data = extract_lesson(path, m, cn, n)
+        out_path = out / f"lesson-{m}.json"
         out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"Wrote {out_path} ({len(data['content'])} content blocks)")
+
+
+def main():
+    import sys
+    ar_json = json.loads((ROOT / "assets/i18n/ar.json").read_text(encoding="utf-8"))
+    if len(sys.argv) > 1:
+        chapters = [int(a) for a in sys.argv[1:]]
+    else:
+        chapters = range(1, 9)
+    for cn in chapters:
+        process_chapter(cn, ar_json)
 
 
 if __name__ == "__main__":

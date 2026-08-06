@@ -1,0 +1,352 @@
+{
+  "lessonNumber": 1,
+  "chapterNumber": 5,
+  "meta": {
+    "pageTitle": "الدرس 1: المواد شبه الموصلة (تداخل حزم الطاقة) — الفصل الخامس",
+    "description": "1-5 المواد شبه الموصلة: تصنيف المواد إلى موصلة وعازلة وشبه موصلة، وحزم الطاقة (حزمة التكافؤ، حزمة التوصيل، الفجوة الممنوعة) في المواد الصلبة.",
+    "breadcrumbChapter": "الفصل 5",
+    "breadcrumbLesson": "المواد شبه الموصلة (تداخل حزم الطاقة)",
+    "footer": "الفصل الخامس: المواد شبه الموصلة والأجهزة الإلكترونية — الدرس 1: المواد شبه الموصلة (تداخل حزم الطاقة)"
+  },
+  "hero": {
+    "eyebrow": "📖 الدرس 1 من 7 · 1-5",
+    "title": "المواد شبه الموصلة (تداخل حزم الطاقة)",
+    "lead": "تمهيدًا لدراسة الثنائي والترانزستور، نصنّف المواد وفق قابليتها للتوصيل الكهربائي إلى موصلة وعازلة وشبه موصلة، ونتعرّف على حزم الطاقة التي تفسّر هذا التصنيف: حزمة التكافؤ وحزمة التوصيل والفجوة الممنوعة بينهما."
+  },
+  "objectivesHeading": "🎯 أهداف الدرس",
+  "objectives": [
+    "يميّز بين المواد الموصلة والعازلة وشبه الموصلة اعتمادًا على قابليتها للتوصيل الكهربائي.",
+    "يوضّح مفهوم حزم الطاقة في المادة الصلبة: حزمة التكافؤ، حزمة التوصيل، والفجوة الممنوعة بينهما.",
+    "يقارن بين عرض الفجوة الممنوعة في كل من المواد الموصلة وشبه الموصلة والعازلة.",
+    "يعلّل تأثير ارتفاع درجة الحرارة في قابلية التوصيل الكهربائي للمعادن."
+  ],
+  "content": [
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "هل تعلم؟",
+      "html": "أن إلكترونات التكافؤ هي الإلكترونات التي تشغل الغلاف الثانوي الخارجي للذرة، والتي هي الأكثر بعدًا عن النواة وتقع في غلاف التكافؤ. وأن هذه الإلكترونات (الإلكترونات التكافؤ) تمتلك قدرًا كبيرًا من الطاقة وتكون ضعيفة الارتباط مع النواة مقارنة بالإلكترونات الأخرى. وهذه الإلكترونات هي التي تشترك في التفاعلات الكيميائية وهي التي تحدد الخواص الإلكترونية للمادة.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 تمهيد"
+    },
+    {
+      "type": "definition",
+      "label": "📌 تعريف — المواد الموصلة (Conductors)",
+      "html": "هي المواد التي تسمح لمرور التيار الكهربائي من خلالها بسهولة، لأن الكترونات ذراتها التكافؤ ضعيفة الارتباط مع النواة فتتمكن بسهولة من فك ارتباطها مع الذرة وتصبح حرة الحركة (الإلكترونات الحرة)، ومنها الفضة والذهب والنحاس والألمنيوم، وهذه المواد تمتاز بأن ذراتها متماثلة ولها إلكترون واحد يرتبط مع النواة بسهولة ينفصل عنها.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 تعريف — المواد العازلة (Insulators)",
+      "html": "هي المواد التي لا تسمح لمرور التيار الكهربائي (الإلكتروني) من خلالها في الظروف الاعتيادية، وذلك بسبب أن إلكترونات التكافؤ فيها مرتبطة ارتباطًا وثيقًا مع النواة ومقاومتها الكهربائية تكون كبيرة.",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 تعريف — المواد شبه الموصلة (Semiconductors)",
+      "html": "هي تلك المواد التي تتحرك فيها الشحنات الكهربائية بحرية أقل وأكثر مما هو عليه في المواد الموصلة، ومقاومتها الكهربائية تكون بين الموصل والعازل. أما المواد شبه الموصلة النقية فهي تحتوي على وفرة من الإلكترونات الحرة (الإلكترونات التكافؤ التي فكّت ارتباطها مع النواة) فينشأ من مرورها التيار الالكتروني، ويمر فيها التيار الكهربائي بتسليط جهد مناسب بين طرفيها نتيجة حركة الإلكترونات الحرة باتجاه واحد لأن المواد الموصلة مقاومتها قليلة.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "⚡ 1-1-5 حزم الطاقة في المواد الصلبة",
+      "html": "إن الإلكترونات في الذرة المنفردة تدور حول النواة بمدارات محددة وإن لكل مدار مستوى محدد من الطاقة.</p><p>إن تداخل مستويات الطاقة مع بعضها البعض في المواد الموصلة يؤدي الى تأثير الإلكترونات لأية ذرة بإلكترونات الذرات الأخرى المجاورة لها في المادة نفسها.</p><p>نتيجة لهذا التفاعل بين الذرات المتجاورة في المادة الواحدة تقسم مستويات الطاقة المسموح بها في الأغلفة الثانوية الخارجية المتقاربة مع بعضها بشكل حُزَم، وكل حزمة منها ذات مستويات طاقة ثانوية متقاربة مكوّنة ما يسمى بحزم الطاقة.",
+      "sectionGroup": 4,
+      "sectionId": "bands",
+      "sectionNavLabel": "⚡ حزم الطاقة"
+    },
+    {
+      "type": "definition",
+      "label": "📌 تعريف — حزمة التكافؤ (Valence Band)",
+      "html": "تحتوي هذه الحزمة على مستويات طاقة مسموح بها تكون واطئة الطاقة وتكون مملوءة كليًا أو جزئيًا بالإلكترونات، ولا يمكن أن تكون خالية من الإلكترونات. إن إلكترونات التكافؤ التي ترتبط مع النواة من الذرات المتجاورة بسبب قربها من النواة تكون مرتبطة بالنواة بقوى كبيرة.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 تعريف — حزمة التوصيل (Conduction Band)",
+      "html": "تحتوي على مستويات طاقة عالية أكبر من مستويات طاقة حزمة التكافؤ، وإلكتروناتها تسمّى إلكترونات التوصيل، وهذه الإلكترونات تنتقل بسهولة لتشارك في عملية التوصيل الكهربائي.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 2-5 يمثل حزم الطاقة في شبه الموصل والعازل والموصل\" role=\"img\" viewbox=\"0 0 480 210\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"none\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"20\" y=\"30\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"11\" text-anchor=\"middle\" x=\"80\" y=\"52\">حزمة التوصيل</text>\n<rect fill=\"none\" height=\"26\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"20\" y=\"75\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"middle\" x=\"80\" y=\"92\">( 1 eV )</text>\n<rect fill=\"none\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"20\" y=\"111\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"11\" text-anchor=\"middle\" x=\"80\" y=\"133\">حزمة التكافؤ</text>\n<text fill=\"var(--accent-blue)\" font-size=\"13\" font-weight=\"800\" text-anchor=\"middle\" x=\"80\" y=\"168\">شبه الموصل</text>\n<rect fill=\"none\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"180\" y=\"20\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"11\" text-anchor=\"middle\" x=\"240\" y=\"42\">حزمة التوصيل</text>\n<rect fill=\"none\" height=\"46\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"180\" y=\"55\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"middle\" x=\"240\" y=\"82\">( 5 - 10 eV )</text>\n<rect fill=\"none\" height=\"45\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"180\" y=\"101\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"11\" text-anchor=\"middle\" x=\"240\" y=\"127\">حزمة التكافؤ</text>\n<text fill=\"var(--accent-orange)\" font-size=\"13\" font-weight=\"800\" text-anchor=\"middle\" x=\"240\" y=\"168\">عازل</text>\n<rect fill=\"none\" height=\"86\" stroke=\"var(--text-primary)\" stroke-width=\"2\" width=\"120\" x=\"340\" y=\"60\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"400\" y=\"98\">حزمة التوصيل</text>\n<line stroke=\"var(--text-primary)\" stroke-dasharray=\"3 3\" stroke-width=\"1\" x1=\"340\" x2=\"460\" y1=\"103\" y2=\"103\"></line>\n<text fill=\"var(--accent-green)\" font-size=\"13\" font-weight=\"800\" text-anchor=\"middle\" x=\"400\" y=\"168\">موصل</text>\n</g>\n</svg>",
+      "caption": "شكل 2-5: حزم الطاقة في شبه الموصل (فجوة ضيقة) والعازل (فجوة واسعة) والموصل (تداخل الحزمتين بلا فجوة)",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "2-1-5 مميزات وصفات حزم الطاقة في المواد الموصلة وشبه الموصلة والعازلة",
+      "html": "",
+      "sectionGroup": 8,
+      "sectionId": "properties",
+      "sectionNavLabel": "📋 خواص حزم الطاقة"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 تعداد — حزم الطاقة في المواد الموصلة",
+      "html": "<span class=\"def-label\" style=\"color:var(--accent-green)\">🔢 تعداد — حزم الطاقة في المواد الموصلة</span>\n<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- تتداخل حزمة التكافؤ مع حزمة التوصيل.</li>\n<li>b- تنعدم فيها ثغرة الطاقة المحظورة بين حزمتي التكافؤ والتوصيل، لهذا تكون إلكترونات التكافؤ حرة طليقة الحركة خلال المادة الموصلة، فتمتلك المواد الموصلة قابلية توصيل كهربائي عالية.</li>\n<li>c- إن قابلية التوصيل الكهربائي في المعادن بصورة عامة تقل عند ارتفاع درجة الحرارة، كما في الشكل (3-5).</li>\n</ol>",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 تعليل — لماذا تقل قابلية التوصيل الكهربائي في المعادن عند ارتفاع درجة الحرارة؟",
+      "html": "إن قابلية التوصيل الكهربائي في المعادن بصورة عامة تقل عند ارتفاع درجة الحرارة، وذلك بسبب زيادة مقاومتها الكهربائية، ولزيادة الطاقة الاهتزازية للذرات أو الجزيئات؛ إذ إن اهتزاز الذرات المتزايد يعيق حركة الإلكترونات الحرة داخل المادة الموصلة فتزداد مقاومتها الكهربائية.",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 3-5 يبين قابلية التوصيل الكهربائي في المعادن\" role=\"img\" viewbox=\"-45 0 285 170\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"var(--surface)\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"15\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"36\">حزمة توصيل</text>\n<rect fill=\"none\" height=\"26\" stroke=\"var(--text-primary)\" stroke-dasharray=\"4 3\" stroke-width=\"1\" width=\"150\" x=\"30\" y=\"50\"></rect>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"end\" x=\"15\" y=\"66\">تداخل</text>\n<rect fill=\"var(--surface)\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"76\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"97\">حزمة تكافؤ</text>\n<text fill=\"var(--accent-green)\" font-size=\"12\" font-weight=\"800\" text-anchor=\"middle\" x=\"105\" y=\"135\">معدن (موصل)</text>\n</g>\n</svg>",
+      "caption": "شكل 3-5: تداخل حزمتي التكافؤ والتوصيل في المعادن — أساس ارتفاع قابلية توصيلها الكهربائي",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "2- حزم الطاقة في المواد شبه الموصلة",
+      "html": "إن المواد شبه الموصلة عند درجات الحرارة المنخفضة مثل صفر كلفن (0 K) وفي انعدام الضوء فهي تسلك سلوك المواد العازلة، كما هو في الشكل (4-5).",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 تعداد — حزم الطاقة في المواد شبه الموصلة (لذا فتكون فيها حزم الطاقة بالشكل الآتي)",
+      "html": "<span class=\"def-label\" style=\"color:var(--accent-blue)\">🔢 تعداد — حزم الطاقة في المواد شبه الموصلة (لذا فتكون فيها حزم الطاقة بالشكل الآتي)</span>\n<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- حزمة التكافؤ تكون مملوءة بإلكترونات التكافؤ.</li>\n<li>b- حزمة التوصيل خالية من الإلكترونات.</li>\n<li>c- ثغرة الطاقة المحظورة ضيقة نسبيًا.</li>\n</ol>",
+      "sectionGroup": 13,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 4-5 يبين حزم الطاقة في المواد شبه الموصلة\" role=\"img\" viewbox=\"-45 0 285 170\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"none\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"15\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"36\">حزمة توصيل</text>\n<rect fill=\"var(--surface)\" height=\"24\" stroke=\"var(--text-primary)\" stroke-dasharray=\"4 3\" stroke-width=\"1\" width=\"150\" x=\"30\" y=\"50\"></rect>\n<text fill=\"var(--text-secondary)\" font-size=\"8.5\" text-anchor=\"middle\" x=\"105\" y=\"66\">فجوة حزمة ممنوعة صغيرة</text>\n<rect fill=\"var(--surface)\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"74\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"95\">حزمة تكافؤ</text>\n<text fill=\"var(--accent-blue)\" font-size=\"12\" font-weight=\"800\" text-anchor=\"middle\" x=\"105\" y=\"135\">شبه موصل</text>\n</g>\n</svg>",
+      "caption": "شكل 4-5: حزم الطاقة في المواد شبه الموصلة — فجوة حزمة ممنوعة صغيرة",
+      "sectionGroup": 14,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 تعداد — 3- حزم الطاقة في المواد العازلة",
+      "html": "<span class=\"def-label\" style=\"color:var(--accent-purple)\">🔢 تعداد — 3- حزم الطاقة في المواد العازلة</span>\n<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- حزمة التكافؤ مملوءة بإلكترونات التكافؤ.</li>\n<li>b- حزمة التوصيل خالية من الإلكترونات.</li>\n<li>c- ثغرة الطاقة المحظورة واسعة نسبيًا، كما في الشكل (5-5).</li>\n</ol>",
+      "sectionGroup": 15,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"شكل 5-5 يبين حزم الطاقة في المواد العازلة\" role=\"img\" viewbox=\"-45 0 285 170\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"none\" height=\"30\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"12\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"30\">حزمة توصيل</text>\n<rect fill=\"var(--surface)\" height=\"42\" stroke=\"var(--text-primary)\" stroke-dasharray=\"4 3\" stroke-width=\"1\" width=\"150\" x=\"30\" y=\"42\"></rect>\n<text fill=\"var(--text-secondary)\" font-size=\"8.5\" text-anchor=\"middle\" x=\"105\" y=\"67\">فجوة حزمة ممنوعة كبيرة</text>\n<rect fill=\"var(--surface)\" height=\"30\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"84\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"102\">حزمة تكافؤ</text>\n<text fill=\"var(--accent-orange)\" font-size=\"12\" font-weight=\"800\" text-anchor=\"middle\" x=\"105\" y=\"135\">عازل</text>\n</g>\n</svg>",
+      "caption": "شكل 5-5: حزم الطاقة في المواد العازلة — فجوة حزمة ممنوعة كبيرة",
+      "sectionGroup": 16,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 تعريف — ثغرة الطاقة المحظورة (الفجوة الممنوعة)",
+      "html": "لا تحتوي الفجوة (الطاقة المحظورة) مستويات طاقة تسمح للإلكترونات أن تشغلها. لكي ينتقل الإلكترون من حزمة التكافؤ إلى حزمة التوصيل عبر ثغرة الطاقة المحظورة، يحتاج أن يكتسب طاقة كافية من مصدر خارجي، قد يكون طاقة حرارية أو ضوئية أو بتأثير مجال كهربائي، ويجب أن يكون مقدارها لا يقل عن مقدار ثغرة الطاقة المحظورة.",
+      "sectionGroup": 17,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "bandSvg",
+      "svgAriaLabel": "محاكاة حزم الطاقة التفاعلية",
+      "svgViewBox": "0 0 360 285",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ محاكاة تفاعلية: قارن حزم الطاقة",
+      "descriptionHtml": "اختر نوع المادة لمشاهدة عرض الفجوة الممنوعة بين حزمة التكافؤ وحزمة التوصيل، ولاحظ كيف تختلف قابلية التوصيل الكهربائي تبعًا لعرض هذه الفجوة.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnConductor",
+          "html": "موصل"
+        },
+        {
+          "id": "btnSemi",
+          "html": "شبه موصل"
+        },
+        {
+          "id": "btnInsulator",
+          "html": "عازل"
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "sectionGroup": 18,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 اختبر فهمك",
+    "questions": [
+      {
+        "correct": 0,
+        "question": "في أي أنواع المواد تتداخل حزمة التكافؤ مع حزمة التوصيل بلا فجوة ممنوعة؟",
+        "options": [
+          "المواد الموصلة",
+          "المواد شبه الموصلة",
+          "المواد العازلة",
+          "لا شيء مما سبق"
+        ],
+        "explain": "في المواد الموصلة تتداخل حزمتا التكافؤ والتوصيل وتنعدم الفجوة الممنوعة بينهما، فتكون إلكترونات التكافؤ حرة الحركة."
+      },
+      {
+        "correct": 1,
+        "question": "عرض الفجوة الممنوعة في المواد شبه الموصلة النقية يقارب:",
+        "options": [
+          "صفر",
+          "1 eV",
+          "10-5 eV",
+          "100 eV"
+        ],
+        "explain": "كما في الشكل (2-5)، عرض الفجوة الممنوعة في شبه الموصل يقارب (1 eV)، بينما يتراوح في العازل بين (10-5 eV)."
+      },
+      {
+        "correct": 2,
+        "question": "عند درجة حرارة صفر كلفن وفي انعدام الضوء، تسلك المادة شبه الموصلة سلوك:",
+        "options": [
+          "المادة الموصلة",
+          "الموصل الفائق",
+          "المادة العازلة",
+          "لا شيء مما سبق"
+        ],
+        "explain": "عند صفر كلفن (0K) وفي غياب الضوء تكون حزمة التوصيل خالية تمامًا من الإلكترونات، فتسلك المادة شبه الموصلة سلوك المادة العازلة."
+      },
+      {
+        "correct": 1,
+        "question": "سبب قلة قابلية التوصيل الكهربائي في المعادن عند ارتفاع درجة الحرارة هو:",
+        "options": [
+          "قلة عدد الإلكترونات الحرة",
+          "ازدياد المقاومة الكهربائية لزيادة الطاقة الاهتزازية للذرات",
+          "اتساع الفجوة الممنوعة",
+          "تحوّل المعدن إلى عازل"
+        ],
+        "explain": "ارتفاع درجة الحرارة يزيد الطاقة الاهتزازية لذرات المعدن، مما يزيد مقاومته الكهربائية فتقل قابليته على التوصيل."
+      },
+      {
+        "correct": 0,
+        "question": "لكي ينتقل إلكترون من حزمة التكافؤ إلى حزمة التوصيل عبر الفجوة الممنوعة، يجب أن يكتسب طاقة:",
+        "options": [
+          "لا تقل عن مقدار الفجوة الممنوعة، من مصدر حراري أو ضوئي أو كهربائي",
+          "أي مقدار مهما كان صغيرًا",
+          "من مصدر مغناطيسي فقط",
+          "لا يحتاج إلى أي طاقة إضافية"
+        ],
+        "explain": "يجب أن يكتسب الإلكترون طاقة كافية (حرارية أو ضوئية أو بتأثير مجال كهربائي) لا تقل عن مقدار الفجوة الممنوعة لينتقل إلى حزمة التوصيل."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 ملخص الدرس",
+    "items": [
+      "تصنَّف المواد وفق قابليتها للتوصيل الكهربائي إلى: موصلة، وعازلة، وشبه موصلة (مقاومتها بين الموصل والعازل).",
+      "حزمة التكافؤ: مستويات طاقة واطئة مملوءة كليًا أو جزئيًا بالإلكترونات. حزمة التوصيل: مستويات طاقة أعلى تشارك في التوصيل الكهربائي.",
+      "المواد الموصلة: تتداخل الحزمتان بلا فجوة ممنوعة، فتكون قابلية التوصيل عالية، وتقل عند ارتفاع درجة الحرارة (ازدياد المقاومة).",
+      "المواد شبه الموصلة: حزمة تكافؤ ممتلئة، وحزمة توصيل خالية، وفجوة ممنوعة ضيقة نسبيًا (~1 eV). عند 0K وانعدام الضوء تسلك سلوك العازل.",
+      "المواد العازلة: نفس ترتيب شبه الموصل لكن بفجوة ممنوعة واسعة نسبيًا (10-5 eV تقريبًا).",
+      "انتقال إلكترون عبر الفجوة الممنوعة يتطلب اكتساب طاقة (حرارية/ضوئية/كهربائية) لا تقل عن مقدار الفجوة."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 خريطة الدرس الذهنية",
+    "ariaLabel": "خريطة ذهنية لحزم الطاقة",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "حزم الطاقة",
+        "في المواد الصلبة"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "موصل",
+          "تداخل الحزمتين"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "شبه موصل",
+          "فجوة ~1eV"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "عازل",
+          "فجوة 10-5eV"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "حزمة تكافؤ",
+          "حزمة توصيل"
+        ]
+      }
+    ]
+  }
+}

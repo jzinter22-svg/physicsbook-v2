@@ -1,0 +1,411 @@
+{
+  "lessonNumber": 6,
+  "chapterNumber": 4,
+  "meta": {
+    "pageTitle": "الدرس 6: ربط المقاومة والمحث والمتسعة على التوالي — الفصل الرابع",
+    "description": "8-4 ربط المقاومة والمحث والمتسعة على التوالي: القدرة وعامل القدرة، قوانين الربط المختلط، والرنين الكهربائي، بمثال محلول.",
+    "breadcrumbChapter": "الفصل 4",
+    "breadcrumbLesson": "ربط المقاومة والمحث والمتسعة على التوالي",
+    "footer": "الفصل الرابع: دوائر التيار المتناوب — الدرس 6: ربط المقاومة والمحث والمتسعة على التوالي"
+  },
+  "hero": {
+    "eyebrow": "📖 الدرس 6 من 8 · الفصل الرابع",
+    "title": "ربط المقاومة والمحث والمتسعة على التوالي",
+    "lead": "8-4: 1-8-4 القدرة وعامل القدرة · 2-8-4 قوانين الربط المختلط · الرنين الكهربائي"
+  },
+  "objectivesHeading": "🎯 أهداف الدرس",
+  "objectives": [
+    "يحسب القدرة الحقيقية والظاهرية وعامل القدرة في دائرة متوالية.",
+    "يكتب قوانين دائرة RLC المتوالية (الممانعة وزاوية فرق الطور) ويميّز الخواص الحثية من السعوية.",
+    "يفهم ظاهرة الرنين الكهربائي وحساب ترددها."
+  ],
+  "content": [
+    {
+      "type": "paragraph",
+      "html": "ان كثرة وجود الملفات في معظم الاجهزة الكهربائية تسبب في ظهور فرق طور بين الفولطية والتيار، مما يجعل عامل القدرة أقل من واحد، لذلك تسعى مؤسسات نقل الطاقة الكهربائية الى جعل عامل القدرة مقاربًا للواحد وذلك بوساطة طريقتين: اولها استعمال أسلاك ناقلة ذات مقطع عرضي أوسع لتقليل مقاومتها ومحطات أضخم لتوليد قدرة كهربائية بتيار كبير، لكن هذا الاجراء غير اقتصادي، اما الطريقة الثانية فهو تصحيح عامل القدرة دائمًا وجعله مقاربًا للواحد وذلك بأستخدام متسعات.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 الشرح"
+    },
+    {
+      "type": "definition",
+      "label": "📌 1-8-4 القدرة الكهربائية في دائرة التيار المتناوب المتوالية الربط وعامل القدرة",
+      "html": "لقد علمت سابقًا أن المحث والمتسعة لا يستهلكان قدرة كهربائية حقيقية تخزن بشكل مجال مغناطيسي بالمحث وبشكل مجال كهربائي في المتسعة وتعاد الى المصدر في أثناء التفريغ، لذلك تستهلك قدرة حقيقية فقط بالمقاومة الاومية وتظهر بشكل حرارة، وتقدر بوحدة الواط ويمكن حسابها من أي علاقة آتية:",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .3rem;font-weight:700\">القدرة المستهلكة P</p>\n      $$ P = V_R \\times I_R $$\n      $$ P = I_R^2 \\times R $$\n      $$ P = V_T \\times I_T \\cos\\emptyset $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">وتسمى \\((V_TI_T)\\) بالقدرة الظاهرية للدائرة الكهربائية ووحداتها (Volt Ampere).</p>",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "إن القدرة الحقيقية = عامل القدرة × القدرة الظاهرية. أن النسبة بين القدرة الحقيقية الى القدرة الظاهرية يسمى عامل القدرة (power factor) كما مر سابقًا. ففي الدائرة ذات المقاومة الاومية الخالصة يكون عامل القدرة \\((\\cos\\emptyset)\\) يساوي واحدًا لان القدرة الحقيقية هي نفسها القدرة الظاهرية. أما في المحث الصرف والمتسعة ذات سعة صرف فيكون مقدار عامل القدرة لهما يساوي صفرًا.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 2-8-4 قوانين ربط مقاومة ومحث ومتسعة على التوالي",
+      "html": "هناك مخطط طوري للفولطية ومخطط طوري للممانعة، أما زاوية فرق الطور فتكون حسب خواص الدائرة، حيث تكون موجبة اذا كانت للدائرة خواص حثية وتكون الزاوية سالبة اذا كانت للدائرة خواص سعوية، وكما مبين في الشكل (16-4).",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "rlcPhasorSvg",
+      "svgAriaLabel": "مخطط طوري تفاعلي لدائرة مقاومة ومحث ومتسعة متوالية",
+      "svgViewBox": "0 0 360 240",
+      "svgWidth": "360",
+      "svgHeight": "240",
+      "sectionHeading": "🕹️ محاكاة تفاعلية: المخطط الطوري لدائرة RLC المتوالية (الشكل 16-4)",
+      "descriptionHtml": "حرّك المزلاجات الثلاثة \\(V_R\\)، \\(V_L\\)، \\(V_C\\) وشاهد متجه \\(V_X=V_L-V_C\\) والفولطية الكلية \\(V_T\\) يتغيّران، مع تبدّل خواص الدائرة بين حثية (عندما \\(V_L&gt;V_C\\)) وسعوية (عندما \\(V_L&lt;V_C\\)).",
+      "controls": [
+        {
+          "labelHtml": "V_R",
+          "inputId": "rlcVR",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "20",
+          "inputMax": "90",
+          "inputStep": "5",
+          "inputValue": "50"
+        },
+        {
+          "labelHtml": "V_L",
+          "inputId": "rlcVL",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "100",
+          "inputStep": "5",
+          "inputValue": "80"
+        },
+        {
+          "labelHtml": "V_C",
+          "inputId": "rlcVC",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "100",
+          "inputStep": "5",
+          "inputValue": "30"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": null,
+          "id": "rlcStatus"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 5,
+      "sectionId": "rlc-widget",
+      "sectionNavLabel": "🕹️ المخطط الطوري لدائرة RLC"
+    },
+    {
+      "type": "paragraph",
+      "html": "يكون التيار هنا متساويًا \\((I_T=I_R=I_L=I_C)\\)؛ حيث إن التيار في الدائرة المتوالية واحد في جميع العناصر.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ V_T = \\sqrt{V_R^2 + (V_L-V_C)^2} $$\n      $$ \\cos\\emptyset = \\dfrac{V_R}{V_T} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">خواص حثية عندما \\(V_L&gt;V_C\\)، وخواص سعوية عندما \\(V_L&lt;V_C\\).</p>\n      $$ \\tan\\emptyset = \\dfrac{V_L-V_C}{V_R} $$\n      <p style=\"margin:.2rem 0 0;font-size:.85rem;color:var(--text-secondary)\">(عندما تكون للدائرة خواص حثية)</p>",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ Z = \\sqrt{R^2 + (X_L-X_C)^2} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">خواص حثية عندما \\(X_L&gt;X_C\\)، وخواص سعوية عندما \\(X_L&lt;X_C\\).</p>\n      $$ \\cos\\emptyset = \\dfrac{R}{Z} \\qquad \\tan\\emptyset = \\dfrac{X_L-X_C}{R} $$\n      $$ P = V_R \\times I_R \\qquad Z = \\dfrac{V_T}{I_T} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">أما قوانين \\(X_L\\) و\\(X_C\\) فهي نفس القوانين التي درستها في الأمثلة السابقة.</p>",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>دائرة تيار متناوب تتألف من ملف مهمل مقاومته وحث ذاتي، ومقاومة مقدارها \\((40\\ \\Omega)\\)، ومتسعة رادتها السعوية \\((10\\ \\Omega)\\) مربوطة جميعها على التوالي، والقدرة المستهلكة \\((160\\ W)\\)، فأذا كان تردد الدائرة \\(\\left(\\dfrac{500}{\\pi}\\ \\text{Hz}\\right)\\) وحث الملف \\((40\\ \\text{mH})\\) والتيار المار بالدائرة \\((2\\ \\text{A})\\) أحسب: 1- فولطية المصدر. 2- عامل القدرة.</p>",
+      "label": "📝 مثال (6)",
+      "solution": {
+        "given": [
+          "\\( R = 40\\ \\Omega \\) — المقاومة",
+          "\\( X_C = 10\\ \\Omega \\) — الرادة السعوية",
+          "\\( P = 160\\ \\text{W} \\) — القدرة المستهلكة",
+          "\\( f = 500/\\pi\\ \\text{Hz} \\) — تردد الدائرة",
+          "\\( L = 40\\ \\text{mH} = 40\\times10^{-3}\\ \\text{H} \\) — حث الملف (بعد التحويل)",
+          "\\( I_T = 2\\ \\text{A} \\) — تيار الدائرة"
+        ],
+        "required": "1- \\(V_T\\). 2- \\(\\cos\\emptyset\\).",
+        "steps": [
+          {
+            "note": "1- نحسب الرادة الحثية أولًا",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_L=2\\pi fL=2\\pi\\times\\dfrac{500}{\\pi}\\times40\\times10^{-3} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( X_L=40\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- نحسب الممانعة (خواص حثية لأن \\(X_L>X_C\\))",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( Z=\\sqrt{R^2+(X_L-X_C)^2}=\\sqrt{40^2+(40-10)^2} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( Z=\\sqrt{1600+900}=\\sqrt{2500} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( Z=50\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "3- نطبّق قانون أوم لإيجاد فولطية المصدر",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( V_T=I_T\\,Z=2\\times50 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( V_T=100\\ \\text{Volt} \\)"
+              }
+            ]
+          },
+          {
+            "note": "4- نطبّق علاقة عامل القدرة",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\cos\\emptyset=\\dfrac{R}{Z}=\\dfrac{40}{50} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\cos\\emptyset=0.8 \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ V_T = 100 Volt · cosØ = 0.8",
+        "label": "الحل التفصيلي"
+      },
+      "sectionGroup": 9,
+      "sectionId": "example6",
+      "sectionNavLabel": "📝 مثال 6"
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "هل تعلم؟",
+      "html": "اذا كانت \\(X_L=X_C\\) للدائرة خواص اومية فقط أي: إن التيار والفولطية بطور واحد وتسمى بحالة الرنين الكهربائي، ولها تردد يسمى بالتردد الرنيني للدائرة المهتزة ويُحسَب من العلاقة الآتية:",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ f_R = \\dfrac{1}{2\\pi\\sqrt{LC}} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">ولهذه الدائرة تطبيقات عملية كثيرة منها البث الراديوي والتلفزيوني.</p>",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "resSvg",
+      "svgAriaLabel": "منحنيات الرادة الحثية والسعوية والممانعة مقابل التردد",
+      "svgViewBox": "0 0 360 190",
+      "svgWidth": "360",
+      "svgHeight": "190",
+      "sectionHeading": "🕹️ محاكاة تفاعلية: الممانعة والرنين الكهربائي",
+      "descriptionHtml": "حرّك مزلاج التردد وشاهد كيف تتغيّر \\(X_L\\) و\\(X_C\\) والممانعة الكلية Z؛ عند التردد الرنيني \\(f_R\\) تتساوى \\(X_L\\) و\\(X_C\\) فتصل الممانعة إلى أدنى قيمة لها (تساوي R تمامًا) وتصبح الدائرة أومية خالصة.",
+      "controls": [
+        {
+          "labelHtml": "التردد النسبي",
+          "inputId": "resFreq",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "10",
+          "inputMax": "200",
+          "inputStep": "2",
+          "inputValue": "100"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": null,
+          "id": "resStatus"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 12,
+      "sectionId": "resonance-widget",
+      "sectionNavLabel": "🕹️ الرنين الكهربائي"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 اختبر فهمك",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "عامل القدرة في دائرة مقاومة اومية خالصة يساوي:",
+        "options": [
+          "صفرًا",
+          "واحدًا",
+          "أكبر من واحد",
+          "سالبًا"
+        ],
+        "explain": "في الدائرة ذات المقاومة الاومية الخالصة يكون عامل القدرة واحدًا لأن القدرة الحقيقية هي نفسها القدرة الظاهرية."
+      },
+      {
+        "correct": 2,
+        "question": "في دائرة RLC متوالية، تكون للدائرة خواص حثية عندما:",
+        "options": [
+          "\\( X_L &lt; X_C \\)",
+          "\\( X_L = X_C \\)",
+          "\\( X_L &gt; X_C \\)",
+          "\\( R = 0 \\)"
+        ],
+        "explain": "تكون للدائرة خواص حثية إذا كان \\(X_L&gt;X_C\\) (أو \\(V_L&gt;V_C\\))، وتكون زاوية فرق الطور موجبة."
+      },
+      {
+        "correct": 0,
+        "question": "حالة الرنين الكهربائي تحدث عندما:",
+        "options": [
+          "\\( X_L = X_C \\)",
+          "\\( X_L = 0 \\)",
+          "\\( X_C = 0 \\)",
+          "\\( R = 0 \\)"
+        ],
+        "explain": "عند \\(X_L=X_C\\) تصبح خواص الدائرة أومية فقط (التيار والفولطية بنفس الطور)، وتسمى هذه الحالة بالرنين الكهربائي."
+      },
+      {
+        "correct": 3,
+        "question": "التردد الرنيني للدائرة المهتزة يُحسب من العلاقة:",
+        "options": [
+          "\\( f_R=2\\pi\\sqrt{LC} \\)",
+          "\\( f_R=2\\pi LC \\)",
+          "\\( f_R=\\sqrt{LC} \\)",
+          "\\( f_R=\\dfrac{1}{2\\pi\\sqrt{LC}} \\)"
+        ],
+        "explain": "التردد الرنيني \\(f_R=1/(2\\pi\\sqrt{LC})\\)، وله تطبيقات عملية منها البث الراديوي والتلفزيوني."
+      },
+      {
+        "correct": 1,
+        "question": "يمكن تصحيح عامل القدرة في محطات نقل الطاقة وجعله مقاربًا للواحد باستعمال:",
+        "options": [
+          "مقاومات إضافية فقط",
+          "متسعات",
+          "محركات كهربائية إضافية",
+          "لا يمكن تصحيحه إطلاقًا"
+        ],
+        "explain": "يمكن تصحيح عامل القدرة وجعله مقاربًا للواحد باستخدام متسعات موصولة بالتوازي، بدلًا من الطريقة غير الاقتصادية لاستعمال أسلاك ناقلة أوسع ومحطات أضخم."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 ملخص الدرس",
+    "items": [
+      "القدرة الحقيقية تُستهلك فقط في R؛ \\(P=V_R I_R=I_R^2R=V_TI_T\\cos\\emptyset\\).",
+      "دائرة RLC متوالية: \\(V_T=\\sqrt{V_R^2+(V_L-V_C)^2}\\)، \\(Z=\\sqrt{R^2+(X_L-X_C)^2}\\)، \\(I_T=I_R=I_L=I_C\\).",
+      "خواص حثية عندما \\(X_L&gt;X_C\\) (Ø موجبة)، وخواص سعوية عندما \\(X_L&lt;X_C\\) (Ø سالبة).",
+      "الرنين الكهربائي عند \\(X_L=X_C\\)؛ \\(f_R=1/(2\\pi\\sqrt{LC})\\)، يُستعمل في البث الراديوي والتلفزيوني."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 خريطة الدرس الذهنية",
+    "ariaLabel": "خريطة دائرة RLC والرنين الذهنية",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "RLC"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Z=√(R²+ΔX²)"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "P=VTITcosØ"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "رنين:",
+          "XL=XC"
+        ]
+      }
+    ]
+  }
+}
