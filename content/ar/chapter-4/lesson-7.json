@@ -48,7 +48,13 @@
       "trailingId": null,
       "sectionGroup": 1,
       "sectionId": "transformer-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 18-4"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 18-4",
+      "labels": {
+        "coreLabel": "النواة",
+        "sourceLabel": "مصدر",
+        "loadLabel": "حمل",
+        "fluxLabel": "الفيض المغناطيسي المشترك"
+      }
     },
     {
       "type": "list",
@@ -125,7 +131,12 @@
       "trailingId": null,
       "sectionGroup": 6,
       "sectionId": "transformer-type-widget",
-      "sectionNavLabel": "🕹️ رافعة أم خافضة؟"
+      "sectionNavLabel": "🕹️ رافعة أم خافضة؟",
+      "labels": {
+        "statusStepUpSuffix": " → محولة رافعة (V يرتفع، I ينخفض في الملف الثانوي)",
+        "statusStepDownSuffix": " → محولة خافضة (V ينخفض، I يرتفع في الملف الثانوي)",
+        "statusEqual": "N2/N1 = 1 → عدد اللفات متساوٍ (لا رفع ولا خفض للفولطية)"
+      }
     },
     {
       "type": "definition",

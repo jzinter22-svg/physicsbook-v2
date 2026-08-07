@@ -1,0 +1,396 @@
+{
+  "lessonNumber": 7,
+  "chapterNumber": 4,
+  "meta": {
+    "pageTitle": "Lesson 7: The Electrical Transformer — Chapter Four",
+    "description": "4-9 The electrical transformer: its parts and types, transformer laws, transformer efficiency, and electrical power transmission, with a solved example.",
+    "breadcrumbChapter": "Chapter 4",
+    "breadcrumbLesson": "The Electrical Transformer",
+    "footer": "Chapter Four: Alternating Current Circuits — Lesson 7: The Electrical Transformer"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 7 of 8 · Chapter Four",
+    "title": "The Electrical Transformer",
+    "lead": "4-9 The Electrical Transformer: 4-9-1 Types of transformers · 4-9-2 Transformer laws · 4-9-3 Electrical power transmission"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "States the working principle of the electrical transformer and its main parts.",
+    "Distinguishes between a step-up transformer and a step-down transformer.",
+    "Writes the transformer laws and calculates its efficiency.",
+    "Explains the method used to transmit electrical power over long distances."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 4-9 The Electrical Transformer",
+      "html": "The electrical transformer is an AC device used to step up or step down an alternating voltage. Its working principle: the operation of the electrical transformer relies on the principle of mutual induction between two adjacent coils with complete magnetic coupling between them.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "simulation",
+      "svgId": "transformerSvg",
+      "svgAriaLabel": "Illustration of an electrical transformer with two coils and an iron core",
+      "svgViewBox": "0 0 360 200",
+      "svgWidth": "360",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive Simulation: Parts of the Electrical Transformer (Figure 4-18)",
+      "descriptionHtml": "An electrical transformer is made up of a closed iron core, and two electrically-insulated coils with a different number of turns: the primary coil is connected to the source, and the secondary coil is connected to the load (the device).",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "trailingId": null,
+      "sectionGroup": 1,
+      "sectionId": "transformer-widget",
+      "sectionNavLabel": "🕹️ Recreating Figure 4-18",
+      "labels": {
+        "coreLabel": "Core",
+        "sourceLabel": "Source",
+        "loadLabel": "Load",
+        "fluxLabel": "Shared magnetic flux"
+      }
+    },
+    {
+      "type": "list",
+      "heading": "📋 The Transformer Is Made Up of the Following Parts",
+      "items": [
+        "The core: made in a closed shape so that complete magnetic coupling is available in its windings, with high permeability, and made of wrought iron to reduce hysteresis losses, which increases its efficiency; it is also made in the form of thin, pressed sheets that are electrically insulated from each other to reduce eddy current losses.",
+        "Two coils, electrically insulated from each other and with a different number of turns; the primary coil is connected to the alternating source, and the secondary coil is connected to the device (the load), as shown in Figure 4-18. The transformer contains no automatic switch, so it is considered an AC device only."
+      ],
+      "ordered": true,
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "Did you know?",
+      "html": "In high-frequency transformers, the core is made of ferrite, which has a relatively high resistance, reducing hysteresis losses, and also has a very high magnetic permeability.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 4-9-1 Types of Transformers",
+      "html": "<b>1- Step-up transformers:</b> these are transformers that raise the alternating voltage and lower the current in the secondary coil compared to the primary coil, which happens when the number of turns of the secondary coil is greater than the number of turns of the primary coil, as in the transformers connected at electrical power generating stations.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Step-down Transformers",
+      "html": "<b>2- Step-down transformers:</b> these are transformers that lower the voltage and raise the current in the secondary coil compared to the primary coil, which happens when the number of turns of the secondary coil is fewer than the number of turns of the primary coil, as in a mobile phone charger and others.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "typeSvg",
+      "svgAriaLabel": "Visual comparison between a step-up and step-down transformer based on the turns ratio",
+      "svgViewBox": "0 0 320 170",
+      "svgWidth": "320",
+      "svgHeight": "170",
+      "sectionHeading": "🕹️ Interactive Simulation: Step-up or Step-down Transformer?",
+      "descriptionHtml": "Move the turns-ratio slider \\((N_2/N_1)\\) and watch the transformer type change, alongside a schematic diagram comparing the thickness of the two coils (representing the number of turns).",
+      "controls": [
+        {
+          "labelHtml": "N₂/N₁",
+          "inputId": "turnsRatio",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0.2",
+          "inputMax": "4",
+          "inputStep": "0.1",
+          "inputValue": "1"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "—",
+          "id": "typeStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "trailingId": null,
+      "sectionGroup": 6,
+      "sectionId": "transformer-type-widget",
+      "sectionNavLabel": "🕹️ Step-up or step-down?",
+      "labels": {
+        "statusStepUpSuffix": " → step-up transformer (V rises, I drops in the secondary coil)",
+        "statusStepDownSuffix": " → step-down transformer (V drops, I rises in the secondary coil)",
+        "statusEqual": "N2/N1 = 1 → equal number of turns (no step-up or step-down)"
+      }
+    },
+    {
+      "type": "definition",
+      "label": "📌 4-9-2 Transformer Laws",
+      "html": "The ratio between the number of turns of the secondary coil and the number of turns of the primary coil is known as the turns ratio, denoted \\(N_2/N_1\\). If \\(N_2/N_1&gt;1\\) then the transformer is a step-up transformer, and if \\(N_2/N_1&lt;1\\) then the transformer is a step-down transformer. Likewise:",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\dfrac{N_2}{N_1} = \\dfrac{V_2}{V_1} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where \\(V_2\\) represents the voltage of the secondary coil, and \\(V_1\\) the voltage of the primary coil.</p>",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ P_1 = V_1 I_1 $$\n      <p style=\"margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)\">Power of the primary coil</p>\n      $$ P_2 = V_2 I_2 $$\n      <p style=\"margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)\">Power of the secondary coil</p>\n<p style=\"margin:.6rem 0 0;font-size:.95rem\">When the transformer is ideal, meaning its efficiency is 100%, then:</p>\n      $$ P_1 = P_2 \\quad\\Rightarrow\\quad V_1 I_1 = V_2 I_2 \\quad\\Rightarrow\\quad \\dfrac{V_2}{V_1} = \\dfrac{I_1}{I_2} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">This ratio applies only when the transformer is ideal.</p>",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .5rem;font-weight:700\">Transformer efficiency = (power of the secondary coil ÷ power of the primary coil) × 100%</p>\n      $$ \\eta = \\dfrac{P_2}{P_1} \\times 100\\% $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where (η) represents the efficiency of the transformer.</p>",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "list",
+      "heading": "📋 The Efficiency of a Transformer Does Not Reach 100% for the Following Reasons",
+      "items": [
+        "Part of the electrical energy is lost as heat in the wires of the two coils.",
+        "Part of the electrical energy is lost as heat generated in the transformer's core due to eddy currents.",
+        "Part of the electrical energy is lost as hysteresis in the iron core material."
+      ],
+      "ordered": true,
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "📝",
+      "strong": "Note:",
+      "html": "High-power transformers are immersed in a special kind of oil, because the oil acts as a radiator for the heat generated in the transformer's coils and works to cool it, thereby preserving its integrity.",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>A transformer has a turns ratio of \\(\\left(\\dfrac{12}{1}\\right)\\) and an efficiency of 96%. If the current in the secondary coil is \\((4\\ \\text{A})\\) and the voltage of the secondary coil is \\((4800\\ \\text{V})\\), find: 1- The power of the primary coil. 2- The current of the primary coil.</p>",
+      "label": "📝 Example (7)",
+      "solution": {
+        "given": [
+          "\\( N_2/N_1 = 12/1 \\) — turns ratio",
+          "\\( \\eta = 96\\% \\) — transformer efficiency",
+          "\\( I_2 = 4\\ \\text{A} \\) — current of the secondary coil",
+          "\\( V_2 = 4800\\ \\text{Volt} \\) — voltage of the secondary coil"
+        ],
+        "required": "1- \\(P_1\\). 2- \\(I_1\\).",
+        "steps": [
+          {
+            "note": "1- First we find the power of the secondary coil, then apply the efficiency relation to find the power of the primary coil",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( P_2 = V_2 I_2 = 4800\\times4 = 19200\\ \\text{W} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( \\eta = \\dfrac{P_2}{P_1}\\times100\\% \\quad\\Rightarrow\\quad 96\\% = \\dfrac{19200}{P_1}\\times100\\% \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( P_1 = \\dfrac{19200}{96}\\times100 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( P_1 = 20000\\ \\text{W} \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- We apply the turns-ratio relation to find \\(V_1\\), then apply \\(P_1=V_1I_1\\) to find \\(I_1\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\dfrac{N_2}{N_1}=\\dfrac{V_2}{V_1} \\quad\\Rightarrow\\quad \\dfrac{12}{1}=\\dfrac{4800}{V_1} \\quad\\Rightarrow\\quad V_1=\\dfrac{4800}{12}=400\\ \\text{Volt} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( P_1 = V_1 I_1 \\quad\\Rightarrow\\quad 20000 = 400\\times I_1 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I_1 = \\dfrac{20000}{400} = 50\\ \\text{A} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ P_1 = 20000 W · I_1 = 50 A",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 13,
+      "sectionId": "example7",
+      "sectionNavLabel": "📝 Example 7"
+    },
+    {
+      "type": "callout",
+      "icon": "🤔",
+      "strong": "Think:",
+      "html": "What other measures can reduce power losses in transformers?",
+      "sectionGroup": 14,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 4-9-3 Electrical Power Transmission",
+      "html": "If electrical power is sent over long distances, there will be a loss in the form of heat due to the resistance of the transmission wires, since (heat ∝ the square of the current × resistance, according to Joule's law). To reduce this lost power, electrical energy is transmitted at high voltage and low current through transmission wires carried on tall towers, using step-up transformers at the power generating station and step-down transformers supplying the load.",
+      "sectionGroup": 15,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "The operation of the electrical transformer relies on the principle of:",
+        "options": [
+          "Self-induction",
+          "Eddy currents",
+          "Mutual induction between two adjacent coils",
+          "The Lorentz force"
+        ],
+        "explain": "The operation of the electrical transformer relies on the principle of mutual induction between two adjacent coils with complete magnetic coupling between them."
+      },
+      {
+        "correct": 1,
+        "question": "If \\(N_2/N_1&gt;1\\), then the transformer is:",
+        "options": [
+          "Step-down",
+          "Step-up",
+          "Always ideal",
+          "Useless"
+        ],
+        "explain": "If \\(N_2/N_1&gt;1\\) (the secondary coil has more turns), then the transformer steps up the voltage."
+      },
+      {
+        "correct": 0,
+        "question": "The electrical transformer contains no automatic switch, therefore it is:",
+        "options": [
+          "An AC device only",
+          "A DC device only",
+          "Works equally well with both currents",
+          "Does not work with any type of current"
+        ],
+        "explain": "The transformer contains no automatic switch, so it is considered an AC device only."
+      },
+      {
+        "correct": 3,
+        "question": "The total losses of a transformer do not include:",
+        "options": [
+          "Heat in the wires of the two coils",
+          "Heat due to eddy currents in the core",
+          "Hysteresis losses in the iron core material",
+          "Losses resulting from connecting the transformer to a DC source"
+        ],
+        "explain": "The three main transformer losses are: heat in the coil wires, heat from eddy currents in the core, and hysteresis losses in the core material — and a transformer is never connected to a DC source in the first place."
+      },
+      {
+        "correct": 1,
+        "question": "To reduce the power lost when transmitting electrical energy over long distances, the power is sent as:",
+        "options": [
+          "Low voltage and high current",
+          "High voltage and low current",
+          "Both high voltage and high current",
+          "Both low voltage and low current"
+        ],
+        "explain": "Electrical energy is transmitted at high voltage and low current to reduce power lost as heat (per Joule's law: heat ∝ the square of the current), using step-up transformers at generation and step-down transformers at the load."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "The transformer works on the principle of mutual induction between two coils on a closed iron core; it is an AC device only.",
+      "Step-up when \\(N_2/N_1&gt;1\\), and step-down when \\(N_2/N_1&lt;1\\); \\(N_2/N_1=V_2/V_1\\).",
+      "For an ideal transformer: \\(V_2/V_1=I_1/I_2\\); efficiency \\(\\eta=(P_2/P_1)\\times100\\%\\), which never reaches 100% due to heat, eddy-current, and hysteresis losses.",
+      "Power transmission uses high voltage and low current to reduce heat loss, with step-up transformers at generation and step-down transformers at the load."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of the electrical transformer",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Transformer"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Step-up/down",
+          "N2/N1"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "η=P2/P1",
+          "×100%"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Power transmission",
+          "High V, low I"
+        ]
+      }
+    ]
+  }
+}
