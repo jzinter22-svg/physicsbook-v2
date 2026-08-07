@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-base="../" data-assets="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEMPORARY DIAGNOSTIC — safe to delete</title>
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;margin:0;padding:1rem;background:#12141c;color:#e8e8f0;line-height:1.5}
+  h1{font-size:1.1rem;background:#c0392b;color:#fff;padding:.8rem;margin:-1rem -1rem 1rem;text-align:center}
+  h2{font-size:1rem;color:#7c6fee;border-bottom:1px solid #333;padding-bottom:.3rem;margin-top:2rem}
+  .row{display:flex;justify-content:space-between;gap:1rem;padding:.4rem 0;border-bottom:1px solid #2a2a3a;font-size:.92rem}
+  .row .k{color:#9aa1ac;flex:0 0 55%}
+  .row .v{font-weight:700;text-align:end;word-break:break-word}
+  .ok{color:#2fd18f}
+  .bad{color:#ff6b6b}
+  .warn{color:#ffab5e}
+  pre{background:#1a1c26;padding:.6rem;border-radius:6px;font-size:.78rem;white-space:pre-wrap;word-break:break-word;color:#c8c8d8}
+  #verdict{margin-top:2rem;padding:1rem;border-radius:8px;background:#1a1c26;font-size:1rem;font-weight:700;text-align:center}
+</style>
+</head>
+<body data-page="lessons/lesson-1.html">
+<h1>⚠️ TEMPORARY DIAGNOSTIC PAGE — DELETE AFTER USE</h1>
+
+<h2>A. Independent fetch — content/ar/chapter-1/lesson-1.json?v=8433b18</h2>
+<div id="fetchA"></div>
+
+<h2>A2. Independent fetch — content/ar/chapter-1/lesson-8.json?v=8433b18 (has Q1/Q2)</h2>
+<div id="fetchA2"></div>
+
+<h2>B. Real lesson-engine.js render, in isolation</h2>
+<div id="renderB"></div>
+
+<div id="verdict">Running tests…</div>
+
+<!-- Minimal mount points lesson-engine.js's renderLesson() writes into —
+     copied selector-for-selector from a real lesson page. This section is
+     otherwise empty; it exists only so the real, unmodified engine has
+     somewhere to render into for test B. -->
+<nav class="breadcrumb"><ol><li><a href="#">x</a></li><li><a href="#">x</a></li><li>x</li></ol></nav>
+<section class="hero"><span class="eyebrow"></span><h1></h1><p class="lead"></p></section>
+<section id="objectives"><div class="card"><h2></h2><ol class="obj-list"></ol></div></section>
+<div id="lessonContentBlocks"></div>
+<div data-quiz><h2></h2><button data-quiz-check></button><div class="quiz-score"></div></div>
+<section id="summary"><div class="card"><h2></h2><ul class="summary-list"></ul></div></section>
+<section id="mindmap"><h2></h2><div class="mindmap-wrap"></div></section>
+<footer class="site-footer"></footer>
+
+<script src="../assets/js/i18n.js?v=8433b18"></script>
+<script src="../assets/js/lesson-engine.js?v=8433b18"></script>
+<script>
+(function(){
+  var caughtErrors = [];
+  window.addEventListener("error", function(e){ caughtErrors.push(String(e.message || e.error)); });
+  window.addEventListener("unhandledrejection", function(e){ caughtErrors.push("unhandledrejection: " + String(e.reason)); });
+
+  function row(container, k, v, cls){
+    var d = document.createElement("div");
+    d.className = "row";
+    d.innerHTML = '<span class="k">' + k + '</span><span class="v ' + (cls||"") + '">' + v + "</span>";
+    container.appendChild(d);
+  }
+
+  function countBlocksForSection(content, matchWords){
+    var groupNum = null;
+    for(var i=0;i<content.length;i++){
+      var b = content[i];
+      if(b.type === "sectionIntro" && b.heading){
+        var h = b.heading.toLowerCase();
+        if(matchWords.some(function(w){ return h.indexOf(w) !== -1; })){ groupNum = b.sectionGroup; break; }
+      }
+    }
+    if(groupNum === null) return 0;
+    return content.filter(function(b){ return b.sectionGroup === groupNum && b.type === "example"; }).length;
+  }
+
+  function runFetchTest(url, containerId){
+    var el = document.getElementById(containerId);
+    var t0 = performance.now();
+    fetch(url, { cache: "no-store" }).then(function(r){
+      row(el, "HTTP status", r.status + " " + r.statusText, r.ok ? "ok" : "bad");
+      row(el, "Fetch succeeded (ok)", r.ok, r.ok ? "ok" : "bad");
+      row(el, "Response URL (after redirects)", r.url);
+      row(el, "Content-Type header", r.headers.get("content-type") || "(none)");
+      row(el, "Cache-Control header", r.headers.get("cache-control") || "(none)");
+      row(el, "Age header", r.headers.get("age") || "(none)");
+      if(!r.ok) throw new Error("non-OK response");
+      return r.text().then(function(txt){
+        row(el, "Response body length (chars)", txt.length);
+        var data;
+        try { data = JSON.parse(txt); }
+        catch(e){ row(el, "JSON.parse", "FAILED: " + e.message, "bad"); throw e; }
+        row(el, "JSON.parse", "succeeded", "ok");
+        row(el, "Total content blocks", data.content ? data.content.length : "(no content array)");
+        var exCount = (data.content||[]).filter(function(b){ return b.type === "example"; }).length;
+        row(el, "Example blocks", exCount, exCount > 0 ? "ok" : "warn");
+        var q1 = countBlocksForSection(data.content||[], ["q1", "س1"]);
+        var q2 = countBlocksForSection(data.content||[], ["q2", "س2"]);
+        row(el, "Q1-section example blocks", q1);
+        row(el, "Q2-section example blocks", q2);
+        var firstEx = (data.content||[]).filter(function(b){ return b.type === "example"; })[0];
+        var snippet = firstEx && firstEx.problemHtml ? firstEx.problemHtml.slice(0,200) : "(no example found)";
+        var pre = document.createElement("pre");
+        pre.textContent = "First example problemHtml (200 chars):\n" + snippet;
+        el.appendChild(pre);
+        return { ok: true, exCount: exCount, q1: q1, q2: q2, ms: performance.now()-t0 };
+      });
+    }).catch(function(err){
+      row(el, "ERROR", String(err), "bad");
+    });
+  }
+
+  runFetchTest("../content/ar/chapter-1/lesson-1.json?v=8433b18", "fetchA");
+  runFetchTest("../content/ar/chapter-1/lesson-8.json?v=8433b18", "fetchA2");
+
+  // ---- Test B: let the real, unmodified lesson-engine.js run its normal
+  // auto-init against this page's own mount points (data-page above makes
+  // getContext() treat this as chapter-1 lesson-1, since the URL path also
+  // contains "chapter-1"). No engine code is touched — this only observes
+  // what the engine itself already does.
+  setTimeout(function(){
+    var el = document.getElementById("renderB");
+    row(el, "window.PBLessonEngine defined", typeof window.PBLessonEngine !== "undefined", typeof window.PBLessonEngine !== "undefined" ? "ok" : "bad");
+    row(el, "window.PBI18n defined", typeof window.PBI18n !== "undefined", typeof window.PBI18n !== "undefined" ? "ok" : "bad");
+    row(el, "Current language (PBI18n.getLanguage)", window.PBI18n ? window.PBI18n.getLanguage() : "(PBI18n missing)");
+    var exampleEls = document.querySelectorAll("#lessonContentBlocks .example");
+    row(el, "Rendered .example elements in DOM", exampleEls.length, exampleEls.length > 0 ? "ok" : "bad");
+    var heroTitle = document.querySelector(".hero h1");
+    row(el, "Hero title text (proves render ran at all)", heroTitle ? (heroTitle.textContent || "(empty)") : "(no h1 found)");
+    var mountLen = (document.getElementById("lessonContentBlocks")||{}).innerHTML.length || 0;
+    row(el, "#lessonContentBlocks innerHTML length", mountLen, mountLen > 0 ? "ok" : "bad");
+    row(el, "Caught JS errors during render", caughtErrors.length ? caughtErrors.join(" | ") : "(none)", caughtErrors.length ? "bad" : "ok");
+
+    var verdict = document.getElementById("verdict");
+    var fetchOk = document.querySelectorAll("#fetchA .bad").length === 0;
+    var renderOk = exampleEls.length > 0 && mountLen > 0;
+    var text;
+    if(!fetchOk){
+      text = "VERDICT: (A) The live browser could NOT retrieve/parse the JSON correctly. See red rows in section A above.";
+    } else if(fetchOk && !renderOk){
+      text = "VERDICT: (B) JSON fetched fine, but the real lesson-engine.js did NOT render any example cards into the DOM here. See section B and any caught errors.";
+    } else {
+      text = "VERDICT: (C) JSON fetch AND rendering both work correctly in this isolated test. If the real lesson page still shows missing cards, the problem is specific to that page's own state/markup, not the fetch or the engine itself.";
+    }
+    verdict.textContent = text;
+  }, 2500);
+})();
+</script>
+</body>
+</html>
