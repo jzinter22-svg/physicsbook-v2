@@ -1,0 +1,483 @@
+{
+  "lessonNumber": 7,
+  "chapterNumber": 5,
+  "meta": {
+    "pageTitle": "Lesson 7: Chapter Five Questions — Chapter Five",
+    "description": "5-7 Chapter Five questions: all eleven questions solved in detail — the transistor, N- and P-type semiconductors, energy bands, electromagnetic waves, and radar.",
+    "breadcrumbChapter": "Chapter 5",
+    "breadcrumbLesson": "Chapter Five Questions",
+    "footer": "Chapter Five: Semiconductor Materials and Electronic Devices — Lesson 7: Chapter Five Questions"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 7 of 7 · 5-7",
+    "title": "Chapter Five Questions",
+    "lead": "All the end-of-chapter questions for Chapter Five, solved in detail, covering energy bands, N- and P-type semiconductors, the PN diode, the transistor, electromagnetic waves, and radar."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Reviews the key concepts of Chapter Five by solving all eleven of its questions.",
+    "Applies the concepts of energy bands, semiconductors, the transistor, and radar to answer theoretical and multiple-choice questions."
+  ],
+  "content": [
+    {
+      "type": "sectionIntro",
+      "heading": "📖 Chapter Five Questions",
+      "leadHtml": null,
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>What is meant by the transistor?</p>",
+      "label": "Q1",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The transistor is an active electronic element made of semiconductor materials such as germanium and silicon, with three terminals as in the triode vacuum tube, but without a heating circuit. It is used as an electronic switch or as an amplifier to amplify small signals.",
+            "calc": []
+          }
+        ],
+        "final": "✓ An electronic element made of semiconductor materials, with three terminals and no heating circuit, used as an electronic switch or amplifier",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>What advantages does the transistor have over the electronic vacuum tube?</p>",
+      "label": "Q2",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Its small size (a single transistor does not exceed the size of a chickpea, and millions of them fit on a single square-centimeter chip in integrated circuits).",
+            "calc": []
+          },
+          {
+            "note": "It operates on a very low electrical voltage and consumes very little power (measured in milliwatts or even nanowatts).",
+            "calc": []
+          },
+          {
+            "note": "Being solid-state with no moving parts, it is not affected by mechanical shocks and vibrations the way an electronic vacuum tube is.",
+            "calc": []
+          },
+          {
+            "note": "It has a long operational lifetime (tens of years) and can operate over a wide range of temperatures.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Small size, low power consumption and low operating voltage, shock resistance (no moving parts), and long operational lifetime",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 3,
+      "problemHtml": "<p>How is an N-type semiconductor obtained, and how is a P-type semiconductor obtained?</p>",
+      "label": "Q3",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "N-type semiconductor: obtained by adding a pentavalent (donor) impurity such as arsenic, phosphorus, or antimony (Sb) to a pure silicon crystal, leaving a fifth, freely-moving electron that becomes the majority carrier of negative charge.",
+            "calc": []
+          },
+          {
+            "note": "P-type semiconductor: obtained by adding a trivalent (acceptor) impurity such as boron, indium, or aluminum to a pure silicon crystal, generating a hole that becomes the majority carrier of positive charge.",
+            "calc": []
+          }
+        ],
+        "final": "✓ N-type: by adding a pentavalent (donor) impurity. P-type: by adding a trivalent (acceptor) impurity",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 4,
+      "problemHtml": "<p>Define the donor and acceptor materials, giving examples.</p>",
+      "label": "Q4",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Donor atom: a pentavalent impurity that becomes a positive ion tightly bound within the crystal lattice, playing no role in electrical conduction; examples include arsenic, phosphorus, and antimony (Sb).",
+            "calc": []
+          },
+          {
+            "note": "Acceptor atom: a trivalent impurity that becomes a negative ion tightly bound within the crystal lattice, playing no role in electrical conduction; examples include boron (B), indium, and aluminum.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Donors (Sb, P, As) release a free electron and become positive ions; acceptors (B, In, Al) generate a hole and become negative ions",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 5,
+      "problemHtml": "<p>Explain the effect of rising temperature on electrical conductivity in each of the following materials:</p><ul>\n<li>a- Conductors.</li>\n<li>b- Pure semiconductors.</li>\n</ul>",
+      "label": "Q5",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "a- Conducting materials: their electrical conductivity decreases as temperature rises, because electrical resistance increases due to greater vibrational energy of the atoms, which impedes the movement of free electrons.",
+            "calc": []
+          },
+          {
+            "note": "b- Pure semiconductor materials: the thermal effect increases electrical conductivity, because the additional thermal energy helps more electrons cross the forbidden gap from the valence band to the conduction band.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Conductors: conductivity decreases as temperature rises. Pure semiconductors: conductivity increases as temperature rises",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 6,
+      "problemHtml": "<p>Choose the correct statement: in a pure silicon crystal, at ordinary temperatures, the following holds:</p><ul>\n<li>a- The number of free electrons is greater than the number of holes.</li>\n<li>b- The number of free electrons is smaller than the number of holes.</li>\n<li>c- The number of free electrons equals the number of holes.</li>\n<li>d- None of the above.</li>\n</ul>",
+      "label": "Q6 (1)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "In a pure (undoped) crystal, every electron that moves by thermal effect from the valence band to the conduction band leaves behind exactly one hole, so the number of free electrons equals the number of holes.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: c — Equal",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 7,
+      "problemHtml": "<p>Choose the correct statement: the charge carriers in a semiconductor are:</p><ul>\n<li>a- Free electrons and holes.</li>\n<li>b- Holes only.</li>\n<li>c- Free electrons only.</li>\n<li>d- Positive and negative ions together.</li>\n</ul>",
+      "label": "Q6 (2)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "In a semiconductor, charge is carried by both free electrons and holes together; in N-type, electrons are the majority carriers and holes the minority, and in P-type the reverse. The ions (donor and acceptor) remain fixed in the crystal lattice and play no role in conduction.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Free electrons and holes",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 8,
+      "problemHtml": "<p>List the types of energy bands, and describe the characteristics and properties of the energy bands in conducting, semiconducting, and insulating materials.</p>",
+      "label": "Q7",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Types of energy bands: the valence band (lower energy levels), the conduction band (higher energy levels), and the forbidden gap separating them.",
+            "calc": []
+          },
+          {
+            "note": "Conductors: the valence and conduction bands overlap with no forbidden gap, giving high conductivity that decreases as temperature rises.",
+            "calc": []
+          },
+          {
+            "note": "Semiconductors: a full valence band and an empty conduction band, with a relatively narrow forbidden gap (~1 eV); at 0K and in the absence of light, they behave like an insulator.",
+            "calc": []
+          },
+          {
+            "note": "Insulators: the same arrangement as a semiconductor, but with a relatively wide forbidden gap (roughly 5-10 eV), so ordinary thermal energy is not enough to move electrons into the conduction band.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Three bands: valence, conduction, and forbidden gap — overlapping in a conductor, narrow in a semiconductor (~1eV), and wide in an insulator (5-10eV)",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 9,
+      "problemHtml": "<p>How are electromagnetic waves generated?</p>",
+      "label": "Q8",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Electromagnetic waves are generated from the oscillation of free electrons in a conductor, since the origin of these waves is oscillating electric charges; this oscillation produces a time-varying electric field and a time-varying magnetic field, which are coupled and perpendicular to each other along the line of propagation, and these waves propagate through the vacuum at the speed of light with no need for a material medium.",
+            "calc": []
+          }
+        ],
+        "final": "✓ They are generated from the oscillation of free electric charges, producing coupled, perpendicular electric and magnetic fields that propagate at the speed of light",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 10,
+      "problemHtml": "<p>Explain how radio waves propagate.</p>",
+      "label": "Q9",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Radio waves propagate in two ways: the ground wave, which travels close to the Earth's surface in straight lines, providing communication only over relatively short distances because of the Earth's curvature.",
+            "calc": []
+          },
+          {
+            "note": "The sky wave, which reflects off the ionosphere in the atmosphere to reach distant places not on a direct line of sight. Communication can also be achieved by following the curvature of the Earth's surface, raising the two antennas to provide a direct line of sight, or using intermediate broadcasting stations.",
+            "calc": []
+          }
+        ],
+        "final": "✓ In two ways: the ground wave (near the surface, short distances) and the sky wave (reflects off the ionosphere, long distances)",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 11,
+      "problemHtml": "<p>What does the word \"radar\" mean? And what is the basis of how radar works?</p>",
+      "label": "Q10",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The word \"radar\" is an abbreviation for \"Radio Detection and Ranging.\"",
+            "calc": []
+          },
+          {
+            "note": "The working principle of radar relies on the phenomenon of electromagnetic oscillation and obtaining the electromagnetic echo: it sends radio waves toward the target and receives their reflection, and the time this takes indicates the target's range, distance, direction, and altitude.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Radar = Radio Detection and Ranging, and it relies on electromagnetic oscillation and its echo",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 12,
+      "problemHtml": "<p>List three uses of radar.</p>",
+      "label": "Q11",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1- Air navigation: guiding the flow of arriving and departing aircraft near airports and ensuring the safety of their landing and takeoff.",
+            "calc": []
+          },
+          {
+            "note": "2- Marine navigation: locating other ships, rocks, and icebergs to avoid collisions, and searching for missing ships.",
+            "calc": []
+          },
+          {
+            "note": "3- Military applications: air defense, missile defense, surveillance, reconnaissance, and range measurement.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Examples include: air navigation, marine navigation, and military applications (in addition to space surveillance, mapmaking, vehicle speed control, and discovering mineral wealth and fish)",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Final Review of Chapter Five",
+    "questions": [
+      {
+        "correct": 0,
+        "question": "The forbidden gap completely vanishes in:",
+        "options": [
+          "Conducting materials",
+          "Semiconducting materials",
+          "Insulating materials",
+          "All of the above"
+        ],
+        "explain": "In a conductor, the valence and conduction bands overlap, so the forbidden gap between them vanishes."
+      },
+      {
+        "correct": 1,
+        "question": "The majority charge carriers in an N-type semiconductor are:",
+        "options": [
+          "Holes",
+          "Free electrons",
+          "Positive ions",
+          "Protons"
+        ],
+        "explain": "In an N-type semiconductor, free electrons (produced by the donor impurities) are the majority charge carriers."
+      },
+      {
+        "correct": 2,
+        "question": "The bias that makes the PN diode's resistance small and lets a large current flow is:",
+        "options": [
+          "Reverse bias",
+          "Neutral bias",
+          "Forward bias",
+          "Dual bias"
+        ],
+        "explain": "Forward bias (P at the positive terminal, N at the negative) shrinks the diode's resistance and allows a large forward current to flow."
+      },
+      {
+        "correct": 1,
+        "question": "The conditions for the transistor to operate: the base-emitter junction is forward biased, and the collector-base junction is:",
+        "options": [
+          "Also forward biased",
+          "Reverse biased",
+          "Unbiased",
+          "Oscillating"
+        ],
+        "explain": "The collector-base junction must be reverse biased to ensure the transistor operates correctly."
+      },
+      {
+        "correct": 3,
+        "question": "The wave that travels close to the Earth's surface in straight lines and covers relatively short distances is called:",
+        "options": [
+          "The sky wave",
+          "The microwave",
+          "Gamma rays",
+          "The ground wave"
+        ],
+        "explain": "The ground wave travels close to the Earth's surface in nearly straight lines, covering relatively short distances because of the Earth's curvature."
+      },
+      {
+        "correct": 0,
+        "question": "The radar used to track ground targets from the air is called:",
+        "options": [
+          "Targeting radar",
+          "Simple radar",
+          "Secondary radar",
+          "Phased-array radar"
+        ],
+        "explain": "Targeting radar is used to track ground targets from the air."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Chapter Five Summary",
+    "items": [
+      "Energy bands: the valence band, the conduction band, and the forbidden gap between them — overlapping in a conductor, narrow (~1eV) in a semiconductor, and wide (5-10eV) in an insulator.",
+      "Doping: a pentavalent (donor) impurity produces an N-type semiconductor (free electrons as the majority carrier); a trivalent (acceptor) impurity produces a P-type semiconductor (holes as the majority carrier).",
+      "The PN diode: a junction between N and P regions, surrounded by a depletion region and a potential barrier (0.7V for silicon, 0.3V for germanium), passing current in one direction under forward bias.",
+      "The transistor: a three-terminal (E, B, C) semiconductor element in NPN and PNP types, satisfying \\(I_E=I_B+I_C\\), operating as a switch or amplifier under specific bias conditions.",
+      "Electromagnetic waves propagate at the speed of light with no material medium; radio waves propagate as a ground wave (short distances) or a sky wave (by reflecting off the ionosphere).",
+      "Radar (Radio Detection and Ranging) detects targets by sending waves and receiving their echo, with nine components and five main types, and wide-ranging applications in navigation, defense, and science."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Chapter Five Mind Map",
+    "ariaLabel": "Comprehensive mind map for Chapter Five",
+    "viewBox": "0 0 900 540",
+    "center": {
+      "cx": 450.0,
+      "cy": 270.0,
+      "r": 72.0,
+      "lines": [
+        "Semiconductor",
+        "Materials and",
+        "Electronic Devices"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 450.0,
+        "cy": 75.0,
+        "r": 60.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Energy Bands",
+          "5-1"
+        ]
+      },
+      {
+        "cx": 619.0,
+        "cy": 173.0,
+        "r": 60.0,
+        "color": "#ffab5e",
+        "lines": [
+          "N- and P-type",
+          "5-2"
+        ]
+      },
+      {
+        "cx": 619.0,
+        "cy": 367.0,
+        "r": 60.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "The PN Diode",
+          "5-3"
+        ]
+      },
+      {
+        "cx": 450.0,
+        "cy": 465.0,
+        "r": 60.0,
+        "color": "#2fd18f",
+        "lines": [
+          "The Transistor",
+          "5-4"
+        ]
+      },
+      {
+        "cx": 281.0,
+        "cy": 367.0,
+        "r": 60.0,
+        "color": "#7c6fee",
+        "lines": [
+          "EM",
+          "Broadcasting",
+          "5-5"
+        ]
+      },
+      {
+        "cx": 281.0,
+        "cy": 173.0,
+        "r": 60.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Radar",
+          "5-6"
+        ]
+      }
+    ]
+  }
+}
