@@ -1,0 +1,293 @@
+{
+  "lessonNumber": 3,
+  "chapterNumber": 8,
+  "meta": {
+    "pageTitle": "Lesson 3: Methods and Equipment Used in Purifying Metals — Chapter Eight",
+    "description": "8-3 Methods and equipment used in purifying metals: concentrating ores, extracting aluminum from bauxite, froth flotation for concentrating copper ore, and the metal extraction and recycling cycle.",
+    "breadcrumbChapter": "Chapter 8",
+    "breadcrumbLesson": "Methods and Equipment Used in Purifying Metals",
+    "footer": "Chapter Eight: Metals and Alloys — Lesson 3: Methods and Equipment Used in Purifying Metals"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 3 of 9 · 8-3",
+    "title": "Methods and Equipment Used in Purifying Metals",
+    "lead": "Many of the ores remaining in nature are low grade; so how are they concentrated and purified to make extraction from them economically viable? In this lesson, learn about purifying aluminum and copper ore, and about a metal's complete life cycle from ore to recycling."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Explain the need to concentrate an ore before the extraction process.",
+    "Describe the stages of extracting aluminum from bauxite ore.",
+    "Describe the froth flotation method for concentrating copper ore.",
+    "Diagram the metal extraction and recycling cycle from ore to final product."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 8-3 Methods and Equipment Used in Purifying Metals",
+      "html": "Given the limited resources of some ores, and since many of the remaining ores are low grade, it is often necessary to concentrate the ore so that extracting the metal from it becomes economically viable and yields a purer metal. See Table (8-6).",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "table",
+      "heading": "📊 Table 8-6: Resources of Some Metals",
+      "headers": [
+        "Metal",
+        "Estimated years remaining at the current mining rate",
+        "% metal in the ore"
+      ],
+      "rows": [
+        [
+          "Aluminum",
+          "225",
+          "28"
+        ],
+        [
+          "Copper",
+          "45",
+          "0.5"
+        ],
+        [
+          "Gold",
+          "25",
+          "90"
+        ],
+        [
+          "Iron",
+          "195",
+          "60 - 30"
+        ],
+        [
+          "Zinc",
+          "27",
+          "30 - 10"
+        ]
+      ],
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "Bauxite is the main ore for extracting aluminum, but it must be purified first before aluminum is extracted by electrolysis; bauxite ore is purified after mining by dissolving it in sodium hydroxide, as shown in Figure (8-8).",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 8-8: methods of extracting aluminum from its ore\" role=\"img\" viewbox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\" font-size=\"9.5\" font-weight=\"700\">\n<rect fill=\"#f0954a\" height=\"42\" opacity=\".85\" rx=\"8\" width=\"150\" x=\"10\" y=\"15\"></rect>\n<text fill=\"#fff\" text-anchor=\"middle\" x=\"85\" y=\"32\">Impure bauxite ore is crushed</text>\n<text fill=\"#fff\" text-anchor=\"middle\" x=\"85\" y=\"46\">and mixed with sodium hydroxide solution</text>\n<polygon fill=\"var(--accent-orange)\" points=\"160,36 178,29 178,43\"></polygon>\n<rect fill=\"#3fa9f5\" height=\"42\" opacity=\".85\" rx=\"8\" width=\"150\" x=\"185\" y=\"15\"></rect>\n<text fill=\"#fff\" text-anchor=\"middle\" x=\"260\" y=\"32\">The mixture is filtered to remove</text>\n<text fill=\"#fff\" text-anchor=\"middle\" x=\"260\" y=\"46\">undissolved iron(III) oxide</text>\n<polygon fill=\"var(--accent-blue)\" points=\"260,60 253,78 267,78\"></polygon>\n<rect fill=\"#2fd18f\" height=\"42\" opacity=\".85\" rx=\"8\" width=\"150\" x=\"185\" y=\"90\"></rect>\n<text fill=\"#fff\" text-anchor=\"middle\" x=\"260\" y=\"107\">Water is added to the clear solution,</text>\n<text fill=\"#fff\" text-anchor=\"middle\" x=\"260\" y=\"121\">precipitating aluminum hydroxide</text>\n<polygon fill=\"var(--accent-green)\" points=\"182,111 164,104 164,118\"></polygon>\n<rect fill=\"#7c6fee\" height=\"42\" opacity=\".85\" rx=\"8\" width=\"150\" x=\"10\" y=\"90\"></rect>\n<text fill=\"#fff\" text-anchor=\"middle\" x=\"85\" y=\"107\">Aluminum hydroxide is heated</text>\n<text fill=\"#fff\" text-anchor=\"middle\" x=\"85\" y=\"121\">to obtain pure white alumina</text>\n<polygon fill=\"var(--accent-purple)\" points=\"85,140 78,158 92,158\"></polygon>\n<rect fill=\"#ff6b9d\" height=\"42\" opacity=\".85\" rx=\"8\" width=\"150\" x=\"10\" y=\"165\"></rect>\n<text fill=\"#fff\" text-anchor=\"middle\" x=\"85\" y=\"182\">Alumina undergoes electrolysis</text>\n<text fill=\"#fff\" text-anchor=\"middle\" x=\"85\" y=\"196\">to obtain pure aluminum</text>\n</g>\n</svg>",
+      "caption": "Figure 8-8: methods of extracting aluminum from its ore — from impure bauxite to pure aluminum",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The impurities do not dissolve, and are instead filtered out and discarded. The dissolved aluminum oxide is then precipitated as aluminum hydroxide by dilution with water, which is then heated to form pure white aluminum oxide (alumina), from which aluminum is then extracted by electrolysis.</p><p>Most copper ores are low grade, containing only a small proportion of the desired metal. One method of concentrating copper ores is called froth flotation, which involves crushing the low-grade ore and mixing the powder with oils and water. Since copper ore is lighter than the impurities, it clings to the froth that forms on the surface, where it can be skimmed off. The heavier impurities sink to the bottom, where they are discarded as waste material. However, this process consumes huge amounts of water that must then be disposed of; 500 tons of water are used to produce a single ton of pure copper.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "Did you know?",
+      "html": "A blast furnace runs 24 hours a day, 365 days a year, and can produce 10,000 tons of iron per day. Its lining must be renewed every three years, which is the only time the furnace is shut down.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "cycleSvg",
+      "svgAriaLabel": "Simulation of the metal extraction and recycling cycle",
+      "svgViewBox": "0 0 420 420",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: the Metal Extraction and Recycling Cycle",
+      "descriptionHtml": "Press \"Start the Cycle\" to follow the metal's path from ore to final product, or click any stage directly to see its details.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnCycle",
+          "html": "▶️ Start the Cycle",
+          "class": "neu-btn primary",
+          "data": null,
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "(1/9) Ore from the Earth — the cycle begins by extracting ore containing metal compounds from the ground.",
+          "id": "cycleCaption",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": "",
+      "labels": {
+        "centerLabel1": "Metal cycle",
+        "centerLabel2": "(recycling)",
+        "stage0_l1": "Ore from",
+        "stage0_l2": "the Earth",
+        "stage0_text": "The cycle begins by extracting ore containing metal compounds from the ground.",
+        "stage1_l1": "Mining",
+        "stage1_text": "The ore is mined, i.e. extracted from its natural deposits through mining operations.",
+        "stage2_l1": "Ore",
+        "stage2_l2": "concentration",
+        "stage2_text": "The ore is concentrated to raise the proportion of metal in it and make its extraction economically viable.",
+        "stage3_l1": "Extraction by smelting",
+        "stage3_l2": "or electrolysis",
+        "stage3_text": "The metal is extracted from its concentrated ore by smelting (heating with a reducing agent) or by electrolysis, depending on its position in the activity series.",
+        "stage4_l1": "Impure",
+        "stage4_l2": "metal",
+        "stage4_text": "Extraction yields an impure metal that needs an additional purification step.",
+        "stage5_l1": "Purification",
+        "stage5_text": "The impure metal is purified to remove the remaining impurities in it.",
+        "stage6_l1": "Pure",
+        "stage6_l2": "metal",
+        "stage6_text": "A pure metal is produced, ready for use in various industries.",
+        "stage7_l1": "Manufacturing",
+        "stage7_l2": "of products",
+        "stage7_text": "The pure metal is used in manufacturing a variety of products.",
+        "stage8_l1": "Scrap",
+        "stage8_l2": "metal",
+        "stage8_text": "After a product's lifespan ends, the metal becomes scrap metal that can be recycled again, saving energy and natural resources."
+      },
+      "sectionGroup": 6,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "Bauxite ore is purified after mining by dissolving it in:",
+        "options": [
+          "distilled water",
+          "sulfuric acid",
+          "sodium hydroxide",
+          "alcohol"
+        ],
+        "explain": "Bauxite ore is purified after mining by dissolving it in sodium hydroxide."
+      },
+      {
+        "correct": 1,
+        "question": "The final product of heating aluminum hydroxide is:",
+        "options": [
+          "pure water",
+          "alumina (pure white aluminum oxide)",
+          "table salt",
+          "pure iron"
+        ],
+        "explain": "Aluminum hydroxide is heated to form pure white aluminum oxide (alumina), from which aluminum is extracted by electrolysis."
+      },
+      {
+        "correct": 0,
+        "question": "In froth flotation, copper ore clings to the froth on the surface because it is:",
+        "options": [
+          "lighter than the impurities",
+          "heavier than the impurities",
+          "magnetic",
+          "soluble in oil"
+        ],
+        "explain": "Since copper ore is lighter than the impurities, it clings to the froth that forms on the surface where it can be skimmed off, while the heavier impurities sink to the bottom."
+      },
+      {
+        "correct": 3,
+        "question": "Froth flotation consumes, per ton of pure copper produced:",
+        "options": [
+          "one ton of water",
+          "50 tons of water",
+          "100 tons of water",
+          "500 tons of water"
+        ],
+        "explain": "Froth flotation consumes huge amounts of water; 500 tons of water are used to produce a single ton of pure copper."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "The limited supply of good ores requires concentrating the ore before extraction to make it economically viable and yield a purer metal.",
+      "Bauxite ore is purified by dissolving it in sodium hydroxide, then filtering out the impurities, precipitating aluminum hydroxide, and heating it to produce pure alumina, from which aluminum is extracted by electrolysis.",
+      "Low-grade copper ores are concentrated by froth flotation, which consumes huge amounts of water (500 tons of water per ton of pure copper).",
+      "The metal extraction cycle passes through stages: mining, ore concentration, extraction, purification, product manufacturing, then recycling the scrap metal — which saves energy and natural resources."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of purifying metals",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Purifying",
+        "Metals"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Ore concentration"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Purifying",
+          "bauxite"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Froth flotation"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Recycling"
+        ]
+      }
+    ]
+  }
+}

@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-2.html">
@@ -42,214 +43,16 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يرتّب الفلزات حسب سلسلة نشاطها الكيميائي.</span></li>
-        <li><span class="obj-num">2</span><span>يعرّف الخام، ويذكر أهم التفاعلات المستعملة في استخلاص الفلزات.</span></li>
-        <li><span class="obj-num">3</span><span>يعلّل الشرط الاقتصادي اللازم لجدوى عملية الاستخلاص.</span></li>
-        <li><span class="obj-num">4</span><span>يربط بين موقع الفلز في سلسلة النشاط وطريقة استخلاصه المناسبة.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 سلسلة النشاط للفلزات</h2>
-      <p>تعتمد استقرارية المركبات الفلزية على سلسلة النشاط للفلزات، حيث تترتب فيها الفلزات الأكثر نشاطًا عند القمة والأقل نشاطًا عند القاعدة. فتميل الفلزات النشيطة إلى تكوين أيونات موجبة بسهولة، وذلك بفقدها الإلكترونات. أما الفلزات غير النشيطة فتفضّل البقاء في صورة غير متحدة كصورة العنصر نفسه. لاحظ الشكل (7-8) الذي يبيّن سلسلة النشاط للفلزات.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="-14 -8 274 316" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 7-8 سلسلة النشاط للفلزات">
-          <g font-family="Cairo,sans-serif">
-            <defs>
-              <linearGradient id="activityGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#3fa9f5"/>
-                <stop offset="1" stop-color="#ff6b6b"/>
-              </linearGradient>
-            </defs>
-            <rect x="20" y="15" width="16" height="260" fill="url(#activityGrad)" rx="8"/>
-            <polygon points="28,275 18,290 38,290" fill="#ff6b6b"/>
-            <text x="28" y="10" text-anchor="middle" font-size="9" font-weight="700" fill="var(--text-secondary)">أيونات ثابتة</text>
-            <text x="28" y="298" text-anchor="middle" font-size="9" font-weight="700" fill="var(--text-secondary)">نقص في الفعالية</text>
-            <text x="52" y="24" font-size="10" font-weight="800" fill="var(--text-primary)">K</text>
-            <text x="52" y="40" font-size="10" font-weight="800" fill="var(--text-primary)">Na</text>
-            <text x="52" y="56" font-size="10" font-weight="800" fill="var(--text-primary)">Ca</text>
-            <text x="90" y="40" font-size="9" fill="var(--text-secondary)">ماء بارد</text>
-            <text x="52" y="80" font-size="10" font-weight="800" fill="var(--text-primary)">Mg</text>
-            <text x="52" y="96" font-size="10" font-weight="800" fill="var(--text-primary)">Al</text>
-            <text x="52" y="112" font-size="10" font-weight="800" fill="var(--text-primary)">Zn</text>
-            <text x="52" y="128" font-size="10" font-weight="800" fill="var(--text-primary)">Fe</text>
-            <text x="52" y="144" font-size="10" font-weight="800" fill="var(--text-primary)">Pb</text>
-            <text x="100" y="112" font-size="9" fill="var(--text-secondary)">بخار ماء</text>
-            <text x="52" y="168" font-size="10" font-weight="800" fill="var(--text-primary)">H</text>
-            <text x="52" y="190" font-size="10" font-weight="800" fill="var(--text-primary)">Cu</text>
-            <text x="52" y="206" font-size="10" font-weight="800" fill="var(--text-primary)">Hg</text>
-            <text x="52" y="222" font-size="10" font-weight="800" fill="var(--text-primary)">Ag</text>
-            <text x="52" y="238" font-size="10" font-weight="800" fill="var(--text-primary)">Pt</text>
-            <text x="100" y="150" font-size="9" fill="var(--text-secondary)">أحماض مخففة</text>
-            <text x="105" y="210" font-size="9" fill="var(--text-secondary)">أحماض مركزة</text>
-            <text x="52" y="256" font-size="9" font-weight="700" fill="var(--text-secondary)">ذرات مستقرة</text>
-          </g>
-        </svg>
-        <span class="diagram-caption">الشكل 7-8: سلسلة النشاط للفلزات — من الأكثر نشاطًا (K) عند القمة إلى الأقل نشاطًا (Pt) عند القاعدة</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — الخام</span>
-      <p style="margin:.3rem 0">الصخر الذي يحوي كمية كافية من مركبات الفلز تجعل استخلاصه منه مجديًا اقتصاديًا يُدعى خامًا.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>لقد سبق اكتشاف الفلزات الموجودة في أدنى سلسلة النشاط (الأقل نشاطًا) في الطبيعة، وكان استعمالها من قبل البشرية أسبق من استعمال الفلزات في أعلى السلسلة (الأكثر نشاطًا). فالفلزات الأقل نشاطًا مثل الذهب والفضة والنحاس تتواجد حرة في الطبيعة، وبالتالي تم اكتشافها مبكرًا. في حين أن معظم الفلزات الأخرى كالصوديوم Na والكالسيوم Ca والألمنيوم Al تتواجد متحدة مع عناصر أخرى على شكل مركبات في الصخور المكوّنة للقشرة الأرضية، مما أدى إلى تأخر اكتشافها.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — تفاعلات استخلاص الفلزات</span>
-      <p style="margin:.3rem 0">إن الصخر الذي يحوي كمية كافية من مركبات الفلز تجعل استخلاصه مجديًا اقتصاديًا يُدعى خامًا. وتُعدّ تفاعلات الاستبدال (الإحلال) والتفاعلات التأكسدية والاختزالية (فقدان واكتساب الأوكسجين) من الطرائق المهمة المستعملة في استخلاص بعض الفلزات من مركباتها؛ حيث يَطرُد الفلز الأكثر نشاطًا الفلز الأقل نشاطًا من مركباته، فينفصل هذا الفلز الأقل نشاطًا بهيئة عنصر حر.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
-      <span class="def-label" style="color:var(--accent-green)">🔍 تعليل — لماذا يُشترط أن يكون الفلز المستعمل في الاستخلاص أرخص من الفلز المراد استخلاصه؟</span>
-      <p style="margin:.3rem 0">لكي تكون عملية الاستخلاص مجدية اقتصاديًا، يُشترط أن يكون الفلز الأنشط رخيص الثمن (أي أرخص من الفلز المراد استخلاصه). فمثلًا، برغم أن الألمنيوم ينتزع الحديد من خاماته ليصبح فلزًا حرًا في تفاعل الثرميت، إلا أن الألمنيوم أغلى ثمنًا من الحديد، ما يجعل استخدام هذا التفاعل في استخلاص الحديد من خاماته غير مجدٍ اقتصاديًا.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>استخلاص الفلزات من خاماتها مهم جدًا في التقدم الصناعي، ومن أهم الفلزات المستخدمة حاليًا في الصناعة: الصوديوم والحديد والألمنيوم والنحاس والمنغنيز. ولا تقتصر عملية استخلاص الفلزات على تفاعلات الاستبدال أو الأكسدة والاختزال فقط، وإنما هناك طرائق أخرى تعتمد على موقع الفلز في سلسلة النشاط التي ذُكرت آنفًا.</p>
-      <p>وبما أن مركب أي فلز (خام) في أعلى السلسلة يكون أصعب في استخلاصه من أي فلز آخر أسفل منه في السلسلة، لذلك يكون استخلاص الصوديوم من كلوريد الصوديوم أصعب من استخلاص النحاس من خام النحاس. يكون كلوريد الصوديوم مستقرًا جدًا؛ إذ يتحوّل إلى صوديوم منصهر عند التسخين لدرجة حرارة قرابة 801°C فقط لأن أيونات الصوديوم مستقرة للغاية. ولكن يمكن الحصول على فلز الزئبق بمجرد تسخين خامه؛ لأن أيونات الزئبق ليست مستقرة تمامًا.</p>
-      <p>في كل مرة يُستخلص فيها الفلز من خامه، يتضمّن ذلك اختزال أيون الفلز؛ لأن الفلز يكون بهيئة أيون في الخام، ولكي يُستخلص الفلز حرًا يجب أن يكتسب إلكترونات، وهو ما يُسمّى بالاختزال. كما توضّح ذلك المعادلات أدناه.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">$$ Na^+ + e^- \rightarrow Na $$</div>
-    <div class="rule-box" style="margin-top:.6rem">$$ Al^{3+} + 3e^- \rightarrow Al $$</div>
-    <div class="rule-box" style="margin-top:.6rem">$$ Fe^{3+} + 3e^- \rightarrow Fe $$</div>
-    <div class="rule-box" style="margin-top:.6rem">$$ Cu^{2+} + 2e^- \rightarrow Cu $$</div>
-    <div class="card neu" style="text-align:center;margin-top:.5rem">
-      <p style="margin:0;font-weight:700">معادلات اختزال أيونات الصوديوم والألمنيوم والحديد والنحاس إلى فلزاتها الحرة</p>
-    </div>
-  </section>
-
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: سلسلة النشاط وطريقة الاستخلاص المناسبة</h2>
-      <p>اضغط أي فلز على السلسلة لمعرفة طريقة استخلاصه المناسبة حسب موقعه في سلسلة النشاط.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="ladderSvg" viewBox="0 0 380 260" role="img" aria-label="محاكاة سلسلة النشاط وطرائق الاستخلاص"></svg></div>
-        <p id="ladderCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>تتطلب الفلزات الموجودة أعلى سلسلة النشاط اختزالًا قويًا لأكاسيدها، ويتحقق ذلك عادة بالتحليل الكهربائي. يمكن اختزال العناصر الموجودة وسط السلسلة كالحديد بالتسخين الشديد مع عامل مختزل مثل فحم الكوك، ويُسمّى ذلك بالصهر. ويتم استخلاص الفلزات الأقل نشاطًا كالزئبق بمجرد التسخين.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu" style="overflow-x:auto">
-      <h2 style="margin-bottom:.8rem">📊 جدول 5-8: كيفية استخلاص الفلزات من خاماتها</h2>
-      <table style="width:100%;border-collapse:collapse;text-align:center;min-width:560px">
-        <thead>
-          <tr style="background:var(--surface)">
-            <th style="padding:.6rem;border-bottom:2px solid var(--accent-blue)">الفلز</th>
-            <th style="padding:.6rem;border-bottom:2px solid var(--accent-blue)">الخام</th>
-            <th style="padding:.6rem;border-bottom:2px solid var(--accent-blue)">المكوّن الكيميائي الرئيسي</th>
-            <th style="padding:.6rem;border-bottom:2px solid var(--accent-blue)">طريقة الاستخلاص</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">البوتاسيوم</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">كارناليت</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">KMgCl₃</td><td rowspan="5" style="padding:.5rem;border-bottom:1px solid var(--shadow-dark);vertical-align:middle">استخلاص إلكتروليتي؛ يترسّب الفلز على الكاثود</td></tr>
-          <tr><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">الصوديوم</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">ملح الصخور</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">NaCl</td></tr>
-          <tr><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">الكالسيوم</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">طباشير، حجر جيري</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">CaCO₃</td></tr>
-          <tr><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">المغنيسيوم</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">دولوميت</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">CaMg(CO₃)₂</td></tr>
-          <tr><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">الألمنيوم</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">بوكسيت</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">Al₂O₃</td></tr>
-          <tr><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">الخارصين</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">ركاز الخارصين</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">ZnS</td><td rowspan="4" style="padding:.5rem;border-bottom:1px solid var(--shadow-dark);vertical-align:middle">الاستخلاص بالتسخين مع فحم الكوك في فرن</td></tr>
-          <tr><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">الحديد</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">هيماتيت</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">Fe₂O₃</td></tr>
-          <tr><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">القصدير</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">حجر القصدير</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">SnO₂</td></tr>
-          <tr><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">الرصاص</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">الجالينا</td><td style="padding:.5rem;border-bottom:1px solid var(--shadow-dark)">PbS</td></tr>
-          <tr><td style="padding:.5rem">النحاس</td><td style="padding:.5rem">بيريت النحاس</td><td style="padding:.5rem">CuFeS₂</td><td rowspan="2" style="padding:.5rem;vertical-align:middle">تحميص الخام بالتسخين فقط</td></tr>
-          <tr><td style="padding:.5rem">الزئبق</td><td style="padding:.5rem">سينابار</td><td style="padding:.5rem">HgS</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>1.</span><span>الفلزات الأقل نشاطًا مثل الذهب والفضة والنحاس اكتُشفت مبكرًا؛ لأنها:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>لونها جذاب</span></label>
-          <label class="quiz-opt"><input type="radio"><span>رخيصة الثمن</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تتواجد حرة في الطبيعة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>خفيفة الوزن</span></label>
-        </div>
-        <div class="quiz-explain">الفلزات الأقل نشاطًا مثل الذهب والفضة والنحاس تتواجد حرة في الطبيعة، وبالتالي تم اكتشافها مبكرًا.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>2.</span><span>الصخر الذي يحوي كمية كافية من مركبات الفلز تجعل استخلاصه مجديًا اقتصاديًا يُدعى:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>سبيكة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>خامًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>محلولًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مصهرًا</span></label>
-        </div>
-        <div class="quiz-explain">الصخر الذي يحوي كمية كافية من مركبات الفلز تجعل استخلاصه منه مجديًا اقتصاديًا يُدعى خامًا.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>لا يُستعمل الألمنيوم اقتصاديًا لاستخلاص الحديد من خاماته رغم فاعليته في تفاعل الثرميت؛ لأن:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الألمنيوم أغلى ثمنًا من الحديد</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الألمنيوم أقل نشاطًا من الحديد</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الألمنيوم لا يتفاعل مع الحديد</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الحديد أثقل من الألمنيوم</span></label>
-        </div>
-        <div class="quiz-explain">يُشترط لجدوى الاستخلاص اقتصاديًا أن يكون الفلز الأنشط أرخص من الفلز المراد استخلاصه، والألمنيوم أغلى من الحديد.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>استخلاص الفلز من خامه يتضمّن دائمًا:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>أكسدة أيون الفلز</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تبخير الفلز</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تجميد الفلز</span></label>
-          <label class="quiz-opt"><input type="radio"><span>اختزال أيون الفلز باكتساب إلكترونات</span></label>
-        </div>
-        <div class="quiz-explain">في كل مرة يُستخلص فيها الفلز من خامه، يتضمّن ذلك اختزال أيون الفلز؛ إذ يجب أن يكتسب إلكترونات ليصبح فلزًا حرًا.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>الفلزات الموجودة أعلى سلسلة النشاط (كالبوتاسيوم والصوديوم) تُستخلص عادة بواسطة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>التسخين البسيط فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>التحليل الكهربائي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>التبريد السريع</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الطرق الميكانيكي</span></label>
-        </div>
-        <div class="quiz-explain">تتطلب الفلزات الموجودة أعلى سلسلة النشاط اختزالًا قويًا لأكاسيدها، ويتحقق ذلك عادة بالتحليل الكهربائي.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -259,12 +62,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>سلسلة النشاط ترتّب الفلزات من الأكثر نشاطًا (القمة) إلى الأقل نشاطًا (القاعدة)، والفلزات الأقل نشاطًا اكتُشفت مبكرًا لتواجدها حرة في الطبيعة.</span></li>
-        <li><span>الخام هو الصخر الذي يحوي كمية كافية من مركبات الفلز تجعل استخلاصه مجديًا اقتصاديًا.</span></li>
-        <li><span>يُشترط لجدوى الاستخلاص اقتصاديًا أن يكون الفلز الأنشط المستعمل أرخص من الفلز المراد استخلاصه.</span></li>
-        <li><span>استخلاص الفلز يتضمّن دائمًا اختزال أيونه باكتساب إلكترونات؛ والفلزات الأعلى نشاطًا تحتاج تحليلًا كهربائيًا، والوسطى تحتاج صهرًا مع فحم الكوك، والأقل نشاطًا تُستخلص بالتسخين البسيط.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -275,28 +73,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l2" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l2">
-        <svg viewBox="0 -3 480 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية لاستخلاص الفلزات">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">استخلاص</text>
-            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">الفلزات</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">سلسلة النشاط</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">تحليل</text>
-            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">كهربائي</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">الصهر بالكوك</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="219" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">التسخين البسيط</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l2"></div>
     </div>
   </section>
 
@@ -313,30 +90,35 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("ladderSvg");
-  var caption = document.getElementById("ladderCaption");
+  var svg, caption;
+  var activeIdx = 4;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
-  var METALS = [
-    {sym:"K",  name:"البوتاسيوم", method:"electro"},
-    {sym:"Na", name:"الصوديوم",   method:"electro"},
-    {sym:"Ca", name:"الكالسيوم",  method:"electro"},
-    {sym:"Mg", name:"المغنيسيوم", method:"electro"},
-    {sym:"Al", name:"الألمنيوم",  method:"electro"},
-    {sym:"Zn", name:"الخارصين",   method:"coke"},
-    {sym:"Fe", name:"الحديد",     method:"coke"},
-    {sym:"Sn", name:"القصدير",    method:"coke"},
-    {sym:"Pb", name:"الرصاص",     method:"coke"},
-    {sym:"Cu", name:"النحاس",     method:"heat"},
-    {sym:"Hg", name:"الزئبق",     method:"heat"},
-    {sym:"Ag", name:"الفضة",      method:"heat"},
-    {sym:"Pt", name:"البلاتين",   method:"heat"}
-  ];
+  function METALS(){
+    return [
+      {sym:"K",  name:t("metal_K","البوتاسيوم"), method:"electro"},
+      {sym:"Na", name:t("metal_Na","الصوديوم"),   method:"electro"},
+      {sym:"Ca", name:t("metal_Ca","الكالسيوم"),  method:"electro"},
+      {sym:"Mg", name:t("metal_Mg","المغنيسيوم"), method:"electro"},
+      {sym:"Al", name:t("metal_Al","الألمنيوم"),  method:"electro"},
+      {sym:"Zn", name:t("metal_Zn","الخارصين"),   method:"coke"},
+      {sym:"Fe", name:t("metal_Fe","الحديد"),     method:"coke"},
+      {sym:"Sn", name:t("metal_Sn","القصدير"),    method:"coke"},
+      {sym:"Pb", name:t("metal_Pb","الرصاص"),     method:"coke"},
+      {sym:"Cu", name:t("metal_Cu","النحاس"),     method:"heat"},
+      {sym:"Hg", name:t("metal_Hg","الزئبق"),     method:"heat"},
+      {sym:"Ag", name:t("metal_Ag","الفضة"),      method:"heat"},
+      {sym:"Pt", name:t("metal_Pt","البلاتين"),   method:"heat"}
+    ];
+  }
 
-  var METHOD_INFO = {
-    electro: {label:"تحليل كهربائي", color:"#3fa9f5", text:"يقع في أعلى سلسلة النشاط، لذلك يحتاج اختزالًا قويًا لأكسيده يتحقق عادة بالتحليل الكهربائي."},
-    coke:    {label:"صهر مع فحم الكوك", color:"#ffab5e", text:"يقع في وسط سلسلة النشاط، فيمكن اختزاله بالتسخين الشديد مع عامل مختزل مثل فحم الكوك (الصهر)."},
-    heat:    {label:"تسخين بسيط", color:"#2fd18f", text:"يقع في أسفل سلسلة النشاط (الأقل نشاطًا)، لذلك يُستخلص بمجرد تسخين خامه."}
-  };
+  function METHOD_INFO(){
+    return {
+      electro: {label:t("method_electro_label","تحليل كهربائي"), color:"#3fa9f5", text:t("method_electro_text","يقع في أعلى سلسلة النشاط، لذلك يحتاج اختزالًا قويًا لأكسيده يتحقق عادة بالتحليل الكهربائي.")},
+      coke:    {label:t("method_coke_label","صهر مع فحم الكوك"), color:"#ffab5e", text:t("method_coke_text","يقع في وسط سلسلة النشاط، فيمكن اختزاله بالتسخين الشديد مع عامل مختزل مثل فحم الكوك (الصهر).")},
+      heat:    {label:t("method_heat_label","تسخين بسيط"), color:"#2fd18f", text:t("method_heat_text","يقع في أسفل سلسلة النشاط (الأقل نشاطًا)، لذلك يُستخلص بمجرد تسخين خامه.")}
+    };
+  }
 
   var GAP = 17, START_Y = 22, BAR_X = 140, BAR_W = 30;
 
@@ -346,12 +128,15 @@
     return e;
   }
 
-  function draw(activeIdx){
+  function draw(idx){
+    activeIdx = idx;
+    var metals = METALS();
+    var methodInfo = METHOD_INFO();
     while(svg.firstChild) svg.removeChild(svg.firstChild);
 
-    METALS.forEach(function(m, i){
+    metals.forEach(function(m, i){
       var y = START_Y + i*GAP;
-      var info = METHOD_INFO[m.method];
+      var info = methodInfo[m.method];
       var isActive = i === activeIdx;
 
       var rect = el("rect", {x:BAR_X, y:y, width:BAR_W, height:GAP-3, rx:4, fill:info.color, opacity: isActive ? 1 : 0.55, "class":"ladder-cell"});
@@ -375,18 +160,24 @@
     });
 
     var topLbl = el("text", {x:BAR_X+BAR_W/2, y:14, "text-anchor":"middle", "font-family":"Cairo,sans-serif", "font-size":9, "font-weight":700, fill:"var(--text-faint)"});
-    topLbl.textContent = "الأكثر نشاطًا";
+    topLbl.textContent = t("topLabel","الأكثر نشاطًا");
     svg.appendChild(topLbl);
-    var botY = START_Y + METALS.length*GAP + 12;
+    var botY = START_Y + metals.length*GAP + 12;
     var botLbl = el("text", {x:BAR_X+BAR_W/2, y:botY, "text-anchor":"middle", "font-family":"Cairo,sans-serif", "font-size":9, "font-weight":700, fill:"var(--text-faint)"});
-    botLbl.textContent = "الأقل نشاطًا";
+    botLbl.textContent = t("bottomLabel","الأقل نشاطًا");
     svg.appendChild(botLbl);
 
-    var m = METALS[activeIdx];
-    caption.textContent = m.name + " (" + m.sym + ") — " + METHOD_INFO[m.method].text;
+    var m = metals[activeIdx];
+    caption.textContent = m.name + " (" + m.sym + ") — " + methodInfo[m.method].text;
   }
 
-  draw(4);
+  function boot(){
+    svg = document.getElementById("ladderSvg");
+    caption = document.getElementById("ladderCaption");
+    if(!svg || !caption) return;
+    draw(activeIdx);
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

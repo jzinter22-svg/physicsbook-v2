@@ -1,0 +1,584 @@
+{
+  "lessonNumber": 1,
+  "chapterNumber": 8,
+  "meta": {
+    "pageTitle": "Lesson 1: Metals — Chapter Eight",
+    "description": "8-1 Metals: the position of metals in the periodic table, and their four main properties: high density and melting point, malleability and ductility, thermal conductivity, and electrical conductivity.",
+    "breadcrumbChapter": "Chapter 8",
+    "breadcrumbLesson": "Metals",
+    "footer": "Chapter Eight: Metals and Alloys — Lesson 1: Metals"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 1 of 9 · 8-1",
+    "title": "Metals",
+    "lead": "Metals have unique physical properties that make them industrially very important. In this lesson, learn about the position of metals in the periodic table, and about four fundamental properties that explain why they are so widely used."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Identify the position of metals in the periodic table.",
+    "State the general properties of metals that make them industrially important.",
+    "Explain each property of metals by referring to their atomic structure."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 8-1 Metals",
+      "html": "Metals are found in the periodic table mainly in Group I, Group II, and the transition-metal block, and metallic properties increase as we move down these groups, i.e. as the atomic number of the elements increases, as shown in Figure (8-1).",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 8-1: metals in the periodic table\" role=\"img\" viewbox=\"-14 0 414 260\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"#ffd166\" height=\"26\" stroke=\"#333\" stroke-width=\"1\" width=\"26\" x=\"10\" y=\"40\"></rect>\n<rect fill=\"#ffd166\" height=\"26\" stroke=\"#333\" stroke-width=\"1\" width=\"26\" x=\"38\" y=\"40\"></rect>\n<rect fill=\"#ffd166\" height=\"26\" stroke=\"#333\" stroke-width=\"1\" width=\"26\" x=\"10\" y=\"68\"></rect>\n<rect fill=\"#ffd166\" height=\"26\" stroke=\"#333\" stroke-width=\"1\" width=\"26\" x=\"38\" y=\"68\"></rect>\n<rect fill=\"#ffd166\" height=\"26\" stroke=\"#333\" stroke-width=\"1\" width=\"26\" x=\"10\" y=\"96\"></rect>\n<rect fill=\"#ffd166\" height=\"26\" stroke=\"#333\" stroke-width=\"1\" width=\"26\" x=\"38\" y=\"96\"></rect>\n<rect fill=\"#ffd166\" height=\"26\" stroke=\"#333\" stroke-width=\"1\" width=\"26\" x=\"10\" y=\"124\"></rect>\n<rect fill=\"#ffd166\" height=\"26\" stroke=\"#333\" stroke-width=\"1\" width=\"26\" x=\"38\" y=\"124\"></rect>\n<rect fill=\"#ffd166\" height=\"26\" stroke=\"#333\" stroke-width=\"1\" width=\"26\" x=\"10\" y=\"152\"></rect>\n<rect fill=\"#ffd166\" height=\"26\" stroke=\"#333\" stroke-width=\"1\" width=\"26\" x=\"38\" y=\"152\"></rect>\n<!-- transition metals block -->\n<rect fill=\"#f4a4c0\" height=\"82\" stroke=\"#333\" stroke-width=\"1\" width=\"228\" x=\"66\" y=\"96\"></rect>\n<text fill=\"#5a1030\" font-size=\"12\" font-weight=\"800\" text-anchor=\"middle\" x=\"180\" y=\"141\">Transition metals</text>\n<!-- non-metals corner -->\n<rect fill=\"#c9e8ff\" height=\"26\" stroke=\"#333\" stroke-width=\"1\" width=\"26\" x=\"322\" y=\"40\"></rect>\n<text fill=\"var(--text-secondary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"365\" y=\"58\">Nonmetals</text>\n<!-- zigzag staircase -->\n<path d=\"M294,96 L294,124 L322,124 L322,152 L350,152\" fill=\"none\" stroke=\"#c0392b\" stroke-dasharray=\"4,3\" stroke-width=\"2.5\"></path>\n<text fill=\"#c0392b\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"350\" y=\"185\">Zigzag line</text>\n<text fill=\"var(--accent-blue)\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"23\" y=\"30\">(I)</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"23\" y=\"18\">Group I</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"23\" y=\"184\">Strong metals</text>\n<text fill=\"var(--accent-green)\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"51\" y=\"200\">(II)</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"51\" y=\"214\">Group II</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"51\" y=\"228\">Alkaline earth metals</text>\n<text fill=\"var(--text-faint)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"23\" y=\"244\">Period 1</text>\n</g>\n</svg>",
+      "caption": "Figure 8-1: metals in the periodic table — Group I, Group II, the transition metals, separated from the nonmetals by a zigzag line",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "As you already know, there are properties that distinguish metals and make them industrially important. Among these properties, metals are:",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "propSvg",
+      "svgAriaLabel": "Simulation of metal properties",
+      "svgViewBox": "0 0 380 200",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: the Four Properties of Metals",
+      "descriptionHtml": "Choose one of the four properties to see its explanation at the atomic level.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnDensity",
+          "html": "1- Density and Melting Point",
+          "class": "neu-btn primary",
+          "data": {
+            "data-prop": "density"
+          },
+          "style": null
+        },
+        {
+          "id": "btnMalleable",
+          "html": "2- Malleability and Ductility",
+          "class": "neu-btn",
+          "data": {
+            "data-prop": "malleable"
+          },
+          "style": null
+        },
+        {
+          "id": "btnThermal",
+          "html": "3- Thermal Conductivity",
+          "class": "neu-btn",
+          "data": {
+            "data-prop": "thermal"
+          },
+          "style": null
+        },
+        {
+          "id": "btnElectric",
+          "html": "4- Electrical Conductivity",
+          "class": "neu-btn",
+          "data": {
+            "data-prop": "electric"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "The bonding between metal atoms by strong sigma (σ) bonds needs high energy to break — which is why metals have a high density and melting point.",
+          "id": "propCaption",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": "",
+      "labels": {
+        "textDensity": "The bonding between metal atoms by strong sigma (σ) bonds needs high energy to break — which is why metals have a high density and melting point.",
+        "textMalleable": "The forces of attraction between atoms are strong but flexible, so layers of atoms slide over one another when a force is applied, making the metal malleable and ductile.",
+        "textThermal": "Thermal energy transfers by vibration from one atom to the next, and free valence electrons also help conduct heat.",
+        "textElectric": "The metal's outer free valence electrons move toward the positive terminal of the electric circuit, replaced by electrons from the negative terminal.",
+        "thermalLabel": "Heat transfers by vibration from one atom to another",
+        "negLabel": "− negative",
+        "posLabel": "+ positive"
+      },
+      "sectionGroup": 3,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation"
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Explanation — Why do metals have a high density and melting point?",
+      "html": "The reason for the high density of metals is the bonding between their atoms by strong bonds called sigma (σ) bonds, which need high energy to break — this explains why their melting points are high, as shown in Figure (8-2).",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Explanation — Why are metals malleable and ductile?",
+      "html": "The forces of attraction between a metal's atoms are strong, yet they are not rigid but flexible, allowing the atoms to slide over one another when a force is applied to the metal — which is why the metal is malleable and ductile, as shown in Figure (8-3).",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Explanation — Why are metals good thermal conductors?",
+      "html": "Thermal energy can transfer from one atom to the next by vibration, since the atoms are close to one another, which makes metals good conductors of heat; the free valence electrons also help conduct heat, as shown in Figure (8-4).",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Explanation — Why are metals good electrical conductors?",
+      "html": "Electricity is a moving stream of electrons. When a metal is connected in an electric circuit, the metal's outer free valence electrons move toward the positive terminal, replaced by electrons from the negative terminal. This shows the electrical conductivity of metals, as shown in Figure (8-5).",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "More than 75% of the elements in the periodic table are metals, and they are generally distinguished by being solid, strong, good conductors of heat and electricity, and having a metallic luster. There are exceptional elements with respect to most metallic properties, yet the one property common to all metals is that they form positive ions.</p><p>Tables (8-1), (8-2), and (8-3) show some properties of metals (for reference only).",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "table",
+      "heading": "📊 Table 8-1: Extreme Properties Among Metals",
+      "headers": [
+        "Description",
+        "Metal",
+        "Detail"
+      ],
+      "rows": [
+        [
+          "Lightest",
+          "Lithium (Li)",
+          "density 0.53 g/mL"
+        ],
+        [
+          "Heaviest",
+          "Osmium (Os)",
+          "density 22.48 g/mL"
+        ],
+        [
+          "Most brittle",
+          "Manganese (Mn) and Chromium (Cr)",
+          "the most prone to fracturing"
+        ],
+        [
+          "Lowest melting point",
+          "Mercury (Hg)",
+          "melting point -38.9°C"
+        ],
+        [
+          "Highest melting point",
+          "Tungsten (W)",
+          "melting point +3410°C"
+        ],
+        [
+          "Most expensive",
+          "Platinum (Pt)",
+          "has the greatest commercial value"
+        ],
+        [
+          "Rarest",
+          "Rhodium (Rh)",
+          "the rarest naturally occurring metal on Earth"
+        ],
+        [
+          "Most abundant",
+          "Aluminum (Al)",
+          "makes up more than 8% of the Earth's crust"
+        ]
+      ],
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "table",
+      "heading": "📊 Table 8-2: The Top Metal for Each Property",
+      "headers": [
+        "Metallic property",
+        "Meaning",
+        "Best examples"
+      ],
+      "rows": [
+        [
+          "Density",
+          "mass per unit volume",
+          "Pb, Hg"
+        ],
+        [
+          "Tensile strength",
+          "the metal's strength under stress",
+          "Fe, Cr"
+        ],
+        [
+          "Durability",
+          "the metal's resistance to corrosion",
+          "Zn, Al"
+        ],
+        [
+          "Malleability",
+          "ability to be shaped into sheets",
+          "Cu, Ag"
+        ],
+        [
+          "Ductility",
+          "ability to be drawn into wires",
+          "Cu, Mg"
+        ],
+        [
+          "Thermal conductivity",
+          "ability to conduct heat",
+          "Na, Al"
+        ],
+        [
+          "Electrical conductivity",
+          "ability to conduct electricity",
+          "Cu, Ag"
+        ],
+        [
+          "Resonance",
+          "produces a sound when struck",
+          "Cu, Ag"
+        ]
+      ],
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "table",
+      "heading": "📊 Table 8-3: Some Properties of Metals",
+      "headers": [
+        "Metal",
+        "State",
+        "Melting point °C",
+        "Boiling point °C",
+        "Density g/mL",
+        "Electrical conductivity",
+        "Ion formed"
+      ],
+      "rows": [
+        [
+          "Aluminum (Al)",
+          "S",
+          "660",
+          "2470",
+          "2.7",
+          "0.38",
+          "Al³⁺"
+        ],
+        [
+          "Calcium (Ca)",
+          "S",
+          "850",
+          "1487",
+          "1.5",
+          "0.22",
+          "Ca²⁺"
+        ],
+        [
+          "Copper (Cu)",
+          "S",
+          "1083",
+          "2595",
+          "8.9",
+          "0.59",
+          "Cu²⁺"
+        ],
+        [
+          "Gold (Au)",
+          "S",
+          "1063",
+          "2970",
+          "19.3",
+          "0.42",
+          "Au¹⁺"
+        ],
+        [
+          "Iron (Fe)",
+          "S",
+          "1535",
+          "3000",
+          "7.9",
+          "0.10",
+          "Fe²⁺"
+        ],
+        [
+          "Lead (Pb)",
+          "S",
+          "327",
+          "1744",
+          "16.3",
+          "0.05",
+          "Pb²⁺"
+        ],
+        [
+          "Magnesium (Mg)",
+          "S",
+          "650",
+          "1110",
+          "1.7",
+          "0.22",
+          "Mg²⁺"
+        ],
+        [
+          "Mercury (Hg)",
+          "S",
+          "-39",
+          "357",
+          "13.6",
+          "0.01",
+          "Hg²⁺"
+        ],
+        [
+          "Nickel (Ni)",
+          "S",
+          "1453",
+          "2730",
+          "8.9",
+          "0.16",
+          "Ni²⁺"
+        ],
+        [
+          "Platinum (Pt)",
+          "S",
+          "1769",
+          "4530",
+          "21.4",
+          "0.09",
+          "Pt³⁺"
+        ],
+        [
+          "Potassium (K)",
+          "S",
+          "64",
+          "774",
+          "0.86",
+          "0.14",
+          "K¹⁺"
+        ],
+        [
+          "Silver (Ag)",
+          "S",
+          "961",
+          "2210",
+          "10.5",
+          "0.62",
+          "Ag¹⁺"
+        ],
+        [
+          "Sodium (Na)",
+          "S",
+          "98",
+          "890",
+          "0.97",
+          "0.22",
+          "Na¹⁺"
+        ],
+        [
+          "Tin (Sn)",
+          "S",
+          "232",
+          "2270",
+          "7.3",
+          "0.08",
+          "Sn²⁺"
+        ],
+        [
+          "Zinc (Zn)",
+          "S",
+          "420",
+          "907",
+          "7.1",
+          "0.17",
+          "Zn²⁺"
+        ]
+      ],
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "Did you know?",
+      "html": "The longest continuous piece of metal is a 5000 km copper cable, laid under the Atlantic Ocean in 1886, which marked the beginning of direct telegraph communication between Britain and America.",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The properties of a given metal can often be improved or changed by mixing it with another metal. These mixtures of metals are called alloys, as shown in Figure (8-6).",
+      "sectionGroup": 13,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg id=\"fig6-8-svg\" aria-label=\"Figure 8-6: the structure of metals and alloys\" role=\"img\" viewbox=\"0 0 340 200\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<!-- pure metal grid -->\n<g id=\"pureGrid\"></g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"70\" y=\"30\">Pure metal</text>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"2\" x1=\"30\" x2=\"10\" y1=\"80\" y2=\"60\"></line>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"30\" y=\"55\">External force</text>\n<polygon fill=\"var(--accent-orange)\" points=\"140,95 165,95 165,105 175,105 152,120 130,105 140,105\"></polygon>\n<!-- alloy grid -->\n<g id=\"alloyGrid\"></g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"270\" y=\"30\">Alloy</text>\n<text fill=\"var(--accent-pink)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"270\" y=\"185\">Added metal atom</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"270\" y=\"65\">Sliding metal atoms</text>\n</g>\n</svg>",
+      "caption": "Figure 8-6: the structure of metals and alloys — adding a differently sized metal atom prevents the atoms from sliding easily",
+      "sectionGroup": 14,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "Metals are found in the periodic table mainly in:",
+        "options": [
+          "Group VII only",
+          "the noble gases",
+          "Group I, Group II, and the transition metals",
+          "the top right of the periodic table only"
+        ],
+        "explain": "Metals are found mainly in Group I, Group II, and the transition-metal block."
+      },
+      {
+        "correct": 1,
+        "question": "The reason for the high density and high melting point of metals is:",
+        "options": [
+          "their shiny color",
+          "the bonding between their atoms by strong sigma (σ) bonds",
+          "their light weight",
+          "the absence of free electrons in them"
+        ],
+        "explain": "The reason for the high density of metals is the bonding between their atoms by strong bonds called sigma (σ) bonds, which need high energy to break."
+      },
+      {
+        "correct": 0,
+        "question": "A metal is malleable and ductile because:",
+        "options": [
+          "the forces of attraction between its atoms are strong but flexible, allowing the atoms to slide over one another",
+          "its atoms are very far apart from one another",
+          "there are no bonds at all between its atoms",
+          "it is liquid at room temperature"
+        ],
+        "explain": "The forces of attraction between a metal's atoms are strong, yet they are not rigid but flexible, allowing the atoms to slide over one another when a force is applied to the metal."
+      },
+      {
+        "correct": 3,
+        "question": "What helps metals conduct electricity is:",
+        "options": [
+          "fixed negative ions",
+          "moving protons",
+          "free neutrons",
+          "free valence electrons moving toward the positive terminal"
+        ],
+        "explain": "When a metal is connected in an electric circuit, the metal's outer free valence electrons move toward the positive terminal, replaced by electrons from the negative terminal."
+      },
+      {
+        "correct": 2,
+        "question": "The one property common to all metals is that they:",
+        "options": [
+          "are all liquid at room temperature",
+          "are all one color",
+          "form positive ions",
+          "do not conduct heat"
+        ],
+        "explain": "There are exceptional elements with respect to most metallic properties, yet the one property common to all metals is that they form positive ions."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Metals are found mainly in Group I, Group II, and the transition-metal block, and their metallic properties increase as atomic number increases within a group.",
+      "Metals have four main properties: high density and melting point, malleability and ductility, thermal conductivity, and electrical conductivity.",
+      "More than 75% of the elements in the periodic table are metals, and their only common property is that they form positive ions.",
+      "Mixtures of a metal with other metals are called alloys, which are the focus of the rest of this chapter."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of metals",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Metals"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Density & melting",
+          "Sigma bonds"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Malleable & ductile"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Thermal",
+          "conductivity"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Electrical",
+          "conductivity"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "lessonNumber": 4,
+  "chapterNumber": 8,
+  "meta": {
+    "pageTitle": "Lesson 4: Alloys — Chapter Eight",
+    "description": "8-4 Alloys: the definition of an alloy, and a historical overview of humanity's discovery of alloys, from iron meteorites to bronze.",
+    "breadcrumbChapter": "Chapter 8",
+    "breadcrumbLesson": "Alloys",
+    "footer": "Chapter Eight: Metals and Alloys — Lesson 4: Alloys"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 4 of 9 · 8-4",
+    "title": "Alloys",
+    "lead": "In your previous studies you learned about metals, their properties, and how they differ physically and chemically. Here you will learn about another type: alloys — their definition and the story of their discovery through history."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Define an alloy and give an example of one.",
+    "Give a historical overview of humanity's discovery of alloys, from iron meteorites to bronze.",
+    "Explain why ancient humans preferred bronze over pure copper."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 8-4 Alloys",
+      "html": "Dear student, in your previous studies you learned about metals, their properties, and how they differ physically and chemically. Here you will learn about another type: alloys, and their kinds.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Alloy",
+      "html": "An alloy is a mixture made up of a metal and another element, where most alloys contain at least one of two components: a large amount of the main or base metal, and smaller amounts of other components, which may be metals or nonmetals such as carbon and silicon.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "timelineSvg",
+      "svgAriaLabel": "Simulation of the historical discovery of alloys",
+      "svgViewBox": "0 0 480 170",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: the Story of Humanity's Discovery of Alloys",
+      "descriptionHtml": "Move the slider to explore the historical progression of humanity's discovery of alloys, from iron meteorites to bronze.",
+      "controls": [
+        {
+          "labelHtml": "Stage",
+          "inputId": "timelineSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "3",
+          "inputStep": "1",
+          "inputValue": "0"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "In prehistoric times, humans discovered iron meteorites and gold-silver mixtures at the bottom of riverbeds — the first alloys humans found ready-made in nature.",
+          "id": "timelineCaption",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": "",
+      "labels": {
+        "ev0_title": "Iron meteorites",
+        "ev0_text": "In prehistoric times, humans discovered iron meteorites and gold-silver mixtures at the bottom of riverbeds — the first alloys humans found ready-made in nature.",
+        "ev1_title": "Copper + arsenic",
+        "ev1_text": "The first alloy made by humans is believed to be bronze, made of copper and arsenic.",
+        "ev2_title": "Copper + tin",
+        "ev2_text": "Tin was discovered and combined with copper, producing a good grade of bronze.",
+        "ev3_title": "Tools and weapons",
+        "ev3_text": "The manufacture of tools, jewelry, and weapons from bronze began, since it is harder than copper and more suitable for casting and molding."
+      },
+      "sectionGroup": 2,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation"
+    },
+    {
+      "type": "paragraph",
+      "html": "Humans discovered alloys in nature during prehistoric times, and these alloys included iron meteorites and gold-silver mixtures at the bottom of riverbeds. The first alloy made by humans is believed to be bronze, made of copper and arsenic; tin was then discovered and combined with copper, producing a good grade of bronze, after which the manufacture of tools, jewelry, and weapons began, since bronze is harder than copper and more suitable for casting and molding into useful shapes.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Explanation — Why did ancient humans prefer bronze over pure copper?",
+      "html": "Bronze is harder than pure copper and more suitable for casting and molding into useful shapes, which is why the manufacture of tools, jewelry, and weapons from bronze began instead of from pure copper.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The methods of forming alloys differ from one alloy to another, since these methods depend on the melting point of the materials that make it up, as well as their freezing point; the properties of the materials making up an alloy can be controlled through heat treatments for each material.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "An alloy is:",
+        "options": [
+          "a single pure metal only",
+          "a mixture made up of a metal and another element",
+          "a noble gas",
+          "an aqueous solution"
+        ],
+        "explain": "An alloy is a mixture made up of a metal and another element, containing a large amount of the base metal and smaller amounts of other components."
+      },
+      {
+        "correct": 2,
+        "question": "The first alloy believed to have been made by humans is bronze, initially made of copper together with:",
+        "options": [
+          "gold",
+          "tin directly",
+          "arsenic",
+          "silver"
+        ],
+        "explain": "The first alloy made by humans is believed to be bronze, made of copper and arsenic; tin was discovered later, producing a good grade of bronze."
+      },
+      {
+        "correct": 0,
+        "question": "Bronze is distinguished from pure copper by being:",
+        "options": [
+          "harder and more suitable for casting and molding",
+          "much lighter in weight",
+          "completely rust-proof",
+          "transparent"
+        ],
+        "explain": "Bronze is harder than copper and more suitable for casting and molding into useful shapes."
+      },
+      {
+        "correct": 3,
+        "question": "Among the alloys humans discovered in nature during prehistoric times:",
+        "options": [
+          "stainless steel",
+          "aluminum-magnesium alloy",
+          "nickel-cobalt alloy",
+          "iron meteorites and gold-silver mixtures at the bottom of riverbeds"
+        ],
+        "explain": "Humans discovered alloys in nature during prehistoric times, including iron meteorites and gold-silver mixtures at the bottom of riverbeds."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "An alloy is a mixture made up of a large amount of a base metal, and other elements (metals or nonmetals such as carbon and silicon) in smaller amounts.",
+      "Humans discovered alloys in nature before recorded history: iron meteorites and gold-silver mixtures at the bottom of riverbeds.",
+      "The first alloy made by humans is believed to be bronze (copper + arsenic), which then developed with the addition of tin to become harder and more suitable for casting and molding than pure copper.",
+      "The methods of forming alloys depend on the melting and freezing points of their materials, and their properties can be controlled through heat treatments."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of alloys",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Alloys"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Alloy definition"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Iron",
+          "meteorites"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Copper + arsenic"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Bronze"
+        ]
+      }
+    ]
+  }
+}
