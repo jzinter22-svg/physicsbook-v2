@@ -1,0 +1,226 @@
+{
+  "lessonNumber": 7,
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "Lesson 7: Some Applications of Laser — Chapter Six",
+    "description": "6-7 Some applications of laser: industrial, medical, scientific, communications, commercial, military applications, and more.",
+    "breadcrumbChapter": "Chapter 6",
+    "breadcrumbLesson": "Some Applications of Laser",
+    "footer": "Chapter Six: Laser and Plasma — Lesson 7: Some Applications of Laser"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 7 of 10 · 6-7",
+    "title": "Some Applications of Laser",
+    "lead": "From industry to medicine, and from communications to space, laser has entered twelve major fields of life and science thanks to its unique properties."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "States the most important industrial, medical, and scientific applications of laser.",
+    "Explains the use of laser in communications through optical fibers.",
+    "States some commercial, military, and research applications of laser."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 6-7 Some Applications of Laser",
+      "html": "Laser has many applications spanning industry, medicine, communications, science, commerce, the military, and more. Among the most important of these applications are:",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — The Most Important Applications of Laser",
+      "html": "",
+      "listItems": [
+        "<b>1- Industrial applications:</b> because of the heat that laser generates and the ability to confine that heat to a very small spot, laser is an effective tool in manufacturing for trimming many electronic components such as resistors, capacitors, and transistors, making masks for integrated circuits, and drilling, cutting, and welding metals, even hard ones. A tightly-focused, intense laser beam can drill a hole (5 μm) in diameter through the hardest materials, such as titanium, diamond, and ruby, in (200 μs), without any change in the nature of the material or any accompanying noise.",
+        "<b>2- Medical applications:</b> laser has entered the fields of surgery, cosmetic medicine, dentistry, ophthalmology, cardiology, and tumor removal, being used as a surgical scalpel in operations. The carbon dioxide laser is one of the most important and well-known lasers used in general surgery, distinguished by its high capability and precision for vaporizing and cutting living tissue. Since CO₂ laser light is invisible, a red helium-neon beam is used alongside it to make it easier to control the beam's position, direction, and movement to any point in the human body.",
+        "<b>3- Use of laser in the field of nuclear science:</b> for confining radioactive isotopes and in the field of nuclear fusion reactions, thanks to its enormous power and the ability to control its frequency or wavelength.",
+        "<b>4- In laser communications:</b> laser is used for direct broadcasting through the air for short-range, limited-distance communications, because of the scattering and absorption that a laser beam undergoes as it passes through the air and the dust, water vapor, fog, rain, and other substances it contains. For this reason, laser beams are used to transmit information over long distances through outer space by means of optical fibers, which are designed to guide light as it travels through them.",
+        "<b>5- Commercial applications:</b> laser is used in laser printers, illuminated advertising, and laser disc readers.",
+        "<b>6- Used to measure environmental pollution:</b> the use of laser in this field has opened the way for rapid, relatively precise measurement, such as using a ruby laser to detect and measure the proportion of carbon dioxide, water vapor, and phosphorus oxide.",
+        "<b>7- Used in surveying and alignment operations:</b> for engineering work such as the construction of buildings and structures and mechanical installations, as well as its use in aligning pipes, digging channels, tunnels, and roads, land surveying and leveling, seismic mapping, geographic surveys, determining the orbits of artificial satellites, and finding deviations in the surfaces of dams and bridges.",
+        "<b>8- Three-dimensional laser engraving machines are used:</b> in engraving and carving, such as carving on glass and crystal, and manufacturing trophies, medals, crystal pendants, necklaces, etc.",
+        "<b>9- Use of laser in applied research laboratories.</b>",
+        "<b>10- Laser beams are used to read codes,</b> whether hidden markings, writing, or commercial symbols, and to take a precise image, using special devices, of that information; when these devices are connected to a computer, the beam can be programmed automatically to give a clear reading and to copy and transfer the information.",
+        "<b>11- Laser is used in holographic imaging (Holography):</b> to obtain a three-dimensional image (length, width, and height). Holography is one of the best and most efficient photographic techniques, in which the amplitude and phase of the light waves reflected from the object are recorded, so that all details of the object's shape appear on the retina and the object can be seen from every direction, whereas ordinary photography records only the intensity of the light.",
+        "<b>12- Military applications:</b> laser is a fast, highly effective weapon with precise, localized impact, used as a defensive or offensive tool, employed in guidance, tracking, and measuring distances with extreme precision through range-finder devices. Among the types of laser used in this field are the neodymium laser and the carbon dioxide laser, thanks to their high power for penetration and detecting targets in the air and inside seawater."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.55rem",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "📌",
+      "strong": "Remember:",
+      "html": "An optical fiber is made of glass doped with specific ions, used to transmit a light signal (laser) from one point to another without loss, damage, or distortion.",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "fiberSvg",
+      "svgAriaLabel": "Simulation of a laser signal traveling through an optical fiber",
+      "svgViewBox": "0 0 420 160",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: Transmitting a Laser Signal Through an Optical Fiber",
+      "descriptionHtml": "Press \"Send Signal\" to watch a laser pulse travel through the optical fiber via repeated total internal reflections, following every bend in the path without losing any of its energy.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnFiber",
+          "html": "📡 Send Signal",
+          "class": "neu-btn primary",
+          "data": null,
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "trailingId": "fiberStatus",
+      "sectionGroup": 3,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "transmitterLabel": "Transmitter",
+        "receiverLabel": "Receiver",
+        "fiberCaptionLabel": "Optical Fiber",
+        "statusReady": "Ready to transmit",
+        "statusTravel": "The signal is traveling via total internal reflection inside the fiber...",
+        "statusDone": "The signal reached the receiver without loss or distortion ✓"
+      }
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "The most famous laser used in general surgery is:",
+        "options": [
+          "The ruby laser",
+          "The carbon dioxide laser",
+          "The semiconductor laser",
+          "The dye laser"
+        ],
+        "explain": "The carbon dioxide laser is one of the most important and well-known lasers used in general surgery for its high precision in vaporizing and cutting living tissue."
+      },
+      {
+        "correct": 2,
+        "question": "A red helium-neon beam is used alongside the surgical CO₂ laser because:",
+        "options": [
+          "It increases cutting power",
+          "It cools the tissue",
+          "CO₂ light is invisible, so it makes it easier to control the beam's position and direction",
+          "It sterilizes the surgical instruments"
+        ],
+        "explain": "Since CO₂ laser light is invisible, a red helium-neon beam is used to make it easier to control the beam's position and direction."
+      },
+      {
+        "correct": 0,
+        "question": "Transmitting laser information over long distances is done using:",
+        "options": [
+          "Optical fibers",
+          "Copper wires only",
+          "Sound waves",
+          "It cannot be transmitted at all"
+        ],
+        "explain": "Because of scattering and absorption in the air, laser beams transmit information through optical fibers designed to guide light through them."
+      },
+      {
+        "correct": 3,
+        "question": "Holographic imaging differs from ordinary photography in that it:",
+        "options": [
+          "Is cheaper",
+          "Records only light intensity",
+          "Does not need a laser",
+          "Records amplitude and phase, giving a three-dimensional image visible from every direction"
+        ],
+        "explain": "Holographic imaging records the amplitude and phase of the reflected waves, unlike ordinary photography, which records only the light intensity."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Industrial applications: drilling, cutting, and welding hard metals, and trimming electronic components with extreme precision.",
+      "Medical applications: general surgery (CO₂), cosmetic medicine, dentistry, ophthalmology, and cardiology.",
+      "Communications through optical fibers, to overcome laser scattering and absorption in the air.",
+      "Commercial, environmental, surveying, engraving, and research applications, code reading, holographic imaging, and military applications."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of laser applications",
+    "viewBox": "0 0 480 260",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Applications",
+        "of Laser"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Industrial/Medical"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Communications/Fiber"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Commercial/Environmental"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Military/Hologram"
+        ]
+      }
+    ]
+  }
+}

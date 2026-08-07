@@ -97,11 +97,19 @@
       "selectOptions": null,
       "presets": null,
       "ruleBoxes": [],
-      "trailingHtml": null,
-      "trailingId": null,
+      "trailingHtml": "",
+      "trailingId": "fiberStatus",
       "sectionGroup": 3,
       "sectionId": "interactive",
-      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية",
+      "labels": {
+        "transmitterLabel": "المُرسل",
+        "receiverLabel": "المُستقبِل",
+        "fiberCaptionLabel": "الليف البصري (Optical Fiber)",
+        "statusReady": "جاهز للإرسال",
+        "statusTravel": "الإشارة تنتقل عبر انعكاسات داخلية كاملة داخل الليف...",
+        "statusDone": "وصلت الإشارة إلى المستقبِل دون فقدان أو تشويه ✓"
+      }
     }
   ],
   "quiz": {
