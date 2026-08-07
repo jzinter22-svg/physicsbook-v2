@@ -512,14 +512,26 @@ def extract_lesson(path, lesson_num, chapter_num, total_lessons):
 
             defbox = sec.select_one(".def-box")
             if defbox:
-                data["content"].append({
+                block = {
                     "type": classify_defbox(defbox),
                     # inner_html (not text()) to preserve inline tags like <sub>c</sub>
                     # in labels such as "التعجيل المركزي (a<sub>c</sub>)" — text()
                     # would insert a stray space between "a" and its subscript.
                     "label": inner_html(defbox.select_one(".def-label")),
                     "html": inner_html(defbox.select_one("p") or defbox),
-                })
+                }
+                # An enumeration def-box's intro <p> is sometimes followed by
+                # its own <ol>/<ul> of items (e.g. "🔢 تعداد — منتجات مصنّعة من
+                # النفط الخام" listing 10 products) — select_one("p") above
+                # only ever grabbed that intro sentence, silently dropping the
+                # whole list. style is captured verbatim (not just gap/margin)
+                # since at least one of these lists uses a 2-column layout.
+                defbox_list = defbox.select_one("ol, ul")
+                if defbox_list:
+                    block["listItems"] = [inner_html(li) for li in defbox_list.select(":scope > li")]
+                    block["listOrdered"] = defbox_list.name == "ol"
+                    block["listStyle"] = defbox_list.get("style")
+                data["content"].append(block)
                 continue
 
             callout = sec.select_one(".callout")

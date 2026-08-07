@@ -71,7 +71,13 @@
     var color = DEF_COLORS[b.type];
     var style = color ? ' style="border-inline-start-color:' + color + '"' : "";
     var labelStyle = color ? ' style="color:' + color + '"' : "";
-    return '<div class="def-box"' + style + '><span class="def-label"' + labelStyle + ">" + html(b.label) + "</span><p style=\"margin:.3rem 0\">" + html(b.html) + "</p></div>";
+    var list = "";
+    if(b.listItems && b.listItems.length){
+      var tag = b.listOrdered ? "ol" : "ul";
+      list = "<" + tag + (b.listStyle ? ' style="' + esc(b.listStyle) + '"' : "") + ">" +
+        b.listItems.map(function(it){ return "<li>" + html(it) + "</li>"; }).join("") + "</" + tag + ">";
+    }
+    return '<div class="def-box"' + style + '><span class="def-label"' + labelStyle + ">" + html(b.label) + "</span><p style=\"margin:.3rem 0\">" + html(b.html) + "</p>" + list + "</div>";
   }
 
   function renderBlock(b, ctx){
