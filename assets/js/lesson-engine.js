@@ -171,6 +171,13 @@
           (calc ? '<div class="calc-flow">' + calc + "</div>" : "") + "</div></li>";
       }).join("") + "</ol>";
     }
+    if(sol.diagramSvg){
+      out += '<div class="mindmap-wrap" style="margin-top:.6rem">' + sol.diagramSvg + "</div>";
+      // A static diagram embedded in a solution can compose its own text
+      // labels in JS (same simText() mechanism simulations use) rather than
+      // baking them into the (otherwise empty) diagramSvg markup itself.
+      if(sol.labels) currentSimLabels["ex" + b.number] = sol.labels;
+    }
     if(sol.note){
       out += '<div class="callout tip" style="margin-top:.8rem"><span class="icon">' + esc(sol.note.icon) + "</span><span>" + (sol.note.strong ? "<b>" + esc(sol.note.strong) + "</b> " : "") + html(sol.note.html) + "</span></div>";
     }

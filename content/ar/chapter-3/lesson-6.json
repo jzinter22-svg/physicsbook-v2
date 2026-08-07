@@ -149,8 +149,15 @@
             "calc": []
           }
         ],
+        "diagramSvg": "<svg aria-label=\"رسم توضيحي لأجزاء مولد التيار المتناوب الأربعة\" height=\"160\" id=\"genPartsSvg\" role=\"img\" viewbox=\"0 0 360 160\" width=\"360\"></svg>",
         "final": "✓ أربعة أجزاء: النواة، المغناطيس، حلقتا الزلق، الفرشتان",
-        "label": "الإجابة"
+        "label": "الإجابة",
+        "labels": {
+          "partArmature": "النواة",
+          "partMagnet": "المغناطيس",
+          "partSlipRings": "حلقتا الزلق",
+          "partBrushes": "الفرشتان"
+        }
       },
       "sectionGroup": 1,
       "sectionId": "shortq",
@@ -169,6 +176,7 @@
             "calc": []
           }
         ],
+        "diagramSvg": "<svg aria-label=\"أربع حالات لموصل متحرك في مجال مغناطيسي مع اتجاه التيار المحتث\" height=\"340\" id=\"fourCasesSvg\" role=\"img\" viewbox=\"0 0 380 340\" width=\"380\"></svg>",
         "final": "✓ (a) خارج الصفحة •   (b) داخل الصفحة ×   (c) داخل الصفحة ×   (d) خارج الصفحة •",
         "label": "الإجابة"
       },

@@ -1,0 +1,522 @@
+{
+  "lessonNumber": 6,
+  "chapterNumber": 3,
+  "meta": {
+    "pageTitle": "Lesson 6: Chapter Questions and Problems — Chapter Three",
+    "description": "Chapter Three questions: multiple-choice questions, short questions, and the three calculation problems on electromagnetic induction, each fully solved.",
+    "breadcrumbChapter": "Chapter 3",
+    "breadcrumbLesson": "Chapter Questions and Problems",
+    "footer": "Chapter Three: Electromagnetic Induction — Lesson 6: Chapter Questions and Problems"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 6 of 6 · Chapter Three",
+    "title": "Chapter Three Questions and Problems",
+    "lead": "Chapter Three questions: multiple choice · short questions · calculation problems — all fully solved"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Reviews the key concepts and laws of Chapter Three by solving multiple-choice questions.",
+    "Answers short questions about electromagnetic induction and Faraday's and Lenz's laws.",
+    "Solves the three calculation problems with detailed steps."
+  ],
+  "content": [
+    {
+      "type": "sectionIntro",
+      "heading": "✅ Q1: Choose the Correct Statement for Each of the Following",
+      "leadHtml": null,
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>When a coil rotates inside a uniform magnetic field at a constant angular speed, the induced voltage obtained is:</p><ul><li>a- Constant in magnitude</li><li>b- Constant in direction</li><li>c- Sinusoidal alternating</li><li>d- Pulsed</li></ul>",
+      "label": "1",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Rotating the coil at a constant angular speed inside a uniform field produces a voltage that varies as a sinusoidal function of time (as in the stages of Figure 3-11).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: c — Sinusoidal alternating",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>The basis of how metal detectors work is:</p><ul><li>a- Lenz's law</li><li>b- Eddy currents</li><li>c- Faraday's phenomenon</li><li>d- The phenomenon of self-induction</li></ul>",
+      "label": "2",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Metal detectors work based on eddy currents induced in nearby metal pieces.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — Eddy currents",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 3,
+      "problemHtml": "<p>A DC generator contains:</p><ul><li>a- An induction coil</li><li>b- Two slip rings</li><li>c- The commutator</li><li>d- None of the above</li></ul>",
+      "label": "3",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "A DC generator replaces the two slip rings with a commutator made of two insulated halves to maintain a constant direction of current.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: c — The commutator",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 4,
+      "problemHtml": "<p>A motor converts electrical energy into:</p><ul><li>a- Mechanical energy</li><li>b- Thermal energy</li><li>c- Light energy</li><li>d- Chemical energy</li></ul>",
+      "label": "4",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "A motor is a device that converts electrical energy into mechanical energy in the presence of a magnetic field.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Mechanical energy",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 5,
+      "problemHtml": "<p>The self-inductance of a coil depends on:</p><ul><li>a- The shape of the coil</li><li>b- The length of the coil and the area of a single turn</li><li>c- The number of turns of the coil</li><li>d- All of the above</li></ul>",
+      "label": "5",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The self-inductance depends on the coil's geometric shape, core material, length, area of a single turn, and number of turns, all together.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: d — All of the above",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Multiple Choice"
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "🧩 Short Questions",
+      "leadHtml": null,
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 Short Questions"
+    },
+    {
+      "type": "example",
+      "number": 6,
+      "problemHtml": "<p>State the parts of an AC generator, with a diagram.</p>",
+      "label": "Q2",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Four main parts: (1) The armature — an insulated coil that rotates about an axis in a uniform magnetic field. (2) The magnet — permanent or electric, surrounding the armature. (3) The two slip rings — rotate with the coil, each connected to one of its ends. (4) The two brushes — made of carbon, connecting the slip rings to the external circuit.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Four parts: the armature, the magnet, the two slip rings, the two brushes",
+        "label": "Answer",
+        "diagramSvg": "<svg aria-label=\"Diagram of the four parts of an AC generator\" height=\"160\" id=\"genPartsSvg\" role=\"img\" viewbox=\"0 0 360 160\" width=\"360\"></svg>",
+        "labels": {
+          "partArmature": "Armature",
+          "partMagnet": "Magnet",
+          "partSlipRings": "Slip rings",
+          "partBrushes": "Brushes"
+        }
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 Short Questions"
+    },
+    {
+      "type": "example",
+      "number": 7,
+      "problemHtml": "<p>Show the direction of the current flowing in a conducting wire moving in a magnetic field for the following cases:</p>",
+      "label": "Q3",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "We apply the right-hand rule (index finger = field B, thumb = motion of the conductor v, middle finger = current I) to each of the four cases.",
+            "calc": []
+          }
+        ],
+        "final": "✓ (a) out of the page •   (b) into the page ×   (c) into the page ×   (d) out of the page •",
+        "label": "Answer",
+        "diagramSvg": "<svg aria-label=\"Four cases of a conductor moving in a magnetic field with the direction of the induced current\" height=\"340\" id=\"fourCasesSvg\" role=\"img\" viewbox=\"0 0 380 340\" width=\"380\"></svg>"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 Short Questions"
+    },
+    {
+      "type": "example",
+      "number": 8,
+      "problemHtml": "<p>Does Lenz's law satisfy the principle of conservation of energy? Explain.</p>",
+      "label": "Q4",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Yes, Lenz's law satisfies the principle of conservation of energy. The induced magnetic field resulting from the induced current generates a force opposing the motion of the conductor, and external work must be done to overcome this opposing force; it is this work that is converted into the energy of the induced current (heat, mechanical work, or chemical energy).",
+            "calc": []
+          },
+          {
+            "note": "If the opposite were true (i.e., the induced current reinforced the change that caused it instead of opposing it), energy would amplify itself without any external energy source, which violates the principle of conservation of energy.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Yes; the resulting opposing force requires external work that converts into the energy of the induced current, consistent with conservation of energy",
+        "label": "Answer"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 Short Questions"
+    },
+    {
+      "type": "example",
+      "number": 9,
+      "problemHtml": "<p>Explain the method for determining the direction of the current in the armature of an electric generator.</p>",
+      "label": "Q5",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The right-hand rule is used: the fingers of the right hand (thumb, index, and middle) are placed perpendicular to each other; the index finger points in the direction of the magnetic field, the thumb points in the direction of motion of the conductor (the armature), while the middle finger points in the direction of the induced current in it.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Using the right-hand rule (index = field, thumb = motion, middle = current)",
+        "label": "Answer"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 Short Questions"
+    },
+    {
+      "type": "example",
+      "number": 10,
+      "problemHtml": "<p>How can an AC generator be modified to generate a direct current?</p>",
+      "label": "Q6",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "By replacing the two separate slip rings with a single ring split into two electrically insulated halves (the commutator), while ensuring that the connection of one brush switches from one half to the other exactly at the moment the induced voltage tries to reverse its direction, which keeps the current direction in the external circuit constant (though in the form of pulses of varying magnitude).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Replacing the two slip rings with a commutator of two insulated halves synchronized with the voltage reversal",
+        "label": "Answer"
+      },
+      "sectionGroup": 1,
+      "sectionId": "shortq",
+      "sectionNavLabel": "🧩 Short Questions"
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "🧮 Problems",
+      "leadHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Problems"
+    },
+    {
+      "type": "example",
+      "number": 11,
+      "problemHtml": "<p>A coil with 6 turns and an area of \\((10\\ \\text{cm}^2)\\) is placed in a magnetic field of flux density \\((0.1\\ \\text{T})\\). The field changes over a time interval of \\((1\\times10^{-3}\\ \\text{s})\\). Find the magnitude of the induced electromotive force generated across the coil, given that the magnetic field acts perpendicular to the coil's surface.</p>",
+      "label": "Problem 1",
+      "solution": {
+        "given": [
+          "\\( N = 6 \\) turns",
+          "\\( A = 10\\ \\text{cm}^2 = 10\\times10^{-4}\\ \\text{m}^2 \\) — the coil's area (after conversion)",
+          "\\( \\Delta B = 0.1\\ \\text{T} \\) — the change in magnetic flux density (fully disappears or appears)",
+          "\\( \\Delta t = 1\\times10^{-3}\\ \\text{s} \\)"
+        ],
+        "required": "Calculate the induced electromotive force \\(\\varepsilon_{ind}\\).",
+        "steps": [
+          {
+            "note": "Since the field acts perpendicular to the coil's surface, \\(\\Delta\\varnothing = A\\Delta B\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\varepsilon_{ind} = -N\\dfrac{A\\Delta B}{\\Delta t} = -6\\times\\dfrac{(10\\times10^{-4})\\times 0.1}{1\\times10^{-3}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\varepsilon_{ind} = -0.6\\ \\text{V} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ ε_ind = −0.6 V",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 2,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Problems"
+    },
+    {
+      "type": "example",
+      "number": 12,
+      "problemHtml": "<p>A coil with 100 turns and an area of \\((5\\ \\text{cm}^2)\\) is in a uniform magnetic field of flux density \\((0.25\\ \\text{T})\\) acting perpendicular to the surface. The coil was pulled quickly and, within \\((0.01\\ \\text{s})\\), left the magnetic field. Find: 1- The induced electromotive force. 2- The electric charge passing through the coil, given that the coil's resistance equals \\((20\\ \\Omega)\\).</p>",
+      "label": "Problem 2",
+      "solution": {
+        "given": [
+          "\\( N = 100 \\) turns",
+          "\\( A = 5\\ \\text{cm}^2 = 5\\times10^{-4}\\ \\text{m}^2 \\) — after conversion",
+          "\\( B_i = 0.25\\ \\text{T},\\ B_f = 0 \\) — the coil fully leaves the field",
+          "\\( \\Delta t = 0.01\\ \\text{s} \\)",
+          "\\( R = 20\\ \\Omega \\) — the coil's resistance"
+        ],
+        "required": "1- Calculate \\(\\varepsilon_{ind}\\). 2- Calculate the electric charge q passing through the coil.",
+        "steps": [
+          {
+            "note": "1- We apply Faraday's law, where \\(\\Delta\\varnothing=A\\Delta B\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\varepsilon_{ind} = -N\\dfrac{A\\Delta B}{\\Delta t} = -\\dfrac{100\\times(5\\times10^{-4})\\times 0.25}{0.01} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\varepsilon_{ind} = -1.25\\ \\text{V} \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- We first calculate the current from Ohm's law, then the charge \\(q=I\\Delta t\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( I = \\dfrac{\\varepsilon_{ind}}{R} = \\dfrac{1.25}{20} = 0.0625\\ \\text{A} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( q = I\\times\\Delta t = 0.0625\\times 0.01 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( q = 6.25\\times10^{-4}\\ \\text{C} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ ε_ind = 1.25 V   ·   q = 6.25×10⁻⁴ C",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 2,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Problems"
+    },
+    {
+      "type": "example",
+      "number": 13,
+      "problemHtml": "<p>How many turns are needed to generate an electromotive force of \\((10\\ \\text{V})\\) in a coil moving inside a magnetic flux changing at a rate of \\((5\\times10^{-3}\\ \\text{weber/s})\\)?</p>",
+      "label": "Problem 3",
+      "solution": {
+        "given": [
+          "\\( \\varepsilon_{ind} = 10\\ \\text{V} \\) — the required electromotive force",
+          "\\( \\dfrac{\\Delta\\varnothing}{\\Delta t} = 5\\times10^{-3}\\ \\text{Wb/s} \\) — the rate of change of flux (per turn)"
+        ],
+        "required": "Calculate the number of turns N needed.",
+        "steps": [
+          {
+            "note": "From Faraday's law, rearranging to solve for N",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\varepsilon_{ind} = N\\dfrac{\\Delta\\varnothing}{\\Delta t} \\;\\Rightarrow\\; N = \\dfrac{\\varepsilon_{ind}}{\\Delta\\varnothing/\\Delta t} = \\dfrac{10}{5\\times10^{-3}} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( N = 2000 \\) turns"
+              }
+            ]
+          }
+        ],
+        "final": "✓ N = 2000 turns",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 2,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Problems"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Final Review of Chapter Three",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "Faraday's law of electromagnetic induction is:",
+        "options": [
+          "\\( F=ma \\)",
+          "\\( \\varepsilon_{ind}=-N\\Delta\\varnothing/\\Delta t \\)",
+          "\\( E=mc^2 \\)",
+          "\\( V=IR \\)"
+        ],
+        "explain": "Faraday's law: \\(\\varepsilon_{ind}=-N\\Delta\\varnothing/\\Delta t\\)."
+      },
+      {
+        "correct": 2,
+        "question": "Lenz's law determines:",
+        "options": [
+          "The magnitude of the induced current only",
+          "The circuit's resistance",
+          "The direction of the induced current (opposes the change that causes it)",
+          "The generator's rotation speed"
+        ],
+        "explain": "Lenz's law determines the direction of the induced current, which opposes the magnetic change that causes it."
+      },
+      {
+        "correct": 0,
+        "question": "Eddy currents are a phenomenon that:",
+        "options": [
+          "Can have its thermal damage reduced by using thin insulated laminations",
+          "Is always beneficial with no drawbacks",
+          "Is unrelated to induced current",
+          "Only occurs in electrical insulators"
+        ],
+        "explain": "Eddy currents cause thermal loss, and their damage is reduced by using thin insulated laminations instead of a solid metal piece."
+      },
+      {
+        "correct": 3,
+        "question": "The difference between an AC generator and a DC generator is:",
+        "options": [
+          "The number of magnets used",
+          "The type of battery used",
+          "The rotation speed of the armature only",
+          "The use of two slip rings versus a commutator"
+        ],
+        "explain": "An AC generator uses two separate slip rings, while a DC generator replaces them with a commutator of two insulated halves."
+      },
+      {
+        "correct": 1,
+        "question": "The back electromotive force of a motor arises because of:",
+        "options": [
+          "A rise in the motor's temperature",
+          "The rotation of the motor's coil inside the magnetic field (per Faraday and Lenz)",
+          "A weak battery feeding the motor",
+          "Wear of the brushes"
+        ],
+        "explain": "The rotation of the motor's coil generates an electromotive force according to Faraday, which opposes the source voltage according to Lenz, and is called the back electromotive force."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Chapter Three Summary",
+    "items": [
+      "Faraday's law: \\(\\varepsilon_{ind}=-N\\Delta\\varnothing/\\Delta t\\) — a change in magnetic flux generates an induced electromotive force.",
+      "Lenz's law: the induced current's direction opposes the change that causes it, satisfying the principle of conservation of energy.",
+      "Eddy currents cause thermal loss, and metal objects are made as insulated laminations to reduce them.",
+      "Self-induction: \\(\\varepsilon_{ind}=-L\\Delta I/\\Delta t\\), and the self-inductance \\(L=N\\Delta\\varnothing/\\Delta I\\).",
+      "A generator converts mechanical energy into electrical energy (alternating with two slip rings, or direct with a commutator), and a motor works in reverse.",
+      "A motor's torque arises from a force couple, and a back electromotive force arises in it while it rotates."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Chapter Three Mind Map",
+    "ariaLabel": "Comprehensive mind map of Chapter Three",
+    "viewBox": "0 0 520 240",
+    "center": {
+      "cx": 260.0,
+      "cy": 120.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Electromagnetic",
+        "Induction"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Faraday",
+          "and Lenz"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 195.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Eddy currents & self-induction"
+        ]
+      },
+      {
+        "cx": 430.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "The Generator"
+        ]
+      },
+      {
+        "cx": 430.0,
+        "cy": 195.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "The Motor"
+        ]
+      }
+    ]
+  }
+}

@@ -207,6 +207,17 @@ def extract_example(problem_div, solution_div, number):
             "strong": text(strong) if strong else "",
             "html": html_after_lead_b(note_callout.select_one("span:nth-of-type(2)") or note_callout),
         }
+    # A static illustration svg (no live controls) sometimes sits directly
+    # inside a solution, after the steps and before .exercise-final (e.g.
+    # ch3 lesson-6's short-answer section: a generator-parts diagram, a
+    # four-cases diagram) — captured verbatim like problem_div's
+    # .diagram-wrap svg above, or it would be silently dropped entirely
+    # once the surrounding HTML is replaced by the JSON-driven mount point.
+    sol_diagram_wrap = solution_div.select_one(".mindmap-wrap")
+    if sol_diagram_wrap:
+        sol_diagram_svg = sol_diagram_wrap.find("svg")
+        if sol_diagram_svg:
+            sol["diagramSvg"] = str(sol_diagram_svg)
     final = solution_div.select_one(".exercise-final")
     sol["final"] = inner_html(final) if final else None
     # Same badge-vs-bare-h2 signal as the problem head, but the bare h2
