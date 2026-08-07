@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-8.html">
@@ -42,168 +43,34 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يذكر أنواعًا من السبائك المستعملة في البيئة العراقية مع أماكن استعمالها.</span></li>
-        <li><span class="obj-num">2</span><span>يعلّل زيادة صلادة الحديد عند إضافة الكاربون إليه لتكوين الصلب.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 8-8 بعض أنواع السبائك المستعملة في البيئة العراقية</h2>
-      <p>تدخل السبائك في كثير من التفاصيل القريبة من حياتنا اليومية في العراق، من النقود المعدنية القديمة إلى معدات الصناعات النفطية والأدوات المنزلية.</p>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: النقود المعدنية العراقية وسبائكها</h2>
-      <p>اضغط أي عملة لمعرفة السبيكة التي تتكون منها.</p>
-      <div class="io-panel">
-        <div class="io-row" role="group" aria-label="اختيار فئة العملة">
-          <button class="neu-btn primary" data-coin="c5" id="btnC5">عملة 5 فلوس</button>
-          <button class="neu-btn" data-coin="c10" id="btnC10">عملة 10 فلوس</button>
-          <button class="neu-btn" data-coin="c25" id="btnC25">عملة 25 فلسًا</button>
-        </div>
-        <div class="mindmap-wrap"><svg id="coinSvg" viewBox="0 0 300 190" role="img" aria-label="محاكاة سبائك النقود المعدنية العراقية"></svg></div>
-        <p id="coinCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — بعض أنواع السبائك في البيئة العراقية</span>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.6rem">
-        <li>تُستعمل السبائك في تصنيع النقود، كما كان متداولًا في العراق قبل سنوات، مثل: عملة فئة 5 فلوس وتتكون من النحاس والنيكل بنسبة ووزن معيّن، وعملة فئة 10 فلوس وتتكون من النحاس والنيكل بنسبة ووزن معيّن أيضًا، وعملة فئة 25 فلسًا وتتكون سبيكتها من الفضة والنحاس بنسب وأوزان متساوية.</li>
-        <li>سبيكة الرصاص، والتي تُستعمل في صناعة اللحام وصناعة البطاريات السائلة ومكابس السوائل، وفي صناعة أحرف الطباعة.</li>
-        <li>الفولاذ المقاوم للصدأ، وهي سبيكة تُستعمل بنطاق واسع في محطات توليد الطاقة الكهربائية والصناعة النفطية والصناعات الكيمياوية، وللاستخدامات في الأواني والمعدات المنزلية.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 11-8 قطعة نحاسية على شكل وصلة سباكة سداسية">
-          <g font-family="Cairo,sans-serif">
-            <rect x="60" y="40" width="100" height="60" fill="#e8b84b" stroke="#a5772a" stroke-width="2"/>
-            <polygon points="60,40 40,60 40,120 60,140 60,100 60,40" fill="#f0c96a" stroke="#a5772a" stroke-width="2"/>
-            <polygon points="160,40 180,60 180,120 160,140 160,100 160,40" fill="#c99a34" stroke="#a5772a" stroke-width="2"/>
-            <circle cx="110" cy="90" r="26" fill="var(--surface)" stroke="#a5772a" stroke-width="2"/>
-            <path d="M40,60 L40,120 L60,140 L160,140 L180,120 L180,60 L160,40 L60,40 Z" fill="none" stroke="#a5772a" stroke-width="2"/>
-          </g>
-        </svg>
-        <span class="diagram-caption">الشكل 11-8: قطعة توصيل نحاسية سداسية الشكل تُستعمل في تمديدات المياه والسباكة</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">💬</span>
-      <span><b>هل تعلم؟</b> أن الحديد في حالته النقية أكثر ليونة من الألمنيوم، وتزداد صلادته بإضافة العناصر السبائكية كالكاربون بنسب معينة، فيتكوّن سبيكة الصلب وهي أقوى بألف مرة من الحديد النقي.</span>
-    </div>
-  </section>
-
-  <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
       <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>كانت عملة فئة 5 فلوس العراقية القديمة تتكون سبيكتها من:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الفضة والذهب</span></label>
-          <label class="quiz-opt"><input type="radio"><span>النحاس والنيكل</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الرصاص والقصدير</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الحديد والكروم</span></label>
-        </div>
-        <div class="quiz-explain">كانت عملة فئة 5 فلوس تتكون من النحاس والنيكل بنسبة ووزن معيّن.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>كانت عملة فئة 25 فلسًا العراقية القديمة تتكون سبيكتها من:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الألمنيوم والمغنيسيوم</span></label>
-          <label class="quiz-opt"><input type="radio"><span>النحاس والنيكل</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الفضة والنحاس</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الحديد والنحاس</span></label>
-        </div>
-        <div class="quiz-explain">كانت عملة فئة 25 فلسًا تتكون سبيكتها من الفضة والنحاس بنسب وأوزان متساوية.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>تُستعمل سبيكة الرصاص في العراق في:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>اللحام والبطاريات السائلة ومكابس السوائل وأحرف الطباعة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>صناعة الأدوية فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>صناعة الزجاج فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>صناعة الأقمشة</span></label>
-        </div>
-        <div class="quiz-explain">تُستعمل سبيكة الرصاص في صناعة اللحام والبطاريات السائلة ومكابس السوائل، وفي صناعة أحرف الطباعة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>يزداد صلادة الحديد النقي وتتكوّن سبيكة الصلب الأقوى بألف مرة عند إضافة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الماء</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الأوكسجين النقي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الملح</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الكاربون بنسب معينة</span></label>
-        </div>
-        <div class="quiz-explain">تزداد صلادة الحديد بإضافة العناصر السبائكية كالكاربون بنسب معينة، فيتكوّن سبيكة الصلب الأقوى بألف مرة من الحديد النقي.</div>
-      </div>
-
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
   </section>
 
-  <!-- ===== Summary ===== -->
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>استُعملت سبائك النحاس والنيكل في نقود فئة 5 و10 فلوس، وسبيكة الفضة والنحاس في نقود فئة 25 فلسًا في العراق سابقًا.</span></li>
-        <li><span>تُستعمل سبيكة الرصاص في اللحام والبطاريات السائلة ومكابس السوائل وأحرف الطباعة.</span></li>
-        <li><span>يُستعمل الفولاذ المقاوم للصدأ بنطاق واسع في محطات توليد الطاقة والصناعة النفطية والكيمياوية والأدوات المنزلية.</span></li>
-        <li><span>إضافة الكاربون بنسب معينة للحديد النقي (الأكثر ليونة من الألمنيوم) يكوّن سبيكة الصلب، الأقوى بألف مرة من الحديد النقي.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
-  <!-- ===== Mind map ===== -->
   <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
     <div class="card neu">
       <div class="example-head">
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l8" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l8">
-        <svg viewBox="0 -3 480 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للسبائك في البيئة العراقية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="10" font-family="Cairo,sans-serif">سبائك البيئة</text>
-            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="10" font-family="Cairo,sans-serif">العراقية</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">نقود معدنية</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="219" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">سبيكة الرصاص</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">فولاذ مقاوم</text>
-            <text x="390" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">للصدأ</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="219" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">صلابة الصلب</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l8"></div>
     </div>
   </section>
 
@@ -220,15 +87,16 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("coinSvg");
-  var caption = document.getElementById("coinCaption");
-  var buttons = document.querySelectorAll("[data-coin]");
+  var svg, caption, buttons;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
-  var COINS = {
-    c5:  {value:"5 فلوس", color:"#c98a4b", edge:"#8a5a2a", alloy:"نحاس + نيكل", text:"عملة فئة 5 فلوس: تتكون سبيكتها من النحاس والنيكل بنسبة ووزن معيّن."},
-    c10: {value:"10 فلوس", color:"#c98a4b", edge:"#8a5a2a", alloy:"نحاس + نيكل", text:"عملة فئة 10 فلوس: تتكون سبيكتها من النحاس والنيكل بنسبة ووزن معيّن، أعلى وزنًا من فئة 5 فلوس."},
-    c25: {value:"25 فلسًا", color:"#d7dbe0", edge:"#9aa1ac", alloy:"فضة + نحاس", text:"عملة فئة 25 فلسًا: تتكون سبيكتها من الفضة والنحاس بنسب وأوزان متساوية."}
-  };
+  function coins(){
+    return {
+      c5:  {value:t("c5Value","5 فلوس"), color:"#c98a4b", edge:"#8a5a2a", alloy:t("c5Alloy","نحاس + نيكل"), text:t("c5Text","عملة فئة 5 فلوس: تتكون سبيكتها من النحاس والنيكل بنسبة ووزن معيّن.")},
+      c10: {value:t("c10Value","10 فلوس"), color:"#c98a4b", edge:"#8a5a2a", alloy:t("c10Alloy","نحاس + نيكل"), text:t("c10Text","عملة فئة 10 فلوس: تتكون سبيكتها من النحاس والنيكل بنسبة ووزن معيّن، أعلى وزنًا من فئة 5 فلوس.")},
+      c25: {value:t("c25Value","25 فلسًا"), color:"#d7dbe0", edge:"#9aa1ac", alloy:t("c25Alloy","فضة + نحاس"), text:t("c25Text","عملة فئة 25 فلسًا: تتكون سبيكتها من الفضة والنحاس بنسب وأوزان متساوية.")}
+    };
+  }
 
   function el(tag, attrs){
     var e = document.createElementNS(ns, tag);
@@ -238,7 +106,7 @@
 
   function draw(key){
     while(svg.firstChild) svg.removeChild(svg.firstChild);
-    var c = COINS[key];
+    var c = coins()[key];
 
     var coin = el("circle", {cx:150, cy:90, r:55, fill:c.color, stroke:c.edge, "stroke-width":4});
     svg.appendChild(coin);
@@ -253,18 +121,24 @@
     svg.appendChild(alloyTxt);
 
     var lbl = el("text", {x:150, y:170, "text-anchor":"middle", "font-family":"Cairo,sans-serif", "font-size":11, "font-weight":800, fill:"var(--text-primary)"});
-    lbl.textContent = "العراق";
+    lbl.textContent = t("iraqLabel","العراق");
     svg.appendChild(lbl);
 
     caption.textContent = c.text;
     buttons.forEach(function(b){ b.classList.toggle("primary", b.getAttribute("data-coin") === key); });
   }
 
-  buttons.forEach(function(b){
-    b.addEventListener("click", function(){ draw(b.getAttribute("data-coin")); });
-  });
-
-  draw("c5");
+  function boot(){
+    svg = document.getElementById("coinSvg");
+    caption = document.getElementById("coinCaption");
+    buttons = document.querySelectorAll("[data-coin]");
+    if(!svg || !caption || !buttons.length) return;
+    buttons.forEach(function(b){
+      b.addEventListener("click", function(){ draw(b.getAttribute("data-coin")); });
+    });
+    draw("c5");
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

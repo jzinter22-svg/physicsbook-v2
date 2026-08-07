@@ -1,0 +1,251 @@
+{
+  "lessonNumber": 8,
+  "chapterNumber": 8,
+  "meta": {
+    "pageTitle": "Lesson 8: Some Types of Alloys Used in the Iraqi Setting — Chapter Eight",
+    "description": "8-8 Some types of alloys used in the Iraqi setting: Iraqi coin alloys, lead alloy, and stainless steel.",
+    "breadcrumbChapter": "Chapter 8",
+    "breadcrumbLesson": "Some Types of Alloys Used in the Iraqi Setting",
+    "footer": "Chapter Eight: Metals and Alloys — Lesson 8: Some Types of Alloys Used in the Iraqi Setting"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 8 of 9 · 8-8",
+    "title": "Some Types of Alloys Used in the Iraqi Setting",
+    "lead": "From old Iraqi metal coins to stainless steel in power stations: learn in this lesson about examples of alloys close to our Iraqi setting."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "States types of alloys used in the Iraqi setting along with their places of use.",
+    "Explains why iron's hardness increases when carbon is added to it to form steel."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 8-8 Some Types of Alloys Used in the Iraqi Setting",
+      "html": "Alloys are part of many details close to our daily life in Iraq, from old metal coins to petroleum-industry equipment and household tools.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "simulation",
+      "svgId": "coinSvg",
+      "svgAriaLabel": "Simulation of Iraqi metal coin alloys",
+      "svgViewBox": "0 0 300 190",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: Iraqi Metal Coins and Their Alloys",
+      "descriptionHtml": "Press any coin to learn about the alloy it is made of.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnC5",
+          "html": "5-Fils Coin",
+          "class": "neu-btn primary",
+          "data": {
+            "data-coin": "c5"
+          },
+          "style": null
+        },
+        {
+          "id": "btnC10",
+          "html": "10-Fils Coin",
+          "class": "neu-btn",
+          "data": {
+            "data-coin": "c10"
+          },
+          "style": null
+        },
+        {
+          "id": "btnC25",
+          "html": "25-Fils Coin",
+          "class": "neu-btn",
+          "data": {
+            "data-coin": "c25"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "trailingId": "coinCaption",
+      "sectionGroup": 1,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "c5Value": "5 Fils",
+        "c5Alloy": "Copper + Nickel",
+        "c5Text": "The 5-fils coin: its alloy is made up of copper and nickel in a specific ratio and weight.",
+        "c10Value": "10 Fils",
+        "c10Alloy": "Copper + Nickel",
+        "c10Text": "The 10-fils coin: its alloy is made up of copper and nickel in a specific ratio and weight, heavier than the 5-fils coin.",
+        "c25Value": "25 Fils",
+        "c25Alloy": "Silver + Copper",
+        "c25Text": "The 25-fils coin: its alloy is made up of silver and copper in equal ratios and weights.",
+        "iraqLabel": "Iraq"
+      }
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Some Types of Alloys in the Iraqi Setting",
+      "html": "",
+      "listItems": [
+        "Alloys were used in minting coins, as was in circulation in Iraq some years ago, such as: the 5-fils coin, made up of copper and nickel in a specific ratio and weight; the 10-fils coin, also made up of copper and nickel in a specific ratio and weight; and the 25-fils coin, whose alloy is made up of silver and copper in equal ratios and weights.",
+        "Lead alloy, which is used in manufacturing solder, liquid batteries, hydraulic presses, and printing type.",
+        "Stainless steel, an alloy used widely in electrical power generation stations, the petroleum industry, chemical industries, and for use in household utensils and equipment."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.6rem",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 8-11: a hexagonal copper plumbing fitting\" role=\"img\" viewbox=\"0 0 220 200\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"#e8b84b\" height=\"60\" stroke=\"#a5772a\" stroke-width=\"2\" width=\"100\" x=\"60\" y=\"40\"></rect>\n<polygon fill=\"#f0c96a\" points=\"60,40 40,60 40,120 60,140 60,100 60,40\" stroke=\"#a5772a\" stroke-width=\"2\"></polygon>\n<polygon fill=\"#c99a34\" points=\"160,40 180,60 180,120 160,140 160,100 160,40\" stroke=\"#a5772a\" stroke-width=\"2\"></polygon>\n<circle cx=\"110\" cy=\"90\" fill=\"var(--surface)\" r=\"26\" stroke=\"#a5772a\" stroke-width=\"2\"></circle>\n<path d=\"M40,60 L40,120 L60,140 L160,140 L180,120 L180,60 L160,40 L60,40 Z\" fill=\"none\" stroke=\"#a5772a\" stroke-width=\"2\"></path>\n</g>\n</svg>",
+      "caption": "Figure 8-11: A hexagonal copper connecting fitting used in water piping and plumbing",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "Did you know?",
+      "html": "In its pure state, iron is softer than aluminum, and its hardness increases when alloying elements such as carbon are added in specific proportions, forming steel alloy, which is a thousand times stronger than pure iron.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "The old Iraqi 5-fils coin had an alloy made up of:",
+        "options": [
+          "Silver and gold",
+          "Copper and nickel",
+          "Lead and tin",
+          "Iron and chromium"
+        ],
+        "explain": "The 5-fils coin was made up of copper and nickel in a specific ratio and weight."
+      },
+      {
+        "correct": 2,
+        "question": "The old Iraqi 25-fils coin had an alloy made up of:",
+        "options": [
+          "Aluminum and magnesium",
+          "Copper and nickel",
+          "Silver and copper",
+          "Iron and copper"
+        ],
+        "explain": "The 25-fils coin's alloy was made up of silver and copper in equal ratios and weights."
+      },
+      {
+        "correct": 0,
+        "question": "Lead alloy is used in Iraq in:",
+        "options": [
+          "Solder, liquid batteries, hydraulic presses, and printing type",
+          "Manufacturing medicines only",
+          "Manufacturing glass only",
+          "Manufacturing textiles"
+        ],
+        "explain": "Lead alloy is used in manufacturing solder, liquid batteries, hydraulic presses, and printing type."
+      },
+      {
+        "correct": 3,
+        "question": "Pure iron's hardness increases, forming a steel alloy a thousand times stronger, when adding:",
+        "options": [
+          "Water",
+          "Pure oxygen",
+          "Salt",
+          "Carbon in specific proportions"
+        ],
+        "explain": "Iron's hardness increases when alloying elements such as carbon are added in specific proportions, forming steel alloy, a thousand times stronger than pure iron."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Copper-nickel alloys were used in the 5- and 10-fils coins, and silver-copper alloy in the 25-fils coin, in Iraq previously.",
+      "Lead alloy is used in solder, liquid batteries, hydraulic presses, and printing type.",
+      "Stainless steel is used widely in power generation stations, the petroleum and chemical industries, and household tools.",
+      "Adding carbon in specific proportions to pure iron (softer than aluminum) forms steel alloy, a thousand times stronger than pure iron."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of alloys in the Iraqi setting",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Alloys in the",
+        "Iraqi Setting"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Metal Coins"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Lead Alloy"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Stainless",
+          "Steel"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Steel Hardness"
+        ]
+      }
+    ]
+  }
+}
