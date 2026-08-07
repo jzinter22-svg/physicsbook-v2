@@ -47,7 +47,7 @@
       "type": "simulation",
       "svgId": "worldMapSvg",
       "svgAriaLabel": "Interactive map of the world's most important crude oil-producing regions",
-      "svgViewBox": "0 -18 1000 536",
+      "svgViewBox": "0 0 2000 857",
       "svgWidth": null,
       "svgHeight": null,
       "sectionHeading": "🕹️ Interactive Simulation: The World's Most Important Crude Oil-Producing Regions",

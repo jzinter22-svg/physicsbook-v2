@@ -47,7 +47,7 @@
       "type": "simulation",
       "svgId": "worldMapSvg",
       "svgAriaLabel": "خريطة تفاعلية لأهم مناطق إنتاج النفط الخام في العالم",
-      "svgViewBox": "0 -18 1000 536",
+      "svgViewBox": "0 0 2000 857",
       "svgWidth": null,
       "svgHeight": null,
       "sectionHeading": "🕹️ محاكاة تفاعلية: أهم مناطق إنتاج النفط الخام في العالم",

@@ -167,52 +167,59 @@
 
   var svg, zoomGroup, markersGroup, buttons, infoCard, infoDot, infoName, infoImportance, infoCountries, infoShare, infoNote;
 
-  /* Marker coordinates are plotted from real longitude/latitude on an
-     equirectangular projection (viewBox 1000x500, so x = 500 + lon*2.778,
-     y = 250 - lat*2.778) — the same projection used to trace the continent
-     paths below — so every marker sits on its true geographic location
-     rather than an abstract placeholder box. Names come from the (already
-     translated) region buttons; importance/countries/share/note come from
-     the lesson JSON's "labels" dict via simText(), falling back to these
-     Arabic literals if labels are ever missing. */
+  /* Marker coordinates are derived from the real country geometry in
+     assets/maps/world.svg (viewBox 0 0 2000 857): for single-country
+     regions (nigeria/venezuela/russia) each marker sits at a verified
+     interior point of that country's actual boundary path (area-weighted
+     centroid, falling back to a horizontal-scanline interior point for
+     concave shapes where the centroid itself lands outside the polygon —
+     Russia's marker uses its largest contiguous fragment, i.e. Siberia).
+     For multi-country regions (gulf/mideast) the marker anchors to a
+     representative country's interior point (Kuwait for the Gulf coast,
+     Saudi Arabia for the wider Middle East); arctic has no country to
+     anchor to, so it sits over the Arctic Ocean near the prime meridian.
+     Names come from the (already translated) region buttons;
+     importance/countries/share/note come from the lesson JSON's "labels"
+     dict via simText(), falling back to these Arabic literals if labels
+     are ever missing. */
   var REGION_DEFAULTS = {
     gulf: {
-      cx:639, cy:178, r:11, color:"#2fd18f", name:"الخليج العربي",
+      cx:1246, cy:314, r:11, color:"#2fd18f", name:"الخليج العربي",
       importance:"يضمّ الخليج العربي أكبر تجمّع لحقول النفط الخام سهلة الاستخراج في العالم، وتُطل عليه أبرز الدول المصدِّرة للنفط.",
       countries:"السعودية، العراق، الكويت، الإمارات العربية المتحدة، قطر، إيران",
       share:"أكثر من 30% من الاحتياطي العالمي المؤكد تقريبًا",
       note:"💡 يُعدّ مضيق هرمز عند مدخل الخليج ممرًا مائيًا حيويًا يمر عبره جزء كبير من صادرات النفط العالمية."
     },
     mideast: {
-      cx:617, cy:172, r:14, color:"#3fa9f5", name:"الشرق الأوسط",
+      cx:1232, cy:347, r:14, color:"#3fa9f5", name:"الشرق الأوسط",
       importance:"أكبر منطقة إنتاجية للنفط الخام في العالم؛ إذ تتركّز فيه احتياطيات ضخمة يسهل الوصول إليها بكلفة استخراج منخفضة نسبيًا.",
       countries:"السعودية، العراق، إيران، الكويت، الإمارات، عُمان",
       share:"نحو 48% من الاحتياطي العالمي المؤكد تقريبًا",
       note:"💡 قرب كثير من حقول المنطقة من سطح الأرض يجعل تكلفة استخراج النفط منها من الأقل عالميًا."
     },
     russia: {
-      cx:667, cy:97, r:10, color:"#7c6fee", name:"روسيا وآسيا الوسطى",
+      cx:1423, cy:117, r:10, color:"#7c6fee", name:"روسيا وآسيا الوسطى",
       importance:"تمتلك روسيا احتياطيات ضخمة من النفط والغاز الطبيعي، وتُعدّ من أكبر الدول المصدِّرة للطاقة في العالم.",
       countries:"روسيا الاتحادية، كازاخستان، أذربيجان، تركمانستان",
       share:"نحو 6% من الاحتياطي العالمي المؤكد للنفط تقريبًا (لروسيا وحدها)",
       note:"💡 تتركّز أهم الحقول الروسية في سيبيريا الغربية وعلى امتداد بحر قزوين."
     },
     nigeria: {
-      cx:522, cy:225, r:7, color:"#ffab5e", name:"نيجيريا",
+      cx:1032, cy:441, r:7, color:"#ffab5e", name:"نيجيريا",
       importance:"أكبر منتج للنفط الخام في قارة أفريقيا، ويتركّز إنتاجها في دلتا نهر النيجر وسواحل خليج غينيا.",
       countries:"نيجيريا (إلى جانب دول أفريقية منتجة أخرى مثل أنغولا والجزائر وليبيا)",
       share:"نحو 2% من الاحتياطي العالمي المؤكد تقريبًا",
       note:"💡 يُستخرج جزء كبير من نفط نيجيريا من حقول بحرية قبالة سواحلها."
     },
     venezuela: {
-      cx:317, cy:228, r:12, color:"#ff6b9d", name:"فنزويلا",
+      cx:612, cy:456, r:12, color:"#ff6b9d", name:"فنزويلا",
       importance:"تمتلك فنزويلا أكبر احتياطي مؤكد من النفط الخام في العالم، ويتركّز معظمه في حزام أورينوكو.",
       countries:"فنزويلا، إحدى الدول المؤسِّسة لمنظمة أوبك",
       share:"نحو 18% من الاحتياطي العالمي المؤكد تقريبًا (الأعلى عالميًا)",
       note:"💡 جزء كبير من نفط فنزويلا نفط ثقيل، ما يتطلب تقنيات خاصة لاستخراجه وتكريره."
     },
     arctic: {
-      cx:500, cy:33, r:9, color:"#22c1c3", name:"المنطقة القطبية الشمالية",
+      cx:1000, cy:25, r:9, color:"#22c1c3", name:"المنطقة القطبية الشمالية",
       importance:"تشير الدراسات الجيولوجية إلى احتمال وجود كميات كبيرة من النفط والغاز غير المكتشفة أسفل قاع المحيط المتجمد الشمالي.",
       countries:"مناطق تابعة لروسيا وكندا والولايات المتحدة (ألاسكا) والنرويج",
       share:"يُقدَّر أن نحو 13% من موارد النفط غير المكتشفة عالميًا قد توجد هنا (تقدير جيولوجي وليس احتياطيًا مؤكدًا)",
@@ -220,7 +227,33 @@
     }
   };
 
-  var VIEW_CX = 500, VIEW_CY = 250, ZOOM_SCALE = 2.5;
+  var VIEW_CX = 1000, VIEW_CY = 428.5, ZOOM_SCALE = 2.5;
+  var WORLD_SVG_URL = "../../assets/maps/world.svg";
+  var worldGeoPromise = null;
+
+  /* Fetches the real-geography SVG once (cached for the page's lifetime —
+     re-used across every subsequent language switch's boot() call) and
+     hands back only its <path> nodes via DOMParser, never innerHTML-ing
+     the fetched markup directly: that inherently excludes anything other
+     than the country boundary geometry (no <script>/<style>, even if the
+     source file ever added one), matching this widget's existing
+     JSON-simulation contract, which also has no schema slot for a map's
+     static base geography (see the comment above buildStaticGeo). */
+  function loadWorldGeography(){
+    if(worldGeoPromise) return worldGeoPromise;
+    worldGeoPromise = fetch(WORLD_SVG_URL).then(function(r){
+      if(!r.ok) throw new Error("world map fetch HTTP " + r.status + " for " + WORLD_SVG_URL);
+      return r.text();
+    }).then(function(text){
+      var doc = new DOMParser().parseFromString(text, "image/svg+xml");
+      if(doc.querySelector("parsererror")) throw new Error("world map SVG failed to parse");
+      // The source template ends with 3 stray reference-marker <circle>s
+      // (leftover from the simplemaps.com template, unrelated to this
+      // widget's own markers) — only <path> country boundaries are taken.
+      return Array.prototype.slice.call(doc.querySelectorAll("path"));
+    });
+    return worldGeoPromise;
+  }
 
   function el(tag, attrs){
     var e = document.createElementNS(ns, tag);
@@ -241,29 +274,40 @@
     };
   }
 
-  function buildStaticGeo(){
+  function buildStaticGeo(countryPaths){
     svg.innerHTML =
       '<defs><linearGradient id="oceanGrad" x1="0" y1="0" x2="0" y2="1">' +
         '<stop offset="0" stop-color="#bfe1fb"/><stop offset="1" stop-color="#a9d6f7"/>' +
       '</linearGradient></defs>' +
-      '<rect class="worldmap-ocean" x="1" y="-17" width="998" height="534" rx="26"/>' +
+      '<rect class="worldmap-ocean" x="1" y="1" width="1998" height="855" rx="40"/>' +
       '<g class="worldmap-graticule" aria-hidden="true">' +
-        '<line x1="0" y1="125" x2="1000" y2="125"/><line x1="0" y1="250" x2="1000" y2="250"/><line x1="0" y1="375" x2="1000" y2="375"/>' +
-        '<line x1="167" y1="-18" x2="167" y2="518"/><line x1="333" y1="-18" x2="333" y2="518"/><line x1="500" y1="-18" x2="500" y2="518"/>' +
-        '<line x1="667" y1="-18" x2="667" y2="518"/><line x1="833" y1="-18" x2="833" y2="518"/>' +
+        '<line x1="0" y1="214" x2="2000" y2="214"/><line x1="0" y1="428" x2="2000" y2="428"/><line x1="0" y1="642" x2="2000" y2="642"/>' +
+        '<line x1="333" y1="0" x2="333" y2="857"/><line x1="667" y1="0" x2="667" y2="857"/><line x1="1000" y1="0" x2="1000" y2="857"/>' +
+        '<line x1="1333" y1="0" x2="1333" y2="857"/><line x1="1667" y1="0" x2="1667" y2="857"/>' +
       '</g>' +
       '<g id="mapZoomGroup">' +
-        '<g class="worldmap-landmasses">' +
-          '<path class="worldmap-land" d="M56,56 L236,56 L292,61 L347,111 L278,181 L231,200 L208,194 L153,153 L69,83 Z"/>' +
-          '<path class="worldmap-land" d="M278,222 L333,222 L403,264 L389,314 L339,347 L311,403 L292,292 L278,250 Z"/>' +
-          '<path class="worldmap-land" d="M452,153 L528,147 L589,164 L619,217 L611,253 L597,319 L556,347 L533,300 L525,239 L472,233 L453,192 Z"/>' +
-          '<path class="worldmap-land" d="M475,131 L486,114 L528,100 L583,83 L667,61 L778,47 L889,47 L972,81 L889,125 L839,164 L792,222 L764,208 L714,228 L689,183 L656,178 L642,217 L619,217 L597,167 L597,147 L578,136 L542,144 Z"/>' +
-          '<path class="worldmap-land" d="M814,311 L861,283 L903,297 L925,328 L903,356 L819,344 Z"/>' +
-        '</g>' +
+        '<g class="worldmap-landmasses" id="worldmapLandmasses"></g>' +
         '<g id="mapMarkers"></g>' +
       '</g>';
     zoomGroup = document.getElementById("mapZoomGroup");
     markersGroup = document.getElementById("mapMarkers");
+
+    var landHost = document.getElementById("worldmapLandmasses");
+    countryPaths.forEach(function(srcPath){
+      // Import (deep-clone) rather than reuse the cached node directly: this
+      // runs again on every language switch, and mutating the same shared
+      // node's class attribute repeatedly would otherwise append
+      // "worldmap-land" onto itself over and over.
+      var p = document.importNode(srcPath, true);
+      var existingClass = p.getAttribute("class");
+      p.setAttribute("class", existingClass ? existingClass + " worldmap-land" : "worldmap-land");
+      // Let the book's theme (light/dark aware) drive fill/stroke instead of
+      // whatever presentation attributes the source file's paths carry.
+      p.removeAttribute("fill");
+      p.removeAttribute("stroke");
+      p.removeAttribute("stroke-width");
+      landHost.appendChild(p);
+    });
   }
 
   function buildInfoCardAndLegend(stage){
@@ -392,30 +436,34 @@
     if(!svg) return;
     buttons = Array.prototype.slice.call(document.querySelectorAll("[data-region]"));
 
-    buildStaticGeo();
+    loadWorldGeography().then(function(paths){
+      buildStaticGeo(paths);
 
-    var stage = svg.parentElement;
-    stage.className = "worldmap-stage";
-    buildInfoCardAndLegend(stage);
+      var stage = svg.parentElement;
+      stage.className = "worldmap-stage";
+      buildInfoCardAndLegend(stage);
 
-    var buttonsRow = buttons.length ? buttons[0].parentElement : null;
-    if(buttonsRow){
-      buttonsRow.setAttribute("role", "group");
-      buttonsRow.setAttribute("aria-label", t("regionGroupAriaLabel", "اختيار منطقة على الخريطة"));
-    }
-    var resetBtn = document.getElementById("btnReset");
-    if(resetBtn) resetBtn.title = t("resetTitle", "عرض الخريطة كاملة");
+      var buttonsRow = buttons.length ? buttons[0].parentElement : null;
+      if(buttonsRow){
+        buttonsRow.setAttribute("role", "group");
+        buttonsRow.setAttribute("aria-label", t("regionGroupAriaLabel", "اختيار منطقة على الخريطة"));
+      }
+      var resetBtn = document.getElementById("btnReset");
+      if(resetBtn) resetBtn.title = t("resetTitle", "عرض الخريطة كاملة");
 
-    buildMarkers();
+      buildMarkers();
 
-    buttons.forEach(function(b){
-      b.addEventListener("click", function(){
-        var region = b.getAttribute("data-region");
-        selectRegion(region || null);
+      buttons.forEach(function(b){
+        b.addEventListener("click", function(){
+          var region = b.getAttribute("data-region");
+          selectRegion(region || null);
+        });
       });
-    });
 
-    selectRegion(null);
+      selectRegion(null);
+    }).catch(function(err){
+      console.error("[world-map] failed to load geography", err);
+    });
   }
 
   if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
