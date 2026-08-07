@@ -78,7 +78,13 @@
       "trailingId": "phaseCaption",
       "sectionGroup": 1,
       "sectionId": "interactive",
-      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية",
+      "labels": {
+        "copperLabel": "نحاس",
+        "nickelLabel": "نيكل",
+        "captionSingle": "سبيكة الطور الواحد: تتكون كل حبيبة من مزيج متجانس من نوعي الذرات (كالنحاس والنيكل الموزّعَين معًا داخل الحبيبة الواحدة).",
+        "captionMulti": "السبيكة المتعددة الأطوار: تتكون من عدة أنواع من الحبيبات المختلفة (تراكيب متمايزة) ممتزجة ببعضها لتكوين مركبات قوية ومستقرة كالفولاذ."
+      }
     },
     {
       "type": "definition",

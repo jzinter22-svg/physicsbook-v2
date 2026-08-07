@@ -1,0 +1,236 @@
+{
+  "lessonNumber": 5,
+  "chapterNumber": 8,
+  "meta": {
+    "pageTitle": "Lesson 5: Types of Alloys — Chapter Eight",
+    "description": "8-5 Types of alloys: single-phase alloys and multi-phase alloys, and the four properties of alloys.",
+    "breadcrumbChapter": "Chapter 8",
+    "breadcrumbLesson": "Types of Alloys",
+    "footer": "Chapter Eight: Metals and Alloys — Lesson 5: Types of Alloys"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 5 of 9 · 8-5",
+    "title": "Types of Alloys",
+    "lead": "Alloys are made up of fine crystals called grains. In this lesson, learn about the two types of alloys based on the nature of these grains, and about the properties that generally distinguish alloys from pure metals."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Distinguishes between single-phase alloys and multi-phase alloys.",
+    "States the properties of alloys that distinguish them from the pure metals that make them up."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 8-5 Types of Alloys",
+      "html": "Since alloys are made up of fine crystals called grains, in which the atoms of each grain are packed in a specific geometric arrangement, alloys are for this reason divided into two types.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "simulation",
+      "svgId": "phaseSvg",
+      "svgAriaLabel": "Simulation of types of alloys",
+      "svgViewBox": "0 0 380 200",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: Single-Phase Alloys vs. Multi-Phase Alloys",
+      "descriptionHtml": "Choose an alloy type to see the difference in how atoms are packed within the grains.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnSingle",
+          "html": "Single-Phase Alloy",
+          "class": "neu-btn primary",
+          "data": {
+            "data-phase": "single"
+          },
+          "style": null
+        },
+        {
+          "id": "btnMulti",
+          "html": "Multi-Phase Alloy",
+          "class": "neu-btn",
+          "data": {
+            "data-phase": "multi"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "trailingId": "phaseCaption",
+      "sectionGroup": 1,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "copperLabel": "Copper",
+        "nickelLabel": "Nickel",
+        "captionSingle": "Single-phase alloy: each grain is made up of a uniform mixture of two types of atoms (such as copper and nickel, distributed together within a single grain).",
+        "captionMulti": "Multi-phase alloy: made up of several types of distinct grains (different compositions) mixed together to form strong, stable compounds like steel."
+      }
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Single-Phase Alloys",
+      "html": "These are made up of grains with a similar composition, in which one metal dissolves into another in the same way that salt dissolves in water; the grains of one metal dissolve into another metal in specific proportions when the two are mixed in a specific ratio in a single phase, such as the copper-nickel alloy.",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Multi-Phase Alloys",
+      "html": "These alloys are made up of several types of grains mixed together, where different atoms bond together to form strong, stable compounds such as steel.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Properties of Alloys",
+      "html": "Alloys are distinguished by the following properties:",
+      "listItems": [
+        "They are stronger and harder than the metals that make them up.",
+        "Their atoms have lower melting points than pure metals, which makes them difficult to hammer into different shapes, roll into sheets, or draw into wires.",
+        "Most alloys are less formable, but there are some superplastic alloys with high formability.",
+        "Few alloys are good electrical conductors, but superconducting alloys have been made."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "Alloys are made up of fine crystals called:",
+        "options": [
+          "Atoms",
+          "Grains",
+          "Molecules",
+          "Ions"
+        ],
+        "explain": "Alloys are made up of fine crystals called grains, in which the atoms of each grain are packed in a specific geometric arrangement."
+      },
+      {
+        "correct": 0,
+        "question": "The copper-nickel alloy is an example of:",
+        "options": [
+          "A single-phase alloy",
+          "A multi-phase alloy",
+          "A pure metal",
+          "A nonmetal"
+        ],
+        "explain": "Single-phase alloys are made up of grains with a similar composition in which one metal dissolves into another, such as the copper-nickel alloy."
+      },
+      {
+        "correct": 2,
+        "question": "Steel is an example of an alloy that is:",
+        "options": [
+          "Single-element",
+          "Single-phase only",
+          "Multi-phase",
+          "Gaseous"
+        ],
+        "explain": "Multi-phase alloys are made up of several types of grains mixed together to form strong, stable compounds such as steel."
+      },
+      {
+        "correct": 0,
+        "question": "Among the properties of alloys is that they are:",
+        "options": [
+          "Stronger and harder than the metals that make them up",
+          "Always weaker than the metals that make them up",
+          "All excellent electrical conductors",
+          "All easily formable, without exception"
+        ],
+        "explain": "Alloys are distinguished by being stronger and harder than the metals that make them up."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Alloys are made up of grains (fine crystals) in which atoms are packed in a specific geometric arrangement.",
+      "Single-phase alloys: grains with a similar composition in which one metal dissolves into another, such as copper and nickel.",
+      "Multi-phase alloys: several types of grains mixed together forming strong, stable compounds, such as steel.",
+      "Alloys are stronger and harder than their components, but their melting point, formability, and electrical conductivity are generally lower than pure metals."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of types of alloys",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Types of",
+        "Alloys"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Single-Phase",
+          "Cu-Ni"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Multi-",
+          "Phase"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Stronger, Harder"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Lower",
+          "Melting Point"
+        ]
+      }
+    ]
+  }
+}

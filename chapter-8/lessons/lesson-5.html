@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-5.html">
@@ -42,161 +43,34 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يفرّق بين سبائك الطور الواحد والسبائك المتعددة الأطوار.</span></li>
-        <li><span class="obj-num">2</span><span>يذكر خصائص السبائك التي تميّزها عن الفلزات النقية المكوّنة لها.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 5-8 أنواع السبائك</h2>
-      <p>بما أن السبائك تتكون من بلورات دقيقة تُسمى بالحبيبات، حيث تتراص ذرات كل حبيبة في ترتيب هندسي معين، لذلك قُسمت لأجل ذلك إلى نوعين.</p>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: سبائك الطور الواحد مقابل السبائك المتعددة الأطوار</h2>
-      <p>اختر نوع السبيكة لمشاهدة الفرق في تراص الذرات داخل الحبيبات.</p>
-      <div class="io-panel">
-        <div class="io-row" role="group" aria-label="اختيار نوع السبيكة">
-          <button class="neu-btn primary" data-phase="single" id="btnSingle">سبيكة الطور الواحد</button>
-          <button class="neu-btn" data-phase="multi" id="btnMulti">السبيكة المتعددة الأطوار</button>
-        </div>
-        <div class="mindmap-wrap"><svg id="phaseSvg" viewBox="0 0 380 200" role="img" aria-label="محاكاة أنواع السبائك"></svg></div>
-        <p id="phaseCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — سبائك الطور الواحد</span>
-      <p style="margin:.3rem 0">تتكون من حبيبات ذات تركيب متشابه، يذوب فيها فلز في فلز آخر بنفس الطرائق التي يذوب فيها الملح في الماء، فيها تذوب حبيبات الفلز في فلز آخر بنسب معينة بخلطهما بنسبة معينة في طور واحد، مثل سبيكة النحاس والنيكل.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-blue)">
-      <span class="def-label" style="color:var(--accent-blue)">📌 تعريف — السبائك المتعددة الأطوار</span>
-      <p style="margin:.3rem 0">تتكون هذه السبائك من عدة أنواع من الحبيبات ممتزجة ببعضها، حيث تترابط الذرات المختلفة معًا لتكوين مركبات قوية ومستقرة مثل الفولاذ.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — خصائص السبائك</span>
-      <p style="margin:.3rem 0">تمتاز السبائك بالخصائص الآتية:</p>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem">
-        <li>أنها أقوى وأصلب (أصلد) من الفلزات المكوّنة لها.</li>
-        <li>ذراتها تمتاز بدرجات انصهار أقل من درجات انصهار الفلزات النقية، حيث يصعب طرقها إلى أشكال مختلفة أو طيها على شكل ألواح أو سحبها على شكل أسلاك.</li>
-        <li>معظم السبائك أقل قابلية للتشكل، ولكن هناك بعض السبائك الفائقة اللدونة ذات قابلية كبيرة للتشكل.</li>
-        <li>القليل من السبائك تكون جيدة التوصيل للكهرباء، ولكن تم صنع سبائك فائقة التوصيل للكهربائية.</li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
       <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>تتكون السبائك من بلورات دقيقة تُسمّى:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>ذرات</span></label>
-          <label class="quiz-opt"><input type="radio"><span>حبيبات</span></label>
-          <label class="quiz-opt"><input type="radio"><span>جزيئات</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أيونات</span></label>
-        </div>
-        <div class="quiz-explain">تتكون السبائك من بلورات دقيقة تُسمّى بالحبيبات، حيث تتراص ذرات كل حبيبة في ترتيب هندسي معين.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>2.</span><span>سبيكة النحاس والنيكل مثال على:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>سبيكة الطور الواحد</span></label>
-          <label class="quiz-opt"><input type="radio"><span>السبيكة المتعددة الأطوار</span></label>
-          <label class="quiz-opt"><input type="radio"><span>فلز نقي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لافلز</span></label>
-        </div>
-        <div class="quiz-explain">سبائك الطور الواحد تتكون من حبيبات ذات تركيب متشابه يذوب فيها فلز في فلز آخر، مثل سبيكة النحاس والنيكل.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>3.</span><span>الفولاذ مثال على سبيكة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>أحادية العنصر</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الطور الواحد فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>متعددة الأطوار</span></label>
-          <label class="quiz-opt"><input type="radio"><span>غازية</span></label>
-        </div>
-        <div class="quiz-explain">السبائك المتعددة الأطوار تتكون من عدة أنواع من الحبيبات ممتزجة ببعضها لتكوين مركبات قوية ومستقرة مثل الفولاذ.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>4.</span><span>من خصائص السبائك أنها:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>أقوى وأصلد من الفلزات المكوّنة لها</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أضعف دائمًا من الفلزات المكوّنة لها</span></label>
-          <label class="quiz-opt"><input type="radio"><span>كلها موصلة ممتازة للكهرباء</span></label>
-          <label class="quiz-opt"><input type="radio"><span>كلها سهلة التشكل دون استثناء</span></label>
-        </div>
-        <div class="quiz-explain">تمتاز السبائك بأنها أقوى وأصلب (أصلد) من الفلزات المكوّنة لها.</div>
-      </div>
-
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
   </section>
 
-  <!-- ===== Summary ===== -->
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>تتكون السبائك من حبيبات (بلورات دقيقة) تتراص فيها الذرات في ترتيب هندسي معين.</span></li>
-        <li><span>سبائك الطور الواحد: حبيبات ذات تركيب متشابه يذوب فيها فلز في آخر، مثل النحاس والنيكل.</span></li>
-        <li><span>السبائك المتعددة الأطوار: عدة أنواع من الحبيبات ممتزجة تكوّن مركبات قوية ومستقرة، مثل الفولاذ.</span></li>
-        <li><span>السبائك أقوى وأصلد من مكوّناتها، لكن درجة انصهارها أقل وقابليتها للتشكل والتوصيل الكهربائي أقل عمومًا من الفلزات النقية.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
-  <!-- ===== Mind map ===== -->
   <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
     <div class="card neu">
       <div class="example-head">
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l5" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l5">
-        <svg viewBox="0 -3 480 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية لأنواع السبائك">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">أنواع</text>
-            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">السبائك</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">طور واحد</text>
-            <text x="90" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">Cu-Ni</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">متعددة</text>
-            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">الأطوار</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">أقوى وأصلد</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">انصهار</text>
-            <text x="390" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">أقل</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l5"></div>
     </div>
   </section>
 
@@ -213,14 +87,8 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("phaseSvg");
-  var caption = document.getElementById("phaseCaption");
-  var buttons = document.querySelectorAll("[data-phase]");
-
-  var TEXTS = {
-    single: "سبيكة الطور الواحد: تتكون كل حبيبة من مزيج متجانس من نوعي الذرات (كالنحاس والنيكل الموزّعَين معًا داخل الحبيبة الواحدة).",
-    multi: "السبيكة المتعددة الأطوار: تتكون من عدة أنواع من الحبيبات المختلفة (تراكيب متمايزة) ممتزجة ببعضها لتكوين مركبات قوية ومستقرة كالفولاذ."
-  };
+  var svg, caption, buttons;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
   function el(tag, attrs){
     var e = document.createElementNS(ns, tag);
@@ -250,9 +118,9 @@
       }
     });
     var lgd1 = el("circle", {cx:20, cy:190, r:5, fill:"#f0954a"}); svg.appendChild(lgd1);
-    var t1 = el("text", {x:30, y:194, "font-family":"Cairo,sans-serif", "font-size":9, fill:"var(--text-secondary)", "font-weight":700}); t1.textContent="نحاس"; svg.appendChild(t1);
+    var t1 = el("text", {x:30, y:194, "font-family":"Cairo,sans-serif", "font-size":9, fill:"var(--text-secondary)", "font-weight":700}); t1.textContent=t("copperLabel","نحاس"); svg.appendChild(t1);
     var lgd2 = el("circle", {cx:80, cy:190, r:5, fill:"#c9c9c9"}); svg.appendChild(lgd2);
-    var t2 = el("text", {x:90, y:194, "font-family":"Cairo,sans-serif", "font-size":9, fill:"var(--text-secondary)", "font-weight":700}); t2.textContent="نيكل"; svg.appendChild(t2);
+    var t2 = el("text", {x:90, y:194, "font-family":"Cairo,sans-serif", "font-size":9, fill:"var(--text-secondary)", "font-weight":700}); t2.textContent=t("nickelLabel","نيكل"); svg.appendChild(t2);
   }
 
   function sceneMulti(){
@@ -280,15 +148,21 @@
     while(svg.firstChild) svg.removeChild(svg.firstChild);
     if(phase === "single") sceneSingle();
     else sceneMulti();
-    caption.textContent = TEXTS[phase];
+    caption.textContent = phase === "single" ? t("captionSingle","سبيكة الطور الواحد: تتكون كل حبيبة من مزيج متجانس من نوعي الذرات (كالنحاس والنيكل الموزّعَين معًا داخل الحبيبة الواحدة).") : t("captionMulti","السبيكة المتعددة الأطوار: تتكون من عدة أنواع من الحبيبات المختلفة (تراكيب متمايزة) ممتزجة ببعضها لتكوين مركبات قوية ومستقرة كالفولاذ.");
     buttons.forEach(function(b){ b.classList.toggle("primary", b.getAttribute("data-phase") === phase); });
   }
 
-  buttons.forEach(function(b){
-    b.addEventListener("click", function(){ draw(b.getAttribute("data-phase")); });
-  });
-
-  draw("single");
+  function boot(){
+    svg = document.getElementById("phaseSvg");
+    caption = document.getElementById("phaseCaption");
+    buttons = document.querySelectorAll("[data-phase]");
+    if(!svg || !caption || !buttons.length) return;
+    buttons.forEach(function(b){
+      b.addEventListener("click", function(){ draw(b.getAttribute("data-phase")); });
+    });
+    draw("single");
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>
