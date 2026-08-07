@@ -1,0 +1,323 @@
+{
+  "lessonNumber": 1,
+  "chapterNumber": 7,
+  "meta": {
+    "pageTitle": "Lesson 1: Types of Crude Oil by Global Classification — Chapter Seven",
+    "description": "7-1 Types of Crude Oil by Global Classification: classifying crude oil by density (light/heavy) and by sulfur content (sweet/bitter), and where crude oil is found around the world.",
+    "breadcrumbChapter": "Chapter 7",
+    "breadcrumbLesson": "Types of Crude Oil by Global Classification",
+    "footer": "Chapter Seven: Crude Oil — Lesson 1: Types of Crude Oil by Global Classification"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 1 of 5 · 7-1",
+    "title": "Types of Crude Oil by Global Classification",
+    "lead": "Crude oil is also called petroleum, and it is the world's main source of hydrocarbons. In this lesson, find out where crude oil is found around the world, and how it is classified by density and sulfur content."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Defines crude oil (petroleum) and explains its importance to the Iraqi and world economy.",
+    "States the most important regions where crude oil is found in the world.",
+    "Classifies crude oil by density (light/heavy) and by its sulfur content (sweet/bitter)."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 7-1 Types of Crude Oil by Global Classification",
+      "html": "Crude oil is also called petroleum, or mineral oil, and it is the main source of hydrocarbons — organic compounds made up of the elements carbon and hydrogen, as you learned previously.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Crude Oil (Petroleum)",
+      "html": "Crude oil (petroleum), also called mineral oil, is the main source of hydrocarbons — organic compounds made up of the elements carbon and hydrogen.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "Crude oil (petroleum) is found in many places around the world, from the Arabian Gulf to the Middle East to Nigeria in Africa, and from Russia in Asia to Venezuela in South America — even the Arctic holds reserves of petroleum. Petroleum engineers note that the easily-found reserves of today may become depleted, and that the search for petroleum is now taking place in increasingly remote places, such as deserts and polar ice.",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "worldMapSvg",
+      "svgAriaLabel": "Interactive map of the world's most important crude oil-producing regions",
+      "svgViewBox": "0 -18 1000 536",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: The World's Most Important Crude Oil-Producing Regions",
+      "descriptionHtml": "Press the button for any region below to zoom the map in and highlight its true geographic location, along with an information card about its importance in crude oil production.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnGulf",
+          "html": "Arabian Gulf",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "gulf"
+          },
+          "style": null
+        },
+        {
+          "id": "btnMideast",
+          "html": "Middle East",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "mideast"
+          },
+          "style": null
+        },
+        {
+          "id": "btnRussia",
+          "html": "Russia & Central Asia",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "russia"
+          },
+          "style": null
+        },
+        {
+          "id": "btnNigeria",
+          "html": "Nigeria",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "nigeria"
+          },
+          "style": null
+        },
+        {
+          "id": "btnVenezuela",
+          "html": "Venezuela",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "venezuela"
+          },
+          "style": null
+        },
+        {
+          "id": "btnArctic",
+          "html": "The Arctic",
+          "class": "neu-btn",
+          "data": {
+            "data-region": "arctic"
+          },
+          "style": null
+        },
+        {
+          "id": "btnReset",
+          "html": "🌍 Full Map",
+          "class": "neu-btn",
+          "data": {
+            "data-region": ""
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "sectionGroup": 3,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "regionGroupAriaLabel": "Select a region on the map",
+        "markerAriaSuffix": " — press to show information about this region on the map",
+        "resetTitle": "Show the full map",
+        "defaultName": "Choose a region from the buttons above",
+        "defaultImportance": "Information about the selected region's importance in global crude oil production will appear here.",
+        "defaultNote": "💡 A simplified educational map built on real geographic locations.",
+        "countriesLabel": "Leading producing countries:",
+        "shareLabel": "Approximate share of global proven reserves:",
+        "legendDot": "A colored dot = a major crude oil-producing region",
+        "legendSize": "Dot size reflects the region's relative importance",
+        "legendNote": "🗺️ A simplified educational map built on real geographic locations — not an accurate depiction of political borders",
+        "gulfImportance": "The Arabian Gulf holds the world's largest cluster of easily-extracted crude oil fields, bordered by the leading oil-exporting countries.",
+        "gulfCountries": "Saudi Arabia, Iraq, Kuwait, the United Arab Emirates, Qatar, Iran",
+        "gulfShare": "Roughly more than 30% of proven global reserves",
+        "gulfNote": "💡 The Strait of Hormuz, at the mouth of the Gulf, is a vital waterway through which a large share of the world's oil exports passes.",
+        "mideastImportance": "The largest crude oil-producing region in the world; it holds enormous, easily-accessible reserves with a relatively low extraction cost.",
+        "mideastCountries": "Saudi Arabia, Iraq, Iran, Kuwait, the UAE, Oman",
+        "mideastShare": "Roughly 48% of proven global reserves",
+        "mideastNote": "💡 Many of the region's fields lie close to the Earth's surface, making the cost of extracting their oil among the lowest in the world.",
+        "russiaImportance": "Russia holds enormous reserves of oil and natural gas, and is one of the largest energy exporters in the world.",
+        "russiaCountries": "The Russian Federation, Kazakhstan, Azerbaijan, Turkmenistan",
+        "russiaShare": "Roughly 6% of proven global oil reserves (for Russia alone)",
+        "russiaNote": "💡 Russia's most important fields are concentrated in Western Siberia and along the Caspian Sea.",
+        "nigeriaImportance": "The largest crude oil producer on the African continent, with production concentrated in the Niger River Delta and the coast of the Gulf of Guinea.",
+        "nigeriaCountries": "Nigeria (alongside other African oil-producing countries such as Angola, Algeria, and Libya)",
+        "nigeriaShare": "Roughly 2% of proven global reserves",
+        "nigeriaNote": "💡 A large share of Nigeria's oil is extracted from offshore fields along its coast.",
+        "venezuelaImportance": "Venezuela holds the largest proven crude oil reserves in the world, most of it concentrated in the Orinoco Belt.",
+        "venezuelaCountries": "Venezuela, a founding member of OPEC",
+        "venezuelaShare": "Roughly 18% of proven global reserves (the highest in the world)",
+        "venezuelaNote": "💡 A large share of Venezuela's oil is heavy crude, which requires special technology to extract and refine.",
+        "arcticImportance": "Geological studies suggest there may be large quantities of undiscovered oil and gas beneath the floor of the Arctic Ocean.",
+        "arcticCountries": "Areas belonging to Russia, Canada, the United States (Alaska), and Norway",
+        "arcticShare": "An estimated 13% of the world's undiscovered oil resources may exist here (a geological estimate, not a proven reserve)",
+        "arcticNote": "💡 Ice and difficulty of access make the cost of extracting oil from the Arctic very high compared with other regions."
+      }
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Classifying Crude Oil",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem\">\n<li><b>By density (specific gravity):</b> Crude oil is classified by its place of origin (for example, Brent), by its specific gravity, or by density into: heavy oil and light oil. The difference in petroleum density comes from the proportion of heavy hydrocarbons it contains — the higher this proportion, the denser the oil.</li>\n<li><b>By sulfur content:</b> Petroleum can be classified into sweet petroleum, with a low sulfur content, and bitter petroleum, with a high sulfur content.</li>\n</ol>",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Reasoning — Why is light oil the most in demand and the most expensive?",
+      "html": "Light oil is the most in demand and the most expensive, because large quantities of petroleum derivatives can be obtained from it — especially gasoline, the most in-demand petroleum derivative in the world. Sweet (low-sulfur) oil is likewise the most in demand on the world market.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "Crude oil is also called:",
+        "options": [
+          "Natural gas",
+          "Mineral oil",
+          "Bitumen",
+          "Biogas"
+        ],
+        "explain": "Crude oil is also called petroleum, or mineral oil, and it is the main source of hydrocarbons."
+      },
+      {
+        "correct": 2,
+        "question": "Hydrocarbons are made up of the elements:",
+        "options": [
+          "Sulfur and oxygen",
+          "Nitrogen and hydrogen",
+          "Carbon and hydrogen",
+          "Carbon and oxygen"
+        ],
+        "explain": "Hydrocarbons are organic compounds made up of the elements carbon and hydrogen."
+      },
+      {
+        "correct": 0,
+        "question": "By density, oil is classified into:",
+        "options": [
+          "Light oil and heavy oil",
+          "Sweet oil and hot oil",
+          "Liquid oil and gaseous oil",
+          "White oil and black oil"
+        ],
+        "explain": "Crude oil is classified by density into heavy oil and light oil."
+      },
+      {
+        "correct": 3,
+        "question": "Sweet petroleum is petroleum in which:",
+        "options": [
+          "The color is light",
+          "The density is high",
+          "The sulfur content is high",
+          "The sulfur content is low"
+        ],
+        "explain": "Sweet petroleum has a low sulfur content, and it is the most in demand on the world market."
+      },
+      {
+        "correct": 1,
+        "question": "Light oil is the most in demand because:",
+        "options": [
+          "Its color is lighter than heavy oil",
+          "Large quantities of petroleum derivatives — especially gasoline — can be obtained from it",
+          "It exists in greater quantities in the world",
+          "It does not need refining"
+        ],
+        "explain": "Light oil is the most in demand and the most expensive, because large quantities of petroleum derivatives can be obtained from it — especially gasoline, the most in-demand petroleum derivative in the world."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Crude oil (petroleum) is the main source of hydrocarbons, and is also called mineral oil.",
+      "Crude oil is found in many regions of the world: the Arabian Gulf, the Middle East, Nigeria, Russia, Asia, Venezuela, and the Arctic.",
+      "Oil is classified by density into light and heavy, and by sulfur content into sweet and bitter.",
+      "Light, sweet oil is the most in demand on the world market."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of the types of crude oil",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Types of",
+        "Crude Oil"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Oil sources",
+          "worldwide"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Light/heavy",
+          "by density"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Sweet/bitter",
+          "by sulfur"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Gasoline",
+          "most in demand"
+        ]
+      }
+    ]
+  }
+}
