@@ -1,0 +1,44 @@
+{
+  "chapterNumber": 7,
+  "meta": {
+    "pageTitle": "Chapter 7: Crude Oil — Interactive Physics Book",
+    "description": "Chapter Seven of the Interactive Physics Book: Crude Oil — types of crude oil by global classification, the chemical composition of crude oil, extracting crude oil, and refining products — with interactive tools and solved questions.",
+    "breadcrumbChapter": "Chapter 7",
+    "footer": "Chapter Seven: Crude Oil — Interactive Physics Book"
+  },
+  "hero": {
+    "eyebrow": "📘 Interactive Physics Book · Part Two: Chemistry",
+    "titleHtml": "Chapter Seven: Crude Oil",
+    "lead": "From the depths of the sea millions of years ago to today's gas stations: learn about the types of crude oil by global classification, its chemical composition, how it is extracted, and how it is transformed inside the refining tower into gasoline, diesel, lubricating oil, and asphalt.",
+    "startLessonLabel": "Start the First Lesson ←",
+    "tags": ["⏱ 5 lessons", "🧠 Self-quizzes", "🗺 Mind maps"]
+  },
+  "objectivesHeading": "🎯 Behavioral Objectives",
+  "objectivesLead": "After completing this chapter, the student will be able to:",
+  "objectives": [
+    "Know the importance of petroleum in the Iraqi and global economy.",
+    "Know the types of extracted petroleum and its nature.",
+    "Know the role of industrial technologies in refining petroleum and converting it into its various derivatives."
+  ],
+  "lessonsHeading": "📚 Chapter Contents",
+  "enterLessonLabel": "Enter the Lesson ←",
+  "lessons": [
+    {"title": "Types of Crude Oil by Global Classification", "description": "7-1: Sources of petroleum around the world, its classification by density (light/heavy) and sulfur content (sweet/bitter)."},
+    {"title": "The Chemical Composition of Crude Oil (Mixture and Components)", "description": "7-2: How fossil fuel forms, the petroleum reservoir within the Earth's crust, the definition of petroleum and its uses."},
+    {"title": "Extracting Crude Oil", "description": "7-3: Percussion drilling and rotary drilling, and extraction by injection and thermal recovery."},
+    {"title": "Refining Products", "description": "7-4: The fractional distillation tower, tables of refining products, and the thermal cracking equation."},
+    {"title": "Chapter Seven Questions", "description": "All the official end-of-chapter questions, solved in detail."}
+  ],
+  "mindmap": {
+    "heading": "🗺 Chapter Mind Map",
+    "ariaLabel": "Mind map for Chapter Seven",
+    "viewBox": "0 0 600 400",
+    "center": {"cx": 300, "cy": 200, "r": 70, "lines": ["Chapter Seven", "Crude Oil"]},
+    "satellites": [
+      {"cx": 110, "cy": 80, "r": 60, "color": "#3fa9f5", "lines": ["Types of Oil", "by Classification"]},
+      {"cx": 490, "cy": 80, "r": 60, "color": "#2fd18f", "lines": ["Chemical", "Composition"]},
+      {"cx": 110, "cy": 320, "r": 60, "color": "#ffab5e", "lines": ["Extraction"]},
+      {"cx": 490, "cy": 320, "r": 60, "color": "#ff6b9d", "lines": ["Refining", "Products"]}
+    ]
+  }
+}
