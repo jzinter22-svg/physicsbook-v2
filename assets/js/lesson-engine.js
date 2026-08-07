@@ -49,8 +49,8 @@
     var key = lang + ":" + ctx.chapterNum + ":" + (ctx.isHub ? "hub" : ctx.lessonNum);
     if(cache[key]) return cache[key];
     var file = ctx.isHub ? "index.json" : ("lesson-" + ctx.lessonNum + ".json");
-    var url = assetsBase() + "content/" + lang + "/chapter-" + ctx.chapterNum + "/" + file;
-    cache[key] = fetch(url).then(function(r){
+    var url = assetsBase() + "content/" + lang + "/chapter-" + ctx.chapterNum + "/" + file + "?v=8433b18";
+    cache[key] = fetch(url, { cache: "no-store" }).then(function(r){
       if(!r.ok) throw new Error("content fetch HTTP " + r.status + " for " + url);
       return r.json();
     });
