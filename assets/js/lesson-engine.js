@@ -77,7 +77,8 @@
       list = "<" + tag + (b.listStyle ? ' style="' + esc(b.listStyle) + '"' : "") + ">" +
         b.listItems.map(function(it){ return "<li>" + html(it) + "</li>"; }).join("") + "</" + tag + ">";
     }
-    return '<div class="def-box"' + style + '><span class="def-label"' + labelStyle + ">" + html(b.label) + "</span><p style=\"margin:.3rem 0\">" + html(b.html) + "</p>" + list + "</div>";
+    var intro = b.html ? '<p style="margin:.3rem 0">' + html(b.html) + "</p>" : "";
+    return '<div class="def-box"' + style + '><span class="def-label"' + labelStyle + ">" + html(b.label) + "</span>" + intro + list + "</div>";
   }
 
   function renderBlock(b, ctx){
@@ -241,11 +242,18 @@
       ? '<div class="mindmap-wrap"><svg id="' + esc(b.svgId) + '"' + svgAttrs + ' role="img" aria-label="' + esc(b.svgAriaLabel) + '"></svg></div>'
       : "";
     if(b.labels) currentSimLabels[b.svgId || b.sectionHeading] = b.labels;
+    // Render even when trailingHtml is empty as long as trailingId is set:
+    // that id means the widget's own JS targets this element directly
+    // (e.g. a status/caption line it writes into after interaction) — an
+    // empty-but-present element is the correct initial state, not a reason
+    // to drop it and leave getElementById() returning null.
+    var trailing = (b.trailingHtml || b.trailingId)
+      ? "<p" + (b.trailingId ? ' id="' + esc(b.trailingId) + '"' : "") + ">" + html(b.trailingHtml || "") + "</p>"
+      : "";
     return '<div class="card neu"><h2>' + esc(b.sectionHeading) + "</h2>" +
       (b.descriptionHtml ? "<p>" + html(b.descriptionHtml) + "</p>" : "") +
       (presets ? '<div class="io-row" style="flex-wrap:wrap;gap:.5rem">' + presets + "</div>" : "") +
-      '<div class="io-panel">' + select + svgMount + controls + buttons + ruleBoxes +
-      (b.trailingHtml ? "<p>" + html(b.trailingHtml) + "</p>" : "") + "</div></div>";
+      '<div class="io-panel">' + select + svgMount + controls + buttons + ruleBoxes + trailing + "</div></div>";
   }
 
   // ===== Mindmap (shared geometry across every lesson + the hub) ===========

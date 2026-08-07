@@ -1,0 +1,432 @@
+{
+  "lessonNumber": 4,
+  "chapterNumber": 7,
+  "meta": {
+    "pageTitle": "Lesson 4: Refining Products — Chapter Seven",
+    "description": "7-4 Refining products: the fractional distillation tower, crude oil fractions, tables of refining products and their uses, and thermal and catalytic cracking.",
+    "breadcrumbChapter": "Chapter 7",
+    "breadcrumbLesson": "Refining Products",
+    "footer": "Chapter Seven: Crude Oil — Lesson 4: Refining Products"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 4 of 5 · 7-4",
+    "title": "Refining Products",
+    "lead": "How does crude oil become gasoline, diesel, lubricating oil, and asphalt? In this lesson, learn about the fractional distillation tower, the various refining products, and the cracking process that converts heavy oils into lighter, more useful derivatives."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Describes the working principle of the fractional distillation tower in an oil refinery.",
+    "States the various crude oil refining products, their boiling points, and their uses.",
+    "Distinguishes between thermal cracking and catalytic cracking, and writes the hexane cracking equation."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 7-4 Refining Products",
+      "html": "The primary refining products are a mixture of several compounds with close boiling points, and they can be re-distilled fractionally to obtain derivatives with specific uses. Some of the compounds we obtain by refining are more useful than others; there is a larger market for gasoline, diesel, lubricating oil, and asphalt compounds.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "simulation",
+      "svgId": "towerSvg",
+      "svgAriaLabel": "Simulation of the fractional distillation tower for crude oil fractions",
+      "svgViewBox": "0 -24 420 374",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: The Fractional Distillation Tower",
+      "descriptionHtml": "Press the \"Start Distillation\" button to watch how crude oil vapors rise inside the tower, and how each fraction condenses at the height corresponding to its boiling point.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnDistill",
+          "html": "🔥 Start Distillation",
+          "class": "neu-btn primary",
+          "data": null,
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "sectionGroup": 1,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "trailingId": "towerCaption"
+    },
+    {
+      "type": "paragraph",
+      "html": "Crude oil is heated at the bottom of the tower to a temperature above 400°C, isolated from air, so it vaporizes and separates into fractions, and this happens as the vapors rise up the column. The heavy fractions, such as lubricating oils, have higher boiling points, and so are cool enough to condense back into liquids sooner; this condensation is assisted by bubble caps, which allow the vapors with high boiling points to condense while the vapors with low boiling points rise to the top of the tower.</p><p>The higher the fractions rise, the lighter they become; light gasoline is a pale yellow color, and is a liquid that burns easily with a clean flame. By comparison, the heavy fractions (with higher boiling points) are a dark brown color, and these substances are viscous and hard to ignite, burning with a flame contaminated with soot (fine carbon particles).",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 7-8: The relative quantities of the different crude oil fractions\" role=\"img\" viewbox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"#c9e8ff\" height=\"14\" stroke=\"#1a1a2e\" stroke-width=\"1\" width=\"140\" x=\"80\" y=\"15\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" x=\"230\" y=\"26\">Petroleum gases 2%</text>\n<rect fill=\"#ffe08a\" height=\"14\" stroke=\"#1a1a2e\" stroke-width=\"1\" width=\"140\" x=\"80\" y=\"29\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" x=\"230\" y=\"40\">Gasoline 5%</text>\n<rect fill=\"#ffc46b\" height=\"18\" stroke=\"#1a1a2e\" stroke-width=\"1\" width=\"140\" x=\"80\" y=\"43\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" x=\"230\" y=\"55\">Naphtha 10%</text>\n<rect fill=\"#f0954a\" height=\"20\" stroke=\"#1a1a2e\" stroke-width=\"1\" width=\"140\" x=\"80\" y=\"61\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" x=\"230\" y=\"74\">Paraffin 13%</text>\n<rect fill=\"#c9743a\" height=\"30\" stroke=\"#1a1a2e\" stroke-width=\"1\" width=\"140\" x=\"80\" y=\"81\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" x=\"230\" y=\"99\">Diesel 20%</text>\n<rect fill=\"#5a3a24\" height=\"75\" stroke=\"#1a1a2e\" stroke-width=\"1\" width=\"140\" x=\"80\" y=\"111\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" x=\"230\" y=\"150\">Lubricating oil</text>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" x=\"230\" y=\"164\">and asphalt 50%</text>\n</g>\n</svg>",
+      "caption": "Figure 7-8: The relative quantities of the different crude oil fractions",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "table",
+      "heading": "📊 Table 7-1: Petroleum Refining Products and Their Daily Use",
+      "headers": [
+        "Derivative",
+        "Share of refining products (%)",
+        "Share of daily use (%)"
+      ],
+      "rows": [
+        [
+          "Petroleum gases",
+          "2",
+          "5"
+        ],
+        [
+          "Gasoline",
+          "5",
+          "25"
+        ],
+        [
+          "Naphtha",
+          "10",
+          "5"
+        ],
+        [
+          "Paraffin",
+          "13",
+          "10"
+        ],
+        [
+          "Diesel",
+          "20",
+          "25"
+        ],
+        [
+          "Lubricating oil",
+          "20",
+          "15"
+        ],
+        [
+          "Asphalt",
+          "30",
+          "15"
+        ]
+      ],
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "Therefore, petroleum companies developed methods that enable them to convert heavy oils made of large molecules into lighter, more useful derivatives, such as gasoline and raw materials for plastics manufacturing.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "table",
+      "heading": "📊 Table 7-2: Crude Oil Refining Products and Some of Their Uses",
+      "headers": [
+        "Derivative",
+        "Boiling point (°C)",
+        "Molecule size (number of carbon atoms)",
+        "Uses"
+      ],
+      "rows": [
+        [
+          "Petroleum gases",
+          "Below 40",
+          "Up to 4 carbon atoms",
+          "Methane for cooking, and butane for camping gas"
+        ],
+        [
+          "Gasoline and naphtha",
+          "40 – 130",
+          "4 – 12 carbon atoms",
+          "Gasoline for cars, and naphtha as fuel for light stoves"
+        ],
+        [
+          "Paraffin oil (kerosene)",
+          "150 – 200",
+          "10 – 16 carbon atoms",
+          "Paraffin for heating, and jet fuel"
+        ],
+        [
+          "Diesel oil",
+          "225 – 300",
+          "14 – 25 carbon atoms",
+          "Fuel for trucks and ships"
+        ],
+        [
+          "Lubricating oil",
+          "300 – 400",
+          "20 – 70 carbon atoms",
+          "Lubricating machinery and engines"
+        ],
+        [
+          "Asphalt",
+          "Above 400",
+          "Residue",
+          "Asphalt is heated with sand and gravel to become tar for paving roads"
+        ]
+      ],
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>According to Table (7-1), diesel makes up 20% of the primary refining products, while its share of daily use is 25%. Calculate the percentage increase in daily demand for diesel compared to its share of production from the primary refining process.</p>",
+      "label": "📝 Example (1)",
+      "solution": {
+        "given": [
+          "Diesel's share of primary refining products (production) = 20% (from Table 7-1)",
+          "Its share of daily use (demand) = 25% (from Table 7-1)"
+        ],
+        "required": "The percentage increase in daily demand for diesel compared to its share of production.",
+        "steps": [
+          {
+            "note": "We calculate the absolute increase between the daily-use share and the production share",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\text{Increase} = 25\\% - 20\\% \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\text{Increase} = 5\\% \\)"
+              }
+            ]
+          },
+          {
+            "note": "We calculate the percentage of the relative increase compared to the original production share (20%)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\text{Percentage increase} = \\dfrac{5\\%}{20\\%}\\times 100\\% \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\text{Percentage increase} = 25\\% \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ Daily demand for diesel exceeds its production share from the primary refining process by 25%",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 7,
+      "sectionId": "examples",
+      "sectionNavLabel": "✍️ Solved Example"
+    },
+    {
+      "type": "paragraph",
+      "html": "To convert heavy oils into lighter, more useful derivatives, a process called cracking is used, carried out either by heating alone (thermal cracking), or with the help of a catalytic or auxiliary agent (catalytic cracking), which is the more common method.",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — The Two Types of Cracking",
+      "html": "",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null,
+      "listItems": [
+        "<b>Thermal cracking:</b> carried out only by heating, without an auxiliary agent.",
+        "<b>Catalytic cracking:</b> carried out with the help of a catalytic or auxiliary agent, and is the more common method. Among the catalytic agents are aluminum oxide powder \\(Al_2O_3\\) or silicon oxide \\(SiO_2\\), since these materials provide a large hot surface area to speed up the cracking process without being consumed themselves in the process."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem"
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Explain — Why is cracking an important industrial source of hydrogen?",
+      "html": "Alkanes are among the most abundant compounds making up crude oil, so they are used in thermal cracking to produce other compounds; for example, hexane, an alkane made of six carbon atoms, when this large saturated molecule is cracked, it usually forms a smaller saturated molecule such as butane, and an unsaturated molecule such as ethene, and hydrogen gas is often formed as well; therefore, the cracking process is considered an important industrial source of hydrogen, which is very important as a fuel through fuel cells.",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ C_6H_{14(l)} \\xrightarrow{\\Delta} C_4H_{10(g)} + C_2H_4{}_{(g)} $$",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "Did you know?",
+      "html": "There is a type of tree (Euphorbia trees) whose sap contains a third hydrocarbons, and these hydrocarbons can be used to produce gasoline, diesel, and plastic. These trees are called the squirrel tree, because squirrels stay away from their oily sap.",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Products Manufactured from Crude Oil",
+      "html": "Crude oil is a raw material for manufacturing a large number of products, including:",
+      "sectionGroup": 13,
+      "sectionId": null,
+      "sectionNavLabel": null,
+      "listItems": [
+        "Plastics.",
+        "Cosmetics.",
+        "Fuel.",
+        "Pesticides.",
+        "Medicines.",
+        "Detergents.",
+        "Synthetic rubber.",
+        "Paints.",
+        "Glue.",
+        "Tires."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem;columns:2;column-gap:1.5rem"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "Heavy fractions such as lubricating oils condense in the distillation tower at the level:",
+        "options": [
+          "At the top of the tower, where the temperature is very low",
+          "At the bottom of the tower, where their boiling point is higher",
+          "Only in the middle of the tower",
+          "Completely outside the tower"
+        ],
+        "explain": "Heavy fractions such as lubricating oils have higher boiling points, so they condense at the lower (relatively hotter) levels of the tower, while light fractions rise to the top."
+      },
+      {
+        "correct": 2,
+        "question": "Catalytic cracking is the more common method because it uses a catalytic agent such as:",
+        "options": [
+          "Water",
+          "Salt",
+          "Aluminum oxide or silicon oxide",
+          "Alcohol"
+        ],
+        "explain": "Among the catalytic agents used in catalytic cracking are aluminum oxide powder Al₂O₃ or silicon oxide SiO₂."
+      },
+      {
+        "correct": 0,
+        "question": "When hexane (C₆H₁₄) is thermally cracked, it produces:",
+        "options": [
+          "Butane and ethene",
+          "Methane and oxygen",
+          "Propane and water",
+          "Only gasoline and naphtha"
+        ],
+        "explain": "\\( C_6H_{14(l)} \\xrightarrow{\\Delta} C_4H_{10(g)} + C_2H_4{}_{(g)} \\); hexane cracks into butane and ethene."
+      },
+      {
+        "correct": 3,
+        "question": "Asphalt, one of the refining products, is most useful for:",
+        "options": [
+          "Jet fuel",
+          "Lubricating engines",
+          "Camping gas",
+          "Paving roads after being heated with sand and gravel"
+        ],
+        "explain": "Asphalt is heated with sand and gravel to become tar used for paving roads."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Crude oil is heated at the bottom of the distillation tower to above 400°C, so it vaporizes and separates into fractions, each condensing at the height corresponding to its boiling point.",
+      "Heavy fractions (lubricating oils and asphalt) condense at the bottom of the tower, while light fractions (gases, gasoline) rise to the top.",
+      "The main refining products: petroleum gases, gasoline and naphtha, paraffin (kerosene), diesel, lubricating oil, and asphalt — each with its own uses.",
+      "Cracking is a process that converts heavy oils into light derivatives, either thermal or catalytic (the more common method), and it often produces hydrogen gas.",
+      "Crude oil is a raw material for manufacturing plastics, cosmetics, fuel, pesticides, medicines, detergents, synthetic rubber, paints, glue, and tires."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of refining products",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Refining",
+        "Products"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Distillation Tower"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Derivative Tables"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Cracking"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Petroleum Products"
+        ]
+      }
+    ]
+  }
+}

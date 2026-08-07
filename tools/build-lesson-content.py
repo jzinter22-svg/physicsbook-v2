@@ -369,6 +369,15 @@ def extract_simulation(section):
     # (not text()) so the <b id="..."> the widget targets survives.
     trailing_ps = panel.find_all("p", recursive=False)
     trailing_html = "".join(inner_html(p) for p in trailing_ps) if trailing_ps else None
+    # When there's exactly one trailing <p> and it carries an id, the
+    # widget's own JS almost certainly targets that id directly (a status/
+    # caption line it writes into after the user interacts, e.g.
+    # #bandCaption, #towerCaption) — capture the id so the renderer can
+    # reproduce the element even when it starts out empty (trailing_html
+    # would otherwise be "", and the old (falsy-html-only) render condition
+    # would drop the element entirely, leaving the widget's
+    # getElementById() call to return null and throw at runtime).
+    trailing_id = trailing_ps[0].get("id") if len(trailing_ps) == 1 else None
     return {
         "svgId": svg.get("id") if svg else None,
         "svgAriaLabel": svg.get("aria-label", "") if svg else "",
@@ -385,6 +394,7 @@ def extract_simulation(section):
         "presets": preset_list,
         "ruleBoxes": rule_boxes,
         "trailingHtml": trailing_html,
+        "trailingId": trailing_id,
     }
 
 
@@ -512,13 +522,24 @@ def extract_lesson(path, lesson_num, chapter_num, total_lessons):
 
             defbox = sec.select_one(".def-box")
             if defbox:
+                intro_p = defbox.select_one("p")
                 block = {
                     "type": classify_defbox(defbox),
                     # inner_html (not text()) to preserve inline tags like <sub>c</sub>
                     # in labels such as "التعجيل المركزي (a<sub>c</sub>)" — text()
                     # would insert a stray space between "a" and its subscript.
                     "label": inner_html(defbox.select_one(".def-label")),
-                    "html": inner_html(defbox.select_one("p") or defbox),
+                    # Falling back to the whole def-box only makes sense when
+                    # there's no intro <p> AND no list either (a genuinely
+                    # bare def-box) — with a list present but no <p> (an
+                    # enumeration whose items sit directly under the label,
+                    # e.g. "🔢 تعداد — نوعا عملية التكسير"), that fallback would
+                    # re-embed the label span and the whole list a second
+                    # time inside b.html, duplicating them alongside the
+                    # separately-captured listItems below.
+                    "html": inner_html(intro_p) if intro_p else (
+                        "" if defbox.select_one("ol, ul") else inner_html(defbox)
+                    ),
                 }
                 # An enumeration def-box's intro <p> is sometimes followed by
                 # its own <ol>/<ul> of items (e.g. "🔢 تعداد — منتجات مصنّعة من
