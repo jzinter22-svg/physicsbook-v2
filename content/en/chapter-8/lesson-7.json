@@ -1,0 +1,272 @@
+{
+  "lessonNumber": 7,
+  "chapterNumber": 8,
+  "meta": {
+    "pageTitle": "Lesson 7: Uses of Alloys — Chapter Eight",
+    "description": "8-7 Uses of alloys: refrigeration and fire detection, medicine, aircraft frames, buildings and bridges, kitchen tools and the petroleum industry, with the most famous examples of common alloys.",
+    "breadcrumbChapter": "Chapter 8",
+    "breadcrumbLesson": "Uses of Alloys",
+    "footer": "Chapter Eight: Metals and Alloys — Lesson 7: Uses of Alloys"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 7 of 9 · 8-7",
+    "title": "Uses of Alloys",
+    "lead": "From refrigeration valves to aircraft frames, and from dental fillings to city bridges: alloys are used in many aspects of our lives. Learn in this lesson about their most prominent uses and their most famous examples."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Lists the uses of alloys in various areas of life.",
+    "States common examples of the alloys used in each area."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 8-7 Uses of Alloys",
+      "html": "Alloys are used in many industrial, medical, and construction fields, thanks to the properties they have that are better than the pure metals that make them up.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: Fields of Alloy Use",
+      "descriptionHtml": "Press any field to learn how alloys are used in it.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnCooling",
+          "html": "🧯 Refrigeration and Fire Detection",
+          "class": "neu-btn primary",
+          "data": {
+            "data-use": "cooling"
+          },
+          "style": null
+        },
+        {
+          "id": "btnMedical",
+          "html": "🦷 Medicine",
+          "class": "neu-btn",
+          "data": {
+            "data-use": "medical"
+          },
+          "style": null
+        },
+        {
+          "id": "btnAircraft",
+          "html": "✈️ Aircraft Frames",
+          "class": "neu-btn",
+          "data": {
+            "data-use": "aircraft"
+          },
+          "style": null
+        },
+        {
+          "id": "btnBuilding",
+          "html": "🏗️ Buildings and Bridges",
+          "class": "neu-btn",
+          "data": {
+            "data-use": "building"
+          },
+          "style": null
+        },
+        {
+          "id": "btnKitchen",
+          "html": "🍳 Kitchen and the Petroleum Industry",
+          "class": "neu-btn",
+          "data": {
+            "data-use": "kitchen"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "<span class=\"def-label\" id=\"useInfoLabel\"></span>\n<p id=\"useInfoText\" style=\"margin:.3rem 0\"></p>",
+          "id": "useInfoCard",
+          "wrapperClass": "def-box"
+        }
+      ],
+      "trailingHtml": null,
+      "trailingId": null,
+      "sectionGroup": 1,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "coolingLabel": "🧯 Refrigeration and Fire Detection",
+        "coolingText": "Some alloys are used in manufacturing refrigeration-circuit valves and fire-detection systems, since they respond precisely to changes in temperature.",
+        "medicalLabel": "🦷 Medicine",
+        "medicalText": "Certain alloys are used in medicine, such as fillings and bridges in dentistry, and the medical guidewire device.",
+        "aircraftLabel": "✈️ Aircraft Frames",
+        "aircraftText": "Some alloys are used in manufacturing aircraft frames, the most notable example being the alloy of aluminum with copper, manganese, and magnesium.",
+        "buildingLabel": "🏗️ Buildings and Bridges",
+        "buildingText": "Some alloys are used in manufacturing support structures in some buildings and bridge frames.",
+        "kitchenLabel": "🍳 Kitchen and the Petroleum Industry",
+        "kitchenText": "Some alloys are used in manufacturing kitchen utensils, petroleum-industry equipment, and power generation stations."
+      }
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Uses of Alloys",
+      "html": "",
+      "listItems": [
+        "Some alloys are used in manufacturing refrigeration-circuit valves and fire-detection systems.",
+        "Certain alloys are used in medicine, such as fillings and bridges in dentistry, and the medical guidewire device.",
+        "Some alloys are used in manufacturing aircraft frames.",
+        "Some alloys are used in manufacturing support structures in some buildings and bridge frames.",
+        "Some alloys are used in manufacturing kitchen utensils, petroleum-industry equipment, and power generation stations."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Common Examples of Alloys",
+      "html": "",
+      "listItems": [
+        "Iron and steel alloys, among the most famous alloys in use.",
+        "Copper-nickel alloys, or copper, tin, and cobalt alloys.",
+        "Lead-tin alloy.",
+        "Aluminum-copper-manganese-magnesium alloy (used in manufacturing aircraft frames)."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "Some alloys are used in the field of medicine, such as:",
+        "options": [
+          "Light bulbs",
+          "Fillings and bridges in dentistry, and the medical guidewire device",
+          "Water pipes only",
+          "Car fuel"
+        ],
+        "explain": "Certain alloys are used in medicine, such as fillings and bridges in dentistry, and the medical guidewire device."
+      },
+      {
+        "correct": 3,
+        "question": "The aluminum-copper-manganese-magnesium alloy is used in particular in manufacturing:",
+        "options": [
+          "Kitchen utensils",
+          "Dental fillings",
+          "Refrigeration valves",
+          "Aircraft frames"
+        ],
+        "explain": "The aluminum-copper-manganese-magnesium alloy is used in manufacturing aircraft frames."
+      },
+      {
+        "correct": 0,
+        "question": "Among the most famous alloys ever used are:",
+        "options": [
+          "Iron and steel alloys",
+          "Gold and silver alloy only",
+          "Mercury and platinum alloy",
+          "Radium alloy"
+        ],
+        "explain": "Iron and steel alloys are among the most famous alloys in use."
+      },
+      {
+        "correct": 2,
+        "question": "Some alloys are used in manufacturing support structures in:",
+        "options": [
+          "Clothing",
+          "Medicines",
+          "Some buildings and bridge frames",
+          "Cosmetics"
+        ],
+        "explain": "Some alloys are used in manufacturing support structures in some buildings and bridge frames."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Alloys are used in refrigeration valves and fire-detection systems, in medicine (dental fillings and guidewires), and in aircraft frames, support structures, bridges, kitchen tools, and the petroleum industry.",
+      "Among the most famous examples: iron and steel alloys, copper-nickel or tin-cobalt alloys, lead-tin alloys, and aluminum with copper, manganese, and magnesium for aircraft frames."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of uses of alloys",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Uses of",
+        "Alloys"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Cooling & Fire"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Medicine"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Aircraft"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Buildings",
+          "& Bridges"
+        ]
+      }
+    ]
+  }
+}
