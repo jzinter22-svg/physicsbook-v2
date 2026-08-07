@@ -1,0 +1,381 @@
+{
+  "lessonNumber": 1,
+  "chapterNumber": 3,
+  "meta": {
+    "pageTitle": "Lesson 1: Introduction and Faraday's Law — Chapter Three",
+    "description": "3-1 Introduction: Faraday's experiment with a magnet and a coil, 3-2 Faraday's law: induced electromotive force, its mathematical form, and two solved examples.",
+    "breadcrumbChapter": "Chapter 3",
+    "breadcrumbLesson": "Introduction and Faraday's Law",
+    "footer": "Chapter Three: Electromagnetic Induction — Lesson 1: Introduction and Faraday's Law"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 1 of 6 · Chapter Three",
+    "title": "Introduction and Faraday's Law",
+    "lead": "3-1 Introduction · 3-2 Faraday's law"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Describe Faraday's experiment and deduce the condition needed to generate an induced current.",
+    "State Faraday's law and write its mathematical form.",
+    "Solve numerical problems using Faraday's law of electromagnetic induction."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 3-1 Introduction",
+      "html": "You learned earlier that electric currents generate magnetic fields — one of three major scientific achievements on which the industrial revolution was built more than a hundred years ago, an achievement due to Oersted. The question that now comes to mind is: can magnetic fields, in turn, generate electric currents?</p><p>The scientist Michael Faraday (1791–1867) in England and the scientist Joseph Henry (1797–1878) in the United States were able, independently of one another, to answer this question affirmatively in 1831. We will now present an experiment that demonstrates this effect clearly.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "simulation",
+      "svgId": "magnetSvg",
+      "svgAriaLabel": "Simulation of a magnet moving inside a coil with a galvanometer",
+      "svgViewBox": "0 0 360 220",
+      "svgWidth": "360",
+      "svgHeight": "220",
+      "sectionHeading": "🕹️ Interactive Simulation: Faraday's Experiment (Figure 3-1)",
+      "descriptionHtml": "Drag the magnet in and out of the coil, and notice that the galvanometer needle deflects only while the magnet is moving (that is, while the magnetic flux through the coil is changing); it returns to zero the instant the motion stops, and deflects in the opposite direction when the direction of motion is reversed.",
+      "controls": [
+        {
+          "labelHtml": "Magnet position",
+          "inputId": "magnetSlider",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "-100",
+          "inputMax": "100",
+          "inputStep": "1",
+          "inputValue": "-100"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "Galvanometer reading: zero (no motion)",
+          "id": "magnetStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 1,
+      "sectionId": "magnet-widget",
+      "sectionNavLabel": "🕹️ Recreate Figure 3-1",
+      "labels": {
+        "galvanometerLabel": "Galvanometer",
+        "statusZero": "Galvanometer reading: zero (no change in magnetic flux)",
+        "statusRight": "Deflection to the right — magnet approaching (flux increasing)",
+        "statusLeft": "Deflection to the left — magnet moving away (flux decreasing)"
+      }
+    },
+    {
+      "type": "paragraph",
+      "html": "When the bar magnet is pushed toward the coil's end we observe the galvanometer needle deflect to one side of its scale, as in figure (3-1a): a sign that an electric current is generated as a result of magnetic flux lines cutting across the coil. When the magnet stops moving, the magnetic flux — that is, there is no change in the magnetic flux — no current flows in the coil and the galvanometer needle returns to zero, as in figure (3-1b).</p><p>If, instead, we pull the bar magnet away from the coil in the opposite direction, the flux begins to decrease, and the galvanometer needle deflects in the opposite direction, indicating that the current direction is reversed, as in (3-1c).",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Induced Current and Electromagnetic Induction",
+      "html": "The current generated in this way is known as the induced current, denoted \\(I_{ind}\\), and the process is known as electromagnetic induction.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "list",
+      "heading": "📋 We conclude from this experiment (one of Faraday's experiments) the following",
+      "items": [
+        "If the magnetic flux (decreasing or increasing) that cuts through a closed circuit changes, an induced electromotive force is generated in that circuit.",
+        "The change in magnetic flux \\((\\Delta\\varnothing)\\) per unit time is the essential factor that generates the induced current in the closed circuit."
+      ],
+      "ordered": true,
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 3-2 Faraday's Law",
+      "html": "Faraday's law can be explained through the following experiment: we use two coils of wire wound around a soft-iron conducting disk. One coil is connected to a battery and a switch (circuit X) on the left-hand side, and is called the primary coil circuit. The second coil is connected in series with a galvanometer and is called the secondary coil circuit (circuit Y, on the right).",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "Closing the switch in the primary coil circuit causes the galvanometer needle to deflect to one side of zero and then gradually return to zero. The deflection of the galvanometer needle is evidence of current flowing in the secondary coil, and its cause is that the primary induction generated a magnetic field in the iron core, which the secondary coil's flux cuts across, producing an induced electromotive force. The needle's return to zero is evidence that the current in the secondary coil has stopped, as a result of there being no further change in the magnetic flux threading the secondary coil per unit time \\(\\left(\\dfrac{\\Delta\\varnothing}{\\Delta t}\\right)\\).</p><p>Faraday also observed that the galvanometer needle deflects once again the instant the switch is opened, but in the opposite direction, before returning to zero.</p><p>From these observations we conclude that an induced electromotive force will be generated in a closed loop as a result of a change occurring in the magnetic flux threading the coil per unit time, which is what causes the induced current to arise (regardless of its cause).",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .6rem;font-weight:800;color:var(--accent-red)\">Faraday's Law</p>\n<p style=\"margin:0\">The induced electromotive force generated in a closed circuit is directly proportional to the change occurring in the magnetic flux that cuts through the circuit, per unit time.</p>",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\varepsilon_{ind} = -\\dfrac{\\Delta\\varnothing}{\\Delta t} \\qquad \\text{...(1)} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">Faraday's law is considered one of the most important principles of electricity and magnetism, and indeed the foundation of the operation of generators, motors, and many other important devices.</p>",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "If we have a wire coil with a number of turns (N), Faraday's law becomes:",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\varepsilon_{ind} = -N\\dfrac{\\Delta\\varnothing}{\\Delta t} \\qquad \\text{...(2)} $$",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "📝",
+      "strong": "",
+      "html": "The negative sign in the law was placed to indicate that the direction of the induced electromotive force opposes the change in the magnetic flux inducing it in the coil, and it is this sign that determines the direction of the induced current in the circuit.",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>A coil consists of 40 turns. If this coil is moved perpendicularly through a flux of magnitude \\((3\\times10^{-5}\\ \\text{weber})\\) over a time interval of (0.02 s), what is the magnitude of the induced electromotive force \\(\\varepsilon_{ind}\\)?</p>",
+      "label": "📝 Example (1)",
+      "solution": {
+        "given": [
+          "\\( N = 40 \\) turns — the number of turns in the coil",
+          "\\( \\Delta\\varnothing = 3\\times10^{-5}\\ \\text{Wb} \\) — the magnitude of the magnetic flux through the coil",
+          "\\( \\Delta t = 0.02\\ \\text{s} \\) — the time interval"
+        ],
+        "required": "Calculate the induced electromotive force \\(\\varepsilon_{ind}\\).",
+        "steps": [
+          {
+            "note": "We apply Faraday's law for a coil with N turns",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\varepsilon_{ind} = -N\\dfrac{\\Delta\\varnothing}{\\Delta t} = -40\\times\\dfrac{3\\times10^{-5}}{0.02} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\varepsilon_{ind} = -0.06\\ \\text{V} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ ε_ind = −0.06 V",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 12,
+      "sectionId": "example1",
+      "sectionNavLabel": "📝 Example 1"
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>A coil has 100 turns and each turn has an area of \\((10\\ \\text{cm}^2)\\). The magnetic flux density threading the coil changes from \\((0\\ \\text{T})\\) to \\((1\\ \\text{T})\\) over a time of \\((0.2\\ \\text{s})\\). Calculate: 1- the electromotive force \\(\\varepsilon_{ind}\\) generated in the coil. 2- the current flowing in the electric circuit, given that the total circuit resistance is \\((100\\ \\Omega)\\).</p>",
+      "label": "📝 Example (2)",
+      "solution": {
+        "given": [
+          "\\( N = 100 \\) turns",
+          "\\( A = 10\\ \\text{cm}^2 = 10\\times10^{-4}\\ \\text{m}^2 \\) — the area of a single turn (after conversion)",
+          "\\( B_1 = 0\\ \\text{T},\\ B_2 = 1\\ \\text{T} \\) — the initial and final magnetic flux density",
+          "\\( \\Delta t = 0.2\\ \\text{s} \\)",
+          "\\( R = 100\\ \\Omega \\) — the total circuit resistance"
+        ],
+        "required": "1- Calculate \\(\\varepsilon_{ind}\\). 2- Calculate the current I flowing in the circuit.",
+        "steps": [
+          {
+            "note": "1- We calculate \\(\\Delta B\\), then apply Faraday's law, where \\(\\Delta\\varnothing = A\\Delta B\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\Delta B = B_2 - B_1 = 1 - 0 = 1\\ \\text{T} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( \\varepsilon_{ind} = -N\\dfrac{A\\Delta B}{\\Delta t} = -\\dfrac{100\\times(10\\times10^{-4})\\times 1}{0.2} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\varepsilon_{ind} = -0.5\\ \\text{V} \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- From Ohm's law: \\(I=\\varepsilon_{ind}/R\\)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( I = \\dfrac{0.5}{100} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I = 5\\times10^{-3}\\ \\text{A} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ ε_ind = −0.5 V   ·   I = 5×10⁻³ A",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 13,
+      "sectionId": "example2",
+      "sectionNavLabel": "📝 Example 2"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "An induced current is generated in a coil when:",
+        "options": [
+          "A magnet is placed at rest inside the coil",
+          "The coil moves away from any magnetic source",
+          "The magnetic flux through the coil changes with time",
+          "Only the number of turns in the coil is increased, without any motion"
+        ],
+        "explain": "An induced current is generated only when the magnetic flux through the circuit changes with time; if the magnet is at rest, no current is generated."
+      },
+      {
+        "correct": 1,
+        "question": "The form of Faraday's law for a coil with N turns is:",
+        "options": [
+          "\\( \\varepsilon_{ind}=N\\varnothing \\)",
+          "\\( \\varepsilon_{ind}=-N\\dfrac{\\Delta\\varnothing}{\\Delta t} \\)",
+          "\\( \\varepsilon_{ind}=\\dfrac{N}{\\Delta\\varnothing} \\)",
+          "\\( \\varepsilon_{ind}=N\\Delta t \\)"
+        ],
+        "explain": "Equation (2): \\(\\varepsilon_{ind}=-N\\Delta\\varnothing/\\Delta t\\)."
+      },
+      {
+        "correct": 0,
+        "question": "The negative sign in Faraday's law indicates:",
+        "options": [
+          "That the induced electromotive force opposes the change in magnetic flux that produces it",
+          "That the induced current is always negative",
+          "That the magnetic flux always decreases",
+          "A meaningless typographical error"
+        ],
+        "explain": "The negative sign indicates that the direction of the induced electromotive force opposes the change in magnetic flux."
+      },
+      {
+        "correct": 3,
+        "question": "When the motion of a magnet inside a coil connected to a galvanometer stops:",
+        "options": [
+          "The needle remains deflected at its maximum value",
+          "The needle oscillates continuously",
+          "The direction of the needle's deflection reverses",
+          "The needle returns to zero"
+        ],
+        "explain": "When the motion stops, the change in magnetic flux stops, so the induced current stops and the galvanometer needle returns to zero."
+      },
+      {
+        "correct": 1,
+        "question": "The essential factor that generates the induced current in a closed circuit is:",
+        "options": [
+          "The magnitude of a constant magnetic flux",
+          "The rate of change of magnetic flux per unit time",
+          "The circuit's resistance alone",
+          "The number of coils manufactured"
+        ],
+        "explain": "Faraday's law: the induced electromotive force is directly proportional to the rate of change of magnetic flux per unit time \\((\\Delta\\varnothing/\\Delta t)\\)."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Faraday's experiment: a change in the magnetic flux through a coil generates an induced current in it.",
+      "Faraday's law: \\(\\varepsilon_{ind}=-\\Delta\\varnothing/\\Delta t\\); and for a coil with N turns: \\(\\varepsilon_{ind}=-N\\Delta\\varnothing/\\Delta t\\).",
+      "The negative sign indicates that the induced electromotive force opposes the change in flux that produces it.",
+      "There is no induced current without a change in magnetic flux per unit time."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of Faraday's law",
+    "viewBox": "0 0 480 220",
+    "center": {
+      "cx": 240.0,
+      "cy": 110.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Faraday's Law"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Magnet & coil",
+          "experiment"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "I_ind"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "ε=−NΔØ/Δt"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 175.0,
+        "r": 42.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Negative sign",
+          "opposes change"
+        ]
+      }
+    ]
+  }
+}

@@ -98,7 +98,13 @@
       "trailingHtml": null,
       "sectionGroup": 2,
       "sectionId": "motorrule-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 15-3"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 15-3",
+      "labels": {
+        "forceLabel": "F (الحركة)",
+        "statusPrefix": "اتجاه القوة (الحركة): ",
+        "statusUp": "نحو الأعلى ↑",
+        "statusDown": "نحو الأسفل ↓"
+      }
     },
     {
       "type": "definition",
@@ -126,7 +132,10 @@
       "trailingHtml": null,
       "sectionGroup": 4,
       "sectionId": "torque-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 16-3"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 16-3",
+      "labels": {
+        "captionLabel": "مزدوج القوتين يولّد عزمًا يدير الملف باستمرار"
+      }
     },
     {
       "type": "list",

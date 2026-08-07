@@ -1,0 +1,297 @@
+{
+  "lessonNumber": 2,
+  "chapterNumber": 3,
+  "meta": {
+    "pageTitle": "Lesson 2: Lenz's Law — Chapter Three",
+    "description": "3-3 Lenz's law: the right-hand rule for determining the direction of the induced current, analysis of a conductor moving inside a magnetic field, the statement of the law, and its relation to energy conservation.",
+    "breadcrumbChapter": "Chapter 3",
+    "breadcrumbLesson": "Lenz's Law",
+    "footer": "Chapter Three: Electromagnetic Induction — Lesson 2: Lenz's Law"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 2 of 6 · Chapter Three",
+    "title": "Lenz's Law",
+    "lead": "3-3 Lenz's law: the right-hand rule, the direction of the induced current, and its relation to energy conservation"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Use the right-hand rule to determine the direction of the induced current in a conductor moving inside a magnetic field.",
+    "State Lenz's law and explain it.",
+    "Show how Lenz's law satisfies the principle of conservation of energy."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 3-3 Lenz's Law",
+      "html": "An electric current flowing in a conductor generates a magnetic field around the conductor. To determine the direction of the induced current, the right-hand rule is used: the fingers of the right hand (thumb, index, and middle finger) are held mutually perpendicular; the index finger points in the direction of the magnetic field, the thumb points in the direction of the conductor's motion, and the middle finger points in the direction of the induced current.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "simulation",
+      "svgId": "rhrSvg",
+      "svgAriaLabel": "Simulation of the right-hand rule for determining the direction of the induced current",
+      "svgViewBox": "0 0 320 200",
+      "svgWidth": "320",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive Simulation: The Right-Hand Rule (Figure 3-3)",
+      "descriptionHtml": "Choose the direction of the conductor's motion and the direction of the magnetic field, and observe the resulting direction of the induced current (index finger = field, thumb = motion, middle finger = current).",
+      "controls": [],
+      "buttons": [
+        {
+          "id": null,
+          "html": "↓ Conductor moving down",
+          "class": "neu-btn",
+          "data": {
+            "data-vdir": "down"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "↑ Conductor moving up",
+          "class": "neu-btn",
+          "data": {
+            "data-vdir": "up"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "→ Field pointing right (N left / S right)",
+          "class": "neu-btn",
+          "data": {
+            "data-bdir": "right"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "← Field pointing left (S left / N right)",
+          "class": "neu-btn",
+          "data": {
+            "data-bdir": "left"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "Induced current: —",
+          "id": "rhrStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "sectionGroup": 1,
+      "sectionId": "righthand-widget",
+      "sectionNavLabel": "🕹️ Recreate Figure 3-3",
+      "labels": {
+        "rhrConductorLabel": "v (conductor)",
+        "rhrStatusPrefix": "Induced current: ",
+        "rhrStatusOut": "out of the page (toward the reader) •",
+        "rhrStatusInto": "into the page (away from the reader) ×"
+      }
+    },
+    {
+      "type": "paragraph",
+      "html": "Likewise, when induced currents flow in the conductor they produce their own induced magnetic field. Figure (3-4) shows a conductor rod moved inside a uniform magnetic field, with field lines running from right to left, as follows:",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>1-</b> When the conductor is moved downward, an induced current is generated whose direction, by Ampère's right-hand rule at the base of the conductor, is perpendicular to the magnetic field and out of the page, indicated by the symbol (•) marked on the wire's cross-section. The direction of the induced magnetic field produced by this induced current is counterclockwise.</p><p>By Ampère's law, this induced field aligns with the original magnetic field below the conductor, which increases the flux density and strengthens the field there, while above the conductor the two fields oppose each other, decreasing the flux density and weakening the field. This produces a force perpendicular to both the field and the current, directed upward — that is, opposite to the direction of the conductor's motion; in other words, this force tries to impede the conductor's motion.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>2-</b> When the conductor is moved upward in the same field, the direction of the induced current in the conductor will be perpendicular to the page, pointing away from the reader (the opposite of case 1).",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "lenzSvg",
+      "svgAriaLabel": "Simulation of the opposing force on a conductor moving inside a magnetic field",
+      "svgViewBox": "0 0 320 200",
+      "svgWidth": "320",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive Simulation: The Force Opposing the Conductor's Motion (Figure 3-4)",
+      "descriptionHtml": "Toggle the direction of the conductor's motion inside the uniform field, and watch the direction of the induced current (dot = out of the page, × = into the page), and the resulting opposing force that always tries to impede the conductor's motion (per Lenz's law).",
+      "controls": [],
+      "buttons": [
+        {
+          "id": "lenzToggle",
+          "html": "↕ Toggle the conductor's direction of motion",
+          "class": "neu-btn",
+          "data": null,
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "sectionGroup": 5,
+      "sectionId": "conductor-widget",
+      "sectionNavLabel": "🕹️ Recreate Figure 3-4",
+      "labels": {
+        "lenzConductorLabel": "v",
+        "opposingForceLabel": "Opposing force",
+        "captionDown": "Conductor moves down → current out of the page",
+        "captionUp": "Conductor moves up → current into the page"
+      }
+    },
+    {
+      "type": "paragraph",
+      "html": "From the above, Lenz's law states the following:",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0\">The induced current in a closed electric circuit generates a magnetic field that opposes, by its effect, the external magnetic change that caused this current to be generated.</p>",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "list",
+      "heading": "📋 From Lenz's Law We Can Deduce the Following",
+      "items": [
+        "It satisfies the principle of conservation of energy: the induced magnetic field resulting from the induced current generates a force opposing the field that produces it.",
+        "Work must be done to overcome the opposing force: this work done is converted into potential energy of the electrons in the moving conductive part if it is within an open circuit. If it is within a closed circuit, however, that potential energy manifests as an induced current, which may in turn generate mechanical work, heat, or a chemical effect."
+      ],
+      "ordered": true,
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Check Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "In the right-hand rule for determining the direction of the induced current, the index finger points to:",
+        "options": [
+          "The direction of the conductor's motion",
+          "The direction of the induced current",
+          "The direction of the magnetic field",
+          "The direction of the opposing force only"
+        ],
+        "explain": "The index finger points in the direction of the magnetic field, the thumb in the direction of the conductor's motion, and the middle finger in the direction of the induced current."
+      },
+      {
+        "correct": 1,
+        "question": "Lenz's law states that the induced current generates a magnetic field that is:",
+        "options": [
+          "In the same direction as the magnetic change that causes it",
+          "Opposing the external magnetic change that causes it to be generated",
+          "Perpendicular to the magnetic change, with no directional relation at all",
+          "Unrelated to the magnetic change whatsoever"
+        ],
+        "explain": "Lenz's law: the induced current generates a magnetic field that opposes, by its effect, the external magnetic change that caused it."
+      },
+      {
+        "correct": 0,
+        "question": "The force arising on a conductor moving inside a magnetic field, as a result of the induced current, is:",
+        "options": [
+          "Opposing the conductor's motion (impeding it)",
+          "In the same direction as the conductor's motion (accelerating it)",
+          "Always zero",
+          "Perpendicular to the plane of motion only, with no effect"
+        ],
+        "explain": "By Lenz's law, an opposing force arises that tries to impede the conductor's motion, which is the basis for satisfying the principle of conservation of energy."
+      },
+      {
+        "correct": 1,
+        "question": "The work done to overcome the opposing force in a closed circuit is converted into:",
+        "options": [
+          "Energy lost with no trace",
+          "An induced current that may generate mechanical work, heat, or a chemical reaction",
+          "A static electric field only",
+          "Additional mass for the conductor"
+        ],
+        "explain": "In the closed circuit, the work done is converted into the energy of the induced current, which may generate mechanical work, heat, or a chemical effect."
+      },
+      {
+        "correct": 3,
+        "question": "If Lenz's law were the opposite of what it is (that is, the induced current reinforced the change that caused it instead of opposing it), that would:",
+        "options": [
+          "Change nothing about physics",
+          "Only make the induced current weaker",
+          "Only reduce the efficiency of generators",
+          "Violate the principle of conservation of energy (energy generated from nothing)"
+        ],
+        "explain": "If the induced current reinforced the change that caused it, energy would amplify itself indefinitely with no external source, which violates the principle of conservation of energy; hence the induced current must oppose (Lenz's law), not reinforce."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "The right-hand rule: index finger = magnetic field, thumb = conductor's motion, middle finger = induced current.",
+      "Lenz's law: the induced current generates a magnetic field opposing the external change that causes it.",
+      "The force resulting from the induced current always opposes the motion of the conductor that causes it.",
+      "Lenz's law satisfies the principle of conservation of energy: the work done to overcome the opposing force is converted into the energy of the induced current."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of Lenz's law",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Lenz's Law"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Right-hand",
+          "rule"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Opposing force"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Energy",
+          "conservation"
+        ]
+      }
+    ]
+  }
+}

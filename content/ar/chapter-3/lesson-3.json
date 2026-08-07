@@ -73,7 +73,12 @@
       "trailingHtml": null,
       "sectionGroup": 1,
       "sectionId": "eddy-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 5-3"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 5-3",
+      "labels": {
+        "statusSolid": "صفيحة معدنية صلدة: حلقات تيار دوامة كبيرة ← فقدان حراري أعلى",
+        "statusLaminated": "صفائح رقيقة معزولة: حلقات تيار دوامة صغيرة ← فقدان حراري أقل",
+        "fieldCaption": "B متغيّر يخترق الصفيحة ⊗"
+      }
     },
     {
       "type": "simulation",
@@ -120,7 +125,16 @@
       "trailingHtml": null,
       "sectionGroup": 2,
       "sectionId": "eddybrake-widget",
-      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 6-3"
+      "sectionNavLabel": "🕹️ إعادة إنشاء الشكل 6-3",
+      "labels": {
+        "plateLabel": "صفيحة معدنية",
+        "motionLabel": "اتجاه الحركة",
+        "retardingForceLabel": "قوة الإعاقة (تعاكس الحركة)",
+        "statusMoving": "الصفيحة تتحرك: تتولد تيارات دوامة عند حافتَي المغناطيس، وتنشأ قوة معاكسة لحركة الصفيحة (قانون لينز) — أساس مكابح التيارات الدوامة.",
+        "statusAtRest": "الصفيحة ساكنة: لا يوجد تغيّر في الفيض المغناطيسي، ولا تيارات دوامة، ولا قوة معاكسة.",
+        "startBtn": "▶ ابدأ حركة الصفيحة",
+        "stopBtn": "⏸ أوقف حركة الصفيحة"
+      }
     },
     {
       "type": "list",
