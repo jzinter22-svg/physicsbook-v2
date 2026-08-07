@@ -1,0 +1,52 @@
+{
+  "chapterNumber": 4,
+  "meta": {
+    "pageTitle": "Chapter 4: Alternating Current Circuits — Interactive Physics Book",
+    "description": "Chapter Four of the Interactive Physics Book: Alternating Current Circuits — defining alternating current and the effective value, pure resistance, the inductor, the capacitor, series RL, RC, and RLC circuits, and the electrical transformer — with solved examples and interactive tools.",
+    "breadcrumbChapter": "Chapter 4",
+    "footer": "Chapter Four: Alternating Current Circuits — Interactive Physics Book"
+  },
+  "hero": {
+    "eyebrow": "📘 Interactive Physics Book · Third Grade · Industrial Track",
+    "titleHtml": "Chapter Four: Alternating Current Circuits <span style=\"color:var(--accent-blue)\">AC Circuits</span>",
+    "lead": "From the sinusoidal wave of alternating current to pure resistance, the inductor, and the capacitor, and from their mixed series circuits to the electrical transformer: in this chapter we study the behavior of each electrical element with alternating current, its effective value, impedance, power factor, and electrical resonance.",
+    "startLessonLabel": "Start the First Lesson ←",
+    "tags": ["⏱ 8 lessons", "🧠 Self-quizzes", "🗺 Mind maps"]
+  },
+  "objectivesHeading": "🎯 Behavioral Objectives",
+  "objectivesLead": "After studying this chapter, the student will be able to know:",
+  "objectives": [
+    "Alternating current.",
+    "The effective value of the current.",
+    "The laws of a pure-resistance circuit.",
+    "The laws of a pure inductor in an AC circuit.",
+    "The power factor.",
+    "The laws of the capacitor and its operation in an AC circuit.",
+    "The electrical transformer, its laws, and its types."
+  ],
+  "lessonsHeading": "📚 Chapter Contents",
+  "enterLessonLabel": "Enter the Lesson ←",
+  "lessons": [
+    {"title": "Defining Alternating Current and the Effective Value", "description": "4-1 Defining alternating current, 4-2 the effective value of alternating current and voltage."},
+    {"title": "Pure Resistance in an AC Circuit", "description": "4-3: Power in a pure-resistance circuit, with a solved example."},
+    {"title": "The Inductor in an AC Circuit", "description": "4-4: Inductive reactance X_L and the circuit's characteristics, with a solved example."},
+    {"title": "The Capacitor in an AC Circuit", "description": "4-5: Capacitive reactance X_C and the circuit's characteristics, with a solved example."},
+    {"title": "Connecting a Resistance with an Inductor or Capacitor in Series", "description": "4-6, 4-7: The impedance Z, the phase-difference angle, and the power factor, with two solved examples."},
+    {"title": "Connecting a Resistance, an Inductor, and a Capacitor in Series", "description": "4-8: Power and the power factor, the laws of the mixed circuit, and electrical resonance, with a solved example."},
+    {"title": "The Electrical Transformer", "description": "4-9: Types of transformers, their laws, and electrical power transmission, with a solved example."},
+    {"title": "Chapter Questions and Problems", "description": "All multiple-choice, fill-in-the-blank, short-answer questions, and problems, solved in detail."}
+  ],
+  "mindmap": {
+    "heading": "🗺 Chapter Mind Map",
+    "ariaLabel": "Mind map for Chapter Four",
+    "viewBox": "0 0 900 480",
+    "center": {"cx": 450, "cy": 230, "r": 66, "lines": ["Alternating Current", "Circuits"]},
+    "satellites": [
+      {"cx": 180, "cy": 90, "r": 54, "color": "#ffab5e", "lines": ["AC Current", "and Effective Value"]},
+      {"cx": 720, "cy": 90, "r": 54, "color": "#ff6b9d", "lines": ["R, X_L", "and X_C"]},
+      {"cx": 150, "cy": 250, "r": 54, "color": "#2fd18f", "lines": ["Series", "Circuits"]},
+      {"cx": 750, "cy": 250, "r": 54, "color": "#3fa9f5", "lines": ["RLC", "and Resonance"]},
+      {"cx": 450, "cy": 420, "r": 54, "color": "#7c6fee", "lines": ["The Transformer"]}
+    ]
+  }
+}
