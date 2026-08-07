@@ -68,7 +68,22 @@
       "trailingId": "towerCaption",
       "sectionGroup": 1,
       "sectionId": "interactive",
-      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية",
+      "labels": {
+        "bandGas": "غازات بترولية",
+        "bandBenzin": "بنزين (نفط)",
+        "bandParaf": "برافين (كيروسين)",
+        "bandDiesel": "زيت الديزل",
+        "bandLube": "زيت تشحيم وقار",
+        "furnaceLabel": "فرن 500°C",
+        "crudeLabel": "زيت خام",
+        "captionRunning": "يُسخَّن النفط الخام في الفرن، وتصعد الأبخرة داخل البرج...",
+        "captionCondensedPrefix": "تكثّف مقطع ",
+        "captionCondensedAt": " عند ",
+        "captionCondensedTop": " في أعلى البرج",
+        "captionComplete": "اكتمل التقطير التجزيئي — تكثّفت جميع المقتطعات كل عند درجة غليانها.",
+        "captionIdle": "اضغط \"ابدأ التقطير\" لمشاهدة صعود الأبخرة وتكثّف كل مقطع عند ارتفاعه الموافق."
+      }
     },
     {
       "type": "paragraph",

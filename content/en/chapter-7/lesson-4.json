@@ -68,7 +68,22 @@
       "sectionGroup": 1,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ Interactive Simulation",
-      "trailingId": "towerCaption"
+      "trailingId": "towerCaption",
+      "labels": {
+        "bandGas": "Petroleum gases",
+        "bandBenzin": "Gasoline (naphtha)",
+        "bandParaf": "Paraffin (kerosene)",
+        "bandDiesel": "Diesel oil",
+        "bandLube": "Lubricating oil and asphalt",
+        "furnaceLabel": "Furnace 500°C",
+        "crudeLabel": "Crude oil",
+        "captionRunning": "The crude oil is heated in the furnace, and vapors rise inside the tower...",
+        "captionCondensedPrefix": "Fraction ",
+        "captionCondensedAt": " condensed at ",
+        "captionCondensedTop": " condensed at the top of the tower",
+        "captionComplete": "Fractional distillation complete — every fraction condensed at its own boiling point.",
+        "captionIdle": "Press \"Start Distillation\" to watch the vapors rise and each fraction condense at its corresponding height."
+      }
     },
     {
       "type": "paragraph",
