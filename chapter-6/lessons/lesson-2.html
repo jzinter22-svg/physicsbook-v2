@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-2.html">
@@ -42,176 +43,16 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يعدّد الخصائص الأربع الأساسية لأشعة الليزر.</span></li>
-        <li><span class="obj-num">2</span><span>يفرّق بين شعاع الليزر والضوء الاعتيادي من حيث أحادية الطول الموجي والاتجاهية والتشاكه والسطوع.</span></li>
-        <li><span class="obj-num">3</span><span>يحسب مقدار الفرق في شدة الإشعاع بين مصدر ليزر ومصدر ضوئي اعتيادي بالقدرة نفسها.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 2-6 خصائص أشعة الليزر Properties of Laser</h2>
-      <p>يتصف شعاع الليزر بالمميزات الأساسية الآتية:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 1. أحادي الطول الموجي (أحادي اللون) Monochromatic</span>
-      <p style="margin:.3rem 0">يتميّز الليزر بالنقاوة الضوئية الصادرة من مصدر ضوء اعتيادي متعدد اللونية (الطيفية) التي تفوق أي مصدر آخر في حين تكون الألوان وبأطوال موجية مختلفة، لاحظ الشكل (2-6).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="0 0 300 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 2-6 الضوء الاعتيادي وشعاع الليزر عبر موشور">
-          <g font-family="Cairo,sans-serif">
-            <line x1="20" y1="40" x2="90" y2="40" stroke="#fff" stroke-width="4"/>
-            <polygon points="90,25 130,40 90,55" fill="none" stroke="var(--text-primary)" stroke-width="1.5"/>
-            <defs>
-              <linearGradient id="specGrad6" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stop-color="#7c6fee"/><stop offset=".5" stop-color="#3fa9f5"/><stop offset="1" stop-color="#ff6b9d"/>
-              </linearGradient>
-            </defs>
-            <polygon points="130,40 260,20 260,60" fill="url(#specGrad6)" opacity=".85"/>
-            <text x="60" y="30" text-anchor="middle" font-size="10" fill="var(--text-secondary)">ضوء اعتيادي</text>
-            <text x="200" y="15" text-anchor="middle" font-size="10" fill="var(--text-secondary)">طيف الألوان (متعدد الأطوال الموجية)</text>
-
-            <line x1="20" y1="120" x2="260" y2="120" stroke="var(--accent-pink)" stroke-width="4"/>
-            <text x="140" y="140" text-anchor="middle" font-size="11" font-weight="700" fill="var(--accent-pink)">شعاع ليزر — أحادي الطول الموجي (لون واحد لا يتفرّق)</text>
-          </g>
-        </svg>
-        <span class="diagram-caption">شكل 2-6: الضوء الاعتيادي يتفرّق إلى طيف الألوان عبر الموشور، بينما يبقى شعاع الليزر أحادي اللون</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-blue)">
-      <span class="def-label" style="color:var(--accent-blue)">📌 2. الاتجاهية Directionality</span>
-      <p style="margin:.3rem 0">تسير أشعة الليزر مسافات كبيرة بحزم متوازية ذات انفراجية قليلة، بينما ينتشر الضوء الصادر من مصباح الإضاءة الاعتيادي أو الشمس بشكل عشوائي بالاتجاهات كافة، لاحظ الشكل (3-6).</p>
-      <p style="margin:.3rem 0">فإذا أُرسلت إلى القمر حزمة ضوئية ذات شدة ضوئية كافية من أشعة الليزر على بُعد (384000 km) تقريبًا عن سطح الأرض، فإنها تفرش على سطح القمر بقعة مضاءة لا يزيد قطرها على (1 km)، في حين أنه إذا أُرسل الضوء الاعتيادي، فرضًا، ووصل إلى سطح القمر، فإن قطر البقعة المضاءة يصل إلى (4376 km) تقريبًا.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">📌 3. التشاكه Coherency</span>
-      <p style="margin:.3rem 0">لأشعة الليزر صفات متماثلة من حيث الطور والاتجاه والطاقة، وبهذا يمكن أن تتداخل الموجات فيما بينها تداخلًا بنّاءً، لاحظ الشكل (4-6).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
-      <span class="def-label" style="color:var(--accent-orange)">📌 4. السطوع Brightness</span>
-      <p style="margin:.3rem 0">أشعة الليزر ذات لمعان وسطوع عالٍ جدًا، إذ يفوق سطوع أشعة الشمس بمليون مرة، وذلك نتيجة تركيز طاقة موجات الليزر المنبعثة في حزمة ضيقة قليلة الانفراج، لاحظ الشكل (5-6).</p>
-    </div>
-  </section>
-
-  <!-- ===== Worked example ===== -->
-  <section class="section fade-up" id="examples" data-navlabel="✍️ مثال محلول">
-    <div class="example fade-up">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (1)</h2></div>
-      <p>مصباح تنكستن قدرته (100 watt) تبلغ شدة الإشعاع الصادرة منه قرابة (2000 watt/cm²)، في حين تبلغ شدة أشعة ليزر بالقدرة نفسها (100 watt) قرابة (\(2\times10^{9}\ \text{watt/cm}^2\)). قارن بين شدتي الإشعاعين.</p>
-    </div>
-
-    <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
-        <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( I_{\text{تنكستن}} = 2000\ \text{watt/cm}^2 \) — شدة إشعاع مصباح التنكستن</span></li>
-        <li><span>\( I_{\text{ليزر}} = 2\times10^{9}\ \text{watt/cm}^2 \) — شدة إشعاع الليزر بالقدرة نفسها</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">احسب كم مرة تفوق شدة إشعاع الليزر شدة إشعاع مصباح التنكستن الاعتيادي.</p>
-
-      <ol class="steps hidden-steps" id="steps-ex1">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">نحسب نسبة شدة إشعاع الليزر إلى شدة إشعاع مصباح التنكستن</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( \dfrac{I_{\text{ليزر}}}{I_{\text{تنكستن}}} = \dfrac{2\times10^{9}}{2000} = \dfrac{2\times10^{9}}{2\times10^{3}} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( \dfrac{I_{\text{ليزر}}}{I_{\text{تنكستن}}} = 10^{6}\ \text{مرة} \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ شدة إشعاع الليزر أعلى بمقدار مليون (\(10^6\)) مرة من شدة الإشعاع الصادرة من مصباح التنكستن الاعتيادي بالقدرة نفسها</div>
-    </div>
-  </section>
-
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: الاتجاهية — ليزر مقابل ضوء اعتيادي</h2>
-      <p>اختر نوع المصدر الضوئي ولاحظ الفرق في اتساع البقعة الضوئية على الشاشة البعيدة — تمامًا كما في مثال إرسال الضوء إلى سطح القمر.</p>
-      <div class="io-panel">
-        <div class="io-row" role="group" aria-label="اختيار نوع المصدر">
-          <button class="neu-btn" data-src="ordinary" id="btnOrdinary">مصدر ضوئي اعتيادي</button>
-          <button class="neu-btn primary" data-src="laser" id="btnLaser">شعاع ليزر</button>
-        </div>
-        <div class="mindmap-wrap"><svg id="beamSvg" viewBox="0 0 420 210" role="img" aria-label="محاكاة اتجاهية شعاع الليزر مقابل الضوء الاعتيادي"></svg></div>
-        <p id="beamCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>خاصية بقاء أشعة الليزر بلون واحد لا يتفرّق عبر الموشور تسمى:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الاتجاهية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أحادية الطول الموجي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>التشاكه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>السطوع</span></label>
-        </div>
-        <div class="quiz-explain">أحادية الطول الموجي تعني أن الليزر يمتاز بالنقاوة الضوئية (لون واحد) على عكس الضوء الاعتيادي متعدد الأطوال الموجية.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>خاصية تماثل موجات الليزر في الطور والاتجاه والطاقة تسمى:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>السطوع</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الاتجاهية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>التشاكه</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أحادية الطول الموجي</span></label>
-        </div>
-        <div class="quiz-explain">التشاكه (coherency) هو تماثل موجات الليزر في الطور والاتجاه والطاقة، ما يسمح بتداخلها البنّاء.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>إرسال حزمة ليزر إلى سطح القمر (384000 km) يعطي بقعة ضوئية قطرها لا يزيد على:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>1 km</span></label>
-          <label class="quiz-opt"><input type="radio"><span>100 km</span></label>
-          <label class="quiz-opt"><input type="radio"><span>4376 km</span></label>
-          <label class="quiz-opt"><input type="radio"><span>384000 km</span></label>
-        </div>
-        <div class="quiz-explain">بسبب اتجاهية شعاع الليزر العالية، لا يتجاوز قطر البقعة المضاءة على سطح القمر (1 km)، بينما يصل قطرها إلى (4376 km) تقريبًا مع الضوء الاعتيادي.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>4.</span><span>شدة إشعاع الليزر تفوق شدة إشعاع مصباح تنكستن بالقدرة نفسها بمقدار:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>مئة مرة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مليون (\(10^6\)) مرة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>عشرة أضعاف</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا فرق بينهما</span></label>
-        </div>
-        <div class="quiz-explain">كما في المثال المحلول: \(2\times10^9 \div 2000 = 10^6\)، أي أن شدة الليزر أعلى بمليون مرة.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -221,12 +62,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>أحادية الطول الموجي: نقاوة ضوئية بلون واحد لا يتفرّق كالضوء متعدد الأطوال الموجية.</span></li>
-        <li><span>الاتجاهية: حزم متوازية قليلة الانفراج تصل مسافات بعيدة (كمثال القمر: 1km للّيزر مقابل 4376km للضوء الاعتيادي).</span></li>
-        <li><span>التشاكه: تماثل الطور والاتجاه والطاقة بين الموجات، فتتداخل بنّاءً.</span></li>
-        <li><span>السطوع: شدة إشعاع عالية جدًا (أعلى بمليون مرة من مصباح تنكستن بالقدرة نفسها) نتيجة تركيز الطاقة في حزمة ضيقة.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -237,27 +73,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l2" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l2">
-        <svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية لخصائص أشعة الليزر">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">خصائص</text>
-            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">أشعة الليزر</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">أحادي اللون</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="219" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">الاتجاهية</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">التشاكه</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="219" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">السطوع</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l2"></div>
     </div>
   </section>
 
@@ -274,10 +90,8 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("beamSvg");
-  var caption = document.getElementById("beamCaption");
-  var btnOrd = document.getElementById("btnOrdinary");
-  var btnLas = document.getElementById("btnLaser");
+  var svg, caption, btnOrd, btnLas;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
   function label(x,y,txt,color,size,weight){
     var t = document.createElementNS(ns,"text");
@@ -297,14 +111,14 @@
     srcDot.setAttribute("cx",sourceX); srcDot.setAttribute("cy",sourceY); srcDot.setAttribute("r","8");
     srcDot.setAttribute("fill","var(--accent-orange)");
     svg.appendChild(srcDot);
-    label(sourceX, 130, src==="laser"?"مصدر ليزر":"مصدر اعتيادي", "var(--text-secondary)", 10);
+    label(sourceX, 130, src==="laser"?t("labelLaserSource","مصدر ليزر"):t("labelOrdinarySource","مصدر اعتيادي"), "var(--text-secondary)", 10);
 
     // screen
     var screen = document.createElementNS(ns,"line");
     screen.setAttribute("x1",380); screen.setAttribute("y1",20); screen.setAttribute("x2",380); screen.setAttribute("y2",180);
     screen.setAttribute("stroke","var(--text-primary)"); screen.setAttribute("stroke-width","3");
     svg.appendChild(screen);
-    label(380, 195, "الشاشة البعيدة", "var(--text-secondary)", 10);
+    label(380, 195, t("labelScreen","الشاشة البعيدة"), "var(--text-secondary)", 10);
 
     if(src === "laser"){
       for(var i=-1;i<=1;i++){
@@ -318,8 +132,8 @@
       spot.setAttribute("x1",380); spot.setAttribute("y1",sourceY-8); spot.setAttribute("x2",380); spot.setAttribute("y2",sourceY+8);
       spot.setAttribute("stroke","var(--accent-pink)"); spot.setAttribute("stroke-width","6"); spot.setAttribute("stroke-linecap","round");
       svg.appendChild(spot);
-      label(340, sourceY-20, "حزمة ضيقة متوازية", "var(--accent-pink)", 10.5, "800");
-      caption.textContent = "شعاع الليزر: حزمة متوازية قليلة الانفراج، فتبقى البقعة الضوئية على الشاشة البعيدة ضيقة جدًا (كما في مثال القمر: قطر لا يتجاوز 1km).";
+      label(340, sourceY-20, t("labelNarrowBeam","حزمة ضيقة متوازية"), "var(--accent-pink)", 10.5, "800");
+      caption.textContent = t("captionLaser","شعاع الليزر: حزمة متوازية قليلة الانفراج، فتبقى البقعة الضوئية على الشاشة البعيدة ضيقة جدًا (كما في مثال القمر: قطر لا يتجاوز 1km).");
       btnLas.classList.add("primary"); btnOrd.classList.remove("primary");
     } else {
       var targets = [22, 55, 78, 100, 122, 145, 178];
@@ -334,15 +148,23 @@
       spot2.setAttribute("x1",380); spot2.setAttribute("y1",30); spot2.setAttribute("x2",380); spot2.setAttribute("y2",170);
       spot2.setAttribute("stroke","var(--accent-blue)"); spot2.setAttribute("stroke-width","8"); spot2.setAttribute("stroke-linecap","round"); spot2.setAttribute("opacity",".55");
       svg.appendChild(spot2);
-      label(300, 35, "انتشار عشوائي بكل الاتجاهات", "var(--accent-blue)", 10.5, "800");
-      caption.textContent = "الضوء الاعتيادي: ينتشر بشكل عشوائي بكل الاتجاهات، فتتسع البقعة الضوئية كثيرًا على الشاشة البعيدة (كما في مثال القمر: قطر يصل إلى 4376km).";
+      label(300, 35, t("labelScatter","انتشار عشوائي بكل الاتجاهات"), "var(--accent-blue)", 10.5, "800");
+      caption.textContent = t("captionOrdinary","الضوء الاعتيادي: ينتشر بشكل عشوائي بكل الاتجاهات، فتتسع البقعة الضوئية كثيرًا على الشاشة البعيدة (كما في مثال القمر: قطر يصل إلى 4376km).");
       btnOrd.classList.add("primary"); btnLas.classList.remove("primary");
     }
   }
 
-  btnOrd.addEventListener("click", function(){ draw("ordinary"); });
-  btnLas.addEventListener("click", function(){ draw("laser"); });
-  draw("laser");
+  function boot(){
+    svg = document.getElementById("beamSvg");
+    caption = document.getElementById("beamCaption");
+    btnOrd = document.getElementById("btnOrdinary");
+    btnLas = document.getElementById("btnLaser");
+    if(!svg || !btnOrd || !btnLas) return;
+    btnOrd.addEventListener("click", function(){ draw("ordinary"); });
+    btnLas.addEventListener("click", function(){ draw("laser"); });
+    draw("laser");
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

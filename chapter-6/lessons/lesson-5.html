@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-5.html">
@@ -42,178 +43,16 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يوضّح آلية عمل المنظومة ثلاثية المستوى وكيفية تحقيق التوزيع المعكوس فيها.</span></li>
-        <li><span class="obj-num">2</span><span>يوضّح آلية عمل المنظومة رباعية المستوى.</span></li>
-        <li><span class="obj-num">3</span><span>يعلّل تفضيل المنظومة رباعية المستوى على الثلاثية في أغلب أجهزة الليزر.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 5-6 منظومات مستويات الليزر Laser Levels System</h2>
-      <p>يمكن تصنيف منظومات توليد الليزر تبعًا لنوع منظومات مستويات الطاقة إلى منظومتين:</p>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>المنظومة ثلاثية المستوى three-level system</span></li>
-        <li><span class="obj-num">2</span><span>المنظومة رباعية المستوى four-level system</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="threelevel" data-navlabel="1️⃣ ثلاثية المستوى">
-    <div class="def-box" style="border-inline-start-color:var(--accent-blue)">
-      <span class="def-label" style="color:var(--accent-blue)">📌 1- المنظومة ثلاثية المستوى</span>
-      <p style="margin:.3rem 0">في هذه المنظومة توجد ثلاثة مستويات للطاقة، هي: مستوى الطاقة الأرضي (\(E_1\))، ومستوى الطاقة الوسطي (\(E_2\)) وهو المستوى شبه المستقر، ومستوى الطاقة الأعلى (\(E_3\)) (مستوى متهيج)، لاحظ الشكل (14-6).</p>
-      <p style="margin:.3rem 0">عندما تكون معظم الذرات في المستوى الأرضي للطاقة \(E_1\)، فإن الوسط الفعال يكون في حالة الاستقرار، ولكن عند استعمال إحدى تقنيات الضخ المناسبة سوف تهيج الوسط الفعال وانتقال الذرات من المستوى الأرضي إلى المستوى الأعلى \(E_3\)، وسرعان ما تهبط هذه الذرات بسرعة من المستوى \(E_3\) إلى المستوى \(E_2\) (حيث يكون زمن عمر المستوى \(E_3\) قصيرًا جدًا) أي: زمن بقاء الذرات في المستوى \(E_2\) أقل من زمن عمر المستوى \(E_2\)، وبذلك تتجمع الذرات في المستوى \(E_2\) وبعدد أكبر من المستوى \(E_1\) فيتحقق التوزيع المعكوس بين هذين المستويين، عندها يولد الانتقال من المستوى \(E_2\) إلى المستوى \(E_1\) (أشعة الليزر).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="0 0 300 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 14-6 المنظومة ثلاثية المستوى">
-          <g font-family="Cairo,sans-serif">
-            <line x1="40" y1="30" x2="230" y2="30" stroke="var(--text-primary)" stroke-width="2"/>
-            <text x="245" y="34" font-size="11" fill="var(--text-primary)">E₃</text>
-            <text x="60" y="22" text-anchor="middle" font-size="9" fill="var(--text-secondary)">مستوى التهيج</text>
-            <line x1="40" y1="90" x2="230" y2="90" stroke="var(--text-primary)" stroke-width="2"/>
-            <text x="245" y="94" font-size="11" fill="var(--text-primary)">E₂</text>
-            <text x="90" y="82" text-anchor="middle" font-size="9" fill="var(--text-secondary)">المستوى شبه المستقر</text>
-            <line x1="40" y1="160" x2="230" y2="160" stroke="var(--text-primary)" stroke-width="2"/>
-            <text x="245" y="164" font-size="11" fill="var(--text-primary)">E₁</text>
-            <text x="60" y="176" text-anchor="middle" font-size="9" fill="var(--text-secondary)">المستوى الأرضي</text>
-
-            <line x1="70" y1="155" x2="70" y2="35" stroke="var(--accent-pink)" stroke-width="2.5" marker-end="url(#u5a)"/>
-            <text x="60" y="95" text-anchor="middle" font-size="8.5" fill="var(--accent-pink)" transform="rotate(-90 60 95)">عملية الضخ</text>
-            <line x1="130" y1="35" x2="130" y2="85" stroke="var(--accent-orange)" stroke-width="2" marker-end="url(#d5a)"/>
-            <text x="160" y="60" text-anchor="middle" font-size="8" fill="var(--accent-orange)">انتقال سريع</text>
-            <line x1="180" y1="85" x2="180" y2="155" stroke="var(--accent-green)" stroke-width="2.5" marker-end="url(#d5b)"/>
-            <text x="195" y="120" text-anchor="middle" font-size="9" font-weight="700" fill="var(--accent-green)">ليزر</text>
-
-            <defs>
-              <marker id="u5a" markerWidth="7" markerHeight="7" refX="3.5" refY="0" orient="auto"><path d="M0,7 L3.5,0 L7,7 z" fill="var(--accent-pink)"/></marker>
-              <marker id="d5a" markerWidth="7" markerHeight="7" refX="3.5" refY="7" orient="auto"><path d="M0,0 L3.5,7 L7,0 z" fill="var(--accent-orange)"/></marker>
-              <marker id="d5b" markerWidth="7" markerHeight="7" refX="3.5" refY="7" orient="auto"><path d="M0,0 L3.5,7 L7,0 z" fill="var(--accent-green)"/></marker>
-            </defs>
-          </g>
-        </svg>
-        <span class="diagram-caption">شكل 14-6: المنظومة ثلاثية المستوى — تجمّع الذرات في المستوى شبه المستقر E₂ يحقق التوزيع المعكوس مع E₁</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="fourlevel" data-navlabel="2️⃣ رباعية المستوى">
-    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
-      <span class="def-label" style="color:var(--accent-orange)">📌 2- المنظومة رباعية المستوى</span>
-      <p style="margin:.3rem 0">تشترك في هذه المنظومة أربعة مستويات للطاقة (\(E_1, E_2, E_3, E_4\))، لاحظ الشكل (15-6).</p>
-      <p style="margin:.3rem 0">حيث يتم ضخ ذرات المنظومة من المستوى الأرضي (\(E_1\)) إلى مستوى الطاقة (\(E_4\))، ثم يحصل هبوط سريع للذرات من المستوى (\(E_4\)) إلى المستوى شبه المستقر (\(E_3\))، عندها يتحقق التوزيع المعكوس بين مستوى الطاقة (\(E_3\)) ومستوى الطاقة (\(E_2\))، وتوليد شعاع الليزر، حتى لو كان عدد الذرات في المستوى (\(E_3\)) بسيطًا؛ لأن المستوى (\(E_2\)) يكون شبه فارغ بسبب الهبوط السريع للذرات منه إلى المستوى (\(E_1\)).</p>
-      <p style="margin:.3rem 0">وهذا يعني أن هذه المنظومة تتطلب طاقة ضخ أقل لتحقيق التوزيع المعكوس مقارنة مع المنظومة الثلاثية المستوى.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 15-6 المنظومة رباعية المستوى">
-          <g font-family="Cairo,sans-serif">
-            <line x1="40" y1="25" x2="230" y2="25" stroke="var(--text-primary)" stroke-width="2"/>
-            <text x="245" y="29" font-size="11" fill="var(--text-primary)">E₄</text>
-            <text x="60" y="17" text-anchor="middle" font-size="9" fill="var(--text-secondary)">مستوى التهيج</text>
-            <line x1="40" y1="80" x2="230" y2="80" stroke="var(--text-primary)" stroke-width="2"/>
-            <text x="245" y="84" font-size="11" fill="var(--text-primary)">E₃</text>
-            <text x="90" y="72" text-anchor="middle" font-size="9" fill="var(--text-secondary)">المستوى شبه المستقر</text>
-            <line x1="40" y1="140" x2="230" y2="140" stroke="var(--text-primary)" stroke-width="2"/>
-            <text x="245" y="144" font-size="11" fill="var(--text-primary)">E₂</text>
-            <line x1="40" y1="195" x2="230" y2="195" stroke="var(--text-primary)" stroke-width="2"/>
-            <text x="245" y="199" font-size="11" fill="var(--text-primary)">E₁</text>
-            <text x="60" y="211" text-anchor="middle" font-size="9" fill="var(--text-secondary)">المستوى الأرضي</text>
-
-            <line x1="70" y1="190" x2="70" y2="30" stroke="var(--accent-pink)" stroke-width="2.5" marker-end="url(#u5b2)"/>
-            <line x1="130" y1="30" x2="130" y2="75" stroke="var(--accent-orange)" stroke-width="2" marker-end="url(#d5c)"/>
-            <text x="160" y="55" text-anchor="middle" font-size="8" fill="var(--accent-orange)">هبوط سريع</text>
-            <line x1="180" y1="75" x2="180" y2="135" stroke="var(--accent-green)" stroke-width="2.5" marker-end="url(#d5d)"/>
-            <text x="195" y="105" text-anchor="middle" font-size="9" font-weight="700" fill="var(--accent-green)">ليزر</text>
-            <line x1="130" y1="135" x2="130" y2="190" stroke="var(--accent-orange)" stroke-width="2" marker-end="url(#d5e)"/>
-            <text x="105" y="165" text-anchor="middle" font-size="8" fill="var(--accent-orange)">هبوط سريع</text>
-
-            <defs>
-              <marker id="u5b2" markerWidth="7" markerHeight="7" refX="3.5" refY="0" orient="auto"><path d="M0,7 L3.5,0 L7,7 z" fill="var(--accent-pink)"/></marker>
-              <marker id="d5c" markerWidth="7" markerHeight="7" refX="3.5" refY="7" orient="auto"><path d="M0,0 L3.5,7 L7,0 z" fill="var(--accent-orange)"/></marker>
-              <marker id="d5d" markerWidth="7" markerHeight="7" refX="3.5" refY="7" orient="auto"><path d="M0,0 L3.5,7 L7,0 z" fill="var(--accent-green)"/></marker>
-              <marker id="d5e" markerWidth="7" markerHeight="7" refX="3.5" refY="7" orient="auto"><path d="M0,0 L3.5,7 L7,0 z" fill="var(--accent-orange)"/></marker>
-            </defs>
-          </g>
-        </svg>
-        <span class="diagram-caption">شكل 15-6: المنظومة رباعية المستوى — التوزيع المعكوس بين E₃ وE₂ يتحقق بطاقة ضخ أقل لأن E₂ شبه فارغ دائمًا</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout warn">
-      <span class="icon">🤔</span>
-      <span><b>فكر:</b> لماذا يتحقق التوزيع المعكوس في المنظومة رباعية المستوى أسهل مما هو عليه في المنظومة الثلاثية المستوى؟</span>
-    </div>
-  </section>
-
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: بناء التوزيع المعكوس</h2>
-      <p>اختر نوع المنظومة، ثم اضغط "ضخ ذرة" بشكل متكرر لمشاهدة تجمّع الذرات في المستوى شبه المستقر حتى يتحقق التوزيع المعكوس وتنطلق أشعة الليزر تلقائيًا.</p>
-      <div class="io-panel">
-        <div class="io-row" role="group" aria-label="اختيار المنظومة">
-          <button class="neu-btn primary" data-sys="three" id="btnThree">ثلاثية المستوى</button>
-          <button class="neu-btn" data-sys="four" id="btnFour">رباعية المستوى</button>
-        </div>
-        <div class="io-row">
-          <button class="neu-btn" id="btnPumpAtom">⚡ ضخ ذرة</button>
-          <span id="levelStatus" style="color:var(--text-secondary);font-weight:700"></span>
-        </div>
-        <div class="mindmap-wrap"><svg id="levelSvg" viewBox="0 0 320 220" role="img" aria-label="محاكاة منظومة مستويات الليزر"></svg></div>
-      </div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>في المنظومة ثلاثية المستوى، المستوى شبه المستقر هو:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>E₁</span></label>
-          <label class="quiz-opt"><input type="radio"><span>E₂</span></label>
-          <label class="quiz-opt"><input type="radio"><span>E₃</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا يوجد مستوى شبه مستقر</span></label>
-        </div>
-        <div class="quiz-explain">في المنظومة ثلاثية المستوى، مستوى الطاقة الوسطي E₂ هو المستوى شبه المستقر الذي تتجمّع فيه الذرات.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>في المنظومة رباعية المستوى، يتحقق التوزيع المعكوس بين المستويين:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>E₄ وE₃</span></label>
-          <label class="quiz-opt"><input type="radio"><span>E₂ وE₁</span></label>
-          <label class="quiz-opt"><input type="radio"><span>E₃ وE₂</span></label>
-          <label class="quiz-opt"><input type="radio"><span>E₄ وE₁</span></label>
-        </div>
-        <div class="quiz-explain">يتحقق التوزيع المعكوس بين مستوى الطاقة E₃ (شبه المستقر) ومستوى الطاقة E₂ الذي يكون شبه فارغ دائمًا.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>تتطلب المنظومة رباعية المستوى مقارنة بالثلاثية طاقة ضخ:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>أقل</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أكبر بكثير</span></label>
-          <label class="quiz-opt"><input type="radio"><span>مساوية تمامًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>معدومة</span></label>
-        </div>
-        <div class="quiz-explain">تتطلب المنظومة رباعية المستوى طاقة ضخ أقل لتحقيق التوزيع المعكوس، لأن المستوى الأدنى (E₂) شبه فارغ دائمًا بسبب الهبوط السريع منه.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -223,11 +62,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>المنظومة ثلاثية المستوى: E₁ (أرضي)، E₂ (شبه مستقر)، E₃ (تهيج). الضخ من E₁ إلى E₃، هبوط سريع إلى E₂، ليزر من E₂ إلى E₁.</span></li>
-        <li><span>المنظومة رباعية المستوى: أربعة مستويات E₁-E₄. الضخ من E₁ إلى E₄، هبوط سريع إلى E₃، ليزر من E₃ إلى E₂، ثم هبوط سريع من E₂ إلى E₁.</span></li>
-        <li><span>المنظومة رباعية المستوى تتطلب طاقة ضخ أقل لتحقيق التوزيع المعكوس، لأن المستوى الأدنى للانتقال الليزري (E₂) شبه فارغ دائمًا.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -238,23 +73,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l5" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l5">
-        <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية لمنظومات مستويات الليزر">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="110" x2="110" y2="110"/>
-            <line x1="240" y1="110" x2="370" y2="110"/>
-          </g>
-          <g><circle cx="240" cy="110" r="55" fill="#7c6fee"/>
-            <text x="240" y="106" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">منظومات</text>
-            <text x="240" y="122" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">مستويات الليزر</text></g>
-          <g><circle cx="110" cy="110" r="50" fill="#3fa9f5"/>
-            <text x="110" y="106" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">ثلاثية</text>
-            <text x="110" y="120" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">E₁E₂E₃</text></g>
-          <g><circle cx="370" cy="110" r="50" fill="#ffab5e"/>
-            <text x="370" y="106" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">رباعية</text>
-            <text x="370" y="120" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">E₁..E₄</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l5"></div>
     </div>
   </section>
 
@@ -271,14 +90,11 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("levelSvg");
-  var status = document.getElementById("levelStatus");
-  var btnThree = document.getElementById("btnThree");
-  var btnFour = document.getElementById("btnFour");
-  var btnPump = document.getElementById("btnPumpAtom");
+  var svg, status, btnThree, btnFour, btnPump;
   var system = "three";
   var metastableCount = 0;
   var animating = false;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
   function label(x,y,txt,color,size,weight,anchor){
     var t = document.createElementNS(ns,"text");
@@ -326,13 +142,13 @@
       svg.appendChild(c2);
     }
     if(metastableCount >= 5){
-      label(150, (g.y+m.y)/2, "التوزيع المعكوس! ✓", "var(--accent-pink)", 12, "800");
+      label(150, (g.y+m.y)/2, t("labelInversionAchieved","التوزيع المعكوس! ✓"), "var(--accent-pink)", 12, "800");
     }
   }
 
   function reset(){
     metastableCount = 0;
-    status.textContent = "اضغط زر «ضخ ذرة» لبدء تجميع الذرات في المستوى شبه المستقر";
+    status.textContent = t("statusStart","اضغط زر «ضخ ذرة» لبدء تجميع الذرات في المستوى شبه المستقر");
     drawBase();
     drawPopulation();
   }
@@ -348,7 +164,7 @@
       photon.setAttribute("fill","none"); photon.setAttribute("stroke","var(--accent-pink)"); photon.setAttribute("stroke-width","2");
       photon.setAttribute("transform","translate(150,"+m.y+")");
       svg.appendChild(photon);
-      status.textContent = "🔴 انطلقت أشعة الليزر من الانتقال بين المستويين!";
+      status.textContent = t("statusLaserEmitted","🔴 انطلقت أشعة الليزر من الانتقال بين المستويين!");
       var t0=null;
       function frame(ts){
         if(t0===null) t0=ts;
@@ -359,7 +175,7 @@
           metastableCount = 0;
           setTimeout(function(){
             drawBase(); drawPopulation();
-            status.textContent = "اضغط زر «ضخ ذرة» لبدء تجميع الذرات من جديد";
+            status.textContent = t("statusRestart","اضغط زر «ضخ ذرة» لبدء تجميع الذرات من جديد");
             animating = false;
           }, 400);
         }
@@ -370,14 +186,25 @@
     metastableCount++;
     drawBase();
     drawPopulation();
-    status.textContent = "عدد الذرات في المستوى شبه المستقر: " + metastableCount + " من 5 لتحقيق التوزيع المعكوس";
+    status.textContent = t("statusCountPrefix","عدد الذرات في المستوى شبه المستقر: ") + metastableCount + t("statusCountSuffix"," من 5 لتحقيق التوزيع المعكوس");
   }
 
-  btnThree.addEventListener("click", function(){ system="three"; btnThree.classList.add("primary"); btnFour.classList.remove("primary"); reset(); });
-  btnFour.addEventListener("click", function(){ system="four"; btnFour.classList.add("primary"); btnThree.classList.remove("primary"); reset(); });
-  btnPump.addEventListener("click", pumpOne);
+  function boot(){
+    svg = document.getElementById("levelSvg");
+    status = document.getElementById("levelStatus");
+    btnThree = document.getElementById("btnThree");
+    btnFour = document.getElementById("btnFour");
+    btnPump = document.getElementById("btnPumpAtom");
+    if(!svg || !status || !btnThree || !btnFour || !btnPump) return;
+    animating = false;
+    system = "three";
+    btnThree.addEventListener("click", function(){ system="three"; btnThree.classList.add("primary"); btnFour.classList.remove("primary"); reset(); });
+    btnFour.addEventListener("click", function(){ system="four"; btnFour.classList.add("primary"); btnThree.classList.remove("primary"); reset(); });
+    btnPump.addEventListener("click", pumpOne);
 
-  reset();
+    reset();
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

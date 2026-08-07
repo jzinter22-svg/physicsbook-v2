@@ -127,8 +127,23 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxes": [],
+      "ruleBoxes": [
+        {
+          "html": "جاهز",
+          "id": "pumpStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
       "trailingHtml": null,
+      "labels": {
+        "labelActiveMedium": "الوسط الفعال",
+        "labelFullMirror": "مرآة كلية",
+        "labelPartialMirror": "مرآة جزئية",
+        "statusReady": "جاهز",
+        "statusStarting": "بدء عملية التضخيم...",
+        "labelAmplifiedBeam": "شعاع ليزر مضخّم",
+        "statusDone": "تم توليد شعاع الليزر ✓"
+      },
       "sectionGroup": 8,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"

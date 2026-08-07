@@ -196,8 +196,23 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxes": [],
+      "ruleBoxes": [
+        {
+          "html": "—",
+          "id": "atomCaption",
+          "wrapperClass": "rule-box"
+        }
+      ],
       "trailingHtml": "",
+      "labels": {
+        "captionDefault": "اضغط على أحد الأزرار أعلاه لمشاهدة العملية.",
+        "captionAbsorption": "فوتون قادم يصطدم بالذرة في المستوى الأرضي E₁ فتمتص طاقته وتنتقل إلى المستوى المتهيج E₂.",
+        "captionSpontaneous": "الذرة في مستوى التهيج E₂ تعود تلقائيًا بعد العمر الزمني للمستوى إلى E₁ باعثة فوتونًا عشوائي الاتجاه.",
+        "captionStimulated": "فوتون ساقط يحفّز الذرة الموجودة في E₂ فتنتقل إلى E₁، وينتج فوتون جديد مماثل تمامًا للفوتون الساقط في الطاقة والطور والاتجاه.",
+        "labelAbsorb": "امتصاص",
+        "labelRandomPhoton": "فوتون عشوائي الاتجاه",
+        "labelTwinPhotons": "فوتونان متماثلان"
+      },
       "sectionGroup": 14,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"

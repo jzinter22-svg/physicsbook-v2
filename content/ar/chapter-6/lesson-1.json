@@ -97,8 +97,22 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxes": [],
+      "ruleBoxes": [
+        {
+          "html": "—",
+          "id": "timelineCaption",
+          "wrapperClass": "rule-box"
+        }
+      ],
       "trailingHtml": "",
+      "labels": {
+        "evt0Title": "أينشتاين",
+        "evt0Text": "وضع ألبرت أينشتاين الأساس النظري لعملية الانبعاث المحفز للإشعاع.",
+        "evt1Title": "تاونز",
+        "evt1Text": "صمّم تشارلز تاونز أول جهاز ميزر (تضخيم الموجات الدقيقة) وأنتج ميزر الأمونيا.",
+        "evt2Title": "ميمان",
+        "evt2Text": "صمّم ت.هـ. ميمان أول جهاز ليزر فعلي باستعمال بلورة الياقوت."
+      },
       "sectionGroup": 6,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"

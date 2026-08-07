@@ -153,8 +153,23 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxes": [],
+      "ruleBoxes": [
+        {
+          "html": "—",
+          "id": "beamCaption",
+          "wrapperClass": "rule-box"
+        }
+      ],
       "trailingHtml": "",
+      "labels": {
+        "labelLaserSource": "مصدر ليزر",
+        "labelOrdinarySource": "مصدر اعتيادي",
+        "labelScreen": "الشاشة البعيدة",
+        "labelNarrowBeam": "حزمة ضيقة متوازية",
+        "labelScatter": "انتشار عشوائي بكل الاتجاهات",
+        "captionLaser": "شعاع الليزر: حزمة متوازية قليلة الانفراج، فتبقى البقعة الضوئية على الشاشة البعيدة ضيقة جدًا (كما في مثال القمر: قطر لا يتجاوز 1km).",
+        "captionOrdinary": "الضوء الاعتيادي: ينتشر بشكل عشوائي بكل الاتجاهات، فتتسع البقعة الضوئية كثيرًا على الشاشة البعيدة (كما في مثال القمر: قطر يصل إلى 4376km)."
+      },
       "sectionGroup": 7,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"
