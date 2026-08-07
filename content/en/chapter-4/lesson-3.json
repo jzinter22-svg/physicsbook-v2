@@ -1,0 +1,334 @@
+{
+  "lessonNumber": 3,
+  "chapterNumber": 4,
+  "meta": {
+    "pageTitle": "Lesson 3: The Inductor in an AC Circuit — Chapter 4",
+    "description": "4-4 The inductor in an AC circuit: inductive reactance X_L, circuit properties, the power curve, with a solved example.",
+    "breadcrumbChapter": "Chapter 4",
+    "breadcrumbLesson": "The Inductor in an AC Circuit",
+    "footer": "Chapter Four: AC Circuits — Lesson 3: The Inductor in an AC Circuit"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 3 of 8 · Chapter Four",
+    "title": "The Inductor in an AC Circuit",
+    "lead": "4-4 The inductor in an AC circuit: inductive reactance X_L"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Define a pure inductor and write the inductive-reactance relation \\(X_L\\).",
+    "List the properties of a pure-inductor circuit in alternating current.",
+    "Solve numerical problems on the inductor in an AC circuit."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 4-4 The Inductor in an AC Circuit",
+      "html": "A coil is called a pure inductor if its ohmic resistance equals zero — an idealized case, since ohmic resistance never truly vanishes in metallic conductors; it is an inherent property of theirs except at extremely low temperatures (close to absolute zero). The applied alternating voltage is the inductive voltage \\((V_L)\\), which is what causes \\(\\varepsilon_{\\text{ind},L}\\) to be generated.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\varepsilon_{\\text{ind},L} = -L\\dfrac{\\Delta I}{\\Delta t} $$",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "This induced voltage is the basis of the opposition the inductor shows toward the change in current, which is called the inductive reactance \\((X_L)\\); it is measured in ohms, and Ohm's law's mathematical form is applied to it, as shown in Figure (4-7).",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ X_L = \\dfrac{V_L}{I_L} $$",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "inductorCircuitSvg",
+      "svgAriaLabel": "A pure-inductor circuit connected to an AC voltage source",
+      "svgViewBox": "0 -12 320 182",
+      "svgWidth": "320",
+      "svgHeight": "182",
+      "sectionHeading": "🕹️ Interactive simulation: a pure-inductor circuit (Figure 4-7)",
+      "descriptionHtml": "An inductor connected to an AC voltage source, showing the induced voltage \\(V_L\\) across it.",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "labels": {
+        "inductorLabel": "Inductor",
+        "sourceLabel": "AC voltage source"
+      },
+      "sectionGroup": 4,
+      "sectionId": "inductor-widget",
+      "sectionNavLabel": "🕹️ Recreating Figure 4-7"
+    },
+    {
+      "type": "paragraph",
+      "html": "Inductive reactance is not considered a resistance (power dissipator) because it does not consume power and is not subject to Joule's heating law. It has been found experimentally that the inductive reactance varies directly with both the frequency of the alternating current (f), when the self-inductance of the inductor (L) is fixed, and with the self-inductance, when the frequency is fixed.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ X_L \\propto f $$\n      <p style=\"margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)\">(when L is fixed)</p>\n      $$ X_L \\propto L $$\n      <p style=\"margin:.2rem 0 .6rem;font-size:.85rem;color:var(--text-secondary)\">(when f is fixed)</p>\n      $$ X_L = 2\\pi f L $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where (L) is the inductor's self-inductance coefficient, measured in henries (H); and also: \\(\\omega=2\\pi f\\), \\(X_L=\\omega L\\).</p>",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Symbols in the Relation",
+      "html": "Where (f) represents the frequency of the voltage, measured in hertz (Hz), and (ω) represents the angular frequency of the electric circuit.",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "🤔",
+      "strong": "Think:",
+      "html": "Why is \\(X_L=0\\) when a coil is connected to direct current?",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "list",
+      "heading": "📋 Properties of This Circuit",
+      "items": [
+        "The inductive voltage \\((V_L)\\) leads the inductive current \\((I_L)\\) by a phase-difference angle of 90°, as shown in Figure (4-8-a).",
+        "There is no real power consumption in this circuit, because the positive portion of the power curve is exactly offset by the negative portion over a full cycle.",
+        "The inductive reactance \\((X_L)\\) (the opposition the coil shows to the change in current) is smaller for low-frequency currents than for high-frequency currents; the inductor is therefore used to separate low- and high-frequency oscillations in radio receivers.",
+        "The positive curve of the power in the pure inductor represents the energy transferred from the source to the inductor, stored as a magnetic field, occurring while the current is growing. The negative curve of the power represents the energy transferred back from the inductor to the source, occurring as the current dies away, as shown in Figure (4-8-b)."
+      ],
+      "ordered": true,
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "inductorPQSvg",
+      "svgAriaLabel": "The inductor's voltage and current with a 90° phase difference, and the oscillating power curve",
+      "svgViewBox": "0 0 360 200",
+      "svgWidth": "360",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive simulation: phase difference and energy exchange (Figures 4-8-a and 4-8-b)",
+      "descriptionHtml": "Watch the inductor's voltage \\(V_L\\) lead its current \\(I_L\\) by an angle of 90°, and the resulting instantaneous power curve alternate between a positive value (energy stored in the magnetic field) and an exactly equal negative value (energy returning to the source), so that the total average power is zero.",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "labels": {
+        "pOscLabel": "P (oscillating about zero)"
+      },
+      "sectionGroup": 10,
+      "sectionId": "phasewidget-l",
+      "sectionNavLabel": "🕹️ 90° Phase Difference"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>An inductor has a self-inductance coefficient of (0.2H), and the circuit's frequency is \\(\\left(\\dfrac{50}{\\pi}\\ \\text{Hz}\\right)\\); the maximum voltage of the source it is connected to is given by the relation \\((V_m=200\\sqrt{2})\\). Calculate: 1- The inductive reactance \\((X_L)\\). 2- The current flowing in the circuit \\((I_L)\\).</p>",
+      "label": "📝 Example (2)",
+      "solution": {
+        "given": [
+          "\\( L = 0.2\\ \\text{H} \\) — the self-inductance coefficient",
+          "\\( f = 50/\\pi\\ \\text{Hz} \\) — the circuit's frequency",
+          "\\( V_m = 200\\sqrt{2}\\ \\text{Volt} \\) — the source's maximum voltage"
+        ],
+        "required": "1- \\(X_L\\). 2- \\(I_L\\).",
+        "steps": [
+          {
+            "note": "1- We apply the inductive-reactance relation",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_L = 2\\pi f L = 2\\pi\\times\\dfrac{50}{\\pi}\\times 0.2 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( X_L = 20\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- We compute the effective value of the voltage, then apply the inductive-reactance relation to find the current",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( V_e = 0.707\\times V_m = 0.707\\times 200\\sqrt{2} \\)"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( V_e = 200\\ \\text{Volt} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( \\because X_L=\\dfrac{V_L}{I_L} \\quad\\therefore\\quad I_L=\\dfrac{V_L}{X_L}=\\dfrac{200}{20} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I_L = 10\\ \\text{A} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ X_L = 20 Ω · I_L = 10 A",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 11,
+      "sectionId": "example2",
+      "sectionNavLabel": "📝 Example 2"
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "Did you know?",
+      "html": "A coil behaves like a resistor in a direct-current circuit, because f=0, so \\(X_L=0\\).",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 0,
+        "question": "A pure inductor is a coil:",
+        "options": [
+          "Whose ohmic resistance equals zero",
+          "Whose ohmic resistance is very large",
+          "That is unaffected by alternating current at all",
+          "That consumes a large amount of real power"
+        ],
+        "explain": "A pure inductor is a coil whose ohmic resistance equals zero — an idealized case."
+      },
+      {
+        "correct": 2,
+        "question": "The inductive reactance \\(X_L\\) is proportional:",
+        "options": [
+          "Inversely with frequency and inversely with self-inductance",
+          "Inversely with frequency and directly with self-inductance",
+          "Directly with frequency and directly with self-inductance",
+          "It is unrelated to either frequency or self-inductance"
+        ],
+        "explain": "\\(X_L=2\\pi fL\\); it varies directly with both the circuit's frequency (f) and the self-inductance coefficient (L)."
+      },
+      {
+        "correct": 1,
+        "question": "In a pure-inductor circuit, the inductive voltage \\(V_L\\) relative to the current \\(I_L\\):",
+        "options": [
+          "Lags it by 90°",
+          "Leads it by 90°",
+          "Is exactly in phase with it",
+          "Opposes it by 180°"
+        ],
+        "explain": "The inductive voltage \\(V_L\\) leads the inductive current \\(I_L\\) by a phase-difference angle of 90°."
+      },
+      {
+        "correct": 3,
+        "question": "The real power consumption in a pure-inductor circuit over a full cycle:",
+        "options": [
+          "Is as large as possible",
+          "Equals \\(I_mV_m\\)",
+          "Equals only half the maximum value",
+          "There is no real power consumption at all"
+        ],
+        "explain": "The positive power curve is exactly offset by an equal negative curve over the full cycle, so there is no real power consumption."
+      },
+      {
+        "correct": 1,
+        "question": "When a coil is connected to a direct-current circuit (f=0):",
+        "options": [
+          "Its inductive reactance becomes infinite",
+          "Its inductive reactance becomes zero, so it behaves like an ordinary resistor",
+          "No current can flow through it at all",
+          "The coil is destroyed immediately"
+        ],
+        "explain": "Since \\(X_L=2\\pi fL\\) and at f=0 (direct current) \\(X_L=0\\), the coil behaves like an ordinary resistor."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "The pure inductor: its ohmic resistance is zero, and its inductive reactance is \\(X_L=V_L/I_L=2\\pi fL=\\omega L\\).",
+      "\\(V_L\\) leads \\(I_L\\) by 90°; there is no real power consumption over a full cycle.",
+      "\\(X_L\\) varies directly with frequency and with self-inductance; at f=0 (direct current), \\(X_L=0\\).",
+      "The inductor is used to separate low frequencies from high frequencies in radio receivers."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of the inductor in alternating current",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "The Inductor"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "X_L=2πfL"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "VL leads IL",
+          "by 90°"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "No real",
+          "power"
+        ]
+      }
+    ]
+  }
+}

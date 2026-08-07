@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-6.html">
@@ -42,252 +43,15 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يحسب القدرة الحقيقية والظاهرية وعامل القدرة في دائرة متوالية.</span></li>
-        <li><span class="obj-num">2</span><span>يكتب قوانين دائرة RLC المتوالية (الممانعة وزاوية فرق الطور) ويميّز الخواص الحثية من السعوية.</span></li>
-        <li><span class="obj-num">3</span><span>يفهم ظاهرة الرنين الكهربائي وحساب ترددها.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="content" data-navlabel="💡 الشرح">
-    <div class="card neu">
-      <h3 style="margin-top:0">📖 تعليل: أهمية عامل القدرة قريبًا من الواحد</h3>
-      <p>ان كثرة وجود الملفات في معظم الاجهزة الكهربائية تسبب في ظهور فرق طور بين الفولطية والتيار، مما يجعل عامل القدرة أقل من واحد، لذلك تسعى مؤسسات نقل الطاقة الكهربائية الى جعل عامل القدرة مقاربًا للواحد وذلك بوساطة طريقتين: اولها استعمال أسلاك ناقلة ذات مقطع عرضي أوسع لتقليل مقاومتها ومحطات أضخم لتوليد قدرة كهربائية بتيار كبير، لكن هذا الاجراء غير اقتصادي، اما الطريقة الثانية فهو تصحيح عامل القدرة دائمًا وجعله مقاربًا للواحد وذلك بأستخدام متسعات.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 1-8-4 القدرة الكهربائية في دائرة التيار المتناوب المتوالية الربط وعامل القدرة</span>
-      <p style="margin:.3rem 0">لقد علمت سابقًا أن المحث والمتسعة لا يستهلكان قدرة كهربائية حقيقية تخزن بشكل مجال مغناطيسي بالمحث وبشكل مجال كهربائي في المتسعة وتعاد الى المصدر في أثناء التفريغ، لذلك تستهلك قدرة حقيقية فقط بالمقاومة الاومية وتظهر بشكل حرارة، وتقدر بوحدة الواط ويمكن حسابها من أي علاقة آتية:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      <p style="margin:0 0 .3rem;font-weight:700">القدرة المستهلكة P</p>
-      $$ P = V_R \times I_R $$
-      $$ P = I_R^2 \times R $$
-      $$ P = V_T \times I_T \cos\emptyset $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">وتسمى \((V_TI_T)\) بالقدرة الظاهرية للدائرة الكهربائية ووحداتها (Volt Ampere).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>إن القدرة الحقيقية = عامل القدرة × القدرة الظاهرية. أن النسبة بين القدرة الحقيقية الى القدرة الظاهرية يسمى عامل القدرة (power factor) كما مر سابقًا. ففي الدائرة ذات المقاومة الاومية الخالصة يكون عامل القدرة \((\cos\emptyset)\) يساوي واحدًا لان القدرة الحقيقية هي نفسها القدرة الظاهرية. أما في المحث الصرف والمتسعة ذات سعة صرف فيكون مقدار عامل القدرة لهما يساوي صفرًا.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 2-8-4 قوانين ربط مقاومة ومحث ومتسعة على التوالي</span>
-      <p style="margin:.3rem 0">هناك مخطط طوري للفولطية ومخطط طوري للممانعة، أما زاوية فرق الطور فتكون حسب خواص الدائرة، حيث تكون موجبة اذا كانت للدائرة خواص حثية وتكون الزاوية سالبة اذا كانت للدائرة خواص سعوية، وكما مبين في الشكل (16-4).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="rlc-widget" data-navlabel="🕹️ المخطط الطوري لدائرة RLC">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: المخطط الطوري لدائرة RLC المتوالية (الشكل 16-4)</h2>
-      <p>حرّك المزلاجات الثلاثة \(V_R\)، \(V_L\)، \(V_C\) وشاهد متجه \(V_X=V_L-V_C\) والفولطية الكلية \(V_T\) يتغيّران، مع تبدّل خواص الدائرة بين حثية (عندما \(V_L&gt;V_C\)) وسعوية (عندما \(V_L&lt;V_C\)).</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="rlcPhasorSvg" viewBox="0 0 360 240" width="360" height="240" role="img" aria-label="مخطط طوري تفاعلي لدائرة مقاومة ومحث ومتسعة متوالية"></svg></div>
-        <div class="io-row">
-          <label for="rlcVR" style="min-width:9rem">V_R</label>
-          <input type="range" id="rlcVR" class="neu-range" min="20" max="90" step="5" value="50">
-        </div>
-        <div class="io-row">
-          <label for="rlcVL" style="min-width:9rem">V_L</label>
-          <input type="range" id="rlcVL" class="neu-range" min="0" max="100" step="5" value="80">
-        </div>
-        <div class="io-row">
-          <label for="rlcVC" style="min-width:9rem">V_C</label>
-          <input type="range" id="rlcVC" class="neu-range" min="0" max="100" step="5" value="30">
-        </div>
-        <div class="rule-box" id="rlcStatus">—</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>يكون التيار هنا متساويًا \((I_T=I_R=I_L=I_C)\)؛ حيث إن التيار في الدائرة المتوالية واحد في جميع العناصر.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ V_T = \sqrt{V_R^2 + (V_L-V_C)^2} $$
-      $$ \cos\emptyset = \dfrac{V_R}{V_T} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">خواص حثية عندما \(V_L&gt;V_C\)، وخواص سعوية عندما \(V_L&lt;V_C\).</p>
-      $$ \tan\emptyset = \dfrac{V_L-V_C}{V_R} $$
-      <p style="margin:.2rem 0 0;font-size:.85rem;color:var(--text-secondary)">(عندما تكون للدائرة خواص حثية)</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ Z = \sqrt{R^2 + (X_L-X_C)^2} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">خواص حثية عندما \(X_L&gt;X_C\)، وخواص سعوية عندما \(X_L&lt;X_C\).</p>
-      $$ \cos\emptyset = \dfrac{R}{Z} \qquad \tan\emptyset = \dfrac{X_L-X_C}{R} $$
-      $$ P = V_R \times I_R \qquad Z = \dfrac{V_T}{I_T} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">أما قوانين \(X_L\) و\(X_C\) فهي نفس القوانين التي درستها في الأمثلة السابقة.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="example6" data-navlabel="📝 مثال 6">
-    <div class="example">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (6)</h2></div>
-      <p>دائرة تيار متناوب تتألف من ملف مهمل مقاومته وحث ذاتي، ومقاومة مقدارها \((40\ \Omega)\)، ومتسعة رادتها السعوية \((10\ \Omega)\) مربوطة جميعها على التوالي، والقدرة المستهلكة \((160\ W)\)، فأذا كان تردد الدائرة \(\left(\dfrac{500}{\pi}\ \text{Hz}\right)\) وحث الملف \((40\ \text{mH})\) والتيار المار بالدائرة \((2\ \text{A})\) أحسب: 1- فولطية المصدر. 2- عامل القدرة.</p>
-    </div>
-
-    <div class="example" style="border-inline-start:4px solid var(--accent-blue)">
-      <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
-        <button class="neu-btn" data-reveal-steps="steps-ex6" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
-      </div>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
-      <ul class="summary-list" style="margin-bottom:1rem">
-        <li><span>\( R = 40\ \Omega \) — المقاومة</span></li>
-        <li><span>\( X_C = 10\ \Omega \) — الرادة السعوية</span></li>
-        <li><span>\( P = 160\ \text{W} \) — القدرة المستهلكة</span></li>
-        <li><span>\( f = 500/\pi\ \text{Hz} \) — تردد الدائرة</span></li>
-        <li><span>\( L = 40\ \text{mH} = 40\times10^{-3}\ \text{H} \) — حث الملف (بعد التحويل)</span></li>
-        <li><span>\( I_T = 2\ \text{A} \) — تيار الدائرة</span></li>
-      </ul>
-
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
-      <p style="margin:0 0 1rem">1- \(V_T\). 2- \(\cos\emptyset\).</p>
-
-      <ol class="steps hidden-steps" id="steps-ex6">
-        <li class="step"><span class="step-dot">1</span><div class="step-body">
-          <p class="calc-note">1- نحسب الرادة الحثية أولًا</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( X_L=2\pi fL=2\pi\times\dfrac{500}{\pi}\times40\times10^{-3} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( X_L=40\ \Omega \)</div>
-          </div>
-        </div></li>
-        <li class="step"><span class="step-dot">2</span><div class="step-body">
-          <p class="calc-note">2- نحسب الممانعة (خواص حثية لأن \(X_L>X_C\))</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( Z=\sqrt{R^2+(X_L-X_C)^2}=\sqrt{40^2+(40-10)^2} \)</div>
-            <div class="calc-line">\( Z=\sqrt{1600+900}=\sqrt{2500} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( Z=50\ \Omega \)</div>
-          </div>
-        </div></li>
-        <li class="step"><span class="step-dot">3</span><div class="step-body">
-          <p class="calc-note">3- نطبّق قانون أوم لإيجاد فولطية المصدر</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( V_T=I_T\,Z=2\times50 \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( V_T=100\ \text{Volt} \)</div>
-          </div>
-        </div></li>
-        <li class="step"><span class="step-dot">4</span><div class="step-body">
-          <p class="calc-note">4- نطبّق علاقة عامل القدرة</p>
-          <div class="calc-flow">
-            <div class="calc-line">\( \cos\emptyset=\dfrac{R}{Z}=\dfrac{40}{50} \)</div>
-            <div class="calc-arrow">↓</div>
-            <div class="calc-line calc-box">\( \cos\emptyset=0.8 \)</div>
-          </div>
-        </div></li>
-      </ol>
-      <div class="exercise-final">✓ V_T = 100 Volt · cosØ = 0.8</div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">💡</span>
-      <span><b>هل تعلم؟</b> اذا كانت \(X_L=X_C\) للدائرة خواص اومية فقط أي: إن التيار والفولطية بطور واحد وتسمى بحالة الرنين الكهربائي، ولها تردد يسمى بالتردد الرنيني للدائرة المهتزة ويُحسَب من العلاقة الآتية:</span>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="rule-box">
-      $$ f_R = \dfrac{1}{2\pi\sqrt{LC}} $$
-      <p style="margin:.6rem 0 0;font-size:.95rem">ولهذه الدائرة تطبيقات عملية كثيرة منها البث الراديوي والتلفزيوني.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="resonance-widget" data-navlabel="🕹️ الرنين الكهربائي">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: الممانعة والرنين الكهربائي</h2>
-      <p>حرّك مزلاج التردد وشاهد كيف تتغيّر \(X_L\) و\(X_C\) والممانعة الكلية Z؛ عند التردد الرنيني \(f_R\) تتساوى \(X_L\) و\(X_C\) فتصل الممانعة إلى أدنى قيمة لها (تساوي R تمامًا) وتصبح الدائرة أومية خالصة.</p>
-      <div class="io-panel">
-        <div class="mindmap-wrap"><svg id="resSvg" viewBox="0 0 360 190" width="360" height="190" role="img" aria-label="منحنيات الرادة الحثية والسعوية والممانعة مقابل التردد"></svg></div>
-        <div class="io-row">
-          <label for="resFreq" style="min-width:9rem">التردد النسبي</label>
-          <input type="range" id="resFreq" class="neu-range" min="10" max="200" step="2" value="100">
-        </div>
-        <div class="rule-box" id="resStatus">—</div>
-      </div>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>عامل القدرة في دائرة مقاومة اومية خالصة يساوي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>صفرًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>واحدًا</span></label>
-          <label class="quiz-opt"><input type="radio"><span>أكبر من واحد</span></label>
-          <label class="quiz-opt"><input type="radio"><span>سالبًا</span></label>
-        </div>
-        <div class="quiz-explain">في الدائرة ذات المقاومة الاومية الخالصة يكون عامل القدرة واحدًا لأن القدرة الحقيقية هي نفسها القدرة الظاهرية.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>في دائرة RLC متوالية، تكون للدائرة خواص حثية عندما:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( X_L &lt; X_C \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( X_L = X_C \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( X_L &gt; X_C \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( R = 0 \)</span></label>
-        </div>
-        <div class="quiz-explain">تكون للدائرة خواص حثية إذا كان \(X_L>X_C\) (أو \(V_L>V_C\))، وتكون زاوية فرق الطور موجبة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>3.</span><span>حالة الرنين الكهربائي تحدث عندما:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( X_L = X_C \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( X_L = 0 \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( X_C = 0 \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( R = 0 \)</span></label>
-        </div>
-        <div class="quiz-explain">عند \(X_L=X_C\) تصبح خواص الدائرة أومية فقط (التيار والفولطية بنفس الطور)، وتسمى هذه الحالة بالرنين الكهربائي.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>التردد الرنيني للدائرة المهتزة يُحسب من العلاقة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>\( f_R=2\pi\sqrt{LC} \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( f_R=2\pi LC \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( f_R=\sqrt{LC} \)</span></label>
-          <label class="quiz-opt"><input type="radio"><span>\( f_R=\dfrac{1}{2\pi\sqrt{LC}} \)</span></label>
-        </div>
-        <div class="quiz-explain">التردد الرنيني \(f_R=1/(2\pi\sqrt{LC})\)، وله تطبيقات عملية منها البث الراديوي والتلفزيوني.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>5.</span><span>يمكن تصحيح عامل القدرة في محطات نقل الطاقة وجعله مقاربًا للواحد باستعمال:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>مقاومات إضافية فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>متسعات</span></label>
-          <label class="quiz-opt"><input type="radio"><span>محركات كهربائية إضافية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا يمكن تصحيحه إطلاقًا</span></label>
-        </div>
-        <div class="quiz-explain">يمكن تصحيح عامل القدرة وجعله مقاربًا للواحد باستخدام متسعات موصولة بالتوازي، بدلًا من الطريقة غير الاقتصادية لاستعمال أسلاك ناقلة أوسع ومحطات أضخم.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -296,12 +60,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>القدرة الحقيقية تُستهلك فقط في R؛ \(P=V_R I_R=I_R^2R=V_TI_T\cos\emptyset\).</span></li>
-        <li><span>دائرة RLC متوالية: \(V_T=\sqrt{V_R^2+(V_L-V_C)^2}\)، \(Z=\sqrt{R^2+(X_L-X_C)^2}\)، \(I_T=I_R=I_L=I_C\).</span></li>
-        <li><span>خواص حثية عندما \(X_L&gt;X_C\) (Ø موجبة)، وخواص سعوية عندما \(X_L&lt;X_C\) (Ø سالبة).</span></li>
-        <li><span>الرنين الكهربائي عند \(X_L=X_C\)؛ \(f_R=1/(2\pi\sqrt{LC})\)، يُستعمل في البث الراديوي والتلفزيوني.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -311,26 +70,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l6" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l6">
-        <svg viewBox="0 0 480 200" width="480" height="200" role="img" aria-label="خريطة دائرة RLC والرنين الذهنية">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="100" x2="100" y2="45"/>
-            <line x1="240" y1="100" x2="100" y2="155"/>
-            <line x1="240" y1="100" x2="380" y2="100"/>
-          </g>
-          <g>
-            <circle cx="240" cy="100" r="48" fill="#7c6fee"/>
-            <text x="240" y="104" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">RLC</text>
-          </g>
-          <g><circle cx="100" cy="45" r="42" fill="#3fa9f5"/>
-            <text x="100" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">Z=√(R²+ΔX²)</text></g>
-          <g><circle cx="100" cy="155" r="42" fill="#2fd18f"/>
-            <text x="100" y="152" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">P=VTITcosØ</text></g>
-          <g><circle cx="380" cy="100" r="42" fill="#ffab5e"/>
-            <text x="380" y="97" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">رنين:</text>
-            <text x="380" y="109" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">XL=XC</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l6"></div>
     </div>
   </section>
 
@@ -347,6 +87,7 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
   function arrow(svg,x1,y1,x2,y2,color,width){
     var l = document.createElementNS(ns,"line");
@@ -370,11 +111,7 @@
   }
 
   // ===== RLC series phasor widget (Figure 16-4) =====
-  var rlcSvg = document.getElementById("rlcPhasorSvg");
-  var rlcVR = document.getElementById("rlcVR");
-  var rlcVL = document.getElementById("rlcVL");
-  var rlcVC = document.getElementById("rlcVC");
-  var rlcStatus = document.getElementById("rlcStatus");
+  var rlcSvg, rlcVR, rlcVL, rlcVC, rlcStatus;
   var originX = 60, originY = 120, scale = 1.1;
 
   function drawRLC(){
@@ -409,16 +146,12 @@
 
     var VT = Math.sqrt(VR*VR+(VL-VC)*(VL-VC));
     var angle = Math.atan2(VL-VC,VR)*180/Math.PI;
-    var props = VL>VC ? "خواص حثية (Ø موجبة)" : (VL<VC ? "خواص سعوية (Ø سالبة)" : "رنين كهربائي (Ø=0)");
+    var props = VL>VC ? t("propsInductive","خواص حثية (Ø موجبة)") : (VL<VC ? t("propsCapacitive","خواص سعوية (Ø سالبة)") : t("propsResonance","رنين كهربائي (Ø=0)"));
     rlcStatus.textContent = "V_T = " + VT.toFixed(1) + " · Ø = " + angle.toFixed(0) + "° · " + props;
   }
-  [rlcVR, rlcVL, rlcVC].forEach(function(el){ el.addEventListener("input", drawRLC); });
-  drawRLC();
 
   // ===== Resonance / impedance-vs-frequency widget =====
-  var resSvg = document.getElementById("resSvg");
-  var resFreq = document.getElementById("resFreq");
-  var resStatus = document.getElementById("resStatus");
+  var resSvg, resFreq, resStatus;
   var R_val = 40; // ohms, arbitrary fixed for illustration
   var fR = 100; // resonance point on the relative-frequency slider
   var K1 = 0.4; // X_L = K1*f ; X_C = (K1*fR*fR)/f, so X_L=X_C exactly at f=fR
@@ -465,15 +198,32 @@
     var xl = f*K1, xc=(K1*fR*fR)/f;
     var diff = Math.abs(xl-xc);
     if(diff < 3){
-      resStatus.textContent = "عند هذا التردد: X_L ≈ X_C — حالة الرنين الكهربائي! الممانعة عند أدنى قيمة لها (Z ≈ R).";
+      resStatus.textContent = t("resStatusResonance","عند هذا التردد: X_L ≈ X_C — حالة الرنين الكهربائي! الممانعة عند أدنى قيمة لها (Z ≈ R).");
     } else if(xl>xc){
-      resStatus.textContent = "X_L > X_C: خواص الدائرة حثية.";
+      resStatus.textContent = t("resStatusInductive","X_L > X_C: خواص الدائرة حثية.");
     } else {
-      resStatus.textContent = "X_L < X_C: خواص الدائرة سعوية.";
+      resStatus.textContent = t("resStatusCapacitive","X_L < X_C: خواص الدائرة سعوية.");
     }
   }
-  resFreq.addEventListener("input", drawRes);
-  drawRes();
+
+  function boot(){
+    rlcSvg = document.getElementById("rlcPhasorSvg");
+    rlcVR = document.getElementById("rlcVR");
+    rlcVL = document.getElementById("rlcVL");
+    rlcVC = document.getElementById("rlcVC");
+    rlcStatus = document.getElementById("rlcStatus");
+    resSvg = document.getElementById("resSvg");
+    resFreq = document.getElementById("resFreq");
+    resStatus = document.getElementById("resStatus");
+    if(!rlcSvg || !resSvg) return;
+
+    [rlcVR, rlcVL, rlcVC].forEach(function(el){ el.addEventListener("input", drawRLC); });
+    drawRLC();
+
+    resFreq.addEventListener("input", drawRes);
+    drawRes();
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

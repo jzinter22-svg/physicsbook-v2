@@ -1,0 +1,384 @@
+{
+  "lessonNumber": 1,
+  "chapterNumber": 4,
+  "meta": {
+    "pageTitle": "Lesson 1: Defining Alternating Current and Effective Value — Chapter 4",
+    "description": "4-1 Defining alternating current: the sine wave and instantaneous relations, 4-2 the effective value of alternating current and voltage.",
+    "breadcrumbChapter": "Chapter 4",
+    "breadcrumbLesson": "Defining Alternating Current and Effective Value",
+    "footer": "Chapter Four: AC Circuits — Lesson 1: Defining Alternating Current and Effective Value"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 1 of 8 · Chapter Four",
+    "title": "Defining Alternating Current and Effective Value",
+    "lead": "4-1 Defining alternating current · 4-2 The effective value of alternating current and voltage"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Define alternating current and write its instantaneous formula.",
+    "Understand the meaning of the effective value of alternating current and voltage and its relation to the maximum value."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 Introduction",
+      "html": "As you learned in your previous studies, dear student, there are two types of current: direct current (D.C) and alternating current (A.C). In this chapter we will look at everything related to alternating current — its value, how it is produced — and at some of its important electrical circuits.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "definition",
+      "label": "📌 4-1 Defining Alternating Current",
+      "html": "Alternating current (A.C) can be defined as the current whose magnitude and direction vary with time, and whose waveform is a transverse sine wave, as shown in Figure (4-1).",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "scopeSvg",
+      "svgAriaLabel": "An oscilloscope simulation showing a sinusoidal alternating-current wave",
+      "svgViewBox": "0 0 360 200",
+      "svgWidth": "360",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive simulation: the AC wave on an oscilloscope (Figure 4-1)",
+      "descriptionHtml": "Move the amplitude and frequency sliders and watch the sine wave of the alternating current being traced continuously on the oscilloscope screen, exactly as it appears in the lab.",
+      "controls": [
+        {
+          "labelHtml": "Amplitude",
+          "inputId": "scopeAmp",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "20",
+          "inputMax": "80",
+          "inputStep": "5",
+          "inputValue": "60"
+        },
+        {
+          "labelHtml": "Relative frequency",
+          "inputId": "scopeFreq",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "1",
+          "inputMax": "4",
+          "inputStep": "1",
+          "inputValue": "2"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "scope-widget",
+      "sectionNavLabel": "🕹️ Recreating Figure 4-1"
+    },
+    {
+      "type": "paragraph",
+      "html": "This current can be obtained by rotating a coil inside a magnetic field (Faraday's phenomenon of electromagnetic induction), as in AC generators; this current can therefore be transmitted over long distances and its magnitude controlled.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The alternating potential difference we obtain by means of rotating-coil generators is given by the relation:",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ V = V_m \\sin\\theta $$",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Symbols in the Relation",
+      "html": "Where (V) represents the instantaneous voltage value, and \\(V_m\\) represents the maximum voltage value.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "Applying Ohm's law, the current is:",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ I = \\dfrac{V_m \\sin\\theta}{R} $$",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "So the alternating current in an AC circuit is given by the relation:",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ I = I_m \\sin\\theta $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">which is also a sinusoidal function; where (I) is the instantaneous current, and \\((I_m)\\) is the maximum current.</p>",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "These values of both voltage and current depend on the circuit's angular frequency (ω), which equals:",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ \\omega = 2\\pi f $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where (f) represents the linear frequency.</p>",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "📝",
+      "strong": "",
+      "html": "Note: dear student, (ω) also represents the angular velocity, as you studied in Chapter One of the book.",
+      "sectionGroup": 13,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The behavior of the alternating voltage and current depends on the type of load placed in the electric circuit, as shown in Figure (4-2), which represents the sine wave of the voltage.",
+      "sectionGroup": 14,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 4-2 The Effective Value of Alternating Current and Voltage",
+      "html": "When an alternating electric current passes through a wire of resistance (R), the wire heats up as a result of the current passing through it and consumes an amount of energy, exactly as with direct current, whose passage through resistive wires raises their temperature.",
+      "sectionGroup": 15,
+      "sectionId": "def-box",
+      "sectionNavLabel": "📌 Effective Value"
+    },
+    {
+      "type": "paragraph",
+      "html": "Since the electrical energy consumed (E) can be calculated from Joule's law \\((E=I^2Rt)\\), calculating the energy consumed in the case of alternating current by applying Joule's law appears to vary, given that the current's magnitude changes from one instant to the next. It was therefore useful to adopt a value for the alternating current that generates the same amount of heat in a resistance, at the same time rate, as it would generate with a direct current.</p><p>We can therefore conclude that the defining characteristic of the effective value of alternating current is its heating effect, and from the computational relations for the instantaneous power, and the instantaneous and maximum current, we derive the following relation, which represents the mean-square value of the effective current.",
+      "sectionGroup": 16,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ I_e = 0.707\\, I_m $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where \\((I_e)\\) is the effective value of the current, and \\((I_m)\\) is the maximum value of the current.</p>",
+      "sectionGroup": 17,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ V_e = 0.707\\, V_m $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">where \\((V_e)\\) is the effective value of the voltage, and \\((V_m)\\) is the maximum value of the voltage.</p>",
+      "sectionGroup": 18,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "effSvg",
+      "svgAriaLabel": "Comparison of the instantaneous value with the effective value on a sine wave",
+      "svgViewBox": "0 0 360 180",
+      "svgWidth": "360",
+      "svgHeight": "180",
+      "sectionHeading": "🕹️ Interactive simulation: instantaneous value versus effective value",
+      "descriptionHtml": "Move the slider to change the phase angle (θ) and watch how the instantaneous value of the voltage keeps changing, while the fixed horizontal line represents the effective value \\((V_e=0.707\\,V_m)\\) — the constant, thermally-equivalent value that a voltmeter measures at home.",
+      "controls": [
+        {
+          "labelHtml": "Angle θ",
+          "inputId": "effTheta",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "360",
+          "inputStep": "5",
+          "inputValue": "90"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "At θ = 90°: the instantaneous voltage = the maximum value exactly.",
+          "id": "effStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "labels": {
+        "effStatusPrefix": "At θ = ",
+        "effStatusMid": "°: the instantaneous voltage = ",
+        "effStatusSuffix": "% of the maximum value."
+      },
+      "sectionGroup": 19,
+      "sectionId": "effective-widget",
+      "sectionNavLabel": "🕹️ Instantaneous vs. Effective Value"
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "Did you know?",
+      "html": "The values recorded by the ammeter and voltmeter in your home are the effective (rms) values that actually drive the electric circuit.",
+      "sectionGroup": 20,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "Alternating current is the current that is:",
+        "options": [
+          "Constant in magnitude and direction",
+          "Variable in magnitude only",
+          "Variable in magnitude and direction with time",
+          "Always zero in direction"
+        ],
+        "explain": "Alternating current is the current whose magnitude and direction vary with time, and its waveform is a transverse sine wave."
+      },
+      {
+        "correct": 1,
+        "question": "The effective value of alternating current equals:",
+        "options": [
+          "\\( I_m \\)",
+          "\\( 0.707\\,I_m \\)",
+          "\\( 2\\,I_m \\)",
+          "\\( I_m/2 \\)"
+        ],
+        "explain": "The effective value of the current is \\(I_e=0.707\\,I_m\\), and likewise the voltage \\(V_e=0.707\\,V_m\\)."
+      },
+      {
+        "correct": 3,
+        "question": "The defining characteristic of the effective value of alternating current is:",
+        "options": [
+          "The magnetic effect",
+          "The chemical effect",
+          "The optical effect",
+          "The heating effect"
+        ],
+        "explain": "The effective value of alternating current is defined as the value that generates the same amount of heat that a direct current generates in the same resistance over the same time, so the heating effect is the criterion."
+      },
+      {
+        "correct": 1,
+        "question": "Alternating current can be practically obtained from:",
+        "options": [
+          "A dry battery",
+          "Rotating a coil inside a magnetic field (electromagnetic induction)",
+          "A solar cell only",
+          "A charged capacitor only"
+        ],
+        "explain": "Alternating current is obtained by rotating a coil inside a magnetic field, i.e., by Faraday's phenomenon of electromagnetic induction, as in AC generators."
+      },
+      {
+        "correct": 0,
+        "question": "The correct relation between the angular frequency (ω) and the linear frequency (f) is:",
+        "options": [
+          "\\( \\omega = 2\\pi f \\)",
+          "\\( \\omega = f/2\\pi \\)",
+          "\\( \\omega = \\pi f \\)",
+          "\\( \\omega = f^2 \\)"
+        ],
+        "explain": "The angular frequency \\(\\omega=2\\pi f\\), and it also represents the angular velocity of the electric circuit."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Alternating current: a current variable in magnitude and direction with time, with a sinusoidal wave: \\(I=I_m\\sin\\theta\\).",
+      "It is obtained by rotating a coil inside a magnetic field (electromagnetic induction), and its angular frequency is \\(\\omega=2\\pi f\\).",
+      "The effective value depends on the heating effect: \\(I_e=0.707\\,I_m\\), \\(V_e=0.707\\,V_m\\).",
+      "Household measuring instruments (the ammeter and voltmeter) record the effective (rms) values."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of alternating current and effective value",
+    "viewBox": "0 0 480 220",
+    "center": {
+      "cx": 240.0,
+      "cy": 110.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Alternating",
+        "Current"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 48.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "I=Im sinθ",
+          "sine wave"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 172.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "ω=2πf"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 48.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Ie=0.707Im",
+          "Ve=0.707Vm"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 172.0,
+        "r": 42.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Heating",
+          "Effect"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,423 @@
+{
+  "lessonNumber": 6,
+  "chapterNumber": 4,
+  "meta": {
+    "pageTitle": "Lesson 6: Connecting a Resistance, an Inductor, and a Capacitor in Series — Chapter 4",
+    "description": "4-8 Connecting a resistance, an inductor, and a capacitor in series: power and power factor, the laws of the combined connection, and electrical resonance, with a solved example.",
+    "breadcrumbChapter": "Chapter 4",
+    "breadcrumbLesson": "Connecting a Resistance, an Inductor, and a Capacitor in Series",
+    "footer": "Chapter Four: AC Circuits — Lesson 6: Connecting a Resistance, an Inductor, and a Capacitor in Series"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 6 of 8 · Chapter Four",
+    "title": "Connecting a Resistance, an Inductor, and a Capacitor in Series",
+    "lead": "4-8: 4-8-1 Power and the power factor · 4-8-2 The laws of the combined connection · Electrical resonance"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Compute the real power, apparent power, and power factor in a series circuit.",
+    "Write the laws of a series RLC circuit (impedance and phase-difference angle) and distinguish inductive properties from capacitive ones.",
+    "Understand the phenomenon of electrical resonance and compute its frequency."
+  ],
+  "content": [
+    {
+      "type": "paragraph",
+      "html": "The presence of coils in most electrical devices causes a phase difference to appear between the voltage and the current, which makes the power factor less than one; electric-power transmission companies therefore try to bring the power factor as close to one as possible, by two methods: the first is using transmission wires with a wider cross-section to reduce their resistance, and larger stations to generate electric power with a large current — but this approach is not economical; the second method is to always correct the power factor and bring it close to one by using capacitors.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "definition",
+      "label": "📌 4-8-1 Electric Power in a Series AC Circuit and the Power Factor",
+      "html": "You already learned that the inductor and the capacitor do not consume real electrical power; it is stored as a magnetic field in the inductor and as an electric field in the capacitor, and returned to the source during discharge. Real power is therefore consumed only in the ohmic resistance, and appears as heat; it is measured in watts, and can be computed from any of the following relations:",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "<p style=\"margin:0 0 .3rem;font-weight:700\">The power consumed P</p>\n      $$ P = V_R \\times I_R $$\n      $$ P = I_R^2 \\times R $$\n      $$ P = V_T \\times I_T \\cos\\emptyset $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">and \\((V_TI_T)\\) is called the apparent power of the electric circuit, and its units are (Volt Ampere).</p>",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "The real power = the power factor × the apparent power. The ratio between the real power and the apparent power is called the power factor (power factor), as mentioned earlier. In a circuit with pure ohmic resistance, the power factor \\((\\cos\\emptyset)\\) equals one, because the real power is the same as the apparent power. In a pure inductor and a pure capacitance, however, the power factor equals zero.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 4-8-2 The Laws of Connecting a Resistance, an Inductor, and a Capacitor in Series",
+      "html": "There is a voltage phasor diagram and an impedance phasor diagram; the phase-difference angle depends on the circuit's properties, being positive when the circuit has inductive properties and negative when the circuit has capacitive properties, as shown in Figure (4-16).",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "rlcPhasorSvg",
+      "svgAriaLabel": "An interactive phasor diagram for a series resistance-inductor-capacitor circuit",
+      "svgViewBox": "0 0 360 240",
+      "svgWidth": "360",
+      "svgHeight": "240",
+      "sectionHeading": "🕹️ Interactive simulation: the phasor diagram of a series RLC circuit (Figure 4-16)",
+      "descriptionHtml": "Move the three sliders \\(V_R\\), \\(V_L\\), \\(V_C\\) and watch the phasor \\(V_X=V_L-V_C\\) and the total voltage \\(V_T\\) change, with the circuit's properties alternating between inductive (when \\(V_L&gt;V_C\\)) and capacitive (when \\(V_L&lt;V_C\\)).",
+      "controls": [
+        {
+          "labelHtml": "V_R",
+          "inputId": "rlcVR",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "20",
+          "inputMax": "90",
+          "inputStep": "5",
+          "inputValue": "50"
+        },
+        {
+          "labelHtml": "V_L",
+          "inputId": "rlcVL",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "100",
+          "inputStep": "5",
+          "inputValue": "80"
+        },
+        {
+          "labelHtml": "V_C",
+          "inputId": "rlcVC",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "0",
+          "inputMax": "100",
+          "inputStep": "5",
+          "inputValue": "30"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "—",
+          "id": "rlcStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "labels": {
+        "propsInductive": "Inductive properties (Ø positive)",
+        "propsCapacitive": "Capacitive properties (Ø negative)",
+        "propsResonance": "Electrical resonance (Ø=0)"
+      },
+      "sectionGroup": 5,
+      "sectionId": "rlc-widget",
+      "sectionNavLabel": "🕹️ The Phasor Diagram of an RLC Circuit"
+    },
+    {
+      "type": "paragraph",
+      "html": "The current here is equal throughout \\((I_T=I_R=I_L=I_C)\\), since the current is the same in every element of a series circuit.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ V_T = \\sqrt{V_R^2 + (V_L-V_C)^2} $$\n      $$ \\cos\\emptyset = \\dfrac{V_R}{V_T} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">Inductive properties when \\(V_L&gt;V_C\\), and capacitive properties when \\(V_L&lt;V_C\\).</p>\n      $$ \\tan\\emptyset = \\dfrac{V_L-V_C}{V_R} $$\n      <p style=\"margin:.2rem 0 0;font-size:.85rem;color:var(--text-secondary)\">(when the circuit has inductive properties)</p>",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ Z = \\sqrt{R^2 + (X_L-X_C)^2} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">Inductive properties when \\(X_L&gt;X_C\\), and capacitive properties when \\(X_L&lt;X_C\\).</p>\n      $$ \\cos\\emptyset = \\dfrac{R}{Z} \\qquad \\tan\\emptyset = \\dfrac{X_L-X_C}{R} $$\n      $$ P = V_R \\times I_R \\qquad Z = \\dfrac{V_T}{I_T} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">The laws for \\(X_L\\) and \\(X_C\\) are the same laws you studied in previous examples.</p>",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>An AC circuit consists of a coil of negligible resistance but with self-inductance, a resistance of \\((40\\ \\Omega)\\), and a capacitor of capacitive reactance \\((10\\ \\Omega)\\), all connected in series, with a power consumption of \\((160\\ W)\\). If the circuit's frequency is \\(\\left(\\dfrac{500}{\\pi}\\ \\text{Hz}\\right)\\), the coil's inductance is \\((40\\ \\text{mH})\\), and the current flowing in the circuit is \\((2\\ \\text{A})\\), calculate: 1- The source's voltage. 2- The power factor.</p>",
+      "label": "📝 Example (6)",
+      "solution": {
+        "given": [
+          "\\( R = 40\\ \\Omega \\) — the resistance",
+          "\\( X_C = 10\\ \\Omega \\) — the capacitive reactance",
+          "\\( P = 160\\ \\text{W} \\) — the power consumed",
+          "\\( f = 500/\\pi\\ \\text{Hz} \\) — the circuit's frequency",
+          "\\( L = 40\\ \\text{mH} = 40\\times10^{-3}\\ \\text{H} \\) — the coil's inductance (after conversion)",
+          "\\( I_T = 2\\ \\text{A} \\) — the circuit's current"
+        ],
+        "required": "1- \\(V_T\\). 2- \\(\\cos\\emptyset\\).",
+        "steps": [
+          {
+            "note": "1- We first compute the inductive reactance",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_L=2\\pi fL=2\\pi\\times\\dfrac{500}{\\pi}\\times40\\times10^{-3} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( X_L=40\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- We compute the impedance (inductive properties because \\(X_L>X_C\\))",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( Z=\\sqrt{R^2+(X_L-X_C)^2}=\\sqrt{40^2+(40-10)^2} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( Z=\\sqrt{1600+900}=\\sqrt{2500} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( Z=50\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "3- We apply Ohm's law to find the source's voltage",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( V_T=I_T\\,Z=2\\times50 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( V_T=100\\ \\text{Volt} \\)"
+              }
+            ]
+          },
+          {
+            "note": "4- We apply the power-factor relation",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\cos\\emptyset=\\dfrac{R}{Z}=\\dfrac{40}{50} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\cos\\emptyset=0.8 \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ V_T = 100 Volt · cosØ = 0.8",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 9,
+      "sectionId": "example6",
+      "sectionNavLabel": "📝 Example 6"
+    },
+    {
+      "type": "callout",
+      "icon": "💡",
+      "strong": "Did you know?",
+      "html": "If \\(X_L=X_C\\), the circuit has only ohmic properties — that is, the current and voltage are in phase — and this is called the state of electrical resonance; it has a frequency called the resonant frequency of the oscillating circuit, computed from the following relation:",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ f_R = \\dfrac{1}{2\\pi\\sqrt{LC}} $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">This circuit has many practical applications, including radio and television broadcasting.</p>",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "resSvg",
+      "svgAriaLabel": "Curves of the inductive reactance, capacitive reactance, and impedance against frequency",
+      "svgViewBox": "0 0 360 190",
+      "svgWidth": "360",
+      "svgHeight": "190",
+      "sectionHeading": "🕹️ Interactive simulation: impedance and electrical resonance",
+      "descriptionHtml": "Move the frequency slider and watch how \\(X_L\\) and \\(X_C\\) and the total impedance Z change; at the resonant frequency \\(f_R\\), \\(X_L\\) and \\(X_C\\) become equal, so the impedance reaches its minimum value (exactly equal to R), and the circuit becomes purely ohmic.",
+      "controls": [
+        {
+          "labelHtml": "Relative frequency",
+          "inputId": "resFreq",
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": "range",
+          "inputClass": "neu-range",
+          "inputMin": "10",
+          "inputMax": "200",
+          "inputStep": "2",
+          "inputValue": "100"
+        }
+      ],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "—",
+          "id": "resStatus",
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "labels": {
+        "resStatusResonance": "At this frequency: X_L ≈ X_C — the state of electrical resonance! The impedance is at its lowest value (Z ≈ R).",
+        "resStatusInductive": "X_L > X_C: the circuit's properties are inductive.",
+        "resStatusCapacitive": "X_L < X_C: the circuit's properties are capacitive."
+      },
+      "sectionGroup": 12,
+      "sectionId": "resonance-widget",
+      "sectionNavLabel": "🕹️ Electrical Resonance"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "The power factor in a pure ohmic-resistance circuit equals:",
+        "options": [
+          "Zero",
+          "One",
+          "Greater than one",
+          "Negative"
+        ],
+        "explain": "In a circuit with pure ohmic resistance, the power factor is one, because the real power is the same as the apparent power."
+      },
+      {
+        "correct": 2,
+        "question": "In a series RLC circuit, the circuit has inductive properties when:",
+        "options": [
+          "\\( X_L &lt; X_C \\)",
+          "\\( X_L = X_C \\)",
+          "\\( X_L &gt; X_C \\)",
+          "\\( R = 0 \\)"
+        ],
+        "explain": "The circuit has inductive properties if \\(X_L&gt;X_C\\) (or \\(V_L&gt;V_C\\)), and the phase-difference angle is positive."
+      },
+      {
+        "correct": 0,
+        "question": "The state of electrical resonance occurs when:",
+        "options": [
+          "\\( X_L = X_C \\)",
+          "\\( X_L = 0 \\)",
+          "\\( X_C = 0 \\)",
+          "\\( R = 0 \\)"
+        ],
+        "explain": "When \\(X_L=X_C\\), the circuit's properties become purely ohmic (the current and voltage are in phase), and this state is called electrical resonance."
+      },
+      {
+        "correct": 3,
+        "question": "The resonant frequency of an oscillating circuit is computed from the relation:",
+        "options": [
+          "\\( f_R=2\\pi\\sqrt{LC} \\)",
+          "\\( f_R=2\\pi LC \\)",
+          "\\( f_R=\\sqrt{LC} \\)",
+          "\\( f_R=\\dfrac{1}{2\\pi\\sqrt{LC}} \\)"
+        ],
+        "explain": "The resonant frequency \\(f_R=1/(2\\pi\\sqrt{LC})\\), and it has practical applications including radio and television broadcasting."
+      },
+      {
+        "correct": 1,
+        "question": "The power factor at power-transmission stations can be corrected and brought close to one by using:",
+        "options": [
+          "Additional resistors only",
+          "Capacitors",
+          "Additional electric motors",
+          "It cannot be corrected at all"
+        ],
+        "explain": "The power factor can be corrected and brought close to one by using capacitors connected in parallel, instead of the uneconomical approach of using wider transmission wires and larger stations."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Real power is consumed only in R; \\(P=V_R I_R=I_R^2R=V_TI_T\\cos\\emptyset\\).",
+      "Series RLC circuit: \\(V_T=\\sqrt{V_R^2+(V_L-V_C)^2}\\), \\(Z=\\sqrt{R^2+(X_L-X_C)^2}\\), \\(I_T=I_R=I_L=I_C\\).",
+      "Inductive properties when \\(X_L&gt;X_C\\) (Ø positive), and capacitive properties when \\(X_L&lt;X_C\\) (Ø negative).",
+      "Electrical resonance occurs at \\(X_L=X_C\\); \\(f_R=1/(2\\pi\\sqrt{LC})\\), used in radio and television broadcasting."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of the RLC circuit and resonance",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "RLC"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Z=√(R²+ΔX²)"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "P=VTITcosØ"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Resonance:",
+          "XL=XC"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "lessonNumber": 2,
+  "chapterNumber": 4,
+  "meta": {
+    "pageTitle": "Lesson 2: Pure Resistance in an AC Circuit — Chapter 4",
+    "description": "4-3 Pure ohmic resistance in an AC circuit: instantaneous and average power, with a solved example.",
+    "breadcrumbChapter": "Chapter 4",
+    "breadcrumbLesson": "Pure Resistance in an AC Circuit",
+    "footer": "Chapter Four: AC Circuits — Lesson 2: Pure Resistance in an AC Circuit"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 2 of 8 · Chapter Four",
+    "title": "Pure Resistance in an AC Circuit",
+    "lead": "4-3 Pure ohmic resistance in an AC circuit"
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Define pure resistance and list the properties of its circuit.",
+    "Analyze the instantaneous and average power curve in a pure-resistance circuit.",
+    "Solve numerical problems on the pure-resistance circuit."
+  ],
+  "content": [
+    {
+      "type": "definition",
+      "label": "📌 4-3 Pure Ohmic Resistance in an AC Circuit",
+      "html": "By pure resistance (pure ohmic resistance) we mean any resistance that has no self-inductive effect, as shown in Figure (4-3); when a current passes through it, the electrical energy is converted entirely into heat. This type of load does not depend on the circuit's frequency (that is, the value of the resistance does not change as the current's frequency changes).",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Explanation"
+    },
+    {
+      "type": "simulation",
+      "svgId": "phaseSvg",
+      "svgAriaLabel": "A simulation of voltage and current in phase in a pure-resistance circuit",
+      "svgViewBox": "0 0 360 190",
+      "svgWidth": "360",
+      "svgHeight": "190",
+      "sectionHeading": "🕹️ Interactive simulation: a pure-resistance circuit (Figures 4-3 and 4-4)",
+      "descriptionHtml": "When an alternating current flows in a circuit containing pure resistance, we find that the voltage and current vary in exactly the same way, reaching their maximum values (positive and negative) together — that is, they are in phase, with the phase-difference angle between them equal to zero.",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": null,
+      "labels": {
+        "phaseCaption": "The voltage and current reach their maximum values together — they are in phase"
+      },
+      "sectionGroup": 1,
+      "sectionId": "phase-widget",
+      "sectionNavLabel": "🕹️ Recreating Figures 4-3 and 4-4"
+    },
+    {
+      "type": "paragraph",
+      "html": "We know that the power in a circuit carrying direct current equals:",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ P = I\\,V $$\n      <p style=\"margin:.6rem 0 0;font-size:.95rem\">while the power in an AC circuit is:</p>",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ P = I \\times V $$\n      $$ P = I_m\\sin\\theta \\times V_m\\sin\\theta $$\n      $$ P = I_m V_m \\sin^2\\theta $$",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "powerSvg",
+      "svgAriaLabel": "The instantaneous and average power curve in a pure ohmic resistance",
+      "svgViewBox": "0 0 360 200",
+      "svgWidth": "360",
+      "svgHeight": "200",
+      "sectionHeading": "🕹️ Interactive simulation: the power curve in a pure ohmic resistance (Figure 4-6)",
+      "descriptionHtml": "Notice that the power curve varies from zero to a positive maximum, with no negative portion of the power curve; because the voltage and current are always in phase — that is, the phase difference between them is zero — they are either positive together or negative together. The average power therefore equals half the product of the maximum values of the voltage and current, and it is real power consumed in the resistance in the form of heat; the frequency of the power curve equals twice the frequency of the current curve.",
+      "controls": [],
+      "buttons": null,
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "$$ P_{av} = \\dfrac{I_m V_m}{2} $$",
+          "id": null,
+          "wrapperClass": "rule-box"
+        }
+      ],
+      "trailingHtml": null,
+      "labels": {
+        "powerCurveLabel": "P (instantaneous power)"
+      },
+      "sectionGroup": 5,
+      "sectionId": "power-widget",
+      "sectionNavLabel": "🕹️ Power Curve (Figure 4-6)"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>An AC generator passes a current through a pure ohmic resistance of \\((10\\ \\Omega)\\). The current is given by the relation \\((I=4\\sin\\theta)\\). Calculate: 1- The maximum value of the current and the maximum value of the voltage. 2- The effective value of each of the voltage and the current. 3- The heat energy it generates in the resistance during \\((0.8\\text{s})\\)?</p>",
+      "label": "📝 Example (1)",
+      "solution": {
+        "given": [
+          "\\( R = 10\\ \\Omega \\) — the pure ohmic resistance",
+          "\\( I = 4\\sin\\theta \\) — the given instantaneous current relation",
+          "\\( t = 0.8\\ \\text{s} \\) — the time"
+        ],
+        "required": "1- \\(I_m\\) and \\(V_m\\). 2- \\(I_e\\) and \\(V_e\\). 3- The generated heat energy \\(E\\).",
+        "steps": [
+          {
+            "note": "1- Comparing with \\(I=I_m\\sin\\theta\\) we find the maximum value of the current, then apply Ohm's law to find the maximum value of the voltage",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( I_m = 4\\ \\text{A} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( V_m = I_m \\times R = 4 \\times 10 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( V_m = 40\\ \\text{Volt} \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- We apply the effective-value relation for both the current and the voltage",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( I_e = 0.707\\times I_m = 0.707\\times 4 \\)"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I_e = 2.8\\ \\text{A} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( V_e = 0.707\\times V_m = 0.707\\times 40 \\)"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( V_e = 28.2\\ \\text{Volt} \\)"
+              }
+            ]
+          },
+          {
+            "note": "3- We apply Joule's law using the effective value of the current (the thermally-equivalent direct current)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( E = I_e^2\\,R\\,t = (2.8)^2\\times 10\\times 0.8 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( E = 62.72\\ \\text{Joule} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ I_m = 4 A · V_m = 40 V · I_e = 2.8 A · V_e = 28.2 V · E = 62.72 J",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 6,
+      "sectionId": "example1",
+      "sectionNavLabel": "📝 Example 1"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "Pure resistance is the resistance that:",
+        "options": [
+          "Depends on the circuit's frequency",
+          "Has a large inductive effect",
+          "Has no self-inductive effect",
+          "Stores real electrical energy"
+        ],
+        "explain": "Pure resistance is any resistance with no self-inductive effect, and its value does not depend on the circuit's frequency."
+      },
+      {
+        "correct": 0,
+        "question": "The phase-difference angle between the voltage and the current in a pure-resistance circuit equals:",
+        "options": [
+          "Zero",
+          "90°",
+          "180°",
+          "-90°"
+        ],
+        "explain": "In a pure-resistance circuit, the voltage and current reach their maximum value together; that is, they are in phase and the phase-difference angle between them is zero."
+      },
+      {
+        "correct": 1,
+        "question": "The instantaneous power curve in a pure ohmic-resistance circuit:",
+        "options": [
+          "Is negative for half the cycle",
+          "Never has a negative part",
+          "Always equals zero",
+          "Is random and irregular"
+        ],
+        "explain": "Since the voltage and current always have the same sign (positive together or negative together), their product (the power) is always positive; so there is no negative portion of the power curve."
+      },
+      {
+        "correct": 3,
+        "question": "The average power (mean power) in a pure-resistance circuit equals:",
+        "options": [
+          "\\( I_m V_m \\)",
+          "\\( 2\\,I_m V_m \\)",
+          "\\( I_m + V_m \\)",
+          "\\( \\dfrac{I_m V_m}{2} \\)"
+        ],
+        "explain": "The average power equals half the product of the maximum values of the current and voltage: \\(P_{av}=I_mV_m/2\\), and it is real power consumed as heat."
+      },
+      {
+        "correct": 1,
+        "question": "The frequency of the power curve in a pure-resistance circuit, compared to the frequency of the current curve:",
+        "options": [
+          "Equals half the current's frequency",
+          "Equals twice the current's frequency",
+          "Equals the current's frequency itself",
+          "Is unrelated to the current's frequency"
+        ],
+        "explain": "Since \\(P=I_mV_m\\sin^2\\theta\\) (the instantaneous power), the frequency of the power curve equals twice the frequency of the current curve."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Pure resistance: has no self-inductive effect, and does not depend on the circuit's frequency.",
+      "The voltage and current are in phase (phase difference = zero), so they reach their maximum value together.",
+      "The instantaneous power \\(P=I_mV_m\\sin^2\\theta\\), which is always positive (no negative portion of the power curve).",
+      "The average power \\(P_{av}=I_mV_m/2\\), which is real, thermal power, and its curve's frequency is twice the current's frequency."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of pure resistance",
+    "viewBox": "0 0 480 200",
+    "center": {
+      "cx": 240.0,
+      "cy": 100.0,
+      "r": 48.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Pure",
+        "Resistance"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 100.0,
+        "cy": 45.0,
+        "r": 42.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Phase diff.=0"
+        ]
+      },
+      {
+        "cx": 100.0,
+        "cy": 155.0,
+        "r": 42.0,
+        "color": "#2fd18f",
+        "lines": [
+          "P=ImVmsin²θ",
+          "always positive"
+        ]
+      },
+      {
+        "cx": 380.0,
+        "cy": 100.0,
+        "r": 42.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Pav=",
+          "ImVm/2"
+        ]
+      }
+    ]
+  }
+}
