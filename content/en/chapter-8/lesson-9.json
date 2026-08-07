@@ -1,0 +1,605 @@
+{
+  "lessonNumber": 9,
+  "chapterNumber": 8,
+  "meta": {
+    "pageTitle": "Lesson 9: Chapter Eight Questions — Metals and Alloys",
+    "description": "8-9 Chapter Eight questions: comprehensive questions on metals and their properties, extraction and purification, and alloys, their types and uses.",
+    "breadcrumbChapter": "Chapter 8",
+    "breadcrumbLesson": "Chapter Eight Questions",
+    "footer": "Chapter Eight: Metals and Alloys — Lesson 9: Chapter Eight Questions"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 9 of 9 · 8-9",
+    "title": "Chapter Eight Questions",
+    "lead": "Review the full range of Chapter Eight concepts through the official end-of-chapter questions, and test your comprehensive understanding of metals and alloys."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Reviews the key concepts of the properties of metals, their extraction, and their purification.",
+    "Reviews the concepts of alloys: their definition, types, methods of making them, and their uses.",
+    "Solves the official end-of-chapter questions for Chapter Eight in their various forms."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 8-9 Chapter Questions",
+      "html": "Below are the official end-of-chapter questions for Chapter Eight, with a detailed solution for each. Press the \"Show Solution\" button below each question to review its answer.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "Q1: Choose the Correct Statement from the Following",
+      "leadHtml": null,
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>A tank made of an ideal metal for storing cold water corrodes quickly when used to store dilute sulfuric acid. The metal the tank is made of is:</p><ul>\n<li>a- Zinc.</li>\n<li>b- Lead.</li>\n<li>c- Copper.</li>\n<li>d- Calcium.</li>\n</ul>",
+      "label": "Q1 (1)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Zinc is a suitable metal for cold-water tanks (used in galvanizing to protect metals from corrosion), but it is a relatively reactive metal on the activity series, so it reacts quickly with dilute sulfuric acid, releasing hydrogen gas. Copper does not react with the dilute acid, lead resists the dilute acid by forming a protective layer, and calcium reacts violently with water itself, so it is not suitable for the tank at all.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Zinc",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>Which of the following oxides can be reduced by carbon?</p><ul>\n<li>a- Aluminum oxide.</li>\n<li>b- Lead oxide.</li>\n<li>c- Calcium oxide.</li>\n<li>d- Magnesium oxide.</li>\n</ul>",
+      "label": "Q1 (2)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The oxides of metals that lie below carbon on the activity series can be reduced by carbon (such as lead), while aluminum, calcium, and magnesium lie above carbon on the activity series and need strong reduction (electrolysis), which carbon cannot provide.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — Lead oxide",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 3,
+      "problemHtml": "<p>The metal found at the top of the activity series:</p><ul>\n<li>a- Loses an electron easily.</li>\n<li>b- Has unstable compounds.</li>\n<li>c- Burns to form an acidic oxide.</li>\n<li>d- Has an oxide that is easily reduced by carbon.</li>\n</ul>",
+      "label": "Q1 (3)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Reactive metals lose their electrons easily to form positive ions, and their compounds are very stable (not the opposite), and their oxide is basic, not acidic, and their oxide is difficult to reduce with carbon (it needs electrolysis).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Loses an electron easily",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 4,
+      "problemHtml": "<p>During the electrolysis of molten sodium chloride NaCl, what happens at the anode is:</p><ul>\n<li>a- Oxidation of Cl⁻.</li>\n<li>b- Reduction of Cl⁻.</li>\n<li>c- Oxidation of Na⁺.</li>\n<li>d- Reduction of Na⁺.</li>\n</ul>",
+      "label": "Q1 (4)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The anode is the positive electrode, where oxidation (loss of electrons) always occurs, so chloride ions Cl⁻ are oxidized to form chlorine gas. At the cathode (the negative electrode), reduction of Na⁺ occurs, depositing sodium metal.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Oxidation of Cl⁻",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 5,
+      "problemHtml": "<p>Extracting metals from their ores (converting them from ions into elements) always involves:</p><ul>\n<li>a- Oxidation.</li>\n<li>b- Reduction.</li>\n<li>c- Electrolysis.</li>\n<li>d- Heating with coal.</li>\n</ul>",
+      "label": "Q1 (5)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Every time a metal is extracted from its ore, this involves reducing the metal ion, because the metal exists as an ion in the ore and must gain electrons to become a free metal. Electrolysis and heating with coal are specific methods used depending on the metal's position on the activity series, and are not always a requirement.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — Reduction",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 6,
+      "problemHtml": "<p>Alloys are made up of the following:</p><ul>\n<li>a- Metals only.</li>\n<li>b- Metals and nonmetals.</li>\n<li>c- Metals and water.</li>\n</ul>",
+      "label": "Q1 (6)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "An alloy contains a large amount of the base metal and smaller amounts of other components, which may be metals or nonmetals such as carbon and silicon.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — Metals and nonmetals",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 7,
+      "problemHtml": "<p>Steel is one of the alloys of:</p><ul>\n<li>a- Tin.</li>\n<li>b- Carbon.</li>\n<li>c- Iron.</li>\n</ul>",
+      "label": "Q1 (7)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Steel is an alloy based on iron, formed by adding carbon in specific proportions to pure iron.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: c — Iron",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 8,
+      "problemHtml": "<p>An alloy is:</p><ul>\n<li>a- Less hard than its components.</li>\n<li>b- Harder than its components.</li>\n<li>c- Not hard at all.</li>\n</ul>",
+      "label": "Q1 (8)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Among the properties of alloys is that they are stronger and harder than the metals that make them up.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — Harder than its components",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 9,
+      "problemHtml": "<p>Aluminum alloy is used in manufacturing the following:</p><ul>\n<li>a- Chemicals.</li>\n<li>b- Petrochemical materials.</li>\n<li>c- Aircraft frames.</li>\n</ul>",
+      "label": "Q1 (9)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The aluminum-copper-manganese-magnesium alloy is used specifically in manufacturing aircraft frames.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: c — Aircraft frames",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 10,
+      "problemHtml": "<p>An alloy is made up of materials that are:</p><ul>\n<li>a- Solid.</li>\n<li>b- Liquid.</li>\n<li>c- Gaseous.</li>\n</ul>",
+      "label": "Q1 (10)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Alloys are made by mixing molten metals and then solidifying them, to be used in their final solid form.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Solid",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 11,
+      "problemHtml": "<p>Define an alloy and give an example of one.</p>",
+      "label": "Q2",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "An alloy is a mixture made up of a metal and another element, containing a large amount of the base metal and smaller amounts of other components, which may be metals or nonmetals such as carbon and silicon. Example: bronze alloy (copper + tin).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Answer: a mixture of a base metal and another element in a smaller proportion; example: bronze (copper + tin)",
+        "label": "Answer"
+      },
+      "sectionGroup": 2,
+      "sectionId": "q2",
+      "sectionNavLabel": "2️⃣ Q2"
+    },
+    {
+      "type": "example",
+      "number": 12,
+      "problemHtml": "<p>List the uses of alloys.</p>",
+      "label": "Q3",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1) Refrigeration-circuit valves and fire-detection systems. 2) Medicine (dental fillings and bridges, and the medical guidewire device). 3) Aircraft frames. 4) Support structures in buildings and bridge frames. 5) Kitchen utensils, petroleum-industry equipment, and power generation stations.",
+            "calc": []
+          }
+        ],
+        "final": "✓ See the five uses above",
+        "label": "Answer"
+      },
+      "sectionGroup": 3,
+      "sectionId": "q3",
+      "sectionNavLabel": "3️⃣ Q3"
+    },
+    {
+      "type": "example",
+      "number": 13,
+      "problemHtml": "<p>What are the properties of alloys?</p>",
+      "label": "Q4",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1) Stronger and harder than the metals that make them up. 2) Their melting points are lower than pure metals. 3) Most are less formable, with some superplastic alloys existing. 4) Few are good electrical conductors, with some superconducting alloys existing.",
+            "calc": []
+          }
+        ],
+        "final": "✓ See the four properties above",
+        "label": "Answer"
+      },
+      "sectionGroup": 4,
+      "sectionId": "q4",
+      "sectionNavLabel": "4️⃣ Q4"
+    },
+    {
+      "type": "example",
+      "number": 14,
+      "problemHtml": "<p>What are the types of alloys?</p>",
+      "label": "Q5",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Two types: single-phase alloys (grains with a similar composition, such as copper and nickel), and multi-phase alloys (several types of mixed grains, such as steel).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Answer: single-phase alloys, and multi-phase alloys",
+        "label": "Answer"
+      },
+      "sectionGroup": 5,
+      "sectionId": "q5",
+      "sectionNavLabel": "5️⃣ Q5"
+    },
+    {
+      "type": "example",
+      "number": 15,
+      "problemHtml": "<p>What is bronze alloy?</p>",
+      "label": "Q6",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "It is believed to be the first alloy made by humans, initially made up of copper and arsenic; then tin was discovered and combined with copper, producing a good type of bronze, distinguished by being harder than copper and more suitable for melting and casting, and it was used in manufacturing tools, jewelry, and weapons.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Answer: an alloy of copper with arsenic, then tin; harder than copper and more suitable for melting and casting",
+        "label": "Answer"
+      },
+      "sectionGroup": 6,
+      "sectionId": "q6",
+      "sectionNavLabel": "6️⃣ Q6"
+    },
+    {
+      "type": "example",
+      "number": 16,
+      "problemHtml": "<p>What are the methods of making alloys?</p>",
+      "label": "Q7",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The direct method (mixing the melts directly), and the indirect method, which divides into: the one-stage method (melting the base metal, then dissolving the other metals into it), and the two-stage method (manufacturing an initial alloy, then adding a known weight of another metal).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Answer: the direct method, and the indirect method (one-stage or two-stage)",
+        "label": "Answer"
+      },
+      "sectionGroup": 7,
+      "sectionId": "q7",
+      "sectionNavLabel": "7️⃣ Q7"
+    },
+    {
+      "type": "example",
+      "number": 17,
+      "problemHtml": "<p>Name two types of alloys used in the Iraqi setting, stating where they are used.</p>",
+      "label": "Q8",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1) Copper-nickel alloy: used in the old Iraqi 5- and 10-fils coins. 2) Lead alloy: used in solder, manufacturing liquid batteries, hydraulic presses, and printing type.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Answer: copper-nickel alloy (metal coins), and lead alloy (solder and batteries)",
+        "label": "Answer"
+      },
+      "sectionGroup": 8,
+      "sectionId": "q8",
+      "sectionNavLabel": "8️⃣ Q8"
+    },
+    {
+      "type": "example",
+      "number": 18,
+      "problemHtml": "<p>State the general properties of metals that make them important industrially.</p>",
+      "label": "Q9",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1) High density and melting point. 2) Malleability and ductility. 3) Thermal conductivity. 4) Electrical conductivity.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Answer: high density and melting point, malleability and ductility, thermal conductivity, electrical conductivity",
+        "label": "Answer"
+      },
+      "sectionGroup": 9,
+      "sectionId": "q9",
+      "sectionNavLabel": "9️⃣ Q9"
+    },
+    {
+      "type": "example",
+      "number": 19,
+      "problemHtml": "<p>Which metals are used more than others?</p>",
+      "label": "Q10",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Among the most important metals currently used in industry: sodium, iron, aluminum, copper, and manganese.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Answer: sodium, iron, aluminum, copper, and manganese",
+        "label": "Answer"
+      },
+      "sectionGroup": 10,
+      "sectionId": "q10",
+      "sectionNavLabel": "🔟 Q10"
+    },
+    {
+      "type": "example",
+      "number": 20,
+      "problemHtml": "<p>Can metals be recycled? Name the stages involved.</p>",
+      "label": "Q11",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Yes, metals can be recycled. The stages: ore from the ground → mining → ore concentration → extraction by smelting or electrolysis → impure metal → purification → pure metal → manufacturing products → scrap metal → recycling (the scrap metal returns to the concentration or extraction stages again), which saves energy and natural resources.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Yes; the cycle: ore → mining → concentration → extraction → impure metal → purification → pure metal → manufacturing → scrap metal → recycling",
+        "label": "Answer"
+      },
+      "sectionGroup": 11,
+      "sectionId": "q11",
+      "sectionNavLabel": "1️⃣1️⃣ Q11"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Comprehensive Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "The one property shared by all metals is that they:",
+        "options": [
+          "Are liquid at room temperature",
+          "Are colorless",
+          "Form positive ions",
+          "Do not conduct electricity"
+        ],
+        "explain": "The one property shared by all metals is that they form positive ions, even though there are exceptions in most other metallic properties."
+      },
+      {
+        "correct": 1,
+        "question": "The less reactive metals, such as gold, silver, and copper, were discovered early because they:",
+        "options": [
+          "Are inexpensive",
+          "Occur free in nature",
+          "Dissolve easily in water",
+          "Are magnetic"
+        ],
+        "explain": "The less reactive metals occur free in nature, unlike the more reactive metals, which occur combined in compounds."
+      },
+      {
+        "correct": 0,
+        "question": "Bauxite ore is used to extract:",
+        "options": [
+          "Aluminum",
+          "Iron",
+          "Copper",
+          "Gold"
+        ],
+        "explain": "Bauxite is the primary ore for extracting aluminum, after purifying it by dissolving it in sodium hydroxide."
+      },
+      {
+        "correct": 3,
+        "question": "Single-phase alloys are made up of grains that are:",
+        "options": [
+          "Gaseous only",
+          "Completely different and do not mix",
+          "Always liquid",
+          "Similar in composition, with one metal dissolving into another"
+        ],
+        "explain": "Single-phase alloys are made up of grains with a similar composition, in which one metal dissolves into another metal, such as the copper-nickel alloy."
+      },
+      {
+        "correct": 1,
+        "question": "Solder alloy (lead and tin) is made by the:",
+        "options": [
+          "Direct method",
+          "One-stage indirect method",
+          "Two-stage indirect method",
+          "Electrolysis method"
+        ],
+        "explain": "Solder alloy is made by the one-stage indirect method: lead is melted first, then tin is dissolved into it."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Chapter Eight Summary",
+    "items": [
+      "Metals are found mainly in groups one and two and the transition metals, distinguished by high density and melting points, malleability and ductility, and thermal and electrical conductivity.",
+      "The activity series ranks metals from most reactive to least, and determines the appropriate extraction method (electrolysis, smelting with coke, or simple heating).",
+      "Low-grade ores must be concentrated before extraction, as in purifying bauxite to extract aluminum and froth flotation to concentrate copper ore.",
+      "An alloy is a mixture of a base metal and other elements, discovered by humans since prehistoric times, and the first alloy made was bronze.",
+      "Alloys are classified into single-phase and multi-phase, and made by the direct method or the indirect method (one-stage or two-stage).",
+      "Alloys are used in wide-ranging industrial, medical, and construction fields, including alloys used in the Iraqi setting such as metal coins, lead alloy, and stainless steel."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Comprehensive Chapter Eight Mind Map",
+    "ariaLabel": "Comprehensive mind map for Chapter Eight: Metals and Alloys",
+    "viewBox": "0 0 900 620",
+    "center": {
+      "cx": 450.0,
+      "cy": 310.0,
+      "r": 72.0,
+      "lines": [
+        "Metals and",
+        "Alloys"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 450.0,
+        "cy": 80.0,
+        "r": 56.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Metals"
+        ]
+      },
+      {
+        "cx": 598.0,
+        "cy": 134.0,
+        "r": 56.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Extraction",
+          "of Metals"
+        ]
+      },
+      {
+        "cx": 676.0,
+        "cy": 270.0,
+        "r": 56.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Purification",
+          "of Metals"
+        ]
+      },
+      {
+        "cx": 649.0,
+        "cy": 425.0,
+        "r": 56.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Alloys"
+        ]
+      },
+      {
+        "cx": 529.0,
+        "cy": 526.0,
+        "r": 56.0,
+        "color": "#7c6fee",
+        "lines": [
+          "Types of",
+          "Alloys"
+        ]
+      },
+      {
+        "cx": 371.0,
+        "cy": 526.0,
+        "r": 56.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Manufacturing",
+          "Methods"
+        ]
+      },
+      {
+        "cx": 251.0,
+        "cy": 425.0,
+        "r": 56.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Uses of",
+          "Alloys"
+        ]
+      },
+      {
+        "cx": 224.0,
+        "cy": 270.0,
+        "r": 56.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Iraqi",
+          "Alloys"
+        ]
+      }
+    ]
+  }
+}
