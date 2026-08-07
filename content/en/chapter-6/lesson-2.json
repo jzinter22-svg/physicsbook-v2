@@ -10,7 +10,7 @@
   },
   "hero": {
     "eyebrow": "📖 Lesson 2 of 10 · 6-2",
-    "title": "Properties of Laser خصائص أشعة الليزر",
+    "title": "Properties of Laser",
     "lead": "A laser beam has four fundamental properties that set it apart from every ordinary light source: monochromaticity, directionality, coherence, and brightness."
   },
   "objectivesHeading": "🎯 Lesson Objectives",
@@ -22,7 +22,7 @@
   "content": [
     {
       "type": "explanation",
-      "heading": "💡 6-2 Properties of Laser خصائص أشعة الليزر",
+      "heading": "💡 6-2 Properties of Laser",
       "html": "A laser beam has the following fundamental properties:",
       "sectionGroup": 0,
       "sectionId": "intro",

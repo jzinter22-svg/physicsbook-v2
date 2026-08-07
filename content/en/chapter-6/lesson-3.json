@@ -10,7 +10,7 @@
   },
   "hero": {
     "eyebrow": "📖 Lesson 3 of 10 · 6-3",
-    "title": "The Foundation of The Laser Working أسس عمل الليزر",
+    "title": "The Foundation of The Laser Working",
     "lead": "Three physical processes are of great importance to the physical foundations of laser generation: induced absorption, spontaneous emission, and stimulated emission — leading up to the concept of population inversion, which makes laser action possible."
   },
   "objectivesHeading": "🎯 Lesson Objectives",
@@ -22,7 +22,7 @@
   "content": [
     {
       "type": "explanation",
-      "heading": "💡 6-3 The Foundation of The Laser Working أسس عمل الليزر",
+      "heading": "💡 6-3 The Foundation of The Laser Working",
       "html": "There are three processes of great importance to the physical foundations of laser generation: (induced absorption, spontaneous emission, stimulated emission).",
       "sectionGroup": 0,
       "sectionId": "intro",

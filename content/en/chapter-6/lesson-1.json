@@ -10,7 +10,7 @@
   },
   "hero": {
     "eyebrow": "📖 Lesson 1 of 10 · 6-1",
-    "title": "Laser and Maser الليزر والميزر",
+    "title": "Laser and Maser",
     "lead": "Laser technology is one of the advanced sciences that has entered a great many applications and scientific research fields, appearing as a key element in CD/DVD drives, the electronics industry, precise distance measurement, metal cutting and welding equipment, and dental instruments, among others."
   },
   "objectivesHeading": "🎯 Lesson Objectives",
@@ -22,7 +22,7 @@
   "content": [
     {
       "type": "explanation",
-      "heading": "💡 6-1 Laser and Maser الليزر والميزر",
+      "heading": "💡 6-1 Laser and Maser",
       "html": "Laser technology is one of the advanced sciences that has entered a great many applications and scientific research fields; we find it as a key element in CD/DVD drives, in the electronics industry, and in precise distance measurement — especially of space objects — as well as in metal cutting and welding equipment, dental instruments, and other uses that we will explore in the laser-applications section. But what exactly is a laser, and what sets it apart from other light sources?",
       "sectionGroup": 0,
       "sectionId": "intro",

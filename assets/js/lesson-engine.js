@@ -407,6 +407,17 @@
       }).join("");
     }
 
+    if(data.heroWords){
+      var heroTexts = document.querySelectorAll(".hero-visual svg text");
+      data.heroWords.forEach(function(w, i){ if(heroTexts[i] != null) heroTexts[i].textContent = w; });
+    }
+
+    var lessonsGrid = document.querySelector(".grid.grid-3");
+    if(lessonsGrid && lessonsGrid.parentElement){
+      var lessonsHeadEl = lessonsGrid.parentElement.querySelector("h2");
+      if(lessonsHeadEl && data.lessonsHeading) lessonsHeadEl.textContent = data.lessonsHeading;
+    }
+
     var lessonCards = document.querySelectorAll(".lesson-card");
     data.lessons.forEach(function(l, i){
       var card = lessonCards[i];

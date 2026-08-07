@@ -10,7 +10,7 @@
   },
   "hero": {
     "eyebrow": "📖 Lesson 4 of 10 · 6-4",
-    "title": "Constituents of Laser مكونات أجهزة الليزر",
+    "title": "Constituents of Laser",
     "lead": "Three fundamental components must be present in every laser device: the active medium, in which population inversion is achieved; the resonator, which amplifies light through repeated reflections; and the pumping technique, which supplies the active medium with the energy needed for excitation."
   },
   "objectivesHeading": "🎯 Lesson Objectives",
@@ -22,7 +22,7 @@
   "content": [
     {
       "type": "list",
-      "heading": "💡 6-4 Constituents of Laser مكونات أجهزة الليزر",
+      "heading": "💡 6-4 Constituents of Laser",
       "items": [
         "The active medium",
         "The resonator",

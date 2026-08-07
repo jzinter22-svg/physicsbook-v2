@@ -10,7 +10,7 @@
   },
   "hero": {
     "eyebrow": "📖 Lesson 5 of 10 · 6-5",
-    "title": "Laser Levels System منظومات مستويات الليزر",
+    "title": "Laser Levels System",
     "lead": "Laser-generation systems are classified, according to the number of energy levels used, into a three-level system and a four-level system, which differ in the amount of pumping energy needed to achieve population inversion."
   },
   "objectivesHeading": "🎯 Lesson Objectives",
@@ -22,7 +22,7 @@
   "content": [
     {
       "type": "list",
-      "heading": "💡 6-5 Laser Levels System منظومات مستويات الليزر",
+      "heading": "💡 6-5 Laser Levels System",
       "items": [
         "The three-level system three-level system",
         "The four-level system four-level system"
