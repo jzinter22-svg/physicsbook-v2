@@ -99,7 +99,11 @@
       "html": "يحصل عندما تكون الموجتان بالطور نفسه والسعة نفسها عند نقطة معينة، أو أن يكون فرق المسار البصري بينهما صفرًا أو أعدادًا صحيحة من الطول الموجي:",
       "sectionGroup": 4,
       "sectionId": null,
-      "sectionNavLabel": null
+      "sectionNavLabel": null,
+      "extraHtml": [
+        "\\( \\Delta\\ell = 0,\\ \\lambda,\\ 2\\lambda,\\ 3\\lambda,\\ \\dots \\)",
+        "وتكون الطاقة الناتجة عن التداخل مساوية لمجموع طاقتَي الموجتين المتداخلتين، أي حدوث تقوية في طاقة الموجة."
+      ]
     },
     {
       "type": "definition",
@@ -107,7 +111,10 @@
       "html": "يحصل عندما تكون الموجتان بطورين متعاكسين وسعتين متساويتين، وأن يكون فرق المسار البصري بينهما يساوي أعدادًا فردية من نصف الطول الموجي:",
       "sectionGroup": 5,
       "sectionId": null,
-      "sectionNavLabel": null
+      "sectionNavLabel": null,
+      "extraHtml": [
+        "\\( \\Delta\\ell = \\tfrac12\\lambda,\\ \\tfrac32\\lambda,\\ \\dots \\)"
+      ]
     },
     {
       "type": "callout",

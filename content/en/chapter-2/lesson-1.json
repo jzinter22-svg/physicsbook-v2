@@ -99,7 +99,11 @@
       "html": "This occurs when the two waves are in the same phase and have the same amplitude at a given point, or when the optical path difference between them is zero or a whole number of wavelengths:",
       "sectionGroup": 4,
       "sectionId": null,
-      "sectionNavLabel": null
+      "sectionNavLabel": null,
+      "extraHtml": [
+        "\\( \\Delta\\ell = 0,\\ \\lambda,\\ 2\\lambda,\\ 3\\lambda,\\ \\dots \\)",
+        "The energy resulting from the interference equals the sum of the energies of the two interfering waves — that is, a strengthening of the wave's energy occurs."
+      ]
     },
     {
       "type": "definition",
@@ -107,7 +111,10 @@
       "html": "This occurs when the two waves are in opposite phases with equal amplitudes, and the optical path difference between them equals an odd number of half-wavelengths:",
       "sectionGroup": 5,
       "sectionId": null,
-      "sectionNavLabel": null
+      "sectionNavLabel": null,
+      "extraHtml": [
+        "\\( \\Delta\\ell = \\tfrac12\\lambda,\\ \\tfrac32\\lambda,\\ \\dots \\)"
+      ]
     },
     {
       "type": "callout",

@@ -49,10 +49,13 @@
     {
       "type": "definition",
       "label": "📌 2. Directionality Directionality",
-      "html": "Laser beams travel great distances as nearly parallel bundles with very little divergence, whereas the light from an ordinary lamp or the sun spreads out randomly in every direction. See Figure 6-3. If a sufficiently intense laser beam were aimed at the Moon from a distance of roughly 384,000 km from Earth's surface, it would illuminate a spot on the Moon's surface no more than about 1 km across, whereas if ordinary light were sent — hypothetically — and reached the Moon's surface, the illuminated spot's diameter would reach roughly 4,376 km.",
+      "html": "Laser beams travel great distances as nearly parallel bundles with very little divergence, whereas the light from an ordinary lamp or the sun spreads out randomly in every direction. See Figure 6-3.",
       "sectionGroup": 3,
       "sectionId": null,
-      "sectionNavLabel": null
+      "sectionNavLabel": null,
+      "extraHtml": [
+        "If a sufficiently intense laser beam were aimed at the Moon from a distance of roughly 384,000 km from Earth's surface, it would illuminate a spot on the Moon's surface no more than about 1 km across, whereas if ordinary light were sent — hypothetically — and reached the Moon's surface, the illuminated spot's diameter would reach roughly 4,376 km."
+      ]
     },
     {
       "type": "definition",

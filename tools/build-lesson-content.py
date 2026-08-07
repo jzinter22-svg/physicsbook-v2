@@ -522,7 +522,15 @@ def extract_lesson(path, lesson_num, chapter_num, total_lessons):
 
             defbox = sec.select_one(".def-box")
             if defbox:
-                intro_p = defbox.select_one("p")
+                # A def-box can hold several direct-child <p> tags (e.g. a
+                # multi-paragraph explanation before a figure reference) —
+                # select_one("p") only ever grabbed the first, silently
+                # dropping every paragraph after it. Capture them all; the
+                # first becomes "html" (rendered exactly as before) and any
+                # remaining ones become "extraHtml" (rendered as additional
+                # paragraphs by renderDefBox).
+                intro_ps = defbox.find_all("p", recursive=False)
+                intro_p = intro_ps[0] if intro_ps else None
                 block = {
                     "type": classify_defbox(defbox),
                     # inner_html (not text()) to preserve inline tags like <sub>c</sub>
@@ -541,6 +549,8 @@ def extract_lesson(path, lesson_num, chapter_num, total_lessons):
                         "" if defbox.select_one("ol, ul") else inner_html(defbox)
                     ),
                 }
+                if len(intro_ps) > 1:
+                    block["extraHtml"] = [inner_html(p) for p in intro_ps[1:]]
                 # An enumeration def-box's intro <p> is sometimes followed by
                 # its own <ol>/<ul> of items (e.g. "🔢 تعداد — منتجات مصنّعة من
                 # النفط الخام" listing 10 products) — select_one("p") above

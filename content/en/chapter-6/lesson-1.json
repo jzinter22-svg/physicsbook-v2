@@ -34,7 +34,11 @@
       "html": "The name Laser is an acronym formed from the initial letters of the words in the phrase:",
       "sectionGroup": 1,
       "sectionId": null,
-      "sectionNavLabel": null
+      "sectionNavLabel": null,
+      "extraHtml": [
+        "Light Amplification by Stimulated Emission of Radiation",
+        "This means the amplification of light by the stimulated emission of radiation. The scientist Albert Einstein laid the theoretical foundation for stimulated emission of radiation in 1917, and the first working device was built in 1960 by the scientist T.H. Maiman using a ruby crystal (the ruby laser)."
+      ]
     },
     {
       "type": "diagram",
@@ -59,7 +63,10 @@
       "html": "Microwave Amplification by Stimulated Emission of Radiation",
       "sectionGroup": 4,
       "sectionId": null,
-      "sectionNavLabel": null
+      "sectionNavLabel": null,
+      "extraHtml": [
+        "This means the amplification of microwaves by the stimulated emission of radiation."
+      ]
     },
     {
       "type": "callout",

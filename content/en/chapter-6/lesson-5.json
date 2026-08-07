@@ -35,10 +35,13 @@
     {
       "type": "definition",
       "label": "📌 1- The Three-Level System",
-      "html": "In this system there are three energy levels: the ground energy level (\\(E_1\\)), the intermediate energy level (\\(E_2\\)) — which is the metastable level — and the higher energy level (\\(E_3\\)) (excited level). See Figure 6-14. When most atoms are in the ground energy level \\(E_1\\), the active medium is in a stable state; but when a suitable pumping technique is used, it will excite the active medium and move atoms from the ground level to the higher level \\(E_3\\). These atoms quickly drop from level \\(E_3\\) to level \\(E_2\\) (since the lifetime of level \\(E_3\\) is very short) — that is, the atoms' residence time in level \\(E_2\\) is shorter than the lifetime of level \\(E_2\\). Atoms thus accumulate in level \\(E_2\\) in numbers greater than in level \\(E_1\\), achieving population inversion between these two levels; the transition from level \\(E_2\\) to level \\(E_1\\) then generates the laser light.",
+      "html": "In this system there are three energy levels: the ground energy level (\\(E_1\\)), the intermediate energy level (\\(E_2\\)) — which is the metastable level — and the higher energy level (\\(E_3\\)) (excited level). See Figure 6-14.",
       "sectionGroup": 1,
       "sectionId": "threelevel",
-      "sectionNavLabel": "1️⃣ Three-Level"
+      "sectionNavLabel": "1️⃣ Three-Level",
+      "extraHtml": [
+        "When most atoms are in the ground energy level \\(E_1\\), the active medium is in a stable state; but when a suitable pumping technique is used, it will excite the active medium and move atoms from the ground level to the higher level \\(E_3\\). These atoms quickly drop from level \\(E_3\\) to level \\(E_2\\) (since the lifetime of level \\(E_3\\) is very short) — that is, the atoms' residence time in level \\(E_2\\) is shorter than the lifetime of level \\(E_2\\). Atoms thus accumulate in level \\(E_2\\) in numbers greater than in level \\(E_1\\), achieving population inversion between these two levels; the transition from level \\(E_2\\) to level \\(E_1\\) then generates the laser light."
+      ]
     },
     {
       "type": "diagram",
@@ -53,10 +56,14 @@
     {
       "type": "definition",
       "label": "📌 2- The Four-Level System",
-      "html": "This system involves four energy levels (\\(E_1, E_2, E_3, E_4\\)). See Figure 6-15. Atoms of the system are pumped from the ground level (\\(E_1\\)) to the energy level (\\(E_4\\)), then the atoms rapidly decay from level (\\(E_4\\)) to the metastable level (\\(E_3\\)). Population inversion is then achieved between energy level (\\(E_3\\)) and energy level (\\(E_2\\)), generating the laser beam, even if the number of atoms in level (\\(E_3\\)) is small; because level (\\(E_2\\)) is nearly empty due to the rapid decay of atoms from it to level (\\(E_1\\)). This means that this system requires less pumping energy to achieve population inversion compared with the three-level system.",
+      "html": "This system involves four energy levels (\\(E_1, E_2, E_3, E_4\\)). See Figure 6-15.",
       "sectionGroup": 3,
       "sectionId": "fourlevel",
-      "sectionNavLabel": "2️⃣ Four-Level"
+      "sectionNavLabel": "2️⃣ Four-Level",
+      "extraHtml": [
+        "Atoms of the system are pumped from the ground level (\\(E_1\\)) to the energy level (\\(E_4\\)), then the atoms rapidly decay from level (\\(E_4\\)) to the metastable level (\\(E_3\\)). Population inversion is then achieved between energy level (\\(E_3\\)) and energy level (\\(E_2\\)), generating the laser beam, even if the number of atoms in level (\\(E_3\\)) is small; because level (\\(E_2\\)) is nearly empty due to the rapid decay of atoms from it to level (\\(E_1\\)).",
+        "This means that this system requires less pumping energy to achieve population inversion compared with the three-level system."
+      ]
     },
     {
       "type": "diagram",

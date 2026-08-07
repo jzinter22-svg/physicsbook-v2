@@ -1,0 +1,387 @@
+{
+  "lessonNumber": 6,
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "Lesson 6: Types of Laser — Chapter Six",
+    "description": "6-6 Types of laser: solid-state, gas, excimer, liquid, semiconductor, and chemical lasers.",
+    "breadcrumbChapter": "Chapter 6",
+    "breadcrumbLesson": "Types of Laser",
+    "footer": "Chapter Six: Laser and Plasma — Lesson 6: Types of Laser"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 6 of 10 · 6-6",
+    "title": "Types of Laser",
+    "lead": "Laser is classified according to the type of its active medium into solid-state, gas, liquid, semiconductor, and chemical lasers, each with its own structure, advantages, and uses."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Classifies lasers according to the type of active medium and gives an example of each type.",
+    "Explains the structure of the ruby laser and the Nd:YAG laser and their working mechanism.",
+    "Explains the structure of the helium-neon laser and the carbon dioxide laser.",
+    "Explains the structure of the semiconductor laser and its mechanism for generating population inversion."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 6-6 Types of Laser",
+      "html": "Laser is classified according to the type of its active medium into various types, examples of which include:",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Classifying Laser by Active Medium",
+      "html": "",
+      "listItems": [
+        "1- Solid-State Laser: such as the Ruby laser and the neodymium laser.",
+        "2- Gas Laser: such as the helium-neon laser and the carbon dioxide laser.",
+        "3- Excimer Laser: lasers obtained using noble gases such as argon, krypton, and xenon; the resulting laser is one of the important and useful types, with wavelengths in the ultraviolet range.",
+        "4- Liquid-State Laser: such as the organic dye laser, in which the active medium is a liquid solution of a specific organic dye compound such as Rhodamine 6G dye, producing a laser whose emitted wavelength can be controlled.",
+        "5- Semiconductor Laser: such as gallium arsenide.",
+        "6- Chemical Laser: a laser produced through a chemical reaction, such as the deuterium fluoride laser."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "6-6-1 Solid-State Lasers",
+      "leadHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "solidlaser",
+      "sectionNavLabel": "1️⃣ Solid-State Lasers"
+    },
+    {
+      "type": "definition",
+      "label": "📌 The Ruby Laser",
+      "html": "Ruby was used as the active medium in the first laser device in 1960. Ruby is a crystal found in nature with a light red color, made up of aluminum oxide (\\(\\text{Al}_2\\text{O}_3\\)) doped with triply-ionized chromium ions (\\(\\text{Cr}^{+3}\\)), which give the crystal its light red color. This laser device operates on the three-level system, and pumping is done by means of a flash lamp — see Figure 6-18 and Figure 6-19.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 6-18 and 6-19: the ruby laser\" role=\"img\" viewbox=\"0 0 300 170\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<path d=\"M60,50 Q150,20 240,50 L240,90 Q150,120 60,90 Z\" fill=\"none\" stroke=\"var(--accent-orange)\" stroke-dasharray=\"4 3\" stroke-width=\"2\"></path>\n<text fill=\"var(--accent-orange)\" font-size=\"9.5\" text-anchor=\"middle\" x=\"150\" y=\"35\">Flash lamp (optical pumping)</text>\n<rect fill=\"var(--accent-pink)\" height=\"16\" opacity=\".7\" width=\"100\" x=\"100\" y=\"62\"></rect>\n<text fill=\"var(--accent-pink)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"150\" y=\"105\">Ruby crystal</text>\n<rect fill=\"var(--accent-purple)\" height=\"20\" width=\"14\" x=\"30\" y=\"60\"></rect>\n<rect fill=\"var(--accent-purple)\" height=\"20\" opacity=\".5\" width=\"14\" x=\"256\" y=\"60\"></rect>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"2\" x1=\"270\" x2=\"295\" y1=\"70\" y2=\"70\"></line>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"150\" y=\"145\">Al₂O₃ doped with Cr⁺³ ions — three-level system, optical pumping</text>\n</g>\n</svg>",
+      "caption": "Figure 6-18/6-19: The ruby laser — an Al₂O₃ crystal doped with Cr⁺³, between two mirrors, pumped by a flash lamp",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 The Nd:YAG Laser",
+      "html": "The laser whose active medium is made of yttrium aluminum garnet, abbreviated YAG (\\(\\text{Y}_3\\text{Al}_5\\text{O}_{12}\\)), doped with a specific proportion of neodymium ions (\\(\\text{Nd}^{+3}\\)), and it operates on the four-level system.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "6-6-2 Gas Lasers",
+      "leadHtml": null,
+      "sectionGroup": 6,
+      "sectionId": "gaslaser",
+      "sectionNavLabel": "2️⃣ Gas Lasers"
+    },
+    {
+      "type": "definition",
+      "label": "📌 The Helium-Neon Laser (He-Ne Laser)",
+      "html": "The laser discovered at the end of 1960 by the scientist Javan. Its active medium is made of a specific-ratio mixture of neon gas (Ne) and helium gas (He) placed in a glass tube under a pressure of (8-12) torr (torr = 1mm Hg) — see Figure 6-20. Electrical discharge is used to excite the active medium by applying a high voltage of (2-4) kV across the two ends of the glass tube — see Figure 6-21.",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 6-20 and 6-21: the helium-neon laser\" role=\"img\" viewbox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"rgba(63,169,245,.18)\" height=\"35\" rx=\"16\" stroke=\"var(--accent-blue)\" stroke-width=\"1.5\" width=\"200\" x=\"50\" y=\"55\"></rect>\n<text fill=\"var(--accent-blue)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"150\" y=\"76\">He + Ne gas mixture (8-12 torr)</text>\n<rect fill=\"var(--accent-purple)\" height=\"41\" width=\"14\" x=\"35\" y=\"52\"></rect>\n<rect fill=\"var(--accent-purple)\" height=\"41\" opacity=\".5\" width=\"14\" x=\"251\" y=\"52\"></rect>\n<line stroke=\"var(--accent-orange)\" stroke-width=\"3\" x1=\"265\" x2=\"290\" y1=\"72\" y2=\"72\"></line>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"1.5\" x1=\"60\" x2=\"60\" y1=\"105\" y2=\"120\"></line>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"1.5\" x1=\"240\" x2=\"240\" y1=\"105\" y2=\"120\"></line>\n<line stroke=\"var(--text-secondary)\" stroke-width=\"1.5\" x1=\"60\" x2=\"240\" y1=\"120\" y2=\"120\"></line>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"150\" y=\"135\">Electrical discharge source (2-4 kV)</text>\n</g>\n</svg>",
+      "caption": "Figure 6-20/6-21: The helium-neon laser — a glass tube with a He/Ne mixture excited by a high-voltage electrical discharge",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 The Carbon Dioxide Laser (CO₂ Laser)",
+      "html": "One of the most important gas lasers because of its high efficiency, which reaches up to (30%), and its high power. Its active medium is made of a specific-ratio mixture of carbon dioxide gas (\\(\\text{CO}_2\\)), nitrogen gas (\\(\\text{N}_2\\)), and helium gas (He), where the added gases help increase its power and efficiency, and electrical-discharge technique is used to pump this laser.",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 6-6-3 The Semiconductor Laser",
+      "html": "The laser whose active medium is made of donor (n-type) and acceptor (p-type) semiconductor materials, where the conduction band represents the upper laser level and the valence band represents the lower laser level — see Figure 6-22.",
+      "extraHtml": [
+        "Pumping is carried out through an electrical current that drives electrons and holes between these two bands, and laser generation is tied to population inversion, which increases as the current magnitude increases; population inversion is achieved when the electrons in the conduction band increase and the holes in the valence band increase — see Figure 6-23.",
+        "Gallium arsenide (GaAs) is one of the semiconductor materials used as the base for manufacturing semiconductor lasers."
+      ],
+      "sectionGroup": 10,
+      "sectionId": "semiconductorlaser",
+      "sectionNavLabel": "3️⃣ The Semiconductor Laser"
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 6-22: components of the semiconductor laser\" role=\"img\" viewbox=\"0 0 280 150\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"var(--text-secondary)\" height=\"18\" opacity=\".5\" width=\"160\" x=\"60\" y=\"20\"></rect>\n<text fill=\"var(--text-secondary)\" font-size=\"8.5\" text-anchor=\"middle\" x=\"140\" y=\"15\">Top layer</text>\n<rect fill=\"var(--accent-blue)\" height=\"18\" opacity=\".3\" width=\"160\" x=\"60\" y=\"38\"></rect>\n<text fill=\"var(--accent-blue)\" font-size=\"8\" text-anchor=\"middle\" x=\"235\" y=\"50\">n-type</text>\n<rect fill=\"var(--accent-pink)\" height=\"16\" opacity=\".55\" width=\"160\" x=\"60\" y=\"56\"></rect>\n<text fill=\"#fff\" font-size=\"9\" font-weight=\"700\" text-anchor=\"middle\" x=\"140\" y=\"67\">Active medium</text>\n<rect fill=\"var(--accent-orange)\" height=\"18\" opacity=\".3\" width=\"160\" x=\"60\" y=\"72\"></rect>\n<text fill=\"var(--accent-orange)\" font-size=\"8\" text-anchor=\"middle\" x=\"235\" y=\"84\">p-type</text>\n<rect fill=\"var(--text-secondary)\" height=\"18\" opacity=\".5\" width=\"160\" x=\"60\" y=\"90\"></rect>\n<line stroke=\"var(--accent-pink)\" stroke-width=\"3\" x1=\"140\" x2=\"140\" y1=\"56\" y2=\"30\"></line>\n<polygon fill=\"var(--accent-pink)\" points=\"134,30 140,15 146,30\"></polygon>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"140\" y=\"130\">GaAs — active-medium region between the n and p layers</text>\n</g>\n</svg>",
+      "caption": "Figure 6-22/6-23: Components of the active medium in a semiconductor laser — an n-type layer and a p-type layer sandwiching the active medium",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": null,
+      "svgAriaLabel": "",
+      "svgViewBox": null,
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: A Guide to Laser Types",
+      "descriptionHtml": "Choose a type of laser to display an information card about its active medium and characteristics.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": "flex-wrap:wrap",
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": null,
+          "html": "Ruby",
+          "class": "neu-btn primary",
+          "data": {
+            "data-laser": "ruby"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "Nd:YAG",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "ndyag"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "Helium-Neon",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "hene"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "CO₂",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "co2"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "Excimer",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "excimer"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "Dye",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "dye"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "Semiconductor",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "semi"
+          },
+          "style": null
+        },
+        {
+          "id": null,
+          "html": "Chemical",
+          "class": "neu-btn",
+          "data": {
+            "data-laser": "chemical"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "<span class=\"def-label\" id=\"laserInfoTitle\"></span>\n<p id=\"laserInfoBody\" style=\"margin:.3rem 0\"></p>",
+          "id": "laserInfoCard",
+          "wrapperClass": "def-box"
+        }
+      ],
+      "trailingHtml": null,
+      "trailingId": null,
+      "sectionGroup": 12,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "rubyTitle": "📌 The Ruby Laser (Solid-State)",
+        "rubyBody": "Active medium: an Al₂O₃ crystal doped with Cr⁺³ ions (light red color). Three-level system. Pumping technique: optical (flash lamp). The first working laser device, 1960.",
+        "ndyagTitle": "📌 The Nd:YAG Laser (Solid-State)",
+        "ndyagBody": "Active medium: yttrium aluminum garnet (YAG = Y₃Al₅O₁₂) doped with Nd⁺³ ions. Four-level system.",
+        "heneTitle": "📌 The Helium-Neon Laser (Gas)",
+        "heneBody": "Active medium: a He+Ne gas mixture in a glass tube at (8-12) torr pressure. Pumping technique: electrical discharge at (2-4) kV. Discovered in 1960 by Javan.",
+        "co2Title": "📌 The CO₂ Laser (Gas)",
+        "co2Body": "Active medium: a mixture of CO₂ + N₂ + He. High efficiency reaching 30% and high power. Pumping technique: electrical discharge. One of the most important lasers used in medical surgery.",
+        "excimerTitle": "📌 The Excimer Laser",
+        "excimerBody": "Obtained using noble gases such as argon, krypton, and xenon. Wavelengths in the ultraviolet range.",
+        "dyeTitle": "📌 The Dye Laser (Liquid State)",
+        "dyeBody": "Active medium: solutions of organic dye compounds such as Rhodamine 6G dye. Its emitted wavelength can be controlled.",
+        "semiTitle": "📌 The Semiconductor Laser",
+        "semiBody": "Active medium: donor (n-type) and acceptor (p-type) semiconductor materials, such as GaAs. Conduction band = upper level, valence band = lower level. Pumping technique: electrical current.",
+        "chemicalTitle": "📌 The Chemical Laser",
+        "chemicalBody": "Produced through a chemical reaction, such as the deuterium fluoride laser."
+      }
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "The ruby laser operates on a system of:",
+        "options": [
+          "Two levels",
+          "Four levels",
+          "Three levels",
+          "Five levels"
+        ],
+        "explain": "The ruby laser operates on the three-level system, and pumping is done by means of a flash lamp."
+      },
+      {
+        "correct": 1,
+        "question": "The active medium in the helium-neon laser is placed in:",
+        "options": [
+          "A solid crystal",
+          "A glass tube under low pressure",
+          "A liquid solution",
+          "A semiconductor chip"
+        ],
+        "explain": "A gas mixture of helium and neon is placed in a glass tube under a pressure of (8-12) torr, and excited by electrical discharge."
+      },
+      {
+        "correct": 3,
+        "question": "The efficiency of the carbon dioxide laser reaches up to:",
+        "options": [
+          "5%",
+          "10%",
+          "50%",
+          "30%"
+        ],
+        "explain": "The carbon dioxide laser is one of the most important gas lasers because of its high efficiency, which reaches up to 30%."
+      },
+      {
+        "correct": 0,
+        "question": "In the semiconductor laser, the upper laser level is represented by:",
+        "options": [
+          "The conduction band",
+          "The valence band",
+          "The forbidden gap",
+          "The atomic nucleus"
+        ],
+        "explain": "The conduction band represents the upper laser level, and the valence band represents the lower laser level, in the semiconductor laser."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Laser is classified by its active medium into: solid-state (ruby, Nd:YAG), gas (He-Ne, CO₂), excimer, liquid (dye), semiconductor (GaAs), and chemical (deuterium fluoride).",
+      "Ruby laser: Al₂O₃ doped with Cr⁺³, three-level system, optical pumping. Nd:YAG laser: four-level system.",
+      "Helium-neon laser: a gas mixture in a glass tube, electrical discharge. CO₂ laser: efficiency up to 30%, a CO₂+N₂+He mixture.",
+      "Semiconductor laser: the conduction band (n-type) is the upper level, the valence band (p-type) is the lower level, pumped by electrical current, example: GaAs."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of laser types",
+    "viewBox": "0 0 480 260",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Types of",
+        "Laser"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Solid",
+          "Ruby/YAG"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Gas",
+          "He-Ne/CO₂"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Semiconductor",
+          "GaAs"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Liquid/Chemical",
+          "Excimer"
+        ]
+      }
+    ]
+  }
+}

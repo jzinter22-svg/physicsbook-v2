@@ -34,7 +34,11 @@
       "html": "جاءت تسمية الليزر (Laser) من الأحرف الأولى للكلمات من الجملة:",
       "sectionGroup": 1,
       "sectionId": null,
-      "sectionNavLabel": null
+      "sectionNavLabel": null,
+      "extraHtml": [
+        "Light Amplification by Stimulated Emission of Radiation",
+        "وتعني (تضخيم الضوء بواسطة الانبعاث المحفز للإشعاع)، حيث وضع العالم البرت أينشتاين الأساس النظري لعملية الانبعاث المحفز للإشعاع عام 1917، وقد صُمّم أول جهاز في عام 1960 من قبل العالم (T.H. Maiman) باستعمال بلورة الياقوت (Ruby Laser)."
+      ]
     },
     {
       "type": "diagram",
@@ -59,7 +63,10 @@
       "html": "Microwave Amplification by Stimulated Emission of Radiation",
       "sectionGroup": 4,
       "sectionId": null,
-      "sectionNavLabel": null
+      "sectionNavLabel": null,
+      "extraHtml": [
+        "وتعني (تضخيم الموجات الدقيقة بواسطة الانبعاث المحفز للإشعاع)."
+      ]
     },
     {
       "type": "callout",

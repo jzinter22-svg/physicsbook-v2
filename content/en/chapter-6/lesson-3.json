@@ -68,7 +68,10 @@
       "html": "When an atom is in a higher energy level (the excited level), it always tends toward a stable state, so it returns spontaneously — after a short time interval called the lifetime of the excited level — to the ground level. This transition is accompanied by the emission of a photon whose energy equals the energy difference between the two levels: \\( hf = E_2 - E_1 \\) (this transition is called spontaneous emission). See Figure 6-7.",
       "sectionGroup": 5,
       "sectionId": "spontaneous",
-      "sectionNavLabel": "2️⃣ Spontaneous Emission"
+      "sectionNavLabel": "2️⃣ Spontaneous Emission",
+      "extraHtml": [
+        "The photons of this transition differ in phase and direction, so they are emitted in all directions, as with ordinary light. See Figure 6-8."
+      ]
     },
     {
       "type": "diagram",

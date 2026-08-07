@@ -78,7 +78,8 @@
         b.listItems.map(function(it){ return "<li>" + html(it) + "</li>"; }).join("") + "</" + tag + ">";
     }
     var intro = b.html ? '<p style="margin:.3rem 0">' + html(b.html) + "</p>" : "";
-    return '<div class="def-box"' + style + '><span class="def-label"' + labelStyle + ">" + html(b.label) + "</span>" + intro + list + "</div>";
+    var extra = (b.extraHtml || []).map(function(h){ return '<p style="margin:.3rem 0">' + html(h) + "</p>"; }).join("");
+    return '<div class="def-box"' + style + '><span class="def-label"' + labelStyle + ">" + html(b.label) + "</span>" + intro + extra + list + "</div>";
   }
 
   function renderBlock(b, ctx){
