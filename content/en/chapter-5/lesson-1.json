@@ -1,0 +1,386 @@
+{
+  "lessonNumber": 1,
+  "chapterNumber": 5,
+  "meta": {
+    "pageTitle": "Lesson 1: Semiconductor Materials (Overlapping Energy Bands) — Chapter Five",
+    "description": "5-1 Semiconductor materials: classifying materials into conductors, insulators, and semiconductors, and energy bands (valence band, conduction band, forbidden gap) in solids.",
+    "breadcrumbChapter": "Chapter 5",
+    "breadcrumbLesson": "Semiconductor Materials (Overlapping Energy Bands)",
+    "footer": "Chapter Five: Semiconductor Materials and Electronic Devices — Lesson 1: Semiconductor Materials (Overlapping Energy Bands)"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 1 of 7 · 5-1",
+    "title": "Semiconductor Materials (Overlapping Energy Bands)",
+    "lead": "As a foundation for studying the diode and the transistor, we classify materials by their ability to conduct electric current into conductors, insulators, and semiconductors, and learn about the energy bands that explain this classification: the valence band, the conduction band, and the forbidden gap between them."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Distinguishes between conducting, insulating, and semiconducting materials based on their ability to conduct electric current.",
+    "Explains the concept of energy bands in a solid material: the valence band, the conduction band, and the forbidden gap between them.",
+    "Compares the width of the forbidden gap in conducting, semiconducting, and insulating materials.",
+    "Explains the effect of rising temperature on the electrical conductivity of metals."
+  ],
+  "content": [
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "Did you know?",
+      "html": "Valence electrons are the electrons that occupy the outermost shell of the atom, farthest from the nucleus, lying in the valence shell. These electrons (the valence electrons) carry a large amount of energy and are weakly bound to the nucleus compared with other electrons. They are the electrons that take part in chemical reactions, and they are what determine the electronic properties of a material.",
+      "sectionGroup": 0,
+      "sectionId": "content",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Conductors",
+      "html": "These are materials that allow electric current to pass through them easily, because the valence electrons of their atoms are weakly bound to the nucleus and can readily break free of the atom, becoming free electrons. Examples include silver, gold, copper, and aluminum; these materials are notable for having identical atoms with a single electron that bonds to the nucleus and separates from it easily.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Insulators",
+      "html": "These are materials that do not allow electric (electron) current to pass through them under ordinary conditions, because their valence electrons are tightly bound to the nucleus and their electrical resistance is large.",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Semiconductors",
+      "html": "These are materials in which electric charges move with less freedom than in conductors but more freely than in insulators, and whose electrical resistance lies between that of a conductor and an insulator. Pure semiconducting materials contain an abundance of free electrons (valence electrons that have broken free of the nucleus), which give rise to an electronic current; electric current flows through them when a suitable voltage is applied across their ends, as a result of the free electrons moving in a single direction — since conducting materials have low resistance.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "⚡ 5-1-1 Energy Bands in Solid Materials",
+      "html": "In an isolated atom, electrons orbit the nucleus in defined orbits, and each orbit has a specific energy level.</p><p>In conducting materials, the overlap of energy levels with one another causes the electrons of any given atom to be influenced by the electrons of neighboring atoms within the same material.</p><p>As a result of this interaction between neighboring atoms in a single material, the allowed energy levels in the closely spaced outer shells split into what are called bands, each band consisting of closely spaced sub-levels of energy — forming what is known as energy bands.",
+      "sectionGroup": 4,
+      "sectionId": "bands",
+      "sectionNavLabel": "⚡ Energy Bands"
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Valence Band",
+      "html": "This band contains allowed energy levels that are low in energy and are completely or partially filled with electrons; it can never be empty of electrons. The valence electrons bound to the nucleus of neighboring atoms, being close to the nucleus, are bound to it by strong forces.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Conduction Band",
+      "html": "This band contains high energy levels, greater than those of the valence band, and its electrons are called conduction electrons; these electrons move easily and take part in the process of electrical conduction.",
+      "sectionGroup": 6,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 5-2 shows the energy bands in a semiconductor, an insulator, and a conductor\" role=\"img\" viewbox=\"0 0 480 210\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"none\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"20\" y=\"30\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"11\" text-anchor=\"middle\" x=\"80\" y=\"52\">Conduction band</text>\n<rect fill=\"none\" height=\"26\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"20\" y=\"75\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"middle\" x=\"80\" y=\"92\">( 1 eV )</text>\n<rect fill=\"none\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"20\" y=\"111\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"11\" text-anchor=\"middle\" x=\"80\" y=\"133\">Valence band</text>\n<text fill=\"var(--accent-blue)\" font-size=\"13\" font-weight=\"800\" text-anchor=\"middle\" x=\"80\" y=\"168\">Semiconductor</text>\n<rect fill=\"none\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"180\" y=\"20\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"11\" text-anchor=\"middle\" x=\"240\" y=\"42\">Conduction band</text>\n<rect fill=\"none\" height=\"46\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"180\" y=\"55\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"middle\" x=\"240\" y=\"82\">( 5 - 10 eV )</text>\n<rect fill=\"none\" height=\"45\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"120\" x=\"180\" y=\"101\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"11\" text-anchor=\"middle\" x=\"240\" y=\"127\">Valence band</text>\n<text fill=\"var(--accent-orange)\" font-size=\"13\" font-weight=\"800\" text-anchor=\"middle\" x=\"240\" y=\"168\">Insulator</text>\n<rect fill=\"none\" height=\"86\" stroke=\"var(--text-primary)\" stroke-width=\"2\" width=\"120\" x=\"340\" y=\"60\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"400\" y=\"98\">Conduction band</text>\n<line stroke=\"var(--text-primary)\" stroke-dasharray=\"3 3\" stroke-width=\"1\" x1=\"340\" x2=\"460\" y1=\"103\" y2=\"103\"></line>\n<text fill=\"var(--accent-green)\" font-size=\"13\" font-weight=\"800\" text-anchor=\"middle\" x=\"400\" y=\"168\">Conductor</text>\n</g>\n</svg>",
+      "caption": "Figure 5-2: Energy bands in a semiconductor (narrow gap), an insulator (wide gap), and a conductor (the two bands overlap with no gap)",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "5-1-2 Features and Characteristics of Energy Bands in Conducting, Semiconducting, and Insulating Materials",
+      "leadHtml": null,
+      "sectionGroup": 8,
+      "sectionId": "properties",
+      "sectionNavLabel": "📋 Energy Band Properties"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 List — Energy Bands in Conducting Materials",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- The valence band overlaps the conduction band.</li>\n<li>b- The forbidden energy gap between the valence and conduction bands vanishes, so the valence electrons are free to move throughout the conducting material, giving conducting materials a high electrical conductivity.</li>\n<li>c- The electrical conductivity of metals generally decreases as temperature rises, as shown in Figure (5-3).</li>\n</ol>",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Explanation — Why does the electrical conductivity of metals decrease as temperature rises?",
+      "html": "The electrical conductivity of metals generally decreases as temperature rises, because their electrical resistance increases due to the increased vibrational energy of the atoms or molecules; the increased atomic vibration impedes the motion of free electrons inside the conducting material, so its electrical resistance increases.",
+      "sectionGroup": 10,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 5-3 shows the electrical conductivity of metals\" role=\"img\" viewbox=\"-45 0 285 170\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"var(--surface)\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"15\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"36\">Conduction band</text>\n<rect fill=\"none\" height=\"26\" stroke=\"var(--text-primary)\" stroke-dasharray=\"4 3\" stroke-width=\"1\" width=\"150\" x=\"30\" y=\"50\"></rect>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"end\" x=\"15\" y=\"66\">Overlap</text>\n<rect fill=\"var(--surface)\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"76\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"97\">Valence band</text>\n<text fill=\"var(--accent-green)\" font-size=\"12\" font-weight=\"800\" text-anchor=\"middle\" x=\"105\" y=\"135\">Metal (conductor)</text>\n</g>\n</svg>",
+      "caption": "Figure 5-3: The valence and conduction bands overlap in metals — the basis for their high electrical conductivity",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "2- Energy Bands in Semiconducting Materials",
+      "html": "At low temperatures, such as absolute zero (0 K), and in the absence of light, semiconducting materials behave like insulating materials, as shown in Figure (5-4).",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 List — Energy Bands in Semiconducting Materials (So Their Energy Bands Take the Following Form)",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- The valence band is filled with valence electrons.</li>\n<li>b- The conduction band is empty of electrons.</li>\n<li>c- The forbidden energy gap is relatively narrow.</li>\n</ol>",
+      "sectionGroup": 13,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 5-4 shows the energy bands in semiconducting materials\" role=\"img\" viewbox=\"-45 0 285 170\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"none\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"15\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"36\">Conduction band</text>\n<rect fill=\"var(--surface)\" height=\"24\" stroke=\"var(--text-primary)\" stroke-dasharray=\"4 3\" stroke-width=\"1\" width=\"150\" x=\"30\" y=\"50\"></rect>\n<text fill=\"var(--text-secondary)\" font-size=\"8.5\" text-anchor=\"middle\" x=\"105\" y=\"66\">Small forbidden gap</text>\n<rect fill=\"var(--surface)\" height=\"35\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"74\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"95\">Valence band</text>\n<text fill=\"var(--accent-blue)\" font-size=\"12\" font-weight=\"800\" text-anchor=\"middle\" x=\"105\" y=\"135\">Semiconductor</text>\n</g>\n</svg>",
+      "caption": "Figure 5-4: Energy bands in semiconducting materials — a small forbidden gap",
+      "sectionGroup": 14,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 List — 3- Energy Bands in Insulating Materials",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>a- The valence band is filled with valence electrons.</li>\n<li>b- The conduction band is empty of electrons.</li>\n<li>c- The forbidden energy gap is relatively wide, as shown in Figure (5-5).</li>\n</ol>",
+      "sectionGroup": 15,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 5-5 shows the energy bands in insulating materials\" role=\"img\" viewbox=\"-45 0 285 170\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"none\" height=\"30\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"12\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"30\">Conduction band</text>\n<rect fill=\"var(--surface)\" height=\"42\" stroke=\"var(--text-primary)\" stroke-dasharray=\"4 3\" stroke-width=\"1\" width=\"150\" x=\"30\" y=\"42\"></rect>\n<text fill=\"var(--text-secondary)\" font-size=\"8.5\" text-anchor=\"middle\" x=\"105\" y=\"67\">Large forbidden gap</text>\n<rect fill=\"var(--surface)\" height=\"30\" stroke=\"var(--text-primary)\" stroke-width=\"1.5\" width=\"150\" x=\"30\" y=\"84\"></rect>\n<text fill=\"var(--text-primary)\" font-size=\"10\" text-anchor=\"end\" x=\"15\" y=\"102\">Valence band</text>\n<text fill=\"var(--accent-orange)\" font-size=\"12\" font-weight=\"800\" text-anchor=\"middle\" x=\"105\" y=\"135\">Insulator</text>\n</g>\n</svg>",
+      "caption": "Figure 5-5: Energy bands in insulating materials — a large forbidden gap",
+      "sectionGroup": 16,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — The Forbidden Energy Gap",
+      "html": "The gap (forbidden energy region) contains no energy levels that electrons may occupy. For an electron to move from the valence band to the conduction band across the forbidden energy gap, it must gain sufficient energy from an external source — thermal, optical, or from the effect of an electric field — and this amount must not be less than the width of the forbidden energy gap.",
+      "sectionGroup": 17,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "bandSvg",
+      "svgAriaLabel": "Interactive simulation of energy bands",
+      "svgViewBox": "0 0 360 285",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: Compare Energy Bands",
+      "descriptionHtml": "Choose a material type to see the width of the forbidden gap between the valence band and the conduction band, and notice how the electrical conductivity changes with the width of this gap.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnConductor",
+          "html": "Conductor",
+          "class": "neu-btn primary",
+          "data": {
+            "data-material": "conductor"
+          },
+          "style": null
+        },
+        {
+          "id": "btnSemi",
+          "html": "Semiconductor",
+          "class": "neu-btn",
+          "data": {
+            "data-material": "semiconductor"
+          },
+          "style": null
+        },
+        {
+          "id": "btnInsulator",
+          "html": "Insulator",
+          "class": "neu-btn",
+          "data": {
+            "data-material": "insulator"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "In a conductor: the valence and conduction bands overlap, so electrons move freely and the conductivity is very high.",
+          "id": "bandCaption",
+          "wrapperClass": "diagram-caption"
+        }
+      ],
+      "trailingHtml": "",
+      "labels": {
+        "condBandLabel": "Conduction band",
+        "valBandLabel": "Valence band",
+        "gapConductor": "No forbidden gap (overlap)",
+        "gapSemi": "Narrow gap ≈ 1 eV",
+        "gapInsulator": "Wide gap (about 10⁻⁵ eV)",
+        "nameConductor": "Conductor",
+        "nameSemi": "Semiconductor",
+        "nameInsulator": "Insulator",
+        "textConductor": "In a conductor: the valence and conduction bands overlap, so electrons move freely and the conductivity is very high.",
+        "textSemi": "In a semiconductor: the forbidden gap is relatively narrow (~1 eV), so a small amount of thermal or optical energy is enough to move electrons into the conduction band.",
+        "textInsulator": "In an insulator: the forbidden gap is relatively wide, so ordinary thermal energy is not enough to move electrons into the conduction band, and no current flows."
+      },
+      "sectionGroup": 18,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 0,
+        "question": "In which type of material do the valence and conduction bands overlap with no forbidden gap?",
+        "options": [
+          "Conducting materials",
+          "Semiconducting materials",
+          "Insulating materials",
+          "None of the above"
+        ],
+        "explain": "In conducting materials the valence and conduction bands overlap and the forbidden gap between them vanishes, so the valence electrons are free to move."
+      },
+      {
+        "correct": 1,
+        "question": "The width of the forbidden gap in pure semiconducting materials is approximately:",
+        "options": [
+          "Zero",
+          "1 eV",
+          "10⁻⁵ eV",
+          "100 eV"
+        ],
+        "explain": "As shown in Figure (5-2), the forbidden gap in a semiconductor is approximately (1 eV), while in an insulator it ranges around (10⁻⁵ eV) — note the textbook's figure uses this as a comparative width, not an absolute physical constant."
+      },
+      {
+        "correct": 2,
+        "question": "At a temperature of absolute zero and in the absence of light, a semiconducting material behaves like:",
+        "options": [
+          "A conducting material",
+          "A superconductor",
+          "An insulating material",
+          "None of the above"
+        ],
+        "explain": "At absolute zero (0 K) and in the absence of light, the conduction band is completely empty of electrons, so the semiconducting material behaves like an insulating material."
+      },
+      {
+        "correct": 1,
+        "question": "The reason the electrical conductivity of metals decreases as temperature rises is:",
+        "options": [
+          "A decrease in the number of free electrons",
+          "An increase in electrical resistance due to the increased vibrational energy of the atoms",
+          "A widening of the forbidden gap",
+          "The metal turning into an insulator"
+        ],
+        "explain": "A rise in temperature increases the vibrational energy of the metal's atoms, which increases its electrical resistance and so reduces its conductivity."
+      },
+      {
+        "correct": 0,
+        "question": "For an electron to move from the valence band to the conduction band across the forbidden gap, it must gain energy:",
+        "options": [
+          "Not less than the width of the forbidden gap, from a thermal, optical, or electrical source",
+          "Of any amount, no matter how small",
+          "From a magnetic source only",
+          "It needs no additional energy at all"
+        ],
+        "explain": "The electron must gain sufficient energy (thermal, optical, or from an electric field) not less than the width of the forbidden gap in order to move into the conduction band."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Materials are classified by their ability to conduct electric current into: conductors, insulators, and semiconductors (whose resistance lies between that of a conductor and an insulator).",
+      "Valence band: low energy levels, completely or partially filled with electrons. Conduction band: higher energy levels that take part in electrical conduction.",
+      "Conducting materials: the two bands overlap with no forbidden gap, so conductivity is high, and it decreases as temperature rises (increasing resistance).",
+      "Semiconducting materials: a full valence band, an empty conduction band, and a relatively narrow forbidden gap (~1 eV). At 0K and in the absence of light they behave like an insulator.",
+      "Insulating materials: the same band arrangement as a semiconductor, but with a relatively wide forbidden gap (about 10⁻⁵ eV).",
+      "An electron crossing the forbidden gap must gain energy (thermal/optical/electrical) not less than the width of the gap."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of energy bands",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Energy Bands",
+        "in Solid Materials"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Conductor",
+          "Bands overlap"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Semiconductor",
+          "Gap ~1eV"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Insulator",
+          "Gap 10⁻⁵eV"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Valence band",
+          "Conduction band"
+        ]
+      }
+    ]
+  }
+}

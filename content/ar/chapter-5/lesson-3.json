@@ -144,8 +144,24 @@
       "selectId": null,
       "selectOptions": null,
       "presets": null,
-      "ruleBoxes": [],
+      "ruleBoxes": [
+        {
+          "html": "انحياز أمامي (P على الموجب، N على السالب): تضيق منطقة الاستنزاف وتصغر المقاومة، فينساب تيار أمامي كبير.",
+          "id": "biasCaption",
+          "wrapperClass": "diagram-caption"
+        }
+      ],
       "trailingHtml": "",
+      "labels": {
+        "depletionLabel": "منطقة الاستنزاف",
+        "biasBatteryLabel": "بطارية الانحياز",
+        "currentForward": "تيار أمامي كبير",
+        "currentReverse": "تيار عكسي ضئيل (مهمل)",
+        "currentNone": "لا يوجد تيار صافٍ",
+        "captionNone": "بلا انحياز خارجي: تتوازن منطقة الاستنزاف عند عرض ثابت، ولا يمر تيار صافٍ عبر المفرق.",
+        "captionForward": "انحياز أمامي (P على الموجب، N على السالب): تضيق منطقة الاستنزاف وتصغر المقاومة، فينساب تيار أمامي كبير.",
+        "captionReverse": "انحياز عكسي (P على السالب، N على الموجب): تتّسع منطقة الاستنزاف وتكبر المقاومة، فلا يمر إلا تيار عكسي ضئيل يمكن إهماله."
+      },
       "sectionGroup": 8,
       "sectionId": "interactive",
       "sectionNavLabel": "🕹️ محاكاة تفاعلية"

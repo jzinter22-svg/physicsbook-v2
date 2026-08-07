@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-5.html">
@@ -42,190 +43,16 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يصف خواص الموجات الكهرومغناطيسية وكيفية توليدها.</span></li>
-        <li><span class="obj-num">2</span><span>يعدّد نطاقات الطيف الكهرومغناطيسي مرتّبة حسب الطول الموجي.</span></li>
-        <li><span class="obj-num">3</span><span>يفرّق بين الموجة الأرضية والموجة السماوية، وشروط تحقيق الاتصال بينهما.</span></li>
-        <li><span class="obj-num">4</span><span>يوضّح دور طبقة الأيونوسفير والمدار الثابت في بث الموجات الراديوية والتلفازية.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="waves" data-navlabel="💡 الموجات الكهرومغناطيسية">
-    <div class="card neu">
-      <h2>💡 5-5 البث الكهرومغناطيسي</h2>
-      <p>من المعروف أن الموجات الكهرومغناطيسية هي موجات لا تحتاج بالضرورة إلى وسط مادي لانتقالها، وتكون موجات مستعرضة، وهي تتولّد من تذبذب الإلكترونات الحرة في الموصل، حيث إن أصل نشوء هذه الموجات هو الشحنات الكهربائية المتذبذبة. وينتج عن هذا التذبذب مجالان كهربائي ومغناطيسي متغيران مع الزمن ومتلازمان ومتعامدان مع بعضهما على خط انتشارهما، حيث تنتشر هذه الموجات في الفراغ بسرعة الضوء.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — الطيف الكهرومغناطيسي</span>
-      <p style="margin:.3rem 0">يتكوّن الطيف الكهرومغناطيسي من نطاقات من الأطوال الموجية المختلفة، ومن أهمها: أشعة كاما، والأشعة السينية، والأشعة فوق البنفسجية، والضوء المرئي، والأشعة تحت الحمراء، والموجات الدقيقة، والموجات الراديوية.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
-      <span class="def-label" style="color:var(--accent-orange)">🔍 تعليل — العلاقة بين الطول الموجي ومعدل الاهتزاز</span>
-      <p style="margin:.3rem 0">إن الموجات الراديوية تُستعمل بصورة عامة في الإذاعة المسموعة والمرئية، ويعتمد الاستخدام التقني للموجات الكهرومغناطيسية على السهولة التي يمكن بها معرفة الأطوال الموجية المختلفة وإنتاجها. ويرتبط الطول الموجي بمعدل اهتزاز الإلكترونات في مصدر الطاقة الموجية، فكلما ازداد الطول الموجي كان الاهتزاز الموجي أبطأ، وهكذا.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu" style="max-width:none">
-      <div class="diagram-wrap" style="max-width:none">
-        <svg viewBox="0 0 640 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="الطيف الكهرومغناطيسي مرتبًا حسب الطول الموجي" style="max-width:100%">
-          <g font-family="Cairo,sans-serif">
-            <defs>
-              <linearGradient id="specGrad5" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stop-color="#7c6fee"/><stop offset=".5" stop-color="#3fa9f5"/><stop offset="1" stop-color="#ff6b9d"/>
-              </linearGradient>
-            </defs>
-            <rect x="20" y="35" width="600" height="30" fill="url(#specGrad5)" rx="6"/>
-            <text x="60" y="30" text-anchor="middle" font-size="10.5" fill="var(--text-primary)">أشعة كاما</text>
-            <text x="175" y="30" text-anchor="middle" font-size="10.5" fill="var(--text-primary)">أشعة سينية</text>
-            <text x="270" y="30" text-anchor="middle" font-size="10.5" fill="var(--text-primary)">فوق بنفسجية</text>
-            <text x="345" y="30" text-anchor="middle" font-size="10.5" fill="var(--text-primary)">مرئي</text>
-            <text x="420" y="30" text-anchor="middle" font-size="10.5" fill="var(--text-primary)">تحت حمراء</text>
-            <text x="510" y="30" text-anchor="middle" font-size="10.5" fill="var(--text-primary)">موجات دقيقة</text>
-            <text x="595" y="30" text-anchor="middle" font-size="10.5" fill="var(--text-primary)">موجات راديوية</text>
-            <line x1="120" y1="35" x2="120" y2="65" stroke="var(--surface)" stroke-width="1"/>
-            <line x1="220" y1="35" x2="220" y2="65" stroke="var(--surface)" stroke-width="1"/>
-            <line x1="320" y1="35" x2="320" y2="65" stroke="var(--surface)" stroke-width="1"/>
-            <line x1="370" y1="35" x2="370" y2="65" stroke="var(--surface)" stroke-width="1"/>
-            <line x1="470" y1="35" x2="470" y2="65" stroke="var(--surface)" stroke-width="1"/>
-            <line x1="550" y1="35" x2="550" y2="65" stroke="var(--surface)" stroke-width="1"/>
-            <text x="20" y="90" text-anchor="start" font-size="10" font-weight="700" fill="var(--text-secondary)">طول موجي أقصر، تردد أعلى</text>
-            <text x="620" y="90" text-anchor="end" font-size="10" font-weight="700" fill="var(--text-secondary)">طول موجي أطول، تردد أبطأ</text>
-            <line x1="20" y1="78" x2="620" y2="78" stroke="var(--text-faint)" stroke-width="1" marker-start="url(#specL)" marker-end="url(#specR)"/>
-            <marker id="specL" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 z" fill="var(--text-faint)"/></marker>
-            <marker id="specR" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--text-faint)"/></marker>
-          </g>
-        </svg>
-        <span class="diagram-caption">الطيف الكهرومغناطيسي مرتّبًا من أقصر طول موجي (أشعة كاما) إلى أطول طول موجي (الموجات الراديوية)</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="groundsky" data-navlabel="📡 الموجة الأرضية والسماوية">
-    <div class="card neu">
-      <h2>1-5-5 الموجة الأرضية والموجة السماوية</h2>
-      <p>إن الأرض تقريبًا كروية، قطرها ونصف قطرها قرابة (6400 km)، ومحيط أكبر دائرة لها حوالي (40000 km). يزيد الارتفاع بين نقطتين والمسافة بينهما قرابة (250 km) على (1 km). وهذا الارتفاع يمثّل عائقًا كبيرًا يمنع انتشار الموجات بين النقطتين، ومع ذلك يمكن تحقيق الاتصال بين نقاط بينهما تعرجات ناتجة عن انحناء سطح الأرض أو عدم انتظام سطح الأرض إذا ما توافر أحد الشروط الآتية:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-blue)">
-      <span class="def-label" style="color:var(--accent-blue)">🔢 تعداد — شروط تحقيق الاتصال الراديوي رغم انحناء سطح الأرض</span>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem">
-        <li>الموجات تتحرك في مسارات تتبع انحناء سطح الأرض وتعرجاتها.</li>
-        <li>تعليق كل من هوائي الإرسال والهوائي الاستقبال على ارتفاعات مناسبة يوفّر خط الرؤية المباشرة بين الهوائيين.</li>
-        <li>توفير محطات إذاعة وسطية بين محطة الإرسال ومحطة الاستقبال تمثّل تعرجات سطح الأرض التي يقارن ارتفاعها بالطول الموجي للموجة المنتشرة، بالنسبة إلى الأمواج الراديوية التي تتحرك بالقرب من سطح الأرض.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>وتكون عملية بث الموجات الراديوية بطريقتين:</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — الطريقة الأولى: الموجات الأرضية (Ground Waves)</span>
-      <p style="margin:.3rem 0">تُسمى الموجة بالموجات الأرضية، وتنتقل فوق سطح الأرض مباشرة (قريبة من سطح الأرض)، إلا أنها بسبب انتشارها بخطوط مستقيمة تكون غير قادرة على تأمين الاتصالات إلا لمسافات قصيرة نسبيًا نتيجة لتحدّب الأرض.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">📌 تعريف — الطريقة الثانية: الموجات السماوية (Sky Waves)</span>
-      <p style="margin:.3rem 0">تتم بواسطة موجات غير مباشرة تُدعى بالموجات السماوية، حيث تستطيع تأمين الاتصالات بين مكانين بعيدين وليسا واقعين على خط مباشر، ويعتمد هذا النوع من الاتصالات على وجود طبقة الأيونوسفير في الغلاف الجوي بالدرجة الأولى، والتي تعكس الموجات غير المباشرة إلى الأرض.</p>
-    </div>
-  </section>
-
-  <!-- ===== Interactive widget: ground vs sky wave ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: انتشار الموجات الراديوية (الشكل 13-5)</h2>
-      <p>اختر طريقة الانتشار لمشاهدة الفرق بين الموجة الأرضية التي تسير قريبًا من سطح الأرض، والموجة السماوية التي تنعكس عن طبقة الأيونوسفير لتغطي مسافات أبعد.</p>
-      <div class="io-panel">
-        <div class="io-row" role="group" aria-label="اختيار طريقة الانتشار">
-          <button class="neu-btn primary" data-wave="ground" id="btnGround">موجة أرضية</button>
-          <button class="neu-btn" data-wave="sky" id="btnSky">موجة سماوية</button>
-        </div>
-        <div class="mindmap-wrap"><svg id="waveSvg" viewBox="0 0 420 250" role="img" aria-label="محاكاة انتشار الموجات الأرضية والسماوية"></svg></div>
-        <p id="waveCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <h2>🌙 اختلاف انتشار الموجات ليلًا ونهارًا والاتصالات عبر الأقمار الصناعية</h2>
-      <p>ففي أثناء الليل، وبسبب غياب أشعة الشمس، تختفي الطبقة السفلى من طبقة الأيونوسفير التي تسمى (D-layer) والمسؤولة عن توهين الموجات الراديوية التي تظهر أثناء النهار.</p>
-      <p style="margin-top:.5rem">إن الموجات الدقيقة (Microwaves) المستمرة في عمليات الإرسال في التلفاز تكون قادرة على اختراق طبقة الأيونوسفير، ولا ينعكس منها إلا الشيء القليل، ما يجعل بث موجات التلفاز مقتصرًا على المسافات القريبة فقط. وقد تم التغلب على ذلك بواسطة الأقمار الصناعية، إذ تم وضع مدارات ثابتة حول الأرض.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
-      <span class="def-label" style="color:var(--accent-green)">📌 تعريف — المدار الثابت (Geostationary Orbit)</span>
-      <p style="margin:.3rem 0">المدار الثابت هو مدار يدور فيه التابع بسرعة دوران الأرض نفسها وينتمي إلى مسطح خط الاستواء، مما يتيح له البقاء في مكانه بالنسبة إلى الأرض. ويستطيع أي تابع موجود في مدار ثابت التقاط أية إشارة ثابتة من محطة ثابتة به وإعادة إرسالها إلى محطة جديدة واقعة ضمن الرقعة الجغرافية للتابع.</p>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
   <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>1.</span><span>تنتقل الموجات الكهرومغناطيسية في الفراغ:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>بحاجة إلى وسط مادي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>بسرعة الضوء دون حاجة إلى وسط مادي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>بسرعة الصوت</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا تنتقل في الفراغ إطلاقًا</span></label>
-        </div>
-        <div class="quiz-explain">الموجات الكهرومغناطيسية موجات مستعرضة لا تحتاج وسطًا ماديًا، وتنتشر في الفراغ بسرعة الضوء.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>2.</span><span>أقصر أطوال موجية في الطيف الكهرومغناطيسي تخص:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>أشعة كاما</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الموجات الراديوية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الموجات الدقيقة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الأشعة تحت الحمراء</span></label>
-        </div>
-        <div class="quiz-explain">يبدأ الطيف الكهرومغناطيسي (من الأقصر طولًا موجيًا للأطول) بأشعة كاما ثم السينية ثم فوق البنفسجية ثم المرئي ثم تحت الحمراء ثم الموجات الدقيقة فالراديوية.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>3.</span><span>الموجة التي تعتمد على انعكاسها عن طبقة الأيونوسفير للوصول إلى أماكن بعيدة غير واقعة على خط مباشر تسمى:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الموجة الأرضية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الموجة الدقيقة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الموجة السماوية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الموجة الصوتية</span></label>
-        </div>
-        <div class="quiz-explain">الموجة السماوية (sky wave) تنعكس عن طبقة الأيونوسفير لتؤمّن الاتصال بين مكانين بعيدين غير واقعين على خط مباشر.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>4.</span><span>المدار الثابت هو المدار الذي يدور فيه التابع:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>بسرعة أكبر من دوران الأرض</span></label>
-          <label class="quiz-opt"><input type="radio"><span>بسرعة دوران الأرض نفسها فيبقى في مكانه بالنسبة إليها</span></label>
-          <label class="quiz-opt"><input type="radio"><span>عكس اتجاه دوران الأرض</span></label>
-          <label class="quiz-opt"><input type="radio"><span>حول أحد القطبين فقط</span></label>
-        </div>
-        <div class="quiz-explain">المدار الثابت ينتمي لمسطح خط الاستواء ويدور فيه التابع بسرعة دوران الأرض نفسها، فيبقى ثابتًا بالنسبة لموقع على سطح الأرض.</div>
-      </div>
-
+      <h2>🧠 اختبر فهمك</h2>
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
@@ -235,13 +62,7 @@
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>الموجات الكهرومغناطيسية: موجات مستعرضة تنشأ من تذبذب شحنات كهربائية، لا تحتاج وسطًا ماديًا، وتنتشر بسرعة الضوء.</span></li>
-        <li><span>الطيف الكهرومغناطيسي (من الأقصر للأطول طولًا موجيًا): كاما، سينية، فوق بنفسجية، مرئي، تحت حمراء، دقيقة، راديوية.</span></li>
-        <li><span>الموجة الأرضية: تسير قريبًا من سطح الأرض بخطوط مستقيمة، وتغطي مسافات قصيرة نسبيًا بسبب تحدّب الأرض.</span></li>
-        <li><span>الموجة السماوية: تنعكس عن طبقة الأيونوسفير لتغطي مسافات بعيدة غير واقعة على خط مباشر.</span></li>
-        <li><span>طبقة D تختفي ليلًا فتقل توهين الموجات؛ والموجات الدقيقة تخترق الأيونوسفير فتحتاج الأقمار الصناعية ذات المدار الثابت لإعادة بثها.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
@@ -252,30 +73,7 @@
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l5" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l5">
-        <svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للبث الكهرومغناطيسي">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">البث</text>
-            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="12" font-family="Cairo,sans-serif">الكهرومغناطيسي</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">الطيف الكهرومغ.</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">موجة أرضية</text>
-            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">مسافات قصيرة</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">موجة سماوية</text>
-            <text x="390" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">أيونوسفير</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">المدار الثابت</text>
-            <text x="390" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">أقمار صناعية</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l5"></div>
     </div>
   </section>
 
@@ -292,19 +90,17 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("waveSvg");
-  var caption = document.getElementById("waveCaption");
-  var btnG = document.getElementById("btnGround");
-  var btnS = document.getElementById("btnSky");
+  var svg, caption, btnG, btnS;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
   function label(x,y,txt,color,size,weight,anchor){
-    var t = document.createElementNS(ns,"text");
-    t.setAttribute("x",x); t.setAttribute("y",y);
-    t.setAttribute("text-anchor",anchor||"middle");
-    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||11); t.setAttribute("fill",color);
-    t.setAttribute("font-weight",weight||"700");
-    t.textContent = txt;
-    svg.appendChild(t);
+    var el = document.createElementNS(ns,"text");
+    el.setAttribute("x",x); el.setAttribute("y",y);
+    el.setAttribute("text-anchor",anchor||"middle");
+    el.setAttribute("font-family","Cairo,sans-serif"); el.setAttribute("font-size",size||11); el.setAttribute("fill",color);
+    el.setAttribute("font-weight",weight||"700");
+    el.textContent = txt;
+    svg.appendChild(el);
   }
 
   function draw(mode){
@@ -315,7 +111,7 @@
     earth.setAttribute("d","M 10 190 Q 210 240 410 190 L 410 220 L 10 220 Z");
     earth.setAttribute("fill","rgba(47,209,143,.25)"); earth.setAttribute("stroke","var(--accent-green)"); earth.setAttribute("stroke-width","1.5");
     svg.appendChild(earth);
-    label(210, 235, "سطح الأرض (منحنٍ)", "var(--text-secondary)", 10);
+    label(210, 235, t("earthSurfaceLabel","سطح الأرض (منحنٍ)"), "var(--text-secondary)", 10);
 
     // transmitter & receiver towers
     function tower(x, txt){
@@ -325,22 +121,22 @@
       svg.appendChild(l);
       label(x, 205, txt, "var(--text-primary)", 10, "700");
     }
-    tower(60, "الإرسال");
-    tower(360, "الاستقبال");
+    tower(60, t("transmitLabel","الإرسال"));
+    tower(360, t("receiveLabel","الاستقبال"));
 
     if(mode === "ground"){
       var p = document.createElementNS(ns,"path");
       p.setAttribute("d","M 60 165 Q 210 150 360 165");
       p.setAttribute("fill","none"); p.setAttribute("stroke","var(--accent-blue)"); p.setAttribute("stroke-width","3"); p.setAttribute("stroke-dasharray","6 4");
       svg.appendChild(p);
-      label(210, 130, "موجة أرضية — تتبع انحناء سطح الأرض، مسافة قصيرة نسبيًا", "var(--accent-blue)", 11, "800");
-      caption.textContent = "الموجة الأرضية تنتقل قريبًا من سطح الأرض بخطوط شبه مستقيمة، فتصل لمسافات قصيرة نسبيًا بسبب تحدّب الأرض.";
+      label(210, 130, t("groundPathLabel","موجة أرضية — تتبع انحناء سطح الأرض، مسافة قصيرة نسبيًا"), "var(--accent-blue)", 11, "800");
+      caption.textContent = t("captionGround","الموجة الأرضية تنتقل قريبًا من سطح الأرض بخطوط شبه مستقيمة، فتصل لمسافات قصيرة نسبيًا بسبب تحدّب الأرض.");
     } else {
       var ion = document.createElementNS(ns,"rect");
       ion.setAttribute("x",10); ion.setAttribute("y",25); ion.setAttribute("width",400); ion.setAttribute("height",20);
       ion.setAttribute("fill","rgba(124,111,238,.18)"); ion.setAttribute("stroke","var(--accent-purple)"); ion.setAttribute("stroke-width","1.2"); ion.setAttribute("stroke-dasharray","4 3");
       svg.appendChild(ion);
-      label(210, 20, "طبقة الأيونوسفير (Ionosphere)", "var(--accent-purple)", 11, "800");
+      label(210, 20, t("ionosphereLabel","طبقة الأيونوسفير (Ionosphere)"), "var(--accent-purple)", 11, "800");
 
       var p1 = document.createElementNS(ns,"line");
       p1.setAttribute("x1",60); p1.setAttribute("y1",165); p1.setAttribute("x2",210); p1.setAttribute("y2",45);
@@ -350,17 +146,27 @@
       p2.setAttribute("x1",210); p2.setAttribute("y1",45); p2.setAttribute("x2",360); p2.setAttribute("y2",165);
       p2.setAttribute("stroke","var(--accent-orange)"); p2.setAttribute("stroke-width","3");
       svg.appendChild(p2);
-      label(210, 150, "موجة سماوية — تنعكس عن الأيونوسفير", "var(--accent-orange)", 11, "800");
-      caption.textContent = "الموجة السماوية تصعد نحو طبقة الأيونوسفير وتنعكس عنها إلى الأرض، فتؤمّن الاتصال بين نقطتين بعيدتين غير واقعتين على خط مباشر.";
+      label(210, 150, t("skyPathLabel","موجة سماوية — تنعكس عن الأيونوسفير"), "var(--accent-orange)", 11, "800");
+      caption.textContent = t("captionSky","الموجة السماوية تصعد نحو طبقة الأيونوسفير وتنعكس عنها إلى الأرض، فتؤمّن الاتصال بين نقطتين بعيدتين غير واقعتين على خط مباشر.");
     }
 
     btnG.classList.toggle("primary", mode==="ground");
     btnS.classList.toggle("primary", mode==="sky");
   }
 
-  btnG.addEventListener("click", function(){ draw("ground"); });
-  btnS.addEventListener("click", function(){ draw("sky"); });
-  draw("ground");
+  var currentMode = "ground";
+
+  function boot(){
+    svg = document.getElementById("waveSvg");
+    caption = document.getElementById("waveCaption");
+    btnG = document.getElementById("btnGround");
+    btnS = document.getElementById("btnSky");
+    if(!svg || !btnG || !btnS) return;
+    btnG.addEventListener("click", function(){ currentMode = "ground"; draw("ground"); });
+    btnS.addEventListener("click", function(){ currentMode = "sky"; draw("sky"); });
+    draw(currentMode);
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

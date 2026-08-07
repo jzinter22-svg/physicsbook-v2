@@ -1,0 +1,282 @@
+{
+  "lessonNumber": 2,
+  "chapterNumber": 5,
+  "meta": {
+    "pageTitle": "Lesson 2: N-Type and P-Type Semiconductor Materials — Chapter Five",
+    "description": "5-2 N-type and P-type semiconductor materials: doping, the donor and acceptor atoms, and the majority and minority charge carriers.",
+    "breadcrumbChapter": "Chapter 5",
+    "breadcrumbLesson": "N-Type and P-Type Semiconductor Materials",
+    "footer": "Chapter Five: Semiconductor Materials and Electronic Devices — Lesson 2: N-Type and P-Type Semiconductor Materials"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 2 of 7 · 5-2",
+    "title": "N-Type and P-Type Semiconductor Materials",
+    "lead": "By carefully adding calculated impurities to a pure semiconductor crystal (a process called doping), its electrical conductivity can be controlled and two types obtained: N-type semiconductor (negative) and P-type semiconductor (positive)."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Defines the doping process and explains why it is needed to control the electrical conductivity of a semiconductor.",
+    "Distinguishes between the donor atom and the acceptor atom, and gives examples of each.",
+    "Explains how N-type and P-type semiconductors are obtained.",
+    "Distinguishes between majority and minority charge carriers in both the N-type and the P-type."
+  ],
+  "content": [
+    {
+      "type": "callout",
+      "icon": "🔍",
+      "strong": "Explanation:",
+      "html": "Why isn't thermal excitation alone relied on to control the electrical conductivity of a pure semiconductor? Because thermal excitation cannot be controlled precisely, and its magnitude cannot be adjusted in a practical, stable way; doping is used instead, since it allows precise, continuous control of conductivity.",
+      "sectionGroup": 0,
+      "sectionId": "doping",
+      "sectionNavLabel": "💡 Doping"
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Doping",
+      "html": "Doping is the careful addition of trivalent or pentavalent elements, called impurities, to a pure semiconductor crystal, at a controlled rate of about one impurity atom per (\\(10^8\\)) host atoms, at room temperature and in small, specific proportions. Through doping, the electrical conductivity of a semiconductor can be controlled and substantially increased, as a result of the increase in charge carriers (electrons and holes) compared with the pure crystal — to a much greater degree than can be achieved by thermal excitation alone.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 5-6 shows the structure of a silicon atom and the crystal lattice\" role=\"img\" viewbox=\"0 0 260 220\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<circle cx=\"130\" cy=\"110\" fill=\"var(--accent-purple)\" r=\"20\"></circle>\n<text fill=\"#fff\" font-size=\"12\" font-weight=\"800\" text-anchor=\"middle\" x=\"130\" y=\"115\">Si</text>\n<g stroke=\"var(--text-secondary)\" stroke-width=\"1.5\">\n<line x1=\"130\" x2=\"130\" y1=\"90\" y2=\"45\"></line>\n<line x1=\"130\" x2=\"130\" y1=\"130\" y2=\"175\"></line>\n<line x1=\"110\" x2=\"65\" y1=\"110\" y2=\"110\"></line>\n<line x1=\"150\" x2=\"195\" y1=\"110\" y2=\"110\"></line>\n</g>\n<g>\n<circle cx=\"130\" cy=\"35\" fill=\"var(--accent-blue)\" r=\"16\"></circle><text fill=\"#fff\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"130\" y=\"40\">Si</text>\n<circle cx=\"130\" cy=\"185\" fill=\"var(--accent-blue)\" r=\"16\"></circle><text fill=\"#fff\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"130\" y=\"190\">Si</text>\n<circle cx=\"55\" cy=\"110\" fill=\"var(--accent-blue)\" r=\"16\"></circle><text fill=\"#fff\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"55\" y=\"115\">Si</text>\n<circle cx=\"205\" cy=\"110\" fill=\"var(--accent-blue)\" r=\"16\"></circle><text fill=\"#fff\" font-size=\"10\" font-weight=\"800\" text-anchor=\"middle\" x=\"205\" y=\"115\">Si</text>\n</g>\n<text fill=\"var(--text-secondary)\" font-size=\"10.5\" font-weight=\"700\" text-anchor=\"middle\" x=\"130\" y=\"212\">Covalent bonds between silicon atoms (the crystal lattice)</text>\n</g>\n</svg>",
+      "caption": "Figure 5-6: The structure of a silicon atom — each silicon atom bonds to four neighboring atoms through covalent bonds (4 shared valence electrons)",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "5-2-1 N-Type Semiconductor Materials (N)",
+      "html": "Obtaining an N-type semiconductor requires adding a pentavalent impurity atom, such as arsenic, phosphorus, or antimony (Sb), into the crystal structure to make it conductive. For example, if we add an antimony (Sb) atom to a pure silicon (Si) crystal, each antimony atom bonds with four silicon atoms, leaving the antimony atom's fifth electron free to move — it can be excited easily with a small amount of energy and moved into the conduction band, where it contributes to the electrical conduction of the doped semiconductor material.",
+      "sectionGroup": 3,
+      "sectionId": "ntype",
+      "sectionNavLabel": "➖ N-Type"
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Donor Atom",
+      "html": "This type of pentavalent impurity is called a donor atom; after donating its extra electron it becomes a positive ion tightly bound to the crystal lattice, playing no role in electrical conduction.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 List — Properties of the N-Type Semiconductor",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>The negatively charged free electrons are the majority charge carriers.</li>\n<li>The holes produced by electrons moving from the valence band to the conduction band are called minority charge carriers, because they are fewer in number than the electrons.</li>\n<li>The material is of the negative (N) type when the donor density is greater than the acceptor density.</li>\n<li>An N-type semiconductor has more electrons than holes, as shown in Figure (5-7).</li>\n</ol>",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "5-2-2 P-Type Semiconductor Materials (P)",
+      "html": "If, instead, we introduce trivalent impurities (3 valence electrons) into the crystal structure, such as boron, indium, or aluminum, only three valence electrons are available for covalent bonding, which means the fourth bond cannot form. As a result, complete bonding is not possible, giving the semiconductor material an abundance of positive charge carriers known as holes within the crystal structure.</p><p>For example, obtaining a P-type semiconductor requires adding a trivalent impurity such as boron (B) to a silicon (Si) crystal: the three valence electrons of the boron atom bond with three neighboring silicon atoms through covalent bonds, but this trivalent impurity leaves one covalent bond short of an electron. A hole is therefore generated, and this hole tends to capture an electron from a neighboring silicon atom, and so on.",
+      "sectionGroup": 6,
+      "sectionId": "ptype",
+      "sectionNavLabel": "➕ P-Type"
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Acceptor Atom",
+      "html": "Trivalent impurities are called acceptor atoms; after accepting an electron they become negative ions tightly bound to the crystal lattice, playing no role in electrical conduction.",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 List — Properties of the P-Type Semiconductor",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>The holes in the valence band are the majority charge carriers.</li>\n<li>The electrons are the minority charge carriers.</li>\n<li>Conduction is mainly due to positive charge carriers (a positive-type material), and the positive holes are called positive carriers.</li>\n<li>The material is of the positive (P) type when the acceptor density is greater than the donor density; therefore, a P-type semiconductor has more holes than electrons, as shown in Figure (5-8).</li>\n</ol>",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "latticeSvg",
+      "svgAriaLabel": "Simulation of an impurity in the crystal lattice",
+      "svgViewBox": "0 0 320 260",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: N-Type vs. P-Type Semiconductor (Figures 5-7 and 5-8)",
+      "descriptionHtml": "Choose the type of impurity added to a pure silicon crystal, and observe the difference between the extra free electron (in the N-type) and the hole produced by a missing electron (in the P-type).",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnNType",
+          "html": "N-type (donor impurity Sb)",
+          "class": "neu-btn primary",
+          "data": {
+            "data-type": "n"
+          },
+          "style": null
+        },
+        {
+          "id": "btnPType",
+          "html": "P-type (acceptor impurity B)",
+          "class": "neu-btn",
+          "data": {
+            "data-type": "p"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "The fifth electron of the antimony (Sb) atom does not enter a covalent bond, so it remains free to move and becomes a majority carrier of negative charge.",
+          "id": "latticeCaption",
+          "wrapperClass": "diagram-caption"
+        }
+      ],
+      "trailingHtml": "",
+      "labels": {
+        "freeElectronLabel": "Free e⁻",
+        "donorAtomLabel": "Donor atom (pentavalent)",
+        "acceptorAtomLabel": "Acceptor atom (trivalent)",
+        "nTypeTitleLabel": "N-type semiconductor",
+        "pTypeTitleLabel": "P-type semiconductor",
+        "holeLabel": "Hole",
+        "captionN": "The fifth electron of the antimony (Sb) atom does not enter a covalent bond, so it remains free to move and becomes a majority carrier of negative charge.",
+        "captionP": "The boron (B) atom provides only three valence electrons, so one bond remains short an electron (a hole), which becomes a majority carrier of positive charge."
+      },
+      "sectionGroup": 9,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "To produce an N-type semiconductor, we add to the silicon crystal an impurity that is:",
+        "options": [
+          "Trivalent, such as boron",
+          "Pentavalent, such as antimony",
+          "Tetravalent, such as germanium",
+          "Monovalent"
+        ],
+        "explain": "A pentavalent impurity (such as arsenic, phosphorus, or antimony) leaves a fifth electron free to move, producing an N-type semiconductor."
+      },
+      {
+        "correct": 2,
+        "question": "After losing its fifth electron, the donor atom (Donor atom) becomes:",
+        "options": [
+          "A free negative ion",
+          "A neutral atom",
+          "A positive ion bound to the crystal lattice",
+          "A free-moving hole"
+        ],
+        "explain": "The donor atom becomes a positive ion tightly bound to the crystal lattice, and plays no role in electrical conduction."
+      },
+      {
+        "correct": 0,
+        "question": "In a P-type semiconductor, the majority charge carriers are:",
+        "options": [
+          "The holes",
+          "The free electrons",
+          "Both positive and negative ions",
+          "The protons"
+        ],
+        "explain": "In a P-type semiconductor, the holes in the valence band are the majority charge carriers, and the electrons are the minority charge carriers."
+      },
+      {
+        "correct": 3,
+        "question": "The acceptor atom (Acceptor atom) is an impurity that is:",
+        "options": [
+          "Pentavalent, donating a free electron",
+          "Tetravalent and neutral",
+          "Monovalent",
+          "Trivalent, leaving a hole and becoming a negative ion"
+        ],
+        "explain": "The acceptor atom is a trivalent impurity (such as boron) that leaves a bond short an electron (a hole) and becomes a negative ion bound to the crystal lattice."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Doping: adding trivalent or pentavalent impurities to a pure semiconductor crystal in a precise proportion (about \\(1:10^8\\)) to control conductivity.",
+      "N-type semiconductor: a pentavalent donor impurity (Sb, P, As) leaves a free electron. Electrons = majority carriers, holes = minority carriers.",
+      "P-type semiconductor: a trivalent acceptor impurity (B, In, Al) generates a hole. Holes = majority carriers, electrons = minority carriers.",
+      "The donor atom becomes a fixed positive ion; the acceptor atom becomes a fixed negative ion, and neither takes part in electrical conduction."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of N-type and P-type semiconductors",
+    "viewBox": "0 0 480 260",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Doping"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "N-type",
+          "Donor impurity"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Free electrons",
+          "Majority carriers"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "P-type",
+          "Acceptor impurity"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Holes",
+          "Majority carriers"
+        ]
+      }
+    ]
+  }
+}

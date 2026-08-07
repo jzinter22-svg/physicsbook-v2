@@ -1,0 +1,313 @@
+{
+  "lessonNumber": 4,
+  "chapterNumber": 5,
+  "meta": {
+    "pageTitle": "Lesson 4: The Transistor — Chapter Five",
+    "description": "5-4 The transistor: its history, its advantages, the bipolar junction transistor (NPN and PNP), how it works, and its operating conditions.",
+    "breadcrumbChapter": "Chapter 5",
+    "breadcrumbLesson": "The Transistor",
+    "footer": "Chapter Five: Semiconductor Materials and Electronic Devices — Lesson 4: The Transistor"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 4 of 7 · 5-4",
+    "title": "The Transistor",
+    "lead": "The greatest invention of the twentieth century, by scientists' own account: an effective electronic element made of semiconductor materials, which replaced the bulky, power-hungry vacuum tube and became the cornerstone of every modern electronic device."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Gives a brief history of the invention of the transistor, and states its main advantages compared with the vacuum tube.",
+    "Explains the structure of the bipolar junction transistor in both its NPN and PNP forms, and names its three terminals.",
+    "Explains how the transistor controls a strong current by means of a weak current, and the concept of transistor gain.",
+    "States the two conditions necessary for the transistor to operate, and its most important uses."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 5-4 The Transistor",
+      "html": "After many attempts and experiments by scientists, and in order to overcome the drawbacks of the vacuum tube, the electronic transistor was invented in 1947 by three American physicists working at Bell Labs: John Bardeen, Walter Brattain, and William Shockley, who received the Nobel Prize in 1956 in recognition of their efforts on this great achievement, which served all of humanity.</p><p>The transistor is an effective electronic element made of semiconductor materials such as germanium and silicon, and it has three terminals, as is the case with the triode vacuum tube, but without a heating circuit.",
+      "sectionGroup": 0,
+      "sectionId": "history",
+      "sectionNavLabel": "💡 A Brief History"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 List — Advantages of the Transistor Compared with the Vacuum Tube",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem\">\n<li>The electronic transistor is distinguished from the vacuum tube by its small size — as a discrete component it is no larger than a chickpea, while in integrated circuits millions of transistors can be manufactured on a chip no larger than a single square centimeter, which has led to a great reduction in the size and weight of electrical devices.</li>\n<li>It operates on a very low electrical voltage of only a few volts, and its power consumption is small, measured in milliwatts for discrete transistors and even nanowatts in integrated circuits, which has made it possible to manufacture various electrical devices that run on small batteries for long periods of time.</li>\n<li>Being solid and made of rigid materials, it has no moving parts inside it, and so it is not affected by mechanical shocks and vibrations as the vacuum tube is, allowing it to be used in portable devices.</li>\n<li>It is distinguished by a long operating lifetime that can extend to decades, and by the ability to operate over a wide range of temperatures.</li>\n</ol>",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "With the invention of the transistor, which scientists consider the greatest invention of the twentieth century, engineers, technicians, and manufacturers renewed their hopes of building small, low-power electronic equipment and devices, such as digital computers, color televisions, small radios, mobile phones, and desktop and handheld calculators. It also became possible to use them in various vehicles, in intercontinental applications, and in spacecraft, rockets, and artificial satellites, and so on.",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "5-4-1 The Bipolar Junction Transistor",
+      "html": "This type of transistor is manufactured by doping three neighboring regions on a pure silicon crystal, either in the arrangement (negative – positive – negative) (NPN) or (positive – negative – positive) (PNP), with metal terminals connected to these three regions. The terminal connected to the middle region is called the base (B), while the terminals connected to the two outer regions are called the emitter (E) and the collector (C).</p><p>This type of transistor is called bipolar because it has two junctions, and because both holes and electrons take part in carrying the current that flows inside the transistor. For this type of transistor to operate, two junctions are required, and it is generally operated with one biased forward and the other biased in reverse. If the transistor is manufactured so that the width of the depleted base region of the reverse-biased junction is made very small, most of it is covered by the electrons or holes arriving from the forward-biased base region; these are then captured by the electric field of the reverse-biased depleted region, and a high current flows through it despite it being reverse-biased.",
+      "sectionGroup": 3,
+      "sectionId": "bjt",
+      "sectionNavLabel": "🔺 The Junction Transistor"
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 5-11: a PNP-type transistor\" role=\"img\" viewbox=\"0 0 300 190\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"rgba(255,171,94,.2)\" height=\"70\" stroke=\"var(--accent-orange)\" stroke-width=\"1.5\" width=\"60\" x=\"30\" y=\"55\"></rect>\n<text fill=\"var(--accent-orange)\" font-size=\"16\" font-weight=\"800\" text-anchor=\"middle\" x=\"60\" y=\"95\">P</text>\n<rect fill=\"rgba(63,169,245,.2)\" height=\"70\" stroke=\"var(--accent-blue)\" stroke-width=\"1.5\" width=\"40\" x=\"90\" y=\"55\"></rect>\n<text fill=\"var(--accent-blue)\" font-size=\"16\" font-weight=\"800\" text-anchor=\"middle\" x=\"110\" y=\"95\">N</text>\n<rect fill=\"rgba(255,171,94,.2)\" height=\"70\" stroke=\"var(--accent-orange)\" stroke-width=\"1.5\" width=\"60\" x=\"130\" y=\"55\"></rect>\n<text fill=\"var(--accent-orange)\" font-size=\"16\" font-weight=\"800\" text-anchor=\"middle\" x=\"160\" y=\"95\">P</text>\n<text fill=\"var(--text-primary)\" font-size=\"12\" font-weight=\"800\" text-anchor=\"middle\" x=\"110\" y=\"145\">PNP</text>\n<text font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"60\" y=\"40\">E</text>\n<text font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"10\" y=\"94\">B</text>\n<text font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"160\" y=\"40\">C</text>\n<line stroke=\"var(--text-secondary)\" x1=\"60\" x2=\"60\" y1=\"45\" y2=\"55\"></line>\n<line stroke=\"var(--text-secondary)\" x1=\"20\" x2=\"30\" y1=\"90\" y2=\"90\"></line>\n<line stroke=\"var(--text-secondary)\" x1=\"160\" x2=\"160\" y1=\"45\" y2=\"55\"></line>\n</g>\n</svg>",
+      "caption": "Figure 5-11: a PNP-type transistor — as given in the textbook",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 5-12: an NPN-type transistor\" role=\"img\" viewbox=\"0 0 300 190\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<rect fill=\"rgba(63,169,245,.2)\" height=\"70\" stroke=\"var(--accent-blue)\" stroke-width=\"1.5\" width=\"60\" x=\"30\" y=\"55\"></rect>\n<text fill=\"var(--accent-blue)\" font-size=\"16\" font-weight=\"800\" text-anchor=\"middle\" x=\"60\" y=\"95\">N</text>\n<rect fill=\"rgba(255,171,94,.2)\" height=\"70\" stroke=\"var(--accent-orange)\" stroke-width=\"1.5\" width=\"40\" x=\"90\" y=\"55\"></rect>\n<text fill=\"var(--accent-orange)\" font-size=\"16\" font-weight=\"800\" text-anchor=\"middle\" x=\"110\" y=\"95\">P</text>\n<rect fill=\"rgba(63,169,245,.2)\" height=\"70\" stroke=\"var(--accent-blue)\" stroke-width=\"1.5\" width=\"60\" x=\"130\" y=\"55\"></rect>\n<text fill=\"var(--accent-blue)\" font-size=\"16\" font-weight=\"800\" text-anchor=\"middle\" x=\"160\" y=\"95\">N</text>\n<text font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"60\" y=\"40\">E</text>\n<text font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"10\" y=\"94\">B</text>\n<text font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" x=\"160\" y=\"40\">C</text>\n<line marker-end=\"url(#ieArrow)\" stroke=\"var(--text-secondary)\" x1=\"60\" x2=\"60\" y1=\"45\" y2=\"55\"></line>\n<line stroke=\"var(--text-secondary)\" x1=\"20\" x2=\"30\" y1=\"90\" y2=\"90\"></line>\n<line stroke=\"var(--text-secondary)\" x1=\"160\" x2=\"160\" y1=\"45\" y2=\"55\"></line>\n<defs><marker id=\"ieArrow\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"3.5\" refy=\"3.5\"><path d=\"M0,0 L7,3.5 L0,7 z\" fill=\"var(--text-secondary)\"></path></marker></defs>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"220\" y=\"90\">Arrow: direction of</text>\n<text fill=\"var(--text-secondary)\" font-size=\"9\" text-anchor=\"middle\" x=\"220\" y=\"103\">conventional current</text>\n</g>\n</svg>",
+      "caption": "Figure 5-12: an NPN-type transistor — the arrow shows the direction of the conventional current leaving the NPN transistor",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "formula",
+      "id": null,
+      "html": "$$ I_E = I_B + I_C $$",
+      "sectionGroup": 6,
+      "sectionId": "gain",
+      "sectionNavLabel": "📈 Transistor Gain"
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Explanation — The Main Drawback of the Bipolar Junction Transistor",
+      "html": "The main drawback of the bipolar junction transistor is that the base uses electric current to control the transistor's operation, which requires a precise external electrical circuit to set the value of the base current; any deviation or change in its value can shift the operating point at which the transistor operates.",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "Did you know?",
+      "html": "The transistor's essential job is amplifying the signal fed into it; these amplifiers include the common-base (grounded-base) PNP amplifier and the common-emitter PNP amplifier.",
+      "sectionGroup": 8,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 List — Main Uses of the Transistor",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>It is used as an electronic switch.</li>\n<li>It is used as an amplifier, to amplify small signals.</li>\n</ol>",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "✅ Conditions for the Transistor to Operate",
+      "html": "Two conditions must be met for the transistor to operate, namely:",
+      "sectionGroup": 10,
+      "sectionId": "conditions",
+      "sectionNavLabel": "✅ Operating Conditions"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 List — The Two Conditions for the Transistor to Operate",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>The junction between the base and the emitter must be supplied with forward bias.</li>\n<li>The junction between the collector and the base must be supplied with reverse bias.</li>\n</ol>",
+      "sectionGroup": 11,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "Did you know?",
+      "html": "The collector current \\(I_C\\) is always less than the emitter current \\(I_E\\) by the amount of the base current \\(I_B\\), because of the recombination that occurs in the base region between holes and electrons. The base current is a very small fraction of the emitter current, because the base region is thin and its doping level is low. If the base current \\(I_B\\) equals, for example, 1% of the emitter current \\(I_E\\), then the collector current \\(I_C\\) is about 99% of the emitter current.",
+      "sectionGroup": 12,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "transSvg",
+      "svgAriaLabel": "Simulation of current direction in the transistor",
+      "svgViewBox": "0 0 340 220",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: NPN vs. PNP Transistor",
+      "descriptionHtml": "Choose the transistor type to see the direction of the conventional current flow through its three terminals (emitter E, base B, collector C), together with the relation \\(I_E = I_B + I_C\\).",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnTNPN",
+          "html": "NPN",
+          "class": "neu-btn primary",
+          "data": {
+            "data-ttype": "npn"
+          },
+          "style": null
+        },
+        {
+          "id": "btnTPNP",
+          "html": "PNP",
+          "class": "neu-btn",
+          "data": {
+            "data-ttype": "pnp"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [
+        {
+          "html": "NPN transistor: two outer N regions sandwich a thin P region in the middle (the base). The conventional current enters through the collector and the base, and leaves through the emitter.",
+          "id": "transCaption",
+          "wrapperClass": "diagram-caption"
+        }
+      ],
+      "trailingHtml": "",
+      "labels": {
+        "flowNPN": "Conventional current: enters through C and B, leaves through E",
+        "flowPNP": "Conventional current: enters through E, leaves through C and B",
+        "captionNPN": "NPN transistor: two outer N regions sandwich a thin P region in the middle (the base). The conventional current enters through the collector and the base, and leaves through the emitter.",
+        "captionPNP": "PNP transistor: two outer P regions sandwich a thin N region in the middle (the base). The conventional current enters through the emitter, and leaves through the collector and the base."
+      },
+      "sectionGroup": 13,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "The transistor was invented in 1947 by scientists working at:",
+        "options": [
+          "NASA",
+          "MIT",
+          "Bell Labs",
+          "Cambridge University"
+        ],
+        "explain": "It was invented by John Bardeen, Walter Brattain, and William Shockley at Bell Labs, who received the Nobel Prize in 1956."
+      },
+      {
+        "correct": 1,
+        "question": "The terminal connected to the middle region of a bipolar junction transistor is called:",
+        "options": [
+          "The emitter",
+          "The base",
+          "The collector",
+          "The cathode"
+        ],
+        "explain": "The terminal connected to the middle region is called the base, and the two outer terminals are the emitter and the collector."
+      },
+      {
+        "correct": 0,
+        "question": "The two conditions necessary for the transistor to operate are:",
+        "options": [
+          "Forward bias between the base and the emitter, and reverse bias between the collector and the base",
+          "Reverse bias in both junctions",
+          "Forward bias in both junctions",
+          "No bias at all"
+        ],
+        "explain": "The base-emitter junction must be supplied with forward bias, and the collector-base junction with reverse bias."
+      },
+      {
+        "correct": 3,
+        "question": "The ratio of the collector current to the base current is called:",
+        "options": [
+          "The potential barrier",
+          "The power factor",
+          "The reverse current",
+          "The transistor gain"
+        ],
+        "explain": "The ratio of the collector (or emitter) current to the base current is called the transistor gain, and it increases as the base region is made narrower."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "The transistor: an electronic element made of semiconductor materials (invented by Bardeen, Brattain, and Shockley in 1947), which replaced the vacuum tube through its small size, low power consumption, ruggedness, and long lifetime.",
+      "The bipolar junction transistor: three doped regions, NPN or PNP, with the emitter (E), base (B), and collector (C) terminals, satisfying \\(I_E=I_B+I_C\\).",
+      "The two operating conditions: forward bias between the base and the emitter, and reverse bias between the collector and the base.",
+      "A weak current in the base controls a strong current between the emitter and the collector; the ratio expressing this control is called the transistor gain.",
+      "The transistor's main uses: as an electronic switch, and as an amplifier for small signals."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of the transistor",
+    "viewBox": "0 0 480 260",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "The Transistor"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "E, B, C",
+          "NPN / PNP"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "IE=IB+IC",
+          "Transistor gain"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Operating conditions",
+          "Fwd / rev bias"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Uses",
+          "Switch / amplifier"
+        ]
+      }
+    ]
+  }
+}
