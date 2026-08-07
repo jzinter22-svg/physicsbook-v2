@@ -1,0 +1,245 @@
+{
+  "lessonNumber": 9,
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "Lesson 9: Some Applications of Plasma — Chapter Six",
+    "description": "6-9 Some applications of plasma: display screens, lamps, nuclear fusion, plasma coating, waste treatment, and spacecraft propulsion.",
+    "breadcrumbChapter": "Chapter 6",
+    "breadcrumbLesson": "Some Applications of Plasma",
+    "footer": "Chapter Six: Laser and Plasma — Lesson 9: Some Applications of Plasma"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 9 of 10 · 6-9",
+    "title": "Some Applications of Plasma",
+    "lead": "From display screens to nuclear fusion, and from coating spacecraft to breaking up kidney stones: plasma has nine important application areas in our lives, industry, and medicine."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "States the nine applications of plasma in industry, medicine, and space.",
+    "Distinguishes between the working principle of a neon lamp and a fluorescent lamp.",
+    "Explains the importance of nuclear fusion energy (plasma energy) as a future energy source."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 6-9 Some Applications of Plasma",
+      "html": "Plasma has many applications in various fields of life, industry, medicine, and space. Among the most important are:",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Applications of Plasma",
+      "html": "",
+      "listItems": [
+        "<b>1-</b> Manufacturing television display screens.",
+        "<b>2-</b> Plasma in lamps, where there are two types of lamps that rely on plasma as their source: the first is the neon lamp, and the second is the fluorescent lamp.",
+        "<b>3-</b> Obtaining energy through thermonuclear fusion.",
+        "<b>4-</b> Plasma coating, which helps reduce the effect of high temperatures on the surfaces of vehicles, especially aircraft; plasma is sprayed by a robot at high temperatures to form the thermal insulation layers of spacecraft, aircraft, and engines.",
+        "<b>5-</b> Treating household and industrial waste by separating its constituent elements.",
+        "<b>6-</b> Some spacecraft and artificial satellites use plasma thrusters for movement in space or to adjust their position.",
+        "<b>7-</b> Medical applications: the waves generated from plasma are used in breaking up kidney stones by means of a shock-wave device, manufacturing medical ceramics, medical sterilization, and other medical applications.",
+        "<b>8-</b> Plasma is a good chemical agent for cleaning surfaces, and is also used in chemical analysis.",
+        "<b>9-</b> Electric arcs in welding, cutting, and machining metals, etc."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "lampSvg",
+      "svgAriaLabel": "Simulation of a neon lamp and a fluorescent lamp",
+      "svgViewBox": "0 0 320 150",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: Neon Lamp vs. Fluorescent Lamp",
+      "descriptionHtml": "Choose a lamp type to see the difference in its working principle and the color of the glow produced by the plasma inside it.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnNeon",
+          "html": "Neon Lamp",
+          "class": "neu-btn primary",
+          "data": {
+            "data-lamp": "neon"
+          },
+          "style": null
+        },
+        {
+          "id": "btnFluor",
+          "html": "Fluorescent Lamp",
+          "class": "neu-btn",
+          "data": {
+            "data-lamp": "fluorescent"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "trailingId": "lampCaption",
+      "sectionGroup": 2,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "neonGasLabel": "Ionized neon gas",
+        "neonGlowLabel": "Direct orange-red glow",
+        "neonTitleLabel": "Neon Lamp",
+        "neonCaption": "Neon lamp: ionized neon gas (plasma) glows directly with a distinctive orange-red color when an electrical voltage is applied across the ends of the tube.",
+        "fluorGasLabel": "Ionized mercury vapor + phosphor coating",
+        "fluorGlowLabel": "Converts ultraviolet light into white light",
+        "fluorTitleLabel": "Fluorescent Lamp",
+        "fluorCaption": "Fluorescent lamp: mercury vapor atoms become ionized and emit ultraviolet light, which an internal phosphor coating absorbs and converts into visible white light."
+      }
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "Did you know?",
+      "html": "Focused laser beams can be used to produce plasma at extremely high plasma temperatures inside a laboratory at low cost, and this system has many applications in the field of astrophysics.",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "⚠️",
+      "strong": "Did you know?",
+      "html": "The most common energy sources today are (coal and petroleum), and global demand for them is growing; these sources are expected to be unable to meet this demand by around the middle of this twenty-first century. This makes clear the need for a clean, safe source that lasts a long time, and perhaps one of the most important of these sources is (plasma energy), whose source is (nuclear fusion energy).",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "The two types of lamps that rely on plasma as their source are:",
+        "options": [
+          "The LED lamp and the halogen lamp",
+          "The neon lamp and the fluorescent lamp",
+          "The tungsten lamp only",
+          "No lamps rely on plasma"
+        ],
+        "explain": "There are two types of lamps that rely on plasma as their source: the neon lamp and the fluorescent lamp."
+      },
+      {
+        "correct": 2,
+        "question": "Plasma coating is used in particular on the surfaces of:",
+        "options": [
+          "Household furniture",
+          "Clothing",
+          "Aircraft and spacecraft",
+          "Food"
+        ],
+        "explain": "Plasma coating helps reduce the effect of high temperatures on the surfaces of vehicles, especially aircraft and spacecraft."
+      },
+      {
+        "correct": 0,
+        "question": "The waves generated from plasma are used in medicine for the purpose of:",
+        "options": [
+          "Breaking up kidney stones",
+          "Measuring blood pressure",
+          "X-ray imaging",
+          "Electrocardiography"
+        ],
+        "explain": "The waves generated from plasma are used in breaking up kidney stones by means of a shock-wave device."
+      },
+      {
+        "correct": 3,
+        "question": "The plasma energy source that may replace coal and petroleum in the future is:",
+        "options": [
+          "Concentrated solar power only",
+          "Wind energy",
+          "Hydroelectric power",
+          "Nuclear fusion energy"
+        ],
+        "explain": "Coal and petroleum are expected to be unable to meet global demand by around the middle of the twenty-first century, and perhaps the most important clean, safe alternative is plasma energy, whose source is nuclear fusion energy."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Applications of plasma: display screens, lamps (neon/fluorescent), nuclear fusion, thermal coating for aircraft and spacecraft.",
+      "Waste treatment, spacecraft propulsion, medical applications (breaking up stones, medical ceramics, sterilization), chemical cleaning, electric-arc welding.",
+      "Plasma can be produced in the laboratory with focused laser beams at low cost, with applications in astrophysics.",
+      "Plasma energy (nuclear fusion) is a candidate to become the clean energy source that replaces coal and petroleum in the future."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of plasma applications",
+    "viewBox": "0 0 480 260",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Applications",
+        "of Plasma"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Lamps/Screens"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Nuclear Fusion"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Space/Coating"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Medical/Welding"
+        ]
+      }
+    ]
+  }
+}

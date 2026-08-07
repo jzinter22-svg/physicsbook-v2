@@ -100,7 +100,17 @@
       "trailingId": "lampCaption",
       "sectionGroup": 2,
       "sectionId": "interactive",
-      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية",
+      "labels": {
+        "neonGasLabel": "غاز النيون المتأين",
+        "neonGlowLabel": "توهّج أحمر برتقالي مباشر",
+        "neonTitleLabel": "مصباح النيون (Neon Lamp)",
+        "neonCaption": "مصباح النيون: يتوهّج غاز النيون المتأين (البلازما) مباشرة بلون أحمر برتقالي مميز عند تسليط جهد كهربائي على طرفي الأنبوبة.",
+        "fluorGasLabel": "بخار زئبق متأين + طلاء فوسفوري",
+        "fluorGlowLabel": "يحوّل الأشعة فوق البنفسجية إلى ضوء أبيض",
+        "fluorTitleLabel": "مصباح الفلورسنت (Fluorescent Lamp)",
+        "fluorCaption": "مصباح الفلورسنت: تتأين ذرات بخار الزئبق فتصدر أشعة فوق بنفسجية، يمتصها طلاء فوسفوري داخلي فيحوّلها إلى ضوء أبيض مرئي."
+      }
     },
     {
       "type": "callout",
