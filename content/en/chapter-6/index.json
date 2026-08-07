@@ -1,0 +1,58 @@
+{
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "Chapter 6: Laser and Plasma — Interactive Physics Book",
+    "description": "Chapter Six of the Interactive Physics Book: Laser and Plasma — the laser and maser, properties of laser beams, the working principles of laser, laser device components, laser level systems, types of laser, applications of laser, plasma and its applications — with interactive tools and solved questions.",
+    "breadcrumbChapter": "Chapter 6",
+    "footer": "Chapter Six: Laser and Plasma — Interactive Physics Book"
+  },
+  "hero": {
+    "eyebrow": "📘 Interactive Physics Book · Third Grade · Industrial Track",
+    "titleHtml": "Chapter Six: Laser and Plasma",
+    "lead": "From Einstein's theory of stimulated emission to the first working laser device, from the components of a laser device and its level systems to its types and wide-ranging applications, all the way to the fourth state of matter: plasma and its applications.",
+    "startLessonLabel": "Start the First Lesson ←",
+    "tags": ["⏱ 10 lessons", "🧠 Self-quizzes", "🗺 Mind maps"]
+  },
+  "objectivesHeading": "🎯 Behavioral Objectives",
+  "objectivesLead": "After studying this chapter, the student should be able to:",
+  "objectives": [
+    "Know the laser and the maser.",
+    "Distinguish between spontaneous emission and stimulated emission.",
+    "Identify the concepts of (the active medium, the resonator, the pumping technique).",
+    "Identify the laser system.",
+    "List the types of laser.",
+    "State some applications of laser.",
+    "Identify plasma."
+  ],
+  "lessonsHeading": "📚 Chapter Contents",
+  "enterLessonLabel": "Enter the Lesson ←",
+  "lessons": [
+    {"title": "Laser and Maser", "description": "6-1: The origin of the name, Einstein's theory, Townes's maser, Maiman's laser."},
+    {"title": "Properties of Laser Beams", "description": "6-2: Monochromaticity, directionality, coherence, brightness, with a solved example."},
+    {"title": "The Foundation of Laser Working", "description": "6-3: Stimulated absorption, spontaneous and stimulated emission, population inversion."},
+    {"title": "Constituents of Laser Devices", "description": "6-4: The active medium, the resonator, the pumping technique."},
+    {"title": "Laser Level Systems", "description": "6-5: The three-level system and the four-level system."},
+    {"title": "Types of Laser", "description": "6-6: Solid-state and gas lasers, the semiconductor laser, and more."},
+    {"title": "Some Applications of Laser", "description": "6-7: Industrial, medical, scientific, communications applications, and more."},
+    {"title": "Plasma", "description": "6-8: The fourth state of matter, ionization factors, plasma in the universe."},
+    {"title": "Some Applications of Plasma", "description": "6-9: Display screens, lamps, nuclear fusion, and more."},
+    {"title": "Chapter Six Questions", "description": "All seven end-of-chapter questions, solved in detail."}
+  ],
+  "mindmap": {
+    "heading": "🗺 Chapter Mind Map",
+    "ariaLabel": "Mind map for Chapter Six",
+    "viewBox": "0 0 900 620",
+    "center": {"cx": 450, "cy": 310, "r": 72, "lines": ["Laser and", "Plasma"]},
+    "satellites": [
+      {"cx": 450, "cy": 80, "r": 56, "color": "#3fa9f5", "lines": ["Laser and", "Maser"]},
+      {"cx": 598, "cy": 134, "r": 56, "color": "#ffab5e", "lines": ["Properties", "of Laser"]},
+      {"cx": 676, "cy": 270, "r": 56, "color": "#ff6b9d", "lines": ["Working", "Principles"]},
+      {"cx": 649, "cy": 425, "r": 56, "color": "#2fd18f", "lines": ["Device", "Components"]},
+      {"cx": 529, "cy": 526, "r": 56, "color": "#7c6fee", "lines": ["Level", "Systems"]},
+      {"cx": 371, "cy": 526, "r": 56, "color": "#3fa9f5", "lines": ["Types", "of Laser"]},
+      {"cx": 251, "cy": 425, "r": 56, "color": "#ffab5e", "lines": ["Applications", "of Laser"]},
+      {"cx": 224, "cy": 270, "r": 56, "color": "#ff6b9d", "lines": ["Plasma"]},
+      {"cx": 302, "cy": 134, "r": 56, "color": "#2fd18f", "lines": ["Applications", "of Plasma"]}
+    ]
+  }
+}
