@@ -1,0 +1,47 @@
+{
+  "chapterNumber": 5,
+  "meta": {
+    "pageTitle": "Chapter 5: Semiconductor Materials and Electronic Devices — Interactive Physics Book",
+    "description": "Chapter Five of the Interactive Physics Book: Semiconductor Materials and Electronic Devices — energy bands, N- and P-type semiconductors, the PN diode, the transistor, electromagnetic broadcasting, and radar — with interactive tools and solved questions.",
+    "breadcrumbChapter": "Chapter 5",
+    "footer": "Chapter Five: Semiconductor Materials and Electronic Devices — Interactive Physics Book"
+  },
+  "hero": {
+    "eyebrow": "📘 Interactive Physics Book · Third Grade · Industrial Track",
+    "titleHtml": "Chapter Five: Semiconductor Materials and Electronic Devices",
+    "lead": "From the energy bands that explain electrical conductivity, to N- and P-type semiconductors, the PN diode and the transistor, all the way to electromagnetic broadcasting and radar: in this chapter we discover the physical basis of every modern electronic device.",
+    "startLessonLabel": "Start the First Lesson ←",
+    "tags": ["⏱ 7 lessons", "🧠 Self-quizzes", "🗺 Mind maps"]
+  },
+  "objectivesHeading": "🎯 Behavioral Objectives",
+  "objectivesLead": "After studying this chapter, the student should be able to:",
+  "objectives": [
+    "Know the types of semiconductor materials (P, N) to distinguish between them and state their most important applications, along with their symbols and how to draw them in circuits, and the effect of the junction between P and N materials on the direction of charge motion.",
+    "Identify the two types of junction transistor and distinguish between them, and understand the concept of radar and how it works, supported with diagrams."
+  ],
+  "lessonsHeading": "📚 Chapter Contents",
+  "enterLessonLabel": "Enter the Lesson ←",
+  "lessons": [
+    {"title": "Semiconductor Materials (Overlapping Energy Bands)", "description": "5-1: Classifying materials into conductors, insulators, and semiconductors, and the types of energy bands."},
+    {"title": "N-type and P-type Semiconductor Materials", "description": "5-2: Doping, the donor and acceptor atom, charge carriers."},
+    {"title": "The PN Diode", "description": "5-3: The junction, the depletion region, forward and reverse bias."},
+    {"title": "The Transistor", "description": "5-4: The bipolar junction transistor, NPN and PNP, its operating mechanism and operating conditions."},
+    {"title": "Electromagnetic Broadcasting", "description": "5-5: The electromagnetic spectrum, the ground wave and the sky wave."},
+    {"title": "Radar", "description": "5-6: Defining radar, its components, how it works, its types and applications."},
+    {"title": "Chapter Five Questions", "description": "All eleven end-of-chapter questions, solved in detail."}
+  ],
+  "mindmap": {
+    "heading": "🗺 Chapter Mind Map",
+    "ariaLabel": "Mind map for Chapter Five",
+    "viewBox": "0 0 900 540",
+    "center": {"cx": 450, "cy": 270, "r": 72, "lines": ["Semiconductor", "Materials and", "Electronic Devices"]},
+    "satellites": [
+      {"cx": 450, "cy": 75, "r": 60, "color": "#3fa9f5", "lines": ["Energy Bands", "5-1"]},
+      {"cx": 619, "cy": 173, "r": 60, "color": "#ffab5e", "lines": ["N- and P-type", "5-2"]},
+      {"cx": 619, "cy": 367, "r": 60, "color": "#ff6b9d", "lines": ["The PN Diode", "5-3"]},
+      {"cx": 450, "cy": 465, "r": 60, "color": "#2fd18f", "lines": ["The Transistor", "5-4"]},
+      {"cx": 281, "cy": 367, "r": 60, "color": "#7c6fee", "lines": ["EM", "Broadcasting", "5-5"]},
+      {"cx": 281, "cy": 173, "r": 60, "color": "#3fa9f5", "lines": ["Radar", "5-6"]}
+    ]
+  }
+}
