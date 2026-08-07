@@ -145,7 +145,7 @@
     var titleHtml = b.label != null
       ? esc(b.label)
       : '<span class="example-badge">' + b.number + "</span> " + esc((window.PBI18n && window.PBI18n.t("common.example")) || "مثال") + " (" + b.number + ")";
-    var out = '<div class="example fade-up">' +
+    var out = '<div class="example">' +
       '<div class="example-head"><div class="example-title">' + titleHtml + "</div></div>" +
       '<div class="example-problem">' + html(b.problemHtml) + "</div>";
     if(b.diagramSvg){
@@ -156,7 +156,7 @@
     var sol = b.solution;
     var stepsId = "steps-ex" + b.number;
     var solTitle = sol.label != null ? esc(sol.label) : esc((window.PBI18n && window.PBI18n.t("common.detailedSolution")) || "الحل التفصيلي");
-    out += '<div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">' +
+    out += '<div class="example" style="border-inline-start:4px solid var(--accent-blue)">' +
       '<div class="example-head"><div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> ' +
       solTitle + "</div>" +
       '<button class="neu-btn" data-reveal-steps="' + stepsId + '" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">' +
