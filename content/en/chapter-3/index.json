@@ -1,0 +1,48 @@
+{
+  "chapterNumber": 3,
+  "meta": {
+    "pageTitle": "Chapter 3: Electromagnetic Induction — Interactive Physics Book",
+    "description": "Chapter Three of the Interactive Physics Book: electromagnetic induction — Faraday's law, Lenz's law, eddy currents, self-induction, the electric generator, and the motor — with solved examples and interactive tools.",
+    "breadcrumbChapter": "Chapter 3",
+    "footer": "Chapter Three: Electromagnetic Induction — Interactive Physics Book"
+  },
+  "hero": {
+    "eyebrow": "📘 Interactive Physics Book · Third Grade · Industrial Track",
+    "titleHtml": "Chapter Three: Electromagnetic Induction <span style=\"color:var(--accent-blue)\">Electromagnetic Induction</span>",
+    "lead": "From Faraday's simple experiment with a magnet and a coil to electric generators and motors: in this chapter we study how changing magnetic fields produce electric currents, Faraday's and Lenz's laws, eddy currents, and self-induction.",
+    "startLessonLabel": "Start the First Lesson ←",
+    "tags": ["⏱ 6 lessons", "🧠 Self-quizzes", "🗺 Mind maps"]
+  },
+  "objectivesHeading": "🎯 Behavioral Objectives",
+  "objectivesLead": "After completing this chapter, the student will be able to:",
+  "objectives": [
+    "Understand the induced electromotive force.",
+    "Understand Faraday's law and solve mathematical examples on it.",
+    "Know the induced electric field and the reasons for its occurrence with diagrams, solve problems and examples on it, and understand how energy arises through induction.",
+    "Understand Lenz's law and its explanation.",
+    "Understand how a generator and a motor work, their parts, and the distinction between them; know how a motor's torque is generated, understand the reasons for the motor's back electromotive force, and solve theoretical and practical examples.",
+    "Understand the occurrence of eddy currents with diagrams, and understand the occurrence of self-induction."
+  ],
+  "lessonsHeading": "📚 Chapter Contents",
+  "enterLessonLabel": "Enter the Lesson ←",
+  "lessons": [
+    {"title": "Introduction and Faraday's Law", "description": "3-1 Introduction, 3-2 Faraday's law, with two solved examples."},
+    {"title": "Lenz's Law", "description": "3-3: the right-hand rule, the direction of the induced current, and conservation of energy."},
+    {"title": "Eddy Currents and Self-Induction", "description": "3-4 Eddy currents, 3-5 self-induction, with a solved example."},
+    {"title": "The Electric Generator", "description": "3-6: the AC generator and the DC generator."},
+    {"title": "The Electric Motor", "description": "3-7: the motor rule, generating torque, and the back electromotive force."},
+    {"title": "Chapter Questions and Problems", "description": "All multiple-choice questions, short questions, and problems, fully solved."}
+  ],
+  "mindmap": {
+    "heading": "🗺 Chapter Mind Map",
+    "ariaLabel": "Mind map of Chapter Three",
+    "viewBox": "0 0 900 460",
+    "center": {"cx": 450, "cy": 230, "r": 66, "lines": ["Electromagnetic", "Induction"]},
+    "satellites": [
+      {"cx": 180, "cy": 90, "r": 54, "color": "#ffab5e", "lines": ["Faraday's &", "Lenz's laws"]},
+      {"cx": 720, "cy": 90, "r": 54, "color": "#ff6b9d", "lines": ["Eddy currents", "& self-induction"]},
+      {"cx": 150, "cy": 250, "r": 54, "color": "#2fd18f", "lines": ["The Generator"]},
+      {"cx": 750, "cy": 250, "r": 54, "color": "#3fa9f5", "lines": ["The Motor"]}
+    ]
+  }
+}
