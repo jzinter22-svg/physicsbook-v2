@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-6.html">
@@ -42,166 +43,34 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يفرّق بين الطريقة المباشرة وغير المباشرة في صنع السبائك.</span></li>
-        <li><span class="obj-num">2</span><span>يميّز بين طريقة المرحلة الواحدة وطريقة المرحلتين ضمن الطريقة غير المباشرة.</span></li>
-        <li><span class="obj-num">3</span><span>يعلّل أهمية التحليل الكيمياوي الدقيق بعد صنع أي سبيكة.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 6-8 طرائق صنع السبائك</h2>
-      <p>هناك طريقتان لصناعة السبائك، تختلفان في كيفية دمج الفلزات المكوّنة للسبيكة مع بعضها.</p>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: طرائق صنع السبائك</h2>
-      <p>اختر إحدى الطرائق الثلاث لمشاهدة خطوات صنع السبيكة بها.</p>
-      <div class="io-panel">
-        <div class="io-row" role="group" aria-label="اختيار طريقة الصنع">
-          <button class="neu-btn primary" data-method="direct" id="btnDirect">المباشرة</button>
-          <button class="neu-btn" data-method="onestage" id="btnOneStage">غير مباشرة — مرحلة واحدة</button>
-          <button class="neu-btn" data-method="twostage" id="btnTwoStage">غير مباشرة — مرحلتان</button>
-        </div>
-        <div class="mindmap-wrap"><svg id="methodSvg" viewBox="0 0 380 200" role="img" aria-label="محاكاة طرائق صنع السبائك"></svg></div>
-        <p id="methodCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — الطريقة المباشرة</span>
-      <p style="margin:.3rem 0">يكون ذلك بمزج منصهرات الفلزات المراد صنع السبيكة منها مع بعضها مباشرة، وتتصلب هذه المنصهرات فتتصلب السبيكة المطلوبة وصناعتها. وهي الطريقة الأسهل نوعًا ما.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-purple)">
-      <span class="def-label" style="color:var(--accent-purple)">🔢 تعداد — الطريقة غير المباشرة وتقسيماتها</span>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.6rem">
-        <li><b>الطريقة ذات المرحلة الواحدة:</b> يُصهر الفلز الأساس الموجود في السبيكة بنسبة كبيرة أولًا، ثم يُضاف بعد ذلك الفلزات الأخرى، والتي يجب أن تذاب في منصهر الفلز الأساس كليًا، ولكن إذا تعسّر الذوبان فلا يمكن صنع السبيكة بهذه النسب. ومثال على هذه الطريقة صناعة سبيكة اللحام (القلوي)، حيث يتم صهر الرصاص أولًا ثم يُذاب فيه فلز القصدير ويُمزجان جيدًا، ويُصب هذا المزيج على شكل وهيئة قضبان.</li>
-        <li><b>الطريقة ذات المرحلتين:</b> تقتضي هذه الطريقة بتصنيع سبيكة أولية بنسبة معينة، ومن ثم تتم إضافة وزن معين ومعلوم من الفلز المراد إدخاله لتصنيع السبيكة النهائية والحصول على النسب المرغوبة.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-green)">
-      <span class="def-label" style="color:var(--accent-green)">🔍 تعليل — لماذا تُخضَع السبيكة الناتجة لتحليل كيمياوي دقيق بعد صنعها؟</span>
-      <p style="margin:.3rem 0">تخضع السبيكة الناتجة بعد الانتهاء من صنعها إلى تحليل كيمياوي دقيق قبل عرضها على الأسواق؛ لتعيين نسب مكوّناتها لغرض التأكد من مطابقتها للمواصفات المطلوبة، مهما كانت طريقة صنعها.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="callout tip">
-      <span class="icon">💬</span>
-      <span><b>هل تعلم؟</b> أن هناك طريقة متطورة في صناعة السبائك، حيث تم من خلالها التوصل إلى سبائك ذات خصائص مثالية.</span>
-    </div>
-  </section>
-
-  <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
       <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>1.</span><span>مزج منصهرات الفلزات المراد صنع السبيكة منها مباشرة هو مبدأ:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الطريقة المباشرة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الطريقة ذات المرحلتين</span></label>
-          <label class="quiz-opt"><input type="radio"><span>التحليل الكهربائي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تعويم الزبد</span></label>
-        </div>
-        <div class="quiz-explain">الطريقة المباشرة تكون بمزج منصهرات الفلزات المراد صنع السبيكة منها مع بعضها مباشرة، وهي الأسهل نوعًا ما.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>2.</span><span>في صناعة سبيكة اللحام القلوي بالطريقة ذات المرحلة الواحدة، يُصهر أولًا:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>القصدير</span></label>
-          <label class="quiz-opt"><input type="radio"><span>النحاس</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الرصاص</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الحديد</span></label>
-        </div>
-        <div class="quiz-explain">في صناعة سبيكة اللحام القلوي، يتم صهر الرصاص أولًا ثم يُذاب فيه فلز القصدير ويُمزجان جيدًا.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>3.</span><span>الطريقة ذات المرحلتين تقتضي:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>مزج كل الفلزات دفعة واحدة فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>تصنيع سبيكة أولية ثم إضافة وزن معلوم من فلز آخر للوصول للسبيكة النهائية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>عدم إجراء أي تحليل كيمياوي</span></label>
-          <label class="quiz-opt"><input type="radio"><span>استعمال فلز واحد فقط</span></label>
-        </div>
-        <div class="quiz-explain">تقتضي الطريقة ذات المرحلتين تصنيع سبيكة أولية بنسبة معينة، ثم إضافة وزن معين ومعلوم من الفلز المراد إدخاله للحصول على السبيكة النهائية بالنسب المرغوبة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>تخضع السبيكة بعد صنعها لتحليل كيمياوي دقيق؛ لأن ذلك:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>غير ضروري لكنه مفيد للدعاية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يقلل من وزن السبيكة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يُجرى مرة كل عدة سنوات فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>يتأكد من مطابقة نسب مكوّناتها للمواصفات المطلوبة قبل عرضها على الأسواق</span></label>
-        </div>
-        <div class="quiz-explain">تخضع السبيكة الناتجة إلى تحليل كيمياوي دقيق قبل عرضها على الأسواق لتعيين نسب مكوّناتها والتأكد من مطابقتها للمواصفات المطلوبة.</div>
-      </div>
-
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
   </section>
 
-  <!-- ===== Summary ===== -->
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>الطريقة المباشرة: مزج منصهرات الفلزات مباشرة مع بعضها؛ وهي الأسهل نوعًا ما.</span></li>
-        <li><span>الطريقة غير المباشرة ذات المرحلة الواحدة: صهر الفلز الأساس أولًا ثم إذابة الفلزات الأخرى فيه كليًا (مثال: اللحام القلوي من الرصاص والقصدير).</span></li>
-        <li><span>الطريقة غير المباشرة ذات المرحلتين: تصنيع سبيكة أولية، ثم إضافة وزن معلوم من فلز آخر للوصول إلى السبيكة النهائية بالنسب المطلوبة.</span></li>
-        <li><span>تخضع كل سبيكة، مهما كانت طريقة صنعها، لتحليل كيمياوي دقيق قبل عرضها على الأسواق.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
-  <!-- ===== Mind map ===== -->
   <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
     <div class="card neu">
       <div class="example-head">
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l6" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l6">
-        <svg viewBox="0 -3 480 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية لطرائق صنع السبائك">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="126" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">طرائق صنع</text>
-            <text x="240" y="142" text-anchor="middle" fill="#fff" font-weight="800" font-size="11" font-family="Cairo,sans-serif">السبائك</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">المباشرة</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">مرحلة</text>
-            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">واحدة</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">مرحلتان</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">تحليل</text>
-            <text x="390" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">كيمياوي</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l6"></div>
     </div>
   </section>
 
@@ -218,16 +87,17 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("methodSvg");
-  var caption = document.getElementById("methodCaption");
-  var buttons = document.querySelectorAll("[data-method]");
+  var svg, caption, buttons;
   var raf = null;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
-  var TEXTS = {
-    direct: "الطريقة المباشرة: تُمزج منصهرات الفلزات المراد صنع السبيكة منها مع بعضها مباشرة في بوتقة واحدة، ثم تتصلب لتكوّن السبيكة.",
-    onestage: "الطريقة غير المباشرة ذات المرحلة الواحدة: يُصهر الفلز الأساس أولًا (كالرصاص)، ثم يُذاب فيه الفلز الآخر (كالقصدير) كليًا — مثال: سبيكة اللحام القلوي.",
-    twostage: "الطريقة غير المباشرة ذات المرحلتين: تُصنع سبيكة أولية بنسبة معينة أولًا، ثم يُضاف إليها وزن معلوم من فلز آخر للوصول إلى السبيكة النهائية بالنسب المطلوبة."
-  };
+  function captions(){
+    return {
+      direct: t("captionDirect","الطريقة المباشرة: تُمزج منصهرات الفلزات المراد صنع السبيكة منها مع بعضها مباشرة في بوتقة واحدة، ثم تتصلب لتكوّن السبيكة."),
+      onestage: t("captionOneStage","الطريقة غير المباشرة ذات المرحلة الواحدة: يُصهر الفلز الأساس أولًا (كالرصاص)، ثم يُذاب فيه الفلز الآخر (كالقصدير) كليًا — مثال: سبيكة اللحام القلوي."),
+      twostage: t("captionTwoStage","الطريقة غير المباشرة ذات المرحلتين: تُصنع سبيكة أولية بنسبة معينة أولًا، ثم يُضاف إليها وزن معلوم من فلز آخر للوصول إلى السبيكة النهائية بالنسب المطلوبة.")
+    };
+  }
 
   function el(tag, attrs){
     var e = document.createElementNS(ns, tag);
@@ -248,15 +118,15 @@
   }
 
   function sceneDirect(){
-    crucible(120, "منصهر الفلز 1");
-    crucible(260, "منصهر الفلز 2");
+    crucible(120, t("directLabel1","منصهر الفلز 1"));
+    crucible(260, t("directLabel2","منصهر الفلز 2"));
     var arrow1 = el("line", {x1:145, y1:90, x2:175, y2:90, stroke:"var(--accent-orange)", "stroke-width":3});
     var arrow2 = el("line", {x1:235, y1:90, x2:205, y2:90, stroke:"var(--accent-orange)", "stroke-width":3});
     svg.appendChild(arrow1); svg.appendChild(arrow2);
     var mixCrucible = el("path", {d:"M160,40 L168,80 Q190,92 212,80 L220,40 Z", fill:"#f0954a", stroke:"#a5661a", "stroke-width":1.5});
     svg.appendChild(mixCrucible);
     var lbl = el("text", {x:190, y:22, "text-anchor":"middle", "font-family":"Cairo,sans-serif", "font-size":10, "font-weight":800, fill:"var(--accent-orange)"});
-    lbl.textContent = "مزج مباشر → سبيكة";
+    lbl.textContent = t("directMixLabel","مزج مباشر → سبيكة");
     svg.appendChild(lbl);
     var t0 = null;
     function step(ts){
@@ -269,15 +139,15 @@
   }
 
   function sceneOneStage(){
-    var base = crucible(120, "1) صهر الرصاص (الفلز الأساس)");
+    crucible(120, t("oneStageLabel1","1) صهر الرصاص (الفلز الأساس)"));
     var arrow = el("line", {x1:150, y1:90, x2:210, y2:90, stroke:"var(--accent-pink)", "stroke-width":3});
     svg.appendChild(arrow);
     var addDot = el("circle", {cx:180, cy:60, r:6, fill:"var(--accent-blue)"});
     svg.appendChild(addDot);
     var addLbl = el("text", {x:180, y:45, "text-anchor":"middle", "font-family":"Cairo,sans-serif", "font-size":9, "font-weight":700, fill:"var(--accent-blue)"});
-    addLbl.textContent = "+ يُذاب القصدير";
+    addLbl.textContent = t("oneStageAddLabel","+ يُذاب القصدير");
     svg.appendChild(addLbl);
-    crucible(260, "2) قضبان لحام");
+    crucible(260, t("oneStageLabel2","2) قضبان لحام"));
     var t0 = null;
     function step(ts){
       if(!t0) t0=ts;
@@ -291,18 +161,18 @@
   }
 
   function sceneTwoStage(){
-    crucible(80, "سبيكة أولية");
+    crucible(80, t("twoStageInitial","سبيكة أولية"));
     var arrow1 = el("line", {x1:108, y1:90, x2:150, y2:90, stroke:"var(--accent-green)", "stroke-width":3});
     svg.appendChild(arrow1);
     var addLbl = el("text", {x:130, y:78, "text-anchor":"middle", "font-family":"Cairo,sans-serif", "font-size":8.5, "font-weight":700, fill:"var(--accent-green)"});
-    addLbl.textContent = "+ وزن معلوم";
+    addLbl.textContent = t("twoStageAddLabel","+ وزن معلوم");
     svg.appendChild(addLbl);
-    crucible(190, "سبيكة وسيطة");
+    crucible(190, t("twoStageIntermediate","سبيكة وسيطة"));
     var arrow2 = el("line", {x1:218, y1:90, x2:260, y2:90, stroke:"var(--accent-green)", "stroke-width":3});
     svg.appendChild(arrow2);
-    crucible(300, "سبيكة نهائية");
+    crucible(300, t("twoStageFinal","سبيكة نهائية"));
     var check = el("text", {x:300, y:60, "text-anchor":"middle", "font-family":"Cairo,sans-serif", "font-size":14, "font-weight":800, fill:"var(--accent-green)"});
-    check.textContent = "✓ تحليل كيمياوي";
+    check.textContent = t("twoStageCheck","✓ تحليل كيمياوي");
     svg.appendChild(check);
   }
 
@@ -312,15 +182,22 @@
     if(method === "direct") sceneDirect();
     else if(method === "onestage") sceneOneStage();
     else sceneTwoStage();
-    caption.textContent = TEXTS[method];
+    caption.textContent = captions()[method];
     buttons.forEach(function(b){ b.classList.toggle("primary", b.getAttribute("data-method") === method); });
   }
 
-  buttons.forEach(function(b){
-    b.addEventListener("click", function(){ draw(b.getAttribute("data-method")); });
-  });
-
-  draw("direct");
+  function boot(){
+    svg = document.getElementById("methodSvg");
+    caption = document.getElementById("methodCaption");
+    buttons = document.querySelectorAll("[data-method]");
+    if(!svg || !caption || !buttons.length) return;
+    stopAnim();
+    buttons.forEach(function(b){
+      b.addEventListener("click", function(){ draw(b.getAttribute("data-method")); });
+    });
+    draw("direct");
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>

@@ -1,0 +1,262 @@
+{
+  "lessonNumber": 6,
+  "chapterNumber": 8,
+  "meta": {
+    "pageTitle": "Lesson 6: Methods of Making Alloys — Chapter Eight",
+    "description": "8-6 Methods of making alloys: the direct method, and the indirect method with its one-stage and two-stage variants, with the example of solder alloy.",
+    "breadcrumbChapter": "Chapter 8",
+    "breadcrumbLesson": "Methods of Making Alloys",
+    "footer": "Chapter Eight: Metals and Alloys — Lesson 6: Methods of Making Alloys"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 6 of 9 · 8-6",
+    "title": "Methods of Making Alloys",
+    "lead": "How is an alloy made from two or more metals in precise proportions? Learn in this lesson about the direct method, and the indirect method with its two stages."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Distinguishes between the direct method and the indirect method of making alloys.",
+    "Distinguishes between the one-stage method and the two-stage method within the indirect method.",
+    "Explains the importance of precise chemical analysis after making any alloy."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 8-6 Methods of Making Alloys",
+      "html": "There are two methods for manufacturing alloys, which differ in how the metals making up the alloy are combined with each other.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "simulation",
+      "svgId": "methodSvg",
+      "svgAriaLabel": "Simulation of methods of making alloys",
+      "svgViewBox": "0 0 380 200",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: Methods of Making Alloys",
+      "descriptionHtml": "Choose one of the three methods to see the steps of making an alloy with it.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnDirect",
+          "html": "Direct",
+          "class": "neu-btn primary",
+          "data": {
+            "data-method": "direct"
+          },
+          "style": null
+        },
+        {
+          "id": "btnOneStage",
+          "html": "Indirect — One Stage",
+          "class": "neu-btn",
+          "data": {
+            "data-method": "onestage"
+          },
+          "style": null
+        },
+        {
+          "id": "btnTwoStage",
+          "html": "Indirect — Two Stages",
+          "class": "neu-btn",
+          "data": {
+            "data-method": "twostage"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "trailingId": "methodCaption",
+      "sectionGroup": 1,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "captionDirect": "The direct method: the molten metals from which the alloy is to be made are mixed together directly in a single crucible, then solidify to form the alloy.",
+        "captionOneStage": "The one-stage indirect method: the base metal is melted first (such as lead), then the other metal (such as tin) is fully dissolved into it — example: solder alloy.",
+        "captionTwoStage": "The two-stage indirect method: an initial alloy is made in a specific ratio first, then a known weight of another metal is added to it to reach the final alloy in the desired proportions.",
+        "directLabel1": "Molten Metal 1",
+        "directLabel2": "Molten Metal 2",
+        "directMixLabel": "Direct mixing → alloy",
+        "oneStageLabel1": "1) Melting lead (the base metal)",
+        "oneStageAddLabel": "+ Tin is dissolved in",
+        "oneStageLabel2": "2) Solder bars",
+        "twoStageInitial": "Initial alloy",
+        "twoStageAddLabel": "+ Known weight",
+        "twoStageIntermediate": "Intermediate alloy",
+        "twoStageFinal": "Final alloy",
+        "twoStageCheck": "✓ Chemical analysis"
+      }
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — The Direct Method",
+      "html": "This is done by mixing the molten metals from which the alloy is to be made directly with each other, and these melts solidify, solidifying the desired alloy in the process. It is the somewhat easier method.",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — The Indirect Method and Its Variants",
+      "html": "",
+      "listItems": [
+        "<b>The one-stage method:</b> the base metal present in the alloy in a large proportion is melted first, and then the other metals are added, which must dissolve completely in the melt of the base metal; but if dissolving is difficult, the alloy cannot be made in those proportions. An example of this method is manufacturing solder alloy, where lead is melted first, then tin metal is dissolved into it and the two are mixed well, and this mixture is poured into the shape of bars.",
+        "<b>The two-stage method:</b> this method requires manufacturing an initial alloy in a specific proportion, and then adding a specific, known weight of the metal to be introduced to manufacture the final alloy and obtain the desired proportions."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.6rem",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "label": "🔍 Reasoning — Why is the resulting alloy subjected to precise chemical analysis after being made?",
+      "html": "After it has finished being made, the resulting alloy is subjected to precise chemical analysis before being brought to market, to determine the proportions of its components in order to confirm that it meets the required specifications, regardless of the method used to make it.",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "callout",
+      "icon": "💬",
+      "strong": "Did you know?",
+      "html": "There is an advanced method for manufacturing alloys, through which alloys with ideal properties have been achieved.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 0,
+        "question": "Mixing the molten metals from which the alloy is to be made directly with each other is the principle of:",
+        "options": [
+          "The direct method",
+          "The two-stage method",
+          "Electrolysis",
+          "Froth flotation"
+        ],
+        "explain": "The direct method involves mixing the molten metals from which the alloy is to be made directly with each other, and it is the somewhat easier method."
+      },
+      {
+        "correct": 2,
+        "question": "In manufacturing solder alloy by the one-stage method, the first metal to be melted is:",
+        "options": [
+          "Tin",
+          "Copper",
+          "Lead",
+          "Iron"
+        ],
+        "explain": "In manufacturing solder alloy, lead is melted first, then tin metal is dissolved into it and the two are mixed well."
+      },
+      {
+        "correct": 1,
+        "question": "The two-stage method requires:",
+        "options": [
+          "Mixing all the metals at once only",
+          "Manufacturing an initial alloy, then adding a known weight of another metal to reach the final alloy",
+          "Not performing any chemical analysis",
+          "Using only a single metal"
+        ],
+        "explain": "The two-stage method requires manufacturing an initial alloy in a specific proportion, then adding a specific, known weight of the metal to be introduced to obtain the final alloy in the desired proportions."
+      },
+      {
+        "correct": 3,
+        "question": "The alloy is subjected to precise chemical analysis after being made because that:",
+        "options": [
+          "Is unnecessary but useful for advertising",
+          "Reduces the weight of the alloy",
+          "Is done only once every several years",
+          "Confirms the proportions of its components meet the required specifications before being brought to market"
+        ],
+        "explain": "The resulting alloy is subjected to precise chemical analysis before being brought to market, to determine the proportions of its components and confirm they meet the required specifications."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "The direct method: mixing the molten metals directly with each other; it is the somewhat easier method.",
+      "The one-stage indirect method: melting the base metal first, then fully dissolving the other metals into it (example: solder alloy made of lead and tin).",
+      "The two-stage indirect method: manufacturing an initial alloy, then adding a known weight of another metal to reach the final alloy in the desired proportions.",
+      "Every alloy, regardless of the method used to make it, is subjected to precise chemical analysis before being brought to market."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of methods of making alloys",
+    "viewBox": "0 -3 480 266",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Methods of",
+        "Making Alloys"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Direct"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "One",
+          "Stage"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Two Stages"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Chemical",
+          "Analysis"
+        ]
+      }
+    ]
+  }
+}

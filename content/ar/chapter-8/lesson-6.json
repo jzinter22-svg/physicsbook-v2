@@ -88,7 +88,23 @@
       "trailingId": "methodCaption",
       "sectionGroup": 1,
       "sectionId": "interactive",
-      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية",
+      "labels": {
+        "captionDirect": "الطريقة المباشرة: تُمزج منصهرات الفلزات المراد صنع السبيكة منها مع بعضها مباشرة في بوتقة واحدة، ثم تتصلب لتكوّن السبيكة.",
+        "captionOneStage": "الطريقة غير المباشرة ذات المرحلة الواحدة: يُصهر الفلز الأساس أولًا (كالرصاص)، ثم يُذاب فيه الفلز الآخر (كالقصدير) كليًا — مثال: سبيكة اللحام القلوي.",
+        "captionTwoStage": "الطريقة غير المباشرة ذات المرحلتين: تُصنع سبيكة أولية بنسبة معينة أولًا، ثم يُضاف إليها وزن معلوم من فلز آخر للوصول إلى السبيكة النهائية بالنسب المطلوبة.",
+        "directLabel1": "منصهر الفلز 1",
+        "directLabel2": "منصهر الفلز 2",
+        "directMixLabel": "مزج مباشر → سبيكة",
+        "oneStageLabel1": "1) صهر الرصاص (الفلز الأساس)",
+        "oneStageAddLabel": "+ يُذاب القصدير",
+        "oneStageLabel2": "2) قضبان لحام",
+        "twoStageInitial": "سبيكة أولية",
+        "twoStageAddLabel": "+ وزن معلوم",
+        "twoStageIntermediate": "سبيكة وسيطة",
+        "twoStageFinal": "سبيكة نهائية",
+        "twoStageCheck": "✓ تحليل كيمياوي"
+      }
     },
     {
       "type": "definition",
