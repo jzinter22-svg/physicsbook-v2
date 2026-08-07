@@ -1,0 +1,273 @@
+{
+  "lessonNumber": 8,
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "Lesson 8: Plasma — Chapter Six",
+    "description": "6-8 Plasma: the fourth state of matter, ionization factors, plasma in the universe and the atmosphere.",
+    "breadcrumbChapter": "Chapter 6",
+    "breadcrumbLesson": "Plasma",
+    "footer": "Chapter Six: Laser and Plasma — Lesson 8: Plasma"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 8 of 10 · 6-8",
+    "title": "Plasma",
+    "lead": "Alongside the three familiar states of matter (solid, liquid, and gas), there exists a fourth state that makes up more than 99% of the matter in the universe: plasma — an ionized gas in which the charges of positive ions and free electrons are equal."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Defines plasma as the fourth state of matter and states its properties.",
+    "Lists the ionization factors responsible for the formation of plasma.",
+    "Explains the distribution of plasma in the universe and in Earth's atmosphere."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 6-8 Plasma",
+      "html": "Knowing that matter exists in nature in three states (solid, liquid, gas), plasma can be classified as the fourth state of matter, distinguished from the other states by the enormous energy it possesses.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — Plasma",
+      "html": "Plasma has properties similar to the gaseous state, and can be described as an ionized gas containing equal numbers of positively-charged ions and negatively-charged electrons, where the electrons are free and not bound to any atom or molecule — see Figure 6-34.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "diagram",
+      "heading": null,
+      "descHtml": null,
+      "svg": "<svg aria-label=\"Figure 6-34: the four states of matter\" role=\"img\" viewbox=\"0 0 320 110\" xmlns=\"http://www.w3.org/2000/svg\">\n<g font-family=\"Cairo,sans-serif\">\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"40\" y=\"15\">Solid</text>\n<g fill=\"var(--accent-blue)\">\n<circle cx=\"24\" cy=\"35\" r=\"6\"></circle><circle cx=\"40\" cy=\"35\" r=\"6\"></circle><circle cx=\"56\" cy=\"35\" r=\"6\"></circle>\n<circle cx=\"24\" cy=\"51\" r=\"6\"></circle><circle cx=\"40\" cy=\"51\" r=\"6\"></circle><circle cx=\"56\" cy=\"51\" r=\"6\"></circle>\n<circle cx=\"24\" cy=\"67\" r=\"6\"></circle><circle cx=\"40\" cy=\"67\" r=\"6\"></circle><circle cx=\"56\" cy=\"67\" r=\"6\"></circle>\n</g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"120\" y=\"15\">Liquid</text>\n<g fill=\"var(--accent-green)\">\n<circle cx=\"100\" cy=\"40\" r=\"6\"></circle><circle cx=\"116\" cy=\"34\" r=\"6\"></circle><circle cx=\"134\" cy=\"42\" r=\"6\"></circle>\n<circle cx=\"104\" cy=\"58\" r=\"6\"></circle><circle cx=\"122\" cy=\"64\" r=\"6\"></circle><circle cx=\"140\" cy=\"56\" r=\"6\"></circle>\n</g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"200\" y=\"15\">Gas</text>\n<g fill=\"var(--accent-orange)\">\n<circle cx=\"180\" cy=\"30\" r=\"5\"></circle><circle cx=\"210\" cy=\"45\" r=\"5\"></circle><circle cx=\"190\" cy=\"65\" r=\"5\"></circle>\n<circle cx=\"220\" cy=\"25\" r=\"5\"></circle><circle cx=\"205\" cy=\"75\" r=\"5\"></circle>\n</g>\n<text fill=\"var(--text-primary)\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"280\" y=\"15\">Plasma</text>\n<g>\n<circle cx=\"260\" cy=\"35\" fill=\"var(--accent-pink)\" r=\"5\"></circle>\n<text fill=\"#fff\" font-size=\"6\" text-anchor=\"middle\" x=\"260\" y=\"38\">+</text>\n<circle cx=\"290\" cy=\"55\" fill=\"var(--accent-pink)\" r=\"5\"></circle>\n<text fill=\"#fff\" font-size=\"6\" text-anchor=\"middle\" x=\"290\" y=\"58\">+</text>\n<circle cx=\"270\" cy=\"75\" fill=\"var(--accent-pink)\" r=\"5\"></circle>\n<text fill=\"#fff\" font-size=\"6\" text-anchor=\"middle\" x=\"270\" y=\"78\">+</text>\n<circle cx=\"275\" cy=\"30\" fill=\"var(--accent-blue)\" r=\"3\"></circle>\n<circle cx=\"300\" cy=\"35\" fill=\"var(--accent-blue)\" r=\"3\"></circle>\n<circle cx=\"255\" cy=\"60\" fill=\"var(--accent-blue)\" r=\"3\"></circle>\n<circle cx=\"295\" cy=\"75\" fill=\"var(--accent-blue)\" r=\"3\"></circle>\n</g>\n</g>\n</svg>",
+      "caption": "Figure 6-34: The four states of matter — plasma is an ionized gas of positive ions (pink) and free electrons (small blue)",
+      "sectionGroup": 2,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "⚡ Ionization Factors Responsible for the Formation of Plasma",
+      "html": "Plasma is produced by affecting a given volume of gas with one of the ionization factors, which causes electrons to be ejected from within atoms and molecules.",
+      "sectionGroup": 3,
+      "sectionId": "ionization",
+      "sectionNavLabel": "⚡ Ionization Factors"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — Ionization Factors Responsible for the Formation of Plasma",
+      "html": "",
+      "listItems": [
+        "Heat: as in the Sun and stars, which are enormous spheres of plasma.",
+        "Magnetic fields: as in the interstellar spaces between stars and planets.",
+        "Electric fields: as in fluorescent lamps and plasma displays.",
+        "Electromagnetic energy: as in lightning, whose discharge reaches (\\(3\\times10^{4}\\ \\text{A}\\)) and (\\(10^{8}\\ \\text{V}\\)), emitting light, radio waves, X-rays, and gamma rays; the temperature of lightning plasma can reach (28000 K) — see Figure 6-35."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem",
+      "sectionGroup": 4,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "paragraph",
+      "html": "Research has shown that (99%) of the universe is in a plasma state, starting with the Sun, the stars, and the solar wind. Plasma also appears in the upper layer of the atmosphere due to the ionization caused by ultraviolet rays and X-rays, and the highest density of electrons and ions occurs in the ionosphere layer, which appears in the atmosphere at an altitude of (50 km) and extends to its end.",
+      "sectionGroup": 5,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "simulation",
+      "svgId": "matterSvg",
+      "svgAriaLabel": "Simulation of the four states of matter",
+      "svgViewBox": "0 0 320 220",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: The Four States of Matter",
+      "descriptionHtml": "Choose a state of matter to see how its particles are arranged, and notice how the electrons separate from the ions in the plasma state.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnSolid",
+          "html": "Solid",
+          "class": "neu-btn",
+          "data": {
+            "data-state": "solid"
+          },
+          "style": null
+        },
+        {
+          "id": "btnLiquid",
+          "html": "Liquid",
+          "class": "neu-btn",
+          "data": {
+            "data-state": "liquid"
+          },
+          "style": null
+        },
+        {
+          "id": "btnGas",
+          "html": "Gas",
+          "class": "neu-btn",
+          "data": {
+            "data-state": "gas"
+          },
+          "style": null
+        },
+        {
+          "id": "btnPlasma",
+          "html": "Plasma",
+          "class": "neu-btn primary",
+          "data": {
+            "data-state": "plasma"
+          },
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "trailingId": "matterCaption",
+      "sectionGroup": 6,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "solidLabel": "Solid",
+        "liquidLabel": "Liquid",
+        "gasLabel": "Gas",
+        "plasmaLabel": "Plasma",
+        "captionSolid": "In the solid state: particles are packed in a fixed, regular arrangement, and their energy is low.",
+        "captionLiquid": "In the liquid state: particles are close together but move more freely than in a solid, with no fixed arrangement.",
+        "captionGas": "In the gaseous state: particles are far apart and move completely freely, with higher energy than a liquid.",
+        "captionPlasma": "In the plasma state: electrons separate from atoms and move freely, leaving behind positively-charged ions — this is the highest-energy state of matter."
+      }
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "Plasma is classified as the state of matter that is:",
+        "options": [
+          "The first",
+          "The second",
+          "The fourth",
+          "The fifth"
+        ],
+        "explain": "Alongside solid, liquid, and gas, plasma is classified as the fourth state of matter."
+      },
+      {
+        "correct": 0,
+        "question": "Plasma is an ionized gas in which the numbers of positive ions and electrons are:",
+        "options": [
+          "Equal",
+          "Electrons are far more numerous",
+          "Ions are far more numerous",
+          "Unrelated to each other"
+        ],
+        "explain": "Plasma is an ionized gas containing equal numbers of positive ions and free negative electrons."
+      },
+      {
+        "correct": 1,
+        "question": "Among the ionization factors responsible for the formation of plasma:",
+        "options": [
+          "Extreme cold only",
+          "Heat, magnetic fields, electric fields, and electromagnetic energy",
+          "Sound only",
+          "Earth's gravity only"
+        ],
+        "explain": "Ionization factors include: heat (the Sun and stars), magnetic fields, electric fields, and electromagnetic energy (such as lightning)."
+      },
+      {
+        "correct": 3,
+        "question": "Plasma makes up approximately what proportion of the matter in the universe:",
+        "options": [
+          "1%",
+          "25%",
+          "50%",
+          "99%"
+        ],
+        "explain": "Research has shown that 99% of the universe is in a plasma state, starting with the Sun, the stars, and the solar wind."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Plasma: the fourth state of matter, an ionized gas with equal numbers of positive ions and free electrons.",
+      "Ionization factors: heat (sun/stars), magnetic fields, electric fields, and electromagnetic energy (such as lightning: 3×10⁴A, 10⁸V, temperature reaching 28000K).",
+      "99% of the matter in the universe is in a plasma state; plasma appears in the ionosphere layer of the atmosphere starting at an altitude of 50km."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of plasma",
+    "viewBox": "0 0 480 260",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Plasma"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Fourth",
+          "State"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Ionization",
+          "Factors"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "99% of the Universe"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Ionosphere"
+        ]
+      }
+    ]
+  }
+}

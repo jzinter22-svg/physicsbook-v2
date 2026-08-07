@@ -16,6 +16,7 @@
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
 <script src="../../assets/js/i18n.js"></script>
+<script src="../../assets/js/lesson-engine.js"></script>
   <script src="../../assets/js/search.js" defer></script>
 </head>
 <body data-page="lessons/lesson-8.html">
@@ -42,210 +43,34 @@
   <section class="section fade-up" id="objectives" data-navlabel="🎯 الأهداف">
     <div class="card neu">
       <h2>🎯 أهداف الدرس</h2>
-      <ol class="obj-list">
-        <li><span class="obj-num">1</span><span>يعرّف البلازما بوصفها الحالة الرابعة للمادة ويبيّن خواصها.</span></li>
-        <li><span class="obj-num">2</span><span>يعدّد عوامل التأين المسؤولة عن نشوء البلازما.</span></li>
-        <li><span class="obj-num">3</span><span>يوضّح انتشار البلازما في الكون والغلاف الجوي للأرض.</span></li>
-      </ol>
+      <ol class="obj-list"></ol>
     </div>
   </section>
 
-  <section class="section fade-up" id="intro" data-navlabel="💡 تمهيد">
-    <div class="card neu">
-      <h2>💡 8-6 البلازما plasma</h2>
-      <p>إذا علمنا أن المادة توجد في الطبيعة في ثلاث حالات هي (الصلبة، السائلة، الغازية)، فإنه يمكن تصنيف البلازما على أنها الحالة الرابعة للمادة، وتتميز عن غيرها من الحالات بالطاقة الهائلة التي تمتلكها.</p>
-    </div>
-  </section>
+  <div id="lessonContentBlocks"></div>
 
-  <section class="section fade-up">
-    <div class="def-box">
-      <span class="def-label">📌 تعريف — البلازما (Plasma)</span>
-      <p style="margin:.3rem 0">هي ذات صفات مقاربة للحالة الغازية، ويمكن وصفها بأنها غاز متأين يحتوي على أعداد متساوية من الأيونات موجبة الشحنة والإلكترونات سالبة الشحنة، حيث تكون الإلكترونات حرة وغير مرتبطة بذرة أو جزيء، لاحظ الشكل (34-6).</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="diagram-card neu">
-      <div class="diagram-wrap">
-        <svg viewBox="0 0 320 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شكل 34-6 حالات المادة الأربع">
-          <g font-family="Cairo,sans-serif">
-            <text x="40" y="15" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text-primary)">صلب Solid</text>
-            <g fill="var(--accent-blue)">
-              <circle cx="24" cy="35" r="6"/><circle cx="40" cy="35" r="6"/><circle cx="56" cy="35" r="6"/>
-              <circle cx="24" cy="51" r="6"/><circle cx="40" cy="51" r="6"/><circle cx="56" cy="51" r="6"/>
-              <circle cx="24" cy="67" r="6"/><circle cx="40" cy="67" r="6"/><circle cx="56" cy="67" r="6"/>
-            </g>
-
-            <text x="120" y="15" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text-primary)">سائل Liquid</text>
-            <g fill="var(--accent-green)">
-              <circle cx="100" cy="40" r="6"/><circle cx="116" cy="34" r="6"/><circle cx="134" cy="42" r="6"/>
-              <circle cx="104" cy="58" r="6"/><circle cx="122" cy="64" r="6"/><circle cx="140" cy="56" r="6"/>
-            </g>
-
-            <text x="200" y="15" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text-primary)">غاز Gas</text>
-            <g fill="var(--accent-orange)">
-              <circle cx="180" cy="30" r="5"/><circle cx="210" cy="45" r="5"/><circle cx="190" cy="65" r="5"/>
-              <circle cx="220" cy="25" r="5"/><circle cx="205" cy="75" r="5"/>
-            </g>
-
-            <text x="280" y="15" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text-primary)">بلازما Plasma</text>
-            <g>
-              <circle cx="260" cy="35" r="5" fill="var(--accent-pink)"/>
-              <text x="260" y="38" text-anchor="middle" font-size="6" fill="#fff">+</text>
-              <circle cx="290" cy="55" r="5" fill="var(--accent-pink)"/>
-              <text x="290" y="58" text-anchor="middle" font-size="6" fill="#fff">+</text>
-              <circle cx="270" cy="75" r="5" fill="var(--accent-pink)"/>
-              <text x="270" y="78" text-anchor="middle" font-size="6" fill="#fff">+</text>
-              <circle cx="275" cy="30" r="3" fill="var(--accent-blue)"/>
-              <circle cx="300" cy="35" r="3" fill="var(--accent-blue)"/>
-              <circle cx="255" cy="60" r="3" fill="var(--accent-blue)"/>
-              <circle cx="295" cy="75" r="3" fill="var(--accent-blue)"/>
-            </g>
-          </g>
-        </svg>
-        <span class="diagram-caption">شكل 34-6: حالات المادة الأربع — البلازما غاز متأين من أيونات موجبة (وردي) وإلكترونات حرة (زرقاء صغيرة)</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-up" id="ionization" data-navlabel="⚡ عوامل التأين">
-    <div class="card neu">
-      <h2>⚡ عوامل التأين المسؤولة عن نشوء البلازما</h2>
-      <p>تنتج البلازما من خلال التأثير على حجم معين من الغازات بعامل ما من عوامل التأين، مما يؤدي إلى خروج الإلكترونات من داخل الذرات والجزيئات.</p>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="def-box" style="border-inline-start-color:var(--accent-orange)">
-      <span class="def-label" style="color:var(--accent-orange)">🔢 تعداد — عوامل التأين المسؤولة عن نشوء البلازما</span>
-      <ol style="margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem">
-        <li>الحرارة: كما هو في الشمس والنجوم، وهما كرات هائلة من البلازما.</li>
-        <li>المجالات المغناطيسية: كما هو في الفراغات البينية بين النجوم والكواكب.</li>
-        <li>المجالات الكهربائية: كما هو في المصابيح والبلازما.</li>
-        <li>الطاقة الكهرومغناطيسية: كما في البرق الذي يصل تفريغه إلى (\(3\times10^{4}\ \text{A}\)) و(\(10^{8}\ \text{V}\))، ويصدر عنها الضوء والموجات الراديوية والأشعة السينية كاما، وقد تصل درجة حرارة بلازما البرق إلى (28000 K)، لاحظ الشكل (35-6).</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section fade-up">
-    <div class="card neu">
-      <p>وقد بيّنت الأبحاث أن (99%) من الكون يكون في حالة بلازما بدءًا من الشمس والنجوم والرياح الشمسية، وتظهر البلازما في الطبقة العليا للغلاف الجوي بسبب التأين الذي يسبّبه الأشعة فوق البنفسجية وأشعة (X)، وتكون أعلى كثافة للإلكترونات والأيونات في طبقة الأيونوسفير التي تظهر في الغلاف الجوي عند ارتفاع (50 km) ممتدة حتى نهايته.</p>
-    </div>
-  </section>
-
-  <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ محاكاة تفاعلية">
-    <div class="card neu">
-      <h2>🕹️ محاكاة تفاعلية: حالات المادة الأربع</h2>
-      <p>اختر حالة المادة لمشاهدة كيفية ترتيب الجسيمات فيها، ولاحظ كيف تنفصل الإلكترونات عن الأيونات في حالة البلازما.</p>
-      <div class="io-panel">
-        <div class="io-row" role="group" aria-label="اختيار حالة المادة">
-          <button class="neu-btn" data-state="solid" id="btnSolid">صلب</button>
-          <button class="neu-btn" data-state="liquid" id="btnLiquid">سائل</button>
-          <button class="neu-btn" data-state="gas" id="btnGas">غاز</button>
-          <button class="neu-btn primary" data-state="plasma" id="btnPlasma">بلازما</button>
-        </div>
-        <div class="mindmap-wrap"><svg id="matterSvg" viewBox="0 0 320 220" role="img" aria-label="محاكاة حالات المادة الأربع"></svg></div>
-        <p id="matterCaption" style="text-align:center;color:var(--text-secondary);font-weight:700;margin:0"></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Self-check quiz ===== -->
   <section class="section fade-up" id="quiz" data-navlabel="🧠 اختبر نفسك">
     <div class="neu quiz" data-quiz>
       <h2 data-i18n="common.checkUnderstanding">🧠 اختبر فهمك</h2>
-
-      <div class="quiz-q" data-correct="2">
-        <div class="quiz-q-title"><span>1.</span><span>تُصنَّف البلازما بوصفها حالة المادة:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>الأولى</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الثانية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الرابعة</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الخامسة</span></label>
-        </div>
-        <div class="quiz-explain">إلى جانب الصلبة والسائلة والغازية، تُصنَّف البلازما على أنها الحالة الرابعة للمادة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="0">
-        <div class="quiz-q-title"><span>2.</span><span>البلازما غاز متأين تكون فيه أعداد الأيونات الموجبة والإلكترونات:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>متساوية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الإلكترونات أكثر بكثير</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الأيونات أكثر بكثير</span></label>
-          <label class="quiz-opt"><input type="radio"><span>لا علاقة بينهما</span></label>
-        </div>
-        <div class="quiz-explain">البلازما غاز متأين يحتوي على أعداد متساوية من الأيونات الموجبة والإلكترونات الحرة السالبة.</div>
-      </div>
-
-      <div class="quiz-q" data-correct="1">
-        <div class="quiz-q-title"><span>3.</span><span>من عوامل التأين المسؤولة عن نشوء البلازما:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>البرودة الشديدة فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الحرارة والمجالات المغناطيسية والكهربائية والطاقة الكهرومغناطيسية</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الصوت فقط</span></label>
-          <label class="quiz-opt"><input type="radio"><span>الجاذبية الأرضية فقط</span></label>
-        </div>
-        <div class="quiz-explain">من عوامل التأين: الحرارة (الشمس والنجوم)، المجالات المغناطيسية، المجالات الكهربائية، والطاقة الكهرومغناطيسية (كالبرق).</div>
-      </div>
-
-      <div class="quiz-q" data-correct="3">
-        <div class="quiz-q-title"><span>4.</span><span>تشكّل البلازما من مادة الكون نسبة تقارب:</span></div>
-        <div class="quiz-options">
-          <label class="quiz-opt"><input type="radio"><span>1%</span></label>
-          <label class="quiz-opt"><input type="radio"><span>25%</span></label>
-          <label class="quiz-opt"><input type="radio"><span>50%</span></label>
-          <label class="quiz-opt"><input type="radio"><span>99%</span></label>
-        </div>
-        <div class="quiz-explain">بيّنت الأبحاث أن 99% من الكون في حالة بلازما، بدءًا من الشمس والنجوم والرياح الشمسية.</div>
-      </div>
-
       <button class="neu-btn primary" data-quiz-check data-i18n="common.checkAnswers">تحقق من الإجابات</button>
       <div class="quiz-score"></div>
     </div>
   </section>
 
-  <!-- ===== Summary ===== -->
   <section class="section fade-up" id="summary" data-navlabel="📋 الملخص">
     <div class="card neu">
       <h2>📋 ملخص الدرس</h2>
-      <ul class="summary-list">
-        <li><span>البلازما: الحالة الرابعة للمادة، غاز متأين بأعداد متساوية من الأيونات الموجبة والإلكترونات الحرة.</span></li>
-        <li><span>عوامل التأين: الحرارة (شمس/نجوم)، المجالات المغناطيسية، المجالات الكهربائية، والطاقة الكهرومغناطيسية (كالبرق: 3×10⁴A، 10⁸V، حرارة تصل 28000K).</span></li>
-        <li><span>99% من مادة الكون في حالة بلازما؛ تظهر البلازما في طبقة الأيونوسفير بالغلاف الجوي بدءًا من ارتفاع 50km.</span></li>
-      </ul>
+      <ul class="summary-list"></ul>
     </div>
   </section>
 
-  <!-- ===== Mind map ===== -->
   <section class="section fade-up" id="mindmap" data-navlabel="🗺 الخريطة الذهنية">
     <div class="card neu">
       <div class="example-head">
         <h2 style="margin:0">🗺 خريطة الدرس الذهنية</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-l8" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">إظهار الخريطة</button>
       </div>
-      <div class="mindmap-wrap hidden-steps" id="mindmap-l8">
-        <svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="خريطة ذهنية للبلازما">
-          <g fill="none" stroke="var(--text-faint)" stroke-width="1.5">
-            <line x1="240" y1="130" x2="90" y2="45"/>
-            <line x1="240" y1="130" x2="90" y2="215"/>
-            <line x1="240" y1="130" x2="390" y2="45"/>
-            <line x1="240" y1="130" x2="390" y2="215"/>
-          </g>
-          <g><circle cx="240" cy="130" r="55" fill="#7c6fee"/>
-            <text x="240" y="135" text-anchor="middle" fill="#fff" font-weight="800" font-size="13" font-family="Cairo,sans-serif">البلازما</text></g>
-          <g><circle cx="90" cy="45" r="46" fill="#3fa9f5"/>
-            <text x="90" y="42" text-anchor="middle" fill="#fff" font-weight="700" font-size="10" font-family="Cairo,sans-serif">الحالة</text>
-            <text x="90" y="56" text-anchor="middle" fill="#fff" font-weight="700" font-size="9" font-family="Cairo,sans-serif">الرابعة</text></g>
-          <g><circle cx="90" cy="215" r="46" fill="#2fd18f"/>
-            <text x="90" y="212" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">عوامل</text>
-            <text x="90" y="226" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">التأين</text></g>
-          <g><circle cx="390" cy="45" r="46" fill="#ffab5e"/>
-            <text x="390" y="49" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">99% من الكون</text></g>
-          <g><circle cx="390" cy="215" r="46" fill="#ff6b9d"/>
-            <text x="390" y="219" text-anchor="middle" fill="#fff" font-weight="700" font-size="9.5" font-family="Cairo,sans-serif">الأيونوسفير</text></g>
-        </svg>
-      </div>
+      <div class="mindmap-wrap hidden-steps" id="mindmap-l8"></div>
     </div>
   </section>
 
@@ -262,23 +87,17 @@
 <script>
 (function(){
   var ns = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("matterSvg");
-  var caption = document.getElementById("matterCaption");
-  var btns = {
-    solid: document.getElementById("btnSolid"),
-    liquid: document.getElementById("btnLiquid"),
-    gas: document.getElementById("btnGas"),
-    plasma: document.getElementById("btnPlasma")
-  };
+  var svg, caption, btns;
+  var t = function(k, f){ return window.PBLessonEngine ? window.PBLessonEngine.simText(k, f) : f; };
 
   function label(x,y,txt,color,size,weight){
-    var t = document.createElementNS(ns,"text");
-    t.setAttribute("x",x); t.setAttribute("y",y);
-    t.setAttribute("text-anchor","middle");
-    t.setAttribute("font-family","Cairo,sans-serif"); t.setAttribute("font-size",size||12); t.setAttribute("fill",color);
-    t.setAttribute("font-weight",weight||"700");
-    t.textContent = txt;
-    svg.appendChild(t);
+    var el = document.createElementNS(ns,"text");
+    el.setAttribute("x",x); el.setAttribute("y",y);
+    el.setAttribute("text-anchor","middle");
+    el.setAttribute("font-family","Cairo,sans-serif"); el.setAttribute("font-size",size||12); el.setAttribute("fill",color);
+    el.setAttribute("font-weight",weight||"700");
+    el.textContent = txt;
+    svg.appendChild(el);
   }
   function particle(x,y,r,fill,sign){
     var c = document.createElementNS(ns,"circle");
@@ -286,20 +105,28 @@
     c.setAttribute("fill",fill);
     svg.appendChild(c);
     if(sign){
-      var t = document.createElementNS(ns,"text");
-      t.setAttribute("x",x); t.setAttribute("y",y+3);
-      t.setAttribute("text-anchor","middle"); t.setAttribute("font-size","8"); t.setAttribute("fill","#fff"); t.setAttribute("font-weight","800");
-      t.textContent = sign;
-      svg.appendChild(t);
+      var el = document.createElementNS(ns,"text");
+      el.setAttribute("x",x); el.setAttribute("y",y+3);
+      el.setAttribute("text-anchor","middle"); el.setAttribute("font-size","8"); el.setAttribute("fill","#fff"); el.setAttribute("font-weight","800");
+      el.textContent = sign;
+      svg.appendChild(el);
     }
   }
 
-  var CAPTIONS = {
-    solid: "في الحالة الصلبة: الجسيمات متراصة بترتيب منتظم وثابت، وطاقتها منخفضة.",
-    liquid: "في الحالة السائلة: الجسيمات متقاربة لكنها تتحرك بحرية أكبر من الصلب، بلا ترتيب منتظم.",
-    gas: "في الحالة الغازية: الجسيمات متباعدة وتتحرك بحرية كاملة وطاقتها أعلى من السائل.",
-    plasma: "في حالة البلازما: تنفصل الإلكترونات عن الذرات فتتحرك حرة، تاركة أيونات موجبة الشحنة — وهي الحالة الأعلى طاقة بين حالات المادة."
-  };
+  function captions(){
+    return {
+      solid: t("captionSolid","في الحالة الصلبة: الجسيمات متراصة بترتيب منتظم وثابت، وطاقتها منخفضة."),
+      liquid: t("captionLiquid","في الحالة السائلة: الجسيمات متقاربة لكنها تتحرك بحرية أكبر من الصلب، بلا ترتيب منتظم."),
+      gas: t("captionGas","في الحالة الغازية: الجسيمات متباعدة وتتحرك بحرية كاملة وطاقتها أعلى من السائل."),
+      plasma: t("captionPlasma","في حالة البلازما: تنفصل الإلكترونات عن الذرات فتتحرك حرة، تاركة أيونات موجبة الشحنة — وهي الحالة الأعلى طاقة بين حالات المادة.")
+    };
+  }
+  function stateLabel(state){
+    if(state==="solid") return t("solidLabel","صلب");
+    if(state==="liquid") return t("liquidLabel","سائل");
+    if(state==="gas") return t("gasLabel","غاز");
+    return t("plasmaLabel","بلازما");
+  }
 
   function draw(state){
     while(svg.firstChild) svg.removeChild(svg.firstChild);
@@ -324,17 +151,28 @@
       electrons.forEach(function(p){ particle(p[0],p[1],5,"var(--accent-blue)","−"); });
     }
 
-    label(cx, 25, state==="solid"?"صلب":(state==="liquid"?"سائل":(state==="gas"?"غاز":"بلازما")), "var(--text-primary)", 15, "800");
-    caption.textContent = CAPTIONS[state];
+    label(cx, 25, stateLabel(state), "var(--text-primary)", 15, "800");
+    caption.textContent = captions()[state];
 
     Object.keys(btns).forEach(function(k){ btns[k].classList.toggle("primary", k===state); });
   }
 
-  Object.keys(btns).forEach(function(k){
-    btns[k].addEventListener("click", function(){ draw(k); });
-  });
-
-  draw("plasma");
+  function boot(){
+    svg = document.getElementById("matterSvg");
+    caption = document.getElementById("matterCaption");
+    btns = {
+      solid: document.getElementById("btnSolid"),
+      liquid: document.getElementById("btnLiquid"),
+      gas: document.getElementById("btnGas"),
+      plasma: document.getElementById("btnPlasma")
+    };
+    if(!svg || !caption || !btns.solid) return;
+    Object.keys(btns).forEach(function(k){
+      btns[k].addEventListener("click", function(){ draw(k); });
+    });
+    draw("plasma");
+  }
+  if(window.PBLessonEngine) window.PBLessonEngine.onLanguageChanged(boot);
 })();
 </script>
 </body>
