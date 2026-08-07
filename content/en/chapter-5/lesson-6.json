@@ -1,0 +1,294 @@
+{
+  "lessonNumber": 6,
+  "chapterNumber": 5,
+  "meta": {
+    "pageTitle": "Lesson 6: Radar — Chapter Five",
+    "description": "5-6 Radar: its definition, components, how it works, its five types, and its most important applications and uses.",
+    "breadcrumbChapter": "Chapter 5",
+    "breadcrumbLesson": "Radar",
+    "footer": "Chapter Five: Semiconductor Materials and Electronic Devices — Lesson 6: Radar"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 6 of 7 · 5-6",
+    "title": "Radar",
+    "lead": "A precise, efficient electronic system that relies on electromagnetic oscillation and its echo to detect moving and stationary targets, however small or distant, and to determine their positions, directions, and distances with high efficiency in all weather conditions."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Defines radar and explains the basis of its operation.",
+    "Lists the nine parts and components of a radar device.",
+    "Explains how radar works in detecting targets and determining their range.",
+    "Distinguishes between the five types of radar, and states its most important applications and uses."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 5-6 Radar",
+      "html": "Radar is a precise, efficient electronic system used to detect moving and stationary targets and determine their positions and directions. Radar can determine the motion of targets far beyond the reach of the human eye, however small — whether the size of an insect or as large and massive as mountains — and it operates with high efficiency at night and even during poor weather conditions such as dense fog, rain, or snow, and it is capable of carrying out several useful tasks for various wide-ranging purposes in our daily lives.</p><p>Pilots rely on radar for the safe landing of their aircraft at crowded airports, where they are guided by radar operators through special methods and informed of the appropriate paths for takeoff or landing, and sailors likewise use it in poor weather to steer their ships as boats and hazardous obstacles approach them. Radar is used in many countries for surveillance and monitoring against enemy air attacks and their missiles, and it also enables meteorologists and seismic and weather-monitoring specialists to track approaching storms and gather important information about them, and scientists likewise use it to survey the Earth's atmosphere and study other planets and their moons.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Defining Radar"
+    },
+    {
+      "type": "definition",
+      "label": "📌 Definition — The Word \"Radar\"",
+      "html": "The word radar is an abbreviation for \"Radio Detection and Ranging.\" The working principle of radar relies on the phenomenon of electromagnetic oscillation and obtaining the electromagnetic echo.",
+      "sectionGroup": 1,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "5-6-1 The Parts and Components of Radar",
+      "leadHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "parts",
+      "sectionNavLabel": "🧩 Radar Components"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — The Parts and Components of Radar",
+      "html": "",
+      "listItems": [
+        "The oscillator.",
+        "The modulator.",
+        "The transmitter.",
+        "The transmit-receive switch.",
+        "The antenna.",
+        "The receiver.",
+        "The signal processor.",
+        "The display (screen).",
+        "The timer."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.35rem",
+      "sectionGroup": 3,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "explanation",
+      "heading": "5-6-2 How Radar Works",
+      "html": "Radar systems vary in design, purpose, and shape, but they all work on the same general principles with the same basic parts; every device has a transmitter to produce the radar signals, and an antenna to broadcast them outward, and most types of radar use the same antenna to receive the waves reflected from the target. Radar transmits radio waves toward the target and receives the waves that reflect off it, and the time this takes indicates the target's range, how far it is, its direction, and its altitude.</p><p>The receiver amplifies the reflected waves (called echoes or pulses), which can be seen on the radar screen (the picture tube), which is often circular, and the echoes appear as points of light or an image of the observed target, from which the operator of the device can determine the required information.",
+      "sectionGroup": 4,
+      "sectionId": "howworks",
+      "sectionNavLabel": "⚙️ How It Works"
+    },
+    {
+      "type": "simulation",
+      "svgId": "radarSvg",
+      "svgAriaLabel": "Simulation of a radar pulse and its echo",
+      "svgViewBox": "0 0 420 200",
+      "svgWidth": null,
+      "svgHeight": null,
+      "sectionHeading": "🕹️ Interactive Simulation: The Working Principle of Radar (Pulse and Echo)",
+      "descriptionHtml": "Press \"Send a Pulse\" to watch the radar wave leave the antenna toward the target, then bounce back off it to the receiver — the time the full round trip takes determines the target's distance and direction.",
+      "controls": [
+        {
+          "labelHtml": null,
+          "inputId": null,
+          "rowId": null,
+          "rowStyle": null,
+          "inputType": null,
+          "inputClass": null,
+          "inputMin": null,
+          "inputMax": null,
+          "inputStep": null,
+          "inputValue": null
+        }
+      ],
+      "buttons": [
+        {
+          "id": "btnPulse",
+          "html": "📡 Send a Pulse",
+          "class": "neu-btn primary",
+          "data": null,
+          "style": null
+        }
+      ],
+      "selectId": null,
+      "selectOptions": null,
+      "presets": null,
+      "ruleBoxes": [],
+      "trailingHtml": "",
+      "trailingId": "pulseStatus",
+      "sectionGroup": 5,
+      "sectionId": "interactive",
+      "sectionNavLabel": "🕹️ Interactive Simulation",
+      "labels": {
+        "radarLabel": "Radar",
+        "targetLabel": "Target",
+        "captionLabel": "Distance (range) = half the round-trip time × wave speed",
+        "statusReady": "Ready to transmit",
+        "statusOutbound": "The wave is on its way to the target...",
+        "statusEcho": "The echo is returning from the target...",
+        "statusDone": "Echo received — range and direction determined ✓"
+      }
+    },
+    {
+      "type": "explanation",
+      "heading": "5-6-3 Types of Radar",
+      "html": "Radars come in many forms and types, but they are nearly all similar in operation, parts, and purpose. These types include:",
+      "sectionGroup": 6,
+      "sectionId": "types",
+      "sectionNavLabel": "📡 Types of Radar"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — The Five Types of Radar",
+      "html": "Radar also has other names, each according to its manufacture and purpose, and the same radar may carry a different name in a different country of origin; these names include: (pulse radar, Doppler radar, continuous-wave radar, phased-array radar).",
+      "listItems": [
+        "<b>1- Simple radar:</b> the simplest type of radar, where the modulator sends intermittent electrical signals at a set time interval, and in these intervals it receives the echo of the waves reflected from objects.",
+        "<b>2- Continuous-wave radar:</b> a radar system in which a fixed, continuous radio wave energy is transmitted, and a portion of it is received back upon reflecting off an object due to its motion relative to the wave.",
+        "<b>3- Phased-array radar:</b> this radar contains a number of small antennas, each of which can rotate a full turn on its own; after each antenna determines a direction, the system receives the signals from each antenna and combines them into a single signal.",
+        "<b>4- Secondary radar:</b> another type that works like primary radar, but in addition it reads, receives, and transmits coded signals to and from aircraft, which are digital queries for specific responses such as the aircraft's identity, its country of origin, the purpose of its arrival, and other information.",
+        "<b>5- Targeting radar:</b> this radar is used to track ground targets from the air."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem",
+      "sectionGroup": 7,
+      "sectionId": null,
+      "sectionNavLabel": null
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "5-6-4 The Most Important Applications and Uses of Radar",
+      "leadHtml": null,
+      "sectionGroup": 8,
+      "sectionId": "uses",
+      "sectionNavLabel": "🌍 Uses of Radar"
+    },
+    {
+      "type": "enumeration",
+      "label": "🔢 Enumeration — The Most Important Applications and Uses of Radar",
+      "html": "",
+      "listItems": [
+        "Radar is used extensively in air navigation to ensure the safety of aircraft and their passengers from accidents and disasters; since air traffic is dense near airports, trained air traffic controllers at airports around the world use it to guide the continuous flow of arriving and departing aircraft, as radar shows the position of every aircraft in the sky.",
+        "In marine navigation, it has become widely used as an important navigational aid on many types of boats and ships, from small craft to massive oil tankers; radar can operate in poor weather conditions to locate other ships, rocks, icebergs, and other hazards to avoid colliding with them, and coast guard stations can track the movement of ships through radar monitoring and search for missing vessels.",
+        "Radar is used extensively by armed forces in air defense, missile defense, aerial surveillance and reconnaissance, and range measurement for weapons-fire control and other purposes, as well as detecting the penetration of enemy aircraft and missiles before or as soon as they cross borders, and determining their paths, directions, and distances.",
+        "Radar is used in space surveillance and in detecting artificial satellites, tracking them, and mapping their orbits in space.",
+        "Radar is used in mapmaking, where its equipment can be mounted on a special aircraft, as well as in reconnaissance, information gathering, and range measurement.",
+        "Radar is used to monitor vehicle traffic and measure speed for traffic-law enforcement purposes, especially in determining and regulating vehicle speeds; radar can detect and determine the speed of cars traveling on roads and determine their directions and times, which helps traffic police control and regulate traffic flow and reduce reliance on human effort.",
+        "Radar is used to discover mineral wealth and ore deposits and locate schools of fish for the benefit of deep-sea fishing operations."
+      ],
+      "listOrdered": true,
+      "listStyle": "margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.5rem",
+      "sectionGroup": 9,
+      "sectionId": null,
+      "sectionNavLabel": null
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Understanding",
+    "questions": [
+      {
+        "correct": 2,
+        "question": "The word \"radar\" is an abbreviation for:",
+        "options": [
+          "Radio Data Recording",
+          "Rapid Detection and Reporting",
+          "Radio Detection and Ranging",
+          "Radar Direction and Range"
+        ],
+        "explain": "Radar is an abbreviation for \"Radio Detection and Ranging.\""
+      },
+      {
+        "correct": 1,
+        "question": "The working principle of radar relies on:",
+        "options": [
+          "Infrared radiation only",
+          "The phenomenon of electromagnetic oscillation and obtaining the electromagnetic echo",
+          "Sound waves only",
+          "Earth's gravity"
+        ],
+        "explain": "The working principle of radar relies on the phenomenon of electromagnetic oscillation and obtaining the electromagnetic echo reflected from the target."
+      },
+      {
+        "correct": 0,
+        "question": "The time the radar wave takes to travel to and from the target indicates:",
+        "options": [
+          "The target's range, distance, direction, and altitude",
+          "The target's color",
+          "The target's temperature only",
+          "The target's mass"
+        ],
+        "explain": "Radar sends radio waves toward the target and receives their reflection, and the time this takes indicates the target's range, distance, direction, and altitude."
+      },
+      {
+        "correct": 3,
+        "question": "The radar that reads coded signals from aircraft and receives information such as the aircraft's identity is called:",
+        "options": [
+          "Simple radar",
+          "Phased-array radar",
+          "Targeting radar",
+          "Secondary radar"
+        ],
+        "explain": "Secondary radar works like primary radar, but in addition it reads, receives, and transmits coded signals to and from aircraft as digital queries about the aircraft's identity, its country, and the purpose of its arrival."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Lesson Summary",
+    "items": [
+      "Radar: an abbreviation for \"Radio Detection and Ranging,\" a system that relies on electromagnetic oscillation and its echo to detect targets and determine their positions.",
+      "Its nine components: the oscillator, modulator, transmitter, transmit-receive switch, antenna, receiver, signal processor, display (screen), and timer.",
+      "Radar sends radio waves and receives their reflection (echoes/pulses); the round-trip time determines the range, direction, and altitude.",
+      "Its types: simple, continuous-wave, phased-array, secondary, and targeting radar — and it has other names such as pulse radar, Doppler radar, and phased-array radar.",
+      "Its applications: air and marine navigation, military defense, space surveillance, mapmaking, vehicle speed control, and discovering mineral wealth and fish."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Lesson Mind Map",
+    "ariaLabel": "Mind map of radar",
+    "viewBox": "0 0 480 260",
+    "center": {
+      "cx": 240.0,
+      "cy": 130.0,
+      "r": 55.0,
+      "color": "#7c6fee",
+      "lines": [
+        "Radar"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 90.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "9 Components"
+        ]
+      },
+      {
+        "cx": 90.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Pulse/Echo",
+          "Time = Range"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 45.0,
+        "r": 46.0,
+        "color": "#ffab5e",
+        "lines": [
+          "5 Types"
+        ]
+      },
+      {
+        "cx": 390.0,
+        "cy": 215.0,
+        "r": 46.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Applications",
+          "Air/Sea/Military"
+        ]
+      }
+    ]
+  }
+}

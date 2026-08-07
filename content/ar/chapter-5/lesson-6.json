@@ -110,11 +110,20 @@
       "selectOptions": null,
       "presets": null,
       "ruleBoxes": [],
-      "trailingHtml": null,
-      "trailingId": null,
+      "trailingHtml": "",
+      "trailingId": "pulseStatus",
       "sectionGroup": 5,
       "sectionId": "interactive",
-      "sectionNavLabel": "🕹️ محاكاة تفاعلية"
+      "sectionNavLabel": "🕹️ محاكاة تفاعلية",
+      "labels": {
+        "radarLabel": "الرادار",
+        "targetLabel": "الهدف",
+        "captionLabel": "المسافة (المدى) = نصف زمن الرحلة × سرعة الموجة",
+        "statusReady": "جاهز للإرسال",
+        "statusOutbound": "الموجة في طريقها إلى الهدف...",
+        "statusEcho": "الصدى عائد من الهدف...",
+        "statusDone": "تم استقبال الصدى — تحديد المدى والاتجاه ✓"
+      }
     },
     {
       "type": "explanation",
