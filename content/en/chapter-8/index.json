@@ -1,0 +1,62 @@
+{
+  "chapterNumber": 8,
+  "meta": {
+    "pageTitle": "Chapter 8: Metals and Alloys — Interactive Physics Book",
+    "description": "Chapter Eight of the Interactive Physics Book: Metals and Alloys — properties of metals, their extraction and purification, the definition of alloys, their types, manufacturing methods, and uses — with interactive tools and solved questions.",
+    "breadcrumbChapter": "Chapter 8",
+    "footer": "Chapter Eight: Metals and Alloys — Interactive Physics Book"
+  },
+  "hero": {
+    "eyebrow": "📘 Interactive Physics Book · Part Two: Chemistry",
+    "titleHtml": "Chapter Eight: Metals and Alloys",
+    "lead": "From metals' place in the periodic table and their four properties, to their extraction and purification according to the activity series, and on to the world of alloys: their definition, types, manufacturing methods, and uses in our lives and our Iraqi setting.",
+    "startLessonLabel": "Start the First Lesson ←",
+    "tags": ["⏱ 9 lessons", "🧠 Self-quizzes", "🗺 Mind maps"]
+  },
+  "objectivesHeading": "🎯 Behavioral Objectives",
+  "objectivesLead": "After completing this chapter, the student will be able to:",
+  "objectives": [
+    "Know the methods of extracting metals and the methods of purifying them.",
+    "Know the devices used in the extraction process.",
+    "Know some examples needed for the purification process of certain metals.",
+    "Compare between extraction methods.",
+    "Know alloys, their properties, and their types.",
+    "Distinguish between alloys.",
+    "Know the methods of manufacturing alloys.",
+    "Know some types of alloys in our daily lives."
+  ],
+  "lessonsHeading": "📚 Chapter Contents",
+  "enterLessonLabel": "Enter the Lesson ←",
+  "lessons": [
+    {"title": "Metals", "description": "8-1: The position of metals in the periodic table, and their four main properties."},
+    {"title": "Methods and Devices Used in Extracting Metals", "description": "8-2: The activity series, reduction reactions, and the extraction method suited to each metal."},
+    {"title": "Methods and Devices Used in Purifying Metals", "description": "8-3: Ore concentration, aluminum extraction, froth flotation, and the recycling cycle."},
+    {"title": "Alloys", "description": "8-4: The definition of an alloy, and a historical note on its discovery, from iron meteorites to bronze."},
+    {"title": "Types of Alloys", "description": "8-5: Single-phase alloys and multi-phase alloys, and the properties of alloys."},
+    {"title": "Methods of Making Alloys", "description": "8-6: The direct method, and the indirect method with its one-stage and two-stage variants."},
+    {"title": "Uses of Alloys", "description": "8-7: Cooling and fire detection, medicine, aircraft, buildings and bridges, and the most famous examples."},
+    {"title": "Some Types of Alloys Used in the Iraqi Setting", "description": "8-8: Iraqi coin alloys, lead alloy, and stainless steel."},
+    {"title": "Chapter Eight Questions", "description": "All the official end-of-chapter questions, solved in detail."}
+  ],
+  "mindmap": {
+    "heading": "🗺 Chapter Mind Map",
+    "ariaLabel": "Mind map for Chapter Eight",
+    "viewBox": "0 0 900 620",
+    "center": {
+      "cx": 450,
+      "cy": 310,
+      "r": 72,
+      "lines": ["Metals and", "Alloys"]
+    },
+    "satellites": [
+      {"cx": 450, "cy": 80, "r": 56, "color": "#3fa9f5", "lines": ["Metals"]},
+      {"cx": 598, "cy": 134, "r": 56, "color": "#ffab5e", "lines": ["Extraction of", "Metals"]},
+      {"cx": 676, "cy": 270, "r": 56, "color": "#ff6b9d", "lines": ["Purification", "of Metals"]},
+      {"cx": 649, "cy": 425, "r": 56, "color": "#2fd18f", "lines": ["Alloys"]},
+      {"cx": 529, "cy": 526, "r": 56, "color": "#7c6fee", "lines": ["Types of", "Alloys"]},
+      {"cx": 371, "cy": 526, "r": 56, "color": "#3fa9f5", "lines": ["Manufacturing", "Methods"]},
+      {"cx": 251, "cy": 425, "r": 56, "color": "#ffab5e", "lines": ["Uses of", "Alloys"]},
+      {"cx": 224, "cy": 270, "r": 56, "color": "#ff6b9d", "lines": ["Iraqi", "Alloys"]}
+    ]
+  }
+}
