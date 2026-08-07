@@ -1,0 +1,949 @@
+{
+  "lessonNumber": 8,
+  "chapterNumber": 4,
+  "meta": {
+    "pageTitle": "Lesson 8: Chapter Questions and Problems — Chapter Four",
+    "description": "All multiple-choice, fill-in-the-blank, short-answer questions, and problems of Chapter Four (Alternating Current Circuits), solved in detail.",
+    "breadcrumbChapter": "Chapter 4",
+    "breadcrumbLesson": "Chapter Questions and Problems",
+    "footer": "Chapter Four: Alternating Current Circuits — Lesson 8: Chapter Questions and Problems"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 8 of 8 · Chapter Four",
+    "title": "Chapter Four Questions and Problems",
+    "lead": "All multiple-choice, fill-in-the-blank, and short-answer questions, plus the chapter problems, solved step by step."
+  },
+  "objectivesHeading": null,
+  "objectives": [],
+  "content": [
+    {
+      "type": "sectionIntro",
+      "heading": "✅ Q1: Choose the Correct Statement for Each of the Following",
+      "leadHtml": "Each question is immediately followed by its solution card.",
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Q1: Multiple Choice"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>The effective value of the alternating voltage in an AC circuit equals</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- \\(1.5\\,V_m\\)</li>\n<li>b- \\(0.707\\,V_m\\)</li>\n<li>c- \\(0.636\\,V_m\\)</li>\n<li>d- \\(\\sqrt{2}\\,V_m\\)</li>\n</ul>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The effective value of an alternating voltage is always \\(V_e=0.707\\,V_m\\), a fixed relation we studied in the first lesson.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — \\(0.707\\,V_m\\)",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Q1: Multiple Choice",
+      "label": "1"
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>Power consumption in a pure ohmic resistance is</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- Real</li>\n<li>b- As large as possible</li>\n<li>c- Zero</li>\n<li>d- None of the above</li>\n</ul>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "A pure ohmic resistance consumes real power that appears as heat, unlike a pure inductor and a pure capacitor, which consume no real power.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Real",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Q1: Multiple Choice",
+      "label": "2"
+    },
+    {
+      "type": "example",
+      "number": 3,
+      "problemHtml": "<p>To step up the alternating voltage we use</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- A motor</li>\n<li>b- A generator</li>\n<li>c- A coil</li>\n<li>d- An electrical transformer</li>\n</ul>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "A step-up transformer is the device used to raise the alternating voltage, relying on the principle of mutual induction.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: d — An electrical transformer",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Q1: Multiple Choice",
+      "label": "3"
+    },
+    {
+      "type": "example",
+      "number": 4,
+      "problemHtml": "<p>In a series AC circuit containing an inductor, a resistance, and a capacitor, the value of the impedance relative to the resistance is</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- Greater than it.</li>\n<li>b- Less than it.</li>\n<li>c- Equal to it.</li>\n<li>d- None of the above.</li>\n</ul>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Since \\(Z=\\sqrt{R^2+(X_L-X_C)^2}\\), the second term under the root is always positive or zero (at resonance), so Z is greater than or equal to R, and in general (except at resonance) Z is greater than R.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Greater than it",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Q1: Multiple Choice",
+      "label": "4"
+    },
+    {
+      "type": "example",
+      "number": 5,
+      "problemHtml": "<p>The value of the power factor in an AC electrical circuit containing an inductor only is</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- Zero.</li>\n<li>b- Greater than one.</li>\n<li>c- Less than one.</li>\n<li>d- None of the above.</li>\n</ul>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "In a pure inductor, the voltage leads the current by an angle of 90°, so \\(\\cos90°=0\\), meaning the power factor equals zero.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Zero",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Q1: Multiple Choice",
+      "label": "5"
+    },
+    {
+      "type": "example",
+      "number": 6,
+      "problemHtml": "<p>The two terminals of the secondary coil in the electrical transformer are connected to</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- The source.</li>\n<li>b- The device (the load).</li>\n<li>c- The core.</li>\n<li>d- None of the above.</li>\n</ul>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The primary coil is connected to the alternating source, while the secondary coil is connected to the device (the load).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — The device (the load)",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Q1: Multiple Choice",
+      "label": "6"
+    },
+    {
+      "type": "example",
+      "number": 7,
+      "problemHtml": "<p>One of the causes of power loss in the electrical circuit is</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- Eddy currents.</li>\n<li>b- Connecting the transformer in series.</li>\n<li>c- The large size of the transformer.</li>\n<li>d- The presence of a magnetic field.</li>\n</ul>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Among the causes of power loss in the electrical transformer: the eddy currents generated in its iron core, in addition to heat losses in the wires and hysteresis losses.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Eddy currents",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "mcqs",
+      "sectionNavLabel": "✅ Q1: Multiple Choice",
+      "label": "7"
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "✏️ Q2: Fill in the Following Blanks",
+      "leadHtml": null,
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks"
+    },
+    {
+      "type": "example",
+      "number": 8,
+      "problemHtml": "<p>There is ---------- power consumption in a pure ohmic resistance.</p>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks",
+      "label": "1"
+    },
+    {
+      "type": "example",
+      "number": 9,
+      "problemHtml": "<div class=\"exercise-final\">✓ Real (actual)</div>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks"
+    },
+    {
+      "type": "example",
+      "number": 10,
+      "problemHtml": "<p>The ---------- does not depend on frequency in an AC circuit.</p>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks",
+      "label": "2"
+    },
+    {
+      "type": "example",
+      "number": 11,
+      "problemHtml": "<div class=\"exercise-final\">✓ The (pure) ohmic resistance</div>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks"
+    },
+    {
+      "type": "example",
+      "number": 12,
+      "problemHtml": "<p>Inductive reactance is measured in units of ----------.</p>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks",
+      "label": "3"
+    },
+    {
+      "type": "example",
+      "number": 13,
+      "problemHtml": "<div class=\"exercise-final\">✓ The ohm (Ω)</div>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks"
+    },
+    {
+      "type": "example",
+      "number": 14,
+      "problemHtml": "<p>Impedance is considered a ---------- quantity.</p>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks",
+      "label": "4"
+    },
+    {
+      "type": "example",
+      "number": 15,
+      "problemHtml": "<div class=\"exercise-final\">✓ Directional (vector)</div>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks"
+    },
+    {
+      "type": "example",
+      "number": 16,
+      "problemHtml": "<p>It is more economical to transmit electrical power at a high ---------- and a low ----------.</p>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks",
+      "label": "5"
+    },
+    {
+      "type": "example",
+      "number": 17,
+      "problemHtml": "<div class=\"exercise-final\">✓ High voltage · low current</div>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks"
+    },
+    {
+      "type": "example",
+      "number": 18,
+      "problemHtml": "<p>The transformer is considered a ---------- device only.</p>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks",
+      "label": "6"
+    },
+    {
+      "type": "example",
+      "number": 19,
+      "problemHtml": "<div class=\"exercise-final\">✓ Alternating current</div>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks"
+    },
+    {
+      "type": "example",
+      "number": 20,
+      "problemHtml": "<p>To reduce the phase-difference angle between the voltage and current at electrical power transmission stations, we use ---------- connected in parallel.</p>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks",
+      "label": "7"
+    },
+    {
+      "type": "example",
+      "number": 21,
+      "problemHtml": "<div class=\"exercise-final\">✓ Capacitors</div>",
+      "sectionGroup": 1,
+      "sectionId": "fillblanks",
+      "sectionNavLabel": "✏️ Q2: Fill in the Blanks"
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "📝 Short Questions",
+      "leadHtml": null,
+      "sectionGroup": 2,
+      "sectionId": "shortq",
+      "sectionNavLabel": "📝 Short Questions"
+    },
+    {
+      "type": "example",
+      "number": 22,
+      "problemHtml": "<p>What is the difference between how a capacitor behaves in a DC circuit and in an AC circuit?</p>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "In a DC circuit, the capacitor behaves like an open switch shortly after it is fully charged (no current flows). In an AC circuit, however, it behaves like a closed switch, since it charges and discharges alternately every quarter cycle, so the ammeter registers a continuous current despite the insulator between its plates.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Open switch in DC — closed switch (periodic charge and discharge) in AC",
+        "label": "Answer"
+      },
+      "sectionGroup": 2,
+      "sectionId": "shortq",
+      "sectionNavLabel": "📝 Short Questions",
+      "label": "Q3"
+    },
+    {
+      "type": "example",
+      "number": 23,
+      "problemHtml": "<p>What is the meaning of the effective value of an alternating current? Write the relation between this value and the maximum value of the current.</p>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The effective value of an alternating current is the equivalent thermal value of direct current that produces the same amount of heat in a given resistance over the same time that the alternating current produces in it. Its relation to the maximum value: \\(I_e=0.707\\,I_m\\).",
+            "calc": []
+          }
+        ],
+        "final": "✓ I_e = 0.707 I_m",
+        "label": "Answer"
+      },
+      "sectionGroup": 2,
+      "sectionId": "shortq",
+      "sectionNavLabel": "📝 Short Questions",
+      "label": "Q4"
+    },
+    {
+      "type": "example",
+      "number": 24,
+      "problemHtml": "<p>How can a resistance, an inductor, and a capacitor, each placed in one of three similar boxes, be distinguished when each is connected separately to a battery, wires, and a light bulb?</p>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "With a battery (direct current), wires, and a bulb: the box in which the bulb lights up steadily and continuously contains a resistance or an inductor (because \\(X_L=0\\) with direct current, so the inductor behaves like an ordinary resistance). The box in which the bulb does not light up at all (or flashes momentarily then goes out) contains a capacitor, because it behaves like an open switch once it is fully charged in a DC circuit.",
+            "calc": []
+          }
+        ],
+        "final": "✓ The capacitor is identified by the bulb going out (open switch); distinguishing the resistance from the inductor requires a variable-frequency AC source to observe the effect of X_L",
+        "label": "Answer"
+      },
+      "sectionGroup": 2,
+      "sectionId": "shortq",
+      "sectionNavLabel": "📝 Short Questions",
+      "label": "Q5"
+    },
+    {
+      "type": "example",
+      "number": 25,
+      "problemHtml": "<p>What is the power factor in each of the following: 1- The resistance. 2- The inductor. 3- The capacitor?</p>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1- Pure resistance: phase difference = zero, so \\(\\cos\\emptyset=\\cos0°=1\\).",
+            "calc": []
+          },
+          {
+            "note": "2- Pure inductor: phase difference = 90°, so \\(\\cos\\emptyset=\\cos90°=0\\).",
+            "calc": []
+          },
+          {
+            "note": "3- Pure capacitor: phase difference = 90° (in the opposite direction), so \\(\\cos\\emptyset=\\cos90°=0\\).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Resistance: 1 · Inductor: 0 · Capacitor: 0",
+        "label": "Answer"
+      },
+      "sectionGroup": 2,
+      "sectionId": "shortq",
+      "sectionNavLabel": "📝 Short Questions",
+      "label": "Q6"
+    },
+    {
+      "type": "example",
+      "number": 26,
+      "problemHtml": "<p>Why is the transformer considered an AC device?</p>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Because the operation of the transformer relies on the principle of mutual induction, which requires a continuous change in the magnetic flux; and this change occurs only with a current that varies in magnitude and direction (alternating), since the transformer contains no automatic switch to make that happen with a constant direct current.",
+            "calc": []
+          }
+        ],
+        "final": "✓ It relies on mutual induction, which requires a continuously varying magnetic flux, and this is achieved only with alternating current",
+        "label": "Answer"
+      },
+      "sectionGroup": 2,
+      "sectionId": "shortq",
+      "sectionNavLabel": "📝 Short Questions",
+      "label": "Q7"
+    },
+    {
+      "type": "example",
+      "number": 27,
+      "problemHtml": "<p>What are the power losses in the transformer?</p>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1- Part of the electrical energy is lost as heat in the wires of the two coils. 2- Part of it is lost as heat generated in the transformer's core due to eddy currents. 3- Part of it is lost as hysteresis in the iron core material.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Heat in the wires · eddy currents in the core · hysteresis in the core material",
+        "label": "Answer"
+      },
+      "sectionGroup": 2,
+      "sectionId": "shortq",
+      "sectionNavLabel": "📝 Short Questions",
+      "label": "Q8"
+    },
+    {
+      "type": "example",
+      "number": 28,
+      "problemHtml": "<p>What type of transformer is connected in load-supply areas?</p>",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "A step-down transformer is connected in load-supply areas, to lower the high voltage used in transmission to a safe voltage suitable for the consumer.",
+            "calc": []
+          }
+        ],
+        "final": "✓ The step-down transformer",
+        "label": "Answer"
+      },
+      "sectionGroup": 2,
+      "sectionId": "shortq",
+      "sectionNavLabel": "📝 Short Questions",
+      "label": "Q9"
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "🧮 Chapter Problems",
+      "leadHtml": "Each problem is solved in full following the structure: given ↓ required ↓ detailed solution ↓ final answer.",
+      "sectionGroup": 3,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Chapter Problems"
+    },
+    {
+      "type": "example",
+      "number": 29,
+      "problemHtml": "<p>An AC circuit contains a pure ohmic resistance, in which the alternating current ranges between \\((-10,\\ +10)\\) and the alternating voltage ranges between \\((-14.14,\\ +14.14)\\). Calculate: 1- The effective current. 2- The effective voltage. 3- The value of the resistance.</p>",
+      "label": "📝 Problem (1)",
+      "solution": {
+        "given": [
+          "\\( I_m = 10\\ \\text{A} \\) — the maximum current value (ranges between −10 and +10)",
+          "\\( V_m = 14.14\\ \\text{Volt} \\) — the maximum voltage value"
+        ],
+        "required": "1- \\(I_e\\). 2- \\(V_e\\). 3- R.",
+        "steps": [
+          {
+            "note": "1- We apply the relation for the effective value of the current",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( I_e = 0.707\\times I_m = 0.707\\times10 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I_e = 7.07\\ \\text{A} \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- We apply the relation for the effective value of the voltage",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( V_e = 0.707\\times V_m = 0.707\\times14.14 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( V_e = 10\\ \\text{Volt} \\)"
+              }
+            ]
+          },
+          {
+            "note": "3- We apply Ohm's law using the effective values (or the maximum values; the ratio is the same)",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( R = \\dfrac{V_e}{I_e} = \\dfrac{10}{7.07} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( R = 1.4\\ \\Omega \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ I_e = 7.07 A · V_e = 10 Volt · R = 1.4 Ω",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 3,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Chapter Problems"
+    },
+    {
+      "type": "example",
+      "number": 30,
+      "problemHtml": "<p>A coil is connected to a source of alternating voltage with frequency \\(\\left(\\dfrac{500}{\\pi}\\ \\text{Hz}\\right)\\), and the inductive reactance value becomes \\((125\\ \\Omega)\\). Calculate the inductance of the coil.</p>",
+      "label": "📝 Problem (2)",
+      "solution": {
+        "given": [
+          "\\( f = 500/\\pi\\ \\text{Hz} \\) — the frequency",
+          "\\( X_L = 125\\ \\Omega \\) — the inductive reactance"
+        ],
+        "required": "The inductance of the coil L.",
+        "steps": [
+          {
+            "note": "We apply the inductive-reactance relation and rearrange it to find L",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_L=2\\pi fL \\quad\\Rightarrow\\quad L=\\dfrac{X_L}{2\\pi f}=\\dfrac{125}{2\\pi\\times\\frac{500}{\\pi}} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( L=\\dfrac{125}{1000} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( L=0.125\\ \\text{H} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ L = 0.125 H",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 3,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Chapter Problems"
+    },
+    {
+      "type": "example",
+      "number": 31,
+      "problemHtml": "<p>A capacitor is connected to an AC source. If the capacitance of the capacitor is \\(\\left(\\dfrac{100}{\\pi}\\ \\mu F\\right)\\) and the capacitive reactance is \\((100\\ \\Omega)\\), calculate the frequency of the electrical circuit.</p>",
+      "label": "📝 Problem (3)",
+      "solution": {
+        "given": [
+          "\\( C = 100/\\pi\\ \\mu F = \\dfrac{100}{\\pi}\\times10^{-6}\\ \\text{F} \\) — the capacitance (after conversion)",
+          "\\( X_C = 100\\ \\Omega \\) — the capacitive reactance"
+        ],
+        "required": "The circuit frequency f.",
+        "steps": [
+          {
+            "note": "We apply the capacitive-reactance relation and rearrange it to find f",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_C=\\dfrac{1}{2\\pi fC} \\quad\\Rightarrow\\quad f=\\dfrac{1}{2\\pi C X_C} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( f=\\dfrac{1}{2\\pi\\times\\frac{100}{\\pi}\\times10^{-6}\\times100} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( f=\\dfrac{1}{0.02} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( f=50\\ \\text{Hz} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ f = 50 Hz",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 3,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Chapter Problems"
+    },
+    {
+      "type": "example",
+      "number": 32,
+      "problemHtml": "<p>A resistance of \\((3\\ \\Omega)\\) is connected in series with an inductor of self-inductance \\((50\\ \\text{mH})\\) and a source of alternating voltage with frequency \\(\\left(\\dfrac{40}{\\pi}\\ \\text{Hz}\\right)\\), and the circuit current is \\((2\\ \\text{A})\\). Calculate the source voltage.</p>",
+      "label": "📝 Problem (4)",
+      "solution": {
+        "given": [
+          "\\( R = 3\\ \\Omega \\) — the resistance",
+          "\\( L = 50\\ \\text{mH} = 50\\times10^{-3}\\ \\text{H} \\) — the inductance (after conversion)",
+          "\\( f = 40/\\pi\\ \\text{Hz} \\) — the frequency",
+          "\\( I_T = 2\\ \\text{A} \\) — the circuit current"
+        ],
+        "required": "The source voltage V.",
+        "steps": [
+          {
+            "note": "We first calculate the inductive reactance",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_L=2\\pi fL=2\\pi\\times\\dfrac{40}{\\pi}\\times50\\times10^{-3} \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( X_L=4\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "We calculate the impedance, then apply Ohm's law to find the voltage",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( Z=\\sqrt{R^2+X_L^2}=\\sqrt{3^2+4^2}=\\sqrt{9+16}=\\sqrt{25} \\)"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( Z=5\\ \\Omega \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( V=I_T\\,Z=2\\times5 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( V=10\\ \\text{Volt} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ V = 10 Volt",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 3,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Chapter Problems"
+    },
+    {
+      "type": "example",
+      "number": 33,
+      "problemHtml": "<p>A capacitor of capacitance \\((200\\ \\mu F)\\) is connected in series with an ohmic resistance of \\((40\\ \\Omega)\\) to an AC electrical source of frequency \\(\\left(\\dfrac{250}{3\\pi}\\ \\text{Hz}\\right)\\). If the power consumed in the circuit is \\((1000\\ \\text{W})\\), calculate the source voltage.</p>",
+      "label": "📝 Problem (5)",
+      "solution": {
+        "given": [
+          "\\( C = 200\\ \\mu F = 200\\times10^{-6}\\ \\text{F} \\) — the capacitance (after conversion)",
+          "\\( R = 40\\ \\Omega \\) — the resistance",
+          "\\( f = 250/(3\\pi)\\ \\text{Hz} \\) — the frequency",
+          "\\( P = 1000\\ \\text{W} \\) — the power consumed"
+        ],
+        "required": "The source voltage \\(V_T\\).",
+        "steps": [
+          {
+            "note": "We calculate the capacitive reactance and the impedance",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( X_C=\\dfrac{1}{2\\pi fC}=\\dfrac{1}{2\\pi\\times\\frac{250}{3\\pi}\\times200\\times10^{-6}} \\)"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( X_C=30\\ \\Omega \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( Z=\\sqrt{R^2+X_C^2}=\\sqrt{40^2+30^2}=\\sqrt{1600+900}=\\sqrt{2500} \\)"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( Z=50\\ \\Omega \\)"
+              }
+            ]
+          },
+          {
+            "note": "We find the circuit current from the power consumed \\((P=I_T^2R)\\), then apply Ohm's law to find the voltage",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( P=I_T^2 R \\quad\\Rightarrow\\quad 1000=I_T^2\\times40 \\quad\\Rightarrow\\quad I_T^2=25 \\)"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( I_T=5\\ \\text{A} \\)"
+              },
+              {
+                "kind": "line",
+                "latex": "\\( V_T=I_T\\,Z=5\\times50 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( V_T=250\\ \\text{Volt} \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ V_T = 250 Volt",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 3,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Chapter Problems"
+    },
+    {
+      "type": "example",
+      "number": 34,
+      "problemHtml": "<p>If the power of the primary coil in an electrical transformer equals \\((1000\\ \\text{W})\\) and the power of the secondary coil is \\((900\\ \\text{W})\\). Calculate: 1- The power lost in the transformer. 2- The efficiency of the transformer.</p>",
+      "label": "📝 Problem (6)",
+      "solution": {
+        "given": [
+          "\\( P_1 = 1000\\ \\text{W} \\) — the power of the primary coil",
+          "\\( P_2 = 900\\ \\text{W} \\) — the power of the secondary coil"
+        ],
+        "required": "1- The power lost. 2- η.",
+        "steps": [
+          {
+            "note": "1- Power lost = power of the primary coil − power of the secondary coil",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\Delta P = P_1 - P_2 = 1000-900 \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\Delta P = 100\\ \\text{W} \\)"
+              }
+            ]
+          },
+          {
+            "note": "2- We apply the transformer efficiency relation",
+            "calc": [
+              {
+                "kind": "line",
+                "latex": "\\( \\eta=\\dfrac{P_2}{P_1}\\times100\\%=\\dfrac{900}{1000}\\times100\\% \\)"
+              },
+              {
+                "kind": "arrow",
+                "latex": "↓"
+              },
+              {
+                "kind": "box",
+                "latex": "\\( \\eta=90\\% \\)"
+              }
+            ]
+          }
+        ],
+        "final": "✓ Power lost = 100 W · η = 90%",
+        "label": "Detailed Solution"
+      },
+      "sectionGroup": 3,
+      "sectionId": "problems",
+      "sectionNavLabel": "🧮 Chapter Problems"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Comprehensive Chapter Four Quiz",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "The effective value of the alternating current equals:",
+        "options": [
+          "\\( 1.5\\,I_m \\)",
+          "\\( 0.707\\,I_m \\)",
+          "\\( 2\\,I_m \\)",
+          "\\( I_m \\)"
+        ],
+        "explain": "\\(I_e=0.707\\,I_m\\), a relation based on the equal thermal effect between alternating and direct current."
+      },
+      {
+        "correct": 2,
+        "question": "The voltage of a pure inductor relative to its current:",
+        "options": [
+          "Lags by 90°",
+          "In the same phase",
+          "Leads by 90°",
+          "Leads by 180°"
+        ],
+        "explain": "The voltage of a pure inductor leads its current by a phase-difference angle of 90°."
+      },
+      {
+        "correct": 0,
+        "question": "The current of a pure capacitor relative to its voltage:",
+        "options": [
+          "Leads by 90°",
+          "Lags by 90°",
+          "In the same phase",
+          "Leads by 180°"
+        ],
+        "explain": "The current of a pure capacitor leads its voltage by a phase-difference angle of 90°."
+      },
+      {
+        "correct": 3,
+        "question": "The impedance of a series RLC circuit is calculated from:",
+        "options": [
+          "\\( Z=R+X_L+X_C \\)",
+          "\\( Z=R+X_L-X_C \\)",
+          "\\( Z=\\sqrt{R^2+X_L^2+X_C^2} \\)",
+          "\\( Z=\\sqrt{R^2+(X_L-X_C)^2} \\)"
+        ],
+        "explain": "\\(Z=\\sqrt{R^2+(X_L-X_C)^2}\\), where \\(X_L\\) and \\(X_C\\) are subtracted first (since they are 180° out of phase) and the result is then combined vectorially with R."
+      },
+      {
+        "correct": 1,
+        "question": "At electrical resonance \\((X_L=X_C)\\), the properties of the circuit are:",
+        "options": [
+          "Purely inductive",
+          "Purely resistive",
+          "Purely capacitive",
+          "Cannot be determined"
+        ],
+        "explain": "At resonance, \\((X_L-X_C)\\) vanishes, so \\(Z=R\\) only, meaning the properties of the circuit become purely resistive (the current and voltage are in the same phase)."
+      },
+      {
+        "correct": 2,
+        "question": "A transformer with a turns ratio of \\(N_2/N_1=1/12\\) is:",
+        "options": [
+          "Step-up",
+          "100% ideal",
+          "Step-down",
+          "Useless"
+        ],
+        "explain": "Since \\(N_2/N_1=1/12\\), which is less than 1, this transformer steps down the voltage."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Chapter Four Summary",
+    "items": [
+      "Alternating current: \\(I=I_m\\sin\\theta\\), \\(I_e=0.707I_m\\), \\(V_e=0.707V_m\\), \\(\\omega=2\\pi f\\).",
+      "Pure resistance: zero phase difference; pure inductor: voltage leads by 90°; pure capacitor: current leads by 90°.",
+      "\\(X_L=2\\pi fL=\\omega L\\), \\(X_C=1/(2\\pi fC)=1/(\\omega C)\\).",
+      "Series circuits: \\(Z=\\sqrt{R^2+(X_L-X_C)^2}\\), \\(\\cos\\emptyset=R/Z\\), \\(P=V_TI_T\\cos\\emptyset\\).",
+      "Resonance occurs at \\(X_L=X_C\\); \\(f_R=1/(2\\pi\\sqrt{LC})\\).",
+      "The transformer: \\(N_2/N_1=V_2/V_1\\), \\(\\eta=(P_2/P_1)\\times100\\%\\); step-up at generation, step-down at the load, to reduce transmission loss."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Comprehensive Chapter Mind Map",
+    "ariaLabel": "Comprehensive mind map for Chapter Four",
+    "viewBox": "0 0 900 480",
+    "center": {
+      "cx": 450.0,
+      "cy": 230.0,
+      "r": 66.0,
+      "lines": [
+        "Alternating Current",
+        "Circuits"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 180.0,
+        "cy": 90.0,
+        "r": 54.0,
+        "color": "#ffab5e",
+        "lines": [
+          "AC Current",
+          "and Effective Value"
+        ]
+      },
+      {
+        "cx": 720.0,
+        "cy": 90.0,
+        "r": 54.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "R, X_L",
+          "and X_C"
+        ]
+      },
+      {
+        "cx": 150.0,
+        "cy": 250.0,
+        "r": 54.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Series",
+          "Circuits"
+        ]
+      },
+      {
+        "cx": 750.0,
+        "cy": 250.0,
+        "r": 54.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "RLC",
+          "and Resonance"
+        ]
+      },
+      {
+        "cx": 450.0,
+        "cy": 420.0,
+        "r": 54.0,
+        "color": "#7c6fee",
+        "lines": [
+          "The Transformer"
+        ]
+      }
+    ]
+  }
+}

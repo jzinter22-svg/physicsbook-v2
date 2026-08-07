@@ -27,7 +27,7 @@
     {
       "type": "example",
       "number": 1,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- \\(1.5\\,V_m\\)</li>\n<li>b- \\(0.707\\,V_m\\)</li>\n<li>c- \\(0.636\\,V_m\\)</li>\n<li>d- \\(\\sqrt{2}\\,V_m\\)</li>\n</ul>",
+      "problemHtml": "<p>مقدار الفولطية المتناوبة المؤثرة في دائرة التيار المتناوب تساوي</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- \\(1.5\\,V_m\\)</li>\n<li>b- \\(0.707\\,V_m\\)</li>\n<li>c- \\(0.636\\,V_m\\)</li>\n<li>d- \\(\\sqrt{2}\\,V_m\\)</li>\n</ul>",
       "solution": {
         "required": null,
         "steps": [
@@ -36,16 +36,18 @@
             "calc": []
           }
         ],
-        "final": "✓ الإجابة الصحيحة: b — \\(0.707\\,V_m\\)"
+        "final": "✓ الإجابة الصحيحة: b — \\(0.707\\,V_m\\)",
+        "label": "الحل"
       },
       "sectionGroup": 0,
       "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
+      "sectionNavLabel": "✅ س1: اختيار من متعدد",
+      "label": "1"
     },
     {
       "type": "example",
       "number": 2,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- حقيقيًا</li>\n<li>b- اكبر ما يمكن</li>\n<li>c- صفرًا</li>\n<li>d- ليس أيًا مما سبق</li>\n</ul>",
+      "problemHtml": "<p>يكون استهلاك القدرة في مقاومة أومية خالصة</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- حقيقيًا</li>\n<li>b- اكبر ما يمكن</li>\n<li>c- صفرًا</li>\n<li>d- ليس أيًا مما سبق</li>\n</ul>",
       "solution": {
         "required": null,
         "steps": [
@@ -54,16 +56,18 @@
             "calc": []
           }
         ],
-        "final": "✓ الإجابة الصحيحة: a — حقيقيًا"
+        "final": "✓ الإجابة الصحيحة: a — حقيقيًا",
+        "label": "الحل"
       },
       "sectionGroup": 0,
       "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
+      "sectionNavLabel": "✅ س1: اختيار من متعدد",
+      "label": "2"
     },
     {
       "type": "example",
       "number": 3,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- محركًا</li>\n<li>b- مولدًا</li>\n<li>c- ملفًا</li>\n<li>d- محولة كهربائية</li>\n</ul>",
+      "problemHtml": "<p>لرفع الفولطية المتناوبة نستعمل</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- محركًا</li>\n<li>b- مولدًا</li>\n<li>c- ملفًا</li>\n<li>d- محولة كهربائية</li>\n</ul>",
       "solution": {
         "required": null,
         "steps": [
@@ -72,16 +76,18 @@
             "calc": []
           }
         ],
-        "final": "✓ الإجابة الصحيحة: d — محولة كهربائية"
+        "final": "✓ الإجابة الصحيحة: d — محولة كهربائية",
+        "label": "الحل"
       },
       "sectionGroup": 0,
       "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
+      "sectionNavLabel": "✅ س1: اختيار من متعدد",
+      "label": "3"
     },
     {
       "type": "example",
       "number": 4,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- أكبر منها.</li>\n<li>b- أقل منها.</li>\n<li>c- مساوية لها.</li>\n<li>d- ليس أيًا مما سبق.</li>\n</ul>",
+      "problemHtml": "<p>تكون قيمة الممانعة في دائرة تيار متناوب متوالية الربط تحتوي على محث ومقاومة ومتسعة بالنسبة للمقاومة كالآتي</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- أكبر منها.</li>\n<li>b- أقل منها.</li>\n<li>c- مساوية لها.</li>\n<li>d- ليس أيًا مما سبق.</li>\n</ul>",
       "solution": {
         "required": null,
         "steps": [
@@ -90,16 +96,18 @@
             "calc": []
           }
         ],
-        "final": "✓ الإجابة الصحيحة: a — أكبر منها"
+        "final": "✓ الإجابة الصحيحة: a — أكبر منها",
+        "label": "الحل"
       },
       "sectionGroup": 0,
       "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
+      "sectionNavLabel": "✅ س1: اختيار من متعدد",
+      "label": "4"
     },
     {
       "type": "example",
       "number": 5,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- صفر.</li>\n<li>b- أكبر من الواحد.</li>\n<li>c- أقل من الواحد.</li>\n<li>d- ليس أيًا مما سبق.</li>\n</ul>",
+      "problemHtml": "<p>قيمة عامل القدرة في الدائرة الكهربائية للتيار المتناوب التي تحتوي على محث فقط</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- صفر.</li>\n<li>b- أكبر من الواحد.</li>\n<li>c- أقل من الواحد.</li>\n<li>d- ليس أيًا مما سبق.</li>\n</ul>",
       "solution": {
         "required": null,
         "steps": [
@@ -108,16 +116,18 @@
             "calc": []
           }
         ],
-        "final": "✓ الإجابة الصحيحة: a — صفر"
+        "final": "✓ الإجابة الصحيحة: a — صفر",
+        "label": "الحل"
       },
       "sectionGroup": 0,
       "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
+      "sectionNavLabel": "✅ س1: اختيار من متعدد",
+      "label": "5"
     },
     {
       "type": "example",
       "number": 6,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- بالمصدر.</li>\n<li>b- بالجهاز (الحمل).</li>\n<li>c- بالنواة.</li>\n<li>d- ليس أيًا مما سبق.</li>\n</ul>",
+      "problemHtml": "<p>يربط طرفا الملف الثانوي في المحولة الكهربائية</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- بالمصدر.</li>\n<li>b- بالجهاز (الحمل).</li>\n<li>c- بالنواة.</li>\n<li>d- ليس أيًا مما سبق.</li>\n</ul>",
       "solution": {
         "required": null,
         "steps": [
@@ -126,16 +136,18 @@
             "calc": []
           }
         ],
-        "final": "✓ الإجابة الصحيحة: b — بالجهاز (الحمل)"
+        "final": "✓ الإجابة الصحيحة: b — بالجهاز (الحمل)",
+        "label": "الحل"
       },
       "sectionGroup": 0,
       "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
+      "sectionNavLabel": "✅ س1: اختيار من متعدد",
+      "label": "6"
     },
     {
       "type": "example",
       "number": 7,
-      "problemHtml": "<ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- التيارات الدوامة.</li>\n<li>b- ربط المحولة على التوالي.</li>\n<li>c- كبر حجم المحولة.</li>\n<li>d- وجود مجال مغناطيسي.</li>\n</ul>",
+      "problemHtml": "<p>إن احد اسباب خسائر القدرة في الدائرة الكهربائية</p><ul style=\"margin:.4rem 0 0;padding-inline-start:1.3rem\">\n<li>a- التيارات الدوامة.</li>\n<li>b- ربط المحولة على التوالي.</li>\n<li>c- كبر حجم المحولة.</li>\n<li>d- وجود مجال مغناطيسي.</li>\n</ul>",
       "solution": {
         "required": null,
         "steps": [
@@ -144,11 +156,13 @@
             "calc": []
           }
         ],
-        "final": "✓ الإجابة الصحيحة: a — التيارات الدوامة"
+        "final": "✓ الإجابة الصحيحة: a — التيارات الدوامة",
+        "label": "الحل"
       },
       "sectionGroup": 0,
       "sectionId": "mcqs",
-      "sectionNavLabel": "✅ س1: اختيار من متعدد"
+      "sectionNavLabel": "✅ س1: اختيار من متعدد",
+      "label": "7"
     },
     {
       "type": "sectionIntro",
@@ -161,10 +175,11 @@
     {
       "type": "example",
       "number": 8,
-      "problemHtml": "",
+      "problemHtml": "<p>هناك استهلاك قدرة ---------- في المقاومة الاومية الخالصة.</p>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
-      "sectionNavLabel": "✏️ س2: إكمال الفراغات"
+      "sectionNavLabel": "✏️ س2: إكمال الفراغات",
+      "label": "1"
     },
     {
       "type": "example",
@@ -177,10 +192,11 @@
     {
       "type": "example",
       "number": 10,
-      "problemHtml": "",
+      "problemHtml": "<p>لا تعتمد ---------- على التردد في دائرة التيار المتناوب.</p>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
-      "sectionNavLabel": "✏️ س2: إكمال الفراغات"
+      "sectionNavLabel": "✏️ س2: إكمال الفراغات",
+      "label": "2"
     },
     {
       "type": "example",
@@ -193,10 +209,11 @@
     {
       "type": "example",
       "number": 12,
-      "problemHtml": "",
+      "problemHtml": "<p>تقاس الرادة الحثية بوحدة ----------.</p>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
-      "sectionNavLabel": "✏️ س2: إكمال الفراغات"
+      "sectionNavLabel": "✏️ س2: إكمال الفراغات",
+      "label": "3"
     },
     {
       "type": "example",
@@ -209,10 +226,11 @@
     {
       "type": "example",
       "number": 14,
-      "problemHtml": "",
+      "problemHtml": "<p>تعتبر الممانعة من الكميات ----------.</p>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
-      "sectionNavLabel": "✏️ س2: إكمال الفراغات"
+      "sectionNavLabel": "✏️ س2: إكمال الفراغات",
+      "label": "4"
     },
     {
       "type": "example",
@@ -225,10 +243,11 @@
     {
       "type": "example",
       "number": 16,
-      "problemHtml": "",
+      "problemHtml": "<p>من الافضل اقتصاديًا نقل الطاقة الكهربائية بـ ---------- عالية و ---------- واطئ.</p>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
-      "sectionNavLabel": "✏️ س2: إكمال الفراغات"
+      "sectionNavLabel": "✏️ س2: إكمال الفراغات",
+      "label": "5"
     },
     {
       "type": "example",
@@ -241,10 +260,11 @@
     {
       "type": "example",
       "number": 18,
-      "problemHtml": "",
+      "problemHtml": "<p>تعد المحولة جهازًا من أجهزة التيار ---------- فقط.</p>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
-      "sectionNavLabel": "✏️ س2: إكمال الفراغات"
+      "sectionNavLabel": "✏️ س2: إكمال الفراغات",
+      "label": "6"
     },
     {
       "type": "example",
@@ -257,10 +277,11 @@
     {
       "type": "example",
       "number": 20,
-      "problemHtml": "",
+      "problemHtml": "<p>لتقليل زاوية فرق الطور بين الفولطية والتيار في محطات نقل الطاقة الكهربائية نستعمل ---------- مربوطة على التوازي.</p>",
       "sectionGroup": 1,
       "sectionId": "fillblanks",
-      "sectionNavLabel": "✏️ س2: إكمال الفراغات"
+      "sectionNavLabel": "✏️ س2: إكمال الفراغات",
+      "label": "7"
     },
     {
       "type": "example",
@@ -281,7 +302,7 @@
     {
       "type": "example",
       "number": 22,
-      "problemHtml": "",
+      "problemHtml": "<p>ما الفرق بين عمل المتسعة في دائرة تيار مستمر ودائرة تيار متناوب؟</p>",
       "solution": {
         "required": null,
         "steps": [
@@ -290,16 +311,18 @@
             "calc": []
           }
         ],
-        "final": "✓ مفتاح مفتوح في التيار المستمر — مفتاح مغلق (شحن وتفريغ دوري) في التيار المتناوب"
+        "final": "✓ مفتاح مفتوح في التيار المستمر — مفتاح مغلق (شحن وتفريغ دوري) في التيار المتناوب",
+        "label": "الإجابة"
       },
       "sectionGroup": 2,
       "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
+      "sectionNavLabel": "📝 أسئلة قصيرة",
+      "label": "س3"
     },
     {
       "type": "example",
       "number": 23,
-      "problemHtml": "",
+      "problemHtml": "<p>ما معنى القيمة المؤثرة للتيار المتناوب؟ اكتب علاقة هذه القيمة مع المقدار الاعظم للتيار؟</p>",
       "solution": {
         "required": null,
         "steps": [
@@ -308,16 +331,18 @@
             "calc": []
           }
         ],
-        "final": "✓ I_e = 0.707 I_m"
+        "final": "✓ I_e = 0.707 I_m",
+        "label": "الإجابة"
       },
       "sectionGroup": 2,
       "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
+      "sectionNavLabel": "📝 أسئلة قصيرة",
+      "label": "س4"
     },
     {
       "type": "example",
       "number": 24,
-      "problemHtml": "",
+      "problemHtml": "<p>كيف يمكن التمييز بين المقاومة والمحث والمتسعة موضوعة في ثلاثة صناديق متشابهة عند ربطها مع بطارية وأسلاك ومصباح كهربائي كل على حدة؟</p>",
       "solution": {
         "required": null,
         "steps": [
@@ -326,16 +351,18 @@
             "calc": []
           }
         ],
-        "final": "✓ المتسعة تُعرف بانطفاء المصباح (مفتاح مفتوح)؛ التمييز بين المقاومة والمحث يحتاج مصدر تيار متناوب متغيّر التردد لملاحظة أثر X_L"
+        "final": "✓ المتسعة تُعرف بانطفاء المصباح (مفتاح مفتوح)؛ التمييز بين المقاومة والمحث يحتاج مصدر تيار متناوب متغيّر التردد لملاحظة أثر X_L",
+        "label": "الإجابة"
       },
       "sectionGroup": 2,
       "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
+      "sectionNavLabel": "📝 أسئلة قصيرة",
+      "label": "س5"
     },
     {
       "type": "example",
       "number": 25,
-      "problemHtml": "",
+      "problemHtml": "<p>ما مقدار عامل القدرة في كل من الآتي: 1- المقاومة. 2- المحث. 3- المتسعة؟</p>",
       "solution": {
         "required": null,
         "steps": [
@@ -352,16 +379,18 @@
             "calc": []
           }
         ],
-        "final": "✓ المقاومة: 1 · المحث: 0 · المتسعة: 0"
+        "final": "✓ المقاومة: 1 · المحث: 0 · المتسعة: 0",
+        "label": "الإجابة"
       },
       "sectionGroup": 2,
       "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
+      "sectionNavLabel": "📝 أسئلة قصيرة",
+      "label": "س6"
     },
     {
       "type": "example",
       "number": 26,
-      "problemHtml": "",
+      "problemHtml": "<p>لماذا تعد المحولة جهازًا من أجهزة التيار المتناوب؟</p>",
       "solution": {
         "required": null,
         "steps": [
@@ -370,16 +399,18 @@
             "calc": []
           }
         ],
-        "final": "✓ تعتمد على الحث المتبادل الذي يتطلب فيضًا مغناطيسيًا متغيرًا باستمرار، وهذا لا يتحقق إلا مع التيار المتناوب"
+        "final": "✓ تعتمد على الحث المتبادل الذي يتطلب فيضًا مغناطيسيًا متغيرًا باستمرار، وهذا لا يتحقق إلا مع التيار المتناوب",
+        "label": "الإجابة"
       },
       "sectionGroup": 2,
       "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
+      "sectionNavLabel": "📝 أسئلة قصيرة",
+      "label": "س7"
     },
     {
       "type": "example",
       "number": 27,
-      "problemHtml": "",
+      "problemHtml": "<p>ما خسائر القدرة في المحولة؟</p>",
       "solution": {
         "required": null,
         "steps": [
@@ -388,16 +419,18 @@
             "calc": []
           }
         ],
-        "final": "✓ حرارة في الأسلاك · تيارات دوامة في القلب · هسترة في مادة القلب"
+        "final": "✓ حرارة في الأسلاك · تيارات دوامة في القلب · هسترة في مادة القلب",
+        "label": "الإجابة"
       },
       "sectionGroup": 2,
       "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
+      "sectionNavLabel": "📝 أسئلة قصيرة",
+      "label": "س8"
     },
     {
       "type": "example",
       "number": 28,
-      "problemHtml": "",
+      "problemHtml": "<p>ما نوع المحولة المربوطة في مناطق التجهيز للحمل؟</p>",
       "solution": {
         "required": null,
         "steps": [
@@ -406,11 +439,13 @@
             "calc": []
           }
         ],
-        "final": "✓ المحولة الخافضة"
+        "final": "✓ المحولة الخافضة",
+        "label": "الإجابة"
       },
       "sectionGroup": 2,
       "sectionId": "shortq",
-      "sectionNavLabel": "📝 أسئلة قصيرة"
+      "sectionNavLabel": "📝 أسئلة قصيرة",
+      "label": "س9"
     },
     {
       "type": "sectionIntro",
@@ -854,7 +889,6 @@
       "cx": 450.0,
       "cy": 230.0,
       "r": 66.0,
-      "color": "url(#gC4b)",
       "lines": [
         "دوائر التيار",
         "المتناوب"
