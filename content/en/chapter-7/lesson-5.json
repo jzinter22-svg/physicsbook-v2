@@ -1,0 +1,397 @@
+{
+  "lessonNumber": 5,
+  "chapterNumber": 7,
+  "meta": {
+    "pageTitle": "Lesson 5: Chapter Seven Questions — Crude Oil",
+    "description": "7-5 Chapter Seven questions: comprehensive questions on crude oil, its classification, chemical composition, extraction, and refining products.",
+    "breadcrumbChapter": "Chapter 7",
+    "breadcrumbLesson": "Chapter Seven Questions",
+    "footer": "Chapter Seven: Crude Oil — Lesson 5: Chapter Seven Questions"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 5 of 5 · 7-5",
+    "title": "Chapter Seven Questions",
+    "lead": "Review the full range of Chapter Seven concepts through the official end-of-chapter questions, and test your comprehensive understanding of crude oil."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Reviews the key concepts of crude oil classification, its chemical composition, its extraction, and its refining products.",
+    "Solves the official end-of-chapter questions for Chapter Seven in their various forms (multiple choice, definitions, reasoning)."
+  ],
+  "content": [
+    {
+      "type": "explanation",
+      "heading": "💡 7-5 Chapter Questions",
+      "html": "Below are the official end-of-chapter questions for Chapter Seven, with a detailed solution for each. Press the \"Show Solution\" button below each question to review its answer.",
+      "sectionGroup": 0,
+      "sectionId": "intro",
+      "sectionNavLabel": "💡 Introduction"
+    },
+    {
+      "type": "sectionIntro",
+      "heading": "Q1: Choose the Correct Answer for Each of the Following",
+      "leadHtml": null,
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>Petroleum is a fossil fuel because:</p><ul>\n<li>a- It formed millions of years ago.</li>\n<li>b- It formed from microscopic living organisms called crustaceans.</li>\n<li>c- It contains small fragments of fossilized bone.</li>\n<li>d- It is found near plant and animal fossils.</li>\n</ul>",
+      "label": "Q1 (1)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "As stated in the lesson: \"Petroleum is described as a fossil fuel because it took millions of years to form, and it is a non-renewable source of energy.\" The fossil designation is tied to the long geological time needed for it to form.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — It formed millions of years ago",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>Petroleum, or crude oil, is:</p><ul>\n<li>a- A complex chemical compound.</li>\n<li>b- A mixture of various organic compounds.</li>\n<li>c- A saturated solution of several organic gases dissolved in the oil.</li>\n<li>d- A saturated solution of several organic solids dissolved in the oil.</li>\n</ul>",
+      "label": "Q1 (2)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The lesson defines petroleum as \"a complex mixture of hydrocarbons,\" which are various organic compounds — not a single, specific chemical compound, and not a saturated solution of dissolved substances.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — A mixture of various organic compounds",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 3,
+      "problemHtml": "<p>Which of the following is considered a renewable fuel:</p><ul>\n<li>a- Biogas.</li>\n<li>b- Coal.</li>\n<li>c- Natural gas.</li>\n<li>d- Petroleum.</li>\n</ul>",
+      "label": "Q1 (3)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The lesson states that \"biogas is considered a potential alternative to petroleum,\" unlike petroleum, coal, and natural gas, which are all types of non-renewable fossil fuel.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Biogas",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 4,
+      "problemHtml": "<p>Crude oil can be separated into its various components by fractional distillation because they:</p><ul>\n<li>a- Are miscible.</li>\n<li>b- Are colorless.</li>\n<li>c- Dissolve in water.</li>\n<li>d- Have different boiling points.</li>\n</ul>",
+      "label": "Q1 (4)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The fractional distillation tower separates crude oil's components based on the difference in their boiling points: the heavy fractions (higher boiling point) condense lower in the tower, while the light fractions (lower boiling point) rise to the top.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: d — Have different boiling points",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 5,
+      "problemHtml": "<p>Which of the following compounds is used to pave roads, after being heated with gravel and sand:</p><ul>\n<li>a- Gasoline.</li>\n<li>b- Asphalt.</li>\n<li>c- Lubricating oil.</li>\n<li>d- Diesel oil.</li>\n</ul>",
+      "label": "Q1 (5)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "According to Table 7-2, asphalt is heated with sand and gravel to become tar, which is used for paving roads.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — Asphalt",
+        "label": "Solution"
+      },
+      "sectionGroup": 1,
+      "sectionId": "q1",
+      "sectionNavLabel": "1️⃣ Q1"
+    },
+    {
+      "type": "example",
+      "number": 6,
+      "problemHtml": "<p>Petroleum is used as a source of energy (fuel) or as a raw chemical material.</p><ul>\n<li>a- Name four sources of energy (fuel) derived from petroleum.</li>\n<li>b- What is the main raw chemical component of crude oil?</li>\n<li>c- Name four uses of the chemicals manufactured from this component.</li>\n</ul>",
+      "label": "Q2",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Four sources of energy (fuel) derived from petroleum: gasoline, diesel oil, paraffin oil (kerosene), and petroleum gases.",
+            "calc": []
+          },
+          {
+            "note": "The main raw chemical component of crude oil is hydrocarbons, particularly the alkane series.",
+            "calc": []
+          },
+          {
+            "note": "Four uses of the chemicals manufactured from hydrocarbons: fertilizers, pesticides, plastic tools, and medicines.",
+            "calc": []
+          }
+        ],
+        "final": "✓ See the detailed answers above for each part",
+        "label": "Answer"
+      },
+      "sectionGroup": 2,
+      "sectionId": "q2",
+      "sectionNavLabel": "2️⃣ Q2"
+    },
+    {
+      "type": "example",
+      "number": 7,
+      "problemHtml": "<p>Name three types of fossil fuel.</p>",
+      "label": "Q3",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Fossil fuels include: petroleum, coal, and natural gas.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Answer: petroleum, coal, natural gas",
+        "label": "Answer"
+      },
+      "sectionGroup": 3,
+      "sectionId": "q3",
+      "sectionNavLabel": "3️⃣ Q3"
+    },
+    {
+      "type": "example",
+      "number": 8,
+      "problemHtml": "<p>What is the main component of natural gas, and where is it found?</p>",
+      "label": "Q4",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The main component of natural gas is methane (90%), and it is found collected above the petroleum inside the reservoir, as a result of the ongoing decomposition of organic matter.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Answer: methane (90%), found above the petroleum in oil reservoirs",
+        "label": "Answer"
+      },
+      "sectionGroup": 4,
+      "sectionId": "q4",
+      "sectionNavLabel": "4️⃣ Q4"
+    },
+    {
+      "type": "example",
+      "number": 9,
+      "problemHtml": "<p>Define the following: 1) Petroleum. 2) Thermal cracking. 3) Oil refining.</p>",
+      "label": "Q5",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Petroleum: a dense, flammable liquid, dark brown or greenish-brown in color, found in the upper layer of the Earth's crust, made up of a complex mixture of hydrocarbons, particularly the alkane series.",
+            "calc": []
+          },
+          {
+            "note": "Thermal cracking: the process of converting large, saturated hydrocarbon molecules (such as heavy alkanes) into smaller molecules by heating alone, without a catalytic agent.",
+            "calc": []
+          },
+          {
+            "note": "Oil refining: the process of separating crude oil into the compounds that make it up, where each compound has its own properties and uses, carried out at an oil refinery using the fractional distillation tower.",
+            "calc": []
+          }
+        ],
+        "final": "✓ See the three definitions above",
+        "label": "Answer"
+      },
+      "sectionGroup": 5,
+      "sectionId": "q5",
+      "sectionNavLabel": "5️⃣ Q5"
+    },
+    {
+      "type": "example",
+      "number": 10,
+      "problemHtml": "<p>Consider the following components: petroleum, paraffin, petroleum gases, asphalt, diesel, lubricating oil. Which of these components matches each of the following properties:</p><ul>\n<li>1- Has the lowest boiling point.</li>\n<li>2- Used for paving roads.</li>\n<li>3- Has the longest carbon chain.</li>\n<li>4- Ignites the most easily.</li>\n<li>5- Used as fuel for aircraft.</li>\n</ul>",
+      "label": "Q6",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Lowest boiling point (below 40°C according to Table 7-2): petroleum gases.",
+            "calc": []
+          },
+          {
+            "note": "Used for paving roads after being heated with sand and gravel: asphalt.",
+            "calc": []
+          },
+          {
+            "note": "Longest carbon chain (20–70 carbon atoms according to Table 7-2): lubricating oil.",
+            "calc": []
+          },
+          {
+            "note": "Ignites the most easily (the lightest fraction, with the lowest boiling point): petroleum gases.",
+            "calc": []
+          },
+          {
+            "note": "Used as fuel for aircraft: paraffin (kerosene).",
+            "calc": []
+          }
+        ],
+        "final": "✓ 1) Petroleum gases · 2) Asphalt · 3) Lubricating oil · 4) Petroleum gases · 5) Paraffin",
+        "label": "Answer"
+      },
+      "sectionGroup": 6,
+      "sectionId": "q6",
+      "sectionNavLabel": "6️⃣ Q6"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Test Your Comprehensive Understanding",
+    "questions": [
+      {
+        "correct": 1,
+        "question": "Petroleum is classified by its sulfur content into:",
+        "options": [
+          "Light and heavy",
+          "Sweet and bitter",
+          "White and black",
+          "Hot and cold"
+        ],
+        "explain": "Petroleum is classified by its sulfur content into sweet petroleum (low sulfur) and bitter petroleum (high sulfur)."
+      },
+      {
+        "correct": 2,
+        "question": "Natural gas collects above petroleum in the reservoir because it is:",
+        "options": [
+          "Denser than petroleum",
+          "Unrelated to petroleum",
+          "Less dense than petroleum",
+          "Soluble in water"
+        ],
+        "explain": "Natural gas (90% methane) collects above the petroleum inside the reservoir because it is less dense than petroleum."
+      },
+      {
+        "correct": 0,
+        "question": "The modern rotary drilling method works on a principle similar to:",
+        "options": [
+          "A carpenter's drill boring into wood",
+          "A blacksmith's hammer",
+          "A metal saw",
+          "A hand water pump"
+        ],
+        "explain": "Rotary drilling is a modern method similar to a carpenter's drill boring into wood, using a rotating drill rig."
+      },
+      {
+        "correct": 3,
+        "question": "In the refining tower, light fractions such as petroleum gases condense at:",
+        "options": [
+          "The bottom of the tower only",
+          "Completely outside the tower",
+          "The middle of the tower",
+          "The top of the tower"
+        ],
+        "explain": "Fractions with low boiling points, such as petroleum gases, rise to the top of the tower before condensing or exiting as a gas."
+      },
+      {
+        "correct": 1,
+        "question": "When hexane \\(C_6H_{14}\\) undergoes thermal cracking, hydrogen gas is often produced; for this reason, the cracking process is considered:",
+        "options": [
+          "Dangerous and should be avoided",
+          "An important industrial source of the hydrogen needed for fuel cells",
+          "Not economically viable",
+          "Limited to catalytic cracking only"
+        ],
+        "explain": "The cracking process is considered an important industrial source of hydrogen, which is very important as a fuel through fuel cells."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Chapter Seven Summary",
+    "items": [
+      "Crude oil (petroleum) is the main source of hydrocarbons, and is classified by density (light/heavy) and by sulfur content (sweet/bitter).",
+      "Fossil fuel (petroleum, coal, and natural gas) formed over millions of years from the remains of marine crustacean organisms.",
+      "Petroleum is a dense, flammable liquid, a complex mixture of hydrocarbons — particularly alkanes — and a raw material for many chemical industries.",
+      "Crude oil is extracted using percussion drilling (old) and rotary drilling (modern), with injection and thermal recovery methods used to increase extraction rates.",
+      "The fractional distillation tower separates crude oil into its fractions by boiling point: petroleum gases, gasoline and naphtha, paraffin, diesel, and lubricating oil and asphalt.",
+      "The cracking process (thermal or catalytic) converts heavy oils into more useful light derivatives, and produces hydrogen gas, which is important as a fuel."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Comprehensive Mind Map for Chapter Seven",
+    "ariaLabel": "Comprehensive mind map for Chapter Seven: Crude Oil",
+    "viewBox": "0 0 600 400",
+    "center": {
+      "cx": 300.0,
+      "cy": 200.0,
+      "r": 70.0,
+      "lines": [
+        "Chapter Seven",
+        "Crude Oil"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 110.0,
+        "cy": 80.0,
+        "r": 60.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Types of Oil",
+          "by Classification"
+        ]
+      },
+      {
+        "cx": 490.0,
+        "cy": 80.0,
+        "r": 60.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Chemical",
+          "Composition"
+        ]
+      },
+      {
+        "cx": 110.0,
+        "cy": 320.0,
+        "r": 60.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Extraction"
+        ]
+      },
+      {
+        "cx": 490.0,
+        "cy": 320.0,
+        "r": 60.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Refining",
+          "Products"
+        ]
+      }
+    ]
+  }
+}
