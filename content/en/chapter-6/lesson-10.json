@@ -1,0 +1,514 @@
+{
+  "lessonNumber": 10,
+  "chapterNumber": 6,
+  "meta": {
+    "pageTitle": "Lesson 10: Chapter Six Questions — Chapter Six",
+    "description": "6-10 Chapter Six questions: all seven questions solved in detail — laser, its properties, its working principles, its level systems, its types, its applications, and plasma.",
+    "breadcrumbChapter": "Chapter 6",
+    "breadcrumbLesson": "Chapter Six Questions",
+    "footer": "Chapter Six: Laser and Plasma — Lesson 10: Chapter Six Questions"
+  },
+  "hero": {
+    "eyebrow": "📖 Lesson 10 of 10 · 6-10",
+    "title": "Chapter Six Questions",
+    "lead": "All the end-of-chapter questions for Chapter Six, solved in detail, covering the laser and maser, laser properties, its working principles, its level systems, its types, its applications, and plasma."
+  },
+  "objectivesHeading": "🎯 Lesson Objectives",
+  "objectives": [
+    "Reviews the key concepts of Chapter Six by solving all seven of its questions.",
+    "Applies the concepts of laser and plasma to answer multiple-choice, theoretical, and reasoning questions."
+  ],
+  "content": [
+    {
+      "type": "sectionIntro",
+      "heading": "📖 Chapter Six Questions",
+      "leadHtml": null,
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 1,
+      "problemHtml": "<p>Electrical pumping can be used when the active medium is in the:</p><ul>\n<li>a- Solid state.</li>\n<li>b- Liquid state.</li>\n<li>c- Gaseous state.</li>\n<li>d- None of the above.</li>\n</ul>",
+      "label": "Q1 (1)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Electrical pumping is used by applying an electrical voltage (electrical discharge) to the active medium, and this is the pumping method for gas-state lasers such as the helium-neon laser and the carbon dioxide laser.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: c — The gaseous state",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 2,
+      "problemHtml": "<p>Laser action occurs when the following emission takes place:</p><ul>\n<li>a- Spontaneous only.</li>\n<li>b- Stimulated only.</li>\n<li>c- Spontaneous and stimulated.</li>\n<li>d- Stimulated and spontaneous.</li>\n</ul>",
+      "label": "Q1 (2)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "As stated in the reminder: \"to obtain stimulated emission, spontaneous emission must occur first.\" Laser action is achieved only when both emissions occur together, in order: spontaneous first, then stimulated.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: spontaneous and stimulated (both are necessary, and spontaneous precedes stimulated)",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 3,
+      "problemHtml": "<p>Range-finding using laser beams relies on one of its properties, which is:</p><ul>\n<li>a- Polarization.</li>\n<li>b- Directionality.</li>\n<li>c- Coherence.</li>\n<li>d- Monochromaticity.</li>\n</ul>",
+      "label": "Q1 (3)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Range-finding relies on sending a narrow, parallel laser beam (high directionality) toward the target and receiving its reflection; precisely determining direction and distance requires a beam that does not scatter — this is the directionality property.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — Directionality",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 4,
+      "problemHtml": "<p>In the four-level system used to produce laser light, population inversion is achieved between the two levels:</p><ul>\n<li>a- (E₄, E₃).</li>\n<li>b- (E₂, E₁).</li>\n<li>c- (E₃, E₂).</li>\n<li>d- (E₃, E₁).</li>\n</ul>",
+      "label": "Q1 (4)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "In the four-level system, population inversion is achieved between the metastable level E₃ and energy level E₂, which stays nearly empty because of the rapid decay from it to E₁.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: c — (E₃, E₂)",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 5,
+      "problemHtml": "<p>The optical pumping method is used to produce the laser of:</p><ul>\n<li>a- Ruby.</li>\n<li>b- The semiconductor.</li>\n<li>c- The chemical laser.</li>\n<li>d- Helium-neon.</li>\n</ul>",
+      "label": "Q1 (5)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The ruby laser is pumped by a flash lamp, which is the optical pumping technique; the helium-neon laser is pumped electrically, the semiconductor laser by an electrical current, and the chemical laser by a chemical reaction.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: a — Ruby",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 6,
+      "problemHtml": "<p>The pumping power is high when the laser system operates on the:</p><ul>\n<li>a- Two-level system.</li>\n<li>b- Three-level system.</li>\n<li>c- Four-level system.</li>\n<li>d- Any number of levels.</li>\n</ul>",
+      "label": "Q1 (6)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The lesson states explicitly: \"this [four-level] system requires less pumping energy to achieve population inversion compared with the three-level system.\" Therefore the three-level system requires higher pumping energy.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — The three-level system",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 7,
+      "problemHtml": "<p>In the three-level system used to produce laser light, the metastable level is level:</p><ul>\n<li>a- E₃.</li>\n<li>b- E₂.</li>\n<li>c- E₁.</li>\n<li>d- All of the above are possible.</li>\n</ul>",
+      "label": "Q1 (7)",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "In the three-level system: E₁ is the ground level, E₂ is the metastable level, and E₃ is the excited level.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Correct answer: b — E₂",
+        "label": "Solution"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 8,
+      "problemHtml": "<p>What are the properties of a laser beam?</p>",
+      "label": "Q2",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1- Monochromaticity: light purity, a single color.",
+            "calc": []
+          },
+          {
+            "note": "2- Directionality: nearly-parallel beams with little divergence, traveling great distances.",
+            "calc": []
+          },
+          {
+            "note": "3- Coherence: the waves match in phase, direction, and energy.",
+            "calc": []
+          },
+          {
+            "note": "4- Brightness: very high radiation intensity, resulting from concentrating energy into a narrow beam.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Monochromaticity, directionality, coherence, brightness",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 9,
+      "problemHtml": "<p>Explain the reasoning behind the following:</p><ol style=\"margin:.3rem 0 0;padding-inline-start:1.3rem\">\n<li>1- Laser light does not disperse when passed through a glass prism.</li>\n<li>2- Why the four-level system is preferred over the three-level system in a laser.</li>\n<li>3- Why the active material is placed between two mirrors, one partially reflective and the other fully reflective.</li>\n</ol>",
+      "label": "Q3",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1- Because laser light is monochromatic (a single, pure color), and a prism disperses light into its component colors based on their differing wavelengths; since a laser contains only a single wavelength, it does not disperse through a prism.",
+            "calc": []
+          },
+          {
+            "note": "2- Because the four-level system requires less pumping energy to achieve population inversion; the lower level of the laser transition (E₂) is always nearly empty because of the rapid decay from it to the ground level E₁, unlike the three-level system, where the lower level (E₁) is the ground level, already crowded with atoms.",
+            "calc": []
+          },
+          {
+            "note": "3- So that light reflections repeat inside the resonator (via the fully-reflective mirror), increasing the number of photons generated by stimulated emission and achieving amplification, while the partially-reflective mirror allows a portion of the amplified light to escape the resonator as a laser beam, reflecting the rest to sustain the amplification process.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Monochromaticity prevents dispersion; lower pumping energy favors the four-level system; the two mirrors (full and partial) achieve amplification while letting part of the beam escape",
+        "label": "Reasoning"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 10,
+      "problemHtml": "<p>What is holographic imaging, and how does it differ from ordinary photography?</p>",
+      "label": "Q4",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Holographic imaging is a laser-based photography technique used to obtain a three-dimensional image (length, width, and height).",
+            "calc": []
+          },
+          {
+            "note": "It differs from ordinary photography in that it records the amplitude and phase of the light waves reflected from the object, so all details of the object's shape appear and it can be seen from every direction, whereas ordinary photography records only the intensity of the light.",
+            "calc": []
+          }
+        ],
+        "final": "✓ Three-dimensional imaging that records amplitude and phase (seen from every direction), unlike ordinary photography, which records only intensity",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 11,
+      "problemHtml": "<p>How are lasers classified, and what are their types?</p>",
+      "label": "Q5",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "Lasers are classified by the type of their active medium into six main types:",
+            "calc": []
+          },
+          {
+            "note": "1- Solid-state laser (ruby, neodymium). 2- Gas laser (helium-neon, carbon dioxide). 3- Excimer laser (noble gases). 4- Liquid-state laser (organic dye). 5- Semiconductor laser (gallium arsenide). 6- Chemical laser (deuterium fluoride).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Classified by active medium into: solid, gas, excimer, liquid, semiconductor, chemical",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 12,
+      "problemHtml": "<p>Name five applications of plasma.</p>",
+      "label": "Q6",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "1- Manufacturing television display screens.",
+            "calc": []
+          },
+          {
+            "note": "2- Plasma in lamps (neon and fluorescent).",
+            "calc": []
+          },
+          {
+            "note": "3- Obtaining energy through thermonuclear fusion.",
+            "calc": []
+          },
+          {
+            "note": "4- Plasma coating to reduce the effect of high heat on the surfaces of aircraft and spacecraft.",
+            "calc": []
+          },
+          {
+            "note": "5- Medical applications (breaking up kidney stones with shock waves, medical ceramics, sterilization).",
+            "calc": []
+          }
+        ],
+        "final": "✓ Examples include: display screens, lamps, nuclear fusion, thermal coating for spacecraft, and medical applications",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    },
+    {
+      "type": "example",
+      "number": 13,
+      "problemHtml": "<p>What is the most important laser used in the medical field?</p>",
+      "label": "Q7",
+      "solution": {
+        "required": null,
+        "steps": [
+          {
+            "note": "The carbon dioxide (CO₂) laser is one of the most important and well-known lasers used in general surgery, distinguished by its high capability and precision in vaporizing and cutting living tissue.",
+            "calc": []
+          }
+        ],
+        "final": "✓ The carbon dioxide (CO₂) laser",
+        "label": "Answer"
+      },
+      "sectionGroup": 0,
+      "sectionId": "questions",
+      "sectionNavLabel": "📖 Chapter Questions"
+    }
+  ],
+  "quiz": {
+    "heading": "🧠 Final Review of Chapter Six",
+    "questions": [
+      {
+        "correct": 0,
+        "question": "Laser is an abbreviation that means:",
+        "options": [
+          "Light Amplification by Stimulated Emission of Radiation",
+          "Microwave Amplification by Stimulated Emission",
+          "Radio Detection and Ranging",
+          "An ionized gas with equal charges"
+        ],
+        "explain": "Laser = Light Amplification by Stimulated Emission of Radiation."
+      },
+      {
+        "correct": 2,
+        "question": "The necessary condition for generating laser light is achieving:",
+        "options": [
+          "Thermal equilibrium",
+          "Stimulated absorption only",
+          "Population inversion",
+          "Complete melting of the active medium"
+        ],
+        "explain": "Population inversion (a greater number of atoms in the higher level than the lower level) is the necessary condition for achieving stimulated emission and generating laser light."
+      },
+      {
+        "correct": 1,
+        "question": "The three components of a laser device are:",
+        "options": [
+          "The transmitter, receiver, and antenna",
+          "The active medium, the resonator, and the pumping technique",
+          "The base, the emitter, and the collector",
+          "The valence band, the conduction band, and the gap"
+        ],
+        "explain": "The three components of a laser device are: the active medium, the resonator (two mirrors), and the pumping technique."
+      },
+      {
+        "correct": 3,
+        "question": "Plasma is the fourth state of matter, an ionized gas in which:",
+        "options": [
+          "The electrons are tightly bound to the nucleus",
+          "Negative ions outnumber positive ions",
+          "There are no electric charges at all",
+          "There are equal numbers of positive ions and free electrons"
+        ],
+        "explain": "Plasma is an ionized gas containing equal numbers of positive ions and free, unbound electrons."
+      },
+      {
+        "correct": 1,
+        "question": "The helium-neon laser is pumped using:",
+        "options": [
+          "Optical (flash lamp) technique",
+          "Electrical (electrical discharge) technique",
+          "Chemical technique",
+          "Nuclear technique"
+        ],
+        "explain": "Electrical discharge, applying a high voltage (2-4 kV), is used to excite the active medium in the helium-neon laser."
+      }
+    ]
+  },
+  "summary": {
+    "heading": "📋 Chapter Six Summary",
+    "items": [
+      "The laser (light amplification by stimulated emission) and the maser (microwave amplification), from Einstein's 1917 theory to Maiman's 1960 laser.",
+      "Properties of laser: monochromaticity, directionality, coherence, and brightness.",
+      "Working principles of laser: stimulated absorption (\\(hf=E_2-E_1\\)), spontaneous emission, stimulated emission, and population inversion.",
+      "Device components: the active medium, the resonator (one fully-reflective mirror and one partially-reflective mirror), and the pumping technique (optical/electrical/chemical).",
+      "The two level systems: three-level (E₁E₂E₃) and four-level (E₁-E₄); the four-level system needs less pumping energy.",
+      "Types of laser: solid (ruby, Nd:YAG), gas (He-Ne, CO₂), excimer, liquid, semiconductor, chemical.",
+      "Applications of laser: industrial, medical, scientific, communications, commercial, military, holographic, and more.",
+      "Plasma: the fourth state of matter (99% of the universe), a charge-neutral ionized gas, with multiple ionization factors.",
+      "Applications of plasma: screens, lamps, nuclear fusion, thermal coating, waste treatment, space propulsion, medicine, chemical cleaning, welding."
+    ]
+  },
+  "mindmap": {
+    "heading": "🗺 Chapter Six Mind Map",
+    "ariaLabel": "Comprehensive mind map for Chapter Six",
+    "viewBox": "0 0 900 620",
+    "center": {
+      "cx": 450.0,
+      "cy": 310.0,
+      "r": 72.0,
+      "lines": [
+        "Laser and",
+        "Plasma"
+      ]
+    },
+    "satellites": [
+      {
+        "cx": 450.0,
+        "cy": 80.0,
+        "r": 56.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Laser and",
+          "Maser"
+        ]
+      },
+      {
+        "cx": 598.0,
+        "cy": 134.0,
+        "r": 56.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Properties",
+          "of Laser"
+        ]
+      },
+      {
+        "cx": 676.0,
+        "cy": 270.0,
+        "r": 56.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Working",
+          "Principles"
+        ]
+      },
+      {
+        "cx": 649.0,
+        "cy": 425.0,
+        "r": 56.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Device",
+          "Components"
+        ]
+      },
+      {
+        "cx": 529.0,
+        "cy": 526.0,
+        "r": 56.0,
+        "color": "#7c6fee",
+        "lines": [
+          "Level",
+          "Systems"
+        ]
+      },
+      {
+        "cx": 371.0,
+        "cy": 526.0,
+        "r": 56.0,
+        "color": "#3fa9f5",
+        "lines": [
+          "Types",
+          "of Laser"
+        ]
+      },
+      {
+        "cx": 251.0,
+        "cy": 425.0,
+        "r": 56.0,
+        "color": "#ffab5e",
+        "lines": [
+          "Applications",
+          "of Laser"
+        ]
+      },
+      {
+        "cx": 224.0,
+        "cy": 270.0,
+        "r": 56.0,
+        "color": "#ff6b9d",
+        "lines": [
+          "Plasma"
+        ]
+      },
+      {
+        "cx": 302.0,
+        "cy": 134.0,
+        "r": 56.0,
+        "color": "#2fd18f",
+        "lines": [
+          "Applications",
+          "of Plasma"
+        ]
+      }
+    ]
+  }
+}
