@@ -94,6 +94,12 @@
 (function(){
   var ns = "http://www.w3.org/2000/svg";
 
+  function addDefs(svg, innerMarkup){
+    var defs = document.createElementNS(ns,"defs");
+    defs.innerHTML = innerMarkup;
+    svg.appendChild(defs);
+  }
+
   function label(svg,x,y,txt,color,size){
     var t = document.createElementNS(ns,"text");
     t.setAttribute("x",x); t.setAttribute("y",y);
@@ -109,15 +115,22 @@
   function drawGenParts(){
     var gp = document.getElementById("genPartsSvg");
     if(!gp) return;
+    addDefs(gp,
+      '<radialGradient id="c3l6Badge0" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#c9c2ff"/><stop offset=".55" stop-color="#7c6fee"/><stop offset="1" stop-color="#4a3fc2"/></radialGradient>' +
+      '<radialGradient id="c3l6Badge1" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#a9d8ea"/><stop offset=".55" stop-color="#3fa9f5"/><stop offset="1" stop-color="#1f6fa8"/></radialGradient>' +
+      '<radialGradient id="c3l6Badge2" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#a8f0d3"/><stop offset=".55" stop-color="#2fd18f"/><stop offset="1" stop-color="#189a63"/></radialGradient>' +
+      '<radialGradient id="c3l6Badge3" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffd9ad"/><stop offset=".55" stop-color="#ffab5e"/><stop offset="1" stop-color="#c9701f"/></radialGradient>' +
+      '<filter id="c3l6BadgeShadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-opacity=".3"/></filter>');
     var parts = [
-      { x:50, label:t("partArmature","النواة"), color:"#7c6fee" },
-      { x:140, label:t("partMagnet","المغناطيس"), color:"#3fa9f5" },
-      { x:230, label:t("partSlipRings","حلقتا الزلق"), color:"#2fd18f" },
-      { x:320, label:t("partBrushes","الفرشتان"), color:"#ffab5e" }
+      { x:50, label:t("partArmature","النواة"), grad:"c3l6Badge0" },
+      { x:140, label:t("partMagnet","المغناطيس"), grad:"c3l6Badge1" },
+      { x:230, label:t("partSlipRings","حلقتا الزلق"), grad:"c3l6Badge2" },
+      { x:320, label:t("partBrushes","الفرشتان"), grad:"c3l6Badge3" }
     ];
     parts.forEach(function(p,i){
       var c = document.createElementNS(ns,"circle");
-      c.setAttribute("cx",p.x); c.setAttribute("cy",70); c.setAttribute("r",34); c.setAttribute("fill",p.color);
+      c.setAttribute("cx",p.x); c.setAttribute("cy",70); c.setAttribute("r",34); c.setAttribute("fill","url(#"+p.grad+")");
+      c.setAttribute("filter","url(#c3l6BadgeShadow)");
       gp.appendChild(c);
       var num = document.createElementNS(ns,"text");
       num.setAttribute("x",p.x); num.setAttribute("y",76); num.setAttribute("text-anchor","middle"); num.setAttribute("font-size","20"); num.setAttribute("font-weight","800"); num.setAttribute("fill","#fff");
@@ -131,6 +144,10 @@
   function drawFourCases(){
     var fc = document.getElementById("fourCasesSvg");
     if(!fc) return;
+    addDefs(fc,
+      '<linearGradient id="c3l6PoleN" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffa0c3"/><stop offset=".5" stop-color="#ff6b9d"/><stop offset="1" stop-color="#c93f6e"/></linearGradient>' +
+      '<linearGradient id="c3l6PoleS" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8fd0ff"/><stop offset=".5" stop-color="#3fa9f5"/><stop offset="1" stop-color="#1f6fa8"/></linearGradient>' +
+      '<filter id="c3l6PoleShadow" x="-30%" y="-15%" width="160%" height="130%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-opacity=".25"/></filter>');
     var cases = [
       { x:20, y:10, nSide:"left", vDir:"down", dir:"•", caption:"(a)" },
       { x:200,y:10, nSide:"left", vDir:"up",   dir:"×", caption:"(b)" },
@@ -142,13 +159,13 @@
     var nX = cs.nSide === "left" ? ox+20 : ox+120;
     var sX = cs.nSide === "left" ? ox+120 : ox+20;
     var nBox = document.createElementNS(ns,"rect");
-    nBox.setAttribute("x",nX-18); nBox.setAttribute("y",oy+40); nBox.setAttribute("width",36); nBox.setAttribute("height",70);
-    nBox.setAttribute("fill","#ff6b9d");
+    nBox.setAttribute("x",nX-18); nBox.setAttribute("y",oy+40); nBox.setAttribute("width",36); nBox.setAttribute("height",70); nBox.setAttribute("rx",3);
+    nBox.setAttribute("fill","url(#c3l6PoleN)"); nBox.setAttribute("filter","url(#c3l6PoleShadow)");
     fc.appendChild(nBox);
     label(fc, nX, oy+80, "N", "#fff", 14);
     var sBox = document.createElementNS(ns,"rect");
-    sBox.setAttribute("x",sX-18); sBox.setAttribute("y",oy+40); sBox.setAttribute("width",36); sBox.setAttribute("height",70);
-    sBox.setAttribute("fill","#3fa9f5");
+    sBox.setAttribute("x",sX-18); sBox.setAttribute("y",oy+40); sBox.setAttribute("width",36); sBox.setAttribute("height",70); sBox.setAttribute("rx",3);
+    sBox.setAttribute("fill","url(#c3l6PoleS)"); sBox.setAttribute("filter","url(#c3l6PoleShadow)");
     fc.appendChild(sBox);
     label(fc, sX, oy+80, "S", "#fff", 14);
 
