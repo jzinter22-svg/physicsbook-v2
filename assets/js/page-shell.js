@@ -20,13 +20,17 @@
 
   var THEME_KEY = "pb_theme";
   var TOOLS = [
-    {id: "home", href: "../index.html", label: "🏠 الرئيسية"},
-    {id: "formulas", href: "../formulas/index.html", label: "📐 القوانين الفيزيائية"},
-    {id: "dictionary", href: "../dictionary/index.html", label: "📖 قاموس المصطلحات"},
-    {id: "units", href: "../units/index.html", label: "🔄 الوحدات والتحويلات"},
-    {id: "calculator", href: "../calculator/index.html", label: "🧮 الآلة الحاسبة العلمية"},
-    {id: "exam-bank", href: "../exam-bank/index.html", label: "🏛️ بنك الأسئلة الوزارية"}
+    {id: "home", href: "../index.html", icon: "home", label: "الرئيسية"},
+    {id: "formulas", href: "../formulas/index.html", icon: "ruler", label: "القوانين الفيزيائية"},
+    {id: "dictionary", href: "../dictionary/index.html", icon: "book", label: "قاموس المصطلحات"},
+    {id: "units", href: "../units/index.html", icon: "refresh", label: "الوحدات والتحويلات"},
+    {id: "calculator", href: "../calculator/index.html", icon: "calculator", label: "الآلة الحاسبة العلمية"},
+    {id: "exam-bank", href: "../exam-bank/index.html", icon: "bank", label: "بنك الأسئلة الوزارية"}
   ];
+
+  function svgIcon(key){
+    return '<svg class="icon" aria-hidden="true"><use href="#icon-'+key+'"></use></svg>';
+  }
 
   function t(key, params){
     return window.PBI18n ? window.PBI18n.t(key, params) : key;
@@ -57,7 +61,7 @@
     themeBtn.id = "themeToggle";
     themeBtn.title = t("common.toggleTheme");
     themeBtn.setAttribute("aria-label", t("common.toggleTheme"));
-    themeBtn.textContent = "🌓";
+    themeBtn.innerHTML = svgIcon("sun-moon");
     themeBtn.addEventListener("click", toggleTheme);
 
     var actions = document.createElement("div");
@@ -87,7 +91,7 @@
     TOOLS.forEach(function(tool){
       var isCurrent = tool.id === activeId;
       html += '<a href="' + tool.href + '" class="tools-subnav-link' + (isCurrent ? " is-active" : "") + '"' +
-        (isCurrent ? ' aria-current="page"' : "") + ">" + tool.label + "</a>";
+        (isCurrent ? ' aria-current="page"' : "") + ">" + svgIcon(tool.icon) + " " + tool.label + "</a>";
     });
     html += "</div>";
     nav.innerHTML = html;

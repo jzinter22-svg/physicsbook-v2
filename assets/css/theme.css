@@ -25,6 +25,19 @@
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215;
 }
 
+/* Unified SVG icon system (assets/icons/sprite.svg, injected by
+   assets/js/icons.js) — replaces raw emoji used as UI icons. Every
+   <use href="#icon-..."> pulls a stroke="currentColor" symbol, so icons
+   recolor automatically with the surrounding text/theme, unlike emoji.
+   Scoped to svg.icon (not the bare .icon class already used elsewhere for
+   an emoji-holding <span class="icon"> in .callout/.empty-state, which
+   this task leaves untouched) so the two conventions never collide. */
+svg.icon{
+  width:1em;height:1em;flex:0 0 auto;
+  display:inline-block;vertical-align:-0.125em;
+  overflow:visible;
+}
+
 :root{
   --bg:#e6ebf1;
   --surface:#e6ebf1;
@@ -484,9 +497,10 @@ input[type=text].neu-input,input[type=number].neu-input{
 .sidebar-sublist{list-style:none;margin:.15rem 0 .5rem;padding-inline-end:1rem;display:grid;gap:.15rem;
   border-inline-end:2px solid rgba(124,111,238,.25)}
 .sidebar-sublink{
-  display:block;text-decoration:none;color:var(--text-secondary);padding:.42rem .8rem;border-radius:10px;
+  display:flex;align-items:center;gap:.4rem;text-decoration:none;color:var(--text-secondary);padding:.42rem .8rem;border-radius:10px;
   font-size:.8rem;font-weight:600;transition:color .15s ease,background .15s ease;
 }
+.sidebar-sublink .icon{flex:0 0 auto;opacity:.8}
 .sidebar-sublink:hover{color:var(--text-primary)}
 .sidebar-sublink.in-view{color:var(--accent-purple);font-weight:800;background:rgba(124,111,238,.09)}
 

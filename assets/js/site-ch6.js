@@ -34,6 +34,10 @@
     return window.PBI18n ? window.PBI18n.t(key, params) : key;
   }
 
+  function svgIcon(key){
+    return '<svg class="icon" aria-hidden="true"><use href="#icon-'+key+'"></use></svg>';
+  }
+
   function getBase(){
     var d = document.documentElement.getAttribute("data-base");
     return d || "";
@@ -113,7 +117,7 @@
     toggleBtn.setAttribute("aria-expanded", "false");
     toggleBtn.setAttribute("aria-controls", "sidebarNav");
     toggleBtn.title = t("common.tableOfContents");
-    toggleBtn.textContent = "☰";
+    toggleBtn.innerHTML = svgIcon("menu");
 
     var brand = document.createElement("a");
     brand.className = "brand";
@@ -125,7 +129,7 @@
     themeBtn.id = "themeToggle";
     themeBtn.title = t("common.toggleTheme");
     themeBtn.setAttribute("aria-label", t("common.toggleTheme"));
-    themeBtn.textContent = "🌓";
+    themeBtn.innerHTML = svgIcon("sun-moon");
 
     var actions = document.createElement("div");
     actions.className = "header-actions";
@@ -164,7 +168,7 @@
 
     var html = '<div class="sidebar-inner">' +
       '<div class="sidebar-topbar">' +
-        '<button class="neu-icon-btn sidebar-close-btn" id="sidebarClose" aria-label="'+t("common.closeMenu")+'">✕</button>' +
+        '<button class="neu-icon-btn sidebar-close-btn" id="sidebarClose" aria-label="'+t("common.closeMenu")+'">'+svgIcon('x')+'</button>' +
       '</div>' +
       '<a class="sidebar-brand" href="'+base+'index.html"><span class="brand-badge">'+CONFIG.brandBadge+'</span><span>'+chapterTitle()+'</span></a>' +
       '<div class="sidebar-subtitle">'+t(CONFIG.sidebarSubtitleKey)+'</div>' +
@@ -178,6 +182,7 @@
       var href = base + l.href;
       var isCur = current === l.href;
       var title = t(l.titleKey, l.titleParams);
+      if(title.indexOf("🏆") !== -1) title = title.replace("🏆", svgIcon("trophy"));
       html += '<li class="sidebar-item'+(isCur?" active":"")+'">' +
         '<a href="'+href+'" data-href="'+l.href+'" class="sidebar-link'+(l.root?" root":"")+(isCur?" current":"")+'"'+(isCur?' aria-current="page"':'')+'>'+title+'</a>';
       if(isCur){
@@ -185,7 +190,8 @@
         if(subs.length){
           html += '<ul class="sidebar-sublist">';
           subs.forEach(function(s){
-            html += '<li><a href="#'+s.id+'" class="sidebar-sublink" data-target="'+s.id+'">'+s.getAttribute("data-navlabel")+'</a></li>';
+            var navIcon = s.getAttribute("data-navicon");
+            html += '<li><a href="#'+s.id+'" class="sidebar-sublink" data-target="'+s.id+'">'+(navIcon?svgIcon(navIcon):"")+'<span>'+s.getAttribute("data-navlabel")+'</span></a></li>';
           });
           html += '</ul>';
         }

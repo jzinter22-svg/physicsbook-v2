@@ -27,7 +27,7 @@
     countEl.textContent = list.length ? (list.length + " قانون") : "";
 
     if(!list.length){
-      grid.innerHTML = '<div class="tools-emptystate"><span class="icon" aria-hidden="true">📐</span>' +
+      grid.innerHTML = '<div class="tools-emptystate"><svg class="icon" aria-hidden="true"><use href="#icon-ruler"></use></svg>' +
         "لا توجد قوانين مطابقة لبحثك. جرّب كلمة أخرى أو غيّر تصفية الفصل.</div>";
       return;
     }
@@ -95,7 +95,7 @@
         });
       }).catch(function(){
         document.getElementById("formulaGrid").innerHTML =
-          '<div class="tools-emptystate"><span class="icon">⚠️</span>تعذّر تحميل فهرس القوانين.</div>';
+          '<div class="tools-emptystate"><svg class="icon"><use href="#icon-alert-triangle"></use></svg>تعذّر تحميل فهرس القوانين.</div>';
       });
     });
   }

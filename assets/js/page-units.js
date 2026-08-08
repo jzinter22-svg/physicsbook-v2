@@ -166,7 +166,7 @@
         })
         .catch(function(){
           document.getElementById("unitsCategories").innerHTML =
-            '<div class="tools-emptystate"><span class="icon">⚠️</span>تعذّر تحميل بيانات الوحدات.</div>';
+            '<div class="tools-emptystate"><svg class="icon"><use href="#icon-alert-triangle"></use></svg>تعذّر تحميل بيانات الوحدات.</div>';
         });
     });
   }

@@ -159,7 +159,7 @@
     btn.className = "neu-icon-btn lang-switch-btn";
     btn.setAttribute("aria-haspopup", "true");
     btn.setAttribute("aria-expanded", "false");
-    btn.textContent = "🌐";
+    btn.innerHTML = '<svg class="icon" aria-hidden="true"><use href="#icon-globe"></use></svg>';
 
     var menu = document.createElement("ul");
     menu.className = "lang-menu";

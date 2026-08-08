@@ -151,7 +151,7 @@
     var list = loadHistory();
     var ul = document.getElementById("calcHistoryList");
     if(!list.length){
-      ul.innerHTML = '<li class="tools-emptystate" style="padding:1rem 0"><span class="icon" aria-hidden="true">🕘</span>لا توجد عمليات بعد.</li>';
+      ul.innerHTML = '<li class="tools-emptystate" style="padding:1rem 0"><svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>لا توجد عمليات بعد.</li>';
       return;
     }
     ul.innerHTML = list.map(function(h, i){

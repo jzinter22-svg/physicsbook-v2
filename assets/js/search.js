@@ -71,12 +71,17 @@
   // Simulations / Figures / Formulas / Lessons / Chapters"). Tables and
   // quantities are indexed and fully searchable but intentionally have no
   // dedicated filter chip, matching that exact spec list.
-  var TYPE_ICON = {
-    definition: "📌", explanation: "🔍", enumeration: "🔢", example: "✏️",
-    exercise: "❓", solution: "✅", simulation: "🕹️", figure: "🖼️",
-    formula: "📐", table: "📊", lesson: "📖", chapter: "📚", quantity: "⚛️", tool: "🧰",
-    examQuestion: "🏛️"
+  function typeIconSvg(key){
+    return '<svg class="icon" aria-hidden="true"><use href="#icon-' + key + '"></use></svg>';
+  }
+  var TYPE_ICON_KEY = {
+    definition: "pin", explanation: "search", enumeration: "list-numbers", example: "pencil",
+    exercise: "help-circle", solution: "check-circle", simulation: "joystick", figure: "image",
+    formula: "ruler", table: "table", lesson: "book", chapter: "books", quantity: "atom", tool: "toolbox",
+    examQuestion: "bank"
   };
+  var TYPE_ICON = {};
+  Object.keys(TYPE_ICON_KEY).forEach(function(k){ TYPE_ICON[k] = typeIconSvg(TYPE_ICON_KEY[k]); });
   var FILTER_TYPES = ["definition", "explanation", "enumeration", "example",
     "exercise", "solution", "simulation", "figure", "formula", "lesson", "chapter", "tool", "examQuestion"];
 
@@ -337,12 +342,12 @@
       '<div class="pbsearch-backdrop" data-pbsearch-close></div>' +
       '<div class="pbsearch-panel">' +
         '<div class="pbsearch-inputrow">' +
-          '<span class="pbsearch-icon" aria-hidden="true">🔍</span>' +
+          '<span class="pbsearch-icon" aria-hidden="true">' + typeIconSvg("search") + '</span>' +
           '<input type="text" class="pbsearch-input" id="pbsearchInput" autocomplete="off" spellcheck="false" ' +
             'placeholder="ابحث في تعريفات وأمثلة وقوانين وأدوات الكتاب كله…" ' +
             'aria-label="بحث ذكي" role="combobox" aria-expanded="true" aria-controls="pbsearchResults" aria-autocomplete="list">' +
-          '<button type="button" class="pbsearch-clearbtn" id="pbsearchClear" aria-label="مسح البحث" hidden>✕</button>' +
-          '<button type="button" class="neu-icon-btn pbsearch-closebtn" id="pbsearchCloseBtn" aria-label="إغلاق البحث">✕</button>' +
+          '<button type="button" class="pbsearch-clearbtn" id="pbsearchClear" aria-label="مسح البحث" hidden>' + typeIconSvg("x") + '</button>' +
+          '<button type="button" class="neu-icon-btn pbsearch-closebtn" id="pbsearchCloseBtn" aria-label="إغلاق البحث">' + typeIconSvg("x") + '</button>' +
         '</div>' +
         '<div class="pbsearch-filters" id="pbsearchFilters" role="tablist" aria-label="تصفية نوع النتائج">' + filterChips + '</div>' +
         '<div class="pbsearch-body" id="pbsearchBody">' +
@@ -500,20 +505,20 @@
     var lastOpened = readList(LS_LAST_OPENED);
     var html = '<div class="pbsearch-suggestions">';
     if(recent.length){
-      html += '<div class="pbsearch-suggest-group"><h3>🕘 عمليات بحث سابقة</h3><div class="pbsearch-chiplist">' +
+      html += '<div class="pbsearch-suggest-group"><h3>' + typeIconSvg("clock") + ' عمليات بحث سابقة</h3><div class="pbsearch-chiplist">' +
         recent.map(function(q){ return '<button type="button" class="pbsearch-suggest-chip" data-pbsearch-query="' + escapeHtml(q) + '">' + escapeHtml(q) + '</button>'; }).join("") +
         '</div></div>';
     }
-    html += '<div class="pbsearch-suggest-group"><h3>🔥 عمليات بحث شائعة</h3><div class="pbsearch-chiplist">' +
+    html += '<div class="pbsearch-suggest-group"><h3>' + typeIconSvg("flame") + ' عمليات بحث شائعة</h3><div class="pbsearch-chiplist">' +
       POPULAR_SEARCHES.map(function(q){ return '<button type="button" class="pbsearch-suggest-chip" data-pbsearch-query="' + escapeHtml(q) + '">' + escapeHtml(q) + '</button>'; }).join("") +
       '</div></div>';
     if(indexData){
-      html += '<div class="pbsearch-suggest-group"><h3>📚 مواضيع مقترحة</h3><div class="pbsearch-chiplist">' +
+      html += '<div class="pbsearch-suggest-group"><h3>' + typeIconSvg("books") + ' مواضيع مقترحة</h3><div class="pbsearch-chiplist">' +
         indexData.chapters.map(function(c){ return '<button type="button" class="pbsearch-suggest-chip" data-pbsearch-query="' + escapeHtml(c.title) + '">' + escapeHtml(c.title) + '</button>'; }).join("") +
         '</div></div>';
     }
     if(lastOpened.length){
-      html += '<div class="pbsearch-suggest-group"><h3>📖 آخر الدروس التي فتحتها</h3><div class="pbsearch-results-inline">' +
+      html += '<div class="pbsearch-suggest-group"><h3>' + typeIconSvg("book") + ' آخر الدروس التي فتحتها</h3><div class="pbsearch-results-inline">' +
         lastOpened.map(function(l){
           return '<a class="pbsearch-lastopened" href="' + escapeHtml(navBase() + l.href) + '">' + escapeHtml(l.title) + '</a>';
         }).join("") + '</div></div>';
@@ -533,7 +538,7 @@
   function renderNoResults(query){
     var near = suggestNear(query);
     var html = '<div class="pbsearch-empty">' +
-      '<div class="pbsearch-empty-icon" aria-hidden="true">🔭</div>' +
+      '<div class="pbsearch-empty-icon" aria-hidden="true">' + typeIconSvg("telescope") + '</div>' +
       '<p class="pbsearch-empty-title">لم يتم العثور على نتائج لـ「' + escapeHtml(query) + '」</p>' +
       '<p class="pbsearch-empty-sub">جرّب كلمة أخرى أو أقصر، أو تحقق من الإملاء.</p>';
     if(near.length){
@@ -636,7 +641,7 @@
     btn.id = "pbsearchTrigger";
     btn.title = "بحث ذكي (Ctrl+K)";
     btn.setAttribute("aria-label", "بحث ذكي في الكتاب");
-    btn.textContent = "🔍";
+    btn.innerHTML = typeIconSvg("search");
     btn.addEventListener("click", function(){ open(btn); });
     container.appendChild(btn);
   }
@@ -708,7 +713,7 @@
     chips.forEach(function(chip){
       var t = chip.getAttribute("data-filter");
       if(t === "all") return;
-      chip.textContent = (TYPE_ICON[t] || "") + " " + typeLabel(t);
+      chip.innerHTML = (TYPE_ICON[t] || "") + " " + escapeHtml(typeLabel(t));
     });
   }
 

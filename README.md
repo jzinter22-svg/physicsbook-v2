@@ -45,16 +45,36 @@ formulas/, dictionary/, units/,
 calculator/                         Book-wide tool pages — see "Book-wide
                                      tool pages" below
 assets/
+  icons/
+    sprite.svg                      Canonical source for every UI icon (35
+                                     hand-drawn Feather/Lucide-style symbols,
+                                     stroke="currentColor") — human-editable
+                                     reference only; pages never load it
+                                     directly (see assets/js/icons.js below)
   css/
     theme.css                       Design system: neumorphism, light/dark
                                      theme, layout primitives, all UI
                                      components (cards, examples, quiz,
                                      sidebar, breadcrumb, etc.), responsive
-                                     + a11y rules
+                                     + a11y rules, plus the `svg.icon`
+                                     utility class (1em square, recolors via
+                                     currentColor)
     tools.css                       Styles for the four tool pages
     search.css                      Smart Search overlay styles
     splash.css                      Home-page splash-screen styles
   js/
+    icons.js                        Self-injects the icon sprite (mirrored
+                                     from assets/icons/sprite.svg) as the
+                                     first child of <html> on every page —
+                                     external `<use href="sprite.svg#id">`
+                                     is blocked by browsers under `file://`
+                                     (treated as cross-origin), so this loads
+                                     via a plain <script src> tag instead and
+                                     every icon is then referenced same-
+                                     document as `<svg class="icon"
+                                     aria-hidden="true"><use href="#icon-
+                                     name"></use></svg>`. Must be kept in
+                                     sync by hand with sprite.svg.
     i18n.js                         Internationalization engine (PBI18n) —
                                      language switcher, translation lookup,
                                      lang/dir attribute management
@@ -162,6 +182,15 @@ a given page.
   configured for exactly one typeset pass per page (see
   `typesetOnceReady()` in the chapter behavior template) to avoid double-
   render/race conditions.
+- **Icons**: every UI icon is an inline `<svg class="icon"><use href="#icon-
+  name">` reference into the sprite `assets/js/icons.js` injects (source of
+  truth: `assets/icons/sprite.svg`) — no emoji-as-icon anywhere in UI chrome.
+  Sidebar sub-nav landmarks (`<section id="..." data-navlabel="..."
+  data-navicon="...">`) carry the icon key separately from the (now
+  emoji-free) nav label text; `data-navicon` maps to the same
+  `assets/icons/sprite.svg#icon-` symbol set. Quoted example/content text
+  (e.g. world-map captions, laser-type labels) is left as-is — only
+  decorative UI icons were converted.
 
 ## Internationalization (i18n)
 

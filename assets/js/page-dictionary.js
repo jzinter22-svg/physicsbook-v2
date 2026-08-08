@@ -37,7 +37,7 @@
     countEl.textContent = list.length ? (list.length + " مصطلح") : "";
 
     if(!list.length){
-      container.innerHTML = '<div class="tools-emptystate"><span class="icon" aria-hidden="true">📖</span>' +
+      container.innerHTML = '<div class="tools-emptystate"><svg class="icon" aria-hidden="true"><use href="#icon-book"></use></svg>' +
         "لا توجد مصطلحات مطابقة لبحثك.</div>";
       return;
     }
@@ -116,7 +116,7 @@
         });
       }).catch(function(){
         document.getElementById("dictResults").innerHTML =
-          '<div class="tools-emptystate"><span class="icon">⚠️</span>تعذّر تحميل فهرس المصطلحات.</div>';
+          '<div class="tools-emptystate"><svg class="icon"><use href="#icon-alert-triangle"></use></svg>تعذّر تحميل فهرس المصطلحات.</div>';
       });
     });
   }

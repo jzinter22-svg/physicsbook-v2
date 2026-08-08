@@ -29,6 +29,55 @@
   function esc(s){ return window.PBSearch ? window.PBSearch.escapeHtml(s) : String(s == null ? "" : s); }
   function html(s){ return s == null ? "" : s; } // pass-through for fields that are already-safe HTML (our own extracted/translated content)
 
+  // ===== Icon system ==========================================================
+  // content/<lang>/chapter-<N>/*.json's structural headings/labels (section
+  // nav labels, definition/enumeration/explanation labels, simulation
+  // headings, quiz/summary/mindmap headings, objectives heading, hero
+  // eyebrow/tags, lesson-card titles) were authored with a leading emoji
+  // acting as that section's icon (e.g. "🎯 الأهداف السلوكية"). Rather than
+  // rewrite all ~2,250 of those JSON string fields to add a parallel
+  // "icon key" field, this single table maps each such emoji to an
+  // assets/icons/sprite.svg symbol id, and splitIconPrefix() strips the
+  // leading "EMOJI " off at render time — the content JSON itself never
+  // changes. One-off widget-specific labels (map/alloy/laser callout notes
+  // etc.) are deliberately left as-is; only the structural headings/labels
+  // this file itself renders go through this path.
+  var EMOJI_ICON_MAP = {
+    "🎯": "target", "💡": "lightbulb", "✍️": "pencil", "✍": "pencil",
+    "🕹️": "joystick", "🕹": "joystick", "🧠": "brain", "📋": "clipboard",
+    "🗺": "map", "🗺️": "map", "📖": "book", "📘": "book", "📚": "books",
+    "📌": "pin", "🔍": "search", "🔢": "list-numbers", "🏆": "trophy",
+    "✅": "check-circle", "✓": "check-circle", "❓": "help-circle", "⏱": "clock"
+  };
+  // First code point of a leading emoji (optionally followed by the U+FE0F
+  // variation selector) plus the run of whitespace after it — matches
+  // exactly the "EMOJI<space>" prefix pattern every field above uses.
+  var EMOJI_PREFIX_RE = /^(\p{Extended_Pictographic}️?|[☀-➿←-⇿⬀-⯿])️?\s+/u;
+
+  function splitIconPrefix(raw){
+    if(!raw) return {icon: null, rest: raw};
+    var m = EMOJI_PREFIX_RE.exec(raw);
+    if(!m) return {icon: null, rest: raw};
+    var key = EMOJI_ICON_MAP[m[1]] || EMOJI_ICON_MAP[m[1].replace(/️$/, "")];
+    return {icon: key || null, rest: raw.slice(m[0].length)};
+  }
+  function iconMarkup(key){
+    return key ? '<svg class="icon" aria-hidden="true"><use href="#icon-' + key + '"></use></svg> ' : "";
+  }
+  // Plain-text field (headings, tags, titles): escape the remaining text.
+  function iconText(raw, fallbackIcon){
+    var s = splitIconPrefix(raw);
+    return iconMarkup(s.icon || fallbackIcon) + esc(s.rest);
+  }
+  // Field that may itself carry trusted inline HTML (e.g. a def-box label
+  // like "📌 1-2-1 التعجيل المركزي (a<sub>c</sub>)"): pass the remaining
+  // text through html() unescaped, same trust level the rest of this file
+  // already gives every other *Html-suffixed content field.
+  function iconHtml(raw, fallbackIcon){
+    var s = splitIconPrefix(raw);
+    return iconMarkup(s.icon || fallbackIcon) + html(s.rest);
+  }
+
   function assetsBase(){ return document.documentElement.getAttribute("data-assets") || ""; }
   function navBase(){ return document.documentElement.getAttribute("data-base") || ""; }
 
@@ -66,6 +115,10 @@
   // produces both under the same type name, matching the search index's
   // own classification, so branch on which field is actually present.
   var DEF_COLORS = {explanation: "var(--accent-orange)", enumeration: "var(--accent-green)"};
+  // Fallback icon by block type, used only when a label's own leading
+  // emoji isn't recognized (every current label already carries one that
+  // maps correctly — this is a safety net, not the primary path).
+  var DEF_ICON_FALLBACK = {definition: "pin", enumeration: "list-numbers", explanation: "search"};
 
   function renderDefBox(b){
     var color = DEF_COLORS[b.type];
@@ -79,14 +132,14 @@
     }
     var intro = b.html ? '<p style="margin:.3rem 0">' + html(b.html) + "</p>" : "";
     var extra = (b.extraHtml || []).map(function(h){ return '<p style="margin:.3rem 0">' + html(h) + "</p>"; }).join("");
-    return '<div class="def-box"' + style + '><span class="def-label"' + labelStyle + ">" + html(b.label) + "</span>" + intro + extra + list + "</div>";
+    return '<div class="def-box"' + style + '><span class="def-label"' + labelStyle + ">" + iconHtml(b.label, DEF_ICON_FALLBACK[b.type]) + "</span>" + intro + extra + list + "</div>";
   }
 
   function renderBlock(b, ctx){
     switch(b.type){
       case "explanation":
         if(b.label !== undefined) return renderDefBox(b); // def-box (🔍 تعليل)
-        return '<div class="card neu"><h2>' + esc(b.heading) + "</h2><p>" + html(b.html) + "</p></div>";
+        return '<div class="card neu"><h2>' + iconText(b.heading, "lightbulb") + "</h2><p>" + html(b.html) + "</p></div>";
       case "paragraph":
         return '<div class="card neu"><p>' + html(b.html) + "</p></div>";
       case "definition":
@@ -157,16 +210,16 @@
     var stepsId = "steps-ex" + b.number;
     var solTitle = sol.label != null ? esc(sol.label) : esc((window.PBI18n && window.PBI18n.t("common.detailedSolution")) || "الحل التفصيلي");
     out += '<div class="example" style="border-inline-start:4px solid var(--accent-blue)">' +
-      '<div class="example-head"><div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> ' +
+      '<div class="example-head"><div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg></span> ' +
       solTitle + "</div>" +
       '<button class="neu-btn" data-reveal-steps="' + stepsId + '" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">' +
       esc((window.PBI18n && window.PBI18n.t("common.showSteps")) || "إظهار خطوات الحل") + "</button></div>";
     if(sol.given && sol.given.length){
-      out += '<p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 ' + esc((window.PBI18n && window.PBI18n.t("common.given")) || "المعطيات") + '</p><ul class="summary-list" style="margin-bottom:1rem">' +
+      out += '<p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)"><svg class="icon" aria-hidden="true"><use href="#icon-clipboard"></use></svg> ' + esc((window.PBI18n && window.PBI18n.t("common.given")) || "المعطيات") + '</p><ul class="summary-list" style="margin-bottom:1rem">' +
         sol.given.map(function(g){ return "<li><span>" + html(g) + "</span></li>"; }).join("") + "</ul>";
     }
     if(sol.required){
-      out += '<p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 ' + esc((window.PBI18n && window.PBI18n.t("common.required")) || "المطلوب") + "</p><p style=\"margin:0 0 1rem\">" + html(sol.required) + "</p>";
+      out += '<p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)"><svg class="icon" aria-hidden="true"><use href="#icon-target"></use></svg> ' + esc((window.PBI18n && window.PBI18n.t("common.required")) || "المطلوب") + "</p><p style=\"margin:0 0 1rem\">" + html(sol.required) + "</p>";
     }
     if(sol.steps && sol.steps.length){
       out += '<ol class="steps hidden-steps" id="' + stepsId + '">' + sol.steps.map(function(st, i){
@@ -251,7 +304,7 @@
     var trailing = (b.trailingHtml || b.trailingId)
       ? "<p" + (b.trailingId ? ' id="' + esc(b.trailingId) + '"' : "") + ">" + html(b.trailingHtml || "") + "</p>"
       : "";
-    return '<div class="card neu"><h2>' + esc(b.sectionHeading) + "</h2>" +
+    return '<div class="card neu"><h2>' + iconText(b.sectionHeading, "joystick") + "</h2>" +
       (b.descriptionHtml ? "<p>" + html(b.descriptionHtml) + "</p>" : "") +
       (presets ? '<div class="io-row" style="flex-wrap:wrap;gap:.5rem">' + presets + "</div>" : "") +
       '<div class="io-panel">' + select + svgMount + controls + buttons + ruleBoxes + trailing + "</div></div>";
@@ -304,8 +357,9 @@
       // one-time, page-load IntersectionObserver adds .in — an observer set
       // up before this async render ever runs, so it would never see these
       // sections and they'd stay invisible. Render already-visible instead.
+      var navSplit = first.sectionNavLabel ? splitIconPrefix(first.sectionNavLabel) : null;
       var attrs = (first.sectionId ? ' id="' + esc(first.sectionId) + '"' : "") +
-        (first.sectionNavLabel ? ' data-navlabel="' + esc(first.sectionNavLabel) + '"' : "");
+        (navSplit ? ' data-navlabel="' + esc(navSplit.rest) + '"' + (navSplit.icon ? ' data-navicon="' + navSplit.icon + '"' : "") : "");
       out += '<section class="section"' + attrs + '>' + rendered + "</section>";
     }
     return out;
@@ -319,12 +373,12 @@
     setText(".breadcrumb li:nth-child(3)", data.meta.breadcrumbLesson);
     setText(".site-footer", data.meta.footer);
 
-    setText(".hero .eyebrow", data.hero.eyebrow);
+    setHtml(".hero .eyebrow", data.hero.eyebrow != null ? iconText(data.hero.eyebrow) : null);
     setHtml(".hero h1", data.hero.title);
     setHtml(".hero p.lead", data.hero.lead);
 
     var objHeadEl = document.querySelector("#objectives h2");
-    if(objHeadEl && data.objectivesHeading) objHeadEl.textContent = data.objectivesHeading;
+    if(objHeadEl && data.objectivesHeading) objHeadEl.innerHTML = iconText(data.objectivesHeading, "target");
     var objEl = document.querySelector("#objectives .obj-list");
     if(objEl){
       objEl.innerHTML = data.objectives.map(function(o, i){
@@ -342,7 +396,7 @@
       var quizWrap = document.querySelector("[data-quiz]");
       if(quizWrap){
         var quizHeadingEl = quizWrap.querySelector("h2");
-        if(quizHeadingEl && data.quiz.heading) quizHeadingEl.textContent = data.quiz.heading;
+        if(quizHeadingEl && data.quiz.heading) quizHeadingEl.innerHTML = iconText(data.quiz.heading, "brain");
         var container = document.createElement("div");
         container.innerHTML = data.quiz.questions.map(function(q, i){
           return '<div class="quiz-q" data-correct="' + q.correct + '">' +
@@ -369,7 +423,7 @@
     if(data.summary){
       var sumWrap = document.querySelector("#summary .card");
       if(sumWrap){
-        sumWrap.querySelector("h2").textContent = data.summary.heading;
+        sumWrap.querySelector("h2").innerHTML = iconText(data.summary.heading, "clipboard");
         sumWrap.querySelector(".summary-list").innerHTML = data.summary.items.map(function(it){
           return "<li><span>" + html(it) + "</span></li>";
         }).join("");
@@ -378,7 +432,7 @@
 
     if(data.mindmap){
       var mmHeadEl = document.querySelector("#mindmap h2");
-      if(mmHeadEl && data.mindmap.heading) mmHeadEl.textContent = data.mindmap.heading;
+      if(mmHeadEl && data.mindmap.heading) mmHeadEl.innerHTML = iconText(data.mindmap.heading, "map");
       var mmWrap = document.querySelector("#mindmap .mindmap-wrap");
       if(mmWrap) mmWrap.innerHTML = renderMindmapSvg(data.mindmap);
     }
@@ -391,16 +445,16 @@
     setText(".breadcrumb li:nth-child(2)", data.meta.breadcrumbChapter);
     setText(".site-footer", data.meta.footer);
 
-    setText(".hero .eyebrow", data.hero.eyebrow);
+    setHtml(".hero .eyebrow", data.hero.eyebrow != null ? iconText(data.hero.eyebrow) : null);
     setHtml(".hero h1", data.hero.titleHtml);
     setHtml(".hero p.lead", data.hero.lead);
     setText(".hero .neu-btn.primary", data.hero.startLessonLabel);
     var tagsEl = document.querySelectorAll(".hero .tag");
-    (data.hero.tags || []).forEach(function(tag, i){ if(tagsEl[i]) tagsEl[i].textContent = tag; });
+    (data.hero.tags || []).forEach(function(tag, i){ if(tagsEl[i]) tagsEl[i].innerHTML = iconText(tag); });
 
     var objCard = document.querySelectorAll(".card.neu")[0];
     if(objCard){
-      objCard.querySelector("h2").textContent = data.objectivesHeading;
+      objCard.querySelector("h2").innerHTML = iconText(data.objectivesHeading, "target");
       objCard.querySelector("p.lead").textContent = data.objectivesLead;
       objCard.querySelector(".obj-list").innerHTML = data.objectives.map(function(o, i){
         return '<li><span class="obj-num">' + (i + 1) + "</span><span>" + html(o) + "</span></li>";
@@ -415,21 +469,21 @@
     var lessonsGrid = document.querySelector(".grid.grid-3");
     if(lessonsGrid && lessonsGrid.parentElement){
       var lessonsHeadEl = lessonsGrid.parentElement.querySelector("h2");
-      if(lessonsHeadEl && data.lessonsHeading) lessonsHeadEl.textContent = data.lessonsHeading;
+      if(lessonsHeadEl && data.lessonsHeading) lessonsHeadEl.innerHTML = iconText(data.lessonsHeading, "books");
     }
 
     var lessonCards = document.querySelectorAll(".lesson-card");
     data.lessons.forEach(function(l, i){
       var card = lessonCards[i];
       if(!card) return;
-      card.querySelector("h3").textContent = l.title;
+      card.querySelector("h3").innerHTML = iconText(l.title);
       card.querySelector("p").textContent = l.description;
       card.querySelector(".lesson-go").textContent = data.enterLessonLabel;
     });
 
     if(data.mindmap){
       var hubMmHeadEl = document.querySelector("#mindmap h2");
-      if(hubMmHeadEl && data.mindmap.heading) hubMmHeadEl.textContent = data.mindmap.heading;
+      if(hubMmHeadEl && data.mindmap.heading) hubMmHeadEl.innerHTML = iconText(data.mindmap.heading, "map");
       var hubMmWrap = document.querySelector("#mindmap .mindmap-wrap");
       if(hubMmWrap) hubMmWrap.innerHTML = renderMindmapSvg(data.mindmap);
     }

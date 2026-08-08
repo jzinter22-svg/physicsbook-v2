@@ -51,10 +51,13 @@
       var total = questions.length;
       if(scoreEl){
         var t = window.PBI18n ? window.PBI18n.t : function(k){ return k; };
+        var verdictIcon = correct === total ? "party-popper" : correct >= total*0.6 ? "thumbs-up" : "repeat";
         var verdict = correct === total ? t("common.scorePerfect")
           : correct >= total*0.6 ? t("common.scoreGood")
           : t("common.scoreRetry");
-        scoreEl.textContent = t("common.scoreLabel", {correct: correct, total: total}) + "  " + verdict;
+        var esc = function(s){ return String(s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); };
+        scoreEl.innerHTML = esc(t("common.scoreLabel", {correct: correct, total: total})) + "  " +
+          '<svg class="icon" aria-hidden="true"><use href="#icon-' + verdictIcon + '"></use></svg> ' + esc(verdict);
       }
       if(correct === total && window.PBChapter && window.PBChapter.markComplete){
         window.PBChapter.markComplete(document.body.getAttribute("data-page"));

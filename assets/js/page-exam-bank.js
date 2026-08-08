@@ -74,7 +74,7 @@
     countEl.textContent = filtered.length ? (filtered.length + " سؤال") : "";
 
     if(!filtered.length){
-      list.innerHTML = '<div class="tools-emptystate"><span class="icon" aria-hidden="true">🏛️</span>' +
+      list.innerHTML = '<div class="tools-emptystate"><svg class="icon" aria-hidden="true"><use href="#icon-bank"></use></svg>' +
         "لا توجد أسئلة مطابقة لبحثك. جرّب كلمة أخرى أو غيّر تصفية الفصل.</div>";
       return;
     }
@@ -104,7 +104,7 @@
           '<div class="example" style="border-inline-start:4px solid var(--accent-blue)">' +
             '<div class="example-head">' +
               '<div class="example-title" style="color:var(--accent-blue)">' +
-                '<span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)">✓</span> الإجابة النموذجية' +
+                '<span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg></span> الإجابة النموذجية' +
               "</div>" +
               '<button type="button" class="neu-btn" data-examq-reveal="' + esc(ansId) + '" aria-expanded="false">إظهار الإجابة النموذجية</button>' +
             "</div>" +
@@ -187,7 +187,7 @@
         })
         .catch(function(){
           document.getElementById("examqList").innerHTML =
-            '<div class="tools-emptystate"><span class="icon">⚠️</span>تعذّر تحميل بنك الأسئلة الوزارية.</div>';
+            '<div class="tools-emptystate"><svg class="icon"><use href="#icon-alert-triangle"></use></svg>تعذّر تحميل بنك الأسئلة الوزارية.</div>';
         });
     });
   }

@@ -28,6 +28,7 @@
   };
 </script>
 <script src="../../assets/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+<script src="../../assets/js/icons.js?v=8433b18"></script>
 <script src="../../assets/js/i18n.js?v=8433b18"></script>
   <script src="../../assets/js/search.js?v=8433b18" defer></script>
 </head>
@@ -45,15 +46,15 @@
   </nav>
 
   <section class="hero fade-up">
-    <span class="eyebrow">📖 Lesson [M] of [total] · [Section reference, e.g. "N.M"]</span>
+    <span class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#icon-book"></use></svg> Lesson [M] of [total] · [Section reference, e.g. "N.M"]</span>
     <h1>[Lesson Title]</h1>
     <p class="lead">[One or two sentences framing what this lesson covers and why it matters.]</p>
   </section>
 
   <!-- ===== Objectives ===== -->
-  <section class="section fade-up" id="objectives" data-navlabel="🎯 Objectives">
+  <section class="section fade-up" id="objectives" data-navlabel="Objectives" data-navicon="target">
     <div class="card neu">
-      <h2>🎯 Lesson objectives</h2>
+      <h2><svg class="icon" aria-hidden="true"><use href="#icon-target"></use></svg> Lesson objectives</h2>
       <ol class="obj-list">
         <li><span class="obj-num">1</span><span>[Objective 1]</span></li>
         <li><span class="obj-num">2</span><span>[Objective 2]</span></li>
@@ -63,9 +64,9 @@
   </section>
 
   <!-- ===== Explanation / definitions ===== -->
-  <section class="section fade-up" id="content" data-navlabel="💡 Explanation">
+  <section class="section fade-up" id="content" data-navlabel="Explanation" data-navicon="lightbulb">
     <div class="card neu">
-      <h2>💡 [Section heading]</h2>
+      <h2><svg class="icon" aria-hidden="true"><use href="#icon-lightbulb"></use></svg> [Section heading]</h2>
       <p>[Explanatory prose. Inline math like \(F = ma\) renders via MathJax.]</p>
 
       <div class="callout tip">
@@ -77,7 +78,7 @@
 
   <section class="section fade-up">
     <div class="def-box">
-      <span class="def-label">📌 Definition [N.M] — [Term]</span>
+      <span class="def-label"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg> Definition [N.M] — [Term]</span>
       <p style="margin:.3rem 0">[Definition prose, with inline math as needed.]</p>
       <div class="mj-scroll">$$ [\text{key relation, e.g. } F = ma] $$</div>
     </div>
@@ -103,8 +104,8 @@
   </section>
 
   <!-- ===== Worked examples (step-by-step reveal) ===== -->
-  <section class="section fade-up" id="examples" data-navlabel="✍️ Worked Examples">
-    <h2 style="margin-bottom:.25rem">✍️ Worked examples</h2>
+  <section class="section fade-up" id="examples" data-navlabel="Worked Examples" data-navicon="pencil">
+    <h2 style="margin-bottom:.25rem"><svg class="icon" aria-hidden="true"><use href="#icon-pencil"></use></svg> Worked examples</h2>
     <p class="lead" style="margin-top:0">Click "Show solution steps" on each example to reveal the solution one step at a time.</p>
 
     <!-- Every numerical/mathematical problem is a QUESTION card immediately
@@ -114,24 +115,24 @@
          answer (always visible). Never start solving before المعطيات and
          المطلوب are stated — see quality-improvement pass, chapter 1. -->
     <div class="example fade-up">
-      <div class="example-head"><h2 style="margin:0">📝 مثال (1)</h2></div>
+      <div class="example-head"><h2 style="margin:0"><svg class="icon" aria-hidden="true"><use href="#icon-pencil"></use></svg> مثال (1)</h2></div>
       <p>[نص المسألة، مع الصياغة الرياضية اللازمة.]</p>
     </div>
 
     <div class="example fade-up" style="border-inline-start:4px solid var(--accent-blue)">
       <div class="example-head">
-        <h2 style="margin:0">✓ الحل التفصيلي</h2>
+        <h2 style="margin:0"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg> الحل التفصيلي</h2>
         <button class="neu-btn" data-reveal-steps="steps-ex1" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">إظهار خطوات الحل</button>
       </div>
 
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)">📋 المعطيات</p>
+      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)"><svg class="icon" aria-hidden="true"><use href="#icon-clipboard"></use></svg> المعطيات</p>
       <ul class="summary-list" style="margin-bottom:1rem">
         <li><span>\( [\text{symbol}] = [\text{value}]\ [\text{unit}] \) — [وصف الكمية، مع أي تحويل وحدات لازم]</span></li>
         <!-- add one <li> per given quantity; always show the SI unit and
              any conversion (e.g. km→m, rpm→rad/s) needed before substitution -->
       </ul>
 
-      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)">🎯 المطلوب</p>
+      <p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)"><svg class="icon" aria-hidden="true"><use href="#icon-target"></use></svg> المطلوب</p>
       <p style="margin:0 0 1rem">[ما المطلوب حسابه بالضبط.]</p>
 
       <ol class="steps hidden-steps" id="steps-ex1">
@@ -163,9 +164,9 @@
   </section>
 
   <!-- ===== Interactive widget ===== -->
-  <section class="section fade-up" id="interactive" data-navlabel="🕹️ Interactive Example">
+  <section class="section fade-up" id="interactive" data-navlabel="Interactive Example" data-navicon="joystick">
     <div class="card neu">
-      <h2>🕹️ Interactive: [widget name]</h2>
+      <h2><svg class="icon" aria-hidden="true"><use href="#icon-joystick"></use></svg> Interactive: [widget name]</h2>
       <p>[Instructions: what the slider controls and what to notice as it moves.]</p>
       <div class="io-panel">
         <div class="mindmap-wrap"><svg id="widgetPlot" width="520" height="360" role="img" aria-label="[Describe the plot for screen readers]"></svg></div>
@@ -179,9 +180,9 @@
   </section>
 
   <!-- ===== Self-check quiz — markup consumed by assets/js/quiz.js ===== -->
-  <section class="section fade-up" id="quiz" data-navlabel="🧠 Self-Check">
+  <section class="section fade-up" id="quiz" data-navlabel="Self-Check" data-navicon="brain">
     <div class="neu quiz" data-quiz>
-      <h2 data-i18n="common.checkUnderstanding">🧠 Check your understanding</h2>
+      <h2><svg class="icon" aria-hidden="true"><use href="#icon-brain"></use></svg> <span data-i18n="common.checkUnderstanding">Check your understanding</span></h2>
 
       <div class="quiz-q" data-correct="2">
         <div class="quiz-q-title"><span>1.</span><span>[Question text]</span></div>
@@ -202,9 +203,9 @@
   </section>
 
   <!-- ===== Summary ===== -->
-  <section class="section fade-up" id="summary" data-navlabel="📋 Summary">
+  <section class="section fade-up" id="summary" data-navlabel="Summary" data-navicon="clipboard">
     <div class="card neu">
-      <h2>📋 Lesson summary</h2>
+      <h2><svg class="icon" aria-hidden="true"><use href="#icon-clipboard"></use></svg> Lesson summary</h2>
       <ul class="summary-list">
         <li><span>[Key takeaway 1]</span></li>
         <li><span>[Key takeaway 2]</span></li>
@@ -214,10 +215,10 @@
   </section>
 
   <!-- ===== Mind map ===== -->
-  <section class="section fade-up" id="mindmap" data-navlabel="🗺 Mind Map">
+  <section class="section fade-up" id="mindmap" data-navlabel="Mind Map" data-navicon="map">
     <div class="card neu">
       <div class="example-head">
-        <h2 style="margin:0">🗺 Lesson mind map</h2>
+        <h2 style="margin:0"><svg class="icon" aria-hidden="true"><use href="#icon-map"></use></svg> Lesson mind map</h2>
         <button class="neu-btn" data-reveal-steps="mindmap-lesson" aria-expanded="false" data-i18n-show="common.showMap" data-i18n-hide="common.hideMap">Show map</button>
       </div>
       <p style="color:var(--text-secondary);margin-top:.3rem">A quick visual recap linking this lesson's concepts — useful for review before a test.</p>
