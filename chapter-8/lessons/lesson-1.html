@@ -250,7 +250,7 @@
         var y = 45 + i*17;
         var c = document.createElementNS(ns,"circle");
         c.setAttribute("cx",x); c.setAttribute("cy",y); c.setAttribute("r",8);
-        c.setAttribute("fill","#ffd166"); c.setAttribute("stroke","#a5661a"); c.setAttribute("stroke-width","1");
+        c.setAttribute("fill","url(#c8l1Atom)"); c.setAttribute("stroke","#a5661a"); c.setAttribute("stroke-width","1");
         pureGrid.appendChild(c);
       }
     }
@@ -261,7 +261,7 @@
         var isExtra = (i2===1 && j2===2);
         var c2 = document.createElementNS(ns,"circle");
         c2.setAttribute("cx",x2); c2.setAttribute("cy",y2); c2.setAttribute("r", isExtra ? 10 : 8);
-        c2.setAttribute("fill", isExtra ? "var(--accent-pink)" : "#ffd166");
+        c2.setAttribute("fill", isExtra ? "url(#c8l1AtomExtra)" : "url(#c8l1Atom)");
         c2.setAttribute("stroke","#a5661a"); c2.setAttribute("stroke-width","1");
         alloyGrid.appendChild(c2);
       }
