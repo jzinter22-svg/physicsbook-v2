@@ -74,10 +74,11 @@
   var TYPE_ICON = {
     definition: "📌", explanation: "🔍", enumeration: "🔢", example: "✏️",
     exercise: "❓", solution: "✅", simulation: "🕹️", figure: "🖼️",
-    formula: "📐", table: "📊", lesson: "📖", chapter: "📚", quantity: "⚛️", tool: "🧰"
+    formula: "📐", table: "📊", lesson: "📖", chapter: "📚", quantity: "⚛️", tool: "🧰",
+    examQuestion: "🏛️"
   };
   var FILTER_TYPES = ["definition", "explanation", "enumeration", "example",
-    "exercise", "solution", "simulation", "figure", "formula", "lesson", "chapter", "tool"];
+    "exercise", "solution", "simulation", "figure", "formula", "lesson", "chapter", "tool", "examQuestion"];
 
   // Base ranking per content type — approximates the spec's stated priority
   // (lesson title > definition > explanation > keyword/quantity > example >
@@ -86,7 +87,7 @@
   // wins regardless of type.
   var TYPE_RANK = {
     lesson: 100, chapter: 95, definition: 90, explanation: 85, quantity: 80, tool: 70,
-    example: 60, exercise: 55, solution: 50, formula: 45, enumeration: 40,
+    example: 60, exercise: 55, examQuestion: 55, solution: 50, formula: 45, enumeration: 40,
     simulation: 35, figure: 30, table: 20
   };
 

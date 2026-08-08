@@ -271,6 +271,24 @@
   .calc-btn{font-size:.75rem;padding:.6rem .2rem}
 }
 
+/* ===== Module 5: Ministry-style Exam Bank ===== */
+.examq-list{display:flex;flex-direction:column;gap:1.4rem}
+.examq-card{padding:1.5rem 1.6rem}
+.examq-card-head{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin-bottom:.6rem}
+.examq-kind-badge{
+  font-size:.78rem;font-weight:800;color:#fff;padding:.3rem .8rem;border-radius:14px;
+  background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));white-space:nowrap;
+}
+.examq-crumbs{font-size:.78rem;font-weight:700;color:var(--text-faint)}
+.examq-title{font-weight:800;font-size:1rem;color:var(--text-primary);line-height:1.7;margin:0 0 1rem}
+.examq-title mark{background:rgba(255,171,94,.4);color:inherit;border-radius:3px;padding:0 .1em}
+:root[data-theme="dark"] .examq-title mark{background:rgba(255,171,94,.55)}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .examq-title mark{background:rgba(255,171,94,.55)}
+}
+.examq-card .example{margin:0}
+.examq-card .example + .example{margin-top:1rem}
+
 @media (max-width:640px){
   .tools-subnav{position:static}
   .formula-grid{grid-template-columns:1fr}

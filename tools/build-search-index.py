@@ -171,6 +171,7 @@ TYPE_LABELS_AR = {
     "chapter": "فصل",
     "quantity": "كمية فيزيائية",
     "tool": "أداة",
+    "examQuestion": "سؤال وزاري",
 }
 
 TYPE_LABELS_EN = {
@@ -188,6 +189,7 @@ TYPE_LABELS_EN = {
     "chapter": "Chapter",
     "quantity": "Physical quantity",
     "tool": "Tool",
+    "examQuestion": "Exam Question",
 }
 
 # English chapter titles — one per chapter, matching each chapter's hero
@@ -360,6 +362,34 @@ def extract_lesson_from_content(items, lesson, chapter_num, lesson_num, href, le
                   title=title, text=body, jump=clean_text(title, 50))
 
 
+def extract_exam_bank_items(items):
+    """assets/data/exam-bank.ar.json (Arabic-only content, see exam-bank/
+    README note in the project README) — one search item per ministry-style
+    question, so Ctrl+K finds it and jumps to exam-bank/index.html with the
+    matching question scrolled into view via search.js's existing
+    "#pbsearch:<snippet>" convention. `jump` deliberately uses the RAW
+    tag-stripped prompt text (not clean_text()'s LaTeX-unwrapped form): the
+    live page renders the prompt's original LaTeX source into a .example
+    div (matched by search.js's JUMP_CANDIDATES) before MathJax ever
+    touches it, so the snippet must match that raw text verbatim, not a
+    human-friendlier rewritten version of it."""
+    path = ROOT / "assets" / "data" / "exam-bank.ar.json"
+    if not path.exists():
+        return
+    data = json.loads(path.read_text(encoding="utf-8"))
+    for chapter in data.get("chapters", []):
+        cn = chapter["num"]
+        for q in chapter.get("questions", []):
+            prompt_raw = BeautifulSoup(q.get("prompt") or "", "lxml").get_text(" ").strip()
+            answer_raw = BeautifulSoup(q.get("answer") or "", "lxml").get_text(" ")
+            title = clean_text(f"{q['kind']} — {prompt_raw}", 90)
+            preview = clean_text(answer_raw, limit=220)
+            jump = _WS_RE.sub(" ", prompt_raw)[:50].strip()
+            make_item(items, id=f"examq-{q['id']}", type="examQuestion",
+                      chapterNum=cn, lessonNum=None, href="exam-bank/index.html",
+                      title=title, text=preview, jump=jump)
+
+
 def build_ar_index():
     items = []
     chapters = []
@@ -413,8 +443,8 @@ def build_ar_index():
                   lessonNum=None, href=(related_lessons[0] if related_lessons else "index.html"),
                   title=f"{q['name']} ({q['symbol']})", text=WORDS_AR["unit_label"](q["unit"]), jump=None)
 
-    # ---- The 4 book-wide tool pages (formulas/dictionary/units/calculator)
-    # — static entries so Ctrl+K can jump straight to them too. --------------
+    # ---- The 5 book-wide tool pages (formulas/dictionary/units/calculator/
+    # exam-bank) — static entries so Ctrl+K can jump straight to them too. --
     TOOL_PAGES = [
         {"id": "formulas", "title": "القوانين الفيزيائية", "href": "formulas/index.html",
          "text": "مرجع شامل لكل القوانين والمعادلات الفيزيائية في الكتاب مصنّفة حسب الفصل والدرس"},
@@ -424,10 +454,14 @@ def build_ar_index():
          "text": "محول وحدات تفاعلي فوري للطول والكتلة والزمن والقوة والضغط والطاقة والكهرباء وغيرها"},
         {"id": "calculator", "title": "الآلة الحاسبة العلمية", "href": "calculator/index.html",
          "text": "آلة حاسبة علمية كاملة بدوال مثلثية ولوغاريتمية وذاكرة وسجل عمليات"},
+        {"id": "exam-bank", "title": "بنك الأسئلة الوزارية", "href": "exam-bank/index.html",
+         "text": "أسئلة علّل وعرّف واحسب وقارن على طراز أسئلة وزارة التربية للفصول الثمانية، مع إجابات نموذجية كاملة"},
     ]
     for tp in TOOL_PAGES:
         make_item(items, id=f"tool-{tp['id']}", type="tool", chapterNum=None, lessonNum=None,
                   href=tp["href"], title=tp["title"], text=tp["text"], jump=None)
+
+    extract_exam_bank_items(items)
 
     return {
         "version": 1,

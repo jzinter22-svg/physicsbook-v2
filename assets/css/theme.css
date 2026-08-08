@@ -520,6 +520,10 @@ input[type=text].neu-input,input[type=number].neu-input{
 }
 .lesson-go{display:flex;align-items:center;gap:.4rem;color:var(--accent-purple);font-weight:800;margin-top:auto;transition:transform .2s ease}
 
+/* comprehensive chapter-review lesson — same lesson-card, distinguishing accent */
+.lesson-card--review{border:2px solid var(--accent-orange)}
+.lesson-card--review .lesson-idx{background:linear-gradient(135deg,#ffd166,var(--accent-orange));font-size:1.35rem}
+
 /* empty-state (e.g. "chapters coming soon") */
 .empty-state{padding:2.25rem 1.5rem;text-align:center;color:var(--text-secondary)}
 .empty-state .icon{font-size:2rem;display:block;margin-bottom:.6rem}

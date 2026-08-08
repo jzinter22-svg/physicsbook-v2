@@ -172,6 +172,17 @@ slider + live SVG plot widgets, self-check quizzes, summary lists, mind-map
 SVG containers, and prev/next lesson navigation (auto-built from each
 chapter's lesson list).
 
+**`.lesson-card--review`**: a modifier on `.lesson-card` (same pattern as
+`.example.exercise-card`) that flags a chapter's final, comprehensive
+review lesson — orange accent border, and the `.lesson-idx` number badge
+replaced by a 🏆 gradient badge. Applied identically on every chapter's
+`index.html` to the last lesson card (the MCQ/تعليل/problems review with
+its self-check quiz), plus the matching `assets/i18n/{ar,ku,en}.json`
+`ch<N>.lesson<M>NavTitle` sidebar-nav key and the `content/{ar,en}/chapter-
+<N>/index.json` last-lesson `title`/`description` — so the sidebar, the
+hub card, and its page-nav label all read as one consistent feature
+instead of 8 one-off tweaks.
+
 ## Smart Search
 
 A fullscreen search overlay (`assets/js/search.js` + `assets/css/search.css`)
@@ -216,10 +227,10 @@ to be added to the existing 60 lesson pages for this to work.
 
 ## Book-wide tool pages
 
-Four standalone pages sit alongside the chapter hubs — `formulas/`,
-`dictionary/`, `units/`, `calculator/` — linked from a new "🧰 أدوات الكتاب"
-section on the home page and cross-linked to each other via a small
-`.tools-subnav` bar. They share one header pattern
+Five standalone pages sit alongside the chapter hubs — `formulas/`,
+`dictionary/`, `units/`, `calculator/`, `exam-bank/` — linked from a new
+"🧰 أدوات الكتاب" section on the home page and cross-linked to each other via
+a small `.tools-subnav` bar. They share one header pattern
 (`assets/js/page-shell.js`'s `PBToolsShell.init(activeId, onReady)`, which
 builds the same brand/theme/language/search header every chapter page uses)
 and one stylesheet (`assets/css/tools.css`), and are indexed in Smart Search
@@ -252,6 +263,27 @@ itself (`type: "tool"`) so `Ctrl+K` finds them too.
   shortcuts are attached to the calculator's own display element (not
   `document`) so they can't collide with Smart Search's global `Ctrl+K`/`/`
   shortcuts.
+- **بنك الأسئلة الوزارية** (`exam-bank/`, `page-exam-bank.js` +
+  `assets/data/exam-bank.ar.json`) — extended/written-response questions
+  (`علل`/`عرّف`/`احسب`/`قارن`/`اذكر`) in the style of official Iraqi
+  Ministry of Education physics exams, 8-10 per chapter, each with a
+  complete model answer — deliberately distinct in format from the MCQ
+  self-check quizzes already at the end of every chapter. Content is
+  Arabic-only (matching the register of real Ministry exams); the page
+  chrome itself stays trilingual like every other page. Its dataset is
+  fetched directly (`fetch()`, same pattern as `units/`'s
+  `assets/data/units.json`) rather than sourced from Smart Search's shared
+  index — full model answers for ~70 questions would needlessly bloat that
+  index for every other page that loads it. Search still reuses
+  `window.PBSearch.normalizeArabic()` / `buildFuzzyRegex()` / `highlight()`
+  — no second Arabic-normalization function — applied to a plain-text
+  snippet built from each question, since `highlight()` escapes its input
+  and would otherwise corrupt the question's trusted HTML/MathJax markup.
+  Each question reuses the book's own `.example` worked-solution styling
+  (model answer behind a show/hide toggle, mirroring the chapter review
+  lessons' step-by-step reveal) instead of a new component. Indexed in
+  Smart Search as `type: "examQuestion"` so `Ctrl+K` finds individual
+  questions too.
 
 **A note on RTL for these pages**: short mixed Latin/symbol strings (button
 labels like `n!`, `1/x`, `×10ˣ`; the calculator's expression/history) need

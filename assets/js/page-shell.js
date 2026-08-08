@@ -24,7 +24,8 @@
     {id: "formulas", href: "../formulas/index.html", label: "📐 القوانين الفيزيائية"},
     {id: "dictionary", href: "../dictionary/index.html", label: "📖 قاموس المصطلحات"},
     {id: "units", href: "../units/index.html", label: "🔄 الوحدات والتحويلات"},
-    {id: "calculator", href: "../calculator/index.html", label: "🧮 الآلة الحاسبة العلمية"}
+    {id: "calculator", href: "../calculator/index.html", label: "🧮 الآلة الحاسبة العلمية"},
+    {id: "exam-bank", href: "../exam-bank/index.html", label: "🏛️ بنك الأسئلة الوزارية"}
   ];
 
   function t(key, params){
