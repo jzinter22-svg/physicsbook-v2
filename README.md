@@ -56,6 +56,15 @@ formulas/, dictionary/, units/,
 calculator/                         Book-wide tool pages — see "Book-wide
                                      tool pages" below
 assets/
+  fonts/
+    cairo-arabic.woff2,
+    cairo-latin.woff2                 Body/UI typeface (variable, 300-900),
+                                       self-hosted, split Arabic/Latin by
+                                       unicode-range
+    elmessiri-arabic-700.woff2,
+    elmessiri-latin-700.woff2         Display typeface for major headings
+                                       only (weight 700, see "Typography"
+                                       below) — same split pattern as Cairo
   icons/
     sprite.svg                      Canonical source for every UI icon (36
                                      symbols: 35 hand-drawn Feather/Lucide-
@@ -187,6 +196,21 @@ a given page.
 
 - **Neumorphism**: soft-UI surfaces via `--shadow-light` / `--shadow-dark`
   pairs on `.neu`, `.neu-sm`, `.neu-inset`, `.neu-btn`, `.neu-icon-btn`.
+- **Typography**: two self-hosted typefaces, both split into Arabic/Latin
+  `.woff2` files by `unicode-range` the same way (`assets/fonts/`, `@font-
+  face` rules in `theme.css`, `font-display:swap`, no CDN). **Cairo**
+  (300–900 variable) is the body/UI face — everything except the elements
+  below. **El Messiri** (static weight 700 only, ~12–14KB per script — far
+  smaller than Cairo's variable files since headings never need a weight
+  range) is a distinct display face — more angular wedge-shaped terminals
+  vs. Cairo's soft geometric roundness — reserved for `--font-display`
+  (`:root`) and applied only to `.hero h1` (the chapter-hub and lesson
+  page titles) and `.hero .hero-brand-title` (the home page's project
+  title). Body text, buttons, sidebar nav, card labels, and section `h2`s
+  all stay on Cairo — deliberately not extended to `h2`s or the tool pages
+  (`formulas/`, `dictionary/`, etc., which use `.tools-hero h1` rather
+  than `.hero h1`) to keep the display face reserved for genuinely major,
+  once-per-page headings rather than diluting it into a second body style.
 - **Theming**: `data-theme="dark"` on ``, or system preference via
   `prefers-color-scheme`; toggled and persisted (`localStorage`) by every
   page's behavior script.

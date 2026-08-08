@@ -25,6 +25,30 @@
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215;
 }
 
+/* Self-hosted display typeface (El Messiri, static weight 700 only — the
+   heaviest this family ships as a static instance) used exclusively for a
+   short list of large showcase headings via --font-display below; every
+   other UI text stays on Cairo. Same self-hosting/unicode-range-split
+   pattern as Cairo above — only one weight is fetched since headings never
+   need a range, keeping both files far smaller (~12-14KB) than Cairo's
+   full 300-900 variable files. */
+@font-face{
+  font-family:'El Messiri';
+  font-style:normal;
+  font-weight:700;
+  font-display:swap;
+  src:url('../fonts/elmessiri-arabic-700.woff2') format('woff2');
+  unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC;
+}
+@font-face{
+  font-family:'El Messiri';
+  font-style:normal;
+  font-weight:700;
+  font-display:swap;
+  src:url('../fonts/elmessiri-latin-700.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215;
+}
+
 /* Unified SVG icon system (assets/icons/sprite.svg, injected by
    assets/js/icons.js) — replaces raw emoji used as UI icons. Every
    <use href="#icon-..."> pulls a stroke="currentColor" symbol, so icons
@@ -91,6 +115,13 @@ svg.icon{
   --header-h:72px;
   --sidebar-w:290px;
   --focus-ring:0 0 0 3px rgba(63,169,245,.55);
+
+  /* Display typeface for major showcase headings only (home hero title,
+     chapter-hub h1, lesson h1) — see .hero h1 / .hero-brand-title below.
+     Everything else (body text, buttons, sidebar, cards) stays on Cairo,
+     so the fallback chain still ends in Cairo/system sans, never a
+     visually mismatched default if El Messiri fails to load. */
+  --font-display:'El Messiri','Cairo',ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 
 :root[data-theme="dark"]{
@@ -293,7 +324,15 @@ body{
 
 /* ===== Hero ===== */
 .hero{padding:2.5rem 0 1.5rem}
-.hero h1{font-size:clamp(1.6rem,4vw,2.6rem);margin:.2rem 0;font-weight:900}
+/* .hero h1 is also the chapter-hub title and every lesson's title (both
+   pages wrap their <h1> in a .hero/.hero.fade-up section) — so this one
+   rule is what puts the display typeface on all three "major heading"
+   surfaces named in the design brief without touching their markup.
+   font-weight is pinned to 700 (not the site's usual 900) because El
+   Messiri only ships a 700 static instance; requesting 900 against a
+   font that doesn't have it risks the browser's synthetic-bold fallback
+   double-thickening already-bold display glyphs. */
+.hero h1{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.6rem);margin:.2rem 0;font-weight:700}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;color:var(--accent-purple);font-weight:700;font-size:.9rem}
 .lead{color:var(--text-secondary);font-size:1.05rem;max-width:60ch}
 
@@ -303,8 +342,9 @@ body{
    above for the same element, without touching that rule — which is what
    still sizes the "Chapter N" heading on chapter pages. */
 .hero .hero-brand-title{
+  font-family:var(--font-display);
   font-size:clamp(3rem, 4vw + 1.5rem, 4rem);
-  font-weight:900;
+  font-weight:700;
   line-height:1.15;
   margin:0 0 .85rem;
 }
