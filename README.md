@@ -198,6 +198,22 @@ a given page.
   `assets/icons/sprite.svg#icon-` symbol set. Quoted example/content text
   (e.g. world-map captions, laser-type labels) is left as-is — only
   decorative UI icons were converted.
+- **Per-chapter color identity**: each of the 8 chapters has its own
+  two-stop gradient, `--ch<N>-accent-1`/`--ch<N>-accent-2` in `theme.css`'s
+  `:root`, chosen to evoke that chapter's actual subject (e.g. laser-red→
+  violet for Ch.6 لليزر والبلازما, muted bronze→near-black for Ch.7 النفط
+  الخام so it visibly reads as a different register than the brighter
+  chapters) rather than drawn from the old shared 6-color cycle. The same
+  pair is used **everywhere** that chapter's color appears — its home-page
+  card, every `.lesson-idx` badge on its own hub page, and its header/
+  sidebar `.brand-badge` (via `chapterAccentStyle()` in the chapter
+  behavior template, derived from `CONFIG.chapterNumber` — no separate
+  color field to keep in sync). Every stop is verified at ≥4.5:1 contrast
+  against the white badge text/icon color that always sits on top of it;
+  because that badge is fully opaque, this ratio doesn't change between
+  light and dark mode (unlike `--bg`/`--surface`/`--text-*`), so — like the
+  existing `--accent-purple`/`--accent-blue`/etc. above — there's a single
+  definition, no `[data-theme="dark"]` override needed.
 
 ## Internationalization (i18n)
 

@@ -54,6 +54,36 @@ svg.icon{
   --accent-pink:#ff6b9d;
   --accent-green:#2fd18f;
   --accent-red:#ff6b6b;
+
+  /* Per-chapter semantic color identity — one two-stop gradient per
+     chapter, used everywhere that chapter's own color needs to appear
+     (home-page card, its own hub's lesson-index badges, its header/
+     sidebar brand badge) so the same chapter is never two different
+     colors in two different places. Each pair is chosen to evoke that
+     chapter's actual subject, not drawn arbitrarily from a shared cycle
+     the way plain lesson-position badges used to be. Every stop below is
+     WCAG-AA-verified (>=4.5:1) against the #fff badge text/icon color
+     that always sits on top of it (see .lesson-idx/.brand-badge) — this
+     opaque badge never blends with the page background, so unlike
+     --accent-purple/--accent-blue etc. above, there is no light/dark
+     variant to define: the same two stops are correct in both themes. */
+  --ch1-accent-1:#6e58e6; /* circular & rotational motion — energetic motion purple */
+  --ch1-accent-2:#1f74b0; /* … into motion-blue */
+  --ch2-accent-1:#7440e0; /* wave phenomena of light (interference/polarization/diffraction) — prism violet */
+  --ch2-accent-2:#0a7789; /* … into spectrum cyan */
+  --ch3-accent-1:#1d6fe0; /* electromagnetic induction — electric blue */
+  --ch3-accent-2:#127c86; /* … into a spark-like teal-cyan */
+  --ch4-accent-1:#096b62; /* AC circuits — circuit-board teal */
+  --ch4-accent-2:#a85814; /* … into a warm copper/amber trace color */
+  --ch5-accent-1:#4f46e5; /* semiconductors & electronics — cool indigo */
+  --ch5-accent-2:#64748b; /* … into silicon-silver slate */
+  --ch6-accent-1:#e0245e; /* laser & plasma — laser red/magenta */
+  --ch6-accent-2:#8b3dff; /* … into laser violet */
+  --ch7-accent-1:#8b5e34; /* crude oil — petroleum bronze/amber, deliberately muted */
+  --ch7-accent-2:#231a12; /* … into near-black crude-oil tone (not the bright candy palette of the other chapters) */
+  --ch8-accent-1:#a8632f; /* metals & alloys — brushed copper */
+  --ch8-accent-2:#52616b; /* … into brushed-steel gray */
+
   --radius-lg:28px;
   --radius-md:20px;
   --radius-sm:14px;

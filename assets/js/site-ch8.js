@@ -103,6 +103,17 @@
     return t("chapter.titleWithNumber", {n: CONFIG.chapterNumber});
   }
 
+  /* Same per-chapter accent pair used for this chapter's home-page card
+     and hub lesson-index badges (see the --chN-accent-1/2 variables in
+     theme.css), applied to the header/sidebar brand badge too so a
+     chapter's color identity is consistent everywhere, not just on
+     cards. Derived from CONFIG.chapterNumber rather than a separate
+     CONFIG field — one fewer thing to keep in sync per chapter. */
+  function chapterAccentStyle(){
+    var n = CONFIG.chapterNumber;
+    return ' style="background:linear-gradient(135deg,var(--ch' + n + '-accent-1),var(--ch' + n + '-accent-2))"';
+  }
+
   function buildHeader(){
     var header = document.querySelector(".site-header");
     if(!header) return;
@@ -121,7 +132,7 @@
     var brand = document.createElement("a");
     brand.className = "brand";
     brand.href = base + "index.html";
-    brand.innerHTML = '<span class="brand-badge">' + CONFIG.brandBadge + '</span><span>' + chapterTitle() + '</span>';
+    brand.innerHTML = '<span class="brand-badge"' + chapterAccentStyle() + '>' + CONFIG.brandBadge + '</span><span>' + chapterTitle() + '</span>';
 
     var themeBtn = document.createElement("button");
     themeBtn.className = "neu-icon-btn";
@@ -169,7 +180,7 @@
       '<div class="sidebar-topbar">' +
         '<button class="neu-icon-btn sidebar-close-btn" id="sidebarClose" aria-label="'+t("common.closeMenu")+'">'+svgIcon('x')+'</button>' +
       '</div>' +
-      '<a class="sidebar-brand" href="'+base+'index.html"><span class="brand-badge">'+CONFIG.brandBadge+'</span><span>'+chapterTitle()+'</span></a>' +
+      '<a class="sidebar-brand" href="'+base+'index.html"><span class="brand-badge"'+chapterAccentStyle()+'>'+CONFIG.brandBadge+'</span><span>'+chapterTitle()+'</span></a>' +
       '<div class="sidebar-subtitle">'+t(CONFIG.sidebarSubtitleKey)+'</div>' +
       '<div class="sidebar-progress">' +
         '<div class="progress-track"><div class="progress-fill"></div></div>' +

@@ -14,6 +14,13 @@
     5. Copy templates/lessons/lesson-template.html to
        chapter-<N>/lessons/lesson-<M>.html for each lesson.
     6. Add a card for this chapter to the home page's chapter grid.
+    7. Give the chapter its own color identity: add a --ch<N>-accent-1/2
+       pair to theme.css's :root (see --ch1-accent-1 through --ch8-accent-2
+       for the pattern — pick two colors that evoke the chapter's actual
+       subject, and verify >=4.5:1 contrast for both against white before
+       committing to them), then use that pair for every lesson-idx badge
+       in this file and for the home-page card's badge — never a different
+       color in different places for the same chapter.
 
   This file assumes it lives at chapter-<N>/index.html — asset paths below
   are relative to that location ("../assets/...").
@@ -139,7 +146,13 @@
     <h2 style="margin-bottom:1rem"><svg class="icon" aria-hidden="true"><use href="#icon-books"></use></svg> <span data-i18n="chapter.contentsHeading">Chapter contents</span></h2>
     <div class="grid grid-3">
 
-      <!-- Repeat this .lesson-card block once per lesson, in order -->
+      <!-- Repeat this .lesson-card block once per lesson, in order. The
+           lesson-idx gradient below must be the SAME var(--chN-accent-1/2)
+           pair everywhere in this chapter (home-page card, every lesson-idx
+           badge here, and the header/sidebar brand badge in site-chN.js) —
+           add that pair to theme.css's :root first (see --ch1-accent-1
+           through --ch8-accent-2 for the pattern and the WCAG-AA-vs-white
+           contrast requirement), then swap #N below for var(--chN-accent-N). -->
       <a class="neu lesson-card" href="lessons/lesson-1.html">
         <span class="lesson-idx" style="background:linear-gradient(135deg,#7c6fee,#3fa9f5)">1</span>
         <h3 style="margin:.2rem 0">[Lesson 1 title]</h3>
