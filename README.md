@@ -80,7 +80,14 @@ assets/
                                      lang/dir attribute management
     site-home.js                    Home page behavior (theme toggle, reveal)
     splash.js                       Home-page splash screen (4s intro, then
-                                     fades into the hub content underneath)
+                                     fades into the hub content underneath).
+                                     Shown once per browser — an inline
+                                     script right after the splash markup in
+                                     index.html checks localStorage
+                                     (`pb_splash_seen`, set by splash.js once
+                                     the intro has played through) and
+                                     removes the overlay before it paints on
+                                     every subsequent visit
     site-ch1.js … site-ch8.js       Per-chapter behavior script, one per
                                      chapter (header/sidebar/progress/lesson
                                      list), each with its own CONFIG

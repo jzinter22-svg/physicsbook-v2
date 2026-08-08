@@ -54,6 +54,24 @@
     </div>
   </div>
 </div>
+<script>
+  /* Synchronous, inline, and placed immediately after the splash markup so
+     it runs before the browser paints anything below it: on a repeat visit
+     this removes the splash overlay before it ever becomes visible, so
+     there is no flash of the intro and no layout shift (the overlay is
+     position:fixed, so removing it doesn't reflow the page underneath).
+     assets/js/splash.js (loaded at the end of body) sets pb_splash_seen
+     the first time the splash actually plays through; see that file for
+     the localStorage write side of this check. */
+  (function(){
+    try{
+      if(localStorage.getItem("pb_splash_seen")){
+        var s = document.getElementById("splashScreen");
+        if(s) s.remove();
+      }
+    }catch(e){}
+  })();
+</script>
 
 <a class="skip-link" href="#main" data-i18n="common.skipToContent">تخطَّ إلى المحتوى</a>
 <header class="site-header">

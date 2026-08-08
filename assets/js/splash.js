@@ -1,10 +1,15 @@
 /* Home-page splash screen: shows for exactly 4s, then fades into the hub
    content that is already rendered underneath it, and removes itself.
    Timing/state only — all visuals are pure CSS (see assets/css/splash.css).
-   Runs once per page load; does not touch chapter/i18n/quiz logic. */
+   Shown once per browser (localStorage pb_splash_seen) — on every load
+   after the first, index.html's own early inline script (right after the
+   #splashScreen markup) already removes the element before this file even
+   runs, so init()'s existing "if(!splash) return;" is what makes repeat
+   visits a no-op here. */
 (function(){
   "use strict";
 
+  var SEEN_KEY = "pb_splash_seen";
   var DISPLAY_MS = 4000;
   var FADE_MS = 600;
 
@@ -40,6 +45,7 @@
     locked.forEach(function(el){ if(el) el.inert = true; });
 
     setTimeout(function(){
+      try{ localStorage.setItem(SEEN_KEY, "1"); }catch(e){}
       splash.classList.add("splash-hide");
       document.body.classList.remove("splash-active");
       locked.forEach(function(el){ if(el) el.inert = false; });
