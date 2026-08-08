@@ -133,7 +133,14 @@
     var brand = document.createElement("a");
     brand.className = "brand";
     brand.href = base + "index.html";
-    brand.innerHTML = '<span class="brand-badge"' + chapterAccentStyle() + '>' + CONFIG.brandBadge + '</span><span>' + chapterTitle() + '</span>';
+    // Small fixed site-logo mark alongside the chapter-number badge (not
+    // instead of it — the number is real wayfinding, telling a student
+    // which chapter they're in at a glance). The same pairing is repeated
+    // in buildSidebar()'s .sidebar-brand below: body.has-sidebar .site-
+    // header .brand{display:none} hides *this* header copy at desktop
+    // widths (>=1180px, persistent sidebar) in favor of the sidebar's own
+    // brand link, so the logo would otherwise only ever appear on mobile.
+    brand.innerHTML = '<span class="brand-logomark">' + svgIcon("logo") + '</span><span class="brand-badge"' + chapterAccentStyle() + '>' + CONFIG.brandBadge + '</span><span>' + chapterTitle() + '</span>';
 
     var themeBtn = document.createElement("button");
     themeBtn.className = "neu-icon-btn";
@@ -181,7 +188,7 @@
       '<div class="sidebar-topbar">' +
         '<button class="neu-icon-btn sidebar-close-btn" id="sidebarClose" aria-label="'+t("common.closeMenu")+'">'+svgIcon('x')+'</button>' +
       '</div>' +
-      '<a class="sidebar-brand" href="'+base+'index.html"><span class="brand-badge"'+chapterAccentStyle()+'>'+CONFIG.brandBadge+'</span><span>'+chapterTitle()+'</span></a>' +
+      '<a class="sidebar-brand" href="'+base+'index.html"><span class="brand-logomark">'+svgIcon("logo")+'</span><span class="brand-badge"'+chapterAccentStyle()+'>'+CONFIG.brandBadge+'</span><span>'+chapterTitle()+'</span></a>' +
       '<div class="sidebar-subtitle">'+t(CONFIG.sidebarSubtitleKey)+'</div>' +
       '<div class="sidebar-progress">' +
         '<div class="progress-track"><div class="progress-fill"></div></div>' +

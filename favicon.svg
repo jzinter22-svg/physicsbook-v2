@@ -1,0 +1,28 @@
+<!-- ===========================================================================
+     Site favicon: the same logo mark as assets/icons/sprite.svg's
+     icon-logo symbol (circle + orbiting electron + graduation cap), but as
+     a standalone document with hardcoded colors instead of CSS custom
+     properties: an externally-loaded favicon has no access to the host
+     page's theme.css (unlike icon-logo, which is inlined into each page's
+     own DOM by assets/js/icons.js and so inherits theme.css normally).
+     Keep this file's gradient stops in sync with theme.css's
+     accent-purple / accent-blue variables by hand if those ever change.
+     =========================================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="faviconGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c6fee"/>
+      <stop offset="1" stop-color="#3fa9f5"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="url(#faviconGrad)"/>
+  <ellipse cx="60" cy="60" rx="42" ry="17" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="3" transform="rotate(-25 60 60)"/>
+  <circle cx="94" cy="46" r="5" fill="#fff"/>
+  <circle cx="60" cy="60" r="6" fill="#fff"/>
+  <g transform="translate(60,69)">
+    <path d="M-29,-6 L0,-18 L29,-6 L0,6 Z" fill="#fff"/>
+    <path d="M-17,-1 L-17,10 C-17,18 17,18 17,10 L17,-1" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="24" y1="-4" x2="24" y2="16" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="24" cy="17" r="2.6" fill="#fff"/>
+  </g>
+</svg>

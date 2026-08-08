@@ -45,7 +45,9 @@
   var EMOJI_ICON_MAP = {
     "🎯": "target", "💡": "lightbulb", "✍️": "pencil", "✍": "pencil",
     "🕹️": "joystick", "🕹": "joystick", "🧠": "brain", "📋": "clipboard",
-    "🗺": "map", "🗺️": "map", "📖": "book", "📘": "book", "📚": "books",
+    "🗺": "map", "🗺️": "map", "📖": "book",
+    "📘": "logo", // hero.eyebrow's only use across every chapter's index.json — the book-brand tagline, so it gets the real site logo, not a generic book glyph
+    "📚": "books",
     "📌": "pin", "🔍": "search", "🔢": "list-numbers", "🏆": "trophy",
     "✅": "check-circle", "✓": "check-circle", "❓": "help-circle", "⏱": "clock"
   };

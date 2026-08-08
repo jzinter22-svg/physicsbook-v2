@@ -54,7 +54,7 @@
     var brand = document.createElement("a");
     brand.className = "brand";
     brand.href = "../index.html";
-    brand.innerHTML = '<span class="brand-badge">P</span><span>' + t("brand.name") + "</span>";
+    brand.innerHTML = '<span class="brand-badge brand-badge--logo">' + svgIcon("logo") + '</span><span>' + t("brand.name") + "</span>";
 
     var themeBtn = document.createElement("button");
     themeBtn.className = "neu-icon-btn";

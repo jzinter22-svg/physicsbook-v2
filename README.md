@@ -35,6 +35,17 @@ serves to students.
 ```
 index.html                          Home page: hero + 8 chapter cards +
                                      splash intro + tools section
+favicon.svg                         Site favicon (primary, modern browsers)
+                                     — standalone copy of the icon-logo mark
+                                     with hardcoded colors (an externally-
+                                     loaded favicon can't see theme.css's
+                                     custom properties the way an inlined
+                                     <use> reference can)
+favicon.ico                         Multi-resolution (16/32/48px) fallback
+                                     for browsers that don't support SVG
+                                     favicons
+apple-touch-icon.png                180×180 icon for iOS/macOS bookmarks
+                                     and home-screen shortcuts
 chapter-1/ … chapter-8/
   index.html                        Chapter hub: hero, breadcrumb, progress
                                      bar, lesson grid, mind map
@@ -46,11 +57,19 @@ calculator/                         Book-wide tool pages — see "Book-wide
                                      tool pages" below
 assets/
   icons/
-    sprite.svg                      Canonical source for every UI icon (35
-                                     hand-drawn Feather/Lucide-style symbols,
-                                     stroke="currentColor") — human-editable
+    sprite.svg                      Canonical source for every UI icon (36
+                                     symbols: 35 hand-drawn Feather/Lucide-
+                                     style, stroke="currentColor", plus
+                                     icon-logo — the site's real logo mark,
+                                     filled/gradient rather than stroked, see
+                                     "Logo & favicon" below) — human-editable
                                      reference only; pages never load it
                                      directly (see assets/js/icons.js below)
+    favicon-16x16.png, -32x32.png,
+    -48x48.png, -192x192.png         Raster fallbacks generated from
+                                     favicon.svg, bundled into favicon.ico
+                                     and linked individually for browsers
+                                     that pick a sized PNG over an SVG icon
   css/
     theme.css                       Design system: neumorphism, light/dark
                                      theme, layout primitives, all UI
@@ -214,6 +233,30 @@ a given page.
   light and dark mode (unlike `--bg`/`--surface`/`--text-*`), so — like the
   existing `--accent-purple`/`--accent-blue`/etc. above — there's a single
   definition, no `[data-theme="dark"]` override needed.
+- **Logo & favicon**: the site's real mark (circle + orbiting electron +
+  graduation cap — first built as `index.html`'s splash-screen SVG) lives
+  once as `assets/icons/sprite.svg`'s `icon-logo` symbol, unlike every other
+  icon there it's filled/gradient rather than stroked, so it doesn't take
+  `currentColor`. It replaces the old plain "P" letter badge on the home
+  page and every tool page (`.brand-badge--logo`, background removed since
+  the mark supplies its own circle) and sits as a small fixed
+  `.brand-logomark` beside the chapter-number badge on chapter pages — in
+  **both** places that badge appears, the top header's `.brand` and the
+  persistent sidebar's `.sidebar-brand` (`body.has-sidebar .site-header
+  .brand{display:none}` hides the header copy at desktop widths in favor of
+  the sidebar one, so both need it for the mark to actually show at every
+  breakpoint). The number itself is untouched — it's real wayfinding, not
+  decoration. `favicon.svg`/`favicon.ico`/`apple-touch-icon.png` at the repo
+  root are the same mark rasterized with hardcoded colors (an external
+  favicon file has no access to `theme.css`'s custom properties); regenerate
+  them by re-rendering `favicon.svg` and re-exporting the PNG/ICO sizes if
+  the mark ever changes. Uncovered a real Chromium bug while adding this: a
+  gradient `<symbol>` referenced via `fill="url(#id)")` fails to paint when
+  its ancestor chain is `display:none` (unlike a `stroke="currentColor"`
+  icon, which never needed the paint-server lookup that trips this) —
+  `assets/js/icons.js` now explicitly clears the sprite's inherited
+  `display:none` in favor of the existing off-screen/zero-size technique it
+  already used, fixing `icon-logo` and any future gradient icon.
 
 ## Internationalization (i18n)
 

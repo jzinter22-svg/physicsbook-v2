@@ -242,6 +242,19 @@ body{
   background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));color:#fff;font-weight:900;
   box-shadow:4px 4px 8px var(--shadow-dark), -4px -4px 8px var(--shadow-light);
 }
+/* Home page / tool pages: the real logo mark (icon-logo, a filled gradient
+   circle) replaces the plain "P" letter here and already supplies its own
+   circular background, so this modifier drops .brand-badge's own gradient/
+   shadow rather than layering a second background behind it. */
+.brand-badge--logo{background:none;box-shadow:none}
+.brand-badge--logo svg.icon{width:100%;height:100%}
+/* Chapter pages: a small persistent site-logo mark sits beside the
+   chapter-number .brand-badge in the top header (not the sidebar, so it
+   doesn't disturb .sidebar-subtitle's fixed-pixel indent under the badge
+   below) — the number keeps doing its wayfinding job, this just adds
+   brand recognition next to it. */
+.brand-logomark{display:flex;flex:0 0 auto}
+.brand-logomark svg.icon{width:26px;height:26px}
 .header-actions{display:flex;align-items:center;gap:.6rem}
 
 /* progress bar */
@@ -504,7 +517,7 @@ input[type=text].neu-input,input[type=number].neu-input{
   display:flex;align-items:center;gap:.65rem;text-decoration:none;color:var(--text-primary);font-weight:800;
   font-size:1rem;margin-bottom:.15rem;min-width:0;white-space:nowrap;
 }
-.sidebar-subtitle{color:var(--text-secondary);font-weight:600;font-size:.74rem;margin:0 0 1.1rem;margin-inline-start:52px;white-space:nowrap}
+.sidebar-subtitle{color:var(--text-secondary);font-weight:600;font-size:.74rem;margin:0 0 1.1rem;margin-inline-start:87px;white-space:nowrap} /* aligns under the title text: 26px logomark + .65rem gap + 40px badge + .65rem gap */
 .sidebar-close-btn{width:38px;height:38px;flex:0 0 auto}
 .sidebar-progress{margin-bottom:1.2rem}
 .sidebar-progress .progress-label{text-align:center;color:var(--text-secondary);font-size:.8rem;margin-top:.5rem}
