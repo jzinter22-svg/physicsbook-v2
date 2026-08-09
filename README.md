@@ -194,8 +194,50 @@ a given page.
 
 ## Design system highlights
 
-- **Neumorphism**: soft-UI surfaces via `--shadow-light` / `--shadow-dark`
-  pairs on `.neu`, `.neu-sm`, `.neu-inset`, `.neu-btn`, `.neu-icon-btn`.
+- **Hybrid design system**: five visual languages, each scoped to one job,
+  never mixed on the same component — see the component-strategy table
+  below. All of it is driven by centralized tokens in `theme.css`'s
+  `:root` (type scale `--text-*`/`--leading-*`, spacing `--space-*`,
+  radius `--radius-xs…full`, `--border-thin`/`--border-brutal`,
+  MD3 elevation `--elevation-0…3`, state layers `--state-hover`/
+  `--state-pressed`, motion `--duration-*`/`--ease-*`) rather than
+  one-off values scattered through the CSS.
+  - **Editorial/Swiss** (foundation): flat, hairline-bordered content
+    surfaces — `.card`, `.def-box`, `.rule-box`, `.callout.tip`,
+    `.example`, `.diagram-card` — minimal `--elevation-1`, never a heavy
+    shadow, strict grid via `.container`/`.grid-2`/`.grid-3`.
+  - **Material Design 3** (interaction): `.neu-btn` (tonal at rest,
+    filled-gradient `.primary`), `.neu-icon-btn` (transparent + tonal
+    state-layer), `.sidebar-link` (tonal hover, gradient active
+    indicator), `.quiz-opt` (bordered selectable item), `.lang-menu` /
+    the Smart Search panel (elevation-3 dialogs — the search overlay was
+    previously a frosted-glass panel; that's retired in favor of an
+    opaque MD3 surface, since the brief rules out heavy glassmorphism).
+  - **Scientific Visualization**: `.diagram-card`/`.mindmap-wrap` outer
+    containers get the flat Editorial treatment; the inline SVG
+    illustrations themselves are untouched (that's content, not chrome).
+    `.neu-range`/`.neu-input` (the sliders/fields driving `plot.js`
+    widgets) are flat MD3 sliders/fields, connecting equations, graphics,
+    and controls without a neumorphic inset illusion in the way.
+  - **Bento** (navigation): the home page's chapter grid and its
+    `.bento-dense` tools grid (denser, smaller-scale tiles — a visibly
+    lighter-weight zone than the 8 primary chapter tiles) are `.neu
+    .lesson-card` tiles with `--elevation-2` + a small lift on hover.
+  - **Neo-Brutalism** (accents only, by design — never applied site-wide):
+    thick `--border-brutal` border + a flat hard-offset shadow (no blur),
+    reserved for exactly three surfaces named in the design brief —
+    `.quiz` (the outer card only; `.quiz-opt` items inside stay ordinary
+    MD3), `.callout.warn`, and `.lesson-card--review` (the chapter's
+    comprehensive-review highlight tile).
+  - **Rollout status**: the full system lives in `theme.css`/`search.css`
+    (both loaded on every page, so every chapter/lesson/tool page already
+    renders on it), and has had a full verification + polish pass on the
+    home page and Chapter 5 (hub + lessons) as the pilot. `tools.css`
+    (the five `formulas/`/`dictionary/`/`units/`/`calculator/`/
+    `exam-bank/` pages) and per-chapter Bento-hub polish for chapters
+    1-4/6-8 still run on the pre-hybrid neumorphic styling in their own
+    stylesheet/markup — functional, zero console errors, just not yet
+    carried through the same five-style pass.
 - **Typography**: two self-hosted typefaces, both split into Arabic/Latin
   `.woff2` files by `unicode-range` the same way (`assets/fonts/`, `@font-
   face` rules in `theme.css`, `font-display:swap`, no CDN). **Cairo**

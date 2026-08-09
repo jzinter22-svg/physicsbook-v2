@@ -65,6 +65,7 @@ svg.icon{
 :root{
   --bg:#e6ebf1;
   --surface:#e6ebf1;
+  --surface-muted:#dde3ea; /* recessed/secondary surface — .neu-inset, feedback panels */
   --shadow-light:#ffffff;
   --shadow-dark:#b3bdcc;
   --text-primary:#2b3548;
@@ -108,9 +109,16 @@ svg.icon{
   --ch8-accent-1:#a8632f; /* metals & alloys — brushed copper */
   --ch8-accent-2:#52616b; /* … into brushed-steel gray */
 
-  --radius-lg:28px;
-  --radius-md:20px;
-  --radius-sm:14px;
+  /* Radius scale — moderate MD3-style rounding on a stricter Swiss grid,
+     deliberately tighter than the old neumorphic 14/20/28 "bubbly" scale
+     (every existing rule that references --radius-sm/md/lg is retuned by
+     this one change, no per-rule edits needed). --radius-full is new: MD3
+     buttons/chips/pills use it, cards/dialogs use sm/md/lg. */
+  --radius-xs:6px;
+  --radius-sm:10px;
+  --radius-md:14px;
+  --radius-lg:20px;
+  --radius-full:999px;
   --gap:1.5rem;
   --header-h:72px;
   --sidebar-w:290px;
@@ -122,22 +130,105 @@ svg.icon{
      so the fallback chain still ends in Cairo/system sans, never a
      visually mismatched default if El Messiri fails to load. */
   --font-display:'El Messiri','Cairo',ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+  /* ================= Hybrid design-system tokens =================
+     Editorial/Swiss (foundation) + Material Design 3 (interaction) +
+     Scientific Visualization (content) + Bento (navigation) + sparing
+     Neo-Brutalism (accents). Centralizing these here is what lets every
+     component below reference one scale instead of scattering arbitrary
+     px/rem values — see README's "Design tokens" note. */
+
+  /* Type scale — Editorial/Swiss hierarchy. Fluid sizes stay clamp()-based
+     (unchanged approach from the pre-existing hero/lead rules) so nothing
+     needs a breakpoint-specific override; --text-2xl/3xl/display absorb
+     what used to be inlined clamp() calls on .hero h1 / .hero-brand-title. */
+  --text-xs:.78rem;
+  --text-sm:.875rem;
+  --text-base:1rem;
+  --text-md:1.05rem;
+  --text-lg:1.15rem;
+  --text-xl:1.4rem;
+  --text-2xl:clamp(1.6rem,4vw,2.6rem);
+  --text-3xl:clamp(2rem,3vw + 1rem,2.8rem);
+  --text-display:clamp(3rem,4vw + 1.5rem,4rem);
+  --leading-tight:1.25;
+  --leading-snug:1.45;
+  --leading-normal:1.75; /* body copy — still generous for Arabic RTL legibility, just less loose than the old 1.9 */
+  --weight-regular:400;
+  --weight-medium:600;
+  --weight-bold:700;
+  --weight-black:900;
+
+  /* Spacing scale (4px base unit) — new rules should compose from this
+     rather than inventing one-off rem values; existing rules keep their
+     original values unless they were part of a component rewritten below. */
+  --space-1:.25rem;
+  --space-2:.5rem;
+  --space-3:.75rem;
+  --space-4:1rem;
+  --space-5:1.5rem;
+  --space-6:2rem;
+  --space-7:3rem;
+  --space-8:4rem;
+
+  /* Borders — a hairline rule for Editorial/Swiss content surfaces (flat,
+     bordered, not shadowed) and a thick one reserved for Neo-Brutalism
+     accents only (.quiz, .callout.warn, .lesson-card--review). */
+  --border-thin:1px;
+  --border-brutal:3px;
+  --border-color:rgba(43,53,72,.14);
+
+  /* MD3 elevation — single soft drop shadows (not the neumorphic dual
+     light+dark pair) used for interactive surfaces: buttons, menus,
+     dialogs, Bento cards. A flat rgba(0,0,0,α) shadow reads correctly as
+     "this surface floats above the page" in both light and dark mode
+     without needing a separate --shadow-light-style counterpart, unlike
+     neumorphism (which faked a raised/pressed surface purely from two
+     opposing shadow colors, so it *needed* a light/dark pair). */
+  --elevation-0:none;
+  --elevation-1:0 1px 2px rgba(0,0,0,.10), 0 1px 3px rgba(0,0,0,.08);
+  --elevation-2:0 2px 6px rgba(0,0,0,.14), 0 1px 3px rgba(0,0,0,.10);
+  --elevation-3:0 8px 20px rgba(0,0,0,.18), 0 2px 6px rgba(0,0,0,.12);
+
+  /* MD3 state layers — flat accent-tinted overlays for hover/focus/press,
+     replacing the neumorphic "push the shadow inward" interaction cue. */
+  --state-hover:rgba(124,111,238,.08);
+  --state-pressed:rgba(124,111,238,.14);
+
+  /* Motion — MD3-flavored standard/emphasized easing + a short duration
+     scale. Every animation below must still respect prefers-reduced-
+     motion (see the existing global override further down). */
+  --duration-fast:120ms;
+  --duration-base:200ms;
+  --duration-slow:400ms;
+  --ease-standard:cubic-bezier(.2,0,0,1);
+  --ease-emphasized:cubic-bezier(.3,0,.1,1);
+
+  /* Breakpoints (documented, not literal custom properties — plain CSS
+     can't consume var() inside an @media query). Every @media rule in
+     this stylesheet uses one of these five values; keep new rules on the
+     same scale rather than introducing a sixth. */
+  /* --bp-xs:480px  --bp-sm:600px  --bp-md:820px  --bp-lg:900px  --bp-xl:1180px */
 }
 
 :root[data-theme="dark"]{
   --bg:#242a35;
   --surface:#242a35;
+  --surface-muted:#2c3341;
   --shadow-light:#2f3644;
   --shadow-dark:#181c24;
   --text-primary:#eef1f6;
   --text-secondary:#a7b0c0;
   --text-faint:#7e879a;
+  --border-color:rgba(238,241,246,.16);
 }
 
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
+    --border-color:rgba(238,241,246,.16);
     --bg:#242a35;
     --surface:#242a35;
+    --surface-muted:#2c3341;
     --shadow-light:#2f3644;
     --shadow-dark:#181c24;
     --text-primary:#eef1f6;
@@ -163,7 +254,7 @@ body{
   font-family:'Cairo',ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   background:var(--bg);
   color:var(--text-primary);
-  line-height:1.9;
+  line-height:var(--leading-normal);
   transition:background .4s ease,color .4s ease;
   overflow-x:hidden;
   isolation:isolate; /* gives .ambient-bg (z-index:-1) a context above body's own
@@ -176,7 +267,7 @@ body{
   position:absolute;top:-48px;inset-inline-start:1rem;z-index:100;
   background:var(--surface);color:var(--text-primary);padding:.75rem 1.25rem;
   border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;
-  box-shadow:6px 6px 14px var(--shadow-dark), -6px -6px 14px var(--shadow-light);
+  box-shadow:var(--elevation-2);
   transition:top .2s ease;
 }
 .skip-link:focus{top:0}
@@ -212,51 +303,62 @@ body{
 
 .container{max-width:1080px;margin:0 auto;padding:0 1.25rem}
 
-/* ===== Neumorphism primitives ===== */
+/* ===== Core surfaces (Editorial/Swiss) + interactive controls (MD3) =====
+   .neu/.neu-sm/.neu-inset are static content surfaces: flat, hairline-
+   bordered, minimally elevated — never the old neumorphic dual light+dark
+   shadow. .neu-btn/.neu-icon-btn are the MD3 interaction layer: tonal at
+   rest, filled (elevation + solid accent) for primary actions, a flat
+   accent state-layer stands in for the old "push the shadow inward" press
+   cue. Class names are unchanged from the pre-hybrid system on purpose —
+   every one of the 70+ pages that already reference them gets the new
+   system automatically, nothing needed to be renamed. */
 .neu{
   background:var(--surface);
+  border:var(--border-thin) solid var(--border-color);
   border-radius:var(--radius-lg);
-  box-shadow:8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
+  box-shadow:var(--elevation-1);
 }
 .neu-sm{
   background:var(--surface);
+  border:var(--border-thin) solid var(--border-color);
   border-radius:var(--radius-sm);
-  box-shadow:5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+  box-shadow:var(--elevation-1);
 }
 .neu-inset{
-  background:var(--surface);
+  background:var(--surface-muted);
+  border:var(--border-thin) solid var(--border-color);
   border-radius:var(--radius-md);
-  box-shadow:inset 5px 5px 10px var(--shadow-dark), inset -5px -5px 10px var(--shadow-light);
   overflow-x:auto;
 }
 .neu-btn{
-  background:var(--surface);
+  background:var(--state-hover); /* MD3 tonal button: flat accent-tinted fill at rest */
   border:none;
-  border-radius:16px;
-  box-shadow:5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
-  color:var(--text-primary);
+  border-radius:var(--radius-full);
+  color:var(--accent-purple);
   font-family:inherit;
-  font-weight:700;
+  font-weight:var(--weight-bold);
   cursor:pointer;
-  transition:box-shadow .15s ease, transform .15s ease;
+  transition:background var(--duration-base) var(--ease-standard), box-shadow var(--duration-base) var(--ease-standard), transform var(--duration-fast) var(--ease-standard);
   padding:.85rem 1.6rem;
   font-size:1rem;
 }
-.neu-btn:hover{transform:translateY(-2px)}
-.neu-btn:active,.neu-btn.active{
-  box-shadow:inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);
-  transform:translateY(0);
-}
+.neu-btn:hover{background:var(--state-pressed)}
+.neu-btn:active,.neu-btn.active{transform:scale(.97)}
 .neu-btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
-.neu-btn.primary{color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));box-shadow:6px 6px 14px rgba(76,89,220,.35), -4px -4px 10px var(--shadow-light)}
+/* MD3 "filled" button — the site's one primary-action treatment (Check
+   answers, Start lesson, etc.); everything else is tonal (above). */
+.neu-btn.primary{
+  color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
+  box-shadow:var(--elevation-1);
+}
+.neu-btn.primary:hover{box-shadow:var(--elevation-2)}
 .neu-icon-btn{
   width:46px;height:46px;display:flex;align-items:center;justify-content:center;
-  border-radius:50%;background:var(--surface);border:none;cursor:pointer;color:var(--text-primary);
-  box-shadow:5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
-  transition:transform .15s ease;
+  border-radius:50%;background:transparent;border:none;cursor:pointer;color:var(--text-primary);
+  transition:background var(--duration-base) var(--ease-standard), transform var(--duration-fast) var(--ease-standard);
 }
-.neu-icon-btn:hover{transform:translateY(-2px) scale(1.03)}
-.neu-icon-btn:active{box-shadow:inset 3px 3px 6px var(--shadow-dark), inset -3px -3px 6px var(--shadow-light)}
+.neu-icon-btn:hover{background:var(--state-hover)}
+.neu-icon-btn:active{background:var(--state-pressed);transform:scale(.94)}
 
 /* ===== Header / Nav ===== */
 .site-header{
@@ -269,9 +371,9 @@ body{
 .site-header .container{display:flex;align-items:center;justify-content:space-between;gap:1rem;width:100%}
 .brand{display:flex;align-items:center;gap:.7rem;font-weight:800;font-size:1.05rem;text-decoration:none;color:var(--text-primary)}
 .brand-badge{
-  width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  width:40px;height:40px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;
   background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));color:#fff;font-weight:900;
-  box-shadow:4px 4px 8px var(--shadow-dark), -4px -4px 8px var(--shadow-light);
+  box-shadow:var(--elevation-1);
 }
 /* Home page / tool pages: the real logo mark (icon-logo, a filled gradient
    circle) replaces the plain "P" letter here and already supplies its own
@@ -289,8 +391,8 @@ body{
 .header-actions{display:flex;align-items:center;gap:.6rem}
 
 /* progress bar */
-.progress-track{width:100%;height:12px;border-radius:20px;background:var(--surface);
-  box-shadow:inset 3px 3px 6px var(--shadow-dark), inset -3px -3px 6px var(--shadow-light);overflow:hidden}
+.progress-track{width:100%;height:12px;border-radius:var(--radius-full);background:var(--surface-muted);
+  border:var(--border-thin) solid var(--border-color);overflow:hidden}
 .progress-fill{height:100%;border-radius:20px;background:linear-gradient(90deg,var(--accent-purple),var(--accent-blue),var(--accent-pink));
   transition:width .6s cubic-bezier(.4,0,.2,1); width:0%}
 
@@ -299,8 +401,8 @@ body{
 .lang-switch-btn{font-size:1.15rem}
 .lang-menu{
   list-style:none;margin:0;padding:.4rem;position:absolute;top:calc(100% + 10px);inset-inline-end:0;
-  min-width:11rem;background:var(--surface);border-radius:var(--radius-sm);
-  box-shadow:10px 10px 22px var(--shadow-dark), -10px -10px 22px var(--shadow-light);
+  min-width:11rem;background:var(--surface);border-radius:var(--radius-md);
+  border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-3);
   display:none;flex-direction:column;gap:.15rem;z-index:80;
 }
 .lang-menu.open{display:flex}
@@ -362,14 +464,15 @@ body{
   margin:0 0 1.1rem;
 }
 
-/* ===== Cards / Sections ===== */
+/* ===== Cards / Sections (Editorial/Swiss content surfaces) ===== */
 .section{padding:2rem 0}
 .card{padding:1.75rem;margin-bottom:1.5rem}
-.card h2{margin-top:0;display:flex;align-items:center;gap:.6rem;font-size:1.4rem}
-.card h3{font-size:1.15rem}
+.card h2{margin-top:0;display:flex;align-items:center;gap:.6rem;font-size:var(--text-xl)}
+.card h3{font-size:var(--text-lg)}
+/* MD3 assist chip: flat tonal fill, no shadow, pill radius */
 .tag{
-  display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .9rem;border-radius:20px;font-size:.82rem;font-weight:700;
-  background:var(--surface);box-shadow:3px 3px 6px var(--shadow-dark), -3px -3px 6px var(--shadow-light);color:var(--accent-purple);
+  display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .9rem;border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:700;
+  background:var(--state-hover);color:var(--accent-purple);
 }
 
 .grid{display:grid;gap:var(--gap)}
@@ -386,10 +489,13 @@ body{
   background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));color:#fff;font-weight:800;font-size:.9rem;
 }
 
-/* Definition box */
+/* Definition box — flat Editorial surface, hairline border, the existing
+   colored inline-start rule is kept as-is: it's already the right Swiss-
+   editorial convention for "what kind of box is this" and needs no
+   shadow to read clearly. */
 .def-box{
   position:relative;padding:1.5rem 1.75rem;border-radius:var(--radius-md);
-  background:var(--surface);box-shadow:6px 6px 14px var(--shadow-dark), -6px -6px 14px var(--shadow-light);
+  background:var(--surface);border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);
   border-inline-start:5px solid var(--accent-purple);
   overflow-x:auto;
 }
@@ -399,39 +505,45 @@ body{
 .rule-box{
   padding:1.4rem 1.6rem;border-radius:var(--radius-md);text-align:center;
   background:linear-gradient(135deg, rgba(124,111,238,.12), rgba(63,169,245,.10));
-  box-shadow:6px 6px 14px var(--shadow-dark), -6px -6px 14px var(--shadow-light);
+  border:var(--border-thin) solid var(--border-color);
   margin:1rem 0;font-size:1.15rem;
   overflow-x:auto;
 }
 
-/* Note / tip callout */
+/* Note / tip callout — .tip stays Editorial-flat; .warn is escalated to a
+   Neo-Brutalist accent further down (see "Neo-Brutalism accents"), since
+   "important warnings" is one of the five categories that style is
+   reserved for. */
 .callout{display:flex;gap:.8rem;padding:1.1rem 1.3rem;border-radius:var(--radius-md);background:var(--surface);
-  box-shadow:5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);align-items:flex-start}
-.callout.warn{border-inline-start:5px solid var(--accent-orange)}
+  border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);align-items:flex-start}
 .callout.tip{border-inline-start:5px solid var(--accent-green)}
+/* Neo-Brutalism accent: "important warnings" is named explicitly in the
+   brief's component table, so .warn escalates past the flat Editorial
+   treatment every other callout uses. */
+.callout.warn{border:var(--border-brutal) solid var(--accent-orange);box-shadow:5px 5px 0 var(--accent-orange)}
 .callout .icon{font-size:1.4rem;flex:0 0 auto}
 .callout>span:last-child{min-width:0;overflow-x:auto}
 
 /* Example / step-by-step */
 .example{
   border-radius:var(--radius-lg);padding:1.6rem;margin:1.5rem 0;
-  background:var(--surface);box-shadow:8px 8px 18px var(--shadow-dark), -8px -8px 18px var(--shadow-light);
+  background:var(--surface);border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);
 }
 .example-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.75rem}
 .example-title{display:flex;align-items:center;gap:.6rem;font-weight:800;color:var(--accent-blue);font-size:1.05rem}
 .example-badge{
-  width:36px;height:36px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;
+  width:36px;height:36px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;
   background:linear-gradient(135deg,var(--accent-orange),var(--accent-pink));
 }
-.example-problem{padding:1rem 1.2rem;border-radius:var(--radius-sm);background:var(--surface);
-  box-shadow:inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);margin-bottom:1rem;
+.example-problem{padding:1rem 1.2rem;border-radius:var(--radius-sm);background:var(--surface-muted);
+  border:var(--border-thin) solid var(--border-color);margin-bottom:1rem;
   overflow-x:auto}
 
 .steps{list-style:none;margin:0;padding:0;display:grid;gap:0}
 .step{display:grid;grid-template-columns:38px 1fr;gap:.8rem;padding:.4rem 0;opacity:0;transform:translateY(8px);animation:stepIn .5s ease forwards}
 .step .step-dot{
   width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;
-  background:var(--surface);box-shadow:4px 4px 8px var(--shadow-dark), -4px -4px 8px var(--shadow-light);color:var(--accent-purple);
+  background:var(--surface);border:var(--border-thin) solid var(--border-color);color:var(--accent-purple);
   position:relative;
 }
 .step:not(:last-child) .step-dot::after{
@@ -448,7 +560,7 @@ body{
 .calc-line{font-size:1.08rem;max-width:100%;overflow-x:auto}
 .calc-arrow{color:var(--accent-purple);font-size:1.35rem;line-height:1;opacity:.5}
 .calc-box{display:inline-block;padding:.5rem 1.1rem;border-radius:var(--radius-sm);
-  background:var(--surface);box-shadow:4px 4px 8px var(--shadow-dark), -4px -4px 8px var(--shadow-light);
+  background:var(--surface);border:var(--border-thin) solid var(--border-color);
   max-width:100%;overflow-x:auto}
 
 /* Long chained equalities can exceed the available width on narrow phones
@@ -475,14 +587,19 @@ div.hidden-steps.shown{display:block}
 /* interactive example controls */
 .io-panel{display:grid;gap:.9rem;margin-top:1rem}
 .io-row{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
-input[type=range].neu-range{-webkit-appearance:none;width:100%;height:10px;border-radius:10px;background:var(--surface);
-  box-shadow:inset 3px 3px 6px var(--shadow-dark), inset -3px -3px 6px var(--shadow-light);}
-input[type=range].neu-range::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;
-  background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));cursor:pointer;box-shadow:3px 3px 6px var(--shadow-dark)}
+/* MD3 slider/field — the control half of Scientific Visualization's
+   "equations ↔ graphics ↔ controls" loop (io-panel drives plot.js). Flat
+   muted track, solid accent thumb; no neumorphic inset illusion. */
+input[type=range].neu-range{-webkit-appearance:none;width:100%;height:6px;border-radius:var(--radius-full);background:var(--surface-muted);}
+input[type=range].neu-range::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;
+  background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));cursor:pointer;box-shadow:var(--elevation-1);border:2px solid var(--surface)}
+input[type=range].neu-range::-moz-range-thumb{width:22px;height:22px;border-radius:50%;border:2px solid var(--surface);
+  background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));cursor:pointer;box-shadow:var(--elevation-1)}
 input[type=text].neu-input,input[type=number].neu-input{
-  font-family:inherit;font-size:1rem;padding:.7rem 1rem;border:none;border-radius:14px;background:var(--surface);
-  box-shadow:inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);color:var(--text-primary);width:100%;
+  font-family:inherit;font-size:1rem;padding:.7rem 1rem;border:var(--border-thin) solid var(--border-color);border-radius:var(--radius-sm);background:var(--surface);
+  color:var(--text-primary);width:100%;transition:border-color var(--duration-base) var(--ease-standard);
 }
+input[type=text].neu-input:focus,input[type=number].neu-input:focus{border-color:var(--accent-purple)}
 .feedback{padding:.7rem 1rem;border-radius:var(--radius-sm);font-weight:700;display:none}
 .feedback.show{display:block;animation:fadeIn .3s ease}
 .feedback.ok{background:rgba(47,209,143,.15);color:#1b8f66}
@@ -490,22 +607,34 @@ input[type=text].neu-input,input[type=number].neu-input{
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 
 /* Quiz */
-.quiz{padding:1.75rem}
-.quiz-q{margin-bottom:1.6rem;padding-bottom:1.6rem;border-bottom:1px dashed var(--shadow-dark)}
+/* Neo-Brutalism accent: the quiz is one of the five categories this style
+   is explicitly reserved for ("Quizzes" in the brief's component table).
+   Thick border + a flat hard-offset shadow (no blur, unlike every MD3
+   elevation token above) marks it as a special, higher-stakes moment —
+   the individual options inside stay ordinary MD3 selectable items (see
+   .quiz-opt above), so the accent reads on the frame, not on every
+   control inside it. */
+.quiz{padding:1.75rem;border:var(--border-brutal) solid var(--text-primary);border-radius:var(--radius-md);
+  box-shadow:6px 6px 0 var(--accent-purple);}
+.quiz-q{margin-bottom:1.6rem;padding-bottom:1.6rem;border-bottom:1px dashed var(--border-color)}
 .quiz-q:last-of-type{border-bottom:none}
 .quiz-q-title{font-weight:800;margin-bottom:.9rem;display:flex;gap:.6rem}
+/* MD3 selectable list item — the interaction layer inside the quiz's
+   Neo-Brutalist frame (see "Neo-Brutalism accents" below): picking an
+   option is still an ordinary MD3 interaction, only the quiz's outer
+   card is escalated to a "special moment" accent. */
 .quiz-options{display:grid;gap:.6rem}
 .quiz-opt{
-  display:flex;align-items:center;gap:.7rem;padding:.8rem 1rem;border-radius:14px;cursor:pointer;
-  background:var(--surface);box-shadow:4px 4px 8px var(--shadow-dark), -4px -4px 8px var(--shadow-light);
-  transition:box-shadow .15s ease;
+  display:flex;align-items:center;gap:.7rem;padding:.8rem 1rem;border-radius:var(--radius-sm);cursor:pointer;
+  background:var(--surface);border:var(--border-thin) solid var(--border-color);
+  transition:background var(--duration-base) var(--ease-standard), border-color var(--duration-base) var(--ease-standard);
 }
-.quiz-opt:hover{box-shadow:inset 2px 2px 4px var(--shadow-dark), inset -2px -2px 4px var(--shadow-light)}
+.quiz-opt:hover{background:var(--state-hover)}
 .quiz-opt input{accent-color:var(--accent-purple)}
-.quiz-opt.correct{box-shadow:0 0 0 2px var(--accent-green) inset}
-.quiz-opt.wrong{box-shadow:0 0 0 2px var(--accent-red) inset}
+.quiz-opt.correct{border-color:var(--accent-green);border-width:2px;background:rgba(47,209,143,.08)}
+.quiz-opt.wrong{border-color:var(--accent-red);border-width:2px;background:rgba(255,107,107,.08)}
 .quiz-score{text-align:center;font-weight:800;font-size:1.2rem;margin-top:1rem}
-.quiz-explain{font-size:.92rem;color:var(--text-secondary);margin-top:.5rem;display:none;padding:.6rem .9rem;border-radius:10px;background:rgba(124,111,238,.08)}
+.quiz-explain{font-size:.92rem;color:var(--text-secondary);margin-top:.5rem;display:none;padding:.6rem .9rem;border-radius:var(--radius-xs);background:rgba(124,111,238,.08)}
 .quiz-explain.show{display:block}
 
 /* Mind map */
@@ -524,7 +653,7 @@ input[type=text].neu-input,input[type=number].neu-input{
 .diagram-wrap svg{display:block;margin:0 auto;max-width:59.5%;height:auto}
 .diagram-caption{display:block;margin-top:.65rem;font-size:.85rem;font-weight:700;color:var(--text-secondary)}
 .diagram-card{padding:1.1rem 1rem .8rem;margin-bottom:1.4rem;border-radius:var(--radius-md);
-  background:var(--surface);box-shadow:6px 6px 14px var(--shadow-dark), -6px -6px 14px var(--shadow-light)}
+  background:var(--surface);border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1)}
 
 /* Summary */
 .summary-list{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
@@ -565,22 +694,26 @@ input[type=text].neu-input,input[type=number].neu-input{
 .sidebar-nav{flex:1}
 .sidebar-list{list-style:none;margin:0;padding:0;display:grid;gap:.35rem}
 .sidebar-item{display:grid;gap:.3rem}
+/* MD3 navigation-list item — tonal state-layer hover, gradient "active
+   indicator" fill for the current page (kept from the previous system:
+   it's already a legitimate MD3 active-indicator pattern, just needed
+   its dual neumorphic shadow removed). */
 .sidebar-link{
-  display:block;text-decoration:none;color:var(--text-primary);padding:.7rem .85rem;border-radius:13px;
-  font-weight:700;font-size:.87rem;transition:box-shadow .15s ease,color .15s ease;
+  display:block;text-decoration:none;color:var(--text-primary);padding:.7rem .85rem;border-radius:var(--radius-sm);
+  font-weight:700;font-size:.87rem;transition:background var(--duration-base) var(--ease-standard),color .15s ease;
 }
-.sidebar-link:hover{box-shadow:4px 4px 8px var(--shadow-dark), -4px -4px 8px var(--shadow-light)}
+.sidebar-link:hover{background:var(--state-hover)}
 .sidebar-link.current{
   background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));color:#fff;
-  box-shadow:4px 4px 10px rgba(76,89,220,.3);
+  box-shadow:var(--elevation-1);
 }
-.sidebar-link.root{border-bottom:1px dashed var(--shadow-dark);border-radius:13px;margin-bottom:.4rem;padding-bottom:.9rem}
+.sidebar-link.root{border-bottom:1px dashed var(--border-color);border-radius:var(--radius-sm);margin-bottom:.4rem;padding-bottom:.9rem}
 .sidebar-link.is-done:not(.current)::after{content:" ✓";color:var(--accent-green)}
 
 .sidebar-sublist{list-style:none;margin:.15rem 0 .5rem;padding-inline-end:1rem;display:grid;gap:.15rem;
   border-inline-end:2px solid rgba(124,111,238,.25)}
 .sidebar-sublink{
-  display:flex;align-items:center;gap:.4rem;text-decoration:none;color:var(--text-secondary);padding:.42rem .8rem;border-radius:10px;
+  display:flex;align-items:center;gap:.4rem;text-decoration:none;color:var(--text-secondary);padding:.42rem .8rem;border-radius:var(--radius-xs);
   font-size:.8rem;font-weight:600;transition:color .15s ease,background .15s ease;
 }
 .sidebar-sublink .icon{flex:0 0 auto;opacity:.8}
@@ -609,16 +742,31 @@ input[type=text].neu-input,input[type=number].neu-input{
 .fade-up.in{opacity:1;transform:translateY(0)}
 
 /* chapter home lesson cards */
-.lesson-card{padding:1.5rem;display:flex;flex-direction:column;gap:.8rem;height:100%;text-decoration:none;color:var(--text-primary)}
+/* Bento navigation tile — MD3 elevation-on-hover gives the tile a clear
+   "this is clickable" affordance, layered on top of the flat Editorial
+   .neu surface it already sits on (component-strategy: Bento owns the
+   grid/grouping, MD3 owns the interaction feedback). */
+.lesson-card{padding:1.5rem;display:flex;flex-direction:column;gap:.8rem;height:100%;text-decoration:none;color:var(--text-primary);
+  transition:box-shadow var(--duration-base) var(--ease-standard), transform var(--duration-base) var(--ease-standard);}
+.lesson-card:hover{box-shadow:var(--elevation-2);transform:translateY(-2px)}
 .lesson-card:hover .lesson-go{transform:translateX(4px)}
 [dir="rtl"] .lesson-card:hover .lesson-go{transform:translateX(-4px)}
+/* Secondary Bento zone (home page's tools grid): a denser, smaller-scale
+   grouping that visually reads as "lighter-weight than the 8 chapters"
+   without inventing a whole second card component. */
+.bento-dense .lesson-card{padding:1.25rem;gap:.5rem}
+.bento-dense .lesson-idx{width:38px;height:38px}
 .lesson-idx{
-  width:44px;height:44px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;
+  width:44px;height:44px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;
 }
 .lesson-go{display:flex;align-items:center;gap:.4rem;color:var(--accent-purple);font-weight:800;margin-top:auto;transition:transform .2s ease}
 
 /* comprehensive chapter-review lesson — same lesson-card, distinguishing accent */
-.lesson-card--review{border:2px solid var(--accent-orange)}
+/* Neo-Brutalism accent: this is the "achievement/highlight block" the
+   brief names — the one comprehensive-review lesson per chapter — so it
+   gets the hard-offset treatment instead of Bento's plain elevation. */
+.lesson-card--review{border:var(--border-brutal) solid var(--accent-orange);box-shadow:6px 6px 0 var(--accent-orange)}
+.lesson-card--review:hover{box-shadow:8px 8px 0 var(--accent-orange);transform:translateY(-2px)}
 .lesson-card--review .lesson-idx{background:linear-gradient(135deg,#ffd166,var(--accent-orange));font-size:1.35rem}
 
 /* empty-state (e.g. "chapters coming soon") */

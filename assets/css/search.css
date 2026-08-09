@@ -27,31 +27,21 @@ body.pbsearch-locked{overflow:hidden}
 }
 :root[data-theme="dark"] .pbsearch-backdrop{background:rgba(8,10,16,.6)}
 
+/* MD3 dialog surface — opaque, elevation-3, hairline border. Previously a
+   frosted-glass panel (backdrop-filter blur + translucency); the hybrid
+   brief explicitly rules out "excessive glassmorphism", so this is now a
+   solid surface like every other dialog/menu in the system. */
 .pbsearch-panel{
   position:relative;z-index:1;
   width:min(94vw,720px);
   max-height:min(82vh,780px);
   display:flex;flex-direction:column;
   border-radius:var(--radius-lg);
-  background:rgba(255,255,255,.7);
-  border:1px solid rgba(255,255,255,.4);
-  backdrop-filter:blur(22px) saturate(160%);
-  -webkit-backdrop-filter:blur(22px) saturate(160%);
-  box-shadow:0 24px 70px rgba(20,25,40,.28), inset 0 1px 0 rgba(255,255,255,.5);
+  background:var(--surface);
+  border:var(--border-thin) solid var(--border-color);
+  box-shadow:var(--elevation-3);
   animation:pbsearchPopIn .22s cubic-bezier(.22,.9,.36,1.1) both;
   overflow:hidden;
-}
-:root[data-theme="dark"] .pbsearch-panel{
-  background:rgba(36,42,53,.78);
-  border-color:rgba(255,255,255,.1);
-  box-shadow:0 24px 70px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.07);
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]) .pbsearch-panel{
-    background:rgba(36,42,53,.78);
-    border-color:rgba(255,255,255,.1);
-    box-shadow:0 24px 70px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.07);
-  }
 }
 
 @keyframes pbsearchFadeIn{from{opacity:0}to{opacity:1}}
@@ -75,7 +65,7 @@ body.pbsearch-locked{overflow:hidden}
 .pbsearch-clearbtn{
   border:none;background:var(--surface);color:var(--text-secondary);
   width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:.85rem;
-  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+  box-shadow:none;
   flex:0 0 auto;
 }
 .pbsearch-closebtn{width:38px;height:38px;flex:0 0 auto}
@@ -95,9 +85,10 @@ body.pbsearch-locked{overflow:hidden}
   padding:.4rem .85rem;border-radius:20px;font-size:.8rem;font-weight:700;
   border:none;cursor:pointer;white-space:nowrap;
   background:var(--surface);color:var(--text-secondary);
-  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
-  transition:transform .12s ease, color .15s ease;
+  border:var(--border-thin) solid var(--border-color);
+  transition:transform .12s ease, color .15s ease, background .15s ease;
 }
+.pbsearch-chip:hover{background:var(--state-hover)}
 .pbsearch-chip:hover{transform:translateY(-1px)}
 .pbsearch-chip.is-active{
   color:#fff;
@@ -115,13 +106,13 @@ body.pbsearch-locked{overflow:hidden}
   border-radius:var(--radius-sm);
   padding:.85rem 1rem;
   background:var(--surface);
-  box-shadow:3px 3px 8px var(--shadow-dark), -3px -3px 8px var(--shadow-light);
+  border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);
   animation:pbsearchCardIn .22s ease both;
   transition:box-shadow .15s ease, transform .12s ease;
 }
 .pbsearch-card:hover,.pbsearch-card.is-active{
   transform:translateY(-1px);
-  box-shadow:0 6px 16px rgba(76,89,220,.18), 3px 3px 8px var(--shadow-dark), -3px -3px 8px var(--shadow-light);
+  box-shadow:var(--elevation-2);
 }
 @keyframes pbsearchCardIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 .pbsearch-results .pbsearch-card:nth-child(n+2){animation-delay:0s}
@@ -192,15 +183,15 @@ body.pbsearch-locked{overflow:hidden}
 .pbsearch-suggest-chip{
   border:none;cursor:pointer;text-decoration:none;
   font-size:.82rem;font-weight:700;color:var(--text-primary);
-  background:var(--surface);border-radius:14px;padding:.45rem .8rem;
-  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+  background:var(--surface);border-radius:var(--radius-sm);padding:.45rem .8rem;
+  border:var(--border-thin) solid var(--border-color);
 }
 .pbsearch-suggest-chip:hover{color:var(--accent-purple)}
 .pbsearch-results-inline{display:flex;flex-direction:column;gap:.4rem}
 .pbsearch-lastopened{
   font-size:.85rem;font-weight:700;color:var(--text-primary);text-decoration:none;
   background:var(--surface);border-radius:var(--radius-sm);padding:.6rem .8rem;
-  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+  border:var(--border-thin) solid var(--border-color);
 }
 .pbsearch-lastopened:hover{color:var(--accent-blue)}
 
@@ -219,8 +210,8 @@ body.pbsearch-locked{overflow:hidden}
 }
 .pbsearch-footer kbd{
   display:inline-block;min-width:1.3em;text-align:center;
-  background:var(--surface);border-radius:5px;padding:.1rem .35rem;
-  box-shadow:1.5px 1.5px 3px var(--shadow-dark), -1.5px -1.5px 3px var(--shadow-light);
+  background:var(--surface);border-radius:var(--radius-xs);padding:.1rem .35rem;
+  border:var(--border-thin) solid var(--border-color);
   font-family:inherit;font-size:.85em;margin-inline-end:.15rem;
 }
 
