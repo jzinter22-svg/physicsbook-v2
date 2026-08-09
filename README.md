@@ -107,7 +107,7 @@ assets/
                                      language switcher, translation lookup,
                                      lang/dir attribute management
     site-home.js                    Home page behavior (theme toggle, reveal)
-    splash.js                       Home-page splash screen (4s intro, then
+    splash.js                       Home-page splash screen (2.4s intro, then
                                      fades into the hub content underneath).
                                      Shown once per browser — an inline
                                      script right after the splash markup in
@@ -229,14 +229,17 @@ a given page.
     `.quiz` (the outer card only; `.quiz-opt` items inside stay ordinary
     MD3), `.callout.warn`, and `.lesson-card--review` (the chapter's
     comprehensive-review highlight tile).
-  - **Rollout status**: complete. `theme.css`/`search.css`/`tools.css`
-    (every stylesheet loaded anywhere in the book) are fully converted —
-    no neumorphic dual light+dark shadow remains outside the `--shadow-
-    light`/`--shadow-dark` token *definitions* themselves, which stay
-    defined only because the home page's splash-screen loader
-    (`splash.css`, explicitly out of scope for this pass) still
-    legitimately consumes them. `tools.css`'s conversion follows the same
-    patterns as `theme.css`: `.formula-card`/`.dict-card` are flat
+  - **Rollout status**: complete, including the home-page splash screen
+    (`splash.css`), which now shares the same `.neu`-style flat surface +
+    `--elevation-3` pattern (no `backdrop-filter`, no translucent glass
+    card, no blurred decorative "orb" shapes). `theme.css`/`search.css`/
+    `tools.css`/`splash.css` (every stylesheet loaded anywhere in the book)
+    are fully converted — no neumorphic dual light+dark shadow remains
+    outside the `--shadow-light`/`--shadow-dark` token *definitions*
+    themselves, which stay defined because the Chapter 7 lesson-1 world-map
+    widget and `lesson-engine.js`'s table borders still legitimately
+    consume them. `tools.css`'s conversion follows the same patterns as
+    `theme.css`: `.formula-card`/`.dict-card` are flat
     Editorial surfaces, `.tools-chip`/`.units-jumplist`/`.calc-mode-btn`
     are MD3 outlined-to-filled toggle chips, `.units-input`/
     `.tools-searchbar` are flat MD3 fields, `.calc-display` is a flat

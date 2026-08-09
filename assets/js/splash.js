@@ -1,16 +1,20 @@
-/* Home-page splash screen: shows for exactly 4s, then fades into the hub
-   content that is already rendered underneath it, and removes itself.
+/* Home-page splash screen: shows for exactly DISPLAY_MS, then fades into the
+   hub content that is already rendered underneath it, and removes itself.
    Timing/state only — all visuals are pure CSS (see assets/css/splash.css).
    Shown once per browser (localStorage pb_splash_seen) — on every load
    after the first, index.html's own early inline script (right after the
    #splashScreen markup) already removes the element before this file even
    runs, so init()'s existing "if(!splash) return;" is what makes repeat
-   visits a no-op here. */
+   visits a no-op here.
+   DISPLAY_MS must match splash.css's .splash-progress-fill
+   splashProgressGrow duration exactly, so the loading bar reaches 100%
+   right as the splash disappears instead of visibly snapping or stalling
+   partway through. */
 (function(){
   "use strict";
 
   var SEEN_KEY = "pb_splash_seen";
-  var DISPLAY_MS = 4000;
+  var DISPLAY_MS = 2400;
   var FADE_MS = 600;
 
   function buildParticles(host){
