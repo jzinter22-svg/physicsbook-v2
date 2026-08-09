@@ -65,17 +65,18 @@ document order. Every block has a `type`:
 
 | type | renders as | key fields |
 |---|---|---|
-| `explanation` | `.card.neu` with `<h2>` | `heading`, `html` |
-| `definition` / `enumeration` | `.def-box` (تعريف / تعداد) | `label`, `html` |
+| `explanation` | `.lesson-explanation` (plain `<h2>`+`<p>`, no card — see lesson-engine.js's card-fatigue hierarchy) | `heading`, `html` |
+| `definition` / `enumeration` | `.def-box` (تعريف / تعداد), a lightweight bordered block, not an elevated card | `label`, `html` |
 | (def-box with a 🔍/`تعليل` label extracts as `explanation` too — see below) |
 | `formula` | `.rule-box` | `html` (contains the raw `$$...$$`/`\(...\)` LaTeX — **never translated**), optional `id` |
 | `callout` | `.callout.tip` | `icon`, `strong`, `html` |
 | `table` | a `<table>` inside `.card` | `heading`, `headers[]`, `rows[][]` |
 | `diagram` | `.diagram-card` | `heading`, `descHtml`, `svg` (raw markup, kept as one string — see "Diagrams" below), `caption` |
-| `example` | a problem `.example` + solution `.example` pair | `number`, `problemHtml`, `diagramSvg`/`diagramCaption` (optional), `solution: {given[], required, steps[], note, final}` |
+| `example` | **one** `.example` card — the question and, if present, its `solution` are combined into a single card at render time (split internally by a divider + "الحل" sub-heading, not a second nested card) | `number`, `problemHtml`, `diagramSvg`/`diagramCaption` (optional), `solution: {given[], required, steps[], note, final}` |
 | `simulation` | the widget's HTML chrome (heading, description, control labels, `<select>` options, preset/toggle buttons, static rule-box) | see "Interactive simulations" below |
 | `sectionIntro` | a bare `<h2>` (+ optional lead paragraph) introducing a group of examples | `heading`, `leadHtml` |
-| `paragraph` | a standalone `<p>` not attached to any heading | `html` |
+| `paragraph` | a standalone `<p class="lesson-paragraph">`, no card | `html` |
+| `list` | `.lesson-list` (plain optional `<h3>` + `<ol>`/`<ul>`, no card) | `heading`, `items[]`, `ordered` |
 
 A `def-box`'s **type is inferred from its label**: a 🔍/`تعليل` (scientific
 explanation) label extracts as `"explanation"`, a 🔢/`تعداد` (enumeration)

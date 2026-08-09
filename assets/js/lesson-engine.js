@@ -160,9 +160,13 @@
     switch(b.type){
       case "explanation":
         if(b.label !== undefined) return renderDefBox(b); // def-box (🔍 تعليل)
-        return '<div class="card neu"><h2>' + iconText(b.heading, "lightbulb") + "</h2><p>" + html(b.html) + "</p></div>";
+        // Level 1 (card-fatigue hierarchy): ordinary narrative explanation
+        // — normal document flow, no card. See .lesson-explanation in
+        // theme.css.
+        return '<div class="lesson-explanation"><h2>' + iconText(b.heading, "lightbulb") + "</h2><p>" + html(b.html) + "</p></div>";
       case "paragraph":
-        return '<div class="card neu"><p>' + html(b.html) + "</p></div>";
+        // Level 1: a standalone paragraph is never a card on its own.
+        return '<p class="lesson-paragraph">' + html(b.html) + "</p>";
       case "definition":
       case "enumeration":
         return renderDefBox(b);
@@ -179,7 +183,12 @@
       case "sectionIntro":
         return "<h2 style=\"margin-bottom:.25rem\">" + iconText(b.heading) + "</h2>" + (b.leadHtml ? '<p class="lead" style="margin-top:0">' + html(b.leadHtml) + "</p>" : "");
       case "list":
-        return '<div class="card neu">' + (b.heading ? '<h3 style="margin-top:0">' + iconText(b.heading, "clipboard") + "</h3>" : "") +
+        // Level 1: an ordinary educational list is not a "special semantic
+        // object" (checklist/warning/key-takeaways — those are already
+        // their own block types: enumeration def-box, callout, summary),
+        // so it renders as a plain heading + list, no card. See
+        // .lesson-list in theme.css.
+        return '<div class="lesson-list">' + (b.heading ? "<h3>" + iconText(b.heading, "clipboard") + "</h3>" : "") +
           (b.ordered
             ? '<ol class="obj-list">' + (b.items || []).map(function(it, i){
                 return '<li><span class="obj-num">' + (i + 1) + "</span><span>" + html(it) + "</span></li>";
@@ -210,6 +219,15 @@
       headRow + "</tr></thead><tbody>" + body + "</tbody></table></div>";
   }
 
+  // ONE example = ONE card (card-fatigue hierarchy, Level 3): the question
+  // and its solution are a single semantic unit, so — even though the
+  // underlying data model still keeps them as separate `b`/`b.solution`
+  // objects (content/README.md's schema, unchanged) — they're combined
+  // here into one wrapping .example div, split internally by
+  // .example-divider + an "الحل" sub-heading in .example-solution rather
+  // than a second nested .example card. Solution steps stay plain
+  // numbered/spaced .step rows (never their own card) — see .steps in
+  // theme.css, untouched by this refactor.
   function renderExample(b){
     // Lessons 1-7 use the standard numbered-badge "مثال (N)" title. Lesson
     // 8's mcq/illal/theory/problems items carry their own literal label
@@ -225,13 +243,13 @@
     if(b.diagramSvg){
       out += '<div class="diagram-wrap" style="margin-top:1rem">' + b.diagramSvg + '<span class="diagram-caption">' + esc(b.diagramCaption) + "</span></div>";
     }
-    out += "</div>";
-    if(!b.solution) return out;
+    if(!b.solution){ out += "</div>"; return out; }
     var sol = b.solution;
     var stepsId = "steps-ex" + b.number;
     var solTitle = sol.label != null ? esc(sol.label) : esc((window.PBI18n && window.PBI18n.t("common.detailedSolution")) || "الحل التفصيلي");
-    out += '<div class="example" style="border-inline-start:4px solid var(--accent-blue)">' +
-      '<div class="example-head"><div class="example-title" style="color:var(--accent-blue-text)"><span class="example-badge" style="background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple))"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg></span> ' +
+    out += '<hr class="example-divider">' +
+      '<div class="example-solution">' +
+      '<div class="example-head"><div class="example-title" style="color:var(--accent-blue-text)"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg> ' +
       solTitle + "</div>" +
       '<button class="neu-btn" data-reveal-steps="' + stepsId + '" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">' +
       esc((window.PBI18n && window.PBI18n.t("common.showSteps")) || "إظهار خطوات الحل") + "</button></div>";
@@ -266,7 +284,7 @@
     if(sol.final){
       out += '<div class="exercise-final">' + iconHtml(sol.final, "check-circle") + "</div>";
     }
-    out += "</div>";
+    out += "</div></div>";
     return out;
   }
 

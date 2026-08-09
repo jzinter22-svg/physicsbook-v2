@@ -556,6 +556,37 @@ body{
 .card{padding:1.75rem;margin-bottom:1.5rem}
 .card h2{margin-top:0;display:flex;align-items:center;gap:.6rem;font-size:var(--text-xl)}
 .card h3{font-size:var(--text-lg)}
+
+/* ===== Level 1 — Editorial content flow (card-fatigue hierarchy) =====
+   Ordinary narrative lesson content — plain prose, an explanation, a
+   non-special list — sits directly in the page's normal document flow
+   with no visible card: no background, no border, no shadow. Whitespace
+   and typography alone carry the separation, the way a real textbook
+   reads. Reserve an actual card (.def-box, .callout, .example, .quiz,
+   simulation's .card.neu, etc.) for content that genuinely benefits from
+   a container — see each of those rules' own comments. */
+.lesson-paragraph{margin:0 0 1.35rem;font-size:1.05rem;line-height:var(--leading-normal)}
+.lesson-paragraph:last-child{margin-bottom:0}
+.lesson-explanation{margin-bottom:1.75rem}
+.lesson-explanation h2{margin:0 0 .6rem;display:flex;align-items:center;gap:.6rem;font-size:var(--text-xl)}
+.lesson-explanation p{margin:0 0 1rem;font-size:1.05rem;line-height:var(--leading-normal)}
+.lesson-explanation p:last-child{margin-bottom:0}
+.lesson-list{margin-bottom:1.75rem}
+.lesson-list h3{margin:0 0 .6rem;display:flex;align-items:center;gap:.5rem;font-size:var(--text-lg)}
+
+/* Lesson objectives / summary: a Level 2 lightweight landmark list, not
+   a full Level 3 elevated card — these are "key takeaways," one of the
+   Level 2 categories, not interactive content. Scoped to these two
+   static sections specifically (rather than retuning .card.neu itself,
+   which every genuinely card-worthy surface on the page also uses) so
+   only these two demote; .card.neu keeps its full surface everywhere
+   else it's already correctly used (simulations, tables, diagrams). */
+#objectives .card.neu,
+#summary .card.neu{
+  box-shadow:var(--elevation-0);
+  background:var(--surface-muted);
+  border-inline-start:4px solid var(--accent-purple);
+}
 /* MD3 assist chip: flat tonal fill, no shadow, pill radius */
 .tag{
   display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .9rem;border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:700;
@@ -576,13 +607,15 @@ body{
   background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));color:#fff;font-weight:800;font-size:.9rem;
 }
 
-/* Definition box — flat Editorial surface, hairline border, the existing
-   colored inline-start rule is kept as-is: it's already the right Swiss-
-   editorial convention for "what kind of box is this" and needs no
-   shadow to read clearly. */
+/* Definition box — Level 2 (card-fatigue hierarchy): a lightweight
+   container, not a raised card. Flat surface, hairline border, the
+   colored inline-start rule doing the "what kind of box is this"
+   signaling on its own — box-shadow:none (var(--elevation-0)) keeps it
+   visually lighter than an .example/.quiz, which genuinely earn the
+   Level 3 elevated treatment. */
 .def-box{
   position:relative;padding:1.5rem 1.75rem;border-radius:var(--radius-md);
-  background:var(--surface);border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);
+  background:var(--surface);border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-0);
   border-inline-start:5px solid var(--accent-purple);
   overflow-x:auto;
 }
@@ -597,12 +630,14 @@ body{
   overflow-x:auto;
 }
 
-/* Note / tip callout — .tip stays Editorial-flat; .warn is escalated to a
-   Neo-Brutalist accent further down (see "Neo-Brutalism accents"), since
+/* Note / tip callout — .tip stays Editorial-flat and Level 2 (same
+   no-shadow reasoning as .def-box above — a callout is "an important
+   note," not a raised surface); .warn is escalated to a Neo-Brutalist
+   accent further down (see "Neo-Brutalism accents"), since
    "important warnings" is one of the five categories that style is
    reserved for. */
 .callout{display:flex;gap:.8rem;padding:1.1rem 1.3rem;border-radius:var(--radius-md);background:var(--surface);
-  border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);align-items:flex-start}
+  border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-0);align-items:flex-start}
 .callout.tip{border-inline-start:5px solid var(--accent-green)}
 /* Neo-Brutalism accent: "important warnings" is named explicitly in the
    brief's component table, so .warn escalates past the flat Editorial
@@ -611,7 +646,14 @@ body{
 .callout .icon{font-size:1.4rem;flex:0 0 auto}
 .callout>span:last-child{min-width:0;overflow-x:auto}
 
-/* Example / step-by-step */
+/* Example / step-by-step — Level 3 (card-fatigue hierarchy): a worked
+   example is exactly the kind of content that earns a real card. One
+   example = ONE .example card: the question and its solution are a
+   single semantic unit (see renderExample() in lesson-engine.js), split
+   internally by .example-divider + the "الحل" sub-heading in
+   .example-solution, never by a second nested card — a card inside a
+   card would just recreate the fatigue this whole hierarchy exists to
+   remove. */
 .example{
   border-radius:var(--radius-lg);padding:1.6rem;margin:1.5rem 0;
   background:var(--surface);border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);
@@ -623,9 +665,15 @@ body{
   color:var(--text-on-light-accent); /* orange/pink stay light+pastel (see :root), so dark-on-light instead of white-on-light */
   background:linear-gradient(135deg,var(--accent-orange),var(--accent-pink));
 }
+/* The question, given stronger visual emphasis (a distinct recessed
+   surface) than the solution below it, which relies on typography/
+   spacing/the divider instead — see renderExample()'s comment. */
 .example-problem{padding:1rem 1.2rem;border-radius:var(--radius-sm);background:var(--surface-muted);
   border:var(--border-thin) solid var(--border-color);margin-bottom:1rem;
   overflow-x:auto}
+/* Subtle rule separating the question from its solution inside one
+   .example card — the only "divider" between them; no second card. */
+.example-divider{border:none;border-top:1px solid var(--border-color);margin:1.3rem 0}
 
 .steps{list-style:none;margin:0;padding:0;display:grid;gap:0}
 .step{display:grid;grid-template-columns:38px 1fr;gap:.8rem;padding:.4rem 0;opacity:0;transform:translateY(8px);animation:stepIn .5s ease forwards}
