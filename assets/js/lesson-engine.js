@@ -49,7 +49,18 @@
     "📘": "logo", // hero.eyebrow's only use across every chapter's index.json — the book-brand tagline, so it gets the real site logo, not a generic book glyph
     "📚": "books",
     "📌": "pin", "🔍": "search", "🔢": "list-numbers", "🏆": "trophy",
-    "✅": "check-circle", "✓": "check-circle", "❓": "help-circle", "⏱": "clock"
+    "✅": "check-circle", "✓": "check-circle", "❓": "help-circle", "⏱": "clock",
+    "📊": "table", "💬": "lightbulb", "🤔": "help-circle", "📝": "pencil",
+    "⚠️": "alert-triangle", "⚠": "alert-triangle",
+    "↔️": "repeat", "↔": "repeat", "⚡": "atom", "🌙": "globe",
+    "🔄": "refresh", "🔌": "toolbox", "🧩": "help-circle", "🧮": "calculator",
+    "⚙️": "toolbox", "⚙": "toolbox", "➕": "atom", "➖": "atom",
+    "🌍": "globe", "🌐": "globe", "📈": "ruler", "📡": "telescope",
+    "🔟": "list-numbers", "🔺": "toolbox", "🛣️": "ruler", "🛣": "ruler",
+    "🛰️": "telescope", "🛰": "telescope", "✏️": "pencil", "✏": "pencil",
+    "🔁": "repeat", "↺": "refresh", "🔥": "flame",
+    "✈️": "toolbox", "✈": "toolbox", "🍳": "home",
+    "🏗️": "toolbox", "🏗": "toolbox", "🦷": "atom", "🧯": "alert-triangle"
   };
   // First code point of a leading emoji (optionally followed by the U+FE0F
   // variation selector) plus the run of whitespace after it — matches
@@ -78,6 +89,14 @@
   function iconHtml(raw, fallbackIcon){
     var s = splitIconPrefix(raw);
     return iconMarkup(s.icon || fallbackIcon) + html(s.rest);
+  }
+  // Field that IS the icon (a single emoji char, e.g. callout.icon) rather
+  // than text with a leading emoji prefix — EMOJI_PREFIX_RE's required
+  // trailing whitespace never matches a bare emoji, so this looks the
+  // whole string up in the map directly instead of splitting a prefix.
+  function emojiIcon(raw, fallbackIcon){
+    var key = raw && (EMOJI_ICON_MAP[raw] || EMOJI_ICON_MAP[raw.replace(/️$/, "")]);
+    return iconMarkup(key || fallbackIcon);
   }
 
   function assetsBase(){ return document.documentElement.getAttribute("data-assets") || ""; }
@@ -148,19 +167,19 @@
       case "enumeration":
         return renderDefBox(b);
       case "callout":
-        return '<div class="callout tip"><span class="icon">' + esc(b.icon) + "</span><span>" + (b.strong ? "<b>" + esc(b.strong) + "</b> " : "") + html(b.html) + "</span></div>";
+        return '<div class="callout tip"><span class="icon">' + emojiIcon(b.icon, "lightbulb") + "</span><span>" + (b.strong ? "<b>" + esc(b.strong) + "</b> " : "") + html(b.html) + "</span></div>";
       case "formula":
         return '<div class="rule-box"' + (b.id ? ' id="' + esc(b.id) + '"' : "") + ">" + html(b.html) + "</div>";
       case "table":
         return renderTable(b);
       case "diagram":
-        return '<div class="diagram-card neu"><div class="diagram-wrap">' + (b.heading ? "<h3 style=\"margin-top:0\">" + esc(b.heading) + "</h3>" : "") +
+        return '<div class="diagram-card neu"><div class="diagram-wrap">' + (b.heading ? "<h3 style=\"margin-top:0\">" + iconText(b.heading, "joystick") + "</h3>" : "") +
           (b.descHtml ? "<p>" + html(b.descHtml) + "</p>" : "") + html(b.svg) +
           '<span class="diagram-caption">' + esc(b.caption) + "</span></div></div>";
       case "sectionIntro":
-        return "<h2 style=\"margin-bottom:.25rem\">" + esc(b.heading) + "</h2>" + (b.leadHtml ? '<p class="lead" style="margin-top:0">' + html(b.leadHtml) + "</p>" : "");
+        return "<h2 style=\"margin-bottom:.25rem\">" + iconText(b.heading) + "</h2>" + (b.leadHtml ? '<p class="lead" style="margin-top:0">' + html(b.leadHtml) + "</p>" : "");
       case "list":
-        return '<div class="card neu">' + (b.heading ? '<h3 style="margin-top:0">' + esc(b.heading) + "</h3>" : "") +
+        return '<div class="card neu">' + (b.heading ? '<h3 style="margin-top:0">' + iconText(b.heading, "clipboard") + "</h3>" : "") +
           (b.ordered
             ? '<ol class="obj-list">' + (b.items || []).map(function(it, i){
                 return '<li><span class="obj-num">' + (i + 1) + "</span><span>" + html(it) + "</span></li>";
@@ -186,7 +205,7 @@
       }).join("") + "</tr>";
     }).join("");
     return '<div class="card neu" style="overflow-x:auto">' +
-      (b.heading ? '<h2 style="margin-bottom:.8rem">' + esc(b.heading) + "</h2>" : "") +
+      (b.heading ? '<h2 style="margin-bottom:.8rem">' + iconText(b.heading, "table") + "</h2>" : "") +
       '<table style="width:100%;border-collapse:collapse;text-align:center;min-width:480px"><thead><tr style="background:var(--surface)">' +
       headRow + "</tr></thead><tbody>" + body + "</tbody></table></div>";
   }
@@ -198,7 +217,7 @@
     // badge chip, just that label as-is (matching the source markup, which
     // has no .example-badge there either).
     var titleHtml = b.label != null
-      ? esc(b.label)
+      ? iconText(b.label)
       : '<span class="example-badge">' + b.number + "</span> " + esc((window.PBI18n && window.PBI18n.t("common.example")) || "مثال") + " (" + b.number + ")";
     var out = '<div class="example">' +
       '<div class="example-head"><div class="example-title">' + titleHtml + "</div></div>" +
@@ -242,10 +261,10 @@
       if(sol.labels) currentSimLabels["ex" + b.number] = sol.labels;
     }
     if(sol.note){
-      out += '<div class="callout tip" style="margin-top:.8rem"><span class="icon">' + esc(sol.note.icon) + "</span><span>" + (sol.note.strong ? "<b>" + esc(sol.note.strong) + "</b> " : "") + html(sol.note.html) + "</span></div>";
+      out += '<div class="callout tip" style="margin-top:.8rem"><span class="icon">' + emojiIcon(sol.note.icon, "lightbulb") + "</span><span>" + (sol.note.strong ? "<b>" + esc(sol.note.strong) + "</b> " : "") + html(sol.note.html) + "</span></div>";
     }
     if(sol.final){
-      out += '<div class="exercise-final">' + html(sol.final) + "</div>";
+      out += '<div class="exercise-final">' + iconHtml(sol.final, "check-circle") + "</div>";
     }
     out += "</div>";
     return out;
@@ -269,7 +288,7 @@
       var dataAttrs = "";
       for(var k in (btn.data || {})){ dataAttrs += " " + esc(k) + '="' + esc(btn.data[k]) + '"'; }
       return '<button class="' + esc(btn.class || "neu-btn") + '"' + (btn.id ? ' id="' + esc(btn.id) + '"' : "") +
-        (btn.style ? ' style="' + esc(btn.style) + '"' : "") + dataAttrs + ">" + html(btn.html) + "</button>";
+        (btn.style ? ' style="' + esc(btn.style) + '"' : "") + dataAttrs + ">" + iconHtml(btn.html) + "</button>";
     });
     // .io-panel is a CSS grid (one row per direct child): a lone toggle
     // button (the common case, e.g. a "reverse direction" button) sitting
@@ -281,7 +300,7 @@
       ? '<div class="io-row" style="flex-wrap:wrap;gap:.5rem">' + buttonEls.join("") + "</div>"
       : buttonEls.join("");
     var presets = (b.presets || []).map(function(p){
-      return '<button class="neu-btn" data-preset="' + esc(p.value) + '">' + esc(p.label) + "</button>";
+      return '<button class="neu-btn" data-preset="' + esc(p.value) + '">' + iconText(p.label) + "</button>";
     }).join("");
     var select = (b.selectId && b.selectOptions)
       ? '<select id="' + esc(b.selectId) + '" class="neu-btn" style="width:100%;text-align:center;cursor:pointer">' +

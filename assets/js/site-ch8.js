@@ -21,7 +21,7 @@
       { href: "lessons/lesson-8.html", titleKey: "ch8.lesson8NavTitle" },
       { href: "lessons/lesson-9.html", titleKey: "ch8.lesson9NavTitle" }
     ],
-    bgSymbols: ["Fe", "Cu", "Al", "⚙", "⚗", "🔩"]
+    bgSymbols: ["Fe", "Cu", "Al", "Sn", "Zn", "Ni"]
   };
   // ---------------------------------------------------------------------------
 

@@ -17,7 +17,7 @@
       { href: "lessons/lesson-4.html", titleKey: "ch7.lesson4NavTitle" },
       { href: "lessons/lesson-5.html", titleKey: "ch7.lesson5NavTitle" }
     ],
-    bgSymbols: ["🛢️", "⛽", "C", "H", "Δ", "°C"]
+    bgSymbols: ["CH₄", "C₈H₁₈", "C", "H", "Δ", "°C"]
   };
   // ---------------------------------------------------------------------------
 

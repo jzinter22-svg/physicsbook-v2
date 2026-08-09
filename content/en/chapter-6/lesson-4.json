@@ -87,7 +87,7 @@
     {
       "type": "enumeration",
       "label": "🔢 List — The three types of pumping technique",
-      "html": "<span class=\"def-label\" style=\"color:var(--accent-green)\">🔢 List — The three types of pumping technique</span>\n<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>1- Optical Pumping Optical Pumping.</li>\n<li>2- Electrical Pumping Electrical Pumping.</li>\n<li>3- Chemical Pumping Chemical Pumping.</li>\n</ol>",
+      "html": "<ol style=\"margin:.4rem 0 0;padding-inline-start:1.3rem;display:grid;gap:.4rem\">\n<li>1- Optical Pumping Optical Pumping.</li>\n<li>2- Electrical Pumping Electrical Pumping.</li>\n<li>3- Chemical Pumping Chemical Pumping.</li>\n</ol>",
       "sectionGroup": 7,
       "sectionId": null,
       "sectionNavLabel": null

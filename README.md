@@ -290,9 +290,16 @@ a given page.
   Sidebar sub-nav landmarks (`<section id="..." data-navlabel="..."
   data-navicon="...">`) carry the icon key separately from the (now
   emoji-free) nav label text; `data-navicon` maps to the same
-  `assets/icons/sprite.svg#icon-` symbol set. Quoted example/content text
-  (e.g. world-map captions, laser-type labels) is left as-is — only
-  decorative UI icons were converted.
+  `assets/icons/sprite.svg#icon-` symbol set. This now also covers the
+  JSON-driven lesson content pipeline (`assets/js/lesson-engine.js`'s
+  `EMOJI_ICON_MAP`/`splitIconPrefix`/`iconText`/`iconHtml`/`emojiIcon`):
+  every structural heading, def-box/callout/example label, table/diagram/list
+  heading, simulation button and preset label that content JSON authors with
+  a leading emoji now renders as a sprite icon, not the raw character —
+  content JSON itself is never rewritten, only converted at render time.
+  Quoted example/content text (e.g. world-map captions, laser/alloy-widget
+  callout notes, in-simulation status readouts) is left as-is — only
+  structural UI labels were converted.
 - **Per-chapter color identity**: each of the 8 chapters has its own
   two-stop gradient, `--ch<N>-accent-1`/`--ch<N>-accent-2` in `theme.css`'s
   `:root`, chosen to evoke that chapter's actual subject (e.g. laser-red→

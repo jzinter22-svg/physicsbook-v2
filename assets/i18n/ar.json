@@ -70,7 +70,7 @@
     "lesson5NavTitle": "5) التعجيل الزاوي والحركة المنتظمة",
     "lesson6NavTitle": "6) عزم القصور الذاتي",
     "lesson7NavTitle": "7) الطاقة والشغل والزخم الزاوي",
-    "lesson8NavTitle": "8) 🏆 الاختبار الشامل للفصل"
+    "lesson8NavTitle": "8) الاختبار الشامل للفصل"
   },
   "ch2": {
     "sidebarSubtitle": "التداخل والاستقطاب والحيود والاستطارة",
@@ -80,7 +80,7 @@
     "lesson4NavTitle": "4) الحيود وتطبيقاته",
     "lesson5NavTitle": "5) الاستقطاب",
     "lesson6NavTitle": "6) استطارة الضوء",
-    "lesson7NavTitle": "7) 🏆 الاختبار الشامل للفصل"
+    "lesson7NavTitle": "7) الاختبار الشامل للفصل"
   },
   "ch3": {
     "sidebarSubtitle": "الحث الكهرومغناطيسي",
@@ -89,7 +89,7 @@
     "lesson3NavTitle": "3) التيارات الدوامة والحث الذاتي",
     "lesson4NavTitle": "4) المولد الكهربائي",
     "lesson5NavTitle": "5) المحرك الكهربائي",
-    "lesson6NavTitle": "6) 🏆 الاختبار الشامل للفصل"
+    "lesson6NavTitle": "6) الاختبار الشامل للفصل"
   },
   "ch4": {
     "sidebarSubtitle": "دوائر التيار المتناوب",
@@ -100,7 +100,7 @@
     "lesson5NavTitle": "5) ربط مقاومة مع محث أو متسعة على التوالي",
     "lesson6NavTitle": "6) ربط المقاومة والمحث والمتسعة على التوالي",
     "lesson7NavTitle": "7) المحولة الكهربائية",
-    "lesson8NavTitle": "8) 🏆 الاختبار الشامل للفصل"
+    "lesson8NavTitle": "8) الاختبار الشامل للفصل"
   },
   "ch5": {
     "sidebarSubtitle": "المواد شبه الموصلة والأجهزة الإلكترونية",
@@ -110,7 +110,7 @@
     "lesson4NavTitle": "4) الترانزستور",
     "lesson5NavTitle": "5) البث الكهرومغناطيسي",
     "lesson6NavTitle": "6) الرادار",
-    "lesson7NavTitle": "7) 🏆 الاختبار الشامل للفصل"
+    "lesson7NavTitle": "7) الاختبار الشامل للفصل"
   },
   "ch6": {
     "sidebarSubtitle": "الليزر والبلازما",
@@ -123,7 +123,7 @@
     "lesson7NavTitle": "7) بعض تطبيقات الليزر",
     "lesson8NavTitle": "8) البلازما",
     "lesson9NavTitle": "9) بعض تطبيقات البلازما",
-    "lesson10NavTitle": "10) 🏆 الاختبار الشامل للفصل"
+    "lesson10NavTitle": "10) الاختبار الشامل للفصل"
   },
   "ch7": {
     "sidebarSubtitle": "النفط الخام",
@@ -131,7 +131,7 @@
     "lesson2NavTitle": "2) التركيب الكيميائي للنفط الخام",
     "lesson3NavTitle": "3) إستخراج النفط الخام",
     "lesson4NavTitle": "4) نواتج التكرير",
-    "lesson5NavTitle": "5) 🏆 الاختبار الشامل للفصل"
+    "lesson5NavTitle": "5) الاختبار الشامل للفصل"
   },
   "ch8": {
     "sidebarSubtitle": "الفلزات والسبائك",
@@ -143,6 +143,6 @@
     "lesson6NavTitle": "6) طرائق صنع السبائك",
     "lesson7NavTitle": "7) استعمالات السبائك",
     "lesson8NavTitle": "8) بعض أنواع السبائك المستعملة في البيئة العراقية",
-    "lesson9NavTitle": "9) 🏆 الاختبار الشامل للفصل"
+    "lesson9NavTitle": "9) الاختبار الشامل للفصل"
   }
 }

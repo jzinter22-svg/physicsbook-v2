@@ -70,7 +70,7 @@
     "lesson5NavTitle": "5) Angular Acceleration & Uniform Motion",
     "lesson6NavTitle": "6) Moment of Inertia",
     "lesson7NavTitle": "7) Energy, Work & Angular Momentum",
-    "lesson8NavTitle": "8) 🏆 Comprehensive Chapter Review"
+    "lesson8NavTitle": "8) Comprehensive Chapter Review"
   },
   "ch2": {
     "sidebarSubtitle": "Interference, Polarization, Diffraction & Scattering",
@@ -80,7 +80,7 @@
     "lesson4NavTitle": "4) Diffraction and Its Applications",
     "lesson5NavTitle": "5) Polarization",
     "lesson6NavTitle": "6) Light Scattering",
-    "lesson7NavTitle": "7) 🏆 Comprehensive Chapter Review"
+    "lesson7NavTitle": "7) Comprehensive Chapter Review"
   },
   "ch3": {
     "sidebarSubtitle": "Electromagnetic Induction",
@@ -89,7 +89,7 @@
     "lesson3NavTitle": "3) Eddy Currents & Self-Induction",
     "lesson4NavTitle": "4) The Electric Generator",
     "lesson5NavTitle": "5) The Electric Motor",
-    "lesson6NavTitle": "6) 🏆 Comprehensive Chapter Review"
+    "lesson6NavTitle": "6) Comprehensive Chapter Review"
   },
   "ch4": {
     "sidebarSubtitle": "AC Circuits",
@@ -100,7 +100,7 @@
     "lesson5NavTitle": "5) Resistance with an Inductor or Capacitor in Series",
     "lesson6NavTitle": "6) Resistance, Inductor & Capacitor in Series",
     "lesson7NavTitle": "7) The Electrical Transformer",
-    "lesson8NavTitle": "8) 🏆 Comprehensive Chapter Review"
+    "lesson8NavTitle": "8) Comprehensive Chapter Review"
   },
   "ch5": {
     "sidebarSubtitle": "Semiconductor Materials & Electronic Devices",
@@ -110,7 +110,7 @@
     "lesson4NavTitle": "4) The Transistor",
     "lesson5NavTitle": "5) Electromagnetic Broadcasting",
     "lesson6NavTitle": "6) Radar",
-    "lesson7NavTitle": "7) 🏆 Comprehensive Chapter Review"
+    "lesson7NavTitle": "7) Comprehensive Chapter Review"
   },
   "ch6": {
     "sidebarSubtitle": "Laser and Plasma",
@@ -123,7 +123,7 @@
     "lesson7NavTitle": "7) Applications of Laser",
     "lesson8NavTitle": "8) Plasma",
     "lesson9NavTitle": "9) Applications of Plasma",
-    "lesson10NavTitle": "10) 🏆 Comprehensive Chapter Review"
+    "lesson10NavTitle": "10) Comprehensive Chapter Review"
   },
   "ch7": {
     "sidebarSubtitle": "Crude Oil",
@@ -131,7 +131,7 @@
     "lesson2NavTitle": "2) Chemical Composition of Crude Oil",
     "lesson3NavTitle": "3) Extraction of Crude Oil",
     "lesson4NavTitle": "4) Refining Products",
-    "lesson5NavTitle": "5) 🏆 Comprehensive Chapter Review"
+    "lesson5NavTitle": "5) Comprehensive Chapter Review"
   },
   "ch8": {
     "sidebarSubtitle": "Metals and Alloys",
@@ -143,6 +143,6 @@
     "lesson6NavTitle": "6) Methods of Making Alloys",
     "lesson7NavTitle": "7) Uses of Alloys",
     "lesson8NavTitle": "8) Some Alloys Used in the Iraqi Environment",
-    "lesson9NavTitle": "9) 🏆 Comprehensive Chapter Review"
+    "lesson9NavTitle": "9) Comprehensive Chapter Review"
   }
 }
