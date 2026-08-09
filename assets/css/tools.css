@@ -22,11 +22,11 @@
   text-decoration:none;padding:.5rem 1rem;border-radius:16px;
   transition:color .15s ease, background .15s ease;
 }
-.tools-subnav-link:hover{color:var(--accent-purple)}
+.tools-subnav-link:hover{color:var(--accent-purple);background:var(--state-hover)}
 .tools-subnav-link.is-active{
   color:#fff;
   background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
-  box-shadow:0 4px 12px rgba(76,89,220,.3);
+  box-shadow:var(--elevation-1);
 }
 
 /* ===== Shared page hero ===== */
@@ -34,14 +34,18 @@
 .tools-hero h1{margin:.2rem 0;font-size:clamp(1.6rem,4vw,2.2rem)}
 .tools-hero p{color:var(--text-secondary);max-width:60ch;margin:0 auto;font-weight:600}
 
-/* ===== Shared instant-search bar (Formula Reference / Dictionary) ===== */
+/* ===== Shared instant-search bar (Formula Reference / Dictionary) =====
+   MD3 text field: flat surface + hairline border, no neumorphic inset
+   illusion (mirrors .neu-input's conversion in theme.css). */
 .tools-searchbar{
   display:flex;align-items:center;gap:.6rem;
   padding:.85rem 1.1rem;margin:1.2rem 0;
   border-radius:var(--radius-md);
   background:var(--surface);
-  box-shadow:inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);
+  border:var(--border-thin) solid var(--border-color);
+  transition:border-color var(--duration-base) var(--ease-standard);
 }
+.tools-searchbar:focus-within{border-color:var(--accent-purple)}
 .tools-searchbar input{
   flex:1;border:none;background:transparent;font-family:inherit;
   font-size:1.02rem;font-weight:600;color:var(--text-primary);outline:none;
@@ -50,17 +54,21 @@
 .tools-searchbar .icon{font-size:1.15rem;opacity:.7}
 .tools-resultcount{color:var(--text-faint);font-size:.85rem;font-weight:700;white-space:nowrap}
 
-/* ===== Shared chapter filter chips ===== */
+/* ===== Shared chapter filter chips =====
+   MD3 filter chip: outlined (bordered, no shadow) when unselected, filled
+   gradient when selected — same selected/unselected split as .quiz-opt's
+   correct/wrong states, just for a toggle instead of a result. */
 .tools-filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
 .tools-chip{
-  border:none;cursor:pointer;font-weight:700;font-size:.82rem;
-  padding:.45rem .9rem;border-radius:18px;color:var(--text-secondary);
+  border:var(--border-thin) solid var(--border-color);cursor:pointer;font-weight:700;font-size:.82rem;
+  padding:.45rem .9rem;border-radius:var(--radius-full);color:var(--text-secondary);
   background:var(--surface);
-  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+  transition:background var(--duration-base) var(--ease-standard);
 }
+.tools-chip:hover{background:var(--state-hover)}
 .tools-chip.is-active{
   color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
-  box-shadow:0 4px 12px rgba(76,89,220,.3);
+  border-color:transparent;box-shadow:var(--elevation-1);
 }
 
 .tools-emptystate{
@@ -70,11 +78,13 @@
 
 /* ===== Module 1: Formula Reference ===== */
 .formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.1rem}
+/* Editorial content surface — flat, hairline border, minimal elevation
+   (mirrors .def-box/.example in theme.css). */
 .formula-card{
   display:flex;flex-direction:column;gap:.6rem;
   padding:1.25rem;border-radius:var(--radius-md);
   background:var(--surface);
-  box-shadow:5px 5px 12px var(--shadow-dark), -5px -5px 12px var(--shadow-light);
+  border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);
 }
 .formula-card-crumbs{font-size:.75rem;font-weight:700;color:var(--accent-purple)}
 .formula-card-title{font-weight:800;font-size:1rem;color:var(--text-primary);line-height:1.6}
@@ -112,10 +122,11 @@
 }
 .dict-group:first-child .dict-letter{margin-top:0}
 .dict-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.9rem}
+/* Editorial content surface, same treatment as .formula-card above. */
 .dict-card{
   padding:1.1rem 1.2rem;border-radius:var(--radius-md);
   background:var(--surface);
-  box-shadow:4px 4px 10px var(--shadow-dark), -4px -4px 10px var(--shadow-light);
+  border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);
   display:flex;flex-direction:column;gap:.45rem;
 }
 .dict-term{font-weight:800;font-size:1rem;color:var(--text-primary)}
@@ -127,13 +138,14 @@
 .dict-card-open:hover{text-decoration:underline}
 
 /* ===== Module 3: Units & Conversion Center ===== */
+/* MD3 outlined chip, same pattern as .tools-chip above. */
 .units-jumplist{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.6rem}
 .units-jumplist a{
   font-size:.78rem;font-weight:700;color:var(--text-secondary);text-decoration:none;
-  background:var(--surface);border-radius:14px;padding:.4rem .8rem;
-  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+  background:var(--surface);border:var(--border-thin) solid var(--border-color);border-radius:var(--radius-full);padding:.4rem .8rem;
+  transition:background var(--duration-base) var(--ease-standard),color .15s ease;
 }
-.units-jumplist a:hover{color:var(--accent-purple)}
+.units-jumplist a:hover{color:var(--accent-purple);background:var(--state-hover)}
 
 .units-category{padding:1.5rem 1.5rem 1.75rem;margin-bottom:1.4rem;scroll-margin-top:calc(var(--header-h) + 70px)}
 .units-cat-head{display:flex;align-items:center;gap:.8rem;margin-bottom:1.1rem}
@@ -148,20 +160,23 @@
 .units-converter-row{
   display:grid;grid-template-columns:1fr 1fr auto 1fr;gap:.6rem;align-items:center;
 }
+/* MD3 field, same conversion as .neu-input in theme.css. */
 .units-input,.units-select{
   font-family:inherit;font-size:.95rem;font-weight:700;color:var(--text-primary);
-  border:none;border-radius:var(--radius-sm);padding:.7rem .8rem;
+  border:var(--border-thin) solid var(--border-color);border-radius:var(--radius-sm);padding:.7rem .8rem;
   background:var(--surface);
-  box-shadow:inset 3px 3px 7px var(--shadow-dark), inset -3px -3px 7px var(--shadow-light);
-  width:100%;
+  width:100%;transition:border-color var(--duration-base) var(--ease-standard);
 }
+.units-input:focus,.units-select:focus{border-color:var(--accent-purple)}
+/* MD3 icon button — transparent at rest, tonal state-layer on hover
+   (mirrors .neu-icon-btn). */
 .units-swap{
   cursor:pointer;width:38px;height:38px;border-radius:50%;
   display:flex;align-items:center;justify-content:center;font-size:1.1rem;
-  background:var(--surface);color:var(--accent-purple);
-  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
-  border:none;
+  background:transparent;color:var(--accent-purple);
+  border:none;transition:background var(--duration-base) var(--ease-standard);
 }
+.units-swap:hover{background:var(--state-hover)}
 .units-result{
   margin-top:1rem;padding:.9rem 1.1rem;border-radius:var(--radius-sm);
   background:rgba(47,209,143,.1);font-weight:800;font-size:1.05rem;color:var(--text-primary);
@@ -181,34 +196,39 @@
 .units-formula-note,.units-example{font-size:.82rem;color:var(--text-secondary);margin:.5rem 0 0;line-height:1.7}
 .units-example{color:var(--accent-purple);font-weight:700}
 
-/* ===== Module 4: Scientific Calculator ===== */
+/* ===== Module 4: Scientific Calculator =====
+   Editorial container (.calc-wrap) housing MD3 controls — same content-
+   vs-interaction split as the in-lesson .example/.quiz pattern. */
 .calc-wrap{
   max-width:560px;margin:0 auto;
   padding:1.4rem;border-radius:var(--radius-lg);
   background:var(--surface);
-  box-shadow:8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
+  border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);
 }
 .calc-toprow{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.8rem;flex-wrap:wrap}
 .calc-mode-group{display:flex;gap:.4rem}
+/* MD3 outlined/filled toggle, same is-active split as .tools-chip. */
 .calc-mode-btn{
-  font-size:.75rem;font-weight:800;border:none;cursor:pointer;
-  padding:.4rem .75rem;border-radius:12px;color:var(--text-secondary);
-  background:var(--surface);
-  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+  font-size:.75rem;font-weight:800;border:var(--border-thin) solid var(--border-color);cursor:pointer;
+  padding:.4rem .75rem;border-radius:var(--radius-sm);color:var(--text-secondary);
+  background:var(--surface);transition:background var(--duration-base) var(--ease-standard);
 }
-.calc-mode-btn.is-active{color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue))}
+.calc-mode-btn:hover{background:var(--state-hover)}
+.calc-mode-btn.is-active{color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));border-color:transparent}
 .calc-mem-group{display:flex;gap:.35rem}
 .calc-mem-btn{
-  font-size:.7rem;font-weight:800;border:none;cursor:pointer;width:34px;height:34px;border-radius:10px;
-  color:var(--text-secondary);background:var(--surface);
-  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+  font-size:.7rem;font-weight:800;border:var(--border-thin) solid var(--border-color);cursor:pointer;width:34px;height:34px;border-radius:var(--radius-xs);
+  color:var(--text-secondary);background:var(--surface);transition:background var(--duration-base) var(--ease-standard);
 }
+.calc-mem-btn:hover{background:var(--state-hover)}
 .calc-mem-btn.has-value{color:var(--accent-purple)}
 
+/* MD3 recessed display — flat muted surface, no neumorphic inset
+   illusion (mirrors .neu-inset/.example-problem in theme.css). */
 .calc-display{
   border-radius:var(--radius-md);padding:1rem 1.1rem;margin-bottom:.9rem;
-  background:var(--surface);
-  box-shadow:inset 4px 4px 9px var(--shadow-dark), inset -4px -4px 9px var(--shadow-light);
+  background:var(--surface-muted);
+  border:var(--border-thin) solid var(--border-color);
   text-align:end;
 }
 .calc-expr{
@@ -226,12 +246,16 @@
 .calc-sci-grid,.calc-basic-grid{display:grid;gap:.45rem;margin-bottom:.5rem}
 .calc-sci-grid{grid-template-columns:repeat(6,1fr);min-height:253px}
 .calc-basic-grid{grid-template-columns:repeat(4,1fr);min-height:285px}
+/* MD3 button — neutral bordered surface, not a permanent tonal-purple
+   fill: with ~50 keys in the grid, a full-color tint on every key would
+   drown out the op/equals/clear accents below (same "stay neutral in a
+   dense list, save color for the state that needs it" calibration as
+   .quiz-opt). Tonal state-layer still confirms each press on hover. */
 .calc-btn{
-  font-family:inherit;border:none;cursor:pointer;border-radius:12px;
+  font-family:inherit;border:var(--border-thin) solid var(--border-color);cursor:pointer;border-radius:var(--radius-sm);
   padding:.65rem .3rem;font-size:.82rem;font-weight:700;color:var(--text-primary);
   background:var(--surface);
-  box-shadow:3px 3px 7px var(--shadow-dark), -3px -3px 7px var(--shadow-light);
-  transition:transform .1s ease;
+  transition:transform .1s ease, background var(--duration-base) var(--ease-standard);
   /* Button labels are math notation ("n!", "1/x", "×10ˣ", "ˣ√y"), not RTL
      prose — without this, the bidi algorithm reorders these short mixed
      Latin/symbol runs inside the page's dir="rtl" context (same fix
@@ -239,11 +263,12 @@
      .calc-expr/.calc-preview above). */
   direction:ltr;
 }
+.calc-btn:hover{background:var(--state-hover)}
 .calc-btn:active{transform:scale(.94)}
 .calc-btn.op{color:var(--accent-blue);font-size:1.05rem}
 .calc-btn.equals{
   color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
-  grid-column:span 1;
+  border-color:transparent;grid-column:span 1;
 }
 .calc-btn.clear{color:var(--accent-red)}
 .calc-btn.wide{grid-column:span 2}
@@ -253,12 +278,14 @@
 .calc-history-head h2{margin:0;font-size:1rem}
 .calc-history-actions{display:flex;gap:.5rem}
 .calc-history-list{list-style:none;margin:0;padding:0;min-height:52px;max-height:220px;overflow-y:auto;display:flex;flex-direction:column;gap:.4rem}
+/* MD3 selectable list item, same treatment as .quiz-opt in theme.css. */
 .calc-history-item{
   display:flex;justify-content:space-between;align-items:center;gap:.6rem;
   padding:.55rem .8rem;border-radius:var(--radius-sm);cursor:pointer;
-  background:var(--surface);
-  box-shadow:2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+  background:var(--surface);border:var(--border-thin) solid var(--border-color);
+  transition:background var(--duration-base) var(--ease-standard);
 }
+.calc-history-item:hover{background:var(--state-hover)}
 .calc-history-expr{font-size:.78rem;color:var(--text-faint);direction:ltr;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .calc-history-result{font-weight:800;color:var(--text-primary);direction:ltr}
 .calc-copybtn{

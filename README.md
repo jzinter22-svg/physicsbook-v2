@@ -229,15 +229,25 @@ a given page.
     `.quiz` (the outer card only; `.quiz-opt` items inside stay ordinary
     MD3), `.callout.warn`, and `.lesson-card--review` (the chapter's
     comprehensive-review highlight tile).
-  - **Rollout status**: the full system lives in `theme.css`/`search.css`
-    (both loaded on every page, so every chapter/lesson/tool page already
-    renders on it), and has had a full verification + polish pass on the
-    home page and Chapter 5 (hub + lessons) as the pilot. `tools.css`
-    (the five `formulas/`/`dictionary/`/`units/`/`calculator/`/
-    `exam-bank/` pages) and per-chapter Bento-hub polish for chapters
-    1-4/6-8 still run on the pre-hybrid neumorphic styling in their own
-    stylesheet/markup — functional, zero console errors, just not yet
-    carried through the same five-style pass.
+  - **Rollout status**: complete. `theme.css`/`search.css`/`tools.css`
+    (every stylesheet loaded anywhere in the book) are fully converted —
+    no neumorphic dual light+dark shadow remains outside the `--shadow-
+    light`/`--shadow-dark` token *definitions* themselves, which stay
+    defined only because the home page's splash-screen loader
+    (`splash.css`, explicitly out of scope for this pass) still
+    legitimately consumes them. `tools.css`'s conversion follows the same
+    patterns as `theme.css`: `.formula-card`/`.dict-card` are flat
+    Editorial surfaces, `.tools-chip`/`.units-jumplist`/`.calc-mode-btn`
+    are MD3 outlined-to-filled toggle chips, `.units-input`/
+    `.tools-searchbar` are flat MD3 fields, `.calc-display` is a flat
+    muted recessed surface, `.calc-history-item` is an MD3 selectable
+    list item — and `.calc-btn` (the ~50-key keypad) deliberately stays a
+    *neutral* bordered surface rather than a permanent tonal-purple fill,
+    since tinting every key would drown out the op/equals/clear accents
+    (the same "stay neutral in a dense list" calibration `.quiz-opt`
+    already uses). Chapter hubs 1-4/6-8 needed no markup or CSS changes
+    at all — they're structurally identical to Chapter 5's hub and were
+    already rendering the full hybrid system via the shared `theme.css`.
 - **Typography**: two self-hosted typefaces, both split into Arabic/Latin
   `.woff2` files by `unicode-range` the same way (`assets/fonts/`, `@font-
   face` rules in `theme.css`, `font-display:swap`, no CDN). **Cairo**
