@@ -103,8 +103,8 @@
           "</div>" +
           '<div class="example" style="border-inline-start:4px solid var(--accent-blue)">' +
             '<div class="example-head">' +
-              '<div class="example-title" style="color:var(--accent-blue)">' +
-                '<span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg></span> الإجابة النموذجية' +
+              '<div class="example-title" style="color:var(--accent-blue-text)">' +
+                '<span class="example-badge" style="background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple))"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg></span> الإجابة النموذجية' +
               "</div>" +
               '<button type="button" class="neu-btn" data-examq-reveal="' + esc(ansId) + '" aria-expanded="false">إظهار الإجابة النموذجية</button>' +
             "</div>" +

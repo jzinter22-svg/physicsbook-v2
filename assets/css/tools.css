@@ -22,7 +22,7 @@
   text-decoration:none;padding:.5rem 1rem;border-radius:16px;
   transition:color .15s ease, background .15s ease;
 }
-.tools-subnav-link:hover{color:var(--accent-purple);background:var(--state-hover)}
+.tools-subnav-link:hover{color:var(--accent-purple-text);background:var(--state-hover)}
 .tools-subnav-link.is-active{
   color:#fff;
   background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
@@ -86,7 +86,7 @@
   background:var(--surface);
   border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);
 }
-.formula-card-crumbs{font-size:.75rem;font-weight:700;color:var(--accent-purple)}
+.formula-card-crumbs{font-size:.75rem;font-weight:700;color:var(--accent-purple-text)}
 .formula-card-title{font-weight:800;font-size:1rem;color:var(--text-primary);line-height:1.6}
 .formula-eq{
   overflow-x:auto;text-align:center;padding:.6rem .3rem;
@@ -103,7 +103,7 @@
   font-size:.75rem;font-weight:700;color:var(--text-primary);
   background:rgba(63,169,245,.12);border-radius:8px;padding:.28rem .55rem;
 }
-.formula-qty-chip b{color:var(--accent-blue);font-weight:800}
+.formula-qty-chip b{color:var(--accent-blue-text);font-weight:800}
 .formula-card-open{
   margin-top:auto;align-self:flex-start;
   font-size:.82rem;font-weight:800;color:#fff;text-decoration:none;
@@ -131,9 +131,9 @@
 }
 .dict-term{font-weight:800;font-size:1rem;color:var(--text-primary)}
 .dict-def{font-size:.85rem;color:var(--text-secondary);line-height:1.75}
-.dict-card-crumbs{font-size:.72rem;font-weight:700;color:var(--accent-purple)}
+.dict-card-crumbs{font-size:.72rem;font-weight:700;color:var(--accent-purple-text)}
 .dict-card-open{
-  align-self:flex-start;font-size:.78rem;font-weight:800;color:var(--accent-blue);text-decoration:none;
+  align-self:flex-start;font-size:.78rem;font-weight:800;color:var(--accent-blue-text);text-decoration:none;
 }
 .dict-card-open:hover{text-decoration:underline}
 
@@ -145,7 +145,7 @@
   background:var(--surface);border:var(--border-thin) solid var(--border-color);border-radius:var(--radius-full);padding:.4rem .8rem;
   transition:background var(--duration-base) var(--ease-standard),color .15s ease;
 }
-.units-jumplist a:hover{color:var(--accent-purple);background:var(--state-hover)}
+.units-jumplist a:hover{color:var(--accent-purple-text);background:var(--state-hover)}
 
 .units-category{padding:1.5rem 1.5rem 1.75rem;margin-bottom:1.4rem;scroll-margin-top:calc(var(--header-h) + 70px)}
 .units-cat-head{display:flex;align-items:center;gap:.8rem;margin-bottom:1.1rem}
@@ -173,7 +173,7 @@
 .units-swap{
   cursor:pointer;width:38px;height:38px;border-radius:50%;
   display:flex;align-items:center;justify-content:center;font-size:1.1rem;
-  background:transparent;color:var(--accent-purple);
+  background:transparent;color:var(--accent-purple-text);
   border:none;transition:background var(--duration-base) var(--ease-standard);
 }
 .units-swap:hover{background:var(--state-hover)}
@@ -181,20 +181,20 @@
   margin-top:1rem;padding:.9rem 1.1rem;border-radius:var(--radius-sm);
   background:rgba(47,209,143,.1);font-weight:800;font-size:1.05rem;color:var(--text-primary);
 }
-.units-result b{color:var(--accent-green)}
+.units-result b{color:var(--accent-green-text)}
 :root[data-theme="dark"] .units-result{background:rgba(47,209,143,.16)}
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]) .units-result{background:rgba(47,209,143,.16)}
 }
 
 .units-table-details{margin-top:1rem}
-.units-table-details summary{cursor:pointer;font-weight:700;color:var(--accent-blue);font-size:.85rem}
+.units-table-details summary{cursor:pointer;font-weight:700;color:var(--accent-blue-text);font-size:.85rem}
 .units-table-details table{width:100%;border-collapse:collapse;margin-top:.6rem;font-size:.82rem}
 .units-table-details th,.units-table-details td{padding:.45rem .6rem;text-align:center;border-bottom:1px solid rgba(120,130,150,.15)}
 .units-table-details th{color:var(--text-secondary)}
 
 .units-formula-note,.units-example{font-size:.82rem;color:var(--text-secondary);margin:.5rem 0 0;line-height:1.7}
-.units-example{color:var(--accent-purple);font-weight:700}
+.units-example{color:var(--accent-purple-text);font-weight:700}
 
 /* ===== Module 4: Scientific Calculator =====
    Editorial container (.calc-wrap) housing MD3 controls — same content-
@@ -221,7 +221,7 @@
   color:var(--text-secondary);background:var(--surface);transition:background var(--duration-base) var(--ease-standard);
 }
 .calc-mem-btn:hover{background:var(--state-hover)}
-.calc-mem-btn.has-value{color:var(--accent-purple)}
+.calc-mem-btn.has-value{color:var(--accent-purple-text)}
 
 /* MD3 recessed display — flat muted surface, no neumorphic inset
    illusion (mirrors .neu-inset/.example-problem in theme.css). */
@@ -265,7 +265,7 @@
 }
 .calc-btn:hover{background:var(--state-hover)}
 .calc-btn:active{transform:scale(.94)}
-.calc-btn.op{color:var(--accent-blue);font-size:1.05rem}
+.calc-btn.op{color:var(--accent-blue-text);font-size:1.05rem}
 .calc-btn.equals{
   color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
   border-color:transparent;grid-column:span 1;
@@ -289,7 +289,7 @@
 .calc-history-expr{font-size:.78rem;color:var(--text-faint);direction:ltr;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .calc-history-result{font-weight:800;color:var(--text-primary);direction:ltr}
 .calc-copybtn{
-  border:none;cursor:pointer;background:transparent;color:var(--accent-blue);font-size:.85rem;font-weight:700;
+  border:none;cursor:pointer;background:transparent;color:var(--accent-blue-text);font-size:.85rem;font-weight:700;
 }
 
 @media (max-width:480px){

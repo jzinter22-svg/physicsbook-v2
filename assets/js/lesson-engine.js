@@ -231,16 +231,16 @@
     var stepsId = "steps-ex" + b.number;
     var solTitle = sol.label != null ? esc(sol.label) : esc((window.PBI18n && window.PBI18n.t("common.detailedSolution")) || "الحل التفصيلي");
     out += '<div class="example" style="border-inline-start:4px solid var(--accent-blue)">' +
-      '<div class="example-head"><div class="example-title" style="color:var(--accent-blue)"><span class="example-badge" style="background:linear-gradient(135deg,#3fa9f5,#7c6fee)"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg></span> ' +
+      '<div class="example-head"><div class="example-title" style="color:var(--accent-blue-text)"><span class="example-badge" style="background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple))"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg></span> ' +
       solTitle + "</div>" +
       '<button class="neu-btn" data-reveal-steps="' + stepsId + '" aria-expanded="false" data-i18n-show="common.showSteps" data-i18n-hide="common.hideSteps">' +
       esc((window.PBI18n && window.PBI18n.t("common.showSteps")) || "إظهار خطوات الحل") + "</button></div>";
     if(sol.given && sol.given.length){
-      out += '<p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple)"><svg class="icon" aria-hidden="true"><use href="#icon-clipboard"></use></svg> ' + esc((window.PBI18n && window.PBI18n.t("common.given")) || "المعطيات") + '</p><ul class="summary-list" style="margin-bottom:1rem">' +
+      out += '<p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-purple-text)"><svg class="icon" aria-hidden="true"><use href="#icon-clipboard"></use></svg> ' + esc((window.PBI18n && window.PBI18n.t("common.given")) || "المعطيات") + '</p><ul class="summary-list" style="margin-bottom:1rem">' +
         sol.given.map(function(g){ return "<li><span>" + html(g) + "</span></li>"; }).join("") + "</ul>";
     }
     if(sol.required){
-      out += '<p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue)"><svg class="icon" aria-hidden="true"><use href="#icon-target"></use></svg> ' + esc((window.PBI18n && window.PBI18n.t("common.required")) || "المطلوب") + "</p><p style=\"margin:0 0 1rem\">" + html(sol.required) + "</p>";
+      out += '<p style="margin:0 0 .5rem;font-weight:800;color:var(--accent-blue-text)"><svg class="icon" aria-hidden="true"><use href="#icon-target"></use></svg> ' + esc((window.PBI18n && window.PBI18n.t("common.required")) || "المطلوب") + "</p><p style=\"margin:0 0 1rem\">" + html(sol.required) + "</p>";
     }
     if(sol.steps && sol.steps.length){
       out += '<ol class="steps hidden-steps" id="' + stepsId + '">' + sol.steps.map(function(st, i){

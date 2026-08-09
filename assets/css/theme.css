@@ -69,16 +69,77 @@ svg.icon{
   --shadow-light:#ffffff;
   --shadow-dark:#b3bdcc;
   --text-primary:#2b3548;
-  --text-secondary:#63708a;
-  --text-faint:#8a97ad;
-  --accent-purple:#7c6fee;
+  /* --text-secondary/--text-faint: darkened from the original #63708a/
+     #8a97ad, which measured ~4.16:1 and ~2.46:1 against --surface — both
+     below the 4.5:1 WCAG AA floor for normal-size text (a hard
+     requirement for a government curriculum textbook). Tuned in HSL
+     (hue/saturation preserved, lightness lowered) against --surface-muted
+     specifically, since it's darker than --surface/--bg and so is always
+     the stricter of the two real backgrounds these tokens render on;
+     passing there guarantees passing on --bg too. Deliberately given
+     different target ratios (5.5 vs 4.7) rather than each's own bare
+     minimum, which would have pulled both to nearly the same lightness
+     and collapsed the primary/secondary/faint hierarchy into two
+     indistinguishable grays. */
+  --text-secondary:#4e586d;
+  --text-faint:#55637a;
+  /* --accent-purple/--accent-blue/--accent-green: darkened from the
+     original #7c6fee/#3fa9f5/#2fd18f. Each of the three was previously
+     used BOTH as a badge/button fill (white text on top, e.g. .neu-btn.
+     primary, .example-badge's blue stop, .sidebar-link.current) AND as a
+     direct text color on the page background (.eyebrow, .breadcrumb a,
+     .example-title, etc.) — the text case was the stricter constraint
+     (failing 3.27:1/2.14:1/1.65:1 against --surface) and darkening enough
+     to clear it also clears every white-on-badge use with room to spare
+     (verified against #fff separately). Tuned against the *tinted*
+     translucent backgrounds these colors also render text on as
+     buttons/chips (.tag/.neu-btn's --state-hover fill, the search
+     overlay's rgba(purple,.12) type chip, etc.), not just flat --surface,
+     since those composited backgrounds are measurably harder to clear.
+     --accent-orange/--accent-pink are deliberately left at their original
+     light, cheerful values: they're never used as page text, only as
+     light/pastel badge fills (.example-badge, .lesson-card--review), and
+     darkening enough for white text on them would have destroyed that
+     intentionally pastel identity — those two badges instead switch their
+     foreground to --text-on-light-accent (dark-on-light) below. */
+  --accent-purple:#5240e9;
   --accent-purple-2:#a78bfa;
-  --accent-blue:#3fa9f5;
+  --accent-blue:#0964a6;
   --accent-blue-2:#63c7ff;
   --accent-orange:#ffab5e;
   --accent-pink:#ff6b9d;
-  --accent-green:#2fd18f;
-  --accent-red:#ff6b6b;
+  --accent-green:#19704d;
+  /* --accent-red is only ever used as text (.calc-error, .calc-btn.clear)
+     never as a badge fill, so unlike purple/blue/green above it doesn't
+     need a badge-safe base + separate "-text" token: this value can just
+     be the correct light-mode text color outright, with the dark-mode
+     block below restoring it to the original, already-passing #ff6b6b. */
+  --accent-red:#ba2e2e;
+  /* Text-color variants of the three dual-use accents above: identical to
+     the base token in light mode (the darkened value already clears
+     every text case), but overridden lighter in the dark-mode block,
+     since a color dark enough to host white text in both themes is too
+     dark to itself read as text against a dark background — the same
+     token can't satisfy both constraints in dark mode, so text usage
+     reads this token instead of the base one while badges/borders/
+     gradients keep reading the base token unchanged. */
+  --accent-purple-text:var(--accent-purple);
+  --accent-blue-text:var(--accent-blue);
+  --accent-green-text:var(--accent-green);
+  /* Tinted-background feedback text (.feedback.ok/.bad, .exercise-final) —
+     previously hardcoded #1b8f66/#d84343 with no dark-mode counterpart at
+     all for .feedback, so it measured ~3:1 in light mode and ~2.6:1 in
+     dark. Recomputed as proper tokens against each translucent tint
+     composited over --surface. */
+  --feedback-ok-text:#146d4e;
+  --feedback-bad-text:#b02424;
+  /* Dark, theme-invariant text for badges filled with a light/pastel
+     accent (.example-badge's orange/pink gradient, .lesson-card--review's
+     gold/orange gradient) — those fills stay light in both themes (see
+     --accent-orange/--accent-pink above), so their text needs to stay
+     dark in both themes too; no dark-mode override, by the same logic
+     the --ch<N>-accent tokens already document above. */
+  --text-on-light-accent:#24304a;
 
   /* Per-chapter semantic color identity — one two-stop gradient per
      chapter, used everywhere that chapter's own color needs to appear
@@ -219,8 +280,28 @@ svg.icon{
   --shadow-dark:#181c24;
   --text-primary:#eef1f6;
   --text-secondary:#a7b0c0;
-  --text-faint:#7e879a;
+  /* --text-faint: lightened from #7e879a (~3.99:1 against --bg, ~3.51:1
+     against the stricter --surface-muted — both below 4.5:1). Tuned the
+     same way as light mode: against --surface-muted, with a safety margin
+     above the bare-minimum ratio. --text-secondary already cleared 4.5:1
+     unchanged (6.60:1/5.80:1), so it's untouched here. */
+  --text-faint:#969ead;
   --border-color:rgba(238,241,246,.16);
+  /* Restores the original, already-AA-passing red (5.19:1/4.57:1) that
+     --accent-red's :root value darkened for light-mode legibility. */
+  --accent-red:#ff6b6b;
+  /* Lighter text-only variants of purple/blue/green — see the long
+     comment on these three tokens in :root. Blue/green's darkened base
+     value already fails as text against a dark background, so both need
+     an explicit override here too, not just purple; blue/green land back
+     very close to (blue) or exactly at (green) their original un-
+     darkened hue since that already cleared 4.5:1 against dark
+     backgrounds on its own. */
+  --accent-purple-text:#9d94f2;
+  --accent-blue-text:#42abf5;
+  --accent-green-text:#2fd18f;
+  --feedback-ok-text:#5fe3ae;
+  --feedback-bad-text:#ea9292;
 }
 
 @media (prefers-color-scheme: dark){
@@ -233,7 +314,13 @@ svg.icon{
     --shadow-dark:#181c24;
     --text-primary:#eef1f6;
     --text-secondary:#a7b0c0;
-    --text-faint:#7e879a;
+    --text-faint:#969ead;
+    --accent-red:#ff6b6b;
+    --accent-purple-text:#9d94f2;
+    --accent-blue-text:#42abf5;
+    --accent-green-text:#2fd18f;
+    --feedback-ok-text:#5fe3ae;
+    --feedback-bad-text:#ea9292;
   }
 }
 
@@ -334,7 +421,7 @@ body{
   background:var(--state-hover); /* MD3 tonal button: flat accent-tinted fill at rest */
   border:none;
   border-radius:var(--radius-full);
-  color:var(--accent-purple);
+  color:var(--accent-purple-text);
   font-family:inherit;
   font-weight:var(--weight-bold);
   cursor:pointer;
@@ -420,7 +507,7 @@ body{
 .breadcrumb li{display:flex;align-items:center;gap:.4rem}
 .breadcrumb li:not(:last-child)::after{content:"›";color:var(--text-faint)}
 [dir="rtl"] .breadcrumb li:not(:last-child)::after{content:"‹"}
-.breadcrumb a{color:var(--accent-purple);text-decoration:none;font-weight:700}
+.breadcrumb a{color:var(--accent-purple-text);text-decoration:none;font-weight:700}
 .breadcrumb a:hover{text-decoration:underline}
 .breadcrumb li[aria-current="page"]{color:var(--text-primary);font-weight:700}
 
@@ -435,7 +522,7 @@ body{
    font that doesn't have it risks the browser's synthetic-bold fallback
    double-thickening already-bold display glyphs. */
 .hero h1{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.6rem);margin:.2rem 0;font-weight:700}
-.eyebrow{display:inline-flex;align-items:center;gap:.5rem;color:var(--accent-purple);font-weight:700;font-size:.9rem}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;color:var(--accent-purple-text);font-weight:700;font-size:.9rem}
 .lead{color:var(--text-secondary);font-size:1.05rem;max-width:60ch}
 
 /* Home hero: the project name is the single most prominent element on the
@@ -472,7 +559,7 @@ body{
 /* MD3 assist chip: flat tonal fill, no shadow, pill radius */
 .tag{
   display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .9rem;border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:700;
-  background:var(--state-hover);color:var(--accent-purple);
+  background:var(--state-hover);color:var(--accent-purple-text);
 }
 
 .grid{display:grid;gap:var(--gap)}
@@ -499,7 +586,7 @@ body{
   border-inline-start:5px solid var(--accent-purple);
   overflow-x:auto;
 }
-.def-box .def-label{color:var(--accent-purple);font-weight:800;display:block;margin-bottom:.4rem}
+.def-box .def-label{color:var(--accent-purple-text);font-weight:800;display:block;margin-bottom:.4rem}
 
 /* Rule / formula box */
 .rule-box{
@@ -530,9 +617,10 @@ body{
   background:var(--surface);border:var(--border-thin) solid var(--border-color);box-shadow:var(--elevation-1);
 }
 .example-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.75rem}
-.example-title{display:flex;align-items:center;gap:.6rem;font-weight:800;color:var(--accent-blue);font-size:1.05rem}
+.example-title{display:flex;align-items:center;gap:.6rem;font-weight:800;color:var(--accent-blue-text);font-size:1.05rem}
 .example-badge{
-  width:36px;height:36px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;
+  width:36px;height:36px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-weight:900;
+  color:var(--text-on-light-accent); /* orange/pink stay light+pastel (see :root), so dark-on-light instead of white-on-light */
   background:linear-gradient(135deg,var(--accent-orange),var(--accent-pink));
 }
 .example-problem{padding:1rem 1.2rem;border-radius:var(--radius-sm);background:var(--surface-muted);
@@ -543,7 +631,7 @@ body{
 .step{display:grid;grid-template-columns:38px 1fr;gap:.8rem;padding:.4rem 0;opacity:0;transform:translateY(8px);animation:stepIn .5s ease forwards}
 .step .step-dot{
   width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;
-  background:var(--surface);border:var(--border-thin) solid var(--border-color);color:var(--accent-purple);
+  background:var(--surface);border:var(--border-thin) solid var(--border-color);color:var(--accent-purple-text);
   position:relative;
 }
 .step:not(:last-child) .step-dot::after{
@@ -558,7 +646,7 @@ body{
 .calc-note{font-size:.82rem;color:var(--text-secondary);font-weight:700;margin:.1rem 0 .3rem}
 .calc-flow{display:grid;justify-items:center;gap:.3rem;margin:.1rem 0 .55rem;min-width:0}
 .calc-line{font-size:1.08rem;max-width:100%;overflow-x:auto}
-.calc-arrow{color:var(--accent-purple);font-size:1.35rem;line-height:1;opacity:.5}
+.calc-arrow{color:var(--accent-purple-text);font-size:1.35rem;line-height:1;opacity:.5}
 .calc-box{display:inline-block;padding:.5rem 1.1rem;border-radius:var(--radius-sm);
   background:var(--surface);border:var(--border-thin) solid var(--border-color);
   max-width:100%;overflow-x:auto}
@@ -602,8 +690,8 @@ input[type=text].neu-input,input[type=number].neu-input{
 input[type=text].neu-input:focus,input[type=number].neu-input:focus{border-color:var(--accent-purple)}
 .feedback{padding:.7rem 1rem;border-radius:var(--radius-sm);font-weight:700;display:none}
 .feedback.show{display:block;animation:fadeIn .3s ease}
-.feedback.ok{background:rgba(47,209,143,.15);color:#1b8f66}
-.feedback.bad{background:rgba(255,107,107,.15);color:#d84343}
+.feedback.ok{background:rgba(47,209,143,.15);color:var(--feedback-ok-text)}
+.feedback.bad{background:rgba(255,107,107,.15);color:var(--feedback-bad-text)}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 
 /* Quiz */
@@ -708,7 +796,7 @@ input[type=text].neu-input:focus,input[type=number].neu-input:focus{border-color
   box-shadow:var(--elevation-1);
 }
 .sidebar-link.root{border-bottom:1px dashed var(--border-color);border-radius:var(--radius-sm);margin-bottom:.4rem;padding-bottom:.9rem}
-.sidebar-link.is-done:not(.current)::after{content:" ✓";color:var(--accent-green)}
+.sidebar-link.is-done:not(.current)::after{content:" ✓";color:var(--accent-green-text)}
 
 .sidebar-sublist{list-style:none;margin:.15rem 0 .5rem;padding-inline-end:1rem;display:grid;gap:.15rem;
   border-inline-end:2px solid rgba(124,111,238,.25)}
@@ -718,7 +806,7 @@ input[type=text].neu-input:focus,input[type=number].neu-input:focus{border-color
 }
 .sidebar-sublink .icon{flex:0 0 auto;opacity:.8}
 .sidebar-sublink:hover{color:var(--text-primary)}
-.sidebar-sublink.in-view{color:var(--accent-purple);font-weight:800;background:rgba(124,111,238,.09)}
+.sidebar-sublink.in-view{color:var(--accent-purple-text);font-weight:800;background:rgba(124,111,238,.09)}
 
 .sidebar-toggle-btn{display:flex}
 
@@ -789,7 +877,7 @@ input[type=text].neu-input:focus,input[type=number].neu-input:focus{border-color
 .lesson-idx{
   width:44px;height:44px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;
 }
-.lesson-go{display:flex;align-items:center;gap:.4rem;color:var(--accent-purple);font-weight:800;margin-top:auto;transition:transform .2s ease}
+.lesson-go{display:flex;align-items:center;gap:.4rem;color:var(--accent-purple-text);font-weight:800;margin-top:auto;transition:transform .2s ease}
 
 /* comprehensive chapter-review lesson — same lesson-card, distinguishing accent */
 /* Neo-Brutalism accent: this is the "achievement/highlight block" the
@@ -797,7 +885,9 @@ input[type=text].neu-input:focus,input[type=number].neu-input:focus{border-color
    gets the hard-offset treatment instead of Bento's plain elevation. */
 .lesson-card--review{border:var(--border-brutal) solid var(--accent-orange);box-shadow:6px 6px 0 var(--accent-orange)}
 .lesson-card--review:hover{box-shadow:8px 8px 0 var(--accent-orange);transform:translateY(-2px)}
-.lesson-card--review .lesson-idx{background:linear-gradient(135deg,#ffd166,var(--accent-orange));font-size:1.35rem}
+/* Gold/orange stays light+pastel like the example-badge above, so this
+   needs dark-on-light too, overriding .lesson-idx's white default. */
+.lesson-card--review .lesson-idx{background:linear-gradient(135deg,#ffd166,var(--accent-orange));color:var(--text-on-light-accent);font-size:1.35rem}
 
 /* empty-state (e.g. "chapters coming soon") */
 .empty-state{padding:2.25rem 1.5rem;text-align:center;color:var(--text-secondary)}
@@ -815,14 +905,15 @@ input[type=text].neu-input:focus,input[type=number].neu-input:focus{border-color
 
 /* ===== Exercise cards — visually distinct from worked examples ===== */
 .example.exercise-card{border-inline-start:4px solid var(--accent-green)}
-.example.exercise-card .example-badge{background:linear-gradient(135deg,var(--accent-green),var(--accent-blue))}
-.example.exercise-card .example-title{color:var(--accent-green)}
+/* Unlike the default orange/pink badge above, green/blue are darkened
+   (see :root) so they still need white text, not --text-on-light-accent. */
+.example.exercise-card .example-badge{color:#fff;background:linear-gradient(135deg,var(--accent-green),var(--accent-blue))}
+.example.exercise-card .example-title{color:var(--accent-green-text)}
 .exercise-final{
   margin-top:.85rem;padding:.85rem 1.1rem;border-radius:var(--radius-sm);font-weight:800;text-align:center;
-  background:rgba(47,209,143,.12);color:#1b8f66;
+  background:rgba(47,209,143,.12);color:var(--feedback-ok-text);
   overflow-x:auto;
 }
-:root[data-theme="dark"] .exercise-final{color:#5fe3ae}
 
 /* ===== Chapter hero visual (index.html) ===== */
 .hero-grid{display:grid;grid-template-columns:1.15fr .95fr;gap:2rem;align-items:center}

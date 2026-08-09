@@ -202,6 +202,27 @@ a given page.
   MD3 elevation `--elevation-0…3`, state layers `--state-hover`/
   `--state-pressed`, motion `--duration-*`/`--ease-*`) rather than
   one-off values scattered through the CSS.
+  - **Color contrast**: every text/icon-vs-background pairing in the
+    palette is WCAG AA (≥4.5:1 normal text, ≥3:1 large text/graphics),
+    verified with a WCAG relative-luminance script, not by eye.
+    `--text-secondary`/`--text-faint` are darkened (light mode) /
+    lightened (dark mode) from their original values, which measured as
+    low as ~2.3:1. `--accent-purple`/`--accent-blue`/`--accent-green` are
+    dual-use — a badge/button fill (white text on top) *and* a direct
+    text color on the page — so each also has a `--accent-*-text`
+    counterpart: same value in light mode (already dark enough for both
+    roles), lighter in dark mode, since a color dark enough to host white
+    text in both themes is too dark to itself read as text on a dark
+    background. `--accent-orange`/`--accent-pink` stay at their original
+    light, pastel values (never used as page text) and instead pair with
+    `--text-on-light-accent` — a dark, theme-invariant color, mirroring
+    why the `--ch<N>-accent` tokens below don't need a dark-mode variant
+    — anywhere they're a badge fill (`.example-badge`,
+    `.lesson-card--review`), rather than being darkened into a different,
+    less cheerful color family just to keep using white text.
+    `--feedback-ok-text`/`--feedback-bad-text` replace what used to be
+    hardcoded, non-token, contrast-failing hex in `.feedback`/
+    `.exercise-final`.
   - **Editorial/Swiss** (foundation): flat, hairline-bordered content
     surfaces — `.card`, `.def-box`, `.rule-box`, `.callout.tip`,
     `.example`, `.diagram-card` — minimal `--elevation-1`, never a heavy
@@ -316,9 +337,11 @@ a given page.
   color field to keep in sync). Every stop is verified at ≥4.5:1 contrast
   against the white badge text/icon color that always sits on top of it;
   because that badge is fully opaque, this ratio doesn't change between
-  light and dark mode (unlike `--bg`/`--surface`/`--text-*`), so — like the
-  existing `--accent-purple`/`--accent-blue`/etc. above — there's a single
-  definition, no `[data-theme="dark"]` override needed.
+  light and dark mode (unlike `--bg`/`--surface`/`--text-*`), so — like
+  `--accent-purple`/`--accent-blue`/`--accent-green` when used as a badge
+  fill above (as opposed to their `-text` counterparts, which do need a
+  dark-mode override) — there's a single definition, no
+  `[data-theme="dark"]` override needed.
 - **Logo & favicon**: the site's real mark (circle + orbiting electron +
   graduation cap — first built as `index.html`'s splash-screen SVG) lives
   once as `assets/icons/sprite.svg`'s `icon-logo` symbol, unlike every other
